@@ -40,3 +40,9 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# Graphify internal/scratch state — keep only user-facing outputs
+graphify-out/.graphify_*
+graphify-out/.extract.sh
+graphify-out/.validate.py
+graphify-out/cache/

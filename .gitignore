@@ -5,8 +5,10 @@
 00-Sources/data/
 00-Sources/articles/*.pdf
 
-# Quartz install — regenerable; do not version-control node_modules + cloned upstream
-.quartz/
+# Quartz: track config + source, but not node_modules / build output / cache
+.quartz/node_modules/
+.quartz/public/
+.quartz-cache/
 
 # macOS
 .DS_Store

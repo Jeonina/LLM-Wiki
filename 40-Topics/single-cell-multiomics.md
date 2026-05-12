@@ -4,7 +4,7 @@ title: Single-cell multi-omics
 aliases: [single-cell multiomics, sc-multiomics]
 tags: [single-cell, methods, multiomics]
 created: 2026-05-07
-updated: 2026-05-11
+updated: 2026-05-12
 ---
 
 # Single-cell multi-omics
@@ -28,6 +28,13 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 - [[30-Concepts/spatial-multiomics]] — spatially-resolved multi-omic measurements.
 - [[30-Concepts/chromatin-accessibility]] — readout layer.
 - [[30-Concepts/chromatin-actuation]] — single-molecule refinement of accessibility.
+- [[30-Concepts/simple-seq]] — joint 5mC + 5hmC in single cells.
+- [[30-Concepts/splicool-seq]] — 5mC + accessibility (GpC) in single cells, high throughput.
+- [[30-Concepts/scepi2-seq]] — single-cell histone mark + 5mC.
+- [[30-Concepts/6-base-cut-and-tag]] — fragment-level histone mark + 5mC + 5hmC (bulk).
+- [[30-Concepts/scchix-seq]] — two histone marks per cell with computational deconvolution.
+- [[30-Concepts/scicut-tag]], [[30-Concepts/multi-tag]] — combinatorial-indexing single-cell CUT&Tag, multi-epitope.
+- [[30-Concepts/samosa-tag]], [[30-Concepts/smrt-tag]] — long-read multi-modal chromatin.
 
 ## Key entities
 
@@ -41,6 +48,12 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 - [[20-Entities/rong-fan]] — Yale; spatial multi-omics.
 - [[20-Entities/rahul-satija]] — NYGC; Seurat integration toolkit.
 - [[20-Entities/fabian-theis]] — Helmholtz Munich; best-practices recommendations.
+- [[20-Entities/alexander-van-oudenaarden]] — sortChIC, scChIX-seq, scEpi²-seq.
+- [[20-Entities/chengqi-yi]] — SIMPLE-seq joint 5mC+5hmC.
+- [[20-Entities/xiaoying-fan]] — SpliCOOL-seq.
+- [[20-Entities/shankar-balasubramanian]] — 6-base-CUT&Tag.
+- [[20-Entities/steven-henikoff]] — sciCUT&Tag, MulTI-Tag.
+- [[20-Entities/vijay-ramani]] — SMRT-Tag, SAMOSA-Tag.
 
 ## Sources, by sub-theme
 
@@ -61,6 +74,19 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 - [[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]] — Baysoy/Fan/Satija technological landscape.
 - [[10-Summaries/katy-2023-naturereviewsgenetics]] — Vandereyken/Voet methods and applications, including spatial.
 - [[10-Summaries/lukas-2023-naturereviewsgenetics]] — Heumos/Theis best-practices analysis recommendations.
+
+### Methylation × chromatin / histone-mark single-cell methods
+
+- [[10-Summaries/simultaneous-single-cell-analysis-of-5mc-and-5hmc-with-simple-seq]] (SIMPLE-seq).
+- [[10-Summaries/high-throughput-single-cell-dna-methylation-and-chromatin-accessibility-co-profiling-with-splicool-seq]] (SpliCOOL-seq).
+- [[10-Summaries/single-cell-multi-omic-detection-of-dna-methylation-and-histone-modifications-reconstructs-the-dynamics-of-epigenomic-maintenance]] (scEpi²-seq).
+- [[10-Summaries/sequencing-dna-methylation-and-hydroxymethylation-at-co-occurring-chromatin-features]] (6-base-CUT&Tag).
+- [[10-Summaries/scchix-seq-infers-dynamic-relationships-between-histone-modifications-in-single-cells]] (scChIX-seq).
+- [[10-Summaries/scalable-single-cell-profiling-of-chromatin-modifications-with-scicut-tag]] (sciCUT&Tag).
+
+### Long-read multi-modal chromatin
+
+- [[10-Summaries/direct-transposition-of-native-dna-for-sensitive-multimodal-single-molecule-sequencing]] (SAMOSA-Tag).
 
 ## Synthesized notes
 

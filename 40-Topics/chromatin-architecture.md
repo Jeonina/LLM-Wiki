@@ -4,7 +4,7 @@ title: Chromatin architecture
 aliases: [chromatin biology, chromatin organization]
 tags: [chromatin, regulation, single-molecule]
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-12
 ---
 
 # Chromatin architecture
@@ -17,9 +17,15 @@ updated: 2026-05-07
 - [[30-Concepts/chromatin-actuation]] — single-molecule refinement: per-fiber binary state of "open + bound."
 - [[30-Concepts/single-molecule-footprinting]] — the method class.
 - [[30-Concepts/atac-seq]] — Tn5 transposase tagmentation of accessible chromatin; the workhorse assay.
+- [[30-Concepts/scatac-seq]] — single-cell version.
 - [[30-Concepts/dnase-seq]] — original ENCODE accessibility assay; largely superseded by ATAC-seq.
 - [[30-Concepts/fiber-seq]] — bulk single-molecule via m6A methyltransferase stenciling.
 - [[30-Concepts/daf-seq]] — single-cell single-molecule via cytidine deaminase footprinting.
+- [[30-Concepts/histone-modifications]] — covalent chromatin marks.
+- [[30-Concepts/replication-timing]] — temporal axis of chromatin state.
+- [[30-Concepts/enhancer-states]] — active/primed/poised functional categories.
+- [[30-Concepts/cis-regulatory-element]] — enhancers, promoters, insulators.
+- [[30-Concepts/cut-and-tag]], [[30-Concepts/cut-and-run]], [[30-Concepts/chic-seq]] — antibody-tethered nuclease methods.
 
 ## Key entities
 
@@ -40,6 +46,33 @@ updated: 2026-05-07
 ### Reviews
 
 - [[10-Summaries/sandy-2019-naturereviewsgenetics]] — Klemm/Shipony/Greenleaf canonical chromatin accessibility review.
+
+### Single-cell ATAC-seq tooling
+
+- [[10-Summaries/chromvar-inferring-transcription-factor-associated-accessibility-from-single-cell-epigenomic-data]] (chromVAR).
+- [[10-Summaries/cistopic-cis-regulatory-topic-modeling-on-single-cell-atac-seq-data]] (cisTopic).
+- [[10-Summaries/comprehensive-analysis-of-single-cell-atac-seq-data-with-snapatac]] (SnapATAC).
+- [[10-Summaries/episcanpy-integrated-single-cell-epigenomic-analysis]] (EpiScanpy).
+- [[10-Summaries/unsupervised-clustering-and-epigenetic-classification-of-single-cells]] (scABC).
+- [[10-Summaries/high-throughput-chromatin-accessibility-profiling-at-single-cell-resolution]] (µATAC-seq).
+- [[10-Summaries/scatac-seq-generates-more-accurate-and-complete-regulatory-maps-than-bulk-atac-seq]] (Gur/Hughes comparison).
+
+### Histone modifications (single-cell)
+
+- [[10-Summaries/single-cell-chromatin-immunocleavage-sequencing-scchic-seq-to-profile-histone-modification]] (scChIC-seq).
+- [[10-Summaries/scchix-seq-infers-dynamic-relationships-between-histone-modifications-in-single-cells]] (scChIX-seq).
+- [[10-Summaries/scalable-single-cell-profiling-of-chromatin-modifications-with-scicut-tag]] (sciCUT&Tag).
+- [[10-Summaries/single-cell-multi-omic-detection-of-dna-methylation-and-histone-modifications-reconstructs-the-dynamics-of-epigenomic-maintenance]] (scEpi²-seq).
+- [[10-Summaries/sequencing-dna-methylation-and-hydroxymethylation-at-co-occurring-chromatin-features]] (6-base-CUT&Tag).
+
+### Computational prediction
+
+- [[10-Summaries/deephistone-a-deep-learning-approach-to-predicting-histone-modifications]] (DeepHistone).
+
+### 3D genome (single-cell)
+
+- [[10-Summaries/navigating-the-3d-genome-at-single-cell-resolution-techniques-computation-and-mechanistic-landscapes]] (Hong/Dao review).
+- [[10-Summaries/harmonizing-single-cell-3d-genome-data-with-stark-and-scnucleome]] (STARK + scNucleome).
 
 ## Synthesized notes
 

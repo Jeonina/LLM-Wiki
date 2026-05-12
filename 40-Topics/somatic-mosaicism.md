@@ -4,7 +4,7 @@ title: Somatic mosaicism
 aliases: [mosaicism, post-zygotic variation topic]
 tags: [mosaicism, genetics, development, aging]
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-12
 ---
 
 # Somatic mosaicism
@@ -41,6 +41,12 @@ updated: 2026-05-11
 - [[20-Entities/gilad-evrony]] — former Walsh postdoc; applications framework.
 - [[20-Entities/lars-forsberg]] — health-and-disease mosaicism review author.
 - [[20-Entities/james-lupski]] — clinical genetics of mosaicism; transmission risk.
+- [[20-Entities/sara-bizzotto]] — Walsh lab; brain mosaicism review (Bizzotto/Walsh 2022).
+- [[20-Entities/patrick-chinnery]] — mtDNA heteroplasmy single-cell biology.
+- [[20-Entities/ludmil-alexandrov]] — mutational signatures and ultra-accurate duplex chemistry.
+- [[20-Entities/tim-coorens]] — SMaHT duplex-seq benchmark.
+- [[20-Entities/manolis-kellis]] — single-cell mosaicism in AD.
+- [[20-Entities/smaht-network]] — NIH consortium for somatic mosaicism atlas.
 
 ## Sources, by sub-theme
 
@@ -53,11 +59,28 @@ updated: 2026-05-11
 
 - [[10-Summaries/diane-2025-naturereviewsgenetics]] — current scDNA-seq toolkit for mosaicism research.
 - [[10-Summaries/gilad-2021-annualreviewofgenomicsandhumangenetics]] — applications framework.
+- [[10-Summaries/bizzotto-2022-brain-mosaicism]] (= Bizzotto & Walsh 2022, NRN brain mosaicism review).
 
 ### MPN as a tractable mosaicism disease model
 
 - [[10-Summaries/anna-2019-nature]] — CALR-mutated MPN.
 - [[10-Summaries/franco-2024-nature]] — JAK2V617F MPN and clonal hematopoiesis.
+
+### Duplex sequencing for low-VAF mutation detection
+
+- [[10-Summaries/detecting-ultralow-frequency-mutations-by-duplex-sequencing]] — Kennedy 2014 founding DS protocol.
+- [[10-Summaries/a-universal-duplex-sequencing-approach-for-accurate-detection-of-somatic-mutations]] — UDSeq 2025.
+- [[10-Summaries/benchmarking-of-duplex-sequencing-approaches-to-reveal-somatic-mutation-landscapes]] — SMaHT cross-method benchmark.
+
+### Single-cell mosaicism studies
+
+- [[10-Summaries/a-comprehensive-view-of-somatic-mosaicism-by-single-cell-dna-analysis]] — Luquette 2025: PTA + duplex validation, 102 nuclei from lung+colon of 74-yo donor.
+- [[10-Summaries/high-throughput-single-cell-analysis-reveals-progressive-mitochondrial-dna-mosaicism-throughout-life]] — Glynos/Chinnery 2023: mouse mtDNA heteroplasmy variance increases through life.
+- [[10-Summaries/single-cell-mosaicism-analysis-reveals-cell-type-specific-somatic-mutational-burden-in-alzheimer-s-dementia]] — Kousi/Kellis 2022: cell-type-specific AD mosaicism.
+
+### Structural-variant somatic mosaicism
+
+- [[10-Summaries/nanopore-sequencing-unveils-somatic-structural-variations-as-biomarkers-in-laryngeal-squamous-cell-carcinoma-genomes]] — nanopore SomaGauss-SV in LSCC; smoking × deletion-burden correlation.
 
 ## Synthesized notes
 
@@ -65,6 +88,7 @@ _None yet._
 
 ## Open questions
 
+- **Single-cell duplex sequencing** — duplex needs both strands; scWGA loses strand identity. Closing this gap is the single biggest method gap ([[40-Topics/duplex-sequencing]] open questions).
 - Tissue-specific mosaic mutation rates: high in skin (UV) and intestine (turnover); uncertain in many other tissues.
 - Clinical threshold (VAF, gene set) at which mosaicism becomes diagnostically actionable.
 - Whether age-related mosaic accumulation *causes* aging-related disease or is a *biomarker* — distinction matters for therapeutic strategies.

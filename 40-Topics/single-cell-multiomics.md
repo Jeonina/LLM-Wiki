@@ -24,7 +24,14 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 - [[30-Concepts/single-molecule-footprinting]] — the broader method class.
 - [[30-Concepts/dogma-seq]] — chromatin + RNA + protein trimodal platform; integrated with GoT–ChA via imputation in [[10-Summaries/franco-2024-nature]].
 - [[30-Concepts/cite-seq]] — scRNA + surface protein via antibody-derived tags.
-- [[30-Concepts/gt-seq]] — physical-separation scDNA + scRNA (G&T-seq).
+- [[30-Concepts/g-t-seq]] — G&T-seq, physical-separation scDNA + scRNA (1st joint DNA+RNA assay).
+- [[30-Concepts/dr-seq]] — DR-seq, one-pot quasilinear scDNA + scRNA alternative to G&T-seq.
+- [[30-Concepts/sci-car]] — sci-CAR, combinatorial-indexing scATAC + scRNA at thousands of cells.
+- [[30-Concepts/share-seq]] — SHARE-seq, split-pool scATAC + scRNA at tens of thousands of cells; introduces chromatin-potential framework.
+- [[30-Concepts/scnmt-seq]] — scNMT-seq, first single-cell triple-omics (methylation + accessibility + RNA).
+- [[30-Concepts/sctrio-seq]] — scTrio-seq, alternative triple-omics (CNV + methylation + RNA); closest existing precedent for DNA-anchored mutation + epi + transcriptome.
+- [[30-Concepts/igs]] — IGS, in-situ genome sequencing for spatial 3D-DNA at single-cell resolution.
+- [[30-Concepts/gt-seq]] — alias kept for legacy backlinks; canonical page is [[30-Concepts/g-t-seq]].
 - [[30-Concepts/spatial-multiomics]] — spatially-resolved multi-omic measurements.
 - [[30-Concepts/chromatin-accessibility]] — readout layer.
 - [[30-Concepts/chromatin-actuation]] — single-molecule refinement of accessibility.
@@ -56,6 +63,25 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 - [[20-Entities/vijay-ramani]] — SMRT-Tag, SAMOSA-Tag.
 
 ## Sources, by sub-theme
+
+### Foundational joint DNA + RNA assays (one cell)
+
+- [[10-Summaries/g-t-seq-parallel-sequencing-of-single-cell-genomes-and-transcriptomes]] — Macaulay 2015: G&T-seq, separation-based scDNA + scRNA; trisomy-11 subclone in HCC38-BL.
+- [[10-Summaries/integrated-genome-and-transcriptome-sequencing-of-the-same-cell]] — Dey 2015: DR-seq, one-pot scDNA + scRNA; CNVs drive expression variability.
+
+### Joint chromatin + RNA (accessibility-anchored)
+
+- [[10-Summaries/joint-profiling-of-chromatin-accessibility-and-gene-expression-in-thousands-of-single-cells]] — Cao 2018: sci-CAR, scATAC + scRNA at thousands of cells.
+- [[10-Summaries/share-seq-reveals-chromatin-potential-nature-reviews-genetics]] — Ma 2020 (NRG perspective): SHARE-seq, chromatin potential framework.
+
+### Triple-omics (methylation + accessibility + RNA, or CNV + methylation + RNA)
+
+- [[10-Summaries/scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]] — Clark 2018: scNMT-seq, first triple-omics; methylation-accessibility coupling strengthens along differentiation.
+- [[10-Summaries/single-cell-triple-omics-sequencing-reveals-genetic-epigenetic-and-transcriptomic-heterogeneity-in-hepatocellular-carcinomas]] — Hou 2016: scTrio-seq; CNVs drive expression but not methylation; HCC subpopulation analysis.
+
+### Spatial single-cell DNA
+
+- [[10-Summaries/andrewc-2020-science]] — Payne 2021: IGS (In Situ Genome Sequencing); 3D-resolved single-cell genomes.
 
 ### Genotype + transcriptome (droplet)
 

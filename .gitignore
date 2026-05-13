@@ -21,6 +21,16 @@
 # Claude Code per-user / per-project state
 .claude/
 
+# MoAI internal state and MCP config
+.moai/
+.mcp.json
+
+# Review manuscript draft — kept private, not for wiki publication
+60-Draft/
+
+# Unrelated MoAI/sub-project directory accidentally nested here
+scDNA/
+
 # R
 .Rhistory
 .Rapp.history

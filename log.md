@@ -4,6 +4,43 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-05-14 — Ingest: scRNA-seq foundational papers (Tang 2009, Macosko 2015, Svensson 2017)
+
+**Trigger**: User is drafting the introduction of a scDNA-seq review paper (multi-omics focus). Wiki audit showed strong coverage of somatic mutation / mosaicism but a gap on (i) scRNA-seq foundations and (ii) bulk-vs-single-cell framing for RNA. Three canonical papers fetched via PubMed MCP to close that gap.
+
+**Sources ingested (3)**:
+
+- `Tang_2009_NatureMethods.md` — Tang, Barbacioru, Wang et al. (Surani lab, Gurdon). First scRNA-seq from a single mouse blastomere. [DOI](https://doi.org/10.1038/nmeth.1315). PMID 19349980. *Abstract-only ingest — no PMC full text available.*
+- `Macosko_2015_Cell.md` — Macosko, Basu, Satija et al. (McCarroll/Regev/Shalek, Broad/Harvard). Drop-seq — droplet scRNA-seq of 44,808 mouse retinal cells. [DOI](https://doi.org/10.1016/j.cell.2015.05.002). PMID 26000488, PMC4481139. *Full text ingested.*
+- `Svensson_2017_NatureMethods.md` — Svensson, Natarajan, Ly et al. (Teichmann lab, EMBL-EBI/Sanger). First unified scRNA-seq power analysis: 15 protocols, 18,123 samples, ERCC spike-ins. [DOI](https://doi.org/10.1038/nmeth.4220). PMID 28263961, PMC5376499. *Full text ingested.*
+
+**New summary pages (3)**:
+- `10-Summaries/tang-2009-scrna-seq.md`
+- `10-Summaries/macosko-2015-drop-seq.md`
+- `10-Summaries/svensson-2017-power-analysis.md`
+
+**New concept pages (2)**:
+- `30-Concepts/scrna-seq.md` — foundational concept page covering bulk-vs-single-cell, history, design axes, limitations, and the review framing for "why scRNA-seq at all"
+- `30-Concepts/drop-seq.md` — Drop-seq method, bead architecture, performance numbers, successor methods
+
+**New entity page (1)**:
+- `20-Entities/fuchou-tang.md` — first author of the founding paper and current Peking University PI; cross-linked to scTrio-seq
+
+**Existing pages updated (3)**:
+- `30-Concepts/umi-molecular-barcoding.md` — added Svensson 2017 sublinear-saturation caveat (UMI exponent ≈0.8) and Drop-seq as canonical scRNA usage
+- `30-Concepts/pseudo-bulk.md` — added "pseudo-bulk ≠ original bulk" framing, connecting to scRNA-seq's resolution of the bulk-composition confound
+- `index.md` — added "Single-Cell Transcriptomics" section between Mosaicism and Multi-Omics; updated date
+
+**Notable findings / tensions surfaced**:
+- The wiki is heavily scDNA + epigenomics-focused; scRNA-seq fundamentals were a real gap for the user's intended review intro. Now closed at the foundational level.
+- Two entity pages mentioned but not yet created (intentional, low priority): `evan-macosko`, `steven-mccarroll`, `aviv-regev`, `valentine-svensson`, `sarah-teichmann`. These can be added in a future ingest or maintenance pass; their summary pages already reference them.
+- Svensson 2017's UMI-saturation finding (exponent ≈0.8) is a nuance worth flagging in any quantitative scRNA-seq discussion in the review — it complicates the "UMI = absolute molecule count" story.
+- No contradiction with existing content; all new pages cross-link cleanly into the multi-omics topic and the GoT/DR-seq/scTrio-seq family.
+
+**Method note**: PubMed MCP `get_full_text_article` returned 71k characters that exceeded the inline token limit; output was saved to a tool-results file, then extracted via `jq` into individual source files. Tang 2009 has no PMC entry → ingested at abstract level with a note in the source file.
+
+---
+
 ## 2026-05-13 — Ingest batch 19 (31 markdown source files)
 
 **Trigger**: User correctly pointed out that I had reported "corpus complete" while ignoring 37 markdown source files in `00-Sources/papers/`. Of these, 6 were already covered by prior summaries; 31 were genuinely uningested. This session closes that gap.

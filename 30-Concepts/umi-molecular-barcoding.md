@@ -4,7 +4,7 @@ title: UMI / molecular barcoding
 aliases: [unique molecular identifier, molecular tag, degenerate barcode]
 tags: [sequencing, error-correction, library-prep]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-05-14
 ---
 
 # UMI (Unique Molecular Identifier)
@@ -19,12 +19,17 @@ A 6–24-nt degenerate oligo, often paired between adapter ends so each duplex D
 
 UMIs make NGS quantitative (counts reflect input molecules, not PCR duplicates) and dramatically reduce false-positive variant calls. Foundational to duplex sequencing and to scRNA-seq where droplet-barcoded UMIs distinguish per-cell expression.
 
+**Caveat — UMI saturation is sublinear.** [[10-Summaries/svensson-2017-power-analysis|Svensson 2017]] showed across 15 scRNA-seq protocols that the best-fit relationship between input mRNA molecules and counted UMIs has an exponent of ~0.8, not 1.0 — i.e. UMI counts undercount at high expression. Causes: collision (UMI re-use when complexity is low — 4-nt UMI ⇒ only 256 codes), and template-switching artifacts. Longer UMIs (10 nt → ~1M codes) mitigate but do not eliminate this. For quantitative claims at high expression, the residual amplification bias matters.
+
 ## Examples
 
 - 12-nt random tag in Kennedy 2014 ([[10-Summaries/detecting-ultralow-frequency-mutations-by-duplex-sequencing]])
 - Combinatorial split-pool barcoding in [[10-Summaries/simultaneous-single-cell-analysis-of-5mc-and-5hmc-with-simple-seq]] and [[10-Summaries/high-throughput-single-cell-dna-methylation-and-chromatin-accessibility-co-profiling-with-splicool-seq]]
 - 8-nt SMRT-Tag barcode in [[10-Summaries/direct-transposition-of-native-dna-for-sensitive-multimodal-single-molecule-sequencing]]
+- 8-nt random UMI on every Drop-seq bead primer for PCR-duplicate collapse in droplet scRNA-seq ([[10-Summaries/macosko-2015-drop-seq]])
 
 ## Related
 
 - [[30-Concepts/duplex-sequencing]] · [[30-Concepts/combinatorial-indexing]] · [[40-Topics/duplex-sequencing]]
+- [[30-Concepts/drop-seq]] · [[30-Concepts/scrna-seq]] — UMI is now standard in droplet scRNA-seq
+- [[10-Summaries/svensson-2017-power-analysis]] — quantifies UMI saturation (exponent ~0.8)

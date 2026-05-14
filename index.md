@@ -1,7 +1,7 @@
 ---
 title: LLM Wiki — scDNA-seq & Single-Cell Epigenomics
 description: A living knowledge base on single-cell DNA sequencing, somatic mosaicism, and adjacent epigenomics.
-updated: 2026-05-13
+updated: 2026-05-14
 ---
 
 # LLM Wiki
@@ -53,6 +53,16 @@ From bisulfite sequencing to single-cell methylomes, 5hmC detection, and methyla
 **Start here →** [[30-Concepts/dna-methylation]] · [[30-Concepts/bisulfite-sequencing]] · [[30-Concepts/scbs-seq]]
 **Foundational →** [[10-Summaries/smallwood-2014-natmethods|Smallwood 2014 (scBS-seq)]] · [[10-Summaries/schubeler-2015-nature|Schübeler 2015]]
 **Lineage tracing →** [[10-Summaries/scherer-2025-nature|EPI-Clone (Scherer 2025)]] · [[10-Summaries/chen-2025-methyltree|MethylTree (Chen 2025)]]
+
+---
+
+### Single-Cell Transcriptomics (scRNA-seq foundations)
+
+The transcriptomic axis underlying every multi-omics method. Why bulk RNA-seq averages away cell-type biology, and how scRNA-seq recovers it.
+
+**Start here →** [[30-Concepts/scrna-seq]] · [[30-Concepts/drop-seq]] · [[30-Concepts/umi-molecular-barcoding]]
+**Founding →** [[10-Summaries/tang-2009-scrna-seq|Tang 2009 (first scRNA-seq)]] · [[10-Summaries/macosko-2015-drop-seq|Drop-seq (Macosko 2015)]]
+**Benchmark →** [[10-Summaries/svensson-2017-power-analysis|Svensson 2017 power analysis]]
 
 ---
 
@@ -125,4 +135,4 @@ The maintainer reads each new source in full, writes a summary, and **touches 5�
 
 ---
 
-*This wiki is a personal research tool. Papers are summarized by an LLM; always verify against the original sources. Last updated 2026-05-13.*
+*This wiki is a personal research tool. Papers are summarized by an LLM; always verify against the original sources. Last updated 2026-05-14.*

@@ -16,6 +16,12 @@ Applied to haploid *S. cerevisiae* (where single DNA molecules represent single 
 
 A foundational single-molecule long-read accessibility method (Q3 2019, predating SMAC-seq Q1 2020 and Fiber-seq Q3 2020). MeSMLR-seq established the core principle: methyltransferase footprinting + Nanopore long-reads → per-molecule combinatorial accessibility states. The yeast haploid system is uniquely powerful because one molecule = one cell, eliminating the bulk-averaging confound. Anchors §3.2 (single-molecule footprinting family, alongside SMAC-seq, Fiber-seq, SAMOSA, nanoNOMe, STAM-seq). The historical lineage: NOMe-seq (bulk bisulfite) → MeSMLR-seq (bulk Nanopore, yeast) → SMAC-seq (bulk Nanopore, dual MTase) → Fiber-seq (bulk PacBio, m6A) → single-cell Fiber-seq + targeted Fiber-seq.
 
+---
+**Source:** [DOI](https://doi.org/10.1101/gr.251116.119) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/31201211/)
+
+---
+**Source:** [DOI](https://doi.org/10.1101/gr.251116.119) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/31201211/)
+
 ## Related
 
 - [[10-Summaries/shipony-2020-smac]]

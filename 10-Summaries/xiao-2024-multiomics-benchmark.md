@@ -18,6 +18,12 @@ Key practical guidelines: **MultiVI** is best for paired-guided integration when
 
 The independent multi-method benchmark for §4's multimodal-integration subsection. Validates our placement of MultiVI, GLUE, and MOFA+ as the three pillars of the integration tool family. Important nuance for the review: choice of method depends not only on the data layout (paired/unpaired/guided) but also on the downstream question (cell-type discovery vs trajectory vs regulatory inference). Anchors §4 (multimodal integration) and §6 (limitations).
 
+---
+**Source:** [DOI](https://doi.org/10.1093/bib/bbae095) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/38493343/)
+
+---
+**Source:** [DOI](https://doi.org/10.1093/bib/bbae095) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/38493343/)
+
 ## Related
 
 - [[10-Summaries/ashuach-2023-multivi]]

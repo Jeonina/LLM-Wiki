@@ -18,6 +18,9 @@ Applied to retina snRNA-seq, colon sci-ATAC-seq, and TNBC scDNA-seq with matched
 
 A modality-agnostic variant caller that brings genotype information into transcriptome and accessibility datasets without requiring scWGS. Critical for our review's argument that population-LD-aware genotype inference is a viable route around the high cost of scWGS — but with limitations (recall is modest, somatic-SNV detection depends on cosegregation with germline LD which fails for very small clones). Anchors §4 (variant calling) and §5 (clonal hematopoiesis, ancestry-aware analysis).
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-023-01873-x) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/37592035/)
+
 ## Related
 
 - [[10-Summaries/zafar-2016-monovar]]

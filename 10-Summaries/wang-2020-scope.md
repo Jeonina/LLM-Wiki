@@ -14,6 +14,12 @@ Wang, Lin and Jiang (UNC Chapel Hill) developed **SCOPE**, a normalization and c
 
 A §4 computational-tools anchor in the scDNA-seq CNV-calling family alongside Ginkgo, HMMcopy, AneuFinder, CHISEL (Zaccaria 2021), and the more recent MEDICC2 (Kaufmann 2022). SCOPE addresses the specific failure mode that bias-correction methods can over-correct ploidy in aneuploid tumors. Important when discussing CNV-calling methodology in §4 cancer applications.
 
+---
+**Source:** [DOI](https://doi.org/10.1016/j.cels.2020.03.005) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/32437686/)
+
+---
+**Source:** [DOI](https://doi.org/10.1016/j.cels.2020.03.005) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/32437686/)
+
 ## Related
 
 - [[10-Summaries/zaccaria-2021-chisel]]

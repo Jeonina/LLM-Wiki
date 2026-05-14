@@ -14,6 +14,12 @@ Heumos, Schaar, Lance et al. (Theis lab; Helmholtz Munich + TU Munich) compiled 
 
 The standard 2023 community-consensus best-practices reference for analysis workflows. Cite when describing analysis pipelines in §4 — especially for the scRNA arm of multimodal data — because individual tool citations are too granular. Companion to Vandereyken 2023 (NRG) which covers methods/applications, and Baysoy 2023 (NRMCB) which covers technology landscape. Useful for §6 limitations when discussing analysis-tool fragmentation.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41576-023-00586-w) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/37002403/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41576-023-00586-w) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/37002403/)
+
 ## Related
 
 - [[10-Summaries/vandereyken-2023-scmultiomics-review]]

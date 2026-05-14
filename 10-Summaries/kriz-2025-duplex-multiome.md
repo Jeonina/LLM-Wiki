@@ -14,6 +14,12 @@ Kriz, Mao, Shao et al. (Walsh, Lee, Huang labs; Boston Children's/HHMI/Broad) de
 
 Major §5 (brain mosaicism applications) and §3.2/§3.5 (multimodal scDNA) anchor. Duplex-Multiome is the first method to combine duplex consensus accuracy with high-throughput nucleus-resolved chromatin+transcriptome readout — directly addressing the long-standing problem that scWGS-based mosaic-SNV detection is low-throughput and biased toward easy-to-isolate neurons. Brings the duplex-sequencing lineage (Schmitt 2012 → NanoSeq 2021 → CODEC 2023) into the snATAC+snRNA multiome era. Lineage discovery via clonal sSNVs is a direct alternative to MAESTER's mtDNA approach.
 
+---
+**Source:** [DOI](https://doi.org/10.1101/2025.05.30.656844) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/40502142/)
+
+---
+**Source:** [DOI](https://doi.org/10.1101/2025.05.30.656844) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/40502142/)
+
 ## Related
 
 - [[10-Summaries/schmitt-2012-pnas]]

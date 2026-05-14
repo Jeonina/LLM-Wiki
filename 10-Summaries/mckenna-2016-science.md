@@ -16,6 +16,12 @@ In cell-culture proof-of-principle, GESTALT generated $\sim$1,650 uniquely edite
 
 The founding combinatorial-genome-editing lineage-tracing method, parent to a family of approaches (scGESTALT, ScarTrace, LINNAEUS, MARC1, CARLIN). Synthetic-barcode lineage tracing complements natural-mutation lineage tracing (Lodato 2015, Coorens 2021, Lee-Six 2018) and methylation-epimutation lineage tracing (EPI-Clone) by occupying the high-resolution, transgenic-system axis. Anchors §1 (lineage-tracing motivation), §5 (development applications), and the methodological comparison table in §2.
 
+---
+**Source:** [DOI](https://doi.org/10.1126/science.aaf7907) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/27229144/)
+
+---
+**Source:** [DOI](https://doi.org/10.1126/science.aaf7907) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/27229144/)
+
 ## Related
 
 - [[30-Concepts/lineage-tracing-somatic-mutations]]

@@ -16,6 +16,9 @@ MethylTree addresses three challenges: (1) cell-type-specific methylation change
 
 A second methylation-based lineage-tracing approach (alongside EPI-Clone / Scherer 2025), with the distinction that MethylTree uses sparse genome-wide scBS-seq data rather than targeted scTAM-seq. Complementary trade-offs: scTAM-seq has higher per-locus depth at $\sim$453 chosen CpGs; MethylTree-on-scBS-seq has lower depth but genome-wide coverage. Anchors §3.3 (methylation-based lineage tracing) and §5 (development + hematopoiesis applications).
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-024-02567-1) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/39820752/)
+
 ## Related
 
 - [[10-Summaries/scherer-2025-nature]]

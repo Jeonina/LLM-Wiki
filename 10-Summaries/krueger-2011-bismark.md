@@ -16,6 +16,12 @@ Output includes per-read mapping + methylation call string, optionally converted
 
 The de-facto standard bisulfite-sequencing aligner in mammalian methylome studies for the past decade. Direct input to virtually every single-cell methylome paper that produces processed methylation calls — scBS-seq (Smallwood 2014), scNMT-seq (Clark 2018), scRRBS (Guo 2013), snmC-seq2/3 (Luo 2018, Liu 2021). Anchors §3.3 (methylation chemistry + processing pipeline) and §4 (computational methods — Bismark sits at the entry point of every methylation tool chain: Melissa, Epiclomal, scMET, MethylTree all consume Bismark output). Essential founding-citation for any methylation-section completeness.
 
+---
+**Source:** [DOI](https://doi.org/10.1093/bioinformatics/btr167) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/21493656/)
+
+---
+**Source:** [DOI](https://doi.org/10.1093/bioinformatics/btr167) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/21493656/)
+
 ## Related
 
 - [[10-Summaries/smallwood-2014-natmethods]]

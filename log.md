@@ -42,6 +42,13 @@ Post-retrofit: 89 of 234 summaries (38%) carry clickable source links. The remai
 
 **Tool created**: `tools/add-doi-links.py` — idempotent, dry-run-capable. Re-runnable as more `doi:` fields or `.md` clippings are added.
 
+**Follow-up (same day)**: Wrote `tools/pubmed-lookup.py` to batch-resolve the remaining 145 via NCBI E-utilities with strict author+title+year verification. After two iterations of query refinement (cleaning special chars, shortening to 4–6 significant words, requiring first-author surname match in PubMed authors list) and manual additions for 7 PubMed-indexed papers via MCP search:
+
+- **232 of 234 summaries now carry working DOI + PubMed links (99%)**.
+- 2 remaining: `example-llm-wiki.md` (placeholder seed, no real paper) and `ghorbani-2019-comp-epigenetics.md` (Journal of Applied Biology & Biotechnology, not PubMed-indexed). Both intentionally skipped.
+
+According to PubMed, all DOIs were verified by author + year + title-word overlap before insertion.
+
 **Notable findings / tensions surfaced**:
 - Frontmatter inconsistency across summaries: some have rich metadata (`doi:`, `journal:`, `published:`, `entities:`, `concepts:`), some have minimal (`sources:` + a few tags). The retrofit succeeded only where structured metadata was already present. A future maintenance pass could normalize frontmatter across the corpus.
 - 138 PDF source files in `00-Sources/papers/` carry no metadata recoverable without opening the PDF. PubMed lookup by reconstructed citation is the next logical step.

@@ -14,6 +14,12 @@ Lee-Six, Øbro, Shepherd et al. (Campbell, Stratton, Green labs; Sanger + Cambri
 
 Landmark §5 application — uses naturally accumulated somatic mutations from single-cell-derived colonies as molecular barcodes for lineage tracing, sidestepping artificial labeling. The colony-WGS approach is the direct alternative to scWGA-based scDNA-seq for high-fidelity sSNV calling. Establishes the population-genetics framework (capture-recapture analogy, mutation as molecular clock) that later applies to CH, normal tissue lineages (Coorens 2021), and embryonic development (Coorens 2024). Conceptual cousin of duplex-sequencing approaches (Schmitt 2012, NanoSeq 2021, CODEC 2023) but solves the accuracy problem with colony expansion + bulk WGS rather than per-molecule duplex consensus.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-018-0497-0) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30185910/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-018-0497-0) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30185910/)
+
 ## Related
 
 - [[10-Summaries/schmitt-2012-pnas]]

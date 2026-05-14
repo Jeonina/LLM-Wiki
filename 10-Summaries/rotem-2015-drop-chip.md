@@ -19,3 +19,6 @@ Founding paper for single-cell ChIP-seq. Establishes the DBM + barcode-merge arc
 - [[10-Summaries/buenrostro-2015-nature]]
 - [[10-Summaries/cusanovich-2015-sciatac]]
 - [[30-Concepts/single-cell-chromatin-profiling]]
+
+---
+**Source:** [DOI](https://doi.org/10.1038/nbt.3383) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/26458175/)

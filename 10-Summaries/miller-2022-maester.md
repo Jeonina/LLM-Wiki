@@ -16,6 +16,12 @@ Computational toolkit: **maegatk** uses UMIs to build consensus per starting mtR
 
 The high-throughput cousin of mtscATAC-seq (Lareau 2021): brings mtDNA-based lineage tracing into mainstream 3′ scRNA-seq workflows, which dominate cohort-scale studies. Anchors §3.1 (mtDNA as native molecular barcode) and §5 (clonal hematopoiesis applications). Important methodological point for the review: lineage tracing now coexists at scale with transcriptomic state readout in the same single cells — but achieving the same with *nuclear* somatic SNVs at scale remains unsolved.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-022-01210-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/35210612/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-022-01210-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/35210612/)
+
 ## Related
 
 - [[10-Summaries/lareau-2021-natbiotech]]

@@ -18,6 +18,9 @@ Applied to 10 datasets of ~2,000 cells each from two breast-cancer patients, CHI
 
 CHISEL filled a fundamental gap: ultra-low-coverage barcode-based scDNA platforms (10x CNV Solution, Mission Bio Tapestri DNA, DLP+) produce coverage that breaks standard allele-specific CNV callers. CHISEL is the workhorse for tumor-evolution studies at scale (1000s of cells per patient). Anchors §3.1 (allele-specific CNV from sparse scDNA), §4 (variant-calling tool family for CNVs), and §5 (cancer biology — clonal evolution, WGD timing, convergent evolution).
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-020-0661-6) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/32879467/)
+
 ## Related
 
 - [[10-Summaries/laks-2019-cell]]

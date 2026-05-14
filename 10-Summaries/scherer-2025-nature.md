@@ -16,6 +16,12 @@ Validated against LARRY-barcoded mouse HSCs, EPI-Clone correctly placed cells fr
 
 The first method to read clonal identity and cellular state from a single methylation assay, without transgenic barcoding and without requiring driver-mutation calling. Demonstrates that the methylome itself encodes both layers of information jointly. Anchors §3.3 (DNA methylation), §5 (clonal hematopoiesis / aging applications), and the conceptual point in §2 that distinct modalities (sequence-based barcodes vs methylation-based barcodes vs natural mutations) can serve interchangeably for lineage tracing, with different trade-offs.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-025-09041-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/40399669/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-025-09041-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/40399669/)
+
 ## Related
 
 - [[30-Concepts/scTAM-seq]]

@@ -16,6 +16,12 @@ Key methodological idea: **local CpG correlations are informative for imputation
 
 Companion to Epiclomal (de Souza 2020) in the §4 methylation-clustering tool family, with a different statistical philosophy: Melissa models smooth profiles per region; Epiclomal models discrete CpG calls. Both address the central scBS-seq pain point — 80–95% missing CpGs per cell. Methodological lineage continued by scMET (Kapourani 2021) which generalizes to heterogeneity quantification. Anchors §3.3 (methylation analysis) and §4 (computational methods for sparse epigenome data).
 
+---
+**Source:** [DOI](https://doi.org/10.1186/s13059-019-1665-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30898142/)
+
+---
+**Source:** [DOI](https://doi.org/10.1186/s13059-019-1665-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30898142/)
+
 ## Related
 
 - [[10-Summaries/desouza-2020-epiclomal]]

@@ -14,6 +14,12 @@ Hou, Guo, Cao, Li et al. (Tang lab; Peking University) developed **scTrio-seq**,
 
 **Founding triple-omics paper** for scDNA + scMethylome + scRNA from the same cell — preceded scNMT-seq (Clark 2018, which adds chromatin accessibility and uses scBS-seq). Anchors §3.1 (parallel multi-omics) and §5 cancer applications. The Tang lab is a major figure in Chinese single-cell genomics — Fuchou Tang co-developed scRNA-seq (2009 founding paper) and the early scRRBS methodology. Existing bibkey check needed.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/cr.2016.23) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/26902283/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/cr.2016.23) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/26902283/)
+
 ## Related
 
 - [[10-Summaries/macaulay-2015-gt-seq]]

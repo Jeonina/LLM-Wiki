@@ -16,6 +16,12 @@ Three findings. (1) All blood derives from a common ancestor predating gastrulat
 
 Demonstrates that somatic mutations + WGS of single-cell-derived colonies can quantify in-vivo stem cell population dynamics that have historically required transplantation or telomere modeling. Anchors §3.1 (single-cell-derived clones as a scDNA-seq alternative to direct scWGS), §5 (hematopoiesis applications), and the lineage-tracing motivation in §1. Complementary to Coorens 2021's LCM-WGS approach and to the EPI-Clone (Scherer 2025) methylation-based approach to the same question.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-018-0497-0) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30185910/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-018-0497-0) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30185910/)
+
 ## Related
 
 - [[30-Concepts/lineage-tracing-somatic-mutations]]

@@ -16,6 +16,12 @@ Applied to 4,238 single human prefrontal cortex nuclei, sn-m3C-seq generated joi
 
 The founding single-nucleus joint methylome + 3D-genome assay. Demonstrates that two epigenetic layers of the locus state can be measured on the same molecule of DNA, not just in the same cell. Anchors §3.5 (3D genome organization), §2 (joint-assay table), and the methylome + 3C atlas of Liu 2023. Resolves the question of whether 3D-contact maps can be clustered to cell types in primary tissue (yes — and methylation does the clustering).
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-019-0547-z) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/31501549/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-019-0547-z) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/31501549/)
+
 ## Related
 
 - [[30-Concepts/sn-m3C-seq]]

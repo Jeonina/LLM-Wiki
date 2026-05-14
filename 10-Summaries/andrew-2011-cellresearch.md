@@ -39,3 +39,7 @@ This is a comprehensive review; the load-bearing points for the wiki are:
 ## Note on filename
 
 `Andrew_2011_CellResearch.pdf` = Andrew J. Bannister (Cambridge, Gurdon Institute). Do not confuse with `AndrewB_2020_Science.pdf` (Andrew B. Stergachis — Fiber-seq) or `AndrewC_2020_Science.pdf` (Andrew C. Payne — IGS).
+
+
+---
+**Source:** [DOI](https://doi.org/10.1038/cr.2011.22) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/21321607/)

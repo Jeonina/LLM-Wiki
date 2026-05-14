@@ -16,6 +16,12 @@ Three segmentation paradigms compared: (i) **sliding-window** (e.g., Ginkgo): ru
 
 The canonical review for the §4 CNA-detection tool family. Important supplement: this review pre-dates the major CHISEL (Zaccaria 2021), MEDICC2 (Kaufmann 2022), and DLP+/laks-style ultra-low-coverage methods that defined post-2020 practice. So our review should treat Mallory 2020 as the foundational survey AND note the post-publication developments. Anchors §4 (CNA-detection tools) and §5 (cancer applications). Provides the seven-step framework that we may adopt for the §4 organization.
 
+---
+**Source:** [DOI](https://doi.org/10.1371/journal.pcbi.1008012) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/32658894/)
+
+---
+**Source:** [DOI](https://doi.org/10.1186/s13059-020-02119-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/32807205/)
+
 ## Related
 
 - [[10-Summaries/zaccaria-2021-chisel]]

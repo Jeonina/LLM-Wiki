@@ -16,6 +16,12 @@ The Dip-C imputation algorithm assigns each contact to one of the two parental h
 
 Major methodological advance over the original scHi-C (Nagano 2013) and sciHi-C (Ramani 2017): Dip-C produces $\sim$5× more contacts per cell, resolves the two parental haplotypes separately, and supports 3D model reconstruction at $\sim$100-nm spatial resolution per 20-kb chromatin bead. Anchors §3.5 (3D genome) as the haplotype-resolved single-cell-3D method against which sn-m3C-seq (Lee 2019), Liu 2023 brain atlas, and IGS (Payne 2021) are compared.
 
+---
+**Source:** [DOI](https://doi.org/10.1126/science.aat5641) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30166492/)
+
+---
+**Source:** [DOI](https://doi.org/10.1126/science.aat5641) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30166492/)
+
 ## Related
 
 - [[30-Concepts/dip-c]]

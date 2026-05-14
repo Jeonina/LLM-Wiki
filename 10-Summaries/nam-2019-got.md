@@ -14,6 +14,12 @@ Nam, Kim, Chaligne et al. (Landau, Smibert labs; NYGC + Weill Cornell + MSKCC) d
 
 Founding paper for the **GoT family** — a key §3.1/§4 reference for genotyping-aware single-cell omics. Predecessor of GoT-ChA (Izzo 2024, chromatin accessibility), GoT-IM (immune repertoire), and the Tapestri-DAb / scWGS-RNA combinations. Crucial when discussing CH/MPN applications (§5) — CALR/JAK2 mutations in HSCs are canonical CH drivers and GoT provides the cell-type-specific transcriptional consequence of those mutations. From Dan Landau's lab — major figure in CH and clonal-evolution single-cell methodology.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-019-1367-0) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/31270458/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-019-1367-0) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/31270458/)
+
 ## Related
 
 - [[10-Summaries/izzo-2024-got-cha]]

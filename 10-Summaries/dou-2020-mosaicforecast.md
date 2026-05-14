@@ -16,6 +16,9 @@ The framework has three steps: (1) generate a training set by read-based phasing
 
 A workhorse mosaic-variant caller used widely in brain-mosaicism studies post-2020 (often paired with deep WGS). Conceptual companion to MosaicHunter (Huang 2017), DeepMosaic (Yang 2023), and Strelka2-modified. Anchors §4 (variant-calling tool family) and §5 (neuropsychiatric applications). Important context for our review: the read-phasing strategy that works for bulk samples ≥250× is one of the technical reasons bulk deep-WGS remains competitive with scWGS at moderate VAFs — a tension we want to articulate.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-019-0368-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/31907404/)
+
 ## Related
 
 - [[10-Summaries/luquette-2019-natcomm]]

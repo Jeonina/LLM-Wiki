@@ -53,3 +53,9 @@ The filename `Sarah_2019_Cell.pdf` was tagged for this batch on the assumption o
 - [[10-Summaries/single-cell-chromatin-immunocleavage-sequencing-scchic-seq-to-profile-histone-modification]] — Ku/Zhao scChIC-seq.
 - [[10-Summaries/scalable-single-cell-profiling-of-chromatin-modifications-with-scicut-tag]] — Janssens/Henikoff sciCUT&Tag (40k cells/chip).
 - [[10-Summaries/scchix-seq-infers-dynamic-relationships-between-histone-modifications-in-single-cells]] — scChIX-seq.
+
+---
+**Source:** [DOI](https://doi.org/10.1016/j.cell.2019.03.014) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30955888/)
+
+---
+**Source:** [DOI](https://doi.org/10.1016/j.cell.2019.03.014) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30955888/)

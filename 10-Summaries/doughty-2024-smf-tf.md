@@ -21,3 +21,6 @@ Anchors §3.3 (single-molecule footprinting — SMAC-seq/Fiber-seq/nanoNOMe/SAMO
 - [[10-Summaries/peter-2024-brain-fiberseq]]
 - [[10-Summaries/bohaczuk-2024-targeted-fiberseq]]
 - [[30-Concepts/single-molecule-footprinting]]
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-024-08219-w) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/39567683/)

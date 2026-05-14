@@ -14,6 +14,9 @@ Campbell, Shaw, Stankiewicz and Lupski (Baylor College of Medicine) reviewed som
 
 A canonical §1/§2 introductory citation on the **clinical and developmental** framing of mosaicism — complements the **technical** framing of Gawad 2016 and Evrony 2021. Particularly useful when introducing why scDNA-seq is needed (mosaicism is everywhere but invisible to bulk). Existing bibkey `campbell2015` already present. Lupski lab is a clinical-genetics powerhouse — the review reflects the disease-genetics rather than method-development perspective.
 
+---
+**Source:** [DOI](https://doi.org/10.1016/j.tig.2015.07.004) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/29482722/)
+
 ## Related
 
 - [[10-Summaries/forsberg-2017-mosaicism-review]]

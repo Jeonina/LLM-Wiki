@@ -44,3 +44,6 @@ sources: ["00-Sources/papers/Chongyuan_2018_NatureCommunications.pdf"]
 - [[hongshan-2013-genomeresearch]] — scRRBS, predecessor single-cell methylation method (Tang lab).
 - [[eran-2025-neuron]] — Mukamel 2025: uses snmC-seq2 atlas data for aneuploidy detection.
 - [[scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]] — adds chromatin + RNA arms.
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41467-018-06355-2) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30237449/)

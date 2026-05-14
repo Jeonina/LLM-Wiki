@@ -16,6 +16,9 @@ The piece is methodologically relevant because most single-cell 3D-genome assays
 
 Provides context for the 3D-genome layer of the locus state at a specific high-information region — rRNA gene clusters — that is biologically important but technically underserved by standard scHi-C/IGS methods. Anchors §3.5 (3D genome) as a reminder of the regions where current single-cell methods have limited resolution. Tangential to the central mosaicism focus but relevant for §6 (limitations).
 
+---
+**Source:** [DOI](https://doi.org/10.3390/cells8060579) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/31212844/)
+
 ## Related
 
 - [[40-Topics/3d-genome-organization]]

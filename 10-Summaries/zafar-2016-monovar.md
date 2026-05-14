@@ -18,6 +18,9 @@ Benchmarked against GATK HaplotypeCaller, Samtools, SOAPsnp, SNVMix2, and Varsca
 
 Founding paper for scDNA-seq variant calling. Direct predecessor of SCcaller (Dong 2017, adds local-bias modeling), SCAN-SNV (more refined statistical model), LiRA (Luquette 2019, adds linkage-disequilibrium phasing), and Monopogen (Dou 2024, generalizes to any modality). Existing `zafar2016` bibkey already present. Anchors §4 (variant-calling tool family — Monovar is the canonical first reference).
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nmeth.3835) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/27088313/)
+
 ## Related
 
 - [[10-Summaries/dong-2017-sccaller]]

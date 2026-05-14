@@ -16,6 +16,12 @@ Key design choices: (i) accommodates the very high allelic-dropout rates of scWG
 
 A founding paper for scDNA-seq tumor phylogeny inference, alongside OncoNEM and Sci-Phi. SCITE established the now-standard pattern of jointly inferring tree topology AND error parameters from the same noisy data — a critical methodological move given that scWGS error rates are too high and too variable to set as fixed priors. Conceptual ancestor of SCARLET (Satas 2020), B-SCITE, and most later single-cell phylogeny methods. Anchors §4 (phylogenetic methods family) and §5 (cancer-evolution applications). Important context: the Beerenwinkel lab is one of the three main computational hubs (alongside Raphael at Princeton and Marschall/Korbel at EMBL) for single-cell tumor phylogenetics.
 
+---
+**Source:** [DOI](https://doi.org/10.1186/s13059-016-0936-x) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/27149953/)
+
+---
+**Source:** [DOI](https://doi.org/10.1186/s13059-016-0936-x) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/27149953/)
+
 ## Related
 
 - [[10-Summaries/satas-2020-scarlet]]

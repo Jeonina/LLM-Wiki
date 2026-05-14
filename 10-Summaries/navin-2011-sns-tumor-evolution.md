@@ -14,6 +14,12 @@ Navin, Kendall, Troge et al. (Wigler lab, CSHL; Navin's PhD work) introduced **s
 
 **Founding paper for single-cell tumor genomics** — predates Monovar (Zafar 2016), SCITE (Jahn 2016), and the entire tumor-scDNA computational ecosystem. Every subsequent tumor scDNA-seq paper traces back to this. The punctuated-evolution model proposed here has been hugely influential — though contested by later gradual-evolution proponents. Must-cite §1/§5 reference when discussing tumor scDNA-seq history. From the Wigler lab (CSHL) — Navin then established his own lab at MD Anderson.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nature09807) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/21399628/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/nature09807) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/21399628/)
+
 ## Related
 
 - [[10-Summaries/kim-2018-tnbc-chemoresistance]]

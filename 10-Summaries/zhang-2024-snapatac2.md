@@ -16,6 +16,9 @@ Benchmarked across scATAC-seq, scRNA-seq, scHi-C, and multimodal (10x Multiome) 
 
 A major computational anchor for §4: SnapATAC2 is the current best-in-class scalable embedder for scATAC-seq and multimodal omics. Companion to ArchR/Signac/EpiScanpy in the analysis-tool section. Especially relevant for cohort-scale mosaicism studies (e.g., brain banks with millions of nuclei) where O(N²) memory growth is the bottleneck. The cross-modal versatility (scHi-C, scATAC, multimodal) supports our argument for a unified locus-state analysis framework rather than modality-specific siloed tools.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-023-02139-9) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/38191932/)
+
 ## Related
 
 - [[10-Summaries/stuart-2021-signac]]

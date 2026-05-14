@@ -16,6 +16,9 @@ Validation strategy: compare SCMDA-amplified single cells against unamplified ki
 
 A foundational scWGS variant-caller paired with a chemistry improvement (SCMDA). SCcaller is the gold-standard for variant calling in MDA-amplified single cells where matched kindred clones are unavailable; conceptual ancestor of SCAN-SNV (which adds a more refined statistical model) and LiRA (which uses linkage-disequilibrium-based phasing). Anchors §4 (variant-calling tool family) and §3.1 (scWGA chemistry-quality discussion). Important historical context: this is the Vijg-lab paper that established quantitative benchmarking of scWGS variant calling against unamplified clones — the methodological pattern reused in nearly all later scWGS-caller papers.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nmeth.4227) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/28319112/)
+
 ## Related
 
 - [[10-Summaries/luquette-2019-natcomm]]

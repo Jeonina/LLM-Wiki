@@ -16,6 +16,12 @@ The review consolidates the case that each neuron may harbor hundreds of somatic
 
 Sets the conceptual frame for treating brain mosaicism as both a contributor to typical neuronal diversity and a candidate mechanism for neuropsychiatric disease. Anchors §1, §5 (neuroscience applications), and the consortium-scale data context cited in §6.
 
+---
+**Source:** [DOI](https://doi.org/10.1126/science.aal1641) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/28450582/)
+
+---
+**Source:** [DOI](https://doi.org/10.1126/science.aal1641) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/28450582/)
+
 ## Related
 
 - [[40-Topics/brain-somatic-mosaicism]]

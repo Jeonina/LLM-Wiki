@@ -16,6 +16,9 @@ Validation on differentiating mouse EL16 ESCs: 61 of 70 cells passed QC for all 
 
 Founding triple-omics single-cell assay; the most-cited reference for "joint epigenome readout in single cells works." Anchors §3.3 (joint-methylome assays) and §3.2 (accessibility joint readouts), and is the natural predecessor of sn-m3C-seq (which substitutes 3D contact for transcription). Demonstrates the central technical principle reused across the field: methyltransferase-based labeling of accessibility is compatible with bisulfite chemistry.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41467-018-03149-4) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/29472610/)
+
 ## Related
 
 - [[10-Summaries/angermueller-2017-genomebiol]]

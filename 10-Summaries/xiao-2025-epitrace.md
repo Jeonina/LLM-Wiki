@@ -18,6 +18,12 @@ Applications shown: hematopoiesis trajectory recovery, organ-development tracing
 
 A 2025 entrant in the lineage-tracing / cell-age space that complements mutation-based (LiRA, SCAN-SNV), epimutation-based (EPI-Clone, MethylTree), and mtDNA-based (MAESTER) approaches. The novelty is using **scATAC-seq alone** for mitotic-age inference — making the assay compatible with chromatin-state cohorts that lack methylation data. Anchors §3.3 (methylation/epimutation-based clocks; EpiTrace is the chromatin-axis sibling), §4 (computational lineage-tracing tools), and §5 (development + cancer applications).
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-024-02241-z) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/38724668/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-024-02241-z) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/38724668/)
+
 ## Related
 
 - [[10-Summaries/scherer-2025-nature]]

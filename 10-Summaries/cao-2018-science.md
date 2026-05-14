@@ -18,6 +18,9 @@ Applied to A549 lung adenocarcinoma cells undergoing dexamethasone-induced gluco
 
 Founding joint scATAC + scRNA method, predating SHARE-seq, Paired-seq, and 10x multiome. Demonstrated at scale that combinatorial indexing supports joint-modality readouts and that the joint readout reveals regulatory dynamics neither modality alone exposes (chromatin accessibility leads transcription in the dexamethasone response). Anchors §2 (locus-state joint-assay table), §3.2 (accessibility), and §4 (integration tools).
 
+---
+**Source:** [DOI](https://doi.org/10.1126/science.aau0730) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30166440/)
+
 ## Related
 
 - [[30-Concepts/sci-car]]

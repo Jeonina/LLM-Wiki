@@ -16,6 +16,9 @@ Application sections cover: intratumor heterogeneity (ITH) characterization, met
 
 A dedicated review of CNA-phylogenetic methods complementing Mallory 2020 (CNA-detection methods) and Vandereyken/Voet 2023 (multi-omics overall). Anchors §4 (phylogenetic methods family) and §5 (cancer-evolution applications). Useful framing for the review's §4 organization: separates CNA-only methods (MEDICC2) from joint SNV+CNA methods (SCARLET) from SV-aware methods.
 
+---
+**Source:** [DOI](https://doi.org/10.1016/j.cpt.2024.04.003) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/39872371/)
+
 ## Related
 
 - [[10-Summaries/mallory-2020-cna-review]]

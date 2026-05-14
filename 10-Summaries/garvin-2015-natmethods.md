@@ -16,6 +16,9 @@ The pipeline: bin reads into genome-wide regions, perform GC-bias correction, se
 
 A widely-used early single-cell CNV pipeline that established the read-binning + GC-correction + integer-segmentation approach now standard in DLP+/Strand-seq/scDNA workflows. Anchors §4 (computational framework, CNV branch). Complement to the SNV-calling tools (Monovar, SCAN-SNV, LiRA, ProSolo) — same data-quality problems, different downstream question.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nmeth.3578) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/26344043/)
+
 ## Related
 
 - [[30-Concepts/single-cell-cnv]]

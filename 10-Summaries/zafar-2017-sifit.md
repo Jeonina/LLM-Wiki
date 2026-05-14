@@ -16,6 +16,9 @@ The likelihood model includes: (i) error terms for SCS-specific noise (ADO, FP r
 
 A key methodological advance over SCITE — SiFit's finite-sites accommodation is critical for tumors with active chromosomal instability (most solid tumors). Conceptual predecessor of SCARLET (Satas 2020), which formalizes the SNV-loss/CN-loss joint modeling. Existing `zafar2017` bibkey already present. Anchors §4 (phylogenetic methods family) and §5 (cancer applications). The Zafar 2016 Monovar + Zafar 2017 SiFit pair is the canonical Nakhleh-Navin contribution to scDNA-seq computational methodology.
 
+---
+**Source:** [DOI](https://doi.org/10.1186/s13059-017-1311-2) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/28927434/)
+
 ## Related
 
 - [[10-Summaries/zafar-2016-monovar]]

@@ -14,6 +14,12 @@ Macaulay, Haerty, Kumar, Li, Hu et al. (Voet, Ponting labs; Sanger + Oxford + Le
 
 Founding paper for the entire single-cell **multimodal scDNA+scRNA** family. Direct predecessor of scMT-seq (DNA-methylation + RNA), DR-seq, sci-CAR (chromatin + RNA), scNMT-seq (Clark 2018, triple), and ultimately the 10x Multiome. Anchors §3.1 (parallel scDNA+scRNA) — every subsequent multi-omics paper must reference G&T-seq as the conceptual origin. From the Voet lab (Leuven) — major Strand-seq/scTRIP backbone — and shared infrastructure with the Sanger single-cell genomics centre.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nmeth.3370) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/25915121/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/nmeth.3370) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/25915121/)
+
 ## Related
 
 - [[10-Summaries/clark-2018-scnmt]]

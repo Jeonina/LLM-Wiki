@@ -1,0 +1,611 @@
+{
+  "resolved": {
+    "chongyuan-2018-naturecommunications.md": {
+      "doi": "10.1038/s41467-018-06355-2",
+      "pmid": "30237449",
+      "matched_title": "Robust single-cell DNA methylome profiling with snmC-seq2."
+    },
+    "clark-2018-scnmt.md": {
+      "doi": "10.1038/s41467-018-03149-4",
+      "pmid": "29472610",
+      "matched_title": "scNMT-seq enables joint profiling of chromatin accessibility DNA methylation and transcription in single cells."
+    },
+    "coorens-2021-nature.md": {
+      "doi": "10.1038/s41586-021-03790-y",
+      "pmid": "34433963",
+      "matched_title": "Extensive phylogenies of human development inferred from somatic mutations."
+    },
+    "cortes-lopez-2023-cellstemcell.md": {
+      "doi": "10.1016/j.stem.2023.07.012",
+      "pmid": "37582363",
+      "matched_title": "Single-cell multi-omics defines the cell-type-specific impact of splicing aberrations in human hematopoietic clonal outgrowths."
+    },
+    "cui-2024-natmethods.md": {
+      "doi": "10.1038/s41592-024-02201-0",
+      "pmid": "38409223",
+      "matched_title": "scGPT: toward building a foundation model for single-cell multi-omics using generative AI."
+    },
+    "cusanovich-2015-science.md": {
+      "doi": "10.1126/science.aab1601",
+      "pmid": "25953818",
+      "matched_title": "Multiplex single cell profiling of chromatin accessibility by combinatorial cellular indexing."
+    },
+    "debourcy-2014-plosone.md": {
+      "doi": "10.1371/journal.pone.0105585",
+      "pmid": "25136831",
+      "matched_title": "A quantitative comparison of single-cell whole genome amplification methods."
+    },
+    "derop-2024-natbiotech.md": {
+      "doi": "10.1038/s41587-023-01881-x",
+      "pmid": "37537502",
+      "matched_title": "Systematic benchmarking of single-cell ATAC-sequencing protocols."
+    },
+    "dey-2015-dr-seq.md": {
+      "doi": "10.1038/nbt.3129",
+      "pmid": "25599178",
+      "matched_title": "Integrated genome and transcriptome sequencing of the same cell."
+    },
+    "dong-2017-sccaller.md": {
+      "doi": "10.1038/nmeth.4227",
+      "pmid": "28319112",
+      "matched_title": "Accurate identification of single-nucleotide variants in whole-genome-amplified single cells."
+    },
+    "dou-2020-mosaicforecast.md": {
+      "doi": "10.1038/s41587-019-0368-8",
+      "pmid": "31907404",
+      "matched_title": "Accurate detection of mosaic variants in sequencing data without matched controls."
+    },
+    "dou-2023-monopogen.md": {
+      "doi": "10.1038/s41587-023-01873-x",
+      "pmid": "37592035",
+      "matched_title": "Single-nucleotide variant calling in single-cell sequencing data with Monopogen."
+    },
+    "doughty-2024-nature.md": {
+      "doi": "10.1038/s41586-024-08219-w",
+      "pmid": "39567683",
+      "matched_title": "Single-molecule states link transcription factor binding to gene expression."
+    },
+    "eran-2025-neuron.md": {
+      "doi": "10.1016/j.neuron.2025.08.006",
+      "pmid": "40907475",
+      "matched_title": "Cell-type-specific enrichment of somatic aneuploidy in the mammalian brain."
+    },
+    "evrony-2021-scDNA-applications-review.md": {
+      "doi": "10.1146/annurev-genom-111320-090436",
+      "pmid": "33722077",
+      "matched_title": "Applications of Single-Cell DNA Sequencing."
+    },
+    "falconer-2012-natmethods.md": {
+      "doi": "10.1038/nmeth.2206",
+      "pmid": "23042453",
+      "matched_title": "DNA template strand sequencing of single-cells maps genomic rearrangements at high resolution."
+    },
+    "federico-2019-nature.md": {
+      "doi": "10.1038/s41586-019-1198-z",
+      "pmid": "31092926",
+      "matched_title": "Epigenetic evolution and lineage histories of chronic lymphocytic leukaemia."
+    },
+    "federico-2021-nature.md": {
+      "doi": "10.1038/s41586-021-03477-4",
+      "pmid": "33911282",
+      "matched_title": "Somatic mutation landscapes at single-molecule resolution."
+    },
+    "forsberg-2017-mosaicism-review.md": {
+      "doi": "10.1038/nrg.2016.145",
+      "pmid": "27941868",
+      "matched_title": "Mosaicism in health and disease - clones picking up speed."
+    },
+    "frankell-2019-eac-landscape.md": {
+      "doi": "10.1038/s41588-018-0331-5",
+      "pmid": "30718927",
+      "matched_title": "The landscape of selection in 551 esophageal adenocarcinomas defines genomic biomarkers for the clinic."
+    },
+    "frankell-2019-natgenet.md": {
+      "doi": "10.1038/s41588-018-0331-5",
+      "pmid": "30718927",
+      "matched_title": "The landscape of selection in 551 esophageal adenocarcinomas defines genomic biomarkers for the clinic."
+    },
+    "fu-2025-longread-methylation.md": {
+      "doi": "10.1038/s41576-025-00822-5",
+      "pmid": "40155770",
+      "matched_title": "Computational analysis of DNA methylation from long-read sequencing."
+    },
+    "garrison-2023-bsmn-data.md": {
+      "doi": "10.1038/s41597-023-02645-7",
+      "pmid": "37985666",
+      "matched_title": "Genomic data resources of the Brain Somatic Mosaicism Network for neuropsychiatric diseases."
+    },
+    "garvin-2015-natmethods.md": {
+      "doi": "10.1038/nmeth.3578",
+      "pmid": "26344043",
+      "matched_title": "Interactive analysis and assessment of single-cell copy-number variations."
+    },
+    "gawad-2016-scgenome-review.md": {
+      "doi": "10.1038/nrg.2015.16",
+      "pmid": "26806412",
+      "matched_title": "Single-cell genome sequencing: current state of the science."
+    },
+    "gong-2021-cobolt.md": {
+      "doi": "10.1186/s13059-021-02556-z",
+      "pmid": "34963480",
+      "matched_title": "Cobolt: integrative analysis of multimodal single-cell sequencing data."
+    },
+    "gong-2021-genomebiol.md": {
+      "doi": "10.1186/s13059-021-02556-z",
+      "pmid": "34963480",
+      "matched_title": "Cobolt: integrative analysis of multimodal single-cell sequencing data."
+    },
+    "gonzalez-pena-2021-pnas.md": {
+      "doi": "10.1073/pnas.2024176118",
+      "pmid": "34099548",
+      "matched_title": "Accurate genomic variant detection in single cells with primary template-directed amplification."
+    },
+    "ha-2023-natmethods.md": {
+      "doi": "10.1038/s41592-023-02043-2",
+      "pmid": "37828153",
+      "matched_title": "Comprehensive benchmarking and guidelines of mosaic variant calling strategies."
+    },
+    "he-2024-foodie.md": {
+      "doi": "10.1073/pnas.2423270121",
+      "pmid": "39689177",
+      "matched_title": "Genome-wide single-cell and single-molecule footprinting of transcription factors with deaminase."
+    },
+    "heumos-2023-best-practices.md": {
+      "doi": "10.1038/s41576-023-00586-w",
+      "pmid": "37002403",
+      "matched_title": "Best practices for single-cell analysis across modalities."
+    },
+    "hongshan-2013-genomeresearch.md": {
+      "doi": "10.1101/gr.161679.113",
+      "pmid": "24179143",
+      "matched_title": "Single-cell methylome landscapes of mouse embryonic stem cells and early embryos analyzed using reduced representation bisulfite sequencing."
+    },
+    "hou-2016-sctrio-seq.md": {
+      "doi": "10.1038/cr.2016.23",
+      "pmid": "26902283",
+      "matched_title": "Single-cell triple omics sequencing reveals genetic, epigenetic, and transcriptomic heterogeneity in hepatocellular carcinomas."
+    },
+    "hsieh-2026-mtdna-mosaicism.md": {
+      "doi": "10.1038/s41467-026-70399-y",
+      "pmid": "41839886",
+      "matched_title": "Single-cell multi-omic analysis of mitochondrial mutational mosaicism and dynamics."
+    },
+    "huang-2017-mosaichunter.md": {
+      "doi": "10.1093/nar/gkx024",
+      "pmid": "28132024",
+      "matched_title": "MosaicHunter: accurate detection of postzygotic single-nucleotide mosaicism through next-generation sequencing of unpaired, trio, and paired samples."
+    },
+    "hyobin-2023-naturebiotechnology.md": {
+      "doi": "10.1038/s41587-022-01551-4",
+      "pmid": "36424487",
+      "matched_title": "Functional analysis of structural variants in single cells using Strand-seq."
+    },
+    "iqbal-2023-methylome-review.md": {
+      "doi": "10.1016/j.gpb.2022.05.007",
+      "pmid": "35718270",
+      "matched_title": "Computational Methods for Single-cell DNA Methylome Analysis."
+    },
+    "izzo-2024-got-cha.md": {
+      "doi": "10.1038/s41586-024-07388-y",
+      "pmid": "38720070",
+      "matched_title": "Mapping genotypes to chromatin accessibility profiles in single cells."
+    },
+    "jahn-2016-scite.md": {
+      "doi": "10.1186/s13059-016-0936-x",
+      "pmid": "27149953",
+      "matched_title": "Tree inference for single-cell data."
+    },
+    "jeffrey-2021-naturegenetics.md": {
+      "doi": "10.1038/s41588-021-00850-x",
+      "pmid": "33790476",
+      "matched_title": "Author Correction: ArchR is a scalable software package for integrative single-cell chromatin accessibility analysis."
+    },
+    "jin-2015-nature.md": {
+      "doi": "10.1038/nature15740",
+      "pmid": "26605532",
+      "matched_title": "Genome-wide detection of DNase I hypersensitive sites in single cells and FFPE tissue samples."
+    },
+    "kapourani-2019-melissa.md": {
+      "doi": "10.1186/s13059-019-1665-8",
+      "pmid": "30898142",
+      "matched_title": "Melissa: Bayesian clustering and imputation of single-cell methylomes."
+    },
+    "kapourani-2021-scmet.md": {
+      "doi": "10.1186/s13059-021-02329-8",
+      "pmid": "33879195",
+      "matched_title": "scMET: Bayesian modeling of DNA methylation heterogeneity at single-cell resolution."
+    },
+    "kaufmann-2022-medicc2.md": {
+      "doi": "10.1186/s13059-022-02794-9",
+      "pmid": "36376909",
+      "matched_title": "MEDICC2: whole-genome doubling aware copy-number phylogenies for cancer evolution."
+    },
+    "kim-2018-cell.md": {
+      "doi": "10.1016/j.cell.2018.03.041",
+      "pmid": "29681456",
+      "matched_title": "Chemoresistance Evolution in Triple-Negative Breast Cancer Delineated by Single-Cell Sequencing."
+    },
+    "kim-2018-tnbc-chemoresistance.md": {
+      "doi": "10.1016/j.cell.2018.03.041",
+      "pmid": "29681456",
+      "matched_title": "Chemoresistance Evolution in Triple-Negative Breast Cancer Delineated by Single-Cell Sequencing."
+    },
+    "klemm-2019-chromatin-accessibility-review.md": {
+      "doi": "10.1038/s41576-018-0089-8",
+      "pmid": "30675018",
+      "matched_title": "Chromatin accessibility and the regulatory epigenome."
+    },
+    "kriz-2025-duplex-multiome.md": {
+      "doi": "10.1101/2025.05.30.656844",
+      "pmid": "40502142",
+      "matched_title": "Cell-type-specific patterns and consequences of somatic mutation in development and aging brain."
+    },
+    "krueger-2011-bismark.md": {
+      "doi": "10.1093/bioinformatics/btr167",
+      "pmid": "21493656",
+      "matched_title": "Bismark: a flexible aligner and methylation caller for Bisulfite-Seq applications."
+    },
+    "lahnemann-2021-natcomm.md": {
+      "doi": "10.1038/s41467-021-26938-w",
+      "pmid": "34795237",
+      "matched_title": "Accurate and scalable variant calling from single cell DNA sequencing data with ProSolo."
+    },
+    "lee-2019-natmethods.md": {
+      "doi": "10.1038/s41592-019-0547-z",
+      "pmid": "31501549",
+      "matched_title": "Simultaneous profiling of 3D genome structure and DNA methylation in single human cells."
+    },
+    "lee-2020-nanonome.md": {
+      "doi": "10.1038/s41592-020-01000-7",
+      "pmid": "33230324",
+      "matched_title": "Simultaneous profiling of chromatin accessibility and methylation on human cell lines with nanopore sequencing."
+    },
+    "lee-six-2018-hsc-dynamics.md": {
+      "doi": "10.1038/s41586-018-0497-0",
+      "pmid": "30185910",
+      "matched_title": "Population dynamics of normal human blood inferred from somatic mutations."
+    },
+    "lee-six-2018-nature.md": {
+      "doi": "10.1038/s41586-018-0497-0",
+      "pmid": "30185910",
+      "matched_title": "Population dynamics of normal human blood inferred from somatic mutations."
+    },
+    "lim-2020-cancercell.md": {
+      "doi": "10.1016/j.ccell.2020.03.008",
+      "pmid": "32289270",
+      "matched_title": "Advancing Cancer Research and Medicine with Single-Cell Genomics."
+    },
+    "liu-2023-mouse-brain-methylome-3d.md": {
+      "doi": "10.1038/s41586-023-06805-y",
+      "pmid": "38092913",
+      "matched_title": "Single-cell DNA methylome and 3D multi-omic atlas of the adult mouse brain."
+    },
+    "liu-2023-nature.md": {
+      "doi": "10.1038/s41586-023-06805-y",
+      "pmid": "38092913",
+      "matched_title": "Single-cell DNA methylome and 3D multi-omic atlas of the adult mouse brain."
+    },
+    "lodato-2015-science.md": {
+      "doi": "10.1126/science.aab1785",
+      "pmid": "26430121",
+      "matched_title": "Somatic mutation in single human neurons tracks developmental and transcriptional history."
+    },
+    "lodato-2018-science.md": {
+      "doi": "10.1126/science.aao4426",
+      "pmid": "29217584",
+      "matched_title": "Aging and neurodegeneration are associated with increased mutations in single human neurons."
+    },
+    "lu-2024-cnaphylogeny-review.md": {
+      "doi": "10.1016/j.cpt.2024.04.003",
+      "pmid": "39872371",
+      "matched_title": "Cancer phylogenetic inference using copy number alterations detected from DNA sequencing data."
+    },
+    "luo-2018-snmc-seq2.md": {
+      "doi": "10.1038/s41467-018-06355-2",
+      "pmid": "30237449",
+      "matched_title": "Robust single-cell DNA methylome profiling with snmC-seq2."
+    },
+    "luo-2024-scatac-benchmark.md": {
+      "doi": "10.1186/s13059-024-03356-x",
+      "pmid": "39152456",
+      "matched_title": "Benchmarking computational methods for single-cell chromatin data analysis."
+    },
+    "luquette-2019-natcomm.md": {
+      "doi": "10.1038/s41467-019-11857-8",
+      "pmid": "31467286",
+      "matched_title": "Identification of somatic mutations in single cell DNA-seq using a spatial model of allelic imbalance."
+    },
+    "ma-2020-cell.md": {
+      "doi": "10.1016/j.cell.2020.09.056",
+      "pmid": "33098772",
+      "matched_title": "Chromatin Potential Identified by Shared Single-Cell Profiling of RNA and Chromatin."
+    },
+    "macaulay-2014-plosgenet.md": {
+      "doi": "10.1371/journal.pgen.1004126",
+      "pmid": "24497842",
+      "matched_title": "Single cell genomics: advances and future perspectives."
+    },
+    "macaulay-2015-gt-seq.md": {
+      "doi": "10.1038/nmeth.3370",
+      "pmid": "25915121",
+      "matched_title": "G&T-seq: parallel sequencing of single-cell genomes and transcriptomes."
+    },
+    "mallory-2020-cna-review.md": {
+      "doi": "10.1186/s13059-020-02119-8",
+      "pmid": "32807205",
+      "matched_title": "Methods for copy number aberration detection from single-cell DNA-sequencing data."
+    },
+    "marek-2023-naturebiotechnology.md": {
+      "doi": "10.1038/s41587-022-01535-4",
+      "pmid": "36536148",
+      "matched_title": "Multimodal chromatin profiling using nanobody-based single-cell CUT&Tag."
+    },
+    "mcconnell-2017-science.md": {
+      "doi": "10.1126/science.aal1641",
+      "pmid": "28450582",
+      "matched_title": "Intersection of diverse neuronal genomes and neuropsychiatric disease: The Brain Somatic Mosaicism Network."
+    },
+    "mckenna-2016-science.md": {
+      "doi": "10.1126/science.aaf7907",
+      "pmid": "27229144",
+      "matched_title": "Whole-organism lineage tracing by combinatorial and cumulative genome editing."
+    },
+    "miller-2022-maester.md": {
+      "doi": "10.1038/s41587-022-01210-8",
+      "pmid": "35210612",
+      "matched_title": "Mitochondrial variant enrichment from high-throughput single-cell RNA sequencing resolves clonal populations."
+    },
+    "miller-2022-nature.md": {
+      "doi": "10.1038/s41586-022-04640-1",
+      "pmid": "35444284",
+      "matched_title": "Somatic genomic changes in single Alzheimer's disease neurons."
+    },
+    "mukamel-2025-aneuploidy-brain.md": {
+      "doi": "10.1016/j.neuron.2025.08.006",
+      "pmid": "40907475",
+      "matched_title": "Cell-type-specific enrichment of somatic aneuploidy in the mammalian brain."
+    },
+    "nagano-2013-nature.md": {
+      "doi": "10.1038/nature12593",
+      "pmid": "24067610",
+      "matched_title": "Single-cell Hi-C reveals cell-to-cell variability in chromosome structure."
+    },
+    "nam-2019-got.md": {
+      "doi": "10.1038/s41586-019-1367-0",
+      "pmid": "31270458",
+      "matched_title": "Somatic mutations and cell identity linked by Genotyping of Transcriptomes."
+    },
+    "nam-2022-natgenet.md": {
+      "doi": "10.1038/s41588-022-01179-9",
+      "pmid": "36138229",
+      "matched_title": "Single-cell multi-omics of human clonal hematopoiesis reveals that DNMT3A R882 mutations perturb early progenitor states through selective hypomethylation."
+    },
+    "navin-2011-sns-tumor-evolution.md": {
+      "doi": "10.1038/nature09807",
+      "pmid": "21399628",
+      "matched_title": "Tumour evolution inferred by single-cell sequencing."
+    },
+    "nishioka-2019-molpsych.md": {
+      "doi": "10.1038/s41380-018-0129-y",
+      "pmid": "30087451",
+      "matched_title": "Somatic mutations in the human brain: implications for psychiatric research."
+    },
+    "pellegrino-2018-tapestri.md": {
+      "doi": "10.1101/gr.232272.117",
+      "pmid": "30087104",
+      "matched_title": "High-throughput single-cell DNA sequencing of acute myeloid leukemia tumors with droplet microfluidics."
+    },
+    "pott-2017-elife.md": {
+      "doi": "10.7554/eLife.23203",
+      "pmid": "28653622",
+      "matched_title": "Simultaneous measurement of chromatin accessibility, DNA methylation, and nucleosome phasing in single cells."
+    },
+    "sanders-2020-sctrip.md": {
+      "doi": "10.1038/s41587-019-0366-x",
+      "pmid": "31873213",
+      "matched_title": "Single-cell analysis of structural variations and complex rearrangements with tri-channel processing."
+    },
+    "sarah-2019-cell.md": {
+      "doi": "10.1016/j.cell.2019.03.014",
+      "pmid": "30955888",
+      "matched_title": "Profiling of Pluripotency Factors in Single Cells and Early Embryos."
+    },
+    "scherer-2025-nature.md": {
+      "doi": "10.1038/s41586-025-09041-8",
+      "pmid": "40399669",
+      "matched_title": "Clonal tracing with somatic epimutations reveals dynamics of blood ageing."
+    },
+    "schmitt-2012-pnas.md": {
+      "doi": "10.1073/pnas.1208715109",
+      "pmid": "22853953",
+      "matched_title": "Detection of ultra-rare mutations by next-generation sequencing."
+    },
+    "schubeler-2015-methylation-review.md": {
+      "doi": "10.1038/nature14192",
+      "pmid": "25592537",
+      "matched_title": "Function and information content of DNA methylation."
+    },
+    "schubeler-2015-nature.md": {
+      "doi": "10.1038/nature14192",
+      "pmid": "25592537",
+      "matched_title": "Function and information content of DNA methylation."
+    },
+    "shao-2025-scDNA-mosaicism-review.md": {
+      "doi": "10.1038/s41576-025-00832-3",
+      "pmid": "40281095",
+      "matched_title": "Advances in single-cell DNA sequencing enable insights into human somatic mosaicism."
+    },
+    "shipony-2020-smac.md": {
+      "doi": "10.1038/s41592-019-0730-2",
+      "pmid": "32042188",
+      "matched_title": "Long-range single-molecule mapping of chromatin accessibility in eukaryotes."
+    },
+    "smallwood-2014-natmethods.md": {
+      "doi": "10.1038/nmeth.3035",
+      "pmid": "25042786",
+      "matched_title": "Single-cell genome-wide bisulfite sequencing for assessing epigenetic heterogeneity."
+    },
+    "smith-2013-methylation-development.md": {
+      "doi": "10.1038/nrg3354",
+      "pmid": "23400093",
+      "matched_title": "DNA methylation: roles in mammalian development."
+    },
+    "stuart-2021-natmethods.md": {
+      "doi": "10.1038/s41592-021-01282-5",
+      "pmid": "34725479",
+      "matched_title": "Single-cell chromatin state analysis with Signac."
+    },
+    "sun-2025-scmitomut.md": {
+      "doi": "10.1093/bib/bbaf072",
+      "pmid": "40036721",
+      "matched_title": "scMitoMut for calling mitochondrial lineage-related mutations in single cells."
+    },
+    "swanson-2025-daf-seq.md": {
+      "doi": "10.1038/s41587-025-02914-3",
+      "pmid": "41339527",
+      "matched_title": "Mapping single-cell diploid chromatin fiber architectures using DAF-seq."
+    },
+    "taejeong-2018-science.md": {
+      "doi": "10.1126/science.aan8690",
+      "pmid": "29217587",
+      "matched_title": "Different mutational rates and mechanisms in human cells at pregastrulation and neurogenesis."
+    },
+    "tan-2018-science.md": {
+      "doi": "10.1126/science.aat5641",
+      "pmid": "30166492",
+      "matched_title": "Three-dimensional genome structures of single diploid human cells."
+    },
+    "valecha-2022-scsnv-review.md": {
+      "doi": "10.1016/j.csbj.2022.06.013",
+      "pmid": "35782734",
+      "matched_title": "Somatic variant calling from single-cell DNA sequencing data."
+    },
+    "vandereyken-2023-scmultiomics-review.md": {
+      "doi": "10.1038/s41576-023-00580-2",
+      "pmid": "36864178",
+      "matched_title": "Methods and applications for single-cell and spatial multi-omics."
+    },
+    "vijg-2020-cell.md": {
+      "doi": "10.1016/j.cell.2020.06.024",
+      "pmid": "32649873",
+      "matched_title": "Pathogenic Mechanisms of Somatic Mutation and Genome Mosaicism in Aging."
+    },
+    "wang-2019-mesmlr.md": {
+      "doi": "10.1101/gr.251116.119",
+      "pmid": "31201211",
+      "matched_title": "Single-molecule long-read sequencing reveals the chromatin basis of gene expression."
+    },
+    "wang-2020-scope.md": {
+      "doi": "10.1016/j.cels.2020.03.005",
+      "pmid": "32437686",
+      "matched_title": "SCOPE: A Normalization and Copy-Number Estimation Method for Single-Cell DNA Sequencing."
+    },
+    "xiao-2024-multiomics-benchmark.md": {
+      "doi": "10.1093/bib/bbae095",
+      "pmid": "38493343",
+      "matched_title": "Benchmarking multi-omics integration algorithms across single-cell RNA and ATAC data."
+    },
+    "xiao-2025-epitrace.md": {
+      "doi": "10.1038/s41587-024-02241-z",
+      "pmid": "38724668",
+      "matched_title": "Tracking single-cell evolution using clock-like chromatin accessibility loci."
+    },
+    "yang-2023-deepmosaic.md": {
+      "doi": "10.1038/s41587-022-01559-w",
+      "pmid": "36593400",
+      "matched_title": "Control-independent mosaic single nucleotide variant detection with DeepMosaic."
+    },
+    "yuan-2022-natmethods.md": {
+      "doi": "10.1038/s41592-022-01562-8",
+      "pmid": "35941239",
+      "matched_title": "scBasset: sequence-based modeling of single-cell ATAC-seq using convolutional neural networks."
+    },
+    "zafar-2016-natmethods.md": {
+      "doi": "10.1038/nmeth.3835",
+      "pmid": "27088313",
+      "matched_title": "Monovar: single-nucleotide variant detection in single cells."
+    },
+    "zafar-2017-sifit.md": {
+      "doi": "10.1186/s13059-017-1311-2",
+      "pmid": "28927434",
+      "matched_title": "SiFit: inferring tumor trees from single-cell sequencing data under finite-sites models."
+    },
+    "zhao-2022-nature.md": {
+      "doi": "10.1038/s41586-021-04217-4",
+      "pmid": "34912115",
+      "matched_title": "Spatial genomics enables multi-modal study of clonal heterogeneity in tissues."
+    }
+  },
+  "failed": {
+    "andrew-2011-cellresearch.md": {
+      "attempts": 2,
+      "last_status": "unverified-match"
+    },
+    "chenghang-2012-science.md": {
+      "attempts": 2,
+      "last_status": "no-match"
+    },
+    "cusanovich-2015-sciatac.md": {
+      "attempts": 2,
+      "last_status": "no-match"
+    },
+    "desouza-2020-epiclomal.md": {
+      "attempts": 1,
+      "last_status": "esearch-error",
+      "last_error": "HTTP Error 429: Too Many Requests"
+    },
+    "doughty-2024-smf-tf.md": {
+      "attempts": 2,
+      "last_status": "no-match"
+    },
+    "example-llm-wiki.md": {
+      "attempts": 2,
+      "last_status": "no-match"
+    },
+    "ghorbani-2019-comp-epigenetics.md": {
+      "attempts": 2,
+      "last_status": "no-match"
+    },
+    "nichols-2022-scimet-v2.md": {
+      "attempts": 2,
+      "last_status": "no-match"
+    },
+    "peter-2024-brain-fiberseq.md": {
+      "attempts": 1,
+      "last_status": "already-linked"
+    },
+    "rotem-2015-drop-chip.md": {
+      "attempts": 2,
+      "last_status": "no-match"
+    },
+    "rotem-2015-natbiotech.md": {
+      "attempts": 1,
+      "last_status": "already-linked"
+    },
+    "satas-2020-scarlet.md": {
+      "attempts": 1,
+      "last_status": "esearch-error",
+      "last_error": "HTTP Error 429: Too Many Requests"
+    },
+    "yuan-2022-scbasset.md": {
+      "attempts": 2,
+      "last_status": "no-match"
+    },
+    "zaccaria-2021-chisel.md": {
+      "attempts": 1,
+      "last_status": "already-linked"
+    },
+    "zafar-2016-monovar.md": {
+      "attempts": 1,
+      "last_status": "already-linked"
+    },
+    "zafar-2017-genomebiol.md": {
+      "attempts": 1,
+      "last_status": "already-linked"
+    },
+    "zhang-2024-snapatac2.md": {
+      "attempts": 1,
+      "last_status": "already-linked"
+    }
+  }
+}

@@ -18,6 +18,12 @@ The snm3C-seq joint assay reads methylome and chromatin conformation from the sa
 
 The current state-of-the-art demonstration that two epigenetic modalities (methylome + 3D genome) can be read jointly from the same single cell at brain-atlas scale, and that the joint readout resolves regulatory biology unavailable to either modality alone. Anchors §2 (locus-state joint-assay), §3.3 (methylation), §3.5 (3D genome), §5 (atlas applications). Demonstrates that "joint reading of two layers of the locus state at scale" is no longer aspirational.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-023-06805-y) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/38092913/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-023-06805-y) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/38092913/)
+
 ## Related
 
 - [[30-Concepts/snmC-seq-family]]

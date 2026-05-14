@@ -20,6 +20,12 @@ Lim, Lin and Navin's 2020 Cancer Cell review surveys the impact of single-cell s
 
 Canonical cancer-SCS review by the Navin lab. Anchors §5 (cancer applications) by consolidating the field's state circa 2020 — methods landscape, application categories, and clinical-translation roadblocks. Useful as the single-citation framing reference for the cancer subsection of §5.
 
+---
+**Source:** [DOI](https://doi.org/10.1016/j.ccell.2020.03.008) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/32289270/)
+
+---
+**Source:** [DOI](https://doi.org/10.1016/j.ccell.2020.03.008) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/32289270/)
+
 ## Related
 
 - [[40-Topics/cancer-genomics]]

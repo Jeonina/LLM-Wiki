@@ -16,6 +16,9 @@ Key findings: mean 4.4 driver events per tumor (mostly mutations rather than CNA
 
 Bulk-cohort context for the somatic-mutation landscape in a structural-variation-driven cancer (C-type neoplasm). Not single-cell, but relevant to §5 (cancer applications) as a counterpoint to single-cell cancer studies (Kim 2018 TNBC, Cortés-López 2023 MDS): bulk cohort-scale studies remain the workhorse for driver discovery, while single-cell methods resolve clonal architecture within a tumor. The contrast clarifies what scDNA adds and what bulk still owns.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41588-018-0331-5) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30718927/)
+
 ## Related
 
 - [[40-Topics/cancer-genomics]]

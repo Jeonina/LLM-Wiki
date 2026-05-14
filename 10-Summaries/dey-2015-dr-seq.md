@@ -14,6 +14,9 @@ Dey, Kester, Spanjaard, Bienko and van Oudenaarden (Hubrecht Institute) develope
 
 The **third 2015 founding paper for parallel scDNA+scRNA**, alongside G&T-seq (Macaulay 2015, physical separation) and the Hou 2016 scTrio-seq triple-omics. DR-seq's no-separation design contrasts with G&T-seq's bead-based separation — establishing the "physical separation vs. in-tube amplification" dichotomy that Vandereyken 2023 review uses as a design-principle axis. Important historical citation in §3.1. Existing `dey2015` bibkey already present.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nbt.3129) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/25599178/)
+
 ## Related
 
 - [[10-Summaries/macaulay-2015-gt-seq]]

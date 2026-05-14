@@ -46,3 +46,6 @@ sources: ["00-Sources/papers/Federico_2021_Nature.pdf"]
 - [[a-universal-duplex-sequencing-approach-for-accurate-detection-of-somatic-mutations]] — Alexandrov UDSeq.
 - [[benchmarking-of-duplex-sequencing-approaches-to-reveal-somatic-mutation-landscapes]] — SMaHT cross-method DS benchmark.
 - [[taejeong-2018-science]] — Bae 2018 fetal-brain progenitor mutation rates (complementary biology).
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-021-03477-4) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33911282/)

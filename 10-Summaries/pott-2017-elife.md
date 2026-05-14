@@ -18,6 +18,12 @@ scNOMe-seq recovers DNase-hypersensitivity-site accessibility at single-cell res
 
 The original NOMe-seq single-cell adaptation, predating Fiber-seq's m6A-based footprinting (Stergachis 2020) and inheriting the GpC-methyltransferase chemistry that Clark et al.~later integrated into scNMT-seq. Anchors §3.2 (chromatin accessibility — the methylation-footprinting axis) and §3.3 (methylation joint readouts). Demonstrates that joint methylome + accessibility on the same single cell is achievable with a single bisulfite-sequencing assay.
 
+---
+**Source:** [DOI](https://doi.org/10.7554/eLife.23203) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/28653622/)
+
+---
+**Source:** [DOI](https://doi.org/10.7554/eLife.23203) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/28653622/)
+
 ## Related
 
 - [[30-Concepts/nome-seq]]

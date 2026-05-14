@@ -47,3 +47,9 @@ sources: ["00-Sources/papers/Marek_2023_NatureBiotechnology.pdf"]
 
 - [[marek-2021-naturebiotechnology]] — Bartosovic 2021 scCUT&Tag, predecessor.
 - [[direct-transposition-of-native-dna-for-sensitive-multimodal-single-molecule-sequencing]] — SMRT-Tag, complementary single-molecule multimodal chromatin.
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-022-01535-4) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/36536148/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-022-01535-4) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/36536148/)

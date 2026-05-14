@@ -52,6 +52,9 @@ Fiber-seq is a **bulk method**. m6A marks on DNA are erased during any DNA ampli
 - [[direct-transposition-of-native-dna-for-sensitive-multimodal-single-molecule-sequencing]] — SMRT-Tag, methodologically adjacent single-molecule footprinting.
 - [[single-molecule-targeted-accessibility-and-methylation-sequencing-of-centromeres-telomeres-and-rdnas-in-arabidopsis]] — STAM-seq, m6A-MTase chromatin footprinting in plants.
 
+---
+**Source:** [DOI](https://doi.org/10.1126/science.aaz1646) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/32587015/)
+
 ## Related
 
 - [[40-Topics/chromatin-architecture]]

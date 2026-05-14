@@ -16,6 +16,9 @@ Three principal findings. (1) The two reconstructed daughter cells of the zygote
 
 Foundational demonstration that bulk-genotyped microdissection-WGS, rather than single-cell sequencing, can reconstruct human developmental phylogenies at scale. Establishes the asymmetric-zygote bottleneck, the early-then-low mutation-rate profile, and the spatial heterogeneity of embryonic contribution. Anchors §1 (lineage-tracing motivation), §5 (development applications), and complements scWGS-based single-neuron phylogenies (Lodato 2015, Bae 2018) by spanning entire bodies rather than single tissues.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-021-03790-y) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/34433963/)
+
 ## Related
 
 - [[30-Concepts/lineage-tracing-somatic-mutations]]

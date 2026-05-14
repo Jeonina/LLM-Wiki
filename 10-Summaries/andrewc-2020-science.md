@@ -51,3 +51,6 @@ IGS sequences DNA **directly inside intact, fixed cells**, then matches each in-
 ## Note on filename
 
 The source file is `AndrewC_2020_Science.pdf` but the paper is Payne et al. 2021 (the "Andrew C" in the filename is Andrew C. Payne, the first author). It is **not** a Stergachis paper despite the "Andrew" prefix — pure filename coincidence with `AndrewB_2020_Science.pdf` which IS Stergachis Fiber-seq.
+
+---
+**Source:** [DOI](https://doi.org/10.1126/science.aax2656) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33509999/)

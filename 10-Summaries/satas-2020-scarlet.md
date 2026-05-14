@@ -18,6 +18,9 @@ Benchmarked on simulated data, SCARLET outperforms existing methods on inferring
 
 Methodological complement to MEDICC2 (Kaufmann 2022): MEDICC2 builds CN-only phylogenies; SCITE/OncoNEM build SNV-only phylogenies under infinite-sites; SCARLET jointly models both. Particularly relevant when the dataset is **droplet-based scDNA-seq with both SNV panel and CNA inference** (e.g., Mission Bio Tapestri DNA + Tapestri CNV). Anchors §4 (phylogenetic methods) and §5 (cancer-evolution applications). Important conceptual point for the review: the dependence between SNV-loss and CN-loss is a *real biological signal* that should be modeled, not a nuisance.
 
+---
+**Source:** [DOI](https://doi.org/10.1016/j.cels.2020.04.001) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/32864481/)
+
 ## Related
 
 - [[10-Summaries/zaccaria-2021-chisel]]

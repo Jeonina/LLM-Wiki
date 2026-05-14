@@ -65,3 +65,6 @@ sources: ["00-Sources/papers/Eran_2025_Neuron.pdf"]
 - [[10-Summaries/single-cell-mosaicism-analysis-reveals-cell-type-specific-somatic-mutational-burden-in-alzheimer-s-dementia]] — human-brain cell-type-specific SNV burden in AD.
 - [[10-Summaries/scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]] — scNMT-seq, similar logic for accessibility + methylation.
 - [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]] — synthesis note that needs an update reflecting Mukamel 2025 as a second major anchor for joint CNV + epi at single-cell scale.
+
+---
+**Source:** [DOI](https://doi.org/10.1016/j.neuron.2025.08.006) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/40907475/)

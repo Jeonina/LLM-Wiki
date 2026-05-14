@@ -16,6 +16,12 @@ The study demonstrated that somatic SNVs serve as durable lineage markers. Neste
 
 The first systematic single-neuron WGS demonstration. Anchors §3.1 (genotype-centric scDNA), §5 (neuroscience applications), and the lineage-tracing rationale in §1.
 
+---
+**Source:** [DOI](https://doi.org/10.1126/science.aab1785) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/26430121/)
+
+---
+**Source:** [DOI](https://doi.org/10.1126/science.aab1785) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/26430121/)
+
 ## Related
 
 - [[20-Entities/christopher-walsh]]

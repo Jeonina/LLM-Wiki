@@ -16,6 +16,12 @@ Key unique aspects discussed: (i) bulk-vs-single-cell methylome analysis differe
 
 A field-defining review of the §4 methylation-computational tool landscape, complementing the Liu/Conesa 2025 long-read review and the Fu/Sedlazeck 2025 long-read review. Particularly useful for the review's organization because Iqbal & Zhou explicitly map analysis steps to tool choices — providing the scaffold for our §4 methylation subsection. Anchors §3.3 (methylation analysis) and §4 (computational methods).
 
+---
+**Source:** [DOI](https://doi.org/10.1016/j.gpb.2022.05.007) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/35718270/)
+
+---
+**Source:** [DOI](https://doi.org/10.1016/j.gpb.2022.05.007) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/35718270/)
+
 ## Related
 
 - [[10-Summaries/kapourani-2019-melissa]]

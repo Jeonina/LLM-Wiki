@@ -16,6 +16,9 @@ Quantitative comparisons: coverage uniformity (Lorenz curves), reaction-gain-dep
 
 Foundational benchmark for scWGA chemistry selection, predating the broader adoption of LIANTI (Chen 2017) and PTA (Gonzalez-Pena 2021). Anchors §3.1 chemistry-comparison discussion and provides the empirical basis for the "horses for courses" framing: chemistry choice depends on whether the downstream question is SNV vs CNV vs de-novo assembly. Important historical context: this paper is from the same Quake group that developed PicoPLEX/Fluidigm scATAC.
 
+---
+**Source:** [DOI](https://doi.org/10.1371/journal.pone.0105585) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/25136831/)
+
 ## Related
 
 - [[10-Summaries/gonzalez-pena-2021-pnas]]

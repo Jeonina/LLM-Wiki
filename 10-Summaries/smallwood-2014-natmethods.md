@@ -16,6 +16,12 @@ Applied to 12 metaphase-II oocytes, 12 2i-ESCs, and 20 serum-grown mESCs, scBS-s
 
 The founding genome-wide single-cell DNA methylome chemistry, parent to scRRBS, snmC-seq2/3, scNMT-seq, sn-m3C-seq, and the broader methylome family. Anchors §3.3 (DNA methylation) as the originating method against which all subsequent single-cell methylome protocols are benchmarked.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nmeth.3035) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/25042786/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/nmeth.3035) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/25042786/)
+
 ## Related
 
 - [[30-Concepts/scbs-seq]]

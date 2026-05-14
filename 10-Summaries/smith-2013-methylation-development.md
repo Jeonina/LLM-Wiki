@@ -14,6 +14,12 @@ Smith and Meissner (Harvard + Broad) reviewed DNA methylation's roles in mammali
 
 The canonical 2013 NRG review on DNA methylation in development. Strong §3.3 conceptual foundation citation — methylation as a developmental regulator before single-cell methylome assays. Useful complement to Schübeler 2015 (TF-driven view) and Iqbal 2023 (methylome computational review). When discussing why scNMT-seq / snmC-seq / scBS-seq matter — because methylation is **developmentally dynamic and cell-type-specific** — Smith & Meissner 2013 is the foundational reference.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nrg3354) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/23400093/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/nrg3354) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/23400093/)
+
 ## Related
 
 - [[10-Summaries/schubeler-2015-methylation-review]]

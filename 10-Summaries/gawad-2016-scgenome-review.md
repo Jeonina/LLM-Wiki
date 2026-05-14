@@ -14,6 +14,9 @@ Gawad, Koh and Quake (St Jude + Stanford) reviewed the early single-cell genome 
 
 Canonical early-period scDNA-seq review (2016) — preceding the single-molecule duplex era (Schmitt 2012 was published but pre-NanoSeq). Useful citation when introducing the field's foundational challenges and for tracing how the field has evolved since 2016. Existing bibkey `gawad2016` present. The dominant scDNA-seq state-of-science reference before Shao 2025 took over that role.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nrg.2015.16) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/26806412/)
+
 ## Related
 
 - [[10-Summaries/shao-2025-scDNA-mosaicism-review]]

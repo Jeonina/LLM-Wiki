@@ -16,6 +16,12 @@ Critical capability: scMET decomposes observed variance into technical (sparsity
 
 scMET fills a niche orthogonal to Melissa and Epiclomal: those tools cluster cells; scMET *quantifies variability itself* as a biological signal. Particularly relevant for mosaicism studies where the question is not "what are the methylation clones" but "where in the genome does methylation vary between cells?" — an essential prerequisite for treating methylation as a mosaicism axis. Anchors §3.3 (methylation heterogeneity), §4 (computational tools), and §6 (limitations — separating technical from biological variance is the central challenge in scBS-seq interpretation).
 
+---
+**Source:** [DOI](https://doi.org/10.1186/s13059-021-02329-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33879195/)
+
+---
+**Source:** [DOI](https://doi.org/10.1186/s13059-021-02329-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33879195/)
+
 ## Related
 
 - [[10-Summaries/kapourani-2019-melissa]]

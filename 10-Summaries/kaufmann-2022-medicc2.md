@@ -18,6 +18,9 @@ Validated on simulations and applied to 2,778 PCAWG tumors, where MEDICC2 accura
 
 MEDICC2 is the gold-standard phylogenetic reconstruction tool for copy-number-driven tumor evolution, especially when WGD is relevant. Complements CHISEL (Zaccaria 2021) for allele/haplotype-specific CN inference: CHISEL produces the per-cell haplotype-specific CN profile; MEDICC2 builds the evolutionary tree from those profiles. Anchors §4 (phylogenetic tools alongside SiFit, Monovar phylogeny) and §5 (cancer-evolution applications). Important context for the review: scDNA phylogenetics is mature for copy-number; **scDNA + chromatin/methylation joint phylogenetics remains underdeveloped** — a gap our §7 future-perspectives section will articulate.
 
+---
+**Source:** [DOI](https://doi.org/10.1186/s13059-022-02794-9) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/36376909/)
+
 ## Related
 
 - [[10-Summaries/zaccaria-2021-chisel]]

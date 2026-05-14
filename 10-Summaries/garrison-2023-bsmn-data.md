@@ -16,6 +16,9 @@ The data resources include: whole-genome sequencing (WGS, both conventional and 
 
 The reference data resource that underlies most post-2020 brain-mosaicism methodology papers. Anchors §5 (neuropsychiatric applications), §6 (limitations — data heterogeneity across institutions), and §4 (benchmarking — the BSMN NRB is the de-facto truth set). Important methodological note for the review: BSMN's best-practice workflow informs the consensus that mosaic-SNV calling requires deep WGS (≥250×), targeted validation, and combinatorial calling (MosaicForecast + DeepMosaic + MosaicHunter).
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41597-023-02645-7) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/37985666/)
+
 ## Related
 
 - [[10-Summaries/yang-2023-deepmosaic]]

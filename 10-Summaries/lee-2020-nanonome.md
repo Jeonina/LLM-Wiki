@@ -16,6 +16,12 @@ Applied to four cell lines (GM12878, MCF-10A, MCF-7, MDA-MB-231) at 103× covera
 
 nanoNOMe sits in the long-read joint-assay family alongside SMAC-seq (Shipony 2020, bulk Nanopore), SAMOSA (Abdulhay 2020, PacBio), Fiber-seq (Stergachis 2020, bulk PacBio), and HiDef-seq (Liu 2024, duplex). The unique contribution: **phased epigenome** at chromosome scale on standard human cell lines including cancer models. Anchors §3.3 (joint methylome + accessibility) and §3.2 (single-molecule footprinting), and supports our review's argument that long-read joint assays are the practical path to phased multi-layer locus-state observation in single molecules (though not yet in single cells at scale).
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-020-01000-7) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33230324/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-020-01000-7) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33230324/)
+
 ## Related
 
 - [[10-Summaries/shipony-2020-smac]]

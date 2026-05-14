@@ -16,6 +16,9 @@ Three findings. (1) Global methylation rises from ~25% (E4.5) to ~75% (E7.5) in 
 
 The canonical demonstration that triple-modality single-cell readout (transcriptome + methylome + accessibility) on the same cell resolves the asymmetric epigenetic programs of germ-layer specification. Establishes that ectoderm priming and mesendoderm reprogramming follow distinct epigenetic logic — a finding only resolvable when the three modalities are read jointly per cell. Anchors §2 (locus-state joint-assay), §3.3 (methylation), §5 (development applications), and the introduction of MOFA as a standard joint-modality factor model in §4.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-019-1825-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/31827285/)
+
 ## Related
 
 - [[30-Concepts/scnmt-seq]]

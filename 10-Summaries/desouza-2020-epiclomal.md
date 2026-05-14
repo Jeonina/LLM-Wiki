@@ -16,6 +16,9 @@ Validated on synthetic and published scBS-seq datasets, Epiclomal outperforms no
 
 A key computational tool in the §4 methylation-analysis tool family: Epiclomal sits alongside Melissa (Kapourani 2019), scMET (Kapourani 2021), DeepCpG (Angermueller 2017), and PDclust (Hui 2018) as the principal scBS-seq clustering methods. The "epiclone" concept directly motivates §3.3's framing of methylation as a clonal-mosaicism axis that is *partially independent* of copy-number — anchoring the locus-state framework's argument that methylation carries independent information from genotype.
 
+---
+**Source:** [DOI](https://doi.org/10.1371/journal.pcbi.1008270) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/32966276/)
+
 ## Related
 
 - [[10-Summaries/smallwood-2014-natmethods]]

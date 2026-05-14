@@ -16,6 +16,12 @@ Each SV class has a diagnostic "footprint" across the three layers: deletions ca
 
 scTRIP is the gold-standard SV-detection workflow for single-cell data, distinct from CNV-only methods (Ginkgo, HMMcopy). The Strand-seq + tri-channel-processing combination uniquely detects **copy-number-neutral** rearrangements (balanced translocations, inversions, inverted duplications) that are invisible to read-depth alone. Anchors §3.1 (Strand-seq variant family), §4 (SV calling computational tools), and §5 (cancer applications — leukemia clonal architecture).
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-019-0366-x) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/31873213/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-019-0366-x) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/31873213/)
+
 ## Related
 
 - [[10-Summaries/falconer-2012-natmethods]]

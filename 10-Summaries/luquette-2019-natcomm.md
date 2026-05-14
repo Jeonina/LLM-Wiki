@@ -16,6 +16,12 @@ SCAN-SNV's central insight is that allele balance (AB) varies smoothly across th
 
 SCAN-SNV is one of the canonical computational scaffolds for MDA-based single-cell mutation calling. Anchors §4 (computational framework) and the artifact-correction infrastructure that makes the Lodato 2018 / Miller 2022 / Bae 2018 conclusions defensible.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41467-019-11857-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/31467286/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41467-019-11857-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/31467286/)
+
 ## Related
 
 - [[30-Concepts/scwga-chemistries]]

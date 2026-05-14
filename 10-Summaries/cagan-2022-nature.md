@@ -16,6 +16,9 @@ Three findings. (1) Three mutational signatures (SBS1 = 5mC deamination, SBSB �
 
 Comparative-genomics extension of the somatic-mutation framework: mutation rate is evolutionarily constrained and may itself be a contributing factor in aging across species. Anchors §1 (mutagenesis as universal), §5 (aging applications), and §6 (mutational-signature framework). Implies that the single-neuron genosenium results (Lodato 2018) reflect a deep mammalian constraint rather than a primate-specific or human-specific phenomenon.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-022-04618-z) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/35418684/)
+
 ## Related
 
 - [[30-Concepts/somatic-mosaicism]]

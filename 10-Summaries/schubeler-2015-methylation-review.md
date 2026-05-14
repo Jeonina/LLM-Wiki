@@ -14,6 +14,12 @@ Schübeler (FMI Basel) reviewed the function and information content of DNA meth
 
 Conceptual review cited when explaining why single-cell methylome assays (scBS-seq, snmC-seq, scNMT-seq) provide information beyond bulk methylome: the heterogeneity at CG-poor regulatory regions encodes cell-state information that is averaged out at bulk. Useful citation in §3.3 introduction or §6 (limitations of methylation as a regulatory readout). Establishes that methylation is **informative** rather than **instructive** — a framing that motivates joint assays (methylation + chromatin + RNA).
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nature14192) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/25592537/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/nature14192) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/25592537/)
+
 ## Related
 
 - [[10-Summaries/iqbal-2023-methylome-review]]

@@ -14,6 +14,12 @@ He, Dong, Wang, Xie et al. (Xie lab; Peking University) developed **FOODIE** (FO
 
 Independent contemporary of DAF-seq (Swanson 2025) — both use dsDNA deaminases for chromatin footprinting, but FOODIE focuses on TF-resolution mapping while DAF-seq emphasizes haplotype-resolved chromatin fiber architecture. Anchors §3.3 (SMF — deaminase generation) alongside DAF-seq, SAMOSA, Fiber-seq, nanoNOMe. The brain application directly supports §5 mosaicism arguments — different cell types in heterogeneous tissue have distinct TF footprints. Existing bibkey `he2024foodie` may need to be added.
 
+---
+**Source:** [DOI](https://doi.org/10.1073/pnas.2423270121) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/39689177/)
+
+---
+**Source:** [DOI](https://doi.org/10.1073/pnas.2423270121) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/39689177/)
+
 ## Related
 
 - [[10-Summaries/swanson-2025-daf-seq]]

@@ -16,6 +16,9 @@ DeepCpG addresses the central computational problem of single-cell methylome dat
 
 A foundational deep-learning approach for the methylome — predating scBasset (Yuan 2022) and Enformer for accessibility, and predating scGPT (Cui 2024) for foundation-model single-cell biology. Anchors §4 (computational framework) and demonstrates the sequence-based-prediction approach to single-cell missing-data problems generalizes across modalities. Relevant to §6 (limitations): scWGS-based mutation detection at unsampled cells could in principle benefit from analogous models.
 
+---
+**Source:** [DOI](https://doi.org/10.1186/s13059-017-1233-z) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/28499443/)
+
 ## Related
 
 - [[30-Concepts/dna-methylation]]

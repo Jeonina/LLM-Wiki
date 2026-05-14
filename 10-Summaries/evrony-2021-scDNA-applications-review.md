@@ -14,6 +14,9 @@ Evrony, Hinch and Luo (NYU + Oxford + UCLA) reviewed applications of single-cell
 
 The most application-oriented scDNA-seq review of 2021 — useful as a structural model for the user's review, especially the fidelity/co-presence/phenotypic-association framework which cleanly classifies why scDNA-seq is required for specific questions. Existing bibkey `evrony2021` already present. Anchor §1/§2 reference alongside Gawad 2016 (state-of-science) and Shao 2025 (mosaicism-focused).
 
+---
+**Source:** [DOI](https://doi.org/10.1146/annurev-genom-111320-090436) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33722077/)
+
 ## Related
 
 - [[10-Summaries/gawad-2016-scgenome-review]]

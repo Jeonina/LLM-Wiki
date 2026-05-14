@@ -16,6 +16,9 @@ Two case studies demonstrate the chromatin impact of non-protein-coding mosaic v
 
 Targeted Fiber-seq is the natural enabling technology for studying the **functional chromatin impact of mosaic variants** — a long-standing question that whole-genome Fiber-seq, short-read scATAC-seq, and bulk ATAC-seq cannot fully answer (short reads suffer from allelic imbalance ambiguity; bulk loses mosaic resolution). Anchors §3.2 (Fiber-seq family, alongside Peter 2024 brain Fiber-seq), §5 (clinical applications — Mendelian conditions with somatic instability), and §7 (future perspectives — mosaic-variant functional characterization at chromatin level is now technically possible). Direct connection to the review's locus-state framework: the single-molecule readout shows that a single mosaic variant *propagates* across nearby regulatory elements.
 
+---
+**Source:** [DOI](https://doi.org/10.1101/gr.279747.124) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/39653420/)
+
 ## Related
 
 - [[10-Summaries/stergachis-2020-fiberseq]]

@@ -18,6 +18,9 @@ Applied to mES cells, embryonic fibroblasts, and EML hematopoietic progenitors, 
 
 The first published single-cell ChIP-seq method, predating CUT\&Tag-based single-cell histone-modification profiling. Established that chromatin-state heterogeneity exists within transcriptionally similar populations — a finding later confirmed and extended by scCUT\&Tag (Bartosovic 2021), sciCUT\&Tag, scChIC-seq, and nano-CT. Anchors §3.4 (chromatin state) as the founding method of the field.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nbt.3383) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/26458175/)
+
 ## Related
 
 - [[30-Concepts/scchip-seq]]

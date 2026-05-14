@@ -16,6 +16,12 @@ Three central findings: (1) cell states defined by chromatin and by expression a
 
 Founding paper for joint scATAC+scRNA at high throughput; technical ancestor of 10x Multiome. Establishes the empirical case that chromatin accessibility is a *predictive* (not just descriptive) feature of cell state, which directly supports our review's locus-state framework: accessibility is informative about future cell-state trajectories, not only present identity. Anchors §3.2 (Fiber-seq / accessibility) and §4 (multimodal integration). Anti-anchor for §3 conclusion: joint scATAC+scRNA exists at scale, but scATAC + scWGS at the same single cell remains unsolved.
 
+---
+**Source:** [DOI](https://doi.org/10.1016/j.cell.2020.09.056) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33098772/)
+
+---
+**Source:** [DOI](https://doi.org/10.1016/j.cell.2020.09.056) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33098772/)
+
 ## Related
 
 - [[10-Summaries/buenrostro-2015-nature]]

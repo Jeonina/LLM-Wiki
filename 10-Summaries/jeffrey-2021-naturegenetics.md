@@ -44,3 +44,9 @@ sources: ["00-Sources/papers/Jeffrey_2021_NatureGenetics.pdf"]
 - [[comprehensive-analysis-of-single-cell-atac-seq-data-with-snapatac]] — SnapATAC, predecessor.
 - [[chromvar-inferring-transcription-factor-associated-accessibility-from-single-cell-epigenomic-data]] — chromVAR TF analysis, integrates into ArchR.
 - [[episcanpy-integrated-single-cell-epigenomic-analysis]] — EpiScanpy, Python alternative.
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41588-021-00850-x) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33790476/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41588-021-00850-x) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33790476/)

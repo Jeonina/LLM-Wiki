@@ -16,6 +16,12 @@ The two-step design (with protease pre-lysis) raised genomic-DNA detection rate 
 
 The technological ancestor of every targeted-panel droplet scDNA platform deployed today in cancer genomics (Tapestri DNA, Tapestri DNA+Protein, Mission Bio CNV). Anchors §3.1 (targeted-panel scDNA chemistries), §4 (variant-calling at the panel level), and §5 (cancer clonal-evolution applications). The targeted-panel paradigm is the practical workhorse for clinical scDNA — distinct from low-coverage genome-wide platforms (10x CNV, DLP+) which serve a different question. Methodological lineage continues: Tapestri DNA+ATAC (Hu/Buenrostro), Tapestri DNA+ChIP, Mission Bio CRISPR-screen scDNA.
 
+---
+**Source:** [DOI](https://doi.org/10.1101/gr.232272.117) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30087104/)
+
+---
+**Source:** [DOI](https://doi.org/10.1101/gr.232272.117) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30087104/)
+
 ## Related
 
 - [[10-Summaries/kim-2018-nature]]

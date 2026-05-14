@@ -16,6 +16,9 @@ Benchmarking shows scGPT outperforming task-specific models on cell-type annotat
 
 A representative foundation-model approach to single-cell biology. Anchors §4 (computational framework) and §7 (future perspectives) by exemplifying where the field is heading: large pretrained models, transfer learning, joint representation across modalities. Useful for the §7 framing of where computational methods will go.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-024-02201-0) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/38409223/)
+
 ## Related
 
 - [[10-Summaries/yuan-2022-natmethods]]

@@ -16,6 +16,12 @@ Benchmarked on 619,740 simulated and 530 independent amplicon-validated mosaic v
 
 The image-based CNN approach represents a categorically different paradigm from heuristic-filter mosaic callers (MosaicHunter, MosaicForecast) and from feature-based ML (Strelka2, MuTect2). Yang 2023 demonstrates that the pileup image itself carries information that engineered features lose. Anchors §4 (mosaic-caller family) alongside MosaicForecast and the Ha 2023 benchmark. Important methodological lineage: the Gleeson-lab BSMN context links this to brain-somatic-mosaicism work — DeepMosaic was designed specifically for postmortem brain WGS, where matched control tissue is unavailable and clinical relevance is high.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-022-01559-w) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/36593400/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-022-01559-w) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/36593400/)
+
 ## Related
 
 - [[10-Summaries/dou-2020-mosaicforecast]]

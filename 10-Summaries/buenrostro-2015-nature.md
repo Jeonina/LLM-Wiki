@@ -16,6 +16,9 @@ Beyond the method, the paper reveals **principles of regulatory variation** by a
 
 The founding scATAC-seq paper (parallel to Cusanovich 2015 sci-ATAC-seq); methodological ancestor of every later scATAC-seq protocol (10x Multiome, sci-ATAC-seq v3, etc.). Beyond the method, this paper establishes that **single-cell accessibility variance is itself a biologically informative signal**, not just noise — a principle our review's locus-state framework explicitly builds on. Anchors §3.2 (accessibility chemistries) and §5 (cancer biology applications). Existing `buenrostro2015` bibkey already present.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nature14590) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/26083756/)
+
 ## Related
 
 - [[10-Summaries/cusanovich-2015-science]]

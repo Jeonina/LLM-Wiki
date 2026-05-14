@@ -64,3 +64,6 @@ The previously-stated gap in [[50-Notes/mosaicism-and-epigenome-the-synthesis-ga
 ## Caveats
 
 - **bioRxiv preprint as of 2026-05-12 date — not peer reviewed**. The review should cite the bioRxiv DOI and acknowledge preprint status. If published in *Nature Methods* / *Cell* / *Nature* by review submission, citation should update.
+
+---
+**Source:** [DOI](https://doi.org/10.1101/2025.05.30.656844) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/40502142/)

@@ -14,6 +14,12 @@ Mukamel, Liu, Behrens, Ecker (UCSD/Salk) re-analyzed >415,000 single-nucleus DNA
 
 Major §5 brain-mosaicism anchor and a §3.3↔§3.1 cross-bridge: shows that snmC-seq, originally an epigenome assay, doubles as a low-cost large-cell-CNA detector. The chr16 trisomy enrichment (syntenic with human chr21/Down syndrome) is the headline biological finding — suggests recurrent somatic nondisjunction is a feature of normal brain development. Direct complement to Duplex-Multiome (Kriz 2025) for sSNVs and to Strand-seq/scTRIP (Sanders 2020) for SV. Reuses the Liu 2023 brain-methylome atlas — an example of secondary-use mosaicism mining from large epigenome resources.
 
+---
+**Source:** [DOI](https://doi.org/10.1016/j.neuron.2025.08.006) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/40907475/)
+
+---
+**Source:** [DOI](https://doi.org/10.1016/j.neuron.2025.08.006) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/40907475/)
+
 ## Related
 
 - [[10-Summaries/liu-2023-mouse-brain-methylome-3d]]

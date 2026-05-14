@@ -14,6 +14,12 @@ Klemm, Shipony and Greenleaf (Stanford) reviewed chromatin accessibility and the
 
 The canonical 2019 review on chromatin accessibility. Cite when introducing scATAC-seq history and conceptual foundations in §3.2. Strong companion to the Buenrostro 2013/2015 founding-method citations. Important note: Klemm and Shipony are co-first authors and Shipony went on to develop SMAC-seq (Shipony 2020), establishing the Stanford lineage into single-molecule chromatin biology. Existing bibkey `klemm2019` already present.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41576-018-0089-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30675018/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41576-018-0089-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30675018/)
+
 ## Related
 
 - [[10-Summaries/buenrostro-2015-nature]]

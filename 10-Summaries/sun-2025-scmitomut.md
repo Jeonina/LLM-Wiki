@@ -18,6 +18,12 @@ Validated on: (i) single-cell DNA sequencing of mixed cell lines (high sensitivi
 
 A 2025 advance over MAESTER (Miller 2022) and mgatk (Lareau 2021) on the same problem: per-cell statistically-controlled mtDNA mutation calling. The beta-binomial framework parallels developments in scRNA-seq SNV calling. Particularly useful for our review's argument that single-cell mtDNA mosaicism quantification is becoming statistically rigorous, not just heuristic. Anchors §3.1 (mtDNA variant detection) and §4 (variant-calling tools).
 
+---
+**Source:** [DOI](https://doi.org/10.1093/bib/bbaf072) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/40036721/)
+
+---
+**Source:** [DOI](https://doi.org/10.1093/bib/bbaf072) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/40036721/)
+
 ## Related
 
 - [[10-Summaries/lareau-2021-natbiotech]]

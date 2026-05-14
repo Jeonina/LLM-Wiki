@@ -18,6 +18,9 @@ The authors demonstrate two applications: direct measurement of environmental mu
 
 PTA is now the chemistry of choice for cohort-scale single-cell mosaicism studies. Anchors §3.1 (genotype-centric profiling) as the current state-of-the-art scWGA chemistry — substantially superior to MDA, MALBAC, and LIANTI on the coverage uniformity and variant-calling-accuracy metrics that determine cohort-scale feasibility. Bae 2022 \citep{bae2022} and subsequent BSMN cohort studies use PTA chemistry.
 
+---
+**Source:** [DOI](https://doi.org/10.1073/pnas.2024176118) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/34099548/)
+
 ## Related
 
 - [[30-Concepts/scwga-chemistries]]

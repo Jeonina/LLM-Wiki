@@ -16,6 +16,12 @@ Three operating modes: (i) **single mode** for unpaired WGS (binomial model); (i
 
 The founding paper for unpaired mosaic-SNM calling — the methodological ancestor of MosaicForecast (Dou 2020), DeepMosaic (Yang 2023), and the M2SMH meta-strategy (Ha 2023). MosaicHunter remains the recommended caller for very-low-VAF mosaic variants (<5%) per Ha 2023 benchmark. Anchors §4 (mosaic-caller family) and §5 (brain-somatic-mosaicism applications — used extensively in BSMN cohorts). Important authorship note: Yanmei Dou and Xiaoxu Yang are co-authors here and later first-authored MosaicForecast and DeepMosaic respectively — the Wei/Park/Gleeson labs cluster around this lineage.
 
+---
+**Source:** [DOI](https://doi.org/10.1093/nar/gkx024) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/28132024/)
+
+---
+**Source:** [DOI](https://doi.org/10.1093/nar/gkx024) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/28132024/)
+
 ## Related
 
 - [[10-Summaries/dou-2020-mosaicforecast]]

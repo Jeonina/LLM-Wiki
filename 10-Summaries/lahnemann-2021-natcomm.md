@@ -16,6 +16,12 @@ The bulk sample serves as an unamplified background: it samples from the same ce
 
 Computational complement to SCAN-SNV (Luquette 2019) and LiRA (Lodato 2018) for the single-cell SNV calling problem. Adds the explicit bulk-paired modeling framework: when bulk DNA from the same sample is available (common in BSMN-style studies), ProSolo uses it as an unamplified background. Anchors §4 (computational framework).
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41467-021-26938-w) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/34795237/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41467-021-26938-w) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/34795237/)
+
 ## Related
 
 - [[10-Summaries/luquette-2019-natcomm]]

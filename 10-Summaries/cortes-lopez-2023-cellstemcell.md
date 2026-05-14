@@ -16,6 +16,9 @@ Applied to bone-marrow CD34+ progenitors from patients with myelodysplastic synd
 
 A canonical four-modality joint-assay demonstration: somatic genotype + full-length isoform-resolved RNA + surface proteome in the same cell, with cell-type-specific phenotype attribution. Anchors §2 (locus-state joint-assay table), §3.1 (genotype-centric extensions), and §5 (cancer/MDS applications). One of the closest analogs to the conceptual "joint reading of mutation + epigenetic state + cell identity" claim that this review's framework articulates.
 
+---
+**Source:** [DOI](https://doi.org/10.1016/j.stem.2023.07.012) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/37582363/)
+
 ## Related
 
 - [[30-Concepts/joint-single-cell-multi-omics]]

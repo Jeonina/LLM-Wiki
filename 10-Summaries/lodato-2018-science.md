@@ -16,6 +16,12 @@ Three key findings. (1) Single-neuron sSNV counts increase approximately linearl
 
 The canonical demonstration that postmitotic human neurons accumulate damage-driven mutations linearly with age, and that DNA-repair defects accelerate this process. Anchors §3.1 (genotype-centric), §5 (aging and neurodegeneration applications), §6 (mutational-signature framework).
 
+---
+**Source:** [DOI](https://doi.org/10.1126/science.aao4426) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/29217584/)
+
+---
+**Source:** [DOI](https://doi.org/10.1126/science.aao4426) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/29217584/)
+
 ## Related
 
 - [[20-Entities/christopher-walsh]]

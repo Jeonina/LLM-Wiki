@@ -14,6 +14,12 @@ Swanson, Mao, Mallory et al. (Stergachis lab; UW Seattle + WashU + Brotman Baty)
 
 State-of-the-art 2025 single-molecule footprinting method that **integrates somatic mosaicism detection with chromatin readout on the same molecule** — a fundamentally new capability for §3.3 (SMF) and §5 (somatic mosaicism applications). Major advance over Fiber-seq family: m6A-based footprints don't preserve sequence, so cannot detect SNVs on the footprinted molecule; DAF-seq's C→T conversion encodes both. Haplotype-resolved chromatin actuation at single-cell single-molecule resolution is unprecedented. Existing `swanson2025` bibkey present. Anchors the convergence of duplex/single-molecule scDNA and SMF — relevant to §6 future-perspectives discussion.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-025-02914-3) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/41339527/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-025-02914-3) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/41339527/)
+
 ## Related
 
 - [[10-Summaries/shipony-2020-smac]]

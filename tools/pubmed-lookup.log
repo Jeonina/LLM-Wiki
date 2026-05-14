@@ -1,0 +1,31 @@
+Pending: 124 summaries to look up
+[1/124] unverified-match   andrew-2011-cellresearch.md
+[10/124] resolved           debourcy-2014-plosone.md -> 10.1371/journal.pone.0105585
+[12/124] esearch-error      desouza-2020-epiclomal.md
+[20/124] resolved           evrony-2021-scDNA-applications-review.md -> 10.1146/annurev-genom-111320-090436
+[30/124] resolved           garvin-2015-natmethods.md -> 10.1038/nmeth.3578
+[40/124] resolved           hou-2016-sctrio-seq.md -> 10.1038/cr.2016.23
+[50/124] resolved           kapourani-2021-scmet.md -> 10.1186/s13059-021-02329-8
+[60/124] resolved           lee-six-2018-hsc-dynamics.md -> 10.1038/s41586-018-0497-0
+[70/124] resolved           luquette-2019-natcomm.md -> 10.1038/s41467-019-11857-8
+[80/124] resolved           mukamel-2025-aneuploidy-brain.md -> 10.1016/j.neuron.2025.08.006
+[88/124] already-linked     peter-2024-brain-fiberseq.md
+[91/124] already-linked     rotem-2015-natbiotech.md
+[94/124] esearch-error      satas-2020-scarlet.md
+[100/124] resolved           shipony-2020-smac.md -> 10.1038/s41592-019-0730-2
+[110/124] resolved           vijg-2020-cell.md -> 10.1016/j.cell.2020.06.024
+[118/124] already-linked     zaccaria-2021-chisel.md
+[119/124] already-linked     zafar-2016-monovar.md
+[120/124] resolved           zafar-2016-natmethods.md -> 10.1038/nmeth.3835
+[121/124] already-linked     zafar-2017-genomebiol.md
+[123/124] already-linked     zhang-2024-snapatac2.md
+
+=== Summary ===
+  resolved             107
+  no-match             8
+  already-linked       6
+  esearch-error        2
+  unverified-match     1
+
+Total resolved: 107
+Total failed:   17

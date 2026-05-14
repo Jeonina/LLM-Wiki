@@ -49,3 +49,6 @@ sources: ["00-Sources/papers/Federico_2019_Nature.pdf"]
 - [[anna-2019-nature]] — GoT, same Landau lab, contemporaneous methods development.
 - [[franco-2024-nature]] — GoT-ChA, same Landau lab, joint genotype + chromatin.
 - [[hongshan-2013-genomeresearch]] — scRRBS predecessor.
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-019-1198-z) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/31092926/)

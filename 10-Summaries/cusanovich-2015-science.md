@@ -16,6 +16,9 @@ Validated on mixed GM12878/HEK293T and GM12878/HL-60 cell populations, sci-ATAC-
 
 The first published combinatorial-indexing scATAC-seq method, complementary to the contemporaneous droplet-based scATAC-seq (Buenrostro 2015). Combinatorial indexing scales throughput linearly with well count rather than droplet count, enabling million-cell experiments at modest cost. Anchors §3.2 (chromatin accessibility) alongside Buenrostro 2015, Cusanovich 2018 (mouse atlas), and the SHARE-seq/sci-CAR joint-assay extensions.
 
+---
+**Source:** [DOI](https://doi.org/10.1126/science.aab1601) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/25953818/)
+
 ## Related
 
 - [[30-Concepts/scatac-seq]]

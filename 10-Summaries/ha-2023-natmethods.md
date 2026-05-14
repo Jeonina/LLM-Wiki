@@ -16,6 +16,9 @@ The 11 strategies cover single-sample callers (MosaicHunter, MosaicForecast, Dee
 
 The definitive benchmark for mosaic-variant calling, directly informing our review's §4 recommendation section. Companion to but distinct from the scWGS-specific benchmarks (which evaluate LiRA, SCAN-SNV, ProSolo). Anchors §4 (variant calling tools), §6 (limitations and best practices), and §7 (future perspectives — the combinatorial-caller paradigm is likely the practical baseline going forward).
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-023-02043-2) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/37828153/)
+
 ## Related
 
 - [[10-Summaries/dou-2020-mosaicforecast]]

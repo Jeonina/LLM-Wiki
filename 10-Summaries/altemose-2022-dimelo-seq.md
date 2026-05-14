@@ -14,6 +14,9 @@ Altemose, Maslan, Smith, Sundararajan et al. (Straight, Streets labs; UC Berkele
 
 A major §3.2/§3.3 anchor for **next-generation protein-DNA mapping** — bridges the chromatin-accessibility assays (ATAC, DNase) and the antibody-based ChIP/CUT&RUN family with long-read single-molecule SMF (Fiber-seq, SMAC-seq, nanoNOMe). Critical when discussing centromere biology and repetitive-region accessibility, which other methods cannot address. Existing bibkey `altemose2022` may not exist — needs check; otherwise add. Important precursor to scDAF-seq (Swanson 2025) which removes the m6A → C→T trade-off.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-022-01475-6) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/35396487/)
+
 ## Related
 
 - [[10-Summaries/shipony-2020-smac]]

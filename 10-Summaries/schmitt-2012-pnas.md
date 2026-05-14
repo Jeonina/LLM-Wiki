@@ -16,6 +16,12 @@ Theoretical background error rate < 1 per 10^9 nucleotides — roughly five orde
 
 Founding methodological reference for all duplex-consensus mosaic-variant detection. Direct ancestor of NanoSeq (Abascal 2021) which extended duplex sequencing to whole-genome scale; conceptual ancestor of SMM-seq, BotSeqS, META-CS. Anchors §3.1's discussion of population-level duplex strategies as a complement to (rather than replacement for) single-cell WGS. The error-budget logic in Duplex Sequencing is foundational to understanding why scWGS variant calling needs different filters (LiRA, SCAN-SNV) — single cells don't get the duplex benefit.
 
+---
+**Source:** [DOI](https://doi.org/10.1073/pnas.1208715109) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/22853953/)
+
+---
+**Source:** [DOI](https://doi.org/10.1073/pnas.1208715109) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/22853953/)
+
 ## Related
 
 - [[10-Summaries/kennedy-2014-natprotoc]]

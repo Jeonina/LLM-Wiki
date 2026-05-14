@@ -16,6 +16,9 @@ Key brain-specific capabilities: (i) genome-scale long-read nucleosomal-position
 
 Brain-specific application of Fiber-seq that bridges single-molecule footprinting (§3.2) to brain-somatic-mosaicism research (§5). The cell-type-resolved (NeuN+/−) FACS-sorted approach gives population-level resolution adequate for neuronal vs glial chromatin questions, while preserving the per-molecule coordination information that distinguishes Fiber-seq from short-read scATAC-seq. Anchors §3.2 (Fiber-seq applications to disease tissue) and §5 (neuroscience applications — chromatin-level mosaicism analogue of scWGS brain studies). Methodological lineage: Stergachis 2020 founding Fiber-seq → Peter 2024 brain adaptation → likely future single-nucleus Fiber-seq.
 
+---
+**Source:** [DOI](https://doi.org/10.1016/j.crmeth.2024.100911) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/39631398/)
+
 ## Related
 
 - [[10-Summaries/stergachis-2020-fiberseq]]

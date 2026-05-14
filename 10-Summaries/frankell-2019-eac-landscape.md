@@ -14,6 +14,9 @@ Frankell, Jammula, Li et al. (OCCAMS Consortium; Fitzgerald and Tavaré labs, Ca
 
 Bulk-cohort cancer-genomics reference relevant when discussing population-level driver landscape vs single-cell intratumour heterogeneity. EAC is a high-mutation, high-CNA tumor type and is a common subject of scDNA-seq follow-on studies. Useful citation for §5 cancer applications when contrasting bulk-WGS driver identification with scDNA-seq clonal-architecture work. Not a method paper but a representative population-genomics landscape reference.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41588-018-0331-5) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30718927/)
+
 ## Related
 
 - [[10-Summaries/kim-2018-tnbc-chemoresistance]]

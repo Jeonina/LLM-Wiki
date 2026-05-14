@@ -16,6 +16,9 @@ Result: ~1,000-fold higher accuracy than NGS, using up to 100-fold fewer reads t
 
 The most recent major advance in duplex sequencing, completing the trajectory Schmitt 2012 → NanoSeq 2021 → CODEC 2023. CODEC's WGS-compatibility is a step-change for mosaicism work: bulk WGS at single-duplex resolution becomes economically viable. Anchors §3.1 (duplex chemistries family), §6 (limitations — CODEC partly resolves the depth-vs-coverage tradeoff that bulk duplex had) and §7 (future perspectives — CODEC + cfDNA is a credible path to non-invasive mosaicism monitoring). Important authorship note: Gilad Evrony is a co-author, linking this to the brain-mosaicism community.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41588-023-01376-0) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/37106072/)
+
 ## Related
 
 - [[10-Summaries/schmitt-2012-pnas]]

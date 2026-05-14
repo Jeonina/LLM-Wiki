@@ -16,6 +16,12 @@ Per single cell, ~38,000 DHSs were detected. The authors showed that scDNase-seq
 
 A parallel founding paper for single-cell chromatin accessibility (along with Buenrostro 2015 scATAC-seq and Cusanovich 2015 sci-ATAC-seq), with the distinct features of (i) using DNase-I rather than Tn5 chemistry and (ii) demonstrated FFPE compatibility. The FFPE capability is especially relevant for tumor mosaicism work where retrospective archival access matters more than cell numbers. Anchors §3.2 (accessibility chemistries) and §5 (cancer applications, archival tissue).
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nature15740) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/26605532/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/nature15740) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/26605532/)
+
 ## Related
 
 - [[10-Summaries/buenrostro-2015-nature]]

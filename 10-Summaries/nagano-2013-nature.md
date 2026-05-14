@@ -16,6 +16,12 @@ Applied to mouse CD4+ Th1 cells, the method recovered up to ~30,000 distinct fra
 
 Founding paper for single-cell 3D genome assay; the methodological ancestor of all later sciHi-C (Ramani 2017), Dip-C (Tan 2018), and sn-m3C-seq (Lee 2019) protocols. Establishes the central biological observation that 3D chromatin organization is highly cell-state-dependent and stochastic at long range — directly motivating §3.5's framing of 3D as the most cell-state-variable locus-state layer in our review.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nature12593) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/24067610/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/nature12593) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/24067610/)
+
 ## Related
 
 - [[10-Summaries/ramani-2017-sci-hic]]

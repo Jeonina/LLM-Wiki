@@ -16,6 +16,12 @@ Applied to a mouse cerebellum control and to a primary human cancer + mouse-mode
 
 The first scalable spatial scDNA-seq method, complementary to in-situ genome sequencing (Payne 2021 IGS) for the spatial axis of single-cell genomics. Anchors §3.5 (3D genome and spatial) and §5 (cancer applications). Particularly relevant for understanding spatially-constrained somatic mosaicism (developmental founder clones, focal cortical malformations) and tumor evolution.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-021-04217-4) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/34912115/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-021-04217-4) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/34912115/)
+
 ## Related
 
 - [[30-Concepts/spatial-scdna]]

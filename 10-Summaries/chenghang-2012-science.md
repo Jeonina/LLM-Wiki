@@ -45,3 +45,6 @@ sources: ["00-Sources/papers/Chenghang_2012_Science.pdf"]
 - [[chongyi-2017-science]] — LIANTI; next-generation WGA chemistry.
 - [[charles-2016-naturereviewsgenetics]] — Gawad/Quake 2016 review citing MALBAC.
 - [[gilad-2021-annualreviewofgenomicsandhumangenetics]] — Evrony 2021 capabilities framework.
+
+---
+**Source:** [DOI](https://doi.org/10.1126/science.1229164) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/23258894/)

@@ -21,3 +21,6 @@ Establishes the sequence-as-prior paradigm for scATAC-seq analysis — a contras
 - [[10-Summaries/luo-2024-scatac-benchmark]]
 - [[10-Summaries/cao-2022-glue]]
 - [[30-Concepts/scatac-analysis-methods]]
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-022-01562-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/35941239/)

@@ -16,6 +16,12 @@ The review consolidates evidence from BSMN-era studies (Lodato 2015, McConnell 2
 
 Field-survey reference for brain-mosaicism-and-psychiatric-disease at the review level, complementing the McConnell 2017 BSMN founding review and Bizzotto & Walsh 2022. Anchors §5 (neuropsychiatric applications) and provides the developmental-timing framework that distinguishes early-vs-late somatic mutations.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41380-018-0129-y) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30087451/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41380-018-0129-y) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30087451/)
+
 ## Related
 
 - [[40-Topics/brain-somatic-mosaicism]]

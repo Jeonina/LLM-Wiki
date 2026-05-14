@@ -16,6 +16,12 @@ scBasset achieves state-of-the-art performance on three benchmark datasets (Buen
 
 Demonstrates that DNA sequence is a sufficient predictor of cell-type-specific accessibility, complementing the empirical approach taken by ATAC-peak-based methods. Anchors §4 (computational framework) and connects to sequence-based prediction tools more broadly (DeepHistone, Enformer, scGPT). Useful for the framing in §6 limitations: sequence determines a substantial fraction of accessibility but not all, and the residual is the cell-state-specific signal.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-022-01562-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/35941239/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-022-01562-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/35941239/)
+
 ## Related
 
 - [[10-Summaries/chromvar-inferring-transcription-factor-associated-accessibility-from-single-cell-epigenomic-data]]

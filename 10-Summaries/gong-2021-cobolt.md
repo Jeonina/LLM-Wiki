@@ -16,6 +16,9 @@ Key capability: Cobolt produces a single integrated representation **regardless 
 
 Cobolt sits in the §4 multimodal-integration tool family as the direct predecessor of MultiVI (Ashuach 2023). Both are variational-autoencoder-based; MultiVI extends Cobolt with explicit per-modality decoders, library-size factors, and surface-protein support. Anchors §4 (multimodal integration). The 2021 Cobolt → 2022 GLUE → 2023 MultiVI lineage represents the rapid deep-learning iteration in this area.
 
+---
+**Source:** [DOI](https://doi.org/10.1186/s13059-021-02556-z) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/34963480/)
+
 ## Related
 
 - [[10-Summaries/ashuach-2023-multivi]]

@@ -18,6 +18,12 @@ Applied to PBMCs from healthy donors and mitochondriopathy patients, the framewo
 
 A 2026 entrant in mtDNA-mosaicism methodology that pushes beyond MAESTER (Miller 2022, mtDNA-from-scRNA) by quantifying *load and constraint* per cell, not just variant identity. The POLG-D274A line is a useful "calibrator" model for mtDNA-mosaicism methods. Anchors §3.1 (mtDNA variant detection), §4 (computational metrics for mosaicism quantification), and §5 (mitochondrial disease + neurological applications). Direct connection to our review's framing: scwMSS treats mtDNA as a *locus-state* axis (heteroplasmy + constraint) rather than a binary lineage barcode.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41467-026-70399-y) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/41839886/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41467-026-70399-y) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/41839886/)
+
 ## Related
 
 - [[10-Summaries/lareau-2021-natbiotech]]

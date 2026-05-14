@@ -18,6 +18,9 @@ Strand-seq's directional information enables haplotype-phase resolution, sister-
 
 Founding paper of the Strand-seq family. Anchors §3.1 (genotype-centric, structural-variant axis) and provides the directional read-out used downstream by DLP+, scNOVA (Jeong 2023), and SV-functional analyses. A complementary axis to MDA/MALBAC/PTA chemistries: where those amplify both strands non-uniformly, Strand-seq sacrifices both-strand readout to gain directional resolution.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nmeth.2206) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/23042453/)
+
 ## Related
 
 - [[30-Concepts/strand-seq]]

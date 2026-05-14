@@ -16,6 +16,12 @@ Three contributions of the review. (1) Genome-wide methylation maps had revealed
 
 Canonical conceptual reference for the methylation layer of the locus state. Anchors §3.3 (DNA methylation profiling) and §2 (the regulatory-interpretation layer of the locus state) by establishing why methylation alone is necessary-but-not-sufficient: its consequence at any locus depends on the chromatin context, TF complement, and sequence determinants — i.e. on the rest of the locus state.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nature14192) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/25592537/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/nature14192) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/25592537/)
+
 ## Related
 
 - [[30-Concepts/dna-methylation]]

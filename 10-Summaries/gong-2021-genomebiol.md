@@ -16,6 +16,9 @@ Cobolt's central contribution is the dual use of joint-modality data: it learns 
 
 A canonical statistical framework for integrating joint-modality and single-modality scRNA + scATAC data, especially relevant as joint-assay datasets become available but most legacy data remain single-modality. Anchors §4 (computational framework) alongside MOFA, Seurat/Signac integration, scBasset, and scGPT. Connects to the locus-state framework: the practical realization of joint-state inference often involves combining cells with all-layer measurement and cells with partial-layer measurement, and tools like Cobolt provide the integration layer.
 
+---
+**Source:** [DOI](https://doi.org/10.1186/s13059-021-02556-z) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/34963480/)
+
 ## Related
 
 - [[10-Summaries/stuart-2021-natmethods]]

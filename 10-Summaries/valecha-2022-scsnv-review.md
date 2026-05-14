@@ -16,6 +16,12 @@ Performance comparison via three axes: statistical performance (sensitivity, FDR
 
 A focused review of scDNA SNV calling that complements Lähnemann 2017 (broader scWGS challenges), Gawad 2016 (foundational), and Ha 2023 (mosaic-caller benchmark for bulk). Anchors §4 (SNV-calling tool family) and §6 (limitations). Useful for the review's tone-setting on scWGS variant calling: the field has many tools, all with known weaknesses, and consensus across multiple callers is the de-facto best practice.
 
+---
+**Source:** [DOI](https://doi.org/10.1016/j.csbj.2022.06.013) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/35782734/)
+
+---
+**Source:** [DOI](https://doi.org/10.1016/j.csbj.2022.06.013) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/35782734/)
+
 ## Related
 
 - [[10-Summaries/zafar-2016-monovar]]

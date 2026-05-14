@@ -16,6 +16,9 @@ Three findings. (1) TF binding events on nucleosome-free DNA are independent of 
 
 Concrete demonstration that single-molecule footprinting answers questions about TF-binding cooperativity, nucleosome eviction, and activation-domain function that bulk and single-cell antibody-based methods cannot. Bridges §3.2 (single-molecule footprinting / scDAF-seq family) and §3.4 (TF occupancy) by showing what the locus-state framework's "transcription factor layer" looks like when measured directly per molecule. Anchors the methodological case that fiber-resolution measurements provide mechanism, not just resolution.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-024-08219-w) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/39567683/)
+
 ## Related
 
 - [[30-Concepts/single-molecule-footprinting]]

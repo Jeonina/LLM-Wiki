@@ -16,6 +16,12 @@ By combining m6A and CpG/GpC marks, SMAC-seq achieves a theoretical accessibilit
 
 Conceptual ancestor of Fiber-seq (Stergachis 2020) which substitutes Hia5 m6A methyltransferase and adds PacBio readout. SMAC-seq established the principle that long-read methylation footprinting can resolve the *coordination* of multiple regulatory elements on a single fiber, not just their independent accessibility levels. Anchors §3.2 (single-molecule footprinting family: SMF, SAMOSA, SMAC, Fiber-seq, HiDef-seq) and supports the review's emphasis on phased multi-element observation as a distinct capability that bulk and short-read single-cell methods both lack.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-019-0730-2) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/32042188/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-019-0730-2) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/32042188/)
+
 ## Related
 
 - [[10-Summaries/stergachis-2020-fiberseq]]

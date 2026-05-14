@@ -14,6 +14,9 @@ Argelaguet, Arnol, Bredikhin, Deloro, Velten, Marioni, Stegle (EBI + EMBL Heidel
 
 Established factor-analysis-based multimodal integration as a scalable alternative to deep-learning approaches (Cobolt, MultiVI, GLUE). Anchors §4 (multimodal integration tool family) — typically cited alongside Seurat-WNN, Cobolt, GLUE, MultiVI as the "MOFA family" of integration methods. Still widely used for scNMT-seq, CITE-seq, and other multimodal-scDNA analyses. Important historical anchor for the linear-Bayesian branch of multimodal integration.
 
+---
+**Source:** [DOI](https://doi.org/10.1186/s13059-020-02015-1) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/32393329/)
+
 ## Related
 
 - [[10-Summaries/gong-2021-cobolt]]

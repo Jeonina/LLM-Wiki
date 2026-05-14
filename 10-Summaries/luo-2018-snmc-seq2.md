@@ -14,6 +14,12 @@ Luo, Rivkin, Zhou et al. (Ecker lab, Salk) reported **snmC-seq2**, an improved v
 
 Operational backbone of the Ecker-lab single-cell methylome program. Cited when describing methylome assay options alongside scBS-seq (Smallwood 2014), scRRBS (Guo 2013), scNMT-seq (Clark 2018), and sci-MET. Anchors §3.3 (methylome assays) and prerequisite for §5 brain-methylome work. The 2018 → snmC-seq3 (2023) → snm3C-seq (Liu 2023) → Mukamel 2025 lineage is the dominant brain-methylome production line.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41467-018-06355-2) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30237449/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41467-018-06355-2) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30237449/)
+
 ## Related
 
 - [[10-Summaries/clark-2018-scnmt]]

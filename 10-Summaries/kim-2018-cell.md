@@ -16,6 +16,12 @@ Resistant TNBC genotypes were pre-existing in the pre-treatment tumor and adapti
 
 Direct single-cell-resolution test of the pre-existing-vs-acquired chemoresistance hypothesis in human cancer, with the dual-modality readout (genotype + transcriptome) showing that the two modalities answer different aspects of the question. Anchors §5 (cancer applications) and provides a concrete example of why same-cell genotype + state readout (the joint-assay axis of §2) matters clinically.
 
+---
+**Source:** [DOI](https://doi.org/10.1016/j.cell.2018.03.041) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/29681456/)
+
+---
+**Source:** [DOI](https://doi.org/10.1016/j.cell.2018.03.041) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/29681456/)
+
 ## Related
 
 - [[30-Concepts/clonal-evolution]]

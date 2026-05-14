@@ -21,3 +21,6 @@ The companion founding scATAC-seq paper to Buenrostro 2015 (Fluidigm-based). sci
 - [[10-Summaries/luo-2024-scatac-benchmark]]
 - [[20-Entities/jay-shendure]]
 - [[30-Concepts/combinatorial-indexing]]
+
+---
+**Source:** [DOI](https://doi.org/10.1126/science.aab1601) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/25953818/)

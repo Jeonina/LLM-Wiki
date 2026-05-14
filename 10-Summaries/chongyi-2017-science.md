@@ -46,3 +46,6 @@ sources: ["00-Sources/papers/Chongyi_2017_Science.pdf"]
 - [[chenghang-2012-science]] — MALBAC, prior generation that LIANTI benchmarks against.
 - [[a-comprehensive-view-of-somatic-mosaicism-by-single-cell-dna-analysis]] — Luquette/Walsh PTA+DS uses LIANTI's deamination characterization.
 - [[charles-2016-naturereviewsgenetics]] — review citing this lineage.
+
+---
+**Source:** [DOI](https://doi.org/10.1126/science.aak9787) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/28408603/)

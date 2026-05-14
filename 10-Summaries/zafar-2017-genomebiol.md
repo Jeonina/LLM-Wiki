@@ -16,6 +16,9 @@ SiFit's error model integrates allele-dropout, false-positive errors, and finite
 
 Computational phylogeny inference is the bridge between scDNA-seq genotype matrices and the clonal-evolution biology that drives §5 cancer applications. SiFit is one of the canonical tumor-phylogeny tools alongside SCITE, OncoNEM, BitPhylogeny, and PhyloWGS. Anchors §4 (computational framework).
 
+---
+**Source:** [DOI](https://doi.org/10.1186/s13059-017-1311-2) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/28927434/)
+
 ## Related
 
 - [[10-Summaries/zafar-2016-natmethods]]

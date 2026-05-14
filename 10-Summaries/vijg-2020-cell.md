@@ -16,6 +16,12 @@ The review surveys the methods that enabled this shift — scWGS (Lodato 2015, B
 
 A canonical conceptual reference for the somatic-mutation-aging link. Anchors §1 (mosaicism is the rule), §5 (aging applications), and §6 (mutation-disease causality framing). Complements Cagan 2022 (cross-species mutation rate × lifespan) by focusing on within-species, within-tissue mechanism.
 
+---
+**Source:** [DOI](https://doi.org/10.1016/j.cell.2020.06.024) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/32649873/)
+
+---
+**Source:** [DOI](https://doi.org/10.1016/j.cell.2020.06.024) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/32649873/)
+
 ## Related
 
 - [[30-Concepts/somatic-mosaicism]]

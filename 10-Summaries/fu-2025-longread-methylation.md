@@ -14,6 +14,9 @@ Fu, Timp and Sedlazeck (Baylor + Johns Hopkins + Rice) reviewed computational me
 
 Critical §3.3 methodology reference for the long-read methylation arm — complementary to short-read bisulfite (Krueger Bismark 2011) and SMF (SMAC-seq/Fiber-seq family). Long-read methylation calling is the technical foundation for nanoNOMe, Fiber-seq, scNanoCOOL-seq, and any application that combines methylation with structural variation. Useful when arguing that scDNA-seq is moving toward long-read native modification calling (avoiding bisulfite damage).
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41576-025-00822-5) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/40155770/)
+
 ## Related
 
 - [[10-Summaries/krueger-2011-bismark]]

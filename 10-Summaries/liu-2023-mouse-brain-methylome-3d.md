@@ -14,6 +14,12 @@ Liu, Zeng, Zhou et al. (Ecker, Behrens labs; Salk + UCSD) generated **301,626 si
 
 The largest single-cell methylome + 3D-genome atlas to date; the data foundation reused by Mukamel 2025 (aneuploidy mining) and many derivative studies. Anchors §3.3 (methylome) and §3.5 (3D-genome via snm3C-seq). Demonstrates that methylation alone can resolve brain cell-type taxonomy at finer granularity than scRNA-seq — important argument when motivating scDNA-centric workflows. Production-scale reference for any review of brain epigenome.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-023-06805-y) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/38092913/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-023-06805-y) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/38092913/)
+
 ## Related
 
 - [[10-Summaries/luo-2018-snmc-seq2]]

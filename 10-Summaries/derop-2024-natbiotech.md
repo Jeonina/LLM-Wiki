@@ -16,6 +16,9 @@ Three findings. (1) Significant differences in sequencing library complexity and
 
 The first systematic benchmarking of scATAC-seq protocols against shared standards. Anchors §3.2 (chromatin accessibility) and §4 (computational framework) by providing the methods-comparison context that prior reviews (Klemm 2019, Baysoy 2023) lacked. Critical for any scATAC-seq experimental-design decision.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-023-01881-x) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/37537502/)
+
 ## Related
 
 - [[30-Concepts/scatac-seq]]

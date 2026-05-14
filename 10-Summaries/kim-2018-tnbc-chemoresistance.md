@@ -14,6 +14,12 @@ Kim, Gao, Sei et al. (Navin lab, MD Anderson; Foukakis lab, Karolinska) performe
 
 A canonical §5 cancer-application paper combining scDNA-seq (clonal architecture) with scRNA-seq (transcriptional state). Directly answers the long-standing question of adaptive vs acquired resistance in cancer. Important benchmark for any review section on clinical applications of multimodal scDNA. From Navin lab — the dominant figure in scDNA-seq tumor-evolution work alongside Zafar 2016/2017 (Monovar/SiFit) and Navin 2011/2015 (founding tumor scDNA-seq).
 
+---
+**Source:** [DOI](https://doi.org/10.1016/j.cell.2018.03.041) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/29681456/)
+
+---
+**Source:** [DOI](https://doi.org/10.1016/j.cell.2018.03.041) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/29681456/)
+
 ## Related
 
 - [[10-Summaries/zafar-2016-monovar]]

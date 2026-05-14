@@ -14,6 +14,12 @@ Izzo, Myers, Ganesan, Mekerishvili et al. (Landau lab; NYGC + Weill Cornell) dev
 
 Direct progression of GoT (Nam 2019) into the chromatin domain — solves the low expression problem (JAK2 is poorly expressed in some progenitor states, making GoT unreliable) by reading genomic DNA. Important §3.1/§5 anchor for CH/MPN applications. Demonstrates the practical multimodal stacking: genotype → chromatin → RNA → protein from the same single cell. Existing `izzo2024` bibkey present. Anchors the multimodal-genotyping arc: Nam GoT (2019) → Izzo GoT-ChA (2024) → future GoT-Multiome.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-024-07388-y) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/38720070/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-024-07388-y) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/38720070/)
+
 ## Related
 
 - [[10-Summaries/nam-2019-got]]

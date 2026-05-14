@@ -18,6 +18,9 @@ Benchmarked on three gold-standard paired datasets (SNARE-seq, SHARE-seq, 10x Mu
 
 Computational anchor for §4 multimodal integration alongside MOFA (linear factor), Seurat-WNN (graph), MultiVI (VAE-only without guidance graph), and Cobolt. GLUE is distinguished by **explicit prior knowledge incorporation** via the guidance graph — making it the natural choice when the regulatory relationships between modalities are partially known (peak-to-gene mappings, CpG-to-gene mappings). Especially relevant for our review's locus-state framework: cross-modality interpretation is *exactly* the regulatory-inference task GLUE targets.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-022-01284-4) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/35501393/)
+
 ## Related
 
 - [[10-Summaries/argelaguet-2019-mofa]]

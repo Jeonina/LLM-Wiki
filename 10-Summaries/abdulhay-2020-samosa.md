@@ -14,6 +14,9 @@ Abdulhay, McNally, Hsieh, Kasinathan et al. (Ramani lab; UCSF) developed **SAMOS
 
 A key §3.3 single-molecule footprinting anchor in the SMF family, alongside SMAC-seq (Shipony 2020), nanoNOMe (Lee 2020), Fiber-seq (Stergachis 2020), and DiMeLo-seq (Altemose 2022). SAMOSA is one of the first methods to demonstrate that single-molecule chromatin states differ substantially even within ostensibly uniform domains (constitutive heterochromatin shows surprising heterogeneity). Useful in §6 future-perspectives for arguing single-molecule resolution reveals biology that bulk averaging hides. Existing bibkey may not exist — add as needed.
 
+---
+**Source:** [DOI](https://doi.org/10.7554/eLife.59404) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33263279/)
+
 ## Related
 
 - [[10-Summaries/shipony-2020-smac]]

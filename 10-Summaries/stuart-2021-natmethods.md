@@ -16,6 +16,12 @@ The paper demonstrates the framework on a 10x multiome PBMC dataset (10,466 cell
 
 The de-facto computational backbone for most single-cell chromatin and joint multi-omics workflows since 2021. Anchors §4 (computational framework) alongside ArchR (Granja 2021) and chromVAR. Critical for analyses that pair sequence-based (genotype) data with chromatin state in the same cell — the joint-assay use cases that this review's locus-state framework foregrounds.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-021-01282-5) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/34725479/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-021-01282-5) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/34725479/)
+
 ## Related
 
 - [[20-Entities/satija-lab]]

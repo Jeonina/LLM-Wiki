@@ -14,6 +14,9 @@ Forsberg, Gisselsson and Dumanski (Uppsala + Lund) reviewed **post-zygotic varia
 
 Strong §1/§2/§5 review citation when discussing the prevalence and clinical impact of somatic mosaicism. Complements Campbell 2015 (developmental focus) and Lynch 2010 (mutation rate). Important for argumentation: somatic variation is ubiquitous, so bulk sequencing underestimates the true mutational burden. Existing bibkey `forsberg2017` already present. Particularly useful for §5 aging/CH applications — mLOY discussion is field-defining.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nrg.2016.145) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/27941868/)
+
 ## Related
 
 - [[10-Summaries/campbell-2015-mosaicism-review]]

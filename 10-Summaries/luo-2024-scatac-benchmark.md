@@ -18,6 +18,9 @@ Key findings: **feature-aggregation, SnapATAC and SnapATAC2 outperform latent-se
 
 An independent, multi-method benchmark of scATAC-seq analysis tools — the chromatin-accessibility analog of Heumos 2023 (scRNA-seq best practices). Validates our review's emphasis on SnapATAC2 (Zhang 2024) as the current state-of-the-art for large-scale scATAC analysis. Anchors §4 (computational tools for accessibility) and §6 (limitations — different methods can give discordant cell-type assignments; benchmark-driven choice is essential).
 
+---
+**Source:** [DOI](https://doi.org/10.1186/s13059-024-03356-x) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/39152456/)
+
 ## Related
 
 - [[10-Summaries/zhang-2024-snapatac2]]

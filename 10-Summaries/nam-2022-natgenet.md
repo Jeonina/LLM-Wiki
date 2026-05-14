@@ -16,6 +16,9 @@ Three findings. (1) DNMT3A-R882 cells are biased toward megakaryocytic-erythroid
 
 The cleanest demonstration that joint single-cell readout of genotype + transcriptome + methylome on the same cell uncovers regulatory mechanism that none of the three modalities alone reveals. DNMT3A-R882 cells and wild-type cells are morphologically and phenotypically similar; only the simultaneous multi-omics readout, with the genotype matched to the methylome and the transcriptome in the same cell, resolves the mechanism. Anchors §3.3 (methylation), §2 (locus-state framework), and §5 (clonal-hematopoiesis applications). A particularly load-bearing citation for the review's central conceptual claim.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41588-022-01179-9) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/36138229/)
+
 ## Related
 
 - [[30-Concepts/got-genotype-of-transcriptomes]]

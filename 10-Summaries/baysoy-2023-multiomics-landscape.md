@@ -14,6 +14,9 @@ Baysoy, Bai, Satija and Fan (Yale + NYGC) reviewed the technological landscape o
 
 A canonical 2023 review for §1/§2 of any single-cell multi-omics manuscript. Useful for tabular comparisons of method capabilities (throughput, modalities, resolution). Less scDNA-focused than the Diane Shao 2025 review (which is purpose-built for somatic mosaicism scDNA), so often cited *together* — Baysoy for the technology landscape, Shao for the scDNA-mosaicism specifics. Existing bibkey `baysoy2023` already present.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41580-023-00615-w) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/37280296/)
+
 ## Related
 
 - [[10-Summaries/vandereyken-2023-scmultiomics-review]]

@@ -18,6 +18,12 @@ Miller and colleagues applied scWGS to 319 pyramidal neurons from PFC and hippoc
 
 Establishes that neurodegeneration in AD produces a quantifiable, signature-distinct excess of single-neuron somatic mutations beyond normal aging — direct evidence that disease pathology generates genomic damage, not just downstream effects. Anchors §5 (neurodegeneration applications) and §6 (mutational-signature framework).
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-022-04640-1) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/35444284/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-022-04640-1) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/35444284/)
+
 ## Related
 
 - [[30-Concepts/mutational-signatures]]

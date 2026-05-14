@@ -16,6 +16,9 @@ Critical capability: MultiVI handles **paired and unpaired** data jointly. Cells
 
 Computational anchor for §4 (multimodal integration), filling the niche left by MOFA (linear factor analysis) and Seurat-WNN (graph-based) with a probabilistic deep-learning approach. The paired+unpaired flexibility is critical for mosaicism work where joint scWGS+scATAC paired data is essentially nonexistent — MultiVI offers a path to leverage abundant single-modality data alongside scarce paired data. Companion to Cobolt and scGPT in our computational section.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-023-01909-9) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/37386189/)
+
 ## Related
 
 - [[10-Summaries/argelaguet-2019-mofa]]

@@ -16,6 +16,12 @@ The review's central methodological point is that WGA artifacts dominate the scD
 
 A foundational reference for the scWGA-chemistry landscape that subsequent work (PTA, LIANTI, Strand-seq) extended. Anchors §3.1 alongside the Shao 2025 update (Diane 2025 NRG review) and complements the Gawad 2016 NRG review. Both 2014- and 2025-vintage scWGA reviews are useful for the methods-comparison framing in §3.1.
 
+---
+**Source:** [DOI](https://doi.org/10.1371/journal.pgen.1004126) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/24497842/)
+
+---
+**Source:** [DOI](https://doi.org/10.1371/journal.pgen.1004126) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/24497842/)
+
 ## Related
 
 - [[10-Summaries/diane-2025-naturereviewsgenetics]]

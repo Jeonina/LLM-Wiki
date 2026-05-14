@@ -16,6 +16,9 @@ Validation on simulated and real data showed Monovar substantially outperforming
 
 The first single-cell-aware variant caller and the methodological reference against which SCAN-SNV (Luquette 2019), SCcaller, ProSolo (Lähnemann 2021), and LiRA (Lodato 2018) were subsequently benchmarked. Anchors §4 (computational framework) and provides the historical context for why specialized scDNA-seq callers exist.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nmeth.3835) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/27088313/)
+
 ## Related
 
 - [[10-Summaries/luquette-2019-natcomm]]

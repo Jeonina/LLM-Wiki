@@ -59,6 +59,8 @@ Cross-platform comparison on three reference sample types using each lab's publi
 - Benchmark does not include UDSeq ([[10-Summaries/a-universal-duplex-sequencing-approach-for-accurate-detection-of-somatic-mutations]]); cross-comparison is open.
 - Single-cell duplex remains the holy grail; this benchmark is bulk/pseudo-bulk.
 
+---
+**Source:** [DOI](https://doi.org/10.64898/2025.12.12.692823)
 ## Related
 
 - [[40-Topics/duplex-sequencing]] · [[30-Concepts/codec]] · [[30-Concepts/nanoseq]] · [[30-Concepts/hidef-seq]] · [[20-Entities/smaht-network]]

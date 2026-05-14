@@ -60,6 +60,8 @@ Snap file format for storing single-cell accessibility. SnapTools for preprocess
 - 5-kb bin choice is empirical. For highly specific cell types whose distinguishing accessibility is sub-1-kb, finer bins may be needed.
 - The "off-peak signal" argument depends on the bin size; at very fine bin resolution most signal is sparse and the argument is weaker.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41467-021-21583-9)
 ## Related
 
 - [[40-Topics/single-cell-atac-seq]] · [[30-Concepts/snapatac]] · [[30-Concepts/jaccard-similarity]] · [[20-Entities/bing-ren]]

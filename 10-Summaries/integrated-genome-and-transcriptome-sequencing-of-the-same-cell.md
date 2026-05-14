@@ -51,3 +51,6 @@ DR-seq is the **one-pot** alternative to G&T-seq for joint single-cell DNA + RNA
 
 - [[g-t-seq-parallel-sequencing-of-single-cell-genomes-and-transcriptomes]] — separation-based contemporaneous alternative.
 - [[single-cell-triple-omics-sequencing-reveals-genetic-epigenetic-and-transcriptomic-heterogeneity-in-hepatocellular-carcinomas]] — scTrio-seq, conceptual successor.
+
+---
+**Source:** [Open paper](https://www.nature.com/articles/nbt.3129)

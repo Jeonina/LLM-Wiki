@@ -14,6 +14,8 @@ Kennedy, Schmitt, Fox et al. (Loeb lab; UW) provided the canonical Nature Protoc
 
 The protocol companion to Schmitt 2012 — cite when describing implementation details of duplex sequencing rather than the original concept. Already cited via `kennedy2014` bibkey.
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/nprot.2014.170)
 ## Related
 
 - [[10-Summaries/schmitt-2012-pnas]]

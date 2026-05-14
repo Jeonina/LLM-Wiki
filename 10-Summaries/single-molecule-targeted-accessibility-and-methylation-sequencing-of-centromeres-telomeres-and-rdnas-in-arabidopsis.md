@@ -62,6 +62,8 @@ Single-molecule nanopore with adaptive sampling, EcoGII methylation labeling (co
 - Adaptive-sampling target design depends on prior knowledge of HRR coordinates — what about uncharacterized repetitive regions?
 - Single-cell extension unattempted.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41477-023-01498-7)
 ## Related
 
 - [[40-Topics/long-read-sequencing]] · [[30-Concepts/stam-seq]] · [[30-Concepts/nanopore-adaptive-sampling]] · [[30-Concepts/highly-repetitive-regions]]

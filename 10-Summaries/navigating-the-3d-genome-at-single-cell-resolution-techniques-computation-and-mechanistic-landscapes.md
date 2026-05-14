@@ -57,6 +57,8 @@ Authoritative narrative review with tables comparing >15 sc3DG-seq technologies 
 - Single-cell 3D-genome resolution still much coarser than bulk Hi-C (~kb vs ~100 bp). Will single-molecule long-read or imaging methods close the gap?
 - Causality: do 3D-architecture changes drive expression changes or follow them? Single-cell joint readouts begin to answer this but biology is far from settled.
 
+---
+**Source:** [DOI](https://doi.org/10.1093/bib/bbaf520)
 ## Related
 
 - [[40-Topics/3d-genome]] · [[30-Concepts/single-cell-hi-c]] · [[30-Concepts/topologically-associating-domain]] · [[10-Summaries/harmonizing-single-cell-3d-genome-data-with-stark-and-scnucleome]]

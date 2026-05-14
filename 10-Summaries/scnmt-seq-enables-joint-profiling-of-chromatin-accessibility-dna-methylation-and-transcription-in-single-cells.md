@@ -54,3 +54,6 @@ First single-cell method that simultaneously profiles **three molecular layers �
 - [[share-seq-reveals-chromatin-potential-nature-reviews-genetics]] — SHARE-seq accessibility+RNA via split-pool.
 - [[single-cell-triple-omics-sequencing-reveals-genetic-epigenetic-and-transcriptomic-heterogeneity-in-hepatocellular-carcinomas]] — scTrio-seq, alternative triple-omics with CNV instead of accessibility.
 - [[high-throughput-single-cell-dna-methylation-and-chromatin-accessibility-co-profiling-with-splicool-seq]] — SpliCOOL-seq, later scaling of methylation+accessibility.
+
+---
+**Source:** [Open paper](https://www.nature.com/articles/s41467-018-03149-4)

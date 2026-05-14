@@ -55,6 +55,8 @@ G&T-seq separates gDNA from RNA per cell. gDNA → bisulfite conversion → Alu-
 - Locus-specific resolution lost. For studies requiring promoter-level methylation, scBS-seq or SIMPLE-seq is needed.
 - Generalization beyond AML: would scTEM-seq detect interesting heterogeneity in solid tumors with subtler methylation differences?
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41598-022-09765-x)
 ## Related
 
 - [[40-Topics/dna-methylation]] · [[30-Concepts/transposable-elements]] · [[30-Concepts/decitabine]] · [[30-Concepts/viral-mimicry]] · [[20-Entities/heather-lee]]

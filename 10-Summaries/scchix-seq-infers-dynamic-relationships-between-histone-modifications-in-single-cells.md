@@ -57,6 +57,8 @@ sortChIC platform (FACS + pA-MNase) with antibody multiplexing. LDA topic modeli
 - Requires per-pair training datasets; cost scales with the number of mark combinations.
 - Deconvolution accuracy degrades as the two marks become more correlated; in the limit of fully overlapping marks, the method cannot distinguish them.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-022-01560-3)
 ## Related
 
 - [[40-Topics/histone-modifications]] · [[30-Concepts/scchix-seq]] · [[30-Concepts/sortchic]] · [[30-Concepts/chromatin-velocity]] · [[20-Entities/alexander-van-oudenaarden]]

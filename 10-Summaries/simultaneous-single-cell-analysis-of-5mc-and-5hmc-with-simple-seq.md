@@ -59,6 +59,8 @@ Bisulfite-free chemistry derived from TAPS (5mC) and hmC-CATCH (5hmC). Combinato
 - Cannot yet pair with scRNA-seq from the same cell. Future work likely integrates with transcriptome.
 - 87% conversion efficiency means ~13% false-negative rate per site; imputation helps but cell-resolution per-locus calls remain noisy.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-024-02148-9)
 ## Related
 
 - [[40-Topics/dna-methylation]] · [[30-Concepts/5hmc]] · [[30-Concepts/taps]] · [[20-Entities/chengqi-yi]]

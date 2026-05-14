@@ -73,3 +73,6 @@ Synthesizing review with extensive comparison tables across published single-cel
 
 - (At time of writing) — how to scale to thousands of cells without sacrificing per-cell quality. Largely answered by [[30-Concepts/dlp-plus]] and droplet ATAC-style platforms in subsequent years.
 - Standardization of QC and ADO definitions across studies — flagged by Gawad/Quake here, still partly unresolved in 2025.
+
+---
+**Source:** [DOI](https://doi.org/10.1038/nrg.2015.16)

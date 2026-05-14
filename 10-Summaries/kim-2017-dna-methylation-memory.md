@@ -14,6 +14,8 @@ Kim and Costello (KRIBB Korea + UCSF) reviewed DNA methylation as **epigenetic m
 
 Korean-coauthored methylation review — useful for §3.3 introductory framing of methylation as a memory module. Less methods-focused than Smith & Meissner 2013 or Schübeler 2015; more applications-and-cancer-focused. Could be cited as a complement.
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/emm201710)
 ## Related
 
 - [[10-Summaries/smith-2013-methylation-development]]

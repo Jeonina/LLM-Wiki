@@ -14,6 +14,8 @@ Liu, Xia, Qiao et al. developed **SomaGauss-SV**, a somatic SV detection workflo
 
 A 2025 demonstration of nanopore long-read for somatic SV calling at single-patient cancer-genomics scale. Marginally relevant to scDNA-mosaicism review — bulk LRS rather than scLRS. Could be a §6 future-perspective citation when discussing the long-read structural-variant arm of mosaicism detection.
 
+---
+**Source:** [Open paper](https://www.biorxiv.org/content/10.1101/2025.06.12.659252v1)
 ## Related
 
 - [[10-Summaries/sanders-2020-sctrip]]

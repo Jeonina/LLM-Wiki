@@ -14,6 +14,8 @@ Bizzotto and Walsh (Boston Children's/Harvard) reviewed brain genetic mosaicism 
 
 **Canonical 2022 review for §1/§5 brain mosaicism.** Walsh-authored, complements Shao 2025 (general scDNA mosaicism). Existing bibkey `bizzotto2022` already present. Must-cite for brain section.
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/s41583-022-00572-x)
 ## Related
 
 - [[10-Summaries/shao-2025-scDNA-mosaicism-review]]

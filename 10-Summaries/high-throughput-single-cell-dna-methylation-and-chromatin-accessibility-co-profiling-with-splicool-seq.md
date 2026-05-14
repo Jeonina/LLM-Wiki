@@ -60,6 +60,8 @@ In-situ GpC methyltransferase (M.CviPI) marks accessible regions. Formaldehyde f
 - The two-HMA divergence: what is the mechanistic basis? Authors propose chromatin-context differences but don't define them.
 - Generalization beyond LUAD; primary samples are tumor-only — no matched paired normal.
 
+---
+**Source:** [DOI](https://doi.org/10.1002/ctm2.70584)
 ## Related
 
 - [[40-Topics/dna-methylation]] · [[40-Topics/single-cell-multiomics]] · [[30-Concepts/nome-seq]] · [[30-Concepts/combinatorial-indexing]] · [[30-Concepts/epigenetic-aging]]

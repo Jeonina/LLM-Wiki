@@ -14,6 +14,8 @@ Yeung, Florescu, Zeller et al. (van Oudenaarden lab; Hubrecht Institute) develop
 
 The first scalable method for joint histone-mark profiling in single cells. Anchors §3.4 (chromatin state — multi-mark). Critical for understanding bivalency, mark-switching dynamics, and chromatin velocity.
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/s41587-022-01560-3)
 ## Related
 
 - [[10-Summaries/janssens-2023-scicut-tag]]

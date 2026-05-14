@@ -54,6 +54,8 @@ FACS sorting of single cells (CD19+/− splenocytes; ACSA-1+, PSD95+, prominin-1
 - Why does heteroplasmy variance dip at P6? Mitophagic clearance of embryonic mitochondria is suggested but unproven.
 - Only two mt-tRNA mutations tested in one gene (mt-Ta). Generalization to protein-coding or mt-rRNA mutations is open.
 
+---
+**Source:** [DOI](https://doi.org/10.1126/sciadv.adi4038)
 ## Related
 
 - [[40-Topics/somatic-mosaicism]] · [[30-Concepts/mitochondrial-heteroplasmy]] · [[30-Concepts/kimura-distribution]]

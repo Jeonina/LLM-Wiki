@@ -4,7 +4,7 @@ title: MDA (Multiple Displacement Amplification)
 aliases: [Multiple Displacement Amplification, Φ29 amplification]
 tags: [scWGA, isothermal, Φ29, method]
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-14
 ---
 
 # MDA (Multiple Displacement Amplification)
@@ -13,7 +13,7 @@ updated: 2026-05-11
 
 ## Definition
 
-Φ29 polymerase has high processivity (>70 kb), low error rate (10⁻⁷–10⁻⁸ errors/base), and strand-displacement activity. Random hexamers prime the genome at thousands of sites; Φ29 extends from each primer, displacing downstream strands which become templates for further priming, producing exponential amplification at constant temperature (~30 °C) ([[10-Summaries/diane-2025-naturereviewsgenetics]], [[10-Summaries/charles-2016-naturereviewsgenetics]]).
+Φ29 polymerase has high processivity (>70 kb), low error rate (10⁻⁷–10⁻⁸ errors/base), and strand-displacement activity. Random hexamers prime the genome at thousands of sites; Φ29 extends from each primer, displacing downstream strands which become templates for further priming, producing exponential amplification at constant temperature (~30 °C). The chemistry was introduced in [[10-Summaries/dean-2002-mda|Dean et al. 2002]], who demonstrated <3-fold locus-to-locus bias vs. 4–6 orders of magnitude for PCR-based WGA — establishing MDA as the dominant scWGA approach for the subsequent 15+ years ([[10-Summaries/diane-2025-naturereviewsgenetics]], [[10-Summaries/charles-2016-naturereviewsgenetics]]).
 
 Typical metrics: coverage ~70–75%, MAPD low but variable, allelic balance low, ~11 h reaction time, $10/cell. Commercial kits widely available.
 
@@ -45,6 +45,7 @@ MDA democratized [[scdna-seq]]: Φ29 polymerase enabled high-fidelity, high-cove
 
 ## Related
 
+- [[10-Summaries/dean-2002-mda]] — founding paper
 - [[scwga]]
 - [[pta]] — direct successor.
 - [[malbac]] — hybrid PCR/isothermal alternative.

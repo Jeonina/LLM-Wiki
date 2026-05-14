@@ -59,6 +59,8 @@ R package. In silico mixture of 966 cells from 6 cell lines (Buenrostro 2015). E
 - k-medoids requires choosing K; modified gap statistic helps but is not deterministic.
 - 2018-era tool, somewhat eclipsed by cisTopic / SnapATAC / EpiScanpy / ArchR for new work. The conceptual contributions (coverage-weighted clustering, landmark refinement, cluster-specific peak testing) live on in modern pipelines.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41467-018-04629-3)
 ## Related
 
 - [[40-Topics/single-cell-atac-seq]] · [[30-Concepts/scabc]] · [[30-Concepts/chromvar]]

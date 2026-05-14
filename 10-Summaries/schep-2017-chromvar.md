@@ -14,6 +14,8 @@ Schep, Wu, Buenrostro, Greenleaf (Stanford) developed **chromVAR**, an R package
 
 The canonical motif-based scATAC analysis tool. Used by virtually every scATAC publication. Anchors §4 (scATAC analysis tools) alongside cisTopic, SnapATAC, scBasset, SCALE.
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/nmeth.4401)
 ## Related
 
 - [[10-Summaries/buenrostro-2015-nature]]

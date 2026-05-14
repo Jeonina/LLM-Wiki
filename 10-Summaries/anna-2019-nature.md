@@ -81,3 +81,6 @@ The strongest design choice: WT cells from the same patient serve as the compari
 - The IRE1-XBP1 therapeutic target claim is hypothesis, not validated in patients.
 - The HSPC NF-κB signature is shown but the upstream mechanism (which receptor, which ligand) is not nailed down.
 - Why doesn't ET-stage CALR drive HSPC fitness, but MF-stage CALR does? The paper notes the difference but doesn't explain the switch.
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-019-1367-0)

@@ -14,6 +14,8 @@ Bai, Zhang, Xiang, Guo, Zhu, Yi (Peking + UNC) developed **SIMPLE-seq** for simu
 
 The first single-cell joint 5mC + 5hmC method. Important §3.3 advance — 5hmC is dynamic in active demethylation; separating it from 5mC reveals demethylation kinetics that bisulfite-only methods miss. Mouse-brain application directly relevant to brain mosaicism.
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/s41587-024-02148-9)
 ## Related
 
 - [[10-Summaries/luo-2018-snmc-seq2]]

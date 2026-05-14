@@ -58,6 +58,8 @@ ICELL8 nanowell platform (Takara). Standardized protocol with optimization for n
 - Tn5 cuts within nucleosomes can degrade chromatin organization information; MNase-based methods like sortChIC preserve nucleosome positioning better.
 - Atlas-scale multi-mark cataloging (e.g., 50 marks × tissue × donor) remains expensive even at $0.11/cell.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41596-023-00905-9)
 ## Related
 
 - [[40-Topics/histone-modifications]] · [[30-Concepts/scicut-tag]] · [[30-Concepts/cut-and-tag]] · [[30-Concepts/multi-tag]] · [[20-Entities/steven-henikoff]]

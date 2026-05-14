@@ -14,6 +14,8 @@ Tu, Lu, Zhang, Huang, Xie (Sichuan University) developed **SCOUT** (Single Cell 
 
 Addresses the limitation of Monovar/SCcaller/SCAN-SNV which require external data. SCOUT operates on a single cell alone — useful for rare clones, minor subpopulations, or when bulk samples are unmatched. Anchors §4 (variant calling tool family).
 
+---
+**Source:** [Open paper](https://academic.oup.com/nar/article/49/10/e57/6146636)
 ## Related
 
 - [[10-Summaries/zafar-2016-monovar]]

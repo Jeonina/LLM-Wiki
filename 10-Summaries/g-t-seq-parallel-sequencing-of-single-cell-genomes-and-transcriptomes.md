@@ -49,3 +49,6 @@ G&T-seq physically **separates** polyadenylated mRNA from genomic DNA in a singl
 - [[integrated-genome-and-transcriptome-sequencing-of-the-same-cell]] — Dey DR-seq, contemporaneous one-pot alternative.
 - [[scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]] — scNMT-seq inherits the G&T-seq separation chemistry.
 - [[single-cell-triple-omics-sequencing-reveals-genetic-epigenetic-and-transcriptomic-heterogeneity-in-hepatocellular-carcinomas]] — scTrio-seq, conceptual successor adding methylation.
+
+---
+**Source:** [Open paper](https://www.nature.com/articles/nmeth.3370)

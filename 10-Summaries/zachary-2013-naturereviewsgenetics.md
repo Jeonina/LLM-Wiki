@@ -69,3 +69,6 @@ Synthesizing review across mouse and human studies, with extensive ESC focus. Me
 - Locus-specific timing of methylation establishment in human development — much known from mouse, less from human.
 - The functional significance of non-CpG methylation (mCpH) in adult tissues, especially in the brain.
 - 5hmC and other oxidative intermediates as functional marks vs transient intermediates — still unresolved at time of writing.
+
+---
+**Source:** [DOI](https://doi.org/10.1038/nrg3354)

@@ -14,6 +14,8 @@ Kousi, Boix, Park, Mathys et al. (Kellis, Tsai labs; MIT) performed single-cell 
 
 A major §5.2 brain mosaicism + neurodegeneration anchor. Existing bibkey `kousi2022` already present. Cite alongside Miller 2022 Nature in §5.2 when discussing AD-specific mutational signatures.
 
+---
+**Source:** [Open paper](https://www.biorxiv.org/content/10.1101/2022.04.21.489103v1.full)
 ## Related
 
 - [[10-Summaries/miller-2022-maester]]

@@ -14,6 +14,8 @@ Tavares, Dhir, He et al. (Balasubramanian lab; Cambridge) developed **6-base-CUT
 
 A bulk-level multimodal technique that physically couples histone marks with cytosine modifications at single-fragment level. Anchors §3.3/§3.4 (joint methylation + histone-mark profiling at chromatin features). Could extend to single-cell as a future direction.
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/s41467-026-69429-6)
 ## Related
 
 - [[10-Summaries/bai-2024-simple-seq]]

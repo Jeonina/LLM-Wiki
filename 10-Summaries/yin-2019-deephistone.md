@@ -14,6 +14,8 @@ Yin, Wu, Liu, Lv, Jiang (Tsinghua) developed **DeepHistone**, a deep CNN integra
 
 A bulk-data deep-learning approach for histone-modification imputation — useful when ChIP-seq is unavailable. Could complement scATAC-based chromatin-state inference. Marginal relevance to scDNA-mosaicism review but worth noting in §4 computational methods if histone-mark imputation is discussed.
 
+---
+**Source:** [Open paper](https://link.springer.com/article/10.1186/s12864-019-5489-4)
 ## Related
 
 - [[10-Summaries/yuan-2022-scbasset]]

@@ -58,6 +58,8 @@ Nanopore long-read sequencing of 15 paired tumor-blood LSCC samples. Five paired
 - Spatial-proximity mechanism for *TP53BP2*/*FBXO28* activation needs orthogonal Hi-C/4C validation.
 - Cohort is small (15 → 27 patients); replication and external cohort needed before clinical biomarker claims.
 
+---
+**Source:** [DOI](https://doi.org/10.1101/2025.06.12.659252)
 ## Related
 
 - [[40-Topics/long-read-sequencing]] · [[30-Concepts/somagauss-sv]] · [[30-Concepts/structural-variants]] · [[40-Topics/somatic-mosaicism]]

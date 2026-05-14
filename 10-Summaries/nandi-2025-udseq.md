@@ -14,6 +14,8 @@ Nandi, Cheng, Al-Azzam et al. (Alexandrov, Gleeson labs; UCSD) developed **UDSeq
 
 A 2025 entry into the duplex-sequencing family alongside NanoSeq, CODEC, HiDEF-seq. Low input (100 pg) enables cohort-scale somatic-mutation studies on rare cell populations. Anchors §3.1.3 (duplex methods) and §6 (cost/throughput limitations). The Alexandrov mutational-signatures pipeline lineage continues.
 
+---
+**Source:** [Open paper](https://www.biorxiv.org/content/10.1101/2025.09.14.676103v1)
 ## Related
 
 - [[10-Summaries/abascal-2021-nanoseq]]

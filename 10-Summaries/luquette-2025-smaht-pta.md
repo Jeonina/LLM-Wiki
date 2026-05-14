@@ -14,6 +14,8 @@ Luquette, Coorens, Natu, Suvakov et al. (Walsh, Park, Abyzov; SMaHT Single Cell 
 
 The flagship 2025 SMaHT (Somatic Mosaicism across Human Tissues) consortium demonstration. Shows PTA scWGA → duplex validation → multi-mutation-type integration (sSNV + CNV + LOY + rearrangements + lineage) in a single workflow on non-brain tissues. Anchors §3.1 (PTA) and §5 (somatic mosaicism applications beyond brain). Closes gap on the SMaHT consortium reference.
 
+---
+**Source:** [Open paper](https://www.biorxiv.org/content/10.1101/2025.10.31.685648v1)
 ## Related
 
 - [[10-Summaries/gonzalez-2021-pta]]

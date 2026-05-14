@@ -56,6 +56,8 @@ Before sci-CAR, joint single-cell profiling of chromatin accessibility + transcr
 - [[g-t-seq-parallel-sequencing-of-single-cell-genomes-and-transcriptomes]] — Macaulay G&T-seq, DNA + RNA joint (precursor of DNA-anchored joint assays).
 - [[integrated-genome-and-transcriptome-sequencing-of-the-same-cell]] — Dey DR-seq, contemporaneous DNA+RNA joint method.
 
+---
+**Source:** [Open paper](https://www.science.org/doi/10.1126/science.aau0730)
 ## Related
 
 - [[40-Topics/single-cell-multiomics]]

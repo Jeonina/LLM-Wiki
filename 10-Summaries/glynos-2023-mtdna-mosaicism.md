@@ -14,6 +14,8 @@ Glynos, Bozhilova, Frison, Burr, Stewart, Chinnery (Cambridge) performed high-th
 
 The mtDNA-mosaicism mechanistic reference. Cite in §5.3 (CH/aging + mtDNA) — single-cell mtDNA heteroplasmy enables mosaicism studies without nuclear-mutation barcoding. Complements MAESTER/mtscATAC for nuclear barcoding via mtDNA.
 
+---
+**Source:** [Open paper](https://www.science.org/doi/10.1126/sciadv.adi4038?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed)
 ## Related
 
 - [[10-Summaries/miller-2022-maester]]

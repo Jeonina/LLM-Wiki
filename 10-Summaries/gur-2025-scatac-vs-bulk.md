@@ -14,6 +14,8 @@ Gur and Hughes (Oxford) compared scATAC-seq vs. bulk ATAC-seq on matched samples
 
 A pragmatic 2025 benchmarking paper supporting scATAC-seq adoption — useful in §3.2 when arguing scATAC is a strict improvement over bulk for cell-typed regulatory mapping, not just a parallel approach. Cite in §6 limitations discussion of throughput/cost tradeoffs.
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/s41598-025-87351-7)
 ## Related
 
 - [[10-Summaries/buenrostro-2015-nature]]

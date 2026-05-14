@@ -14,6 +14,8 @@ Danese, Richter, Chaichoompu, Fischer, Theis, Colomé-Tatché (Helmholtz Munich)
 
 The unified epigenome analysis framework — covers both arms (accessibility + methylation) of the locus state. Anchors §4 (computational methods). Complements chromVAR / cisTopic / SnapATAC (accessibility only) and Epiclomal / Melissa (methylation only).
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/s41467-021-25131-3)
 ## Related
 
 - [[10-Summaries/schep-2017-chromvar]]

@@ -57,6 +57,8 @@ Comprehensive benchmark on published sc3DG-seq datasets (Table 1 enumerates the 
 - Long-read sc3DG methods (scNanoHi-C) are processed in STARK but not deeply benchmarked; the long-read advantage is most visible in higher-order contacts that ligation methods miss.
 - 3D structure reconstruction from sparse data remains hard; STARK supports it but the result quality depends heavily on imputation choices.
 
+---
+**Source:** [DOI](https://doi.org/10.1186/s13059-026-03938-x)
 ## Related
 
 - [[40-Topics/3d-genome]] · [[30-Concepts/stark]] · [[30-Concepts/empty-cells-algorithm]] · [[30-Concepts/sscce]]

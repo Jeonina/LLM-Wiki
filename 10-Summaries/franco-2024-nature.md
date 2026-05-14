@@ -80,3 +80,6 @@ Strong validation chain: cell-line mixing, CNV concordance, multi-locus multiple
 - The pro-inflammatory chromatin program is shown to be cell-intrinsic at the clonal hematopoiesis stage, but the **mechanism** linking JAK2V617F → NF-κB chromatin remodeling is not nailed down (STAT-mediated? direct?).
 - Imputation-based DOGMA integration depends on having mitochondrial variants and surface proteins as bridges — how well does this generalize to settings without those signals?
 - GoT–ChA captures only *one* mutation per cell by default; multiplexing was demonstrated but at lower per-locus efficiency. How does this scale for clones defined by 4+ co-occurring mutations?
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41586-024-07388-y)

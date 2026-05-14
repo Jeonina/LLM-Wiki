@@ -66,3 +66,6 @@ Methodological review from KU Leuven (Voet lab — co-developer of G&T-seq). Hea
 - How to scale plate-based G&T-seq family to thousands of cells (microfluidic on-chip approaches are noted as in development).
 - Integration accuracy benchmarking — diagonal integration is computationally demanding and produces results that are hard to validate.
 - When to skip WGA (DNTR-seq style) vs. perform it — application-dependent, not yet a consensus heuristic.
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41576-023-00580-2)

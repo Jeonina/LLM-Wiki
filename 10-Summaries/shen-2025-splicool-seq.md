@@ -14,6 +14,8 @@ Shen, Deng, Luo et al. (Fan lab) developed **SpliCOOL-seq** — split-pool ligat
 
 A 2025 advance over the scCOOL-seq/scNOME-seq/scNMT-seq family — combinatorial indexing brings co-profiling to thousands of cells (vs. hundreds with plate-based predecessors). Anchors §3.1/§3.3 (multimodal methylation + accessibility scaling). Complements snmCAT-seq, sciMETv3.
 
+---
+**Source:** [Open paper](https://onlinelibrary.wiley.com/doi/10.1002/ctm2.70584)
 ## Related
 
 - [[10-Summaries/clark-2018-scnmt]]

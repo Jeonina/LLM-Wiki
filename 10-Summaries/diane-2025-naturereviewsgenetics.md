@@ -88,3 +88,6 @@ This is a synthesizing review from the Walsh lab (Boston Children's), which has 
 - The clinical promise of unbiased pre-implantation genetic screening from a single embryo cell — currently demonstrated in preprint, not yet validated in clinical trials.
 - Single-cell + single-molecule combined approaches: scDAF-seq is one direction, but is there an analogous "scDNA-seq + chromatin in the same cell" that matches the depth of duplex sequencing while keeping single-cell resolution?
 - Throughput vs depth: DLP+ scales to >10,000 cells at very low per-cell coverage; PTA peaks at ~384 cells per run. The right operating point for a given biological question is rarely benchmarked.
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41576-025-00832-3)

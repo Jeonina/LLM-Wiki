@@ -54,6 +54,8 @@ Comparison of (a) bulk ATAC-seq on FACS-isolated erythroblasts and NK cells from
 - The minimum cell-count threshold for "robust pseudo-bulk" likely depends on signal-to-noise of the cell type; not universally applicable.
 - No comparison to combinatorial-indexing scATAC-seq (sciATAC); only droplet-based.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41598-025-87351-7)
 ## Related
 
 - [[40-Topics/single-cell-atac-seq]] · [[30-Concepts/atac-seq]] · [[30-Concepts/pseudo-bulk]]

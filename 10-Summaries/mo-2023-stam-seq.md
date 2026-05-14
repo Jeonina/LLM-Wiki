@@ -14,6 +14,8 @@ Mo, Shu, Liu et al. (Zhai lab) developed **STAM-seq** in Arabidopsis: nuclei iso
 
 A 2023 plant extension of the methyltransferase-footprinting family (SMAC/Fiber/SAMOSA/nanoNOMe). Important for showing the toolkit generalizes across kingdoms and for the **adaptive sampling** trick — targeted long-read sequencing without prior enrichment. Anchors §3.3 (SMF — adaptive sampling future direction).
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/s41477-023-01498-7)
 ## Related
 
 - [[10-Summaries/shipony-2020-smac]]

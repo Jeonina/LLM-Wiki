@@ -22,7 +22,7 @@ The foundation: how to sequence a genome from one cell. Covers whole-genome ampl
 
 **Start here →** [[30-Concepts/scdna-seq]] · [[30-Concepts/scwga]] · [[30-Concepts/pta]]
 **Key review →** [[10-Summaries/diane-2025-naturereviewsgenetics|Shao et al. 2025 (NRG)]]
-**Foundational →** [[10-Summaries/charles-2016-naturereviewsgenetics|Gawad & Quake 2016]]
+**Foundational →** [[10-Summaries/charles-2016-naturereviewsgenetics|Gawad & Quake 2016]] · [[10-Summaries/dean-2002-mda|Dean 2002 (MDA founding paper)]]
 
 ---
 
@@ -33,6 +33,7 @@ Post-zygotic mutations as both disease drivers and natural lineage barcodes. Fro
 **Start here →** [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/lineage-tracing]] · [[30-Concepts/clonal-hematopoiesis]]
 **Key papers →** [[10-Summaries/lodato-2015-science|Lodato 2015]] · [[10-Summaries/coorens-2021-nature|Coorens 2021]] · [[10-Summaries/cagan-2022-nature|Cagan 2022]]
 **Brain focus →** [[10-Summaries/taejeong-2018-science|Bae 2018]] · [[10-Summaries/taejeong-2022-science|Bae 2022]] · [[10-Summaries/miller-2022-nature|Miller 2022 (AD)]]
+**Stem cell aging →** [[10-Summaries/kapadia-2024-stem-cell-aging|Kapadia & Goodell 2024]]
 
 ---
 

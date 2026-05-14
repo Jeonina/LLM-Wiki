@@ -62,6 +62,8 @@ topics:
 - N=1 individual. Generalization to other donors and tissues remains for the SMaHT atlas papers.
 - Sample is postmortem (74-yo); fresh-tissue dynamics untested.
 
+---
+**Source:** [DOI](https://doi.org/10.1101/2025.10.31.685648)
 ## Related
 
 - [[40-Topics/somatic-mosaicism]] · [[30-Concepts/pta]] · [[30-Concepts/duplex-sequencing]] · [[20-Entities/smaht-network]]

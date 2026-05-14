@@ -60,3 +60,6 @@ Consortium consensus document. Helmholtz Munich (Theis group) led with contribut
 - Benchmark coverage is uneven — heavily weighted toward scRNA-seq, less so for scATAC-seq and emerging modalities.
 - Recommendations age fast — the printed version is already partially superseded by 2025 tools.
 - Cross-modality benchmarks are limited — most are within-modality, leaving multi-omic integration choices under-benchmarked.
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41576-023-00586-w)

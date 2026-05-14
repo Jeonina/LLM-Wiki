@@ -64,3 +64,6 @@ Comprehensive landscape review with Table 1 cataloging dozens of methods. From Y
 - Standardized benchmarks across multi-omic integration tools.
 - Quadruple or quintuple modality measurements — currently in development but no clear winner.
 - Cost-per-cell scaling — multi-omic methods are still substantially more expensive than unimodal at equal cell number.
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41580-023-00615-w)

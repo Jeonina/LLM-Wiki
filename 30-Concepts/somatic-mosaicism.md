@@ -4,7 +4,7 @@ title: Somatic mosaicism
 aliases: [somatic mosaicism, mosaicism, post-zygotic mosaicism]
 tags: [genetics, mosaicism, post-zygotic]
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-14
 ---
 
 # Somatic mosaicism
@@ -35,6 +35,7 @@ Distinct from **chimerism** (cells from a different individual — fertilization
 - **Drives disease**: clonal hematopoiesis, cancer, neurodevelopmental disorders (CHILD syndrome, Proteus syndrome, hemimegalencephaly, Pallister-Killian).
 - **Tracks development**: natural mutation accumulation serves as endogenous lineage marker for [[lineage-tracing]] in humans where engineered markers are unethical.
 - **Pre-implantation screening**: aneuploidy in early embryos shapes IVF outcomes.
+- **Universal in aged tissue**: detected in every solid organ examined to date; aged stem cell milieu acts as the selective environment that determines which clones expand — see [[10-Summaries/kapadia-2024-stem-cell-aging|Kapadia & Goodell 2024]] for the stem-cell-aging framing ("adaptive oncogenesis").
 
 The biology motivated the methods. [[scdna-seq]] became technically tractable largely *because* of demand from mosaicism researchers — Walsh lab, Vijg, Quake, Evrony — who needed single-cell DNA resolution to detect what bulk could not.
 

@@ -57,6 +57,8 @@ R/Bioconductor package (github.com/aertslab/cistopic). Input: binary cell × reg
 - LDA topic-number selection remains empirical; perplexity is not perfectly principled.
 - Newer tools (Signac, ArchR, snapATAC2) include LDA-style approaches as one option among many; cisTopic's standalone usage has declined.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-019-0367-1)
 ## Related
 
 - [[40-Topics/single-cell-atac-seq]] · [[30-Concepts/cistopic]] · [[30-Concepts/latent-dirichlet-allocation]] · [[20-Entities/stein-aerts]]

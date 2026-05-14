@@ -4,6 +4,50 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-05-14 — Ingest: Dean 2002 MDA + Kapadia & Goodell 2024 (stem cell aging) + DOI-link retrofit (89 summaries)
+
+**Trigger**: User requested ingest of two new sources and asked that paper summaries carry clickable DOI/URL links back to the original publications.
+
+**Sources ingested (2)**:
+
+- `Comprehensive human genome amplification using multiple displacement amplification.md` — Dean FB, Hosono S, Fang L, Wu X, Faruqi AF, Bray-Ward P, Sun Z, Zong Q, Du Y, Du J, Driscoll M, Song W, Kingsmore SF, Egholm M, Lasken RS. *PNAS* 99(8): 5261–5266 (2002). [DOI](https://doi.org/10.1073/pnas.082089499). The founding MDA paper — Φ29 polymerase + random hexamers → <3-fold WGA bias vs. 4–6 orders of magnitude for PCR-based methods. Anchor citation for the entire scWGA branch of single-cell genomics.
+- `Kapadia_2024_NatAging - Tissue mosaicism following stem cell aging.pdf` — Kapadia CD, Goodell MA. *Nature Aging* 4(3): 295–308 (2024). [DOI](https://doi.org/10.1038/s43587-024-00589-0). Review of stem cell aging × somatic mosaicism in lockstep, using HSC as exemplar. Provides quantitative anchor numbers: 14–17 coding mutations/HSC/year, 50,000–200,000 HSC pool, >95% adults >50 have detectable CH by duplex sequencing. Introduces "adaptive oncogenesis" frame.
+
+**New summary pages (2)**:
+- `10-Summaries/dean-2002-mda.md`
+- `10-Summaries/kapadia-2024-stem-cell-aging.md`
+
+**New entity page (1)**:
+- `20-Entities/margaret-goodell.md` — corresponding author of Kapadia 2024; Baylor HSC biologist
+
+**Existing pages updated (3)**:
+- `30-Concepts/mda.md` — added Dean 2002 as founding paper citation in definition + Related
+- `30-Concepts/clonal-hematopoiesis.md` — added quantitative HSC mutation accumulation block (14–17 mut/year, pool size 50K–200K), adaptive oncogenesis framing, broad pathology spectrum
+- `30-Concepts/somatic-mosaicism.md` — added "universal in aged tissue" claim with Kapadia 2024 citation
+
+**DOI/URL link retrofit (81 summaries)**:
+
+Wrote `tools/add-doi-links.py` to retrofit clickable source links into existing summary pages. Strategy:
+1. Skip files already containing an https:// link in body.
+2. If frontmatter has a `doi:` field → insert `**Source:** [DOI](https://doi.org/...)` before `## Related`.
+3. Else if `sources:` points to a `.md` clipping in `00-Sources/papers/` carrying a `source:` URL → insert `**Source:** [Open paper](...)`.
+4. Else flag as needing PubMed lookup.
+
+Results from 234 total summaries:
+- 8 already had links (the 3 newly created scRNA-seq summaries + 5 inherited)
+- **81 auto-fixed** from existing frontmatter `doi:` field (45) or `.md` clipping URLs (36)
+- **145 remain — PDF-only sources without DOI metadata.** These need PubMed lookup by title/author/year. Slugs follow `author-year-journal` convention, so batch PubMed query is feasible in a follow-up session.
+
+Post-retrofit: 89 of 234 summaries (38%) carry clickable source links. The remaining 145 are catalogued and ready for batch PubMed processing.
+
+**Tool created**: `tools/add-doi-links.py` — idempotent, dry-run-capable. Re-runnable as more `doi:` fields or `.md` clippings are added.
+
+**Notable findings / tensions surfaced**:
+- Frontmatter inconsistency across summaries: some have rich metadata (`doi:`, `journal:`, `published:`, `entities:`, `concepts:`), some have minimal (`sources:` + a few tags). The retrofit succeeded only where structured metadata was already present. A future maintenance pass could normalize frontmatter across the corpus.
+- 138 PDF source files in `00-Sources/papers/` carry no metadata recoverable without opening the PDF. PubMed lookup by reconstructed citation is the next logical step.
+
+---
+
 ## 2026-05-14 — Ingest: scRNA-seq foundational papers (Tang 2009, Macosko 2015, Svensson 2017)
 
 **Trigger**: User is drafting the introduction of a scDNA-seq review paper (multi-omics focus). Wiki audit showed strong coverage of somatic mutation / mosaicism but a gap on (i) scRNA-seq foundations and (ii) bulk-vs-single-cell framing for RNA. Three canonical papers fetched via PubMed MCP to close that gap.

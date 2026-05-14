@@ -14,6 +14,8 @@ Nanda, Wu, Irkliyenko et al. (Ramani lab; UCSF) adapted Tn5 hairpin tagmentation
 
 The low-input enabler for SMS-based single-molecule footprinting. Brings SAMOSA into the per-tissue-sample regime (vs. millions-of-cells starting material). Anchors §3.3 (SMF — SAMOSA family) and §6 (low-input SMS).
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/s41588-024-01748-0)
 ## Related
 
 - [[10-Summaries/abdulhay-2020-samosa]]

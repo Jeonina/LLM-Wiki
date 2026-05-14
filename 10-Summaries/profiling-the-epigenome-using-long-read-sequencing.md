@@ -60,6 +60,8 @@ Authoritative review. Covers technology evolution (PacBio HiFi $35/Gb; ONT R10.4
 - The accuracy ceiling for non-CpG methylation contexts (6mA, 4mC) remains lower than for 5mC; new training datasets with synthetic k-mer-balanced controls are still needed.
 - Cost and throughput of LRS are improving but still trail Illumina by ~10× for genome-wide bulk applications.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41588-024-02038-5)
 ## Related
 
 - [[40-Topics/long-read-sequencing]] · [[30-Concepts/oxford-nanopore]] · [[30-Concepts/pacbio]] · [[30-Concepts/fiber-seq]] · [[20-Entities/ana-conesa]]

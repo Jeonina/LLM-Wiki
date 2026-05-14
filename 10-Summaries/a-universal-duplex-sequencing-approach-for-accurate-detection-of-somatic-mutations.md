@@ -52,6 +52,8 @@ UDSeq couples random shearing with adapter ligation that places UMIs on both str
 - Preprint; not yet peer-reviewed.
 - Single-cell extension untested. Like all DS methods, requires intact dsDNA, so scWGA artifacts on single strands remain incompatible.
 
+---
+**Source:** [DOI](https://doi.org/10.1101/2025.09.14.676103)
 ## Related
 
 - [[30-Concepts/duplex-sequencing]] · [[30-Concepts/mutational-signatures]] · [[40-Topics/duplex-sequencing]] · [[10-Summaries/benchmarking-of-duplex-sequencing-approaches-to-reveal-somatic-mutation-landscapes]]

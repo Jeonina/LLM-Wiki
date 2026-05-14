@@ -14,6 +14,8 @@ Hong, Han, Hao et al. (Dao lab) reviewed single-cell 3D genomics. Covers experim
 
 Recent (2025) sc3D-genome review. Strong §3.5 reference. Complementary to Jiang 2026 STARK benchmark (technical) and Liu 2023 (atlas-scale). Cite when introducing sc3D-genome history.
 
+---
+**Source:** [Open paper](https://academic.oup.com/bib/article/26/5/bbaf520/8276060)
 ## Related
 
 - [[10-Summaries/jiang-2026-stark-scnucleome]]

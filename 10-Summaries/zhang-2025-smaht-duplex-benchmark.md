@@ -14,6 +14,8 @@ Zhang, Viswanadham, Coorens et al. (SMaHT Duplex Sequencing Focus Group) systema
 
 The **canonical 2025 cross-platform duplex-sequencing benchmark**. Essential §3.1.3 reference when comparing duplex methods. Companion to the Alexandrov 2025 / Coorens 2025 SMaHT consortium publications. Provides the reference for selecting a duplex method for a given application.
 
+---
+**Source:** [Open paper](https://www.biorxiv.org/content/10.64898/2025.12.12.692823v1)
 ## Related
 
 - [[10-Summaries/abascal-2021-nanoseq]]

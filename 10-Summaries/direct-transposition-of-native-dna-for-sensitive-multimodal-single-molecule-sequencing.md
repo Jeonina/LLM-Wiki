@@ -60,6 +60,8 @@ PacBio Sequel II/IIe. Tn5 triple-mutant for size tunability. Phusion/Taq vs T4/A
 - Single-cell SMRT-Tag/SAMOSA-Tag not yet demonstrated. The 40 ng floor still requires thousands of nuclei.
 - SV calling F1 score at low coverage (0.225) lags ligation-based PacBio (0.389) due to shorter SMRT-Tag reads — SV calling needs full-length spanning reads.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41588-024-01748-0)
 ## Related
 
 - [[40-Topics/long-read-sequencing]] · [[30-Concepts/smrt-tag]] · [[30-Concepts/samosa-tag]] · [[30-Concepts/single-molecule-footprinting]]

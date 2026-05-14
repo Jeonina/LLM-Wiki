@@ -14,6 +14,8 @@ Janssens, Greene, Wu, Codomo et al. (Henikoff lab; FHCC) developed **sciCUT&Tag*
 
 The scalable CUT&Tag platform. Anchors §3.2/§3.4 (histone modification profiling). Complements scChIC-seq (Ku 2019) and scChIX-seq (Yeung 2023). Critical for histone-mark arm of multi-omics atlases.
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/s41596-023-00905-9)
 ## Related
 
 - [[10-Summaries/ku-2019-scchic-seq]]

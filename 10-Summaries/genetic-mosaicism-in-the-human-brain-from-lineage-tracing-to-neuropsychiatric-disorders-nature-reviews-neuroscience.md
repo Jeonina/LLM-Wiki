@@ -58,6 +58,8 @@ Authoritative review. Synthesizes ~150 references including the lab's own deep-W
 - ASD: what fraction of risk comes from intronic/intergenic somatic variants invisible to exome sequencing? Recent deep-WGS suggests an excess of mosaic mutations in brain-active enhancers in ASD brains, but cohort size is the limit.
 - Lineage tracing remains expensive: WGS of thousands of cells is prohibitive; targeted approaches (Sci-LIANTI, EMBLEM/mtscATAC) trade depth for breadth.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41583-022-00572-x)
 ## Related
 
 - [[40-Topics/somatic-mosaicism]] · [[30-Concepts/lineage-tracing]] · [[30-Concepts/focal-cortical-dysplasia]] · [[30-Concepts/autism-spectrum-disorder]] · [[20-Entities/christopher-walsh]]

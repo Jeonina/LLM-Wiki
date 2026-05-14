@@ -14,6 +14,8 @@ Hunt, Burnard, Roper et al. (Heather Lee lab) developed **scTEM-seq** — target
 
 A cost-efficient alternative to whole-genome bisulfite scBS-seq when global methylation level (not per-locus) is the readout of interest. Anchors §3.3 (methylation methods — targeted approaches). Useful in §5 cancer when discussing hypomethylating-agent response heterogeneity.
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/s41598-022-09765-x)
 ## Related
 
 - [[10-Summaries/clark-2018-scnmt]]

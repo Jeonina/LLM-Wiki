@@ -14,6 +14,8 @@ Ku, Nakamura, Gao, Cui et al. (Zhao lab; NHLBI) developed **scChIC-seq** — MNa
 
 A 2019 alternative to scChIP-seq (Rotem 2015) and to CUT&Tag-based methods (scCUT&Tag, sciCUT&Tag). MNase-based vs Tn5-based architecture. Anchors §3.4 (histone modification single-cell profiling — historical context).
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/s41592-019-0361-7)
 ## Related
 
 - [[10-Summaries/rotem-2015-drop-chip]]

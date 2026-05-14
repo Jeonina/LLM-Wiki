@@ -67,3 +67,6 @@ Comprehensive synthesizing review. Greenleaf lab is the originating group for AT
 - TF footprinting from chromatin accessibility data is statistically subtle — different methods produce different footprint calls. (The single-molecule resolution of [[daf-seq]] partly addresses this.)
 - How accessibility relates to 3D genome organization — touched on but not the focus of this review.
 - Single-cell quantitative dynamics — how fast does accessibility change in response to perturbation? Largely an open question for biology, partially addressable now with paired multi-omic time courses.
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41576-018-0089-8)

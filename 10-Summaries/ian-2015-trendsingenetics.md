@@ -70,3 +70,6 @@ Synthesizing review with clinical case examples (CHILD syndrome, Proteus syndrom
 - The exact timing of left-right determination in humans — Ian 2015 notes it's known to be ~8-cell in mice but unknown in humans.
 - Whether the elevated mutability of early-development cells is intrinsic (e.g., maternal-cytoplasm replication machinery) or reflects relaxed selection — still open in 2025.
 - Quantitative recurrence-risk estimates as a function of estimated mutation timing — could be substantially improved by single-cell methods.
+
+---
+**Source:** [DOI](https://doi.org/10.1016/j.tig.2015.03.013)

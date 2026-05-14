@@ -14,6 +14,8 @@ Fang, Preissl, Li et al. (Ren, Ecker, Behrens labs; UCSD + Salk) developed **Sna
 
 The most scalable scATAC analysis tool of its generation. Precedes SnapATAC2 (Zhang 2024 Rust rewrite). Important for atlas-scale brain mapping. Anchors §4 (scATAC analysis).
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/s41467-021-21583-9)
 ## Related
 
 - [[10-Summaries/zhang-2024-snapatac2]]

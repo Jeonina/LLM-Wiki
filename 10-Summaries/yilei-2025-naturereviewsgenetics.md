@@ -67,3 +67,6 @@ Computational-methods-focused review. Authors are at major long-read centers (Ba
 - Methylation calling accuracy benchmarking across platforms and tools — no community-accepted gold-standard benchmark yet.
 - 5hmC and 6mA detection sensitivity — lags 5mC for both platforms.
 - Single-cell long-read methylation — technically possible but limited by per-cell yield; an intersection of [[scdna-seq]] and long-read methylation that remains open.
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41576-025-00822-5)

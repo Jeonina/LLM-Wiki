@@ -55,6 +55,8 @@ PyTorch implementation. 200-bp scan windows over hg19 with step 200 bp; window l
 - 2019 architecture; would benefit from modern transformer-style models (DNABERT, HyenaDNA) that can process longer sequences.
 - Predictions are bulk-cell-type-level; single-cell extension non-trivial because DNase signal in single cells is sparse.
 
+---
+**Source:** [DOI](https://doi.org/10.1186/s12864-019-5489-4)
 ## Related
 
 - [[40-Topics/histone-modifications]] · [[30-Concepts/deephistone]] · [[30-Concepts/convolutional-neural-network]] · [[30-Concepts/dnase-seq]]

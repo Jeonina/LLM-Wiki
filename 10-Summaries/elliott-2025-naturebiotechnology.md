@@ -80,3 +80,6 @@ The strongest engineering claim — **"deamination marks survive amplification, 
 - **Cost.** Each deeply sequenced cell consumed ~91–133 Gb of PacBio. The economics of scaling to cohort-sized experiments are unclear.
 - **Why is intra-cell haplotype divergence (61%) almost equal to inter-cell divergence (63%)?** The paper notes this but doesn't have a mechanism — is regulatory element actuation closer to a stochastic per-fiber event than to a programmed per-cell state?
 - **Generalization beyond GM24385/GM12878.** All scDAF-seq cells profiled are lymphoblastoid. Primary tissue scDAF-seq is not demonstrated.
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41587-025-02914-3)

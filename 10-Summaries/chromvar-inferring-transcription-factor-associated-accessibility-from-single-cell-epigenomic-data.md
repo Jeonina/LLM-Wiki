@@ -59,6 +59,8 @@ R package (github.com/GreenleafLab/chromVAR). cisBP database of human and mouse 
 - The within-cell aggregation can mask **co-binding** signals: chromVAR cannot directly resolve TF cooperativity from single-cell data, only motif-level activity.
 - Cannot distinguish TFs sharing a motif (e.g., GATA1 vs GATA2). Integration with scRNA-seq for TF expression is the workaround.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nmeth.4401)
 ## Related
 
 - [[40-Topics/single-cell-atac-seq]] · [[30-Concepts/chromvar]] · [[30-Concepts/transcription-factor-motif]] · [[20-Entities/william-greenleaf]]

@@ -66,3 +66,6 @@ Synthesizing review. Catalogs evidence from microarray, bulk sequencing, and eme
 - Tissue-specific mosaic mutation rates: known to be high in skin (UV) and intestine (turnover), uncertain in many other tissues.
 - The clinical threshold at which mosaicism becomes diagnostically actionable — what mosaic VAF triggers a different treatment decision?
 - Whether age-related accumulation of mosaic mutations is a *cause* of aging-related disease or a *biomarker* — distinction matters for therapeutic strategies.
+
+---
+**Source:** [DOI](https://doi.org/10.1038/nrg.2016.145)

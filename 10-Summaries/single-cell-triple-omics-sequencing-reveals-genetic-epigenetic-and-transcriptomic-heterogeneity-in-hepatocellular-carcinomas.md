@@ -48,3 +48,6 @@ First single-cell **triple-omics** assay that simultaneously yields (1) genomic 
 - [[scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]] — alternative triple-omics with accessibility instead of CNV.
 - [[g-t-seq-parallel-sequencing-of-single-cell-genomes-and-transcriptomes]] — DNA+RNA joint, predecessor in DNA-anchored chemistry.
 - [[high-throughput-single-cell-dna-methylation-and-chromatin-accessibility-co-profiling-with-splicool-seq]] — SpliCOOL-seq, later scaled DNA-methylation + accessibility co-assay.
+
+---
+**Source:** [Open paper](https://www.nature.com/articles/cr201623)

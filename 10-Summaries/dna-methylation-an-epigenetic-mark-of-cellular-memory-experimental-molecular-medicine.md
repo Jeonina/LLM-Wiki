@@ -58,6 +58,8 @@ Authoritative review. Three sections: (1) DNA methylation biology and analysis m
 
 - Single-cell methylation tools were still emerging in 2017; this review predates SIMPLE-seq, scTEM-seq, SpliCOOL-seq, and modern single-cell joint readouts. Today's wiki cluster represents that maturation.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/emm.2017.10)
 ## Related
 
 - [[40-Topics/dna-methylation]] · [[30-Concepts/dnmt]] · [[30-Concepts/tet-enzymes]] · [[30-Concepts/uhrf1]] · [[30-Concepts/cancer-of-unknown-primary]]

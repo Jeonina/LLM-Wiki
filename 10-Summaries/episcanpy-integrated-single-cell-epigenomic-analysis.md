@@ -59,6 +59,8 @@ Python package on top of scanpy / AnnData. Datasets: Luo 2017 brain snmC-seq, 10
 - The Python-vs-R divide in single-cell epigenomics remains (R has cisTopic, Signac, ArchR; Python has EpiScanpy, snapATAC2). Cross-language interop is still imperfect.
 - Methylation-specific imputation algorithms are not central to EpiScanpy; specialized methods (DeepCpG, Melissa) outperform on imputation tasks.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41467-021-25131-3)
 ## Related
 
 - [[40-Topics/single-cell-atac-seq]] · [[40-Topics/dna-methylation]] · [[30-Concepts/episcanpy]] · [[30-Concepts/scanpy]] · [[20-Entities/fabian-theis]]

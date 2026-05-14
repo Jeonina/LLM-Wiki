@@ -14,6 +14,8 @@ Geisenberger, van den Berg, van Batenburg et al. (van Oudenaarden lab; Hubrecht)
 
 The first robust single-cell joint histone + methylation method. Major §3.4 advance. Anchors any §6 future-perspective discussion of 4+ layer single-cell omics. Cell-cycle integration via FUCCI demonstrates dynamic methylation maintenance — directly relevant to mosaicism in dividing cells.
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/s41592-025-02847-4)
 ## Related
 
 - [[10-Summaries/tavares-2026-6base-cuttag]]

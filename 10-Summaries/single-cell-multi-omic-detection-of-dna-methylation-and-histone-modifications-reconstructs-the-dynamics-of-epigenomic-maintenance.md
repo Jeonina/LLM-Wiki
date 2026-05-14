@@ -61,6 +61,8 @@ K562 and RPE-1 hTERT FUCCI cell lines + mouse small intestine (proximal/middle/d
 - TAPS doesn't distinguish 5mC from 5hmC, though 5hmC is ~30× less abundant. For tissues like brain where 5hmC matters, this conflation is a real limit.
 - Throughput per experiment is plate-based (384-well); ~600–1,700 cells passing QC. Lower than Tn5-based methods.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-025-02847-4)
 ## Related
 
 - [[40-Topics/histone-modifications]] · [[30-Concepts/scepi2-seq]] · [[30-Concepts/sortchic]] · [[30-Concepts/taps]] · [[20-Entities/alexander-van-oudenaarden]]

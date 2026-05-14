@@ -14,6 +14,8 @@ Bravo González-Blas, Minnoye, Papasokrati et al. (Aerts lab; KU Leuven) develop
 
 The LDA branch of scATAC analysis. Complements chromVAR (motif-deviation) and SnapATAC (genome-bin) approaches. Anchors §4 (scATAC analysis). Particularly useful when cell states are continuous rather than discrete clusters.
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/s41592-019-0367-1)
 ## Related
 
 - [[10-Summaries/schep-2017-chromvar]]

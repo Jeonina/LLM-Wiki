@@ -64,3 +64,6 @@ Conceptual/synthesizing review. Reorganizes the scDNA-seq literature around capa
 
 - The framework is useful but applied unevenly across the field — many papers don't make explicit which capability they rely on, making method-to-application mapping fuzzier than it should be.
 - As multimodal single-cell methods mature, the "phenotypic association" capability becomes a continuum rather than a binary — needs refinement.
+
+---
+**Source:** [DOI](https://doi.org/10.1146/annurev-genom-111320-090436)

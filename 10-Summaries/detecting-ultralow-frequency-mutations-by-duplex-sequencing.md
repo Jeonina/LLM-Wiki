@@ -51,6 +51,8 @@ Step-by-step Nature Protocols paper. Library prep follows standard Illumina (son
 
 - DS is single-cell-incompatible (needs both strands of one molecule, scWGA loses them). The cost of moving to duplex chemistry at single-cell scale remains the dominant open problem.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/nprot.2014.170)
 ## Related
 
 - [[30-Concepts/duplex-sequencing]] · [[30-Concepts/umi-molecular-barcoding]] · [[40-Topics/duplex-sequencing]] · [[40-Topics/somatic-mosaicism]]

@@ -58,6 +58,8 @@ ICELL8 platform (Takara Bio USA) with Hoechst/propidium-iodide live/dead imaging
 - ICELL8 is single-vendor (Takara); platform availability and ongoing support are dependencies.
 - Throughput improvement is incremental relative to combinatorial indexing's atlas-scale capability; µATAC's niche is quality-controlled, imageable, lower-throughput experiments.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41467-018-05887-x)
 ## Related
 
 - [[40-Topics/single-cell-atac-seq]] · [[30-Concepts/micro-atac-seq]] · [[30-Concepts/icell8-nanowell]] · [[20-Entities/william-greenleaf]] · [[20-Entities/sandy-klemm]]

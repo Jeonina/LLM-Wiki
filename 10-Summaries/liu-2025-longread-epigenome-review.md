@@ -14,6 +14,8 @@ Liu and Conesa reviewed long-read sequencing (LRS) for epigenomics. Three areas:
 
 Strong §3.3 LRS-epigenome reference. Complements Fu 2025 (long-read methylation computational specifically). Cite when introducing why LRS is reshaping single-molecule chromatin biology — preserves modifications without amplification, enables haplotype-resolved phasing, accesses repetitive regions.
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/s41588-024-02038-5)
 ## Related
 
 - [[10-Summaries/fu-2025-longread-methylation]]

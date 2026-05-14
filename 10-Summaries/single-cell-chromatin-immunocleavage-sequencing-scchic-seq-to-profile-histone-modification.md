@@ -56,6 +56,8 @@ NIH 3T3, mESC, naive CD4 T cells for bulk validation. Single-cell sorting + MNas
 - Throughput limit (~285 cells/run). Newer methods (sciCUT&Tag) push this to ~40,000 cells/chip.
 - Two histone marks per run, not multiplexed within a cell. scChIX-seq later solves this with computational deconvolution.
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-019-0361-7)
 ## Related
 
 - [[40-Topics/histone-modifications]] · [[30-Concepts/scchic-seq]] · [[30-Concepts/chic-seq]] · [[20-Entities/keji-zhao]]

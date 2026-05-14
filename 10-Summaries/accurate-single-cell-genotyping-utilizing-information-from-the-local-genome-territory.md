@@ -56,6 +56,8 @@ Real scDNA-seq from MDA-amplified Xiao Dong et al. (IL-11, IL-12) with unamplifi
 - Not benchmarked against modern PTA-tuned callers (e.g., SCAN2). The 2021 comparator set is now somewhat stale.
 - No support for indels or structural variants.
 
+---
+**Source:** [DOI](https://doi.org/10.1093/nar/gkab106)
 ## Related
 
 - [[40-Topics/scdna-seq]] · [[30-Concepts/scwga]] · [[30-Concepts/allele-dropout]] · [[30-Concepts/somatic-mosaicism]]

@@ -14,6 +14,8 @@ Mezger, Klemm, Mann et al. (Greenleaf, Linnarsson labs; Stanford + Karolinska) i
 
 A 2018 intermediate-throughput scATAC platform between Fluidigm C1 (low throughput, high quality) and combinatorial-indexing sci-ATAC (high throughput, low quality). Klemm later co-authored the 2019 NRG chromatin accessibility review and SMAC-seq (2020). Anchors §3.2 scATAC-seq platform evolution.
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/s41467-018-05887-x)
 ## Related
 
 - [[10-Summaries/buenrostro-2015-nature]]

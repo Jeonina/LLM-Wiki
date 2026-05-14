@@ -14,6 +14,8 @@ Zamanighomi, Lin, Daley et al. (Wong, Greenleaf labs; Stanford) developed **scAB
 
 An early (2018) scATAC clustering tool predating chromVAR (motif-deviation), cisTopic (LDA), SnapATAC (genome-bin). Anchors §4 (scATAC analysis tool history). Lower priority citation than chromVAR/cisTopic — useful only as historical reference.
 
+---
+**Source:** [Open paper](https://www.nature.com/articles/s41467-018-04629-3)
 ## Related
 
 - [[10-Summaries/schep-2017-chromvar]]

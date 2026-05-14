@@ -58,6 +58,8 @@ E14TG2A mESCs serum/LIF. pA-Tn5-ME2U transposome, primary antibody targeting (H3
 - Single-cell extension is the natural next step but not yet demonstrated.
 - Generalization to transcription factors (not just histone marks): could 6B-C&T-with-TF-antibody reveal methylation states of TF-bound DNA?
 
+---
+**Source:** [DOI](https://doi.org/10.1038/s41467-026-69429-6)
 ## Related
 
 - [[40-Topics/histone-modifications]] · [[40-Topics/dna-methylation]] · [[30-Concepts/6-base-cut-and-tag]] · [[30-Concepts/cut-and-tag]] · [[20-Entities/biomodal]]

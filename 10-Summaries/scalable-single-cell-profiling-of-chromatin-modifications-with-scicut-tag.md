@@ -24,6 +24,8 @@ topics:
   - "[[40-Topics/single-cell-multiomics]]"
 ---
 
+**Citation:** Janssens et al. (2023) — *sciCUT&Tag: combinatorial indexing for 40,000 cells/chip* — *Nature Protocols*. [DOI](https://doi.org/10.1038/s41596-023-00905-9)
+
 # Janssens et al. 2023 — sciCUT&Tag
 
 > Thesis: scCUT&Tag droplet-based platforms are expensive per cell and limited in chemistry control. **sciCUT&Tag** uses **two-round combinatorial indexing** (96-well plate first round of pA-Tn5 indexed tagmentation + 5,184-well ICELL8 second round of PCR indexing) to scale to ~40,000 cells per chip at ~$0.11/cell — a ~8× cost reduction vs droplets — while maintaining higher per-cell read counts (~2,100 reads/cell for H3K27me3 vs 1,110 for original scCUT&Tag).

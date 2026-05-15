@@ -19,6 +19,8 @@ topics:
   - "[[40-Topics/hematopoietic-malignancies]]"
 ---
 
+**Citation:** Ahn et al. (2021) — *Phase separation drives aberrant chromatin looping in cancer (NUP98-HOXA9)* — *Nature*. [DOI](https://doi.org/10.1038/s41586-021-03662-5)
+
 # Ahn et al. 2021 — LLPS drives oncogenic chromatin looping
 
 > Thesis: recurrent nucleoporin chimeras in hematological malignancies — **NUP98-HOXA9** as the prototype — owe their oncogenic activity to **liquid–liquid phase separation** driven by their intrinsically disordered regions (IDRs). LLPS-competent NUP98-HOXA9 forms nuclear puncta that (i) increase chromatin occupancy of the chimera, (ii) create broad super-enhancer-like binding patterns at leukemogenic genes, and (iii) **induce CTCF-independent chromatin loops** enriched at proto-oncogenes. Swapping the NUP98 phenylalanine-glycine IDR for an unrelated FUS-protein IDR reproduces the effect, proving LLPS itself — not the specific IDR sequence — is the driving feature.

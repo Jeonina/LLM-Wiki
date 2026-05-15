@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Yunhao_2019_GenomeResearch.pdf"]
 ---
 
+**Citation:** Wang et al. (2019) — *Single-molecule long-read sequencing reveals the chromatin basis of gene expression (MeSMLR-seq)* — *Genome Research*. [DOI](https://doi.org/10.1101/gr.251116.119)
+
 Wang, Wang, Liu, Thurman, Powers, Zou, Zhao, Hefel, Li, Zabner and Au (Ohio State, Iowa) developed **MeSMLR-seq** (Methyltransferase treatment + Single-Molecule Long-Read sequencing), one of the foundational single-molecule long-read chromatin-accessibility methods. Protocol: spheroplast preparation (yeast cell-wall digestion via Zymolyase) → in-vivo M.CviPI GpC-methyltransferase treatment → genomic DNA extraction without PCR amplification → direct Oxford Nanopore sequencing → 5mC calling at GpC sites to map accessibility along long reads.
 
 Applied to haploid *S. cerevisiae* (where single DNA molecules represent single cells), MeSMLR-seq profiled up to **356 nucleosomes per long read**, enabling investigation of the **combinatorics** of nucleosome arrangements around transcription start sites at single-molecule scale. Combined with scRNA-seq data, the method quantitatively related chromatin accessibility to gene transcription in heterogeneous scenarios, and revealed coupled accessibility changes for two neighboring glucose-transporter genes in response to glucose concentration changes.

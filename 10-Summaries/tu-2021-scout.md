@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Accurate single-cell genotyping utilizing information from the local genome territory.md"]
 ---
 
+**Citation:** Tu et al. (2021) — *SCOUT: accurate single-cell genotyping using local genome territory* — *?*.
+
 Tu, Lu, Zhang, Huang, Xie (Sichuan University) developed **SCOUT** (Single Cell Genotyper Utilizing Information from Local Genome Territory), an scDNA SNV caller that does NOT require external bulk or other-cell data. Conditional local-smoothing mixture generative model classifies candidate SNVs into homozygous/heterozygous/intermediate/low-major-allele states using base counts from adjacent SNVs in the same cell. Improves F1 by 2.0–77.5% vs GATK/SCcaller/Monovar; 400% faster.
 
 ## Why this matters

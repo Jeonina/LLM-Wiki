@@ -21,6 +21,8 @@ topics:
   - "[[40-Topics/somatic-mosaicism]]"
 ---
 
+**Citation:** Kennedy et al. (2014) — *Duplex Sequencing: detecting ultralow-frequency mutations* — *Nature Protocols*. [DOI](https://doi.org/10.1038/nprot.2014.170)
+
 # Kennedy et al. 2014 — Duplex Sequencing: detecting ultralow-frequency mutations
 
 > Thesis: Standard NGS has an inherent error rate of ~1 per 100–1,000 bases that blinds it to subclonal mutations below ~1% VAF. Duplex Sequencing (DS) tags both strands of every input dsDNA molecule with a random-yet-complementary 12 nt UMI, sequences PCR-amplified families of each strand into Single-Strand Consensus Sequences (SSCS), then **only calls a mutation when it is present in both strands** as a Duplex Consensus Sequence (DCS). This drives error rates below 5×10⁻⁸ per base — a >10,000-fold improvement.

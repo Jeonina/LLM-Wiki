@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Sai_2020_Cell.pdf"]
 ---
 
+**Citation:** Ma et al. (2020) — *Chromatin Potential Identified by Shared Single-Cell Profiling of RNA and Chromatin (SHARE-seq)* — *Cell*. [DOI](https://doi.org/10.1016/j.cell.2020.09.056)
+
 Ma, Zhang, LaFave, Earl, Chiang, Hu, Ding, Brack, Kartha, Tay, Law, Lareau, Hsu, Regev and Buenrostro (Broad, Harvard, MIT) developed **SHARE-seq** (Simultaneous High-throughput ATAC and RNA Expression with sequencing), a highly scalable combinatorial-indexing protocol measuring chromatin accessibility and gene expression in the same single cell. They produced 34,774 joint profiles from mouse tissues including skin, brain and lung.
 
 Three central findings: (1) cell states defined by chromatin and by expression are correlated but distinct — chromatin captures cell-fate priming that transcript profiles miss; (2) lineage-determining genes are marked by **Domains Of Regulatory Chromatin** (DORCs) — clusters of cis-regulatory peaks that overlap super-enhancers; (3) DORC accessibility *precedes* gene expression at lineage-commitment decisions, so chromatin "foreshadows" cell fate. The authors introduce a computational quantity called *chromatin potential* and use it to predict cell-fate outcomes.

@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Dongsung_2019_NatureMethods.pdf"]
 ---
 
+**Citation:** Lee et al. (2019) — *Simultaneous profiling of 3D genome structure and DNA methylation in single human cells (sn-m3C-seq)* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-019-0547-z)
+
 Lee, Luo, Zhou and colleagues (Ecker / Dixon labs) introduced sn-m3C-seq, a joint single-nucleus assay that reads chromatin conformation (3C/Hi-C) and DNA methylation from the same DNA molecule. Nuclei are first crosslinked, restriction-digested and ligated in situ (canonical Hi-C chemistry through ligation), then FANS-sorted into 384-well plates and processed with bisulfite conversion + snmC-seq2 library chemistry. Because cytosine methylation is unaltered by 3C, the two layers are recoverable from the same fragment.
 
 Applied to 4,238 single human prefrontal cortex nuclei, sn-m3C-seq generated joint readouts that cluster cells into 14 cortical cell types from the methylome alone, and reveals cell-type-specific chromatin conformation maps for each type. The two modalities are strongly cross-correlated within cells: cell types distinguished by methylation show distinct chromatin contact patterns at enhancer-promoter pairs, suggesting pervasive interaction between methylation programs and 3D genome architecture. Bulk m3C-seq libraries from mESCs validated the chemistry against conventional Hi-C and methylC-seq (SCC = 0.91, Pearson = 0.82 respectively).

@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Craig_2019_NatureGenetics.pdf"]
 ---
 
+**Citation:** Frankell et al. (2019) — *Selection landscape of 551 esophageal adenocarcinomas defines clinical biomarkers* — *Nature Genetics*. [DOI](https://doi.org/10.1038/s41588-018-0331-5)
+
 Frankell, Jammula, Li et al. (OCCAMS Consortium; Fitzgerald and Tavaré labs, Cambridge) characterized 551 esophageal adenocarcinomas (EACs) by WGS with matched RNA-seq, identifying 77 EAC driver genes and 21 non-coding driver elements via dN/dS-based selection inference. Mean of 4.4 driver events per tumor; drivers derive more commonly from point mutations than copy-number alterations. Mutual exclusivity and co-occurrence patterns within dysregulated EAC pathways suggest strong functional relationships. Poor-prognosis indicators (SMAD4, GATA4) were verified in independent cohorts. Over 50% of EACs contain sensitizing events for CDK4/6 inhibitors, validated in cell-line and organoid panels.
 
 ## Why this matters

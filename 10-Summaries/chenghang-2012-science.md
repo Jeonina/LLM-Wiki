@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Chenghang_2012_Science.pdf"]
 ---
 
+**Citation:** Zong et al. (2012) — *Genome-wide SNV + CNV detection of a single human cell (MALBAC foundational)* — *Science*. [DOI](https://doi.org/10.1126/science.1229164)
+
 # Zong et al. 2012 — MALBAC foundational
 
 > Chenghang Zong, Sijia Lu, Alec R. Chapman, X. Sunney Xie. *Science* **338**, 1622–1626 (21 Dec 2012). DOI: 10.1126/science.1229164. Harvard.

@@ -19,6 +19,8 @@ topics:
   - "[[40-Topics/llm-tooling-patterns]]"
 ---
 
+**Citation:** Karpathy) et al. (2026) — *Example seed: paraphrase of Karpathy's LLM Wiki idea* — *?*.
+
 # Example seed: paraphrase of Karpathy's LLM Wiki idea
 
 > Thesis: an LLM should not re-derive answers from raw sources every time — it should incrementally build a persistent, structured wiki in markdown that compounds with each new source, with the human acting as curator and questioner rather than author and bookkeeper.

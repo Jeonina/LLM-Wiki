@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Michael_2017_Science.pdf"]
 ---
 
+**Citation:** McConnell et al. (2017) — *Intersection of diverse neuronal genomes and neuropsychiatric disease: The Brain Somatic Mosaicism Network* — *Science*. [DOI](https://doi.org/10.1126/science.aal1641)
+
 The founding review of the Brain Somatic Mosaicism Network (BSMN), an NIMH consortium of 18 investigative teams (including Walsh, Vaccarino, Abyzov, Park, Gleeson, Gage, Chess, Pevsner, and TJ Bae) created to systematically catalog the types and frequencies of somatic mutations in brains of neurotypical individuals and patients with schizophrenia, autism spectrum disorder, bipolar disorder, Tourette syndrome, and epilepsy.
 
 The review consolidates the case that each neuron may harbor hundreds of somatic mutations (SNVs, indels, CNVs, MEIs/L1 insertions), that mosaic mutations in disease-associated genes (\textit{PIK3CA}, \textit{AKT3}, \textit{MTOR}, \textit{DEPDC5}, \textit{TSC1/2}, etc.) cause focal cortical malformations and epilepsy, and that brain somatic mutations may contribute to neuropsychiatric disorders beyond what germline GWAS alone explains. The network committed to generating >10,000 brain DNA-sequencing datasets and integrating them with the PsychENCODE and CommonMind consortia.

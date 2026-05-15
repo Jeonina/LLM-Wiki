@@ -23,6 +23,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** Yin et al. (2019) — *DeepHistone: CNN prediction of 7 histone marks from DNA + DNase* — *BMC Genomics*. [DOI](https://doi.org/10.1186/s12864-019-5489-4)
+
 # Yin et al. 2019 — DeepHistone
 
 > Thesis: ChIP-seq mapping of histone marks across hundreds of cell types × tens of marks is too expensive to execute experimentally. **DeepHistone** is a densely-connected CNN that predicts seven histone modifications (H3K4me3, H3K4me1, H3K36me3, H3K27me3, H3K9me3, H3K27ac, H3K9ac) from DNA sequence + DNase-seq accessibility in a given cell type. The two-stream architecture (DNA module + DNase module + joint module) integrates sequence-intrinsic regulatory signatures with cell-type-specific chromatin context, outperforming sequence-only baselines and capturing functional SNPs.

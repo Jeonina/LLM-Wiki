@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Marek_2023_NatureBiotechnology.pdf"]
 ---
 
+**Citation:** Bartosovic et al. (2023) — *Multimodal chromatin profiling using nanobody-based single-cell CUT&Tag (nano-CT)* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-022-01535-4)
+
 # Bartosovic et al. 2023 — nano-CT
 
 > Marek Bartosovic, **Gonçalo Castelo-Branco\***. *Nature Biotechnology* **41**, 794–805 (June 2023). DOI: 10.1038/s41587-022-01535-4. Karolinska Institutet.

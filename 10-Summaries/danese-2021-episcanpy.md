@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["EpiScanpy_ integrated single-cell epigenomic analysis.md"]
 ---
 
+**Citation:** Danese et al. (2021) — *EpiScanpy: integrated single-cell epigenomic analysis* — *?*.
+
 Danese, Richter, Chaichoompu, Fischer, Theis, Colomé-Tatché (Helmholtz Munich) developed **EpiScanpy**, an extension of Scanpy for scATAC-seq AND single-cell DNA methylation. Builds count matrices for arbitrary genomic features (windows, peaks, promoters, enhancers), epigenomic distance-based kNN graph, common clustering/dim-reduction/trajectory tools. Differential methylation/openness calling. Atlas integration via BBKNN. Benchmarked against 11 scATAC tools — outperforms most on cell-type discrimination.
 
 ## Why this matters

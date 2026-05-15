@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["cisTopic_ cis-regulatory topic modeling on single-cell ATAC-seq data.md"]
 ---
 
+**Citation:** Bravo et al. (2019) — *cisTopic: cis-regulatory topic modeling on scATAC-seq* — *?*.
+
 Bravo González-Blas, Minnoye, Papasokrati et al. (Aerts lab; KU Leuven) developed **cisTopic**, a Bayesian topic modeling framework for scATAC-seq using Latent Dirichlet Allocation with collapsed Gibbs sampling. Co-optimizes cell clustering and enhancer categorization — produces (i) region-topic distribution (probability that a region belongs to a topic) and (ii) topic-cell distribution. Validated on hematopoietic differentiation, human/mouse brain, and SOX10 melanoma perturbation. Outperforms chromVAR for time-resolved cistromes (different GATA stages).
 
 ## Why this matters

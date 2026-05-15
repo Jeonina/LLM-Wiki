@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Single-molecule targeted accessibility and methylation sequencing of centromeres, telomeres and rDNAs in Arabidopsis.md"]
 ---
 
+**Citation:** Mo et al. (2023) — *STAM-seq: single-molecule targeted accessibility + methylation in Arabidopsis* — *?*.
+
 Mo, Shu, Liu et al. (Zhai lab) developed **STAM-seq** in Arabidopsis: nuclei isolation → EcoGII m6A methylation of accessible regions → nanopore long-read sequencing with **adaptive sampling** (real-time rejection of non-target sequences) → joint readout of 6mA (accessibility) and 5mC (endogenous methylation) on the same long read. Resolves highly repetitive regions (centromeres, telomeres, rDNAs) unmappable by short reads. 4.8× HRR enrichment via adaptive sampling. Revealed strand-asymmetric accessibility and methylation at CEN180 satellite repeats; negative accessibility-methylation correlation in rDNA units.
 
 ## Why this matters

@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Charles_2014_PLOSOne.pdf"]
 ---
 
+**Citation:** de Bourcy et al. (2014) — *A Quantitative Comparison of Single-Cell Whole Genome Amplification Methods* — *PLOS One*. [DOI](https://doi.org/10.1371/journal.pone.0105585)
+
 de Bourcy, De Vlaminck, Kanbar, Wang, Gawad and Quake (Stanford) performed the first systematic head-to-head benchmark of three single-cell whole-genome amplification chemistries: **MDA** (Multiple Displacement Amplification, Φ29-based), **MALBAC** (Multiple Annealing and Looping Based Amplification Cycles), and **PicoPLEX/NEB-WGA** (a hybrid PCR-based kit). Forty-one different reactions were run on bulk and single-cell *E. coli* templates across microfluidic-chamber (150 nL) and tube (50 μL) volumes, sequenced on Illumina MiSeq at 158× average depth.
 
 Quantitative comparisons: coverage uniformity (Lorenz curves), reaction-gain-dependence of bias, read mappability, SNV detection sensitivity/specificity, CNV detection, *de novo* assembly contiguity, and background contamination level. Findings: (i) microfluidic reactions are dramatically more robust to contamination (0.035% unmapped reads vs >93% for tube MALBAC/NEB-WGA single-cell); (ii) MDA bias worsens monotonically with reaction gain — secondary MDA exaggerates bias; (iii) **no single method wins** — MDA best for SNV calling, MALBAC/NEB-WGA best for CNV calling with more uniform coverage; (iv) bias structure differs (low-frequency noise for MDA, high-frequency for MALBAC/NEB-WGA).

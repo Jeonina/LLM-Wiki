@@ -20,6 +20,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** Klemm et al. (2019) — *Chromatin accessibility and the regulatory epigenome* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-018-0089-8)
+
 # Klemm, Shipony & Greenleaf 2019 — Chromatin accessibility and the regulatory epigenome
 
 > Thesis: chromatin accessibility — the physical access of macromolecules to chromatinized DNA — is a dynamic, regulated state that integrates nucleosome occupancy, TF binding, and architectural proteins. ~2–3% of the genome is accessible, but it captures >90% of TF binding. Accessibility is both an *output* of cell identity (reflecting TF-nucleosome competition) and an *input* to gene regulation, making it the most informative single epigenetic readout of regulatory state.

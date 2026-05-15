@@ -8,6 +8,8 @@ updated: 2026-05-14
 sources: ["Tang_2009_NatureMethods.md"]
 ---
 
+**Citation:** Tang et al. (2009) — *mRNA-Seq whole-transcriptome analysis of a single cell* — *Nature Methods*. [DOI](https://doi.org/10.1038/nmeth.1315)
+
 Tang, Barbacioru, Wang et al. (Surani lab, Gurdon Institute, Cambridge) reported the **first whole-transcriptome mRNA-Seq from a single mammalian cell** ([DOI](https://doi.org/10.1038/nmeth.1315)). Using a single mouse blastomere as input, they amplified poly-A mRNA via a SMART-style template-switching cDNA synthesis followed by PCR, then performed digital gene expression profiling on the SOLiD platform. The assay detected expression of **75% more genes (5,270 additional)** than parallel microarray analysis of the same cell, identified **1,753 previously unknown splice junctions** (≥5 reads), and revealed that **8–19% of multi-isoform genes expressed at least two isoforms simultaneously** in individual blastomeres or oocytes. Applied to *Dicer1⁻/⁻* and *Ago2⁻/⁻* oocytes, the method exposed 1,696 and 1,553 abnormally upregulated genes (619 shared), demonstrating that single-cell mRNA-Seq could resolve perturbation biology that bulk approaches miss for rare cell populations.
 
 ## Why this matters

@@ -24,6 +24,8 @@ topics:
   - "[[40-Topics/scdna-seq]]"
 ---
 
+**Citation:** Kousi et al. (2022) — *Cell-type-specific somatic mutation burden in Alzheimer's disease* — *bioRxiv (preprint)*. [DOI](https://doi.org/10.1101/2022.04.21.489103)
+
 # Kousi et al. 2022 — Cell-type-specific somatic mutation burden in Alzheimer's disease
 
 > Thesis: Alzheimer's-affected human brains carry **a cell-type-specific increase in somatic mutational burden** detectable by single-cell mosaicism analysis on cells profiled within the ROSMAP cohort. Inherited APP/PSEN1/PSEN2 mutations explain only a small fraction of AD risk; this work asks whether post-zygotic somatic mutations contribute to the much larger sporadic and late-onset burden — and finds that they do, in a cell-type-resolved way.

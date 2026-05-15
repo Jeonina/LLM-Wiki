@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Henry_2018_Nature.pdf"]
 ---
 
+**Citation:** Lee-Six et al. (2018) — *Population dynamics of normal human blood inferred from somatic mutations* — *Nature*. [DOI](https://doi.org/10.1038/s41586-018-0497-0)
+
 Lee-Six, Øbro, Shepherd et al. (Campbell, Stratton, Green labs; Sanger + Cambridge) sequenced 140 single-cell-derived hematopoietic stem and progenitor colonies from a healthy 59-year-old male by WGS (~15× per colony), identifying 129,582 somatic SNVs. Phylogenetic reconstruction from these mutations revealed: (i) all blood derives from a common ancestor preceding gastrulation; (ii) HSC population size grows in early life and plateaus by adolescence; (iii) the actively contributing HSC pool is estimated at **50,000–200,000 cells** — much larger than transplantation assays had suggested; (iv) adult HSC clones contribute multilineage output (granulocytes + B lymphocytes).
 
 ## Why this matters

@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/AndrewB_2020_Science.pdf"]
 ---
 
+**Citation:** Stergachis et al. (2020) — *Single-molecule regulatory architectures captured by chromatin fiber sequencing (Fiber-seq)* — *Science*. [DOI](https://doi.org/10.1126/science.aaz1646)
+
 # Stergachis et al. 2020 — Fiber-seq foundational paper
 
 > Andrew B. Stergachis, Brian M. Debo, Eric Haugen, L. Stirling Churchman, John A. Stamatoyannopoulos. *Science* **368**, 1449–1454 (26 June 2020). DOI: 10.1126/science.aaz1646.

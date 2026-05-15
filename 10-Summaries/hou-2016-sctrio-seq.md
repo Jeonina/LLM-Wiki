@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Yu_2016_CellResearch.pdf"]
 ---
 
+**Citation:** Hou et al. (2016) — *scTrio-seq: single-cell triple-omics in hepatocellular carcinomas* — *Cell Research*. [DOI](https://doi.org/10.1038/cr.2016.23)
+
 Hou, Guo, Cao, Li et al. (Tang lab; Peking University) developed **scTrio-seq**, the founding method for **single-cell triple-omics** — simultaneous profiling of genome (CNVs via scRRBS read depth), DNA methylome (scRRBS), and transcriptome (scRNA-seq) from the same individual mammalian cell. Workflow: mild cytoplasmic-only lysis releases mRNA; centrifugation separates mRNA-containing supernatant from nucleus-containing precipitate; mRNA → scRNA-seq, nucleus → scRRBS. Applied to 25 single HCC tumor cells: identified two subpopulations distinguishable by CNV, methylome, AND transcriptome. Large-scale CNVs caused proportional gene-expression changes (gain → up, loss → down) but did NOT affect DNA methylation in those regions — important cross-omic correlation finding.
 
 ## Why this matters

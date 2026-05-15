@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Anna_2022_NatureGenetics.pdf"]
 ---
 
+**Citation:** Nam et al. (2022) — *Single-cell multi-omics of human clonal hematopoiesis reveals that DNMT3A R882 mutations perturb early progenitor states through selective hypomethylation* — *Nature Genetics*. [DOI](https://doi.org/10.1038/s41588-022-01179-9)
+
 Nam, Dusaj, Izzo and colleagues (Landau lab) extended GoT (Genotyping of Transcriptomes) with an optimized IronThrone pipeline and combined it with single-cell methylome readout (TARGET-seq + scNMT-seq-style multi-omics) to study DNMT3A R882 clonal hematopoiesis. From 4 individuals with DNMT3A-R882-mutated CH, they captured genotype, transcriptome, and methylome from 27,324 CD34+ progenitors (4,641 mutant, 1,789 ambiguous, 20,894 wild-type), and from selected sub-cohorts also profiled methylation at $\sim$single-CpG resolution at hundreds of loci.
 
 Three findings. (1) DNMT3A-R882 cells are biased toward megakaryocytic-erythroid fate at the expense of lymphoid output; immature myeloid progenitor states expand. (2) Mutant cells exhibit preferential hypomethylation at polycomb repressive complex 2 (PRC2) target genes and at a specific CpG-flanking sequence motif. (3) The hypomethylated motif is enriched in binding motifs of key hematopoietic transcription factors, suggesting a mechanistic link between DNMT3A-R882 loss-of-function and aberrant TF binding driving the differentiation skew.

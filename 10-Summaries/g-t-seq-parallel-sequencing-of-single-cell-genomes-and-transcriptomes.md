@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/G&T-seq_ parallel sequencing of single-cell genomes and transcriptomes.md"]
 ---
 
+**Citation:** Macaulay et al. (2015) — *G&T-seq: Parallel sequencing of single-cell genomes and transcriptomes* — *?*. [DOI](https://doi.org/10.1038/nmeth.3370)
+
 # Macaulay et al. 2015 — G&T-seq
 
 > Iain C Macaulay, Wilfried Haerty, Parveen Kumar, Yang I Li, Tim Xiaoming Hu, Mabel J Teng, Mubeen Goolam, … Thierry Voet, Magdalena Zernicka-Goetz, Frederick J Livesey, Chris P Ponting. *Nature Methods* **12**, 519–522 (April 2015). DOI: 10.1038/nmeth.3370.

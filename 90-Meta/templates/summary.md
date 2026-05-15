@@ -1,18 +1,22 @@
 ---
 type: summary
-title: <Title of the source>
+title: "<FirstAuthor [et al.] YYYY — Paper title>"
 source: "[[00-Sources/<subfolder>/<source-file>]]"
 source_kind: article | paper | book | image | data
-author: <author or organization>
+author: <FirstLast, F2 Last2, ... (corresponding name marked)>
 published: <YYYY-MM-DD or year>
 ingested: <YYYY-MM-DD>
+doi: "<DOI without the https:// prefix>"
+journal: "<Journal name, human-readable>"
 tags: []
 entities: []   # [[20-Entities/...]] links
 concepts: []   # [[30-Concepts/...]] links
 topics: []     # [[40-Topics/...]] links
 ---
 
-# <Title of the source>
+**Citation:** <LastName> et al. (<YYYY>) — *<Paper title>* — *<Journal>*. [DOI](https://doi.org/<doi>)
+
+# <FirstAuthor YYYY — short slug>
 
 > One-paragraph thesis: what is this source claiming or showing, in your own words?
 

@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Single-cell triple omics sequencing reveals genetic, epigenetic, and transcriptomic heterogeneity in hepatocellular carcinomas.md"]
 ---
 
+**Citation:** Hou et al. (2016) — *scTrio-seq: Triple omics (CNV + methylome + transcriptome) in single hepatocellular carcinoma cells* — *?*. [DOI](https://doi.org/10.1038/cr.2016.23)
+
 # Hou et al. 2016 — scTrio-seq
 
 > Yu Hou, Huahu Guo, Chen Cao, Xianlong Li, Boqiang Hu, Ping Zhu, Xinglong Wu, Lu Wen, Fuchou Tang, Yanyi Huang, Jirun Peng. *Cell Research* **26**, 304–319 (Feb 2016). DOI: 10.1038/cr.2016.23.

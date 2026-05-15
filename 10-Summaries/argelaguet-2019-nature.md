@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Ricard_2019_Nature.pdf"]
 ---
 
+**Citation:** Argelaguet et al. (2019) — *Multi-omics profiling of mouse gastrulation at single cell resolution* — *Nature*. [DOI](https://doi.org/10.1038/s41586-019-1825-8)
+
 Argelaguet, Clark and colleagues (Reik / Stegle / Marioni labs) applied scNMT-seq (single-cell Nucleosome, Methylome and Transcriptome sequencing) to 1,105 single cells from mouse embryos at four developmental stages (E4.5, E5.5, E6.5, E7.5) spanning the exit from pluripotency through primary germ-layer specification.
 
 Three findings. (1) Global methylation rises from ~25% (E4.5) to ~75% (E7.5) in embryonic tissues, driven by a de novo wave at CpG-poor loci between E4.5 and E5.5; chromatin accessibility declines more gradually from ~38% to ~30%. (2) Lineage-specific methylation and accessibility patterns emerge at enhancer marks (distal H3K27ac peaks) — mesoderm- and endoderm-committed cells undergo coordinated TET-mediated demethylation and accessibility gain at lineage-specific enhancers, while ectodermal cells inherit the methylation/accessibility landscape established already in the early epiblast. (3) Multi-Omics Factor Analysis (MOFA) jointly decomposed RNA, methylation, and accessibility, identifying six factors with the first two capturing the emergence of the three germ layers and linking gene-expression variation to coordinated enhancer-mark changes; promoter or H3K4me3-marked changes contributed little to lineage variance.

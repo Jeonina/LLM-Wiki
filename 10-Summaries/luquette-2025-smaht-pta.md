@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["A comprehensive view of somatic mosaicism by single-cell DNA analysis.md"]
 ---
 
+**Citation:** Luquette et al. (2025) — *Comprehensive view of somatic mosaicism by single-cell DNA analysis (SMaHT)* — *?*.
+
 Luquette, Coorens, Natu, Suvakov et al. (Walsh, Park, Abyzov; SMaHT Single Cell Focus Group) performed PTA-based scDNA on 102 nuclei from postmortem lung and colon of a 74-year-old male. Validated mutation burdens and spectra by duplex sequencing; revealed APOBEC and tobacco signatures, chromosomal aneuploidies, loss of chromosome Y, and T-cell receptor rearrangements. Shared embryonic mutations enabled body-wide cellular ancestry reconstruction from the zygote.
 
 ## Why this matters

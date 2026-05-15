@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["High‐throughput single‐cell DNA methylation and chromatin accessibility co‐profiling with SpliCOOL‐seq.md"]
 ---
 
+**Citation:** Shen et al. (2025) — *SpliCOOL-seq: high-throughput scDNA methylation + chromatin accessibility* — *?*.
+
 Shen, Deng, Luo et al. (Fan lab) developed **SpliCOOL-seq** — split-pool ligation-based scDNA methylation + chromatin accessibility co-profiling. Integrates in situ GpC methylation (NOME-seq style, marks accessible regions), universal Tn5 tagmentation, and split-pool combinatorial barcoding for thousands of cells per experiment. Applied to lung adenocarcinoma: identified tumor subclones, novel methylation biomarkers (FAM124B, SFN, OR7E47P) associated with survival, accelerated epigenetic aging in tumor subclones.
 
 ## Why this matters

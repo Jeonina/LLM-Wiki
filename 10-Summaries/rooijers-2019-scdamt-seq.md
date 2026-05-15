@@ -25,6 +25,8 @@ topics:
   - "[[40-Topics/single-cell-multiomics]]"
 ---
 
+**Citation:** Rooijers et al. (2019) — *scDam&T-seq: simultaneous protein–DNA contacts + transcriptome in single cells* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-019-0150-y)
+
 # Rooijers et al. 2019 — scDam&T-seq
 
 > Thesis: cell-to-cell heterogeneity in protein–DNA binding is causally linked to gene expression variability, but no method jointly measures both in the same cell. scDam&T-seq fuses single-cell DamID (Dam-fusion protein → m6A at GATC near a protein-of-interest) with CEL-Seq2 mRNA capture, using **linear amplification by in vitro transcription** to amplify gDNA and cDNA in one reaction. This unlocks per-cell coupling of genome–nuclear-lamina contacts, chromatin accessibility, or polycomb (RING1B) occupancy to the transcriptome.

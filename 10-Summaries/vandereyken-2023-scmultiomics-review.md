@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Katy_2023_NatureReviewsGenetics.pdf"]
 ---
 
+**Citation:** Vandereyken et al. (2023) — *Methods and applications for single-cell and spatial multi-omics* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-023-00580-2)
+
 Vandereyken, Sifrim, Thienpont and Voet (KU Leuven) reviewed single-cell and spatial multi-omics methods. The single-cell methods section is organized by four design principles: (i) **physical separation before sequencing** (G&T-seq, SIDR-seq, DNTR-seq); (ii) preamplification-and-split (DR-seq); (iii) shared barcoding before separation; (iv) joint biochemistry. Covers genomics+transcriptomics, methylome+transcriptome, chromatin+transcriptome (sci-CAR), triple-omics (scNMT-seq), and emerging combinations including proteomics (CITE-seq/REAP-seq). Spatial section covers DBiT-seq, MERFISH, Stereo-seq, Slide-seq, Visium, and integrated transcriptome+protein assays. Discusses computational integration strategies (anchor-based, factor-analysis, deep learning).
 
 ## Why this matters

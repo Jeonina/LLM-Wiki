@@ -20,6 +20,8 @@ topics:
   - "[[40-Topics/3d-genome]]"
 ---
 
+**Citation:** Qi et al. (2021) — *Chromatin network retards nucleoli coalescence (polymer-LLPS coupling)* — *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-021-27123-9)
+
 # Qi & Zhang 2021 — Chromatin network retards nucleoli coalescence
 
 > Thesis: nuclear bodies (nucleoli, speckles, Cajal bodies) are membraneless condensates often described as LLPS droplets, but classical phase-separation theory predicts they should coalesce into a single droplet — which doesn't match the observed **multi-droplet steady state** of nucleoli in somatic cells. The authors build a diploid-human-genome polymer model parameterized with Hi-C data, simulate nucleolar particles that interact specifically with **nucleolus-associated domains (NADs)**, and show that the **viscoelastic chromatin network arrests droplet coalescence**: as droplets fuse, the surrounding chromatin tightens, raising the entropic barrier and stabilizing the metastable multi-droplet state.

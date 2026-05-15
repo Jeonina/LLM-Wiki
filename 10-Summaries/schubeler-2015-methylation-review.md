@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Dirk_2015_Nature.pdf"]
 ---
 
+**Citation:** Schübeler et al. (2015) — *Function and information content of DNA methylation* — *Nature*. [DOI](https://doi.org/10.1038/nature14192)
+
 Schübeler (FMI Basel) reviewed the function and information content of DNA methylation in vertebrates, with emphasis on what genome-wide methylome maps revealed about the dynamics of methylation at gene-regulatory regions. Key arguments: (i) vertebrate 5mC is largely a default state with CpG islands as unmethylated exceptions; (ii) most regulatory dynamics occur at CG-poor distal regions where TF binding actively shapes local methylation (active demethylation by TET proteins); (iii) DNA sequence largely determines local methylation patterns through TF-mediated effects; (iv) the canonical "methylation represses transcription" model holds for CpG-island promoters but is incomplete for distal regulatory elements. Reviews evidence for methylation as a memory module, biomarker, and consequence (rather than cause) of regulatory-element activity.
 
 ## Why this matters

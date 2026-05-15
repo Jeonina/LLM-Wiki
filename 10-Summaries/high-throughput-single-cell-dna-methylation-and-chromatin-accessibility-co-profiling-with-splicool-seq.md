@@ -26,6 +26,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** Shen et al. (2026) — *SpliCOOL-seq: scalable single-cell methylation + accessibility via split-pool barcoding* — *Clinical and Translational Medicine*. [DOI](https://doi.org/10.1002/ctm2.70584)
+
 # Shen et al. 2026 — SpliCOOL-seq
 
 > Thesis: Existing single-cell joint methylation + chromatin-accessibility methods (scCOOL-seq, scNOMe-seq, scNMT-seq, iscCOOL-seq, snmCAT-seq, scNOMeRe-seq) are stuck at the cell-lysate scale of hundreds of cells per experiment. sciMETv3 hit the next step but used cell-indexed Tn5 with fragmentation variability between cells. SpliCOOL-seq combines (a) in-situ GpC methylation as the accessibility readout, (b) **universal (unindexed) Tn5 tagmentation** for uniform fragmentation across cells, and (c) split-pool ligation-based combinatorial barcoding — yielding thousands of cells per experiment with both whole-genome WCG (endogenous) methylation and GCH (nucleosome-depletion region, NDR) accessibility.

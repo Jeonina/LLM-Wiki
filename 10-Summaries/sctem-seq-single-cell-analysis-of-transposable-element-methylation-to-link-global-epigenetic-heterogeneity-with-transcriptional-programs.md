@@ -24,6 +24,8 @@ topics:
   - "[[40-Topics/single-cell-multiomics]]"
 ---
 
+**Citation:** Hunt et al. (2022) — *scTEM-seq: cheap single-cell global methylation via SINE Alu amplicons* — *Scientific Reports*. [DOI](https://doi.org/10.1038/s41598-022-09765-x)
+
 # Hunt et al. 2022 — scTEM-seq
 
 > Thesis: Genome-wide single-cell bisulfite sequencing (scBS-seq) costs ~20M reads/cell to recover ~10–40% genomic coverage. Most experiments only need a **global methylation estimate**, not per-locus calls. **scTEM-seq** targets high-copy SINE Alu repetitive elements via bisulfite-PCR amplification, yielding accurate global methylation estimates from ~20k reads/cell — three orders of magnitude cheaper than scBS-seq. Combined with G&T-seq for parallel transcriptome readout, it links global methylation heterogeneity to specific gene-expression programs in AML cells under hypomethylating-agent treatment.

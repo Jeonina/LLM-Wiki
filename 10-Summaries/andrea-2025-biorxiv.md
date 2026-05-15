@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Andrea_2025_bioRxiv.pdf"]
 ---
 
+**Citation:** Kriz et al. (2025) — *Cell-type-specific patterns and consequences of somatic mutation in development and aging brain (Duplex-Multiome)* — *bioRxiv (preprint)*. [DOI](https://doi.org/10.1101/2025.05.30.656844)
+
 # Kriz et al. 2025 — Duplex-Multiome
 
 > Andrea J. Kriz, Shulin Mao, Diane D. Shao, Daniel A. Snellings, Rebecca E. Andersen, Guanlan Dong, Chanthia C. Ma, Hayley E. Cline, August Yue Huang\*, **Eunjung Alice Lee\***, **Christopher A. Walsh\***. *bioRxiv* 2025.05.30.656844 (1 June 2025). Boston Children's Hospital + Harvard Medical School + HHMI + Broad Institute.

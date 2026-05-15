@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Assaf_2015_NatureBiotechnology.pdf"]
 ---
 
+**Citation:** Rotem et al. (2015) — *Drop-ChIP: single-cell ChIP-seq reveals chromatin-state subpopulations* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/nbt.3383)
+
 Rotem, Ram, Shoresh et al. (Bernstein, Weitz, Goren labs; Broad/Harvard) developed **Drop-ChIP**, the founding single-cell ChIP-seq method. The platform uses a drop-based microfluidics (DBM) device to encapsulate single cells in ~50-μm aqueous drops with weak detergent + MNase, then merges each chromatin drop with a barcode drop containing a unique oligonucleotide adaptor (library of 1,152 barcodes). Barcoded chromatin from many cells is pooled before bulk immunoprecipitation, dramatically lowering input requirements per cell. Profiled H3K4me3 and H3K4me2 in mixed populations of ES cells, MEFs, and hematopoietic progenitors at ~1,000 unique reads per cell. Despite sparsity, the method identified chromatin-state subpopulations within ES cells corresponding to pluripotency and differentiation priming — features not visible in matched scRNA-seq.
 
 ## Why this matters

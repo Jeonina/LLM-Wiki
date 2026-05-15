@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Single-cell chromatin immunocleavage sequencing (scChIC-seq) to profile histone modification.md"]
 ---
 
+**Citation:** Ku et al. (2019) — *scChIC-seq: single-cell chromatin immunocleavage for histone modifications* — *?*.
+
 Ku, Nakamura, Gao, Cui et al. (Zhao lab; NHLBI) developed **scChIC-seq** — MNase tethered to histone-modification-specific antibodies (either via protein A or covalent conjugation) cleaves around modified nucleosomes; smaller fragments preferentially PCR-amplified. Profiled H3K4me3 and H3K27me3 in single human WBCs (~100,000 unique reads per cell). 50% of single-cell reads fall in known peak regions. Identified monocytes, B cells, T cells, NK cells from H3K4me3 patterns via SC3 clustering.
 
 ## Why this matters

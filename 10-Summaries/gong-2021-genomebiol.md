@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Boying_2021_GenomeBiology.pdf"]
 ---
 
+**Citation:** Gong et al. (2021) — *Cobolt: integrative analysis of multimodal single-cell sequencing data* — *Genome Biology*. [DOI](https://doi.org/10.1186/s13059-021-02556-z)
+
 Gong, Zhou and Purdom (UC Berkeley statistics) developed Cobolt, a multimodal variational autoencoder framework that produces a single integrated representation of cells profiled on joint-modality platforms (CITE-seq, scNMT-seq, sci-CAR, Paired-seq, SHARE-seq, SNARE-seq) alongside cells profiled on single-modality platforms.
 
 Cobolt's central contribution is the dual use of joint-modality data: it learns the linkage between modalities from cells where they are jointly measured, then uses transfer learning to extend that linkage to single-modality cells, producing a unified embedding across all input cells regardless of which modalities each cell carries. Benchmarked on SNARE-seq (joint scRNA + scATAC) and on integration tasks combining multi-modality and single-modality datasets, Cobolt produces a joint representation usable for downstream clustering, cell-subtype detection, and modality imputation, outperforming LIGER, Signac, MOFA+, BABEL, and scMM on the tested benchmarks.

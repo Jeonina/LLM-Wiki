@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Eran_2025_Neuron.pdf"]
 ---
 
+**Citation:** Mukamel et al. (2025) — *Cell-type-specific somatic aneuploidy in the mammalian brain* — *Neuron*. [DOI](https://doi.org/10.1016/j.neuron.2025.08.006)
+
 Mukamel, Liu, Behrens, Ecker (UCSD/Salk) re-analyzed >415,000 single-nucleus DNA-methylation profiles from adult mouse brain (snmC-seq3 + snm3C-seq) to call **somatic aneuploidies** from methylome read density (relative copy number). Identified chromosome losses/gains across cell types and brain regions, with a striking enrichment of **somatic trisomy of chromosome 16** — syntenic with human chromosome 21 — across multiple cell types and regions. Cell-type-specific enrichment was observed in oligodendrocyte precursor cells (OPCs) and Pons neurons. Demonstrates that **methylation sequencing can serve as a CNV/aneuploidy assay** without dedicated scDNA-seq, repurposing existing methylome atlases for structural-variation discovery.
 
 ## Why this matters

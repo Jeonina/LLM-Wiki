@@ -20,6 +20,8 @@ topics:
   - "[[40-Topics/single-cell-multiomics]]"
 ---
 
+**Citation:** Baysoy et al. (2023) — *Technological landscape and applications of single-cell multi-omics* — *Nature Reviews Molecular Cell Biology*. [DOI](https://doi.org/10.1038/s41580-023-00615-w)
+
 # Baysoy et al. 2023 — Technological landscape and applications of single-cell multi-omics
 
 > Thesis: single-cell multi-omics is now mature enough that nearly any pair (or triple) of modalities — transcriptome, genome, epigenome, proteome, metabolome, spatial — can be measured in the same cell. The reviewer's framework is **throughput / resolution / modality integration / uniqueness / accuracy** — five axes along which to compare any multi-omic method. Applications include lineage tracing, tissue/cell-type atlases, tumour immunology, and spatial mapping of cellular function.

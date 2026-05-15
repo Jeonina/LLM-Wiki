@@ -27,6 +27,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** Nanda et al. (2024) — *SMRT-Tag and SAMOSA-Tag: tagmentation for PacBio at 40 ng input* — *Nature Genetics*. [DOI](https://doi.org/10.1038/s41588-024-01748-0)
+
 # Nanda et al. 2024 — SMRT-Tag / SAMOSA-Tag
 
 > Thesis: PacBio single-molecule sequencing needs 1–5 µg of DNA (150,000–750,000 cells) for PCR-free library prep — far too much for clinical biopsies, rare cell populations, or single cells. **SMRT-Tag** uses Tn5 tagmentation with hairpin PacBio adapters to make exonuclease-resistant circular molecules from as little as 40 ng (~7,000 cells), at near-equivalent variant-calling and CpG-methylation accuracy to gold-standard ligation-based PacBio. **SAMOSA-Tag** adds in-nucleus EcoGII methyltransferase footprinting to layer single-fiber chromatin accessibility onto the same workflow — applied to prostate-cancer patient-derived xenografts (PDXs) to uncover metastasis-associated global chromatin disorganization from 30–50k nuclei.

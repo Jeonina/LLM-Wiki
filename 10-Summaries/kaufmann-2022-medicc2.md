@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Tom_2022_GenomeBiology.pdf"]
 ---
 
+**Citation:** Kaufmann et al. (2022) — *MEDICC2: whole-genome doubling aware copy-number phylogenies for cancer evolution* — *Genome Biology*. [DOI](https://doi.org/10.1186/s13059-022-02794-9)
+
 Kaufmann, Petkovic, Watkins, Colliver, Laskina, Thapa, Minussi, Navin, Swanton, Van Loo, Haase, Tarabichi and Schwarz (BIH Berlin, MDC, Cologne, Crick, MSKCC) developed **MEDICC2**, a method for inferring evolutionary trees from haplotype-specific somatic copy-number alterations (SCNAs) in single-cell or bulk tumor data, **with explicit modeling of whole-genome doubling (WGD)** events.
 
 Methodological advances over MEDICC1: (i) drops the infinite-sites assumption — allows multiple mutations and parallel evolution at the same locus; (ii) does not treat adjacent loci as independent — captures statistical dependencies that simpler distance-based methods (Euclidean, Hamming) miss; (iii) computes minimum-event-distance including WGD events in linear time using a weighted finite-state-transducer framework; (iv) reconstructs ancestral genomes and times SCNA events relative to WGD.

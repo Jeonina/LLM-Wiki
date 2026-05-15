@@ -24,6 +24,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** Hong et al. (2025) — *Navigating the 3D genome at single-cell resolution (review)* — *Briefings in Bioinformatics*. [DOI](https://doi.org/10.1093/bib/bbaf520)
+
 # Hong et al. 2025 — Navigating the 3D genome at single-cell resolution
 
 > Thesis: Bulk Hi-C and its derivatives revealed the principles of 3D genome organization (compartments, TADs, loops) but masked single-cell variability. Over the past decade, scHi-C and related single-cell methods have exposed how heterogeneous chromatin folding is between cells — variability that drives lineage decisions, disease phenotypes, and transcriptional plasticity. This review summarizes the experimental platforms, computational algorithms, and mechanistic insights of single-cell 3D genomics circa 2025.

@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Darren_2015_Science.pdf"]
 ---
 
+**Citation:** Cusanovich et al. (2015) — *sci-ATAC-seq: multiplex single-cell chromatin accessibility by combinatorial indexing* — *Science*. [DOI](https://doi.org/10.1126/science.aab1601)
+
 Cusanovich, Daza, Adey et al. (Shendure, Trapnell labs; UW + OHSU + Illumina) introduced **sci-ATAC-seq**, the founding **combinatorial cellular indexing** scATAC-seq method. Nuclei are distributed across 96 wells where barcoded Tn5 transposomes molecularly tag chromatin in bulk; nuclei are then pooled and redistributed into a second 96-well plate for PCR with indexed primers. Each nucleus traverses a unique combination of well barcodes, enabling deconvolution without physical compartmentalization. Profiled >15,000 single cells from human and mouse cell-line mixtures with ~73% PCR-duplication rate and high mapping specificity. Cells cluster by chromatin-accessibility landscape and resolve modules of coordinately regulated accessibility within and between cell types.
 
 ## Why this matters

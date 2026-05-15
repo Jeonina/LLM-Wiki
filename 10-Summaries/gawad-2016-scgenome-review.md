@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Charles_2016_NatureReviewsGenetics.pdf"]
 ---
 
+**Citation:** Gawad et al. (2016) — *Single-cell genome sequencing: current state of the science* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/nrg.2015.16)
+
 Gawad, Koh and Quake (St Jude + Stanford) reviewed the early single-cell genome sequencing field. Frames four technical challenges: cell isolation, scWGA, sequencing strategy, and data analysis. Surveys scWGA chemistries (MDA, MALBAC, DOP-PCR, PicoPLEX) and their tradeoffs in coverage uniformity, allelic dropout, error rates, chimera formation. Applications discussed: identifying genetic mosaicism in normal multicellular organisms (including pre-implantation embryos, brain neurons), microbial dark matter (assembly of uncultivable microbial genomes), intratumour heterogeneity in cancer. Concludes with predicted next-frontier directions including improved error correction, multi-omic combinations, and tumour clonal-architecture mapping.
 
 ## Why this matters

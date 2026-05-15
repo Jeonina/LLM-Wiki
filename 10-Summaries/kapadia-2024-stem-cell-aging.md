@@ -10,6 +10,8 @@ doi: "10.1038/s43587-024-00589-0"
 url: "https://doi.org/10.1038/s43587-024-00589-0"
 ---
 
+**Citation:** Kapadia et al. (2024) — *Tissue mosaicism following stem cell aging: blood as an exemplar* — *NatAging - Tissue mosaicism following stem cell aging*. [DOI](https://doi.org/10.1038/s43587-024-00589-0)
+
 Kapadia & Goodell (Baylor College of Medicine, Center for Cell and Gene Therapy) review **how stem cell aging and somatic mosaicism progress in lockstep**, using the hematopoietic system as the most quantitatively tractable exemplar ([DOI](https://doi.org/10.1038/s43587-024-00589-0); Nature Aging 4:295–308, 2024). They argue that aged tissue mosaicism is not an incidental byproduct of stem cell aging but the *backdrop* against which clonal selection unfolds — and that the cellular changes of aged stem cells (genomic instability, epigenetic drift, metabolic shift to oxidative phosphorylation, proteostasis loss) create the selective milieu that determines which somatic clones expand. The review systematically links these cell-intrinsic aging changes to detectable clonal outgrowths, catalogs the spectrum of pathologies modified by blood mosaicism (Table 1: cardiovascular disease, COPD, gout, osteoporosis, autoimmunity, kidney/liver disease, Alzheimer's, cancer), and surveys the technological landscape — from bulk WGS to targeted duplex consensus sequencing — used to detect mosaicism at clinically meaningful sensitivity.
 
 ## Why this matters

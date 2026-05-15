@@ -23,6 +23,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** González-Blas et al. (2019) — *cisTopic: LDA topic modeling for scATAC-seq* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-019-0367-1)
+
 # Bravo González-Blas et al. 2019 — cisTopic
 
 > Thesis: Existing scATAC-seq analysis methods either cluster cells first then call differential peaks (loses dynamic structure) or aggregate peaks into pre-defined cistromes (depends on annotations). **cisTopic** uses Latent Dirichlet Allocation (LDA) with Gibbs sampling to **co-optimize clustering of cells and clustering of regulatory regions** into "topics" — recovering cell types, developmental trajectories, and the regulatory programs that distinguish them in a single unsupervised pass.

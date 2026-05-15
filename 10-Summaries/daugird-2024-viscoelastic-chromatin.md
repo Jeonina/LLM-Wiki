@@ -18,6 +18,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** Daugird et al. (2024) — *Single-molecule lattice light-sheet imaging reveals viscoelastic chromatin environment* — *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-024-48562-0)
+
 # Daugird et al. 2024 — Viscoelastic chromatin environment via single-molecule LLSM
 
 > Thesis: in live cells, biological processes happen with proteins diffusing through and binding to a nucleic-acid meshwork. Using **lattice light-sheet single-molecule imaging** correlated with super-resolution mapping of the local chromatin environment, the authors quantify how nucleosome diffusion and packing change with chromatin density — and find that **viscoelastic properties and interchromatin-space accessibility remain constant** across density regimes. Active processes (transcription) locally stabilize nucleosomes while preserving protein mobility. This is the cleanest live-cell measurement of chromatin biophysics at the level the LLPS literature predicts.

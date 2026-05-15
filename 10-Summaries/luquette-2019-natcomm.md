@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Lovelace_2019_NatureCommunications.pdf"]
 ---
 
+**Citation:** Luquette et al. (2019) — *SCAN-SNV: identification of somatic mutations in single cell DNA-seq using a spatial model of allelic imbalance* — *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-019-11857-8)
+
 Luquette and colleagues (Park lab) developed SCAN-SNV, a single-cell somatic SNV caller built around a spatial Bayesian model of allele-specific amplification imbalance. The problem: MDA whole-genome amplification produces non-uniform amplification of homologous alleles, so observed variant-allele frequencies (VAFs) deviate substantially from the expected 50%. Standard bulk callers (MuTect, Strelka, etc.) and even single-cell-aware callers (Monovar, SCcaller) misclassify many MDA artifacts as somatic mutations, inflating false-discovery rates.
 
 SCAN-SNV's central insight is that allele balance (AB) varies smoothly across the genome on the scale of MDA amplicons (~5–10 kb). The method genome-wide infers AB at each position by Gaussian-process regression over phased heterozygous SNPs in the neighborhood, then assesses whether a candidate sSNV's VAF is consistent with its inferred AB. SCAN-SNV simultaneously estimates artifact burden and an upper bound on true somatic mutation count, providing FDR control before genotyping. Benchmarking on Lodato-2015-style single-neuron data showed >3-fold reduction in false-discovery rate at similar sensitivity compared to Monovar and SCcaller.

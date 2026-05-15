@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Hamim_2016_NatureMethods.pdf"]
 ---
 
+**Citation:** Zafar et al. (2016) — *Monovar: single-nucleotide variant detection in single cells* — *Nature Methods*. [DOI](https://doi.org/10.1038/nmeth.3835)
+
 Zafar, Wang, Nakhleh, Navin and Chen developed Monovar, one of the first SNV callers built specifically for single-cell DNA sequencing. The method addresses three scDNA-seq artifact classes that confound bulk callers (GATK, Samtools, VarScan2): non-uniform coverage, allelic dropout, and false-positive errors from MDA polymerase. Monovar models genotype likelihoods across multiple single cells jointly, computing per-locus posterior probabilities under a dynamic-programming framework that accounts for allelic dropout and per-cell false-positive rates.
 
 Validation on simulated and real data showed Monovar substantially outperforming GATK HaplotypeCaller and Samtools on a normal isogenic fibroblast control (precision 0.84 vs 0.66 and 0.58 respectively) and on tumor samples from TNBC, bladder cancer, and ALL patients. Monovar was particularly effective at reducing the spurious C:G→A:T transversion rate characteristic of MDA artifacts.

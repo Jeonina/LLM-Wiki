@@ -24,6 +24,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** Schep et al. (2017) — *chromVAR: TF motif accessibility from sparse single-cell data* — *Nature Methods*. [DOI](https://doi.org/10.1038/nmeth.4401)
+
 # Schep et al. 2017 — chromVAR
 
 > Thesis: scATAC-seq has fundamental sparsity — only 0, 1, or 2 reads per locus per cell because a diploid genome only has two copies. Per-locus analysis is therefore noise-dominated. **chromVAR aggregates accessibility across all peaks sharing a TF motif** (or any genomic annotation) and computes a bias-corrected deviation score per cell — controlling for GC content and mean accessibility — turning sparse single-cell data into a robust TF-motif × cell matrix that supports clustering, trajectory analysis, and de novo motif discovery.

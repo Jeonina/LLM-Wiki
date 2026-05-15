@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Sandy_2019_NatureReviewsGenetics.pdf"]
 ---
 
+**Citation:** Klemm et al. (2019) — *Chromatin accessibility and the regulatory epigenome* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-018-0089-8)
+
 Klemm, Shipony and Greenleaf (Stanford) reviewed chromatin accessibility and the regulatory epigenome. Covers: (i) measurement methods — MNase-seq, DNase-seq (Crawford/Hesselberth), ATAC-seq (Buenrostro 2013, the founding ATAC paper from the Greenleaf lab), single-cell variants (Buenrostro 2015 Fluidigm scATAC, Cusanovich 2015 sci-ATAC); (ii) TF binding dynamics and pioneer factors; (iii) the role of accessibility in cell-state regulation and disease; (iv) accessibility as a dynamic continuum from closed → permissive → open chromatin. Frames accessibility as the integrated readout of TF binding × nucleosome positioning × chromatin remodelers.
 
 ## Why this matters

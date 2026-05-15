@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Siddharth_2015_NatureBiotechnology.pdf"]
 ---
 
+**Citation:** Dey et al. (2015) — *DR-seq: integrated genome and transcriptome sequencing from the same cell* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/nbt.3129)
+
 Dey, Kester, Spanjaard, Bienko and van Oudenaarden (Hubrecht Institute) developed **DR-seq (gDNA-mRNA Sequencing)**, a method for integrated scDNA + scRNA from the same cell **without physical separation** of the nucleic acids. Workflow: single-cell lysate + reverse transcription with a poly-A primer containing cell-specific barcodes and Illumina/T7 sequences → ssDNA cDNA mixed with gDNA → 7 rounds of **quasilinear whole-genome amplification** using an adapter with defined 5' end + random nucleotides → split into two tubes: one PCR-amplified for gDNA library, the other in-vitro-transcribed (T7) to produce aRNA for mRNA library. Mouse ESC validation showed comparable detection efficiency to standalone scRNA-seq and scDNA-seq, with the additional capability of correlating per-cell CNV to per-cell mRNA expression.
 
 ## Why this matters

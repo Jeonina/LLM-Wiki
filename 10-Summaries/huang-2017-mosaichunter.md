@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["August_2017_NucleicAcidsResearch.pdf"]
 ---
 
+**Citation:** Huang et al. (2017) — *MosaicHunter: accurate detection of postzygotic single-nucleotide mosaicism through next-generation sequencing of unpaired, trio, and paired samples* — *NucleicAcidsResearch*. [DOI](https://doi.org/10.1093/nar/gkx024)
+
 Huang, Zhang, Ye, Dou, Yan, Yang, Zhang and Wei (Peking University, Tsinghua) developed **MosaicHunter**, a Bayesian bioinformatics framework for detecting postzygotic single-nucleotide mosaicisms (SNMs) from unpaired NGS data — i.e., without a matched control tissue. The Bayesian genotyper computes posterior probabilities over four states (mosaic, reference-homozygous, heterozygous, alternative-homozygous) by integrating base-calling error rates, random sampling variation, and dbSNP population allele frequencies, then applies a series of stringent error filters to remove systematic NGS artefacts.
 
 Three operating modes: (i) **single mode** for unpaired WGS (binomial model); (ii) **single mode for WES** (new beta-binomial model handling over-dispersion in exome alternative-allele fractions); (iii) **trio mode** that incorporates parental sequencing to improve specificity in healthy parents of affected children; (iv) **paired mode** for matched-tumor-normal cancer samples. Validated on simulated and real WGS/WES data against existing somatic-mutation callers, showing improved precision particularly in non-cancer settings where mutation rates are 1-3 orders of magnitude lower than tumors.

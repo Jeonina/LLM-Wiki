@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Zohar_2020_NatureMethods.pdf"]
 ---
 
+**Citation:** Shipony et al. (2020) — *Long-range single-molecule mapping of chromatin accessibility in eukaryotes (SMAC-seq)* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-019-0730-2)
+
 Shipony, Marinov, Swaffer, Sinnott-Armstrong, Skotheim, Kundaje and Greenleaf (Stanford) developed **SMAC-seq** (Single-Molecule long-read Accessible Chromatin mapping sequencing assay), which uses **EcoGII** N6-methyladenosine (m6A) methyltransferase to mark open chromatin combined with CpG/GpC 5mC methyltransferases (M.CviPI, M.SssI), followed by Oxford Nanopore long-read sequencing to read out methylation status base-by-base on individual chromatin fibers.
 
 By combining m6A and CpG/GpC marks, SMAC-seq achieves a theoretical accessibility resolution of ~3 bp in all model organisms — substantially better than CpG-only or GpC-only methods which suffer from sparse dinucleotide spacing in some genomes. SMAC-seq footprints individual nucleosome positions, transcription-factor occupancy, and the **coordination of accessibility states at distal regulatory elements on the same molecule** — a capability that short-read DNase-seq, ATAC-seq, and NOMe-seq fundamentally cannot deliver.

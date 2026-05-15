@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["scChIX-seq infers dynamic relationships between histone modifications in single cells.md"]
 ---
 
+**Citation:** Yeung et al. (2023) — *scChIX-seq: dynamic relationships between histone modifications in single cells* — *?*.
+
 Yeung, Florescu, Zeller et al. (van Oudenaarden lab; Hubrecht Institute) developed **scChIX-seq** (single-cell chromatin immunocleavage and unmixing sequencing) to profile TWO histone modifications per cell. Workflow: incubate cells with each antibody separately (single-incubated, training data) and with both antibodies together (double-incubated). LDA learns cell-type-specific genomic distributions; statistical model deconvolves multiplexed cut fragments back to one of the two marks. Validated on H3K27me3/H3K9me3 (mutually exclusive), H3K4me1/H3K36me3 (correlated), and applied to mouse organogenesis and macrophage differentiation for chromatin velocity.
 
 ## Why this matters

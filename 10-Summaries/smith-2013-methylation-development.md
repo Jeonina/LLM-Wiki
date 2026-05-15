@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Zachary_2013_NatureReviewsGenetics.pdf"]
 ---
 
+**Citation:** Smith et al. (2013) — *DNA methylation: roles in mammalian development* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/nrg3354)
+
 Smith and Meissner (Harvard + Broad) reviewed DNA methylation's roles in mammalian development. Sections: (i) regulatory targets — promoter CGIs (largely unmethylated and stable), enhancer regions (dynamic methylation), gene bodies, repeats, parent-specific imprints; (ii) maintenance and erasure — DNMT1/UHRF1 maintenance machinery, TET1/2/3-mediated active demethylation via 5hmC intermediate, TDG base-excision repair; (iii) developmental dynamics — germ-cell PGC reprogramming, preimplantation embryo demethylation/remethylation waves, lineage-specific differentially methylated regions (DMRs); (iv) ESC vs. somatic differences; (v) X-inactivation; (vi) disease and aging contexts.
 
 ## Why this matters

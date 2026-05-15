@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Yu_2025_NatureBiotechnology.pdf"]
 ---
 
+**Citation:** Xiao et al. (2025) — *Tracking single-cell evolution using clock-like chromatin accessibility loci (EpiTrace)* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-024-02241-z)
+
 Xiao, Jin, Ju, Fu, Wang, Yu, Chen, Qian, Wang and Zhang (Wuhan / Hong Kong UST / Peking-Tsinghua) developed **EpiTrace**, a method that infers single-cell mitotic age from scATAC-seq data using **clock-like differential-methylation loci** (ClockDML) — genomic regions whose DNA-methylation state drifts predictably with cell division. The central observation: as cells undergo mitosis, the heterogeneity of chromatin accessibility on clock-like loci is *reduced*, providing a measurable molecular clock.
 
 The method: identify 126,420 ClockDML in the human genome by bisulfite capture sequencing of CpG islands across donors of different ages; profile the same loci's accessibility from scATAC-seq via a hidden Markov model with diffusion-smoothing to reduce single-cell sparseness; refine the reference set by iteration to maximize age-correlation. EpiTrace tracks cell-age in single cells, concords with known developmental hierarchies, and correlates with DNAm-based clocks at population scale.

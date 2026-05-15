@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Roghayeh_2019_JournalOfAppliedBiologyAnd;Biotechnology.pdf"]
 ---
 
+**Citation:** Ghorbani et al. (2019) — *Computational-based approaches in epigenetic research* — *JournalOfAppliedBiologyAnd*.
+
 Ghorbani and Shokri-Gharelo (University of Tabriz) authored a brief, general review of computational-based approaches to epigenetic data in the Journal of Applied Biology & Biotechnology. Covers: experimental methods feeding computational analysis (ChIP-seq, MeDIP, methyl-seq, bisulfite sequencing, MBD-seq); databases (MethDB, REBASE, MethPrimerDB, MethyLogiX); computational methods for CpG island identification (algorithms, ANN, SVM); HMM-based methylation prediction; general machine-learning applications to epigenetic markers.
 
 ## Why this matters

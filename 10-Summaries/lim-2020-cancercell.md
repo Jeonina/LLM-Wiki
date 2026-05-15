@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Bora_2020_CancerCell.pdf"]
 ---
 
+**Citation:** Lim et al. (2020) — *Advancing cancer research and medicine with single-cell genomics* — *CancerCell*. [DOI](https://doi.org/10.1016/j.ccell.2020.03.008)
+
 Lim, Lin and Navin's 2020 Cancer Cell review surveys the impact of single-cell sequencing (SCS) on cancer research and the challenges that remain before SCS becomes clinically routine. Three principal themes.
 
 (1) Technology landscape: SCS has progressed from per-cell costs of $\sim$US$1 (smart-seq2, sci-RNA-seq) to high-throughput droplet platforms (10x Genomics, Drop-seq) profiling 10,000+ cells per experiment, plus combinatorial-indexing methods (sci-RNA-seq, sciATAC-seq) at million-cell scale. scDNA-seq remains the least mature scale-wise, with high allelic-dropout and false-positive rates limiting unbiased mutation profiling — though targeted panels (Mission Bio Tapestri, Wafergen) achieve high-confidence variant calls.

@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Junyue_2018_Science.pdf"]
 ---
 
+**Citation:** Cao et al. (2018) — *Joint profiling of chromatin accessibility and gene expression in thousands of single cells (sci-CAR)* — *Science*. [DOI](https://doi.org/10.1126/science.aau0730)
+
 Cao, Cusanovich, Ramani and colleagues (Shendure / Trapnell labs) introduced sci-CAR (single-cell combinatorial indexing chromatin accessibility and mRNA), the founding joint-assay method that profiles chromatin accessibility and gene expression from the same cell at thousand-cell scale via split-pool barcoding.
 
 The chemistry: nuclei are extracted and distributed to a first set of wells where a first scRNA-seq index (poly-T RT primer) and a first scATAC-seq index (Tn5 transposase) are introduced simultaneously. After cDNA synthesis and tagmentation, nuclei are pooled, redistributed across a second set of wells, lysed, and a second scRNA-seq and scATAC-seq index added by PCR. The two-step combinatorial barcoding scheme produces per-cell unique barcodes that link RNA and ATAC reads back to their cell of origin.

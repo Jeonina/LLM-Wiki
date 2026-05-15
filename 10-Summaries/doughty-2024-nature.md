@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Benjamin_2024_Nature.pdf"]
 ---
 
+**Citation:** Doughty et al. (2024) — *Single-molecule states link transcription factor binding to gene expression* — *Nature*. [DOI](https://doi.org/10.1038/s41586-024-08219-w)
+
 Doughty, Hinks, Schaepe and colleagues (Greenleaf / Bintu labs) applied single-molecule footprinting (SMF) — methyltransferase-based chromatin stenciling read by long-read sequencing — to engineered enhancer-promoter constructs in K562 cells. The constructs contain variable numbers of TetO binding sites for either a synthetic TF (rTetR-VP48) or an endogenous TF involved in the type-I interferon response. SMF reads, per fiber, the configuration of TF binding + nucleosome positioning + accessibility on the same molecule, then correlates with steady-state and dynamic gene expression measured by mCherry/citrine reporters.
 
 Three findings. (1) TF binding events on nucleosome-free DNA are independent of each other (statistically uncorrelated), but activation domains recruit chromatin remodelers (BAF) that destabilize nucleosomes, driving observed TF binding cooperativity. (2) Average TF occupancy linearly determines promoter activity, allowing decomposition of TF strength into separable binding and activation terms. (3) Thermodynamic and kinetic models built from SMF data quantitatively predict both enhancer binding microstates and gene expression dynamics.

@@ -20,6 +20,8 @@ topics:
   - "[[40-Topics/dna-methylation]]"
 ---
 
+**Citation:** Smith et al. (2013) — *DNA methylation: roles in mammalian development* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/nrg3354)
+
 # Smith & Meissner 2013 — DNA methylation: roles in mammalian development
 
 > Thesis: DNA methylation (5-methylcytosine, primarily at symmetric CpG dinucleotides) is mostly stable throughout life, propagated by DNMT1 at S phase, but it is dynamically erased and reset during two developmental windows — primordial germ cell specification and pre-implantation development — and serves as both a localized regulatory signal and a genome-wide silencing mechanism for repetitive elements and imprints.

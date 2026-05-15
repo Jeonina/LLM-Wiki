@@ -21,6 +21,8 @@ topics:
   - "[[40-Topics/somatic-mosaicism]]"
 ---
 
+**Citation:** Nandi et al. (2025) — *UDSeq: universal duplex sequencing at ~2.5×10⁻⁹/bp* — *bioRxiv (preprint)*. [DOI](https://doi.org/10.1101/2025.09.14.676103)
+
 # Nandi et al. 2025 — UDSeq: universal duplex sequencing at ~2.5×10⁻⁹/bp
 
 > Thesis: Existing duplex methods either need micrograms of DNA, lose duplex pairs through inefficient library conversion, or restrict the genomic footprint. **UDSeq** replaces these with random fragmentation + efficient UMI ligation + quantitative input control to produce near-complete exome/genome duplex coverage from **as little as 100 pg** of DNA with an error rate of ~2.5×10⁻⁹ per bp — making it a scalable platform for mutational-signature analysis of normal tissues, environmental exposures, and rare clinical samples.

@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Kai_2024_NatureMethods.pdf"]
 ---
 
+**Citation:** Zhang et al. (2024) — *A fast, scalable and versatile tool for analysis of single-cell omics data (SnapATAC2)* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-023-02139-9)
+
 Zhang, Zemke, Armand and Ren (UCSD, Westlake) released **SnapATAC2**, a major rewrite of the original SnapATAC package with a new nonlinear dimensionality-reduction algorithm based on a matrix-free spectral embedding (Lanczos algorithm on the Laplacian implicit matrix). The method achieves linear time and space complexity in cell number while preserving the geometric properties of the underlying data — eliminating the quadratic memory blow-up of conventional spectral embedding for million-cell datasets.
 
 Benchmarked across scATAC-seq, scRNA-seq, scHi-C, and multimodal (10x Multiome) data, SnapATAC2 outperforms ArchR, Signac, EpiScanpy, PeakVI, cisTopic and SCALE on speed and precision, especially at scale (>1M cells). The package is modular, integrates with the scverse ecosystem, and is implemented in Rust with a Python interface.

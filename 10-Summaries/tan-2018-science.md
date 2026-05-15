@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Longzhi_2018_Science.pdf"]
 ---
 
+**Citation:** Tan et al. (2018) — *Three-dimensional genome structures of single diploid human cells (Dip-C)* — *Science*. [DOI](https://doi.org/10.1126/science.aat5641)
+
 Tan, Xing, Chang, Li and Xie (Harvard / Peking U) introduced Dip-C, the first single-cell chromatin-conformation method that reconstructs diploid (haplotype-resolved) 3D genome structures of single human cells. The chemistry combines an improved in-situ 3C protocol (no biotin pulldown) with META — multiplex end-tagging amplification — to substantially increase the number of detected chromatin contacts per cell. Dip-C detected a median of 1.04 million contacts per GM12878 cell (range 0.71–1.48 M), $\sim 5\times$ more than prior scHi-C methods, and 0.84 million per PBMC.
 
 The Dip-C imputation algorithm assigns each contact to one of the two parental haplotypes using nearby germline-SNP-resolved contacts: nearby contacts (in genomic distance) tend to occupy the same homolog, so unknown haplotypes can be imputed from the haplotype identity of their neighbors. Cross-validation accuracy is $\sim$96\% per haplotype. The reconstructed 3D models at 20-kb resolution showed that the two alleles of imprinted loci and the two X chromosomes in female cells adopt statistically distinct genome structures — direct demonstration that haplotype-resolved single-cell 3D folding distinguishes parent-of-origin and X-inactivation states.

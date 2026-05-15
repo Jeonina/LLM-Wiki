@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Hongshan_2013_GenomeResearch.pdf"]
 ---
 
+**Citation:** Guo et al. (2013) — *Single-cell methylome landscapes by reduced representation bisulfite sequencing (scRRBS)* — *Genome Research*. [DOI](https://doi.org/10.1101/gr.161679.113)
+
 # Guo et al. 2013 — scRRBS foundational
 
 > Hongshan Guo, Ping Zhu, Xinglong Wu, Xianlong Li, Lu Wen, **Fuchou Tang**. *Genome Research* **23**, 2126–2135 (2013). DOI: 10.1101/gr.161679.113. Peking University + Peking-Tsinghua Center.

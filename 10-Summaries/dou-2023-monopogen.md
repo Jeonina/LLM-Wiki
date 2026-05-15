@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Jinzhuang_2023_NatureBiotechnology.pdf"]
 ---
 
+**Citation:** Dou et al. (2023) — *Single-nucleotide variant calling in single-cell sequencing data with Monopogen* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-023-01873-x)
+
 Dou, Tan, Kock, Wang, Cheng, Tan, Han, Hon, Park, Shin, Jin, Wang, Chen, Ding, Prabhakar, Navin, Chen and Chen (MD Anderson, GIS Singapore, BCM) developed **Monopogen**, a computational tool that calls single-nucleotide variants from single-cell sequencing data of *any* modality — scRNA-seq, snRNA-seq, scATAC-seq, sci-ATAC-seq, scDNA-seq. The core idea is to overcome the uneven coverage, allelic dropout, and high sequencing-error rates of single-cell data by leveraging **linkage disequilibrium (LD) from external population reference panels** (e.g., 1000 Genomes phase 3).
 
 Two-tier strategy: (i) **germline SNV calling**: refine genotype likelihoods via LD from the population reference, yielding 100K–3M germline SNVs at ~95% accuracy per sample; (ii) **putative somatic SNV calling**: detect somatic variants by identifying alleles that *cosegregate* with germline haplotypes at the cell-population level (i.e., LD pattern matches genome-wide population except for a subpopulation of cells that gained the somatic allele). The somatic SNVs feed into clonal-lineage tracing via Monovar.

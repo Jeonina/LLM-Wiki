@@ -22,6 +22,8 @@ topics:
   - "[[40-Topics/scdna-seq]]"
 ---
 
+**Citation:** Glynos et al. (2023) — *single-cell mtDNA heteroplasmy: random drift drives life-long divergence* — *Science Advances*. [DOI](https://doi.org/10.1126/sciadv.adi4038)
+
 # Glynos et al. 2023 — single-cell mtDNA heteroplasmy: random drift drives life-long divergence
 
 > Thesis: Cell-to-cell variance in mitochondrial DNA heteroplasmy levels emerges prenatally and increases monotonically throughout life — even in non-dividing tissues — driven by random genetic drift acting through mtDNA turnover (relaxed replication), not vegetative segregation alone. Two pathogenic mt-tRNA mutations (m.5024C>T, m.5019A>G) segregate at different intrinsic rates, providing a clean explanation for clinical variability in mitochondrial disease.

@@ -26,6 +26,8 @@ topics:
   - "[[40-Topics/hematopoietic-malignancies]]"
 ---
 
+**Citation:** Nam et al. (2019) — *Genotyping of Transcriptomes (GoT)* — *Nature*. [DOI](https://doi.org/10.1038/s41586-019-1367-0)
+
 # Nam et al. 2019 — Genotyping of Transcriptomes (GoT)
 
 > Thesis: malignant cells often share surface markers with non-neoplastic cells, so to study how somatic mutations corrupt human hematopoiesis you need to genotype and transcribe the *same* single cells. The authors invent **GoT** — a droplet-based amplicon trick on top of 10x Genomics scRNA-seq — apply it to CALR-mutated MPN, and find that CALR's transcriptional impact (UPR, NF-κB, fitness) depends on the progenitor's *native* identity, not on the mutation alone.

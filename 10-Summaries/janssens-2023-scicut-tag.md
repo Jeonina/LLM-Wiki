@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Scalable single-cell profiling of chromatin modifications with sciCUT&Tag.md"]
 ---
 
+**Citation:** Janssens et al. (2023) — *sciCUT&Tag: scalable single-cell chromatin modification profiling* — *?*.
+
 Janssens, Greene, Wu, Codomo et al. (Henikoff lab; FHCC) developed **sciCUT&Tag**, a combinatorial-indexing CUT&Tag protocol on the Takara ICELL8 nanowell system. Profiles H3K27me3 (repression) and H3K4me1/me2/me3 (activation) in PBMCs. Two-round indexing: first via antibody-directed pA-Tn5 tagmentation in 96-well plate (with barcoded transposomes), second via barcoded PCR primers in 5,184 nanowells. Supports MulTI-Tag — simultaneous profiling of multiple chromatin epitopes per cell. SNP-based collision removal across donors.
 
 ## Why this matters

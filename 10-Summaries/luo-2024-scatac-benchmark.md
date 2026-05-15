@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Siyuan_2024_GenomeBiology.pdf"]
 ---
 
+**Citation:** Luo et al. (2024) — *Benchmarking computational methods for single-cell chromatin data analysis* — *Genome Biology*. [DOI](https://doi.org/10.1186/s13059-024-03356-x)
+
 Luo, Germain, Robinson and von Meyenn (ETH Zurich, SIB) benchmarked eight feature-engineering pipelines derived from five major scATAC-seq analysis methods on their ability to discover and discriminate cell types. The benchmark spans 10 metrics across cell embedding, shared-nearest-neighbor graph, and partition levels.
 
 Methods tested cover four paradigms: (i) NLP-derived (Signac LSI/TF-IDF+SVD, ArchR iterative LSI, cisTopic LDA); (ii) graph/nonlinear (SnapATAC diffusion maps, SnapATAC2 Laplacian eigenmaps); (iii) feature-aggregation (BROCKMAN k-mer, SCRAT motif/DHS, Cicero gene-activity); (iv) neural network (PeakVI VAE, scBasset CNN, CellSpace).

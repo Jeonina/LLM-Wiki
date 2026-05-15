@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["DeepHistone_ a deep learning approach to predicting histone modifications.md"]
 ---
 
+**Citation:** Yin et al. (2019) — *DeepHistone: deep learning for histone modification prediction* — *?*.
+
 Yin, Wu, Liu, Lv, Jiang (Tsinghua) developed **DeepHistone**, a deep CNN integrating DNA sequence + chromatin accessibility (DNase-seq) to predict 7 histone modifications (H3K4me3, H3K4me1, H3K36me3, H3K27me3, H3K9me3, H3K27ac, H3K9ac). Three modules: DNA module (densely connected CNN on one-hot sequence), DNase module (same architecture on openness scores), Joint module (concatenation + 7 sigmoid outputs). Outperforms baselines within and across epigenomes. Sequence signatures extracted match known TF binding sites.
 
 ## Why this matters

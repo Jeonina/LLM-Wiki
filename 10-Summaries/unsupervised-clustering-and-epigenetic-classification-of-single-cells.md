@@ -24,6 +24,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** Zamanighomi et al. (2018) — *scABC: weighted k-medoids unsupervised clustering for scATAC-seq* — *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-018-04629-3)
+
 # Zamanighomi et al. 2018 — scABC
 
 > Thesis: scATAC-seq sparsity makes peak-based clustering fragile, especially when subpopulation marker peaks are unknown. **scABC** is a fully unsupervised pipeline that (a) weights cells by total in-peak reads (high-coverage cells are more reliable), (b) does weighted k-medoids clustering on rank-transformed peak signals, (c) refines cluster assignment by Spearman correlation to landmark cells, and (d) identifies cluster-specific peaks via empirical-Bayes regression. Validated to 99.6% accuracy on 966-cell in silico mixtures of six cell lines.

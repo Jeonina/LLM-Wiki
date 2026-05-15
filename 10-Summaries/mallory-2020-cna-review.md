@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Xian_2020_GenomeBiology.pdf"]
 ---
 
+**Citation:** Mallory et al. (2020) — *Methods for copy number aberration detection from single-cell DNA-sequencing data* — *Genome Biology*. [DOI](https://doi.org/10.1371/journal.pcbi.1008012)
+
 Mallory, Edrisi, Navin and Nakhleh (Rice, MD Anderson) reviewed eight methods for detecting copy-number aberrations (CNAs) from scDNA-seq data, categorizing them along a seven-step pipeline: (1) preprocessing, (2) bin counting, (3) GC and mappability correction, (4) segmentation, (5) copy-number-state inference, (6) phasing/allele-specific call (if applicable), (7) post-processing/clone assignment. The review covers Ginkgo, HMMcopy, ACE, CONICS, AneuFinder, SCYN, CHISEL (in part), and SCOPE.
 
 Three segmentation paradigms compared: (i) **sliding-window** (e.g., Ginkgo): runs of similar bins are merged into segments; (ii) **objective-function** approaches: circular binary segmentation; (iii) **hidden Markov models**: probabilistic state inference per bin. The review also discusses ploidy-handling (most methods assume diploid baseline — problematic for tumor data with WGD or aneuploidy), evaluation strategies in the absence of ground truth, and downstream phylogenetic inference from CNA profiles.

@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Lukas_2023_NatureReviewsGenetics.pdf"]
 ---
 
+**Citation:** Heumos et al. (2023) — *Best practices for single-cell analysis across modalities* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-023-00586-w)
+
 Heumos, Schaar, Lance et al. (Theis lab; Helmholtz Munich + TU Munich) compiled "best practices" recommendations for unimodal and multimodal single-cell analysis. Synthesizes independent benchmarking studies into comprehensive workflows: scRNA-seq (raw counts → high-quality cellular data via ambient-RNA removal with SoupX/CellBender, doublet detection with scDblFinder, normalization, variance stabilization), chromatin accessibility, surface protein, adaptive immune receptor (TCR/BCR) repertoires, spatial. Includes a companion online "Single-Cell Best Practices" book with 50+ chapters. Functions as an entry-point for novices and a current-practice guide for advanced users.
 
 ## Why this matters

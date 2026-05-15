@@ -23,6 +23,8 @@ topics:
   - "[[40-Topics/single-cell-multiomics]]"
 ---
 
+**Citation:** Yeung et al. (2023) — *scChIX-seq: computational deconvolution of two histone marks per cell* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-022-01560-3)
+
 # Yeung et al. 2023 — scChIX-seq
 
 > Thesis: Most single-cell histone-modification methods (scChIC-seq, scCUT&Tag, scCUT&RUN) profile one mark per cell, forcing inter-cell comparisons across separate experiments. **scChIX-seq** multiplexes two histone-mark antibodies in the same cell during sortChIC, then computationally **deconvolves the superimposed cut-site profiles** using single-incubated training datasets — assigning each fragment probabilistically to its source mark. This unlocks **per-cell relationships between marks** (mutually exclusive vs co-occurring) and supports "chromatin velocity" analysis.

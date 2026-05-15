@@ -25,6 +25,8 @@ topics:
   - "[[40-Topics/dna-methylation]]"
 ---
 
+**Citation:** Kim et al. (2017) — *DNA methylation as an epigenetic mark of cellular memory* — *Exp Mol Med*. [DOI](https://doi.org/10.1038/emm.2017.10)
+
 # Kim & Costello 2017 — DNA methylation as cellular memory
 
 > Thesis: DNA methylation patterns are heritable across cell divisions and act as an **epigenetic memory** that records cell-type identity, developmental history, and pathological trajectory. This memory has practical consequences: iPSCs retain residual methylation from their donor cells and preferentially differentiate back toward those lineages; cancer cells retain methylation signatures of their tissue of origin even at metastatic sites, enabling **EPICUP**-style methylation classifiers for cancer of unknown primary.

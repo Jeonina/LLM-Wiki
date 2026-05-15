@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["scTEM-seq_ Single-cell analysis of transposable element methylation to link global epigenetic heterogeneity with transcriptional programs.md"]
 ---
 
+**Citation:** Hunt et al. (2022) — *scTEM-seq: single-cell transposable element methylation* — *?*.
+
 Hunt, Burnard, Roper et al. (Heather Lee lab) developed **scTEM-seq** — targeted amplicon bisulfite sequencing of SINE Alu (and LINE-1) repeats from single cells. Provides cost-effective estimation of global DNA methylation levels (TE methylation correlates R²=0.91 with global methylation in scBS-seq data). Parallel transcriptome via scRNA-seq. Applied to KG1a AML cells with/without decitabine (DAC, hypomethylating agent): revealed global methylation heterogeneity associated with immune-process gene expression and coordinated TE upregulation in DAC-treated subpopulations.
 
 ## Why this matters

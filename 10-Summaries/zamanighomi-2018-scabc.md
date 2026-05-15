@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Unsupervised clustering and epigenetic classification of single cells.md"]
 ---
 
+**Citation:** Zamanighomi et al. (2018) — *scABC: unsupervised clustering of single-cell scATAC-seq* — *?*.
+
 Zamanighomi, Lin, Daley et al. (Wong, Greenleaf labs; Stanford) developed **scABC** (single cell Accessibility Based Clustering). Weighted K-medoids clustering — cells weighted by sequencing-depth-derived reliability. Uses ranked peaks (not raw counts) to prevent bias from over-represented regions. Calculates per-cluster "landmarks" (prototypical cells) then re-clusters via Spearman correlation to landmarks. Cluster-specific peaks identified via empirical Bayes regression. ~0.4% misclassification on 966-cell in silico mixture.
 
 ## Why this matters

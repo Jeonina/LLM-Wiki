@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Detecting ultralow-frequency mutations by Duplex Sequencing.md"]
 ---
 
+**Citation:** Kennedy et al. (2014) — *Detecting ultralow-frequency mutations by Duplex Sequencing (protocol)* — *?*.
+
 Kennedy, Schmitt, Fox et al. (Loeb lab; UW) provided the canonical Nature Protocols paper detailing the Duplex Sequencing (DS) workflow. Achieves <1 mutation in >10⁷ wild-type nucleotides via random-yet-complementary tagged adapters → ligation → PCR family grouping → single-strand consensus sequences (SSCS) → duplex consensus sequences (DCS). Suitable for <1 Mb genomic regions. Establishes the protocol-grade reference for the founding Schmitt 2012 method, including updated adapter design and computational pipeline (BWA → SAMtools → Picard → custom Python scripts).
 
 ## Why this matters

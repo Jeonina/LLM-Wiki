@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Nanopore Sequencing Unveils Somatic Structural Variations as Biomarkers in Laryngeal squamous cell carcinoma Genomes.md"]
 ---
 
+**Citation:** Liu et al. (2025) — *Nanopore SomaGauss-SV in laryngeal squamous cell carcinoma* — *?*.
+
 Liu, Xia, Qiao et al. developed **SomaGauss-SV**, a somatic SV detection workflow for nanopore long-read data. Applied to 15 paired LSCC tumor-blood samples: found significant positive correlation between somatic deletion burden and smoking intensity. Identified high-frequency somatic simple repeat expansion in 20/27 (74.1%) patients upregulating TP53BP2 and FBXO28 via spatial proximity.
 
 ## Why this matters

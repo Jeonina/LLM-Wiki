@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["DNA methylation_ an epigenetic mark of cellular memory - Experimental & Molecular Medicine.md"]
 ---
 
+**Citation:** Kim et al. (2017) — *DNA methylation: an epigenetic mark of cellular memory* — *?*.
+
 Kim and Costello (KRIBB Korea + UCSF) reviewed DNA methylation as **epigenetic memory** in stem cells and cancer. Sections: maintenance and erasure (DNMT1/UHRF1/PCNA, TET-mediated active demethylation via 5hmC, TDG-mediated BER), de novo methylation (DNMT3A/B + DNMT3L), ESC/iPSC/HSC/MSC/NSC-specific methylation patterns, and methylation as a marker of cancer origin. iPSCs retain donor-cell methylation signatures even after extended passaging; methylation differences in tumors reflect their evolutionary history.
 
 ## Why this matters

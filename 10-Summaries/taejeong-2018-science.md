@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Taejeong_2018_Science.pdf"]
 ---
 
+**Citation:** Bae et al. (2018) — *Different mutational rates and mechanisms in human cells at pregastrulation and neurogenesis* — *Science*. [DOI](https://doi.org/10.1126/science.aan8690)
+
 # Bae et al. 2018 — Pregastrulation vs neurogenesis mutational landscape
 
 > Taejeong Bae, Livia Tomasini, Jessica Mariani, Bo Zhou, Tanmoy Roychowdhury, Daniel Franjic, Mihovil Pletikos, Reenal Pattni, Bo-Juen Chen, Elisa Venturini, Bridget Riley-Gillis, Nenad Sestan, Alexander E. Urban, **Alexej Abyzov**\*, **Flora M. Vaccarino**\*. *Science* **359**, 550–555 (2 Feb 2018). DOI: 10.1126/science.aan8690.

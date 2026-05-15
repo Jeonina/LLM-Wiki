@@ -26,6 +26,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** Fang et al. (2021) — *SnapATAC: peak-free scATAC-seq analysis to 1 M cells* — *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-021-21583-9)
+
 # Fang et al. 2021 — SnapATAC
 
 > Thesis: scATAC-seq analysis pipelines that depend on pre-defined accessibility peaks bias clustering toward abundant cell types and miss rare populations whose signal is too sparse to define peaks. **SnapATAC** discards peaks entirely and instead bins the genome into uniform 5 kb windows, computes pairwise Jaccard similarities between cells, and uses the ensemble **Nyström method** to scale low-rank embedding to a million cells. Applied to 55,592 nuclei from mouse secondary motor cortex (MOp), it discovers ~370,000 candidate cis-regulatory elements across 31 cell populations including subpopulations that constitute <0.1% of cells.

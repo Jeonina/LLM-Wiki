@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Cristiana_2019_Cells.pdf"]
 ---
 
+**Citation:** Bersaglieri et al. (2019) — *Genome organization in and around the nucleolus* — *Cells*. [DOI](https://doi.org/10.3390/cells8060579)
+
 Bersaglieri and Santoro's 2019 Cells review describes the nucleolus as a chromatin organizing center beyond its canonical role in ribosome biogenesis. rRNA gene clusters (nucleolar organizer regions, NORs) on the short arms of human acrocentric chromosomes 13/14/15/21/22 contain ~200–600 copies of rRNA genes, partitioned into silent (heterochromatic, H3K9me2/3, methylated CpG-promoter), inactive (poised), and active (transcribed by Pol I) states. The review consolidates evidence that nucleolar-associated domains (NADs) — analogous to lamina-associated domains — represent a major repressive compartment that organizes peripheral heterochromatin and influences genome stability.
 
 The piece is methodologically relevant because most single-cell 3D-genome assays (scHi-C, Dip-C, sn-m3C-seq) treat the nucleolus as a featureless contact density, missing the partitioning of rRNA gene clusters into chromatin states. Tools that resolve NAD-associated contacts at single-cell resolution remain limited.

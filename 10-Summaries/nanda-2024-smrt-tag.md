@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Direct transposition of native DNA for sensitive multimodal single-molecule sequencing.md"]
 ---
 
+**Citation:** Nanda et al. (2024) — *SMRT-Tag / SAMOSA-Tag: low-input multimodal PacBio sequencing* — *?*.
+
 Nanda, Wu, Irkliyenko et al. (Ramani lab; UCSF) adapted Tn5 hairpin tagmentation for PacBio SMRT-cell library prep. Two methods: **SMRT-Tag** (~40 ng DNA / 7,000 cell equivalents — joint genome + CpG methylation calling at GIAB-benchmark accuracy) and **SAMOSA-Tag** (30,000–50,000 nuclei + EcoGII m6A footprinting — single-fiber chromatin + endogenous CpG + sequence on the same molecule). Applied to PDX prostate-cancer xenografts, revealed metastasis-associated epigenome disorganization.
 
 ## Why this matters

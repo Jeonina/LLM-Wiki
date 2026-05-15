@@ -23,6 +23,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** Ku et al. (2019) — *scChIC-seq: antibody-MNase-fusion for single-cell histone marks* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-019-0361-7)
+
 # Ku et al. 2019 — scChIC-seq
 
 > Thesis: ChIP-seq is not single-cell-tractable because of cross-linking, sonication, and immunoprecipitation losses. Schmid et al.'s original ChIC method (chromatin immunocleavage) used antibody-tethered MNase to cut at target sites without ChIP. **scChIC-seq** adapts ChIC for single cells using a covalent antibody-MNase conjugate (or protein-A-MNase + antibody complex) plus selective PCR amplification of the small target fragments, profiling H3K4me3 and H3K27me3 in ~285 single human white blood cells per experiment and clustering them by chromatin state into the major immune lineages.

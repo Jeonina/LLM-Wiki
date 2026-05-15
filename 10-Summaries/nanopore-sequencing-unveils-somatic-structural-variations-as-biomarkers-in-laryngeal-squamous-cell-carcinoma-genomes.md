@@ -24,6 +24,8 @@ topics:
   - "[[40-Topics/somatic-mosaicism]]"
 ---
 
+**Citation:** Liu et al. (2025) — *Nanopore somatic SVs in laryngeal squamous cell carcinoma* — *bioRxiv (preprint)*. [DOI](https://doi.org/10.1101/2025.06.12.659252)
+
 # Liu et al. 2025 — Nanopore somatic SVs in laryngeal SCC
 
 > Thesis: Laryngeal squamous cell carcinoma (LSCC) lacks reliable molecular biomarkers for early diagnosis and prognosis. Bulk short-read sequencing detects SNVs well but is poorly suited to large somatic structural variants (SVs) that are central to tumorigenesis. **SomaGauss-SV**, a new somatic-SV detection workflow on nanopore long-read sequencing data, achieves balanced precision and recall across five paired tumor-cell-line benchmarks. Applied to 15 paired LSCC tumor–blood samples, it reveals a comprehensive SV landscape, links smoking intensity to somatic deletion burden, and identifies a high-frequency simple-repeat expansion in 74% of patients that drives *TP53BP2* and *FBXO28* via spatial proximity.

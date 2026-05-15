@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["scATAC-seq generates more accurate and complete regulatory maps than bulk ATAC-seq.md"]
 ---
 
+**Citation:** Gur et al. (2025) — *scATAC-seq generates more accurate regulatory maps than bulk ATAC-seq* — *?*.
+
 Gur and Hughes (Oxford) compared scATAC-seq vs. bulk ATAC-seq on matched samples (erythroblasts and NK cells from the same donor). Found: same overall chromatin architecture signal, but scATAC provides substantially higher data quality with improved sensitivity to weak-but-functionally-important signals. scATAC identifies heterogeneity in apparently-homogeneous populations. Provided guidelines on minimum cell numbers for pseudo-bulking.
 
 ## Why this matters

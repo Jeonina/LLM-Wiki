@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["High-throughput chromatin accessibility profiling at single-cell resolution.md"]
 ---
 
+**Citation:** Mezger et al. (2018) — *µATAC-seq: high-throughput nanoliter-scale single-cell ATAC-seq* — *?*.
+
 Mezger, Klemm, Mann et al. (Greenleaf, Linnarsson labs; Stanford + Karolinska) implemented scATAC-seq on the Takara ICELL8 nano-well dispenser (5,184 wells). ~1,800 cells per chip, 4–5 hours on-chip processing, ~$0.81 per cell — 20× cheaper than Fluidigm C1. Median 14,300 fragments per single human cell (vs. 5,800 for Fluidigm, 2,500 for sci-ATAC). Demonstrated robust de novo clustering of human PBMCs into monocytes, B cells, T cells, NK cells via TF motif accessibility (PU.1, C/EBPα, RUNX1).
 
 ## Why this matters

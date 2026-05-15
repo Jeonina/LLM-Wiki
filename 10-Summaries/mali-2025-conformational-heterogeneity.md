@@ -22,6 +22,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** Mali et al. (2025) — *Conformational Heterogeneity: a metric for cell-to-cell 3D-genome variability* — *PLOS One*. [DOI](https://doi.org/10.1371/journal.pone.0326927)
+
 # Mali et al. 2025 — Conformational Heterogeneity metric
 
 > Thesis: cell-to-cell variability of 3D chromatin folding has been described qualitatively for a decade, but no compact, distribution-aware metric exists for it. The authors define **Conformational Heterogeneity (C.H.)** as the standard deviation, across single cells, of the *per-cell-averaged* Euclidean inter-loci distance ⟨R_s⟩ at genomic separation *s*. Applied to three independently constructed 3D models of the *Drosophila* X chromosome — two trained on bulk Hi-C + lamina-DamID, one on scHi-C — the metric exposes that **bulk-trained and scHi-C-trained models diverge in opposite directions** at 1–10 Mb separations. The metric is also sensitive enough to register **increased structural noise upon nuclear-lamin depletion**, supporting the prediction that transcription should be noisier in lamin-depleted nuclei.

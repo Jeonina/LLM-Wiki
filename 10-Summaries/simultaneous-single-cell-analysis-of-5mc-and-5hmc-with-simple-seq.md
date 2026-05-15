@@ -25,6 +25,8 @@ topics:
   - "[[40-Topics/single-cell-multiomics]]"
 ---
 
+**Citation:** Bai et al. (2024) — *SIMPLE-seq: joint single-cell 5mC and 5hmC at base resolution* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-024-02148-9)
+
 # Bai et al. 2024 — SIMPLE-seq
 
 > Thesis: 5mC and 5hmC have distinct regulatory roles, but bisulfite-based methods conflate them. SIMPLE-seq orthogonally labels 5hmC (ruthenate oxidation → indanedione labeling) and 5mC (TET oxidation → borane reduction) to generate **two distinguishable C-to-T mutational signals on the same DNA molecule**, then uses combinatorial-indexing tagmentation to scale to thousands of single cells with single-base resolution. Applied to mouse ESCs, human PBMCs, and mouse brain to give the first joint single-cell maps of these two cytosine modalities.

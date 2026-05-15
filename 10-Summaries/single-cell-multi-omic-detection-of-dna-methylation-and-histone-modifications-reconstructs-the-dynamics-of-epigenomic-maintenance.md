@@ -27,6 +27,8 @@ topics:
   - "[[40-Topics/single-cell-multiomics]]"
 ---
 
+**Citation:** Geisenberger et al. (2025) — *scEpi²-seq: simultaneous single-cell histone marks and 5mC* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-025-02847-4)
+
 # Geisenberger et al. 2025 — scEpi²-seq
 
 > Thesis: Single-cell methods exist for either DNA methylation or histone modifications, but bisulfite chemistry destroys the small CUT&Tag/ChIC fragments and prevents joint readout. **scEpi²-seq** swaps bisulfite for TAPS (which converts 5mC → uracil non-destructively) and combines it with sortChIC (pA-MNase tethered to histone-modification antibodies, FACS-sorted single cells) to deliver simultaneous histone + 5mC + nucleosome-positioning measurements per cell. Using RPE-1 FUCCI cells, this resolves DNA-methylation maintenance kinetics across the cell cycle; using mouse intestine, it dissects lineage-specific methylation within H3K27me3 domains.

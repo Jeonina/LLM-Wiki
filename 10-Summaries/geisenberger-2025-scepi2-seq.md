@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Single-cell multi-omic detection of DNA methylation and histone modifications reconstructs the dynamics of epigenomic maintenance.md"]
 ---
 
+**Citation:** Geisenberger et al. (2025) — *scEpi²-seq: single-cell joint DNA methylation + histone modifications* — *?*.
+
 Geisenberger, van den Berg, van Batenburg et al. (van Oudenaarden lab; Hubrecht) developed **scEpi²-seq** — joint single-cell histone modification (via pA-MNase tethered antibody, sortChIC-style) and DNA methylation (via TAPS bisulfite-free conversion). Single cells sorted into 384-well plates; MNase digestion + adapter ligation + TAPS conversion + library prep. Applied to K562, RPE-1 hTERT with FUCCI cell-cycle reporter, and mouse intestine. Revealed cell-cycle-dependent methylation dynamics driven by DNA replication: H3K9me3 chromatin shows slower re-methylation extending into G1, consistent with UHRF1-H3K9me3 maintenance pathway. In mouse intestine H3K27me3 + 5mC profiling: DMRs show methylation-independent cell-type regulation in addition to H3K27me3 regulation.
 
 ## Why this matters

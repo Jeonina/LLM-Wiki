@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Integrated genome and transcriptome sequencing of the same cell.md"]
 ---
 
+**Citation:** Dey et al. (2015) — *DR-seq: Integrated genome and transcriptome sequencing of the same cell* — *?*. [DOI](https://doi.org/10.1038/nbt.3129)
+
 # Dey et al. 2015 — DR-seq
 
 > Siddharth S Dey, Lennart Kester, Bastiaan Spanjaard, Magda Bienko, Alexander van Oudenaarden. *Nature Biotechnology* **33**, 285–289 (March 2015). DOI: 10.1038/nbt.3129. (Same issue family as [[g-t-seq-parallel-sequencing-of-single-cell-genomes-and-transcriptomes|G&T-seq]] — the two were published two months apart.)

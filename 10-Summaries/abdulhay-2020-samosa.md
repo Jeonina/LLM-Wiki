@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Nour_2020_eLife.pdf"]
 ---
 
+**Citation:** Abdulhay et al. (2020) — *SAMOSA: massively multiplex single-molecule oligonucleosome footprinting* — *eLife*. [DOI](https://doi.org/10.7554/eLife.59404)
+
 Abdulhay, McNally, Hsieh, Kasinathan et al. (Ramani lab; UCSF) developed **SAMOSA** (Single-molecule Adenine Methylated Oligonucleosome Sequencing Assay), combining **EcoGII adenine methyltransferase footprinting** of nucleosome-free DNA with **PacBio single-molecule real-time sequencing** to detect m6A modifications directly on native chromatin templates. Workflow: oligonucleosome arrays (~2–4 nucleosomes per fragment) are methylated by EcoGII at accessible linker DNA → PacBio reads native m6A pattern → footprints reveal single-molecule nucleosome positions. Profiled K562 oligonucleosomes genome-wide, classifying single-molecule states across active enhancers/promoters (long, regular arrays with TF/Pol II footprints) and constitutive heterochromatin (heterogeneous mix of regular and irregular short-repeat arrays).
 
 ## Why this matters

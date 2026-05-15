@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Wenjie_2025_BriefingsInBioinformatics.pdf"]
 ---
 
+**Citation:** Sun et al. (2025) — *scMitoMut for calling mitochondrial lineage-related mutations in single cells* — *Briefings in Bioinformatics*. [DOI](https://doi.org/10.1093/bib/bbaf072)
+
 Sun, van Ginneken and Perié (Institut Curie, Sorbonne) developed **scMitoMut**, an R/Bioconductor toolkit for calling mtDNA lineage-related mutations from single-cell sequencing data. The method uses a **beta-binomial distribution** to assign each mutation a per-cell *q-value*, replacing the standard allele-frequency-threshold approach used by maegatk (MAESTER), mgatk and similar tools.
 
 Three-step framework: (1) define wild-type allele per locus without a reference genome (highest-median-allele-frequency across cells); (2) define WT reference-cell set via binomial-mixture-model classifier, fit beta-binomial parameters to those cells; (3) call mutations using the beta-binomial *q-value*, accounting for sequencing depth and WT read count via FDR-controlled multi-test correction.

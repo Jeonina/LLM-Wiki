@@ -21,6 +21,8 @@ topics:
   - "[[40-Topics/long-read-sequencing]]"
 ---
 
+**Citation:** Fu et al. (2025) — *Computational analysis of DNA methylation from long-read sequencing* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-025-00822-5)
+
 # Fu, Timp & Sedlazeck 2025 — Computational analysis of DNA methylation from long-read sequencing
 
 > Thesis: long-read sequencing platforms (PacBio HiFi, Oxford Nanopore) directly detect methylation marks (5mC, 5hmC, 6mA, 4mC) from raw signals without bisulfite conversion. This sidesteps the alignment problems of bisulfite-based short-read methylation calling and enables joint analysis of methylation with structural variation and tandem repeats. The remaining bottleneck is computational: methylation callers must keep pace with rapidly evolving sequencing chemistry.

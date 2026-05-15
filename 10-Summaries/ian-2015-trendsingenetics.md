@@ -20,6 +20,8 @@ topics:
   - "[[40-Topics/somatic-mosaicism]]"
 ---
 
+**Citation:** Campbell et al. (2015) — *Somatic mosaicism: implications for disease and transmission genetics* — *Trends in Genetics*. [DOI](https://doi.org/10.1016/j.tig.2015.03.013)
+
 # Campbell et al. 2015 — Somatic mosaicism: implications for disease and transmission genetics
 
 > Thesis: the developmental timing of a post-zygotic mutation determines its distribution across body tissues — early mutations affect large fractions of the soma, mid-development mutations are confined to one side or to specific lineages, and late mutations are localized. This timing geometry has direct clinical implications for diagnostic detection, recurrence risk, and transmission to offspring.

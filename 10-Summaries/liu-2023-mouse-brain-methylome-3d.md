@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Hanqing_2023_Nature.pdf"]
 ---
 
+**Citation:** Liu et al. (2023) — *Single-cell DNA methylome and 3D multi-omic atlas of the adult mouse brain* — *Nature*. [DOI](https://doi.org/10.1038/s41586-023-06805-y)
+
 Liu, Zeng, Zhou et al. (Ecker, Behrens labs; Salk + UCSD) generated **301,626 single-nucleus methylomes (snmC-seq3)** and **176,003 joint methylome + chromatin-conformation profiles (snm3C-seq)** from 117 dissected regions across the adult mouse brain. Iterative clustering plus cross-modality integration with companion BICCN scRNA-seq and snATAC-seq atlases produced a methylation-based cell taxonomy with 4,673 cell groups and 274 subclasses, alongside 2.6 million differentially methylated regions. Brain-wide cell-type comparisons enabled construction of regulatory networks linking TFs, DMRs, and target genes; 3D-genome diversities were observed at neuronal genes and correlated with methylation/transcription. The data and viewer are available at mousebrain.salk.edu.
 
 ## Why this matters

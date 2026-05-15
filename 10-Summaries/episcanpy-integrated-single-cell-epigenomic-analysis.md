@@ -26,6 +26,8 @@ topics:
   - "[[40-Topics/single-cell-multiomics]]"
 ---
 
+**Citation:** Danese et al. (2021) — *EpiScanpy: unified scATAC-seq and scBS-seq in the scanpy framework* — *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-021-25131-3)
+
 # Danese et al. 2021 — EpiScanpy
 
 > Thesis: Single-cell transcriptomics has the mature scanpy framework (clustering, manifold learning, trajectory inference, dataset integration). Single-cell epigenomics has scattered specialized tools but no unified Python framework. **EpiScanpy** ports the scanpy machinery to scATAC-seq and single-cell DNA methylation, generating AnnData objects with flexible feature spaces (peaks, windows, genes, promoters, enhancers, methylation calls), and benchmarks at or near the top of scATAC-seq cell-clustering accuracy.

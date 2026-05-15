@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Sequencing DNA methylation and hydroxymethylation at co-occurring chromatin features.md"]
 ---
 
+**Citation:** Tavares et al. (2026) — *6-base-CUT&Tag: 5mC + 5hmC at co-occurring chromatin features* — *?*.
+
 Tavares, Dhir, He et al. (Balasubramanian lab; Cambridge) developed **6-base-CUT&Tag (6B-C&T)** for simultaneous 6-base DNA sequencing (G/A/T/C + 5mC + 5hmC) at antibody-targeted chromatin features. Uracil-containing hairpin mosaic-end adaptor + circularization + USER digestion + exonuclease cleanup + 6-base-seq enzymatic conversion. Applied to mESC H3K27ac, H3K4me1, H3K4me3, H3K27me3, H3K9me3 — identified feature-dependent 5mC/5hmC signatures previously unresolvable. Showed 5hmC specifically couples with H3K4me1 at mESC enhancers; H3K4me1-derived signatures distinguish enhancer functional states.
 
 ## Why this matters

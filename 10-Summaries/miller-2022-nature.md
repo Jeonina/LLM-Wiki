@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Michael_2022_Nature.pdf"]
 ---
 
+**Citation:** Miller et al. (2022) — *Somatic genomic changes in single Alzheimer's disease neurons* — *Nature*. [DOI](https://doi.org/10.1038/s41586-022-04640-1)
+
 Miller and colleagues applied scWGS to 319 pyramidal neurons from PFC and hippocampal CA1 of individuals with Alzheimer's disease (AD, n=8) and neurotypical age-matched controls (n=18), gated by FANS to the largest NeuN+ population (>99% pyramidal). LiRA-based sSNV calling revealed two findings.
 
 (1) AD neurons carry significantly more sSNVs than age-matched controls (P = 7.1×10⁻⁵, two-tailed Wilcoxon), with elevations in both PFC and CA1 driven by AD-specific processes rather than accelerated normal aging. Excess burden equals roughly a decade of additional normal accumulation per AD case.

@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Navigating the 3D genome at single-cell resolution_ techniques, computation, and mechanistic landscapes.md"]
 ---
 
+**Citation:** Hong et al. (2025) — *Navigating the 3D genome at single-cell resolution (review)* — *?*.
+
 Hong, Han, Hao et al. (Dao lab) reviewed single-cell 3D genomics. Covers experimental platforms (scHi-C, sci-Hi-C, Micro-C, scSPRITE), computational frameworks (quality control, normalization, contact imputation, deep learning for structural reconstruction), and biological insights (embryonic development, cancer heterogeneity, brain disorders, aging, stem cell fate). Argues genome architecture is an active regulatory layer, not just structural scaffold.
 
 ## Why this matters

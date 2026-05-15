@@ -17,6 +17,8 @@ topics:
   - "[[40-Topics/single-cell-multiomics]]"
 ---
 
+**Citation:** Heumos et al. (2023) — *Best practices for single-cell analysis across modalities* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-023-00586-w)
+
 # Heumos et al. 2023 — Best practices for single-cell analysis across modalities
 
 > Thesis: with >1,400 single-cell analysis tools available, the field needs explicit best-practice workflows. This consortium review summarizes independent benchmarks across modalities — transcriptome, chromatin accessibility, surface protein, immune receptors, spatial — and recommends modality-specific defaults grounded in those benchmarks rather than in popularity.

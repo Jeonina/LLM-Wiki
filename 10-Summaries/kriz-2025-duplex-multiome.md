@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Andrea_2025_bioRxiv.pdf"]
 ---
 
+**Citation:** Kriz et al. (2025) — *Duplex-Multiome: cell-type-specific somatic mutation in development and aging brain* — *bioRxiv (preprint)*. [DOI](https://doi.org/10.1101/2025.05.30.656844)
+
 Kriz, Mao, Shao et al. (Walsh, Lee, Huang labs; Boston Children's/HHMI/Broad) developed **Duplex-Multiome**, a strand-tagged duplex consensus sequencing layer on top of joint snATAC-seq + snRNA-seq. Strand-tagging during snATAC library prep reduces sequencing error by >10,000× and eliminates artefactual mutational signatures. Applied to 98%/2% mixed cell lines, Duplex-Multiome detected sSNVs present in 2% of cells with 92% precision and recovered known sSNV mutational spectra while revealing unexpected subclonal lineages. Applied to >51,400 nuclei from postmortem brain tissue, captured sSNV burdens and spectra across all major brain cell types/subtypes — including those difficult to assay by scWGS — and showed that diverse neuronal and glial cell types exhibit distinct rates and patterns of age-related mutation, while also directly inferring developmental lineage relationships from clonal sSNVs.
 
 ## Why this matters

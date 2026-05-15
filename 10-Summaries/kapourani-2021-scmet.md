@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Chantriolnt_2021_GenomeBiology.pdf"]
 ---
 
+**Citation:** Kapourani et al. (2021) — *scMET: Bayesian modeling of DNA methylation heterogeneity at single-cell resolution* — *Genome Biology*. [DOI](https://doi.org/10.1186/s13059-021-02329-8)
+
 Kapourani, Argelaguet, Sanguinetti and Vallejos (Edinburgh, EMBL-EBI) developed **scMET**, a hierarchical Bayesian framework that quantifies **methylation heterogeneity** — i.e., the residual cell-to-cell variability in methylation level *not* explained by mean methylation rate or technical bias. The model couples a beta-binomial likelihood (modeling over-dispersed CpG counts) with a generalized linear model on feature characteristics (CpG density, etc.), sharing information across cells and genomic features via a hierarchical prior.
 
 Critical capability: scMET decomposes observed variance into technical (sparsity, depth, sequencing error) and biological components, then enables (i) identification of **highly variable features** (HVFs) for unsupervised clustering, (ii) **differential variability testing** between groups of cells (e.g., wild-type vs perturbed), (iii) characterization of epigenetically distinct populations. Validated on two large-scale scBS-seq datasets including multi-omics joint assays.

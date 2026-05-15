@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Charissa_2018_Cell.pdf"]
 ---
 
+**Citation:** Kim et al. (2018) — *Chemoresistance evolution in TNBC delineated by single-cell sequencing* — *Cell*. [DOI](https://doi.org/10.1016/j.cell.2018.03.041)
+
 Kim, Gao, Sei et al. (Navin lab, MD Anderson; Foukakis lab, Karolinska) performed longitudinal scDNA-seq + scRNA-seq on 20 triple-negative breast cancer (TNBC) patients receiving neoadjuvant chemotherapy (NAC), profiling 900 single cells by scDNA and 6,862 cells by scRNA in 8 patients. Bulk exome of pre/post-treatment samples showed 10 patients with clonal extinction and 10 with clonal persistence. Single-cell analysis revealed that **chemoresistant genotypes were pre-existing and adaptively selected by NAC** — not acquired de novo — while **transcriptional resistance profiles were acquired** via reprogramming after treatment. This established a hybrid model: genomic resistance follows Luria-Delbrück adaptive selection, transcriptional resistance follows acquired/induced kinetics.
 
 ## Why this matters

@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Isac_2020_NatureMethods.pdf"]
 ---
 
+**Citation:** Lee et al. (2020) — *Simultaneous profiling of chromatin accessibility and methylation on human cell lines with nanopore sequencing (nanoNOMe)* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-020-01000-7)
+
 Lee, Razaghi, Gilpatrick, Molnar, Gershman, Sadowski, Sedlazeck, Hansen, Simpson and Timp (Johns Hopkins / OICR) developed **nanoNOMe**, which adapts NOMe-seq (M.CviPI GpC labeling of open chromatin) to **Oxford Nanopore** long-read sequencing. Unlike bisulfite-NOMe-seq, nanoNOMe directly reads m5C modifications at both CpG (endogenous) and GpC (exogenous accessibility marker) positions on native, unfragmented DNA — preserving long-range linkage information across >10 kb reads.
 
 Applied to four cell lines (GM12878, MCF-10A, MCF-7, MDA-MB-231) at 103× coverage. ROC AUC 0.908 for CpG and 0.984 for GpC methylation calling (LLR-based). Long reads enable: (i) per-molecule footprinting of protein binding and nucleosomes; (ii) **haplotype-resolved phased epigenomes** — chromosome-level allele-specific profiles of both methylation and accessibility, including repetitive regions and structural variants unreachable by short reads; (iii) cancer-vs-normal differential methylation and accessibility at single-molecule resolution.

@@ -21,6 +21,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** de Luca et al. (2021) — *Single-cell DamID protocol for nuclear-lamina contacts in mammalian cells* — *Methods in Molecular Biology vol. 2157*. [DOI](https://doi.org/10.1007/978-1-0716-0664-3_9)
+
 # de Luca & Kind 2021 — scDamID protocol (MMB 2157)
 
 > Thesis: this is the canonical step-by-step **bench protocol** for performing single-cell DamID (Dam-LMNB1 ↔ nuclear-lamina contacts + untethered-Dam accessibility control) in mammalian cells. Where Kind 2013/2015 established the chemistry and Rooijers 2019 added multi-omic + linear-amplification, this chapter documents the workflow as a community-facing recipe — plasmids, induction systems, FACS strategy, MboI-qPCR clone screen, DpnI/adapter ligation/PCR cycle counts, and pooling for Illumina libraries.

@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Sarah_2019_Cell.pdf"]
 ---
 
+**Citation:** Hainer et al. (2019) — *Profiling of pluripotency factors in single cells and early embryos (uliCUT&RUN)* — *Cell*. [DOI](https://doi.org/10.1016/j.cell.2019.03.014)
+
 # Hainer et al. 2019 — Ultra-low-input CUT&RUN (uliCUT&RUN)
 
 > Sarah J. Hainer, Ana Bošković, Kurtis N. McCannell, Oliver J. Rando, **Thomas G. Fazzio\***. *Cell* **177**, 1319–1329 (16 May 2019). DOI: 10.1016/j.cell.2019.03.014. UMass + Pittsburgh.

@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Hamim_2016_NatureMethods.pdf"]
 ---
 
+**Citation:** Zafar et al. (2016) — *Monovar: single-nucleotide variant detection in single cells* — *Nature Methods*. [DOI](https://doi.org/10.1038/nmeth.3835)
+
 Zafar, Wang, Nakhleh, Navin and Chen (Rice, MD Anderson, BCM) developed **Monovar**, the first statistical method specifically for detecting SNVs from scDNA-seq data. Monovar leverages multi-cell data to discover SNVs with high confidence and explicitly models the dominant scWGA error modes: allelic dropout (ADO), false-positive errors from amplification artefacts, and non-uniform coverage.
 
 Algorithm: for each locus, observed bases and base-quality scores from multiple single cells form the input. A dynamic-programming algorithm computes the posterior probability of the locus carrying a variant, modeling FP rates specific to WGA and explicit ADO terms for heterozygous-genotype likelihoods. After detection, per-cell genotyping derives the posterior probability; an optional consensus filter removes singleton-cell variants.

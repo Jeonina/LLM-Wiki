@@ -25,6 +25,8 @@ topics:
   - "[[40-Topics/scdna-seq]]"
 ---
 
+**Citation:** Bizzotto et al. (2022) — *Genetic mosaicism in the human brain: lineage tracing and neuropsychiatric disease* — *Nature Reviews Neuroscience*. [DOI](https://doi.org/10.1038/s41583-022-00572-x)
+
 # Bizzotto & Walsh 2022 — Genetic mosaicism in the human brain
 
 > Thesis: Somatic mutations begin from the first post-zygotic division, accumulate at gradient rates through development and aging, and turn the adult human brain into a **clonal mosaic of intermingled lineages** traceable back to the early embryo. These mosaic variants are simultaneously (a) a natural barcoding system for retrospective lineage tracing in humans and (b) drivers of focal cortical malformations and a contributor to autism spectrum disorder.

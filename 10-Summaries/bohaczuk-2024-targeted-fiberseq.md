@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Stephanie_2024_GenomeResearch.pdf"]
 ---
 
+**Citation:** Bohaczuk et al. (2024) — *Resolving the chromatin impact of mosaic variants with targeted Fiber-seq* — *Genome Research*. [DOI](https://doi.org/10.1101/gr.279747.124)
+
 Bohaczuk, Amador, Li, Mallory, Swanson, Ranchalis, Vollger, Munson, Walsh, Hamm, Mao, Lieber and Stergachis (UW Genome Sciences + Medical Genetics + Brotman Baty) introduced **targeted Fiber-seq**, which combines the single-molecule chromatin-fiber resolution of Fiber-seq (Stergachis 2020) with **CRISPR-Cas9 + HLS-SAGE** target enrichment to capture >100 kb loci at ~10-fold enrichment over whole-genome Fiber-seq.
 
 Two case studies demonstrate the chromatin impact of non-protein-coding mosaic variants: (i) **Myotonic Dystrophy 1 (DM1) pathogenic DMPK CTG-repeat expansions** — somatically unstable, with chromatin accessibility and CpG-methylation disruptions that extend beyond the repeat to multiple nearby regulatory elements (SNRPD2/QPCTL bidirectional promoter, downstream SIX5 promoter). The chromatin disruption is repeat-length-dependent and asymmetric. (ii) **HBG1/HBG2 promoter therapeutic adenine base-editing** for sickle cell disease — base-editing increases HBG1 promoter accessibility *and* the accessibility of neighboring regulatory elements in erythroblast-induced primary human hematopoietic cells.

@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Chongyuan_2018_NatureCommunications.pdf"]
 ---
 
+**Citation:** Luo et al. (2018) — *Robust single-cell DNA methylome profiling with snmC-seq2* — *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-018-06355-2)
+
 # Luo et al. 2018 — snmC-seq2
 
 > Chongyuan Luo, Angeline Rivkin, Jingtian Zhou, Justin P. Sandoval, Laurie Kurihara, Jacinta Lucero, Rosa Castanon, Joseph R. Nery, António Pinto-Duarte, Brian Bui, Conor Fitzpatrick, Carolyn O'Connor, Seth Ruga, Marc E. Van Eden, David A. Davis, Deborah C. Mash, M. Margarita Behrens, **Joseph R. Ecker**. *Nature Communications* **9**, 3824 (2018). DOI: 10.1038/s41467-018-06355-2. Salk + Swift Biosciences + Zymo.

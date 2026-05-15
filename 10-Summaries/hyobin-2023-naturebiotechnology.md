@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Hyobin_2023_NatureBiotechnology.pdf"]
 ---
 
+**Citation:** Jeong et al. (2023) — *Functional analysis of structural variants in single cells using Strand-seq (scNOVA)* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-022-01551-4)
+
 # Jeong et al. 2023 — scNOVA: SV functional characterization in single cells
 
 > Hyobin Jeong, Karen Grimes, Kerstin K. Rauwolf, Peter-Martin Bruch, Tobias Rausch, Patrick Hasenfeld, Eva Benito, Tobias Roider, Radhakrishnan Sabarinathan, David Porubsky, Sophie A. Herbst, Büşra Erarslan-Uysal, Johann-Christoph Jann, Tobias Marschall, Daniel Nowak, Jean-Pierre Bourquin, Andreas E. Kulozik, Sascha Dietrich, Beat Bornhauser, Ashley D. Sanders, **Jan O. Korbel\***. *Nature Biotechnology* **41**, 832–844 (October 2023). DOI: 10.1038/s41587-022-01551-4. EMBL.

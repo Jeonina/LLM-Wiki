@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Gryte_2020_CellSystems.pdf"]
 ---
 
+**Citation:** Satas et al. (2020) — *SCARLET: Single-Cell Tumor Phylogeny Inference with Copy-Number Constrained Mutation Losses* — *Cell Systems*. [DOI](https://doi.org/10.1016/j.cels.2020.04.001)
+
 Satas, Zaccaria, Mon and Raphael (Princeton, Brown) developed **SCARLET** (Single-Cell Algorithm for Reconstructing Loss-supported Evolution of Tumors), a phylogenetic inference algorithm for single-cell DNA-seq data that **explicitly models loss of single-nucleotide variants (SNVs) due to overlapping copy-number aberrations (CNAs)**.
 
 The problem: standard scDNA-seq phylogeny tools (SCITE, OncoNEM, Sci-Phi) assume the infinite-sites model — each SNV is gained at most once and never lost. But CNAs can delete genomic regions carrying SNVs, causing apparent state transitions from 1 → 0 that the infinite-sites model can't accommodate. SCARLET allows mutation losses constrained to loci where copy-number actually decreased, jointly using SNV and CNA observations to infer the phylogeny.

@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Yilei_2025_NatureReviewsGenetics.pdf"]
 ---
 
+**Citation:** Fu et al. (2025) — *Computational analysis of DNA methylation from long-read sequencing* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-025-00822-5)
+
 Fu, Timp and Sedlazeck (Baylor + Johns Hopkins + Rice) reviewed computational methods for DNA methylation analysis from long-read sequencing. Covers: (i) raw-signal-to-methylation calling (PacBio kinetic features via pulse width + interpulse duration; ONT current via HMMs and CNNs); (ii) detection of 5mC, 5hmC, 4mC, 6mA; (iii) sample comparison (DMR calling, longitudinal change); (iv) integration with structural variants, tandem repeats, and complex genomic regions where short-read bisulfite alignment fails; (v) cell-type diversity analysis from long-read methylation. Surveys tools including Nanopolish, DeepMod, DeepSignal, Megalodon, modkit, and the new generation of CNN-based callers.
 
 ## Why this matters

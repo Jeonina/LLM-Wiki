@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Single-cell mosaicism analysis reveals cell-type-specific somatic mutational burden in Alzheimer’s Dementia.md"]
 ---
 
+**Citation:** Kousi et al. (2022) — *Single-cell mosaicism in Alzheimer's Dementia: cell-type-specific burden* — *?*.
+
 Kousi, Boix, Park, Mathys et al. (Kellis, Tsai labs; MIT) performed single-cell mosaicism analysis in Alzheimer's Dementia brain tissue, revealing cell-type-specific somatic mutational burden. Major bioRxiv contribution to BSMN — companion to Miller 2022 (AD scWGS, also Walsh-lab adjacent), and to Bae 2018/2022 BSMN pipeline. Demonstrates that AD-associated mosaicism differs across neuronal and glial cell types.
 
 ## Why this matters

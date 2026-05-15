@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Caleb_2021_NatureBiotechnology.pdf"]
 ---
 
+**Citation:** Lareau et al. (2021) — *Massively parallel single-cell mitochondrial DNA genotyping and chromatin profiling (mtscATAC-seq)* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-020-0645-6)
+
 # Lareau et al. 2021 — mtscATAC-seq
 
 > Caleb A. Lareau, Leif S. Ludwig, Christoph Muus, Satyen H. Gohil, Tongtong Zhao, Zachary Chiang, Karin Pelka, Jeffrey M. Verboon, Wendy Luo, Elena Christian, Daniel Rosebrock, Gad Getz, Genevieve M. Boland, Fei Chen, Jason D. Buenrostro, Nir Hacohen, Catherine J. Wu, **Martin J. Aryee\***, **Aviv Regev\***, **Vijay G. Sankaran\***. *Nature Biotechnology* **39**, 451–461 (April 2021). DOI: 10.1038/s41587-020-0645-6.

@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Hamim_2017_GenomeBiology.pdf"]
 ---
 
+**Citation:** Zafar et al. (2017) — *SiFit: inferring tumor trees from single-cell sequencing data under finite-sites models* — *Genome Biology*. [DOI](https://doi.org/10.1186/s13059-017-1311-2)
+
 Zafar, Tzen, Navin, Chen and Nakhleh (Rice, MD Anderson, BCM) developed **SiFit**, a likelihood-based tumor-phylogeny inference method that operates under a **finite-sites model** rather than the infinite-sites assumption used by SCITE (Jahn 2016) and OncoNEM. The finite-sites model accommodates the reality that chromosomal deletions, loss of heterozygosity (LOH), and convergent evolution can cause apparent SNV state-reversals — events that infinite-sites methods cannot explain.
 
 The likelihood model includes: (i) error terms for SCS-specific noise (ADO, FP rates from WGA, FN rates); (ii) finite-sites transition probabilities between genotype states accounting for point mutation, deletion, and LOH; (iii) heuristic search over tree space. Benchmarked on simulated and experimental scDNA-seq data from two colorectal-cancer patients (primary + metastatic tumors), SiFit produced phylogenies more consistent with observed CNAs than SCITE/OncoNEM.

@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Jeffrey_2021_NatureGenetics.pdf"]
 ---
 
+**Citation:** Granja et al. (2021) — *ArchR: a scalable software package for integrative single-cell chromatin accessibility analysis* — *Nature Genetics*. [DOI](https://doi.org/10.1038/s41588-021-00790-6)
+
 # Granja et al. 2021 — ArchR
 
 > Jeffrey M. Granja, M. Ryan Corces, Sarah E. Pierce, S. Tansu Bagdatli, Hani Choudhry, Howard Y. Chang, **William J. Greenleaf\***. *Nature Genetics* **53**, 403–411 (March 2021). DOI: 10.1038/s41588-021-00790-6. Stanford.

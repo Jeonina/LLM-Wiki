@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Joint profiling of chromatin accessibility and gene expression in thousands of single cells.md"]
 ---
 
+**Citation:** Cao et al. (2018) — *sci-CAR: Joint profiling of chromatin accessibility and gene expression in thousands of single cells* — *?*. [DOI](https://doi.org/10.1126/science.aau0730)
+
 # Cao et al. 2018 — sci-CAR
 
 > Junyue Cao, Darren A. Cusanovich, Vijay Ramani, Delasa Aghamirzaie, Hannah A. Pliner, Andrew J. Hill, Riza M. Daza, Jose L. McFaline-Figueroa, Jonathan S. Packer, Lena Christiansen, … Jay Shendure, Cole Trapnell. *Science* **361**, 1380–1385 (Aug 2018). DOI: 10.1126/science.aau0730.

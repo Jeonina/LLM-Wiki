@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Gilad_2021_AnnualReviewOfGenomicsAndHumanGenetics.pdf"]
 ---
 
+**Citation:** Evrony et al. (2021) — *Applications of single-cell DNA sequencing* — *Annu Rev Genomics Hum Genet*. [DOI](https://doi.org/10.1146/annurev-genom-111320-090436)
+
 Evrony, Hinch and Luo (NYU + Oxford + UCLA) reviewed applications of single-cell DNA sequencing in the Annual Review of Genomics and Human Genetics. Frames scDNA-seq via **three core capabilities**: (i) **fidelity** — detecting low-VAF mosaic variants below bulk sequencing's error floor; (ii) **co-presence** — distinguishing whether multiple variants reside in the same vs different cells; (iii) **phenotypic association** — linking single-cell genotypes to molecular or functional phenotypes. Surveys applications across somatic mutation and mosaicism, organismal development, germ cell mutation, fertility, cancer, epigenetic regulation, genome organization, and microbiology. Distinguishes scDNA-seq from scRNA-seq throughout.
 
 ## Why this matters

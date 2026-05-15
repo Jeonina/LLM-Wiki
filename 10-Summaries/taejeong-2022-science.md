@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Taejeong_2022_Science.pdf"]
 ---
 
+**Citation:** Bae et al. (2022) — *Analysis of somatic mutations in 131 human brains reveals aging-associated hypermutability* — *Science*. [DOI](https://doi.org/10.1126/science.abm6222)
+
 # Bae et al. 2022 — Aging-associated hypermutability + ASD enhancer-motif mosaicism
 
 > Taejeong Bae, Liana Fasching, Yifan Wang, Joo Heon Shin, Milovan Suvakov, Yeongjun Jang, Scott Norton, Caroline Dias, Jessica Mariani, Alexandre Jourdon, Feinan Wu, Arijit Panda, Reenal Pattni, Yasmine Chahine, Rebecca Yeh, Rosalinda C. Roberts, Anita Huttner, Joel E. Kleinman, Thomas M. Hyde, Richard E. Straub, Christopher A. Walsh, Brain Somatic Mosaicism Network, Alexander E. Urban, James F. Leckman, Daniel R. Weinberger, Flora M. Vaccarino\*, **Alexej Abyzov\***. *Science* **377**, 511–517 (29 July 2022). DOI: 10.1126/science.abm6222.

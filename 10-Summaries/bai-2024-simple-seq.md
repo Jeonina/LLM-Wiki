@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Simultaneous single-cell analysis of 5mC and 5hmC with SIMPLE-seq.md"]
 ---
 
+**Citation:** Bai et al. (2024) — *SIMPLE-seq: single-cell joint analysis of 5mC and 5hmC* — *?*.
+
 Bai, Zhang, Xiang, Guo, Zhu, Yi (Peking + UNC) developed **SIMPLE-seq** for simultaneous single-cell 5mC + 5hmC base-resolution profiling. Sequential bisulfite-free chemical labeling: hmC-CATCH (ruthenate(VI) oxidation + indanedione labeling of 5hmC → C-to-T) → primer extension → TAPS (TET + borane reduction of 5mC → C-to-T). Pre-deposited 5caC base on primer distinguishes 5hmC- vs 5mC-derived signals after PCR. Tn5 tagmentation + combinatorial indexing for high throughput. Applied to mESCs (2i vs serum), human PBMCs, mouse brain — identified divergent epigenetic programs across cell states.
 
 ## Why this matters

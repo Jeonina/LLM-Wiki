@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Wenfei_2015_Nature.pdf"]
 ---
 
+**Citation:** Jin et al. (2015) — *Genome-wide detection of DNase I hypersensitive sites in single cells and FFPE tissue samples (scDNase-seq)* — *Nature*. [DOI](https://doi.org/10.1038/nature15740)
+
 Jin, Tang, Wan, Cui, Zhang, Ren, Ni, Sklar, Przytycka, Childs, Levens and Zhao (NIH NHLBI) developed **scDNase-seq**, an ultrasensitive method to detect genome-wide DNase I hypersensitive sites (DHSs) from single cells or very small cell numbers, including FFPE-fixed tissue. The method uses FACS-sorted single cells, DNase I digestion, circular carrier DNA-mediated end-repair and ligation, and PCR amplification of small fragments before sequencing.
 
 Per single cell, ~38,000 DHSs were detected. The authors showed that scDNase-seq from 1,000 cells produces DHS profiles comparable to ENCODE 10-million-cell DNase-seq, and that single-cell DHS patterns predict cell-specific gene expression. Importantly, they applied scDNase-seq to FFPE-preserved follicular thyroid carcinoma samples, identifying tumor-specific DHSs and an associated mutation in *TXNL1* affecting p53 binding — demonstrating the method's relevance for archival clinical samples.

@@ -19,6 +19,8 @@ topics:
   - "[[40-Topics/single-cell-multiomics]]"
 ---
 
+**Citation:** Vandereyken et al. (2023) — *Methods and applications for single-cell and spatial multi-omics* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-023-00580-2)
+
 # Vandereyken et al. 2023 — Methods and applications for single-cell and spatial multi-omics
 
 > Thesis: single-cell multi-omics methods can be organized by *when* the molecular analytes are uncoupled — before, during, or after library preparation — and this organizing principle reveals the underlying design space. Spatial multi-omics is a parallel field with both NGS-based and imaging-based approaches. Data integration across modalities is the remaining computational challenge.

@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Elliott_2025_NatureBiotechnology.pdf"]
 ---
 
+**Citation:** Swanson et al. (2025) — *DAF-seq: mapping single-cell diploid chromatin fiber architectures* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-025-02914-3)
+
 Swanson, Mao, Mallory et al. (Stergachis lab; UW Seattle + WashU + Brotman Baty) developed **DAF-seq** (Deaminase-Assisted single-molecule chromatin Fiber sequencing), replacing the methyltransferase footprinting of Fiber-seq/SMAC-seq with a **cytidine deaminase (SsdddA)** that converts accessible cytosines to uracils (read as C→T mutations after amplification). Advantages: (i) near-nucleotide resolution; (ii) synchronous readout of single-molecule chromatin states + DNA sequence variants (germline or somatic) on the same fiber; (iii) the deamination pattern itself serves as a molecule-specific UMI, removing PCR-duplicate confusion. Single-cell variant **scDAF-seq** produces chromosome-length protein co-occupancy maps across 99% of each individual cell's mappable genome. Reveals 61% chromatin-actuation divergence between haplotypes within a cell and 63% between cells, and shows regulatory elements are preferentially co-actuated along the same fiber in a distance-dependent manner mirroring cohesin loops.
 
 ## Why this matters

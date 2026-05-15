@@ -23,6 +23,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** Swanson et al. (2025) — *DAF-seq: single-cell diploid chromatin fiber architectures* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-025-02914-3)
+
 # Swanson et al. 2025 — DAF-seq: single-cell diploid chromatin fiber architectures
 
 > Thesis: existing single-molecule chromatin footprinting methods (Fiber-seq, methyltransferase stenciling) cannot survive DNA amplification — methylation marks are erased — so they are stuck as bulk assays covering ~0.001% of a single cell's genome. Replace methyl marks with **C→T deaminations**, which are sequence changes that *do* survive amplification. Result: **DAF-seq** maps single-molecule, near-nucleotide-resolution protein occupancy across nearly entire chromosomes from a single cell, with simultaneous DNA sequence and chromatin readout from the same fibers.

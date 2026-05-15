@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/SHARE-seq reveals chromatin potential - Nature Reviews Genetics.md"]
 ---
 
+**Citation:** Ma (2020) — *SHARE-seq reveals chromatin potential (NRG perspective on Ma et al. 2020)* — *?*.
+
 # SHARE-seq reveals chromatin potential — Dorothy Clyde, *Nature Reviews Genetics* (Nov 2020)
 
 > Nature Reviews Genetics Research Highlight on Ma S. et al., *Cell* **183**, 1103–1116 (2020) — "Chromatin potential identified by shared single-cell profiling of RNA and chromatin." NRG version: https://www.nature.com/articles/s41576-020-00308-6.

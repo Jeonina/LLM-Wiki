@@ -26,6 +26,8 @@ topics:
   - "[[40-Topics/dna-methylation]]"
 ---
 
+**Citation:** Mo et al. (2023) — *STAM-seq: nanopore-adaptive-sampling accessibility + methylation in plant HRRs* — *Nature Plants*. [DOI](https://doi.org/10.1038/s41477-023-01498-7)
+
 # Mo et al. 2023 — STAM-seq
 
 > Thesis: Plant centromeres, telomeres, and rDNA arrays are highly repetitive regions (HRRs) that NGS cannot uniquely map and bisulfite sequencing cannot preserve. **STAM-seq** combines nanopore long-read sequencing + EcoGII 6mA methyltransferase labeling of accessible regions + nanopore **adaptive sampling** to enrich HRRs by real-time rejection of non-target reads. Simultaneously detects 6mA (chromatin accessibility) and endogenous 5mC (DNA methylation) on the same fiber. Reveals strand-specific epigenetic patterns at *Arabidopsis* CEN180 centromeric repeats, transcription-state-linked methylation at rDNA variants, and asymmetric telomere/subtelomere modifications.

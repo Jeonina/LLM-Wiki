@@ -29,6 +29,8 @@ topics:
   - "[[40-Topics/scdna-seq]]"
 ---
 
+**Citation:** Luquette et al. (2025) — *PTA + duplex validation across 102 nuclei from lung and colon* — *bioRxiv (preprint)*. [DOI](https://doi.org/10.1101/2025.10.31.685648)
+
 # Luquette et al. 2025 — PTA + duplex validation across 102 nuclei from lung and colon
 
 > Thesis: A scalable single-cell pipeline (PTA scWGA → deep sequencing → duplex-sequencing validation of bulk DNA) can deliver a **comprehensive view of somatic mosaicism** — SNVs, indels, CNVs, aneuploidies, structural rearrangements, embryonic lineage — from a single individual. Applied to 102 nuclei from postmortem lung and colon of a 74-year-old male, the approach exposes organ- and cell-type-specific mutation burdens, APOBEC and tobacco signatures, T-cell receptor rearrangements (reading immune lineage straight from genomic DNA), and reconstructible cellular ancestries traced from the zygote.

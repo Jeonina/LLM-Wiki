@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Ester_2012_NatureMethods.pdf"]
 ---
 
+**Citation:** Falconer et al. (2012) — *DNA template strand sequencing of single-cells maps genomic rearrangements at high resolution (Strand-seq)* — *Nature Methods*. [DOI](https://doi.org/10.1038/nmeth.2206)
+
 Falconer, Hills, Naumann and Lansdorp introduced Strand-seq, the founding single-cell DNA-strand-sequencing method. Cells are cultured for one division in BrdU; daughter cells are sorted at G1; BrdU-substituted nascent strands are nicked photolytically (Hoechst + UV) so that PCR amplifies only the original parental template strand, producing directional libraries that preserve Watson/Crick identity at base resolution.
 
 Demonstrated on 62 single mouse embryonic stem cells, Strand-seq mapped sister chromatid exchanges (SCEs) at $\sim$23 bp resolution — orders of magnitude better than any pre-existing single-cell method — and detected aneuploidy and CNVs from single replication rounds. Strikingly, Strand-seq identified $\sim$17 misoriented contigs totaling $\sim$25.57 Mb ($\sim$1% of the genome) in the mm9 mouse reference assembly that had persisted through several iterations and were undetectable by conventional sequencing.

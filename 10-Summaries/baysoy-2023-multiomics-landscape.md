@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Alev_2023_NatureReviewsMolecularCellBiology.pdf"]
 ---
 
+**Citation:** Baysoy et al. (2023) — *Technological landscape and applications of single-cell multi-omics* — *Nature Reviews Molecular Cell Biology*. [DOI](https://doi.org/10.1038/s41580-023-00615-w)
+
 Baysoy, Bai, Satija and Fan (Yale + NYGC) reviewed the technological landscape of single-cell multi-omics: established and state-of-the-art methods spanning transcriptome, genome, epigenome, epitranscriptome, proteome, metabolome, and emerging modalities. Organized by four design axes: throughput, resolution, modality integration, and accuracy. Surveys applications in cell lineage tracing, tissue and tumour atlases, tumour immunology, cancer genetics, and spatial mapping. Final section reviews bioinformatics tools for cross-modality integration. Comprehensive table of single-cell multi-omics methods including G&T-seq, scNMT-seq, sci-CAR, CITE-seq, DOGMA-seq, SHARE-seq, ASAP-seq, 10x Multiome.
 
 ## Why this matters

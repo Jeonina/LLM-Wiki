@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Yan_2024_BriefingsInBioinformatics.pdf"]
 ---
 
+**Citation:** Xiao et al. (2024) — *Benchmarking multi-omics integration algorithms across single-cell RNA and ATAC data* — *Briefings in Bioinformatics*. [DOI](https://doi.org/10.1093/bib/bbae095)
+
 Xiao, Chen, Meng, Wei and Zhang (Tsinghua) benchmarked 12 multi-omics integration methods across scRNA-seq and scATAC-seq datasets, organized into three categories: **paired** (scMVP, MOFA+), **paired-guided** (MultiVI, Cobolt), and **unpaired** (scDART, UnionCom, MMD-MA, scJoint, Harmony, Seurat v3, LIGER, GLUE).
 
 Three datasets used for the benchmark: (i) P0 mouse cerebral cortex SNARE-seq (paired, 5,081 cells); (ii) human uterus paired dataset (paired-guided with trajectory, 1,469 cells); (iii) unpaired scRNA-seq (8,237 cells) + scATAC-seq (8,314 cells) human-tissue datasets. Four evaluation axes: omics-mixing, cell-type conservation, single-cell-level alignment accuracy (FOSCTTM), and trajectory preservation.

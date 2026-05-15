@@ -26,6 +26,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** Liu et al. (2025) — *Profiling the epigenome using long-read sequencing (review)* — *Nature Genetics*. [DOI](https://doi.org/10.1038/s41588-024-02038-5)
+
 # Liu & Conesa 2025 — Profiling the epigenome using long-read sequencing
 
 > Thesis: ONT and PacBio long-read sequencing have transformed epigenomics by (a) directly detecting DNA methylation without bisulfite chemistry, (b) operating on PCR-free single-molecule native DNA so amplification doesn't erase modifications, (c) generating reads long enough for haplotype phasing and highly-repetitive-region mapping, and (d) enabling **co-detection of multiple epigenetic events on the same chromatin fiber**. This review covers methylation detection, chromatin-accessibility methods, protein–DNA interaction profiling, and integration with transcriptomic LRS.

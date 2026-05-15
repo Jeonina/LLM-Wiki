@@ -28,6 +28,8 @@ topics:
   - "[[40-Topics/somatic-mosaicism]]"
 ---
 
+**Citation:** Zhang et al. (2025) — *SMaHT duplex-seq benchmark: six methods, concordant mutation rates* — *bioRxiv (preprint)*. [DOI](https://doi.org/10.64898/2025.12.12.692823)
+
 # Zhang et al. 2025 — SMaHT duplex-seq benchmark: six methods, concordant mutation rates
 
 > Thesis: The SMaHT (Somatic Mosaicism across Human Tissues) Network put six duplex-sequencing technologies through a head-to-head benchmark using identical reference samples (cord blood, a tumor/normal cell-line mixture, and homogenates from six human tissues). **Genomic footprint, sensitivity, and cost differ substantially across methods, but estimated mutation rates and signatures are highly concordant** — meaning the field can pool data across platforms when the question is mutational burden or signatures, but should pick deliberately when the question is method-specific (e.g., cfDNA fragmentomics or single-cell).

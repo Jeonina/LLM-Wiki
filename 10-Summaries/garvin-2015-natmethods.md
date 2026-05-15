@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Tyler_2015_NatureMethods.pdf"]
 ---
 
+**Citation:** Garvin et al. (2015) — *Interactive analysis and assessment of single-cell copy-number variations (Ginkgo)* — *Nature Methods*. [DOI](https://doi.org/10.1038/nmeth.3578)
+
 Garvin, Aboukhalil, Kendall and colleagues (Wigler / Schatz labs, Cold Spring Harbor) introduced Ginkgo, an open-source web platform for single-cell copy-number variation analysis. Ginkgo handles the distinctive challenges of single-cell CNV calling: extremely low sequencing depth (<1×), WGA-induced read-count distortion, bad-bins from poorly-assembled genome regions, integer-level copy-number calling at single-cell resolution, and absent population structure that bulk CNV callers can leverage.
 
 The pipeline: bin reads into genome-wide regions, perform GC-bias correction, segment, call integer copy number per bin, and visualize results in an interactive web interface with phylogenetic-tree construction. Ginkgo validated against five major scDNA-seq studies and benchmarked DOP-PCR, MDA, and MALBAC for CNV consistency; DOP-PCR was found to be the most consistent for CNV analysis at the time. Supports human, chimp, mouse, rat, and fly.

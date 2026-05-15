@@ -24,6 +24,8 @@ topics:
   - "[[40-Topics/whole-genome-amplification]]"
 ---
 
+**Citation:** Gawad et al. (2016) — *Single-cell genome sequencing: current state of the science* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/nrg.2015.16)
+
 # Gawad, Koh & Quake 2016 — Single-cell genome sequencing: current state of the science
 
 > Thesis: single-cell genomics rests on four technical pillars — cell isolation, whole-genome amplification (WGA), genome interrogation, and bias correction — and the field circa 2016 had reached the point where microbial dark matter and intra-tumor heterogeneity were tractable, but each WGA method (DOP-PCR / MDA / MALBAC / PicoPLEX) involved hard tradeoffs between coverage, uniformity, and error rate.

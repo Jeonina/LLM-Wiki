@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Eran_2025_Neuron.pdf"]
 ---
 
+**Citation:** Mukamel et al. (2025) — *Cell-type-specific enrichment of somatic aneuploidy in the mammalian brain* — *Neuron*. [DOI](https://doi.org/10.1016/j.neuron.2025.08.006)
+
 # Mukamel et al. 2025 — snmC-seq aneuploidy detection in mammalian brain
 
 > Eran A. Mukamel, Hanqing Liu, M. Margarita Behrens, **Joseph R. Ecker\***. *Neuron* **113**, 2814–2821 (3 September 2025). DOI: 10.1016/j.neuron.2025.08.006. UCSD + Salk + HHMI.

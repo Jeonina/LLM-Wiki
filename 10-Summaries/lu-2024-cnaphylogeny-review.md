@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Bin_2024_CancerPathogenesisTherapy.pdf"]
 ---
 
+**Citation:** Lu et al. (2024) — *Cancer phylogenetic inference using copy number alterations detected from DNA sequencing data* — *CancerPathogenesisTherapy*. [DOI](https://doi.org/10.1016/j.cpt.2024.04.003)
+
 Lu (Surrey) reviews cancer phylogenetic-inference methods that use **copy-number alterations (CNAs) — alone or jointly with SNVs/SVs — as evolutionary markers**. The review surveys distance-based methods (MP, ML, Bayesian likelihood approaches), categorizes methods by marker type (CNA-only, CNA+SNV, CNA+SV) and tree type (sample tree, clone tree, mutation tree), and discusses challenges across three axes: input data (segmentation noise, allele-specific phasing), evolutionary models (rate parameters, parallel evolution, WGD), and inference algorithms (long-branch attraction, scalability).
 
 Application sections cover: intratumor heterogeneity (ITH) characterization, metastasis seeding inference, treatment-resistance evolution, early cancer-development reconstruction (clonal hematopoiesis to overt malignancy). Lu notes that there have been no systematic reviews specifically of CNA-based phylogeny methods despite ~10 years of activity (Schwarz/MEDICC 2014 → CHISEL → MEDICC2 → SCARLET → many others).

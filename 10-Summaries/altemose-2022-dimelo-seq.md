@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Nicolas_2022_NatureMethods.pdf"]
 ---
 
+**Citation:** Altemose et al. (2022) — *DiMeLo-seq: long-read single-molecule mapping of protein-DNA interactions* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-022-01475-6)
+
 Altemose, Maslan, Smith, Sundararajan et al. (Straight, Streets labs; UC Berkeley + Stanford + UCSC) developed **DiMeLo-seq** (Directed Methylation with Long-read sequencing) for genome-wide single-molecule protein-DNA interaction mapping. Workflow: permeabilized nuclei → bind primary antibody to target protein → bind **pA-Hia5** (protein A fused to the non-specific adenine methyltransferase Hia5) → add SAM → Hia5 deposits m6A near the antibody's binding site on native DNA → long-read sequencing (ONT/PacBio) reads m6A + endogenous CpG methylation simultaneously. Advantages: (i) **no DNA amplification** — preserves endogenous modifications; (ii) **single-molecule resolution** — multiple binding events per fiber; (iii) **haplotype-resolved** binding maps via heterozygous SNPs; (iv) maps protein-DNA interactions in **repetitive regions** (e.g., centromeres) that are unmappable with short-read approaches. Applied to LADs, CTCF, and CENP-A — including density estimation of CENP-A molecules along single chromatin fibers.
 
 ## Why this matters

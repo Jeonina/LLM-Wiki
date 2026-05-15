@@ -22,6 +22,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** Gur et al. (2025) — *scATAC-seq pseudobulk vs bulk ATAC-seq: same signal, better data quality* — *Scientific Reports*. [DOI](https://doi.org/10.1038/s41598-025-87351-7)
+
 # Gur & Hughes 2025 — scATAC-seq vs bulk ATAC-seq
 
 > Thesis: Researchers using bulk ATAC-seq commonly assume that single-cell data with comparable cell counts is methodologically equivalent. This comparison study, on aliquots of the same erythroblast and NK-cell populations from the same donor, shows that scATAC-seq with pseudo-bulk aggregation gives the **same chromatin architecture signal but higher data quality, sensitivity to weak functional peaks, and the ability to detect heterogeneity within nominally homogeneous populations** — at comparable cost when heterogeneity matters.

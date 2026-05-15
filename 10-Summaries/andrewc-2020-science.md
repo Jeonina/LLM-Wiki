@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/AndrewC_2020_Science.pdf"]
 ---
 
+**Citation:** Payne et al. (2021) — *In Situ Genome Sequencing (IGS): spatially resolved single-cell genomes* — *Science*. [DOI](https://doi.org/10.1126/science.aay3446)
+
 # Payne et al. 2021 — In Situ Genome Sequencing (IGS)
 
 > Andrew C. Payne, Zachary D. Chiang, Paul L. Reginato, Sarah M. Mangiameli, Evan M. Murray, Chun-Chen Yao, Styliani Markoulaki, Andrew S. Earl, Ajay S. Labade, Rudolf Jaenisch, George M. Church, Edward S. Boyden, Jason D. Buenrostro, Fei Chen. *Science* **371**, eaay3446 (26 Feb 2021). DOI: 10.1126/science.aay3446. (The "AndrewC_2020" filename is misleading — this is Payne 2021, not Stergachis.)

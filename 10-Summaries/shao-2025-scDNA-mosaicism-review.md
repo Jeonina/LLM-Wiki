@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Diane_2025_NatureReviewsGenetics.pdf"]
 ---
 
+**Citation:** Shao et al. (2025) — *Advances in single-cell DNA sequencing for human somatic mosaicism* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-025-00832-3)
+
 Shao, Kriz, Snellings, Zhou, Zhao, Enyenihi and Walsh (Walsh lab; Boston Children's/HHMI/Harvard) authored a comprehensive Nature Reviews Genetics review on **single-cell DNA sequencing for human somatic mosaicism**. Argues that scDNA-seq has lagged scRNA-seq and scATAC-seq because most applications require scWGA before WGS. Reviews recent advances enabling scDNA-seq for: (i) tissues with complex clonal patterns; (ii) scarce or non-cycling postmitotic cells (neurons, heart, muscle); (iii) rare cell types. Sections: scDNA-seq technology (scWGA, single-molecule duplex, META-CS); applications (cancer clonal evolution, brain mosaicism, lineage tracing); future perspectives. Includes the trio of scWGA / duplex-bulk / single-molecule scDNA approaches as a unified framework.
 
 ## Why this matters

@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Cyril_2024_CellReportsMethods.pdf"]
 ---
 
+**Citation:** Peter et al. (2024) — *Single chromatin fiber profiling and nucleosome position mapping in the human brain* — *CellReportsMethods*. [DOI](https://doi.org/10.1016/j.crmeth.2024.100911)
+
 Peter, Agarwal, Watanabe, Kassim, Wang, Lambert, Javidfar, Evans, Dawson, Fridrikh, Girdhar, Roussos, Nageshwaran, Tsankova, Sebra, Vollger, Stergachis, Hasson and Akbarian (Mt Sinai, UW, JPVAMC) adapted **Fiber-seq** (Stergachis 2020) to **FACS-sorted NeuN+ neuronal and NeuN− non-neuronal nuclei from human brain tissue**. The protocol uses amplification-free m6A-methyltransferase (Hia5) tagging of extranucleosomal DNA in situ, followed by long-read PacBio Sequel II/Revio sequencing of ~10 kb chromatin fibers.
 
 Key brain-specific capabilities: (i) genome-scale long-read nucleosomal-position mapping in neurons (no prior method existed for brain); (ii) single-molecule TF-footprinting in cell-type-resolved nuclei; (iii) haplotype-specific chromatin patterns identified via heterozygous-SNP read phasing; (iv) cis-aligned multiple regulatory elements on individual fibers — capturing the coordination of distal enhancer-promoter accessibility states on the same molecule; (v) accessible chromatin at ~20,000 sites in retrotransposons and other repeats unmappable by short-read epigenomics.

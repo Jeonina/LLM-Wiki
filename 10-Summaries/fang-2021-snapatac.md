@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Comprehensive analysis of single cell ATAC-seq data with SnapATAC.md"]
 ---
 
+**Citation:** Fang et al. (2021) — *SnapATAC: comprehensive analysis of single-cell ATAC-seq data* — *?*.
+
 Fang, Preissl, Li et al. (Ren, Ecker, Behrens labs; UCSD + Salk) developed **SnapATAC**, an scATAC-seq pipeline that does NOT require pre-defined peaks. Splits the genome into 5-kb bins, computes Jaccard similarity matrix between cells, applies regression-based depth normalization, then performs eigenvector decomposition. Uses **Nyström method** for scalability — analyzes up to a million cells. Applied to 55,592 mouse secondary motor cortex nuclei, identified ~370,000 cis-regulatory elements across 31 distinct cell populations.
 
 ## Why this matters

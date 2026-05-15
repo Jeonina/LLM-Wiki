@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Runsheng_2024_PNAS.pdf"]
 ---
 
+**Citation:** He et al. (2024) — *FOODIE: genome-wide single-cell/single-molecule footprinting of TFs with deaminase* — *PNAS*. [DOI](https://doi.org/10.1073/pnas.2423270121)
+
 He, Dong, Wang, Xie et al. (Xie lab; Peking University) developed **FOODIE** (FOOtprinting with DeaminasE), a single-molecule/single-cell TF footprinting method using **DddB**, a double-stranded DNA cytosine deaminase that converts cytosine to uracil in accessible (unbound) regions while bound regions are protected. Unlike DddA (which acts only on cytosine preceded by thymine, limiting motif coverage), DddB has broad sequence compatibility. Workflow: Tn5 tagmentation of open chromatin → in-situ DddB deamination → amplification → sequencing where C→T conversion ratio reveals binding footprints. FOODIE achieves near-single-base resolution, requires fewer cells than ChIP-seq/DNase-seq, and detects TF binding cooperativity (positive or negative) between adjacent TFs from individual fibers. Single-cell FOODIE enables cell-type-specific TF footprint detection in heterogeneous tissue (e.g., brain). The authors built a scalable FOODIE database across cell lines.
 
 ## Why this matters

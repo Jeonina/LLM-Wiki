@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Benchmarking of duplex sequencing approaches to reveal somatic mutation landscapes.md"]
 ---
 
+**Citation:** Zhang et al. (2025) — *Benchmarking 6 duplex sequencing approaches (SMaHT)* — *?*.
+
 Zhang, Viswanadham, Coorens et al. (SMaHT Duplex Sequencing Focus Group) systematically benchmarked **6 duplex methods**: CODEC, CompDuplex-seq, HiDEF-seq, NanoSeq, ppmSeq, VISTA-seq. Used cord blood DNA, tumor-normal cell-line mixture, and homogenates from 6 tissues. Each method has distinct profiles in genomic footprint, sensitivity, and cost — but mutation rate and signature estimates are highly concordant across methods. Integration with ultra-deep WGS shows duplex captures mutations beyond embryonic/clonally-expanded variants.
 
 ## Why this matters

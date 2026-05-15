@@ -24,6 +24,8 @@ topics:
   - "[[40-Topics/whole-genome-amplification]]"
 ---
 
+**Citation:** Tu et al. (2021) — *SCOUT: single-cell genotyping using local-territory base counts* — *Nucleic Acids Research*. [DOI](https://doi.org/10.1093/nar/gkab106)
+
 # Tu et al. 2021 — SCOUT
 
 > Thesis: Existing single-cell SNV callers (Monovar, SCcaller, SCAN-SNV) lean on **external data** — matched bulk samples or other cells in the experiment — to calibrate allele-dropout and amplification bias. This fails for minor clones and rare variants where the external data is unreliable. **SCOUT** instead borrows information from **adjacent genomic loci within the same cell** (the "local genome territory"), assuming that neighboring SNVs share amplification context. A four-class statistical model classifies each candidate locus as homozygous, heterozygous, intermediate (amplification-imbalanced), or low-major-allele (potential allele dropout).

@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Federico_2019_Nature.pdf"]
 ---
 
+**Citation:** Gaiti et al. (2019) — *Epigenetic evolution and lineage histories of chronic lymphocytic leukaemia* — *Nature*. [DOI](https://doi.org/10.1038/s41586-019-1198-z)
+
 # Gaiti et al. 2019 — Epimutation as a molecular clock
 
 > Federico Gaiti, Ronan Chaligne, Hongcang Gu, Ryan M. Brand, Steven Kothen-Hill, Rafael C. Schulman, Kirill Grigorev, Davide Risso, Kyu-Tae Kim, Alessandro Pastore, Kevin Y. Huang, Alicia Alonso, Caroline Sheridan, Nathaniel D. Omans, Evan Biederstedt, Kendell Clement, Lili Wang, Joshua A. Felsenfeld, Erica B. Bhavsar, Martin J. Aryee, John N. Allan, Richard Furman, Andreas Gnirke, Catherine J. Wu, Alexander Meissner\*, **Dan A. Landau\***. *Nature* **569**, 576–580 (23 May 2019). DOI: 10.1038/s41586-019-1198-z.

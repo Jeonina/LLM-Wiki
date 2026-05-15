@@ -19,6 +19,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** Gibson et al. (2019) — *Histone-tail-driven liquid–liquid phase separation organizes chromatin* — *Cell*. [DOI](https://doi.org/10.1016/j.cell.2019.08.037)
+
 # Gibson et al. 2019 — Chromatin LLPS
 
 > Thesis: reconstituted chromatin undergoes **histone-tail-driven liquid–liquid phase separation (LLPS)** at physiological salt — both in vitro and when microinjected into cell nuclei. The condensates are dense, dynamic droplets whose properties are tuned by **linker histone H1** and conserved **inter-nucleosome linker lengths**. Histone acetylation by p300 dissolves the droplets; bromodomain-containing readers (e.g., BRD4) bind hyperacetylated chromatin and re-form a *distinct* phase, immiscible with unmodified chromatin droplets. This is the foundational biophysical model for understanding how the chromatin polymer itself organizes into the subnuclear compartments observed by microscopy.

@@ -20,6 +20,8 @@ topics:
   - "[[40-Topics/somatic-mosaicism]]"
 ---
 
+**Citation:** Forsberg et al. (2017) — *Mosaicism in health and disease* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/nrg.2016.145)
+
 # Forsberg, Gisselsson & Dumanski 2017 — Mosaicism in health and disease
 
 > Thesis: post-zygotic variation — mutations arising in the soma after fertilization and not transmitted via the germline — is far more pervasive than classical human genetics assumed. Individuals are complex mosaics, no two somatic cells share an identical genome, and structural variants leave the largest somatic footprint. Mosaicism is a common confounder in clinical genetic testing and a major driver of disease that requires sorted-cell or single-cell analysis to fully resolve.

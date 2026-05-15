@@ -25,6 +25,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** Mezger et al. (2018) — *µATAC-seq: 5,184 nano-wells, ~1,800 cells/chip, $0.81/cell* — *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-018-05887-x)
+
 # Mezger et al. 2018 — µATAC-seq
 
 > Thesis: scATAC-seq on Fluidigm C1 captures only ~96 cells per run and costs are high; combinatorial indexing scales further but produces fewer fragments per cell and is incompatible with live-cell fluorescence imaging. **µATAC-seq** runs scATAC-seq on the Takara ICELL8 5,184-nanowell platform with fluorescence-imaging-guided reagent deposition, yielding up to ~1,800 cells per chip at ~$0.81/cell library cost and ~14k fragments per cell — a **~20-fold throughput improvement** without sacrificing per-cell quality.

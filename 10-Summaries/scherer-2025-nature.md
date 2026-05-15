@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Michael_2025_Nature.pdf"]
 ---
 
+**Citation:** Scherer et al. (2025) — *Clonal tracing with somatic epimutations reveals dynamics of blood ageing (EPI-Clone)* — *Nature*. [DOI](https://doi.org/10.1038/s41586-025-09041-8)
+
 Scherer, Singh, Braun and colleagues (Rodríguez-Fraticelli / Velten labs) developed EPI-Clone, a transgene-free single-cell lineage-tracing method that exploits stochastic somatic epimutations at static CpG sites as natural clonal barcodes, while simultaneously reading dynamic CpG sites as a differentiation-state readout. Built on scTAM-seq (single-cell Targeted Analysis of the Methylome, Mission Bio Tapestri platform), EPI-Clone profiles methylation of ~453 CpG sites in thousands of single cells with low dropout (~7%), distinguishing static CpGs (clone-informative, enriched in heterochromatin and late-replicating regions) from dynamic CpGs (state-informative, enriched in enhancer regions near lineage-specific TF binding sites).
 
 Validated against LARRY-barcoded mouse HSCs, EPI-Clone correctly placed cells from expanded clones with AUC=0.79. Applied to mouse and human hematopoiesis, the platform captured hundreds of clonal differentiation trajectories across 230,358 cells from tens of individuals. In aging mice, myeloid bias and low output of old HSCs were restricted to a small number of expanded clones, while many "functionally young-like" clones persisted. In human aging, clones with and without known CHIP driver mutations participated in a continuous spectrum of age-related clonal expansions with similar lineage biases.

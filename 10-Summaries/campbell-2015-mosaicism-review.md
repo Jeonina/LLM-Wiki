@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Ian_2015_TrendsInGenetics.pdf"]
 ---
 
+**Citation:** Campbell et al. (2015) — *Somatic mosaicism: implications for disease and transmission genetics* — *Trends in Genetics*. [DOI](https://doi.org/10.1016/j.tig.2015.07.004)
+
 Campbell, Shaw, Stankiewicz and Lupski (Baylor College of Medicine) reviewed somatic mosaicism with an emphasis on **developmental timing** and **transmission risk**. Conceptual frame: every human is mosaic, with postzygotic SNVs, indels, CNVs, and SVs accumulating during development. Reviews: (i) how the timing of mutation (first mitosis vs. later embryonic stages vs. post-organogenesis) determines distribution of mutant cells across tissues — illustrated with CHILD syndrome (left-right axis demarcation) and other developmental syndromes; (ii) detection methods (bulk vs single-cell, deep-sequencing thresholds); (iii) the risk of gonadal/gonosomal mosaicism transmitting to offspring as constitutional variants. Includes a glossary distinguishing somatic, gonadal, gonosomal mosaicism from chimerism.
 
 ## Why this matters

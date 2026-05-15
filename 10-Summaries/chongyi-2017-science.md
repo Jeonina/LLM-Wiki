@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Chongyi_2017_Science.pdf"]
 ---
 
+**Citation:** Chen et al. (2017) — *Single-cell whole-genome analysis by Linear Amplification via Transposon Insertion (LIANTI)* — *Science*. [DOI](https://doi.org/10.1126/science.aak9787)
+
 # Chen et al. 2017 — LIANTI
 
 > Chongyi Chen, Dong Xing, Longzhi Tan, Heng Li, Guangyu Zhou, Lei Huang, **X. Sunney Xie**. *Science* **356**, 189–194 (14 April 2017). DOI: 10.1126/science.aak9787. Harvard + Beijing.

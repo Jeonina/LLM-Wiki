@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Marek_2021_NatureBiotechnology.pdf"]
 ---
 
+**Citation:** Bartosovic et al. (2021) — *Single-cell CUT&Tag profiles histone modifications and transcription factors in complex tissues* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-021-00869-9)
+
 # Bartosovic et al. 2021 — scCUT&Tag in complex tissues
 
 > Marek Bartosovic, Mukund Kabbe, **Gonçalo Castelo-Branco\***. *Nature Biotechnology* **39**, 825–835 (July 2021). DOI: 10.1038/s41587-021-00869-9. Karolinska Institutet.

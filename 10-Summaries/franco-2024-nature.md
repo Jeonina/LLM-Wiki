@@ -26,6 +26,8 @@ topics:
   - "[[40-Topics/hematopoietic-malignancies]]"
 ---
 
+**Citation:** Izzo et al. (2024) — *GoT–ChA: genotyping with single-cell chromatin accessibility* — *Nature*. [DOI](https://doi.org/10.1038/s41586-024-07388-y)
+
 # Izzo et al. 2024 — GoT–ChA: genotyping with single-cell chromatin accessibility
 
 > Thesis: somatic mutations rewire chromatin, but in human samples mutated and wild-type cells are admixed and bulk assays cannot resolve their distinct epigenomes. The authors invent **GoT–ChA**, the gDNA-genotyping analog of [[30-Concepts/got]] — link single-cell ATAC profiles to genotype by amplifying the mutation locus from genomic DNA inside droplets. Applied to JAK2V617F MPN, they show the mutation produces a **cell-intrinsic pro-inflammatory chromatin state in HSCs** before any overt blood phenotype, and a **profibrotic chromatin landscape in MkPs** during myelofibrosis.

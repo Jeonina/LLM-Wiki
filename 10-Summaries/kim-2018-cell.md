@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Charissa_2018_Cell.pdf"]
 ---
 
+**Citation:** Kim et al. (2018) — *Chemoresistance evolution in triple-negative breast cancer delineated by single-cell sequencing* — *Cell*. [DOI](https://doi.org/10.1016/j.cell.2018.03.041)
+
 Kim, Gao, Sei and colleagues (Navin lab, MD Anderson) combined single-cell DNA-seq and single-cell RNA-seq with bulk exome sequencing to dissect the clonal evolution of chemoresistance in 20 triple-negative breast cancer (TNBC) patients receiving neoadjuvant chemotherapy. Longitudinal pre- and post-treatment samples were profiled; in 8 patients with clonal persistence, scDNA-seq of $\sim$900 cells and scRNA-seq of $\sim$6,862 cells per patient were performed.
 
 Resistant TNBC genotypes were pre-existing in the pre-treatment tumor and adaptively selected by chemotherapy (rather than acquired de novo during treatment). In contrast, resistant transcriptional signatures were acquired through chemotherapy-induced reprogramming — i.e. resistance arises through a hybrid mechanism where pre-existing genomic clones are selected and then transcriptionally reprogrammed.

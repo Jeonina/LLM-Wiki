@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Harmonizing single-cell 3D genome data with STARK and scNucleome.md"]
 ---
 
+**Citation:** Jiang et al. (2026) — *STARK and scNucleome: harmonizing sc3DG-seq data* — *?*.
+
 Jiang, Cai, Sun et al. (Wu lab) developed **STARK**, a unified preprocessing/QC/analysis toolkit for sc3DG-seq across 15 technologies (scHi-C, sciHi-C, Dip-C, sn-m3C, scMethyl, HiRES, scSPRITE, snHi-C, scNanoHi-C, LiMCA, GAGE-seq, Droplet Hi-C, Paired Hi-C, etc.). Includes **EmptyCells** filter (Monte Carlo simulation of empty barcodes), **SSCE** (Spatial Structure Capture Efficiency) QC metric, and downstream A/B compartment/TAD/loop calling + 3D reconstruction. Benchmarks all 15 technologies on shared metrics. **scNucleome** is the companion uniformly-processed sc3DG-seq data repository.
 
 ## Why this matters

@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Chantriolnt_2019_GenomeBiology.pdf"]
 ---
 
+**Citation:** Kapourani et al. (2019) — *Melissa: Bayesian clustering and imputation of single-cell methylomes* — *Genome Biology*. [DOI](https://doi.org/10.1186/s13059-019-1665-8)
+
 Kapourani and Sanguinetti (Edinburgh) developed **Melissa** (MEthyLation Inference for Single cell Analysis), a Bayesian hierarchical method that jointly learns smooth methylation profiles over genomic regions of interest and clusters cells based on those profiles. The model fits a generalized-linear basis-function regression to each region's CpG observations per cell, with a Dirichlet-mixture prior providing the cell-clustering. Variational Bayes estimation gives both per-cell cluster membership and imputed methylation profiles for unobserved CpGs.
 
 Key methodological idea: **local CpG correlations are informative for imputation** — the smoothness regularization within each region lets the model fill in sparse data using neighboring observed CpGs in the same cell, while the shared Dirichlet prior lets cells in the same cluster reinforce each other. Benchmarked on simulated and real scBS-seq data, Melissa achieves state-of-the-art imputation accuracy *and* biologically meaningful clustering.

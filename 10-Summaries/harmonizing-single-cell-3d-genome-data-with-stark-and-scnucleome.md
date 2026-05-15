@@ -24,6 +24,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** Jiang et al. (2026) — *STARK + scNucleome: unified pipeline and atlas for sc3DG-seq* — *Genome Biology*. [DOI](https://doi.org/10.1186/s13059-026-03938-x)
+
 # Jiang et al. 2026 — STARK + scNucleome
 
 > Thesis: 15+ sc3DG-seq technologies exist (scHi-C, snHi-C, sciHi-C, Dip-C, sn-m3C, HiRES, scSPRITE, scNanoHi-C, Droplet/Paired Hi-C, GAGE-seq, LiMCA, …), each with its own data format and idiosyncratic processing. No unified analysis framework exists. **STARK** (Structural Topology Analysis and Rich Knowledge base) provides standardized preprocessing, quality control, and downstream analysis for all sc3DG-seq data types. STARK is paired with **scNucleome**, a publicly accessible repository of uniformly processed sc3DG-seq datasets — the "single-cell 3D genome atlas."

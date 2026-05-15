@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Franco_2024_Nature.pdf"]
 ---
 
+**Citation:** Izzo et al. (2024) — *GoT-ChA: mapping genotypes to chromatin accessibility in single cells* — *Nature*. [DOI](https://doi.org/10.1038/s41586-024-07388-y)
+
 Izzo, Myers, Ganesan, Mekerishvili et al. (Landau lab; NYGC + Weill Cornell) developed **GoT-ChA** (Genotyping of Targeted loci with single-cell Chromatin Accessibility), extending the GoT family to scATAC-seq. The platform adds custom GoT-ChA primers to the 10x Multiome droplet barcoding step, amplifying the targeted locus from genomic DNA (not from transcript, which avoids dependency on gene-expression level). Applied to CD34+ cells from patients with JAK2-V617F-mutated MPNs (PV, ET, MF), GoT-ChA revealed both **cell-intrinsic pro-inflammatory chromatin signatures** in mutant HSCs and a **distinct profibrotic inflammatory landscape** in mutant megakaryocytic progenitors. Integration with mitochondrial-genome profiling and cell-surface proteins extends the multimodal capture to DOGMA-seq + genotyping + chromatin + RNA + protein.
 
 ## Why this matters

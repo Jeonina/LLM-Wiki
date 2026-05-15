@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Florian_2024_NatureBiotechnology.pdf"]
 ---
 
+**Citation:** De Rop et al. (2024) — *Systematic benchmarking of single-cell ATAC-sequencing protocols (PUMATAC)* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-023-01881-x)
+
 De Rop, Hulselmans, Flerin and colleagues (Aerts + Heyn labs) systematically benchmarked eight scATAC-seq protocols — 10x Genomics v1/v1.1/v2/multiome/mtscATAC, Bio-Rad ddSEQ, HyDrop, and s3-ATAC — across 47 experiments using PBMCs as a reference sample. The study developed PUMATAC, a universal preprocessing pipeline for scATAC-seq, which corrects for barcode-merging artifacts (especially in Bio-Rad data), unifies read alignment via bwa-mem2, and feeds into cisTopic-based clustering.
 
 Three findings. (1) Significant differences in sequencing library complexity and tagmentation specificity exist across methods, with downstream consequences for cell-type annotation, genotype demultiplexing, peak calling, differential accessibility, and TF motif enrichment. (2) Per-cell cost varies from $0.05 (HyDrop) to $3.80 (s3-ATAC) at fixed cell yields, with 10x v2/multiome and HyDrop offering favorable cost/quality trade-offs. (3) PUMATAC and the 169,000-cell PBMC benchmark dataset are released as a community resource.

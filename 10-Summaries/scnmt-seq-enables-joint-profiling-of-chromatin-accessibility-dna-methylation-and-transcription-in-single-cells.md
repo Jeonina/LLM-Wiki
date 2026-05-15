@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/scNMT-seq enables joint profiling of chromatin accessibility DNA methylation and transcription in single cells.md"]
 ---
 
+**Citation:** Clark et al. (2018) — *scNMT-seq: Joint chromatin accessibility, DNA methylation, and transcription in single cells* — *?*. [DOI](https://doi.org/10.1038/s41467-018-03149-4)
+
 # Clark et al. 2018 — scNMT-seq
 
 > Stephen J. Clark, Ricard Argelaguet, Chantriolnt-Andreas Kapourani, Thomas M. Stubbs, Heather J. Lee, Celia Alda-Catalinas, Felix Krueger, Guido Sanguinetti, Gavin Kelsey, John C. Marioni, Oliver Stegle, Wolf Reik. *Nature Communications* **9**, 781 (Feb 2018). DOI: 10.1038/s41467-018-03149-4.

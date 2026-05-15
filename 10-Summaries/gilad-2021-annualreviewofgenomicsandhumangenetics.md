@@ -21,6 +21,8 @@ topics:
   - "[[40-Topics/somatic-mosaicism]]"
 ---
 
+**Citation:** Evrony et al. (2021) — *Applications of single-cell DNA sequencing* — *Annu Rev Genomics Hum Genet*. [DOI](https://doi.org/10.1146/annurev-genom-111320-090436)
+
 # Evrony, Hinch & Luo 2021 — Applications of single-cell DNA sequencing
 
 > Thesis: rather than reviewing scDNA-seq technologies, frame the field through three core *capabilities* that scDNA-seq uniquely enables across applications: **fidelity** (detecting low-mosaicism features below the noise floor of bulk sequencing), **co-presence** (determining which variants co-occur in the same cell), and **phenotypic association** (linking single-cell genotype to single-cell phenotype). Every scDNA-seq application is distinguished by which subset of these capabilities it depends on.

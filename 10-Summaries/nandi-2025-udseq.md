@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["A Universal Duplex Sequencing Approach for Accurate Detection of Somatic Mutations.md"]
 ---
 
+**Citation:** Nandi et al. (2025) — *UDSeq: universal duplex sequencing for accurate somatic mutation detection* — *?*.
+
 Nandi, Cheng, Al-Azzam et al. (Alexandrov, Gleeson labs; UCSD) developed **UDSeq**, a duplex sequencing protocol combining random fragmentation, efficient UMI ligation, and quantitative input control. Achieves error rate ~2.5×10⁻⁹ per bp from as little as 100 pg DNA. Captures mutational signatures from heterogeneous populations without clonal expansion. Up to 4× more usable duplex molecules than prior methods (NanoSeq, CODEC), improved library conversion, lower cost.
 
 ## Why this matters

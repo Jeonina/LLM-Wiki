@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["High-throughput single-cell analysis reveals progressive mitochondrial DNA mosaicism throughout life.md"]
 ---
 
+**Citation:** Glynos et al. (2023) — *Progressive mitochondrial DNA mosaicism throughout life* — *?*.
+
 Glynos, Bozhilova, Frison, Burr, Stewart, Chinnery (Cambridge) performed high-throughput single-cell mtDNA heteroplasmy measurements in two mouse models (m.5024C>T and m.5019A>G in tRNA-Ala). FACS-sorted spleen (proliferating) and brain (postmitotic) cells from E8.5 embryos through adulthood (P0/P6/P100/P365). Heteroplasmy distributions closely match two-parameter Kimura distribution — consistent with random genetic drift, NOT selection. Variance increases progressively with age in both dividing and non-dividing tissues, leading to accumulation of homoplasmic cells late in life. Surprisingly similar variance between proliferating spleen and quiescent brain — relaxed replication (turnover-driven), not vegetative segregation, dominates.
 
 ## Why this matters

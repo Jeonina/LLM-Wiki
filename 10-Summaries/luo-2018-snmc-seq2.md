@@ -8,6 +8,8 @@ updated: 2026-05-13
 sources: ["Chongyuan_2018_NatureCommunications.pdf"]
 ---
 
+**Citation:** Luo et al. (2018) — *snmC-seq2: robust single-cell DNA methylome profiling* — *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-018-06355-2)
+
 Luo, Rivkin, Zhou et al. (Ecker lab, Salk) reported **snmC-seq2**, an improved version of snmC-seq for single-cell DNA methylome profiling. Key changes: (i) shrimp alkaline phosphatase (SAP) treatment after random-primed DNA synthesis removes carryover dNTPs that contaminate Adaptase 3'-tagging; (ii) optimized random-primer concentration. These reduce adapter-dimer artefacts and improve reverse-read base composition. Net result: substantially higher mapping rates, lower artefactual reads, increased library complexity, and better coverage uniformity than snmC-seq. The method underpins the snmC-seq3 and snm3C-seq atlases of mouse brain methylome (Liu 2023, Mukamel 2025).
 
 ## Why this matters

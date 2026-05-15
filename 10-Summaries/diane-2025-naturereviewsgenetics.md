@@ -30,6 +30,8 @@ topics:
   - "[[40-Topics/whole-genome-amplification]]"
 ---
 
+**Citation:** Shao et al. (2025) — *Advances in single-cell DNA sequencing for somatic mosaicism* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-025-00832-3)
+
 # Shao et al. 2025 — Advances in single-cell DNA sequencing for somatic mosaicism
 
 > Thesis: scDNA-seq has historically lagged behind scRNA-seq and scATAC because the human genome is 20–50× larger than the transcribed/accessible genomes and each locus is represented by only two molecules per cell — so single-cell whole-genome amplification (scWGA) is required and unavoidable. Recent advances (PTA, duplex sequencing, computational error correction) have finally made scDNA-seq tractable, enabling somatic mosaicism research, lineage tracing in human tissues, and pre-implantation genetic screening.

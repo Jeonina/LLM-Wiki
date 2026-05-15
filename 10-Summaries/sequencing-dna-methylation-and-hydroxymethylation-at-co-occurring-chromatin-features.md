@@ -26,6 +26,8 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
+**Citation:** Tavares et al. (2026) — *6-base-CUT&Tag: 5mC + 5hmC at targeted histone marks* — *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-026-69429-6)
+
 # Tavares et al. 2026 — 6-base-CUT&Tag
 
 > Thesis: We have plenty of methods for measuring DNA methylation and chromatin features separately, but we lack a single-fragment readout that reveals **which DNA modifications co-occur with which histone modifications**. 6-base-CUT&Tag (6B-C&T) couples antibody-directed Tn5 tagmentation with biomodal's 6-base enzymatic conversion to deliver simultaneous G/A/T/C/5mC/5hmC sequencing of the DNA fragments tethered to a specific histone mark. In mESCs, this reveals that H3K4me1-marked nucleosomes preferentially retain both 5mC and 5hmC at primed enhancers — a signature missed by all prior bulk methylation methods.

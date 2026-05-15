@@ -8,6 +8,8 @@ updated: 2026-05-12
 sources: ["00-Sources/papers/Andrew_2011_CellResearch.pdf"]
 ---
 
+**Citation:** Bannister et al. (2011) — *Regulation of chromatin by histone modifications (review)* — *Cell Research*. [DOI](https://doi.org/10.1038/cr.2011.22)
+
 # Bannister & Kouzarides 2011 — Regulation of chromatin by histone modifications
 
 > Andrew J. Bannister & Tony Kouzarides. *Cell Research* **21**, 381–395 (March 2011). DOI: 10.1038/cr.2011.22. (The "Andrew_2011" filename refers to Andrew J. Bannister — *not* Andrew B. Stergachis.)

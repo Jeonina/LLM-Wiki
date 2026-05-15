@@ -4,6 +4,109 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-05-15 — Ingest: scDamID lineage (Rooijers 2019 + de Luca & Kind 2021 + Mali 2025)
+
+**Trigger**: User proposed a three-part **DNA locus state** framework (genetic / epigenetic / structural-physical) and asked whether the wiki covered it. Audit showed strong coverage of genetic + epigenetic axes and the 3D / chromatin-interaction sub-axis, but a clear gap on **spatial positioning (nuclear lamina)** and **biophysical state**. User chose to plug the lamina/DamID gap first.
+
+**Sources ingested (3)**:
+
+- `Simultaneous quantification of protein–DNA contacts and transcriptomes in single cells.md` — Rooijers K, Markodimitraki CM, Rang FJ, de Vries SS, Chialastri A, de Luca KL, Mooijman D, Dey SS, **Kind J**. *Nat Biotechnol* 37(7): 766–772 (2019). [DOI](https://doi.org/10.1038/s41587-019-0150-y). **scDam&T-seq** — joint scDamID + CEL-Seq2 mRNA via T7-IVT linear amplification. First single-cell coupling of NL contact to transcription; reveals fLAD-only (not cLAD) coupling.
+- `Single-Cell DamID to Capture Contacts Between DNA and the Nuclear Lamina in Individual Mammalian Cells.md` — de Luca KL, **Kind J**. *Methods Mol Biol* 2157: 159–172 (2021). [DOI](https://doi.org/10.1007/978-1-0716-0664-3_9). Canonical bench protocol for scDamID with Dam-LMNB1.
+- `Quantifying conformational heterogeneity of 3D genome organization in fruit fly.md` — Mali S, Tolokh IS, Cross E, **Onufriev AV**. *PLOS One* 20(7): e0326927 (2025). [DOI](https://doi.org/10.1371/journal.pone.0326927). Defines **Conformational Heterogeneity (C.H.)** metric; bulk-Hi-C vs scHi-C trained 3D models diverge at 1–10 Mb; lamin depletion raises C.H. genome-wide → predicts elevated transcriptional noise.
+
+**New summary pages (3)**:
+- `10-Summaries/rooijers-2019-scdamt-seq.md`
+- `10-Summaries/de-luca-2021-scdamid-protocol.md`
+- `10-Summaries/mali-2025-conformational-heterogeneity.md`
+
+**New concept pages (5)**:
+- `30-Concepts/damid.md` — DNA adenine methyltransferase identification; the assay family.
+- `30-Concepts/scdamt-seq.md` — joint protein–DNA + transcriptome via IVT linear amplification.
+- `30-Concepts/lamina-associated-domains.md` — LADs with cLAD vs fLAD distinction (load-bearing).
+- `30-Concepts/nuclear-lamina.md` — the peripheral organizing surface.
+- `30-Concepts/conformational-heterogeneity.md` — C.H. metric definition and use cases.
+
+**New entity pages (4)**:
+- `20-Entities/jop-kind.md` — Hubrecht; scDamID/scDam&T-seq lineage.
+- `20-Entities/kim-de-luca.md` — Kind lab; protocol first author.
+- `20-Entities/siddharth-dey.md` — UCSB; co-senior on scDam&T-seq.
+- `20-Entities/alexey-onufriev.md` — Virginia Tech; biophysics; C.H. metric.
+
+**Existing pages updated (3)**:
+- `40-Topics/3d-genome.md` — added Nuclear lamina + Conformational heterogeneity sub-themes; added 4 new concepts and 2 new entities to core lists; added 2 new open questions on fLAD/cLAD differential coupling and bulk-vs-scHi-C orthogonality.
+- `40-Topics/chromatin-architecture.md` — added "Nuclear lamina / spatial positioning" subsection under 3D genome.
+- `index.md` — expanded "3D Genome at Single-Cell Resolution" section with lamina lineage + heterogeneity metric callouts; bumped updated date to 2026-05-15.
+
+**Locus state framework coverage assessment (post-ingest)**:
+
+| Axis | Sub-axis | Coverage |
+|------|----------|----------|
+| Genetic | CNV / SNV / allelic | **Strong** (CHISEL, MEDICC2, SCARLET, Monovar, SiFit, etc.) |
+| Epigenetic | Methylation / histone / accessibility | **Strong** (~149 papers) |
+| Structural/Physical | 3D / chromatin interaction | **Strong** (Hong 2025, Jiang 2026, Dip-C, sn-m3C-seq, scHi-C family) |
+| Structural/Physical | Spatial positioning (lamina/LAD) | **Now adequate** (Rooijers + de Luca + Mali added) |
+| Structural/Physical | Mechanical / viscoelastic / phase separation | **Still weak** (only Elliott 2025 partial; PubMed candidates: Gibson 2019 LLPS, Ahn 2021 phase-driven looping, Daugird 2024 viscoelastic chromatin, Qi & Zhang 2021 nucleoli) |
+
+**Notable findings worth resurfacing**:
+
+- **fLAD ≠ cLAD coupling** (Rooijers 2019): the negative lamina↔transcription coupling is restricted to H3K27me3-marked facultative LADs, NOT to H3K9me3 constitutive LADs. This is the cleanest single-cell evidence that lamina detachment is a regulatable axis, not a uniform repressive floor.
+- **C.H. exposes scHi-C undersampling** (Mali 2025): with only ~20 single-cell maps, scHi-C-trained 3D models *miss* the dense weak TAD-TAD contacts captured by bulk Hi-C. Methodological recommendation — incorporate bulk Hi-C as supplementary restraint until scHi-C cohorts grow.
+- **Lamin depletion → predicted transcriptional noise**: testable via scDam&T-seq or scNMT-seq in lamin-knockdown vs WT cells. Mammalian transferability supported (Ulianov 2019).
+
+**Next ingest candidates** (Part 3c biophysical gap): Gibson et al. 2019 *Cell* (chromatin LLPS), Ahn et al. 2021 *Nature* (phase separation drives oncogenic loops), Daugird et al. 2024 *Nat Commun* (viscoelastic chromatin lattice light-sheet), Qi & Zhang 2021 *Nat Commun* (nucleoli coalescence).
+
+---
+
+## 2026-05-15 — Ingest: Biophysical / LLPS cluster (Gibson 2019 + Ahn 2021 + Daugird 2024 + Qi & Zhang 2021) — abstract-based
+
+**Trigger**: User asked for autonomous continuation to fill the Part 3c (biophysical / mechanical / phase-separation) gap of the DNA locus-state framework. No local PDFs available; ingest uses PubMed metadata + abstracts already in conversation context. Each summary explicitly marks `ingest_depth: abstract-only` in frontmatter so re-ingest with PDFs later will deepen them.
+
+**Sources ingested (4)**:
+
+- **Gibson et al. 2019** *Cell* 179(2): 470–484. [DOI](https://doi.org/10.1016/j.cell.2019.08.037). Foundational chromatin LLPS — histone-tail-driven, H1-tuned, p300-dissolved, BRD4-phase-switched.
+- **Ahn et al. 2021** *Nature* 595: 591–595. [DOI](https://doi.org/10.1038/s41586-021-03662-5). NUP98-HOXA9 IDR-driven LLPS induces CTCF-independent chromatin loops at proto-oncogenes; IDR identity interchangeable (FUS-IDR swap works) → LLPS *competence* is the load-bearing property.
+- **Daugird et al. 2024** *Nat Commun* 15: 4178. [DOI](https://doi.org/10.1038/s41467-024-48562-0). Live-cell lattice light-sheet single-molecule imaging measures chromatin viscoelasticity directly; interchromatin accessibility constant across density regimes; transcription locally stabilizes nucleosomes.
+- **Qi & Zhang 2021** *Nat Commun* 12: 6824. [DOI](https://doi.org/10.1038/s41467-021-27123-9). Hi-C-parameterized polymer model — viscoelastic chromatin network arrests nucleolus coalescence via entropic barrier; explains stable multi-droplet architecture of nuclear bodies.
+
+**New summary pages (4)**:
+- `10-Summaries/gibson-2019-chromatin-llps.md`
+- `10-Summaries/ahn-2021-llps-cancer-looping.md`
+- `10-Summaries/daugird-2024-viscoelastic-chromatin.md`
+- `10-Summaries/qi-zhang-2021-nucleoli-coalescence.md`
+
+**New concept pages (2)**:
+- `30-Concepts/chromatin-phase-separation.md` — LLPS as the mechanical/phase-separation sub-axis of locus state.
+- `30-Concepts/chromatin-mechanical-properties.md` — viscoelasticity, rigidity, condensation; the third sub-axis of structural-physical locus state.
+
+**New entity pages (2)**:
+- `20-Entities/michael-rosen.md` — UTSW/HHMI; LLPS field founder; corresponding on Gibson 2019.
+- `20-Entities/bin-zhang.md` — MIT Chemistry; polymer-physics theory; corresponding on Qi & Zhang 2021.
+
+**Existing pages updated (3)**:
+- `40-Topics/chromatin-architecture.md` — added "Biophysical / phase-separation / mechanical state" subsection with all 4 papers.
+- `40-Topics/3d-genome.md` — added "Phase separation × 3D architecture" sub-section + 2 concepts (chromatin-phase-separation, chromatin-mechanical-properties) to core list.
+- `index.md` — added "Biophysical / LLPS" callout line under 3D Genome at Single-Cell Resolution.
+
+**Locus state framework — final coverage (post-3c ingest)**:
+
+| Axis | Sub-axis | Coverage |
+|------|----------|----------|
+| Genetic | CNV / SNV / allelic | **Strong** |
+| Epigenetic | Methylation / histone / accessibility | **Strong** (~149 papers) |
+| Structural/Physical | 3D / chromatin interaction | **Strong** |
+| Structural/Physical | Spatial positioning (lamina/LAD) | **Adequate** (Kind lineage) |
+| Structural/Physical | Mechanical / viscoelastic / LLPS | **Now adequate** (4 anchor papers; abstract-based — flag for PDF re-ingest) |
+
+**Cross-axis synthesis insight (new)**:
+
+Ahn 2021 is the cleanest example of a **genetic alteration that reshapes the structural-physical axis via biophysics**: a translocation (genetic change) creates an IDR-fusion protein (sequence change) that phase-separates (biophysical state) and rewires 3D architecture (structural state). This single paper anchors a cross-axis coupling that the framework predicts. Worth promoting to a `50-Notes/` synthesis when a few more cross-axis examples accumulate.
+
+**Caveat — ingest depth**: all 4 summaries are abstract-based. Each frontmatter carries `ingest_depth: abstract-only`. When PDFs become available, re-ingest will replace the placeholder Methods/evidence content with quantitative parameters (binding constants, viscosity scales, loop resolution thresholds).
+
+**Commit + push**: this ingest will be pushed together with the 2026-05-15 scDamID lineage commit in a single batch.
+
+---
+
 ## 2026-05-14 — Ingest: Dean 2002 MDA + Kapadia & Goodell 2024 (stem cell aging) + DOI-link retrofit (89 summaries)
 
 **Trigger**: User requested ingest of two new sources and asked that paper summaries carry clickable DOI/URL links back to the original publications.

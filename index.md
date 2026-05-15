@@ -1,7 +1,7 @@
 ---
 title: LLM Wiki — scDNA-seq & Single-Cell Epigenomics
 description: A living knowledge base on single-cell DNA sequencing, somatic mosaicism, and adjacent epigenomics.
-updated: 2026-05-14
+updated: 2026-05-15
 ---
 
 # LLM Wiki
@@ -88,10 +88,13 @@ PacBio and Nanopore approaches that capture chromatin state, methylation, and st
 
 ### 3D Genome at Single-Cell Resolution
 
-Chromatin conformation capture (Hi-C) adapted for single cells, haplotype-resolved structures, and computational harmonization.
+Chromatin conformation capture (Hi-C) adapted for single cells, haplotype-resolved structures, computational harmonization, and **nuclear-lamina spatial positioning** as a third measurement axis.
 
-**Start here →** [[30-Concepts/3d-genome]] · [[30-Concepts/single-cell-hi-c]] · [[30-Concepts/dip-c]]
+**Start here →** [[30-Concepts/3d-genome]] · [[30-Concepts/single-cell-hi-c]] · [[30-Concepts/dip-c]] · [[30-Concepts/nuclear-lamina]] · [[30-Concepts/lamina-associated-domains]] · [[30-Concepts/damid]]
 **Founding →** [[10-Summaries/nagano-2013-nature|Nagano 2013]] · [[10-Summaries/tan-2018-science|Dip-C (Tan 2018)]]
+**Lamina lineage →** [[10-Summaries/rooijers-2019-scdamt-seq|scDam&T-seq (Rooijers 2019)]] · [[10-Summaries/de-luca-2021-scdamid-protocol|scDamID protocol (de Luca & Kind 2021)]]
+**Heterogeneity metric →** [[10-Summaries/mali-2025-conformational-heterogeneity|C.H. metric (Mali 2025)]]
+**Biophysical / LLPS →** [[10-Summaries/gibson-2019-chromatin-llps|Gibson 2019]] · [[10-Summaries/ahn-2021-llps-cancer-looping|Ahn 2021]] · [[10-Summaries/daugird-2024-viscoelastic-chromatin|Daugird 2024]] · [[10-Summaries/qi-zhang-2021-nucleoli-coalescence|Qi & Zhang 2021]]
 
 ---
 
@@ -136,4 +139,4 @@ The maintainer reads each new source in full, writes a summary, and **touches 5�
 
 ---
 
-*This wiki is a personal research tool. Papers are summarized by an LLM; always verify against the original sources. Last updated 2026-05-14.*
+*This wiki is a personal research tool. Papers are summarized by an LLM; always verify against the original sources. Last updated 2026-05-15.*

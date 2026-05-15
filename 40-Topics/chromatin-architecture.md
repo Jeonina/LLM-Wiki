@@ -74,6 +74,21 @@ updated: 2026-05-12
 - [[10-Summaries/navigating-the-3d-genome-at-single-cell-resolution-techniques-computation-and-mechanistic-landscapes]] (Hong/Dao review).
 - [[10-Summaries/harmonizing-single-cell-3d-genome-data-with-stark-and-scnucleome]] (STARK + scNucleome).
 
+### Nuclear lamina / spatial positioning (DamID lineage)
+
+- [[10-Summaries/rooijers-2019-scdamt-seq]] — Rooijers/Kind/Dey 2019. scDam&T-seq: joint single-cell protein–DNA + transcriptome; first single-cell coupling of NL contact to transcription.
+- [[10-Summaries/de-luca-2021-scdamid-protocol]] — de Luca & Kind 2021. Bench protocol for scDamID with Dam-LMNB1.
+- [[10-Summaries/mali-2025-conformational-heterogeneity]] — Mali/Onufriev 2025. Polymer model with lamina-DamID restraints; new C.H. metric exposes structural noise from lamin depletion.
+
+### Biophysical / phase-separation / mechanical state
+
+The youngest sub-axis of structural-physical locus state. Covers LLPS condensates, viscoelasticity, and the coupling between mechanics and 3D-genome organization.
+
+- [[10-Summaries/gibson-2019-chromatin-llps]] — Gibson/Rosen 2019. Foundational chromatin LLPS — histone tails drive phase separation, H1 tunes it, acetylation dissolves it, BRD4 creates an immiscible new phase.
+- [[10-Summaries/ahn-2021-llps-cancer-looping]] — Ahn/Wang 2021. NUP98-HOXA9 IDR-driven LLPS induces CTCF-independent chromatin loops at proto-oncogenes; IDR identity is interchangeable, LLPS competence is load-bearing.
+- [[10-Summaries/daugird-2024-viscoelastic-chromatin]] — Daugird/Legant 2024. Live-cell lattice light-sheet single-molecule imaging shows chromatin viscoelasticity and interchromatin accessibility are *constant* across density regimes; transcription locally stabilizes nucleosomes.
+- [[10-Summaries/qi-zhang-2021-nucleoli-coalescence]] — Qi/Zhang 2021. Hi-C-parameterized polymer model: viscoelastic chromatin network arrests nucleolus coalescence via entropic barrier — stabilizes the multi-droplet state of nuclear bodies.
+
 ## Synthesized notes
 
 _None yet._

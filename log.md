@@ -4,6 +4,35 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-05-18 (part 3) — Deep re-ingest 4 biophysics papers (PDFs arrived)
+
+**Trigger**: User dropped the 4 missing biophysics PDFs (converted to .md) — Gibson 2019, Ahn 2021, Daugird 2024, Qi & Zhang 2021. These were previously abstract-only ingests.
+
+### Deep re-ingest
+
+All 4 summaries rewritten with **verbatim quotes from source body** (Introduction + Results), replacing the prior abstract-only content. Each paper's claims now have direct supporting quotes that can serve as references in the user's writing.
+
+- **Gibson et al. 2019** *Cell* — chromatin LLPS, H1 + linker length tuning, p300 dissolution, BRD4 immiscible phase. Highlights extracted; "10n+5 bp nucleosome spacing strongly favors phase separation" quoted; immiscibility quote "associate but do not coalesce" extracted.
+- **Ahn et al. 2021** *Nature* — NUP98-HOXA9 LLPS-driven leukaemogenesis. Quantitative loop counts (232 N-IDR_WT-specific, 91% LLPS-anchored, 31% CTCF-overlap) extracted; FUS-IDR substitution + Phe→Ser mutagenesis evidence; single-molecule tracking confirmation.
+- **Daugird et al. 2024** *Nat Commun* — direct quote "viscoelastic properties and accessibility of the interchromatin space remain constant" (THE money-quote for the user's locus-state mechanical sub-axis). Anomalous α ≈ 0.8 (~viscous liquid), fractal dimension 2.14–2.85, nuclear periphery as distinct biophysical environment.
+- **Qi & Zhang 2021** *Nat Commun* — Hi-C polymer model with explicit nucleolar particles + NADs. Entropic barrier ~7 k_B T quantified; coarsening exponent 0.51 matches experiment; nucleation-and-arrest mechanism articulated.
+
+### Ingest-depth field upgraded
+
+All 4 frontmatters: `ingest_depth: abstract-only` → `ingest_depth: full-intro` or `full-intro+results`. Sources now point to the 4 new descriptive .md extracts in `00-Sources/papers/`.
+
+### Cross-axis synthesis insight (carried over from earlier note)
+
+These 4 papers together complete the **mechanical / phase-separation / viscoelastic** sub-axis of the DNA locus state framework:
+- Gibson 2019: chromatin polymer is intrinsically LLPS-competent (epigenetic mark ↔ structural state coupling).
+- Ahn 2021: genetic alteration (translocation) → IDR-fusion → LLPS → 3D rewiring (Genetic ↔ Structural cross-axis).
+- Daugird 2024: live-cell measurement of viscoelastic properties — confirms in-vivo what the models predict.
+- Qi & Zhang 2021: chromatin viscoelasticity quantitatively explains nuclear-body multi-droplet stability.
+
+All claims in the user's locus-state Para 4 ("mechanical or viscoelastic states ... rigidity, condensation, elasticity, and fluid-like behavior, all of which are closely linked to transcriptional and epigenetic activity") now have direct verbatim references.
+
+---
+
 ## 2026-05-18 (part 2) — Source-path remap + 7 more ingests
 
 **Trigger**: Continuation of part-1 deferred tasks — fix stale `source:` paths and ingest remaining priority candidates.

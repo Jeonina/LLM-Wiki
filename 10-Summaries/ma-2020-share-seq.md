@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "SHARE-seq reveals chromatin potential (NRG perspective on Ma et al. 2020)"
+source: "[[00-Sources/papers/SHARE-seq reveals chromatin potential]]"
 aliases: [SHARE-seq perspective, Clyde 2020 NRG SHARE-seq, Ma 2020 SHARE-seq]
 tags: [share-seq, single-cell-multiomics, atac-seq, scRNA-seq, joint-assay, split-pool, chromatin-potential]
 created: 2026-05-12
 updated: 2026-05-12
-sources: ["00-Sources/papers/SHARE-seq reveals chromatin potential - Nature Reviews Genetics.md"]
+source: "[[00-Sources/papers/SHARE-seq reveals chromatin potential]]"
 ---
 
 **Citation:** Ma (2020) — *SHARE-seq reveals chromatin potential (NRG perspective on Ma et al. 2020)* — *?*.

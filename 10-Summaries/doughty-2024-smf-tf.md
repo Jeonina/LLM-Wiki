@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Doughty 2024 — Single-molecule footprinting links TF binding to gene expression"
+source: "[[00-Sources/papers/Single-molecule states link transcription factor binding to gene expression]]"
 aliases: ["Doughty 2024 SMF", "TF-SMF"]
 tags: [SMF, single-molecule-footprinting, TF-binding, enhancer-promoter, M.CviPI, Greenleaf-lab, Bintu-lab, Stanford]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Benjamin_2024_Nature.pdf"]
+source: "[[00-Sources/papers/Single-molecule states link transcription factor binding to gene expression]]"
 ---
 
 **Citation:** Doughty et al. (2024) — *Single-molecule footprinting links TF binding to gene expression* — *Nature*. [DOI](https://doi.org/10.1038/s41586-024-08219-w)

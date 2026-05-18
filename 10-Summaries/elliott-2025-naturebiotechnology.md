@@ -1,7 +1,7 @@
 ---
 type: summary
 title: "Swanson et al. 2025 — DAF-seq: single-cell diploid chromatin fiber architectures"
-source: "[[00-Sources/papers/Elliott_2025_NatureBiotechnology]]"
+source: "[[00-Sources/papers/Mapping single-cell diploid chromatin fiber architectures using DAF-seq]]"
 source_kind: paper
 author: "Elliott G. Swanson, Yizi Mao, ... Andrew B. Stergachis (corresponding)"
 published: 2025-10-20

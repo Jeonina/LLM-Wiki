@@ -4,6 +4,37 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-05-18 (part 2) — Source-path remap + 7 more ingests
+
+**Trigger**: Continuation of part-1 deferred tasks — fix stale `source:` paths and ingest remaining priority candidates.
+
+### Source path remap (171 summaries updated)
+
+Built source-title map from `00-Sources/papers/*.md` and rewrote `source:` field across all summaries using a **SequenceMatcher ratio threshold (≥0.55 with ≥0.10 margin over second-best)** to avoid false-positive matches.
+
+- 171 summaries got accurate source-path updates pointing to new descriptive .md filenames.
+- 38 summaries skipped (ambiguous or abstract-only ingests with no PDF — Gibson/Ahn/Daugird/Qi-Zhang/Mali/Luquette etc.).
+- 2 manual fixes: `macaulay-2016-gt-seq-protocol` (Nat Protocols 2016, was wrongly pointing to 2015 paper), `macaulay-2015-gt-seq` (had duplicate source: lines).
+- 1 duplicate resolved: `bizzotto-2022-brain-mosaicism-nrn.md` (older stub) deleted; `bizzotto-2022-brain-mosaicism-review.md` retained.
+
+### Phase B continuation — 7 more abstract+intro ingests
+
+- **Bae et al. 2017** *Science* — different mutational rates/mechanisms in pregastrulation vs neurogenesis; companion to Lodato 2017. [DOI](https://doi.org/10.1126/science.aan8690)
+- **Gaiti et al. 2019** *Nature* — CLL epigenetic evolution; methylation disorder as lineage barcode. [DOI](https://doi.org/10.1038/s41586-019-1198-z)
+- **Guo et al. 2013** *Genome Research* — scRRBS: founding single-cell methylome method, 1.5M CpGs/cell, digitized in haploid cells. [DOI](https://doi.org/10.1101/gr.161679.113)
+- **Bartosovic et al. 2021** *Nat Biotech* — scCUT&Tag: droplet-based scaling of histone-mark and TF profiling. [DOI](https://doi.org/10.1038/s41587-021-00869-9)
+- **Bartosovic et al. 2022** *Nat Biotech* — nano-CUT&Tag (nano-CT): multimodal single-cell chromatin profiling (3 modalities via nanobody-Tn5 fusions). [DOI](https://doi.org/10.1038/s41587-022-01535-4)
+- **Cardilla et al. 2025** *Nature* — first whole-genome **spatial DNA methylome + transcriptome** co-profiling at near single-cell resolution. [DOI](https://doi.org/10.1038/s41586-025-09484-z)
+- **Morriss et al. 2024** *bioRxiv* — spatial genomics for clonal heterogeneity in tissues. [DOI](https://doi.org/10.1101/2024.10.07.617096)
+
+### Counts
+
+- Summaries: 224 → 230 (+7 new − 1 bizzotto stub dedup)
+- Coverage: spatial methylation + spatial genomics now represented; histone-mark axis filled with Bartosovic 2021/2022 (foundational scCUT&Tag lineage); brain mosaicism axis completed with Bae 2017 + Lodato 2017 pair.
+- Remaining candidates for future ingest: Lareau 2020 (mtscATAC—was actually Ludwig 2020 already ingested), Forsberg 2016 (mosaicism review), spatial-cellular DNA-seq variants, ProSolo variant caller, DeepMosaic, ArchR-related, etc.
+
+---
+
 ## 2026-05-18 — Maintenance pass: source PDF→MD conversion, summary naming unification, 7 new ingests
 
 **Trigger**: User converted all 138 source PDFs to .md extracts with descriptive titles and removed duplicates (00-Sources/papers/ now contains 178 .md, no PDFs). Asked to (a) ingest truly new sources and (b) unify summary filenames.

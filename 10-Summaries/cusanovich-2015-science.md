@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Cusanovich 2015 — Multiplex single-cell profiling of chromatin accessibility by combinatorial cellular indexing"
+source: "[[00-Sources/papers/Multiplex single-cell profiling of chromatin accessibility by combinatorial cellular indexing]]"
 aliases: ["sci-ATAC-seq founding paper", "Cusanovich 2015"]
 tags: [scATAC-seq, combinatorial-indexing, accessibility, Shendure-lab]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Darren_2015_Science.pdf"]
+source: "[[00-Sources/papers/Multiplex single-cell profiling of chromatin accessibility by combinatorial cellular indexing]]"
 ---
 
 **Citation:** Cusanovich et al. (2015) — *Multiplex single-cell profiling of chromatin accessibility by combinatorial cellular indexing* — *Science*. [DOI](https://doi.org/10.1126/science.aab1601)

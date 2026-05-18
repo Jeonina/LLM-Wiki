@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Guo 2013 — Single-cell methylome landscapes by reduced representation bisulfite sequencing (scRRBS)"
+source: "[[00-Sources/papers/Single-cell methylome landscapes of mouse embryonic stem cells and early embryos analyzed using reduced representation bisulfite sequencing]]"
 aliases: [Guo 2013, scRRBS, Hongshan 2013]
 tags: [scbs-seq, scRRBS, dna-methylation, single-cell-methylome, foundational, embryo]
 created: 2026-05-12
 updated: 2026-05-12
-sources: ["00-Sources/papers/Hongshan_2013_GenomeResearch.pdf"]
+source: "[[00-Sources/papers/Single-cell methylome landscapes of mouse embryonic stem cells and early embryos analyzed using reduced representation bisulfite sequencing]]"
 ---
 
 **Citation:** Guo et al. (2013) — *Single-cell methylome landscapes by reduced representation bisulfite sequencing (scRRBS)* — *Genome Research*. [DOI](https://doi.org/10.1101/gr.161679.113)

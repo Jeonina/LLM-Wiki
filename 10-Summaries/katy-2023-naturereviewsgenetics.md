@@ -1,7 +1,7 @@
 ---
 type: summary
 title: "Vandereyken et al. 2023 — Methods and applications for single-cell and spatial multi-omics"
-source: "[[00-Sources/papers/Katy_2023_NatureReviewsGenetics]]"
+source: "[[00-Sources/papers/Methods and applications for single-cell and spatial multi-omics]]"
 source_kind: paper
 author: "Katy Vandereyken, Alejandro Sifrim, Bernard Thienpont, Thierry Voet"
 published: 2023-08

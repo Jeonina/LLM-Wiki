@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Yuan 2022 — scBasset: sequence-based deep CNN modeling of scATAC-seq"
+source: "[[00-Sources/papers/scBasset_ sequence-based modeling of single-cell ATAC-seq using convolutional neural networks]]"
 aliases: ["Yuan 2022 scBasset", "scBasset"]
 tags: [scBasset, scATAC-seq, deep-learning, CNN, sequence-based, TF-activity, Calico]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Han_2022_NatureMethods.pdf"]
+source: "[[00-Sources/papers/scBasset_ sequence-based modeling of single-cell ATAC-seq using convolutional neural networks]]"
 ---
 
 **Citation:** Yuan et al. (2022) — *scBasset: sequence-based deep CNN modeling of scATAC-seq* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-022-01562-8)

@@ -1,7 +1,7 @@
 ---
 type: summary
 title: "Geisenberger et al. 2025 — scEpi²-seq: simultaneous single-cell histone marks and 5mC"
-source: "[[00-Sources/papers/Single-cell multi-omic detection of DNA methylation and histone modifications reconstructs the dynamics of epigenomic maintenance]]"
+source: "[[00-Sources/papers/Simultaneous single-cell analysis of 5mC and 5hmC with SIMPLE-seq]]"
 source_kind: paper
 author: "Christoph Geisenberger, Jeroen van den Berg, Vincent van Batenburg, Buys de Barbanson, Anna Lyubimova, Joe Verity-Legg, Xiufei Chen, Yibin Liu, Chun-Xiao Song, Jeroen de Ridder, Alexander van Oudenaarden (corresponding)"
 published: 2025-09-25

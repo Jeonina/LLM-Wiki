@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Lee-Six 2018 — Population dynamics of normal human blood inferred from somatic mutations"
+source: "[[00-Sources/papers/Population dynamics of normal human blood inferred from somatic mutations]]"
 aliases: ["Lee-Six 2018", "HSC population dynamics"]
 tags: [lineage-tracing, somatic-mutations, hematopoiesis, HSC, phylogeny, Sanger]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Henry_2018_Nature.pdf"]
+source: "[[00-Sources/papers/Population dynamics of normal human blood inferred from somatic mutations]]"
 ---
 
 **Citation:** Lee-Six et al. (2018) — *Population dynamics of normal human blood inferred from somatic mutations* — *Nature*. [DOI](https://doi.org/10.1038/s41586-018-0497-0)

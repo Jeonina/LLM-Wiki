@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Argelaguet 2020 — MOFA+: statistical framework for comprehensive integration of multi-modal single-cell data"
+source: "[[00-Sources/papers/MOFA+_ a statistical framework for comprehensive integration of multi-modal single-cell data]]"
 aliases: ["Argelaguet 2020 MOFA+", "MOFA+", "Multi-Omics Factor Analysis v2"]
 tags: [MOFA+, factor-analysis, multimodal-integration, stochastic-variational-inference, Marioni-lab, Stegle-lab, EBI]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Ricard_2020_GenomeBiology.pdf"]
+source: "[[00-Sources/papers/MOFA+_ a statistical framework for comprehensive integration of multi-modal single-cell data]]"
 ---
 
 **Citation:** Argelaguet et al. (2020) — *MOFA+: statistical framework for comprehensive integration of multi-modal single-cell data* — *Genome Biology*. [DOI](https://doi.org/10.1186/s13059-020-02015-1)

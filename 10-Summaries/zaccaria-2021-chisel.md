@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Zaccaria 2021 — Characterizing allele- and haplotype-specific copy numbers in single cells with CHISEL"
+source: "[[00-Sources/papers/Characterizing allele- and haplotype-specific copy numbers in single cells with CHISEL]]"
 aliases: ["Zaccaria 2021", "CHISEL", "allele-specific CNV scDNA"]
 tags: [CHISEL, allele-specific-CNV, haplotype-phasing, scDNA-seq, breast-cancer, Raphael-lab, Princeton]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Simone_2020_NatureBiotechnology.pdf"]
+source: "[[00-Sources/papers/Characterizing allele- and haplotype-specific copy numbers in single cells with CHISEL]]"
 ---
 
 **Citation:** Zaccaria et al. (2021) — *Characterizing allele- and haplotype-specific copy numbers in single cells with CHISEL* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-020-0661-6)

@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Xiao 2024 — Benchmarking multi-omics integration algorithms across single-cell RNA and ATAC data"
+source: "[[00-Sources/papers/Benchmarking multi-omics integration algorithms across single-cell RNA and ATAC data]]"
 aliases: ["Xiao 2024 multiomics benchmark", "scRNA+scATAC integration benchmark"]
 tags: [benchmark, multi-omics-integration, scRNA-seq, scATAC-seq, MOFA, Cobolt, MultiVI, Seurat, GLUE, Wei-lab, Tsinghua]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Yan_2024_BriefingsInBioinformatics.pdf"]
+source: "[[00-Sources/papers/Benchmarking multi-omics integration algorithms across single-cell RNA and ATAC data]]"
 ---
 
 **Citation:** Xiao et al. (2024) — *Benchmarking multi-omics integration algorithms across single-cell RNA and ATAC data* — *Briefings in Bioinformatics*. [DOI](https://doi.org/10.1093/bib/bbae095)

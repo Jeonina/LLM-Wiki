@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Valecha 2022 — Somatic variant calling from single-cell DNA sequencing data"
+source: "[[00-Sources/papers/Somatic variant calling from single-cell DNA sequencing data]]"
 aliases: ["Valecha 2022", "Posada scDNA review", "scSNV caller review"]
 tags: [review, scDNA-SNV-calling, allelic-dropout, amplification-error, Posada-lab, CSBJ]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Monica_2022_ComputationalStructuralBiotechnologyJournal.pdf"]
+source: "[[00-Sources/papers/Somatic variant calling from single-cell DNA sequencing data]]"
 ---
 
 **Citation:** Valecha et al. (2022) — *Somatic variant calling from single-cell DNA sequencing data* — *ComputationalStructuralBiotechnologyJournal*. [DOI](https://doi.org/10.1016/j.csbj.2022.06.013)

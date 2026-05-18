@@ -1,7 +1,7 @@
 ---
 type: summary
 title: "Evrony, Hinch & Luo 2021 — Applications of single-cell DNA sequencing"
-source: "[[00-Sources/papers/Gilad_2021_AnnualReviewOfGenomicsAndHumanGenetics]]"
+source: "[[00-Sources/papers/Applications of Single-Cell DNA Sequencing]]"
 source_kind: paper
 author: "Gilad D. Evrony, Anjali Gupta Hinch, Chongyuan Luo"
 published: 2021

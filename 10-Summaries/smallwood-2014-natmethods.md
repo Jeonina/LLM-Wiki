@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Smallwood 2014 — Single-cell genome-wide bisulfite sequencing for assessing epigenetic heterogeneity (scBS-seq)"
+source: "[[00-Sources/papers/Single-cell genome-wide bisulfite sequencing for assessing epigenetic heterogeneity]]"
 aliases: ["scBS-seq founding paper", "Smallwood 2014"]
 tags: [scBS-seq, methylation, bisulfite, single-cell, methylome, Reik-lab, Kelsey-lab]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Sebastien_2014_NatureMethods.pdf"]
+source: "[[00-Sources/papers/Single-cell genome-wide bisulfite sequencing for assessing epigenetic heterogeneity]]"
 ---
 
 **Citation:** Smallwood et al. (2014) — *Single-cell genome-wide bisulfite sequencing for assessing epigenetic heterogeneity (scBS-seq)* — *Nature Methods*. [DOI](https://doi.org/10.1038/nmeth.3035)

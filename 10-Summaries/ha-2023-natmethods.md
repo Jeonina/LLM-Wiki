@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Ha 2023 — Comprehensive benchmarking and guidelines of mosaic variant calling strategies"
+source: "[[00-Sources/papers/Comprehensive benchmarking and guidelines of mosaic variant calling strategies]]"
 aliases: ["Ha 2023", "mosaic-caller benchmark", "Yoo-Jin Ha"]
 tags: [benchmark, mosaic-variant-calling, MosaicHunter, MosaicForecast, DeepMosaic, MuTect2, M2SMH, Kim-lab, Yonsei]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Yoojin_2023_NatureMethods.pdf"]
+source: "[[00-Sources/papers/Comprehensive benchmarking and guidelines of mosaic variant calling strategies]]"
 ---
 
 **Citation:** Ha et al. (2023) — *Comprehensive benchmarking and guidelines of mosaic variant calling strategies* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-023-02043-2)

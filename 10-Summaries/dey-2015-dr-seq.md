@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Dey 2015 — DR-seq: Integrated genome and transcriptome sequencing of the same cell"
+source: "[[00-Sources/papers/Integrated genome and transcriptome sequencing of the same cell]]"
 aliases: [Dey 2015, DR-seq, gDNA-mRNA sequencing]
 tags: [DR-seq, joint-assay, single-cell-multiomics, scDNA, scRNA-seq, quasilinear-amplification]
 created: 2026-05-12
 updated: 2026-05-12
-sources: ["00-Sources/papers/Integrated genome and transcriptome sequencing of the same cell.md"]
+source: "[[00-Sources/papers/Integrated genome and transcriptome sequencing of the same cell]]"
 ---
 
 **Citation:** Dey et al. (2015) — *DR-seq: Integrated genome and transcriptome sequencing of the same cell* — *?*. [DOI](https://doi.org/10.1038/nbt.3129)

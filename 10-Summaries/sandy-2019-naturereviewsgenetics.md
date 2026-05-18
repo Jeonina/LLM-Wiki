@@ -1,7 +1,7 @@
 ---
 type: summary
 title: "Klemm, Shipony & Greenleaf 2019 — Chromatin accessibility and the regulatory epigenome"
-source: "[[00-Sources/papers/Sandy_2019_NatureReviewsGenetics]]"
+source: "[[00-Sources/papers/Chromatin accessibility and the regulatory epigenome]]"
 source_kind: paper
 author: "Sandy L. Klemm, Zohar Shipony, William J. Greenleaf"
 published: 2019-04

@@ -1,11 +1,11 @@
 ---
 type: summary
 title: "Macaulay 2015 — G&T-seq: Parallel sequencing of single-cell genomes and transcriptomes"
+source: "[[00-Sources/papers/G&T-seq_ parallel sequencing of single-cell genomes and transcriptomes]]"
 aliases: [Macaulay 2015, G&T-seq, GT-seq joint-assay]
 tags: [G&T-seq, joint-assay, single-cell-multiomics, scDNA, scRNA-seq, foundational]
 created: 2026-05-12
 updated: 2026-05-12
-sources: ["00-Sources/papers/G&T-seq_ parallel sequencing of single-cell genomes and transcriptomes.md"]
 ---
 
 **Citation:** Macaulay et al. (2015) — *G&T-seq: Parallel sequencing of single-cell genomes and transcriptomes* — *?*. [DOI](https://doi.org/10.1038/nmeth.3370)

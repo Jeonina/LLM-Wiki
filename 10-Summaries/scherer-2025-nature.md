@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Scherer 2025 — Clonal tracing with somatic epimutations reveals dynamics of blood ageing (EPI-Clone)"
+source: "[[00-Sources/papers/Clonal tracing with somatic epimutations reveals dynamics of blood ageing]]"
 aliases: ["EPI-Clone", "scTAM-seq lineage", "Scherer 2025"]
 tags: [scTAM-seq, methylation, lineage-tracing, epimutation, hematopoiesis, clonal-hematopoiesis]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Michael_2025_Nature.pdf"]
+source: "[[00-Sources/papers/Clonal tracing with somatic epimutations reveals dynamics of blood ageing]]"
 ---
 
 **Citation:** Scherer et al. (2025) — *Clonal tracing with somatic epimutations reveals dynamics of blood ageing (EPI-Clone)* — *Nature*. [DOI](https://doi.org/10.1038/s41586-025-09041-8)

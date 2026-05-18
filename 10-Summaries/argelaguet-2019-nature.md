@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Argelaguet 2019 — Multi-omics profiling of mouse gastrulation at single cell resolution"
+source: "[[00-Sources/papers/Multi-omics profiling of mouse gastrulation at single-cell resolution]]"
 aliases: ["scNMT-seq gastrulation", "Argelaguet 2019"]
 tags: [scNMT-seq, joint-assay, methylation, accessibility, transcriptome, gastrulation, MOFA]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Ricard_2019_Nature.pdf"]
+source: "[[00-Sources/papers/Multi-omics profiling of mouse gastrulation at single-cell resolution]]"
 ---
 
 **Citation:** Argelaguet et al. (2019) — *Multi-omics profiling of mouse gastrulation at single cell resolution* — *Nature*. [DOI](https://doi.org/10.1038/s41586-019-1825-8)

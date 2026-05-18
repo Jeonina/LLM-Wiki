@@ -1,7 +1,7 @@
 ---
 type: summary
 title: "Kim & Costello 2017 — DNA methylation as an epigenetic mark of cellular memory"
-source: "[[00-Sources/papers/DNA methylation_ an epigenetic mark of cellular memory - Experimental & Molecular Medicine]]"
+source: "[[00-Sources/papers/DNA methylation_ an epigenetic mark of cellular memory]]"
 source_kind: paper
 author: "Mirang Kim, Joseph F. Costello (corresponding)"
 published: 2017-04-28

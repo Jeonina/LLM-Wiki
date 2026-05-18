@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Wang 2020 — SCOPE: normalization and copy-number estimation for scDNA-seq"
+source: "[[00-Sources/papers/SCOPE_ A Normalization and Copy-Number Estimation Method for Single-Cell DNA Sequencing]]"
 aliases: ["Wang Jiang 2020 SCOPE", "SCOPE"]
 tags: [SCOPE, scDNA-seq, CNV-calling, normalization, EM-algorithm, ploidy-estimation, Jiang-lab, UNC]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Rujin_2020_CellSystems.pdf"]
+source: "[[00-Sources/papers/SCOPE_ A Normalization and Copy-Number Estimation Method for Single-Cell DNA Sequencing]]"
 ---
 
 **Citation:** Wang et al. (2020) — *SCOPE: normalization and copy-number estimation for scDNA-seq* — *Cell Systems*. [DOI](https://doi.org/10.1016/j.cels.2020.03.005)

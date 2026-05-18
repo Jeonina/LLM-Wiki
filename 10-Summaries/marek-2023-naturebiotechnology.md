@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Bartosovic 2023 — Multimodal chromatin profiling using nanobody-based single-cell CUT&Tag (nano-CT)"
+source: "[[00-Sources/papers/Multimodal chromatin profiling using nanobody-based single-cell CUT&Tag]]"
 aliases: [Bartosovic 2023, nano-CT, Marek 2023, nanobody-CUT-and-Tag]
 tags: [scCUT&Tag, nano-CT, single-cell-chromatin, multimodal, multi-omics, brain, method]
 created: 2026-05-12
 updated: 2026-05-12
-sources: ["00-Sources/papers/Marek_2023_NatureBiotechnology.pdf"]
+source: "[[00-Sources/papers/Multimodal chromatin profiling using nanobody-based single-cell CUT&Tag]]"
 ---
 
 **Citation:** Bartosovic et al. (2023) — *Multimodal chromatin profiling using nanobody-based single-cell CUT&Tag (nano-CT)* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-022-01535-4)

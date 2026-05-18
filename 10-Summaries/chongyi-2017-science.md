@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Chen 2017 — Single-cell whole-genome analysis by Linear Amplification via Transposon Insertion (LIANTI)"
+source: "[[00-Sources/papers/Single-cell whole-genome analyses by Linear Amplification via Transposon Insertion (LIANTI)]]"
 aliases: [Chen 2017, LIANTI 2017, Chongyi 2017]
 tags: [scWGA, LIANTI, foundational, scDNA-seq, linear-amplification, micro-CNV]
 created: 2026-05-12
 updated: 2026-05-12
-sources: ["00-Sources/papers/Chongyi_2017_Science.pdf"]
+source: "[[00-Sources/papers/Single-cell whole-genome analyses by Linear Amplification via Transposon Insertion (LIANTI)]]"
 ---
 
 **Citation:** Chen et al. (2017) — *Single-cell whole-genome analysis by Linear Amplification via Transposon Insertion (LIANTI)* — *Science*. [DOI](https://doi.org/10.1126/science.aak9787)

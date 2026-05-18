@@ -1,7 +1,7 @@
 ---
 type: summary
 title: "Baysoy et al. 2023 — Technological landscape and applications of single-cell multi-omics"
-source: "[[00-Sources/papers/Alev_2023_NatureReviewsMolecularCellBiology]]"
+source: "[[00-Sources/papers/The technological landscape and applications of single-cell multi-omics]]"
 source_kind: paper
 author: "Alev Baysoy, Zhiliang Bai, Rahul Satija, Rong Fan"
 published: 2023-10

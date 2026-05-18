@@ -1,7 +1,7 @@
 ---
 type: summary
 title: "Heumos et al. 2023 — Best practices for single-cell analysis across modalities"
-source: "[[00-Sources/papers/Lukas_2023_NatureReviewsGenetics]]"
+source: "[[00-Sources/papers/Best practices for single-cell analysis across modalities]]"
 source_kind: paper
 author: "Lukas Heumos, Anna C. Schaar, Single-cell Best Practices Consortium, Fabian J. Theis"
 published: 2023-08

@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Zhang 2024 — A fast, scalable and versatile tool for analysis of single-cell omics data (SnapATAC2)"
+source: "[[00-Sources/papers/A fast, scalable and versatile tool for analysis of single-cell omics data]]"
 aliases: ["Zhang 2024", "SnapATAC2", "snapatac-2"]
 tags: [SnapATAC2, computational, dimensionality-reduction, scATAC, multimodal, Ren-lab, UCSD]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Kai_2024_NatureMethods.pdf"]
+source: "[[00-Sources/papers/A fast, scalable and versatile tool for analysis of single-cell omics data]]"
 ---
 
 **Citation:** Zhang et al. (2024) — *A fast, scalable and versatile tool for analysis of single-cell omics data (SnapATAC2)* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-023-02139-9)

@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "de Bourcy 2014 — A Quantitative Comparison of Single-Cell Whole Genome Amplification Methods"
+source: "[[00-Sources/papers/A Quantitative Comparison of Single-Cell Whole Genome Amplification Methods]]"
 aliases: ["de Bourcy 2014", "Quake WGA comparison"]
 tags: [scWGA, MDA, MALBAC, NEB-WGA, PicoPLEX, benchmark, Quake-lab, Stanford]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Charles_2014_PLOSOne.pdf"]
+source: "[[00-Sources/papers/A Quantitative Comparison of Single-Cell Whole Genome Amplification Methods]]"
 ---
 
 **Citation:** de Bourcy et al. (2014) — *A Quantitative Comparison of Single-Cell Whole Genome Amplification Methods* — *PLOS One*. [DOI](https://doi.org/10.1371/journal.pone.0105585)

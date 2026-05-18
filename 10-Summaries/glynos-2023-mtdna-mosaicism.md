@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Glynos 2023 — Progressive mitochondrial DNA mosaicism throughout life"
+source: "[[00-Sources/papers/High-throughput single-cell analysis reveals progressive mitochondrial DNA mosaicism throughout life]]"
 aliases: ["Glynos Chinnery 2023", "mtDNA single-cell heteroplasmy"]
 tags: [mtDNA-mosaicism, heteroplasmy, single-cell-genotyping, Kimura-distribution, random-genetic-drift, mtDNA-disease, Chinnery-lab]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["High-throughput single-cell analysis reveals progressive mitochondrial DNA mosaicism throughout life.md"]
+source: "[[00-Sources/papers/High-throughput single-cell analysis reveals progressive mitochondrial DNA mosaicism throughout life]]"
 ---
 
 **Citation:** Glynos et al. (2023) — *Progressive mitochondrial DNA mosaicism throughout life* — *?*.

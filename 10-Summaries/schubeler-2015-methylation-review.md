@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Schübeler 2015 — Function and information content of DNA methylation"
+source: "[[00-Sources/papers/Function and information content of DNA methylation]]"
 aliases: ["Schubeler 2015 review", "DNA methylation function review"]
 tags: [review, DNA-methylation, 5mC, CpG-islands, TF-binding, gene-regulation, Schubeler-lab]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Dirk_2015_Nature.pdf"]
+source: "[[00-Sources/papers/Function and information content of DNA methylation]]"
 ---
 
 **Citation:** Schübeler et al. (2015) — *Function and information content of DNA methylation* — *Nature*. [DOI](https://doi.org/10.1038/nature14192)

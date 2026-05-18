@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Liu 2025 — Nanopore SomaGauss-SV in laryngeal squamous cell carcinoma"
+source: "[[00-Sources/papers/Nanopore Sequencing Unveils Somatic Structural Variations as Biomarkers in Laryngeal squamous cell carcinoma Genomes]]"
 aliases: ["Liu 2025 SomaGauss-SV", "LSCC nanopore SV"]
 tags: [SomaGauss-SV, nanopore-sequencing, structural-variation, somatic-SV, LSCC, smoking, TP53BP2, FBXO28, bioRxiv-2025]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Nanopore Sequencing Unveils Somatic Structural Variations as Biomarkers in Laryngeal squamous cell carcinoma Genomes.md"]
+source: "[[00-Sources/papers/Nanopore Sequencing Unveils Somatic Structural Variations as Biomarkers in Laryngeal squamous cell carcinoma Genomes]]"
 ---
 
 **Citation:** Liu et al. (2025) — *Nanopore SomaGauss-SV in laryngeal squamous cell carcinoma* — *?*.

@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Nam 2022 — Single-cell multi-omics of human clonal hematopoiesis reveals that DNMT3A R882 mutations perturb early progenitor states through selective hypomethylation"
+source: "[[00-Sources/papers/Single-cell multi-omics of human clonal hematopoiesis reveals that DNMT3A R882 mutations perturb early progenitor states through selective hypomethylation]]"
 aliases: ["Nam 2022", "GoT-IronThrone DNMT3A", "clonal-hematopoiesis methylome"]
 tags: [GoT, DNMT3A, clonal-hematopoiesis, methylation, joint-assay, Landau-lab]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Anna_2022_NatureGenetics.pdf"]
+source: "[[00-Sources/papers/Single-cell multi-omics of human clonal hematopoiesis reveals that DNMT3A R882 mutations perturb early progenitor states through selective hypomethylation]]"
 ---
 
 **Citation:** Nam et al. (2022) — *Single-cell multi-omics of human clonal hematopoiesis reveals that DNMT3A R882 mutations perturb early progenitor states through selective hypomethylation* — *Nature Genetics*. [DOI](https://doi.org/10.1038/s41588-022-01179-9)

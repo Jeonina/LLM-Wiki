@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Forsberg 2017 — Mosaicism in health and disease: clones picking up speed"
+source: "[[00-Sources/papers/Mosaicism in health and disease — clones picking up speed]]"
 aliases: ["Forsberg Gisselsson Dumanski 2017", "post-zygotic variation review"]
 tags: [review, post-zygotic-variation, microchimerism, somatic-mosaicism, mLOY, mLOX, Uppsala, Lund]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Lars_2017_NatureReviewsGenetics.pdf"]
+source: "[[00-Sources/papers/Mosaicism in health and disease — clones picking up speed]]"
 ---
 
 **Citation:** Forsberg et al. (2017) — *Mosaicism in health and disease: clones picking up speed* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/nrg.2016.145)

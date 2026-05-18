@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Liu 2025 — Profiling the epigenome using long-read sequencing (review)"
+source: "[[00-Sources/papers/Profiling the epigenome using long-read sequencing]]"
 aliases: ["Liu Conesa 2025", "long-read epigenome review NatGenet"]
 tags: [review, long-read-sequencing, ONT, PacBio, DNA-methylation, single-molecule-footprinting, chromatin-state, Conesa-lab]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Profiling the epigenome using long-read sequencing.md"]
+source: "[[00-Sources/papers/Profiling the epigenome using long-read sequencing]]"
 ---
 
 **Citation:** Liu et al. (2025) — *Profiling the epigenome using long-read sequencing (review)* — *?*.

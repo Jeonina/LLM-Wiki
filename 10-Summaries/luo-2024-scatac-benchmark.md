@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Luo 2024 — Benchmarking computational methods for single-cell chromatin data analysis"
+source: "[[00-Sources/papers/Benchmarking computational methods for single-cell chromatin data analysis]]"
 aliases: ["Luo 2024", "scATAC benchmark", "von Meyenn benchmark"]
 tags: [benchmark, scATAC-seq, dimensionality-reduction, clustering, ArchR, Signac, SnapATAC2, vonMeyenn-lab, Robinson-lab, ETH-Zurich]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Siyuan_2024_GenomeBiology.pdf"]
+source: "[[00-Sources/papers/Benchmarking computational methods for single-cell chromatin data analysis]]"
 ---
 
 **Citation:** Luo et al. (2024) — *Benchmarking computational methods for single-cell chromatin data analysis* — *Genome Biology*. [DOI](https://doi.org/10.1186/s13059-024-03356-x)

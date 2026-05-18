@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Satas 2020 — SCARLET: Single-Cell Tumor Phylogeny Inference with Copy-Number Constrained Mutation Losses"
+source: "[[00-Sources/papers/SCARLET_ Single-Cell Tumor Phylogeny Inference with Copy-Number Constrained Mutation Losses]]"
 aliases: ["Satas 2020 SCARLET", "SCARLET", "loss-supported tumor phylogeny"]
 tags: [SCARLET, tumor-phylogeny, SNV-CNA-integration, mutation-loss, Raphael-lab, Princeton, colorectal-cancer]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Gryte_2020_CellSystems.pdf"]
+source: "[[00-Sources/papers/SCARLET_ Single-Cell Tumor Phylogeny Inference with Copy-Number Constrained Mutation Losses]]"
 ---
 
 **Citation:** Satas et al. (2020) — *SCARLET: Single-Cell Tumor Phylogeny Inference with Copy-Number Constrained Mutation Losses* — *Cell Systems*. [DOI](https://doi.org/10.1016/j.cels.2020.04.001)

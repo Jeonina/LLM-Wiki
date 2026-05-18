@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Gonzalez-Pena 2021 — Accurate genomic variant detection in single cells with primary template-directed amplification (PTA)"
+source: "[[00-Sources/papers/Accurate genomic variant detection in single cells with primary template-directed amplification]]"
 aliases: ["PTA", "Gonzalez-Pena 2021", "Primary template-directed amplification"]
 tags: [scWGA, PTA, single-cell, mutation-detection, Gawad-lab]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Veronica_2021_PNAS.pdf"]
+source: "[[00-Sources/papers/Accurate genomic variant detection in single cells with primary template-directed amplification]]"
 ---
 
 **Citation:** Gonzalez-Pena et al. (2021) — *Accurate genomic variant detection in single cells with primary template-directed amplification (PTA)* — *PNAS*. [DOI](https://doi.org/10.1073/pnas.2024176118)

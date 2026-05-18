@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Lodato 2018 — Aging and neurodegeneration are associated with increased mutations in single human neurons"
+source: "[[00-Sources/papers/Aging and neurodegeneration are associated with increased mutations in single human neurons]]"
 aliases: ["Lodato 2018", "LiRA paper", "genosenium"]
 tags: [scWGS, neurons, aging, neurodegeneration, mutation-signatures, LiRA]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Michael_2018_Science.pdf"]
+source: "[[00-Sources/papers/Aging and neurodegeneration are associated with increased mutations in single human neurons]]"
 ---
 
 **Citation:** Lodato et al. (2018) — *Aging and neurodegeneration are associated with increased mutations in single human neurons* — *Science*. [DOI](https://doi.org/10.1126/science.aao4426)

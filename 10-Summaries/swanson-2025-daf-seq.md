@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Swanson 2025 — DAF-seq: mapping single-cell diploid chromatin fiber architectures"
+source: "[[00-Sources/papers/Mapping single-cell diploid chromatin fiber architectures using DAF-seq]]"
 aliases: ["Swanson 2025 DAF-seq", "DAF-seq", "scDAF-seq"]
 tags: [DAF-seq, scDAF-seq, single-molecule-footprinting, deaminase, SsdddA, cytidine-deaminase, haplotype-resolved, Stergachis-lab]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Elliott_2025_NatureBiotechnology.pdf"]
+source: "[[00-Sources/papers/Mapping single-cell diploid chromatin fiber architectures using DAF-seq]]"
 ---
 
 **Citation:** Swanson et al. (2025) — *DAF-seq: mapping single-cell diploid chromatin fiber architectures* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-025-02914-3)

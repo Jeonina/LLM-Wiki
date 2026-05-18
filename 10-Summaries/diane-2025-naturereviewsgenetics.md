@@ -1,7 +1,7 @@
 ---
 type: summary
 title: "Shao et al. 2025 — Advances in single-cell DNA sequencing for somatic mosaicism"
-source: "[[00-Sources/papers/Diane_2025_NatureReviewsGenetics]]"
+source: "[[00-Sources/papers/Advances in single-cell DNA sequencing enable insights into human somatic mosaicism]]"
 source_kind: paper
 author: "Diane D. Shao, Andrea J. Kriz, Daniel A. Snellings, Zinan Zhou, Yifan Zhao, Liz Enyenihi, Christopher Walsh"
 published: 2025-11

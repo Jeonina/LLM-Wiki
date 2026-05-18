@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Tavares 2026 — 6-base-CUT&Tag: 5mC + 5hmC at co-occurring chromatin features"
+source: "[[00-Sources/papers/Sequencing DNA methylation and hydroxymethylation at co-occurring chromatin features]]"
 aliases: ["Tavares Balasubramanian 2026 6B-C&T", "6-base-CUT&Tag"]
 tags: [6-base-CUT&Tag, 5mC, 5hmC, histone-modification, H3K4me1, enhancer, Balasubramanian-lab, Cambridge]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Sequencing DNA methylation and hydroxymethylation at co-occurring chromatin features.md"]
+source: "[[00-Sources/papers/Sequencing DNA methylation and hydroxymethylation at co-occurring chromatin features]]"
 ---
 
 **Citation:** Tavares et al. (2026) — *6-base-CUT&Tag: 5mC + 5hmC at co-occurring chromatin features* — *?*.

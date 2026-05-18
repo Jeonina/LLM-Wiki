@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Shipony 2020 — Long-range single-molecule mapping of chromatin accessibility in eukaryotes (SMAC-seq)"
+source: "[[00-Sources/papers/Long-range single-molecule mapping of chromatin accessibility in eukaryotes]]"
 aliases: ["Shipony 2020", "SMAC-seq", "single-molecule chromatin accessibility"]
 tags: [SMAC-seq, single-molecule, m6A, nanopore, accessibility, long-read, Greenleaf-lab, Stanford]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Zohar_2020_NatureMethods.pdf"]
+source: "[[00-Sources/papers/Long-range single-molecule mapping of chromatin accessibility in eukaryotes]]"
 ---
 
 **Citation:** Shipony et al. (2020) — *Long-range single-molecule mapping of chromatin accessibility in eukaryotes (SMAC-seq)* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-019-0730-2)

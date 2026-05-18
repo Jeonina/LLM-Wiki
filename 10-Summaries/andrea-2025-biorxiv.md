@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Kriz 2025 — Cell-type-specific patterns and consequences of somatic mutation in development and aging brain (Duplex-Multiome)"
+source: "[[00-Sources/papers/Cell-type-specific patterns and consequences of somatic mutation in development and aging brain]]"
 aliases: [Kriz 2025, Duplex-Multiome, Andrea 2025, Walsh-Lee Duplex-Multiome]
 tags: [somatic-mosaicism, joint-assay, duplex-sequencing, snATAC-seq, snRNA-seq, brain, foundational, gap-closing]
 created: 2026-05-12
 updated: 2026-05-12
-sources: ["00-Sources/papers/Andrea_2025_bioRxiv.pdf"]
+source: "[[00-Sources/papers/Cell-type-specific patterns and consequences of somatic mutation in development and aging brain]]"
 ---
 
 **Citation:** Kriz et al. (2025) — *Cell-type-specific patterns and consequences of somatic mutation in development and aging brain (Duplex-Multiome)* — *bioRxiv (preprint)*. [DOI](https://doi.org/10.1101/2025.05.30.656844)

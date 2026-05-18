@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Baysoy 2023 — Technological landscape and applications of single-cell multi-omics"
+source: "[[00-Sources/papers/The technological landscape and applications of single-cell multi-omics]]"
 aliases: ["Baysoy 2023 review", "single-cell multi-omics review NRMCB"]
 tags: [review, single-cell-multiomics, technology-landscape, lineage-tracing, tumor-immunology, Fan-lab, Satija-lab, Yale, NYGC]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Alev_2023_NatureReviewsMolecularCellBiology.pdf"]
+source: "[[00-Sources/papers/The technological landscape and applications of single-cell multi-omics]]"
 ---
 
 **Citation:** Baysoy et al. (2023) — *Technological landscape and applications of single-cell multi-omics* — *Nature Reviews Molecular Cell Biology*. [DOI](https://doi.org/10.1038/s41580-023-00615-w)

@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Hou 2016 — scTrio-seq: Triple omics (CNV + methylome + transcriptome) in single hepatocellular carcinoma cells"
+source: "[[00-Sources/papers/Single-cell triple omics sequencing reveals genetic, epigenetic, and transcriptomic heterogeneity in hepatocellular carcinomas]]"
 aliases: [Hou 2016, scTrio-seq]
 tags: [scTrio-seq, joint-assay, triple-omics, single-cell-multiomics, scRRBS, CNV, hepatocellular-carcinoma, foundational]
 created: 2026-05-12
 updated: 2026-05-12
-sources: ["00-Sources/papers/Single-cell triple omics sequencing reveals genetic, epigenetic, and transcriptomic heterogeneity in hepatocellular carcinomas.md"]
+source: "[[00-Sources/papers/Single-cell triple omics sequencing reveals genetic, epigenetic, and transcriptomic heterogeneity in hepatocellular carcinomas]]"
 ---
 
 **Citation:** Hou et al. (2016) — *scTrio-seq: Triple omics (CNV + methylome + transcriptome) in single hepatocellular carcinoma cells* — *?*. [DOI](https://doi.org/10.1038/cr.2016.23)

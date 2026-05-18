@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Bartosovic 2021 — Single-cell CUT&Tag profiles histone modifications and transcription factors in complex tissues"
+source: "[[00-Sources/papers/Single-cell CUT&Tag profiles histone modifications and transcription factors in complex tissues]]"
 aliases: [Bartosovic 2021, scCUT&Tag, Marek 2021]
 tags: [scCUT&Tag, single-cell-chromatin, histone-modifications, brain, oligodendrocyte, method]
 created: 2026-05-12
 updated: 2026-05-12
-sources: ["00-Sources/papers/Marek_2021_NatureBiotechnology.pdf"]
+source: "[[00-Sources/papers/Single-cell CUT&Tag profiles histone modifications and transcription factors in complex tissues]]"
 ---
 
 **Citation:** Bartosovic et al. (2021) — *Single-cell CUT&Tag profiles histone modifications and transcription factors in complex tissues* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-021-00869-9)

@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Evrony 2021 — Applications of single-cell DNA sequencing"
+source: "[[00-Sources/papers/Applications of Single-Cell DNA Sequencing]]"
 aliases: ["Evrony Hinch Luo 2021 review", "scDNA-seq applications review ARGHG"]
 tags: [review, scDNA-seq, applications, fidelity, co-presence, phenotypic-association, Evrony-lab, Annual-Review]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Gilad_2021_AnnualReviewOfGenomicsAndHumanGenetics.pdf"]
+source: "[[00-Sources/papers/Applications of Single-Cell DNA Sequencing]]"
 ---
 
 **Citation:** Evrony et al. (2021) — *Applications of single-cell DNA sequencing* — *Annu Rev Genomics Hum Genet*. [DOI](https://doi.org/10.1146/annurev-genom-111320-090436)

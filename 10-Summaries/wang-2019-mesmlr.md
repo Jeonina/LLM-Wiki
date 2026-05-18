@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Wang 2019 — Single-molecule long-read sequencing reveals the chromatin basis of gene expression (MeSMLR-seq)"
+source: "[[00-Sources/papers/Single-molecule long-read sequencing reveals the chromatin basis of gene expression]]"
 aliases: ["Wang 2019 MeSMLR-seq", "MeSMLR-seq", "methyltransferase single-molecule long-read"]
 tags: [MeSMLR-seq, single-molecule, nanopore, M.CviPI, nucleosome-phasing, yeast, Au-lab, Ohio-State]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Yunhao_2019_GenomeResearch.pdf"]
+source: "[[00-Sources/papers/Single-molecule long-read sequencing reveals the chromatin basis of gene expression]]"
 ---
 
 **Citation:** Wang et al. (2019) — *Single-molecule long-read sequencing reveals the chromatin basis of gene expression (MeSMLR-seq)* — *Genome Research*. [DOI](https://doi.org/10.1101/gr.251116.119)

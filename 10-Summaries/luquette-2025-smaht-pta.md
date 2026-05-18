@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Luquette 2025 — Comprehensive view of somatic mosaicism by single-cell DNA analysis (SMaHT)"
+source: "[[00-Sources/papers/A comprehensive view of somatic mosaicism by single-cell DNA analysis]]"
 aliases: ["Luquette Coorens 2025 SMaHT", "PTA lung+colon scDNA"]
 tags: [scDNA-seq, PTA, somatic-mosaicism, lung, colon, ancestry, APOBEC, SMaHT, Walsh-lab, Park-lab, Abyzov-lab, bioRxiv-2025]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["A comprehensive view of somatic mosaicism by single-cell DNA analysis.md"]
+source: "[[00-Sources/papers/A comprehensive view of somatic mosaicism by single-cell DNA analysis]]"
 ---
 
 **Citation:** Luquette et al. (2025) — *Comprehensive view of somatic mosaicism by single-cell DNA analysis (SMaHT)* — *?*.

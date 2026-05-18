@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Zafar 2016 — Monovar: single-nucleotide variant detection in single cells"
+source: "[[00-Sources/papers/Monovar_ single-nucleotide variant detection in single cells]]"
 aliases: ["Monovar", "Zafar 2016"]
 tags: [computational, variant-calling, single-cell, Monovar, Navin-lab, Nakhleh-lab]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Hamim_2016_NatureMethods.pdf"]
+source: "[[00-Sources/papers/Monovar_ single-nucleotide variant detection in single cells]]"
 ---
 
 **Citation:** Zafar et al. (2016) — *Monovar: single-nucleotide variant detection in single cells* — *Nature Methods*. [DOI](https://doi.org/10.1038/nmeth.3835)

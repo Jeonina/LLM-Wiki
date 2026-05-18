@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Cortés-López 2023 — Single-cell multi-omics defines the cell-type-specific impact of splicing aberrations in human hematopoietic clonal outgrowths (GoT-Splice)"
+source: "[[00-Sources/papers/Single-cell multi-omics defines the cell-type-specific impact of splicing aberrations in human hematopoietic clonal outgrowths]]"
 aliases: ["GoT-Splice", "Cortés-López 2023"]
 tags: [joint-assay, GoT, long-read, RNA-splicing, MDS, clonal-hematopoiesis, CITE-seq]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Mariela_2023_CellStemCell.pdf"]
+source: "[[00-Sources/papers/Single-cell multi-omics defines the cell-type-specific impact of splicing aberrations in human hematopoietic clonal outgrowths]]"
 ---
 
 **Citation:** Cortes-Lopez et al. (2023) — *Single-cell multi-omics defines the cell-type-specific impact of splicing aberrations in human hematopoietic clonal outgrowths (GoT-Splice)* — *Cell Stem Cell*. [DOI](https://doi.org/10.1016/j.stem.2023.07.012)

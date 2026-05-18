@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Hainer 2019 — Profiling of pluripotency factors in single cells and early embryos (uliCUT&RUN)"
+source: "[[00-Sources/papers/Profiling of Pluripotency Factors in Single Cells and Early Embryos]]"
 aliases: [Hainer 2019, Sarah 2019, uliCUT&RUN, ultra-low-input CUT&RUN]
 tags: [chromatin, CUT&RUN, single-cell, transcription-factor, pluripotency, embryo, method]
 created: 2026-05-12
 updated: 2026-05-12
-sources: ["00-Sources/papers/Sarah_2019_Cell.pdf"]
+source: "[[00-Sources/papers/Profiling of Pluripotency Factors in Single Cells and Early Embryos]]"
 ---
 
 **Citation:** Hainer et al. (2019) — *Profiling of pluripotency factors in single cells and early embryos (uliCUT&RUN)* — *Cell*. [DOI](https://doi.org/10.1016/j.cell.2019.03.014)

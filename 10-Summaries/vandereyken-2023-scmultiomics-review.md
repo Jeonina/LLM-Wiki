@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Vandereyken 2023 — Methods and applications for single-cell and spatial multi-omics"
+source: "[[00-Sources/papers/Methods and applications for single-cell and spatial multi-omics]]"
 aliases: ["Vandereyken 2023 review", "Voet-lab multi-omics review"]
 tags: [review, single-cell-multiomics, spatial-multiomics, G&T-seq, scNMT-seq, sci-CAR, Voet-lab, KU-Leuven]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Katy_2023_NatureReviewsGenetics.pdf"]
+source: "[[00-Sources/papers/Methods and applications for single-cell and spatial multi-omics]]"
 ---
 
 **Citation:** Vandereyken et al. (2023) — *Methods and applications for single-cell and spatial multi-omics* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-023-00580-2)

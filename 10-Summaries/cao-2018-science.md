@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Cao 2018 — Joint profiling of chromatin accessibility and gene expression in thousands of single cells (sci-CAR)"
+source: "[[00-Sources/papers/Joint profiling of chromatin accessibility and gene expression in thousands of single cells]]"
 aliases: ["sci-CAR", "Cao 2018"]
 tags: [sci-CAR, joint-assay, scATAC-seq, scRNA-seq, combinatorial-indexing, Shendure-lab]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Junyue_2018_Science.pdf"]
+source: "[[00-Sources/papers/Joint profiling of chromatin accessibility and gene expression in thousands of single cells]]"
 ---
 
 **Citation:** Cao et al. (2018) — *Joint profiling of chromatin accessibility and gene expression in thousands of single cells (sci-CAR)* — *Science*. [DOI](https://doi.org/10.1126/science.aau0730)

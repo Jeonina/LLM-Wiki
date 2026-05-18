@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Smith 2013 — DNA methylation: roles in mammalian development"
+source: "[[00-Sources/papers/DNA methylation_ roles in mammalian development]]"
 aliases: ["Smith Meissner 2013", "DNA methylation development review NRG"]
 tags: [review, DNA-methylation, mammalian-development, DNMT, TET, CpG-islands, X-inactivation, Meissner-lab, NRG]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Zachary_2013_NatureReviewsGenetics.pdf"]
+source: "[[00-Sources/papers/DNA methylation_ roles in mammalian development]]"
 ---
 
 **Citation:** Smith et al. (2013) — *DNA methylation: roles in mammalian development* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/nrg3354)

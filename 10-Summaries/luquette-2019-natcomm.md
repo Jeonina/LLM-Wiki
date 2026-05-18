@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Luquette 2019 — SCAN-SNV: identification of somatic mutations in single cell DNA-seq using a spatial model of allelic imbalance"
+source: "[[00-Sources/papers/Identification of somatic mutations in single cell DNA-seq using a spatial model of allelic imbalance]]"
 aliases: ["SCAN-SNV", "Luquette 2019"]
 tags: [scDNA-seq, computational, variant-calling, allele-balance, MDA]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Lovelace_2019_NatureCommunications.pdf"]
+source: "[[00-Sources/papers/Identification of somatic mutations in single cell DNA-seq using a spatial model of allelic imbalance]]"
 ---
 
 **Citation:** Luquette et al. (2019) — *SCAN-SNV: identification of somatic mutations in single cell DNA-seq using a spatial model of allelic imbalance* — *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-019-11857-8)

@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Shao 2025 — Advances in single-cell DNA sequencing for human somatic mosaicism"
+source: "[[00-Sources/papers/Advances in single-cell DNA sequencing enable insights into human somatic mosaicism]]"
 aliases: ["Shao 2025 review", "Walsh-lab scDNA mosaicism review"]
 tags: [review, scDNA-seq, somatic-mosaicism, mutational-patterns, lineage-tracing, Walsh-lab, NRG, competitor-review]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Diane_2025_NatureReviewsGenetics.pdf"]
+source: "[[00-Sources/papers/Advances in single-cell DNA sequencing enable insights into human somatic mosaicism]]"
 ---
 
 **Citation:** Shao et al. (2025) — *Advances in single-cell DNA sequencing for human somatic mosaicism* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-025-00832-3)

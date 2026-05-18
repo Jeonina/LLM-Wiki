@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Kim 2018 — Chemoresistance evolution in triple-negative breast cancer delineated by single-cell sequencing"
+source: "[[00-Sources/papers/Chemoresistance Evolution in Triple-Negative Breast Cancer Delineated by Single-Cell Sequencing]]"
 aliases: ["Kim 2018 TNBC", "Navin chemoresistance"]
 tags: [TNBC, chemoresistance, scDNA-seq, scRNA-seq, clonal-evolution, Navin-lab]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Charissa_2018_Cell.pdf"]
+source: "[[00-Sources/papers/Chemoresistance Evolution in Triple-Negative Breast Cancer Delineated by Single-Cell Sequencing]]"
 ---
 
 **Citation:** Kim et al. (2018) — *Chemoresistance evolution in triple-negative breast cancer delineated by single-cell sequencing* — *Cell*. [DOI](https://doi.org/10.1016/j.cell.2018.03.041)

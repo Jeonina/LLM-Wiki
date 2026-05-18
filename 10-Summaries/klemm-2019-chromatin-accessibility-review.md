@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Klemm 2019 — Chromatin accessibility and the regulatory epigenome"
+source: "[[00-Sources/papers/Chromatin accessibility and the regulatory epigenome]]"
 aliases: ["Klemm Shipony Greenleaf 2019", "chromatin accessibility review NRG"]
 tags: [review, chromatin-accessibility, ATAC-seq, DNase-seq, TF-binding, regulatory-epigenome, Greenleaf-lab, NRG]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Sandy_2019_NatureReviewsGenetics.pdf"]
+source: "[[00-Sources/papers/Chromatin accessibility and the regulatory epigenome]]"
 ---
 
 **Citation:** Klemm et al. (2019) — *Chromatin accessibility and the regulatory epigenome* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-018-0089-8)

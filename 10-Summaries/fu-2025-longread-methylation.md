@@ -1,11 +1,12 @@
 ---
 type: summary
 title: "Fu 2025 — Computational analysis of DNA methylation from long-read sequencing"
+source: "[[00-Sources/papers/Computational analysis of DNA methylation from long-read sequencing]]"
 aliases: ["Fu 2025 review", "long-read methylation computational review"]
 tags: [review, DNA-methylation, long-read-sequencing, PacBio, ONT, computational-analysis, Sedlazeck-lab, Timp-lab]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Yilei_2025_NatureReviewsGenetics.pdf"]
+source: "[[00-Sources/papers/Computational analysis of DNA methylation from long-read sequencing]]"
 ---
 
 **Citation:** Fu et al. (2025) — *Computational analysis of DNA methylation from long-read sequencing* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-025-00822-5)

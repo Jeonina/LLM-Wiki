@@ -1,25 +1,65 @@
 ---
 type: summary
-title: "Ku 2019 — scChIC-seq: single-cell chromatin immunocleavage for histone modifications"
-aliases: ["Ku 2019 scChIC-seq", "scChIC-seq"]
-tags: [scChIC-seq, MNase, antibody-tethering, H3K4me3, H3K27me3, single-cell-histone, Zhao-lab, NHLBI]
-created: 2026-05-13
-updated: 2026-05-13
-sources: ["Single-cell chromatin immunocleavage sequencing (scChIC-seq) to profile histone modification.md"]
+title: "Ku et al. 2019 — scChIC-seq: antibody-MNase-fusion for single-cell histone marks"
+source: "[[00-Sources/papers/Single-cell chromatin immunocleavage sequencing (scChIC-seq) to profile histone modification]]"
+source_kind: paper
+author: "Wai Lim Ku, Kosuke Nakamura, Weiwu Gao, Kairong Cui, Gangqing Hu, Qingsong Tang, Bing Ni, Keji Zhao (corresponding)"
+published: 2019-03-28
+ingested: 2026-05-12
+doi: "10.1038/s41592-019-0361-7"
+journal: "Nature Methods"
+tags: [histone-modifications, single-cell, MNase, ChIC, H3K4me3, H3K27me3, white-blood-cells, Zhao-lab]
+entities:
+  - "[[20-Entities/keji-zhao]]"
+  - "[[20-Entities/wai-lim-ku]]"
+concepts:
+  - "[[30-Concepts/scchic-seq]]"
+  - "[[30-Concepts/chic-seq]]"
+  - "[[30-Concepts/cut-and-run]]"
+  - "[[30-Concepts/histone-modifications]]"
+  - "[[30-Concepts/mnase]]"
+topics:
+  - "[[40-Topics/histone-modifications]]"
+  - "[[40-Topics/chromatin-architecture]]"
 ---
 
-**Citation:** Ku et al. (2019) — *scChIC-seq: single-cell chromatin immunocleavage for histone modifications* — *?*.
+**Citation:** Ku et al. (2019) — *scChIC-seq: antibody-MNase-fusion for single-cell histone marks* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-019-0361-7)
 
-Ku, Nakamura, Gao, Cui et al. (Zhao lab; NHLBI) developed **scChIC-seq** — MNase tethered to histone-modification-specific antibodies (either via protein A or covalent conjugation) cleaves around modified nucleosomes; smaller fragments preferentially PCR-amplified. Profiled H3K4me3 and H3K27me3 in single human WBCs (~100,000 unique reads per cell). 50% of single-cell reads fall in known peak regions. Identified monocytes, B cells, T cells, NK cells from H3K4me3 patterns via SC3 clustering.
+# Ku et al. 2019 — scChIC-seq
 
-## Why this matters
+> Thesis: ChIP-seq is not single-cell-tractable because of cross-linking, sonication, and immunoprecipitation losses. Schmid et al.'s original ChIC method (chromatin immunocleavage) used antibody-tethered MNase to cut at target sites without ChIP. **scChIC-seq** adapts ChIC for single cells using a covalent antibody-MNase conjugate (or protein-A-MNase + antibody complex) plus selective PCR amplification of the small target fragments, profiling H3K4me3 and H3K27me3 in ~285 single human white blood cells per experiment and clustering them by chromatin state into the major immune lineages.
 
-A 2019 alternative to scChIP-seq (Rotem 2015) and to CUT&Tag-based methods (scCUT&Tag, sciCUT&Tag). MNase-based vs Tn5-based architecture. Anchors §3.4 (histone modification single-cell profiling — historical context).
+## Key claims
+
+- **Method**: covalent antibody-MNase (or pA-MNase) recruited to histone-mark sites, MNase cleaves locally. **Both target and non-target fragments are recovered and ligated to adaptors**, then size-selective PCR preferentially amplifies the smaller target fragments. Compared to CUT&RUN, scChIC supports formaldehyde-fixed cells and either covalent or pA-MNase strategies.
+- **Bulk validation**: H3K4me3 ChIC reads in 100–3,000 NIH 3T3 cells correlate with bulk ChIP-seq at r=0.9; 80–85% peak overlap. Enriched around TSSs as expected.
+- **Single-cell H3K4me3 on WBCs**: ~285 cells × ~100,000 unique reads/cell. 24,819 pooled peaks; 61% overlap with bulk H3K4me3. Per-cell sensitivity ~10% (top 10% of cells reach 18%) — i.e., ~5,000 peaks called per cell.
+- **Single-cell H3K27me3 on WBCs**: 106 cells × ~131,000 reads/cell. 21,465 pooled peaks; 50% overlap with bulk; 9.5% per-cell sensitivity.
+- **Clustering**: SC3 clustering on 242 informative H3K4me3 cells yields 7 clusters, 5 with significant marker peaks → identified as monocytes (15), B cells (12), T cells (41), NK cells (43). Genome-browser tracks at marker genes confirm cell-type-specific H3K4me3 patterns.
+- Variable and co-methylated H3K4me3 peaks correlate with gene expression covariance → cell-to-cell heterogeneity in H3K4me3 predicts heterogeneity in expression.
+
+## Methods / evidence
+
+NIH 3T3, mESC, naive CD4 T cells for bulk validation. Single-cell sorting + MNase digestion + Proteinase K + adaptor ligation + selective PCR amplification (small target fragments) + gel-based size selection. SC3 clustering for cell-type assignment. Bulk ChIP-seq from ENCODE WBC and prior literature as reference.
+
+## Surprising or load-bearing bits
+
+- The **selective-PCR amplification of small fragments** is the key insight: target sites have shorter ChIC fragments because cuts are concentrated; non-target sites give longer/random fragments. PCR conditions selectively amplify the short window, enriching signal-to-noise without the need for fragment isolation in solution (the CUT&RUN strategy).
+- One of the first methods to demonstrate that **histone-modification ChIP-style readout can be done at single-cell scale** — opens the door to scChIC-seq, sortChIC, scCUT&Tag, sciCUT&Tag, scChIX-seq, MulTI-Tag, etc.
+
+## Connections to other sources
+
+- Direct ancestor of [[10-Summaries/scchix-seq-infers-dynamic-relationships-between-histone-modifications-in-single-cells]] (scChIX-seq, also based on MNase/sortChIC) and [[10-Summaries/single-cell-multi-omic-detection-of-dna-methylation-and-histone-modifications-reconstructs-the-dynamics-of-epigenomic-maintenance]] (scEpi²-seq, also sortChIC-based).
+- Methodological alternative to CUT&RUN and the Tn5-based scCUT&Tag family ([[10-Summaries/scalable-single-cell-profiling-of-chromatin-modifications-with-scicut-tag]]).
+- WBC clustering by H3K4me3 alone parallels the µATAC-seq PBMC result ([[10-Summaries/high-throughput-chromatin-accessibility-profiling-at-single-cell-resolution]]): different epigenetic modalities recover the same immune-cell lineage structure.
+
+## Open questions
+
+- Throughput limit (~285 cells/run). Newer methods (sciCUT&Tag) push this to ~40,000 cells/chip.
+- Two histone marks per run, not multiplexed within a cell. scChIX-seq later solves this with computational deconvolution.
 
 ---
-**Source:** [Open paper](https://www.nature.com/articles/s41592-019-0361-7)
+**Source:** [DOI](https://doi.org/10.1038/s41592-019-0361-7)
 ## Related
 
-- [[10-Summaries/rotem-2015-drop-chip]]
-- [[10-Summaries/janssens-2023-scicut-tag]]
-- [[10-Summaries/yeung-2023-scchix-seq]]
+- [[40-Topics/histone-modifications]] · [[30-Concepts/scchic-seq]] · [[30-Concepts/chic-seq]] · [[20-Entities/keji-zhao]]

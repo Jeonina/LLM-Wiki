@@ -1,33 +1,63 @@
 ---
 type: summary
-title: "Hsieh 2026 — Single-cell multi-omic analysis of mitochondrial mutational mosaicism and dynamics"
-aliases: ["Hsieh 2026", "scmtMPM", "scwMSS", "POLG mtDNA mosaicism"]
-tags: [mtDNA, scmtATAC-seq, POLG, mitochondrial-mosaicism, heteroplasmy, Ludwig-lab, Lareau-lab, Charite-Berlin]
-created: 2026-05-13
-updated: 2026-05-13
-sources: ["Yuhsin_2026_NatureCommunications.pdf"]
+title: "Glynos et al. 2023 — single-cell mtDNA heteroplasmy: random drift drives life-long divergence"
+source: "[[00-Sources/papers/High-throughput single-cell analysis reveals progressive mitochondrial DNA mosaicism throughout life]]"
+source_kind: paper
+author: "Angelos Glynos, Lyuba V. Bozhilova, Michele Frison, Stephen Burr, James B. Stewart, Patrick F. Chinnery (corresponding)"
+published: 2023-10-26
+ingested: 2026-05-12
+doi: "10.1126/sciadv.adi4038"
+journal: "Science Advances"
+tags: [mitochondrial-DNA, heteroplasmy, single-cell, genetic-drift, aging, mtDNA-disease]
+entities:
+  - "[[20-Entities/patrick-chinnery]]"
+  - "[[20-Entities/james-stewart]]"
+concepts:
+  - "[[30-Concepts/mitochondrial-heteroplasmy]]"
+  - "[[30-Concepts/somatic-mosaicism]]"
+  - "[[30-Concepts/kimura-distribution]]"
+  - "[[30-Concepts/lineage-tracing]]"
+topics:
+  - "[[40-Topics/somatic-mosaicism]]"
+  - "[[40-Topics/scdna-seq]]"
 ---
 
-**Citation:** Hsieh et al. (2026) — *Single-cell multi-omic analysis of mitochondrial mutational mosaicism and dynamics* — *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-026-70399-y)
+**Citation:** Glynos et al. (2023) — *single-cell mtDNA heteroplasmy: random drift drives life-long divergence* — *Science Advances*. [DOI](https://doi.org/10.1126/sciadv.adi4038)
 
-Hsieh, Kautz, Nitsch, Giguelay, Liebold, Dimitrova, Castillo, Jungen, Zsurka, Trombly, Schuelke, Kunz, Lareau and Ludwig (Charité Berlin, BIH, MSKCC) introduced two single-cell mtDNA metrics derived from mitochondrial single-cell ATAC-seq (mtscATAC-seq, Lareau 2021): (i) **scmtMPM** — single-cell mtDNA mutations per million base pairs, capturing per-cell mutational load; (ii) **scwMSS** — heteroplasmy-weighted mitochondrial-local-constraint-aware score, capturing functional impact of mtDNA mosaicism.
+# Glynos et al. 2023 — single-cell mtDNA heteroplasmy: random drift drives life-long divergence
 
-Validation system: HEK293 cell lines carrying the **POLG D274A** mutation — a proofreading-deficient mitochondrial DNA polymerase γ that hypermutates mtDNA. Two POLG-D274A clones (KI36, KI2) show a ~15-fold increase in detected mtDNA variants (9656 and 11407 variants per cell vs ~620 in controls), with C→T-transition-dominated signature indicating replication error as the primary driver. Pathogenic and truncating mtDNA variants are present at sub-threshold heteroplasmy in POLG cells, consistent with active negative selection.
+> Thesis: Cell-to-cell variance in mitochondrial DNA heteroplasmy levels emerges prenatally and increases monotonically throughout life — even in non-dividing tissues — driven by random genetic drift acting through mtDNA turnover (relaxed replication), not vegetative segregation alone. Two pathogenic mt-tRNA mutations (m.5024C>T, m.5019A>G) segregate at different intrinsic rates, providing a clean explanation for clinical variability in mitochondrial disease.
 
-Applied to PBMCs from healthy donors and mitochondriopathy patients, the framework reveals constrained mutations in complex I and previously unrecognized cell-level heterogeneity of mtDNA mutational landscapes. Also identified MGME1-deficiency-linked downregulation in POLG cells via differentially-accessible-gene analysis (1198/3113 down-regulated DAGs in KI36/KI2) — connecting nuclear chromatin response to mtDNA stress via the cGAS-STING pathway.
+## Key claims
 
-## Why this matters
+- ~4,500 single cells genotyped via FACS + pyrosequencing from mouse models at E8.5, P0, P6, P100, and P365 across spleen (rapidly dividing) and brain (mostly post-mitotic).
+- Bulk-tissue heteroplasmy is stable across organs (low variance), but **single-cell variance is huge and grows with age**: e.g., 0.4% homoplasmic at P0 → 9.1% homoplasmic at P365 for m.5024C>T.
+- Single-cell heteroplasmy distributions **fit a two-parameter Kimura distribution** at every time point and tissue — i.e., the data are quantitatively consistent with random genetic drift, no selection required.
+- Surprisingly, spleen (dividing) and brain (postmitotic) have **the same heteroplasmy variance trajectory**. Models that include only vegetative segregation predict a >6-fold spleen/brain difference. The data instead implicate mtDNA turnover (replication-independent destruction-and-resynthesis) as the dominant force — and imply brain mtDNA turnover may be faster than previously thought.
+- Therapeutic counterintuition: **slowing mtDNA turnover** (rather than boosting copy number) may slow disease progression by slowing drift. The current strategy of boosting biogenesis could backfire if it accelerates turnover.
 
-A 2026 entrant in mtDNA-mosaicism methodology that pushes beyond MAESTER (Miller 2022, mtDNA-from-scRNA) by quantifying *load and constraint* per cell, not just variant identity. The POLG-D274A line is a useful "calibrator" model for mtDNA-mosaicism methods. Anchors §3.1 (mtDNA variant detection), §4 (computational metrics for mosaicism quantification), and §5 (mitochondrial disease + neurological applications). Direct connection to our review's framing: scwMSS treats mtDNA as a *locus-state* axis (heteroplasmy + constraint) rather than a binary lineage barcode.
+## Methods / evidence
+
+FACS sorting of single cells (CD19+/− splenocytes; ACSA-1+, PSD95+, prominin-1+ brain cells) → single-cell pyrosequencing-based heteroplasmy assay (~2.8% mean absolute deviation). Two pathogenic mt-Ta mutations in C57BL/6J backgrounds. Cross-tissue + cross-time-point design. Kimura-distribution fits and Wright/turnover-adjusted variance modeling.
+
+## Surprising or load-bearing bits
+
+- The dominant force is mtDNA turnover, not cell division. This **reframes the cause of progressive mtDNA disease**: not "more divisions → more error" but "more destruction-and-resynthesis cycles → more drift."
+- The drop in variance from P0 to P6 is anomalous and unexplained — possibly mitophagic clearance of embryonic mitochondria. Flagged as open question.
+
+## Connections to other sources
+
+- Single-cell mtDNA mosaicism is one strand of the broader mosaicism atlas synthesized in [[10-Summaries/bizzotto-2022-brain-mosaicism]] and [[10-Summaries/diane-2025-naturereviewsgenetics]].
+- The Kimura-drift framing connects to lineage-tracing approaches: drift-driven heteroplasmy is the basis for [[30-Concepts/mitochondrial-lineage-tracing]] and the mtscATAC-seq/EMBLEM methods that exploit mtDNA mutation accumulation for human lineage reconstruction.
+- Provides a counterpoint to selection-based explanations of clinical mtDNA disease heterogeneity.
+
+## Open questions
+
+- Why does heteroplasmy variance dip at P6? Mitophagic clearance of embryonic mitochondria is suggested but unproven.
+- Only two mt-tRNA mutations tested in one gene (mt-Ta). Generalization to protein-coding or mt-rRNA mutations is open.
 
 ---
-**Source:** [DOI](https://doi.org/10.1038/s41467-026-70399-y) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/41839886/)
-
----
-**Source:** [DOI](https://doi.org/10.1038/s41467-026-70399-y) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/41839886/)
-
+**Source:** [DOI](https://doi.org/10.1126/sciadv.adi4038)
 ## Related
 
-- [[10-Summaries/lareau-2021-natbiotech]]
-- [[10-Summaries/miller-2022-maester]]
-- [[30-Concepts/mtDNA-lineage-tracing]]
+- [[40-Topics/somatic-mosaicism]] · [[30-Concepts/mitochondrial-heteroplasmy]] · [[30-Concepts/kimura-distribution]]

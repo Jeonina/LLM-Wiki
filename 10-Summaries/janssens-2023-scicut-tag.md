@@ -1,26 +1,67 @@
 ---
 type: summary
-title: "Janssens 2023 — sciCUT&Tag: scalable single-cell chromatin modification profiling"
-aliases: ["Janssens 2023 sciCUT&Tag", "sciCUT&Tag", "MulTI-Tag"]
-tags: [sciCUT&Tag, CUT&Tag, scChIP, combinatorial-indexing, H3K27me3, H3K4me-family, Henikoff-lab, Furlan-lab]
-created: 2026-05-13
-updated: 2026-05-13
-sources: ["Scalable single-cell profiling of chromatin modifications with sciCUT&Tag.md"]
+title: "Janssens et al. 2023 — sciCUT&Tag: combinatorial indexing for 40,000 cells/chip"
+source: "[[00-Sources/papers/Scalable single-cell profiling of chromatin modifications with sciCUT&Tag]]"
+source_kind: paper
+author: "Derek H. Janssens, Jacob E. Greene, Steven J. Wu, Christine A. Codomo, Samuel S. Minot, Scott N. Furlan, Kami Ahmad, Steven Henikoff (corresponding)"
+published: 2023-11-07
+ingested: 2026-05-12
+doi: "10.1038/s41596-023-00905-9"
+journal: "Nature Protocols"
+tags: [CUT&Tag, single-cell, combinatorial-indexing, Tn5, ICELL8, Henikoff-lab, PBMC, MulTI-Tag]
+entities:
+  - "[[20-Entities/steven-henikoff]]"
+  - "[[20-Entities/derek-janssens]]"
+  - "[[20-Entities/kami-ahmad]]"
+concepts:
+  - "[[30-Concepts/scicut-tag]]"
+  - "[[30-Concepts/cut-and-tag]]"
+  - "[[30-Concepts/combinatorial-indexing]]"
+  - "[[30-Concepts/multi-tag]]"
+  - "[[30-Concepts/histone-modifications]]"
+topics:
+  - "[[40-Topics/histone-modifications]]"
+  - "[[40-Topics/single-cell-multiomics]]"
 ---
 
-**Citation:** Janssens et al. (2023) — *sciCUT&Tag: scalable single-cell chromatin modification profiling* — *?*.
+**Citation:** Janssens et al. (2023) — *sciCUT&Tag: combinatorial indexing for 40,000 cells/chip* — *Nature Protocols*. [DOI](https://doi.org/10.1038/s41596-023-00905-9)
 
-Janssens, Greene, Wu, Codomo et al. (Henikoff lab; FHCC) developed **sciCUT&Tag**, a combinatorial-indexing CUT&Tag protocol on the Takara ICELL8 nanowell system. Profiles H3K27me3 (repression) and H3K4me1/me2/me3 (activation) in PBMCs. Two-round indexing: first via antibody-directed pA-Tn5 tagmentation in 96-well plate (with barcoded transposomes), second via barcoded PCR primers in 5,184 nanowells. Supports MulTI-Tag — simultaneous profiling of multiple chromatin epitopes per cell. SNP-based collision removal across donors.
+# Janssens et al. 2023 — sciCUT&Tag
 
-## Why this matters
+> Thesis: scCUT&Tag droplet-based platforms are expensive per cell and limited in chemistry control. **sciCUT&Tag** uses **two-round combinatorial indexing** (96-well plate first round of pA-Tn5 indexed tagmentation + 5,184-well ICELL8 second round of PCR indexing) to scale to ~40,000 cells per chip at ~$0.11/cell — a ~8× cost reduction vs droplets — while maintaining higher per-cell read counts (~2,100 reads/cell for H3K27me3 vs 1,110 for original scCUT&Tag).
 
-The scalable CUT&Tag platform. Anchors §3.2/§3.4 (histone modification profiling). Complements scChIC-seq (Ku 2019) and scChIX-seq (Yeung 2023). Critical for histone-mark arm of multi-omics atlases.
+## Key claims
+
+- **Workflow**: lightly cross-link nuclei → bind to WGA-magnetic beads → bulk primary+secondary antibody → array in 96-well plate → barcoded pA-Tn5 tagmentation per well → pool → ICELL8 dispense at 12–24 cells/nanowell → SDS release → PCR with second-round barcode → SPRI cleanup → sequence. ~1.5 days end-to-end by a research technician.
+- **Per-cell yield**: median 2,116 reads/cell for H3K27me3 in human PBMCs (vs ~1,110 for original scCUT&Tag, comparable to linear-amplification methods that bolster reads/cell).
+- **Throughput**: ~40,000 cells/chip with 12–24 cells/nanowell loading; **collision rate 16–17%** at this density (acceptable when SNP-based collision removal is used).
+- **SNP-based collision removal**: dispense two donors' cells together; reads carrying inconsistent SNPs across the same barcode flag collisions. Built-in quality control.
+- **PBMC application**: H3K27me3 and H3K4me1-2-3 in PBMCs from two healthy donors. Single-cell profiles of either mark are sufficient for high-resolution clustering and de novo cell-type identification (T cells, B cells, monocytes, NK cells).
+- **MulTI-Tag extension**: sciCUT&Tag is the underlying single-cell partitioning for **MulTI-Tag** (multi-target identification by tagmentation) — multiplexes several chromatin epitopes within the same cell via different antibody-barcoded Tn5 complexes.
+
+## Methods / evidence
+
+ICELL8 nanowell platform (Takara). Standardized protocol with optimization for nuclei loading (12–24 cells/well) to balance throughput vs collision rate. Demonstrated on mixed-donor human PBMCs and previously on human ES → endoderm/mesoderm/neuroectoderm differentiation (MulTI-Tag).
+
+## Surprising or load-bearing bits
+
+- The **collision-removal-by-SNPs** approach turns the multi-donor mix from a complication into a quality-control feature. Genotype information is essentially free additional metadata that filters out doublets.
+- The combinatorial-indexing × ICELL8 approach achieves what droplet platforms cannot: simultaneous high throughput and tight per-cell chemistry control (each nanowell is a discrete tagmentation reaction).
+- Order-of-magnitude cost-per-cell reduction matters for atlas-scale projects ($4,400 to profile 40,000 cells via sciCUT&Tag vs $34,000 via droplet).
+
+## Connections to other sources
+
+- Henikoff-lab method derivative chain: ChIC (Schmid 2004) → CUT&RUN (Skene & Henikoff 2017) → CUT&Tag (Kaya-Okur 2019) → scCUT&Tag (Wu 2021) → sciCUT&Tag (this paper) → MulTI-Tag (Janssens 2022).
+- Competes with [[10-Summaries/scchix-seq-infers-dynamic-relationships-between-histone-modifications-in-single-cells]] (scChIX-seq, MNase-based, deconvolution-style multiplexing) and the Zhao-lab scChIC-seq family in [[10-Summaries/single-cell-chromatin-immunocleavage-sequencing-scchic-seq-to-profile-histone-modification]].
+- Same ICELL8 platform as [[10-Summaries/high-throughput-chromatin-accessibility-profiling-at-single-cell-resolution]] (µATAC-seq, Greenleaf 2018) — the nanowell device has become a shared substrate for single-cell chromatin methods.
+
+## Open questions
+
+- Tn5 cuts within nucleosomes can degrade chromatin organization information; MNase-based methods like sortChIC preserve nucleosome positioning better.
+- Atlas-scale multi-mark cataloging (e.g., 50 marks × tissue × donor) remains expensive even at $0.11/cell.
 
 ---
-**Source:** [Open paper](https://www.nature.com/articles/s41596-023-00905-9)
+**Source:** [DOI](https://doi.org/10.1038/s41596-023-00905-9)
 ## Related
 
-- [[10-Summaries/ku-2019-scchic-seq]]
-- [[10-Summaries/yeung-2023-scchix-seq]]
-- [[10-Summaries/rotem-2015-drop-chip]]
-- [[10-Summaries/cusanovich-2015-sciatac]]
+- [[40-Topics/histone-modifications]] · [[30-Concepts/scicut-tag]] · [[30-Concepts/cut-and-tag]] · [[30-Concepts/multi-tag]] · [[20-Entities/steven-henikoff]]

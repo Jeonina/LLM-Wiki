@@ -4,6 +4,47 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-05-18 — Maintenance pass: source PDF→MD conversion, summary naming unification, 7 new ingests
+
+**Trigger**: User converted all 138 source PDFs to .md extracts with descriptive titles and removed duplicates (00-Sources/papers/ now contains 178 .md, no PDFs). Asked to (a) ingest truly new sources and (b) unify summary filenames.
+
+### Phase A — Summary naming unification
+
+- Audited 241 summaries: 203 already in `lastname-year-key.md` convention, 38 in descriptive-title format.
+- **Deleted 24 stub summaries** that were thin duplicates of richer descriptive-title summaries (decision based on file size: descriptive files were 3-4× richer with proper Citation blocks).
+- **Renamed 37 descriptive-title summaries** to `lastname-year-key.md` convention:
+  - 13 unique renames (e.g., `clark-2018-scnmt-seq`, `liu-2025-nanopore-lscc-svs`, `hou-2016-sctrio-seq`, `kim-2017-methylation-memory-review`).
+  - 24 dedup-renames (kept richer content, deleted stubs).
+- Only `example-llm-wiki.md` remains in non-conventional form (deliberate — it's the Karpathy seed reference).
+
+### Phase B — New ingests (7 abstract+intro based)
+
+All marked `ingest_depth: abstract+intro` in frontmatter for future deep-ingest with full PDF text.
+
+- **Lodato et al. 2017** *Science* — somatic mutations accumulate in aging postmitotic neurons; XP/Cockayne DNA-repair-defect patients show accelerated rate. [DOI](https://doi.org/10.1126/science.aao4426)
+- **Macaulay et al. 2016** *Nature Protocols* — G&T-seq detailed bench protocol (companion to 2015 *Nat Methods* paper). [DOI](https://doi.org/10.1038/nprot.2016.138)
+- **Ludwig et al. 2020** *Nature Biotechnology* — mtscATAC-seq: mtDNA heteroplasmy + chromatin accessibility per cell; mtDNA as natural lineage barcode. [DOI](https://doi.org/10.1038/s41587-020-0645-6)
+- **Chen et al. 2017** *Science* — LIANTI: Tn5+T7 linear-amplification scWGA; foundational scWGA chemistry. [DOI](https://doi.org/10.1126/science.aak9787)
+- **Abascal et al. 2021** *Nature* — NanoSeq: <5×10⁻⁹/base error rate via restriction-enzyme duplex; somatic mutations in non-dividing tissues. [DOI](https://doi.org/10.1038/s41586-021-03477-4)
+- **Granja et al. 2021** *Nature Genetics* — ArchR: end-to-end scATAC-seq R package; 1.2M cells in 8h. [DOI](https://doi.org/10.1038/s41588-021-00790-6)
+- **O'Roak et al. 2012** *Science* — Multiplex MIP targeted resequencing of 44 autism candidate genes; ~1% of sporadic ASD. [DOI](https://doi.org/10.1126/science.1227764)
+
+### Phase C — Skipped / deferred
+
+Off-topic sources skipped (Collateral sensitivity E. coli, FoldPAthreader protein folding). True wiki gaps remain ~10-15 sources to ingest later (e.g., Bartosovic 2021/2022 nano-CUT&Tag, Lareau 2020 mtscATAC, Bae 2017 pregastrulation mutations, Forsberg 2016 mosaicism review, spatial-cellular DNA-seq variants). All have abstract metadata in `00-Sources/papers/` ready for next pass.
+
+### Stale `source:` paths (flagged)
+
+Most pre-existing summaries reference old `[[00-Sources/papers/Author_Year_Journal]]` paths that no longer resolve since the user renamed sources to descriptive titles. Bulk source-path remap is a separate maintenance task — flagged for future pass. The new 7 summaries point to current paths.
+
+### Counts
+
+- Summaries: 241 → 224 (+7 new − 24 stub deletions)
+- Sources: 178 .md (no PDFs)
+- Coverage gap: ~10-15 truly-uncovered sources (next-pass candidates)
+
+---
+
 ## 2026-05-15 — Ingest: scDamID lineage (Rooijers 2019 + de Luca & Kind 2021 + Mali 2025)
 
 **Trigger**: User proposed a three-part **DNA locus state** framework (genetic / epigenetic / structural-physical) and asked whether the wiki covered it. Audit showed strong coverage of genetic + epigenetic axes and the 3D / chromatin-interaction sub-axis, but a clear gap on **spatial positioning (nuclear lamina)** and **biophysical state**. User chose to plug the lamina/DamID gap first.

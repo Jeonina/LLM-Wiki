@@ -4,6 +4,71 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-05-19 (part 4) — Single-cell duplex synthesis written
+
+**Trigger**: After resolving wiki broken-link backlog, the next concrete value-add was a synthesis note. The wiki's own `synthesis-targets.md` listed "Single-cell duplex sequencing" as "the major open methodological frontier"; the 2025 inflection (Duplex-Multiome + Luquette PTA-duplex pairing) made this synthesis newly tractable.
+
+### Note created
+
+- **[[50-Notes/single-cell-duplex-sequencing]]** — explains the 13-year duplex/scWGA incompatibility (strand identity vs amplification), the four duplex implementation strategies, PTA as the substrate for the SMaHT mosaicism workflow, and how 2025 closed the gap from two directions: PTA + bulk-duplex validation ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]) and same-molecule Duplex-Multiome ([[10-Summaries/andrea-2025-biorxiv]]).
+- 67 wikilinks, 0 broken.
+- Uses inline-citation density per the CLAUDE.md convention.
+
+### Meta-note updates
+
+- `synthesis-targets.md`: "Single-cell duplex sequencing" struck out — promoted to full synthesis.
+- `open-questions.md`: "Single-cell + duplex" entry resolved, downgraded to sub-questions (Duplex-Multiome generalization, methylation-layer absence, cross-method single-cell duplex benchmark).
+- `index.md`: new note linked under Synthesis & open threads.
+
+### Open question surfaced
+
+- The methylation layer is still missing from single-cell duplex. Duplex-Multiome reads accessibility + RNA + mutations. Closing this would give all four [[50-Notes/regulatory-layers-overview|regulatory layers]] — a concrete next-method opportunity.
+
+---
+
+## 2026-05-19 (part 3) — Citation upgrade + broken-link cleanup + stub pages
+
+**Trigger**: User asked to upgrade wiki pages with inline citation per claim, then to incorporate the result into a clean wiki state.
+
+### Citation pilot + convention (commit 9fd8f39)
+
+- 3 high-traffic concept pages upgraded with inline `[[wiki-link]]` per claim: `dna-methylation`, `lamina-associated-domains`, `chromatin-accessibility`. 130 wikilinks, 0 broken.
+- CLAUDE.md updated: concepts/topics/notes now require sentence-level citation granularity (bullets cited individually, table cells cited per row, bare claims marked `(synthesis)` when no source).
+
+### Quartz fix (commit 5b2ec90)
+
+- 155 summaries had duplicated `source:` YAML keys from an earlier remap. Scripted dedup; Quartz builds again.
+
+### Citation batch 2 (commit 71d23b4)
+
+- 11 more pages upgraded by hand: concepts (somatic-mosaicism, histone-modifications, atac-seq, duplex-sequencing, 3d-genome) and topics (3d-genome, dna-methylation, histone-modifications, long-read-sequencing, duplex-sequencing, somatic-mosaicism). All verified clean.
+- Bulk slug remap (24 entries) across 102 files to repair long-form summary slugs from the May 18 source-path remap.
+
+### Broken-link cleanup (commit 5c979dc)
+
+- 28-entry remap (auto-matched via title/alias Jaccard + manual overrides). Wiki-wide broken-link count: 882 → 248. Remaining 248 were genuine content gaps.
+
+### Stub pages (commit 3f3c826)
+
+- 22 stubs created for the most-frequently-referenced missing entities/concepts/topics:
+  - Entities: Nicholas Navin, Joseph Ecker, Jay Shendure, Wolf Reik, Evan Macosko, Steven McCarroll, Aviv Regev, David Bennett, Alicia Schep
+  - Concepts: joint-single-cell-multi-omics, multimodal-integration-methods, scwga-chemistries, methylation-clones-epimutation, genosenium, lineage-tracing-somatic-mutations, single-cell-variant-calling, strand-seq
+  - Topics: mosaic-variant-calling, scdna-cancer-applications, clonal-hematopoiesis, brain-somatic-mosaicism, cancer-clonal-evolution
+- Broken-link count: 248 → 157.
+
+---
+
+## 2026-05-19 (part 2) — Graphify rerun
+
+**Trigger**: User asked to rerun graphify after May 19 ingests.
+
+- Full incremental update: 690 doc/paper files, 32 chunks dispatched in parallel.
+- Final graph: 1805 nodes, 3461 edges, 142 communities. 60 communities hand-labeled.
+- New hyperedges: `hyper_locus_state_layers` (regulatory-layers note registers as a four-layer hub), `he_llps_chromatin_cancer` (biophysics cluster), brain-mosaicism cluster.
+- Top god nodes: somatic mosaicism (65 edges), DNA methylation (54), scATAC-seq (46), single-cell multi-omics (41).
+
+---
+
 ## 2026-05-19 — Regulatory-layers note + ingest 2 new clippings
 
 **Trigger**: User asked whether regulatory interpretation has 4 layers (accessibility, methylation, histone marks, 3D genome). Confirmed; wrote synthesis note. Then user asked to ingest new clippings.

@@ -4,7 +4,7 @@ title: Open Questions
 description: Tensions and gaps surfaced during ingest or lint. Resolve, then move out.
 tags: [meta, open-questions]
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-19
 ---
 
 # Open Questions
@@ -13,9 +13,10 @@ Tensions and gaps surfaced during ingest or lint. When a question is resolved, r
 
 ## Duplex sequencing
 
-- **Single-cell + duplex** — duplex needs both strands; scWGA loses strand identity. Holy grail of mosaicism detection.
+- ~~**Single-cell + duplex**~~ — Resolved 2025: closed from two directions ([[50-Notes/single-cell-duplex-sequencing]]). Remaining sub-questions: Duplex-Multiome generalization beyond brain ([[10-Summaries/andrea-2025-biorxiv]]); cross-method single-cell duplex benchmark needed.
 - Mutation-rate concordance across duplex platforms (SMaHT benchmark) — does it hold for brain, aging muscle, FFPE samples?
 - UDSeq vs the SMaHT-benchmarked methods — no cross-comparison yet.
+- **Methylation layer absent from single-cell duplex** — Duplex-Multiome reads accessibility + RNA + mutations but not methylation. Closing this would give all four regulatory layers ([[50-Notes/regulatory-layers-overview]]).
 
 ## scDNA-seq methods
 

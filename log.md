@@ -4,6 +4,39 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-05-19 — Regulatory-layers note + ingest 2 new clippings
+
+**Trigger**: User asked whether regulatory interpretation has 4 layers (accessibility, methylation, histone marks, 3D genome). Confirmed; wrote synthesis note. Then user asked to ingest new clippings.
+
+### Synthesis note created
+
+- **[[50-Notes/regulatory-layers-overview]]** — entry point mapping the four molecular layers (accessibility / methylation / histone marks / 3D genome) plus a fifth structural-physical axis (lamina / phase separation / mechanics) to their concept pages and single-cell assays. Cross-layer dependency table; temporal/heritability table; methods-by-layer table. Synthesis flags relationships (synthesis tag) where not directly sourced.
+
+### Ingested 2 new clippings (May 19 source files)
+
+- **[[10-Summaries/van-steensel-2017-lads-review]]** — van Steensel & Belmont 2017 *Cell*. Canonical LAD review. Articulates cLAD/fLAD distinction, multivalent/redundant anchoring (multiple H3K9 methyltransferases, multiple NL proteins), three-compartment competition (NL/nucleoli/pericentromeric), and the tug-of-war model of LAD borders. **Key claim**: NL contact alone is probably *not* sufficient for repression — the heterochromatin compartment is what silences.
+- **[[10-Summaries/wang-2023-multimodal-review]]** — Wang/Wu/Hong/Jin 2023 *Biophysical Reviews*. Methods catalog + integration-tool taxonomy. Notable for the "3-modality ceiling" prediction (already being broken by DOGMA-seq, Duplex-Multiome) and for the information-extraction angle (mono-omics data contains hidden additional modalities).
+
+### Pending sources skipped (already ingested under different slugs)
+
+Found 4 May 18 PDFs that the slug-based pending-sources.sh flagged but which were already ingested under author-year slugs: gibson-2019-chromatin-llps, ahn-2021-llps-cancer-looping, daugird-2024-viscoelastic-chromatin, qi-zhang-2021-nucleoli-coalescence. Maintenance note: tools/pending-sources.sh is stale relative to the May 18 remap; needs updating to handle author-year slugs (deferred).
+
+### Graph touches (8 pages updated/created)
+
+- Created entity pages: [[20-Entities/bas-van-steensel]], [[20-Entities/andrew-s-belmont]], [[20-Entities/wenfei-jin]]
+- Updated [[30-Concepts/lamina-associated-domains]] — added van Steensel 2017 as canonical source; added Open questions section (cLAD/fLAD continuous-vs-categorical, three-compartment competition, laminopathy mechanisms)
+- Updated [[40-Topics/chromatin-architecture]] — added van Steensel 2017 to Nuclear lamina lineage
+- Updated [[40-Topics/single-cell-multiomics]] — added Wang 2023 to Reviews
+- Updated [[index.md]] — added LADs review to Lamina lineage; added Reviews line to Multi-Omics Joint Assays; added regulatory-layers note to Synthesis section
+
+### Open questions surfaced
+
+- cLAD/fLAD: categorical or just tails of one distribution? Single-cell DamID suggests continuous.
+- Three-compartment competition (NL/nucleoli/pericentromeric): if any heterochromatin compartment is sufficient for silencing, mosaic mutations that *shift* between compartments wouldn't change regulation — but mutations that disrupt anchoring entirely would. Empirically untested.
+- For mosaicism interpretation: which regulatory layer is most informative if you can only measure one? Accessibility (Duplex-Multiome's bet) or methylation (stable cellular memory)?
+
+---
+
 ## 2026-05-18 (part 3) — Deep re-ingest 4 biophysics papers (PDFs arrived)
 
 **Trigger**: User dropped the 4 missing biophysics PDFs (converted to .md) — Gibson 2019, Ahn 2021, Daugird 2024, Qi & Zhang 2021. These were previously abstract-only ingests.

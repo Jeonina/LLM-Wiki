@@ -100,6 +100,7 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 - [[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]] — Baysoy/Fan/Satija technological landscape.
 - [[10-Summaries/katy-2023-naturereviewsgenetics]] — Vandereyken/Voet methods and applications, including spatial.
 - [[10-Summaries/lukas-2023-naturereviewsgenetics]] — Heumos/Theis best-practices analysis recommendations.
+- [[10-Summaries/wang-2023-multimodal-review]] — Wang/Jin methods catalog + integration tool taxonomy (matrix factorization vs manifold alignment vs deep generative).
 
 ### Methylation × chromatin / histone-mark single-cell methods
 

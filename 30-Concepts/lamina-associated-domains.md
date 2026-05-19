@@ -4,12 +4,12 @@ title: Lamina-associated domains (LADs)
 aliases: [LAD, LADs, lamina associated domain, fLAD, cLAD, facultative LAD, constitutive LAD]
 tags: [nuclear-architecture, heterochromatin, H3K9me3, H3K27me3, lamina, single-cell, DamID]
 created: 2026-05-15
-updated: 2026-05-15
+updated: 2026-05-19
 ---
 
 # Lamina-associated domains (LADs)
 
-> **LADs** are large (~0.1–10 Mb) genomic regions that physically contact the **nuclear lamina** — the meshwork of intermediate-filament lamins (LMNA/B1/B2) lining the inner nuclear membrane. They cover roughly 35–40% of the mammalian genome, are gene-poor, A/T-rich, and transcriptionally repressed. Mapped originally by bulk DamID (van Steensel lab); resolved at single-cell level by scDamID (Kind 2015) and scDam&T-seq ([[10-Summaries/rooijers-2019-scdamt-seq|Rooijers 2019]]).
+> **LADs** are large (~0.1–10 Mb) genomic regions that physically contact the **nuclear lamina** — the meshwork of intermediate-filament lamins (LMNA/B1/B2) lining the inner nuclear membrane. They cover roughly 35–40% of the mammalian genome, are gene-poor, A/T-rich, and transcriptionally repressed. Mapped originally by bulk DamID (van Steensel lab); resolved at single-cell level by scDamID (Kind 2015) and scDam&T-seq ([[10-Summaries/rooijers-2019-scdamt-seq|Rooijers 2019]]). Canonical review: [[10-Summaries/van-steensel-2017-lads-review|van Steensel & Belmont 2017]].
 
 ## Two flavors
 
@@ -48,4 +48,10 @@ Single-cell experiments collapse this into a measurable question: in a given cel
 
 - [[30-Concepts/nuclear-lamina]] · [[30-Concepts/damid]] · [[30-Concepts/scdamt-seq]] · [[30-Concepts/conformational-heterogeneity]]
 - [[30-Concepts/histone-modifications]] (H3K9me3 vs H3K27me3 distinction) · [[30-Concepts/chromatin-compartments]] (B-compartment ≈ LAD)
-- Sources: [[10-Summaries/rooijers-2019-scdamt-seq]] · [[10-Summaries/de-luca-2021-scdamid-protocol]] · [[10-Summaries/mali-2025-conformational-heterogeneity]]
+- Sources: [[10-Summaries/van-steensel-2017-lads-review]] · [[10-Summaries/rooijers-2019-scdamt-seq]] · [[10-Summaries/de-luca-2021-scdamid-protocol]] · [[10-Summaries/mali-2025-conformational-heterogeneity]]
+
+## Open questions
+
+- The cLAD/fLAD distinction is *categorical* in the 2017 review, but single-cell DamID shows a continuous spectrum of contact frequencies. Is cLAD-vs-fLAD a useful binary, or just the tails of one distribution? ([[10-Summaries/van-steensel-2017-lads-review]])
+- Three-compartment competition: any heterochromatin compartment (NL, nucleolus, pericentromeric) may be sufficient for silencing. If true, mosaic mutations that shift a locus between compartments would *not* change regulation — but mutations that disrupt anchoring entirely would. Empirical test missing.
+- Does LBR / Lamin A/C redundancy mean laminopathies (HGPS, progeria) act through tissue-specific NL-protein composition rather than universal LAD disruption?

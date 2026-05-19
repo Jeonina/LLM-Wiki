@@ -74,6 +74,7 @@ Methods that read two or more modalities from the same cell: genotype + transcri
 **Start here →** [[30-Concepts/single-cell-multiomics]] · [[30-Concepts/got]] · [[30-Concepts/got-cha]]
 **GoT family →** [[10-Summaries/anna-2019-nature|Nam 2019]] · [[10-Summaries/franco-2024-nature|Izzo 2024]] · [[10-Summaries/cortes-lopez-2023-cellstemcell|GoT-Splice]]
 **DNA + Epigenome →** [[10-Summaries/elliott-2025-naturebiotechnology|DAF-seq]] · [[10-Summaries/andrea-2025-biorxiv|Duplex-Multiome]]
+**Reviews →** [[10-Summaries/wang-2023-multimodal-review|Wang & Jin 2023 methods+integration]] · [[10-Summaries/alev-2023-naturereviewsmolecularcellbiology|Baysoy 2023]] · [[10-Summaries/katy-2023-naturereviewsgenetics|Vandereyken 2023]]
 
 ---
 
@@ -92,7 +93,7 @@ Chromatin conformation capture (Hi-C) adapted for single cells, haplotype-resolv
 
 **Start here →** [[30-Concepts/3d-genome]] · [[30-Concepts/single-cell-hi-c]] · [[30-Concepts/dip-c]] · [[30-Concepts/nuclear-lamina]] · [[30-Concepts/lamina-associated-domains]] · [[30-Concepts/damid]]
 **Founding →** [[10-Summaries/nagano-2013-nature|Nagano 2013]] · [[10-Summaries/tan-2018-science|Dip-C (Tan 2018)]]
-**Lamina lineage →** [[10-Summaries/rooijers-2019-scdamt-seq|scDam&T-seq (Rooijers 2019)]] · [[10-Summaries/de-luca-2021-scdamid-protocol|scDamID protocol (de Luca & Kind 2021)]]
+**Lamina lineage →** [[10-Summaries/van-steensel-2017-lads-review|LADs review (van Steensel & Belmont 2017)]] · [[10-Summaries/rooijers-2019-scdamt-seq|scDam&T-seq (Rooijers 2019)]] · [[10-Summaries/de-luca-2021-scdamid-protocol|scDamID protocol (de Luca & Kind 2021)]]
 **Heterogeneity metric →** [[10-Summaries/mali-2025-conformational-heterogeneity|C.H. metric (Mali 2025)]]
 **Biophysical / LLPS →** [[10-Summaries/gibson-2019-chromatin-llps|Gibson 2019]] · [[10-Summaries/ahn-2021-llps-cancer-looping|Ahn 2021]] · [[10-Summaries/daugird-2024-viscoelastic-chromatin|Daugird 2024]] · [[10-Summaries/qi-zhang-2021-nucleoli-coalescence|Qi & Zhang 2021]]
 
@@ -122,6 +123,7 @@ Ultra-accurate error correction by reading both strands of a DNA molecule. Essen
 ## Synthesis & open threads
 
 - [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap|Mosaicism × Epigenome: The Synthesis Gap]] — the central conceptual note; updated 2026-05-13 after Duplex-Multiome closes the method gap.
+- [[50-Notes/regulatory-layers-overview|Regulatory layers — four (or five) axes of epigenome interpretation]] — entry point mapping accessibility / methylation / histone marks / 3D genome (+ structural-physical) to concept pages and assays.
 - [[50-Notes/open-questions]] — tensions and gaps surfaced during ingest, by domain
 - [[50-Notes/synthesis-targets]] — clusters of papers ripe for a written synthesis
 

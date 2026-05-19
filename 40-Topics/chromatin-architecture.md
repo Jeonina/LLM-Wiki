@@ -4,7 +4,7 @@ title: Chromatin architecture
 aliases: [chromatin biology, chromatin organization]
 tags: [chromatin, regulation, single-molecule]
 created: 2026-05-07
-updated: 2026-05-12
+updated: 2026-05-19
 ---
 
 # Chromatin architecture
@@ -76,6 +76,7 @@ updated: 2026-05-12
 
 ### Nuclear lamina / spatial positioning (DamID lineage)
 
+- [[10-Summaries/van-steensel-2017-lads-review]] — van Steensel & Belmont 2017 (*Cell*). Canonical LAD review: cLAD/fLAD distinction, multivalent/redundant anchoring, three-compartment competition (NL/nucleoli/pericentromeric).
 - [[10-Summaries/rooijers-2019-scdamt-seq]] — Rooijers/Kind/Dey 2019. scDam&T-seq: joint single-cell protein–DNA + transcriptome; first single-cell coupling of NL contact to transcription.
 - [[10-Summaries/de-luca-2021-scdamid-protocol]] — de Luca & Kind 2021. Bench protocol for scDamID with Dam-LMNB1.
 - [[10-Summaries/mali-2025-conformational-heterogeneity]] — Mali/Onufriev 2025. Polymer model with lamina-DamID restraints; new C.H. metric exposes structural noise from lamin depletion.

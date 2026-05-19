@@ -48,6 +48,10 @@ sources: ["[[10-Summaries/some-source]]"]
 
 **Citations.** Every non-trivial claim ends with a citation in the form `([[10-Summaries/source-slug]])`. If a claim has multiple sources, list all. If a claim is your own synthesis, mark it `(synthesis)`.
 
+**Inline citation density (concepts, topics, notes).** On `30-Concepts/`, `40-Topics/`, and `50-Notes/` pages, every factual claim — not just every paragraph — should end with a wikilink to the summary that supports it. The granularity is the *sentence or clause*, not the section. This includes bulleted lists: each bullet that asserts a fact carries its own citation. Tables: cite per row (or per cell when a row aggregates multiple facts). The synthesis lead paragraph at the top should cite its load-bearing claims too, not just the body. Summaries (`10-Summaries/`) are exempt — their frontmatter `source:` already names the one source they derive from; only cross-references to *other* summaries need inline citation. When no source exists, mark `(synthesis)` rather than leave the claim bare — bare claims are technical debt.
+
+**Citation verification.** Before saving, every `[[wikilink]]` must resolve to an existing file. Use the verification snippet in CLAUDE.md or grep for the target slug. Broken wikilinks are worse than no citation because they imply false provenance.
+
 ## Workflow: INGEST
 
 Triggered when the user says "ingest", "ingest the new sources", drops a file in `00-Sources/`, or similar.

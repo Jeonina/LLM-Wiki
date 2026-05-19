@@ -4,6 +4,27 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-05-19 (part 6) — PTA inflection point synthesis written
+
+**Trigger**: Continuing through synthesis-targets candidates after the droplet-vs-single-molecule note.
+
+### Note created
+
+- **[[50-Notes/pta-inflection-point]]** — pre-2020 MDA-era limitations → PTA chemistry (Gonzalez-Pena 2021) → SMaHT/BSMN-scale applications. Quantitative before/after table (coverage uniformity, allelic balance, per-cell genome coverage, FP rate). Frames PTA as a case study in how upstream chemistry improvements unlock orders-of-magnitude expansion of routine questions.
+- Key reframe: PTA solved the *amplification noise* problem; Duplex-Multiome later solved the *strand-identity* problem. Orthogonal axes, both required for the modern mosaicism + epigenome workflow.
+- 69 wikilinks, 0 broken. 16 source summaries cited.
+
+### Meta-note updates
+
+- `synthesis-targets.md`: PTA inflection target struck out.
+- `index.md`: linked under Synthesis & open threads.
+
+### Synthesis targets remaining
+
+2 of 5 to go: MNase vs Tn5 chromatin profiling, methylation-based cancer-of-origin classifiers.
+
+---
+
 ## 2026-05-19 (part 5) — Droplet vs single-molecule synthesis written
 
 **Trigger**: Continued working through synthesis-targets.md candidates. Picked "Droplet-scale vs single-molecule scDNA-seq" because it mirrors the breadth-vs-depth tension central to the user's mosaicism × epigenome research.

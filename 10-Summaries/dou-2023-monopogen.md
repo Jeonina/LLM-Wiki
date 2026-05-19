@@ -6,7 +6,6 @@ aliases: ["Monopogen", "Dou 2023", "Dou Monopogen"]
 tags: [Monopogen, scSNV-calling, LD-refinement, scRNA-seq, snRNA-seq, scATAC-seq, scDNA-seq, KenChen-lab, MDAnderson]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Single-nucleotide variant calling in single-cell sequencing data with Monopogen]]"
 ---
 
 **Citation:** Dou et al. (2023) — *Single-nucleotide variant calling in single-cell sequencing data with Monopogen* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-023-01873-x)

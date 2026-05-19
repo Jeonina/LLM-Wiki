@@ -6,7 +6,6 @@ aliases: ["Campbell Lupski 2015 mosaicism review", "Trends in Genetics mosaicism
 tags: [review, somatic-mosaicism, postzygotic-mutation, transmission-genetics, developmental-timing, Lupski-lab, BCM]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Somatic mosaicism_ implications for disease and transmission genetics]]"
 ---
 
 **Citation:** Campbell et al. (2015) — *Somatic mosaicism: implications for disease and transmission genetics* — *Trends in Genetics*. [DOI](https://doi.org/10.1016/j.tig.2015.07.004)

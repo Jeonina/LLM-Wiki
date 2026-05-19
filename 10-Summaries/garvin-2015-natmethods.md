@@ -6,7 +6,6 @@ aliases: ["Ginkgo", "Garvin 2015"]
 tags: [computational, CNV, scDNA-seq, Ginkgo, web-tool, Wigler-lab, Schatz-lab]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Interactive analysis and assessment of single-cell copy-number variations]]"
 ---
 
 **Citation:** Garvin et al. (2015) — *Interactive analysis and assessment of single-cell copy-number variations (Ginkgo)* — *Nature Methods*. [DOI](https://doi.org/10.1038/nmeth.3578)

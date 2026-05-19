@@ -6,7 +6,6 @@ aliases: ["Ma 2020", "SHARE-seq", "Buenrostro 2020 SHARE"]
 tags: [SHARE-seq, joint-assay, scATAC, scRNA, chromatin-priming, Regev-lab, Buenrostro-lab]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Chromatin Potential Identified by Shared Single-Cell Profiling of RNA and Chromatin]]"
 ---
 
 **Citation:** Ma et al. (2020) — *Chromatin Potential Identified by Shared Single-Cell Profiling of RNA and Chromatin (SHARE-seq)* — *Cell*. [DOI](https://doi.org/10.1016/j.cell.2020.09.056)

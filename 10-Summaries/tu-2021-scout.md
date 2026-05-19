@@ -6,7 +6,6 @@ aliases: ["Tu 2021 SCOUT", "SCOUT genotyper"]
 tags: [SCOUT, scDNA-SNV-calling, local-genome-territory, no-external-data, Xie-lab, Sichuan]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Accurate single-cell genotyping utilizing information from the local genome territory]]"
 ---
 
 **Citation:** Tu et al. (2021) — *SCOUT: accurate single-cell genotyping using local genome territory* — *?*.

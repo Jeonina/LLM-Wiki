@@ -6,7 +6,6 @@ aliases: ["Macosko 2015", "Drop-seq", "Drop-Seq"]
 tags: [Drop-seq, scRNA-seq, droplet-microfluidics, UMI, cell-barcode, retina-atlas, McCarroll-lab, Regev-lab, Broad-Institute, Harvard]
 created: 2026-05-14
 updated: 2026-05-14
-source: "[[00-Sources/papers/Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets]]"
 ---
 
 **Citation:** Macosko et al. (2015) — *Drop-seq: highly parallel scRNA-seq via nanoliter droplets* — *Cell*. [DOI](https://doi.org/10.1016/j.cell.2015.05.002)

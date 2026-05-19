@@ -6,7 +6,6 @@ aliases: ["Strand-seq founding paper", "Falconer 2012"]
 tags: [Strand-seq, scDNA-seq, SCE, structural-variant, single-cell, Lansdorp-lab]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/DNA template strand sequencing of single-cells maps genomic rearrangements at high resolution]]"
 ---
 
 **Citation:** Falconer et al. (2012) — *DNA template strand sequencing of single-cells maps genomic rearrangements at high resolution (Strand-seq)* — *Nature Methods*. [DOI](https://doi.org/10.1038/nmeth.2206)

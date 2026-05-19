@@ -6,7 +6,6 @@ aliases: ["Navin 2011 SNS", "single-nucleus sequencing tumor", "founding tumor s
 tags: [single-nucleus-sequencing, SNS, scDNA-seq, CNV, breast-cancer, tumor-evolution, founding-method, Wigler-lab, Navin-lab]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Tumour evolution inferred by single-cell sequencing]]"
 ---
 
 **Citation:** Navin et al. (2011) — *Tumour evolution inferred by single-cell sequencing* — *Nature*. [DOI](https://doi.org/10.1038/nature09807)

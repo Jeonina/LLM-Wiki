@@ -6,7 +6,6 @@ aliases: ["Gong 2021 Cobolt", "Cobolt"]
 tags: [Cobolt, multimodal-integration, multimodal-VAE, scRNA-seq, scATAC-seq, single-modality-augmentation, Purdom-lab, Berkeley]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Cobolt_ integrative analysis of multimodal single-cell sequencing data]]"
 ---
 
 **Citation:** Gong et al. (2021) — *Cobolt: integrative analysis of multimodal single-cell sequencing data* — *Genome Biology*. [DOI](https://doi.org/10.1186/s13059-021-02556-z)

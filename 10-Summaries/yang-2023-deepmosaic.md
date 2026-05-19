@@ -6,7 +6,6 @@ aliases: ["Yang 2023 DeepMosaic", "DeepMosaic", "CNN mosaic caller"]
 tags: [DeepMosaic, mosaic-variant-calling, CNN, deep-learning, brain-mosaicism, Gleeson-lab, BSMN, UCSD]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Control-independent mosaic single nucleotide variant detection with DeepMosaic]]"
 ---
 
 **Citation:** Yang et al. (2023) — *Control-independent mosaic single nucleotide variant detection with DeepMosaic* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-022-01559-w)

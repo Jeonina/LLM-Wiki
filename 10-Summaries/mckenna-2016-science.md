@@ -6,7 +6,6 @@ aliases: ["GESTALT", "McKenna 2016", "CRISPR lineage tracing"]
 tags: [lineage-tracing, CRISPR, GESTALT, zebrafish, Shendure-lab]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Whole-organism lineage tracing by combinatorial and cumulative genome editing]]"
 ---
 
 **Citation:** McKenna et al. (2016) — *Whole-organism lineage tracing by combinatorial and cumulative genome editing (GESTALT)* — *Science*. [DOI](https://doi.org/10.1126/science.aaf7907)

@@ -6,7 +6,6 @@ aliases: ["Bohaczuk 2024", "targeted Fiber-seq", "mosaic Fiber-seq"]
 tags: [targeted-Fiber-seq, mosaic-variants, chromatin-impact, DMPK, myotonic-dystrophy, HBG1, Stergachis-lab, UW]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Resolving the chromatin impact of mosaic variants with targeted Fiber-seq]]"
 ---
 
 **Citation:** Bohaczuk et al. (2024) — *Resolving the chromatin impact of mosaic variants with targeted Fiber-seq* — *Genome Research*. [DOI](https://doi.org/10.1101/gr.279747.124)

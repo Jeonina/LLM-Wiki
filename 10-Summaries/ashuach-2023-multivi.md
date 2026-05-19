@@ -6,7 +6,6 @@ aliases: ["MultiVI", "Ashuach 2023", "scvi-tools MultiVI"]
 tags: [MultiVI, deep-learning, multimodal-integration, VAE, scvi-tools, Yosef-lab, computational]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/MultiVI_ deep generative model for the integration of multimodal data]]"
 ---
 
 **Citation:** Ashuach et al. (2023) — *MultiVI: deep generative model for the integration of multimodal data* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-023-01909-9)

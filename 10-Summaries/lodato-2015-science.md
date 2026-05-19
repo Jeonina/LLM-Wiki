@@ -6,7 +6,6 @@ aliases: ["Lodato Walsh 2015", "single-neuron WGS 2015"]
 tags: [scWGS, neurons, somatic-mosaicism, lineage, Walsh-lab]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Somatic mutation in single human neurons tracks developmental and transcriptional history]]"
 ---
 
 **Citation:** Lodato et al. (2015) — *Somatic mutation in single human neurons tracks developmental and transcriptional history* — *Science*. [DOI](https://doi.org/10.1126/science.aab1785)

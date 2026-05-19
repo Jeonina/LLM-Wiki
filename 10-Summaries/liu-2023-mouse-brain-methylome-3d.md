@@ -6,7 +6,6 @@ aliases: ["Liu 2023 mouse brain atlas", "snmC-seq3 atlas", "snm3C-seq atlas"]
 tags: [snmC-seq3, snm3C-seq, mouse-brain-atlas, methylome, 3D-genome, BICCN, Ecker-lab, Behrens-lab]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Single-cell DNA methylome and 3D multi-omic atlas of the adult mouse brain]]"
 ---
 
 **Citation:** Liu et al. (2023) — *Single-cell DNA methylome and 3D multi-omic atlas of the adult mouse brain* — *Nature*. [DOI](https://doi.org/10.1038/s41586-023-06805-y)

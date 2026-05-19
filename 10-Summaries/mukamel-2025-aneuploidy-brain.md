@@ -6,7 +6,6 @@ aliases: ["Mukamel 2025 brain aneuploidy", "snmC-seq aneuploidy"]
 tags: [aneuploidy, trisomy-16, brain-mosaicism, snmC-seq3, snm3C-seq, OPC, oligodendrocyte-precursor, Ecker-lab, Behrens-lab]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Cell-type-specific enrichment of somatic aneuploidy in the mammalian brain]]"
 ---
 
 **Citation:** Mukamel et al. (2025) — *Cell-type-specific somatic aneuploidy in the mammalian brain* — *Neuron*. [DOI](https://doi.org/10.1016/j.neuron.2025.08.006)

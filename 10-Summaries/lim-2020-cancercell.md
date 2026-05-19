@@ -5,8 +5,7 @@ source: "[[00-Sources/papers/Advancing Cancer Research and Medicine with Single-
 aliases: ["Lim 2020", "Navin cancer SCG review"]
 tags: [review, cancer, single-cell, intratumor-heterogeneity, clonal-evolution, Navin-lab]
 created: 2026-05-13
-updated: 2026-05-13
-source: "[[00-Sources/papers/Advancing Cancer Research and Medicine with Single-Cell Genomics]]"
+updated: 2026-05-19
 ---
 
 **Citation:** Lim et al. (2020) — *Advancing cancer research and medicine with single-cell genomics* — *CancerCell*. [DOI](https://doi.org/10.1016/j.ccell.2020.03.008)

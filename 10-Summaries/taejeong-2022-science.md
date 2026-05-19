@@ -6,7 +6,6 @@ aliases: [Bae 2022, Taejeong 2022, BSMN 131-brain study, brain hypermutability]
 tags: [somatic-mosaicism, neuro-mosaicism, BSMN, autism-spectrum-disorder, schizophrenia, tourette-syndrome, hypermutability, MEIS, foundational]
 created: 2026-05-12
 updated: 2026-05-12
-source: "[[00-Sources/papers/Analysis of somatic mutations in 131 human brains reveals aging-associated hypermutability]]"
 ---
 
 **Citation:** Bae et al. (2022) — *Analysis of somatic mutations in 131 human brains reveals aging-associated hypermutability* — *Science*. [DOI](https://doi.org/10.1126/science.abm6222)

@@ -6,7 +6,6 @@ aliases: ["Jahn 2016 SCITE", "SCITE", "Beerenwinkel-lab phylogeny"]
 tags: [SCITE, tumor-phylogeny, MCMC, allelic-dropout, infinite-sites, Beerenwinkel-lab, ETH-Zurich, founding-method]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Tree inference for single-cell data]]"
 ---
 
 **Citation:** Jahn et al. (2016) — *Tree inference for single-cell data (SCITE)* — *Genome Biology*. [DOI](https://doi.org/10.1186/s13059-016-0936-x)

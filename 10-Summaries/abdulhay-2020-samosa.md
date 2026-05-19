@@ -6,7 +6,6 @@ aliases: ["Abdulhay 2020 SAMOSA", "SAMOSA"]
 tags: [SAMOSA, single-molecule-footprinting, EcoGII, m6A, PacBio-SMRT, oligonucleosome, nucleosome-positioning, Ramani-lab, UCSF]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Massively multiplex single-molecule oligonucleosome footprinting]]"
 ---
 
 **Citation:** Abdulhay et al. (2020) — *SAMOSA: massively multiplex single-molecule oligonucleosome footprinting* — *eLife*. [DOI](https://doi.org/10.7554/eLife.59404)

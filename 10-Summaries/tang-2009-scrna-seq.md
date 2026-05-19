@@ -6,7 +6,6 @@ aliases: ["Tang 2009", "Tang mRNA-Seq 2009", "first scRNA-seq"]
 tags: [scRNA-seq, mRNA-Seq, founding-method, single-cell-transcriptomics, blastomere, Surani-lab, Gurdon-Institute]
 created: 2026-05-14
 updated: 2026-05-14
-source: "[[00-Sources/papers/mRNA-Seq whole-transcriptome analysis of a single cell]]"
 ---
 
 **Citation:** Tang et al. (2009) — *mRNA-Seq whole-transcriptome analysis of a single cell* — *Nature Methods*. [DOI](https://doi.org/10.1038/nmeth.1315)

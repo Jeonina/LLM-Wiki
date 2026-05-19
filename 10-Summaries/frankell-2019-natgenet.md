@@ -6,7 +6,6 @@ aliases: ["Frankell 2019", "OCCAMS EAC cohort"]
 tags: [esophageal-adenocarcinoma, bulk-WGS, driver-genes, clinical-biomarkers, OCCAMS]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/The landscape of selection in 551 esophageal adenocarcinomas defines genomic biomarkers for the clinic]]"
 ---
 
 **Citation:** Frankell et al. (2019) — *The landscape of selection in 551 esophageal adenocarcinomas defines genomic biomarkers for the clinic* — *Nature Genetics*. [DOI](https://doi.org/10.1038/s41588-018-0331-5)

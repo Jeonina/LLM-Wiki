@@ -6,7 +6,6 @@ aliases: ["Kim Costello 2017", "DNA methylation cellular memory review"]
 tags: [review, DNA-methylation, cellular-memory, stem-cells, cancer, iPSC, Costello-lab, KRIBB]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/DNA methylation_ an epigenetic mark of cellular memory]]"
 ---
 
 **Citation:** Kim et al. (2017) — *DNA methylation: an epigenetic mark of cellular memory* — *?*.

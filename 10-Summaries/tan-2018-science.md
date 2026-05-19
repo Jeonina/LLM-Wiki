@@ -6,7 +6,6 @@ aliases: ["Dip-C", "Tan 2018", "diploid single-cell 3D"]
 tags: [scHi-C, Dip-C, 3D-genome, diploid, haplotype-resolved, Xie-lab]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Three-dimensional genome structures of single diploid human cells]]"
 ---
 
 **Citation:** Tan et al. (2018) — *Three-dimensional genome structures of single diploid human cells (Dip-C)* — *Science*. [DOI](https://doi.org/10.1126/science.aat5641)

@@ -6,7 +6,6 @@ aliases: ["Izzo 2024 GoT-ChA", "GoT-ChA", "Genotyping of Targeted loci with sing
 tags: [GoT-ChA, genotyping, scATAC-seq, JAK2-V617F, CH, MPN, Landau-lab, NYGC, multimodal]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Mapping genotypes to chromatin accessibility profiles in single cells]]"
 ---
 
 **Citation:** Izzo et al. (2024) — *GoT-ChA: mapping genotypes to chromatin accessibility in single cells* — *Nature*. [DOI](https://doi.org/10.1038/s41586-024-07388-y)

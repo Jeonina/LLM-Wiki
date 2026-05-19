@@ -6,7 +6,6 @@ aliases: ["Kapadia 2024", "Goodell stem cell aging review", "blood mosaicism rev
 tags: [stem-cell-aging, clonal-hematopoiesis, HSC, somatic-mosaicism, mutation-rate, adaptive-oncogenesis, review, Goodell-lab, Baylor]
 created: 2026-05-14
 updated: 2026-05-14
-source: "[[00-Sources/papers/Tissue mosaicism following stem cell aging_ blood as an exemplar]]"
 doi: "10.1038/s43587-024-00589-0"
 url: "https://doi.org/10.1038/s43587-024-00589-0"
 ---

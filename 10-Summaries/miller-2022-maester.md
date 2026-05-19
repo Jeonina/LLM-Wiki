@@ -6,7 +6,6 @@ aliases: ["Miller 2022 MAESTER", "MAESTER", "maegatk"]
 tags: [MAESTER, mtDNA, lineage-tracing, scRNA-seq, clonal-hematopoiesis, vanGalen-lab, Sankaran-lab]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Mitochondrial variant enrichment from high-throughput single-cell RNA sequencing resolves clonal populations]]"
 ---
 
 **Citation:** Miller et al. (2022) — *Mitochondrial variant enrichment from high-throughput single-cell RNA sequencing resolves clonal populations (MAESTER)* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-022-01210-8)

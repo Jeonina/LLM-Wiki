@@ -6,7 +6,6 @@ aliases: ["scGPT", "Cui 2024", "single-cell foundation model"]
 tags: [foundation-model, generative-AI, single-cell, multi-omics, transformer, computational]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/scGPT_ toward building a foundation model for single-cell multi-omics using generative AI]]"
 ---
 
 **Citation:** Cui et al. (2024) — *scGPT: toward building a foundation model for single-cell multi-omics using generative AI* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-024-02201-0)

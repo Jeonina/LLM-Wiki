@@ -6,7 +6,6 @@ aliases: ["Lee-Six 2018", "HSC phylogeny WGS"]
 tags: [hematopoiesis, HSC, somatic-mutations, clonal-dynamics, WGS-colonies, Sanger, Campbell-lab, Stratton-lab, application]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Population dynamics of normal human blood inferred from somatic mutations]]"
 ---
 
 **Citation:** Lee-Six et al. (2018) — *Population dynamics of normal human blood inferred from somatic mutations* — *Nature*. [DOI](https://doi.org/10.1038/s41586-018-0497-0)

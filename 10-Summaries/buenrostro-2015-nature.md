@@ -6,7 +6,6 @@ aliases: ["Buenrostro 2015 Nature", "scATAC-seq founding paper", "Fluidigm scATA
 tags: [scATAC-seq, accessibility, founding-method, Greenleaf-lab, Chang-lab, Stanford, regulatory-variation]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Single-cell chromatin accessibility reveals principles of regulatory variation]]"
 ---
 
 **Citation:** Buenrostro et al. (2015) — *Single-cell chromatin accessibility reveals principles of regulatory variation* — *Nature*. [DOI](https://doi.org/10.1038/nature14590)

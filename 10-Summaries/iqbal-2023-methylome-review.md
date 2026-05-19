@@ -6,7 +6,6 @@ aliases: ["Iqbal 2023", "Wanding Zhou methylome review", "scDNA methylome review
 tags: [review, single-cell-methylome, computational-tools, scBS-seq, Zhou-lab, UPenn, CHOP]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Computational Methods for Single-Cell DNA Methylome Analysis]]"
 ---
 
 **Citation:** Iqbal et al. (2023) — *Computational Methods for Single-cell DNA Methylome Analysis* — *Genomics, Proteomics & Bioinformatics*. [DOI](https://doi.org/10.1016/j.gpb.2022.05.007)

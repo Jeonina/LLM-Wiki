@@ -6,7 +6,6 @@ aliases: ["Krueger 2011 Bismark", "Bismark", "bisulfite aligner founding"]
 tags: [Bismark, bisulfite-aligner, methylation-caller, BS-seq, founding-tool, Babraham, Reik-lab-adjacent]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Bismark_ a flexible aligner and methylation caller for Bisulfite-Seq applications]]"
 ---
 
 **Citation:** Krueger et al. (2011) — *Bismark: a flexible aligner and methylation caller for Bisulfite-Seq applications* — *Bioinformatics*. [DOI](https://doi.org/10.1093/bioinformatics/btr167)

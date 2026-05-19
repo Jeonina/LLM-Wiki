@@ -6,7 +6,6 @@ aliases: ["Bersaglieri 2019", "nucleolar genome organization review"]
 tags: [review, nucleolus, 3D-genome, heterochromatin, rRNA, NoRC]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Genome Organization in and around the Nucleolus]]"
 ---
 
 **Citation:** Bersaglieri et al. (2019) — *Genome organization in and around the nucleolus* — *Cells*. [DOI](https://doi.org/10.3390/cells8060579)

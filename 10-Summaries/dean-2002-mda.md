@@ -6,7 +6,6 @@ aliases: ["Dean 2002", "MDA founding paper", "Φ29 WGA"]
 tags: [MDA, scWGA, Phi29, isothermal-amplification, founding-method, whole-genome-amplification, Molecular-Staging]
 created: 2026-05-14
 updated: 2026-05-14
-source: "[[00-Sources/papers/Comprehensive human genome amplification using multiple displacement amplification]]"
 doi: "10.1073/pnas.082089499"
 url: "https://www.pnas.org/doi/10.1073/pnas.082089499"
 ---

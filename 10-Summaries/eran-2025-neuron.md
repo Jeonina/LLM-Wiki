@@ -6,7 +6,6 @@ aliases: [Mukamel 2025, Eran 2025, snmC-seq aneuploidy detection, chr16 trisomy 
 tags: [somatic-mosaicism, neuro-mosaicism, aneuploidy, single-cell-methylation, snmC-seq, snm3C-seq, BICCN, foundational]
 created: 2026-05-12
 updated: 2026-05-12
-source: "[[00-Sources/papers/Cell-type-specific enrichment of somatic aneuploidy in the mammalian brain]]"
 ---
 
 **Citation:** Mukamel et al. (2025) — *Cell-type-specific enrichment of somatic aneuploidy in the mammalian brain* — *Neuron*. [DOI](https://doi.org/10.1016/j.neuron.2025.08.006)

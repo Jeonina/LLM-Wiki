@@ -6,7 +6,6 @@ aliases: ["Frankell 2019 EAC", "OCCAMS EAC landscape"]
 tags: [esophageal-adenocarcinoma, bulk-WGS, driver-genes, dN/dS, CDK4/6, OCCAMS, Fitzgerald-lab, Tavare-lab]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/The landscape of selection in 551 esophageal adenocarcinomas defines genomic biomarkers for the clinic]]"
 ---
 
 **Citation:** Frankell et al. (2019) — *Selection landscape of 551 esophageal adenocarcinomas defines clinical biomarkers* — *Nature Genetics*. [DOI](https://doi.org/10.1038/s41588-018-0331-5)

@@ -6,7 +6,6 @@ aliases: ["Luquette Coorens 2025 SMaHT", "PTA lung+colon scDNA"]
 tags: [scDNA-seq, PTA, somatic-mosaicism, lung, colon, ancestry, APOBEC, SMaHT, Walsh-lab, Park-lab, Abyzov-lab, bioRxiv-2025]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/A comprehensive view of somatic mosaicism by single-cell DNA analysis]]"
 ---
 
 **Citation:** Luquette et al. (2025) — *Comprehensive view of somatic mosaicism by single-cell DNA analysis (SMaHT)* — *?*.

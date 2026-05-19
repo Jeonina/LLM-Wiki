@@ -6,7 +6,6 @@ aliases: [Lareau 2021, mtscATAC-seq, Caleb 2021]
 tags: [mtDNA, mitochondrial-heteroplasmy, lineage-tracing, scATAC-seq, joint-assay, single-cell-multiomics, foundational]
 created: 2026-05-12
 updated: 2026-05-12
-source: "[[00-Sources/papers/Massively parallel single-cell mitochondrial DNA genotyping and chromatin profiling]]"
 ---
 
 **Citation:** Lareau et al. (2021) — *Massively parallel single-cell mitochondrial DNA genotyping and chromatin profiling (mtscATAC-seq)* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-020-0645-6)

@@ -6,7 +6,6 @@ aliases: ["Nishioka 2019", "brain mosaicism psychiatry review"]
 tags: [review, brain-mosaicism, psychiatric-disorders, schizophrenia, ASD, Iwamoto-lab, Kato-lab]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Somatic mutations in the human brain_ implications for psychiatric research]]"
 ---
 
 **Citation:** Nishioka et al. (2019) — *Somatic mutations in the human brain: implications for psychiatric research* — *MolecularPsychiatry*. [DOI](https://doi.org/10.1038/s41380-018-0129-y)

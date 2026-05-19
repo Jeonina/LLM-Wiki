@@ -6,7 +6,6 @@ aliases: [Bae 2018, Taejeong 2018, clonal-expansion pregastrulation neurogenesis
 tags: [somatic-mosaicism, neuro-mosaicism, clonal-cell-population, pregastrulation, neurogenesis, mutation-rate, mutation-spectrum, foundational]
 created: 2026-05-12
 updated: 2026-05-12
-source: "[[00-Sources/papers/Different mutational rates and mechanisms in human cells at pregastrulation and neurogenesis]]"
 ---
 
 **Citation:** Bae et al. (2018) — *Different mutational rates and mechanisms in human cells at pregastrulation and neurogenesis* — *Science*. [DOI](https://doi.org/10.1126/science.aan8690)

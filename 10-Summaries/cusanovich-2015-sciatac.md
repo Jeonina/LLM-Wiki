@@ -6,7 +6,6 @@ aliases: ["Cusanovich 2015 sci-ATAC-seq", "sci-ATAC-seq", "combinatorial indexin
 tags: [sci-ATAC-seq, combinatorial-indexing, scATAC-seq, Tn5, founding-method, Shendure-lab, Trapnell-lab]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Multiplex single-cell profiling of chromatin accessibility by combinatorial cellular indexing]]"
 ---
 
 **Citation:** Cusanovich et al. (2015) — *sci-ATAC-seq: multiplex single-cell chromatin accessibility by combinatorial indexing* — *Science*. [DOI](https://doi.org/10.1126/science.aab1601)

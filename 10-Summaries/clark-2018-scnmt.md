@@ -6,7 +6,6 @@ aliases: ["Clark 2018", "scNMT-seq", "single-cell NMT"]
 tags: [scNMT-seq, joint-assay, methylation, accessibility, transcription, Reik-lab, Stegle-lab, Babraham, founding-method]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/scNMT-seq enables joint profiling of chromatin accessibility DNA methylation and transcription in single cells]]"
 ---
 
 **Citation:** Clark et al. (2018) — *scNMT-seq enables joint profiling of chromatin accessibility, DNA methylation and transcription in single cells* — *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-018-03149-4)

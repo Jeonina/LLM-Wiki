@@ -6,7 +6,6 @@ aliases: ["Sun 2025 scMitoMut", "scMitoMut", "Perié-lab mtDNA"]
 tags: [scMitoMut, mtDNA, lineage-tracing, beta-binomial, scATAC-seq, multiome, Perie-lab, Institut-Curie]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/scMitoMut for calling mitochondrial lineage-related mutations in single cells]]"
 ---
 
 **Citation:** Sun et al. (2025) — *scMitoMut for calling mitochondrial lineage-related mutations in single cells* — *Briefings in Bioinformatics*. [DOI](https://doi.org/10.1093/bib/bbaf072)

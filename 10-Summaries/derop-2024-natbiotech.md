@@ -6,7 +6,6 @@ aliases: ["De Rop 2024", "PUMATAC benchmark", "scATAC-seq benchmark"]
 tags: [scATAC-seq, benchmarking, computational, PBMC, PUMATAC, Aerts-lab, Heyn-lab]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Systematic benchmarking of single-cell ATAC-sequencing protocols]]"
 ---
 
 **Citation:** De Rop et al. (2024) — *Systematic benchmarking of single-cell ATAC-sequencing protocols (PUMATAC)* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-023-01881-x)

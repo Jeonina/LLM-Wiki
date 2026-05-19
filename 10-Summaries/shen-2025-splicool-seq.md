@@ -6,7 +6,6 @@ aliases: ["Shen 2025 SpliCOOL-seq", "SpliCOOL-seq"]
 tags: [SpliCOOL-seq, single-cell-methylation, scATAC-seq, split-pool-ligation, multi-omics, GpC-methylation, lung-adenocarcinoma, Fan-lab]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/High‐throughput single‐cell DNA methylation and chromatin accessibility co‐profiling with SpliCOOL‐seq]]"
 ---
 
 **Citation:** Shen et al. (2025) — *SpliCOOL-seq: high-throughput scDNA methylation + chromatin accessibility* — *?*.

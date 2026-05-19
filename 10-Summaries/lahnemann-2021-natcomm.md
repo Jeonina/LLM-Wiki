@@ -6,7 +6,6 @@ aliases: ["ProSolo", "Lähnemann 2021"]
 tags: [computational, variant-calling, MDA, single-cell, ProSolo]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Accurate and scalable variant calling from single cell DNA sequencing data with ProSolo]]"
 ---
 
 **Citation:** Lähnemann et al. (2021) — *Accurate and scalable variant calling from single cell DNA sequencing data with ProSolo* — *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-021-26938-w)

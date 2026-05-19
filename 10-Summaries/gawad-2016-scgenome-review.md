@@ -6,7 +6,6 @@ aliases: ["Gawad 2016 review", "scDNA-seq state-of-science Quake"]
 tags: [review, scDNA-seq, scWGA, cell-isolation, microbial-dark-matter, cancer, Quake-lab, St-Jude, Stanford]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Single-cell genome sequencing_ current state of the science]]"
 ---
 
 **Citation:** Gawad et al. (2016) — *Single-cell genome sequencing: current state of the science* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/nrg.2015.16)

@@ -6,7 +6,6 @@ aliases: ["Drop-ChIP", "Rotem 2015", "scChIP-seq founding paper"]
 tags: [scChIP-seq, Drop-ChIP, histone-modifications, microfluidics, Bernstein-lab]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Single-cell ChIP-seq reveals cell subpopulations defined by chromatin state]]"
 ---
 
 **Citation:** Rotem et al. (2015) — *Single-cell ChIP-seq reveals cell subpopulations defined by chromatin state (Drop-ChIP)* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/nbt.3383)

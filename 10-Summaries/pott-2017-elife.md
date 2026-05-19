@@ -6,7 +6,6 @@ aliases: ["scNOMe-seq", "Pott 2017"]
 tags: [scNOMe-seq, methylation, accessibility, nucleosome, joint-assay, NOMe-seq]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Simultaneous measurement of chromatin accessibility, DNA methylation, and nucleosome phasing in single cells]]"
 ---
 
 **Citation:** Pott et al. (2017) — *Simultaneous measurement of chromatin accessibility, DNA methylation and nucleosome phasing in single cells (scNOMe-seq)* — *eLife*. [DOI](https://doi.org/10.7554/eLife.23203)

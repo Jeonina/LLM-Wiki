@@ -6,7 +6,6 @@ aliases: ["Luo 2018 snmC-seq2", "snmC-seq2"]
 tags: [snmC-seq2, single-cell-methylome, bisulfite, post-bisulfite-adapter-tagging, Ecker-lab, methodology]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Robust single-cell DNA methylome profiling with snmC-seq2]]"
 ---
 
 **Citation:** Luo et al. (2018) — *snmC-seq2: robust single-cell DNA methylome profiling* — *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-018-06355-2)

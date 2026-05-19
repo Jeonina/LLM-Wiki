@@ -6,7 +6,6 @@ aliases: ["Peter 2024 brain Fiber-seq", "brain Fiber-seq"]
 tags: [Fiber-seq, brain, nucleosome-positioning, single-molecule, m6A, FACS-NeuN, Akbarian-lab, Stergachis-lab, Mt-Sinai]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Single chromatin fiber profiling and nucleosome position mapping in the human brain]]"
 ---
 
 **Citation:** Peter et al. (2024) — *Single chromatin fiber profiling and nucleosome position mapping in the human brain* — *CellReportsMethods*. [DOI](https://doi.org/10.1016/j.crmeth.2024.100911)

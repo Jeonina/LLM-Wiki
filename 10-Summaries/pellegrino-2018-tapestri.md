@@ -6,7 +6,6 @@ aliases: ["Pellegrino 2018", "Tapestri", "Mission Bio scDNA", "MissionBio"]
 tags: [Tapestri, MissionBio, droplet-scDNA, AML, targeted-panel, clonal-evolution, Eastburn]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/High-throughput single-cell DNA sequencing of acute myeloid leukemia tumors with droplet microfluidics]]"
 ---
 
 **Citation:** Pellegrino et al. (2018) — *High-throughput single-cell DNA sequencing of acute myeloid leukemia tumors with droplet microfluidics* — *Genome Research*. [DOI](https://doi.org/10.1101/gr.232272.117)

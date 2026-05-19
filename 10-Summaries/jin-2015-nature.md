@@ -6,7 +6,6 @@ aliases: ["Jin 2015", "scDNase-seq", "single-cell DNase"]
 tags: [scDNase-seq, accessibility, single-cell, FFPE, founding-method, Zhao-lab, NIH]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Genome-wide detection of DNase I hypersensitive sites in single cells and FFPE tissue samples]]"
 ---
 
 **Citation:** Jin et al. (2015) — *Genome-wide detection of DNase I hypersensitive sites in single cells and FFPE tissue samples (scDNase-seq)* — *Nature*. [DOI](https://doi.org/10.1038/nature15740)

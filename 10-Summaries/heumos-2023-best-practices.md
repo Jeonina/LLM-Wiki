@@ -6,7 +6,6 @@ aliases: ["Heumos 2023 best practices", "single-cell best practices NRG"]
 tags: [best-practices, scRNA-seq, scATAC-seq, multimodal, doublet-detection, normalization, Theis-lab, Helmholtz-Munich]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Best practices for single-cell analysis across modalities]]"
 ---
 
 **Citation:** Heumos et al. (2023) — *Best practices for single-cell analysis across modalities* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-023-00586-w)

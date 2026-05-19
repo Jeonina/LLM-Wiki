@@ -6,7 +6,6 @@ aliases: ["Macaulay Voet 2014", "scWGA review"]
 tags: [review, scWGA, single-cell-genomics, methods]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Single Cell Genomics_ Advances and Future Perspectives]]"
 ---
 
 **Citation:** Macaulay et al. (2014) — *Single cell genomics: advances and future perspectives* — *PLOSGenetics*. [DOI](https://doi.org/10.1371/journal.pgen.1004126)

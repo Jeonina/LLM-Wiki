@@ -6,7 +6,6 @@ aliases: ["Xiao 2025", "EpiTrace", "ClockDML"]
 tags: [EpiTrace, ClockDML, mitotic-clock, scATAC-seq, lineage-tracing, chromatin-accessibility, Zhang-lab, Wuhan]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Tracking single-cell evolution using clock-like chromatin accessibility loci]]"
 ---
 
 **Citation:** Xiao et al. (2025) — *Tracking single-cell evolution using clock-like chromatin accessibility loci (EpiTrace)* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-024-02241-z)

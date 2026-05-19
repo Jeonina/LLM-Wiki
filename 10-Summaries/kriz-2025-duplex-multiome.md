@@ -6,7 +6,6 @@ aliases: ["Kriz 2025 Duplex-Multiome", "Duplex-Multiome"]
 tags: [Duplex-Multiome, sSNV, snATAC-seq, snRNA-seq, duplex-consensus, brain-mosaicism, Walsh-lab, Lee-lab, Huang-lab]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Cell-type-specific patterns and consequences of somatic mutation in development and aging brain]]"
 ---
 
 **Citation:** Kriz et al. (2025) — *Duplex-Multiome: cell-type-specific somatic mutation in development and aging brain* — *bioRxiv (preprint)*. [DOI](https://doi.org/10.1101/2025.05.30.656844)

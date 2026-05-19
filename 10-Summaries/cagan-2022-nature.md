@@ -6,7 +6,6 @@ aliases: ["Cagan 2022", "mammalian mutation rates"]
 tags: [somatic-mutations, aging, comparative-genomics, mutational-signatures, Peto-paradox, Sanger]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Somatic mutation rates scale with lifespan across mammals]]"
 ---
 
 **Citation:** Cagan et al. (2022) — *Somatic mutation rates scale with lifespan across mammals* — *Nature*. [DOI](https://doi.org/10.1038/s41586-022-04618-z)

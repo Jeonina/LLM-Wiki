@@ -6,7 +6,6 @@ aliases: ["He 2024 FOODIE", "FOODIE"]
 tags: [FOODIE, single-molecule-footprinting, deaminase, DddB, single-cell-genomics, TF-binding, cooperativity, Xie-lab, Peking]
 created: 2026-05-13
 updated: 2026-05-13
-source: "[[00-Sources/papers/Genome-wide single-cell and single-molecule footprinting of transcription factors with deaminase]]"
 ---
 
 **Citation:** He et al. (2024) — *FOODIE: genome-wide single-cell/single-molecule footprinting of TFs with deaminase* — *PNAS*. [DOI](https://doi.org/10.1073/pnas.2423270121)

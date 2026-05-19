@@ -23,6 +23,6 @@ Computational anchor for §4 (multimodal integration), filling the niche left by
 
 ## Related
 
-- [[10-Summaries/argelaguet-2019-mofa]]
-- [[10-Summaries/stuart-2021-signac]]
+- [[10-Summaries/argelaguet-2019-nature]]
+- [[10-Summaries/stuart-2021-natmethods]]
 - [[30-Concepts/multimodal-integration-methods]]

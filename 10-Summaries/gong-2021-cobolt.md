@@ -25,6 +25,6 @@ Cobolt sits in the §4 multimodal-integration tool family as the direct predeces
 
 - [[10-Summaries/ashuach-2023-multivi]]
 - [[10-Summaries/cao-2022-glue]]
-- [[10-Summaries/argelaguet-2019-mofa]]
+- [[10-Summaries/argelaguet-2019-nature]]
 - [[10-Summaries/xiao-2024-multiomics-benchmark]]
 - [[30-Concepts/multimodal-integration-methods]]

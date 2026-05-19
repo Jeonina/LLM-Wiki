@@ -45,9 +45,9 @@ UDSeq couples random shearing with adapter ligation that places UMIs on both str
 
 ## Connections to other sources
 
-- Direct evolution of [[10-Summaries/detecting-ultralow-frequency-mutations-by-duplex-sequencing]] — Kennedy/Loeb 2014 was 2.5×10⁻⁶/bp; UDSeq is **1,000× more accurate**.
-- One of six methods benchmarked in [[10-Summaries/benchmarking-of-duplex-sequencing-approaches-to-reveal-somatic-mutation-landscapes]] would be the natural place for cross-method comparison (UDSeq is too new to appear there).
-- Complements scDNA-seq approaches in [[10-Summaries/a-comprehensive-view-of-somatic-mosaicism-by-single-cell-dna-analysis]] — DS captures signatures at the tissue level; scDNA-seq captures clonality at the cell level.
+- Direct evolution of [[10-Summaries/kennedy-2014-duplex-protocol]] — Kennedy/Loeb 2014 was 2.5×10⁻⁶/bp; UDSeq is **1,000× more accurate**.
+- One of six methods benchmarked in [[10-Summaries/zhang-2025-smaht-duplex-benchmark]] would be the natural place for cross-method comparison (UDSeq is too new to appear there).
+- Complements scDNA-seq approaches in [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — DS captures signatures at the tissue level; scDNA-seq captures clonality at the cell level.
 
 ## Open questions
 
@@ -58,4 +58,4 @@ UDSeq couples random shearing with adapter ligation that places UMIs on both str
 **Source:** [DOI](https://doi.org/10.1101/2025.09.14.676103)
 ## Related
 
-- [[30-Concepts/duplex-sequencing]] · [[30-Concepts/mutational-signatures]] · [[40-Topics/duplex-sequencing]] · [[10-Summaries/benchmarking-of-duplex-sequencing-approaches-to-reveal-somatic-mutation-landscapes]]
+- [[30-Concepts/duplex-sequencing]] · [[30-Concepts/mutational-signatures]] · [[40-Topics/duplex-sequencing]] · [[10-Summaries/zhang-2025-smaht-duplex-benchmark]]

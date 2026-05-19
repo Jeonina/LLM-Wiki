@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Senior author on [[10-Summaries/a-comprehensive-view-of-somatic-mosaicism-by-single-cell-dna-analysis]] and co-author on SMaHT-network papers.
+- **2026-05-12** — Senior author on [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] and co-author on SMaHT-network papers.
 
 ## Related
 

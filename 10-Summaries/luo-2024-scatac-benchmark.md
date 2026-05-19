@@ -26,6 +26,6 @@ An independent, multi-method benchmark of scATAC-seq analysis tools — the chro
 ## Related
 
 - [[10-Summaries/zhang-2024-snapatac2]]
-- [[10-Summaries/stuart-2021-signac]]
+- [[10-Summaries/stuart-2021-natmethods]]
 - [[10-Summaries/granja-2021-archr]]
 - [[30-Concepts/single-cell-analysis-tools]]

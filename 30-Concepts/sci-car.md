@@ -27,8 +27,8 @@ The paper explicitly framed sci-CAR as a template for future DNA-anchored joint 
 ## Variants and refinements
 
 - **sci-CAR** ([[10-Summaries/cao-2018-sci-car]]) — accessibility + RNA.
-- [[scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells|scNMT-seq]] — adds methylation, lower throughput.
-- [[share-seq-reveals-chromatin-potential-nature-reviews-genetics|SHARE-seq]] — split-pool scaling alternative.
+- [[10-Summaries/clark-2018-scnmt-seq|scNMT-seq]] — adds methylation, lower throughput.
+- [[10-Summaries/ma-2020-share-seq|SHARE-seq]] — split-pool scaling alternative.
 - 10x Genomics Multiome — commercial sci-CAR-style coassay.
 
 ## Contested points

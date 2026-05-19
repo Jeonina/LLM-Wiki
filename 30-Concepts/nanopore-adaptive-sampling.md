@@ -22,7 +22,7 @@ Implemented via tools like ReadFish, ReadUntil, and ONT's native Dorado. Targete
 
 ## Examples
 
-- [[10-Summaries/single-molecule-targeted-accessibility-and-methylation-sequencing-of-centromeres-telomeres-and-rdnas-in-arabidopsis]] (STAM-seq) uses adaptive sampling for plant HRRs.
+- [[10-Summaries/mo-2023-stam-seq]] (STAM-seq) uses adaptive sampling for plant HRRs.
 
 ## Related
 

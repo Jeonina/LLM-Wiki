@@ -47,8 +47,8 @@ IGS sequences DNA **directly inside intact, fixed cells**, then matches each in-
 
 ## Related summaries
 
-- [[harmonizing-single-cell-3d-genome-data-with-stark-and-scnucleome]] — STARK / scNucleome computational framework for 3D-genome data harmonization.
-- [[navigating-the-3d-genome-at-single-cell-resolution-techniques-computation-and-mechanistic-landscapes]] — 3D-genome single-cell methods review.
+- [[10-Summaries/jiang-2026-stark-scnucleome]] — STARK / scNucleome computational framework for 3D-genome data harmonization.
+- [[10-Summaries/hong-2025-sc3d-genome-review]] — 3D-genome single-cell methods review.
 
 ## Note on filename
 

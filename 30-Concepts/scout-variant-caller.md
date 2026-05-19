@@ -23,7 +23,7 @@ For each candidate SNV at locus *s*, SCOUT estimates the multinomial allele-succ
 
 ## Examples
 
-- [[10-Summaries/accurate-single-cell-genotyping-utilizing-information-from-the-local-genome-territory]].
+- [[10-Summaries/tu-2021-scout]].
 
 ## Related
 

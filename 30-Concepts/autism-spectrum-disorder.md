@@ -17,11 +17,11 @@ ASD is defined by clinical criteria (social communication deficits, restricted/r
 
 ## Why it matters
 
-ASD risk is not captured entirely by inherited variation. Somatic SNVs and large CNVs (>4 Mb) contribute to risk in 0.2–5% of probands ([[10-Summaries/bizzotto-2022-brain-mosaicism]]). Deep WGS of ASD brains shows excess mosaic mutations in brain-active enhancers — a finding that exome sequencing misses.
+ASD risk is not captured entirely by inherited variation. Somatic SNVs and large CNVs (>4 Mb) contribute to risk in 0.2–5% of probands ([[10-Summaries/bizzotto-2022-brain-mosaicism-review]]). Deep WGS of ASD brains shows excess mosaic mutations in brain-active enhancers — a finding that exome sequencing misses.
 
 ## Examples
 
-- Mosaic missense mutations in intolerant brain genes contribute 0.8–1.3% of ASD risk ([[10-Summaries/bizzotto-2022-brain-mosaicism]]).
+- Mosaic missense mutations in intolerant brain genes contribute 0.8–1.3% of ASD risk ([[10-Summaries/bizzotto-2022-brain-mosaicism-review]]).
 - Large mosaic CNVs (>4 Mb) correlate positively with ASD severity.
 
 ## Related

@@ -23,9 +23,9 @@ ONT instruments range from portable MinION/Flongle to PromethION. Read lengths r
 
 ## Examples
 
-- [[10-Summaries/single-molecule-targeted-accessibility-and-methylation-sequencing-of-centromeres-telomeres-and-rdnas-in-arabidopsis]] uses ONT adaptive sampling for plant centromere/telomere/rDNA epigenomics.
-- [[10-Summaries/nanopore-sequencing-unveils-somatic-structural-variations-as-biomarkers-in-laryngeal-squamous-cell-carcinoma-genomes]] uses ONT for somatic SV detection.
-- [[10-Summaries/profiling-the-epigenome-using-long-read-sequencing]] reviews ONT epigenomics.
+- [[10-Summaries/mo-2023-stam-seq]] uses ONT adaptive sampling for plant centromere/telomere/rDNA epigenomics.
+- [[10-Summaries/liu-2025-nanopore-lscc-svs]] uses ONT for somatic SV detection.
+- [[10-Summaries/liu-2025-long-read-epigenome-review]] reviews ONT epigenomics.
 
 ## Related
 

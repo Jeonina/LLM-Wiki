@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Co-senior author of [[10-Summaries/dna-methylation-an-epigenetic-mark-of-cellular-memory-experimental-molecular-medicine]] (Kim & Costello 2017 review).
+- **2026-05-12** — Co-senior author of [[10-Summaries/kim-2017-methylation-memory-review]] (Kim & Costello 2017 review).
 
 ## Related
 

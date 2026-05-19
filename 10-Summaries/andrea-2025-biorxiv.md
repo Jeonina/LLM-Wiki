@@ -58,10 +58,10 @@ The previously-stated gap in [[50-Notes/mosaicism-and-epigenome-the-synthesis-ga
 ## Related summaries
 
 - [[taejeong-2022-science]] — Bae 2022 ASD MEIS-motif (bulk-epi-annotated); Duplex-Multiome is the single-nucleus same-cell successor.
-- [[a-comprehensive-view-of-somatic-mosaicism-by-single-cell-dna-analysis]] — Luquette/Walsh same lab, PTA+DS prior generation.
+- [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — Luquette/Walsh same lab, PTA+DS prior generation.
 - [[eran-2025-neuron]] — Mukamel 2025 mouse-brain aneuploidy + methylation atlas-scale complement.
 - [[franco-2024-nature]] — GoT-ChA, targeted-locus precedent for joint SNV + chromatin.
-- [[single-cell-triple-omics-sequencing-reveals-genetic-epigenetic-and-transcriptomic-heterogeneity-in-hepatocellular-carcinomas]] — scTrio-seq (CNV + methylation + RNA), CNV-only precedent.
+- [[10-Summaries/hou-2016-sctrio-seq]] — scTrio-seq (CNV + methylation + RNA), CNV-only precedent.
 
 ## Caveats
 

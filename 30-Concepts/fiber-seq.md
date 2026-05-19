@@ -39,7 +39,7 @@ m6A marks are erased during any DNA amplification (PCR, MDA, PTA, LIANTI). A sin
 
 - **AdMTase-seq** ([[10-Summaries/andrewb-2020-science]]) — short-read m6A-IP version, bulk only.
 - **Fiber-seq** ([[10-Summaries/andrewb-2020-science]]) — long-read PacBio CCS version giving multikilobase per-fiber resolution.
-- **[[stam-seq]]** ([[10-Summaries/single-molecule-targeted-accessibility-and-methylation-sequencing-of-centromeres-telomeres-and-rdnas-in-arabidopsis]]) — Fiber-seq-style m6A stenciling adapted to *Arabidopsis* centromeres / telomeres / rDNA.
+- **[[stam-seq]]** ([[10-Summaries/mo-2023-stam-seq]]) — Fiber-seq-style m6A stenciling adapted to *Arabidopsis* centromeres / telomeres / rDNA.
 - **[[samosa]]**, **[[samosa-tag]]**, **[[smrt-tag]]** — methylation-based footprinting variants for adjacent applications (targeted, repeat-mapping, multimodal).
 - **[[daf-seq]]** ([[10-Summaries/elliott-2025-naturebiotechnology]]) — direct successor; deamination-based, single-cell-compatible.
 

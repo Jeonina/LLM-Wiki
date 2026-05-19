@@ -52,13 +52,13 @@ Cross-platform comparison on three reference sample types using each lab's publi
 
 ## Connections to other sources
 
-- Companion paper to [[10-Summaries/a-comprehensive-view-of-somatic-mosaicism-by-single-cell-dna-analysis]] (same SMaHT consortium, single-cell side rather than bulk-duplex side). Together they define what SMaHT calls a "comprehensive view" — duplex for population mutation rates, scDNA-seq for clonality.
+- Companion paper to [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] (same SMaHT consortium, single-cell side rather than bulk-duplex side). Together they define what SMaHT calls a "comprehensive view" — duplex for population mutation rates, scDNA-seq for clonality.
 - The methodological-axis framing aligns with [[10-Summaries/diane-2025-naturereviewsgenetics]]: duplex protection is the answer to scWGA single-strand dropout but is not yet itself single-cell.
-- Cites the founding paper [[10-Summaries/detecting-ultralow-frequency-mutations-by-duplex-sequencing]] (Kennedy 2014).
+- Cites the founding paper [[10-Summaries/kennedy-2014-duplex-protocol]] (Kennedy 2014).
 
 ## Open questions
 
-- Benchmark does not include UDSeq ([[10-Summaries/a-universal-duplex-sequencing-approach-for-accurate-detection-of-somatic-mutations]]); cross-comparison is open.
+- Benchmark does not include UDSeq ([[10-Summaries/nandi-2025-udseq]]); cross-comparison is open.
 - Single-cell duplex remains the holy grail; this benchmark is bulk/pseudo-bulk.
 
 ---

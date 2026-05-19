@@ -26,7 +26,7 @@ Conceptual ancestor of Fiber-seq (Stergachis 2020) which substitutes Hia5 m6A me
 
 ## Related
 
-- [[10-Summaries/stergachis-2020-fiberseq]]
+- [[10-Summaries/andrewb-2020-science]]
 - [[10-Summaries/abdulhay-2020-samosa]]
 - [[10-Summaries/swanson-2025-stamseq]]
 - [[30-Concepts/single-molecule-footprinting]]

@@ -36,7 +36,7 @@ updated: 2026-05-12
 - **NanoSeq is the methodological anchor for non-dividing-tissue somatic-mutation measurement** — the gap left by clonal-expansion methods (which require mitotic cells) and scWGA (which requires sufficient template).
 - For the planned review's **§5 neuroscience applications**: NanoSeq's post-mitotic neuron finding **complements [[10-Summaries/taejeong-2018-science|Bae 2018]]'s observation of mutation-spectrum shift in neurogenesis**. Bae 2018: progenitor cells accumulate mutations during division at ~5 SNVs/day; NanoSeq: post-mitotic neurons continue accumulating at lower constant rate after division ceases. Together they bracket the lifelong neural mosaicism trajectory.
 - For §6 (Limitations): NanoSeq's error-rate floor is the **field's current technological ceiling for somatic-mutation accuracy**. Anything below ~5 errors/billion bp requires further chemistry improvement.
-- Same Sanger lineage that produced [[a-comprehensive-view-of-somatic-mosaicism-by-single-cell-dna-analysis|Luquette/Walsh SMaHT]] and the duplex-sequencing benchmark; this paper is upstream of those.
+- Same Sanger lineage that produced [[10-Summaries/luquette-2025-pta-duplex-mosaicism|Luquette/Walsh SMaHT]] and the duplex-sequencing benchmark; this paper is upstream of those.
 
 ## Entities / concepts touched
 
@@ -44,9 +44,9 @@ updated: 2026-05-12
 
 ## Related summaries
 
-- [[detecting-ultralow-frequency-mutations-by-duplex-sequencing]] — Kennedy/Loeb 2014 foundational DS.
-- [[a-universal-duplex-sequencing-approach-for-accurate-detection-of-somatic-mutations]] — Alexandrov UDSeq.
-- [[benchmarking-of-duplex-sequencing-approaches-to-reveal-somatic-mutation-landscapes]] — SMaHT cross-method DS benchmark.
+- [[10-Summaries/kennedy-2014-duplex-protocol]] — Kennedy/Loeb 2014 foundational DS.
+- [[10-Summaries/nandi-2025-udseq]] — Alexandrov UDSeq.
+- [[10-Summaries/zhang-2025-smaht-duplex-benchmark]] — SMaHT cross-method DS benchmark.
 - [[taejeong-2018-science]] — Bae 2018 fetal-brain progenitor mutation rates (complementary biology).
 
 ---

@@ -17,11 +17,11 @@ NanoSeq uses HpyCH4V restriction digestion (or other bottlenecks) followed by du
 
 ## Why it matters
 
-NanoSeq has been the workhorse for measuring somatic mutation accumulation rates in normal human tissues (Abascal et al. 2021 Nature). Reports 15–20 SNVs/year accumulation in human neurons ([[10-Summaries/bizzotto-2022-brain-mosaicism]]).
+NanoSeq has been the workhorse for measuring somatic mutation accumulation rates in normal human tissues (Abascal et al. 2021 Nature). Reports 15–20 SNVs/year accumulation in human neurons ([[10-Summaries/bizzotto-2022-brain-mosaicism-review]]).
 
 ## Examples
 
-- One of six methods in the SMaHT benchmark ([[10-Summaries/benchmarking-of-duplex-sequencing-approaches-to-reveal-somatic-mutation-landscapes]]).
+- One of six methods in the SMaHT benchmark ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).
 
 ## Related
 

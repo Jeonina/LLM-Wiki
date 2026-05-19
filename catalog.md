@@ -70,7 +70,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/chen-2025-methyltree\|Chen 2025 (MethylTree)]] — epimutation lineage from scBS-seq
 
 ### mtDNA Mosaicism
-- [[10-Summaries/high-throughput-single-cell-analysis-reveals-progressive-mitochondrial-dna-mosaicism-throughout-life\|Glynos/Chinnery 2023]] — mouse mtDNA heteroplasmy through life
+- [[10-Summaries/glynos-2023-mtdna-mosaicism|Glynos/Chinnery 2023]] — mouse mtDNA heteroplasmy through life
 - [[10-Summaries/hsieh-2026-mtdna-mosaicism\|Hsieh/Ludwig 2026]] — scmtMPM + scwMSS mtDNA mosaicism metrics
 - [[10-Summaries/sun-2025-scmitomut\|Sun/Perié 2025]] — scMitoMut beta-binomial mtDNA calling
 - [[10-Summaries/miller-2022-maester\|Miller/van Galen 2022]] — MAESTER mtDNA from scRNA-seq
@@ -94,7 +94,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 ### Chromatin + Transcriptome
 - [[10-Summaries/cao-2018-science\|Cao 2018 (sci-CAR)]] — scATAC + scRNA via combinatorial indexing
 - [[10-Summaries/ma-2020-cell\|Ma 2020 (SHARE-seq)]] — joint scATAC + scRNA; chromatin potential
-- [[10-Summaries/scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells\|Clark 2018 (scNMT-seq)]] — accessibility + methylation + RNA
+- [[10-Summaries/clark-2018-scnmt|Clark 2018 (scNMT-seq)]] — accessibility + methylation + RNA
 
 ### Gap-Closing Methods (2025)
 - [[10-Summaries/andrea-2025-biorxiv\|Kriz 2025 (Duplex-Multiome)]] — duplex + snATAC + snRNA in same nucleus
@@ -159,7 +159,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 
 ### Reviews
 - [[10-Summaries/schubeler-2015-nature\|Schübeler 2015]] — methylation as consequence, not instruction
-- [[10-Summaries/kim-2017-dna-methylation-memory\|Kim/Costello 2017]] — methylation as cellular memory
+- [[10-Summaries/kim-2017-methylation-memory-review|Kim/Costello 2017]] — methylation as cellular memory
 - [[10-Summaries/yilei-2025-naturereviewsgenetics\|Fu/Timp/Sedlazeck 2025]] — long-read methylation computational analysis
 - [[10-Summaries/iqbal-2023-methylome-review\|Iqbal/Zhou 2023]] — scDNA methylome computational review
 
@@ -167,7 +167,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/pott-2017-elife\|Pott 2017 (scNOMe-seq)]] — methylation + accessibility + nucleosome phasing
 - [[10-Summaries/hunt-2022-sctem-seq\|Hunt/Lee 2022 (scTEM-seq)]] — TE methylation as global proxy
 - [[10-Summaries/bai-2024-simple-seq\|Bai/Yi 2024 (SIMPLE-seq)]] — joint 5mC + 5hmC
-- [[10-Summaries/shen-2025-splicool-seq\|Shen/Fan 2025 (SpliCOOL-seq)]] — methylation + accessibility
+- [[10-Summaries/shen-2025-splicool-seq|Shen/Fan 2025 (SpliCOOL-seq)]] — methylation + accessibility
 - [[10-Summaries/tavares-2026-6base-cuttag\|Tavares 2026 (6-base-CUT&Tag)]] — 5mC + 5hmC at histone marks
 - [[10-Summaries/geisenberger-2025-scepi2-seq\|Geisenberger 2025 (scEpi²-seq)]] — histone + 5mC
 - [[10-Summaries/lee-2019-natmethods\|Lee 2019 (sn-m3C-seq)]] — methylome + 3C joint

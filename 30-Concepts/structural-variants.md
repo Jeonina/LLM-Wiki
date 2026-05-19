@@ -30,8 +30,8 @@ SVs include:
 
 ## Examples
 
-- [[10-Summaries/nanopore-sequencing-unveils-somatic-structural-variations-as-biomarkers-in-laryngeal-squamous-cell-carcinoma-genomes]] uses nanopore for somatic SV detection in LSCC; finds smoking × deletion-burden correlation and a repeat-expansion regulating *TP53BP2*/*FBXO28*.
-- [[10-Summaries/a-comprehensive-view-of-somatic-mosaicism-by-single-cell-dna-analysis]] detects chromosomal rearrangements (including TCR loci) at single-cell scale.
+- [[10-Summaries/liu-2025-nanopore-lscc-svs]] uses nanopore for somatic SV detection in LSCC; finds smoking × deletion-burden correlation and a repeat-expansion regulating *TP53BP2*/*FBXO28*.
+- [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] detects chromosomal rearrangements (including TCR loci) at single-cell scale.
 
 ## Related
 

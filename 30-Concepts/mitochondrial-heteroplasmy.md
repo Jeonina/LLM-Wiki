@@ -24,11 +24,11 @@ Each cell has hundreds to thousands of mtDNA copies (vs two for nuclear DNA). Th
 ## Variants and refinements
 
 - **Vegetative segregation**: heteroplasmy variance increasing through cell division.
-- **Relaxed replication**: heteroplasmy variance from mtDNA destruction-and-resynthesis independent of cell cycle. [[10-Summaries/high-throughput-single-cell-analysis-reveals-progressive-mitochondrial-dna-mosaicism-throughout-life]] shows this is the dominant driver in both dividing and non-dividing tissues.
+- **Relaxed replication**: heteroplasmy variance from mtDNA destruction-and-resynthesis independent of cell cycle. [[10-Summaries/glynos-2023-mtdna-mosaicism]] shows this is the dominant driver in both dividing and non-dividing tissues.
 
 ## Examples
 
-- m.5024C>T and m.5019A>G mt-tRNA-Ala mutations in mouse models — single-cell heteroplasmy variance increases from prenatal to P365 ([[10-Summaries/high-throughput-single-cell-analysis-reveals-progressive-mitochondrial-dna-mosaicism-throughout-life]]).
+- m.5024C>T and m.5019A>G mt-tRNA-Ala mutations in mouse models — single-cell heteroplasmy variance increases from prenatal to P365 ([[10-Summaries/glynos-2023-mtdna-mosaicism]]).
 - MELAS (m.3243A>G), MERRF (m.8344A>G), Leigh syndrome (multiple mtDNA mutations).
 
 ## Related

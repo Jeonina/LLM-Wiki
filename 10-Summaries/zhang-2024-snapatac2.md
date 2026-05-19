@@ -23,6 +23,6 @@ A major computational anchor for §4: SnapATAC2 is the current best-in-class sca
 
 ## Related
 
-- [[10-Summaries/stuart-2021-signac]]
+- [[10-Summaries/stuart-2021-natmethods]]
 - [[10-Summaries/granja-2021-archr]]
 - [[30-Concepts/single-cell-analysis-tools]]

@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — First author of [[10-Summaries/bizzotto-2022-brain-mosaicism]] (NRN review with Walsh).
+- **2026-05-12** — First author of [[10-Summaries/bizzotto-2022-brain-mosaicism-review]] (NRN review with Walsh).
 
 ## Related
 

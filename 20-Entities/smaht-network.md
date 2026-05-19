@@ -19,7 +19,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Co-author institutional credit on [[10-Summaries/a-comprehensive-view-of-somatic-mosaicism-by-single-cell-dna-analysis]] and [[10-Summaries/benchmarking-of-duplex-sequencing-approaches-to-reveal-somatic-mutation-landscapes]].
+- **2026-05-12** — Co-author institutional credit on [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] and [[10-Summaries/zhang-2025-smaht-duplex-benchmark]].
 
 ## Related
 

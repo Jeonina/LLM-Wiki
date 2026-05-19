@@ -23,7 +23,7 @@ Brain-specific application of Fiber-seq that bridges single-molecule footprintin
 
 ## Related
 
-- [[10-Summaries/stergachis-2020-fiberseq]]
+- [[10-Summaries/andrewb-2020-science]]
 - [[10-Summaries/bohaczuk-2024-targeted-fiberseq]]
 - [[10-Summaries/shipony-2020-smac]]
 - [[20-Entities/andrew-b-stergachis]]

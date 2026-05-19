@@ -21,7 +21,7 @@ Somatic activating mutations in *AKT3, PIK3CA, RHEB, MTOR* or loss-of-function m
 
 ## Examples
 
-- Pik3ca^H1047R restricted to excitatory neurons (Emx1-Cre) causes severe megalencephaly; restricted to inhibitory neurons (Nkx2.1-Cre) does not — **cell type matters as much as the mutation** ([[10-Summaries/bizzotto-2022-brain-mosaicism]]).
+- Pik3ca^H1047R restricted to excitatory neurons (Emx1-Cre) causes severe megalencephaly; restricted to inhibitory neurons (Nkx2.1-Cre) does not — **cell type matters as much as the mutation** ([[10-Summaries/bizzotto-2022-brain-mosaicism-review]]).
 
 ## Related
 

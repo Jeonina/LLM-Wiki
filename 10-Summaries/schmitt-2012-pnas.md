@@ -27,6 +27,6 @@ Founding methodological reference for all duplex-consensus mosaic-variant detect
 ## Related
 
 - [[10-Summaries/kennedy-2014-natprotoc]]
-- [[10-Summaries/abascal-2021-nature]]
+- [[10-Summaries/abascal-2021-nanoseq]]
 - [[30-Concepts/duplex-consensus-sequencing]]
 - [[20-Entities/lawrence-loeb]]

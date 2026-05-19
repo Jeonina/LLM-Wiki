@@ -17,7 +17,7 @@ Detection requires haplotype-phased reads. Long-read sequencing (PacBio, ONT) sp
 
 ## Why it matters
 
-ASM-QTLs are emerging as a regulatory mechanism for expression variability. A deCODE genetics study (cited in [[10-Summaries/profiling-the-epigenome-using-long-read-sequencing]]) identified ASM-QTLs as drivers of expression variability in cis-regulatory regions for hematological traits.
+ASM-QTLs are emerging as a regulatory mechanism for expression variability. A deCODE genetics study (cited in [[10-Summaries/liu-2025-long-read-epigenome-review]]) identified ASM-QTLs as drivers of expression variability in cis-regulatory regions for hematological traits.
 
 ## Related
 

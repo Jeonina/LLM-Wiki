@@ -46,7 +46,7 @@ updated: 2026-05-12
 ## Related summaries
 
 - [[chongyuan-2018-naturecommunications]] — snmC-seq2, modern atlas-scale follow-on.
-- [[single-cell-triple-omics-sequencing-reveals-genetic-epigenetic-and-transcriptomic-heterogeneity-in-hepatocellular-carcinomas]] — scTrio-seq, direct extension adding RNA arm.
+- [[10-Summaries/hou-2016-sctrio-seq]] — scTrio-seq, direct extension adding RNA arm.
 - [[zachary-2013-naturereviewsgenetics]] — Smith/Meissner 2013 review citing this paper.
 
 ---

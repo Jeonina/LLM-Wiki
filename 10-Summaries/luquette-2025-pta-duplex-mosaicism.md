@@ -51,12 +51,12 @@ topics:
 
 - Reading T-cell identity from rearranged TCR loci in genomic DNA is a useful demonstration: **somatic genome content alone can identify cell lineage** in some cases, complementing transcriptome-based labeling.
 - The lung-vs-colon contrast in mutation burden gives a clean within-individual exposure-vs-baseline comparison (smoker's lung carrying tobacco signature; colon as a quasi-control).
-- Together with [[10-Summaries/benchmarking-of-duplex-sequencing-approaches-to-reveal-somatic-mutation-landscapes]] (six duplex methods benchmark), this paper defines the **SMaHT methodological core**: PTA-scDNA-seq for single-cell, duplex for bulk validation.
+- Together with [[10-Summaries/zhang-2025-smaht-duplex-benchmark]] (six duplex methods benchmark), this paper defines the **SMaHT methodological core**: PTA-scDNA-seq for single-cell, duplex for bulk validation.
 
 ## Connections to other sources
 
 - Direct extension of [[10-Summaries/diane-2025-naturereviewsgenetics]]'s PTA-as-inflection-point framing: PTA + duplex is the current frontier.
-- Complements [[10-Summaries/bizzotto-2022-brain-mosaicism]] (Bizzotto/Walsh on brain) by extending the lineage-tracing logic from brain to peripheral tissues.
+- Complements [[10-Summaries/bizzotto-2022-brain-mosaicism-review]] (Bizzotto/Walsh on brain) by extending the lineage-tracing logic from brain to peripheral tissues.
 - TCR-rearrangement detection echoes lineage-tracing themes in [[10-Summaries/anna-2019-nature]] (GoT) and [[10-Summaries/franco-2024-nature]] (GoT–ChA), though those infer lineage from genotyped variants rather than rearrangements.
 
 ## Open questions

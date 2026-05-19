@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Co-corresponding author of [[10-Summaries/nanopore-sequencing-unveils-somatic-structural-variations-as-biomarkers-in-laryngeal-squamous-cell-carcinoma-genomes]].
+- **2026-05-12** — Co-corresponding author of [[10-Summaries/liu-2025-nanopore-lscc-svs]].
 
 ## Related
 

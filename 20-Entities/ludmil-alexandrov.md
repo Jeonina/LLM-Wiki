@@ -18,7 +18,7 @@ Bioinformatics + cancer biology. Sanger-Cambridge alumnus (Stratton lab). UCSD M
 
 ## Mentions
 
-- **2026-05-12** — Senior author of [[10-Summaries/a-universal-duplex-sequencing-approach-for-accurate-detection-of-somatic-mutations]] (UDSeq, 2025 bioRxiv preprint).
+- **2026-05-12** — Senior author of [[10-Summaries/nandi-2025-udseq]] (UDSeq, 2025 bioRxiv preprint).
 - Earlier: senior author of foundational Alexandrov 2013 *Nature* paper defining the 30 COSMIC SBS signatures.
 
 ## Related

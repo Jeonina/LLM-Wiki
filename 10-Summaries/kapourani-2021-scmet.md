@@ -28,5 +28,5 @@ scMET fills a niche orthogonal to Melissa and Epiclomal: those tools cluster cel
 
 - [[10-Summaries/kapourani-2019-melissa]]
 - [[10-Summaries/desouza-2020-epiclomal]]
-- [[10-Summaries/argelaguet-2019-mofa]]
+- [[10-Summaries/argelaguet-2019-nature]]
 - [[30-Concepts/methylation-clones-epimutation]]

@@ -45,7 +45,7 @@ updated: 2026-05-12
 
 ## Related summaries
 
-- [[high-throughput-single-cell-analysis-reveals-progressive-mitochondrial-dna-mosaicism-throughout-life]] — Glynos/Chinnery mouse mtDNA heteroplasmy variance, complementary biology.
+- [[10-Summaries/glynos-2023-mtdna-mosaicism]] — Glynos/Chinnery mouse mtDNA heteroplasmy variance, complementary biology.
 - [[franco-2024-nature]] — GoT-ChA, alternative single-cell SNV + chromatin (targeted nuclear loci).
 
 ---

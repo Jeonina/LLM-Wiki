@@ -17,7 +17,7 @@ Designed for high-sensitivity detection of cancer-driven structural variation. B
 
 ## Examples
 
-- [[10-Summaries/nanopore-sequencing-unveils-somatic-structural-variations-as-biomarkers-in-laryngeal-squamous-cell-carcinoma-genomes]].
+- [[10-Summaries/liu-2025-nanopore-lscc-svs]].
 
 ## Related
 

@@ -26,6 +26,6 @@ CHISEL filled a fundamental gap: ultra-low-coverage barcode-based scDNA platform
 ## Related
 
 - [[10-Summaries/laks-2019-cell]]
-- [[10-Summaries/kim-2018-nature]]
+- [[10-Summaries/kim-2018-tnbc-chemoresistance]]
 - [[10-Summaries/kaufmann-2022-medicc2]]
 - [[30-Concepts/copy-number-variation]]

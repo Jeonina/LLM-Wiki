@@ -24,6 +24,6 @@ Founding triple-omics single-cell assay; the most-cited reference for "joint epi
 ## Related
 
 - [[10-Summaries/angermueller-2017-genomebiol]]
-- [[10-Summaries/lee-2019-nature]]
+- [[10-Summaries/lee-2019-natmethods]]
 - [[10-Summaries/pott-2017-elife]]
 - [[30-Concepts/joint-methylome-assays]]

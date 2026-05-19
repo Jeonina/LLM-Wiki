@@ -22,7 +22,7 @@ Major families:
 
 - TEs are kept silenced by DNA methylation (especially at internal promoters) and H3K9me3 heterochromatin.
 - Loss of TE silencing in cancer triggers [[30-Concepts/viral-mimicry]] innate immune responses.
-- L1 retrotransposition in neurons contributes to somatic genomic mosaicism ([[10-Summaries/bizzotto-2022-brain-mosaicism]]).
+- L1 retrotransposition in neurons contributes to somatic genomic mosaicism ([[10-Summaries/bizzotto-2022-brain-mosaicism-review]]).
 - TE methylation serves as a surrogate for global methylation status (basis of [[30-Concepts/sctem-seq]]).
 
 ## Related

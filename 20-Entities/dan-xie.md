@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Senior author of [[10-Summaries/accurate-single-cell-genotyping-utilizing-information-from-the-local-genome-territory]] (SCOUT) and co-author on [[10-Summaries/nanopore-sequencing-unveils-somatic-structural-variations-as-biomarkers-in-laryngeal-squamous-cell-carcinoma-genomes]] (LSCC nanopore SVs).
+- **2026-05-12** — Senior author of [[10-Summaries/tu-2021-scout]] (SCOUT) and co-author on [[10-Summaries/liu-2025-nanopore-lscc-svs]] (LSCC nanopore SVs).
 
 ## Related
 

@@ -53,10 +53,10 @@ Before sci-CAR, joint single-cell profiling of chromatin accessibility + transcr
 
 ## Related summaries
 
-- [[scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]] — Clark scNMT-seq, three-modality but lower throughput.
-- [[share-seq-reveals-chromatin-potential-nature-reviews-genetics]] — Ma SHARE-seq, split-pool scaling alternative.
-- [[g-t-seq-parallel-sequencing-of-single-cell-genomes-and-transcriptomes]] — Macaulay G&T-seq, DNA + RNA joint (precursor of DNA-anchored joint assays).
-- [[integrated-genome-and-transcriptome-sequencing-of-the-same-cell]] — Dey DR-seq, contemporaneous DNA+RNA joint method.
+- [[10-Summaries/clark-2018-scnmt-seq]] — Clark scNMT-seq, three-modality but lower throughput.
+- [[10-Summaries/ma-2020-share-seq]] — Ma SHARE-seq, split-pool scaling alternative.
+- [[10-Summaries/macaulay-2015-gt-seq]] — Macaulay G&T-seq, DNA + RNA joint (precursor of DNA-anchored joint assays).
+- [[10-Summaries/dey-2015-dr-seq]] — Dey DR-seq, contemporaneous DNA+RNA joint method.
 
 ---
 **Source:** [Open paper](https://www.science.org/doi/10.1126/science.aau0730)

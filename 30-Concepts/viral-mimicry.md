@@ -23,7 +23,7 @@ When DNA methylation is lost at retrotransposon sequences, RNA polymerase II rea
 
 ## Examples
 
-- [[10-Summaries/sctem-seq-single-cell-analysis-of-transposable-element-methylation-to-link-global-epigenetic-heterogeneity-with-transcriptional-programs]] shows that a subgroup of decitabine-treated AML cells coordinately upregulates many TE families — and these cells are **indistinguishable by global methylation alone**, implying other factors (e.g., SETDB1, TF availability) gate the response.
+- [[10-Summaries/hunt-2022-sctem-seq]] shows that a subgroup of decitabine-treated AML cells coordinately upregulates many TE families — and these cells are **indistinguishable by global methylation alone**, implying other factors (e.g., SETDB1, TF availability) gate the response.
 
 ## Related
 

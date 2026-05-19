@@ -30,6 +30,6 @@ The independent multi-method benchmark for §4's multimodal-integration subsecti
 
 - [[10-Summaries/ashuach-2023-multivi]]
 - [[10-Summaries/cao-2022-glue]]
-- [[10-Summaries/argelaguet-2019-mofa]]
+- [[10-Summaries/argelaguet-2019-nature]]
 - [[10-Summaries/gong-2021-cobolt]]
 - [[30-Concepts/multimodal-integration-methods]]

@@ -23,9 +23,9 @@ Boston Children's Hospital, Harvard Medical School, Howard Hughes Medical Instit
 ## Mentions
 
 - **2026-05-11** — [[10-Summaries/diane-2025-naturereviewsgenetics]]: senior author of the keystone scDNA-seq review. Frames the current state of the field through the lens of mosaicism research that his lab has been driving for over a decade.
-- **2026-05-12** — [[10-Summaries/bizzotto-2022-brain-mosaicism]]: senior author of the NRN brain mosaicism review with first-author postdoc Sara Bizzotto. Articulates the framework that "somatic developmental mutations are natural barcodes for retrospective lineage tracing in humans."
-- **2026-05-12** — Co-author of [[10-Summaries/a-comprehensive-view-of-somatic-mosaicism-by-single-cell-dna-analysis]] (Luquette/Walsh 2025): PTA + duplex on 102 nuclei from 74-yo lung and colon; SMaHT-network single-cell paper.
-- **2026-05-12** — Co-author of [[10-Summaries/benchmarking-of-duplex-sequencing-approaches-to-reveal-somatic-mutation-landscapes]] (SMaHT duplex-seq benchmark).
+- **2026-05-12** — [[10-Summaries/bizzotto-2022-brain-mosaicism-review]]: senior author of the NRN brain mosaicism review with first-author postdoc Sara Bizzotto. Articulates the framework that "somatic developmental mutations are natural barcodes for retrospective lineage tracing in humans."
+- **2026-05-12** — Co-author of [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] (Luquette/Walsh 2025): PTA + duplex on 102 nuclei from 74-yo lung and colon; SMaHT-network single-cell paper.
+- **2026-05-12** — Co-author of [[10-Summaries/zhang-2025-smaht-duplex-benchmark]] (SMaHT duplex-seq benchmark).
 
 ## Positions and claims
 

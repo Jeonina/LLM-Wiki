@@ -23,7 +23,7 @@ Workflow: nuclei isolation → EcoGII 6mA methylation → nanopore sequencing wi
 
 ## Examples
 
-- [[10-Summaries/single-molecule-targeted-accessibility-and-methylation-sequencing-of-centromeres-telomeres-and-rdnas-in-arabidopsis]].
+- [[10-Summaries/mo-2023-stam-seq]].
 
 ## Related
 

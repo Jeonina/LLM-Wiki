@@ -51,11 +51,11 @@ First single-cell method that simultaneously profiles **three molecular layers �
 
 ## Related summaries
 
-- [[g-t-seq-parallel-sequencing-of-single-cell-genomes-and-transcriptomes]] — DNA/RNA separation chemistry that scNMT-seq inherits.
-- [[joint-profiling-of-chromatin-accessibility-and-gene-expression-in-thousands-of-single-cells]] — sci-CAR, scaled accessibility+RNA without methylation.
-- [[share-seq-reveals-chromatin-potential-nature-reviews-genetics]] — SHARE-seq accessibility+RNA via split-pool.
-- [[single-cell-triple-omics-sequencing-reveals-genetic-epigenetic-and-transcriptomic-heterogeneity-in-hepatocellular-carcinomas]] — scTrio-seq, alternative triple-omics with CNV instead of accessibility.
-- [[high-throughput-single-cell-dna-methylation-and-chromatin-accessibility-co-profiling-with-splicool-seq]] — SpliCOOL-seq, later scaling of methylation+accessibility.
+- [[10-Summaries/macaulay-2015-gt-seq]] — DNA/RNA separation chemistry that scNMT-seq inherits.
+- [[10-Summaries/cao-2018-sci-car]] — sci-CAR, scaled accessibility+RNA without methylation.
+- [[10-Summaries/ma-2020-share-seq]] — SHARE-seq accessibility+RNA via split-pool.
+- [[10-Summaries/hou-2016-sctrio-seq]] — scTrio-seq, alternative triple-omics with CNV instead of accessibility.
+- [[10-Summaries/shen-2026-splicool-seq]] — SpliCOOL-seq, later scaling of methylation+accessibility.
 
 ---
 **Source:** [Open paper](https://www.nature.com/articles/s41467-018-03149-4)

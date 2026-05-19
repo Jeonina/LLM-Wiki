@@ -16,7 +16,7 @@ updated: 2026-05-12
 
 ## Thesis
 
-G&T-seq physically **separates** polyadenylated mRNA from genomic DNA in a single cell using a biotinylated oligo-dT primer captured on streptavidin beads, then **amplifies each pool independently** (Smart-seq2 for RNA, MDA or PicoPlex for DNA). This separation-before-amplification strategy contrasts with the contemporaneous one-pot DR-seq method ([[integrated-genome-and-transcriptome-sequencing-of-the-same-cell|Dey 2015]]) and enables full-length transcripts + flexible WGA choice from the same single cell.
+G&T-seq physically **separates** polyadenylated mRNA from genomic DNA in a single cell using a biotinylated oligo-dT primer captured on streptavidin beads, then **amplifies each pool independently** (Smart-seq2 for RNA, MDA or PicoPlex for DNA). This separation-before-amplification strategy contrasts with the contemporaneous one-pot DR-seq method ([[10-Summaries/dey-2015-dr-seq|Dey 2015]]) and enables full-length transcripts + flexible WGA choice from the same single cell.
 
 ## Mechanism summary
 
@@ -48,9 +48,9 @@ G&T-seq physically **separates** polyadenylated mRNA from genomic DNA in a singl
 
 ## Related summaries
 
-- [[integrated-genome-and-transcriptome-sequencing-of-the-same-cell]] — Dey DR-seq, contemporaneous one-pot alternative.
-- [[scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]] — scNMT-seq inherits the G&T-seq separation chemistry.
-- [[single-cell-triple-omics-sequencing-reveals-genetic-epigenetic-and-transcriptomic-heterogeneity-in-hepatocellular-carcinomas]] — scTrio-seq, conceptual successor adding methylation.
+- [[10-Summaries/dey-2015-dr-seq]] — Dey DR-seq, contemporaneous one-pot alternative.
+- [[10-Summaries/clark-2018-scnmt-seq]] — scNMT-seq inherits the G&T-seq separation chemistry.
+- [[10-Summaries/hou-2016-sctrio-seq]] — scTrio-seq, conceptual successor adding methylation.
 
 ---
 **Source:** [Open paper](https://www.nature.com/articles/nmeth.3370)

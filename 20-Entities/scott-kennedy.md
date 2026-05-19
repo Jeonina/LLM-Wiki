@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — First author on [[10-Summaries/detecting-ultralow-frequency-mutations-by-duplex-sequencing]].
+- **2026-05-12** — First author on [[10-Summaries/kennedy-2014-duplex-protocol]].
 
 ## Related
 

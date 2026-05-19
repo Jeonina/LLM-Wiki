@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Senior author of [[10-Summaries/sctem-seq-single-cell-analysis-of-transposable-element-methylation-to-link-global-epigenetic-heterogeneity-with-transcriptional-programs]] (Hunt et al. 2022).
+- **2026-05-12** — Senior author of [[10-Summaries/hunt-2022-sctem-seq]] (Hunt et al. 2022).
 
 ## Related
 

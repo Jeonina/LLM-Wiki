@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Senior author of [[10-Summaries/single-molecule-targeted-accessibility-and-methylation-sequencing-of-centromeres-telomeres-and-rdnas-in-arabidopsis]].
+- **2026-05-12** — Senior author of [[10-Summaries/mo-2023-stam-seq]].
 
 ## Related
 

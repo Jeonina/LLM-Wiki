@@ -64,9 +64,9 @@ Single neuronal progenitor cells from three human fetal brains (15–21 weeks po
 ## Related summaries
 
 - [[10-Summaries/taejeong-2022-science]] — Bae 2022 follow-up at 131-brain BSMN scale, aging-associated hypermutability + ASD enhancer-motif finding.
-- [[10-Summaries/single-cell-mosaicism-analysis-reveals-cell-type-specific-somatic-mutational-burden-in-alzheimer-s-dementia]] — Kousi/Kellis on AD-specific mosaicism.
-- [[10-Summaries/a-comprehensive-view-of-somatic-mosaicism-by-single-cell-dna-analysis]] — Luquette/Walsh 102-nucleus PTA + duplex.
-- [[10-Summaries/genetic-mosaicism-in-the-human-brain-from-lineage-tracing-to-neuropsychiatric-disorders-nature-reviews-neuroscience]] — Bizzotto/Walsh NRN review citing this paper.
+- [[10-Summaries/kousi-2022-alzheimer-mosaicism]] — Kousi/Kellis on AD-specific mosaicism.
+- [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — Luquette/Walsh 102-nucleus PTA + duplex.
+- [[10-Summaries/bizzotto-2022-brain-mosaicism-review]] — Bizzotto/Walsh NRN review citing this paper.
 
 ---
 **Source:** [DOI](https://doi.org/10.1126/science.aan8690) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/29217587/)

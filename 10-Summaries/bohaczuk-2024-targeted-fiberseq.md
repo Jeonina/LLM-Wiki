@@ -23,7 +23,7 @@ Targeted Fiber-seq is the natural enabling technology for studying the **functio
 
 ## Related
 
-- [[10-Summaries/stergachis-2020-fiberseq]]
+- [[10-Summaries/andrewb-2020-science]]
 - [[10-Summaries/peter-2024-brain-fiberseq]]
 - [[10-Summaries/elliott-2025-naturebiotechnology]]
 - [[20-Entities/andrew-b-stergachis]]

@@ -51,7 +51,7 @@ Authoritative review. Synthesizes ~150 references including the lab's own deep-W
 
 ## Connections to other sources
 
-- Direct conceptual ancestor of [[10-Summaries/a-comprehensive-view-of-somatic-mosaicism-by-single-cell-dna-analysis]] — Walsh is co-senior on both. The SMaHT comprehensive-view paper operationalizes the mosaicism framework for non-brain tissues.
+- Direct conceptual ancestor of [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — Walsh is co-senior on both. The SMaHT comprehensive-view paper operationalizes the mosaicism framework for non-brain tissues.
 - Extends [[10-Summaries/diane-2025-naturereviewsgenetics]] (Shao/Walsh 2025 in scDNA-seq methods) on the biology side.
 - Connects [[10-Summaries/lars-2017-naturereviewsgenetics]] (Forsberg mosaicism in health/disease) and [[10-Summaries/ian-2015-trendsingenetics]] (Campbell/Lupski transmission genetics).
 

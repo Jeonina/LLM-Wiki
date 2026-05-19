@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Co-senior author of [[10-Summaries/single-cell-mosaicism-analysis-reveals-cell-type-specific-somatic-mutational-burden-in-alzheimer-s-dementia]].
+- **2026-05-12** — Co-senior author of [[10-Summaries/kousi-2022-alzheimer-mosaicism]].
 
 ## Related
 

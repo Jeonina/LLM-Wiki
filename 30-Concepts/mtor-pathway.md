@@ -23,7 +23,7 @@ mTOR exists in two complexes — TORC1 (rapamycin-sensitive, growth/translation 
 
 ## Examples
 
-- FCD2 / HME mutations span the pathway both ways (activators and repressors) — see [[10-Summaries/bizzotto-2022-brain-mosaicism]].
+- FCD2 / HME mutations span the pathway both ways (activators and repressors) — see [[10-Summaries/bizzotto-2022-brain-mosaicism-review]].
 
 ## Related
 

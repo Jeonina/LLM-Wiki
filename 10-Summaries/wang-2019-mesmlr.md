@@ -27,7 +27,7 @@ A foundational single-molecule long-read accessibility method (Q3 2019, predatin
 ## Related
 
 - [[10-Summaries/shipony-2020-smac]]
-- [[10-Summaries/stergachis-2020-fiberseq]]
+- [[10-Summaries/andrewb-2020-science]]
 - [[10-Summaries/lee-2020-nanonome]]
 - [[10-Summaries/pott-2017-elife]]
 - [[30-Concepts/single-molecule-footprinting]]

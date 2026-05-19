@@ -21,7 +21,7 @@ updated: 2026-05-12
 
 ## Examples
 
-- KG1a/HL60 AML cells ± DAC in [[10-Summaries/sctem-seq-single-cell-analysis-of-transposable-element-methylation-to-link-global-epigenetic-heterogeneity-with-transcriptional-programs]].
+- KG1a/HL60 AML cells ± DAC in [[10-Summaries/hunt-2022-sctem-seq]].
 
 ## Related
 

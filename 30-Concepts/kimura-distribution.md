@@ -21,7 +21,7 @@ Fitting single-cell mtDNA heteroplasmy data to a Kimura distribution allows quan
 
 ## Examples
 
-- Two pathogenic mt-tRNA-Ala mutations (m.5024C>T, m.5019A>G) — heteroplasmy distributions across thousands of mouse cells fit Kimura distributions at every developmental time point, indicating **drift, not selection**, is the dominant force ([[10-Summaries/high-throughput-single-cell-analysis-reveals-progressive-mitochondrial-dna-mosaicism-throughout-life]]).
+- Two pathogenic mt-tRNA-Ala mutations (m.5024C>T, m.5019A>G) — heteroplasmy distributions across thousands of mouse cells fit Kimura distributions at every developmental time point, indicating **drift, not selection**, is the dominant force ([[10-Summaries/glynos-2023-mtdna-mosaicism]]).
 
 ## Related
 

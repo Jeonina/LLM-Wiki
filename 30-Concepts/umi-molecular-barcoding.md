@@ -23,7 +23,7 @@ UMIs make NGS quantitative (counts reflect input molecules, not PCR duplicates) 
 
 ## Examples
 
-- 12-nt random tag in Kennedy 2014 ([[10-Summaries/detecting-ultralow-frequency-mutations-by-duplex-sequencing]])
+- 12-nt random tag in Kennedy 2014 ([[10-Summaries/kennedy-2014-duplex-protocol]])
 - Combinatorial split-pool barcoding in [[10-Summaries/bai-2024-simple-seq]] and [[10-Summaries/shen-2026-splicool-seq]]
 - 8-nt SMRT-Tag barcode in [[10-Summaries/abdulhay-2020-samosa]]
 - 8-nt random UMI on every Drop-seq bead primer for PCR-duplicate collapse in droplet scRNA-seq ([[10-Summaries/macosko-2015-drop-seq]])

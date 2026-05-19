@@ -23,7 +23,7 @@ CUP cases are heterogeneous: metastases of carcinomas, neuroendocrine tumors, ly
 
 ## Examples
 
-- See [[10-Summaries/dna-methylation-an-epigenetic-mark-of-cellular-memory-experimental-molecular-medicine]].
+- See [[10-Summaries/kim-2017-methylation-memory-review]].
 
 ## Related
 

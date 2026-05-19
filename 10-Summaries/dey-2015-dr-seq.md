@@ -12,7 +12,7 @@ updated: 2026-05-12
 
 # Dey et al. 2015 — DR-seq
 
-> Siddharth S Dey, Lennart Kester, Bastiaan Spanjaard, Magda Bienko, Alexander van Oudenaarden. *Nature Biotechnology* **33**, 285–289 (March 2015). DOI: 10.1038/nbt.3129. (Same issue family as [[g-t-seq-parallel-sequencing-of-single-cell-genomes-and-transcriptomes|G&T-seq]] — the two were published two months apart.)
+> Siddharth S Dey, Lennart Kester, Bastiaan Spanjaard, Magda Bienko, Alexander van Oudenaarden. *Nature Biotechnology* **33**, 285–289 (March 2015). DOI: 10.1038/nbt.3129. (Same issue family as [[10-Summaries/macaulay-2015-gt-seq|G&T-seq]] — the two were published two months apart.)
 
 ## Thesis
 
@@ -51,8 +51,8 @@ DR-seq is the **one-pot** alternative to G&T-seq for joint single-cell DNA + RNA
 
 ## Related summaries
 
-- [[g-t-seq-parallel-sequencing-of-single-cell-genomes-and-transcriptomes]] — separation-based contemporaneous alternative.
-- [[single-cell-triple-omics-sequencing-reveals-genetic-epigenetic-and-transcriptomic-heterogeneity-in-hepatocellular-carcinomas]] — scTrio-seq, conceptual successor.
+- [[10-Summaries/macaulay-2015-gt-seq]] — separation-based contemporaneous alternative.
+- [[10-Summaries/hou-2016-sctrio-seq]] — scTrio-seq, conceptual successor.
 
 ---
 **Source:** [Open paper](https://www.nature.com/articles/nbt.3129)

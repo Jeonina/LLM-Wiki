@@ -36,7 +36,7 @@ updated: 2026-05-12
 ## Surprising / load-bearing for the review
 
 - **LIANTI is the methodological successor to MALBAC** for §3.1 WGA comparison. The linear-vs-exponential amplification axis is the key dimension to articulate.
-- **The C→T-from-deamination artifact characterization is canonical**: every duplex-sequencing or single-cell mutation-calling paper since LIANTI cites this as the dominant false-positive class. For [[a-comprehensive-view-of-somatic-mosaicism-by-single-cell-dna-analysis|Luquette/Walsh PTA+DS]] and the duplex-sequencing topic page, LIANTI is the upstream reference.
+- **The C→T-from-deamination artifact characterization is canonical**: every duplex-sequencing or single-cell mutation-calling paper since LIANTI cites this as the dominant false-positive class. For [[10-Summaries/luquette-2025-pta-duplex-mosaicism|Luquette/Walsh PTA+DS]] and the duplex-sequencing topic page, LIANTI is the upstream reference.
 - **Stochastic replication-origin firing** was previously inferred indirectly; LIANTI shows it cell-by-cell.
 
 ## Entities / concepts touched
@@ -46,7 +46,7 @@ updated: 2026-05-12
 ## Related summaries
 
 - [[chenghang-2012-science]] — MALBAC, prior generation that LIANTI benchmarks against.
-- [[a-comprehensive-view-of-somatic-mosaicism-by-single-cell-dna-analysis]] — Luquette/Walsh PTA+DS uses LIANTI's deamination characterization.
+- [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — Luquette/Walsh PTA+DS uses LIANTI's deamination characterization.
 - [[charles-2016-naturereviewsgenetics]] — review citing this lineage.
 
 ---

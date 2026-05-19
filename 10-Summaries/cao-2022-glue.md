@@ -25,7 +25,7 @@ Computational anchor for §4 multimodal integration alongside MOFA (linear facto
 
 ## Related
 
-- [[10-Summaries/argelaguet-2019-mofa]]
+- [[10-Summaries/argelaguet-2019-nature]]
 - [[10-Summaries/ashuach-2023-multivi]]
-- [[10-Summaries/stuart-2021-signac]]
+- [[10-Summaries/stuart-2021-natmethods]]
 - [[30-Concepts/multimodal-integration-methods]]

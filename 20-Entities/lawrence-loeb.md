@@ -18,7 +18,7 @@ Pathologist and biochemist. Lab homepage: github.com/loeblab. Long-standing focu
 
 ## Mentions
 
-- **2026-05-12** — Co-senior author on [[10-Summaries/detecting-ultralow-frequency-mutations-by-duplex-sequencing]] (Kennedy et al. 2014 Nature Protocols), the reference Duplex Sequencing methodology.
+- **2026-05-12** — Co-senior author on [[10-Summaries/kennedy-2014-duplex-protocol]] (Kennedy et al. 2014 Nature Protocols), the reference Duplex Sequencing methodology.
 
 ## Related
 

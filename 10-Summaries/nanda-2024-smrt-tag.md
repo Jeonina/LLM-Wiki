@@ -55,7 +55,7 @@ PacBio Sequel II/IIe. Tn5 triple-mutant for size tunability. Phusion/Taq vs T4/A
 
 - Direct extension of SAMOSA (Battaglia et al., Ramani lab) and Fiber-seq (Stergachis lab; see [[30-Concepts/fiber-seq]]).
 - Conceptually parallel to [[10-Summaries/elliott-2025-naturebiotechnology]] (DAF-seq / scDAF-seq, Stergachis 2025) — both achieve low-input PacBio chromatin profiling but DAF-seq uses chemical deamination (amplifiable) and DAF-seq goes to single cells while SAMOSA-Tag is bulk-nuclei.
-- Fits in the broader long-read epigenomics framework reviewed by [[10-Summaries/profiling-the-epigenome-using-long-read-sequencing]] (Liu/Conesa 2025).
+- Fits in the broader long-read epigenomics framework reviewed by [[10-Summaries/liu-2025-long-read-epigenome-review]] (Liu/Conesa 2025).
 
 ## Open questions
 

@@ -40,8 +40,8 @@ Built on the **SPLiT-seq / Paired-seq split-pool barcoding** logic. Cells are fi
 
 ## Related summaries
 
-- [[joint-profiling-of-chromatin-accessibility-and-gene-expression-in-thousands-of-single-cells]] — sci-CAR, the combinatorial-indexing equivalent.
-- [[scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]] — scNMT-seq, lower-throughput but three-modality.
+- [[10-Summaries/cao-2018-sci-car]] — sci-CAR, the combinatorial-indexing equivalent.
+- [[10-Summaries/clark-2018-scnmt-seq]] — scNMT-seq, lower-throughput but three-modality.
 
 ## Related
 

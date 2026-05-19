@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Co-author on [[10-Summaries/a-universal-duplex-sequencing-approach-for-accurate-detection-of-somatic-mutations]] (UDSeq).
+- **2026-05-12** — Co-author on [[10-Summaries/nandi-2025-udseq]] (UDSeq).
 
 ## Related
 

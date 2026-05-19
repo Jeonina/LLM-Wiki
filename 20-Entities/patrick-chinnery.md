@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Senior author of [[10-Summaries/high-throughput-single-cell-analysis-reveals-progressive-mitochondrial-dna-mosaicism-throughout-life]].
+- **2026-05-12** — Senior author of [[10-Summaries/glynos-2023-mtdna-mosaicism]].
 
 ## Related
 

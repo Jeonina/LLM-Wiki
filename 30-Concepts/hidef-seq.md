@@ -21,7 +21,7 @@ Specifically designed for somatic mutation profiling in non-cancer tissues with 
 
 ## Examples
 
-- One of six methods compared in [[10-Summaries/benchmarking-of-duplex-sequencing-approaches-to-reveal-somatic-mutation-landscapes]].
+- One of six methods compared in [[10-Summaries/zhang-2025-smaht-duplex-benchmark]].
 
 ## Related
 

@@ -21,7 +21,7 @@ Early-stage LSCC has good survival but late-stage outcomes are poor. Molecular b
 
 ## Examples
 
-- [[10-Summaries/nanopore-sequencing-unveils-somatic-structural-variations-as-biomarkers-in-laryngeal-squamous-cell-carcinoma-genomes]] uses nanopore to identify a high-frequency simple-repeat expansion regulating *TP53BP2*/*FBXO28* in 74% of patients.
+- [[10-Summaries/liu-2025-nanopore-lscc-svs]] uses nanopore to identify a high-frequency simple-repeat expansion regulating *TP53BP2*/*FBXO28* in 74% of patients.
 
 ## Related
 

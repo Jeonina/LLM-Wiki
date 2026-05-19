@@ -21,7 +21,7 @@ Most experiments need a global methylation readout, not per-locus calls. scTEM-s
 
 ## Examples
 
-- KG1a / HL60 AML cells ± decitabine: heterogeneous demethylation; subset of cells coordinately upregulates LINE-1/SINE Alu/ERV families (viral mimicry response) ([[10-Summaries/sctem-seq-single-cell-analysis-of-transposable-element-methylation-to-link-global-epigenetic-heterogeneity-with-transcriptional-programs]]).
+- KG1a / HL60 AML cells ± decitabine: heterogeneous demethylation; subset of cells coordinately upregulates LINE-1/SINE Alu/ERV families (viral mimicry response) ([[10-Summaries/hunt-2022-sctem-seq]]).
 
 ## Related
 

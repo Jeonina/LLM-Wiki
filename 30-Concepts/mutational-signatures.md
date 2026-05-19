@@ -28,9 +28,9 @@ Signatures reveal **mutagenic etiology** from sequence data alone — e.g., SBS4
 
 ## Examples
 
-- SBS4 (tobacco) detected in lung tissue of a 74-year-old male via PTA-scDNA-seq + DS validation ([[10-Summaries/a-comprehensive-view-of-somatic-mosaicism-by-single-cell-dna-analysis]]).
-- UDSeq reproduces exposure-specific signatures across cell lines and rodent models ([[10-Summaries/a-universal-duplex-sequencing-approach-for-accurate-detection-of-somatic-mutations]]).
-- SBS1 (5mC deamination at CpG) dominant in early embryonic mutations; SBS5 dominates aging neurons ([[10-Summaries/bizzotto-2022-brain-mosaicism]]).
+- SBS4 (tobacco) detected in lung tissue of a 74-year-old male via PTA-scDNA-seq + DS validation ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]).
+- UDSeq reproduces exposure-specific signatures across cell lines and rodent models ([[10-Summaries/nandi-2025-udseq]]).
+- SBS1 (5mC deamination at CpG) dominant in early embryonic mutations; SBS5 dominates aging neurons ([[10-Summaries/bizzotto-2022-brain-mosaicism-review]]).
 
 ## Related
 

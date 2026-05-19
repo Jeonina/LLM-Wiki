@@ -26,7 +26,7 @@ MEDICC2 is the gold-standard phylogenetic reconstruction tool for copy-number-dr
 ## Related
 
 - [[10-Summaries/zaccaria-2021-chisel]]
-- [[10-Summaries/kim-2018-nature]]
+- [[10-Summaries/kim-2018-tnbc-chemoresistance]]
 - [[10-Summaries/laks-2019-cell]]
 - [[30-Concepts/whole-genome-doubling]]
 - [[40-Topics/scdna-cancer-applications]]

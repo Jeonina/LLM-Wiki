@@ -17,7 +17,7 @@ updated: 2026-05-12
 - Mechanism: traps DNMT1 → fails to methylate hemimethylated DNA during replication → passive demethylation.
 - Triggers [[30-Concepts/viral-mimicry]] in responder cells.
 - Patient response is highly variable; predictive biomarkers are an unmet need.
-- Compared with azacitidine (5-aza-cytidine) in [[10-Summaries/high-throughput-single-cell-dna-methylation-and-chromatin-accessibility-co-profiling-with-splicool-seq]]: both cause demethylation but in **distinct patterns** at single-cell resolution.
+- Compared with azacitidine (5-aza-cytidine) in [[10-Summaries/shen-2026-splicool-seq]]: both cause demethylation but in **distinct patterns** at single-cell resolution.
 
 ## Examples
 

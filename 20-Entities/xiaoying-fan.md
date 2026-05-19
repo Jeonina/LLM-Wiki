@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Senior author of [[10-Summaries/high-throughput-single-cell-dna-methylation-and-chromatin-accessibility-co-profiling-with-splicool-seq]].
+- **2026-05-12** — Senior author of [[10-Summaries/shen-2026-splicool-seq]].
 
 ## Related
 

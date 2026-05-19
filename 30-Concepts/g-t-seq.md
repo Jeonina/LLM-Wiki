@@ -13,7 +13,7 @@ updated: 2026-05-12
 
 ## Definition
 
-Macaulay et al. 2015 ([[10-Summaries/g-t-seq-parallel-sequencing-of-single-cell-genomes-and-transcriptomes]]). Cell is lysed → biotinylated oligo-dT magnetic beads capture mRNA → supernatant (gDNA) is moved to a fresh well. mRNA arm: on-bead Smart-seq2 reverse transcription → full-length cDNA → Nextera XT. DNA arm: any WGA chemistry (MDA preferred for SNV / deep coverage; PicoPlex preferred for CNV) → Nextera XT.
+Macaulay et al. 2015 ([[10-Summaries/macaulay-2015-gt-seq]]). Cell is lysed → biotinylated oligo-dT magnetic beads capture mRNA → supernatant (gDNA) is moved to a fresh well. mRNA arm: on-bead Smart-seq2 reverse transcription → full-length cDNA → Nextera XT. DNA arm: any WGA chemistry (MDA preferred for SNV / deep coverage; PicoPlex preferred for CNV) → Nextera XT.
 
 ## Why it matters
 
@@ -25,8 +25,8 @@ Macaulay et al. 2015 ([[10-Summaries/g-t-seq-parallel-sequencing-of-single-cell-
 
 ## Variants and refinements
 
-- **G&T-seq** ([[10-Summaries/g-t-seq-parallel-sequencing-of-single-cell-genomes-and-transcriptomes]]) — original DNA + RNA.
-- **[[scnmt-seq]]** ([[10-Summaries/scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]]) — inherits the separation chemistry; adds GpC methylation labeling for accessibility + endogenous CpG methylation.
+- **G&T-seq** ([[10-Summaries/macaulay-2015-gt-seq]]) — original DNA + RNA.
+- **[[scnmt-seq]]** ([[10-Summaries/clark-2018-scnmt-seq]]) — inherits the separation chemistry; adds GpC methylation labeling for accessibility + endogenous CpG methylation.
 
 ## Contested points
 

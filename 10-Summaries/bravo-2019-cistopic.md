@@ -50,9 +50,9 @@ R/Bioconductor package (github.com/aertslab/cistopic). Input: binary cell × reg
 
 ## Connections to other sources
 
-- Compared with [[10-Summaries/chromvar-inferring-transcription-factor-associated-accessibility-from-single-cell-epigenomic-data]] (chromVAR averages cistromes; cisTopic preserves temporal heterogeneity) and [[10-Summaries/comprehensive-analysis-of-single-cell-atac-seq-data-with-snapatac]] (SnapATAC bypasses peak calls entirely with a 5-kb bin Jaccard approach).
-- Used as input by [[10-Summaries/scatac-seq-generates-more-accurate-and-complete-regulatory-maps-than-bulk-atac-seq]] (Gur/Hughes 2025) for downstream clustering.
-- Topic-modeling logic extended to chromatin in [[10-Summaries/scchix-seq-infers-dynamic-relationships-between-histone-modifications-in-single-cells]] (scChIX-seq) which uses LDA on histone-mark profiles.
+- Compared with [[10-Summaries/schep-2017-chromvar]] (chromVAR averages cistromes; cisTopic preserves temporal heterogeneity) and [[10-Summaries/fang-2021-snapatac]] (SnapATAC bypasses peak calls entirely with a 5-kb bin Jaccard approach).
+- Used as input by [[10-Summaries/gur-2025-scatac-vs-bulk]] (Gur/Hughes 2025) for downstream clustering.
+- Topic-modeling logic extended to chromatin in [[10-Summaries/yeung-2023-scchix-seq]] (scChIX-seq) which uses LDA on histone-mark profiles.
 
 ## Open questions
 

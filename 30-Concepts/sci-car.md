@@ -13,7 +13,7 @@ updated: 2026-05-12
 
 ## Definition
 
-Cao et al. 2018 ([[10-Summaries/joint-profiling-of-chromatin-accessibility-and-gene-expression-in-thousands-of-single-cells]]) merged sci-ATAC-seq and sci-RNA-seq into a single workflow. Nuclei pass through two rounds of barcoding (first in situ via RT primer + Tn5 transposase, second in liquid-phase amplification); the resulting two-barcode pair uniquely identifies the cell of origin. mRNA and ATAC reads from the same nucleus share the same barcode pair, so each cell yields paired (transcriptome, chromatin accessibility) profiles.
+Cao et al. 2018 ([[10-Summaries/cao-2018-sci-car]]) merged sci-ATAC-seq and sci-RNA-seq into a single workflow. Nuclei pass through two rounds of barcoding (first in situ via RT primer + Tn5 transposase, second in liquid-phase amplification); the resulting two-barcode pair uniquely identifies the cell of origin. mRNA and ATAC reads from the same nucleus share the same barcode pair, so each cell yields paired (transcriptome, chromatin accessibility) profiles.
 
 ## Why it matters
 
@@ -26,7 +26,7 @@ The paper explicitly framed sci-CAR as a template for future DNA-anchored joint 
 
 ## Variants and refinements
 
-- **sci-CAR** ([[10-Summaries/joint-profiling-of-chromatin-accessibility-and-gene-expression-in-thousands-of-single-cells]]) — accessibility + RNA.
+- **sci-CAR** ([[10-Summaries/cao-2018-sci-car]]) — accessibility + RNA.
 - [[scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells|scNMT-seq]] — adds methylation, lower throughput.
 - [[share-seq-reveals-chromatin-potential-nature-reviews-genetics|SHARE-seq]] — split-pool scaling alternative.
 - 10x Genomics Multiome — commercial sci-CAR-style coassay.

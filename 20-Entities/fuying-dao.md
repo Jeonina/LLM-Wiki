@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Co-corresponding author of [[10-Summaries/navigating-the-3d-genome-at-single-cell-resolution-techniques-computation-and-mechanistic-landscapes]].
+- **2026-05-12** — Co-corresponding author of [[10-Summaries/hong-2025-sc3d-genome-review]].
 
 ## Related
 

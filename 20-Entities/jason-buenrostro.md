@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Co-author on [[10-Summaries/chromvar-inferring-transcription-factor-associated-accessibility-from-single-cell-epigenomic-data]].
+- **2026-05-12** — Co-author on [[10-Summaries/schep-2017-chromvar]].
 
 ## Related
 

@@ -49,10 +49,10 @@ sortChIC platform (FACS + pA-MNase) with antibody multiplexing. LDA topic modeli
 
 ## Connections to other sources
 
-- Methodological precursor: [[10-Summaries/single-cell-chromatin-immunocleavage-sequencing-scchic-seq-to-profile-histone-modification]] (scChIC-seq, single-mark version from Zhao lab).
-- Same lab as [[10-Summaries/single-cell-multi-omic-detection-of-dna-methylation-and-histone-modifications-reconstructs-the-dynamics-of-epigenomic-maintenance]] (scEpi²-seq, van Oudenaarden), which adds 5mC to the sortChIC framework. scChIX + scEpi² → joint histone + histone + 5mC in single cells is the implicit roadmap.
-- Compares favorably to multi-CUT&TAG (Henikoff lab) — see [[10-Summaries/scalable-single-cell-profiling-of-chromatin-modifications-with-scicut-tag]].
-- LDA used here is the same algorithm as [[10-Summaries/cistopic-cis-regulatory-topic-modeling-on-single-cell-atac-seq-data]] (cisTopic) — a notable instance of topic modeling generalizing across single-cell modalities.
+- Methodological precursor: [[10-Summaries/ku-2019-scchic-seq]] (scChIC-seq, single-mark version from Zhao lab).
+- Same lab as [[10-Summaries/geisenberger-2025-scepi2-seq]] (scEpi²-seq, van Oudenaarden), which adds 5mC to the sortChIC framework. scChIX + scEpi² → joint histone + histone + 5mC in single cells is the implicit roadmap.
+- Compares favorably to multi-CUT&TAG (Henikoff lab) — see [[10-Summaries/janssens-2023-scicut-tag]].
+- LDA used here is the same algorithm as [[10-Summaries/bravo-2019-cistopic]] (cisTopic) — a notable instance of topic modeling generalizing across single-cell modalities.
 
 ## Open questions
 

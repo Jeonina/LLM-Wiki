@@ -23,7 +23,7 @@ For each motif: count fragments in motif-containing peaks per cell, subtract exp
 
 ## Examples
 
-- AML patient stratification: leukemic stem cells cluster between LMPPs and monocytes; SPI1 + CEBPA motifs distinguish stem-like vs differentiated AML ([[10-Summaries/chromvar-inferring-transcription-factor-associated-accessibility-from-single-cell-epigenomic-data]]).
+- AML patient stratification: leukemic stem cells cluster between LMPPs and monocytes; SPI1 + CEBPA motifs distinguish stem-like vs differentiated AML ([[10-Summaries/schep-2017-chromvar]]).
 
 ## Related
 

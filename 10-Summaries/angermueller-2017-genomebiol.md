@@ -26,4 +26,4 @@ A foundational deep-learning approach for the methylome — predating scBasset (
 - [[30-Concepts/dna-methylation]]
 - [[10-Summaries/yuan-2022-natmethods]]
 - [[10-Summaries/cui-2024-natmethods]]
-- [[10-Summaries/deephistone-a-deep-learning-approach-to-predicting-histone-modifications]]
+- [[10-Summaries/yin-2019-deephistone]]

@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Co-author on [[10-Summaries/high-throughput-chromatin-accessibility-profiling-at-single-cell-resolution]] (µATAC-seq) and [[10-Summaries/sandy-2019-naturereviewsgenetics]] (Klemm/Greenleaf 2019 NRG).
+- **2026-05-12** — Co-author on [[10-Summaries/mezger-2018-microfluidic-atac]] (µATAC-seq) and [[10-Summaries/sandy-2019-naturereviewsgenetics]] (Klemm/Greenleaf 2019 NRG).
 
 ## Related
 

@@ -6,10 +6,10 @@ tags: [synthesis, somatic-mosaicism, single-cell-multiomics, review-paper-anchor
 created: 2026-05-12
 updated: 2026-05-12
 sources: [
-  "[[10-Summaries/single-cell-triple-omics-sequencing-reveals-genetic-epigenetic-and-transcriptomic-heterogeneity-in-hepatocellular-carcinomas]]",
+  "[[10-Summaries/hou-2016-sctrio-seq]]",
   "[[10-Summaries/franco-2024-nature]]",
   "[[10-Summaries/elliott-2025-naturebiotechnology]]",
-  "[[10-Summaries/scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]]",
+  "[[10-Summaries/clark-2018-scnmt-seq]]",
   "[[10-Summaries/single-cell-mosaicism-analysis-reveals-cell-type-specific-somatic-mutational-burden-in-alzheimer-s-dementia]]",
   "[[10-Summaries/a-comprehensive-view-of-somatic-mosaicism-by-single-cell-dna-analysis]]"
 ]
@@ -35,7 +35,7 @@ This is the workflow that has produced cell-type-specific somatic-mutation burde
 
 ### 1. scTrio-seq (Hou 2016) — closest CNV+epi+RNA precedent
 
-[[10-Summaries/single-cell-triple-omics-sequencing-reveals-genetic-epigenetic-and-transcriptomic-heterogeneity-in-hepatocellular-carcinomas]] · [[sctrio-seq]]
+[[10-Summaries/hou-2016-sctrio-seq]] · [[sctrio-seq]]
 
 **Method**: mild lysis splits cytoplasm (→ scRNA-seq) from intact nucleus (→ scRRBS). RRBS read distribution doubles as the CNV signal at 10-Mb resolution after normalization.
 
@@ -113,7 +113,7 @@ This is the workflow that has produced cell-type-specific somatic-mutation burde
 
 ### 6. scNMT-seq (Clark 2018) — methylation + accessibility + RNA (no DNA mutation)
 
-[[10-Summaries/scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]] · [[scnmt-seq]]
+[[10-Summaries/clark-2018-scnmt-seq]] · [[scnmt-seq]]
 
 **Method**: GpC-methyltransferase labels accessible DNA; physical DNA/RNA separation via G&T-seq logic; bisulfite + Smart-seq2. 11M usable CpGs/cell for methylation, ~15% GpC site coverage for accessibility, full-length transcriptome.
 

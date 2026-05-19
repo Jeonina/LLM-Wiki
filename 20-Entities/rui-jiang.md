@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Senior author of [[10-Summaries/deephistone-a-deep-learning-approach-to-predicting-histone-modifications]].
+- **2026-05-12** — Senior author of [[10-Summaries/yin-2019-deephistone]].
 
 ## Related
 

@@ -23,7 +23,7 @@ Universal Tn5 removes per-cell fragmentation variability that hampered sciMETv2/
 
 - Lung cancer cell lines distinguished by joint WCG + GCH + NDR features.
 - Decitabine vs 5-azacytidine cause **distinct demethylation patterns** in the same cells.
-- Primary LUAD: identifies tumor subclones; biomarkers FAM124B, SFN, OR7E47P linked to survival; accelerated epigenetic aging in tumor subclones ([[10-Summaries/high-throughput-single-cell-dna-methylation-and-chromatin-accessibility-co-profiling-with-splicool-seq]]).
+- Primary LUAD: identifies tumor subclones; biomarkers FAM124B, SFN, OR7E47P linked to survival; accelerated epigenetic aging in tumor subclones ([[10-Summaries/shen-2026-splicool-seq]]).
 
 ## Related
 

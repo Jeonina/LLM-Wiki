@@ -53,8 +53,8 @@ K562 and RPE-1 hTERT FUCCI cell lines + mouse small intestine (proximal/middle/d
 
 ## Connections to other sources
 
-- Closely related to [[10-Summaries/sequencing-dna-methylation-and-hydroxymethylation-at-co-occurring-chromatin-features]] (6-base-CUT&Tag, also pairs histone marks with DNA modifications) but scEpi²-seq is single-cell vs bulk, and uses MNase vs Tn5.
-- Builds directly on sortChIC (Zeller et al.). Complements MulTI-Tag / [[10-Summaries/scalable-single-cell-profiling-of-chromatin-modifications-with-scicut-tag]] (sciCUT&Tag) for multi-mark single-cell chromatin profiling.
+- Closely related to [[10-Summaries/tavares-2026-6-base-cut-tag]] (6-base-CUT&Tag, also pairs histone marks with DNA modifications) but scEpi²-seq is single-cell vs bulk, and uses MNase vs Tn5.
+- Builds directly on sortChIC (Zeller et al.). Complements MulTI-Tag / [[10-Summaries/janssens-2023-scicut-tag]] (sciCUT&Tag) for multi-mark single-cell chromatin profiling.
 - Replication-timing analysis depends on scEdU-seq (van den Berg lab).
 - The cell-cycle methylation-maintenance result complements [[10-Summaries/yilei-2025-naturereviewsgenetics]] (long-read methylation review) and [[10-Summaries/dna-methylation-an-epigenetic-mark-of-cellular-memory-experimental-molecular-medicine]] (Kim/Costello 2017).
 

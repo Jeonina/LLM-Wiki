@@ -52,8 +52,8 @@ ICELL8 nanowell platform (Takara). Standardized protocol with optimization for n
 ## Connections to other sources
 
 - Henikoff-lab method derivative chain: ChIC (Schmid 2004) → CUT&RUN (Skene & Henikoff 2017) → CUT&Tag (Kaya-Okur 2019) → scCUT&Tag (Wu 2021) → sciCUT&Tag (this paper) → MulTI-Tag (Janssens 2022).
-- Competes with [[10-Summaries/scchix-seq-infers-dynamic-relationships-between-histone-modifications-in-single-cells]] (scChIX-seq, MNase-based, deconvolution-style multiplexing) and the Zhao-lab scChIC-seq family in [[10-Summaries/single-cell-chromatin-immunocleavage-sequencing-scchic-seq-to-profile-histone-modification]].
-- Same ICELL8 platform as [[10-Summaries/high-throughput-chromatin-accessibility-profiling-at-single-cell-resolution]] (µATAC-seq, Greenleaf 2018) — the nanowell device has become a shared substrate for single-cell chromatin methods.
+- Competes with [[10-Summaries/yeung-2023-scchix-seq]] (scChIX-seq, MNase-based, deconvolution-style multiplexing) and the Zhao-lab scChIC-seq family in [[10-Summaries/ku-2019-scchic-seq]].
+- Same ICELL8 platform as [[10-Summaries/mezger-2018-microfluidic-atac]] (µATAC-seq, Greenleaf 2018) — the nanowell device has become a shared substrate for single-cell chromatin methods.
 
 ## Open questions
 

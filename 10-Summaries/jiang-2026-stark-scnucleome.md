@@ -50,9 +50,9 @@ Comprehensive benchmark on published sc3DG-seq datasets (Table 1 enumerates the 
 
 ## Connections to other sources
 
-- Operationalizes the conceptual framework laid out in [[10-Summaries/navigating-the-3d-genome-at-single-cell-resolution-techniques-computation-and-mechanistic-landscapes]] (Hong/Dao 2025 review).
+- Operationalizes the conceptual framework laid out in [[10-Summaries/hong-2025-sc3d-genome-review]] (Hong/Dao 2025 review).
 - Multi-omics methods like sn-m3C-seq (Hi-C + methylation) and HiRES (Hi-C + RNA) are processed by STARK, sitting at the intersection with [[40-Topics/dna-methylation]] and [[40-Topics/single-cell-multiomics]].
-- Independent of but conceptually parallel to the [[10-Summaries/episcanpy-integrated-single-cell-epigenomic-analysis]] (EpiScanpy) approach for scATAC-seq / scBS-seq harmonization — both are "unified pipeline + atlas" responses to method fragmentation.
+- Independent of but conceptually parallel to the [[10-Summaries/danese-2021-episcanpy]] (EpiScanpy) approach for scATAC-seq / scBS-seq harmonization — both are "unified pipeline + atlas" responses to method fragmentation.
 
 ## Open questions
 

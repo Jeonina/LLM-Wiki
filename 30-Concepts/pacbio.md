@@ -24,7 +24,7 @@ PacBio Sequel II/IIe/Revio instruments. **HiFi reads**: ≥5 CCS passes yields >
 ## Examples
 
 - [[10-Summaries/elliott-2025-naturebiotechnology]] (DAF-seq / scDAF-seq).
-- [[10-Summaries/direct-transposition-of-native-dna-for-sensitive-multimodal-single-molecule-sequencing]] (SMRT-Tag / SAMOSA-Tag).
+- [[10-Summaries/abdulhay-2020-samosa]] (SMRT-Tag / SAMOSA-Tag).
 - [[10-Summaries/profiling-the-epigenome-using-long-read-sequencing]] reviews PacBio epigenomics.
 
 ## Related

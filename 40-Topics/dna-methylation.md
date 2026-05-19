@@ -4,12 +4,12 @@ title: DNA methylation
 aliases: [methylation topic, 5mC topic]
 tags: [methylation, epigenetics]
 created: 2026-05-11
-updated: 2026-05-12
+updated: 2026-05-19
 ---
 
 # DNA methylation
 
-> Covalent modification of cytosine (predominantly 5-methylcytosine at CpG dinucleotides) that propagates through mitosis, contributes to cell identity, silences transposons, establishes imprints, and is dysregulated in cancer and aging. The wiki's methylation cluster covers the biology of methylation, the canonical measurement chemistries (bisulfite, long-read direct detection), and the enzymatic machinery (DNMT, TET).
+> Covalent modification of cytosine (predominantly 5-methylcytosine at CpG dinucleotides) that propagates through mitosis ([[10-Summaries/kim-2017-dna-methylation-memory]]), contributes to cell identity ([[10-Summaries/kim-2017-methylation-memory-review]]), silences transposons ([[10-Summaries/zachary-2013-naturereviewsgenetics]]), establishes imprints ([[10-Summaries/smith-2013-methylation-development]]), and is dysregulated in cancer and aging ([[10-Summaries/zachary-2013-naturereviewsgenetics]]). The wiki's methylation cluster covers the biology of methylation, the canonical measurement chemistries (bisulfite, long-read direct detection), and the enzymatic machinery (DNMT, TET).
 
 ## Core concepts
 
@@ -56,35 +56,44 @@ updated: 2026-05-12
 ### Biology
 
 - [[10-Summaries/zachary-2013-naturereviewsgenetics]] — Smith & Meissner foundational review.
-- [[10-Summaries/dna-methylation-an-epigenetic-mark-of-cellular-memory-experimental-molecular-medicine]] — Kim/Costello 2017 epigenetic memory review.
+- [[10-Summaries/kim-2017-dna-methylation-memory]] — Kim/Costello 2017 epigenetic memory review.
+- [[10-Summaries/smith-2013-methylation-development]] — Smith & Meissner 2013 development review.
 
 ### Computational analysis and long-read methods
 
 - [[10-Summaries/yilei-2025-naturereviewsgenetics]] — long-read computational methylation analysis.
-- [[10-Summaries/profiling-the-epigenome-using-long-read-sequencing]] — Liu/Conesa 2025 NRG review.
+- [[10-Summaries/fu-2025-longread-methylation]] — Fu et al. computational long-read methylation analysis.
+- [[10-Summaries/liu-2025-longread-epigenome-review]] — Liu/Conesa 2025 NRG epigenome long-read review.
 
 ### Single-cell methylation methods
 
-- [[10-Summaries/sctem-seq-single-cell-analysis-of-transposable-element-methylation-to-link-global-epigenetic-heterogeneity-with-transcriptional-programs]] — Hunt/Lee 2022 (scTEM-seq).
-- [[10-Summaries/simultaneous-single-cell-analysis-of-5mc-and-5hmc-with-simple-seq]] — Bai/Yi 2024 (SIMPLE-seq).
-- [[10-Summaries/high-throughput-single-cell-dna-methylation-and-chromatin-accessibility-co-profiling-with-splicool-seq]] — Shen/Fan 2026 (SpliCOOL-seq).
-- [[10-Summaries/single-cell-multi-omic-detection-of-dna-methylation-and-histone-modifications-reconstructs-the-dynamics-of-epigenomic-maintenance]] — Geisenberger/van Oudenaarden 2025 (scEpi²-seq).
+- [[10-Summaries/hunt-2022-sctem-seq]] — Hunt/Lee 2022 (scTEM-seq).
+- [[10-Summaries/bai-2024-simple-seq]] — Bai/Yi 2024 (SIMPLE-seq).
+- [[10-Summaries/shen-2026-splicool-seq]] — Shen/Fan 2026 (SpliCOOL-seq).
+- [[10-Summaries/geisenberger-2025-scepi2-seq]] — Geisenberger/van Oudenaarden 2025 (scEpi²-seq).
+- [[10-Summaries/iqbal-2023-methylome-review]] — Iqbal 2023 single-cell methylome analysis review.
 
 ### Methylation + chromatin joint readouts
 
-- [[10-Summaries/sequencing-dna-methylation-and-hydroxymethylation-at-co-occurring-chromatin-features]] — Tavares/Balasubramanian 2026 (6-base-CUT&Tag).
+- [[10-Summaries/tavares-2026-6-base-cut-tag]] — Tavares/Balasubramanian 2026 (6-base-CUT&Tag).
 
 ### Long-read methylation in repetitive regions
 
-- [[10-Summaries/single-molecule-targeted-accessibility-and-methylation-sequencing-of-centromeres-telomeres-and-rdnas-in-arabidopsis]] — Mo/Zhai 2023 (STAM-seq, plant HRRs).
+- [[10-Summaries/mo-2023-stam-seq]] — Mo/Zhai 2023 (STAM-seq, plant HRRs).
+
+### Cancer methylation applications
+
+- [[10-Summaries/nichols-2022-scimet-v2]] — sciMETv2 robust scMethylation.
+- [[10-Summaries/luo-2018-snmc-seq2]] — snmC-seq2 single-cell methylome profiling.
 
 ## Synthesized notes
 
-_None yet._
+- [[50-Notes/regulatory-layers-overview]] — methylation as one of the four molecular regulatory layers.
 
 ## Open questions
 
-- Methylation calling accuracy benchmarking across PacBio and ONT platforms — no community-standard benchmark.
-- 5hmC: functional mark vs intermediate — unresolved.
-- Single-cell methylation at scale — current methods are sparse; intersection with [[scdna-seq]] remains an open methodological frontier.
-- Non-CpG methylation (mCpH) in adult tissues, especially brain — functional significance.
+- Methylation calling accuracy benchmarking across PacBio and ONT platforms — no community-standard benchmark ([[10-Summaries/fu-2025-longread-methylation]]).
+- 5hmC: functional mark vs intermediate — unresolved ([[10-Summaries/bai-2024-simple-seq]]; [[10-Summaries/yilei-2025-naturereviewsgenetics]]).
+- Single-cell methylation at scale — current methods are sparse; intersection with [[scdna-seq]] remains an open methodological frontier ([[10-Summaries/iqbal-2023-methylome-review]]).
+- Non-CpG methylation (mCpH) in adult tissues, especially brain — functional significance ([[10-Summaries/yilei-2025-naturereviewsgenetics]]).
+- Are HMAs (decitabine vs azacitidine) clinically interchangeable? Single-cell data argues no ([[10-Summaries/shen-2026-splicool-seq]]; [[10-Summaries/hunt-2022-sctem-seq]]).

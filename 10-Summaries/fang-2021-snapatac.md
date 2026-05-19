@@ -53,9 +53,9 @@ Snap file format for storing single-cell accessibility. SnapTools for preprocess
 
 ## Connections to other sources
 
-- Compared head-to-head with [[10-Summaries/cistopic-cis-regulatory-topic-modeling-on-single-cell-atac-seq-data]] (cisTopic) and LSA — the "three major scATAC-seq methods" of 2018–2021.
-- Inherited and extended by snapATAC2 (Python, Rust backend), which is cited and used in [[10-Summaries/high-throughput-single-cell-dna-methylation-and-chromatin-accessibility-co-profiling-with-splicool-seq]].
-- Compatible with cell-type annotation pipelines from [[10-Summaries/episcanpy-integrated-single-cell-epigenomic-analysis]] (EpiScanpy) and clustering frameworks from [[10-Summaries/chromvar-inferring-transcription-factor-associated-accessibility-from-single-cell-epigenomic-data]] (chromVAR).
+- Compared head-to-head with [[10-Summaries/bravo-2019-cistopic]] (cisTopic) and LSA — the "three major scATAC-seq methods" of 2018–2021.
+- Inherited and extended by snapATAC2 (Python, Rust backend), which is cited and used in [[10-Summaries/shen-2026-splicool-seq]].
+- Compatible with cell-type annotation pipelines from [[10-Summaries/danese-2021-episcanpy]] (EpiScanpy) and clustering frameworks from [[10-Summaries/schep-2017-chromvar]] (chromVAR).
 
 ## Open questions
 

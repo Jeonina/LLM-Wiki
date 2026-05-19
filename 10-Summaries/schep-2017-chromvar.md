@@ -51,9 +51,9 @@ R package (github.com/GreenleafLab/chromVAR). cisBP database of human and mouse 
 
 ## Connections to other sources
 
-- Widely used downstream of [[10-Summaries/cistopic-cis-regulatory-topic-modeling-on-single-cell-atac-seq-data]] (cisTopic), [[10-Summaries/comprehensive-analysis-of-single-cell-atac-seq-data-with-snapatac]] (SnapATAC), and [[10-Summaries/episcanpy-integrated-single-cell-epigenomic-analysis]] (EpiScanpy) for TF-motif interpretation.
-- Used in [[10-Summaries/unsupervised-clustering-and-epigenetic-classification-of-single-cells]] (scABC) to assign TF activity to discovered clusters.
-- Also used in [[10-Summaries/simultaneous-single-cell-analysis-of-5mc-and-5hmc-with-simple-seq]] (SIMPLE-seq) for motif analysis of methylation-state regions.
+- Widely used downstream of [[10-Summaries/bravo-2019-cistopic]] (cisTopic), [[10-Summaries/fang-2021-snapatac]] (SnapATAC), and [[10-Summaries/danese-2021-episcanpy]] (EpiScanpy) for TF-motif interpretation.
+- Used in [[10-Summaries/zamanighomi-2018-scabc]] (scABC) to assign TF activity to discovered clusters.
+- Also used in [[10-Summaries/bai-2024-simple-seq]] (SIMPLE-seq) for motif analysis of methylation-state regions.
 - Limitation noted by cisTopic: chromVAR averages motif effects across the dataset and cannot resolve the same motif's distinct usage at different developmental stages (e.g., GATA in HSC vs MEP).
 
 ## Open questions

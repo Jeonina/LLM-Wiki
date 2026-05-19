@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Senior author of [[10-Summaries/cistopic-cis-regulatory-topic-modeling-on-single-cell-atac-seq-data]].
+- **2026-05-12** — Senior author of [[10-Summaries/bravo-2019-cistopic]].
 
 ## Related
 

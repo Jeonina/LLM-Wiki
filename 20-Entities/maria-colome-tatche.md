@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Co-corresponding author of [[10-Summaries/episcanpy-integrated-single-cell-epigenomic-analysis]].
+- **2026-05-12** — Co-corresponding author of [[10-Summaries/danese-2021-episcanpy]].
 
 ## Related
 

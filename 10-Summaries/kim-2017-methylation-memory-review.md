@@ -52,7 +52,7 @@ Authoritative review. Three sections: (1) DNA methylation biology and analysis m
 
 ## Connections to other sources
 
-- Foundational background for [[10-Summaries/sctem-seq-single-cell-analysis-of-transposable-element-methylation-to-link-global-epigenetic-heterogeneity-with-transcriptional-programs]] (TE methylation as bulk surrogate), [[10-Summaries/simultaneous-single-cell-analysis-of-5mc-and-5hmc-with-simple-seq]] (SIMPLE-seq joint 5mC/5hmC), and [[10-Summaries/high-throughput-single-cell-dna-methylation-and-chromatin-accessibility-co-profiling-with-splicool-seq]] (SpliCOOL-seq).
+- Foundational background for [[10-Summaries/sctem-seq-single-cell-analysis-of-transposable-element-methylation-to-link-global-epigenetic-heterogeneity-with-transcriptional-programs]] (TE methylation as bulk surrogate), [[10-Summaries/bai-2024-simple-seq]] (SIMPLE-seq joint 5mC/5hmC), and [[10-Summaries/shen-2026-splicool-seq]] (SpliCOOL-seq).
 - Extends the methylation/lineage memory framing from [[10-Summaries/zachary-2013-naturereviewsgenetics]] (Smith/Meissner 2013) and intersects with [[10-Summaries/yilei-2025-naturereviewsgenetics]] (long-read methylation).
 - The MSC quality-control implication is a notable industry-applicable claim — methylation as a regenerative-medicine release criterion.
 

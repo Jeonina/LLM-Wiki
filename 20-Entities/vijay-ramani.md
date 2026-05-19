@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Senior author of [[10-Summaries/direct-transposition-of-native-dna-for-sensitive-multimodal-single-molecule-sequencing]] (SMRT-Tag, SAMOSA-Tag).
+- **2026-05-12** — Senior author of [[10-Summaries/abdulhay-2020-samosa]] (SMRT-Tag, SAMOSA-Tag).
 
 ## Related
 

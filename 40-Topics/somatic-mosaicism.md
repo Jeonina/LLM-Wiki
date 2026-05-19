@@ -4,12 +4,12 @@ title: Somatic mosaicism
 aliases: [mosaicism, post-zygotic variation topic]
 tags: [mosaicism, genetics, development, aging]
 created: 2026-05-11
-updated: 2026-05-12
+updated: 2026-05-19
 ---
 
 # Somatic mosaicism
 
-> Every human is a mosaic of genetically distinct cells. The biological question driving most of the [[40-Topics/scdna-seq]] technology investment: how to detect, characterize, and understand the somatic variants that accumulate throughout life and shape both normal physiology (aging, [[30-Concepts/clonal-hematopoiesis|clonal hematopoiesis]]) and disease (cancer, neurodevelopmental disorders).
+> Every human is a mosaic of genetically distinct cells ([[10-Summaries/lars-2017-naturereviewsgenetics]]; [[10-Summaries/cagan-2022-nature]]). The biological question driving most of the [[40-Topics/scdna-seq]] technology investment: how to detect, characterize, and understand the somatic variants that accumulate throughout life ([[10-Summaries/vijg-2020-cell]]) and shape both normal physiology (aging, [[30-Concepts/clonal-hematopoiesis|clonal hematopoiesis]] per [[10-Summaries/franco-2024-nature]]) and disease (cancer per [[10-Summaries/shao-2025-scDNA-mosaicism-review]], neurodevelopmental disorders per [[10-Summaries/bizzotto-2022-brain-mosaicism-review]]).
 
 ## Core concepts
 
@@ -59,7 +59,8 @@ updated: 2026-05-12
 
 - [[10-Summaries/diane-2025-naturereviewsgenetics]] — current scDNA-seq toolkit for mosaicism research.
 - [[10-Summaries/gilad-2021-annualreviewofgenomicsandhumangenetics]] — applications framework.
-- [[10-Summaries/bizzotto-2022-brain-mosaicism]] (= Bizzotto & Walsh 2022, NRN brain mosaicism review).
+- [[10-Summaries/bizzotto-2022-brain-mosaicism-review]] — Bizzotto & Walsh 2022, NRN brain mosaicism review.
+- [[10-Summaries/shao-2025-scDNA-mosaicism-review]] — Shao 2025 NRG scDNA-seq for mosaicism review.
 
 ### MPN as a tractable mosaicism disease model
 
@@ -68,19 +69,24 @@ updated: 2026-05-12
 
 ### Duplex sequencing for low-VAF mutation detection
 
-- [[10-Summaries/detecting-ultralow-frequency-mutations-by-duplex-sequencing]] — Kennedy 2014 founding DS protocol.
-- [[10-Summaries/a-universal-duplex-sequencing-approach-for-accurate-detection-of-somatic-mutations]] — UDSeq 2025.
-- [[10-Summaries/benchmarking-of-duplex-sequencing-approaches-to-reveal-somatic-mutation-landscapes]] — SMaHT cross-method benchmark.
+- [[10-Summaries/schmitt-2012-pnas]] — Schmitt/Loeb 2012. Original DS.
+- [[10-Summaries/kennedy-2014-duplex-protocol]] — Kennedy 2014 founding DS bench protocol.
+- [[10-Summaries/nandi-2025-udseq]] — UDSeq 2025.
+- [[10-Summaries/abascal-2021-nanoseq]] — NanoSeq nuclear-genome DS.
+- [[10-Summaries/zhang-2025-smaht-duplex-benchmark]] — SMaHT cross-method benchmark.
 
 ### Single-cell mosaicism studies
 
-- [[10-Summaries/a-comprehensive-view-of-somatic-mosaicism-by-single-cell-dna-analysis]] — Luquette 2025: PTA + duplex validation, 102 nuclei from lung+colon of 74-yo donor.
-- [[10-Summaries/high-throughput-single-cell-analysis-reveals-progressive-mitochondrial-dna-mosaicism-throughout-life]] — Glynos/Chinnery 2023: mouse mtDNA heteroplasmy variance increases through life.
-- [[10-Summaries/single-cell-mosaicism-analysis-reveals-cell-type-specific-somatic-mutational-burden-in-alzheimer-s-dementia]] — Kousi/Kellis 2022: cell-type-specific AD mosaicism.
+- [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — Luquette 2025: PTA + duplex validation, 102 nuclei from lung+colon of 74-yo donor.
+- [[10-Summaries/luquette-2025-smaht-pta]] — companion PTA pipeline paper.
+- [[10-Summaries/glynos-2023-mtdna-mosaicism]] — Glynos/Chinnery 2023: mouse mtDNA heteroplasmy variance increases through life.
+- [[10-Summaries/kousi-2022-alzheimer-mosaicism]] — Kousi/Kellis 2022: cell-type-specific AD mosaicism.
+- [[10-Summaries/lodato-2018-science]] — Lodato et al. 2018 aging-neuron mosaic mutation burden.
+- [[10-Summaries/bae-2017-pregastrulation-mutations]] — Bae 2017: developmental mutation timing.
 
 ### Structural-variant somatic mosaicism
 
-- [[10-Summaries/nanopore-sequencing-unveils-somatic-structural-variations-as-biomarkers-in-laryngeal-squamous-cell-carcinoma-genomes]] — nanopore SomaGauss-SV in LSCC; smoking × deletion-burden correlation.
+- [[10-Summaries/liu-2025-nanopore-lscc-svs]] — nanopore SomaGauss-SV in LSCC; smoking × deletion-burden correlation.
 
 ## Synthesized notes
 

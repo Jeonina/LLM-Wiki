@@ -23,7 +23,7 @@ Input: binary cell × region accessibility matrix. LDA derives two distributions
 
 ## Examples
 
-- Hematopoietic differentiation, brain cell types (cortical excitatory layers, glia), SOX10-knockdown dynamics in melanoma ([[10-Summaries/cistopic-cis-regulatory-topic-modeling-on-single-cell-atac-seq-data]]).
+- Hematopoietic differentiation, brain cell types (cortical excitatory layers, glia), SOX10-knockdown dynamics in melanoma ([[10-Summaries/bravo-2019-cistopic]]).
 
 ## Related
 

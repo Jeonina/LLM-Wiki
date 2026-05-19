@@ -19,9 +19,9 @@ Department of Genetics, Department of Applied Physics, Stanford University; Chan
 ## Mentions
 
 - **2026-05-11** — [[10-Summaries/sandy-2019-naturereviewsgenetics]]: senior author of the canonical chromatin accessibility review.
-- **2026-05-12** — Senior author of [[10-Summaries/chromvar-inferring-transcription-factor-associated-accessibility-from-single-cell-epigenomic-data]] (chromVAR, Schep/Buenrostro/Greenleaf 2017).
-- **2026-05-12** — Senior author of [[10-Summaries/high-throughput-chromatin-accessibility-profiling-at-single-cell-resolution]] (µATAC-seq on ICELL8 nanowell platform; with Sandy Klemm).
-- **2026-05-12** — Co-author on [[10-Summaries/unsupervised-clustering-and-epigenetic-classification-of-single-cells]] (scABC, Wong lab).
+- **2026-05-12** — Senior author of [[10-Summaries/schep-2017-chromvar]] (chromVAR, Schep/Buenrostro/Greenleaf 2017).
+- **2026-05-12** — Senior author of [[10-Summaries/mezger-2018-microfluidic-atac]] (µATAC-seq on ICELL8 nanowell platform; with Sandy Klemm).
+- **2026-05-12** — Co-author on [[10-Summaries/zamanighomi-2018-scabc]] (scABC, Wong lab).
 
 ## Positions and claims
 

@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Senior author of [[10-Summaries/scatac-seq-generates-more-accurate-and-complete-regulatory-maps-than-bulk-atac-seq]].
+- **2026-05-12** — Senior author of [[10-Summaries/gur-2025-scatac-vs-bulk]].
 
 ## Related
 

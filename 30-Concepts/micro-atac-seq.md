@@ -23,7 +23,7 @@ Workflow: cells loaded under Poisson dilution → imaged for live single-cell we
 
 ## Examples
 
-- 2,333 PBMCs from 3 donors → de novo clustering by hematopoietic cell type with PU.1, C/EBPα, RUNX1 motifs differential ([[10-Summaries/high-throughput-chromatin-accessibility-profiling-at-single-cell-resolution]]).
+- 2,333 PBMCs from 3 donors → de novo clustering by hematopoietic cell type with PU.1, C/EBPα, RUNX1 motifs differential ([[10-Summaries/mezger-2018-microfluidic-atac]]).
 
 ## Related
 

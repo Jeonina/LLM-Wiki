@@ -62,10 +62,10 @@ updated: 2026-05-12
 
 ## Related summaries
 
-- [[10-Summaries/single-cell-triple-omics-sequencing-reveals-genetic-epigenetic-and-transcriptomic-heterogeneity-in-hepatocellular-carcinomas]] — scTrio-seq, the methodological precedent (CNV from RRBS distribution).
+- [[10-Summaries/hou-2016-sctrio-seq]] — scTrio-seq, the methodological precedent (CNV from RRBS distribution).
 - [[10-Summaries/taejeong-2022-science]] — Bae 2022 human-brain hypermutability, with chromosomal aneuploidies in some hypermutable brains (e.g., LIBD82).
 - [[10-Summaries/single-cell-mosaicism-analysis-reveals-cell-type-specific-somatic-mutational-burden-in-alzheimer-s-dementia]] — human-brain cell-type-specific SNV burden in AD.
-- [[10-Summaries/scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]] — scNMT-seq, similar logic for accessibility + methylation.
+- [[10-Summaries/clark-2018-scnmt-seq]] — scNMT-seq, similar logic for accessibility + methylation.
 - [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]] — synthesis note that needs an update reflecting Mukamel 2025 as a second major anchor for joint CNV + epi at single-cell scale.
 
 ---

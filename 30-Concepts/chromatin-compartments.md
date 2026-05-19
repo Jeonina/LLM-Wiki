@@ -19,7 +19,7 @@ Identified by principal-component analysis on Hi-C contact matrices. A and B com
 
 - Compartment identity correlates with replication timing and chromatin state.
 - Compartment switching marks cell-fate transitions.
-- SnapATAC ([[10-Summaries/comprehensive-analysis-of-single-cell-atac-seq-data-with-snapatac]]) shows that off-peak scATAC-seq reads correlate with A-compartment density — meaning compartment-level signal contributes to single-cell clustering even without explicit peak calls.
+- SnapATAC ([[10-Summaries/fang-2021-snapatac]]) shows that off-peak scATAC-seq reads correlate with A-compartment density — meaning compartment-level signal contributes to single-cell clustering even without explicit peak calls.
 
 ## Related
 

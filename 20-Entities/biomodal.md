@@ -18,7 +18,7 @@ Co-founded by Shankar Balasubramanian. The evoC chemistry powers 6-base-CUT&Tag 
 
 ## Mentions
 
-- **2026-05-12** — biomodal evoC kit is the underlying enzymatic chemistry of [[10-Summaries/sequencing-dna-methylation-and-hydroxymethylation-at-co-occurring-chromatin-features]] (6-base-CUT&Tag) and adjacent methods.
+- **2026-05-12** — biomodal evoC kit is the underlying enzymatic chemistry of [[10-Summaries/tavares-2026-6-base-cut-tag]] (6-base-CUT&Tag) and adjacent methods.
 
 ## Related
 

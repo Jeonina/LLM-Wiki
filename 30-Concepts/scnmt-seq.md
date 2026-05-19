@@ -13,7 +13,7 @@ updated: 2026-05-12
 
 ## Definition
 
-Clark et al. 2018 ([[10-Summaries/scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]]). Cell is lysed in M.CviPI buffer (15 min, 37°C); GpC sites in accessible DNA are methylated while endogenous CpG methylation is preserved. RNA is separated via biotinylated oligo-dT beads (G&T-seq mechanism) and processed by Smart-seq2. The remaining DNA is bisulfite-converted (scBS-seq). After alignment, A-C-G/T-C-G positions report endogenous CpG methylation; G-C-A/C/T positions report GpC accessibility; G-C-G and C-C-G positions are discarded.
+Clark et al. 2018 ([[10-Summaries/clark-2018-scnmt-seq]]). Cell is lysed in M.CviPI buffer (15 min, 37°C); GpC sites in accessible DNA are methylated while endogenous CpG methylation is preserved. RNA is separated via biotinylated oligo-dT beads (G&T-seq mechanism) and processed by Smart-seq2. The remaining DNA is bisulfite-converted (scBS-seq). After alignment, A-C-G/T-C-G positions report endogenous CpG methylation; G-C-A/C/T positions report GpC accessibility; G-C-G and C-C-G positions are discarded.
 
 ## Why it matters
 
@@ -24,7 +24,7 @@ Clark et al. 2018 ([[10-Summaries/scnmt-seq-enables-joint-profiling-of-chromatin
 
 ## Variants and refinements
 
-- **scNMT-seq** ([[10-Summaries/scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]]).
+- **scNMT-seq** ([[10-Summaries/clark-2018-scnmt-seq]]).
 - Conceptual successors that add a chromatin-modification layer: [[scchix-seq]], [[multi-tag]].
 - Lineage cousin in DNA-methylation + accessibility space: [[splicool-seq]] (scaled, larger-throughput).
 

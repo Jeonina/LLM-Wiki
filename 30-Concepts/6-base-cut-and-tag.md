@@ -21,7 +21,7 @@ Reveals 5mC and 5hmC distributions at **specific** chromatin states (active vs p
 
 ## Examples
 
-- mESCs: primed enhancers (H3K4me1-only) have highest 5mC (~13%) and 5hmC (~4%); active and poised enhancers have lower modifications. H3K4me1-derived 5mC/5hmC signatures classify enhancer functional states ([[10-Summaries/sequencing-dna-methylation-and-hydroxymethylation-at-co-occurring-chromatin-features]]).
+- mESCs: primed enhancers (H3K4me1-only) have highest 5mC (~13%) and 5hmC (~4%); active and poised enhancers have lower modifications. H3K4me1-derived 5mC/5hmC signatures classify enhancer functional states ([[10-Summaries/tavares-2026-6-base-cut-tag]]).
 
 ## Related
 

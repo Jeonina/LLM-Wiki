@@ -32,7 +32,7 @@ Built on the **SPLiT-seq / Paired-seq split-pool barcoding** logic. Cells are fi
 ## Surprising / load-bearing
 
 - The "DORC chromatin opens before gene expression" finding is a single-cell, time-resolved version of the long-suspected idea that accessibility is a permissive precondition for transcription. SHARE-seq is the first method to demonstrate it at the resolution needed to compute a cell-specific potential.
-- For this wiki's DNA-centric review framing: SHARE-seq is methodologically a **scATAC + scRNA** assay (it does not directly measure DNA sequence variants). It belongs in §4.6 joint-assay coverage as the scaling-by-split-pool exemplar — analogous in throughput class to [[10-Summaries/joint-profiling-of-chromatin-accessibility-and-gene-expression-in-thousands-of-single-cells]] (sci-CAR), but uses split-pool barcoding rather than combinatorial-indexing wells.
+- For this wiki's DNA-centric review framing: SHARE-seq is methodologically a **scATAC + scRNA** assay (it does not directly measure DNA sequence variants). It belongs in §4.6 joint-assay coverage as the scaling-by-split-pool exemplar — analogous in throughput class to [[10-Summaries/cao-2018-sci-car]] (sci-CAR), but uses split-pool barcoding rather than combinatorial-indexing wells.
 
 ## Entities / concepts touched
 

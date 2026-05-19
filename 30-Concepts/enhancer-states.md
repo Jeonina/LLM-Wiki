@@ -17,7 +17,7 @@ updated: 2026-05-12
 
 ## Why it matters
 
-Enhancer state predicts gene-expression activity and cell-fate commitment. Newer findings ([[10-Summaries/sequencing-dna-methylation-and-hydroxymethylation-at-co-occurring-chromatin-features]]) add **DNA methylation as a fourth coordinate**: primed enhancers have the highest 5mC and 5hmC at H3K4me1-marked nucleosomes, distinguishing them from active and poised enhancers.
+Enhancer state predicts gene-expression activity and cell-fate commitment. Newer findings ([[10-Summaries/tavares-2026-6-base-cut-tag]]) add **DNA methylation as a fourth coordinate**: primed enhancers have the highest 5mC and 5hmC at H3K4me1-marked nucleosomes, distinguishing them from active and poised enhancers.
 
 ## Related
 

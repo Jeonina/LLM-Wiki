@@ -4,12 +4,12 @@ title: Long-read sequencing
 aliases: [PacBio, Oxford Nanopore, long-read]
 tags: [sequencing, long-read, third-generation]
 created: 2026-05-11
-updated: 2026-05-12
+updated: 2026-05-19
 ---
 
 # Long-read sequencing
 
-> The enabling platform layer beneath several recent breakthroughs in this vault: single-molecule chromatin footprinting ([[fiber-seq]], [[daf-seq]]), direct methylation detection without bisulfite conversion, scDAF-seq chromosome-length consensus reads, and duplex sequencing variants like HiDEF-seq.
+> The enabling platform layer beneath several recent breakthroughs in this vault: single-molecule chromatin footprinting ([[fiber-seq]] per [[10-Summaries/andrewb-2020-science]]; [[daf-seq]] per [[10-Summaries/elliott-2025-naturebiotechnology]]), direct methylation detection without bisulfite conversion ([[10-Summaries/yilei-2025-naturereviewsgenetics]]; [[10-Summaries/liu-2025-longread-epigenome-review]]), scDAF-seq chromosome-length consensus reads ([[10-Summaries/elliott-2025-naturebiotechnology]]), and duplex sequencing variants like HiDEF-seq ([[10-Summaries/diane-2025-naturereviewsgenetics]]).
 
 ## Core concepts
 
@@ -44,17 +44,21 @@ updated: 2026-05-12
 ### Long-read methylation analysis
 
 - [[10-Summaries/yilei-2025-naturereviewsgenetics]] — Fu/Sedlazeck/Timp NRG computational long-read methylation analysis.
-- [[10-Summaries/profiling-the-epigenome-using-long-read-sequencing]] — Liu/Conesa 2025 NRG broader epigenome review (methylation + accessibility + 3D + transcriptomic LRS).
+- [[10-Summaries/fu-2025-longread-methylation]] — Fu et al. detailed computational methylation analysis.
+- [[10-Summaries/liu-2025-longread-epigenome-review]] — Liu/Conesa 2025 NRG broader epigenome review (methylation + accessibility + 3D + transcriptomic LRS).
 
 ### Long-read single-molecule chromatin
 
+- [[10-Summaries/andrewb-2020-science]] — Fiber-seq (Stergachis 2020).
 - [[10-Summaries/elliott-2025-naturebiotechnology]] — DAF-seq / scDAF-seq.
-- [[10-Summaries/direct-transposition-of-native-dna-for-sensitive-multimodal-single-molecule-sequencing]] — SMRT-Tag and SAMOSA-Tag (Ramani lab).
-- [[10-Summaries/single-molecule-targeted-accessibility-and-methylation-sequencing-of-centromeres-telomeres-and-rdnas-in-arabidopsis]] — STAM-seq, plant HRRs.
+- [[10-Summaries/nanda-2024-smrt-tag]] — SMRT-Tag (Ramani lab).
+- [[10-Summaries/abdulhay-2020-samosa]] — SAMOSA (Ramani lab).
+- [[10-Summaries/mo-2023-stam-seq]] — STAM-seq, plant HRRs.
 
 ### Long-read SV detection
 
-- [[10-Summaries/nanopore-sequencing-unveils-somatic-structural-variations-as-biomarkers-in-laryngeal-squamous-cell-carcinoma-genomes]] — SomaGauss-SV in LSCC.
+- [[10-Summaries/liu-2025-nanopore-lscc-svs]] — SomaGauss-SV in LSCC.
+- [[10-Summaries/liu-2025-somagauss-lscc]] — SomaGauss-SV companion paper.
 
 ### Long-read referenced in scDNA-seq context
 
@@ -67,6 +71,10 @@ _None yet._
 
 ## Open questions
 
-- Cost per Gb at scale — still higher than short-read Illumina; gap closing but not closed.
-- Methylation calling accuracy benchmarking across platforms.
-- Long-read single-cell methods — emerging but not yet routine; scDAF-seq is currently the most successful single-cell long-read application.
+- Cost per Gb at scale — still higher than short-read Illumina; gap closing but not closed (synthesis).
+- Methylation calling accuracy benchmarking across platforms ([[10-Summaries/fu-2025-longread-methylation]]; [[10-Summaries/yilei-2025-naturereviewsgenetics]]).
+- Long-read single-cell methods — emerging but not yet routine; scDAF-seq is currently the most successful single-cell long-read application ([[10-Summaries/elliott-2025-naturebiotechnology]]).
+
+## Synthesized notes
+
+- [[50-Notes/regulatory-layers-overview]] — long-read methods read accessibility + methylation + 3D simultaneously on the same fiber.

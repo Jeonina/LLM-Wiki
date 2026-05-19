@@ -22,7 +22,7 @@ Combines TAPS chemistry (for 5mC → uracil conversion) with hmC-CATCH-style 5hm
 ## Examples
 
 - mESCs 2i→serum transition: cells with high "modification entropy" mark transient reprogramming midpoints. Type-2 5hmCG sites (paired with 5mCG) mark dynamic methylation.
-- Human PBMCs and mouse cerebral cortex profiled in the same paper ([[10-Summaries/simultaneous-single-cell-analysis-of-5mc-and-5hmc-with-simple-seq]]).
+- Human PBMCs and mouse cerebral cortex profiled in the same paper ([[10-Summaries/bai-2024-simple-seq]]).
 
 ## Related
 

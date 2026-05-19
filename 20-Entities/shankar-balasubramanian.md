@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Senior author of [[10-Summaries/sequencing-dna-methylation-and-hydroxymethylation-at-co-occurring-chromatin-features]] (6-base-CUT&Tag).
+- **2026-05-12** — Senior author of [[10-Summaries/tavares-2026-6-base-cut-tag]] (6-base-CUT&Tag).
 
 ## Related
 

@@ -24,8 +24,8 @@ Workflow: light formaldehyde fixation → nuclei isolation → primary antibody 
 ## Examples
 
 - Standard reference: Kaya-Okur et al. 2019 *Nat Commun*.
-- Single-cell scale: [[10-Summaries/scalable-single-cell-profiling-of-chromatin-modifications-with-scicut-tag]] (sciCUT&Tag).
-- DNA-modification extension: [[10-Summaries/sequencing-dna-methylation-and-hydroxymethylation-at-co-occurring-chromatin-features]] (6-base-CUT&Tag).
+- Single-cell scale: [[10-Summaries/janssens-2023-scicut-tag]] (sciCUT&Tag).
+- DNA-modification extension: [[10-Summaries/tavares-2026-6-base-cut-tag]] (6-base-CUT&Tag).
 
 ## Related
 

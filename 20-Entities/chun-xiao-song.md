@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Co-author on [[10-Summaries/single-cell-multi-omic-detection-of-dna-methylation-and-histone-modifications-reconstructs-the-dynamics-of-epigenomic-maintenance]] (TAPS chemistry).
+- **2026-05-12** — Co-author on [[10-Summaries/geisenberger-2025-scepi2-seq]] (TAPS chemistry).
 
 ## Related
 

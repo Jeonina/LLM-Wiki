@@ -34,19 +34,19 @@ updated: 2026-05-12
 ## Sources, by sub-theme
 
 ### Foundational assay and analysis
-- [[10-Summaries/chromvar-inferring-transcription-factor-associated-accessibility-from-single-cell-epigenomic-data]] — Schep/Greenleaf 2017. TF motif aggregation under sparsity.
+- [[10-Summaries/schep-2017-chromvar]] — Schep/Greenleaf 2017. TF motif aggregation under sparsity.
 
 ### Clustering and dimensionality reduction
-- [[10-Summaries/cistopic-cis-regulatory-topic-modeling-on-single-cell-atac-seq-data]] — Bravo/Aerts 2019. LDA topic modeling.
-- [[10-Summaries/comprehensive-analysis-of-single-cell-atac-seq-data-with-snapatac]] — Fang/Ren 2021. Peak-free, Nyström-scaled to 1M cells.
-- [[10-Summaries/unsupervised-clustering-and-epigenetic-classification-of-single-cells]] — Zamanighomi/Wong 2018. scABC weighted k-medoids.
-- [[10-Summaries/episcanpy-integrated-single-cell-epigenomic-analysis]] — Danese/Theis 2021. Python framework.
+- [[10-Summaries/bravo-2019-cistopic]] — Bravo/Aerts 2019. LDA topic modeling.
+- [[10-Summaries/fang-2021-snapatac]] — Fang/Ren 2021. Peak-free, Nyström-scaled to 1M cells.
+- [[10-Summaries/zamanighomi-2018-scabc]] — Zamanighomi/Wong 2018. scABC weighted k-medoids.
+- [[10-Summaries/danese-2021-episcanpy]] — Danese/Theis 2021. Python framework.
 
 ### High-throughput platforms
-- [[10-Summaries/high-throughput-chromatin-accessibility-profiling-at-single-cell-resolution]] — Mezger/Greenleaf 2018. µATAC-seq on ICELL8 nanowell array.
+- [[10-Summaries/mezger-2018-microfluidic-atac]] — Mezger/Greenleaf 2018. µATAC-seq on ICELL8 nanowell array.
 
 ### Comparison to bulk
-- [[10-Summaries/scatac-seq-generates-more-accurate-and-complete-regulatory-maps-than-bulk-atac-seq]] — Gur/Hughes 2025. Pseudo-bulked scATAC matches bulk ATAC and reveals within-population heterogeneity.
+- [[10-Summaries/gur-2025-scatac-vs-bulk]] — Gur/Hughes 2025. Pseudo-bulked scATAC matches bulk ATAC and reveals within-population heterogeneity.
 
 ## Synthesized notes
 

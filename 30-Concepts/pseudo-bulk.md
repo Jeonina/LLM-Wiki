@@ -21,7 +21,7 @@ Pseudo-bulk is conceptually closer to "bulk RNA-seq of a sorted cell type" than 
 
 ## Examples
 
-- [[10-Summaries/scatac-seq-generates-more-accurate-and-complete-regulatory-maps-than-bulk-atac-seq]] (Gur/Hughes 2025) — pseudo-bulked scATAC matches bulk and adds within-population heterogeneity detection.
+- [[10-Summaries/gur-2025-scatac-vs-bulk]] (Gur/Hughes 2025) — pseudo-bulked scATAC matches bulk and adds within-population heterogeneity detection.
 
 ## Related
 

@@ -25,7 +25,7 @@ TET (1/2/3) enzymes oxidize 5mC → 5hmC → 5fC → 5caC. 5fC and 5caC are exci
 ## Variants and refinements
 
 - Type-1 5hmCG = basal-level, not co-occurring with 5mCG.
-- Type-2 5hmCG = co-occurring with 5mCG on the same molecule, associated with active demethylation regions ([[10-Summaries/simultaneous-single-cell-analysis-of-5mc-and-5hmc-with-simple-seq]]).
+- Type-2 5hmCG = co-occurring with 5mCG on the same molecule, associated with active demethylation regions ([[10-Summaries/bai-2024-simple-seq]]).
 
 ## Related
 

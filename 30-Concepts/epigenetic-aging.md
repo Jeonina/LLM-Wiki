@@ -19,7 +19,7 @@ A methylation clock is a weighted linear combination of methylation β-values at
 
 - Predicts chronological age with median error <4 years across tissues.
 - "Epigenetic age acceleration" (predicted > chronological) correlates with all-cause mortality, cancer risk, and disease incidence.
-- **scAge** ([[10-Summaries/high-throughput-single-cell-dna-methylation-and-chromatin-accessibility-co-profiling-with-splicool-seq]]) extends to single cells: tumor subclones show accelerated epigenetic aging compared to surrounding normal cells.
+- **scAge** ([[10-Summaries/shen-2026-splicool-seq]]) extends to single cells: tumor subclones show accelerated epigenetic aging compared to surrounding normal cells.
 
 ## Related
 

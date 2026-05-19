@@ -21,8 +21,8 @@ Bisulfite degrades up to 90% of input DNA and destroys cell-barcode adaptors use
 
 ## Examples
 
-- Single-cell joint methylation + histone-mark profiling: [[10-Summaries/single-cell-multi-omic-detection-of-dna-methylation-and-histone-modifications-reconstructs-the-dynamics-of-epigenomic-maintenance]] (scEpi²-seq).
-- 5mC labeling in [[10-Summaries/simultaneous-single-cell-analysis-of-5mc-and-5hmc-with-simple-seq]] (SIMPLE-seq).
+- Single-cell joint methylation + histone-mark profiling: [[10-Summaries/geisenberger-2025-scepi2-seq]] (scEpi²-seq).
+- 5mC labeling in [[10-Summaries/bai-2024-simple-seq]] (SIMPLE-seq).
 - TAPS does not distinguish 5mC from 5hmC alone; pairing with hmC-CATCH (in SIMPLE-seq) or with sequential blocking can resolve them.
 
 ## Related

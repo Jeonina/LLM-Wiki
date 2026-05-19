@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — First author of [[10-Summaries/scchix-seq-infers-dynamic-relationships-between-histone-modifications-in-single-cells]].
+- **2026-05-12** — First author of [[10-Summaries/yeung-2023-scchix-seq]].
 
 ## Related
 

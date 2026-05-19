@@ -13,7 +13,7 @@ updated: 2026-05-12
 
 ## Examples
 
-- [[10-Summaries/high-throughput-single-cell-dna-methylation-and-chromatin-accessibility-co-profiling-with-splicool-seq]] applies SpliCOOL-seq to primary LUAD tissue to identify methylation biomarkers (FAM124B, SFN, OR7E47P) and accelerated epigenetic aging in tumor subclones.
+- [[10-Summaries/shen-2026-splicool-seq]] applies SpliCOOL-seq to primary LUAD tissue to identify methylation biomarkers (FAM124B, SFN, OR7E47P) and accelerated epigenetic aging in tumor subclones.
 
 ## Related
 

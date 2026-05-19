@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Senior author of [[10-Summaries/harmonizing-single-cell-3d-genome-data-with-stark-and-scnucleome]] (STARK + scNucleome).
+- **2026-05-12** — Senior author of [[10-Summaries/jiang-2026-stark-scnucleome]] (STARK + scNucleome).
 
 ## Related
 

@@ -48,8 +48,8 @@ PyTorch implementation. 200-bp scan windows over hg19 with step 200 bp; window l
 
 ## Connections to other sources
 
-- Sits in the tooling stack for [[40-Topics/histone-modifications]] alongside single-cell experimental methods like [[10-Summaries/single-cell-chromatin-immunocleavage-sequencing-scchic-seq-to-profile-histone-modification]] (scChIC-seq), [[10-Summaries/scchix-seq-infers-dynamic-relationships-between-histone-modifications-in-single-cells]] (scChIX-seq), and [[10-Summaries/scalable-single-cell-profiling-of-chromatin-modifications-with-scicut-tag]] (sciCUT&Tag).
-- The accessibility input dependency means DeepHistone benefits directly from advances in cheaper accessibility profiling like [[10-Summaries/high-throughput-chromatin-accessibility-profiling-at-single-cell-resolution]] (µATAC).
+- Sits in the tooling stack for [[40-Topics/histone-modifications]] alongside single-cell experimental methods like [[10-Summaries/ku-2019-scchic-seq]] (scChIC-seq), [[10-Summaries/yeung-2023-scchix-seq]] (scChIX-seq), and [[10-Summaries/janssens-2023-scicut-tag]] (sciCUT&Tag).
+- The accessibility input dependency means DeepHistone benefits directly from advances in cheaper accessibility profiling like [[10-Summaries/mezger-2018-microfluidic-atac]] (µATAC).
 - Complementary to deep-learning models that predict expression from sequence alone (Enformer, Basenji) — DeepHistone predicts the chromatin layer those models also implicitly model.
 
 ## Open questions

@@ -66,18 +66,18 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 
 ### Foundational joint DNA + RNA assays (one cell)
 
-- [[10-Summaries/g-t-seq-parallel-sequencing-of-single-cell-genomes-and-transcriptomes]] — Macaulay 2015: G&T-seq, separation-based scDNA + scRNA; trisomy-11 subclone in HCC38-BL.
-- [[10-Summaries/integrated-genome-and-transcriptome-sequencing-of-the-same-cell]] — Dey 2015: DR-seq, one-pot scDNA + scRNA; CNVs drive expression variability.
+- [[10-Summaries/macaulay-2015-gt-seq]] — Macaulay 2015: G&T-seq, separation-based scDNA + scRNA; trisomy-11 subclone in HCC38-BL.
+- [[10-Summaries/dey-2015-dr-seq]] — Dey 2015: DR-seq, one-pot scDNA + scRNA; CNVs drive expression variability.
 
 ### Joint chromatin + RNA (accessibility-anchored)
 
-- [[10-Summaries/joint-profiling-of-chromatin-accessibility-and-gene-expression-in-thousands-of-single-cells]] — Cao 2018: sci-CAR, scATAC + scRNA at thousands of cells.
-- [[10-Summaries/share-seq-reveals-chromatin-potential-nature-reviews-genetics]] — Ma 2020 (NRG perspective): SHARE-seq, chromatin potential framework.
+- [[10-Summaries/cao-2018-sci-car]] — Cao 2018: sci-CAR, scATAC + scRNA at thousands of cells.
+- [[10-Summaries/ma-2020-share-seq]] — Ma 2020 (NRG perspective): SHARE-seq, chromatin potential framework.
 
 ### Triple-omics (methylation + accessibility + RNA, or CNV + methylation + RNA)
 
-- [[10-Summaries/scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]] — Clark 2018: scNMT-seq, first triple-omics; methylation-accessibility coupling strengthens along differentiation.
-- [[10-Summaries/single-cell-triple-omics-sequencing-reveals-genetic-epigenetic-and-transcriptomic-heterogeneity-in-hepatocellular-carcinomas]] — Hou 2016: scTrio-seq; CNVs drive expression but not methylation; HCC subpopulation analysis.
+- [[10-Summaries/clark-2018-scnmt-seq]] — Clark 2018: scNMT-seq, first triple-omics; methylation-accessibility coupling strengthens along differentiation.
+- [[10-Summaries/hou-2016-sctrio-seq]] — Hou 2016: scTrio-seq; CNVs drive expression but not methylation; HCC subpopulation analysis.
 
 ### Spatial single-cell DNA
 
@@ -104,16 +104,16 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 
 ### Methylation × chromatin / histone-mark single-cell methods
 
-- [[10-Summaries/simultaneous-single-cell-analysis-of-5mc-and-5hmc-with-simple-seq]] (SIMPLE-seq).
-- [[10-Summaries/high-throughput-single-cell-dna-methylation-and-chromatin-accessibility-co-profiling-with-splicool-seq]] (SpliCOOL-seq).
-- [[10-Summaries/single-cell-multi-omic-detection-of-dna-methylation-and-histone-modifications-reconstructs-the-dynamics-of-epigenomic-maintenance]] (scEpi²-seq).
-- [[10-Summaries/sequencing-dna-methylation-and-hydroxymethylation-at-co-occurring-chromatin-features]] (6-base-CUT&Tag).
-- [[10-Summaries/scchix-seq-infers-dynamic-relationships-between-histone-modifications-in-single-cells]] (scChIX-seq).
-- [[10-Summaries/scalable-single-cell-profiling-of-chromatin-modifications-with-scicut-tag]] (sciCUT&Tag).
+- [[10-Summaries/bai-2024-simple-seq]] (SIMPLE-seq).
+- [[10-Summaries/shen-2026-splicool-seq]] (SpliCOOL-seq).
+- [[10-Summaries/geisenberger-2025-scepi2-seq]] (scEpi²-seq).
+- [[10-Summaries/tavares-2026-6-base-cut-tag]] (6-base-CUT&Tag).
+- [[10-Summaries/yeung-2023-scchix-seq]] (scChIX-seq).
+- [[10-Summaries/janssens-2023-scicut-tag]] (sciCUT&Tag).
 
 ### Long-read multi-modal chromatin
 
-- [[10-Summaries/direct-transposition-of-native-dna-for-sensitive-multimodal-single-molecule-sequencing]] (SAMOSA-Tag).
+- [[10-Summaries/abdulhay-2020-samosa]] (SAMOSA-Tag).
 
 ## Synthesized notes
 

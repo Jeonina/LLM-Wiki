@@ -13,7 +13,7 @@ updated: 2026-05-12
 
 ## Definition
 
-Hou et al. 2016 ([[10-Summaries/single-cell-triple-omics-sequencing-reveals-genetic-epigenetic-and-transcriptomic-heterogeneity-in-hepatocellular-carcinomas]]). Mild lysis breaks only the cytoplasm; centrifugation separates mRNA-bearing supernatant from the intact nucleus. Supernatant → Tang-lab scRNA-seq. Nuclear pellet → scRRBS. The RRBS read distribution doubles as the CNV signal (after normalization against normal-liver-RRBS reference and HMM fitting) at 10-Mb resolution.
+Hou et al. 2016 ([[10-Summaries/hou-2016-sctrio-seq]]). Mild lysis breaks only the cytoplasm; centrifugation separates mRNA-bearing supernatant from the intact nucleus. Supernatant → Tang-lab scRNA-seq. Nuclear pellet → scRRBS. The RRBS read distribution doubles as the CNV signal (after normalization against normal-liver-RRBS reference and HMM fitting) at 10-Mb resolution.
 
 ## Why it matters
 
@@ -25,7 +25,7 @@ Hou et al. 2016 ([[10-Summaries/single-cell-triple-omics-sequencing-reveals-gene
 
 ## Variants and refinements
 
-- **scTrio-seq** ([[10-Summaries/single-cell-triple-omics-sequencing-reveals-genetic-epigenetic-and-transcriptomic-heterogeneity-in-hepatocellular-carcinomas]]).
+- **scTrio-seq** ([[10-Summaries/hou-2016-sctrio-seq]]).
 - Companion / contemporaneous: [[scnmt-seq]] (accessibility instead of CNV).
 - Lineage cousin: [[g-t-seq|G&T-seq]] (DNA + RNA only, no methylation).
 

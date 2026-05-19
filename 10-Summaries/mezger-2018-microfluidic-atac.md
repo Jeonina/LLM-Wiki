@@ -51,8 +51,8 @@ ICELL8 platform (Takara Bio USA) with Hoechst/propidium-iodide live/dead imaging
 
 ## Connections to other sources
 
-- Bridges Fluidigm-C1-era scATAC ([[10-Summaries/chromvar-inferring-transcription-factor-associated-accessibility-from-single-cell-epigenomic-data]] used C1 data) and combinatorial-indexing scATAC (used in [[10-Summaries/comprehensive-analysis-of-single-cell-atac-seq-data-with-snapatac]] for atlas-scale work).
-- Same ICELL8 platform used by [[10-Summaries/scalable-single-cell-profiling-of-chromatin-modifications-with-scicut-tag]] (sciCUT&Tag) and by SpliCOOL-seq–style approaches. Demonstrates the platform's extensibility beyond ATAC.
+- Bridges Fluidigm-C1-era scATAC ([[10-Summaries/schep-2017-chromvar]] used C1 data) and combinatorial-indexing scATAC (used in [[10-Summaries/fang-2021-snapatac]] for atlas-scale work).
+- Same ICELL8 platform used by [[10-Summaries/janssens-2023-scicut-tag]] (sciCUT&Tag) and by SpliCOOL-seq–style approaches. Demonstrates the platform's extensibility beyond ATAC.
 - Complements [[10-Summaries/sandy-2019-naturereviewsgenetics]] (Klemm/Greenleaf chromatin-accessibility review).
 
 ## Open questions

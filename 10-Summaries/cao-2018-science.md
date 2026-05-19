@@ -28,5 +28,5 @@ Founding joint scATAC + scRNA method, predating SHARE-seq, Paired-seq, and 10x m
 - [[30-Concepts/sci-car]]
 - [[30-Concepts/joint-single-cell-multi-omics]]
 - [[30-Concepts/combinatorial-indexing]]
-- [[10-Summaries/share-seq-reveals-chromatin-potential-nature-reviews-genetics]]
+- [[10-Summaries/ma-2020-share-seq]]
 - [[20-Entities/jay-shendure]]

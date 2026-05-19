@@ -48,8 +48,8 @@ Comparison of (a) bulk ATAC-seq on FACS-isolated erythroblasts and NK cells from
 ## Connections to other sources
 
 - Quantitative complement to [[10-Summaries/sandy-2019-naturereviewsgenetics]] (Klemm/Greenleaf chromatin accessibility review) which articulated the conceptual case for single-cell methods.
-- Uses [[10-Summaries/cistopic-cis-regulatory-topic-modeling-on-single-cell-atac-seq-data]] (cisTopic) for clustering and ArchR for analysis.
-- Provides cell-number practical floor for designs guided by frameworks like [[10-Summaries/episcanpy-integrated-single-cell-epigenomic-analysis]] (EpiScanpy) and [[10-Summaries/comprehensive-analysis-of-single-cell-atac-seq-data-with-snapatac]] (SnapATAC).
+- Uses [[10-Summaries/bravo-2019-cistopic]] (cisTopic) for clustering and ArchR for analysis.
+- Provides cell-number practical floor for designs guided by frameworks like [[10-Summaries/danese-2021-episcanpy]] (EpiScanpy) and [[10-Summaries/fang-2021-snapatac]] (SnapATAC).
 
 ## Open questions
 

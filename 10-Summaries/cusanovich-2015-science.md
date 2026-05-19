@@ -26,4 +26,4 @@ The first published combinatorial-indexing scATAC-seq method, complementary to t
 - [[30-Concepts/scatac-seq]]
 - [[30-Concepts/combinatorial-indexing]]
 - [[20-Entities/jay-shendure]]
-- [[10-Summaries/joint-profiling-of-chromatin-accessibility-and-gene-expression-in-thousands-of-single-cells]]
+- [[10-Summaries/cao-2018-sci-car]]

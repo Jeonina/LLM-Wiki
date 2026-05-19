@@ -50,7 +50,7 @@ Authoritative narrative review with tables comparing >15 sc3DG-seq technologies 
 
 ## Connections to other sources
 
-- Provides the conceptual scaffold for [[10-Summaries/harmonizing-single-cell-3d-genome-data-with-stark-and-scnucleome]] (STARK + scNucleome) which benchmarks 15 sc3DG-seq technologies under a unified pipeline.
+- Provides the conceptual scaffold for [[10-Summaries/jiang-2026-stark-scnucleome]] (STARK + scNucleome) which benchmarks 15 sc3DG-seq technologies under a unified pipeline.
 - Connects to [[10-Summaries/sandy-2019-naturereviewsgenetics]] (Klemm/Greenleaf chromatin-accessibility review) and [[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]] (Baysoy/Fan/Satija multi-omics landscape).
 - Mentions 3D-genome long-read methods that overlap with [[10-Summaries/profiling-the-epigenome-using-long-read-sequencing]] (Liu/Conesa 2025 review).
 
@@ -63,4 +63,4 @@ Authoritative narrative review with tables comparing >15 sc3DG-seq technologies 
 **Source:** [DOI](https://doi.org/10.1093/bib/bbaf520)
 ## Related
 
-- [[40-Topics/3d-genome]] · [[30-Concepts/single-cell-hi-c]] · [[30-Concepts/topologically-associating-domain]] · [[10-Summaries/harmonizing-single-cell-3d-genome-data-with-stark-and-scnucleome]]
+- [[40-Topics/3d-genome]] · [[30-Concepts/single-cell-hi-c]] · [[30-Concepts/topologically-associating-domain]] · [[10-Summaries/jiang-2026-stark-scnucleome]]

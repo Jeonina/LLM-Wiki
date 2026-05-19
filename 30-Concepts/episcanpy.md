@@ -23,7 +23,7 @@ Pre-processing: build cells × features matrix from BAM or methylation-call file
 
 ## Examples
 
-- 81k mouse atlas cells in 18 min / 14 GB RAM. PBMC scATAC integration. Brain snmC-seq cell-type discovery ([[10-Summaries/episcanpy-integrated-single-cell-epigenomic-analysis]]).
+- 81k mouse atlas cells in 18 min / 14 GB RAM. PBMC scATAC integration. Brain snmC-seq cell-type discovery ([[10-Summaries/danese-2021-episcanpy]]).
 
 ## Related
 

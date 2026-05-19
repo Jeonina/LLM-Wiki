@@ -23,7 +23,7 @@ Tn5 with hairpin-loaded adapters tagments native DNA at low concentrations to ge
 
 ## Examples
 
-- HG002 trio variant calling; CpG methylation against bisulfite reference ([[10-Summaries/direct-transposition-of-native-dna-for-sensitive-multimodal-single-molecule-sequencing]]).
+- HG002 trio variant calling; CpG methylation against bisulfite reference ([[10-Summaries/abdulhay-2020-samosa]]).
 
 ## Related
 

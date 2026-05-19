@@ -17,7 +17,7 @@ Unlike ligation-based Hi-C methods that capture pairs of fragments, SPRITE-famil
 
 ## Why it matters
 
-- Captures **more contacts per cell** than any ligation-based sc-Hi-C method (benchmark in [[10-Summaries/harmonizing-single-cell-3d-genome-data-with-stark-and-scnucleome]]).
+- Captures **more contacts per cell** than any ligation-based sc-Hi-C method (benchmark in [[10-Summaries/jiang-2026-stark-scnucleome]]).
 - Reveals higher-order contacts (3+ partners) missed by pairwise methods.
 
 ## Related

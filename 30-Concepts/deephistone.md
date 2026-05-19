@@ -23,7 +23,7 @@ Three modules: DNA module (CNN on one-hot-encoded 1 kb regions, densely connecte
 
 ## Examples
 
-- [[10-Summaries/deephistone-a-deep-learning-approach-to-predicting-histone-modifications]].
+- [[10-Summaries/yin-2019-deephistone]].
 
 ## Related
 

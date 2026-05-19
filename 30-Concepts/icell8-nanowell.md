@@ -19,7 +19,7 @@ updated: 2026-05-12
 
 ## Examples
 
-- [[10-Summaries/high-throughput-chromatin-accessibility-profiling-at-single-cell-resolution]] (µATAC-seq), [[10-Summaries/scalable-single-cell-profiling-of-chromatin-modifications-with-scicut-tag]] (sciCUT&Tag).
+- [[10-Summaries/mezger-2018-microfluidic-atac]] (µATAC-seq), [[10-Summaries/janssens-2023-scicut-tag]] (sciCUT&Tag).
 
 ## Related
 

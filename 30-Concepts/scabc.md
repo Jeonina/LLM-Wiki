@@ -23,7 +23,7 @@ Two-stage clustering: initial weighted k-medoids on ranked peak signals → land
 
 ## Examples
 
-- See [[10-Summaries/unsupervised-clustering-and-epigenetic-classification-of-single-cells]].
+- See [[10-Summaries/zamanighomi-2018-scabc]].
 
 ## Related
 

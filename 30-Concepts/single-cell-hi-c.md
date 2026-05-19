@@ -21,8 +21,8 @@ Reveals cell-to-cell variability in TADs, A/B compartments, and chromatin loops 
 
 ## Examples
 
-- See [[10-Summaries/navigating-the-3d-genome-at-single-cell-resolution-techniques-computation-and-mechanistic-landscapes]] for the technology landscape.
-- [[10-Summaries/harmonizing-single-cell-3d-genome-data-with-stark-and-scnucleome]] benchmarks 15 sc3DG-seq methods.
+- See [[10-Summaries/hong-2025-sc3d-genome-review]] for the technology landscape.
+- [[10-Summaries/jiang-2026-stark-scnucleome]] benchmarks 15 sc3DG-seq methods.
 
 ## Related
 

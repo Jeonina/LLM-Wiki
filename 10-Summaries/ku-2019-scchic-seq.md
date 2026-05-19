@@ -49,9 +49,9 @@ NIH 3T3, mESC, naive CD4 T cells for bulk validation. Single-cell sorting + MNas
 
 ## Connections to other sources
 
-- Direct ancestor of [[10-Summaries/scchix-seq-infers-dynamic-relationships-between-histone-modifications-in-single-cells]] (scChIX-seq, also based on MNase/sortChIC) and [[10-Summaries/single-cell-multi-omic-detection-of-dna-methylation-and-histone-modifications-reconstructs-the-dynamics-of-epigenomic-maintenance]] (scEpi²-seq, also sortChIC-based).
-- Methodological alternative to CUT&RUN and the Tn5-based scCUT&Tag family ([[10-Summaries/scalable-single-cell-profiling-of-chromatin-modifications-with-scicut-tag]]).
-- WBC clustering by H3K4me3 alone parallels the µATAC-seq PBMC result ([[10-Summaries/high-throughput-chromatin-accessibility-profiling-at-single-cell-resolution]]): different epigenetic modalities recover the same immune-cell lineage structure.
+- Direct ancestor of [[10-Summaries/yeung-2023-scchix-seq]] (scChIX-seq, also based on MNase/sortChIC) and [[10-Summaries/geisenberger-2025-scepi2-seq]] (scEpi²-seq, also sortChIC-based).
+- Methodological alternative to CUT&RUN and the Tn5-based scCUT&Tag family ([[10-Summaries/janssens-2023-scicut-tag]]).
+- WBC clustering by H3K4me3 alone parallels the µATAC-seq PBMC result ([[10-Summaries/mezger-2018-microfluidic-atac]]): different epigenetic modalities recover the same immune-cell lineage structure.
 
 ## Open questions
 

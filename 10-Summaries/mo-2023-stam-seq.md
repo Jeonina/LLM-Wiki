@@ -56,7 +56,7 @@ Single-molecule nanopore with adaptive sampling, EcoGII methylation labeling (co
 ## Connections to other sources
 
 - Direct example of the long-read + methyltransferase footprinting paradigm reviewed by [[10-Summaries/profiling-the-epigenome-using-long-read-sequencing]] (Liu/Conesa 2025) and [[10-Summaries/yilei-2025-naturereviewsgenetics]] (Fu/Sedlazeck/Timp 2025).
-- Conceptually parallel to SAMOSA / SAMOSA-Tag ([[10-Summaries/direct-transposition-of-native-dna-for-sensitive-multimodal-single-molecule-sequencing]]) in animals — same EcoGII-6mA strategy but combined with adaptive sampling rather than tagmentation.
+- Conceptually parallel to SAMOSA / SAMOSA-Tag ([[10-Summaries/abdulhay-2020-samosa]]) in animals — same EcoGII-6mA strategy but combined with adaptive sampling rather than tagmentation.
 - Demonstrates the HRR-mapping advantage of LRS, central to telomere-to-telomere assembly efforts and rDNA biology.
 
 ## Open questions

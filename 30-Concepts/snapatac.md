@@ -23,7 +23,7 @@ Workflow: SnapTools for preprocessing → snap file format → 5-kb binary bin v
 
 ## Examples
 
-- Mouse secondary motor cortex (MOp): 55,592 cells → 31 cell populations → ~370k cREs, including rare interneurons Sst+, Vip+ ([[10-Summaries/comprehensive-analysis-of-single-cell-atac-seq-data-with-snapatac]]).
+- Mouse secondary motor cortex (MOp): 55,592 cells → 31 cell populations → ~370k cREs, including rare interneurons Sst+, Vip+ ([[10-Summaries/fang-2021-snapatac]]).
 
 ## Related
 

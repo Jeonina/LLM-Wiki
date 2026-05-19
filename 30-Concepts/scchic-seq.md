@@ -23,7 +23,7 @@ Workflow: fix cells → bind antibody-MNase conjugate (or pA-MNase + Ab) → MNa
 
 ## Examples
 
-- Human WBCs profiled for H3K4me3 → identifies T cells, B cells, NK cells, monocytes by chromatin state alone ([[10-Summaries/single-cell-chromatin-immunocleavage-sequencing-scchic-seq-to-profile-histone-modification]]).
+- Human WBCs profiled for H3K4me3 → identifies T cells, B cells, NK cells, monocytes by chromatin state alone ([[10-Summaries/ku-2019-scchic-seq]]).
 
 ## Related
 

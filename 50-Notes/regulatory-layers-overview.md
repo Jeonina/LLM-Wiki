@@ -6,8 +6,8 @@ tags: [synthesis, epigenome, regulation, overview, entry-point]
 created: 2026-05-19
 updated: 2026-05-19
 sources: [
-  "[[10-Summaries/scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]]",
-  "[[10-Summaries/single-cell-triple-omics-sequencing-reveals-genetic-epigenetic-and-transcriptomic-heterogeneity-in-hepatocellular-carcinomas]]",
+  "[[10-Summaries/clark-2018-scnmt-seq]]",
+  "[[10-Summaries/hou-2016-sctrio-seq]]",
   "[[10-Summaries/elliott-2025-naturebiotechnology]]",
   "[[10-Summaries/franco-2024-nature]]",
   "[[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]]",
@@ -82,7 +82,7 @@ Each layer captures a different *kind* of regulatory information:
 | Histone marks | Variable (some seconds, some persistent) | Moderate (some marks copied) | What is this region's *function*? |
 | 3D genome | Stable across cell cycle | Moderate | Which other regions does this *talk to*? |
 
-This is why **scNMT-seq** ([[10-Summaries/scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]]) was a landmark: by reading accessibility + methylation in the same cell, it showed the **coupling between the two layers strengthens along differentiation** — a finding that would have been impossible with either layer alone.
+This is why **scNMT-seq** ([[10-Summaries/clark-2018-scnmt-seq]]) was a landmark: by reading accessibility + methylation in the same cell, it showed the **coupling between the two layers strengthens along differentiation** — a finding that would have been impossible with either layer alone.
 
 ## Cross-layer dependencies (synthesis)
 

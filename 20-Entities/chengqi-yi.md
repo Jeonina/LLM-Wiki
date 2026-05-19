@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Senior author of [[10-Summaries/simultaneous-single-cell-analysis-of-5mc-and-5hmc-with-simple-seq]].
+- **2026-05-12** — Senior author of [[10-Summaries/bai-2024-simple-seq]].
 
 ## Related
 

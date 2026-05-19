@@ -24,7 +24,7 @@ Three datasets per experiment: single-incubated dataset A (mark 1 only), single-
 
 - H3K27me3 + H3K9me3 in mouse BM (B cells, granulocytes, NK cells): FDR 10/3/1% respectively, recovers mutual exclusivity.
 - H3K4me1 + H3K27me3 in BM: resolves pro-B → B-cell transition via *IgK* chromatin opening.
-- Macrophage differentiation: H3K4me1 + H3K36me3 chromatin velocity ([[10-Summaries/scchix-seq-infers-dynamic-relationships-between-histone-modifications-in-single-cells]]).
+- Macrophage differentiation: H3K4me1 + H3K36me3 chromatin velocity ([[10-Summaries/yeung-2023-scchix-seq]]).
 
 ## Related
 

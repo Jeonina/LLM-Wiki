@@ -13,7 +13,7 @@ updated: 2026-05-12
 
 ## Definition
 
-Dey et al. 2015 ([[10-Summaries/integrated-genome-and-transcriptome-sequencing-of-the-same-cell]]). Cell lysed with poly-T primer carrying cell-barcode + T7 promoter (Ad-1x); RT performed in situ. Seven rounds of quasilinear amplification with a random-8-mer adaptor (Ad-2) amplify both gDNA and cDNA together. Sample split: half → IVT-based RNA library (only T7-bearing cDNA amplicons transcribed); half → PCR-based DNA library. **DNA reads from coding regions must be computationally masked** because they could come from either gDNA or cDNA.
+Dey et al. 2015 ([[10-Summaries/dey-2015-dr-seq]]). Cell lysed with poly-T primer carrying cell-barcode + T7 promoter (Ad-1x); RT performed in situ. Seven rounds of quasilinear amplification with a random-8-mer adaptor (Ad-2) amplify both gDNA and cDNA together. Sample split: half → IVT-based RNA library (only T7-bearing cDNA amplicons transcribed); half → PCR-based DNA library. **DNA reads from coding regions must be computationally masked** because they could come from either gDNA or cDNA.
 
 ## Why it matters
 
@@ -24,7 +24,7 @@ Dey et al. 2015 ([[10-Summaries/integrated-genome-and-transcriptome-sequencing-o
 
 ## Variants and refinements
 
-- **DR-seq** ([[10-Summaries/integrated-genome-and-transcriptome-sequencing-of-the-same-cell]]).
+- **DR-seq** ([[10-Summaries/dey-2015-dr-seq]]).
 - Conceptual successor with three modalities: [[sctrio-seq]] (adds methylation).
 
 ## Contested points

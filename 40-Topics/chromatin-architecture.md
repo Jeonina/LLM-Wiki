@@ -49,30 +49,30 @@ updated: 2026-05-19
 
 ### Single-cell ATAC-seq tooling
 
-- [[10-Summaries/chromvar-inferring-transcription-factor-associated-accessibility-from-single-cell-epigenomic-data]] (chromVAR).
-- [[10-Summaries/cistopic-cis-regulatory-topic-modeling-on-single-cell-atac-seq-data]] (cisTopic).
-- [[10-Summaries/comprehensive-analysis-of-single-cell-atac-seq-data-with-snapatac]] (SnapATAC).
-- [[10-Summaries/episcanpy-integrated-single-cell-epigenomic-analysis]] (EpiScanpy).
-- [[10-Summaries/unsupervised-clustering-and-epigenetic-classification-of-single-cells]] (scABC).
-- [[10-Summaries/high-throughput-chromatin-accessibility-profiling-at-single-cell-resolution]] (µATAC-seq).
-- [[10-Summaries/scatac-seq-generates-more-accurate-and-complete-regulatory-maps-than-bulk-atac-seq]] (Gur/Hughes comparison).
+- [[10-Summaries/schep-2017-chromvar]] (chromVAR).
+- [[10-Summaries/bravo-2019-cistopic]] (cisTopic).
+- [[10-Summaries/fang-2021-snapatac]] (SnapATAC).
+- [[10-Summaries/danese-2021-episcanpy]] (EpiScanpy).
+- [[10-Summaries/zamanighomi-2018-scabc]] (scABC).
+- [[10-Summaries/mezger-2018-microfluidic-atac]] (µATAC-seq).
+- [[10-Summaries/gur-2025-scatac-vs-bulk]] (Gur/Hughes comparison).
 
 ### Histone modifications (single-cell)
 
-- [[10-Summaries/single-cell-chromatin-immunocleavage-sequencing-scchic-seq-to-profile-histone-modification]] (scChIC-seq).
-- [[10-Summaries/scchix-seq-infers-dynamic-relationships-between-histone-modifications-in-single-cells]] (scChIX-seq).
-- [[10-Summaries/scalable-single-cell-profiling-of-chromatin-modifications-with-scicut-tag]] (sciCUT&Tag).
-- [[10-Summaries/single-cell-multi-omic-detection-of-dna-methylation-and-histone-modifications-reconstructs-the-dynamics-of-epigenomic-maintenance]] (scEpi²-seq).
-- [[10-Summaries/sequencing-dna-methylation-and-hydroxymethylation-at-co-occurring-chromatin-features]] (6-base-CUT&Tag).
+- [[10-Summaries/ku-2019-scchic-seq]] (scChIC-seq).
+- [[10-Summaries/yeung-2023-scchix-seq]] (scChIX-seq).
+- [[10-Summaries/janssens-2023-scicut-tag]] (sciCUT&Tag).
+- [[10-Summaries/geisenberger-2025-scepi2-seq]] (scEpi²-seq).
+- [[10-Summaries/tavares-2026-6-base-cut-tag]] (6-base-CUT&Tag).
 
 ### Computational prediction
 
-- [[10-Summaries/deephistone-a-deep-learning-approach-to-predicting-histone-modifications]] (DeepHistone).
+- [[10-Summaries/yin-2019-deephistone]] (DeepHistone).
 
 ### 3D genome (single-cell)
 
-- [[10-Summaries/navigating-the-3d-genome-at-single-cell-resolution-techniques-computation-and-mechanistic-landscapes]] (Hong/Dao review).
-- [[10-Summaries/harmonizing-single-cell-3d-genome-data-with-stark-and-scnucleome]] (STARK + scNucleome).
+- [[10-Summaries/hong-2025-sc3d-genome-review]] (Hong/Dao review).
+- [[10-Summaries/jiang-2026-stark-scnucleome]] (STARK + scNucleome).
 
 ### Nuclear lamina / spatial positioning (DamID lineage)
 

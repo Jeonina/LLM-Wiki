@@ -52,9 +52,9 @@ Python package on top of scanpy / AnnData. Datasets: Luo 2017 brain snmC-seq, 10
 
 ## Connections to other sources
 
-- Direct comparison/competition with [[10-Summaries/cistopic-cis-regulatory-topic-modeling-on-single-cell-atac-seq-data]] (R, LDA-based) and [[10-Summaries/comprehensive-analysis-of-single-cell-atac-seq-data-with-snapatac]] (R, peak-free).
-- Provides TF-motif interpretation via [[10-Summaries/chromvar-inferring-transcription-factor-associated-accessibility-from-single-cell-epigenomic-data]] (chromVAR).
-- Conceptually adjacent to [[10-Summaries/unsupervised-clustering-and-epigenetic-classification-of-single-cells]] (scABC) but Python-based and more general.
+- Direct comparison/competition with [[10-Summaries/bravo-2019-cistopic]] (R, LDA-based) and [[10-Summaries/fang-2021-snapatac]] (R, peak-free).
+- Provides TF-motif interpretation via [[10-Summaries/schep-2017-chromvar]] (chromVAR).
+- Conceptually adjacent to [[10-Summaries/zamanighomi-2018-scabc]] (scABC) but Python-based and more general.
 
 ## Open questions
 

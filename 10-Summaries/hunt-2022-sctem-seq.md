@@ -49,7 +49,7 @@ G&T-seq separates gDNA from RNA per cell. gDNA → bisulfite conversion → Alu-
 
 ## Connections to other sources
 
-- Direct conceptual comparison to [[10-Summaries/simultaneous-single-cell-analysis-of-5mc-and-5hmc-with-simple-seq]] (SIMPLE-seq), [[10-Summaries/high-throughput-single-cell-dna-methylation-and-chromatin-accessibility-co-profiling-with-splicool-seq]] (SpliCOOL-seq), and other single-cell methylation methods reviewed in [[10-Summaries/zachary-2013-naturereviewsgenetics]] and [[10-Summaries/yilei-2025-naturereviewsgenetics]].
+- Direct conceptual comparison to [[10-Summaries/bai-2024-simple-seq]] (SIMPLE-seq), [[10-Summaries/shen-2026-splicool-seq]] (SpliCOOL-seq), and other single-cell methylation methods reviewed in [[10-Summaries/zachary-2013-naturereviewsgenetics]] and [[10-Summaries/yilei-2025-naturereviewsgenetics]].
 - The viral-mimicry framing connects DNA methylation directly to chromatin architecture and innate immunity — overlaps with [[40-Topics/chromatin-architecture]].
 
 ## Open questions

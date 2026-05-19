@@ -21,7 +21,7 @@ Enables joint multi-mark single-cell chromatin profiling — a parallel approach
 
 ## Examples
 
-- Used to resolve human embryonic stem cell trilineage differentiation (endoderm/mesoderm/neuroectoderm) by combining H3K4me1-2-3 and H3K27me3 within the same cells ([[10-Summaries/scalable-single-cell-profiling-of-chromatin-modifications-with-scicut-tag]]).
+- Used to resolve human embryonic stem cell trilineage differentiation (endoderm/mesoderm/neuroectoderm) by combining H3K4me1-2-3 and H3K27me3 within the same cells ([[10-Summaries/janssens-2023-scicut-tag]]).
 
 ## Related
 

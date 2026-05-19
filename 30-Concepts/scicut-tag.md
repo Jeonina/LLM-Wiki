@@ -23,7 +23,7 @@ Workflow: lightly cross-link nuclei → bind to WGA-magnetic beads → bulk prim
 
 ## Examples
 
-- Mixed-donor PBMC H3K4me1-2-3 and H3K27me3 profiling, with SNP-based collision QC ([[10-Summaries/scalable-single-cell-profiling-of-chromatin-modifications-with-scicut-tag]]).
+- Mixed-donor PBMC H3K4me1-2-3 and H3K27me3 profiling, with SNP-based collision QC ([[10-Summaries/janssens-2023-scicut-tag]]).
 
 ## Related
 

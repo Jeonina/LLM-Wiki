@@ -23,7 +23,7 @@ Workflow: FACS-sort cells → bind to antibody-recruited pA-MNase → MNase dige
 
 ## Examples
 
-- K562, RPE-1 hTERT FUCCI cells, mouse small intestine ([[10-Summaries/single-cell-multi-omic-detection-of-dna-methylation-and-histone-modifications-reconstructs-the-dynamics-of-epigenomic-maintenance]]).
+- K562, RPE-1 hTERT FUCCI cells, mouse small intestine ([[10-Summaries/geisenberger-2025-scepi2-seq]]).
 
 ## Related
 

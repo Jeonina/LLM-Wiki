@@ -47,12 +47,12 @@ E14TG2A mESCs serum/LIF. pA-Tn5-ME2U transposome, primary antibody targeting (H3
 
 - Bisulfite-based methods couldn't access this question because (a) bisulfite degrades DNA from the few molecules CUT&Tag produces and (b) bisulfite conflates 5mC and 5hmC. 6B-C&T removes both constraints.
 - The H3K4me1 + 5mC/5hmC signature **functionally distinguishes** active, primed, and poised enhancers — extending the well-known H3K4me1-marks-all-enhancers fact with a methylation-state coordinate.
-- This is methodological dependence on a vendor kit (biomodal evoC), which is also used in [[10-Summaries/direct-transposition-of-native-dna-for-sensitive-multimodal-single-molecule-sequencing]]'s SMRT-Tag — biomodal's chemistry is the underlying engine.
+- This is methodological dependence on a vendor kit (biomodal evoC), which is also used in [[10-Summaries/abdulhay-2020-samosa]]'s SMRT-Tag — biomodal's chemistry is the underlying engine.
 
 ## Connections to other sources
 
-- Single-cell counterpart: [[10-Summaries/simultaneous-single-cell-analysis-of-5mc-and-5hmc-with-simple-seq]] (SIMPLE-seq) does whole-genome 5mC + 5hmC in single cells but cannot target a specific histone modification.
-- Methodological lineage from CUT&Tag (Kaya-Okur 2019); single-cell CUT&Tag in [[10-Summaries/scalable-single-cell-profiling-of-chromatin-modifications-with-scicut-tag]] (sciCUT&Tag).
+- Single-cell counterpart: [[10-Summaries/bai-2024-simple-seq]] (SIMPLE-seq) does whole-genome 5mC + 5hmC in single cells but cannot target a specific histone modification.
+- Methodological lineage from CUT&Tag (Kaya-Okur 2019); single-cell CUT&Tag in [[10-Summaries/janssens-2023-scicut-tag]] (sciCUT&Tag).
 - Connects [[40-Topics/dna-methylation]] and [[40-Topics/histone-modifications]] in the way [[40-Topics/single-cell-multiomics]] connects multiple modalities at the cell level — but here at the **fragment level**.
 
 ## Open questions

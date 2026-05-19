@@ -4,12 +4,12 @@ title: 3D genome
 aliases: [chromatin conformation, Hi-C, nuclear architecture]
 tags: [Hi-C, TAD, compartments, loops, single-cell, chromatin-structure]
 created: 2026-05-12
-updated: 2026-05-15
+updated: 2026-05-19
 ---
 
 # 3D genome
 
-> The 3D organization of chromatin within the nucleus — compartments (A/B), topologically associating domains (TADs), chromatin loops, and **spatial positioning relative to the nuclear lamina** — is a regulatory layer that shapes gene expression, replication timing, and cellular identity. Bulk Hi-C revealed the principles; single-cell methods (scHi-C, sciHi-C, Dip-C, scSPRITE, scNanoHi-C, scDamID) revealed the heterogeneity, with TAD boundaries, compartments, loops, and lamina contacts varying substantially between cells in ways that bulk data cannot resolve.
+> The 3D organization of chromatin within the nucleus — compartments (A/B), topologically associating domains (TADs), chromatin loops ([[10-Summaries/nagano-2013-nature]]; [[10-Summaries/tan-2018-science]]), and **spatial positioning relative to the nuclear lamina** ([[10-Summaries/van-steensel-2017-lads-review]]) — is a regulatory layer that shapes gene expression, replication timing, and cellular identity. Bulk Hi-C revealed the principles ([[10-Summaries/nagano-2013-nature]]); single-cell methods (scHi-C, sciHi-C, Dip-C, scSPRITE, scNanoHi-C, scDamID) revealed the heterogeneity ([[10-Summaries/hong-2025-sc3d-genome-review]]), with TAD boundaries, compartments, loops, and lamina contacts varying substantially between cells in ways that bulk data cannot resolve ([[10-Summaries/tan-2018-science]]; [[10-Summaries/mali-2025-conformational-heterogeneity]]).
 
 ## Core concepts
 
@@ -40,13 +40,15 @@ updated: 2026-05-15
 ## Sources, by sub-theme
 
 ### Review
-- [[10-Summaries/navigating-the-3d-genome-at-single-cell-resolution-techniques-computation-and-mechanistic-landscapes]] — Hong/Dao 2025. Comprehensive review of sc3DG-seq technologies.
+- [[10-Summaries/hong-2025-sc3d-genome-review]] — Hong/Dao 2025. Comprehensive review of sc3DG-seq technologies.
+- [[10-Summaries/van-steensel-2017-lads-review]] — van Steensel & Belmont 2017. Canonical LADs review; three-compartment competition (NL/nucleoli/pericentric).
 
-### Methods + benchmarking
-- [[10-Summaries/harmonizing-single-cell-3d-genome-data-with-stark-and-scnucleome]] — Jiang/Wu 2026. STARK pipeline, EmptyCells, SSCE; benchmark of 15 sc3DG-seq methods; scNucleome public atlas.
+### Foundational Hi-C
+- [[10-Summaries/nagano-2013-nature]] — Nagano et al. 2013. First single-cell Hi-C; cell-to-cell variability in TADs.
+- [[10-Summaries/tan-2018-science]] — Tan et al. 2018. Dip-C; haplotype-resolved single-cell 3D structures.
 
 ### Clinical / cancer SVs (related to 3D regulation)
-- [[10-Summaries/nanopore-sequencing-unveils-somatic-structural-variations-as-biomarkers-in-laryngeal-squamous-cell-carcinoma-genomes]] — Liu et al. 2025. Repeat expansions regulating *TP53BP2*/*FBXO28* via spatial proximity.
+- [[10-Summaries/liu-2025-nanopore-lscc-svs]] — Liu et al. 2025. Repeat expansions regulating *TP53BP2*/*FBXO28* via spatial proximity.
 
 ### Nuclear lamina / spatial positioning (DamID lineage)
 

@@ -44,7 +44,7 @@ Before sci-CAR, joint single-cell profiling of chromatin accessibility + transcr
 
 ## Surprising / load-bearing
 
-- The paper explicitly frames sci-CAR as the **template for future DNA-anchored joint assays** ("methylation plus transcripts, chromosome conformation plus transcripts, or DNA sequence plus transcripts"). Reads as the methodological scaffold the field then followed: 10x Multiome (commercial sci-CAR-style coassay), [[10-Summaries/scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]] (NMT, three-modality), SHARE-seq (split-pool scaling).
+- The paper explicitly frames sci-CAR as the **template for future DNA-anchored joint assays** ("methylation plus transcripts, chromosome conformation plus transcripts, or DNA sequence plus transcripts"). Reads as the methodological scaffold the field then followed: 10x Multiome (commercial sci-CAR-style coassay), [[10-Summaries/clark-2018-scnmt-seq]] (NMT, three-modality), SHARE-seq (split-pool scaling).
 - The promoter-accessibility-vs-expression correlation was **stronger in the dynamic DEX time series (rho=0.63) than in the static kidney cell-type comparison (rho=0.17)** — a methodologically important reminder that the chromatin-to-RNA causal axis is more visible in perturbation-response than in steady-state heterogeneity.
 
 ## Entities / concepts touched

@@ -13,7 +13,7 @@ updated: 2026-05-12
 
 ## Definition
 
-Ma et al. 2020 (*Cell* 183, 1103) developed SHARE-seq as a high-throughput alternative to sci-CAR. Fixed, permeabilized cells undergo Tn5 tagmentation (chromatin) and reverse transcription (mRNA) in the same tube, then three rounds of 96-well split-pool barcoding give each cell a unique trio of barcodes from 96³ = 884,736 possible combinations. Wiki summary based on the *Nature Reviews Genetics* perspective: [[10-Summaries/share-seq-reveals-chromatin-potential-nature-reviews-genetics]].
+Ma et al. 2020 (*Cell* 183, 1103) developed SHARE-seq as a high-throughput alternative to sci-CAR. Fixed, permeabilized cells undergo Tn5 tagmentation (chromatin) and reverse transcription (mRNA) in the same tube, then three rounds of 96-well split-pool barcoding give each cell a unique trio of barcodes from 96³ = 884,736 possible combinations. Wiki summary based on the *Nature Reviews Genetics* perspective: [[10-Summaries/ma-2020-share-seq]].
 
 ## Why it matters
 
@@ -23,7 +23,7 @@ Ma et al. 2020 (*Cell* 183, 1103) developed SHARE-seq as a high-throughput alter
 
 ## Variants and refinements
 
-- **SHARE-seq** ([[10-Summaries/share-seq-reveals-chromatin-potential-nature-reviews-genetics]]) — accessibility + RNA.
+- **SHARE-seq** ([[10-Summaries/ma-2020-share-seq]]) — accessibility + RNA.
 - Conceptual analog of [[sci-car|sci-CAR]] but with split-pool instead of combinatorial-indexing well plates.
 
 ## Contested points

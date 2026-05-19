@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Senior author of [[10-Summaries/single-cell-multi-omic-detection-of-dna-methylation-and-histone-modifications-reconstructs-the-dynamics-of-epigenomic-maintenance]] (scEpi²-seq) and [[10-Summaries/scchix-seq-infers-dynamic-relationships-between-histone-modifications-in-single-cells]] (scChIX-seq).
+- **2026-05-12** — Senior author of [[10-Summaries/geisenberger-2025-scepi2-seq]] (scEpi²-seq) and [[10-Summaries/yeung-2023-scchix-seq]] (scChIX-seq).
 
 ## Related
 

@@ -26,6 +26,6 @@ Demonstrates that DNA sequence is a sufficient predictor of cell-type-specific a
 
 ## Related
 
-- [[10-Summaries/chromvar-inferring-transcription-factor-associated-accessibility-from-single-cell-epigenomic-data]]
-- [[10-Summaries/cistopic-cis-regulatory-topic-modeling-on-single-cell-atac-seq-data]]
-- [[10-Summaries/deephistone-a-deep-learning-approach-to-predicting-histone-modifications]]
+- [[10-Summaries/schep-2017-chromvar]]
+- [[10-Summaries/bravo-2019-cistopic]]
+- [[10-Summaries/yin-2019-deephistone]]

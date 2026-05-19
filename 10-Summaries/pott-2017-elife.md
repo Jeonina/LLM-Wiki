@@ -30,5 +30,5 @@ The original NOMe-seq single-cell adaptation, predating Fiber-seq's m6A-based fo
 
 - [[30-Concepts/nome-seq]]
 - [[30-Concepts/single-molecule-footprinting]]
-- [[10-Summaries/scnmt-seq-enables-joint-profiling-of-chromatin-accessibility-dna-methylation-and-transcription-in-single-cells]]
+- [[10-Summaries/clark-2018-scnmt-seq]]
 - [[10-Summaries/andrewb-2020-science]]

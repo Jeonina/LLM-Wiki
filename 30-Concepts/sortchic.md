@@ -22,7 +22,7 @@ Workflow: bind antibody to histone mark in suspension → recruit pA-MNase → F
 
 ## Examples
 
-- Mouse intestine epithelial vs immune lineage profiling with anteroposterior CellTrace labeling ([[10-Summaries/single-cell-multi-omic-detection-of-dna-methylation-and-histone-modifications-reconstructs-the-dynamics-of-epigenomic-maintenance]]).
+- Mouse intestine epithelial vs immune lineage profiling with anteroposterior CellTrace labeling ([[10-Summaries/geisenberger-2025-scepi2-seq]]).
 
 ## Related
 

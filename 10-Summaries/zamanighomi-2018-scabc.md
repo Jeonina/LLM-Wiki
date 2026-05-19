@@ -52,9 +52,9 @@ R package. In silico mixture of 966 cells from 6 cell lines (Buenrostro 2015). E
 
 ## Connections to other sources
 
-- Cited as a comparator by [[10-Summaries/cistopic-cis-regulatory-topic-modeling-on-single-cell-atac-seq-data]] (cisTopic outperforms on continuous trajectories) and [[10-Summaries/episcanpy-integrated-single-cell-epigenomic-analysis]] (EpiScanpy benchmark).
-- Uses [[10-Summaries/chromvar-inferring-transcription-factor-associated-accessibility-from-single-cell-epigenomic-data]] (chromVAR) for cluster-specific TF motif analysis — common pattern in early scATAC-seq tooling.
-- Anticipates findings later confirmed at scale by [[10-Summaries/comprehensive-analysis-of-single-cell-atac-seq-data-with-snapatac]] (SnapATAC) and [[10-Summaries/scatac-seq-generates-more-accurate-and-complete-regulatory-maps-than-bulk-atac-seq]] (Gur/Hughes 2025): "nominally homogeneous populations are not."
+- Cited as a comparator by [[10-Summaries/bravo-2019-cistopic]] (cisTopic outperforms on continuous trajectories) and [[10-Summaries/danese-2021-episcanpy]] (EpiScanpy benchmark).
+- Uses [[10-Summaries/schep-2017-chromvar]] (chromVAR) for cluster-specific TF motif analysis — common pattern in early scATAC-seq tooling.
+- Anticipates findings later confirmed at scale by [[10-Summaries/fang-2021-snapatac]] (SnapATAC) and [[10-Summaries/gur-2025-scatac-vs-bulk]] (Gur/Hughes 2025): "nominally homogeneous populations are not."
 
 ## Open questions
 

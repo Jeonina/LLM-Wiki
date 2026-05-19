@@ -21,7 +21,7 @@ Eliminates the per-method data-processing fragmentation that has hampered cross-
 
 ## Examples
 
-- [[10-Summaries/harmonizing-single-cell-3d-genome-data-with-stark-and-scnucleome]] benchmarks 15 sc3DG-seq technologies under STARK.
+- [[10-Summaries/jiang-2026-stark-scnucleome]] benchmarks 15 sc3DG-seq technologies under STARK.
 
 ## Related
 

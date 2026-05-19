@@ -4,6 +4,27 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-05-19 (part 7) — MNase vs Tn5 chromatin chemistry synthesis written
+
+**Trigger**: 4th synthesis-targets candidate after PTA inflection.
+
+### Note created
+
+- **[[50-Notes/mnase-vs-tn5-chromatin]]** — compares the two single-cell histone-profiling chemistry lineages: MNase-tethered cleavage (Drop-ChIP / scChIC / sortChIC / scChIX / scEpi²) vs Tn5-tethered tagmentation (scCUT&Tag / nano-CUT&Tag / sciCUT&Tag / MulTI-Tag / 6-base-CUT&Tag). Quantitative table across 11 properties + chemistry-choice heuristic indexed by secondary measurement requirement.
+- Key insight: the chemistry choice should follow the *secondary* readout. MNase pairs more naturally with TAPS methylation; Tn5 pairs with 10x Multiome ecosystem and enzymatic 5mC/5hmC. The decision is rarely about MNase vs Tn5 in isolation.
+- 72 wikilinks, 0 broken. 10 source summaries cited.
+
+### Meta-note updates
+
+- `synthesis-targets.md`: MNase vs Tn5 target struck out.
+- `index.md`: linked under Synthesis & open threads.
+
+### Synthesis targets remaining
+
+1 of 5 left: methylation-based cancer-of-origin classifiers.
+
+---
+
 ## 2026-05-19 (part 6) — PTA inflection point synthesis written
 
 **Trigger**: Continuing through synthesis-targets candidates after the droplet-vs-single-molecule note.

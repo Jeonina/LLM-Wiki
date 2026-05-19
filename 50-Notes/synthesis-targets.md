@@ -15,7 +15,15 @@ Cross-cutting topics where the corpus has enough material (~3+ sources) that a w
 - ~~**MNase-based vs Tn5-based single-cell chromatin profiling**~~ — **Promoted to full synthesis** at [[50-Notes/mnase-vs-tn5-chromatin]] (2026-05-19). Compares the two chemistry lineages (Drop-ChIP/scChIC/sortChIC/scChIX/scEpi² vs scCUT&Tag/nano-CUT&Tag/sciCUT&Tag/MulTI-Tag/6-base-CUT&Tag) on resolution, throughput, multi-mark capability, and modality compatibility. Includes a chemistry-choice heuristic table indexed by secondary measurement requirement.
 - ~~**Droplet-scale vs single-molecule scDNA-seq**~~ — **Promoted to full synthesis** at [[50-Notes/droplet-vs-single-molecule-scdna]] (2026-05-19). Pulls GoT/GoT-ChA/DAF-seq/Fiber-seq/SAMOSA + reviews into a quantitative comparison table; argues the gap is sustained by physical constraints (microfluidics destroys per-fiber context; single-molecule sequencing is throughput-limited).
 - ~~**The PTA inflection point**~~ — **Promoted to full synthesis** at [[50-Notes/pta-inflection-point]] (2026-05-19). Pre-2020 MDA-era + LIANTI / MALBAC → PTA (2021, Gonzalez-Pena) → SMaHT-scale cohort applications. Frames PTA as a case study in how upstream chemistry improvements unlock orders-of-magnitude expansion of routine questions.
-- **DNA-methylation-based cancer-of-origin classifiers** — EPICUP, brain-tumor MNP, AML methylation classifiers.
+- ~~**DNA-methylation-based cancer-of-origin classifiers**~~ — **Promoted to full synthesis** at [[50-Notes/methylation-cancer-origin-classifiers]] (2026-05-19). Covers EPICUP, Heidelberg MNP, AML methylation classifiers. **Caveat**: review-citation chain rather than primary-source synthesis; corpus does not yet ingest Moran 2016 *Lancet Oncology* (EPICUP) or Capper 2018 *Nature* (MNP). Flagged for follow-up ingest.
+
+---
+
+**Status: all 5 synthesis-targets resolved.** Next-generation candidates that would benefit from synthesis (not yet ingested):
+
+- **Spatial multi-omics** — DBiT-seq, spatial CITE-seq, Cardilla 2025 spatial methylome → spatial CITE-seq → broader spatial framework.
+- **Mitochondrial mosaicism as lineage marker** — MAESTER, mtscATAC-seq, scMitoMut: mtDNA mutations as a parallel-but-cheaper alternative to nuclear-genome lineage tracing.
+- **TF footprinting at single-molecule resolution** — Doughty 2024, Pott 2017, Stergachis et al.: how single-molecule chromatin reads TF binding heterogeneity that bulk averages.
 
 ## Related
 

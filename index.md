@@ -128,6 +128,7 @@ Ultra-accurate error correction by reading both strands of a DNA molecule. Essen
 - [[50-Notes/droplet-vs-single-molecule-scdna|Droplet vs single-molecule — the breadth/depth tradeoff]] — why 10⁵-cell droplet platforms and ~10-cell single-molecule platforms answer different biological questions, and why the gap is sustained by physics rather than engineering.
 - [[50-Notes/pta-inflection-point|The PTA inflection point]] — how the 2021 Primary Template-Directed Amplification chemistry shifted scDNA-seq from "needs bioinformatic correction" to "cohort-scale routine". Frames the BSMN/SMaHT/Duplex-Multiome era as PTA-enabled.
 - [[50-Notes/mnase-vs-tn5-chromatin|MNase vs Tn5 — two chemistries for single-cell histone profiling]] — when to pick scChIC-family (MNase) vs CUT&Tag-family (Tn5) chemistry, indexed by which secondary measurement (methylation, accessibility, RNA, multi-mark) the experiment needs.
+- [[50-Notes/methylation-cancer-origin-classifiers|Methylation cancer-of-origin classifiers]] — clinical-grade epigenetic memory. EPICUP (CUP), Heidelberg MNP (brain tumors), AML classifiers. Why methylation succeeds where other epigenetic marks struggle.
 - [[50-Notes/open-questions]] — tensions and gaps surfaced during ingest, by domain
 - [[50-Notes/synthesis-targets]] — clusters of papers ripe for a written synthesis
 

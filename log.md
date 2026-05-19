@@ -4,6 +4,31 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-05-19 (part 8) — Methylation cancer-of-origin synthesis written; synthesis-target set complete
+
+**Trigger**: Final synthesis-targets candidate — completes the set of 5.
+
+### Note created
+
+- **[[50-Notes/methylation-cancer-origin-classifiers]]** — EPICUP for CUP, Heidelberg MNP for brain tumors, emerging AML methylation classifiers. Argues clinical methylation classifiers exploit *epigenetic memory* — the property that tissue-of-origin methylation patterns survive tumorigenesis. Three reasons methylation outperformed alternatives: stability through tumorigenesis, per-CpG measurement granularity, FFPE compatibility + microarray maturity head start.
+- **Explicit caveat**: this is the weakest of the 5 synthesis notes because the primary classifier papers (Moran 2016 *Lancet Oncology* for EPICUP; Capper 2018 *Nature* for MNP) are not yet ingested. Specific claims trace through Kim 2017 review rather than primary sources. Flagged for follow-up ingest.
+- 49 wikilinks, 0 broken. 8 source summaries cited.
+
+### Synthesis-targets backlog status
+
+All 5 of the originally-listed candidates resolved (2026-05-19). New candidates added to synthesis-targets.md: spatial multi-omics, mtDNA mosaicism as lineage marker, single-molecule TF footprinting.
+
+### Cumulative session output
+
+- 5 substantive synthesis notes (regulatory-layers, single-cell-duplex, droplet-vs-single-molecule, pta-inflection-point, mnase-vs-tn5, methylation-cancer-origin).
+- 22 stub pages.
+- ~14 wiki pages upgraded to inline-citation density.
+- Graphify rerun (1805 nodes, 142 communities).
+- Quartz build broken-and-fixed (duplicate YAML keys).
+- Wiki-wide broken-link cleanup (882 → 157).
+
+---
+
 ## 2026-05-19 (part 7) — MNase vs Tn5 chromatin chemistry synthesis written
 
 **Trigger**: 4th synthesis-targets candidate after PTA inflection.

@@ -125,6 +125,7 @@ Ultra-accurate error correction by reading both strands of a DNA molecule. Essen
 - [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap|Mosaicism × Epigenome: The Synthesis Gap]] — the central conceptual note; updated 2026-05-13 after Duplex-Multiome closes the method gap.
 - [[50-Notes/regulatory-layers-overview|Regulatory layers — four (or five) axes of epigenome interpretation]] — entry point mapping accessibility / methylation / histone marks / 3D genome (+ structural-physical) to concept pages and assays.
 - [[50-Notes/single-cell-duplex-sequencing|Single-cell duplex — the methodological frontier closes]] — synthesis of the 2025 inflection: PTA + duplex validation ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]) and same-molecule Duplex-Multiome ([[10-Summaries/andrea-2025-biorxiv]]).
+- [[50-Notes/droplet-vs-single-molecule-scdna|Droplet vs single-molecule — the breadth/depth tradeoff]] — why 10⁵-cell droplet platforms and ~10-cell single-molecule platforms answer different biological questions, and why the gap is sustained by physics rather than engineering.
 - [[50-Notes/open-questions]] — tensions and gaps surfaced during ingest, by domain
 - [[50-Notes/synthesis-targets]] — clusters of papers ripe for a written synthesis
 

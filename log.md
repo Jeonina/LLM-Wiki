@@ -4,6 +4,32 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-05-19 (part 5) — Droplet vs single-molecule synthesis written
+
+**Trigger**: Continued working through synthesis-targets.md candidates. Picked "Droplet-scale vs single-molecule scDNA-seq" because it mirrors the breadth-vs-depth tension central to the user's mosaicism × epigenome research.
+
+### Note created
+
+- **[[50-Notes/droplet-vs-single-molecule-scdna]]** — argues the gap is sustained by *physical* constraints (microfluidic compartmentalization destroys per-fiber context; single-molecule sequencing throughput-limited by ZMW/pore count), not by engineering. Quantitative comparison table (GoT-ChA vs scDAF-seq across 9 properties). Lists three candidate paths to close the gap (high-throughput Revio scDAF-seq, ONT combinatorial barcoding, droplet single-molecule hybrid) — none currently published.
+- 84 wikilinks, 0 broken. 15 source summaries cited.
+- Per inline-citation convention.
+
+### Meta-note updates
+
+- `synthesis-targets.md`: "Droplet-scale vs single-molecule scDNA-seq" struck out — promoted to full synthesis.
+- `open-questions.md`: scDAF-seq vs GoT-ChA question and DLP+ vs PTA question both now point to the synthesis.
+- `index.md`: new note linked under Synthesis & open threads.
+
+### Surfaced insight
+
+The breadth-depth tradeoff is the *root cause* of the [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap|mosaicism × epigenome synthesis gap]]. Resolving it would resolve the synthesis gap. The duplex synthesis ([[50-Notes/single-cell-duplex-sequencing]]) and this synthesis describe orthogonal axes of the scDNA-seq tradeoff space: fidelity (duplex) and depth-per-cell (this note).
+
+### Synthesis targets remaining
+
+3 of 5 candidates done. Remaining: MNase vs Tn5 chromatin profiling, PTA inflection point, methylation-based cancer-of-origin classifiers.
+
+---
+
 ## 2026-05-19 (part 4) — Single-cell duplex synthesis written
 
 **Trigger**: After resolving wiki broken-link backlog, the next concrete value-add was a synthesis note. The wiki's own `synthesis-targets.md` listed "Single-cell duplex sequencing" as "the major open methodological frontier"; the 2025 inflection (Duplex-Multiome + Luquette PTA-duplex pairing) made this synthesis newly tractable.

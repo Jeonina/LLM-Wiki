@@ -20,8 +20,8 @@ Tensions and gaps surfaced during ingest or lint. When a question is resolved, r
 
 ## scDNA-seq methods
 
-- Where does scDAF-seq's per-cell ~99% coverage / ~10-cell throughput win over GoT–ChA's ~38% genotyping / 10⁵-cell throughput?
-- Throughput vs depth: DLP+ (>10⁴ cells low coverage) vs PTA (384 cells, ~95% coverage). Right operating point per question?
+- Where does scDAF-seq's per-cell ~99% coverage / ~10-cell throughput win over GoT–ChA's ~38% genotyping / 10⁵-cell throughput? See [[50-Notes/droplet-vs-single-molecule-scdna]] for the full breadth-vs-depth synthesis.
+- Throughput vs depth: DLP+ (>10⁴ cells low coverage) vs PTA (384 cells, ~95% coverage). Right operating point per question? ([[50-Notes/droplet-vs-single-molecule-scdna]])
 - Why is intra-cell haplotype actuation divergence (~61%) nearly equal to inter-cell divergence (~63%)?
 
 ## Mosaicism biology

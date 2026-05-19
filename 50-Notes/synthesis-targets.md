@@ -13,7 +13,7 @@ Cross-cutting topics where the corpus has enough material (~3+ sources) that a w
 
 - ~~**Single-cell duplex sequencing**~~ — **Promoted to full synthesis** at [[50-Notes/single-cell-duplex-sequencing]] (2026-05-19). The frontier closed from two directions: PTA + bulk-duplex validation ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]) and same-molecule Duplex-Multiome ([[10-Summaries/andrea-2025-biorxiv]]).
 - **MNase-based vs Tn5-based single-cell chromatin profiling** — tradeoffs in nucleosome-positioning fidelity vs throughput.
-- **Droplet-scale vs single-molecule scDNA-seq** — could pull together GoT/GoT–ChA/DAF-seq + Shao 2025 + Evrony 2021 + Gawad 2016.
+- ~~**Droplet-scale vs single-molecule scDNA-seq**~~ — **Promoted to full synthesis** at [[50-Notes/droplet-vs-single-molecule-scdna]] (2026-05-19). Pulls GoT/GoT-ChA/DAF-seq/Fiber-seq/SAMOSA + reviews into a quantitative comparison table; argues the gap is sustained by physical constraints (microfluidics destroys per-fiber context; single-molecule sequencing is throughput-limited).
 - **The PTA inflection point** — comparison of pre-2020 MDA-era applications with current PTA-enabled work.
 - **DNA-methylation-based cancer-of-origin classifiers** — EPICUP, brain-tumor MNP, AML methylation classifiers.
 

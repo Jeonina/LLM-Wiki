@@ -21,7 +21,7 @@ updated: 2026-05-19
 - [[10-Summaries/bae-2017-pregastrulation-mutations]] — Bae 2017: pre-gastrulation vs neurogenesis mutation rates.
 - [[10-Summaries/bae-2017-pregastrulation-mutations]] — Bae 2018: fetal brain progenitor SNVs.
 - [[10-Summaries/taejeong-2022-science]] — Bae 2022: hypermutable brains as glioma precursors.
-- [[10-Summaries/kousi-2022-alzheimer-mosaicism]] — Kousi 2022: cell-type-specific AD mosaicism.
+- [[10-Summaries/kousi-2022-ad-mosaicism]] — Kousi 2022: cell-type-specific AD mosaicism.
 - [[10-Summaries/mukamel-2025-aneuploidy-brain]] — Mukamel 2025: aneuploidy atlas in mouse brain.
 - [[10-Summaries/mcconnell-2017-science]] — Brain Somatic Mosaicism Network framing paper.
 
@@ -37,3 +37,8 @@ updated: 2026-05-19
 ## Related
 
 - [[40-Topics/somatic-mosaicism]] · [[40-Topics/scdna-seq]]
+
+## Linked summaries (lint pass 2026-05-21)
+
+- [[10-Summaries/miller-2022-nature]] — Miller 2022 — Somatic genomic changes in single Alzheimer's disease neurons.
+

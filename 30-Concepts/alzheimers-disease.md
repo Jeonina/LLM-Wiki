@@ -17,7 +17,7 @@ AD is the most common form of dementia. ~5% of cases are early-onset familial; t
 
 ## Why it matters
 
-- Inherited variants explain only a fraction of AD risk. Cell-type-specific somatic mosaicism is an emerging hypothesis for additional risk: [[10-Summaries/kousi-2022-alzheimer-mosaicism]] (Kousi et al. 2022) reports cell-type-specific somatic mutational burden differences between AD and control brains.
+- Inherited variants explain only a fraction of AD risk. Cell-type-specific somatic mosaicism is an emerging hypothesis for additional risk: [[10-Summaries/kousi-2022-ad-mosaicism]] (Kousi et al. 2022) reports cell-type-specific somatic mutational burden differences between AD and control brains.
 - Cumulative somatic SNV burden in neurons increases with age and correlates with neurodegeneration (Lodato et al. 2018; reviewed in [[10-Summaries/bizzotto-2022-brain-mosaicism-review]]).
 - ROSMAP cohort provides multi-omic AD brain data (RNA, DNA, ATAC, methylation) at single-cell resolution.
 

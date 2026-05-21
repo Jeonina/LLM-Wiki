@@ -27,6 +27,6 @@ scTRIP is the gold-standard SV-detection workflow for single-cell data, distinct
 ## Related
 
 - [[10-Summaries/falconer-2012-natmethods]]
-- [[10-Summaries/sanders-2017-natprotoc]]
-- [[20-Entities/jan-korbel]]
+- sanders 2017 natprotoc
+- jan korbel
 - [[30-Concepts/strand-seq]]

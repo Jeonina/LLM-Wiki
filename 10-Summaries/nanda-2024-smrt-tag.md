@@ -11,8 +11,8 @@ journal: "Nature Genetics"
 tags: [PacBio, tagmentation, low-input, SMRT-Tag, SAMOSA-Tag, single-molecule, chromatin-accessibility, prostate-cancer-PDX]
 entities:
   - "[[20-Entities/vijay-ramani]]"
-  - "[[20-Entities/arjun-nanda]]"
-  - "[[20-Entities/sivakanthan-kasinathan]]"
+  - "arjun nanda"
+  - "sivakanthan kasinathan"
 concepts:
   - "[[30-Concepts/smrt-tag]]"
   - "[[30-Concepts/samosa-tag]]"

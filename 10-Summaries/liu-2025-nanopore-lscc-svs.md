@@ -12,7 +12,7 @@ tags: [nanopore, structural-variants, laryngeal-cancer, biomarkers, somatic, smo
 entities:
   - "[[20-Entities/jifeng-liu]]"
   - "[[20-Entities/dan-xie]]"
-  - "[[20-Entities/xuyan-liu]]"
+  - "xuyan liu"
 concepts:
   - "[[30-Concepts/somagauss-sv]]"
   - "[[30-Concepts/structural-variants]]"

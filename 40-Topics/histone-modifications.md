@@ -64,3 +64,8 @@ updated: 2026-05-19
 ## Related
 
 - [[40-Topics/chromatin-architecture]] · [[40-Topics/dna-methylation]] · [[40-Topics/single-cell-multiomics]]
+
+## Linked summaries (lint pass 2026-05-21)
+
+- [[10-Summaries/andrew-2011-cellresearch]] — Bannister & Kouzarides 2011 — Regulation of chromatin by histone modifications (review).
+

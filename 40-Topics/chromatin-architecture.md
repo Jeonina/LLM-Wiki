@@ -100,3 +100,8 @@ _None yet._
 - **Co-actuation domains of ~100 kb** mirror cohesin loops at single-fiber resolution ([[10-Summaries/swanson-2025-daf-seq]]) — but causality (do cohesin loops *cause* co-actuation, or just correlate?) is not directly tested.
 - How well do single-molecule chromatin readouts ([[daf-seq]]) reconcile with droplet-scale ([[got-cha]]) data — i.e., when scDAF-seq reports 63% inter-cell actuation divergence, what would scATAC-seq from the same cells say?
 - Generalization of scDAF-seq beyond GM24385 lymphoblastoid cells to primary tissue and disease contexts.
+
+## Linked summaries (lint pass 2026-05-21)
+
+- [[10-Summaries/he-2024-foodie]] — He 2024 — FOODIE: genome-wide single-molecule TF footprinting via deaminase.
+

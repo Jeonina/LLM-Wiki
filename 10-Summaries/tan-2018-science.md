@@ -30,4 +30,4 @@ Major methodological advance over the original scHi-C (Nagano 2013) and sciHi-C 
 - [[30-Concepts/single-cell-hi-c]]
 - [[10-Summaries/lee-2019-natmethods]]
 - [[10-Summaries/liu-2023-mouse-brain-methylome-3d]]
-- [[20-Entities/sunney-xie]]
+- sunney xie

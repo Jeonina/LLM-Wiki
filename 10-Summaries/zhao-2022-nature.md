@@ -26,8 +26,8 @@ The first scalable spatial scDNA-seq method, complementary to in-situ genome seq
 
 ## Related
 
-- [[30-Concepts/spatial-scdna]]
+- spatial scdna
 - [[10-Summaries/andrewc-2020-science]]
 - [[10-Summaries/kim-2018-tnbc-chemoresistance]]
 - [[20-Entities/jason-buenrostro]]
-- [[20-Entities/fei-chen]]
+- fei chen

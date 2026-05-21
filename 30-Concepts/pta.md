@@ -35,7 +35,7 @@ PTA simultaneously fixed three of MDA's failure modes — coverage, uniformity, 
 
 ## Contested points
 
-- Cost — $5–20/cell remains higher than MDA at $10/cell on the low end. For low-VAF applications PTA's accuracy advantage justifies the cost.
+- Cost trajectory — PTA v1 ($20/cell) was originally pricier than MDA REPLI-g (~$10/cell), but **PTA v2 (~$5/cell) is now the cheapest commercial scWGA chemistry**, undercutting MDA and dramatically undercutting MALBAC (~$50/cell) ([[10-Summaries/shao-2025-scDNA-mosaicism-review]] Table 1). Older comparisons that frame PTA as "the accurate-but-expensive option" are stale.
 - PTA's relative advantage at very low cell numbers (≤96) is largest; at higher cell counts DLP+ may be preferable despite lower coverage.
 
 ## Examples

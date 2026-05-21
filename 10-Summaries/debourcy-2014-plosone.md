@@ -24,6 +24,6 @@ Foundational benchmark for scWGA chemistry selection, predating the broader adop
 ## Related
 
 - [[10-Summaries/gonzalez-pena-2021-pnas]]
-- [[10-Summaries/hou-2016-cellresearch]]
+- hou 2016 cellresearch
 - [[30-Concepts/scwga]]
 - [[30-Concepts/mda]]

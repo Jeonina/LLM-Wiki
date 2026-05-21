@@ -78,3 +78,9 @@ _None yet — natural promotion targets: (a) droplet-scale vs single-molecule sc
 - Can single-cell duplex sequencing be made cost-competitive for cohort-scale studies?
 - How well does imputation-based multi-omic integration (e.g., GoT–ChA + DOGMA via mt-variant bridges) generalize beyond MPN?
 - Is there a "single-molecule, per-fiber" extension of GoT / GoT–ChA waiting to be built — the analog to what DAF-seq is to Fiber-seq?
+
+## Linked summaries (lint pass 2026-05-21)
+
+- [[10-Summaries/garvin-2015-natmethods]] — Garvin 2015 — Ginkgo: interactive analysis of single-cell CNVs.
+- [[10-Summaries/wang-2020-scope]] — Wang 2020 — SCOPE: normalization and copy-number estimation for scDNA-seq.
+

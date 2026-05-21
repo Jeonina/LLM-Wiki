@@ -23,4 +23,4 @@ The mtDNA-mosaicism mechanistic reference. Cite in §5.3 (CH/aging + mtDNA) — 
 - [[10-Summaries/miller-2022-maester]]
 - [[10-Summaries/sun-2025-scmitomut]]
 - [[10-Summaries/hsieh-2026-mtdna-mosaicism]]
-- [[10-Summaries/lareau-2021-mtscatac]]
+- lareau 2021 mtscatac

@@ -41,3 +41,9 @@ updated: 2026-05-19
 ## Related
 
 - [[40-Topics/cancer-clonal-evolution]] · [[40-Topics/somatic-mosaicism]] · [[40-Topics/scdna-seq]]
+
+## Linked summaries (lint pass 2026-05-21)
+
+- [[10-Summaries/morriss-2024-spatial-genomics-clonal]] — Morriss 2024 — Spatial genomics for multimodal clonal heterogeneity in tissues.
+- [[10-Summaries/zhao-2022-nature]] — Zhao 2022 — slide-DNA-seq: spatial genomics of clonal heterogeneity.
+

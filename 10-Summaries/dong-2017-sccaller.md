@@ -27,4 +27,4 @@ A foundational scWGS variant-caller paired with a chemistry improvement (SCMDA).
 - [[10-Summaries/zafar-2016-monovar]]
 - [[10-Summaries/lodato-2015-science]]
 - [[30-Concepts/sccaller]]
-- [[20-Entities/jan-vijg]]
+- jan vijg

@@ -11,8 +11,8 @@ journal: "Nature Plants"
 tags: [long-read, nanopore, Arabidopsis, centromeres, telomeres, rDNA, adaptive-sampling, EcoGII, plant-epigenomics]
 entities:
   - "[[20-Entities/jixian-zhai]]"
-  - "[[20-Entities/weipeng-mo]]"
-  - "[[20-Entities/xiaofeng-cao]]"
+  - "weipeng mo"
+  - "xiaofeng cao"
 concepts:
   - "[[30-Concepts/stam-seq]]"
   - "[[30-Concepts/nanopore-adaptive-sampling]]"

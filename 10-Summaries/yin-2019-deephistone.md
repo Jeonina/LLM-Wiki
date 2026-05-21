@@ -11,7 +11,7 @@ journal: "BMC Genomics"
 tags: [deep-learning, histone-modifications, ChIP-seq, DNase-seq, CNN, prediction, ENCODE]
 entities:
   - "[[20-Entities/rui-jiang]]"
-  - "[[20-Entities/qijin-yin]]"
+  - "qijin yin"
 concepts:
   - "[[30-Concepts/deephistone]]"
   - "[[30-Concepts/histone-modifications]]"

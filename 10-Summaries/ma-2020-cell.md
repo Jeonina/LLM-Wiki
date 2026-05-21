@@ -28,5 +28,5 @@ Founding paper for joint scATAC+scRNA at high throughput; technical ancestor of 
 
 - [[10-Summaries/buenrostro-2015-nature]]
 - [[10-Summaries/cao-2018-sci-car]]
-- [[10-Summaries/argelaguet-2020-nrg]]
-- [[30-Concepts/joint-assays-chromatin-expression]]
+- argelaguet 2020 nrg
+- joint assays chromatin expression

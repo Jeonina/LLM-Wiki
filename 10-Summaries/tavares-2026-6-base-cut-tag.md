@@ -11,7 +11,7 @@ journal: "Nature Communications"
 tags: [CUT&Tag, 6-base-seq, 5mC, 5hmC, histone-modifications, enhancers, biomodal, mESCs]
 entities:
   - "[[20-Entities/shankar-balasubramanian]]"
-  - "[[20-Entities/rafael-tavares]]"
+  - "rafael tavares"
   - "[[20-Entities/biomodal]]"
 concepts:
   - "[[30-Concepts/6-base-cut-and-tag]]"

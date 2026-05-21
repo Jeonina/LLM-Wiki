@@ -50,7 +50,7 @@ These limitations motivated successor chemistries — **MALBAC** (Zong/Xie 2012;
 ## Related
 
 - [[30-Concepts/mda]] — concept page anchored by this paper
-- [[30-Concepts/scwga]] · [[30-Concepts/pta]] · [[30-Concepts/malbac]] · [[30-Concepts/lianti]]
+- [[30-Concepts/scwga]] · [[30-Concepts/pta]] · [[30-Concepts/malbac]] · lianti
 - [[30-Concepts/allele-dropout]] — the failure mode that motivated MDA's successors
 - [[10-Summaries/gawad-2016-scgenome-review]] — Gawad & Quake review benchmarking MDA against successors
 - [[10-Summaries/shao-2025-scDNA-mosaicism-review]] — Shao 2025 review with current scWGA landscape

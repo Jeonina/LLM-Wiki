@@ -30,7 +30,7 @@ updated: 2026-05-15
 
 | Dam–POI | What it reports |
 |---|---|
-| Dam-LMNB1 | Nuclear-lamina contacts / [[30-Concepts/lamina-associated-domains\|LADs]] |
+| Dam-LMNB1 | Nuclear-lamina contacts / LADs |
 | Untethered Dam | Accessible chromatin (CATaDa-style); includes gene bodies, not just TSSs |
 | Dam-RING1B (RNF2) | Polycomb PRC1 binding; useful for X-inactivation, HOX regulation |
 | Dam-TF | TF occupancy in single cells |

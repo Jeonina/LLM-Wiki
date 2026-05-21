@@ -11,8 +11,8 @@ journal: "Nature Biotechnology"
 tags: [DNA-methylation, 5mC, 5hmC, bisulfite-free, single-cell, TAPS, hmC-CATCH, Yi-lab]
 entities:
   - "[[20-Entities/chengqi-yi]]"
-  - "[[20-Entities/dongsheng-bai]]"
-  - "[[20-Entities/chenxu-zhu]]"
+  - "dongsheng bai"
+  - "chenxu zhu"
 concepts:
   - "[[30-Concepts/simple-seq]]"
   - "[[30-Concepts/5hmc]]"

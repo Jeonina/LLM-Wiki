@@ -11,7 +11,7 @@ journal: "Genome Biology"
 tags: [3D-genome, single-cell-HiC, software, benchmarking, EmptyCells, SSCE, atlas]
 entities:
   - "[[20-Entities/hua-jun-wu]]"
-  - "[[20-Entities/wen-jie-jiang]]"
+  - "wen jie jiang"
 concepts:
   - "[[30-Concepts/stark]]"
   - "[[30-Concepts/single-cell-hi-c]]"

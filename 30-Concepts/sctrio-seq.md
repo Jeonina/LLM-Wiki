@@ -33,7 +33,7 @@ Hou et al. 2016 ([[10-Summaries/hou-2016-sctrio-seq]]). Mild lysis breaks only t
 
 - CNV resolution capped at ~10 Mb (limited by RRBS read distribution).
 - Tumor-only demonstration; not yet applied to neuronal or developmental mosaicism.
-- Does not capture point mutations directly — CNV-only on the DNA side. This is the gap the wiki's mosaicism + epigenome synthesis flags ([[somatic-mosaicism#Mosaicism × epigenome — an open synthesis gap (synthesis)]]).
+- Does not capture point mutations directly — CNV-only on the DNA side. This is the gap the wiki's mosaicism + epigenome synthesis flags (somatic mosaicism#Mosaicism × epigenome — an open synthesis gap (synthesis)).
 
 ## Related
 

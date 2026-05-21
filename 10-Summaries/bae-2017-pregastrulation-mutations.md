@@ -61,10 +61,11 @@ Single neuronal progenitor cells from three human fetal brains (15–21 weeks po
 
 [[somatic-mosaicism]] · [[post-zygotic-variation]] · [[developmental-mutation-timing]] · [[lineage-tracing]] · [[mutational-signatures]] · [[20-Entities/alexej-abyzov]] · [[20-Entities/flora-vaccarino]] · [[20-Entities/christopher-walsh]] · [[40-Topics/somatic-mosaicism]]
 
-## Related summaries
+## Related
+- [[20-Entities/taejeong-bae]] — first/co-author on the foundational Bae et al. brain mosaicism papers (2018 pregastrulation-timing, 2022 NeuN-sorted neurons). summaries
 
 - [[10-Summaries/taejeong-2022-science]] — Bae 2022 follow-up at 131-brain BSMN scale, aging-associated hypermutability + ASD enhancer-motif finding.
-- [[10-Summaries/kousi-2022-alzheimer-mosaicism]] — Kousi/Kellis on AD-specific mosaicism.
+- [[10-Summaries/kousi-2022-ad-mosaicism]] — Kousi/Kellis on AD-specific mosaicism.
 - [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — Luquette/Walsh 102-nucleus PTA + duplex.
 - [[10-Summaries/bizzotto-2022-brain-mosaicism-review]] — Bizzotto/Walsh NRN review citing this paper.
 

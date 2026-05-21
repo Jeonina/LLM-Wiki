@@ -29,5 +29,5 @@ A focused review of scDNA SNV calling that complements Lähnemann 2017 (broader 
 - [[10-Summaries/zafar-2016-monovar]]
 - [[10-Summaries/dong-2017-sccaller]]
 - [[10-Summaries/luquette-2019-natcomm]]
-- [[10-Summaries/lahnemann-2021-natrev]]
+- lahnemann 2021 natrev
 - [[40-Topics/mosaic-variant-calling]]

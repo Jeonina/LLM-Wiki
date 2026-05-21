@@ -11,9 +11,9 @@ journal: "Nature Communications"
 tags: [scATAC-seq, nanowell, ICELL8, throughput, fluorescence-imaging, PBMC, Greenleaf-lab, Klemm]
 entities:
   - "[[20-Entities/william-greenleaf]]"
-  - "[[20-Entities/anja-mezger]]"
+  - "anja mezger"
   - "[[20-Entities/sandy-klemm]]"
-  - "[[20-Entities/sten-linnarsson]]"
+  - "sten linnarsson"
 concepts:
   - "[[30-Concepts/micro-atac-seq]]"
   - "[[30-Concepts/icell8-nanowell]]"

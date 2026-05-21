@@ -97,3 +97,9 @@ updated: 2026-05-19
 - Single-cell methylation at scale — current methods are sparse; intersection with [[scdna-seq]] remains an open methodological frontier ([[10-Summaries/iqbal-2023-methylome-review]]).
 - Non-CpG methylation (mCpH) in adult tissues, especially brain — functional significance ([[10-Summaries/fu-2025-longread-methylation]]).
 - Are HMAs (decitabine vs azacitidine) clinically interchangeable? Single-cell data argues no ([[10-Summaries/shen-2026-splicool-seq]]; [[10-Summaries/hunt-2022-sctem-seq]]).
+
+## Linked summaries (lint pass 2026-05-21)
+
+- [[10-Summaries/ghorbani-2019-comp-epigenetics]] — Ghorbani 2019 — Computational approaches in epigenetic research (review).
+- [[10-Summaries/krueger-2011-bismark]] — Krueger 2011 — Bismark: aligner and methylation caller for bisulfite-seq.
+

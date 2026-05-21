@@ -125,7 +125,7 @@ The breadth-depth tradeoff is the *root cause* of the [[50-Notes/mosaicism-and-e
 
 ### Citation pilot + convention (commit 9fd8f39)
 
-- 3 high-traffic concept pages upgraded with inline `[[wiki-link]]` per claim: `dna-methylation`, `lamina-associated-domains`, `chromatin-accessibility`. 130 wikilinks, 0 broken.
+- 3 high-traffic concept pages upgraded with inline `wiki link` per claim: `dna-methylation`, `lamina-associated-domains`, `chromatin-accessibility`. 130 wikilinks, 0 broken.
 - CLAUDE.md updated: concepts/topics/notes now require sentence-level citation granularity (bullets cited individually, table cells cited per row, bare claims marked `(synthesis)` when no source).
 
 ### Quartz fix (commit 5b2ec90)
@@ -1250,7 +1250,7 @@ Brain mosaicism + mtDNA + applications:
 - **Strategy:** skim depth as planned for primary-paper batches (per third ingest log "Next" section). One ~250–400-word summary per clipping; aggressive cross-referencing with concept and entity pages.
 - **Ingested clippings:**
   - **Duplex sequencing / mosaicism** (5): [[10-Summaries/kennedy-2014-duplex-protocol]] (Kennedy/Loeb 2014 founding DS), [[10-Summaries/nandi-2025-udseq]] (UDSeq, Alexandrov 2025), [[10-Summaries/zhang-2025-smaht-duplex-benchmark]] (SMaHT six-method benchmark), [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] (SMaHT 102-nucleus PTA + DS), [[10-Summaries/glynos-2023-mtdna-mosaicism]] (Glynos/Chinnery 2023 single-cell mtDNA drift).
-  - **Mosaicism biology** (2): [[10-Summaries/bizzotto-2022-brain-mosaicism-review]] (Bizzotto/Walsh NRN review), [[10-Summaries/kousi-2022-alzheimer-mosaicism]] (Kousi/Kellis 2022).
+  - **Mosaicism biology** (2): [[10-Summaries/bizzotto-2022-brain-mosaicism-review]] (Bizzotto/Walsh NRN review), [[10-Summaries/kousi-2022-ad-mosaicism]] (Kousi/Kellis 2022).
   - **Methylation methods** (6): [[10-Summaries/hunt-2022-sctem-seq]], [[10-Summaries/bai-2024-simple-seq]], [[10-Summaries/shen-2026-splicool-seq]], [[10-Summaries/tavares-2026-6-base-cut-tag]] (6-base-CUT&Tag), [[10-Summaries/geisenberger-2025-scepi2-seq]] (scEpi²-seq), [[10-Summaries/kim-2017-methylation-memory-review]] (Kim/Costello memory review).
   - **scATAC-seq tooling** (7): [[10-Summaries/schep-2017-chromvar]] (chromVAR), [[10-Summaries/bravo-2019-cistopic]] (cisTopic), [[10-Summaries/fang-2021-snapatac]] (SnapATAC), [[10-Summaries/danese-2021-episcanpy]] (EpiScanpy), [[10-Summaries/zamanighomi-2018-scabc]] (scABC), [[10-Summaries/mezger-2018-microfluidic-atac]] (µATAC-seq), [[10-Summaries/gur-2025-scatac-vs-bulk]] (scATAC vs bulk).
   - **Histone modifications** (4): [[10-Summaries/ku-2019-scchic-seq]] (scChIC-seq), [[10-Summaries/yeung-2023-scchix-seq]] (scChIX-seq), [[10-Summaries/janssens-2023-scicut-tag]] (sciCUT&Tag), [[10-Summaries/yin-2019-deephistone]].
@@ -1370,3 +1370,13 @@ Brain mosaicism + mtDNA + applications:
 ## 2026-05-21 — Dedup pass on 10-Summaries/
 
 Removed 41 duplicate summary files (40 DOI-based pairs + 1 tavares slug variant). For each pair, the descriptive lastname-year-shortdescriptor slug was kept; when the journal-named twin had richer content, its body was moved into the descriptive slug. Updated 717 wikilinks across 188 files. `10-Summaries/` went from 232 → 191 files. `index.md` cleaned of duplicate entries. No broken wikilinks remain to dropped slugs (verified).
+
+## 2026-05-21 — Lint pass
+
+- Auto-fixed 5 broken-link typos (`dou-2020-monovar`→`mosaicforecast`, `clonal-evolution`→`cancer-clonal-evolution`, `mtDNA-lineage-tracing`→`mitochondrial-lineage-tracing`, etc.).
+- Caught one missed dedup pair (`kousi-2022-alzheimer-mosaicism` collapsed into `kousi-2022-ad-mosaicism`); rewired 11 inbound links.
+- Unlinked 743 dead `[[...]]` references across 182 wiki files (converted to plain text). Damage to non-wiki files (CLAUDE.md, .quartz docs, .claude rules, templates) reverted.
+- Linked 22 orphan summaries from natural topic pages (mosaic-variant-calling, scdna-cancer-applications, somatic-mosaicism, scdna-seq, chromatin-architecture, histone-modifications, single-cell-multiomics, single-cell-atac-seq, 3d-genome, brain-somatic-mosaicism, dna-methylation, whole-genome-amplification). Linked `taejeong-bae` entity from his summaries.
+- Final state: 0 broken wikilinks, 0 orphans.
+- Reconciled PTA-vs-MDA cost contradiction: `pta.md` "Contested points" updated to reflect v1→v2 cost trajectory (PTA v2 ~$5/cell now cheapest); `scwga.md` cost row now cites Shao 2025 Table 1.
+- Open substantive items not auto-fixed (per CLAUDE.md MAINTAIN spec): `scatac-seq.md` is thin relative to peers; `single-molecule-footprinting.md` missing samosa/stam-seq/smrt-tag cross-refs; `got.md` headline (88% genotyping) should acknowledge expression-dependence ceiling that motivated GoT-ChA.

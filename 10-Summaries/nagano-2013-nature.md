@@ -26,7 +26,7 @@ Founding paper for single-cell 3D genome assay; the methodological ancestor of a
 
 ## Related
 
-- [[10-Summaries/ramani-2017-sci-hic]]
+- ramani 2017 sci hic
 - [[10-Summaries/tan-2018-science]]
 - [[10-Summaries/lee-2019-natmethods]]
-- [[30-Concepts/3d-genome-single-cell]]
+- 3d genome single cell

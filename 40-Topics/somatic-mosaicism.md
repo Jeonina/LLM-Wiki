@@ -80,7 +80,7 @@ updated: 2026-05-19
 - [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — Luquette 2025: PTA + duplex validation, 102 nuclei from lung+colon of 74-yo donor.
 - [[10-Summaries/luquette-2025-smaht-pta]] — companion PTA pipeline paper.
 - [[10-Summaries/glynos-2023-mtdna-mosaicism]] — Glynos/Chinnery 2023: mouse mtDNA heteroplasmy variance increases through life.
-- [[10-Summaries/kousi-2022-alzheimer-mosaicism]] — Kousi/Kellis 2022: cell-type-specific AD mosaicism.
+- [[10-Summaries/kousi-2022-ad-mosaicism]] — Kousi/Kellis 2022: cell-type-specific AD mosaicism.
 - [[10-Summaries/lodato-2017-aging-neurons]] — Lodato et al. 2018 aging-neuron mosaic mutation burden.
 - [[10-Summaries/bae-2017-pregastrulation-mutations]] — Bae 2017: developmental mutation timing.
 
@@ -102,3 +102,11 @@ _None yet._
 - Why CALR fitness advantage is differentiation-dependent in ET but already strong at HSPC level in MF.
 - Whether JAK2V617F chromatin priming in HSCs is causal for clonal expansion or downstream of it ([[10-Summaries/izzo-2024-got-cha]]).
 - Pre-implantation genetic screening from a single embryo cell — preprint stage; awaiting clinical validation ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
+
+## Linked summaries (lint pass 2026-05-21)
+
+- [[10-Summaries/ludwig-2020-mtscatac-seq]] — Ludwig 2020 — mtscATAC-seq: massively parallel mtDNA genotyping + chromatin in single cells.
+- [[10-Summaries/oroak-2012-autism-targeted-seq]] — O'Roak 2012 — Multiplex targeted sequencing of recurrently mutated genes in ASD.
+- [[10-Summaries/campbell-2015-mosaicism-review]] — Campbell 2015 — Somatic mosaicism: implications for disease and transmission (review).
+- [[10-Summaries/mckenna-2016-science]] — McKenna 2016 — GESTALT: whole-organism lineage tracing by combinatorial genome editing.
+

@@ -29,7 +29,7 @@ scWGA is **unavoidable** for most single-cell DNA applications because the genom
 - **Uniformity** (MAPD — median absolute pairwise difference): how evenly the genome is amplified (lower = better).
 - **Allelic balance**: ratio of read depth between the two alleles at heterozygous sites (≥50% required for SNV detection without dropout).
 - **Cell throughput**: 1–96 (plate-based) vs >10,000 (DLP+ microfluidic).
-- **Cost per cell**: $5 (PTA v2) to $50 (MALBAC).
+- **Cost per cell**: $5 (PTA v2) to $50 (MALBAC); MDA REPLI-g ~$10 ([[10-Summaries/shao-2025-scDNA-mosaicism-review]] Table 1).
 - **Time**: 2.5h (PicoPLEX) to 21h (DLP+).
 
 ## Variants and refinements

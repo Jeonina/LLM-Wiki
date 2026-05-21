@@ -60,3 +60,10 @@ None yet. A natural note: "How to choose a scATAC-seq analysis tool" — chromVA
 ## Related
 
 - [[40-Topics/chromatin-architecture]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/histone-modifications]]
+
+## Linked summaries (lint pass 2026-05-21)
+
+- [[10-Summaries/mezger-2018-uatac]] — Mezger 2018 — µATAC-seq: high-throughput nanoliter scATAC.
+- [[10-Summaries/derop-2024-natbiotech]] — De Rop 2024 — PUMATAC: systematic benchmarking of scATAC protocols.
+- [[10-Summaries/luo-2024-scatac-benchmark]] — Luo 2024 — Benchmarking computational methods for single-cell chromatin data.
+

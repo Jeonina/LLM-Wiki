@@ -20,7 +20,7 @@ updated: 2026-05-12
 
 ## Method
 
-1. **415,103 single nuclei** from adult C57BL/6 male mice (post-natal day 56–63), covering 73 dissected brain regions, **6 major cell classes, 48 cell types, 71 clusters** based on DNA methylation patterns. Source: BICCN multimodal mouse brain atlas ([[10-Summaries/yao-2021-nature]] family of papers). Two assay types: **snmC-seq3** (methylation only) and **snm3C-seq** (multi-omic methylation + chromatin conformation).
+1. **415,103 single nuclei** from adult C57BL/6 male mice (post-natal day 56–63), covering 73 dissected brain regions, **6 major cell classes, 48 cell types, 71 clusters** based on DNA methylation patterns. Source: BICCN multimodal mouse brain atlas (yao 2021 nature family of papers). Two assay types: **snmC-seq3** (methylation only) and **snm3C-seq** (multi-omic methylation + chromatin conformation).
 2. **CNV inference**: snmC-seq fragments are uniformly distributed under bisulfite chemistry, so read density in genomic bins reports relative copy number (Spearman r ≈ 0.85 between read density and GC content; ginkgo-style GC correction recovers uniform bin coverage).
 3. Validate by comparing chrX (single copy in male) vs autosomes (diploid) across bin sizes 100 kb–12.7 Mb: AUROC ≈ 0.94 at 100 kb, >0.9997 at 12.7 Mb. Aneuploidies ≥5 Mb are reliably detected with high sensitivity and specificity (~97.5%).
 4. **Circular binary segmentation** for CNV calling. Quality filter: MAPD <0.3, ≥900,000 uniquely mapped reads per cell. Cell defined as aneuploid if a chromosome has duplication/deletion over >90% of its extent.
@@ -46,7 +46,7 @@ updated: 2026-05-12
 
 - **Direct methodological precedent for the synthesis claim in [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]]**: this paper is the **scTrio-seq trick scaled to 415K cells**. Single-cell DNA methylation reads jointly yield CNV calls. The mosaicism + epigenome synthesis can now cite **two** anchor papers for joint single-cell DNA-alteration + epi: [[sctrio-seq]] (small-scale tumor; CNV + methylome + RNA) and Mukamel 2025 (atlas-scale mouse brain; CNV + methylome + chromatin conformation via snm3C-seq). **The synthesis note needs an update** — Mukamel extends the precedent from tumor to brain and from 25 cells to 415K cells.
 
-- **The chr16 (= human chr21) trisomy finding is biologically major**: somatic chr21 trisomy has been reported in human brain in aging and Alzheimer's contexts (refs 33–36 in the paper). This paper provides the mouse atlas-scale companion result — recurrent somatic chr16 trisomy at a much higher rate than other chromosomes, with cell-type preferences (OPCs especially). For the review's §5 brain/Alzheimer's application section, this paper extends the [[10-Summaries/kousi-2022-alzheimer-mosaicism|Kousi/Kellis AD result]] from human SNV-burden cell-type-specificity to mouse atlas-scale aneuploidy cell-type-specificity.
+- **The chr16 (= human chr21) trisomy finding is biologically major**: somatic chr21 trisomy has been reported in human brain in aging and Alzheimer's contexts (refs 33–36 in the paper). This paper provides the mouse atlas-scale companion result — recurrent somatic chr16 trisomy at a much higher rate than other chromosomes, with cell-type preferences (OPCs especially). For the review's §5 brain/Alzheimer's application section, this paper extends the [[10-Summaries/kousi-2022-ad-mosaicism|Kousi/Kellis AD result]] from human SNV-burden cell-type-specificity to mouse atlas-scale aneuploidy cell-type-specificity.
 
 - **Methodology generalizable to human atlases**: BRAIN Initiative Cell Census Network has analogous human methylome atlases (Liu 2023 *Nature*). Applying the same CNV-from-methylation logic would extend this approach to human aneuploidy mosaicism.
 
@@ -64,7 +64,7 @@ updated: 2026-05-12
 
 - [[10-Summaries/hou-2016-sctrio-seq]] — scTrio-seq, the methodological precedent (CNV from RRBS distribution).
 - [[10-Summaries/taejeong-2022-science]] — Bae 2022 human-brain hypermutability, with chromosomal aneuploidies in some hypermutable brains (e.g., LIBD82).
-- [[10-Summaries/kousi-2022-alzheimer-mosaicism]] — human-brain cell-type-specific SNV burden in AD.
+- [[10-Summaries/kousi-2022-ad-mosaicism]] — human-brain cell-type-specific SNV burden in AD.
 - [[10-Summaries/clark-2018-scnmt-seq]] — scNMT-seq, similar logic for accessibility + methylation.
 - [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]] — synthesis note that needs an update reflecting Mukamel 2025 as a second major anchor for joint CNV + epi at single-cell scale.
 

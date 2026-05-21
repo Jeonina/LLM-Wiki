@@ -23,6 +23,6 @@ Bulk-cohort context for the somatic-mutation landscape in a structural-variation
 
 ## Related
 
-- [[40-Topics/cancer-genomics]]
-- [[30-Concepts/clonal-evolution]]
+- cancer genomics
+- [[40-Topics/cancer-clonal-evolution]]
 - [[10-Summaries/kim-2018-tnbc-chemoresistance]]

@@ -27,6 +27,6 @@ A founding paper for scDNA-seq tumor phylogeny inference, alongside OncoNEM and 
 ## Related
 
 - [[10-Summaries/satas-2020-scarlet]]
-- [[10-Summaries/zafar-2017-cellrev]]
+- zafar 2017 cellrev
 - [[10-Summaries/zaccaria-2021-chisel]]
 - [[40-Topics/scdna-cancer-applications]]

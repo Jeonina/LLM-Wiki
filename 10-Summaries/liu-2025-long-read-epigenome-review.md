@@ -11,7 +11,7 @@ journal: "Nature Genetics"
 tags: [review, long-read-sequencing, epigenome, ONT, PacBio, methylation, chromatin-accessibility, Fiber-seq]
 entities:
   - "[[20-Entities/ana-conesa]]"
-  - "[[20-Entities/tianyuan-liu]]"
+  - "tianyuan liu"
 concepts:
   - "[[30-Concepts/long-read-sequencing]]"
   - "[[30-Concepts/oxford-nanopore]]"

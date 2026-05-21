@@ -11,7 +11,7 @@ journal: "Scientific Reports"
 tags: [DNA-methylation, transposable-elements, SINE-Alu, AML, decitabine, single-cell, multi-omics]
 entities:
   - "[[20-Entities/heather-lee]]"
-  - "[[20-Entities/kooper-hunt]]"
+  - "kooper hunt"
 concepts:
   - "[[30-Concepts/sctem-seq]]"
   - "[[30-Concepts/dna-methylation]]"

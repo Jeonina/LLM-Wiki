@@ -8,7 +8,7 @@ updated: 2026-05-15
 
 A living knowledge base on **single-cell DNA sequencing**, **somatic mosaicism**, and **single-cell epigenomics** — built and maintained with the help of an LLM, following [Andrej Karpathy's LLM Wiki pattern](10-Summaries/example-llm-wiki).
 
-> This wiki synthesizes ~130 papers spanning scDNA-seq methods, chromatin profiling, DNA methylation, multi-omics assays, and computational tools. Start from a topic below, or browse the [[catalog|full catalog]].
+> This wiki synthesizes ~130 papers spanning scDNA-seq methods, chromatin profiling, DNA methylation, multi-omics assays, and computational tools. Start from a topic below, or browse the full catalog.
 
 The central motivation: there is no DNA-centric locus-state framework that jointly interprets mutation + epigenome + RNA at single-cell scale. The wiki tracks the methods that get us closer to one — see [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap|the synthesis gap note]] for the framing.
 
@@ -113,10 +113,10 @@ Ultra-accurate error correction by reading both strands of a DNA molecule. Essen
 
 | | |
 |---|---|
-| [[catalog\|Papers]] | All ~130 paper summaries, organized by topic |
-| [[20-Entities/index\|People & labs]] | Researchers, labs, consortia |
-| [[30-Concepts/index\|Concepts]] | Definitions: methods, terms, ideas |
-| [[40-Topics/index\|Topics]] | Broad themes that gather concepts and papers |
+| Papers | All ~130 paper summaries, organized by topic |
+| People & labs | Researchers, labs, consortia |
+| Concepts | Definitions: methods, terms, ideas |
+| Topics | Broad themes that gather concepts and papers |
 
 ---
 
@@ -140,9 +140,9 @@ Three layers, never mixed:
 
 1. **Sources** (`00-Sources/`) — immutable raw inputs (papers, articles, data). Read-only.
 2. **Wiki** (`10-Summaries/`, `20-Entities/`, `30-Concepts/`, `40-Topics/`, `50-Notes/`) — distillation, linked into a graph.
-3. **Schema** ([[CLAUDE]] + `90-Meta/templates/`) — the conventions the maintainer follows.
+3. **Schema** (CLAUDE + `90-Meta/templates/`) — the conventions the maintainer follows.
 
-The maintainer reads each new source in full, writes a summary, and **touches 5–15 other pages** per ingest to weave it into the graph. See [[log|the ingest log]] for a chronological record.
+The maintainer reads each new source in full, writes a summary, and **touches 5–15 other pages** per ingest to weave it into the graph. See the ingest log for a chronological record.
 
 ---
 

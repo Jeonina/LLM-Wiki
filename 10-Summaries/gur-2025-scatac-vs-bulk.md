@@ -11,7 +11,7 @@ journal: "Scientific Reports"
 tags: [scATAC-seq, ATAC-seq, regulatory-elements, erythroblasts, PBMCs, NK-cells, comparison-study]
 entities:
   - "[[20-Entities/jim-hughes]]"
-  - "[[20-Entities/ravza-gur]]"
+  - "ravza gur"
 concepts:
   - "[[30-Concepts/atac-seq]]"
   - "[[30-Concepts/scatac-seq]]"

@@ -41,3 +41,8 @@ updated: 2026-05-19
 ## Related
 
 - [[40-Topics/somatic-mosaicism]] · [[40-Topics/scdna-seq]] · [[40-Topics/duplex-sequencing]]
+
+## Linked summaries (lint pass 2026-05-21)
+
+- [[10-Summaries/tu-2021-scout-genotyper]] — Tu 2021 — SCOUT genotyper using local genome territory.
+

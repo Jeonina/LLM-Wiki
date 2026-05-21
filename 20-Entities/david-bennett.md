@@ -20,7 +20,7 @@ updated: 2026-05-19
 
 ## Mentions
 
-- **2026-05-19** — ROS/MAP brains anchor [[10-Summaries/kousi-2022-alzheimer-mosaicism]] and several aging-brain mosaicism studies.
+- **2026-05-19** — ROS/MAP brains anchor [[10-Summaries/kousi-2022-ad-mosaicism]] and several aging-brain mosaicism studies.
 
 ## Related
 

@@ -28,4 +28,4 @@ A §4 computational-tools anchor in the scDNA-seq CNV-calling family alongside G
 - [[10-Summaries/kaufmann-2022-medicc2]]
 - [[10-Summaries/lu-2024-cnaphylogeny-review]]
 - [[10-Summaries/mallory-2020-cna-review]]
-- [[30-Concepts/scDNA-CNV-calling]]
+- scDNA CNV calling

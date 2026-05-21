@@ -26,7 +26,7 @@ The founding single-nucleus joint methylome + 3D-genome assay. Demonstrates that
 
 ## Related
 
-- [[30-Concepts/sn-m3C-seq]]
+- sn m3C seq
 - [[30-Concepts/single-cell-hi-c]]
 - [[30-Concepts/joint-single-cell-multi-omics]]
 - [[10-Summaries/liu-2023-mouse-brain-methylome-3d]]

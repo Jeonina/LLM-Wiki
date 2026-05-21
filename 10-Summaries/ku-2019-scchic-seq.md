@@ -11,13 +11,13 @@ journal: "Nature Methods"
 tags: [histone-modifications, single-cell, MNase, ChIC, H3K4me3, H3K27me3, white-blood-cells, Zhao-lab]
 entities:
   - "[[20-Entities/keji-zhao]]"
-  - "[[20-Entities/wai-lim-ku]]"
+  - "wai lim ku"
 concepts:
   - "[[30-Concepts/scchic-seq]]"
   - "[[30-Concepts/chic-seq]]"
   - "[[30-Concepts/cut-and-run]]"
   - "[[30-Concepts/histone-modifications]]"
-  - "[[30-Concepts/mnase]]"
+  - "mnase"
 topics:
   - "[[40-Topics/histone-modifications]]"
   - "[[40-Topics/chromatin-architecture]]"

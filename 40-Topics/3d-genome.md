@@ -79,3 +79,8 @@ None yet. The single-cell 3D-genome story spans three measurement modalities —
 ## Related
 
 - [[40-Topics/chromatin-architecture]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/long-read-sequencing]]
+
+## Linked summaries (lint pass 2026-05-21)
+
+- [[10-Summaries/bersaglieri-2019-cells]] — Bersaglieri & Santoro 2019 — Genome organization in and around the nucleolus.
+

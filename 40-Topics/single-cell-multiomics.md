@@ -117,7 +117,7 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 
 ## Synthesized notes
 
-_None yet — the three methods papers cluster cleanly enough that a synthesis comparing droplet-scale vs single-molecule approaches would be a natural [[50-Notes/]] page once a fourth source lands._
+_None yet — the three methods papers cluster cleanly enough that a synthesis comparing droplet-scale vs single-molecule approaches would be a natural  page once a fourth source lands._
 
 ## Open questions
 
@@ -125,3 +125,10 @@ _None yet — the three methods papers cluster cleanly enough that a synthesis c
 - All three current sources use **within-patient WT cells as comparators** (or, for DAF-seq, within-cell haplotypes). Are there single-cell multi-omic questions where this design doesn't apply?
 - Imputation-based multi-omic integration (GoT–ChA + DOGMA-seq via mt-variants and surface proteins) works in MPN. How well does it generalize?
 - For chromatin: bulk Fiber-seq → single-cell DAF-seq closed a major gap. What's the analogous gap for [[got]]/[[got-cha]] — is there a "single-molecule, per-fiber" extension waiting to be built?
+
+## Linked summaries (lint pass 2026-05-21)
+
+- [[10-Summaries/ma-2020-cell]] — Ma 2020 — SHARE-seq: shared single-cell RNA + chromatin profiling reveals chromatin potential.
+- [[10-Summaries/macaulay-2016-gt-seq-protocol]] — Macaulay 2016 — G&T-seq protocol: parallel single-cell genome + transcriptome.
+- [[10-Summaries/shen-2025-splicool-seq]] — Shen 2025 — SpliCOOL-seq: scalable scDNA methylation + chromatin via split-pool.
+

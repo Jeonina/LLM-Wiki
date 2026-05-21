@@ -26,6 +26,6 @@ The high-throughput cousin of mtscATAC-seq (Lareau 2021): brings mtDNA-based lin
 
 ## Related
 
-- [[10-Summaries/lareau-2021-natbiotech]]
-- [[10-Summaries/ludwig-2019-cell]]
-- [[30-Concepts/mtDNA-lineage-tracing]]
+- lareau 2021 natbiotech
+- ludwig 2019 cell
+- [[30-Concepts/mitochondrial-lineage-tracing]]

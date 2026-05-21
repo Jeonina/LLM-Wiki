@@ -27,6 +27,6 @@ The technological ancestor of every targeted-panel droplet scDNA platform deploy
 ## Related
 
 - [[10-Summaries/kim-2018-tnbc-chemoresistance]]
-- [[10-Summaries/frankell-2019-nature]]
-- [[10-Summaries/laks-2019-cell]]
+- frankell 2019 nature
+- laks 2019 cell
 - [[40-Topics/scdna-cancer-applications]]

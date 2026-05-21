@@ -23,6 +23,6 @@ Provides context for the 3D-genome layer of the locus state at a specific high-i
 
 ## Related
 
-- [[40-Topics/3d-genome-organization]]
+- [[40-Topics/3d-genome]]
 - [[10-Summaries/jiang-2026-stark-scnucleome]]
 - [[10-Summaries/lee-2019-natmethods]]

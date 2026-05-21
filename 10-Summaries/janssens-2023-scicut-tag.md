@@ -11,8 +11,8 @@ journal: "Nature Protocols"
 tags: [CUT&Tag, single-cell, combinatorial-indexing, Tn5, ICELL8, Henikoff-lab, PBMC, MulTI-Tag]
 entities:
   - "[[20-Entities/steven-henikoff]]"
-  - "[[20-Entities/derek-janssens]]"
-  - "[[20-Entities/kami-ahmad]]"
+  - "derek janssens"
+  - "kami ahmad"
 concepts:
   - "[[30-Concepts/scicut-tag]]"
   - "[[30-Concepts/cut-and-tag]]"

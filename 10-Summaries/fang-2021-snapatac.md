@@ -11,8 +11,8 @@ journal: "Nature Communications"
 tags: [scATAC-seq, Ren-lab, Nyström-method, mouse-brain, MOp, peak-free, cellular-heterogeneity]
 entities:
   - "[[20-Entities/bing-ren]]"
-  - "[[20-Entities/rongxin-fang]]"
-  - "[[20-Entities/sebastian-preissl]]"
+  - "rongxin fang"
+  - "sebastian preissl"
   - "[[20-Entities/joseph-ecker]]"
 concepts:
   - "[[30-Concepts/snapatac]]"

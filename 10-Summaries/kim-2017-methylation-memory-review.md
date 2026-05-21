@@ -11,7 +11,7 @@ journal: "Experimental & Molecular Medicine"
 tags: [review, DNA-methylation, epigenetic-memory, stem-cells, cancer, CUP, iPSCs]
 entities:
   - "[[20-Entities/joseph-costello]]"
-  - "[[20-Entities/mirang-kim]]"
+  - "mirang kim"
 concepts:
   - "[[30-Concepts/dna-methylation]]"
   - "[[30-Concepts/dnmt]]"

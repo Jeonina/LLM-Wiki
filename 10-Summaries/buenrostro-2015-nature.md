@@ -25,6 +25,6 @@ The founding scATAC-seq paper (parallel to Cusanovich 2015 sci-ATAC-seq); method
 
 - [[10-Summaries/cusanovich-2015-sciatac]]
 - [[10-Summaries/jin-2015-nature]]
-- [[10-Summaries/buenrostro-2013-natmethods]]
+- buenrostro 2013 natmethods
 - [[20-Entities/william-greenleaf]]
 - [[30-Concepts/scatac-seq]]

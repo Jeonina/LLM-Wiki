@@ -28,6 +28,6 @@ The canonical review for the §4 CNA-detection tool family. Important supplement
 
 - [[10-Summaries/zaccaria-2021-chisel]]
 - [[10-Summaries/kaufmann-2022-medicc2]]
-- [[10-Summaries/laks-2019-cell]]
+- laks 2019 cell
 - [[40-Topics/scdna-cancer-applications]]
 - [[20-Entities/nicholas-navin]]

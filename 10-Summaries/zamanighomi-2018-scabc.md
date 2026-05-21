@@ -11,7 +11,7 @@ journal: "Nature Communications"
 tags: [scATAC-seq, k-medoids, unsupervised-clustering, software, Wong-lab, ESC-differentiation, embryoid-body]
 entities:
   - "[[20-Entities/wing-hung-wong]]"
-  - "[[20-Entities/mahdi-zamanighomi]]"
+  - "mahdi zamanighomi"
   - "[[20-Entities/william-greenleaf]]"
 concepts:
   - "[[30-Concepts/scabc]]"

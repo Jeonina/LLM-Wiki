@@ -23,6 +23,6 @@ A widely-used early single-cell CNV pipeline that established the read-binning +
 
 ## Related
 
-- [[30-Concepts/single-cell-cnv]]
+- single cell cnv
 - [[10-Summaries/zafar-2016-monovar]]
 - [[10-Summaries/luquette-2019-natcomm]]

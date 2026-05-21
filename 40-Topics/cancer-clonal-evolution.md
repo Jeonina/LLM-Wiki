@@ -14,7 +14,7 @@ updated: 2026-05-19
 ## Core concepts
 
 - [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/lineage-tracing-somatic-mutations]]
-- [[30-Concepts/clonal-evolution]]
+- [[40-Topics/cancer-clonal-evolution]]
 
 ## Phylogeny tools
 

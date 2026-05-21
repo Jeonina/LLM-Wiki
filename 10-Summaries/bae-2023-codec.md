@@ -25,6 +25,6 @@ The most recent major advance in duplex sequencing, completing the trajectory Sc
 
 - [[10-Summaries/schmitt-2012-pnas]]
 - [[10-Summaries/abascal-2021-nanoseq]]
-- [[10-Summaries/hoang-2016-pnas]]
+- hoang 2016 pnas
 - [[30-Concepts/codec]]
 - [[30-Concepts/duplex-sequencing]]

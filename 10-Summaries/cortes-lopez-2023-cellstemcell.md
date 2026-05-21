@@ -24,6 +24,6 @@ A canonical four-modality joint-assay demonstration: somatic genotype + full-len
 ## Related
 
 - [[30-Concepts/joint-single-cell-multi-omics]]
-- [[30-Concepts/got-genotype-of-transcriptomes]]
+- got genotype of transcriptomes
 - [[10-Summaries/nam-2019-got]]
 - [[10-Summaries/gaiti-2019-cll-epigenetic]]

@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Co-senior author of [[10-Summaries/kousi-2022-alzheimer-mosaicism]].
+- **2026-05-12** — Co-senior author of [[10-Summaries/kousi-2022-ad-mosaicism]].
 
 ## Related
 

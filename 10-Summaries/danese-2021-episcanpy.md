@@ -12,7 +12,7 @@ tags: [scATAC-seq, scBS-seq, scanpy, Python, software, atlas-integration, Theis-
 entities:
   - "[[20-Entities/fabian-theis]]"
   - "[[20-Entities/maria-colome-tatche]]"
-  - "[[20-Entities/anna-danese]]"
+  - "anna danese"
 concepts:
   - "[[30-Concepts/episcanpy]]"
   - "[[30-Concepts/scanpy]]"

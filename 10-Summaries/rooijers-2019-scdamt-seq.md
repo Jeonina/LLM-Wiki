@@ -77,7 +77,7 @@ topics:
 - **Echoes / complements** [[10-Summaries/clark-2018-scnmt-seq]] (scNMT-seq) — comparable joint readout, but scDam&T-seq uses contact-based (Dam) rather than chemical (bisulfite/NOMe) accessibility, at ~30× shallower sequencing depth.
 - **Echoes** [[10-Summaries/nagano-2013-nature]] and the scHi-C family — orthogonal angle on the same question (how spatial genome organization varies per cell and links to expression).
 - **Bridges** [[40-Topics/3d-genome]] and [[40-Topics/chromatin-architecture]] via the NL axis — a layer that pure Hi-C–based methods miss.
-- **Future link**: if 5-base / 6-base CUT&Tag-style joint readouts ([[10-Summaries/tavares-2026-6base-cutandtag]]?) eventually pair with single-cell DamID, the genome–protein–histone-mark triad becomes addressable in one cell.
+- **Future link**: if 5-base / 6-base CUT&Tag-style joint readouts (tavares 2026 6base cutandtag?) eventually pair with single-cell DamID, the genome–protein–histone-mark triad becomes addressable in one cell.
 
 ## Open questions
 

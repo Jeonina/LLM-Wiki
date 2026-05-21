@@ -27,5 +27,5 @@ Founding paper of the Strand-seq family. Anchors §3.1 (genotype-centric, struct
 
 - [[30-Concepts/strand-seq]]
 - [[30-Concepts/scwga-chemistries]]
-- [[20-Entities/peter-lansdorp]]
+- peter lansdorp
 - [[10-Summaries/hyobin-2023-naturebiotechnology]]

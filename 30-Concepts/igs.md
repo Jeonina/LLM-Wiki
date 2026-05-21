@@ -29,7 +29,7 @@ Payne et al. 2021 ([[10-Summaries/andrewc-2020-science]]). Three phases:
 ## Variants and refinements
 
 - **IGS** ([[10-Summaries/andrewc-2020-science]]).
-- Methodological cousin (in spirit only — different chemistry): [[single-cell-hi-c]], [[dip-c]], [[sn-m3c-seq]] (chromatin conformation in single cells without absolute spatial coordinates).
+- Methodological cousin (in spirit only — different chemistry): [[single-cell-hi-c]], [[dip-c]], sn m3c seq (chromatin conformation in single cells without absolute spatial coordinates).
 
 ## Contested points
 

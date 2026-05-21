@@ -11,7 +11,7 @@ journal: "Nucleic Acids Research"
 tags: [scDNA-seq, variant-calling, SNV, allele-dropout, intra-tumor-heterogeneity, software]
 entities:
   - "[[20-Entities/dan-xie]]"
-  - "[[20-Entities/kailing-tu]]"
+  - "kailing tu"
 concepts:
   - "[[30-Concepts/scout-variant-caller]]"
   - "[[30-Concepts/monovar]]"

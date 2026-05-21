@@ -24,6 +24,6 @@ Concrete demonstration that single-molecule footprinting answers questions about
 ## Related
 
 - [[30-Concepts/single-molecule-footprinting]]
-- [[30-Concepts/transcription-factor-occupancy]]
+- transcription factor occupancy
 - [[10-Summaries/andrewb-2020-science]]
 - [[10-Summaries/swanson-2025-daf-seq]]

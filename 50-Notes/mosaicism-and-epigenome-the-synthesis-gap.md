@@ -10,7 +10,7 @@ sources: [
   "[[10-Summaries/izzo-2024-got-cha]]",
   "[[10-Summaries/swanson-2025-daf-seq]]",
   "[[10-Summaries/clark-2018-scnmt-seq]]",
-  "[[10-Summaries/kousi-2022-alzheimer-mosaicism]]",
+  "[[10-Summaries/kousi-2022-ad-mosaicism]]",
   "[[10-Summaries/luquette-2025-pta-duplex-mosaicism]]"
 ]
 ---
@@ -25,7 +25,7 @@ sources: [
 
 Somatic mosaicism is the body's record of post-zygotic mutational history ([[somatic-mosaicism]]; [[10-Summaries/forsberg-2017-mosaicism-review]]; [[10-Summaries/ian-2015-trendsingenetics]]). The interpretive question almost always lands on **what does this mutation do to the cell's regulatory state?** — does it sit in a heterochromatin region (silent), an active enhancer (locus-specific consequence), a methylated CpG island (potentially disrupting silencing)? In practice the answer is currently inferred from *bulk* epigenome reference data (ENCODE, Roadmap, BluePrint) overlaid on single-cell genotype calls.
 
-This is the workflow that has produced cell-type-specific somatic-mutation burden estimates in Alzheimer's brain ([[10-Summaries/kousi-2022-alzheimer-mosaicism]]) and lung/colon ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]). It works because cell-type identity (and therefore which bulk reference to use) can usually be inferred from the same cell's transcriptome. But it cannot answer:
+This is the workflow that has produced cell-type-specific somatic-mutation burden estimates in Alzheimer's brain ([[10-Summaries/kousi-2022-ad-mosaicism]]) and lung/colon ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]). It works because cell-type identity (and therefore which bulk reference to use) can usually be inferred from the same cell's transcriptome. But it cannot answer:
 
 - **Does a mosaic point mutation perturb its own local epigenome at the single-cell level?** Bulk evidence is mixed (see scTrio-seq: large-scale CNVs do *not* change local methylation; but point-mutation effects could differ).
 - **Are mosaic mutations in regulatory DNA preferentially active vs silent on the same cell's chromatin?** Single-molecule DAF-seq evidence on a 1.5% VAF mosaic CC→TT variant in COLO829 ([[10-Summaries/swanson-2025-daf-seq]]) suggests the variant *ablates* the local CTCF footprint on the same fiber it sits on — but this is one locus in one tumor mixture.
@@ -168,7 +168,7 @@ The neuro-mosaicism literature provides the empirical foundation for the planned
 - [[10-Summaries/bae-2017-pregastrulation-mutations]] — Bae 2018: 200–400 mosaic SNVs/cell in fetal neuronal progenitors; mutation rate ~3 orders of magnitude higher than adult germline during neurogenesis; mutation spectrum shifts from CpG-deamination (early) to oxidative damage (neurogenesis); **10% mosaic SNV depletion in fetal-brain DHS sites** — direct evidence of chromatin-state-shaping-mutation-distribution within the same lineage.
 - [[10-Summaries/taejeong-2022-science]] — Bae 2022: 131-brain BSMN cohort; ~6% hypermutable brains, aging-associated; **ASD brains enriched for somatic mutations creating MEIS TF binding motifs in fetal-brain enhancer-like regions** — the field's leading direct mosaic-mutation-to-enhancer causal pathway, but interpreted via *bulk* fetal-brain epigenome reference, not the same-cell measurement.
 - [[10-Summaries/mukamel-2025-aneuploidy-brain]] — Mukamel 2025: snmC-seq atlas-scale (415K cells) brain aneuploidy with cell-type-specific enrichment (OPCs, Pons, chr16/chr21). The strongest current precedent for atlas-scale joint (mutation, epi) at single-cell resolution in the brain.
-- [[10-Summaries/kousi-2022-alzheimer-mosaicism]] — Kousi/Kellis 2022 AD: cell-type-specific mosaic SNV burden by FACS+WGS. Uses bulk-epigenome annotation for interpretation; methodologically the human-AD complement of Bae 2022.
+- [[10-Summaries/kousi-2022-ad-mosaicism]] — Kousi/Kellis 2022 AD: cell-type-specific mosaic SNV burden by FACS+WGS. Uses bulk-epigenome annotation for interpretation; methodologically the human-AD complement of Bae 2022.
 - [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — Luquette/Walsh SMaHT 102-nucleus PTA + DS. Single-neuron point-mutation truth-set; no paired epi measurement.
 
 ## Related

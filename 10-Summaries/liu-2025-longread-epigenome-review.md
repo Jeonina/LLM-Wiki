@@ -21,7 +21,7 @@ Strong §3.3 LRS-epigenome reference. Complements Fu 2025 (long-read methylation
 ## Related
 
 - [[10-Summaries/fu-2025-longread-methylation]]
-- [[10-Summaries/stergachis-2020-fiber-seq]]
+- stergachis 2020 fiber seq
 - [[10-Summaries/shipony-2020-smac]]
 - [[10-Summaries/altemose-2022-dimelo-seq]]
 - [[10-Summaries/swanson-2025-daf-seq]]

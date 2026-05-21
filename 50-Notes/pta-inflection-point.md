@@ -16,7 +16,7 @@ sources: [
   "[[10-Summaries/evrony-2021-scDNA-applications-review]]",
   "[[10-Summaries/evrony-2021-scDNA-applications-review]]",
   "[[10-Summaries/taejeong-2022-science]]",
-  "[[10-Summaries/kousi-2022-alzheimer-mosaicism]]",
+  "[[10-Summaries/kousi-2022-ad-mosaicism]]",
   "[[10-Summaries/luquette-2025-pta-duplex-mosaicism]]",
   "[[10-Summaries/mukamel-2025-aneuploidy-brain]]",
   "[[10-Summaries/kriz-2025-duplex-multiome]]",
@@ -70,7 +70,7 @@ The most consequential shift: **direct SNV calling without allele-balance correc
 The post-2021 mosaicism literature is largely PTA-anchored:
 
 - **[[10-Summaries/taejeong-2022-science|Bae 2022]]** — analysis of somatic mutations across 131 human brains; ~6% of brains identified as hypermutable (>101 SNVs/neuron) — possibly precursor states for glioma. PTA-enabled cohort.
-- **[[10-Summaries/kousi-2022-alzheimer-mosaicism|Kousi 2022]]** — cell-type-specific somatic mutational burden in Alzheimer's brains.
+- **[[10-Summaries/kousi-2022-ad-mosaicism|Kousi 2022]]** — cell-type-specific somatic mutational burden in Alzheimer's brains.
 - **[[10-Summaries/mukamel-2025-aneuploidy-brain|Mukamel 2025]]** — aneuploidy atlas in mouse brain; cell-type-specific concentration of chr16 trisomy in oligodendrocyte precursors, Pons neurons, and pericytes.
 - **[[10-Summaries/luquette-2025-pta-duplex-mosaicism|Luquette 2025 (SMaHT-flagship)]]** — 102 PTA-amplified nuclei from lung and colon of one 74-year-old donor, validated via bulk duplex sequencing; body-wide cellular ancestry from shared embryonic mutations.
 - **[[10-Summaries/kriz-2025-duplex-multiome|Kriz 2025 (Duplex-Multiome)]]** — duplex consensus integrated into 10x Multiome; per-nucleus point mutations + chromatin + RNA at >51,400 nuclei scale. Built on the foundation PTA established.

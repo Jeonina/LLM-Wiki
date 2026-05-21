@@ -50,7 +50,7 @@ The largest brain-mosaicism cohort study to date: 131 human brains (44 neurotypi
 
 ## Surprising / load-bearing for the review
 
-- **The age-hypermutability link is novel and matters for normal-aging biology**, not just disease. Combined with [[10-Summaries/kousi-2022-alzheimer-mosaicism|Kousi/Kellis AD cell-type mosaicism]] and [[10-Summaries/luquette-2025-pta-duplex-mosaicism|Luquette/Walsh PTA+DS]], it triangulates that **brain mosaicism accumulates over the lifespan, with a long tail of hypermutable cases — and the accumulation has plausible cancer-precursor mechanism (clonal hematopoiesis-like expansion + cancer-gene mutations)**.
+- **The age-hypermutability link is novel and matters for normal-aging biology**, not just disease. Combined with [[10-Summaries/kousi-2022-ad-mosaicism|Kousi/Kellis AD cell-type mosaicism]] and [[10-Summaries/luquette-2025-pta-duplex-mosaicism|Luquette/Walsh PTA+DS]], it triangulates that **brain mosaicism accumulates over the lifespan, with a long tail of hypermutable cases — and the accumulation has plausible cancer-precursor mechanism (clonal hematopoiesis-like expansion + cancer-gene mutations)**.
 
 - **The ASD MEIS-motif finding** is the **direct mosaic-mutation-to-enhancer causal link** that the planned review's mosaicism × epigenome synthesis can cite. The mutations sit in chromatin-active enhancer-like regions (defined by fetal-brain epigenome reference), so the *interpretation* is bulk-epigenome-annotated — but the *measurement* is single-brain mosaic mutations at high-enough VAF to call from bulk WGS. This is exactly the bulk-epigenome-annotation methodology the [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap|synthesis note]] flagged as the field's current default. The review can use this as the prototype "bulk-epigenome-annotated mosaicism" finding and contrast it with the single-cell joint measurements that would be needed to confirm the same locus is in an open-chromatin state *in the cells that carry the mutation*.
 
@@ -62,10 +62,11 @@ The largest brain-mosaicism cohort study to date: 131 human brains (44 neurotypi
 
 [[somatic-mosaicism]] · [[clonal-hematopoiesis]] · [[autism-spectrum-disorder]] · [[mtor-pathway]] · [[developmental-mutation-timing]] · [[transcription-factor-motif]] · [[enhancer-states]] · [[20-Entities/alexej-abyzov]] · [[20-Entities/flora-vaccarino]] · [[20-Entities/christopher-walsh]] · [[20-Entities/peter-park]] · [[20-Entities/joseph-gleeson]] · [[40-Topics/somatic-mosaicism]]
 
-## Related summaries
+## Related
+- [[20-Entities/taejeong-bae]] — first/co-author on the foundational Bae et al. brain mosaicism papers (2018 pregastrulation-timing, 2022 NeuN-sorted neurons). summaries
 
 - [[10-Summaries/bae-2017-pregastrulation-mutations]] — Bae 2018, foundational fetal-brain clonal-expansion paper from same lab.
-- [[10-Summaries/kousi-2022-alzheimer-mosaicism]] — Kousi/Kellis AD-specific cell-type-specific mosaic burden.
+- [[10-Summaries/kousi-2022-ad-mosaicism]] — Kousi/Kellis AD-specific cell-type-specific mosaic burden.
 - [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — Luquette/Walsh SMaHT 102-nucleus PTA + DS.
 - [[10-Summaries/bizzotto-2022-brain-mosaicism-review]] — Bizzotto/Walsh 2022 NRN review.
 - [[10-Summaries/izzo-2024-got-cha]] — GoT-ChA shows the analogous chromatin-priming-before-expression pathway in hematopoiesis; this paper's MEIS-motif finding asks whether a similar mechanism operates in ASD brain.

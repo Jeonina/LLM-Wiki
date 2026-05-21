@@ -11,7 +11,7 @@ journal: "Clinical and Translational Medicine"
 tags: [DNA-methylation, chromatin-accessibility, single-cell, multiomics, LUAD, split-pool, Tn5, GpC-methylation]
 entities:
   - "[[20-Entities/xiaoying-fan]]"
-  - "[[20-Entities/qingmei-shen]]"
+  - "qingmei shen"
 concepts:
   - "[[30-Concepts/splicool-seq]]"
   - "[[30-Concepts/nome-seq]]"

@@ -11,7 +11,7 @@ journal: "Nature Methods"
 tags: [scATAC-seq, topic-modeling, LDA, Aerts-lab, enhancers, transcription-factors, melanoma, hematopoiesis]
 entities:
   - "[[20-Entities/stein-aerts]]"
-  - "[[20-Entities/carmen-bravo-gonzalez-blas]]"
+  - "carmen bravo gonzalez blas"
 concepts:
   - "[[30-Concepts/cistopic]]"
   - "[[30-Concepts/latent-dirichlet-allocation]]"

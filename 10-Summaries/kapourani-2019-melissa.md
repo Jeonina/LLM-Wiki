@@ -29,4 +29,4 @@ Companion to Epiclomal (de Souza 2020) in the §4 methylation-clustering tool fa
 - [[10-Summaries/desouza-2020-epiclomal]]
 - [[10-Summaries/kapourani-2021-scmet]]
 - [[10-Summaries/angermueller-2017-genomebiol]]
-- [[30-Concepts/methylation-imputation]]
+- methylation imputation

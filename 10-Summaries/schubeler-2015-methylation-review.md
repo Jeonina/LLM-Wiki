@@ -27,6 +27,6 @@ Canonical conceptual reference for the methylation layer of the locus state. Anc
 ## Related
 
 - [[30-Concepts/dna-methylation]]
-- [[20-Entities/dirk-schubeler]]
+- dirk schubeler
 - [[10-Summaries/smith-2013-methylation-development]]
 - [[10-Summaries/argelaguet-2019-nature]]

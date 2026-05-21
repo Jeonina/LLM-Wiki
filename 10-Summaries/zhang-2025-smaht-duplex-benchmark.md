@@ -14,7 +14,7 @@ entities:
   - "[[20-Entities/diane-d-shao]]"
   - "[[20-Entities/christopher-walsh]]"
   - "[[20-Entities/gilad-evrony]]"
-  - "[[20-Entities/chenghang-zong]]"
+  - "chenghang zong"
   - "[[20-Entities/smaht-network]]"
 concepts:
   - "[[30-Concepts/duplex-sequencing]]"

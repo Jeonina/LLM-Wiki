@@ -29,4 +29,4 @@ nanoNOMe sits in the long-read joint-assay family alongside SMAC-seq (Shipony 20
 - [[10-Summaries/shipony-2020-smac]]
 - [[10-Summaries/andrewb-2020-science]]
 - [[10-Summaries/clark-2018-scnmt-seq]]
-- [[30-Concepts/joint-methylome-assays]]
+- joint methylome assays

@@ -28,9 +28,9 @@ The current state-of-the-art demonstration that two epigenetic modalities (methy
 
 ## Related
 
-- [[30-Concepts/snmC-seq-family]]
-- [[30-Concepts/sn-m3C-seq]]
+- snmC seq family
+- sn m3C seq
 - [[30-Concepts/joint-single-cell-multi-omics]]
-- [[40-Topics/brain-atlases]]
+- brain atlases
 - [[10-Summaries/luo-2018-snmc-seq2]]
 - [[20-Entities/joseph-ecker]]

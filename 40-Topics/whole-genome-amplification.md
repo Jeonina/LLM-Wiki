@@ -63,3 +63,8 @@ _None yet — natural target: "Choosing a scWGA method: tradeoffs and applicatio
 - When to use scWGA-free approaches (DNTR-seq, duplex sequencing) — application-dependent, no consensus heuristic.
 - Standardization of QC metrics and definitions (especially ADO) across methods — flagged in [[10-Summaries/gawad-2016-scgenome-review]], still partly unresolved.
 - Coverage vs cell throughput operating points — DLP+ scales to >10⁴ cells very low coverage; PTA peaks at 384 cells at ~95%; how to choose for a given biology.
+
+## Linked summaries (lint pass 2026-05-21)
+
+- [[10-Summaries/debourcy-2014-plosone]] — de Bourcy 2014 — Quantitative comparison of single-cell WGA methods.
+

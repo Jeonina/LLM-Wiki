@@ -47,7 +47,7 @@ Svensson, Natarajan, Ly et al. (Teichmann lab, EMBL-EBI / Wellcome Sanger) perfo
 - [[10-Summaries/macosko-2015-drop-seq]] — one of the protocols compared (Drop-seq sits in the high-throughput / mid-sensitivity quadrant)
 - [[30-Concepts/umi-molecular-barcoding]] — Svensson's sublinear-UMI finding refines the UMI concept page
 - [[10-Summaries/gur-2025-scatac-vs-bulk]] — analogous bulk-vs-single-cell benchmark for ATAC
-- [[20-Entities/sarah-teichmann]] · [[20-Entities/valentine-svensson]]
+- sarah teichmann · valentine svensson
 
 ## Citation
 

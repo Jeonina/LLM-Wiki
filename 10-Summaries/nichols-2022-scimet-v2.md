@@ -22,7 +22,7 @@ Operational complement to snmC-seq family (Luo 2018, Liu 2023) — sciMETv2 uses
 - [[10-Summaries/liu-2023-mouse-brain-methylome-3d]]
 - [[10-Summaries/cusanovich-2015-sciatac]]
 - [[10-Summaries/clark-2018-scnmt-seq]]
-- [[20-Entities/andrew-adey]]
+- andrew adey
 
 ---
 **Source:** [DOI](https://doi.org/10.1038/s41467-022-35374-3) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/36494343/)

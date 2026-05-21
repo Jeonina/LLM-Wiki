@@ -11,7 +11,7 @@ journal: "Briefings in Bioinformatics"
 tags: [review, 3D-genome, single-cell-HiC, TADs, compartments, chromatin-loops, cell-cycle]
 entities:
   - "[[20-Entities/fuying-dao]]"
-  - "[[20-Entities/hao-lin]]"
+  - "hao lin"
 concepts:
   - "[[30-Concepts/3d-genome]]"
   - "[[30-Concepts/single-cell-hi-c]]"

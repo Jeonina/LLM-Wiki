@@ -11,7 +11,7 @@ journal: "Nature Methods"
 tags: [single-cell, multi-omics, histone-modifications, DNA-methylation, TAPS, sortChIC, FUCCI, intestine]
 entities:
   - "[[20-Entities/alexander-van-oudenaarden]]"
-  - "[[20-Entities/christoph-geisenberger]]"
+  - "christoph geisenberger"
   - "[[20-Entities/chun-xiao-song]]"
 concepts:
   - "[[30-Concepts/scepi2-seq]]"

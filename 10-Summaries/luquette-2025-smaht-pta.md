@@ -20,8 +20,8 @@ The flagship 2025 SMaHT (Somatic Mosaicism across Human Tissues) consortium demo
 **Source:** [Open paper](https://www.biorxiv.org/content/10.1101/2025.10.31.685648v1)
 ## Related
 
-- [[10-Summaries/gonzalez-2021-pta]]
+- gonzalez 2021 pta
 - [[10-Summaries/kriz-2025-duplex-multiome]]
-- [[10-Summaries/coorens-2021-lcm-wgs]]
+- coorens 2021 lcm wgs
 - [[10-Summaries/garrison-2023-bsmn-data]]
 - [[20-Entities/christopher-walsh]]

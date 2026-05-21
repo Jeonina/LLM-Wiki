@@ -13,35 +13,35 @@ sources: [
   "[[10-Summaries/nandi-2025-udseq]]",
   "[[10-Summaries/zhang-2025-smaht-duplex-benchmark]]",
   "[[10-Summaries/luquette-2025-pta-duplex-mosaicism]]",
-  "[[10-Summaries/andrea-2025-biorxiv]]",
-  "[[10-Summaries/diane-2025-naturereviewsgenetics]]",
+  "[[10-Summaries/kriz-2025-duplex-multiome]]",
+  "[[10-Summaries/shao-2025-scDNA-mosaicism-review]]",
   "[[10-Summaries/gonzalez-pena-2021-pnas]]",
-  "[[10-Summaries/gilad-2021-annualreviewofgenomicsandhumangenetics]]"
+  "[[10-Summaries/evrony-2021-scDNA-applications-review]]"
 ]
 ---
 
 # Single-cell duplex sequencing — the methodological frontier closes
 
-> For ~13 years (2012-2025), single-cell DNA sequencing and duplex sequencing were *incompatible* — duplex requires strand identity preserved through library prep, but scWGA chemistries (MDA, MALBAC, PTA) destroy it ([[10-Summaries/diane-2025-naturereviewsgenetics]]; [[10-Summaries/gilad-2021-annualreviewofgenomicsandhumangenetics]]). The field could measure either *which mutations are present in bulk DNA at single-molecule fidelity* ([[10-Summaries/schmitt-2012-pnas]]; [[10-Summaries/kennedy-2014-duplex-protocol]]) or *which cells carry which mutations at single-cell resolution* ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]) — but not both. **2025 closed the gap from two directions**: PTA + duplex validation makes per-cell mutation calls trustworthy ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]), and Duplex-Multiome integrates duplex consensus into the 10x Multiome library, delivering point mutations + chromatin + RNA at single-nucleus resolution across >51,000 nuclei ([[10-Summaries/andrea-2025-biorxiv]]).
+> For ~13 years (2012-2025), single-cell DNA sequencing and duplex sequencing were *incompatible* — duplex requires strand identity preserved through library prep, but scWGA chemistries (MDA, MALBAC, PTA) destroy it ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]; [[10-Summaries/evrony-2021-scDNA-applications-review]]). The field could measure either *which mutations are present in bulk DNA at single-molecule fidelity* ([[10-Summaries/schmitt-2012-pnas]]; [[10-Summaries/kennedy-2014-duplex-protocol]]) or *which cells carry which mutations at single-cell resolution* ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]) — but not both. **2025 closed the gap from two directions**: PTA + duplex validation makes per-cell mutation calls trustworthy ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]), and Duplex-Multiome integrates duplex consensus into the 10x Multiome library, delivering point mutations + chromatin + RNA at single-nucleus resolution across >51,000 nuclei ([[10-Summaries/kriz-2025-duplex-multiome]]).
 
 ## The incompatibility
 
-**Duplex sequencing** ([[10-Summaries/schmitt-2012-pnas]]) achieves error rates ≤10⁻⁸ per base by sequencing both strands of each DNA fragment independently and requiring agreement before calling a variant ([[10-Summaries/kennedy-2014-duplex-protocol]]). This relies on tagging both Watson and Crick strands of each molecule with complementary UMIs preserved through library construction ([[10-Summaries/diane-2025-naturereviewsgenetics]]).
+**Duplex sequencing** ([[10-Summaries/schmitt-2012-pnas]]) achieves error rates ≤10⁻⁸ per base by sequencing both strands of each DNA fragment independently and requiring agreement before calling a variant ([[10-Summaries/kennedy-2014-duplex-protocol]]). This relies on tagging both Watson and Crick strands of each molecule with complementary UMIs preserved through library construction ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
-**scWGA chemistries** (MDA, MALBAC, PicoPLEX, PTA) amplify femtogram-scale single-cell DNA into nanogram quantities through random-priming or transposon-based mechanisms that produce daughter strands without preserved parent-strand identity ([[10-Summaries/gawad-2016-scgenome-review]]; [[10-Summaries/diane-2025-naturereviewsgenetics]]). Once the original duplex is destroyed by amplification, no downstream protocol can recover it.
+**scWGA chemistries** (MDA, MALBAC, PicoPLEX, PTA) amplify femtogram-scale single-cell DNA into nanogram quantities through random-priming or transposon-based mechanisms that produce daughter strands without preserved parent-strand identity ([[10-Summaries/gawad-2016-scgenome-review]]; [[10-Summaries/shao-2025-scDNA-mosaicism-review]]). Once the original duplex is destroyed by amplification, no downstream protocol can recover it.
 
-The collision is fundamental: detecting a true variant at low VAF requires both strands of the *original* molecule to agree ([[10-Summaries/schmitt-2012-pnas]]); single-cell genome coverage requires amplification ([[10-Summaries/gawad-2016-scgenome-review]]). For ~13 years this meant somatic-mosaicism inference combined bulk-DNA duplex measurements (mutation rates, signatures) with single-cell genotype calls (clonality, lineage) as separate experimental modalities ([[10-Summaries/gilad-2021-annualreviewofgenomicsandhumangenetics]]).
+The collision is fundamental: detecting a true variant at low VAF requires both strands of the *original* molecule to agree ([[10-Summaries/schmitt-2012-pnas]]); single-cell genome coverage requires amplification ([[10-Summaries/gawad-2016-scgenome-review]]). For ~13 years this meant somatic-mosaicism inference combined bulk-DNA duplex measurements (mutation rates, signatures) with single-cell genotype calls (clonality, lineage) as separate experimental modalities ([[10-Summaries/evrony-2021-scDNA-applications-review]]).
 
 ## What duplex sequencing matured into (2012–2025)
 
-Four implementation strategies emerged, each addressing a different limitation ([[10-Summaries/diane-2025-naturereviewsgenetics]] Fig 3a):
+Four implementation strategies emerged, each addressing a different limitation ([[10-Summaries/shao-2025-scDNA-mosaicism-review]] Fig 3a):
 
 | Strategy | Example | Trade-off addressed |
 |---|---|---|
 | Y-adaptor based | NanoSeq ([[10-Summaries/abascal-2021-nanoseq]]) | Library complexity, scalable to nuclear genome |
-| Tn5-based | META-CS ([[10-Summaries/diane-2025-naturereviewsgenetics]]) | Only single-cell-compatible variant; preserves strand orientation via Tn5 insertion |
+| Tn5-based | META-CS ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]) | Only single-cell-compatible variant; preserves strand orientation via Tn5 insertion |
 | Quadruplex adaptor | CODEC ([[10-Summaries/bae-2023-codec]]) | Both strands in same read; no bottleneck dilution |
-| Circularized | HiDEF-seq, SMM-seq ([[10-Summaries/diane-2025-naturereviewsgenetics]]) | PacBio/rolling-circle for ~10⁻¹⁶ error rate |
+| Circularized | HiDEF-seq, SMM-seq ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]) | PacBio/rolling-circle for ~10⁻¹⁶ error rate |
 
 Lower-input chemistries followed: UDSeq achieves ~2.5×10⁻⁹/bp from 100 pg ([[10-Summaries/nandi-2025-udseq]]). The **SMaHT consortium duplex benchmark** ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]) cross-compared six methods (CODEC, CompDuplex-seq, HiDEF-seq, NanoSeq, ppmSeq, VISTA-seq) on shared cell-line and tissue samples — methods produced concordant mutation rates and signatures, but disagree on absolute mutation spectra at extreme low VAF ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).
 
@@ -49,7 +49,7 @@ All of these remained **bulk** duplex methods. The strand-identity prerequisite 
 
 ## What single-cell DNA sequencing matured into (2011–2025)
 
-scDNA-seq's parallel track addressed amplification, not strand identity. **PTA** (Primary Template-Directed Amplification, [[10-Summaries/gonzalez-pena-2021-pnas]]) achieves the most uniform single-cell coverage to date — typically ~95% genome coverage per cell with reduced allelic dropout vs MDA ([[10-Summaries/gonzalez-pena-2021-pnas]]; [[10-Summaries/diane-2025-naturereviewsgenetics]]). Combined with sensitive variant callers, PTA enables direct per-cell sSNV calling at low VAFs (synthesis based on [[10-Summaries/gonzalez-pena-2021-pnas]] + [[10-Summaries/luquette-2025-pta-duplex-mosaicism]]).
+scDNA-seq's parallel track addressed amplification, not strand identity. **PTA** (Primary Template-Directed Amplification, [[10-Summaries/gonzalez-pena-2021-pnas]]) achieves the most uniform single-cell coverage to date — typically ~95% genome coverage per cell with reduced allelic dropout vs MDA ([[10-Summaries/gonzalez-pena-2021-pnas]]; [[10-Summaries/shao-2025-scDNA-mosaicism-review]]). Combined with sensitive variant callers, PTA enables direct per-cell sSNV calling at low VAFs (synthesis based on [[10-Summaries/gonzalez-pena-2021-pnas]] + [[10-Summaries/luquette-2025-pta-duplex-mosaicism]]).
 
 PTA is the substrate for the most ambitious recent single-cell mosaicism studies: the SMaHT consortium's flagship 102-nuclei PTA application across lung and colon of a 74-year-old donor, validated via duplex sequencing on the same individual ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]). Validation at this scale was previously infeasible.
 
@@ -61,13 +61,13 @@ PTA is the substrate for the most ambitious recent single-cell mosaicism studies
 
 ### Path B: Duplex-Multiome — true same-molecule single-cell duplex
 
-[[10-Summaries/andrea-2025-biorxiv|Kriz 2025 (Duplex-Multiome)]] solves the incompatibility differently: by integrating duplex consensus barcoding **into the 10x Multiome snATAC arm itself**, both strands of each DNA molecule get independently sequenced before any amplification destroys identity. Three layers emerge from a single library prep per nucleus:
+[[10-Summaries/kriz-2025-duplex-multiome|Kriz 2025 (Duplex-Multiome)]] solves the incompatibility differently: by integrating duplex consensus barcoding **into the 10x Multiome snATAC arm itself**, both strands of each DNA molecule get independently sequenced before any amplification destroys identity. Three layers emerge from a single library prep per nucleus:
 
 1. **Somatic SNVs at duplex-grade accuracy** — >10,000-fold sequencing error reduction.
 2. **Single-nucleus ATAC-seq** — chromatin accessibility per cell.
 3. **Single-nucleus RNA-seq** — transcriptome per cell.
 
-Cell-line mixing validation: at 98%/2% mixture, the assay identifies sSNVs present in 2% of cells with **92% precision** ([[10-Summaries/andrea-2025-biorxiv]]). Applied to >51,400 nuclei from postmortem human brain, the platform recovers cell-type-specific somatic mutation rates and signatures across major brain cell types ([[10-Summaries/andrea-2025-biorxiv]]).
+Cell-line mixing validation: at 98%/2% mixture, the assay identifies sSNVs present in 2% of cells with **92% precision** ([[10-Summaries/kriz-2025-duplex-multiome]]). Applied to >51,400 nuclei from postmortem human brain, the platform recovers cell-type-specific somatic mutation rates and signatures across major brain cell types ([[10-Summaries/kriz-2025-duplex-multiome]]).
 
 **This is the assay that the [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap|wiki's central synthesis note]] previously claimed did not yet exist.** As of June 2025 (bioRxiv preprint), it does.
 
@@ -75,7 +75,7 @@ Cell-line mixing validation: at 98%/2% mixture, the assay identifies sSNVs prese
 
 The PTA+duplex pairing and Duplex-Multiome solve overlapping but distinct problems:
 
-| Property | PTA + duplex validation ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]) | Duplex-Multiome ([[10-Summaries/andrea-2025-biorxiv]]) |
+| Property | PTA + duplex validation ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]) | Duplex-Multiome ([[10-Summaries/kriz-2025-duplex-multiome]]) |
 |---|---|---|
 | Per-cell duplex calls? | No — duplex on bulk only | Yes — duplex on same molecule per nucleus |
 | Genome coverage per cell | ~95% (PTA) | Multiome-scale — sparser than PTA |
@@ -88,15 +88,15 @@ PTA + duplex is the **high-depth, low-throughput, single-modality** corner; Dupl
 
 ## What this enables that wasn't possible before
 
-- **Cell-type-specific somatic mutation rates** measured directly per cell, not inferred from cohort modeling ([[10-Summaries/andrea-2025-biorxiv]]).
+- **Cell-type-specific somatic mutation rates** measured directly per cell, not inferred from cohort modeling ([[10-Summaries/kriz-2025-duplex-multiome]]).
 - **Mutational signatures per cell type** — confirms that signature decomposition can be done at single-cell resolution, not just bulk.
-- **Linking somatic SNVs to chromatin and transcriptional consequences in the same cell** — for the first time, an experiment can ask "does this somatic mutation, in this cell type, perturb local accessibility or expression?" ([[10-Summaries/andrea-2025-biorxiv]]).
+- **Linking somatic SNVs to chromatin and transcriptional consequences in the same cell** — for the first time, an experiment can ask "does this somatic mutation, in this cell type, perturb local accessibility or expression?" ([[10-Summaries/kriz-2025-duplex-multiome]]).
 - **PTA + duplex validation in non-brain tissue** — opens lung, colon, and other organ systems to scDNA-seq with confidence ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]).
 - **Body-wide ancestry from a single individual** — shared embryonic mutations identifiable from 102 cells across two organs in one donor ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]).
 
 ## What remains open
 
-- **Duplex-Multiome generalization beyond brain** — Kriz 2025 only applies it to one tissue ([[10-Summaries/andrea-2025-biorxiv]]). Will the chemistry work on FFPE, frozen blood, sorted populations?
+- **Duplex-Multiome generalization beyond brain** — Kriz 2025 only applies it to one tissue ([[10-Summaries/kriz-2025-duplex-multiome]]). Will the chemistry work on FFPE, frozen blood, sorted populations?
 - **Cross-method benchmarking** — the SMaHT duplex benchmark covered six bulk methods ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]); a single-cell duplex benchmark across Duplex-Multiome, PTA+duplex, and META-CS is overdue.
 - **Mutation spectra at extreme low VAF** — even bulk duplex methods disagree below ~0.1% VAF ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]). Per-cell duplex sensitivity at clonal frequencies <1% needs characterization.
 - **The methylation layer is still missing from single-cell duplex** — Duplex-Multiome reads accessibility + RNA + mutations. Methylation would close the [[50-Notes/regulatory-layers-overview|four-layer]] regulatory picture.

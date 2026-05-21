@@ -9,7 +9,7 @@ updated: 2026-05-19
 
 # Lineage tracing with somatic mutations
 
-> Using naturally-accumulating somatic mutations as endogenous lineage barcodes to reconstruct cell phylogenies in human tissue without engineered markers ([[10-Summaries/coorens-2021-nature]]; [[10-Summaries/lee-six-2018-nature]]).
+> Using naturally-accumulating somatic mutations as endogenous lineage barcodes to reconstruct cell phylogenies in human tissue without engineered markers ([[10-Summaries/coorens-2021-nature]]; [[10-Summaries/lee-six-2018-hsc-dynamics]]).
 
 ## Definition
 

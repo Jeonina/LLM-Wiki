@@ -10,7 +10,7 @@ updated: 2026-05-11
 
 # Winston Timp
 
-> Johns Hopkins biomedical engineer; nanopore methylation pioneer and co-senior author of [[10-Summaries/yilei-2025-naturereviewsgenetics]]. Has two patents licensed to Oxford Nanopore Technologies.
+> Johns Hopkins biomedical engineer; nanopore methylation pioneer and co-senior author of [[10-Summaries/fu-2025-longread-methylation]]. Has two patents licensed to Oxford Nanopore Technologies.
 
 ## Profile
 
@@ -18,11 +18,11 @@ Department of Biomedical Engineering, Johns Hopkins University. Patents 8,748,09
 
 ## Mentions
 
-- **2026-05-11** — [[10-Summaries/yilei-2025-naturereviewsgenetics]]: co-senior author of the long-read methylation review.
+- **2026-05-11** — [[10-Summaries/fu-2025-longread-methylation]]: co-senior author of the long-read methylation review.
 
 ## Positions and claims
 
-- Holds that **nanopore current changes can read base modifications directly** without prior conversion or enrichment ([[10-Summaries/yilei-2025-naturereviewsgenetics]]).
+- Holds that **nanopore current changes can read base modifications directly** without prior conversion or enrichment ([[10-Summaries/fu-2025-longread-methylation]]).
 
 ## Related
 

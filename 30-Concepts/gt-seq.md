@@ -13,7 +13,7 @@ updated: 2026-05-11
 
 ## Definition
 
-In G&T-seq ([[10-Summaries/katy-2023-naturereviewsgenetics]]):
+In G&T-seq ([[10-Summaries/vandereyken-2023-scmultiomics-review]]):
 
 1. Single cell lysed in a multiwell plate.
 2. Oligo-dT magnetic beads capture polyA RNA.
@@ -31,7 +31,7 @@ Sibling methods using similar physical-separation principles: scONE-seq, scDNA +
 
 ## Variants and refinements
 
-- **SIDR-seq, DNTR-seq** — nuclear-cytosolic partitioning variants ([[10-Summaries/katy-2023-naturereviewsgenetics]]).
+- **SIDR-seq, DNTR-seq** — nuclear-cytosolic partitioning variants ([[10-Summaries/vandereyken-2023-scmultiomics-review]]).
 - **DNTR-seq** — uses direct Tn5 tagmentation of nuclear DNA instead of WGA, sidestepping WGA artifacts at the cost of lower coverage breadth.
 - **DR-seq** — pre-amplification then split.
 

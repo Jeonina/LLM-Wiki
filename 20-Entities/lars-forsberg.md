@@ -18,11 +18,11 @@ Department of Immunology, Genetics and Pathology, Uppsala University; Science fo
 
 ## Mentions
 
-- **2026-05-11** — [[10-Summaries/lars-2017-naturereviewsgenetics]]: first author of the mosaicism review.
+- **2026-05-11** — [[10-Summaries/forsberg-2017-mosaicism-review]]: first author of the mosaicism review.
 
 ## Positions and claims
 
-- Holds that **every human is a complex genetic mosaic** — no two somatic cells likely share identical genomes ([[10-Summaries/lars-2017-naturereviewsgenetics]]).
+- Holds that **every human is a complex genetic mosaic** — no two somatic cells likely share identical genomes ([[10-Summaries/forsberg-2017-mosaicism-review]]).
 - Holds that **structural variants leave the largest mosaic genomic footprint** even though point mutations are more numerous.
 
 ## Related

@@ -1,50 +1,56 @@
 ---
 type: summary
-title: "Gaiti et al. 2019 — Epigenetic evolution and lineage histories of chronic lymphocytic leukaemia"
+title: "Gaiti 2019 — Epigenetic evolution and lineage histories of chronic lymphocytic leukaemia"
 source: "[[00-Sources/papers/Epigenetic evolution and lineage histories of chronic lymphocytic leukaemia]]"
-source_kind: paper
-author: "Federico Gaiti, Ronan Chaligne, Hongcang Gu, Ryan M. Brand, Steven Kothen-Hill, Rafael C. Schulman, Kirill Grigorev, Davide Risso, Kyu-Tae Kim, Alessandro Pastore, ... Dan A. Landau (corresponding)"
-published: 2019
-ingested: 2026-05-18
-ingest_depth: abstract+intro
-doi: "10.1038/s41586-019-1198-z"
-journal: "Nature"
-tags: [CLL, chronic-lymphocytic-leukaemia, epigenetic-evolution, lineage-tracing, methylation, Landau-lab, single-cell-methylome]
-entities: []
-concepts:
-  - "[[30-Concepts/clonal-hematopoiesis]]"
-  - "[[30-Concepts/dna-methylation]]"
-topics:
-  - "[[40-Topics/hematopoietic-malignancies]]"
-  - "[[40-Topics/dna-methylation]]"
+aliases: [Gaiti 2019, CLL epimutation, Federico 2019, Landau methylome lineage]
+tags: [single-cell-methylation, epimutation, lineage-tracing, CLL, multi-omics, foundational]
+created: 2026-05-12
+updated: 2026-05-12
 ---
 
 **Citation:** Gaiti et al. (2019) — *Epigenetic evolution and lineage histories of chronic lymphocytic leukaemia* — *Nature*. [DOI](https://doi.org/10.1038/s41586-019-1198-z)
 
-# Gaiti et al. 2019 — CLL epigenetic evolution
+# Gaiti et al. 2019 — Epimutation as a molecular clock
 
-> Thesis: chronic lymphocytic leukaemia (CLL) evolves not only through genetic drivers but also through **stochastic DNA methylation changes that act as natural lineage barcodes**. Single-cell methylation profiling reveals that **methylation disorder accumulates clonally** and can be used to reconstruct the lineage history of CLL clones — including the timing of clinically relevant subclonal events.
+> Federico Gaiti, Ronan Chaligne, Hongcang Gu, Ryan M. Brand, Steven Kothen-Hill, Rafael C. Schulman, Kirill Grigorev, Davide Risso, Kyu-Tae Kim, Alessandro Pastore, Kevin Y. Huang, Alicia Alonso, Caroline Sheridan, Nathaniel D. Omans, Evan Biederstedt, Kendell Clement, Lili Wang, Joshua A. Felsenfeld, Erica B. Bhavsar, Martin J. Aryee, John N. Allan, Richard Furman, Andreas Gnirke, Catherine J. Wu, Alexander Meissner\*, **Dan A. Landau\***. *Nature* **569**, 576–580 (23 May 2019). DOI: 10.1038/s41586-019-1198-z.
 
-## Key claims (abstract + intro)
+## Thesis
 
-- **Single-cell methylome of CLL** reveals widespread cell-to-cell heterogeneity in methylation patterns.
-- **Methylation disorder is clonally heritable** — propagates through cell division, serving as a passive lineage barcode complementary to genetic mutations.
-- Lineage reconstruction from methylation data identifies subclones and **estimates their evolutionary timing**.
-- Bridges the genetic and epigenetic clonal-evolution axes: CLL clones can be tracked by *both* mutations and methylation, often with concordant phylogenies.
+**Single-cell DNA methylation (epimutation) rate serves as a molecular clock** for reconstructing cell lineage histories at high resolution. Multiplexed scRRBS on 2,652 cells (831 normal B cells + 1,821 CLL cells from 12 patients) shows CLL has **consistently increased epimutation rate with low cell-to-cell variability** — indicating shared replicative history from a common malignant founder. The methylation-based lineage tree shape (earlier branching, faster drift) is consistent with rapid post-malignant-transformation expansion. **Joint scRRBS + scRNA-seq + genotype** integration shows that SF3B1-mutated subclones segregate into distinct methylation-defined clades.
 
-## Why this matters
+## Method
 
-Foundational example of **epi-mutation-based lineage tracing in human cancer**. Directly motivates downstream methylation-lineage methods (EPI-Clone Scherer 2025, MethylTree Chen 2025) and the broader "methylation as memory" framing. Anchors the CLL/hematological-malignancy axis of the wiki.
+1. Multiplexed scRRBS protocol — pooled barcoded single-cell libraries.
+2. 18 samples: 3 healthy donor B-cell populations (NBC + intMBC + hiMBC + B), 12 CLL patients (7 M-CLL IGHV-mutated, 5 U-CLL unmutated).
+3. **Epimutation rate** = proportion of discordant reads (PDR) per CpG per cell — captures cell-to-cell methylation variation.
+4. **Four-gamete test** at single-CpG resolution to identify low-epimutation CpGs (likely under active regulatory protection).
+5. Joint single-cell DNA methylation + RNA-seq (separate aliquots from same cell, via G&T-seq-style separation) integration on 4 patients.
+6. **Maximum-likelihood lineage tree** inferred from methylation-based distances.
 
-## Note on ingest depth
+## Key claims
 
-Abstract + intro only; full PDF re-ingest will deepen the methylation-disorder quantification and phylogenetic reconstruction methodology.
+- **CLL has higher PDR (~0.28) than normal B cells (~0.20)**, P = 0.0003. Cell-to-cell variability in PDR is *lower* in CLL than normal B → consistent with shared clonal origin.
+- Low-epimutation CpGs are enriched at TF binding motifs (SP1, SP2, KLF5, HINFP, NFKB1, MYBL1, NFATC1, FOXC1) → preserved methylation under regulatory selection.
+- **Higher epimutation rate ↔ higher transcriptional entropy** in CLL: integrative scDNAme + scRNAseq shows the most epimutation-prone cells also have most expression heterogeneity.
+- **Methylation-based lineage trees** of CLL show **earlier branching + rapid drift** vs normal B cells; max tree depth in CLL ~3× normal; Robinson-Foulds distance and patristic distance both elevated.
+- **SF3B1-mutated subclones in CLL12** segregate into a distinct methylation clade with estimated emergence at 2,180 ± 219 days (~6 years) before sampling — clonal-evolution timing from methylation alone.
+- After ibrutinib treatment, lymphocytosis-displaced cells are preferentially expelled from lymph nodes — methylation lineages identify the displaced subsets.
+
+## Surprising / load-bearing for the review
+
+- **The most explicit demonstration of epigenetic lineage tracing in human disease.** For §4.5 (Lineage Reconstruction), this is the methylation-clock anchor alongside [[mitochondrial-lineage-tracing|mtDNA lineage]] and [[lineage-tracing|CRISPR scar lineage]].
+- **Landau-lab provenance**: this paper is from the same group as [[got|GoT]] (2019) and [[got-cha|GoT-ChA]] (2024). Together they establish the Landau lab's "Personalized Cancer Lineage" program — methylation lineage + genotype lineage + chromatin lineage. The review's §4.6 joint-assay coverage benefits from grouping these three Landau papers together.
+- The **single-cell SF3B1 subclone timing finding** (~6 years of pre-clinical evolution) is consequential clinically: CLL is genetically silent for years while accumulating methylation drift.
+
+## Entities / concepts touched
+
+[[dna-methylation]] · [[scbs-seq]] · [[lineage-tracing]] · [[clonal-hematopoiesis]] · [[20-Entities/dan-a-landau]] · [[20-Entities/landau-lab]] · [[20-Entities/alexander-meissner]] · [[40-Topics/dna-methylation]] · [[40-Topics/hematopoietic-malignancies]]
+
+## Related summaries
+
+- [[nam-2019-got]] — GoT, same Landau lab, contemporaneous methods development.
+- [[izzo-2024-got-cha]] — GoT-ChA, same Landau lab, joint genotype + chromatin.
+- [[guo-2013-scrrbs]] — scRRBS predecessor.
 
 ---
-**Source:** [DOI](https://doi.org/10.1038/s41586-019-1198-z) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/31118512/)
-
-## Related
-
-- [[30-Concepts/clonal-hematopoiesis]] · [[30-Concepts/dna-methylation]] · [[30-Concepts/epigenetic-memory]] · [[30-Concepts/lineage-tracing]]
-- [[10-Summaries/scherer-2025-epi-clone]] · [[10-Summaries/chen-2025-methyltree]]
-- [[40-Topics/hematopoietic-malignancies]] · [[40-Topics/dna-methylation]]
+**Source:** [DOI](https://doi.org/10.1038/s41586-019-1198-z) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/31092926/)

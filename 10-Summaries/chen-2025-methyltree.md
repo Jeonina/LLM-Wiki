@@ -25,5 +25,5 @@ A second methylation-based lineage-tracing approach (alongside EPI-Clone / Scher
 
 - [[10-Summaries/scherer-2025-nature]]
 - [[10-Summaries/coorens-2021-nature]]
-- [[10-Summaries/lee-six-2018-nature]]
+- [[10-Summaries/lee-six-2018-hsc-dynamics]]
 - [[30-Concepts/methylation-clones-epimutation]]

@@ -9,7 +9,7 @@ updated: 2026-05-19
 
 # Histone modifications
 
-> Post-translational modifications of histone tails (methylation, acetylation, ubiquitylation, phosphorylation) demarcate functional chromatin states ([[10-Summaries/sandy-2019-naturereviewsgenetics]]) — active promoters (H3K4me3), enhancers (H3K4me1/H3K27ac), gene bodies (H3K36me3), facultative heterochromatin (H3K27me3), constitutive heterochromatin (H3K9me3) ([[10-Summaries/sandy-2019-naturereviewsgenetics]]; [[10-Summaries/van-steensel-2017-lads-review]] for H3K9me3/H3K27me3 anchoring roles). Single-cell profiling of these marks emerged around 2019 with scChIC-seq ([[10-Summaries/ku-2019-scchic-seq]]) and scCUT&Tag ([[10-Summaries/bartosovic-2021-sccut-tag]]), and has rapidly expanded into multi-mark / multi-modal readouts (scChIX, scEpi², sciCUT&Tag/MulTI-Tag, 6-base-CUT&Tag).
+> Post-translational modifications of histone tails (methylation, acetylation, ubiquitylation, phosphorylation) demarcate functional chromatin states ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]) — active promoters (H3K4me3), enhancers (H3K4me1/H3K27ac), gene bodies (H3K36me3), facultative heterochromatin (H3K27me3), constitutive heterochromatin (H3K9me3) ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]; [[10-Summaries/van-steensel-2017-lads-review]] for H3K9me3/H3K27me3 anchoring roles). Single-cell profiling of these marks emerged around 2019 with scChIC-seq ([[10-Summaries/ku-2019-scchic-seq]]) and scCUT&Tag ([[10-Summaries/bartosovic-2021-sccut-tag]]), and has rapidly expanded into multi-mark / multi-modal readouts (scChIX, scEpi², sciCUT&Tag/MulTI-Tag, 6-base-CUT&Tag).
 
 ## Core concepts
 
@@ -48,7 +48,7 @@ updated: 2026-05-19
 - [[10-Summaries/yin-2019-deephistone]] — Yin/Jiang 2019. CNN predicts 7 marks from DNA + DNase-seq.
 
 ### Bulk reference
-- [[10-Summaries/sandy-2019-naturereviewsgenetics]] — Bannister & Kouzarides-style canonical histone-marks review.
+- [[10-Summaries/klemm-2019-chromatin-accessibility-review]] — Bannister & Kouzarides-style canonical histone-marks review.
 
 ## Synthesized notes
 

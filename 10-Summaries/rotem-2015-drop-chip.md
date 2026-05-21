@@ -1,26 +1,31 @@
 ---
 type: summary
-title: "Rotem 2015 — Drop-ChIP: single-cell ChIP-seq reveals chromatin-state subpopulations"
-aliases: ["Rotem 2015 Drop-ChIP", "Drop-ChIP", "scChIP-seq"]
-tags: [Drop-ChIP, scChIP-seq, microfluidics, DBM, H3K4me3, H3K4me2, founding-method, Bernstein-lab, Weitz-lab]
+title: "Rotem 2015 — Single-cell ChIP-seq reveals cell subpopulations defined by chromatin state (Drop-ChIP)"
+source: "[[00-Sources/papers/Single-cell ChIP-seq reveals cell subpopulations defined by chromatin state]]"
+aliases: ["Drop-ChIP", "Rotem 2015", "scChIP-seq founding paper"]
+tags: [scChIP-seq, Drop-ChIP, histone-modifications, microfluidics, Bernstein-lab]
 created: 2026-05-13
 updated: 2026-05-13
-sources: ["Assaf_2015_NatureBiotechnology.pdf"]
 ---
 
-**Citation:** Rotem et al. (2015) — *Drop-ChIP: single-cell ChIP-seq reveals chromatin-state subpopulations* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/nbt.3383)
+**Citation:** Rotem et al. (2015) — *Single-cell ChIP-seq reveals cell subpopulations defined by chromatin state (Drop-ChIP)* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/nbt.3383)
 
-Rotem, Ram, Shoresh et al. (Bernstein, Weitz, Goren labs; Broad/Harvard) developed **Drop-ChIP**, the founding single-cell ChIP-seq method. The platform uses a drop-based microfluidics (DBM) device to encapsulate single cells in ~50-μm aqueous drops with weak detergent + MNase, then merges each chromatin drop with a barcode drop containing a unique oligonucleotide adaptor (library of 1,152 barcodes). Barcoded chromatin from many cells is pooled before bulk immunoprecipitation, dramatically lowering input requirements per cell. Profiled H3K4me3 and H3K4me2 in mixed populations of ES cells, MEFs, and hematopoietic progenitors at ~1,000 unique reads per cell. Despite sparsity, the method identified chromatin-state subpopulations within ES cells corresponding to pluripotency and differentiation priming — features not visible in matched scRNA-seq.
+Rotem, Ram, Shoresh and colleagues (Bernstein / Weitz labs) introduced Drop-ChIP, the founding single-cell ChIP-seq method, combining drop-based microfluidics with DNA barcoding to acquire single-cell histone-modification profiles in mixed populations.
+
+The chemistry: single cells are encapsulated in $\sim$50-µm droplets with lysis buffer and micrococcal nuclease, which preferentially digests accessible linker DNA. A second microfluidic merge introduces one of $\sim$1,152 unique barcoded oligonucleotide adaptors per nucleosome-containing drop, ligating the barcode to chromatin fragments. Drops are then pooled, immunoprecipitated in bulk against H3K4me2 or H3K4me3 with carrier chromatin, and sequenced. The barcode partitions the reads back into per-cell profiles.
+
+Applied to mES cells, embryonic fibroblasts, and EML hematopoietic progenitors, Drop-ChIP recovered $\sim$1,000 marked promoters/enhancers per cell — sparse but sufficient to cluster cells by chromatin state and to identify three subpopulations of mES cells with distinct pluripotency-enhancer and polycomb-target activity reflecting differentiation priming. The signal was orthogonal to single-cell gene-expression heterogeneity, revealing chromatin-state structure that scRNA-seq does not see.
 
 ## Why this matters
 
-Founding paper for single-cell ChIP-seq. Establishes the DBM + barcode-merge architecture later inherited by drop-seq, sciATAC, 10x platforms. Anchors §3.2 (chromatin assays beyond ATAC) and §3.4 (histone-modification scDNA). Predecessor of scCUT&Tag (Kaya-Okur 2019) which replaced ChIP with Tn5 tethering, and CoBATCH/uliCUT&RUN. Important historical citation when describing the chromatin-assay landscape.
-
-## Related
-
-- [[10-Summaries/buenrostro-2015-nature]]
-- [[10-Summaries/cusanovich-2015-sciatac]]
-- [[30-Concepts/single-cell-chromatin-profiling]]
+The first published single-cell ChIP-seq method, predating CUT\&Tag-based single-cell histone-modification profiling. Established that chromatin-state heterogeneity exists within transcriptionally similar populations — a finding later confirmed and extended by scCUT\&Tag (Bartosovic 2021), sciCUT\&Tag, scChIC-seq, and nano-CT. Anchors §3.4 (chromatin state) as the founding method of the field.
 
 ---
 **Source:** [DOI](https://doi.org/10.1038/nbt.3383) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/26458175/)
+
+## Related
+
+- [[30-Concepts/scchip-seq]]
+- [[30-Concepts/histone-modifications]]
+- [[20-Entities/bradley-bernstein]]
+- [[10-Summaries/bartosovic-2021-sccut-tag]]

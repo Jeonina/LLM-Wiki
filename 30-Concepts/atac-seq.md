@@ -13,35 +13,35 @@ updated: 2026-05-19
 
 ## Definition
 
-Tn5 transposase preferentially inserts adapters into accessible (nucleosome-free or sparsely-nucleosome-bound) DNA. After PCR amplification of the tagmented fragments, sequencing reads pile up at accessible regions, producing peak calls similar to DNase-seq ([[10-Summaries/sandy-2019-naturereviewsgenetics]]; [[10-Summaries/buenrostro-2015-nature]]).
+Tn5 transposase preferentially inserts adapters into accessible (nucleosome-free or sparsely-nucleosome-bound) DNA. After PCR amplification of the tagmented fragments, sequencing reads pile up at accessible regions, producing peak calls similar to DNase-seq ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]; [[10-Summaries/buenrostro-2015-nature]]).
 
-ATAC-seq is highly correlated with double-cut DNase-seq (r > 0.8) and single-cut DNase-seq (r > 0.75), though it can differ at fine-scale TF footprinting due to Tn5 sequence biases ([[10-Summaries/sandy-2019-naturereviewsgenetics]]).
+ATAC-seq is highly correlated with double-cut DNase-seq (r > 0.8) and single-cut DNase-seq (r > 0.75), though it can differ at fine-scale TF footprinting due to Tn5 sequence biases ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]).
 
 ## Why it matters
 
 - **500-cell input requirement** democratized chromatin profiling vs DNase-seq's million-cell requirement ([[10-Summaries/buenrostro-2015-nature]]).
-- **Single-cell extension (scATAC-seq)** enables per-cell chromatin profiling, first via plate-based ([[10-Summaries/buenrostro-2015-nature]]) and combinatorial-indexing ([[10-Summaries/cusanovich-2015-science]]) approaches; later commercialized on droplet platforms (10x Genomics).
-- **Base layer for genotype + chromatin multi-omics**: [[got-cha]] uses 10x scATAC-seq as its base with custom primers for gDNA genotyping ([[10-Summaries/franco-2024-nature]]).
+- **Single-cell extension (scATAC-seq)** enables per-cell chromatin profiling, first via plate-based ([[10-Summaries/buenrostro-2015-nature]]) and combinatorial-indexing ([[10-Summaries/cusanovich-2015-sciatac]]) approaches; later commercialized on droplet platforms (10x Genomics).
+- **Base layer for genotype + chromatin multi-omics**: [[got-cha]] uses 10x scATAC-seq as its base with custom primers for gDNA genotyping ([[10-Summaries/izzo-2024-got-cha]]).
 - **Now standard** for most chromatin accessibility experiments — DNase-seq is rarely used (synthesis based on [[10-Summaries/klemm-2019-chromatin-accessibility-review]]).
 
 ## Variants and refinements
 
 - **Omni-ATAC** — improved protocol with reduced mitochondrial contamination (synthesis; reduced-mito ATAC variants discussed in [[10-Summaries/klemm-2019-chromatin-accessibility-review]]).
 - **scATAC-seq** — droplet single-cell variant ([[10-Summaries/buenrostro-2015-nature]]).
-- **dscATAC-seq, sci-ATAC-seq** — combinatorial-indexing variants for very high cell throughput ([[10-Summaries/cusanovich-2015-science]]).
+- **dscATAC-seq, sci-ATAC-seq** — combinatorial-indexing variants for very high cell throughput ([[10-Summaries/cusanovich-2015-sciatac]]).
 - **sci-CAR** — combinatorial-indexing scATAC + scRNA ([[10-Summaries/cao-2018-sci-car]]).
 - **SHARE-seq** — split-pool scATAC + scRNA at tens of thousands of cells ([[10-Summaries/ma-2020-share-seq]]).
 - **CUT&Tag** — Tn5-based but targeted via antibody, profiling specific TF or histone modification binding (synthesis; see [[30-Concepts/cut-and-tag]]).
 
 ## Contested points
 
-- Tn5 sequence bias at TF footprinting scale ([[10-Summaries/sandy-2019-naturereviewsgenetics]]; resolved at single-molecule level by [[10-Summaries/elliott-2025-naturebiotechnology]]).
+- Tn5 sequence bias at TF footprinting scale ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]; resolved at single-molecule level by [[10-Summaries/swanson-2025-daf-seq]]).
 - Mitochondrial DNA contamination has been a recurring artifact; protocols (Omni-ATAC) address this ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]).
-- scATAC-seq under-calls accessibility vs single-molecule methods due to per-cell sparsity ([[10-Summaries/elliott-2025-naturebiotechnology]]).
+- scATAC-seq under-calls accessibility vs single-molecule methods due to per-cell sparsity ([[10-Summaries/swanson-2025-daf-seq]]).
 
 ## Examples
 
-- The [[got-cha]] platform builds on 10x scATAC-seq ([[10-Summaries/franco-2024-nature]]).
+- The [[got-cha]] platform builds on 10x scATAC-seq ([[10-Summaries/izzo-2024-got-cha]]).
 - scATAC-seq reveals chromatin accessibility principles across hematopoietic cell types ([[10-Summaries/buenrostro-2015-nature]]).
 - Chromatin potential — accessibility precedes transcription in differentiating keratinocytes ([[10-Summaries/ma-2020-share-seq]]).
 

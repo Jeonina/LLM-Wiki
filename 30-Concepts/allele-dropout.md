@@ -18,7 +18,7 @@ ADO arises during the earliest rounds of amplification when one strand or one pa
 ## Why it matters
 
 - ADO is the primary source of false-negative SNV calls in scDNA-seq.
-- MDA suffers high ADO rates; PTA's quasi-linear amplification reduces it substantially ([[10-Summaries/diane-2025-naturereviewsgenetics]]).
+- MDA suffers high ADO rates; PTA's quasi-linear amplification reduces it substantially ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 - Variant callers like [[30-Concepts/scout-variant-caller]] flag potential ADO loci based on local context.
 
 ## Related

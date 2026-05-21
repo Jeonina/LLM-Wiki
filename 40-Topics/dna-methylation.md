@@ -9,7 +9,7 @@ updated: 2026-05-19
 
 # DNA methylation
 
-> Covalent modification of cytosine (predominantly 5-methylcytosine at CpG dinucleotides) that propagates through mitosis ([[10-Summaries/kim-2017-dna-methylation-memory]]), contributes to cell identity ([[10-Summaries/kim-2017-methylation-memory-review]]), silences transposons ([[10-Summaries/zachary-2013-naturereviewsgenetics]]), establishes imprints ([[10-Summaries/smith-2013-methylation-development]]), and is dysregulated in cancer and aging ([[10-Summaries/zachary-2013-naturereviewsgenetics]]). The wiki's methylation cluster covers the biology of methylation, the canonical measurement chemistries (bisulfite, long-read direct detection), and the enzymatic machinery (DNMT, TET).
+> Covalent modification of cytosine (predominantly 5-methylcytosine at CpG dinucleotides) that propagates through mitosis ([[10-Summaries/kim-2017-dna-methylation-memory]]), contributes to cell identity ([[10-Summaries/kim-2017-methylation-memory-review]]), silences transposons ([[10-Summaries/smith-2013-methylation-development]]), establishes imprints ([[10-Summaries/smith-2013-methylation-development]]), and is dysregulated in cancer and aging ([[10-Summaries/smith-2013-methylation-development]]). The wiki's methylation cluster covers the biology of methylation, the canonical measurement chemistries (bisulfite, long-read direct detection), and the enzymatic machinery (DNMT, TET).
 
 ## Core concepts
 
@@ -55,13 +55,13 @@ updated: 2026-05-19
 
 ### Biology
 
-- [[10-Summaries/zachary-2013-naturereviewsgenetics]] — Smith & Meissner foundational review.
+- [[10-Summaries/smith-2013-methylation-development]] — Smith & Meissner foundational review.
 - [[10-Summaries/kim-2017-dna-methylation-memory]] — Kim/Costello 2017 epigenetic memory review.
 - [[10-Summaries/smith-2013-methylation-development]] — Smith & Meissner 2013 development review.
 
 ### Computational analysis and long-read methods
 
-- [[10-Summaries/yilei-2025-naturereviewsgenetics]] — long-read computational methylation analysis.
+- [[10-Summaries/fu-2025-longread-methylation]] — long-read computational methylation analysis.
 - [[10-Summaries/fu-2025-longread-methylation]] — Fu et al. computational long-read methylation analysis.
 - [[10-Summaries/liu-2025-longread-epigenome-review]] — Liu/Conesa 2025 NRG epigenome long-read review.
 
@@ -93,7 +93,7 @@ updated: 2026-05-19
 ## Open questions
 
 - Methylation calling accuracy benchmarking across PacBio and ONT platforms — no community-standard benchmark ([[10-Summaries/fu-2025-longread-methylation]]).
-- 5hmC: functional mark vs intermediate — unresolved ([[10-Summaries/bai-2024-simple-seq]]; [[10-Summaries/yilei-2025-naturereviewsgenetics]]).
+- 5hmC: functional mark vs intermediate — unresolved ([[10-Summaries/bai-2024-simple-seq]]; [[10-Summaries/fu-2025-longread-methylation]]).
 - Single-cell methylation at scale — current methods are sparse; intersection with [[scdna-seq]] remains an open methodological frontier ([[10-Summaries/iqbal-2023-methylome-review]]).
-- Non-CpG methylation (mCpH) in adult tissues, especially brain — functional significance ([[10-Summaries/yilei-2025-naturereviewsgenetics]]).
+- Non-CpG methylation (mCpH) in adult tissues, especially brain — functional significance ([[10-Summaries/fu-2025-longread-methylation]]).
 - Are HMAs (decitabine vs azacitidine) clinically interchangeable? Single-cell data argues no ([[10-Summaries/shen-2026-splicool-seq]]; [[10-Summaries/hunt-2022-sctem-seq]]).

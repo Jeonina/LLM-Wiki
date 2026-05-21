@@ -16,7 +16,7 @@ updated: 2026-05-11
 Two strategies:
 
 1. **Engineered markers** (model organisms): fluorescent reporters, Cre recombinase, CRISPR-introduced scarring (GESTALT, scGESTALT, ScarTrace). Powerful but require genetic manipulation — not applicable to humans.
-2. **Endogenous mutation accumulation** (humans + model organisms): natural somatic SNVs and structural variants accumulating at known rates serve as cellular barcodes. Detected post-hoc by single-cell genome sequencing ([[10-Summaries/diane-2025-naturereviewsgenetics]], [[10-Summaries/gilad-2021-annualreviewofgenomicsandhumangenetics]]).
+2. **Endogenous mutation accumulation** (humans + model organisms): natural somatic SNVs and structural variants accumulating at known rates serve as cellular barcodes. Detected post-hoc by single-cell genome sequencing ([[10-Summaries/shao-2025-scDNA-mosaicism-review]], [[10-Summaries/evrony-2021-scDNA-applications-review]]).
 
 For endogenous mutation-based tracing in humans, the workflow typically:
 - Performs [[scwga]] (often [[pta]]) + scWGS on a sample of cells.
@@ -36,9 +36,9 @@ In humans specifically, [[lineage-tracing]] using endogenous mutations is one of
 
 ## Variants and refinements
 
-- **Targeted sequencing of lineage-informative loci** — cheaper, allows thousands of cells (e.g., leukemia lineage studies cited in [[10-Summaries/diane-2025-naturereviewsgenetics]]).
+- **Targeted sequencing of lineage-informative loci** — cheaper, allows thousands of cells (e.g., leukemia lineage studies cited in [[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 - **Whole-genome reconstruction** — slower but unbiased; preferred when lineage markers are unknown a priori.
-- **Combined with single-cell phenotype** (scRNA-seq, surface protein) to map lineage onto cell type — the "phenotypic association" capability in [[10-Summaries/gilad-2021-annualreviewofgenomicsandhumangenetics]].
+- **Combined with single-cell phenotype** (scRNA-seq, surface protein) to map lineage onto cell type — the "phenotypic association" capability in [[10-Summaries/evrony-2021-scDNA-applications-review]].
 
 ## Contested points
 
@@ -47,9 +47,9 @@ In humans specifically, [[lineage-tracing]] using endogenous mutations is one of
 
 ## Examples
 
-- Mapping human cortical neuron lineage with PTA-based scWGS to track the timing of brain region divergence ([[10-Summaries/diane-2025-naturereviewsgenetics]]).
+- Mapping human cortical neuron lineage with PTA-based scWGS to track the timing of brain region divergence ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 - Leukemia clonal evolution by targeted sequencing of driver loci in thousands of cells.
-- Identifying inhibitory vs excitatory neuron progenitor divergence in development ([[10-Summaries/diane-2025-naturereviewsgenetics]]).
+- Identifying inhibitory vs excitatory neuron progenitor divergence in development ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
 ## Related
 

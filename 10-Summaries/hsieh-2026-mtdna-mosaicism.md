@@ -47,7 +47,7 @@ FACS sorting of single cells (CD19+/− splenocytes; ACSA-1+, PSD95+, prominin-1
 
 ## Connections to other sources
 
-- Single-cell mtDNA mosaicism is one strand of the broader mosaicism atlas synthesized in [[10-Summaries/bizzotto-2022-brain-mosaicism-review]] and [[10-Summaries/diane-2025-naturereviewsgenetics]].
+- Single-cell mtDNA mosaicism is one strand of the broader mosaicism atlas synthesized in [[10-Summaries/bizzotto-2022-brain-mosaicism-review]] and [[10-Summaries/shao-2025-scDNA-mosaicism-review]].
 - The Kimura-drift framing connects to lineage-tracing approaches: drift-driven heteroplasmy is the basis for [[30-Concepts/mitochondrial-lineage-tracing]] and the mtscATAC-seq/EMBLEM methods that exploit mtDNA mutation accumulation for human lineage reconstruction.
 - Provides a counterpoint to selection-based explanations of clinical mtDNA disease heterogeneity.
 

@@ -1,28 +1,31 @@
 ---
 type: summary
-title: "Yuan 2022 — scBasset: sequence-based deep CNN modeling of scATAC-seq"
+title: "Yuan & Kelley 2022 — scBasset: sequence-based modeling of single-cell ATAC-seq using convolutional neural networks"
 source: "[[00-Sources/papers/scBasset_ sequence-based modeling of single-cell ATAC-seq using convolutional neural networks]]"
-aliases: ["Yuan 2022 scBasset", "scBasset"]
-tags: [scBasset, scATAC-seq, deep-learning, CNN, sequence-based, TF-activity, Calico]
+aliases: ["scBasset", "Yuan 2022"]
+tags: [scATAC-seq, deep-learning, CNN, sequence-based, computational]
 created: 2026-05-13
 updated: 2026-05-13
 ---
 
-**Citation:** Yuan et al. (2022) — *scBasset: sequence-based deep CNN modeling of scATAC-seq* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-022-01562-8)
+**Citation:** Yuan et al. (2022) — *scBasset: sequence-based modeling of single-cell ATAC-seq using convolutional neural networks* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-022-01562-8)
 
-Yuan and Kelley (Calico Life Sciences) introduced **scBasset**, a sequence-based convolutional neural network for modeling scATAC-seq. The architecture extends the Basset CNN: input is a 1,344-bp DNA sequence around each accessibility peak; eight convolutional blocks produce a peak embedding; a final dense layer with a bottleneck of size 32 connects the embedding to per-cell accessibility predictions (one task per cell). The 32-dim final-layer weights serve as cell embeddings for clustering/visualization. Benchmarked on Buenrostro2018 hematopoiesis, 10x Multiome PBMC, and 10x Multiome mouse brain: scBasset achieves competitive auROC (0.762, 0.640, 0.701 per cell) and outperforms sequence-free baselines on cell embedding, denoising, integration with scRNA-seq, and TF-activity inference.
+Yuan and Kelley (Calico Life Sciences) introduced scBasset, a sequence-based convolutional neural network that predicts single-cell chromatin accessibility from the underlying DNA sequence. The model takes a 1,344-bp DNA window around each peak's center as input, runs it through 8 convolutional blocks, then through a 32-dimensional bottleneck layer that learns a low-dimensional representation of the peak; a dense final layer connects the peak embedding to per-cell accessibility predictions. The cell-side parameters of the final layer serve as cell embeddings useful for clustering, denoising, integration, and TF activity inference.
+
+scBasset achieves state-of-the-art performance on three benchmark datasets (Buenrostro 2018 hematopoiesis, 10x multiome PBMC, 10x multiome mouse brain) with auROC of 0.730–0.762 per peak on held-out peaks — within range of bulk DNase auROC despite the substantially noisier single-cell signal. The sequence-based approach outperforms peak-based methods (chromVAR, cisTopic, BROCKMAN) on cell-state representation, particularly in multiome data.
 
 ## Why this matters
 
-Establishes the sequence-as-prior paradigm for scATAC-seq analysis — a contrast to peak-by-cell matrix methods (cisTopic, SCALE, chromVAR) and a foundation for cross-cell-type generalization. Anchors §4 (computational analysis of scATAC-seq) alongside SnapATAC2 (Zhang 2024). Useful when arguing that scATAC-seq analysis is shifting from clustering/matrix-factorization toward representation-learning on sequence — important context for any §6 future-perspective discussion of foundation models for chromatin.
-
-## Related
-
-- [[10-Summaries/zhang-2024-snapatac2]]
-- [[10-Summaries/buenrostro-2015-nature]]
-- [[10-Summaries/luo-2024-scatac-benchmark]]
-- [[10-Summaries/cao-2022-glue]]
-- [[30-Concepts/scatac-analysis-methods]]
+Demonstrates that DNA sequence is a sufficient predictor of cell-type-specific accessibility, complementing the empirical approach taken by ATAC-peak-based methods. Anchors §4 (computational framework) and connects to sequence-based prediction tools more broadly (DeepHistone, Enformer, scGPT). Useful for the framing in §6 limitations: sequence determines a substantial fraction of accessibility but not all, and the residual is the cell-state-specific signal.
 
 ---
 **Source:** [DOI](https://doi.org/10.1038/s41592-022-01562-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/35941239/)
+
+---
+**Source:** [DOI](https://doi.org/10.1038/s41592-022-01562-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/35941239/)
+
+## Related
+
+- [[10-Summaries/schep-2017-chromvar]]
+- [[10-Summaries/bravo-2019-cistopic]]
+- [[10-Summaries/yin-2019-deephistone]]

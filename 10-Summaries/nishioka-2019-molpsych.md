@@ -29,5 +29,5 @@ Field-survey reference for brain-mosaicism-and-psychiatric-disease at the review
 - [[40-Topics/brain-somatic-mosaicism]]
 - [[10-Summaries/mcconnell-2017-science]]
 - [[10-Summaries/lodato-2015-science]]
-- [[10-Summaries/taejeong-2018-science]]
+- [[10-Summaries/bae-2017-pregastrulation-mutations]]
 - [[10-Summaries/bizzotto-2022-brain-mosaicism-review]]

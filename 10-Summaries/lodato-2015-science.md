@@ -29,5 +29,5 @@ The first systematic single-neuron WGS demonstration. Anchors §3.1 (genotype-ce
 - [[20-Entities/christopher-walsh]]
 - [[30-Concepts/somatic-mosaicism]]
 - [[30-Concepts/scwga-chemistries]]
-- [[10-Summaries/taejeong-2018-science]]
-- [[10-Summaries/lodato-2018-science]]
+- [[10-Summaries/bae-2017-pregastrulation-mutations]]
+- [[10-Summaries/lodato-2017-aging-neurons]]

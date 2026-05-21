@@ -28,6 +28,6 @@ PTA is now the chemistry of choice for cohort-scale single-cell mosaicism studie
 - [[30-Concepts/scwga-chemistries]]
 - [[30-Concepts/primary-template-directed-amplification]]
 - [[10-Summaries/chenghang-2012-science]]
-- [[10-Summaries/chongyi-2017-science]]
+- [[10-Summaries/chen-2017-lianti]]
 - [[10-Summaries/macaulay-2014-plosgenet]]
 - [[20-Entities/charles-gawad]]

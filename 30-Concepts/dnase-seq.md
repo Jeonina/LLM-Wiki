@@ -13,7 +13,7 @@ updated: 2026-05-11
 
 ## Definition
 
-DNase I preferentially cleaves DNA at nucleosome-free, TF-accessible regions. Two original protocols ([[10-Summaries/sandy-2019-naturereviewsgenetics]]):
+DNase I preferentially cleaves DNA at nucleosome-free, TF-accessible regions. Two original protocols ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]):
 
 - **Boyle et al. 2008 (single cut)** — restriction-enzyme-mediated isolation and barcoding of each DNase cut site.
 - **Hesselberth et al. 2009 (double cut)** — size selection for fragments arising from paired cleavage events within DHSs.
@@ -34,7 +34,7 @@ DNase I preferentially cleaves DNA at nucleosome-free, TF-accessible regions. Tw
 
 ## Examples
 
-- ENCODE Tier 1 cell line DHS profiles — established the 2–3% / 90% accessibility-vs-TF-binding observation referenced throughout [[10-Summaries/sandy-2019-naturereviewsgenetics]].
+- ENCODE Tier 1 cell line DHS profiles — established the 2–3% / 90% accessibility-vs-TF-binding observation referenced throughout [[10-Summaries/klemm-2019-chromatin-accessibility-review]].
 
 ## Related
 

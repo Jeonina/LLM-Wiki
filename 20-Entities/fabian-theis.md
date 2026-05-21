@@ -10,7 +10,7 @@ updated: 2026-05-12
 
 # Fabian J. Theis
 
-> Helmholtz Munich computational biologist; senior author of [[10-Summaries/lukas-2023-naturereviewsgenetics]] (best practices for single-cell analysis). Major developer of scvi-tools and scANVI integration methods.
+> Helmholtz Munich computational biologist; senior author of [[10-Summaries/heumos-2023-best-practices]] (best practices for single-cell analysis). Major developer of scvi-tools and scANVI integration methods.
 
 ## Profile
 
@@ -18,12 +18,12 @@ Institute of Computational Biology, Department of Computational Health, Helmholt
 
 ## Mentions
 
-- **2026-05-11** — [[10-Summaries/lukas-2023-naturereviewsgenetics]]: senior author of the cross-modality best-practices review.
+- **2026-05-11** — [[10-Summaries/heumos-2023-best-practices]]: senior author of the cross-modality best-practices review.
 - **2026-05-12** — Co-author of [[10-Summaries/danese-2021-episcanpy]] (EpiScanpy, with Maria Colomé-Tatché).
 
 ## Positions and claims
 
-- Holds that **best-practice recommendations must be benchmark-driven, not popularity-driven** — widely-used tools are not always best-in-class ([[10-Summaries/lukas-2023-naturereviewsgenetics]]).
+- Holds that **best-practice recommendations must be benchmark-driven, not popularity-driven** — widely-used tools are not always best-in-class ([[10-Summaries/heumos-2023-best-practices]]).
 - Holds that **modality-specific analysis workflows** are necessary — scATAC-seq normalization is genuinely different from scRNA-seq normalization.
 
 ## Related

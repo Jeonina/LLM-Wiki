@@ -50,7 +50,7 @@ Real scDNA-seq from MDA-amplified Xiao Dong et al. (IL-11, IL-12) with unamplifi
 ## Connections to other sources
 
 - One of the "what comes after MDA-bias correction" papers; competes with Monovar (Zafar et al. 2016) and SCcaller (Dong et al. 2017).
-- Pre-PTA paper; the PTA era of scWGA ([[10-Summaries/diane-2025-naturereviewsgenetics]], [[10-Summaries/luquette-2025-pta-duplex-mosaicism]]) somewhat reduces but does not eliminate the need for SCOUT-style callers — amplification bias still exists.
+- Pre-PTA paper; the PTA era of scWGA ([[10-Summaries/shao-2025-scDNA-mosaicism-review]], [[10-Summaries/luquette-2025-pta-duplex-mosaicism]]) somewhat reduces but does not eliminate the need for SCOUT-style callers — amplification bias still exists.
 - Connects to [[30-Concepts/somatic-mosaicism]] tooling stack — alongside [[10-Summaries/zhang-2025-smaht-duplex-benchmark]] which validates DS at the bulk level, SCOUT validates calls at the cell level.
 
 ## Open questions

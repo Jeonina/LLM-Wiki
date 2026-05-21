@@ -46,7 +46,7 @@ Step-by-step Nature Protocols paper. Library prep follows standard Illumina (son
 ## Connections to other sources
 
 - Direct ancestor of the methods compared in [[10-Summaries/zhang-2025-smaht-duplex-benchmark]] (SMaHT benchmark) and the UDSeq protocol in [[10-Summaries/nandi-2025-udseq]].
-- The framing of duplex methods as "the answer to scWGA's single-strand dropout problem" is sharpened by [[10-Summaries/diane-2025-naturereviewsgenetics]] (~70k ssDNA lesions per cell per day argue for duplex protection).
+- The framing of duplex methods as "the answer to scWGA's single-strand dropout problem" is sharpened by [[10-Summaries/shao-2025-scDNA-mosaicism-review]] (~70k ssDNA lesions per cell per day argue for duplex protection).
 - Sets the stage for population-scale somatic-mosaicism measurement: [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] uses DS to validate PTA-based scDNA-seq mutation calls.
 
 ## Open questions

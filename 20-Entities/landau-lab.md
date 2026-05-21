@@ -23,13 +23,13 @@ Hosted at the New York Genome Center and the Division of Hematology and Medical 
 
 ## Mentions
 
-- **2026-05-07** — [[10-Summaries/anna-2019-nature]]: established GoT.
-- **2026-05-07** — [[10-Summaries/franco-2024-nature]]: established GoT–ChA, extending the platform from RNA to chromatin and from cDNA to gDNA capture.
+- **2026-05-07** — [[10-Summaries/nam-2019-got]]: established GoT.
+- **2026-05-07** — [[10-Summaries/izzo-2024-got-cha]]: established GoT–ChA, extending the platform from RNA to chromatin and from cDNA to gDNA capture.
 
 ## Positions and claims
 
-- Holds that **co-capture of genotype with phenotype in the same single cell** is the right unit of analysis for clonal evolution in human samples — within-patient WT comparators control confounders that no cross-patient design can ([[10-Summaries/anna-2019-nature]], [[10-Summaries/franco-2024-nature]]).
-- Holds that **gDNA capture beats cDNA capture for single-cell genotyping** of low-expression and distal-locus drivers — a methodological lesson learned across the GoT → GoT–ChA evolution ([[10-Summaries/franco-2024-nature]]).
+- Holds that **co-capture of genotype with phenotype in the same single cell** is the right unit of analysis for clonal evolution in human samples — within-patient WT comparators control confounders that no cross-patient design can ([[10-Summaries/nam-2019-got]], [[10-Summaries/izzo-2024-got-cha]]).
+- Holds that **gDNA capture beats cDNA capture for single-cell genotyping** of low-expression and distal-locus drivers — a methodological lesson learned across the GoT → GoT–ChA evolution ([[10-Summaries/izzo-2024-got-cha]]).
 
 ## Related
 

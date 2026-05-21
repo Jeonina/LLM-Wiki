@@ -29,5 +29,5 @@ Sets the conceptual frame for treating brain mosaicism as both a contributor to 
 - [[40-Topics/brain-somatic-mosaicism]]
 - [[20-Entities/bsmn-consortium]]
 - [[10-Summaries/lodato-2015-science]]
-- [[10-Summaries/taejeong-2018-science]]
+- [[10-Summaries/bae-2017-pregastrulation-mutations]]
 - [[10-Summaries/taejeong-2022-science]]

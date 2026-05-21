@@ -31,7 +31,7 @@ Canonical cancer-SCS review by the Navin lab. Anchors §5 (cancer applications) 
 ## Related
 
 - [[40-Topics/cancer-genomics]]
-- [[10-Summaries/kim-2018-cell]]
+- [[10-Summaries/kim-2018-tnbc-chemoresistance]]
 - [[10-Summaries/cortes-lopez-2023-cellstemcell]]
-- [[10-Summaries/frankell-2019-natgenet]]
+- [[10-Summaries/frankell-2019-eac-landscape]]
 - [[20-Entities/nicholas-navin]]

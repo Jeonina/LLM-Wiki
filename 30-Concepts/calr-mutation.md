@@ -13,13 +13,13 @@ updated: 2026-05-07
 
 ## Definition
 
-CALR is normally an ER-resident chaperone and Ca²⁺-binding protein. The pathogenic mutations are frameshifts in exon 9 (most commonly type 1, a 52-bp deletion; type 2, a 5-bp insertion) that generate a novel positively-charged C-terminus. The mutant protein traffics to the cell surface and binds the thrombopoietin receptor MPL, activating it constitutively in a thrombopoietin-independent manner ([[10-Summaries/anna-2019-nature]]).
+CALR is normally an ER-resident chaperone and Ca²⁺-binding protein. The pathogenic mutations are frameshifts in exon 9 (most commonly type 1, a 52-bp deletion; type 2, a 5-bp insertion) that generate a novel positively-charged C-terminus. The mutant protein traffics to the cell surface and binds the thrombopoietin receptor MPL, activating it constitutively in a thrombopoietin-independent manner ([[10-Summaries/nam-2019-got]]).
 
 ## Why it matters
 
 CALR mutations account for ~25–30% of MPN cases (essential thrombocythemia and primary myelofibrosis). Before [[got]], the transcriptional consequences of CALR mutation in primary HSPCs were inferred indirectly because mutant and wild-type cells in the same patient cannot be sorted by surface markers.
 
-[[10-Summaries/anna-2019-nature]] shows the mutation's transcriptional output is **cell-identity-dependent**:
+[[10-Summaries/nam-2019-got]] shows the mutation's transcriptional output is **cell-identity-dependent**:
 
 - In **uncommitted HSPCs**: NF-κB pathway upregulation (CXCL2, NFKBIA) plus anti-apoptotic genes; proposed to drive HSC self-renewal/outgrowth.
 - In **megakaryocytic progenitors (MkPs)**: dominant unfolded protein response activation — IRE1-XBP1 splicing, ATF6-mediated chaperone induction (HSPA5/BiP). Increased proliferation correlated with patient platelet counts.
@@ -35,12 +35,12 @@ This is the canonical example used throughout the wiki of "same mutation, differ
 
 ## Contested points
 
-- IRE1-XBP1 is proposed as a therapeutic target ([[10-Summaries/anna-2019-nature]]), but in vivo validation in patients has not appeared in the wiki yet.
-- The shift from "no HSPC fitness advantage in ET" to "strong HSPC fitness advantage in MF" is observed ([[10-Summaries/anna-2019-nature]]) but not mechanistically explained.
+- IRE1-XBP1 is proposed as a therapeutic target ([[10-Summaries/nam-2019-got]]), but in vivo validation in patients has not appeared in the wiki yet.
+- The shift from "no HSPC fitness advantage in ET" to "strong HSPC fitness advantage in MF" is observed ([[10-Summaries/nam-2019-got]]) but not mechanistically explained.
 
 ## Examples
 
-- Five ET patients (ET01–ET05) profiled with [[got]]: mutant cell frequency higher in MkPs than HSPCs; UPR signature in MkPs ([[10-Summaries/anna-2019-nature]]).
+- Five ET patients (ET01–ET05) profiled with [[got]]: mutant cell frequency higher in MkPs than HSPCs; UPR signature in MkPs ([[10-Summaries/nam-2019-got]]).
 - Four MF patients: mutant cells already enriched in HSPCs; IRE1 activation persists; TGFB1 upregulated in MkPs.
 
 ## Related

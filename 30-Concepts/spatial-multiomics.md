@@ -13,7 +13,7 @@ updated: 2026-05-11
 
 ## Definition
 
-Two families ([[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]], [[10-Summaries/katy-2023-naturereviewsgenetics]]):
+Two families ([[10-Summaries/baysoy-2023-multiomics-landscape]], [[10-Summaries/vandereyken-2023-scmultiomics-review]]):
 
 **Imaging-based**:
 - **MERFISH, seqFISH+** — sequential rounds of single-molecule FISH read 100s–1000s of transcripts in situ.

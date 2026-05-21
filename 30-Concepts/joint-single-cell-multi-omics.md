@@ -22,10 +22,10 @@ A joint multi-omic assay reads ≥2 of: DNA sequence, RNA, chromatin accessibili
 
 ## Variants
 
-- **Joint genome + transcriptome** — G&T-seq ([[10-Summaries/macaulay-2015-gt-seq]]), DR-seq ([[10-Summaries/dey-2015-dr-seq]]), GoT ([[10-Summaries/anna-2019-nature]]).
+- **Joint genome + transcriptome** — G&T-seq ([[10-Summaries/macaulay-2015-gt-seq]]), DR-seq ([[10-Summaries/dey-2015-dr-seq]]), GoT ([[10-Summaries/nam-2019-got]]).
 - **Joint chromatin + transcriptome** — sci-CAR ([[10-Summaries/cao-2018-sci-car]]), SHARE-seq ([[10-Summaries/ma-2020-share-seq]]).
 - **Joint methylation + chromatin + RNA** — scNMT-seq ([[10-Summaries/clark-2018-scnmt-seq]]).
-- **Joint mutation + chromatin + RNA** — Duplex-Multiome ([[10-Summaries/andrea-2025-biorxiv]]).
+- **Joint mutation + chromatin + RNA** — Duplex-Multiome ([[10-Summaries/kriz-2025-duplex-multiome]]).
 
 ## Related
 

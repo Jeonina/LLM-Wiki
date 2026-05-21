@@ -18,12 +18,12 @@ Department of Genome Sciences, University of Washington School of Medicine, Seat
 
 ## Mentions
 
-- **2026-05-07** — [[10-Summaries/elliott-2025-naturebiotechnology]]: co-first author. Led development of DAF-seq and scDAF-seq, which extend the lab's prior Fiber-seq line into single-cell single-molecule chromatin profiling by replacing methylation marks with cytidine deaminations that survive PCR.
+- **2026-05-07** — [[10-Summaries/swanson-2025-daf-seq]]: co-first author. Led development of DAF-seq and scDAF-seq, which extend the lab's prior Fiber-seq line into single-cell single-molecule chromatin profiling by replacing methylation marks with cytidine deaminations that survive PCR.
 
 ## Positions and claims
 
-- Holds that **deaminase-induced sequence changes survive amplification while methylation marks do not**, making C→T deamination the right chemistry for single-cell single-molecule chromatin assays ([[10-Summaries/elliott-2025-naturebiotechnology]]).
-- Holds that **regulatory-element actuation is largely stochastic per fiber** — within-cell haplotype divergence (~61%) is comparable to between-cell divergence (~63%), so trans-environment differences are not the dominant source of plasticity ([[10-Summaries/elliott-2025-naturebiotechnology]]).
+- Holds that **deaminase-induced sequence changes survive amplification while methylation marks do not**, making C→T deamination the right chemistry for single-cell single-molecule chromatin assays ([[10-Summaries/swanson-2025-daf-seq]]).
+- Holds that **regulatory-element actuation is largely stochastic per fiber** — within-cell haplotype divergence (~61%) is comparable to between-cell divergence (~63%), so trans-environment differences are not the dominant source of plasticity ([[10-Summaries/swanson-2025-daf-seq]]).
 
 ## Related
 

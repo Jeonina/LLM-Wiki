@@ -8,10 +8,10 @@ updated: 2026-05-19
 sources: [
   "[[10-Summaries/clark-2018-scnmt-seq]]",
   "[[10-Summaries/hou-2016-sctrio-seq]]",
-  "[[10-Summaries/elliott-2025-naturebiotechnology]]",
-  "[[10-Summaries/franco-2024-nature]]",
-  "[[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]]",
-  "[[10-Summaries/katy-2023-naturereviewsgenetics]]"
+  "[[10-Summaries/swanson-2025-daf-seq]]",
+  "[[10-Summaries/izzo-2024-got-cha]]",
+  "[[10-Summaries/baysoy-2023-multiomics-landscape]]",
+  "[[10-Summaries/vandereyken-2023-scmultiomics-review]]"
 ]
 ---
 

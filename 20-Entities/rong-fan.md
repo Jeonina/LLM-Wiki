@@ -10,7 +10,7 @@ updated: 2026-05-11
 
 # Rong Fan
 
-> Yale bioengineer; senior author of [[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]]. Major developer of spatial multi-omics platforms (DBiT-seq, microfluidic indexing).
+> Yale bioengineer; senior author of [[10-Summaries/baysoy-2023-multiomics-landscape]]. Major developer of spatial multi-omics platforms (DBiT-seq, microfluidic indexing).
 
 ## Profile
 
@@ -18,11 +18,11 @@ Department of Biomedical Engineering, Yale University; Yale Stem Cell Center, Ya
 
 ## Mentions
 
-- **2026-05-11** — [[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]]: senior author of the multi-omics landscape review.
+- **2026-05-11** — [[10-Summaries/baysoy-2023-multiomics-landscape]]: senior author of the multi-omics landscape review.
 
 ## Positions and claims
 
-- Holds that **single-cell multi-omics has reached technological maturity** — the bottleneck is now computational integration rather than wet-lab measurement ([[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]]).
+- Holds that **single-cell multi-omics has reached technological maturity** — the bottleneck is now computational integration rather than wet-lab measurement ([[10-Summaries/baysoy-2023-multiomics-landscape]]).
 - Holds that **spatial multi-omics is a first-class modality**, not a 2D extension of single-cell methods.
 
 ## Related

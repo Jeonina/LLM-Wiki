@@ -10,7 +10,7 @@ updated: 2026-05-11
 
 # Rahul Satija
 
-> NYGC / NYU computational biologist; developer of the **Seurat** single-cell analysis toolkit and a major figure in multi-omic integration methods. Co-senior author of [[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]].
+> NYGC / NYU computational biologist; developer of the **Seurat** single-cell analysis toolkit and a major figure in multi-omic integration methods. Co-senior author of [[10-Summaries/baysoy-2023-multiomics-landscape]].
 
 ## Profile
 
@@ -18,11 +18,11 @@ New York Genome Center; Center for Genomics and Systems Biology, New York Univer
 
 ## Mentions
 
-- **2026-05-11** — [[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]]: co-senior author of the multi-omics review.
+- **2026-05-11** — [[10-Summaries/baysoy-2023-multiomics-landscape]]: co-senior author of the multi-omics review.
 
 ## Positions and claims
 
-- Holds that **Seurat's Weighted Nearest Neighbor (WNN) integration** is a robust approach for vertical multi-omic integration (same cells, different modalities) ([[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]]).
+- Holds that **Seurat's Weighted Nearest Neighbor (WNN) integration** is a robust approach for vertical multi-omic integration (same cells, different modalities) ([[10-Summaries/baysoy-2023-multiomics-landscape]]).
 
 ## Related
 

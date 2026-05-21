@@ -30,5 +30,5 @@ Establishes that neurodegeneration in AD produces a quantifiable, signature-dist
 
 - [[30-Concepts/mutational-signatures]]
 - [[30-Concepts/genosenium]]
-- [[10-Summaries/lodato-2018-science]]
+- [[10-Summaries/lodato-2017-aging-neurons]]
 - [[10-Summaries/taejeong-2022-science]]

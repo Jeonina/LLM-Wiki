@@ -19,7 +19,7 @@ updated: 2026-05-19
 
 ## Mentions
 
-- **2026-05-19** — Lab of origin for sci-CAR ([[10-Summaries/cao-2018-sci-car]]), sci-ATAC-seq ([[10-Summaries/cusanovich-2015-science]]), and multi-omics integration tooling.
+- **2026-05-19** — Lab of origin for sci-CAR ([[10-Summaries/cao-2018-sci-car]]), sci-ATAC-seq ([[10-Summaries/cusanovich-2015-sciatac]]), and multi-omics integration tooling.
 
 ## Related
 

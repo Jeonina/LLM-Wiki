@@ -13,7 +13,7 @@ updated: 2026-05-11
 
 ## Definition
 
-Sodium bisulfite treatment deaminates unmethylated cytosines to uracils, which become thymidines after PCR amplification. 5-methylcytosine resists bisulfite conversion. Sequenced reads are aligned to a reference where all cytosines are converted to thymidines (and vice versa for the reverse strand) — the **"three-base alignment problem"** ([[10-Summaries/yilei-2025-naturereviewsgenetics]]).
+Sodium bisulfite treatment deaminates unmethylated cytosines to uracils, which become thymidines after PCR amplification. 5-methylcytosine resists bisulfite conversion. Sequenced reads are aligned to a reference where all cytosines are converted to thymidines (and vice versa for the reverse strand) — the **"three-base alignment problem"** ([[10-Summaries/fu-2025-longread-methylation]]).
 
 Per-CpG methylation = count of unconverted C / total reads at the site.
 
@@ -37,7 +37,7 @@ Per-CpG methylation = count of unconverted C / total reads at the site.
 
 ## Contested points
 
-- Whether bisulfite sequencing remains the gold standard given long-read direct methylation detection — for most applications, yes; for repeat-rich regions, no ([[10-Summaries/yilei-2025-naturereviewsgenetics]]).
+- Whether bisulfite sequencing remains the gold standard given long-read direct methylation detection — for most applications, yes; for repeat-rich regions, no ([[10-Summaries/fu-2025-longread-methylation]]).
 
 ## Examples
 

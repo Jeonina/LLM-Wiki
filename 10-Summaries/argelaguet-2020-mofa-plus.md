@@ -24,5 +24,5 @@ Established factor-analysis-based multimodal integration as a scalable alternati
 - [[10-Summaries/gong-2021-cobolt]]
 - [[10-Summaries/ashuach-2023-multivi]]
 - [[10-Summaries/cao-2022-glue]]
-- [[10-Summaries/clark-2018-scnmt]]
+- [[10-Summaries/clark-2018-scnmt-seq]]
 - [[30-Concepts/multimodal-integration-methods]]

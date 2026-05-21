@@ -13,12 +13,12 @@ updated: 2026-05-11
 
 ## Definition
 
-scDNA-seq encompasses two methodological branches ([[10-Summaries/diane-2025-naturereviewsgenetics]]):
+scDNA-seq encompasses two methodological branches ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]):
 
 1. **scWGA + scWGS** — amplify the single-cell genome via [[scwga]] (DOP-PCR, MDA, PTA, MALBAC, LIANTI, DLP+ etc.) then perform standard short-read or long-read sequencing on the amplicon. Variants are assigned to specific cells but suffer from amplification-induced errors (allelic dropout, single-strand dropout, polymerase error).
 2. **Single-molecule duplex sequencing** — barcode both Watson and Crick strands of bulk DNA and sequence them paired. Variants must agree across strands to be called. Achieves error rates as low as ~10⁻¹⁶ (HiDEF-seq). Most variants can be detected only at the per-molecule level, not assigned to specific cells — except [[meta-cs]] which performs duplex sequencing on single cells.
 
-[[10-Summaries/gilad-2021-annualreviewofgenomicsandhumangenetics]] frames the scDNA-seq design space through three capabilities: **fidelity** (detecting low-mosaicism variants), **co-presence** (which variants co-occur in the same cell), **phenotypic association** (linking genotype to other modalities like RNA, chromatin, protein).
+[[10-Summaries/evrony-2021-scDNA-applications-review]] frames the scDNA-seq design space through three capabilities: **fidelity** (detecting low-mosaicism variants), **co-presence** (which variants co-occur in the same cell), **phenotypic association** (linking genotype to other modalities like RNA, chromatin, protein).
 
 ## Why it matters
 
@@ -26,8 +26,8 @@ The human genome is 20–50× larger than the transcribed or chromatin-accessibl
 
 The biology questions scDNA-seq uniquely addresses:
 
-- **Somatic mosaicism**: detection of low-VAF variants in single cells ([[10-Summaries/lars-2017-naturereviewsgenetics]], [[10-Summaries/ian-2015-trendsingenetics]]).
-- **Lineage tracing in human tissue**: natural mutation accumulation (~2–4 per division) as endogenous lineage markers ([[10-Summaries/diane-2025-naturereviewsgenetics]]).
+- **Somatic mosaicism**: detection of low-VAF variants in single cells ([[10-Summaries/forsberg-2017-mosaicism-review]], [[10-Summaries/ian-2015-trendsingenetics]]).
+- **Lineage tracing in human tissue**: natural mutation accumulation (~2–4 per division) as endogenous lineage markers ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 - **Pre-implantation genetic screening**: aneuploidy and CNV detection from single embryonic cells.
 - **Cancer subclonal evolution**: joint detection of mutations and inference of clonal hierarchy.
 
@@ -39,15 +39,15 @@ The biology questions scDNA-seq uniquely addresses:
 
 ## Contested points
 
-- The "fidelity vs co-presence vs phenotypic association" tradeoff ([[10-Summaries/gilad-2021-annualreviewofgenomicsandhumangenetics]]) means no single method is universally best.
+- The "fidelity vs co-presence vs phenotypic association" tradeoff ([[10-Summaries/evrony-2021-scDNA-applications-review]]) means no single method is universally best.
 - Per-cell coverage vs cell throughput: PTA peaks at ~384 cells, DLP+ at >10,000 cells with very different per-cell yields.
 - Cost — duplex sequencing and PTA are both ~$5–20/cell, making cohort-scale studies still expensive.
 
 ## Examples
 
-- Walsh lab tracking human cortical neuron lineages via [[pta]] of single neurons ([[10-Summaries/diane-2025-naturereviewsgenetics]]).
+- Walsh lab tracking human cortical neuron lineages via [[pta]] of single neurons ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 - 40% of mid-gestation human prenatal neurons harboring complex CNV (Diane 2025 preprint reference).
-- 49% of single cells in human early cleavage-stage embryos shown aneuploid by DOP-PCR ([[10-Summaries/diane-2025-naturereviewsgenetics]]).
+- 49% of single cells in human early cleavage-stage embryos shown aneuploid by DOP-PCR ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
 ## Related
 

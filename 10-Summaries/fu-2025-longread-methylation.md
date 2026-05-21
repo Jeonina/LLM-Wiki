@@ -1,28 +1,74 @@
 ---
 type: summary
-title: "Fu 2025 — Computational analysis of DNA methylation from long-read sequencing"
+title: "Fu, Timp & Sedlazeck 2025 — Computational analysis of DNA methylation from long-read sequencing"
 source: "[[00-Sources/papers/Computational analysis of DNA methylation from long-read sequencing]]"
-aliases: ["Fu 2025 review", "long-read methylation computational review"]
-tags: [review, DNA-methylation, long-read-sequencing, PacBio, ONT, computational-analysis, Sedlazeck-lab, Timp-lab]
-created: 2026-05-13
-updated: 2026-05-13
+source_kind: paper
+author: "Yilei Fu, Winston Timp, Fritz J. Sedlazeck"
+published: 2025-09
+ingested: 2026-05-11
+doi: "10.1038/s41576-025-00822-5"
+journal: "Nature Reviews Genetics 26:620–634"
+tags: [review, DNA-methylation, long-read-sequencing, PacBio, ONT, computational]
+entities:
+  - "[[20-Entities/fritz-sedlazeck]]"
+  - "[[20-Entities/winston-timp]]"
+concepts:
+  - "[[30-Concepts/dna-methylation]]"
+  - "[[30-Concepts/long-read-sequencing]]"
+  - "[[30-Concepts/bisulfite-sequencing]]"
+topics:
+  - "[[40-Topics/dna-methylation]]"
+  - "[[40-Topics/long-read-sequencing]]"
 ---
 
 **Citation:** Fu et al. (2025) — *Computational analysis of DNA methylation from long-read sequencing* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-025-00822-5)
 
-Fu, Timp and Sedlazeck (Baylor + Johns Hopkins + Rice) reviewed computational methods for DNA methylation analysis from long-read sequencing. Covers: (i) raw-signal-to-methylation calling (PacBio kinetic features via pulse width + interpulse duration; ONT current via HMMs and CNNs); (ii) detection of 5mC, 5hmC, 4mC, 6mA; (iii) sample comparison (DMR calling, longitudinal change); (iv) integration with structural variants, tandem repeats, and complex genomic regions where short-read bisulfite alignment fails; (v) cell-type diversity analysis from long-read methylation. Surveys tools including Nanopolish, DeepMod, DeepSignal, Megalodon, modkit, and the new generation of CNN-based callers.
+# Fu, Timp & Sedlazeck 2025 — Computational analysis of DNA methylation from long-read sequencing
 
-## Why this matters
+> Thesis: long-read sequencing platforms (PacBio HiFi, Oxford Nanopore) directly detect methylation marks (5mC, 5hmC, 6mA, 4mC) from raw signals without bisulfite conversion. This sidesteps the alignment problems of bisulfite-based short-read methylation calling and enables joint analysis of methylation with structural variation and tandem repeats. The remaining bottleneck is computational: methylation callers must keep pace with rapidly evolving sequencing chemistry.
 
-Critical §3.3 methodology reference for the long-read methylation arm — complementary to short-read bisulfite (Krueger Bismark 2011) and SMF (SMAC-seq/Fiber-seq family). Long-read methylation calling is the technical foundation for nanoNOMe, Fiber-seq, scNanoCOOL-seq, and any application that combines methylation with structural variation. Useful when arguing that scDNA-seq is moving toward long-read native modification calling (avoiding bisulfite damage).
+## Key claims
+
+- **Bisulfite sequencing's structural problem**: converts unmethylated C→U→T, creating a three-base genome alignment problem that degrades mapping in repeats and structural variants. EM-seq and TAPS-seq are enzymatic alternatives but still produce short-read data with limited isoform/SV resolution.
+- **Microarrays** (Illumina EPIC/450K) measure only ~935,000 of ~28 million CpGs — limited to pre-selected sites.
+- **Long-read direct methylation detection**:
+  - **PacBio HiFi**: pulse-width and inter-pulse duration during base incorporation are altered by methylation; calling uses kinetic features.
+  - **ONT**: electrolytic current through the nanopore changes with modification state; calling uses HMMs / CNNs / Transformers from raw signal.
+- **No base conversion** → standard reference alignment → mappable in repeats, SVs, and tandem repeats that bisulfite methods cannot resolve.
+- **Modifications detectable**: 5mC, 5hmC, 6mA, 4mC, with varying accuracy across platforms.
+- **Computational tool landscape** is rapidly evolving — each major chemistry generation requires new callers (Megalodon, DeepMod, Remora for ONT; primrose for PacBio).
+
+## Methods / evidence
+
+Computational-methods-focused review. Authors are at major long-read centers (Baylor, Johns Hopkins). Disclosed industry ties to PacBio and ONT.
+
+## Surprising or load-bearing bits
+
+- **The three-base alignment problem** of bisulfite-converted reads is a structural argument for long-read methods that is often underappreciated. It means bisulfite sequencing is *systematically* biased away from repetitive regions of the genome — exactly the regions where methylation has key roles (transposon silencing, satellite repeats).
+- **Long-read methylation calling treats methylation as a sequencing-feature-detection problem** (signal kinetics or pore current) rather than as a base-conversion problem. This is conceptually parallel to how [[10-Summaries/swanson-2025-daf-seq]] treats deaminations as sequence features that survive amplification — both reframings exploit modern sequencing's ability to read modifications directly rather than infer them.
+- **Methylation + structural variation simultaneously** is a key downstream capability: imprinted regions, repeat-expansion disorders, and X-inactivation can be characterized in single experiments.
+
+## Entities mentioned
+
+- [[20-Entities/fritz-sedlazeck]] — senior author; Baylor; long-read methods PI.
+- [[20-Entities/winston-timp]] — co-senior; Johns Hopkins; nanopore methylation pioneer.
+
+## Concepts touched
+
+- [[30-Concepts/dna-methylation]] — measurement modalities updated to current long-read era.
+- [[30-Concepts/long-read-sequencing]] — PacBio + ONT capabilities.
+- [[30-Concepts/bisulfite-sequencing]] — predecessor with structural limitations.
+
+## Connections to other sources
+
+- **Methodological successor to** [[10-Summaries/smith-2013-methylation-development]] (Smith & Meissner) — Smith & Meissner provide the biology of methylation; Yilei et al. provide the current measurement and computational toolkit.
+- **Complementary to** [[10-Summaries/swanson-2025-daf-seq]] (DAF-seq) in conceptual structure: both use long-read sequencing to read DNA modifications (m6A in Fiber-seq, methylation in PacBio/ONT) directly without amplification erasure issues — though DAF-seq sidesteps amplification erasure by using *sequence changes* rather than modifications.
+
+## Open questions
+
+- Methylation calling accuracy benchmarking across platforms and tools — no community-accepted gold-standard benchmark yet.
+- 5hmC and 6mA detection sensitivity — lags 5mC for both platforms.
+- Single-cell long-read methylation — technically possible but limited by per-cell yield; an intersection of [[scdna-seq]] and long-read methylation that remains open.
 
 ---
-**Source:** [DOI](https://doi.org/10.1038/s41576-025-00822-5) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/40155770/)
-
-## Related
-
-- [[10-Summaries/krueger-2011-bismark]]
-- [[10-Summaries/lee-2020-nanonome]]
-- [[10-Summaries/shipony-2020-smac]]
-- [[10-Summaries/iqbal-2023-methylome-review]]
-- [[30-Concepts/long-read-methylation-calling]]
+**Source:** [DOI](https://doi.org/10.1038/s41576-025-00822-5)

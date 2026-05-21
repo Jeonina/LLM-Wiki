@@ -64,8 +64,8 @@ Synthesizing review with clinical case examples (CHILD syndrome, Proteus syndrom
 
 ## Connections to other sources
 
-- **Conceptually complementary to** [[10-Summaries/lars-2017-naturereviewsgenetics]] — both reviews on mosaicism, with overlapping but differently-organized framings (timing-and-transmission vs health-and-disease).
-- **Sets up the questions answered by** [[10-Summaries/diane-2025-naturereviewsgenetics]] — what is the genomic landscape of single cells during development? scDNA-seq is now positioned to answer.
+- **Conceptually complementary to** [[10-Summaries/forsberg-2017-mosaicism-review]] — both reviews on mosaicism, with overlapping but differently-organized framings (timing-and-transmission vs health-and-disease).
+- **Sets up the questions answered by** [[10-Summaries/shao-2025-scDNA-mosaicism-review]] — what is the genomic landscape of single cells during development? scDNA-seq is now positioned to answer.
 
 ## Open questions
 

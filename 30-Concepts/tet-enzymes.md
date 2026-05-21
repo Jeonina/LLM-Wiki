@@ -13,7 +13,7 @@ updated: 2026-05-11
 
 ## Definition
 
-TET enzymes use molecular oxygen and α-ketoglutarate to iteratively oxidize 5mC → 5hmC → 5-formylcytosine → 5-carboxylcytosine. Thymine DNA glycosylase (TDG) recognizes the oxidized intermediates and triggers base excision repair, completing **active demethylation** ([[10-Summaries/zachary-2013-naturereviewsgenetics]]).
+TET enzymes use molecular oxygen and α-ketoglutarate to iteratively oxidize 5mC → 5hmC → 5-formylcytosine → 5-carboxylcytosine. Thymine DNA glycosylase (TDG) recognizes the oxidized intermediates and triggers base excision repair, completing **active demethylation** ([[10-Summaries/smith-2013-methylation-development]]).
 
 - **TET1** preferentially binds CpG island promoters in embryonic stem cells; possibly an "epigenetic proofreader" preventing aberrant CGI methylation.
 - **TET2** is mutated in ~15% of AML and ~20% of CMML; the second most common driver of clonal hematopoiesis after DNMT3A.

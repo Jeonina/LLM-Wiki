@@ -18,14 +18,14 @@ Department of Genetics, Department of Applied Physics, Stanford University; Chan
 
 ## Mentions
 
-- **2026-05-11** — [[10-Summaries/sandy-2019-naturereviewsgenetics]]: senior author of the canonical chromatin accessibility review.
+- **2026-05-11** — [[10-Summaries/klemm-2019-chromatin-accessibility-review]]: senior author of the canonical chromatin accessibility review.
 - **2026-05-12** — Senior author of [[10-Summaries/schep-2017-chromvar]] (chromVAR, Schep/Buenrostro/Greenleaf 2017).
 - **2026-05-12** — Senior author of [[10-Summaries/mezger-2018-microfluidic-atac]] (µATAC-seq on ICELL8 nanowell platform; with Sandy Klemm).
 - **2026-05-12** — Co-author on [[10-Summaries/zamanighomi-2018-scabc]] (scABC, Wong lab).
 
 ## Positions and claims
 
-- Holds that **chromatin accessibility is a dynamic TF-nucleosome equilibrium**, not a static state — accessibility reflects the regulatory potential of a locus integrated over time ([[10-Summaries/sandy-2019-naturereviewsgenetics]]).
+- Holds that **chromatin accessibility is a dynamic TF-nucleosome equilibrium**, not a static state — accessibility reflects the regulatory potential of a locus integrated over time ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]).
 - Holds that **single-cell ATAC-seq** is the natural endpoint of accessibility profiling, extending bulk DNase-seq to per-cell resolution.
 
 ## Related

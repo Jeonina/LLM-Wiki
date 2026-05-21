@@ -18,11 +18,11 @@ Originally Department of Stem Cell and Regenerative Biology, Harvard / Broad Ins
 
 ## Mentions
 
-- **2026-05-11** — [[10-Summaries/zachary-2013-naturereviewsgenetics]]: senior author of the foundational DNA methylation review.
+- **2026-05-11** — [[10-Summaries/smith-2013-methylation-development]]: senior author of the foundational DNA methylation review.
 
 ## Positions and claims
 
-- Holds that **DNA methylation is the most stable and well-understood epigenetic mark**, but its dynamics are concentrated in two developmental windows — pre-implantation and primordial germ cell specification ([[10-Summaries/zachary-2013-naturereviewsgenetics]]).
+- Holds that **DNA methylation is the most stable and well-understood epigenetic mark**, but its dynamics are concentrated in two developmental windows — pre-implantation and primordial germ cell specification ([[10-Summaries/smith-2013-methylation-development]]).
 - Holds that **CpG island methylation in cancer** is a major and clinically actionable epigenetic phenomenon.
 
 ## Related

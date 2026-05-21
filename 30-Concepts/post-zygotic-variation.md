@@ -9,7 +9,7 @@ updated: 2026-05-11
 
 # Post-zygotic variation
 
-> Genetic changes acquired after fertilization, not present in the zygote and not transmitted constitutionally through the germline. The unifying term used by [[10-Summaries/lars-2017-naturereviewsgenetics]] to encompass all somatic and germline mosaic mutations.
+> Genetic changes acquired after fertilization, not present in the zygote and not transmitted constitutionally through the germline. The unifying term used by [[10-Summaries/forsberg-2017-mosaicism-review]] to encompass all somatic and germline mosaic mutations.
 
 ## Definition
 
@@ -40,7 +40,7 @@ Post-zygotic variation is the molecular substrate of [[somatic-mosaicism]] and t
 
 ## Examples
 
-- Mosaic CALR or JAK2 mutations in MPN clonal hematopoiesis ([[10-Summaries/franco-2024-nature]]).
+- Mosaic CALR or JAK2 mutations in MPN clonal hematopoiesis ([[10-Summaries/izzo-2024-got-cha]]).
 - CHILD syndrome (first-mitosis post-zygotic mutation) — half-body phenotype.
 
 ## Related

@@ -18,11 +18,11 @@ Departments of Oncology and Computational Biology, St. Jude Children's Research 
 
 ## Mentions
 
-- **2026-05-11** — [[10-Summaries/charles-2016-naturereviewsgenetics]]: first author of the 2016 scDNA-seq landscape review (with Quake and Koh).
+- **2026-05-11** — [[10-Summaries/gawad-2016-scgenome-review]]: first author of the 2016 scDNA-seq landscape review (with Quake and Koh).
 
 ## Positions and claims
 
-- Holds that **there is no universally best scWGA method** — each chemistry trades coverage, uniformity, and error rate, and method choice must be application-driven ([[10-Summaries/charles-2016-naturereviewsgenetics]]).
+- Holds that **there is no universally best scWGA method** — each chemistry trades coverage, uniformity, and error rate, and method choice must be application-driven ([[10-Summaries/gawad-2016-scgenome-review]]).
 - Holds that **microfluidic single-cell genomics** dramatically reduces contamination and improves uniformity vs traditional tube reactions.
 
 ## Related

@@ -23,7 +23,7 @@ When unfolded/misfolded proteins accumulate in the ER lumen, BiP (HSPA5) release
 
 In hematopoiesis, the UPR's three branches are differentially deployed: PERK dominates in HSPCs (eliminating ER-stressed cells from the stem pool), IRE1-XBP1 dominates in committed progenitors (promoting survival under stress).
 
-[[10-Summaries/anna-2019-nature]] shows that **CALR mutation — which breaks the chaperone activity of CALR — induces UPR in mutant cells, but the branch deployed depends on the progenitor type**:
+[[10-Summaries/nam-2019-got]] shows that **CALR mutation — which breaks the chaperone activity of CALR — induces UPR in mutant cells, but the branch deployed depends on the progenitor type**:
 
 - **MkPs**: strong IRE1-XBP1 splicing and ATF6 chaperone induction; PERK *not* enhanced. The IRE1/ATF6 dominance is the survival/proliferative arm.
 - **HSPCs**: XBP1 itself is upregulated; IRE1 splicing is also active; the response is less PERK-biased than expected for HSPCs under generic ER stress.
@@ -36,17 +36,17 @@ The cell-identity dependence of UPR branching is the load-bearing observation. I
 - **IRE1-XBP1 arm** — pro-survival; targets characterized by XBP1 splicing assays.
 - **ATF6 arm** — chaperone induction (HSPA5/BiP, HSP90B1, HSPD1, HSP90AA1).
 
-[[10-Summaries/anna-2019-nature]] further extended GoT to genotype the **XBP1 splice site itself** in single cells, validating IRE1 activity in mutant MkPs and HSPCs in vivo.
+[[10-Summaries/nam-2019-got]] further extended GoT to genotype the **XBP1 splice site itself** in single cells, validating IRE1 activity in mutant MkPs and HSPCs in vivo.
 
 ## Contested points
 
-- IRE1-XBP1 is proposed as a therapeutic target for eradicating mutant HSPCs ([[10-Summaries/anna-2019-nature]]). Therapeutic validation in patients is not yet in the wiki.
+- IRE1-XBP1 is proposed as a therapeutic target for eradicating mutant HSPCs ([[10-Summaries/nam-2019-got]]). Therapeutic validation in patients is not yet in the wiki.
 - Whether IRE1/ATF6 dominance (rather than PERK) is causal for clonal expansion or merely correlative is not directly tested.
 
 ## Examples
 
-- CALR-mutant MkPs in ET show ATF6-mediated chaperone induction (HSPA5, HSP90B1, HSPD1) and IRE1-XBP1 splicing without PERK enhancement ([[10-Summaries/anna-2019-nature]]).
-- IRE1-mediated UPR persists into CALR-mutated MF MkPs ([[10-Summaries/anna-2019-nature]]).
+- CALR-mutant MkPs in ET show ATF6-mediated chaperone induction (HSPA5, HSP90B1, HSPD1) and IRE1-XBP1 splicing without PERK enhancement ([[10-Summaries/nam-2019-got]]).
+- IRE1-mediated UPR persists into CALR-mutated MF MkPs ([[10-Summaries/nam-2019-got]]).
 
 ## Related
 

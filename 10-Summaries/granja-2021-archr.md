@@ -1,50 +1,54 @@
 ---
 type: summary
-title: "Granja et al. 2021 — ArchR: scalable scATAC-seq analysis software in R"
+title: "Granja 2021 — ArchR: a scalable software package for integrative single-cell chromatin accessibility analysis"
 source: "[[00-Sources/papers/ArchR is a scalable software package for integrative single-cell chromatin accessibility analysis]]"
-source_kind: paper
-author: "Jeffrey M. Granja, M. Ryan Corces, Sarah E. Pierce, S. Tansu Bagdatli, Hani Choudhry, Howard Y. Chang, William J. Greenleaf (corresponding)"
-published: 2021-02-25
-ingested: 2026-05-18
-ingest_depth: abstract+intro
-doi: "10.1038/s41588-021-00790-6"
-journal: "Nature Genetics"
-tags: [ArchR, scATAC-seq, software, R-package, Greenleaf-lab, Chang-lab, doublet-detection, trajectory, multi-omics-integration]
-entities: []
-concepts:
-  - "[[30-Concepts/scatac-seq]]"
-  - "[[30-Concepts/chromatin-accessibility]]"
-topics:
-  - "[[40-Topics/single-cell-atac-seq]]"
-  - "[[40-Topics/chromatin-architecture]]"
+aliases: [Granja 2021, ArchR, Jeffrey 2021]
+tags: [scATAC-seq, computational-tool, ArchR, software, Greenleaf, foundational]
+created: 2026-05-12
+updated: 2026-05-12
 ---
 
-**Citation:** Granja et al. (2021) — *ArchR: scalable scATAC-seq analysis software in R* — *Nature Genetics*. [DOI](https://doi.org/10.1038/s41588-021-00790-6)
+**Citation:** Granja et al. (2021) — *ArchR: a scalable software package for integrative single-cell chromatin accessibility analysis* — *Nature Genetics*. [DOI](https://doi.org/10.1038/s41588-021-00790-6)
 
 # Granja et al. 2021 — ArchR
 
-> Thesis: scATAC-seq data generation has outpaced analysis software. ArchR provides an end-to-end R package for **doublet removal, clustering, cell-type identification, peak calling, trajectory inference, gene-to-element linkage, TF footprinting, expression prediction, and multi-omic integration with scRNA-seq** — capable of processing **1.2 million cells on a standard Unix laptop in 8 hours**.
+> Jeffrey M. Granja, M. Ryan Corces, Sarah E. Pierce, S. Tansu Bagdatli, Hani Choudhry, Howard Y. Chang, **William J. Greenleaf\***. *Nature Genetics* **53**, 403–411 (March 2021). DOI: 10.1038/s41588-021-00790-6. Stanford.
 
-## Key claims (abstract + intro)
+## Thesis
 
-- **End-to-end analysis pipeline**: every common scATAC-seq operation from raw fragments through final cell-type-specific regulatory maps, integrated into one R package.
-- **Scalability is the load-bearing claim**: 1.2 M cells / 8 h on a laptop — order-of-magnitude faster than alternatives (Signac, SnapATAC2).
-- **Integration with scRNA-seq**: ArchR can co-cluster scATAC + scRNA, predict gene expression from chromatin accessibility, and assign TFs to cells.
-- **TF footprinting** at single-cell aggregate resolution; identifies cell-type-specific regulatory programs.
+**ArchR** is a scalable R-based software framework for end-to-end scATAC-seq analysis: marker-feature ID, doublet removal, clustering, cell-type ID, peak generation, DNA-to-gene linking, TF footprinting, scRNA-seq integration, trajectory inference. Analyzes **1.2 million cells in 8 hours on a standard Unix laptop** (vs SnapATAC/Signac requiring 128 GB RAM, 20 cores). Becomes a de facto standard for scATAC analysis pipelines.
 
-## Why this matters
+## Mechanism
 
-ArchR has become a dominant scATAC analysis package alongside Signac (Seurat ecosystem) and SnapATAC2. Anchors the scATAC analysis tools cluster in the wiki alongside chromVAR (Schep 2017), cisTopic (Bravo 2019), SnapATAC (Fang 2021), and EpiScanpy (Danese 2021).
+1. **Arrow files** (HDF5-based per-chromosome chunks) replace in-memory matrices → low-memory disk-backed analysis.
+2. **500-bp tile matrix** (vs SnapATAC's 5-kb bins) → fine-grained genome-wide accessibility while avoiding peak-calling-first ambiguity.
+3. **ArchR doublet detection**: bioinformatically generated synthetic doublets projected onto UMAP → nearest neighbors identified as doublets (ROC AUC 0.918 on 10 cell-line mixture).
+4. **Iterative LSI** for dimensionality reduction → less batch-effect sensitive than fixed-feature LSI.
 
-## Note on ingest depth
+## Key claims
 
-Abstract + intro only; full PDF re-ingest will deepen benchmark comparisons and the multi-omic integration algorithm details.
+- **Runtime**: 70,000-cell dataset in <1 hour with 32 GB RAM + 8 cores (SnapATAC exceeded 128 GB; Signac exceeded 32 GB).
+- **Doublet detection**: ROC AUC 0.918 by fragment count + nearest-neighbor; outperforms Scrublet for scATAC-seq.
+- **Dimensionality reduction**: outperforms LSI + diffusion maps for batch robustness across hematopoietic samples.
+- Scales to **1.2M cells in 8h** on standard laptop.
+
+## Surprising / load-bearing for the review
+
+- For §4.3 (Open Chromatin & DNA-Binding Profiles computational), ArchR replaces SnapATAC and Signac as the modern default. Together with [[snapatac]], [[chromvar]], [[cistopic]], [[episcanpy]], it forms the scATAC-seq tooling stack.
+- The **doublet-detection approach** (synthetic-doublet projection) is one of the most-cited methodological contributions to the field.
+
+## Entities / concepts touched
+
+[[scatac-seq]] · [[snapatac]] · [[scanpy]] · [[anndata]] · [[chromvar]] · [[20-Entities/william-greenleaf]] · [[40-Topics/single-cell-atac-seq]]
+
+## Related summaries
+
+- [[comprehensive-analysis-of-single-cell-atac-seq-data-with-snapatac]] — SnapATAC, predecessor.
+- [[chromvar-inferring-transcription-factor-associated-accessibility-from-single-cell-epigenomic-data]] — chromVAR TF analysis, integrates into ArchR.
+- [[episcanpy-integrated-single-cell-epigenomic-analysis]] — EpiScanpy, Python alternative.
 
 ---
-**Source:** [DOI](https://doi.org/10.1038/s41588-021-00790-6) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33633365/)
+**Source:** [DOI](https://doi.org/10.1038/s41588-021-00850-x) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33790476/)
 
-## Related
-
-- [[30-Concepts/scatac-seq]] · [[30-Concepts/chromatin-accessibility]]
-- [[10-Summaries/schep-2017-chromvar]] · [[10-Summaries/bravo-2019-cistopic]] · [[10-Summaries/fang-2021-snapatac]] · [[10-Summaries/danese-2021-episcanpy]]
-- [[40-Topics/single-cell-atac-seq]]
+---
+**Source:** [DOI](https://doi.org/10.1038/s41588-021-00850-x) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33790476/)

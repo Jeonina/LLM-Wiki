@@ -22,7 +22,7 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 - [[30-Concepts/daf-seq]] — single-cell, single-molecule chromatin + DNA sequence at near-nucleotide resolution via deaminase footprinting.
 - [[30-Concepts/fiber-seq]] — bulk single-molecule chromatin via methyltransferase stenciling; methodological ancestor of DAF-seq.
 - [[30-Concepts/single-molecule-footprinting]] — the broader method class.
-- [[30-Concepts/dogma-seq]] — chromatin + RNA + protein trimodal platform; integrated with GoT–ChA via imputation in [[10-Summaries/franco-2024-nature]].
+- [[30-Concepts/dogma-seq]] — chromatin + RNA + protein trimodal platform; integrated with GoT–ChA via imputation in [[10-Summaries/izzo-2024-got-cha]].
 - [[30-Concepts/cite-seq]] — scRNA + surface protein via antibody-derived tags.
 - [[30-Concepts/g-t-seq]] — G&T-seq, physical-separation scDNA + scRNA (1st joint DNA+RNA assay).
 - [[30-Concepts/dr-seq]] — DR-seq, one-pot quasilinear scDNA + scRNA alternative to G&T-seq.
@@ -85,21 +85,21 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 
 ### Genotype + transcriptome (droplet)
 
-- [[10-Summaries/anna-2019-nature]] — GoT method paper; CALR-mutated MPN.
+- [[10-Summaries/nam-2019-got]] — GoT method paper; CALR-mutated MPN.
 
 ### Genotype + chromatin (droplet, gDNA capture)
 
-- [[10-Summaries/franco-2024-nature]] — GoT–ChA; JAK2V617F MPN; cell-intrinsic chromatin priming of HSCs.
+- [[10-Summaries/izzo-2024-got-cha]] — GoT–ChA; JAK2V617F MPN; cell-intrinsic chromatin priming of HSCs.
 
 ### Genotype + chromatin (single-molecule, deaminase)
 
-- [[10-Summaries/elliott-2025-naturebiotechnology]] — DAF-seq / scDAF-seq; chromosome-length single-cell single-molecule chromatin maps.
+- [[10-Summaries/swanson-2025-daf-seq]] — DAF-seq / scDAF-seq; chromosome-length single-cell single-molecule chromatin maps.
 
 ### Reviews of the multi-omics landscape
 
-- [[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]] — Baysoy/Fan/Satija technological landscape.
-- [[10-Summaries/katy-2023-naturereviewsgenetics]] — Vandereyken/Voet methods and applications, including spatial.
-- [[10-Summaries/lukas-2023-naturereviewsgenetics]] — Heumos/Theis best-practices analysis recommendations.
+- [[10-Summaries/baysoy-2023-multiomics-landscape]] — Baysoy/Fan/Satija technological landscape.
+- [[10-Summaries/vandereyken-2023-scmultiomics-review]] — Vandereyken/Voet methods and applications, including spatial.
+- [[10-Summaries/heumos-2023-best-practices]] — Heumos/Theis best-practices analysis recommendations.
 - [[10-Summaries/wang-2023-multimodal-review]] — Wang/Jin methods catalog + integration tool taxonomy (matrix factorization vs manifold alignment vs deep generative).
 
 ### Methylation × chromatin / histone-mark single-cell methods

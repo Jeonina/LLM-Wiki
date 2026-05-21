@@ -13,7 +13,7 @@ updated: 2026-05-11
 
 ## Definition
 
-Most common sources ([[10-Summaries/lars-2017-naturereviewsgenetics]] Box 1):
+Most common sources ([[10-Summaries/forsberg-2017-mosaicism-review]] Box 1):
 
 - **Maternal microchimerism (MMC)** — mother's cells persist in offspring after transplacental transfer.
 - **Fetal microchimerism (FMC)** — fetal cells persist in maternal tissues after pregnancy. 30–50% of healthy post-partum women have detectable fetal cells in circulation, sometimes for decades.

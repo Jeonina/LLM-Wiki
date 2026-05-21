@@ -13,7 +13,7 @@ updated: 2026-05-07
 
 ## Definition
 
-In CD34⁺ progenitor analyses (the cohort type used in both [[10-Summaries/anna-2019-nature]] and [[10-Summaries/franco-2024-nature]]), the canonical clusters are:
+In CD34⁺ progenitor analyses (the cohort type used in both [[10-Summaries/nam-2019-got]] and [[10-Summaries/izzo-2024-got-cha]]), the canonical clusters are:
 
 - **HSPC** — hematopoietic stem and progenitor cells; further subdivided into HSC, HSC_LY (lymphoid-biased), HSC_MY (myeloid-biased).
 - **LMPP** — lymphoid-myeloid pluripotent progenitors.
@@ -29,17 +29,17 @@ These are recovered de novo from scRNA-seq and scATAC-seq clustering and serve a
 
 ## Why it matters
 
-Both [[10-Summaries/anna-2019-nature]] and [[10-Summaries/franco-2024-nature]] make their key claims by **projecting genotypes onto the differentiation map** and asking where the mutated cells accumulate or shift:
+Both [[10-Summaries/nam-2019-got]] and [[10-Summaries/izzo-2024-got-cha]] make their key claims by **projecting genotypes onto the differentiation map** and asking where the mutated cells accumulate or shift:
 
-- CALR-mutant cells in ET enrich progressively along myeloid differentiation, peaking in MkPs ([[10-Summaries/anna-2019-nature]]).
-- JAK2V617F-mutant cells distribute toward erythroid–megakaryocytic and granulocyte–monocyte progenitors and away from CLPs/lymphoid clusters; ruxolitinib re-evens this distribution without removing the clone ([[10-Summaries/franco-2024-nature]]).
+- CALR-mutant cells in ET enrich progressively along myeloid differentiation, peaking in MkPs ([[10-Summaries/nam-2019-got]]).
+- JAK2V617F-mutant cells distribute toward erythroid–megakaryocytic and granulocyte–monocyte progenitors and away from CLPs/lymphoid clusters; ruxolitinib re-evens this distribution without removing the clone ([[10-Summaries/izzo-2024-got-cha]]).
 
 The hierarchy itself — recovered from healthy CD34⁺ cells — defines the "native differentiation tree" that mutated clones perturb.
 
 ## Variants and refinements
 
-- **MkP heterogeneity** ([[10-Summaries/anna-2019-nature]]): HSC^low MkP^high vs HSC^high MkP^low subsets within the MkP cluster differ in mutant cell frequency and proliferation.
-- **Pseudotime ordering** captures progressive commitment within branches (e.g. erythroid pseudotime quantiles in [[10-Summaries/franco-2024-nature]]).
+- **MkP heterogeneity** ([[10-Summaries/nam-2019-got]]): HSC^low MkP^high vs HSC^high MkP^low subsets within the MkP cluster differ in mutant cell frequency and proliferation.
+- **Pseudotime ordering** captures progressive commitment within branches (e.g. erythroid pseudotime quantiles in [[10-Summaries/izzo-2024-got-cha]]).
 
 ## Contested points
 
@@ -47,8 +47,8 @@ The hierarchy itself — recovered from healthy CD34⁺ cells — defines the "n
 
 ## Examples
 
-- 18,722 CD34⁺ cells from 5 ET patients, t-SNE clustered into HSPC / IMP / MEP / MkP / NP / EP / E-B-M / M-D / PreB ([[10-Summaries/anna-2019-nature]]).
-- 150,643 cells from 21 MPN samples, integrated UMAP with HSC / HSCMY / HSCLY / LMPP / CMP / GMP / MEP / EP1-3 / MkP / CLP / B / T / NK ([[10-Summaries/franco-2024-nature]]).
+- 18,722 CD34⁺ cells from 5 ET patients, t-SNE clustered into HSPC / IMP / MEP / MkP / NP / EP / E-B-M / M-D / PreB ([[10-Summaries/nam-2019-got]]).
+- 150,643 cells from 21 MPN samples, integrated UMAP with HSC / HSCMY / HSCLY / LMPP / CMP / GMP / MEP / EP1-3 / MkP / CLP / B / T / NK ([[10-Summaries/izzo-2024-got-cha]]).
 
 ## Related
 

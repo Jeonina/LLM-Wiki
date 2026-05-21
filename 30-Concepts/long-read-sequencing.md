@@ -22,7 +22,7 @@ updated: 2026-05-11
 - **No base conversion required** for methylation detection — sidesteps the three-base alignment problem of [[bisulfite-sequencing]].
 - **Direct detection of multiple modifications**: 5mC, 5hmC, 6mA, 4mC.
 - **Phasing across long distances**: structural variants, repeat expansions, imprinted regions become tractable.
-- **Single-molecule resolution** without amplification: native DNA is read directly, preserving any per-molecule information ([[10-Summaries/yilei-2025-naturereviewsgenetics]]).
+- **Single-molecule resolution** without amplification: native DNA is read directly, preserving any per-molecule information ([[10-Summaries/fu-2025-longread-methylation]]).
 - **Enabling platform for** [[fiber-seq]] (m6A footprinting via PacBio) and [[daf-seq]] (deaminase footprinting via PacBio + PTA).
 
 ## Variants and refinements
@@ -38,7 +38,7 @@ updated: 2026-05-11
 
 ## Examples
 
-- [[10-Summaries/elliott-2025-naturebiotechnology]] uses PacBio HiFi to read DAF-seq deamination patterns at >25,000× depth on targeted loci.
+- [[10-Summaries/swanson-2025-daf-seq]] uses PacBio HiFi to read DAF-seq deamination patterns at >25,000× depth on targeted loci.
 - HiDEF-seq achieves ~7 × 10⁻¹⁶ error rate via PacBio circular consensus duplex sequencing.
 
 ## Related

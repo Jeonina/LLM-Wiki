@@ -2,19 +2,23 @@
 type: summary
 title: "Liu 2023 — Single-cell DNA methylome and 3D multi-omic atlas of the adult mouse brain"
 source: "[[00-Sources/papers/Single-cell DNA methylome and 3D multi-omic atlas of the adult mouse brain]]"
-aliases: ["Liu 2023 mouse brain atlas", "snmC-seq3 atlas", "snm3C-seq atlas"]
-tags: [snmC-seq3, snm3C-seq, mouse-brain-atlas, methylome, 3D-genome, BICCN, Ecker-lab, Behrens-lab]
+aliases: ["snmC-seq3 brain atlas", "snm3C-seq atlas", "Liu 2023"]
+tags: [snmC-seq3, snm3C-seq, methylation, 3D-genome, brain-atlas, BICCN, joint-assay]
 created: 2026-05-13
 updated: 2026-05-13
 ---
 
 **Citation:** Liu et al. (2023) — *Single-cell DNA methylome and 3D multi-omic atlas of the adult mouse brain* — *Nature*. [DOI](https://doi.org/10.1038/s41586-023-06805-y)
 
-Liu, Zeng, Zhou et al. (Ecker, Behrens labs; Salk + UCSD) generated **301,626 single-nucleus methylomes (snmC-seq3)** and **176,003 joint methylome + chromatin-conformation profiles (snm3C-seq)** from 117 dissected regions across the adult mouse brain. Iterative clustering plus cross-modality integration with companion BICCN scRNA-seq and snATAC-seq atlases produced a methylation-based cell taxonomy with 4,673 cell groups and 274 subclasses, alongside 2.6 million differentially methylated regions. Brain-wide cell-type comparisons enabled construction of regulatory networks linking TFs, DMRs, and target genes; 3D-genome diversities were observed at neuronal genes and correlated with methylation/transcription. The data and viewer are available at mousebrain.salk.edu.
+Liu, Zeng, Zhou and colleagues (Ecker lab) generated the most comprehensive single-cell DNA-methylation and chromatin-conformation atlas of a mammalian brain: 301,626 single-nucleus methylomes (snmC-seq3) and 176,003 joint methylome + 3C contact maps (snm3C-seq) from 117 dissected regions across 18 coronal slices of the adult C57BL/6 mouse brain.
+
+Methylome-based iterative clustering produced 4,673 cell groups grouped into 274 subclasses, validated against companion BICCN transcriptome and ATAC-seq data and registered to the Allen Common Coordinate Framework. The atlas identifies 2.6 million differentially methylated regions (DMRs) as candidate regulatory elements, demonstrates cell-type- and region-specific patterns of both CpG (mCG) and non-CpG (mCH) methylation, and validates spatial methylation diversity by MERFISH-based in situ transcriptomics.
+
+The snm3C-seq joint assay reads methylome and chromatin conformation from the same nucleus, revealing that chromatin-conformation diversity at functionally important neuronal genes is highly correlated with methylation and transcription changes. The dataset enabled construction of cell-type-specific regulatory networks linking TFs, DMRs and target genes, and showed that intragenic methylation and conformation patterns predict alternative isoform usage (validated against whole-brain SMART-seq2). Resources are accessible at mousebrain.salk.edu.
 
 ## Why this matters
 
-The largest single-cell methylome + 3D-genome atlas to date; the data foundation reused by Mukamel 2025 (aneuploidy mining) and many derivative studies. Anchors §3.3 (methylome) and §3.5 (3D-genome via snm3C-seq). Demonstrates that methylation alone can resolve brain cell-type taxonomy at finer granularity than scRNA-seq — important argument when motivating scDNA-centric workflows. Production-scale reference for any review of brain epigenome.
+The current state-of-the-art demonstration that two epigenetic modalities (methylome + 3D genome) can be read jointly from the same single cell at brain-atlas scale, and that the joint readout resolves regulatory biology unavailable to either modality alone. Anchors §2 (locus-state joint-assay), §3.3 (methylation), §3.5 (3D genome), §5 (atlas applications). Demonstrates that "joint reading of two layers of the locus state at scale" is no longer aspirational.
 
 ---
 **Source:** [DOI](https://doi.org/10.1038/s41586-023-06805-y) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/38092913/)
@@ -24,8 +28,9 @@ The largest single-cell methylome + 3D-genome atlas to date; the data foundation
 
 ## Related
 
+- [[30-Concepts/snmC-seq-family]]
+- [[30-Concepts/sn-m3C-seq]]
+- [[30-Concepts/joint-single-cell-multi-omics]]
+- [[40-Topics/brain-atlases]]
 - [[10-Summaries/luo-2018-snmc-seq2]]
-- [[10-Summaries/mukamel-2025-aneuploidy-brain]]
-- [[10-Summaries/nagano-2013-nature]]
 - [[20-Entities/joseph-ecker]]
-- [[40-Topics/brain-mosaicism]]

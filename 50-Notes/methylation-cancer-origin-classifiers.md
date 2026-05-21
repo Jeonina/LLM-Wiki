@@ -8,9 +8,9 @@ updated: 2026-05-19
 sources: [
   "[[10-Summaries/kim-2017-methylation-memory-review]]",
   "[[10-Summaries/kim-2017-dna-methylation-memory]]",
-  "[[10-Summaries/zachary-2013-naturereviewsgenetics]]",
   "[[10-Summaries/smith-2013-methylation-development]]",
-  "[[10-Summaries/yilei-2025-naturereviewsgenetics]]",
+  "[[10-Summaries/smith-2013-methylation-development]]",
+  "[[10-Summaries/fu-2025-longread-methylation]]",
   "[[10-Summaries/hunt-2022-sctem-seq]]",
   "[[10-Summaries/shen-2026-splicool-seq]]",
   "[[10-Summaries/cardilla-2025-spatial-methylome]]"
@@ -19,7 +19,7 @@ sources: [
 
 # Methylation-based cancer-of-origin classifiers — clinical-grade epigenetic memory
 
-> DNA methylation patterns are heritable across cell divisions and act as a record of cell-type identity ([[10-Summaries/kim-2017-dna-methylation-memory]]; [[10-Summaries/zachary-2013-naturereviewsgenetics]]). Cancer cells retain these signatures even after metastatic spread, which makes **methylation classifiers a practical clinical tool for identifying tissue-of-origin** in difficult diagnostic cases ([[10-Summaries/kim-2017-methylation-memory-review]]). Three deployments have moved methylation-classifier technology from research curiosity to clinical-grade diagnostic: **EPICUP** for cancer of unknown primary (CUP) ([[10-Summaries/kim-2017-methylation-memory-review]]; [[30-Concepts/cancer-of-unknown-primary]]), the **Heidelberg brain-tumor MNP classifier** for CNS neoplasms, and emerging **AML methylation classifiers** for myeloid leukemia subtyping ([[30-Concepts/cancer-of-unknown-primary]]). All three exploit the same underlying biology: methylation is laid down during differentiation by lineage-specific DNMT/TET activity and is largely preserved through tumorigenesis ([[10-Summaries/smith-2013-methylation-development]]; [[10-Summaries/kim-2017-dna-methylation-memory]]).
+> DNA methylation patterns are heritable across cell divisions and act as a record of cell-type identity ([[10-Summaries/kim-2017-dna-methylation-memory]]; [[10-Summaries/smith-2013-methylation-development]]). Cancer cells retain these signatures even after metastatic spread, which makes **methylation classifiers a practical clinical tool for identifying tissue-of-origin** in difficult diagnostic cases ([[10-Summaries/kim-2017-methylation-memory-review]]). Three deployments have moved methylation-classifier technology from research curiosity to clinical-grade diagnostic: **EPICUP** for cancer of unknown primary (CUP) ([[10-Summaries/kim-2017-methylation-memory-review]]; [[30-Concepts/cancer-of-unknown-primary]]), the **Heidelberg brain-tumor MNP classifier** for CNS neoplasms, and emerging **AML methylation classifiers** for myeloid leukemia subtyping ([[30-Concepts/cancer-of-unknown-primary]]). All three exploit the same underlying biology: methylation is laid down during differentiation by lineage-specific DNMT/TET activity and is largely preserved through tumorigenesis ([[10-Summaries/smith-2013-methylation-development]]; [[10-Summaries/kim-2017-dna-methylation-memory]]).
 
 > **Note on corpus coverage** — this wiki ingests Kim 2017 *Experimental & Molecular Medicine* (memory review) and Yilei 2025 *NRG* (computational long-read methylation), which together describe the EPICUP classifier and the broader memory framework. The primary classifier papers (Moran et al. 2016 *Lancet Oncology* on EPICUP, Capper et al. 2018 *Nature* on the brain-tumor MNP classifier) are not directly ingested. This synthesis therefore relies on review summaries rather than primary methods papers, and flags specific claims as `(review-citation)` where they trace through review chains rather than primary sources.
 
@@ -59,7 +59,7 @@ Single-cell methylation in AML has progressed via scTEM-seq ([[10-Summaries/hunt
 Several epigenetic axes record cell-type identity (histone marks, accessibility, 3D genome — see [[50-Notes/regulatory-layers-overview]]), but methylation classifiers have outperformed alternatives clinically:
 
 - **Stability through tumorigenesis** — methylation is more stable than histone marks or accessibility, which can drift substantially during clonal evolution ([[10-Summaries/kim-2017-methylation-memory-review]]).
-- **Per-CpG measurement** — methylation gives ~28 million distinct binary signals per genome ([[10-Summaries/zachary-2013-naturereviewsgenetics]]), enabling fine-grained classifiers. Histone marks give peak-level signal that's coarser.
+- **Per-CpG measurement** — methylation gives ~28 million distinct binary signals per genome ([[10-Summaries/smith-2013-methylation-development]]), enabling fine-grained classifiers. Histone marks give peak-level signal that's coarser.
 - **Sample compatibility** — formalin-fixed paraffin-embedded (FFPE) samples retain methylation well; chromatin and RNA degrade more readily. Clinical pathology archives are FFPE.
 - **Microarray maturity** — Illumina 450K/EPIC microarrays gave a standardized, scalable, reproducible measurement platform years before clinical-grade ATAC or CUT&Tag existed (synthesis).
 

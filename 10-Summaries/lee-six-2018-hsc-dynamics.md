@@ -2,19 +2,21 @@
 type: summary
 title: "Lee-Six 2018 — Population dynamics of normal human blood inferred from somatic mutations"
 source: "[[00-Sources/papers/Population dynamics of normal human blood inferred from somatic mutations]]"
-aliases: ["Lee-Six 2018", "HSC phylogeny WGS"]
-tags: [hematopoiesis, HSC, somatic-mutations, clonal-dynamics, WGS-colonies, Sanger, Campbell-lab, Stratton-lab, application]
+aliases: ["Lee-Six 2018", "HSC population dynamics"]
+tags: [lineage-tracing, somatic-mutations, hematopoiesis, HSC, phylogeny, Sanger]
 created: 2026-05-13
 updated: 2026-05-13
 ---
 
 **Citation:** Lee-Six et al. (2018) — *Population dynamics of normal human blood inferred from somatic mutations* — *Nature*. [DOI](https://doi.org/10.1038/s41586-018-0497-0)
 
-Lee-Six, Øbro, Shepherd et al. (Campbell, Stratton, Green labs; Sanger + Cambridge) sequenced 140 single-cell-derived hematopoietic stem and progenitor colonies from a healthy 59-year-old male by WGS (~15× per colony), identifying 129,582 somatic SNVs. Phylogenetic reconstruction from these mutations revealed: (i) all blood derives from a common ancestor preceding gastrulation; (ii) HSC population size grows in early life and plateaus by adolescence; (iii) the actively contributing HSC pool is estimated at **50,000–200,000 cells** — much larger than transplantation assays had suggested; (iv) adult HSC clones contribute multilineage output (granulocytes + B lymphocytes).
+Lee-Six and colleagues (Campbell/Stratton labs, Sanger) reconstructed the population dynamics of human hematopoietic stem cells (HSCs) from a single 59-year-old male using somatic mutations as natural lineage barcodes. They isolated 140 single hematopoietic stem/progenitor cells, expanded each in vitro to clonal colonies, performed WGS at $\sim$15× per colony, and identified 129,582 spontaneous genome-wide somatic mutations. Population-genetic inference treated the cells as a capture-recapture experiment: shared mutations identify shared ancestors, and clonal abundances in bulk peripheral blood serve as a recapture readout.
+
+Three findings. (1) All blood derives from a common ancestor predating gastrulation, with the earliest phylogenetic branches reflecting embryonic cell divisions. (2) The HSC pool grows steadily in early life and reaches a stable plateau of 50,000–200,000 actively-contributing stem cells by adolescence — the first direct in-vivo HSC pool-size estimate in humans. (3) Adult HSC clones generate multilineage output including granulocytes and B lymphocytes, demonstrating that long-term hematopoiesis is driven by classical multipotent stem cells rather than restricted-lineage progenitors.
 
 ## Why this matters
 
-Landmark §5 application — uses naturally accumulated somatic mutations from single-cell-derived colonies as molecular barcodes for lineage tracing, sidestepping artificial labeling. The colony-WGS approach is the direct alternative to scWGA-based scDNA-seq for high-fidelity sSNV calling. Establishes the population-genetics framework (capture-recapture analogy, mutation as molecular clock) that later applies to CH, normal tissue lineages (Coorens 2021), and embryonic development (Coorens 2024). Conceptual cousin of duplex-sequencing approaches (Schmitt 2012, NanoSeq 2021, CODEC 2023) but solves the accuracy problem with colony expansion + bulk WGS rather than per-molecule duplex consensus.
+Demonstrates that somatic mutations + WGS of single-cell-derived colonies can quantify in-vivo stem cell population dynamics that have historically required transplantation or telomere modeling. Anchors §3.1 (single-cell-derived clones as a scDNA-seq alternative to direct scWGS), §5 (hematopoiesis applications), and the lineage-tracing motivation in §1. Complementary to Coorens 2021's LCM-WGS approach and to the EPI-Clone (Scherer 2025) methylation-based approach to the same question.
 
 ---
 **Source:** [DOI](https://doi.org/10.1038/s41586-018-0497-0) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30185910/)
@@ -24,8 +26,7 @@ Landmark §5 application — uses naturally accumulated somatic mutations from s
 
 ## Related
 
-- [[10-Summaries/schmitt-2012-pnas]]
-- [[10-Summaries/bae-2023-codec]]
-- [[10-Summaries/kriz-2025-duplex-multiome]]
-- [[20-Entities/peter-campbell]]
-- [[40-Topics/clonal-hematopoiesis]]
+- [[30-Concepts/lineage-tracing-somatic-mutations]]
+- [[30-Concepts/clonal-hematopoiesis]]
+- [[10-Summaries/coorens-2021-nature]]
+- [[10-Summaries/scherer-2025-nature]]

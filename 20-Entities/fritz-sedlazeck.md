@@ -18,11 +18,11 @@ Human Genome Sequencing Center, Baylor College of Medicine; also Rice University
 
 ## Mentions
 
-- **2026-05-11** — [[10-Summaries/yilei-2025-naturereviewsgenetics]]: co-senior author of the long-read methylation review.
+- **2026-05-11** — [[10-Summaries/fu-2025-longread-methylation]]: co-senior author of the long-read methylation review.
 
 ## Positions and claims
 
-- Holds that **direct methylation detection from long-read sequencing** sidesteps the structural alignment problems of bisulfite sequencing and enables joint analysis with structural variation ([[10-Summaries/yilei-2025-naturereviewsgenetics]]).
+- Holds that **direct methylation detection from long-read sequencing** sidesteps the structural alignment problems of bisulfite sequencing and enables joint analysis with structural variation ([[10-Summaries/fu-2025-longread-methylation]]).
 - Holds that **computational tools are the field's bottleneck** — calling algorithms must keep pace with evolving sequencing chemistry.
 
 ## Related

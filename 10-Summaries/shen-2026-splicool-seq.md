@@ -53,7 +53,7 @@ In-situ GpC methyltransferase (M.CviPI) marks accessible regions. Formaldehyde f
 ## Connections to other sources
 
 - Direct lineage from scCOOL-seq (Guo et al.) and scNMT-seq (Clark et al.); cites these as precursors.
-- Builds on universal-Tn5 logic that also appears in [[10-Summaries/elliott-2025-naturebiotechnology]] (DAF-seq) — though there it's chemical (deaminase) rather than enzymatic.
+- Builds on universal-Tn5 logic that also appears in [[10-Summaries/swanson-2025-daf-seq]] (DAF-seq) — though there it's chemical (deaminase) rather than enzymatic.
 - Complements [[10-Summaries/bai-2024-simple-seq]] (SIMPLE-seq does 5mC+5hmC at base resolution; SpliCOOL-seq does 5mC+accessibility at higher throughput).
 - The "viral mimicry"/HMA framing connects to [[10-Summaries/hunt-2022-sctem-seq]] (scTEM-seq + decitabine in AML).
 

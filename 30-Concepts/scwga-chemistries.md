@@ -19,11 +19,11 @@ updated: 2026-05-19
 - **PicoPLEX / NEB-WGA** — proprietary hybrid chemistries.
 - **LIANTI (Linear Amplification via Transposon Insertion)** — Tn5-based linear amplification; lower error rate ([[10-Summaries/chen-2017-lianti]]).
 - **PTA (Primary Template-Directed Amplification)** — phi29 + exonuclease-resistant terminator nucleotides; most uniform coverage to date ([[10-Summaries/gonzalez-pena-2021-pnas]]).
-- **META-CS / Tn5-duplex** — single-cell-compatible duplex sequencing variant ([[10-Summaries/diane-2025-naturereviewsgenetics]]).
+- **META-CS / Tn5-duplex** — single-cell-compatible duplex sequencing variant ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
 ## Tradeoff space
 
-Coverage uniformity ↑, allelic dropout ↓, error rate ↓ — but no chemistry wins on all three ([[10-Summaries/gawad-2016-scgenome-review]]; [[10-Summaries/diane-2025-naturereviewsgenetics]]).
+Coverage uniformity ↑, allelic dropout ↓, error rate ↓ — but no chemistry wins on all three ([[10-Summaries/gawad-2016-scgenome-review]]; [[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
 ## Related
 

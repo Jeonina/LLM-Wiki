@@ -7,8 +7,8 @@ created: 2026-05-12
 updated: 2026-05-12
 sources: [
   "[[10-Summaries/hou-2016-sctrio-seq]]",
-  "[[10-Summaries/franco-2024-nature]]",
-  "[[10-Summaries/elliott-2025-naturebiotechnology]]",
+  "[[10-Summaries/izzo-2024-got-cha]]",
+  "[[10-Summaries/swanson-2025-daf-seq]]",
   "[[10-Summaries/clark-2018-scnmt-seq]]",
   "[[10-Summaries/kousi-2022-alzheimer-mosaicism]]",
   "[[10-Summaries/luquette-2025-pta-duplex-mosaicism]]"
@@ -17,18 +17,18 @@ sources: [
 
 # Mosaicism × epigenome at single-cell resolution — the synthesis gap
 
-> **STATUS UPDATE (2026-05-13).** The gap that motivated this note has just been *methodologically closed* by a bioRxiv preprint: [[10-Summaries/andrea-2025-biorxiv|Kriz et al. 2025 — Duplex-Multiome]] (Walsh + Lee labs, Boston Children's). Duplex-Multiome integrates duplex consensus sequencing into the 10X Multiome platform to measure **point mutations + snATAC + snRNA in the same nucleus**, scaled to 51,400 nuclei from postmortem human brain. **All four wishlist criteria are met in one assay.** This note's framing shifts: the *technological* gap is closed; the *conceptual* gap — articulating a DNA-centric locus-state framework that interprets what such joint measurements mean — remains open and is exactly what the planned review can contribute.
+> **STATUS UPDATE (2026-05-13).** The gap that motivated this note has just been *methodologically closed* by a bioRxiv preprint: [[10-Summaries/kriz-2025-duplex-multiome|Kriz et al. 2025 — Duplex-Multiome]] (Walsh + Lee labs, Boston Children's). Duplex-Multiome integrates duplex consensus sequencing into the 10X Multiome platform to measure **point mutations + snATAC + snRNA in the same nucleus**, scaled to 51,400 nuclei from postmortem human brain. **All four wishlist criteria are met in one assay.** This note's framing shifts: the *technological* gap is closed; the *conceptual* gap — articulating a DNA-centric locus-state framework that interprets what such joint measurements mean — remains open and is exactly what the planned review can contribute.
 >
-> **Original framing (still useful as historical context).** Before Duplex-Multiome, no published single-cell assay measured somatic point mutations + chromatin/methylation state genome-wide in the same cell. The closest precedents — [[sctrio-seq]] (CNV+methylation+RNA), [[got-cha]] (targeted SNV + accessibility), [[daf-seq]] (single-fiber DNA+chromatin), [[10-Summaries/eran-2025-neuron|Mukamel 2025]] (aneuploidy+methylation atlas-scale) — each covered a slice. The neuro-mosaicism field measured mutations cell-type-specifically but used *bulk* epigenome annotations to interpret them. This note articulates why the gap mattered, who approached its edges, and how Duplex-Multiome closes it.
+> **Original framing (still useful as historical context).** Before Duplex-Multiome, no published single-cell assay measured somatic point mutations + chromatin/methylation state genome-wide in the same cell. The closest precedents — [[sctrio-seq]] (CNV+methylation+RNA), [[got-cha]] (targeted SNV + accessibility), [[daf-seq]] (single-fiber DNA+chromatin), [[10-Summaries/mukamel-2025-aneuploidy-brain|Mukamel 2025]] (aneuploidy+methylation atlas-scale) — each covered a slice. The neuro-mosaicism field measured mutations cell-type-specifically but used *bulk* epigenome annotations to interpret them. This note articulates why the gap mattered, who approached its edges, and how Duplex-Multiome closes it.
 
 ## Why the gap matters
 
-Somatic mosaicism is the body's record of post-zygotic mutational history ([[somatic-mosaicism]]; [[10-Summaries/lars-2017-naturereviewsgenetics]]; [[10-Summaries/ian-2015-trendsingenetics]]). The interpretive question almost always lands on **what does this mutation do to the cell's regulatory state?** — does it sit in a heterochromatin region (silent), an active enhancer (locus-specific consequence), a methylated CpG island (potentially disrupting silencing)? In practice the answer is currently inferred from *bulk* epigenome reference data (ENCODE, Roadmap, BluePrint) overlaid on single-cell genotype calls.
+Somatic mosaicism is the body's record of post-zygotic mutational history ([[somatic-mosaicism]]; [[10-Summaries/forsberg-2017-mosaicism-review]]; [[10-Summaries/ian-2015-trendsingenetics]]). The interpretive question almost always lands on **what does this mutation do to the cell's regulatory state?** — does it sit in a heterochromatin region (silent), an active enhancer (locus-specific consequence), a methylated CpG island (potentially disrupting silencing)? In practice the answer is currently inferred from *bulk* epigenome reference data (ENCODE, Roadmap, BluePrint) overlaid on single-cell genotype calls.
 
 This is the workflow that has produced cell-type-specific somatic-mutation burden estimates in Alzheimer's brain ([[10-Summaries/kousi-2022-alzheimer-mosaicism]]) and lung/colon ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]). It works because cell-type identity (and therefore which bulk reference to use) can usually be inferred from the same cell's transcriptome. But it cannot answer:
 
 - **Does a mosaic point mutation perturb its own local epigenome at the single-cell level?** Bulk evidence is mixed (see scTrio-seq: large-scale CNVs do *not* change local methylation; but point-mutation effects could differ).
-- **Are mosaic mutations in regulatory DNA preferentially active vs silent on the same cell's chromatin?** Single-molecule DAF-seq evidence on a 1.5% VAF mosaic CC→TT variant in COLO829 ([[10-Summaries/elliott-2025-naturebiotechnology]]) suggests the variant *ablates* the local CTCF footprint on the same fiber it sits on — but this is one locus in one tumor mixture.
+- **Are mosaic mutations in regulatory DNA preferentially active vs silent on the same cell's chromatin?** Single-molecule DAF-seq evidence on a 1.5% VAF mosaic CC→TT variant in COLO829 ([[10-Summaries/swanson-2025-daf-seq]]) suggests the variant *ablates* the local CTCF footprint on the same fiber it sits on — but this is one locus in one tumor mixture.
 - **How does the cell's chromatin state at a future mutation site predict the mutation's likelihood of arising or being selected?** Mutational signatures (UV, smoking, replication-error) interact with chromatin (early-vs-late-replicating regions accumulate mutations differently — [[replication-timing]]). Single-cell joint measurement would test mechanism, not just correlation.
 
 ## The four anchor papers
@@ -49,7 +49,7 @@ This is the workflow that has produced cell-type-specific somatic-mutation burde
 
 ### 2. GoT-ChA (Franco 2024) — targeted SNV + accessibility
 
-[[10-Summaries/franco-2024-nature]] · [[got-cha]]
+[[10-Summaries/izzo-2024-got-cha]] · [[got-cha]]
 
 **Method**: 10x scATAC-seq workflow modified to co-capture genomic DNA fragments containing a targeted mutation locus, then assigns genotypes via the cell barcode shared with the accessibility profile.
 
@@ -62,7 +62,7 @@ This is the workflow that has produced cell-type-specific somatic-mutation burde
 
 ### 3. DAF-seq / scDAF-seq (Elliott 2025) — single-fiber DNA+chromatin
 
-[[10-Summaries/elliott-2025-naturebiotechnology]] · [[daf-seq]]
+[[10-Summaries/swanson-2025-daf-seq]] · [[daf-seq]]
 
 **Method**: dsDNA cytidine deaminase (SsDddA) stencils accessible cytosines as C→T sequence changes that survive amplification. Single-cell version sorts cells, performs PTA, sequences on PacBio. Each fiber yields its own sequence + chromatin state simultaneously.
 
@@ -76,7 +76,7 @@ This is the workflow that has produced cell-type-specific somatic-mutation burde
 
 ### 4. Mukamel 2025 — snmC-seq aneuploidy detection at 415K-cell mouse brain scale (NEW)
 
-[[10-Summaries/eran-2025-neuron]]
+[[10-Summaries/mukamel-2025-aneuploidy-brain]]
 
 **Method**: applies the scTrio-seq trick (RRBS read distribution → CNV signal) to the **snmC-seq3 / snm3C-seq BICCN mouse brain atlas (415,103 single-cell methylomes)**. Bisulfite-converted reads are uniformly distributed across the genome under bisulfite chemistry, so their density in genomic bins reports relative copy number.
 
@@ -94,7 +94,7 @@ This is the workflow that has produced cell-type-specific somatic-mutation burde
 
 ### 5. Duplex-Multiome (Kriz 2025) — point mutations + snATAC + snRNA per nucleus, atlas-scale (the gap-closer)
 
-[[10-Summaries/andrea-2025-biorxiv]]
+[[10-Summaries/kriz-2025-duplex-multiome]]
 
 **Method**: integrates **duplex consensus sequencing into the 10X Multiome snATAC arm** by strand-tagging during library prep. Duplex consensus collapses sequencing error >10,000-fold, enabling accurate somatic SNV calls per nucleus. Same nucleus also yields snATAC chromatin profile + snRNA-seq transcriptome.
 
@@ -165,9 +165,9 @@ The DNA-centric "locus state" framing in [[scdna-capabilities-framework]] antici
 
 The neuro-mosaicism literature provides the empirical foundation for the planned review's §1 (somatic mosaicism opening) and §5 (neuroscience applications). The bulk-epi-annotation problem is *most acute* in the brain because cell-type-specific epigenome references are needed to interpret cell-type-specific somatic mutations.
 
-- [[10-Summaries/taejeong-2018-science]] — Bae 2018: 200–400 mosaic SNVs/cell in fetal neuronal progenitors; mutation rate ~3 orders of magnitude higher than adult germline during neurogenesis; mutation spectrum shifts from CpG-deamination (early) to oxidative damage (neurogenesis); **10% mosaic SNV depletion in fetal-brain DHS sites** — direct evidence of chromatin-state-shaping-mutation-distribution within the same lineage.
+- [[10-Summaries/bae-2017-pregastrulation-mutations]] — Bae 2018: 200–400 mosaic SNVs/cell in fetal neuronal progenitors; mutation rate ~3 orders of magnitude higher than adult germline during neurogenesis; mutation spectrum shifts from CpG-deamination (early) to oxidative damage (neurogenesis); **10% mosaic SNV depletion in fetal-brain DHS sites** — direct evidence of chromatin-state-shaping-mutation-distribution within the same lineage.
 - [[10-Summaries/taejeong-2022-science]] — Bae 2022: 131-brain BSMN cohort; ~6% hypermutable brains, aging-associated; **ASD brains enriched for somatic mutations creating MEIS TF binding motifs in fetal-brain enhancer-like regions** — the field's leading direct mosaic-mutation-to-enhancer causal pathway, but interpreted via *bulk* fetal-brain epigenome reference, not the same-cell measurement.
-- [[10-Summaries/eran-2025-neuron]] — Mukamel 2025: snmC-seq atlas-scale (415K cells) brain aneuploidy with cell-type-specific enrichment (OPCs, Pons, chr16/chr21). The strongest current precedent for atlas-scale joint (mutation, epi) at single-cell resolution in the brain.
+- [[10-Summaries/mukamel-2025-aneuploidy-brain]] — Mukamel 2025: snmC-seq atlas-scale (415K cells) brain aneuploidy with cell-type-specific enrichment (OPCs, Pons, chr16/chr21). The strongest current precedent for atlas-scale joint (mutation, epi) at single-cell resolution in the brain.
 - [[10-Summaries/kousi-2022-alzheimer-mosaicism]] — Kousi/Kellis 2022 AD: cell-type-specific mosaic SNV burden by FACS+WGS. Uses bulk-epigenome annotation for interpretation; methodologically the human-AD complement of Bae 2022.
 - [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — Luquette/Walsh SMaHT 102-nucleus PTA + DS. Single-neuron point-mutation truth-set; no paired epi measurement.
 

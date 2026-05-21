@@ -23,7 +23,7 @@ updated: 2026-05-11
 ### Alternatives that skip scWGA
 
 - [[30-Concepts/duplex-sequencing]] — bulk-DNA single-molecule methods.
-- DNTR-seq (in [[10-Summaries/katy-2023-naturereviewsgenetics]]) — direct nuclear DNA tagmentation, skipping WGA.
+- DNTR-seq (in [[10-Summaries/vandereyken-2023-scmultiomics-review]]) — direct nuclear DNA tagmentation, skipping WGA.
 
 ### Errors introduced by scWGA
 
@@ -43,15 +43,15 @@ updated: 2026-05-11
 
 ### Comparative reviews
 
-- [[10-Summaries/diane-2025-naturereviewsgenetics]] — current method comparison Table 1.
-- [[10-Summaries/charles-2016-naturereviewsgenetics]] — pre-PTA 3-category comparison.
+- [[10-Summaries/shao-2025-scDNA-mosaicism-review]] — current method comparison Table 1.
+- [[10-Summaries/gawad-2016-scgenome-review]] — pre-PTA 3-category comparison.
 
 ### Multi-omic methods using specific scWGA chemistries
 
-- [[10-Summaries/anna-2019-nature]] — GoT (10x cDNA amplification, not classical scWGA but related).
-- [[10-Summaries/franco-2024-nature]] — GoT–ChA (gDNA locus amplification in droplets).
-- [[10-Summaries/elliott-2025-naturebiotechnology]] — scDAF-seq using PTA for genome-wide amplification.
-- [[10-Summaries/katy-2023-naturereviewsgenetics]] — G&T-seq family using MDA / PCR / DA-PCR.
+- [[10-Summaries/nam-2019-got]] — GoT (10x cDNA amplification, not classical scWGA but related).
+- [[10-Summaries/izzo-2024-got-cha]] — GoT–ChA (gDNA locus amplification in droplets).
+- [[10-Summaries/swanson-2025-daf-seq]] — scDAF-seq using PTA for genome-wide amplification.
+- [[10-Summaries/vandereyken-2023-scmultiomics-review]] — G&T-seq family using MDA / PCR / DA-PCR.
 
 ## Synthesized notes
 
@@ -61,5 +61,5 @@ _None yet — natural target: "Choosing a scWGA method: tradeoffs and applicatio
 
 - Whether MDA retains a niche given PTA's cost approaching MDA's.
 - When to use scWGA-free approaches (DNTR-seq, duplex sequencing) — application-dependent, no consensus heuristic.
-- Standardization of QC metrics and definitions (especially ADO) across methods — flagged in [[10-Summaries/charles-2016-naturereviewsgenetics]], still partly unresolved.
+- Standardization of QC metrics and definitions (especially ADO) across methods — flagged in [[10-Summaries/gawad-2016-scgenome-review]], still partly unresolved.
 - Coverage vs cell throughput operating points — DLP+ scales to >10⁴ cells very low coverage; PTA peaks at 384 cells at ~95%; how to choose for a given biology.

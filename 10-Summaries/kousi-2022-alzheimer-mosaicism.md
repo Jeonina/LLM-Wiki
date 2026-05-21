@@ -47,7 +47,7 @@ Pre-print on bioRxiv; the clipping captures the abstract and reference list. Ana
 
 ## Connections to other sources
 
-- Sits at the intersection of [[10-Summaries/bizzotto-2022-brain-mosaicism-review]] (mosaicism in brain) and the broader scDNA-seq methods landscape in [[10-Summaries/diane-2025-naturereviewsgenetics]].
+- Sits at the intersection of [[10-Summaries/bizzotto-2022-brain-mosaicism-review]] (mosaicism in brain) and the broader scDNA-seq methods landscape in [[10-Summaries/shao-2025-scDNA-mosaicism-review]].
 - Extends Lodato et al. 2018 *Science* findings of age- and disease-associated neuronal mutation accumulation.
 - Methodological dependence on PTA-class scWGA places it in the post-2019 generation of single-cell genomics, alongside [[10-Summaries/luquette-2025-pta-duplex-mosaicism]].
 

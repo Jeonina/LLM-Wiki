@@ -9,7 +9,7 @@ updated: 2026-05-19
 
 # Duplex sequencing
 
-> Duplex sequencing (DS) is a family of NGS methods that tag both strands of an input dsDNA molecule with complementary UMIs, sequence each strand independently, and call a base only when both strands agree at that position ([[10-Summaries/schmitt-2012-pnas]]; [[10-Summaries/kennedy-2014-duplex-protocol]]). This yields error rates below 10⁻⁸ per base — sufficient to detect somatic mutations at any allele fraction ([[10-Summaries/schmitt-2012-pnas]]) — and underpins modern mosaicism, mutational-signature, and aging-genome biology ([[10-Summaries/abascal-2021-nanoseq]]; [[10-Summaries/diane-2025-naturereviewsgenetics]]).
+> Duplex sequencing (DS) is a family of NGS methods that tag both strands of an input dsDNA molecule with complementary UMIs, sequence each strand independently, and call a base only when both strands agree at that position ([[10-Summaries/schmitt-2012-pnas]]; [[10-Summaries/kennedy-2014-duplex-protocol]]). This yields error rates below 10⁻⁸ per base — sufficient to detect somatic mutations at any allele fraction ([[10-Summaries/schmitt-2012-pnas]]) — and underpins modern mosaicism, mutational-signature, and aging-genome biology ([[10-Summaries/abascal-2021-nanoseq]]; [[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
 ## Core concepts
 
@@ -42,11 +42,11 @@ updated: 2026-05-19
 ### Single-cell + duplex validation
 - [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — Luquette/Walsh 2025. Uses DS to validate PTA-scDNA-seq mutation calls.
 - [[10-Summaries/luquette-2025-smaht-pta]] — companion paper, SMaHT PTA pipeline.
-- [[10-Summaries/andrea-2025-biorxiv]] — Kriz 2025. Duplex-Multiome: duplex consensus integrated into 10x Multiome (point mutations + chromatin + RNA per nucleus).
+- [[10-Summaries/kriz-2025-duplex-multiome]] — Kriz 2025. Duplex-Multiome: duplex consensus integrated into 10x Multiome (point mutations + chromatin + RNA per nucleus).
 
 ### Reviews
-- [[10-Summaries/gilad-2021-annualreviewofgenomicsandhumangenetics]] — Evrony 2021 mosaicism + accuracy review.
-- [[10-Summaries/diane-2025-naturereviewsgenetics]] — Shao 2025 NRG; classifies the four duplex implementation strategies.
+- [[10-Summaries/evrony-2021-scDNA-applications-review]] — Evrony 2021 mosaicism + accuracy review.
+- [[10-Summaries/shao-2025-scDNA-mosaicism-review]] — Shao 2025 NRG; classifies the four duplex implementation strategies.
 
 ## Synthesized notes
 
@@ -54,7 +54,7 @@ _Future synthesis target_: "Duplex vs scDNA-seq complementarity" — duplex capt
 
 ## Open questions
 
-- **Single-cell duplex** is not yet practical: DS needs both strands of one molecule, but scWGA loses strand identity ([[10-Summaries/diane-2025-naturereviewsgenetics]]). [[meta-cs]] is the only single-cell-compatible variant so far. Duplex-Multiome solves it for mtDNA + nuclear point-mutation calling via 10x library ([[10-Summaries/andrea-2025-biorxiv]]).
+- **Single-cell duplex** is not yet practical: DS needs both strands of one molecule, but scWGA loses strand identity ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]). [[meta-cs]] is the only single-cell-compatible variant so far. Duplex-Multiome solves it for mtDNA + nuclear point-mutation calling via 10x library ([[10-Summaries/kriz-2025-duplex-multiome]]).
 - Will the convergence of mutation-rate estimates across methods (shown in the SMaHT benchmark) hold when applied to harder tissues like brain or aging muscle ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]])?
 
 ## Related

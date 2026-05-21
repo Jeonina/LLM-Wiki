@@ -29,4 +29,4 @@ SCAN-SNV is one of the canonical computational scaffolds for MDA-based single-ce
 - [[30-Concepts/scwga-chemistries]]
 - [[30-Concepts/single-cell-variant-calling]]
 - [[10-Summaries/lodato-2015-science]]
-- [[10-Summaries/lodato-2018-science]]
+- [[10-Summaries/lodato-2017-aging-neurons]]

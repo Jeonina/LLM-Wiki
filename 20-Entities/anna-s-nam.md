@@ -18,12 +18,12 @@ Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, with af
 
 ## Mentions
 
-- **2026-05-07** — [[10-Summaries/anna-2019-nature]]: first author of the GoT method paper. Demonstrated co-mapping of CALR genotype and transcriptome in 38,290 CD34+ cells from MPN patients, revealing cell-identity-dependent transcriptional outputs (UPR in MkPs, NF-κB in HSPCs).
+- **2026-05-07** — [[10-Summaries/nam-2019-got]]: first author of the GoT method paper. Demonstrated co-mapping of CALR genotype and transcriptome in 38,290 CD34+ cells from MPN patients, revealing cell-identity-dependent transcriptional outputs (UPR in MkPs, NF-κB in HSPCs).
 
 ## Positions and claims
 
-- Holds that linking somatic genotype to transcriptome at the single-cell level reveals **cell-identity-dependent transcriptional consequences of mutation** that bulk and uncoupled single-cell methods cannot ([[10-Summaries/anna-2019-nature]]).
-- Holds that **wild-type cells from the same patient sample** are the cleanest comparator for studying mutation effects, controlling for genetic background and microenvironment ([[10-Summaries/anna-2019-nature]]).
+- Holds that linking somatic genotype to transcriptome at the single-cell level reveals **cell-identity-dependent transcriptional consequences of mutation** that bulk and uncoupled single-cell methods cannot ([[10-Summaries/nam-2019-got]]).
+- Holds that **wild-type cells from the same patient sample** are the cleanest comparator for studying mutation effects, controlling for genetic background and microenvironment ([[10-Summaries/nam-2019-got]]).
 
 ## Related
 

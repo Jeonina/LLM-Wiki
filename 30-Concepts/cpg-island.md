@@ -9,7 +9,7 @@ updated: 2026-05-11
 
 # CpG island
 
-> Short (typically 200–2000 bp) regions of unusually high CpG dinucleotide density and GC content that occur at the promoters of most housekeeping and developmental regulator genes. Constitutively *unmethylated*, in contrast to the global genome's ~60–80% CpG methylation. Hypermethylation of promoter CpG islands is a hallmark of tumorigenesis ([[10-Summaries/zachary-2013-naturereviewsgenetics]]).
+> Short (typically 200–2000 bp) regions of unusually high CpG dinucleotide density and GC content that occur at the promoters of most housekeeping and developmental regulator genes. Constitutively *unmethylated*, in contrast to the global genome's ~60–80% CpG methylation. Hypermethylation of promoter CpG islands is a hallmark of tumorigenesis ([[10-Summaries/smith-2013-methylation-development]]).
 
 ## Definition
 
@@ -21,7 +21,7 @@ Mammalian genomes are globally CpG-depleted (~21% of expected CpG counts), an ar
 
 - Unmethylated CpG islands at promoters are markers of active or poised transcription.
 - Hypermethylation of CpG islands is a major cancer-epigenetics phenomenon — silences tumor suppressors and is a clinical biomarker.
-- The maintenance of CpG islands as unmethylated requires *active* exclusion of DNMTs by TF binding, H3K4 methyltransferases, and possibly TET-mediated demethylation as proofreading ([[10-Summaries/zachary-2013-naturereviewsgenetics]]).
+- The maintenance of CpG islands as unmethylated requires *active* exclusion of DNMTs by TF binding, H3K4 methyltransferases, and possibly TET-mediated demethylation as proofreading ([[10-Summaries/smith-2013-methylation-development]]).
 
 ## Variants and refinements
 

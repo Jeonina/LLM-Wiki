@@ -40,7 +40,7 @@ Sub-axis 3 is the youngest measurement frontier; single-cell readouts are still 
 
 - **In live cells**: lattice light-sheet single-molecule imaging ([[10-Summaries/daugird-2024-viscoelastic-chromatin]]) measures viscoelasticity and nucleosome diffusion.
 - **In silico from Hi-C**: polymer models with LLPS-competent particles ([[10-Summaries/qi-zhang-2021-nucleoli-coalescence]], [[10-Summaries/mali-2025-conformational-heterogeneity]]) extract biophysical predictions.
-- **Per-fiber chromatin actuation** ([[10-Summaries/elliott-2025-naturebiotechnology]]) — DAF-seq's 63% inter-cell actuation divergence is consistent with stochastic LLPS-driven actuation events.
+- **Per-fiber chromatin actuation** ([[10-Summaries/swanson-2025-daf-seq]]) — DAF-seq's 63% inter-cell actuation divergence is consistent with stochastic LLPS-driven actuation events.
 
 ## Related
 

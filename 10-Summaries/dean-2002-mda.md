@@ -29,7 +29,7 @@ Dean, Hosono, Fang et al. (Molecular Staging Inc., New Haven CT) introduced **Mu
 ## Limitations (anticipated and later confirmed)
 
 The 2002 paper does *not* yet describe what would later become MDA's defining problems at single-cell scale:
-- **Allelic dropout**: at single-cell input, one of the two parental alleles often fails to amplify — central issue for heterozygous variant calling and quantified extensively in [[10-Summaries/charles-2016-naturereviewsgenetics|Gawad & Quake 2016]] and [[10-Summaries/diane-2025-naturereviewsgenetics|Shao 2025]].
+- **Allelic dropout**: at single-cell input, one of the two parental alleles often fails to amplify — central issue for heterozygous variant calling and quantified extensively in [[10-Summaries/gawad-2016-scgenome-review|Gawad & Quake 2016]] and [[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]].
 - **Chimera formation**: strand displacement occasionally joins distant genome segments — a structural-variant noise floor.
 - **Exponential kinetics**: stochastic amplification timing leads to read-depth imbalance between loci that does not appear at the bulk inputs (0.3+ ng) tested here.
 - **High error vs. duplex**: MDA error rate (~10⁻⁶) is high relative to duplex sequencing approaches (~10⁻⁹). Subsequent single-cell variant calling requires either deep coverage or specialized callers ([[30-Concepts/sccaller|SCcaller]], [[30-Concepts/monovar|MonoVar]]).
@@ -52,8 +52,8 @@ These limitations motivated successor chemistries — **MALBAC** (Zong/Xie 2012;
 - [[30-Concepts/mda]] — concept page anchored by this paper
 - [[30-Concepts/scwga]] · [[30-Concepts/pta]] · [[30-Concepts/malbac]] · [[30-Concepts/lianti]]
 - [[30-Concepts/allele-dropout]] — the failure mode that motivated MDA's successors
-- [[10-Summaries/charles-2016-naturereviewsgenetics]] — Gawad & Quake review benchmarking MDA against successors
-- [[10-Summaries/diane-2025-naturereviewsgenetics]] — Shao 2025 review with current scWGA landscape
+- [[10-Summaries/gawad-2016-scgenome-review]] — Gawad & Quake review benchmarking MDA against successors
+- [[10-Summaries/shao-2025-scDNA-mosaicism-review]] — Shao 2025 review with current scWGA landscape
 - [[40-Topics/whole-genome-amplification]]
 
 ## Citation

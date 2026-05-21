@@ -53,8 +53,8 @@ Authoritative review. Covers technology evolution (PacBio HiFi $35/Gb; ONT R10.4
 
 ## Connections to other sources
 
-- Extends [[10-Summaries/yilei-2025-naturereviewsgenetics]] (Fu/Sedlazeck/Timp 2025 long-read methylation review, NRG) on the methylation side. The two reviews complement: NRG focuses on methylation chemistry; this NG paper covers the broader chromatin-accessibility / multi-omics use of LRS.
-- Direct methodological link to [[10-Summaries/elliott-2025-naturebiotechnology]] (DAF-seq, single-cell deaminase footprinting) and [[10-Summaries/abdulhay-2020-samosa]] (SMRT-Tag / SAMOSA-Tag).
+- Extends [[10-Summaries/fu-2025-longread-methylation]] (Fu/Sedlazeck/Timp 2025 long-read methylation review, NRG) on the methylation side. The two reviews complement: NRG focuses on methylation chemistry; this NG paper covers the broader chromatin-accessibility / multi-omics use of LRS.
+- Direct methodological link to [[10-Summaries/swanson-2025-daf-seq]] (DAF-seq, single-cell deaminase footprinting) and [[10-Summaries/abdulhay-2020-samosa]] (SMRT-Tag / SAMOSA-Tag).
 - STAM-seq application in plants is in [[10-Summaries/mo-2023-stam-seq]] — exemplifies the LRS-HRR advantage.
 
 ## Open questions

@@ -13,7 +13,7 @@ updated: 2026-05-11
 
 ## Definition
 
-**DNMT1** is constitutively expressed in dividing cells and recruited to replication forks by PCNA and UHRF1. UHRF1 binds hemimethylated DNA via its SRA domain, orienting DNMT1 to methylate the nascent strand opposite a previously methylated cytosine. DNMT1 is **structurally dependent on a hemimethylated substrate** — it cannot methylate unmethylated DNA, preventing spurious gain of methylation ([[10-Summaries/zachary-2013-naturereviewsgenetics]]).
+**DNMT1** is constitutively expressed in dividing cells and recruited to replication forks by PCNA and UHRF1. UHRF1 binds hemimethylated DNA via its SRA domain, orienting DNMT1 to methylate the nascent strand opposite a previously methylated cytosine. DNMT1 is **structurally dependent on a hemimethylated substrate** — it cannot methylate unmethylated DNA, preventing spurious gain of methylation ([[10-Summaries/smith-2013-methylation-development]]).
 
 **DNMT3A and DNMT3B** perform de novo methylation; required for establishing methylation patterns during embryogenesis and germ cell development.
 

@@ -27,5 +27,5 @@ A parallel founding paper for single-cell chromatin accessibility (along with Bu
 ## Related
 
 - [[10-Summaries/buenrostro-2015-nature]]
-- [[10-Summaries/cusanovich-2015-science]]
+- [[10-Summaries/cusanovich-2015-sciatac]]
 - [[30-Concepts/chromatin-accessibility-assays]]

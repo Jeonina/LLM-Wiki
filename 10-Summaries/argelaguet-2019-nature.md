@@ -26,5 +26,5 @@ The canonical demonstration that triple-modality single-cell readout (transcript
 - [[30-Concepts/scnmt-seq]]
 - [[30-Concepts/joint-single-cell-multi-omics]]
 - [[10-Summaries/scnmt-seq-enables-joint-profiling]]
-- [[10-Summaries/chongyuan-2018-naturecommunications]]
+- [[10-Summaries/luo-2018-snmc-seq2]]
 - [[20-Entities/wolf-reik]]

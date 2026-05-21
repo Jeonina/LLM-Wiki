@@ -23,6 +23,6 @@ A representative foundation-model approach to single-cell biology. Anchors §4 (
 
 ## Related
 
-- [[10-Summaries/yuan-2022-natmethods]]
+- [[10-Summaries/yuan-2022-scbasset]]
 - [[10-Summaries/stuart-2021-natmethods]]
 - [[30-Concepts/single-cell-foundation-models]]

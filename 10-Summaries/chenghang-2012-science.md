@@ -35,8 +35,8 @@ sources: ["00-Sources/papers/Chenghang_2012_Science.pdf"]
 
 ## Surprising / load-bearing for the review
 
-- **The foundational paper for §3.1 (Genotype-Centric DNA Profiling) scWGA section.** MALBAC, MDA, DOP-PCR are the three chemistries the review's §3.1 WGA-chemistry comparison table needs to anchor. Subsequent methods ([[chongyi-2017-science|LIANTI]] 2017, [[pta]] 2021) explicitly benchmark against MALBAC.
-- The "purine-pyrimidine SNV bias" finding is the prior art for the C→T deamination artifact problem that [[chongyi-2017-science|LIANTI]] later attributed to cytosine deamination after cell lysis and that [[pta]] later quantified.
+- **The foundational paper for §3.1 (Genotype-Centric DNA Profiling) scWGA section.** MALBAC, MDA, DOP-PCR are the three chemistries the review's §3.1 WGA-chemistry comparison table needs to anchor. Subsequent methods ([[chen-2017-lianti|LIANTI]] 2017, [[pta]] 2021) explicitly benchmark against MALBAC.
+- The "purine-pyrimidine SNV bias" finding is the prior art for the C→T deamination artifact problem that [[chen-2017-lianti|LIANTI]] later attributed to cytosine deamination after cell lysis and that [[pta]] later quantified.
 
 ## Entities / concepts touched
 
@@ -44,9 +44,9 @@ sources: ["00-Sources/papers/Chenghang_2012_Science.pdf"]
 
 ## Related summaries
 
-- [[chongyi-2017-science]] — LIANTI; next-generation WGA chemistry.
-- [[charles-2016-naturereviewsgenetics]] — Gawad/Quake 2016 review citing MALBAC.
-- [[gilad-2021-annualreviewofgenomicsandhumangenetics]] — Evrony 2021 capabilities framework.
+- [[chen-2017-lianti]] — LIANTI; next-generation WGA chemistry.
+- [[gawad-2016-scgenome-review]] — Gawad/Quake 2016 review citing MALBAC.
+- [[evrony-2021-scDNA-applications-review]] — Evrony 2021 capabilities framework.
 
 ---
 **Source:** [DOI](https://doi.org/10.1126/science.1229164) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/23258894/)

@@ -13,7 +13,7 @@ updated: 2026-05-11
 
 ## Definition
 
-DLP+ uses Tn5 transposase to tagment nuclear DNA, inserting Illumina-compatible adapters directly into the genome of single cells in microfluidic compartments ([[10-Summaries/diane-2025-naturereviewsgenetics]]). The tagmented fragments are then PCR-amplified. Imaging-based microscopy QC provides real-time ploidy and quality checks. Outputs very low per-cell coverage but covers thousands of cells.
+DLP+ uses Tn5 transposase to tagment nuclear DNA, inserting Illumina-compatible adapters directly into the genome of single cells in microfluidic compartments ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]). The tagmented fragments are then PCR-amplified. Imaging-based microscopy QC provides real-time ploidy and quality checks. Outputs very low per-cell coverage but covers thousands of cells.
 
 Typical metrics: coverage very low per cell, MAPD moderate, allelic balance typically captures one allele (low per-cell depth), >10,000 cells per run, ~21 h, not commercially available.
 
@@ -21,7 +21,7 @@ Typical metrics: coverage very low per cell, MAPD moderate, allelic balance typi
 
 For CNV-centric questions at scale — clonal evolution in tumors, chromosomal mosaicism in development, large-cohort aneuploidy screening — DLP+ delivers far more cells than PTA or MDA can per run. Each cell contributes shallow but uniform CNV information; in aggregate the dataset enables sub-megabase phylogenetic resolution and detection of rare clonal subpopulations.
 
-Tn5-based tagmentation has a useful side-effect: **specific overlap patterns of tagmentation events can be used to distinguish allelic states of each genomic region**, providing additional validation for depth-based CNV calls beyond what MDA or PTA can offer ([[10-Summaries/diane-2025-naturereviewsgenetics]]).
+Tn5-based tagmentation has a useful side-effect: **specific overlap patterns of tagmentation events can be used to distinguish allelic states of each genomic region**, providing additional validation for depth-based CNV calls beyond what MDA or PTA can offer ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
 ## Variants and refinements
 

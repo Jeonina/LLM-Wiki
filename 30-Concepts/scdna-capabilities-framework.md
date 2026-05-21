@@ -9,7 +9,7 @@ updated: 2026-05-11
 
 # scDNA-seq capabilities framework
 
-> The Evrony / Hinch / Luo framework for organizing single-cell DNA sequencing applications around three core capabilities: **fidelity**, **co-presence**, and **phenotypic association**. Every scDNA-seq method possesses some subset of these capabilities, and every application is distinguished by which subset it requires ([[10-Summaries/gilad-2021-annualreviewofgenomicsandhumangenetics]]).
+> The Evrony / Hinch / Luo framework for organizing single-cell DNA sequencing applications around three core capabilities: **fidelity**, **co-presence**, and **phenotypic association**. Every scDNA-seq method possesses some subset of these capabilities, and every application is distinguished by which subset it requires ([[10-Summaries/evrony-2021-scDNA-applications-review]]).
 
 ## Definition
 
@@ -23,7 +23,7 @@ No method achieves all three at genome-wide scale. Method choice should be drive
 
 ## Why it matters
 
-It separates **method properties** from **biological question** — a separation that older technology-organized reviews (e.g., [[10-Summaries/charles-2016-naturereviewsgenetics]]) collapse. With the framework, a researcher can ask "I need fidelity but not co-presence" → duplex sequencing of bulk DNA; "I need all three" → [[got-cha]]-style genotype-phenotype methods (limited fidelity), [[daf-seq]]-style single-molecule methods (limited cell throughput), or paired duplex + RNA approaches still in development.
+It separates **method properties** from **biological question** — a separation that older technology-organized reviews (e.g., [[10-Summaries/gawad-2016-scgenome-review]]) collapse. With the framework, a researcher can ask "I need fidelity but not co-presence" → duplex sequencing of bulk DNA; "I need all three" → [[got-cha]]-style genotype-phenotype methods (limited fidelity), [[daf-seq]]-style single-molecule methods (limited cell throughput), or paired duplex + RNA approaches still in development.
 
 ## Variants and refinements
 
@@ -46,7 +46,7 @@ Methods organized by capability profile:
 ## Examples
 
 - Walsh lab brain lineage tracing requires *fidelity + co-presence* (low-VAF mutations as lineage markers, per-cell assignment for tree reconstruction). PTA + scWGS satisfies this.
-- [[10-Summaries/franco-2024-nature]] JAK2V617F chromatin-priming finding requires *fidelity (detecting the mutation) + co-presence (per-cell) + phenotypic association (chromatin profile)*. GoT–ChA satisfies all three at moderate fidelity.
+- [[10-Summaries/izzo-2024-got-cha]] JAK2V617F chromatin-priming finding requires *fidelity (detecting the mutation) + co-presence (per-cell) + phenotypic association (chromatin profile)*. GoT–ChA satisfies all three at moderate fidelity.
 
 ## Related
 

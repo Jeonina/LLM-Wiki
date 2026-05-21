@@ -26,6 +26,6 @@ The cleanest demonstration that joint single-cell readout of genotype + transcri
 - [[30-Concepts/got-genotype-of-transcriptomes]]
 - [[30-Concepts/clonal-hematopoiesis]]
 - [[30-Concepts/joint-single-cell-multi-omics]]
-- [[10-Summaries/anna-2019-nature]]
+- [[10-Summaries/nam-2019-got]]
 - [[10-Summaries/cortes-lopez-2023-cellstemcell]]
 - [[10-Summaries/scherer-2025-nature]]

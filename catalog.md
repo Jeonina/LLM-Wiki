@@ -94,7 +94,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 ### Chromatin + Transcriptome
 - [[10-Summaries/cao-2018-science\|Cao 2018 (sci-CAR)]] — scATAC + scRNA via combinatorial indexing
 - [[10-Summaries/ma-2020-cell\|Ma 2020 (SHARE-seq)]] — joint scATAC + scRNA; chromatin potential
-- [[10-Summaries/clark-2018-scnmt|Clark 2018 (scNMT-seq)]] — accessibility + methylation + RNA
+- [[10-Summaries/clark-2018-scnmt-seq|Clark 2018 (scNMT-seq)]] — accessibility + methylation + RNA
 
 ### Gap-Closing Methods (2025)
 - [[10-Summaries/andrea-2025-biorxiv\|Kriz 2025 (Duplex-Multiome)]] — duplex + snATAC + snRNA in same nucleus

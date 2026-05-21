@@ -18,12 +18,12 @@ Department of Genome Sciences and Division of Medical Genetics, University of Wa
 
 ## Mentions
 
-- **2026-05-07** — [[10-Summaries/elliott-2025-naturebiotechnology]]: senior/corresponding author. Established DAF-seq and scDAF-seq.
+- **2026-05-07** — [[10-Summaries/swanson-2025-daf-seq]]: senior/corresponding author. Established DAF-seq and scDAF-seq.
 
 ## Positions and claims
 
-- Holds that **single-molecule chromatin assays must capture protein occupancy at near-nucleotide resolution** to disentangle TF cooperativity, haplotype-specific regulation, and chromatin actuation states — readouts that ensemble assays smear out ([[10-Summaries/elliott-2025-naturebiotechnology]]).
-- Holds that **chromosome-length single-cell chromatin profiling** is achievable by combining cytidine deamination footprinting with primary template-directed amplification, yielding ~99% genome coverage per cell ([[10-Summaries/elliott-2025-naturebiotechnology]]).
+- Holds that **single-molecule chromatin assays must capture protein occupancy at near-nucleotide resolution** to disentangle TF cooperativity, haplotype-specific regulation, and chromatin actuation states — readouts that ensemble assays smear out ([[10-Summaries/swanson-2025-daf-seq]]).
+- Holds that **chromosome-length single-cell chromatin profiling** is achievable by combining cytidine deamination footprinting with primary template-directed amplification, yielding ~99% genome coverage per cell ([[10-Summaries/swanson-2025-daf-seq]]).
 
 ## Related
 

@@ -29,5 +29,5 @@ The de-facto computational backbone for most single-cell chromatin and joint mul
 - [[20-Entities/satija-lab]]
 - [[30-Concepts/scatac-seq]]
 - [[30-Concepts/single-cell-multi-omics]]
-- [[10-Summaries/jeffrey-2021-naturegenetics]]
-- [[10-Summaries/marek-2021-naturebiotechnology]]
+- [[10-Summaries/granja-2021-archr]]
+- [[10-Summaries/bartosovic-2021-sccut-tag]]

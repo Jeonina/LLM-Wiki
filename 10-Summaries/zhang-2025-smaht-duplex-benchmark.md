@@ -53,7 +53,7 @@ Cross-platform comparison on three reference sample types using each lab's publi
 ## Connections to other sources
 
 - Companion paper to [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] (same SMaHT consortium, single-cell side rather than bulk-duplex side). Together they define what SMaHT calls a "comprehensive view" — duplex for population mutation rates, scDNA-seq for clonality.
-- The methodological-axis framing aligns with [[10-Summaries/diane-2025-naturereviewsgenetics]]: duplex protection is the answer to scWGA single-strand dropout but is not yet itself single-cell.
+- The methodological-axis framing aligns with [[10-Summaries/shao-2025-scDNA-mosaicism-review]]: duplex protection is the answer to scWGA single-strand dropout but is not yet itself single-cell.
 - Cites the founding paper [[10-Summaries/kennedy-2014-duplex-protocol]] (Kennedy 2014).
 
 ## Open questions

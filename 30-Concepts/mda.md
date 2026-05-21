@@ -13,7 +13,7 @@ updated: 2026-05-14
 
 ## Definition
 
-Φ29 polymerase has high processivity (>70 kb), low error rate (10⁻⁷–10⁻⁸ errors/base), and strand-displacement activity. Random hexamers prime the genome at thousands of sites; Φ29 extends from each primer, displacing downstream strands which become templates for further priming, producing exponential amplification at constant temperature (~30 °C). The chemistry was introduced in [[10-Summaries/dean-2002-mda|Dean et al. 2002]], who demonstrated <3-fold locus-to-locus bias vs. 4–6 orders of magnitude for PCR-based WGA — establishing MDA as the dominant scWGA approach for the subsequent 15+ years ([[10-Summaries/diane-2025-naturereviewsgenetics]], [[10-Summaries/charles-2016-naturereviewsgenetics]]).
+Φ29 polymerase has high processivity (>70 kb), low error rate (10⁻⁷–10⁻⁸ errors/base), and strand-displacement activity. Random hexamers prime the genome at thousands of sites; Φ29 extends from each primer, displacing downstream strands which become templates for further priming, producing exponential amplification at constant temperature (~30 °C). The chemistry was introduced in [[10-Summaries/dean-2002-mda|Dean et al. 2002]], who demonstrated <3-fold locus-to-locus bias vs. 4–6 orders of magnitude for PCR-based WGA — establishing MDA as the dominant scWGA approach for the subsequent 15+ years ([[10-Summaries/shao-2025-scDNA-mosaicism-review]], [[10-Summaries/gawad-2016-scgenome-review]]).
 
 Typical metrics: coverage ~70–75%, MAPD low but variable, allelic balance low, ~11 h reaction time, $10/cell. Commercial kits widely available.
 
@@ -28,9 +28,9 @@ MDA democratized [[scdna-seq]]: Φ29 polymerase enabled high-fidelity, high-cove
 
 ## Variants and refinements
 
-- **Microfluidic MDA** (microliter → nanoliter volumes) — substantially improves uniformity and reduces contamination ([[10-Summaries/charles-2016-naturereviewsgenetics]]).
+- **Microfluidic MDA** (microliter → nanoliter volumes) — substantially improves uniformity and reduces contamination ([[10-Summaries/gawad-2016-scgenome-review]]).
 - **MIDAS** (microwell displacement amplification system) — claimed near-bulk uniformity at single-cell scale.
-- **Used in multi-omic methods**: G&T-seq applies MDA to the gDNA fraction after polyA separation ([[10-Summaries/katy-2023-naturereviewsgenetics]]).
+- **Used in multi-omic methods**: G&T-seq applies MDA to the gDNA fraction after polyA separation ([[10-Summaries/vandereyken-2023-scmultiomics-review]]).
 - **SCcaller** is the specific variant caller designed to handle MDA error patterns.
 
 ## Contested points

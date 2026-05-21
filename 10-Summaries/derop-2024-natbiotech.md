@@ -24,6 +24,6 @@ The first systematic benchmarking of scATAC-seq protocols against shared standar
 ## Related
 
 - [[30-Concepts/scatac-seq]]
-- [[10-Summaries/sandy-2019-naturereviewsgenetics]]
-- [[10-Summaries/jeffrey-2021-naturegenetics]]
+- [[10-Summaries/klemm-2019-chromatin-accessibility-review]]
+- [[10-Summaries/granja-2021-archr]]
 - [[10-Summaries/stuart-2021-natmethods]]

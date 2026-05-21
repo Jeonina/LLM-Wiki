@@ -1,30 +1,67 @@
 ---
 type: summary
-title: "Heumos 2023 — Best practices for single-cell analysis across modalities"
+title: "Heumos et al. 2023 — Best practices for single-cell analysis across modalities"
 source: "[[00-Sources/papers/Best practices for single-cell analysis across modalities]]"
-aliases: ["Heumos 2023 best practices", "single-cell best practices NRG"]
-tags: [best-practices, scRNA-seq, scATAC-seq, multimodal, doublet-detection, normalization, Theis-lab, Helmholtz-Munich]
-created: 2026-05-13
-updated: 2026-05-13
+source_kind: paper
+author: "Lukas Heumos, Anna C. Schaar, Single-cell Best Practices Consortium, Fabian J. Theis"
+published: 2023-08
+ingested: 2026-05-11
+doi: "10.1038/s41576-023-00586-w"
+journal: "Nature Reviews Genetics 24:550–572"
+tags: [review, best-practices, single-cell-analysis, computational, benchmarking]
+entities:
+  - "[[20-Entities/fabian-theis]]"
+concepts:
+  - "[[30-Concepts/single-cell-multiomics]]"
+topics:
+  - "[[40-Topics/single-cell-multiomics]]"
 ---
 
 **Citation:** Heumos et al. (2023) — *Best practices for single-cell analysis across modalities* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-023-00586-w)
 
-Heumos, Schaar, Lance et al. (Theis lab; Helmholtz Munich + TU Munich) compiled "best practices" recommendations for unimodal and multimodal single-cell analysis. Synthesizes independent benchmarking studies into comprehensive workflows: scRNA-seq (raw counts → high-quality cellular data via ambient-RNA removal with SoupX/CellBender, doublet detection with scDblFinder, normalization, variance stabilization), chromatin accessibility, surface protein, adaptive immune receptor (TCR/BCR) repertoires, spatial. Includes a companion online "Single-Cell Best Practices" book with 50+ chapters. Functions as an entry-point for novices and a current-practice guide for advanced users.
+# Heumos et al. 2023 — Best practices for single-cell analysis across modalities
 
-## Why this matters
+> Thesis: with >1,400 single-cell analysis tools available, the field needs explicit best-practice workflows. This consortium review summarizes independent benchmarks across modalities — transcriptome, chromatin accessibility, surface protein, immune receptors, spatial — and recommends modality-specific defaults grounded in those benchmarks rather than in popularity.
 
-The standard 2023 community-consensus best-practices reference for analysis workflows. Cite when describing analysis pipelines in §4 — especially for the scRNA arm of multimodal data — because individual tool citations are too granular. Companion to Vandereyken 2023 (NRG) which covers methods/applications, and Baysoy 2023 (NRMCB) which covers technology landscape. Useful for §6 limitations when discussing analysis-tool fragmentation.
+## Key claims
+
+- **Quality control** is modality-specific:
+  - **scRNA-seq**: filter low-count cells, high-mito cells; remove ambient RNA (SoupX, CellBender); detect doublets (Scrublet, scDblFinder).
+  - **scATAC-seq**: TSS enrichment, fragment size distribution, peak count.
+  - **CITE-seq (protein)**: handle isotype-control normalization, antibody-derived tag (ADT) contamination.
+- **Normalization**: log-transform for scRNA-seq is the default, but pearson residuals (sctransform v2) are better for highly variable genes; for scATAC-seq use TF-IDF.
+- **Doublet detection**, **batch correction** (Harmony, scVI, scANVI), **cell-type annotation** (CellTypist, automated reference-mapping) all have benchmarked best-practice choices.
+- **Multimodal integration**: Seurat v4 WNN, totalVI, MOFA. Each has tradeoffs documented through benchmarks.
+- The recommendations are explicitly tied to *independent* benchmark publications wherever those exist; otherwise, popular methods are listed with explicit caveats.
+
+## Methods / evidence
+
+Consortium consensus document. Helmholtz Munich (Theis group) led with contributions from across the field. Each section reviews published benchmarks and converges on recommendations.
+
+## Surprising or load-bearing bits
+
+- **Benchmark-driven rather than popularity-driven recommendations** is the explicit organizing principle. Many widely-used tools are not best-in-class on independent benchmarks; the review names this gap.
+- **Modality-specific best practices** rather than a one-size-fits-all workflow — scATAC-seq normalization is genuinely different from scRNA-seq normalization, and ignoring this produces biased clusters.
+- **Companion online book** at sc-best-practices.org maintains the recommendations as the field evolves — recognition that any printed best-practices document is out-of-date within a year.
+
+## Entities mentioned
+
+- [[20-Entities/fabian-theis]] — senior author; Helmholtz Munich; major computational biology PI for single-cell.
+
+## Concepts touched
+
+- [[30-Concepts/single-cell-multiomics]] — analysis side rather than wet-lab side.
+
+## Connections to other sources
+
+- **Workflow companion to** [[10-Summaries/baysoy-2023-multiomics-landscape]] and [[10-Summaries/vandereyken-2023-scmultiomics-review]] — those describe what to *measure*, this describes how to *analyze*.
+- **Applies to analysis of data from** [[10-Summaries/nam-2019-got]], [[10-Summaries/izzo-2024-got-cha]], [[10-Summaries/swanson-2025-daf-seq]] — each paper's downstream pipelines would be benchmarked against the recommendations here.
+
+## Open questions
+
+- Benchmark coverage is uneven — heavily weighted toward scRNA-seq, less so for scATAC-seq and emerging modalities.
+- Recommendations age fast — the printed version is already partially superseded by 2025 tools.
+- Cross-modality benchmarks are limited — most are within-modality, leaving multi-omic integration choices under-benchmarked.
 
 ---
-**Source:** [DOI](https://doi.org/10.1038/s41576-023-00586-w) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/37002403/)
-
----
-**Source:** [DOI](https://doi.org/10.1038/s41576-023-00586-w) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/37002403/)
-
-## Related
-
-- [[10-Summaries/vandereyken-2023-scmultiomics-review]]
-- [[10-Summaries/baysoy-2023-multiomics-landscape]]
-- [[10-Summaries/xiao-2024-multiomics-benchmark]]
-- [[10-Summaries/luo-2024-scatac-benchmark]]
+**Source:** [DOI](https://doi.org/10.1038/s41576-023-00586-w)

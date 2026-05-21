@@ -21,8 +21,8 @@ The central motivation: there is no DNA-centric locus-state framework that joint
 The foundation: how to sequence a genome from one cell. Covers whole-genome amplification chemistries (MDA → MALBAC → LIANTI → **PTA**), variant calling, and error correction.
 
 **Start here →** [[30-Concepts/scdna-seq]] · [[30-Concepts/scwga]] · [[30-Concepts/pta]]
-**Key review →** [[10-Summaries/diane-2025-naturereviewsgenetics|Shao et al. 2025 (NRG)]]
-**Foundational →** [[10-Summaries/charles-2016-naturereviewsgenetics|Gawad & Quake 2016]] · [[10-Summaries/dean-2002-mda|Dean 2002 (MDA founding paper)]]
+**Key review →** [[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao et al. 2025 (NRG)]]
+**Foundational →** [[10-Summaries/gawad-2016-scgenome-review|Gawad & Quake 2016]] · [[10-Summaries/dean-2002-mda|Dean 2002 (MDA founding paper)]]
 
 ---
 
@@ -32,7 +32,7 @@ Post-zygotic mutations as both disease drivers and natural lineage barcodes. Fro
 
 **Start here →** [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/lineage-tracing]] · [[30-Concepts/clonal-hematopoiesis]]
 **Key papers →** [[10-Summaries/lodato-2015-science|Lodato 2015]] · [[10-Summaries/coorens-2021-nature|Coorens 2021]] · [[10-Summaries/cagan-2022-nature|Cagan 2022]]
-**Brain focus →** [[10-Summaries/taejeong-2018-science|Bae 2018]] · [[10-Summaries/taejeong-2022-science|Bae 2022]] · [[10-Summaries/miller-2022-nature|Miller 2022 (AD)]]
+**Brain focus →** [[10-Summaries/bae-2017-pregastrulation-mutations|Bae 2018]] · [[10-Summaries/taejeong-2022-science|Bae 2022]] · [[10-Summaries/miller-2022-nature|Miller 2022 (AD)]]
 **Stem cell aging →** [[10-Summaries/kapadia-2024-stem-cell-aging|Kapadia & Goodell 2024]]
 
 ---
@@ -42,8 +42,8 @@ Post-zygotic mutations as both disease drivers and natural lineage barcodes. Fro
 Measuring open chromatin at single-cell resolution. Includes founding methods, computational tools, and histone modification profiling.
 
 **Start here →** [[30-Concepts/scatac-seq]] · [[30-Concepts/chromatin-accessibility]] · [[30-Concepts/cut-and-tag]]
-**Founding methods →** [[10-Summaries/buenrostro-2015-nature|Buenrostro 2015]] · [[10-Summaries/cusanovich-2015-science|Cusanovich 2015 (sci-ATAC)]]
-**Tools →** [[30-Concepts/chromvar]] · [[30-Concepts/cistopic]] · [[30-Concepts/snapatac]] · [[10-Summaries/jeffrey-2021-naturegenetics|ArchR]]
+**Founding methods →** [[10-Summaries/buenrostro-2015-nature|Buenrostro 2015]] · [[10-Summaries/cusanovich-2015-sciatac|Cusanovich 2015 (sci-ATAC)]]
+**Tools →** [[30-Concepts/chromvar]] · [[30-Concepts/cistopic]] · [[30-Concepts/snapatac]] · [[10-Summaries/granja-2021-archr|ArchR]]
 
 ---
 
@@ -52,7 +52,7 @@ Measuring open chromatin at single-cell resolution. Includes founding methods, c
 From bisulfite sequencing to single-cell methylomes, 5hmC detection, and methylation-based lineage tracing (EPI-Clone, MethylTree).
 
 **Start here →** [[30-Concepts/dna-methylation]] · [[30-Concepts/bisulfite-sequencing]] · [[30-Concepts/scbs-seq]]
-**Foundational →** [[10-Summaries/smallwood-2014-natmethods|Smallwood 2014 (scBS-seq)]] · [[10-Summaries/schubeler-2015-nature|Schübeler 2015]]
+**Foundational →** [[10-Summaries/smallwood-2014-natmethods|Smallwood 2014 (scBS-seq)]] · [[10-Summaries/schubeler-2015-methylation-review|Schübeler 2015]]
 **Lineage tracing →** [[10-Summaries/scherer-2025-nature|EPI-Clone (Scherer 2025)]] · [[10-Summaries/chen-2025-methyltree|MethylTree (Chen 2025)]]
 
 ---
@@ -72,9 +72,9 @@ The transcriptomic axis underlying every multi-omics method. Why bulk RNA-seq av
 Methods that read two or more modalities from the same cell: genotype + transcriptome (GoT), genotype + chromatin (GoT-ChA), triple-omics, and beyond.
 
 **Start here →** [[30-Concepts/single-cell-multiomics]] · [[30-Concepts/got]] · [[30-Concepts/got-cha]]
-**GoT family →** [[10-Summaries/anna-2019-nature|Nam 2019]] · [[10-Summaries/franco-2024-nature|Izzo 2024]] · [[10-Summaries/cortes-lopez-2023-cellstemcell|GoT-Splice]]
-**DNA + Epigenome →** [[10-Summaries/elliott-2025-naturebiotechnology|DAF-seq]] · [[10-Summaries/andrea-2025-biorxiv|Duplex-Multiome]]
-**Reviews →** [[10-Summaries/wang-2023-multimodal-review|Wang & Jin 2023 methods+integration]] · [[10-Summaries/alev-2023-naturereviewsmolecularcellbiology|Baysoy 2023]] · [[10-Summaries/katy-2023-naturereviewsgenetics|Vandereyken 2023]]
+**GoT family →** [[10-Summaries/nam-2019-got|Nam 2019]] · [[10-Summaries/izzo-2024-got-cha|Izzo 2024]] · [[10-Summaries/cortes-lopez-2023-cellstemcell|GoT-Splice]]
+**DNA + Epigenome →** [[10-Summaries/swanson-2025-daf-seq|DAF-seq]] · [[10-Summaries/kriz-2025-duplex-multiome|Duplex-Multiome]]
+**Reviews →** [[10-Summaries/wang-2023-multimodal-review|Wang & Jin 2023 methods+integration]] · [[10-Summaries/baysoy-2023-multiomics-landscape|Baysoy 2023]] · [[10-Summaries/vandereyken-2023-scmultiomics-review|Vandereyken 2023]]
 
 ---
 
@@ -124,7 +124,7 @@ Ultra-accurate error correction by reading both strands of a DNA molecule. Essen
 
 - [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap|Mosaicism × Epigenome: The Synthesis Gap]] — the central conceptual note; updated 2026-05-13 after Duplex-Multiome closes the method gap.
 - [[50-Notes/regulatory-layers-overview|Regulatory layers — four (or five) axes of epigenome interpretation]] — entry point mapping accessibility / methylation / histone marks / 3D genome (+ structural-physical) to concept pages and assays.
-- [[50-Notes/single-cell-duplex-sequencing|Single-cell duplex — the methodological frontier closes]] — synthesis of the 2025 inflection: PTA + duplex validation ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]) and same-molecule Duplex-Multiome ([[10-Summaries/andrea-2025-biorxiv]]).
+- [[50-Notes/single-cell-duplex-sequencing|Single-cell duplex — the methodological frontier closes]] — synthesis of the 2025 inflection: PTA + duplex validation ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]) and same-molecule Duplex-Multiome ([[10-Summaries/kriz-2025-duplex-multiome]]).
 - [[50-Notes/droplet-vs-single-molecule-scdna|Droplet vs single-molecule — the breadth/depth tradeoff]] — why 10⁵-cell droplet platforms and ~10-cell single-molecule platforms answer different biological questions, and why the gap is sustained by physics rather than engineering.
 - [[50-Notes/pta-inflection-point|The PTA inflection point]] — how the 2021 Primary Template-Directed Amplification chemistry shifted scDNA-seq from "needs bioinformatic correction" to "cohort-scale routine". Frames the BSMN/SMaHT/Duplex-Multiome era as PTA-enabled.
 - [[50-Notes/mnase-vs-tn5-chromatin|MNase vs Tn5 — two chemistries for single-cell histone profiling]] — when to pick scChIC-family (MNase) vs CUT&Tag-family (Tn5) chemistry, indexed by which secondary measurement (methylation, accessibility, RNA, multi-mark) the experiment needs.

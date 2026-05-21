@@ -18,11 +18,11 @@ Center for Human Genetics and Genomics, Grossman School of Medicine, New York Un
 
 ## Mentions
 
-- **2026-05-11** — [[10-Summaries/gilad-2021-annualreviewofgenomicsandhumangenetics]]: first author of the applications-organized scDNA-seq review.
+- **2026-05-11** — [[10-Summaries/evrony-2021-scDNA-applications-review]]: first author of the applications-organized scDNA-seq review.
 
 ## Positions and claims
 
-- Holds that **scDNA-seq is best organized by capabilities, not chemistries** — fidelity (low-mosaicism detection), co-presence (per-cell variant assignment), phenotypic association (linking genotype to other modalities) ([[10-Summaries/gilad-2021-annualreviewofgenomicsandhumangenetics]]).
+- Holds that **scDNA-seq is best organized by capabilities, not chemistries** — fidelity (low-mosaicism detection), co-presence (per-cell variant assignment), phenotypic association (linking genotype to other modalities) ([[10-Summaries/evrony-2021-scDNA-applications-review]]).
 - Holds that **no single method achieves all three capabilities at genome-wide scale**, so method choice should be application-driven.
 
 ## Related

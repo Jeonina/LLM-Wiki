@@ -6,7 +6,7 @@ tags: [synthesis, histone-modifications, single-cell-chromatin, MNase, Tn5, meth
 created: 2026-05-19
 updated: 2026-05-19
 sources: [
-  "[[10-Summaries/rotem-2015-natbiotech]]",
+  "[[10-Summaries/rotem-2015-drop-chip]]",
   "[[10-Summaries/ku-2019-scchic-seq]]",
   "[[10-Summaries/yeung-2023-scchix-seq]]",
   "[[10-Summaries/geisenberger-2025-scepi2-seq]]",
@@ -14,14 +14,14 @@ sources: [
   "[[10-Summaries/bartosovic-2022-nano-cut-tag]]",
   "[[10-Summaries/janssens-2023-scicut-tag]]",
   "[[10-Summaries/tavares-2026-6-base-cut-tag]]",
-  "[[10-Summaries/sandy-2019-naturereviewsgenetics]]",
+  "[[10-Summaries/klemm-2019-chromatin-accessibility-review]]",
   "[[10-Summaries/klemm-2019-chromatin-accessibility-review]]"
 ]
 ---
 
 # MNase vs Tn5 — two chemistries for single-cell histone profiling
 
-> Single-cell histone-modification profiling splits cleanly into two chemistry lineages. **MNase-based methods** (Drop-ChIP, scChIC-seq, sortChIC, scChIX-seq, scEpi²-seq) use antibody-tethered micrococcal nuclease to cleave DNA at antibody-bound histone marks ([[10-Summaries/rotem-2015-natbiotech]]; [[10-Summaries/ku-2019-scchic-seq]]; [[10-Summaries/yeung-2023-scchix-seq]]). **Tn5-based methods** (scCUT&Tag, nano-CUT&Tag, sciCUT&Tag, MulTI-Tag, 6-base-CUT&Tag) tether hyperactive Tn5 transposase to antibodies and tagment in situ ([[10-Summaries/bartosovic-2021-sccut-tag]]; [[10-Summaries/bartosovic-2022-nano-cut-tag]]; [[10-Summaries/janssens-2023-scicut-tag]]; [[10-Summaries/tavares-2026-6-base-cut-tag]]). The two chemistries answer the same biological question — *which histone marks are present at which loci in which cells?* — but trade off **resolution, throughput, multiplexing, and modality compatibility** in different ways.
+> Single-cell histone-modification profiling splits cleanly into two chemistry lineages. **MNase-based methods** (Drop-ChIP, scChIC-seq, sortChIC, scChIX-seq, scEpi²-seq) use antibody-tethered micrococcal nuclease to cleave DNA at antibody-bound histone marks ([[10-Summaries/rotem-2015-drop-chip]]; [[10-Summaries/ku-2019-scchic-seq]]; [[10-Summaries/yeung-2023-scchix-seq]]). **Tn5-based methods** (scCUT&Tag, nano-CUT&Tag, sciCUT&Tag, MulTI-Tag, 6-base-CUT&Tag) tether hyperactive Tn5 transposase to antibodies and tagment in situ ([[10-Summaries/bartosovic-2021-sccut-tag]]; [[10-Summaries/bartosovic-2022-nano-cut-tag]]; [[10-Summaries/janssens-2023-scicut-tag]]; [[10-Summaries/tavares-2026-6-base-cut-tag]]). The two chemistries answer the same biological question — *which histone marks are present at which loci in which cells?* — but trade off **resolution, throughput, multiplexing, and modality compatibility** in different ways.
 
 ## The two chemistries
 
@@ -31,9 +31,9 @@ The mechanism: a fusion protein of Protein A and micrococcal nuclease (pA-MNase)
 
 Key properties:
 - **Reads nucleosome-protected fragments** (~147 bp ± linker) — preserves nucleosome positioning information natively ([[10-Summaries/ku-2019-scchic-seq]]).
-- **In-droplet or FACS-sorted single-cell compatibility** — Drop-ChIP via microfluidic encapsulation ([[10-Summaries/rotem-2015-natbiotech]]); scChIC-seq via sorted plates; sortChIC via FACS-integrated protocol; scEpi²-seq combines sortChIC with TAPS for joint mark + methylation ([[10-Summaries/geisenberger-2025-scepi2-seq]]).
+- **In-droplet or FACS-sorted single-cell compatibility** — Drop-ChIP via microfluidic encapsulation ([[10-Summaries/rotem-2015-drop-chip]]); scChIC-seq via sorted plates; sortChIC via FACS-integrated protocol; scEpi²-seq combines sortChIC with TAPS for joint mark + methylation ([[10-Summaries/geisenberger-2025-scepi2-seq]]).
 - **Multi-mark deconvolution possible** — scChIX-seq incubates with two antibodies simultaneously, deconvolutes the mixed signal computationally to read two marks per cell ([[10-Summaries/yeung-2023-scchix-seq]]).
-- **Throughput typically lower** than Tn5 — ~1k-10k cells per experiment for sortChIC; Drop-ChIP achieved ~10⁴ cells but at very low coverage per cell ([[10-Summaries/rotem-2015-natbiotech]]).
+- **Throughput typically lower** than Tn5 — ~1k-10k cells per experiment for sortChIC; Drop-ChIP achieved ~10⁴ cells but at very low coverage per cell ([[10-Summaries/rotem-2015-drop-chip]]).
 
 ### Tn5-tethered tagmentation (CUT&Tag → scCUT&Tag → sciCUT&Tag → MulTI-Tag → 6-base-CUT&Tag)
 
@@ -57,7 +57,7 @@ Key properties:
 | Multi-mark per cell? | scChIX deconvolutes 2 marks ([[10-Summaries/yeung-2023-scchix-seq]]) | MulTI-Tag, nano-CUT&Tag multiplex via epitope variants |
 | Joint with methylation? | scEpi²-seq via TAPS ([[10-Summaries/geisenberger-2025-scepi2-seq]]) | 6-base-CUT&Tag via enzymatic 5mC/5hmC ([[10-Summaries/tavares-2026-6-base-cut-tag]]) |
 | Bulk reference assay | ChIP-seq, ChIC-seq, CUT&RUN | CUT&Tag (Henikoff lab) |
-| Sequence bias | MNase A/T preference | Tn5 GC preference ([[10-Summaries/sandy-2019-naturereviewsgenetics]]) |
+| Sequence bias | MNase A/T preference | Tn5 GC preference ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]) |
 | Compatible with FFPE? | Limited | Improving |
 
 ## What each chemistry is for

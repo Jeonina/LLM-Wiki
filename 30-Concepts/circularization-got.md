@@ -13,7 +13,7 @@ updated: 2026-05-07
 
 ## Definition
 
-Standard GoT amplifies from a gene-specific primer at the mutation locus to the 3′ end of the 10x library fragment, retaining the cell barcode + UMI. For mutations far from transcript ends, the resulting amplicon is too long to cluster efficiently on Illumina flow cells. Circularization GoT instead performs ([[10-Summaries/anna-2019-nature]]):
+Standard GoT amplifies from a gene-specific primer at the mutation locus to the 3′ end of the 10x library fragment, retaining the cell barcode + UMI. For mutations far from transcript ends, the resulting amplicon is too long to cluster efficiently on Illumina flow cells. Circularization GoT instead performs ([[10-Summaries/nam-2019-got]]):
 
 1. Hemi-nested gene-specific PCR to define cloning-compatible ends around the region of interest.
 2. **Intramolecular ligation + inverse PCR** to remove the intervening sequence between the cell barcode and the mutation site.
@@ -22,9 +22,9 @@ Standard GoT amplifies from a gene-specific primer at the mutation locus to the 
 
 ## Why it matters
 
-In [[10-Summaries/anna-2019-nature]] the technique increased SF3B1 genotyping yield from 750 to 2,004 cells (9% → 24%) and successfully genotyped JAK2 V617F at ~2.3 kb from the closer transcript end — a target unreachable with linear GoT.
+In [[10-Summaries/nam-2019-got]] the technique increased SF3B1 genotyping yield from 750 to 2,004 cells (9% → 24%) and successfully genotyped JAK2 V617F at ~2.3 kb from the closer transcript end — a target unreachable with linear GoT.
 
-It is, however, a **workaround**: each circularization step adds wet-lab complexity and reduces yield. The cleaner architectural fix — capture the locus from genomic DNA instead of from cDNA — arrives with [[got-cha]] in [[10-Summaries/franco-2024-nature]], which obviates circularization entirely.
+It is, however, a **workaround**: each circularization step adds wet-lab complexity and reduces yield. The cleaner architectural fix — capture the locus from genomic DNA instead of from cDNA — arrives with [[got-cha]] in [[10-Summaries/izzo-2024-got-cha]], which obviates circularization entirely.
 
 ## Variants and refinements
 
@@ -37,7 +37,7 @@ It is, however, a **workaround**: each circularization step adds wet-lab complex
 
 ## Examples
 
-- JAK2V617F essential thrombocythemia: 7.3% of CD34+ cells genotyped via circularization GoT, sufficient to recover the clinical phenotype-associated MkP-priming pattern ([[10-Summaries/anna-2019-nature]]).
+- JAK2V617F essential thrombocythemia: 7.3% of CD34+ cells genotyped via circularization GoT, sufficient to recover the clinical phenotype-associated MkP-priming pattern ([[10-Summaries/nam-2019-got]]).
 
 ## Related
 

@@ -70,7 +70,7 @@ topics:
 
 - **Builds on / depends on** [[10-Summaries/de-luca-2021-scdamid-protocol]] and [[10-Summaries/rooijers-2019-scdamt-seq]] (lamina-DamID data that feeds Tolokh/Li training).
 - **Extends** [[10-Summaries/nagano-2013-nature]] / [[10-Summaries/tan-2018-science]] / [[10-Summaries/hong-2025-sc3d-genome-review]] — moves from descriptive single-cell-3D maps to a single-number metric for population-level heterogeneity comparison.
-- **Bridges to** [[10-Summaries/elliott-2025-naturebiotechnology]] — DAF-seq's 63% inter-cell actuation divergence is the chromatin-actuation analogue of C.H. for accessibility rather than 3D distance.
+- **Bridges to** [[10-Summaries/swanson-2025-daf-seq]] — DAF-seq's 63% inter-cell actuation divergence is the chromatin-actuation analogue of C.H. for accessibility rather than 3D distance.
 - **Methodologically relevant to** [[10-Summaries/jiang-2026-stark-scnucleome]] — STARK / SSCE quality metric is a *per-cell* structural fidelity score, complementary to *across-cell* C.H.
 
 ## Open questions

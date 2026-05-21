@@ -16,7 +16,7 @@ updated: 2026-05-19
 - **Intratumor heterogeneity** ([[10-Summaries/navin-2011-sns-tumor-evolution]])
 - **Clonal evolution and chemoresistance** ([[10-Summaries/kim-2018-tnbc-chemoresistance]])
 - **Copy-number phylogeny** ([[10-Summaries/zaccaria-2021-chisel]]; [[10-Summaries/kaufmann-2022-medicc2]])
-- **Cancer of unknown primary** ([[10-Summaries/jeffrey-2021-naturegenetics]])
+- **Cancer of unknown primary** ([[10-Summaries/granja-2021-archr]])
 - **Clinical translation** — circulating tumor cells, MRD detection, tissue-of-origin classifiers
 
 ## Reviews

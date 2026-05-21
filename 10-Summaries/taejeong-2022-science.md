@@ -56,7 +56,7 @@ The largest brain-mosaicism cohort study to date: 131 human brains (44 neurotypi
 
 - **The clonal-expansion finding (NC7 NRAS) is methodologically the analog of clonal hematopoiesis in the brain**: same mutation, same gene class, same age-dependence, possibly same precursor-to-cancer trajectory. For the review's §5 cancer-evolution section, this is a clean human-brain CH-of-indeterminate-potential precedent.
 
-- **First author Taejeong Bae** — same lab as [[10-Summaries/taejeong-2018-science|Bae 2018]], same approach scaled from 3 brains/clonal-expansion to 131 brains/bulk-WGS. Two papers from the same lab now anchor the human-brain mosaicism timeline.
+- **First author Taejeong Bae** — same lab as [[10-Summaries/bae-2017-pregastrulation-mutations|Bae 2018]], same approach scaled from 3 brains/clonal-expansion to 131 brains/bulk-WGS. Two papers from the same lab now anchor the human-brain mosaicism timeline.
 
 ## Entities / concepts touched
 
@@ -64,8 +64,8 @@ The largest brain-mosaicism cohort study to date: 131 human brains (44 neurotypi
 
 ## Related summaries
 
-- [[10-Summaries/taejeong-2018-science]] — Bae 2018, foundational fetal-brain clonal-expansion paper from same lab.
+- [[10-Summaries/bae-2017-pregastrulation-mutations]] — Bae 2018, foundational fetal-brain clonal-expansion paper from same lab.
 - [[10-Summaries/kousi-2022-alzheimer-mosaicism]] — Kousi/Kellis AD-specific cell-type-specific mosaic burden.
 - [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — Luquette/Walsh SMaHT 102-nucleus PTA + DS.
 - [[10-Summaries/bizzotto-2022-brain-mosaicism-review]] — Bizzotto/Walsh 2022 NRN review.
-- [[10-Summaries/franco-2024-nature]] — GoT-ChA shows the analogous chromatin-priming-before-expression pathway in hematopoiesis; this paper's MEIS-motif finding asks whether a similar mechanism operates in ASD brain.
+- [[10-Summaries/izzo-2024-got-cha]] — GoT-ChA shows the analogous chromatin-priming-before-expression pathway in hematopoiesis; this paper's MEIS-motif finding asks whether a similar mechanism operates in ASD brain.

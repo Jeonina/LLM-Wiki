@@ -27,6 +27,6 @@ The de-facto standard bisulfite-sequencing aligner in mammalian methylome studie
 ## Related
 
 - [[10-Summaries/smallwood-2014-natmethods]]
-- [[10-Summaries/clark-2018-scnmt]]
+- [[10-Summaries/clark-2018-scnmt-seq]]
 - [[20-Entities/wolf-reik]]
 - [[30-Concepts/bisulfite-sequencing]]

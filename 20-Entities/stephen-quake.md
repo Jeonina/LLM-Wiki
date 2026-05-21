@@ -10,7 +10,7 @@ updated: 2026-05-11
 
 # Stephen R. Quake
 
-> Bioengineer and HHMI investigator at Stanford; co-developer of microfluidic single-cell genomics. Senior author of [[10-Summaries/charles-2016-naturereviewsgenetics]] and a major figure in the early scaling of single-cell technologies from plate-based to microfluidic to droplet platforms.
+> Bioengineer and HHMI investigator at Stanford; co-developer of microfluidic single-cell genomics. Senior author of [[10-Summaries/gawad-2016-scgenome-review]] and a major figure in the early scaling of single-cell technologies from plate-based to microfluidic to droplet platforms.
 
 ## Profile
 
@@ -18,11 +18,11 @@ Departments of Bioengineering and Applied Physics, Stanford University; HHMI. Qu
 
 ## Mentions
 
-- **2026-05-11** — [[10-Summaries/charles-2016-naturereviewsgenetics]]: co-senior author of the foundational scDNA-seq review.
+- **2026-05-11** — [[10-Summaries/gawad-2016-scgenome-review]]: co-senior author of the foundational scDNA-seq review.
 
 ## Positions and claims
 
-- Holds that **microfluidic single-cell genomics** is the path to scaling — moving from microliter to nanoliter reaction volumes reduces contamination and improves WGA uniformity ([[10-Summaries/charles-2016-naturereviewsgenetics]]).
+- Holds that **microfluidic single-cell genomics** is the path to scaling — moving from microliter to nanoliter reaction volumes reduces contamination and improves WGA uniformity ([[10-Summaries/gawad-2016-scgenome-review]]).
 - Holds that **single-cell genomics can resolve previously unculturable microbial dark matter** — multiple ocean and soil bacterial phyla have been assembled from individual cells through MDA on Quake-lab microfluidic platforms.
 
 ## Related

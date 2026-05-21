@@ -1,28 +1,29 @@
 ---
 type: summary
-title: "Doughty 2024 — Single-molecule footprinting links TF binding to gene expression"
+title: "Doughty 2024 — Single-molecule states link transcription factor binding to gene expression"
 source: "[[00-Sources/papers/Single-molecule states link transcription factor binding to gene expression]]"
-aliases: ["Doughty 2024 SMF", "TF-SMF"]
-tags: [SMF, single-molecule-footprinting, TF-binding, enhancer-promoter, M.CviPI, Greenleaf-lab, Bintu-lab, Stanford]
+aliases: ["Doughty 2024", "SMF TF binding"]
+tags: [single-molecule-footprinting, SMF, transcription-factor, enhancer, Greenleaf-lab, Bintu-lab]
 created: 2026-05-13
 updated: 2026-05-13
 ---
 
-**Citation:** Doughty et al. (2024) — *Single-molecule footprinting links TF binding to gene expression* — *Nature*. [DOI](https://doi.org/10.1038/s41586-024-08219-w)
+**Citation:** Doughty et al. (2024) — *Single-molecule states link transcription factor binding to gene expression* — *Nature*. [DOI](https://doi.org/10.1038/s41586-024-08219-w)
 
-Doughty, Hinks, Schaepe et al. (Greenleaf, Bintu labs; Stanford) applied **single-molecule footprinting (SMF)** with M.CviPI GpC methyltransferase to engineered enhancer–promoter constructs in K562 cells, simultaneously measuring TF occupancy, nucleosome state, and gene expression on the same single chromatin fibers. The reporter system places 0–8 TetO sites upstream of a minCMV-citrine promoter; M.CviPI methylates accessible GpCs, enzymatic conversion reads accessibility per molecule. Analysis of 26,365,210 single molecules revealed substantial heterogeneity in TF/nucleosome configurations on identical sequences; the authors decomposed TF strength into binding and activation terms, showed that average TF occupancy linearly determines promoter activity, and built thermodynamic and kinetic models predicting both enhancer microstates and gene-expression dynamics from sequence alone.
+Doughty, Hinks, Schaepe and colleagues (Greenleaf / Bintu labs) applied single-molecule footprinting (SMF) — methyltransferase-based chromatin stenciling read by long-read sequencing — to engineered enhancer-promoter constructs in K562 cells. The constructs contain variable numbers of TetO binding sites for either a synthetic TF (rTetR-VP48) or an endogenous TF involved in the type-I interferon response. SMF reads, per fiber, the configuration of TF binding + nucleosome positioning + accessibility on the same molecule, then correlates with steady-state and dynamic gene expression measured by mCherry/citrine reporters.
+
+Three findings. (1) TF binding events on nucleosome-free DNA are independent of each other (statistically uncorrelated), but activation domains recruit chromatin remodelers (BAF) that destabilize nucleosomes, driving observed TF binding cooperativity. (2) Average TF occupancy linearly determines promoter activity, allowing decomposition of TF strength into separable binding and activation terms. (3) Thermodynamic and kinetic models built from SMF data quantitatively predict both enhancer binding microstates and gene expression dynamics.
 
 ## Why this matters
 
-Anchors §3.3 (single-molecule footprinting — SMAC-seq/Fiber-seq/nanoNOMe/SAMOSA family) at the application end. While most SMF papers focus on assay development, Doughty 2024 demonstrates SMF's *causal* power: by perturbing TF concentration and motif number while reading single-molecule occupancy, the paper builds first-principles models linking sequence → chromatin state → expression. Important reference when arguing SMF is uniquely positioned to dissect cis-regulatory mechanism — a feature scATAC/scChIP cannot offer.
-
-## Related
-
-- [[10-Summaries/shipony-2020-smac]]
-- [[10-Summaries/lee-2020-nanonome]]
-- [[10-Summaries/peter-2024-brain-fiberseq]]
-- [[10-Summaries/bohaczuk-2024-targeted-fiberseq]]
-- [[30-Concepts/single-molecule-footprinting]]
+Concrete demonstration that single-molecule footprinting answers questions about TF-binding cooperativity, nucleosome eviction, and activation-domain function that bulk and single-cell antibody-based methods cannot. Bridges §3.2 (single-molecule footprinting / scDAF-seq family) and §3.4 (TF occupancy) by showing what the locus-state framework's "transcription factor layer" looks like when measured directly per molecule. Anchors the methodological case that fiber-resolution measurements provide mechanism, not just resolution.
 
 ---
 **Source:** [DOI](https://doi.org/10.1038/s41586-024-08219-w) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/39567683/)
+
+## Related
+
+- [[30-Concepts/single-molecule-footprinting]]
+- [[30-Concepts/transcription-factor-occupancy]]
+- [[10-Summaries/andrewb-2020-science]]
+- [[10-Summaries/swanson-2025-daf-seq]]

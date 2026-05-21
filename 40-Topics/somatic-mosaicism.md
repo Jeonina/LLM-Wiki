@@ -9,7 +9,7 @@ updated: 2026-05-19
 
 # Somatic mosaicism
 
-> Every human is a mosaic of genetically distinct cells ([[10-Summaries/lars-2017-naturereviewsgenetics]]; [[10-Summaries/cagan-2022-nature]]). The biological question driving most of the [[40-Topics/scdna-seq]] technology investment: how to detect, characterize, and understand the somatic variants that accumulate throughout life ([[10-Summaries/vijg-2020-cell]]) and shape both normal physiology (aging, [[30-Concepts/clonal-hematopoiesis|clonal hematopoiesis]] per [[10-Summaries/franco-2024-nature]]) and disease (cancer per [[10-Summaries/shao-2025-scDNA-mosaicism-review]], neurodevelopmental disorders per [[10-Summaries/bizzotto-2022-brain-mosaicism-review]]).
+> Every human is a mosaic of genetically distinct cells ([[10-Summaries/forsberg-2017-mosaicism-review]]; [[10-Summaries/cagan-2022-nature]]). The biological question driving most of the [[40-Topics/scdna-seq]] technology investment: how to detect, characterize, and understand the somatic variants that accumulate throughout life ([[10-Summaries/vijg-2020-cell]]) and shape both normal physiology (aging, [[30-Concepts/clonal-hematopoiesis|clonal hematopoiesis]] per [[10-Summaries/izzo-2024-got-cha]]) and disease (cancer per [[10-Summaries/shao-2025-scDNA-mosaicism-review]], neurodevelopmental disorders per [[10-Summaries/bizzotto-2022-brain-mosaicism-review]]).
 
 ## Core concepts
 
@@ -52,20 +52,20 @@ updated: 2026-05-19
 
 ### Mosaicism biology and clinical implications
 
-- [[10-Summaries/lars-2017-naturereviewsgenetics]] — health-and-disease perspective.
+- [[10-Summaries/forsberg-2017-mosaicism-review]] — health-and-disease perspective.
 - [[10-Summaries/ian-2015-trendsingenetics]] — transmission genetics, developmental timing.
 
 ### Methods reviews
 
-- [[10-Summaries/diane-2025-naturereviewsgenetics]] — current scDNA-seq toolkit for mosaicism research.
-- [[10-Summaries/gilad-2021-annualreviewofgenomicsandhumangenetics]] — applications framework.
+- [[10-Summaries/shao-2025-scDNA-mosaicism-review]] — current scDNA-seq toolkit for mosaicism research.
+- [[10-Summaries/evrony-2021-scDNA-applications-review]] — applications framework.
 - [[10-Summaries/bizzotto-2022-brain-mosaicism-review]] — Bizzotto & Walsh 2022, NRN brain mosaicism review.
 - [[10-Summaries/shao-2025-scDNA-mosaicism-review]] — Shao 2025 NRG scDNA-seq for mosaicism review.
 
 ### MPN as a tractable mosaicism disease model
 
-- [[10-Summaries/anna-2019-nature]] — CALR-mutated MPN.
-- [[10-Summaries/franco-2024-nature]] — JAK2V617F MPN and clonal hematopoiesis.
+- [[10-Summaries/nam-2019-got]] — CALR-mutated MPN.
+- [[10-Summaries/izzo-2024-got-cha]] — JAK2V617F MPN and clonal hematopoiesis.
 
 ### Duplex sequencing for low-VAF mutation detection
 
@@ -81,7 +81,7 @@ updated: 2026-05-19
 - [[10-Summaries/luquette-2025-smaht-pta]] — companion PTA pipeline paper.
 - [[10-Summaries/glynos-2023-mtdna-mosaicism]] — Glynos/Chinnery 2023: mouse mtDNA heteroplasmy variance increases through life.
 - [[10-Summaries/kousi-2022-alzheimer-mosaicism]] — Kousi/Kellis 2022: cell-type-specific AD mosaicism.
-- [[10-Summaries/lodato-2018-science]] — Lodato et al. 2018 aging-neuron mosaic mutation burden.
+- [[10-Summaries/lodato-2017-aging-neurons]] — Lodato et al. 2018 aging-neuron mosaic mutation burden.
 - [[10-Summaries/bae-2017-pregastrulation-mutations]] — Bae 2017: developmental mutation timing.
 
 ### Structural-variant somatic mosaicism
@@ -98,7 +98,7 @@ _None yet._
 - Tissue-specific mosaic mutation rates: high in skin (UV) and intestine (turnover); uncertain in many other tissues.
 - Clinical threshold (VAF, gene set) at which mosaicism becomes diagnostically actionable.
 - Whether age-related mosaic accumulation *causes* aging-related disease or is a *biomarker* — distinction matters for therapeutic strategies.
-- IRE1-XBP1 as a therapeutic target in CALR-mutant clonal hematopoiesis ([[10-Summaries/anna-2019-nature]] hypothesis) — no clinical validation in wiki yet.
+- IRE1-XBP1 as a therapeutic target in CALR-mutant clonal hematopoiesis ([[10-Summaries/nam-2019-got]] hypothesis) — no clinical validation in wiki yet.
 - Why CALR fitness advantage is differentiation-dependent in ET but already strong at HSPC level in MF.
-- Whether JAK2V617F chromatin priming in HSCs is causal for clonal expansion or downstream of it ([[10-Summaries/franco-2024-nature]]).
-- Pre-implantation genetic screening from a single embryo cell — preprint stage; awaiting clinical validation ([[10-Summaries/diane-2025-naturereviewsgenetics]]).
+- Whether JAK2V617F chromatin priming in HSCs is causal for clonal expansion or downstream of it ([[10-Summaries/izzo-2024-got-cha]]).
+- Pre-implantation genetic screening from a single embryo cell — preprint stage; awaiting clinical validation ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).

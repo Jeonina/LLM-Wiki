@@ -1,51 +1,53 @@
 ---
 type: summary
-title: "Abascal et al. 2021 — NanoSeq: somatic mutation landscapes at single-molecule resolution"
+title: "Abascal 2021 — Somatic mutation landscapes at single-molecule resolution (NanoSeq)"
 source: "[[00-Sources/papers/Somatic mutation landscapes at single-molecule resolution]]"
-source_kind: paper
-author: "Federico Abascal, Luke M. R. Harvey, Emily Mitchell, Andrew R. J. Lawson, Stefanie V. Lensing, Peter Ellis, Andrew J. C. Russell, Raul E. Alcantara, Adrian Baez-Ortega, Henry Lee-Six, Tim H. H. Coorens, Michael Spencer Chapman, Iñigo Martincorena (corresponding), Peter J. Campbell (corresponding)"
-published: 2021
-ingested: 2026-05-18
-ingest_depth: abstract+intro
-doi: "10.1038/s41586-021-03477-4"
-journal: "Nature"
-tags: [NanoSeq, duplex-sequencing, somatic-mutation, single-molecule, ultra-low-frequency, Sanger, Martincorena-lab, Campbell-lab]
-entities: []
-concepts:
-  - "[[30-Concepts/duplex-sequencing]]"
-  - "[[30-Concepts/nanoseq]]"
-  - "[[30-Concepts/somatic-mosaicism]]"
-topics:
-  - "[[40-Topics/duplex-sequencing]]"
-  - "[[40-Topics/somatic-mosaicism]]"
+aliases: [Abascal 2021, NanoSeq, Federico 2021, Sanger NanoSeq]
+tags: [duplex-sequencing, somatic-mosaicism, NanoSeq, post-mitotic-neurons, mutation-rate, foundational]
+created: 2026-05-12
+updated: 2026-05-12
 ---
 
-**Citation:** Abascal et al. (2021) — *NanoSeq: somatic mutation landscapes at single-molecule resolution* — *Nature*. [DOI](https://doi.org/10.1038/s41586-021-03477-4)
+**Citation:** Abascal et al. (2021) — *Somatic mutation landscapes at single-molecule resolution (NanoSeq)* — *Nature*. [DOI](https://doi.org/10.1038/s41586-021-03477-4)
 
-# Abascal et al. 2021 — NanoSeq
+# Abascal et al. 2021 — NanoSeq for non-dividing cells
 
-> Thesis: standard duplex sequencing (Schmitt 2012, Kennedy 2014) is the gold standard for low-frequency somatic mutation detection, but its error rate (~10⁻⁷/base) is still dominated by DNA damage. NanoSeq combines **restriction enzyme fragmentation** with duplex consensus calling to push error rates to **<5 × 10⁻⁹/base** — single-molecule resolution for somatic mutations, applicable to non-dividing tissues (neurons, postmitotic cells) where colony-based methods cannot reach.
+> Federico Abascal, Luke M. R. Harvey, Emily Mitchell, Andrew R. J. Lawson, Stefanie V. Lensing, Peter Ellis, Andrew J. C. Russell, Raul E. Alcantara, Adrian Baez-Ortega, Yichen Wang, Eugene Jing Kwa, Henry Lee-Six, Alex Cagan, Tim H. H. Coorens, Michael Spencer Chapman, Sigurgeir Olafsson, Steven Leonard, David Jones, Heather E. Machado, Megan Davies, Nina F. Øbro, Krishnaa Mahubani, Kieren Allinson, Moritz Gerstung, Kourosh Saeb-Parsy, David G. Kent, Elisa Laurenti, Michael R. Stratton, Raheleh Rahbari, Peter J. Campbell, Robert J. Osborne\*, **Iñigo Martincorena\***. *Nature* **593**, 405–410 (2021). DOI: 10.1038/s41586-021-03477-4. Wellcome Sanger Institute.
 
-## Key claims (abstract + intro)
+## Thesis
 
-- **Sub-10⁻⁹/base error rate** — two orders of magnitude better than canonical duplex sequencing; enables somatic mutation calling from any cell population without single-cell isolation.
-- **Restriction enzyme fragmentation** (rather than mechanical shearing) reduces end-related damage artifacts that limited classical duplex sequencing.
-- **Apply to non-dividing tissues**: postmitotic neurons, smooth muscle, mature hepatocytes — cell types inaccessible to colony-expansion methods (Lee-Six 2018 lineage tracing).
-- **Mutation burden quantification across tissues**: defines tissue-specific somatic mutation rates and spectra.
+**NanoSeq (nanorate sequencing)** is a duplex-sequencing protocol that **avoids end-repair-associated errors** to achieve **<5 errors per billion base pairs in single DNA molecules** — two orders of magnitude lower than typical somatic mutation loads. This enables **somatic-mutation studies in non-dividing cells** (post-mitotic neurons, polyclonal smooth muscle, differentiated cells) for the first time, independently of clonality. Demonstrates **somatic mutations accumulate at constant rate in post-mitotic neurons throughout life** — proving cell division is not required for mutagenesis.
 
-## Why this matters
+## Mechanism
 
-NanoSeq is the **state-of-the-art bulk-tissue somatic mutation caller** and complements single-cell methods (scWGS, PTA, IDA) for cells that cannot be propagated or isolated. Frequently cited as the reference accuracy benchmark for duplex protocols.
+1. Standard duplex consensus sequencing uses unique molecular barcodes on both strands of each DNA molecule; both strands' consensus reads agree → real mutation. Theoretical error rate <10⁻⁹/bp.
+2. **In practice**, mapping errors + accidental cross-strand copying during library prep (especially end-repair) violate the strand-independence assumption → real-world error rates higher.
+3. **NanoSeq** introduces end-repair-aware library construction that eliminates these errors. Validated empirically to <5 errors/billion bp.
 
-## Note on ingest depth
+## Key claims
 
-Abstract + intro only; full PDF re-ingest will deepen quantitative error-rate modeling and tissue-comparison data.
+- Error rate **two orders of magnitude lower than somatic mutation loads** in human tissues → enables genome-wide somatic-mutation measurement in any cell population, regardless of clonality.
+- **Post-mitotic neurons accumulate somatic mutations at constant rate throughout life** — directly demonstrates that mutational processes independent of cell division (oxidative damage, deamination, replication-independent mechanisms) contribute substantially to adult somatic mutagenesis. Rate and signatures similar to mitotically-active tissues.
+- **Differentiated blood and colon cells have similar mutation loads/signatures to their corresponding stem cells** — despite mature blood cells having undergone many more divisions. Implies division-independent mutational processes dominate or that stem cells accumulate mutations as fast as their differentiated progeny in vivo.
+- Smooth muscle (polyclonal, terminally differentiated) profiled at single-molecule resolution.
+
+## Surprising / load-bearing for the review
+
+- **NanoSeq is the methodological anchor for non-dividing-tissue somatic-mutation measurement** — the gap left by clonal-expansion methods (which require mitotic cells) and scWGA (which requires sufficient template).
+- For the planned review's **§5 neuroscience applications**: NanoSeq's post-mitotic neuron finding **complements [[10-Summaries/bae-2017-pregastrulation-mutations|Bae 2018]]'s observation of mutation-spectrum shift in neurogenesis**. Bae 2018: progenitor cells accumulate mutations during division at ~5 SNVs/day; NanoSeq: post-mitotic neurons continue accumulating at lower constant rate after division ceases. Together they bracket the lifelong neural mosaicism trajectory.
+- For §6 (Limitations): NanoSeq's error-rate floor is the **field's current technological ceiling for somatic-mutation accuracy**. Anything below ~5 errors/billion bp requires further chemistry improvement.
+- Same Sanger lineage that produced [[10-Summaries/luquette-2025-pta-duplex-mosaicism|Luquette/Walsh SMaHT]] and the duplex-sequencing benchmark; this paper is upstream of those.
+
+## Entities / concepts touched
+
+[[duplex-sequencing]] · [[nanoseq]] · [[somatic-mosaicism]] · [[mutational-signatures]] · [[20-Entities/scott-kennedy]] · [[20-Entities/peter-park]] · [[40-Topics/duplex-sequencing]] · [[40-Topics/somatic-mosaicism]]
+
+## Related summaries
+
+- [[10-Summaries/kennedy-2014-duplex-protocol]] — Kennedy/Loeb 2014 foundational DS.
+- [[10-Summaries/nandi-2025-udseq]] — Alexandrov UDSeq.
+- [[10-Summaries/zhang-2025-smaht-duplex-benchmark]] — SMaHT cross-method DS benchmark.
+- [[bae-2017-pregastrulation-mutations]] — Bae 2018 fetal-brain progenitor mutation rates (complementary biology).
 
 ---
-**Source:** [DOI](https://doi.org/10.1038/s41586-021-03477-4) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33911273/)
-
-## Related
-
-- [[30-Concepts/duplex-sequencing]] · [[30-Concepts/nanoseq]] · [[30-Concepts/somatic-mosaicism]]
-- [[10-Summaries/kennedy-2014-duplex-protocol]] · [[10-Summaries/nandi-2025-udseq]]
-- [[40-Topics/duplex-sequencing]] · [[40-Topics/somatic-mosaicism]]
+**Source:** [DOI](https://doi.org/10.1038/s41586-021-03477-4) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33911282/)

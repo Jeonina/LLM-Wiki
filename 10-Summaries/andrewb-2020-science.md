@@ -42,7 +42,7 @@ Current chromatin-mapping methods (DNase-seq, ATAC-seq, MNase-seq, Hi-C) sample 
 
 ## Structural limitation acknowledged in the paper itself
 
-Fiber-seq is a **bulk method**. m6A marks on DNA are erased during any DNA amplification (PCR, MDA, PTA), so chromatin stencils on a single cell's genome cannot be amplified up to sequencing depth. Each cell would yield ~1–2 fibers per locus. This is precisely the structural ceiling that [[10-Summaries/elliott-2025-naturebiotechnology]] (DAF-seq) breaks five years later by replacing methylation with deamination — sequence changes that survive amplification.
+Fiber-seq is a **bulk method**. m6A marks on DNA are erased during any DNA amplification (PCR, MDA, PTA), so chromatin stencils on a single cell's genome cannot be amplified up to sequencing depth. Each cell would yield ~1–2 fibers per locus. This is precisely the structural ceiling that [[10-Summaries/swanson-2025-daf-seq]] (DAF-seq) breaks five years later by replacing methylation with deamination — sequence changes that survive amplification.
 
 ## Entities / concepts touched
 
@@ -50,7 +50,7 @@ Fiber-seq is a **bulk method**. m6A marks on DNA are erased during any DNA ampli
 
 ## Related summaries
 
-- [[elliott-2025-naturebiotechnology]] — DAF-seq, the deamination-based successor that extends single-molecule chromatin profiling to single cells.
+- [[swanson-2025-daf-seq]] — DAF-seq, the deamination-based successor that extends single-molecule chromatin profiling to single cells.
 - [[10-Summaries/abdulhay-2020-samosa]] — SMRT-Tag, methodologically adjacent single-molecule footprinting.
 - [[10-Summaries/mo-2023-stam-seq]] — STAM-seq, m6A-MTase chromatin footprinting in plants.
 

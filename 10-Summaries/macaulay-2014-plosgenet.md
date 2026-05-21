@@ -26,6 +26,6 @@ A foundational reference for the scWGA-chemistry landscape that subsequent work 
 
 ## Related
 
-- [[10-Summaries/diane-2025-naturereviewsgenetics]]
-- [[10-Summaries/charles-2016-naturereviewsgenetics]]
+- [[10-Summaries/shao-2025-scDNA-mosaicism-review]]
+- [[10-Summaries/gawad-2016-scgenome-review]]
 - [[30-Concepts/scwga-chemistries]]

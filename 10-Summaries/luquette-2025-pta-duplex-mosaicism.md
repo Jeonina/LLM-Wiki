@@ -55,9 +55,9 @@ topics:
 
 ## Connections to other sources
 
-- Direct extension of [[10-Summaries/diane-2025-naturereviewsgenetics]]'s PTA-as-inflection-point framing: PTA + duplex is the current frontier.
+- Direct extension of [[10-Summaries/shao-2025-scDNA-mosaicism-review]]'s PTA-as-inflection-point framing: PTA + duplex is the current frontier.
 - Complements [[10-Summaries/bizzotto-2022-brain-mosaicism-review]] (Bizzotto/Walsh on brain) by extending the lineage-tracing logic from brain to peripheral tissues.
-- TCR-rearrangement detection echoes lineage-tracing themes in [[10-Summaries/anna-2019-nature]] (GoT) and [[10-Summaries/franco-2024-nature]] (GoT–ChA), though those infer lineage from genotyped variants rather than rearrangements.
+- TCR-rearrangement detection echoes lineage-tracing themes in [[10-Summaries/nam-2019-got]] (GoT) and [[10-Summaries/izzo-2024-got-cha]] (GoT–ChA), though those infer lineage from genotyped variants rather than rearrangements.
 
 ## Open questions
 

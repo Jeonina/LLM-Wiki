@@ -41,7 +41,7 @@ m6A marks are erased during any DNA amplification (PCR, MDA, PTA, LIANTI). A sin
 - **Fiber-seq** ([[10-Summaries/andrewb-2020-science]]) — long-read PacBio CCS version giving multikilobase per-fiber resolution.
 - **[[stam-seq]]** ([[10-Summaries/mo-2023-stam-seq]]) — Fiber-seq-style m6A stenciling adapted to *Arabidopsis* centromeres / telomeres / rDNA.
 - **[[samosa]]**, **[[samosa-tag]]**, **[[smrt-tag]]** — methylation-based footprinting variants for adjacent applications (targeted, repeat-mapping, multimodal).
-- **[[daf-seq]]** ([[10-Summaries/elliott-2025-naturebiotechnology]]) — direct successor; deamination-based, single-cell-compatible.
+- **[[daf-seq]]** ([[10-Summaries/swanson-2025-daf-seq]]) — direct successor; deamination-based, single-cell-compatible.
 
 ## Contested points
 
@@ -53,7 +53,7 @@ m6A marks are erased during any DNA amplification (PCR, MDA, PTA, LIANTI). A sin
 
 - All-or-none actuation rates at TSS-distal DHSs in *Drosophila* S2 cells track DNase-seq cleavage density tightly ([[10-Summaries/andrewb-2020-science]] Fig. 3).
 - 30% / 70% bound / accessible-unbound CTCF site partitioning in K562 cells, with bound-fraction predicting long-range loop participation ([[10-Summaries/andrewb-2020-science]] Fig. 5).
-- The chr.17:19447245–19447246 CC>TT somatic CTCF-ablating variant in COLO829T melanoma was originally analyzed via Fiber-seq before DAF-seq took over for the BL/T mixture ([[10-Summaries/elliott-2025-naturebiotechnology]]).
+- The chr.17:19447245–19447246 CC>TT somatic CTCF-ablating variant in COLO829T melanoma was originally analyzed via Fiber-seq before DAF-seq took over for the BL/T mixture ([[10-Summaries/swanson-2025-daf-seq]]).
 
 ## Related
 

@@ -29,5 +29,5 @@ The founding combinatorial-genome-editing lineage-tracing method, parent to a fa
 - [[30-Concepts/lineage-tracing-somatic-mutations]]
 - [[30-Concepts/crispr-lineage-tracing]]
 - [[20-Entities/jay-shendure]]
-- [[10-Summaries/lee-six-2018-nature]]
+- [[10-Summaries/lee-six-2018-hsc-dynamics]]
 - [[10-Summaries/scherer-2025-nature]]

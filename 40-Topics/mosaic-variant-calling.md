@@ -30,7 +30,7 @@ updated: 2026-05-19
 
 ## Reviews
 
-- [[10-Summaries/valecha-2022-scsnv-review]] · [[10-Summaries/lahnemann-2021-natcomm]] · [[10-Summaries/diane-2025-naturereviewsgenetics]]
+- [[10-Summaries/valecha-2022-scsnv-review]] · [[10-Summaries/lahnemann-2021-natcomm]] · [[10-Summaries/shao-2025-scDNA-mosaicism-review]]
 
 ## Open questions
 

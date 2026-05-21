@@ -20,6 +20,6 @@ A 2025 advance over the scCOOL-seq/scNOME-seq/scNMT-seq family — combinatorial
 **Source:** [Open paper](https://onlinelibrary.wiley.com/doi/10.1002/ctm2.70584)
 ## Related
 
-- [[10-Summaries/clark-2018-scnmt]]
+- [[10-Summaries/clark-2018-scnmt-seq]]
 - [[10-Summaries/nichols-2022-scimet-v2]]
 - [[10-Summaries/luo-2018-snmc-seq2]]

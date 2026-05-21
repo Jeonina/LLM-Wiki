@@ -53,7 +53,7 @@ Bisulfite-free chemistry derived from TAPS (5mC) and hmC-CATCH (5hmC). Combinato
 ## Connections to other sources
 
 - Competes with [[10-Summaries/tavares-2026-6-base-cut-tag]] (6-base-CUT&Tag): SIMPLE-seq is single-cell, whole-genome; 6B-C&T is bulk, histone-mark-targeted. They are complementary modalities.
-- Extends single-cell methylation methods reviewed in [[10-Summaries/zachary-2013-naturereviewsgenetics]].
+- Extends single-cell methylation methods reviewed in [[10-Summaries/smith-2013-methylation-development]].
 - The ChromVAR analysis used here is implemented in [[10-Summaries/schep-2017-chromvar]].
 
 ## Open questions

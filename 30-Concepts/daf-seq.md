@@ -13,7 +13,7 @@ updated: 2026-05-07
 
 ## Definition
 
-SsDddA (a *Simiaoa sunii* DddA variant, expressed in *E. coli*) deaminates accessible cytidines in nuclei to uridine; subsequent PCR or whole-genome amplification converts these to thymidine, producing C→T changes on the top strand and G→A changes on the bottom strand of accessible DNA ([[10-Summaries/elliott-2025-naturebiotechnology]]). Nucleosome- and TF-protected DNA escapes deamination, so the deamination pattern along a fiber is a **near-nucleotide-resolution footprint of protein occupancy**.
+SsDddA (a *Simiaoa sunii* DddA variant, expressed in *E. coli*) deaminates accessible cytidines in nuclei to uridine; subsequent PCR or whole-genome amplification converts these to thymidine, producing C→T changes on the top strand and G→A changes on the bottom strand of accessible DNA ([[10-Summaries/swanson-2025-daf-seq]]). Nucleosome- and TF-protected DNA escapes deamination, so the deamination pattern along a fiber is a **near-nucleotide-resolution footprint of protein occupancy**.
 
 Two operational modes:
 
@@ -28,8 +28,8 @@ It also yields **synchronous DNA sequence + chromatin readout from the same fibe
 
 ## Variants and refinements
 
-- **Targeted DAF-seq** ([[10-Summaries/elliott-2025-naturebiotechnology]]) — bulk single-molecule with PCR enrichment; up to 230,000× enrichment over genome-wide.
-- **scDAF-seq** ([[10-Summaries/elliott-2025-naturebiotechnology]]) — single-cell variant; FACS + PTA + PacBio.
+- **Targeted DAF-seq** ([[10-Summaries/swanson-2025-daf-seq]]) — bulk single-molecule with PCR enrichment; up to 230,000× enrichment over genome-wide.
+- **scDAF-seq** ([[10-Summaries/swanson-2025-daf-seq]]) — single-cell variant; FACS + PTA + PacBio.
 - Reaction conditions: 4 μM SsDddA, 10 min, optimal across NAPA / WASF1 promoter benchmarks.
 
 ## Contested points
@@ -40,7 +40,7 @@ It also yields **synchronous DNA sequence + chromatin readout from the same fibe
 
 ## Examples
 
-- **NAPA promoter cooperativity**: thermodynamic analysis identified a 180,000× cooperative binding interaction between elements 1 and 2 (USF1/2 + NFY-A) ([[10-Summaries/elliott-2025-naturebiotechnology]]).
+- **NAPA promoter cooperativity**: thermodynamic analysis identified a 180,000× cooperative binding interaction between elements 1 and 2 (USF1/2 + NFY-A) ([[10-Summaries/swanson-2025-daf-seq]]).
 - **SLC39A4 eQTL mechanism**: rs2280838-T haplotype increases liver expression by altering nucleosome positioning over the promoter — visible as a chromatin epiallele only at single-molecule resolution.
 - **Low-VAF mosaic variant**: a 1.5% VAF CC→TT mutation in COLO829 BL/T mixture ablates a CTCF binding element, with chromatin loss visible only on the variant reads.
 - **Pervasive plasticity**: between-cell regulatory-element actuation differs by ~63%; haplotype-vs-haplotype within the same cell differs by ~61%.

@@ -13,7 +13,7 @@ updated: 2026-05-11
 
 ## Definition
 
-ADTs are antibodies conjugated to oligonucleotide barcodes with a polyA tail (so they're captured by oligo-dT primers in 10x scRNA-seq chemistry). After incubation with cells, the bound ADTs co-amplify with mRNA in the same droplet, producing per-cell counts of both transcripts and surface proteins ([[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]]).
+ADTs are antibodies conjugated to oligonucleotide barcodes with a polyA tail (so they're captured by oligo-dT primers in 10x scRNA-seq chemistry). After incubation with cells, the bound ADTs co-amplify with mRNA in the same droplet, producing per-cell counts of both transcripts and surface proteins ([[10-Summaries/baysoy-2023-multiomics-landscape]]).
 
 Captures 100s–1000s of surface protein markers in panels.
 
@@ -21,7 +21,7 @@ Captures 100s–1000s of surface protein markers in panels.
 
 - Adds **direct protein-level phenotyping** to transcriptomic data — important for immune cell classification where surface markers are the canonical phenotype.
 - Improves cell-type annotation accuracy over RNA-only.
-- Compatible with downstream chromatin (DOGMA-seq) and genotype (GoT–ChA imputation) modalities — see [[dogma-seq]] and [[10-Summaries/franco-2024-nature]].
+- Compatible with downstream chromatin (DOGMA-seq) and genotype (GoT–ChA imputation) modalities — see [[dogma-seq]] and [[10-Summaries/izzo-2024-got-cha]].
 
 ## Variants and refinements
 

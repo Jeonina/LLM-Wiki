@@ -13,7 +13,7 @@ updated: 2026-05-07
 
 ## Definition
 
-Population/ensemble assays — DNase-seq, ATAC-seq, ChIP-seq — average chromatin states across many cells and many fibers, smearing out cooperativity and per-fiber heterogeneity. Single-molecule footprinting marks each fiber's accessible bases and sequences each fiber individually, so the *pattern* of marks along one DNA molecule reports the *configuration* of bound proteins on that molecule ([[10-Summaries/elliott-2025-naturebiotechnology]] introduction).
+Population/ensemble assays — DNase-seq, ATAC-seq, ChIP-seq — average chromatin states across many cells and many fibers, smearing out cooperativity and per-fiber heterogeneity. Single-molecule footprinting marks each fiber's accessible bases and sequences each fiber individually, so the *pattern* of marks along one DNA molecule reports the *configuration* of bound proteins on that molecule ([[10-Summaries/swanson-2025-daf-seq]] introduction).
 
 Two main chemistries:
 
@@ -28,7 +28,7 @@ Aggregate chromatin assays cannot disentangle:
 - **Haplotype-specific actuation** (whether the two homologous chromosomes within a cell carry different chromatin states);
 - **Regulatory-element co-actuation domains** (whether two enhancers fire on the same fiber or different fibers).
 
-These are precisely the readouts that single-molecule footprinting recovers — and the readouts on which [[10-Summaries/elliott-2025-naturebiotechnology]] reports surprising findings (180,000× cooperative interactions; ~61% haplotype-vs-haplotype divergence within one cell).
+These are precisely the readouts that single-molecule footprinting recovers — and the readouts on which [[10-Summaries/swanson-2025-daf-seq]] reports surprising findings (180,000× cooperative interactions; ~61% haplotype-vs-haplotype divergence within one cell).
 
 ## Variants and refinements
 
@@ -42,8 +42,8 @@ These are precisely the readouts that single-molecule footprinting recovers — 
 
 ## Examples
 
-- TF cooperativity quantified at single-nucleotide resolution on the NAPA promoter ([[10-Summaries/elliott-2025-naturebiotechnology]]).
-- Per-cell, per-haplotype regulatory-element actuation maps in lymphoblastoid GM24385 ([[10-Summaries/elliott-2025-naturebiotechnology]]).
+- TF cooperativity quantified at single-nucleotide resolution on the NAPA promoter ([[10-Summaries/swanson-2025-daf-seq]]).
+- Per-cell, per-haplotype regulatory-element actuation maps in lymphoblastoid GM24385 ([[10-Summaries/swanson-2025-daf-seq]]).
 
 ## Related
 

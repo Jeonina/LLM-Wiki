@@ -13,7 +13,7 @@ updated: 2026-05-11
 
 ## Definition
 
-Two organizing axes ([[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]], [[10-Summaries/katy-2023-naturereviewsgenetics]]):
+Two organizing axes ([[10-Summaries/baysoy-2023-multiomics-landscape]], [[10-Summaries/vandereyken-2023-scmultiomics-review]]):
 
 **1. By modality pair**:
 - scRNA + scATAC (10x Multiome, SHARE-seq).
@@ -22,7 +22,7 @@ Two organizing axes ([[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]
 - scRNA + methylome (scM&T-seq, snmCT-seq).
 - CRISPR-perturbed scRNA (Perturb-seq, CROP-seq).
 - scDNA + scRNA + protein (DOGMA-seq variants) — see [[dogma-seq]].
-- scDNA + scATAC + RNA + protein (GoT–ChA + DOGMA via imputation — [[10-Summaries/franco-2024-nature]]).
+- scDNA + scATAC + RNA + protein (GoT–ChA + DOGMA via imputation — [[10-Summaries/izzo-2024-got-cha]]).
 
 **2. By when modalities are uncoupled**:
 - Before library prep — physical separation (G&T-seq, SIDR-seq).
@@ -38,7 +38,7 @@ Two organizing axes ([[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]
 ## Variants and refinements
 
 - **Spatial multi-omics** — preserves tissue context. Imaging-based (MERFISH, seqFISH, in situ) vs NGS-based (Visium, Slide-seq, Stereo-seq).
-- **Multi-omic best practices** documented in [[10-Summaries/lukas-2023-naturereviewsgenetics]] — modality-specific QC and integration recommendations.
+- **Multi-omic best practices** documented in [[10-Summaries/heumos-2023-best-practices]] — modality-specific QC and integration recommendations.
 
 ## Contested points
 
@@ -47,9 +47,9 @@ Two organizing axes ([[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]
 
 ## Examples
 
-- [[10-Summaries/anna-2019-nature]] — scDNA + scRNA via amplicon spike-in on 10x ([[got]]).
-- [[10-Summaries/franco-2024-nature]] — scDNA + scATAC + RNA + protein via gDNA capture + imputation bridges.
-- [[10-Summaries/elliott-2025-naturebiotechnology]] — sequence + chromatin via deaminase footprinting on the same fiber.
+- [[10-Summaries/nam-2019-got]] — scDNA + scRNA via amplicon spike-in on 10x ([[got]]).
+- [[10-Summaries/izzo-2024-got-cha]] — scDNA + scATAC + RNA + protein via gDNA capture + imputation bridges.
+- [[10-Summaries/swanson-2025-daf-seq]] — sequence + chromatin via deaminase footprinting on the same fiber.
 
 ## Related
 

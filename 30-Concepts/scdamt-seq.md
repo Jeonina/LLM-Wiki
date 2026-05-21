@@ -37,7 +37,7 @@ updated: 2026-05-15
 
 ## Strengths vs related methods
 
-- **vs scNMT-seq** ([[10-Summaries/clark-2018-scnmt]]): comparable nucleosome-positioning quality at ~30× shallower sequencing depth. Untethered-Dam accessibility outperforms DNase at lowly expressed regions because it marks gene bodies (H3K36me3) not just promoters.
+- **vs scNMT-seq** ([[10-Summaries/clark-2018-scnmt-seq]]): comparable nucleosome-positioning quality at ~30× shallower sequencing depth. Untethered-Dam accessibility outperforms DNase at lowly expressed regions because it marks gene bodies (H3K36me3) not just promoters.
 - **vs scATAC-seq** ([[10-Summaries/buenrostro-2015-nature]]): adds same-cell transcriptome + same-cell contact data for any Dam-tetherable protein, but at lower per-cell throughput.
 - **vs scDamID alone** ([[10-Summaries/de-luca-2021-scdamid-protocol]]): same cells now carry mRNA; ~4× lower DamID complexity per cell offset by 100× throughput via IVT + robotics.
 

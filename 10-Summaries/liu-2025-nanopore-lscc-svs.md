@@ -50,8 +50,8 @@ Nanopore long-read sequencing of 15 paired tumor-blood LSCC samples. Five paired
 
 ## Connections to other sources
 
-- A clinical application of the long-read SV-detection technologies reviewed in [[10-Summaries/yilei-2025-naturereviewsgenetics]] (Fu/Sedlazeck/Timp 2025 long-read methylation review) and [[10-Summaries/liu-2025-long-read-epigenome-review]] (Liu/Conesa 2025).
-- Connects somatic structural variation to [[40-Topics/somatic-mosaicism]] — extends the mosaicism story from SNVs (covered in [[10-Summaries/diane-2025-naturereviewsgenetics]] and [[10-Summaries/bizzotto-2022-brain-mosaicism-review]]) to SVs.
+- A clinical application of the long-read SV-detection technologies reviewed in [[10-Summaries/fu-2025-longread-methylation]] (Fu/Sedlazeck/Timp 2025 long-read methylation review) and [[10-Summaries/liu-2025-long-read-epigenome-review]] (Liu/Conesa 2025).
+- Connects somatic structural variation to [[40-Topics/somatic-mosaicism]] — extends the mosaicism story from SNVs (covered in [[10-Summaries/shao-2025-scDNA-mosaicism-review]] and [[10-Summaries/bizzotto-2022-brain-mosaicism-review]]) to SVs.
 - The spatial-proximity-gene-regulation finding overlaps thematically with single-cell 3D-genome work in [[10-Summaries/hong-2025-sc3d-genome-review]].
 
 ## Open questions

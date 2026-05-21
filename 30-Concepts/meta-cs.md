@@ -13,7 +13,7 @@ updated: 2026-05-11
 
 ## Definition
 
-META-CS performs Tn5-based tagmentation of single-cell DNA (or single nuclei), with adapters configured so that the **orientation of insertion** differentiates the two complementary DNA strands ([[10-Summaries/diane-2025-naturereviewsgenetics]]). After amplification and sequencing, reads from each strand can be separated by adapter orientation, and variant calls require consensus between strands.
+META-CS performs Tn5-based tagmentation of single-cell DNA (or single nuclei), with adapters configured so that the **orientation of insertion** differentiates the two complementary DNA strands ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]). After amplification and sequencing, reads from each strand can be separated by adapter orientation, and variant calls require consensus between strands.
 
 Because Tn5 inserts adapters directly without an end-repair / A-tailing step, META-CS avoids a class of errors that arise from those processes in Y-adaptor duplex methods. Estimated error rate: <2.4 × 10⁻⁸.
 
@@ -21,7 +21,7 @@ Because Tn5 inserts adapters directly without an end-repair / A-tailing step, ME
 
 META-CS bridges the long-standing gap between [[scwga]]-based scDNA-seq (per-cell, but high false-positive rate) and bulk [[duplex-sequencing]] (low false-positive rate, but no per-cell assignment). It is the only method that gives single-cell genotypes at near-duplex error rates.
 
-In the [[gilad-2021-annualreviewofgenomicsandhumangenetics|Evrony capabilities framework]], META-CS uniquely combines **fidelity** (duplex error correction) and **co-presence** (per-cell assignment) at genome-wide scale.
+In the [[evrony-2021-scDNA-applications-review|Evrony capabilities framework]], META-CS uniquely combines **fidelity** (duplex error correction) and **co-presence** (per-cell assignment) at genome-wide scale.
 
 ## Variants and refinements
 
@@ -35,7 +35,7 @@ In the [[gilad-2021-annualreviewofgenomicsandhumangenetics|Evrony capabilities f
 
 ## Examples
 
-- Single-cell SNV detection with error rate <2.4 × 10⁻⁸, applied across normal tissues ([[10-Summaries/diane-2025-naturereviewsgenetics]]).
+- Single-cell SNV detection with error rate <2.4 × 10⁻⁸, applied across normal tissues ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
 ## Related
 

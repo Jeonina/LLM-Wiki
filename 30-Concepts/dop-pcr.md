@@ -13,7 +13,7 @@ updated: 2026-05-11
 
 ## Definition
 
-A degenerate oligonucleotide primer (random 6–8 nt at one end + common 22 nt anchor) primes throughout the genome at low temperature; the first PCR cycle is permissive for mismatches. Subsequent cycles preferentially amplify products containing the common sequence, generating a tractable library size from picograms of input ([[10-Summaries/charles-2016-naturereviewsgenetics]]).
+A degenerate oligonucleotide primer (random 6–8 nt at one end + common 22 nt anchor) primes throughout the genome at low temperature; the first PCR cycle is permissive for mismatches. Subsequent cycles preferentially amplify products containing the common sequence, generating a tractable library size from picograms of input ([[10-Summaries/gawad-2016-scgenome-review]]).
 
 Typical metrics: coverage ~20–25%, MAPD low (~0.2–0.4), allelic balance low, ~3 h reaction time, $20/cell. Commercial.
 
@@ -36,7 +36,7 @@ Limitations:
 
 ## Examples
 
-- Detection of 49% aneuploidy in single cells from human early cleavage-stage embryos via DOP-PCR ([[10-Summaries/diane-2025-naturereviewsgenetics]]).
+- Detection of 49% aneuploidy in single cells from human early cleavage-stage embryos via DOP-PCR ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 - Original Navin et al. breast cancer single-cell phylogenetics (2011, Nature).
 
 ## Related

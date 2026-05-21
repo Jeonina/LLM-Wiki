@@ -48,13 +48,13 @@ PacBio Sequel II/IIe. Tn5 triple-mutant for size tunability. Phusion/Taq vs T4/A
 ## Surprising or load-bearing bits
 
 - **90–99% input reduction** for PacBio chromatin profiling: brings single-molecule methods within range of clinical samples and rare populations.
-- The **circularization-by-hairpin-adapters** strategy adapts Tn5 (a short-read tool) to a long-read platform — clever cross-pollination. Note that DAF-seq ([[10-Summaries/elliott-2025-naturebiotechnology]]) uses a different chemistry (DddA deamination) for the same long-read-low-input goal.
+- The **circularization-by-hairpin-adapters** strategy adapts Tn5 (a short-read tool) to a long-read platform — clever cross-pollination. Note that DAF-seq ([[10-Summaries/swanson-2025-daf-seq]]) uses a different chemistry (DddA deamination) for the same long-read-low-input goal.
 - SAMOSA-Tag bridges chromatin biology and clinical genomics — the **prostate-cancer PDX result** is the proof-of-clinical-relevance application.
 
 ## Connections to other sources
 
 - Direct extension of SAMOSA (Battaglia et al., Ramani lab) and Fiber-seq (Stergachis lab; see [[30-Concepts/fiber-seq]]).
-- Conceptually parallel to [[10-Summaries/elliott-2025-naturebiotechnology]] (DAF-seq / scDAF-seq, Stergachis 2025) — both achieve low-input PacBio chromatin profiling but DAF-seq uses chemical deamination (amplifiable) and DAF-seq goes to single cells while SAMOSA-Tag is bulk-nuclei.
+- Conceptually parallel to [[10-Summaries/swanson-2025-daf-seq]] (DAF-seq / scDAF-seq, Stergachis 2025) — both achieve low-input PacBio chromatin profiling but DAF-seq uses chemical deamination (amplifiable) and DAF-seq goes to single cells while SAMOSA-Tag is bulk-nuclei.
 - Fits in the broader long-read epigenomics framework reviewed by [[10-Summaries/liu-2025-long-read-epigenome-review]] (Liu/Conesa 2025).
 
 ## Open questions

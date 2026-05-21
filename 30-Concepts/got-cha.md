@@ -13,7 +13,7 @@ updated: 2026-05-07
 
 ## Definition
 
-GoT–ChA modifies 10x Genomics scATAC-seq by adding two custom **GoT–ChA primers** to the cell-barcoding PCR mixture before droplet generation ([[10-Summaries/franco-2024-nature]]). Inside each droplet, the primers anneal to the mutation-containing genomic locus. A linear amplification step is followed by exponential amplification, producing barcoded amplicons that carry both the cell barcode (CBC) and the genotype-encoding sequence. The amplicon library is processed alongside the scATAC-seq library; an R package handles GoT–ChA → scATAC integration end-to-end.
+GoT–ChA modifies 10x Genomics scATAC-seq by adding two custom **GoT–ChA primers** to the cell-barcoding PCR mixture before droplet generation ([[10-Summaries/izzo-2024-got-cha]]). Inside each droplet, the primers anneal to the mutation-containing genomic locus. A linear amplification step is followed by exponential amplification, producing barcoded amplicons that carry both the cell barcode (CBC) and the genotype-encoding sequence. The amplicon library is processed alongside the scATAC-seq library; an R package handles GoT–ChA → scATAC integration end-to-end.
 
 Genotype capture **does not require target-site tagmentation** — amplicons inherit the capture sequence from the cell-barcoding chemistry — so genotyping efficiency is independent of locus accessibility.
 
@@ -21,22 +21,22 @@ Genotype capture **does not require target-site tagmentation** — amplicons inh
 
 GoT–ChA solves the two biggest limitations of [[got]] in one architectural change: switching the genotype source from cDNA (one-or-more copies, expression-dependent) to **genomic DNA (always exactly two copies per diploid nucleus, expression-independent)**. The practical consequence is a **~4× jump in single-cell genotyping rate** for low-expression drivers like JAK2 (~38% with GoT–ChA vs ~7–10% with cDNA-based methods).
 
-It also opens the chromatin readout — a richer functional layer than RNA for tracking how somatic mutations rewire regulatory programs. The pro-inflammatory chromatin priming of JAK2V617F-mutant HSCs visible in [[10-Summaries/franco-2024-nature]] could not be measured with [[got]].
+It also opens the chromatin readout — a richer functional layer than RNA for tracking how somatic mutations rewire regulatory programs. The pro-inflammatory chromatin priming of JAK2V617F-mutant HSCs visible in [[10-Summaries/izzo-2024-got-cha]] could not be measured with [[got]].
 
 ## Variants and refinements
 
-- **Single-target GoT–ChA** ([[10-Summaries/franco-2024-nature]]) — TP53 R248, JAK2 V617, NRAS Q61, TP53 M133, FOXO1 S22 each validated.
-- **Multiplexed GoT–ChA** ([[10-Summaries/franco-2024-nature]]) — up to 4 targets simultaneously; per-cell genotyping for individual loci ranges 56–73%.
-- **GoT–ChA + DOGMA-seq integration** ([[10-Summaries/franco-2024-nature]]) — using mitochondrial variant + cell-surface protein bridges, GoT–ChA can be imputation-extended onto DOGMA-seq, giving genotype + chromatin + RNA + surface protein in single cells.
+- **Single-target GoT–ChA** ([[10-Summaries/izzo-2024-got-cha]]) — TP53 R248, JAK2 V617, NRAS Q61, TP53 M133, FOXO1 S22 each validated.
+- **Multiplexed GoT–ChA** ([[10-Summaries/izzo-2024-got-cha]]) — up to 4 targets simultaneously; per-cell genotyping for individual loci ranges 56–73%.
+- **GoT–ChA + DOGMA-seq integration** ([[10-Summaries/izzo-2024-got-cha]]) — using mitochondrial variant + cell-surface protein bridges, GoT–ChA can be imputation-extended onto DOGMA-seq, giving genotype + chromatin + RNA + surface protein in single cells.
 
 ## Contested points
 
 - Multiplexing efficiency drops with target count; per-locus genotyping rates fall from ~64% (single) to ~58–73% (multiplex). The paper does not characterize how this scales beyond 4 targets.
-- DOGMA integration is **imputation-based**, not direct co-capture — generalization to systems without informative mitochondrial variants or surface proteins is unclear ([[10-Summaries/franco-2024-nature]] open question).
+- DOGMA integration is **imputation-based**, not direct co-capture — generalization to systems without informative mitochondrial variants or surface proteins is unclear ([[10-Summaries/izzo-2024-got-cha]] open question).
 
 ## Examples
 
-- 21 JAK2V617F MF samples, 150,643 cells → 38.1% genotyping rate, revealing cell-intrinsic NF-κB / TGF-β chromatin priming in mutant HSCs and a profibrotic chromatin signature in mutant MkPs ([[10-Summaries/franco-2024-nature]]).
+- 21 JAK2V617F MF samples, 150,643 cells → 38.1% genotyping rate, revealing cell-intrinsic NF-κB / TGF-β chromatin priming in mutant HSCs and a profibrotic chromatin signature in mutant MkPs ([[10-Summaries/izzo-2024-got-cha]]).
 - JAK2V617F clonal hematopoiesis sample: STAT motif accessibility increase visible *before* overt MPN — pre-clinical chromatin signature.
 
 ## Related

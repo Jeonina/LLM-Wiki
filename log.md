@@ -103,7 +103,7 @@ The breadth-depth tradeoff is the *root cause* of the [[50-Notes/mosaicism-and-e
 
 ### Note created
 
-- **[[50-Notes/single-cell-duplex-sequencing]]** — explains the 13-year duplex/scWGA incompatibility (strand identity vs amplification), the four duplex implementation strategies, PTA as the substrate for the SMaHT mosaicism workflow, and how 2025 closed the gap from two directions: PTA + bulk-duplex validation ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]) and same-molecule Duplex-Multiome ([[10-Summaries/andrea-2025-biorxiv]]).
+- **[[50-Notes/single-cell-duplex-sequencing]]** — explains the 13-year duplex/scWGA incompatibility (strand identity vs amplification), the four duplex implementation strategies, PTA as the substrate for the SMaHT mosaicism workflow, and how 2025 closed the gap from two directions: PTA + bulk-duplex validation ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]) and same-molecule Duplex-Multiome ([[10-Summaries/kriz-2025-duplex-multiome]]).
 - 67 wikilinks, 0 broken.
 - Uses inline-citation density per the CLAUDE.md convention.
 
@@ -1100,45 +1100,45 @@ Brain mosaicism + mtDNA + applications:
 
 **Trigger**: User requested "ingest many papers as possible" after the 6th-batch neuro-mosaicism set. Strategy chosen: a 12-paper compact-summary batch across multiple review sections rather than one focused domain, to maximize §-coverage breadth.
 
-**Major framing shift this session**: one of the 12 papers — [[10-Summaries/andrea-2025-biorxiv|Kriz 2025 *bioRxiv* / Duplex-Multiome]] (Walsh + Lee labs) — **methodologically closes the central gap articulated in [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]]**. Duplex-Multiome integrates duplex consensus sequencing into the 10X Multiome platform to jointly measure somatic SNVs + snATAC + snRNA in the same nucleus, scaled to 51,400 brain nuclei. **The "no single-cell assay yet exists" framing the synthesis note had used is now factually outdated.** The note was substantially revised to acknowledge this and reframe the review's contribution from method-gap-identification to conceptual-framework-articulation (DNA-centric locus-state framing as the interpretive lens for what these new assays measure).
+**Major framing shift this session**: one of the 12 papers — [[10-Summaries/kriz-2025-duplex-multiome|Kriz 2025 *bioRxiv* / Duplex-Multiome]] (Walsh + Lee labs) — **methodologically closes the central gap articulated in [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]]**. Duplex-Multiome integrates duplex consensus sequencing into the 10X Multiome platform to jointly measure somatic SNVs + snATAC + snRNA in the same nucleus, scaled to 51,400 brain nuclei. **The "no single-cell assay yet exists" framing the synthesis note had used is now factually outdated.** The note was substantially revised to acknowledge this and reframe the review's contribution from method-gap-identification to conceptual-framework-articulation (DNA-centric locus-state framing as the interpretive lens for what these new assays measure).
 
 **Ingested (12 papers)**:
 
 **§3.1 — scWGA chemistry foundational**:
 - [[10-Summaries/chenghang-2012-science]] — Zong/Xie 2012 *Science*: **MALBAC foundational**. Quasilinear preamp + exponential PCR; 93% coverage / 76% SNV detection from SW480 single cell.
-- [[10-Summaries/chongyi-2017-science]] — Chen/Xie 2017 *Science*: **LIANTI**. Tn5+T7 linear amplification, 97% coverage / 17% ADO, micro-CNV resolution ~10 kb. Established post-lysis C→T deamination as the dominant single-cell SNV false-positive class.
+- [[10-Summaries/chen-2017-lianti]] — Chen/Xie 2017 *Science*: **LIANTI**. Tn5+T7 linear amplification, 97% coverage / 17% ADO, micro-CNV resolution ~10 kb. Established post-lysis C→T deamination as the dominant single-cell SNV false-positive class.
 
 **§3.3 — Single-cell methylome**:
-- [[10-Summaries/hongshan-2013-genomeresearch]] — Guo/Tang 2013: **scRRBS foundational**. 0.5–1.5M CpG sites per single mESC; first single-cell observation of asymmetric pronuclear demethylation kinetics. Chemistry behind [[sctrio-seq]].
-- [[10-Summaries/chongyuan-2018-naturecommunications]] — Luo/Ecker 2018: **snmC-seq2**, improved chemistry that became the chassis for the BICCN mouse-brain methylome atlas and the [[eran-2025-neuron|Mukamel 2025]] aneuploidy work.
+- [[10-Summaries/guo-2013-scrrbs]] — Guo/Tang 2013: **scRRBS foundational**. 0.5–1.5M CpG sites per single mESC; first single-cell observation of asymmetric pronuclear demethylation kinetics. Chemistry behind [[sctrio-seq]].
+- [[10-Summaries/luo-2018-snmc-seq2]] — Luo/Ecker 2018: **snmC-seq2**, improved chemistry that became the chassis for the BICCN mouse-brain methylome atlas and the [[mukamel-2025-aneuploidy-brain|Mukamel 2025]] aneuploidy work.
 
 **§4.3 — Computational tools**:
-- [[10-Summaries/jeffrey-2021-naturegenetics]] — Granja/Greenleaf 2021: **ArchR**. R-based scATAC pipeline; 1.2M cells in 8h on a laptop; synthetic-doublet detection AUC 0.918.
+- [[10-Summaries/granja-2021-archr]] — Granja/Greenleaf 2021: **ArchR**. R-based scATAC pipeline; 1.2M cells in 8h on a laptop; synthetic-doublet detection AUC 0.918.
 
 **§4.5 — Lineage tracing**:
-- [[10-Summaries/federico-2019-nature]] — Gaiti/Landau 2019 *Nature*: **epimutation as molecular clock** in CLL. 2,652 cells, methylation-based lineage trees, SF3B1 subclone emergence ~6 years before clinical sampling.
-- [[10-Summaries/caleb-2021-naturebiotechnology]] — Lareau/Sankaran 2021: **mtscATAC-seq**. ~20× higher mtDNA coverage than standard scATAC; mtDNA mutations as endogenous lineage barcodes in thousands of cells.
+- [[10-Summaries/gaiti-2019-cll-epigenetic]] — Gaiti/Landau 2019 *Nature*: **epimutation as molecular clock** in CLL. 2,652 cells, methylation-based lineage trees, SF3B1 subclone emergence ~6 years before clinical sampling.
+- [[10-Summaries/ludwig-2020-mtscatac-seq]] — Lareau/Sankaran 2021: **mtscATAC-seq**. ~20× higher mtDNA coverage than standard scATAC; mtDNA mutations as endogenous lineage barcodes in thousands of cells.
 
 **§4.6 — Joint chromatin multimodal**:
-- [[10-Summaries/marek-2021-naturebiotechnology]] — Bartosovic/Castelo-Branco 2021: **scCUT&Tag in mouse brain** via 10x droplet platform. Histone marks + Olig2/Rad21 TFs.
-- [[10-Summaries/marek-2023-naturebiotechnology]] — Bartosovic 2023: **nano-CT**. Nanobody-Tn5 fusions enable simultaneous ATAC + 2 histone marks per nucleus. Chromatin velocity in oligodendrocyte lineage.
+- [[10-Summaries/bartosovic-2021-sccut-tag]] — Bartosovic/Castelo-Branco 2021: **scCUT&Tag in mouse brain** via 10x droplet platform. Histone marks + Olig2/Rad21 TFs.
+- [[10-Summaries/bartosovic-2022-nano-cut-tag]] — Bartosovic 2023: **nano-CT**. Nanobody-Tn5 fusions enable simultaneous ATAC + 2 histone marks per nucleus. Chromatin velocity in oligodendrocyte lineage.
 - [[10-Summaries/hyobin-2023-naturebiotechnology]] — Jeong/Korbel 2023: **scNOVA**. Strand-seq + haplotype-aware nucleosome occupancy infers gene-activity changes from SVs. CLL Wnt-subclone identification, T-ALL chromothripsis → Notch inhibitor targeting.
 
 **§3.1 + §6 — Duplex sequencing for non-dividing tissue**:
-- [[10-Summaries/federico-2021-nature]] — Abascal/Martincorena 2021 *Nature*: **NanoSeq**. <5 errors/billion bp; post-mitotic neurons accumulate mutations at constant rate throughout life — proves cell division not required for mutagenesis.
+- [[10-Summaries/abascal-2021-nanoseq]] — Abascal/Martincorena 2021 *Nature*: **NanoSeq**. <5 errors/billion bp; post-mitotic neurons accumulate mutations at constant rate throughout life — proves cell division not required for mutagenesis.
 
 **§1 + §6 — Synthesis-gap-closing (preprint)**:
-- [[10-Summaries/andrea-2025-biorxiv]] — Kriz/Walsh/Lee 2025 *bioRxiv*: **Duplex-Multiome**. Joint somatic SNVs + snATAC + snRNA-seq per nucleus, 51,400 human brain nuclei. 2% VAF sensitivity at 92% precision. **The first single-cell assay covering point mutations + chromatin + RNA genome-wide at scale**. Closes the gap previously articulated in the wiki's synthesis note.
+- [[10-Summaries/kriz-2025-duplex-multiome]] — Kriz/Walsh/Lee 2025 *bioRxiv*: **Duplex-Multiome**. Joint somatic SNVs + snATAC + snRNA-seq per nucleus, 51,400 human brain nuclei. 2% VAF sensitivity at 92% precision. **The first single-cell assay covering point mutations + chromatin + RNA genome-wide at scale**. Closes the gap previously articulated in the wiki's synthesis note.
 
 **Updated existing pages**:
 - [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]] — **major revision**. Added Duplex-Multiome as anchor #5 with detailed explanation; revised TL;DR with status update; revised the post-table summary to articulate the conceptual-vs-methodological gap distinction; updated the synthesis table to include Duplex-Multiome (🟢 marked) and mtscATAC-seq.
 - `index.md` — added 7 new sub-sections under "Primary methods papers": scWGA chemistry, methylome foundational, joint-assay additions, lineage tracing, duplex (additional), SV single-cell, computational tools, **gap-closing methods (2025)**. Updated synthesis-note pointer to reflect status change.
 
 **Notable findings / framings**:
-- **The conceptual landscape has shifted in the past ~6 months.** Both [[10-Summaries/eran-2025-neuron|Mukamel 2025]] (atlas-scale aneuploidy + methylation, mouse brain) and [[10-Summaries/andrea-2025-biorxiv|Kriz 2025]] (SNV + chromatin + RNA, human brain) appeared in 2025. They make the planned review's novelty argument *significantly* sharper but also force the review to reframe: the "no joint-assay exists" claim is now wrong; the "no conceptual framework exists for interpreting joint measurements" claim is the defensible novelty.
+- **The conceptual landscape has shifted in the past ~6 months.** Both [[10-Summaries/mukamel-2025-aneuploidy-brain|Mukamel 2025]] (atlas-scale aneuploidy + methylation, mouse brain) and [[10-Summaries/kriz-2025-duplex-multiome|Kriz 2025]] (SNV + chromatin + RNA, human brain) appeared in 2025. They make the planned review's novelty argument *significantly* sharper but also force the review to reframe: the "no joint-assay exists" claim is now wrong; the "no conceptual framework exists for interpreting joint measurements" claim is the defensible novelty.
 - **The Walsh lab's continued anchor role**: Bae 2018/2022 (when Bae was at Mayo Clinic / Abyzov lab, BSMN/Walsh consortium) + Luquette/Walsh SMaHT + Andrea Kriz 2025 Duplex-Multiome — all Walsh-lab-affiliated. The neuro-mosaicism methodological program flows through this lab. The user's PI (TJ Bae) has direct ties to this network.
 - **LIANTI's "post-lysis cytosine deamination" characterization** is the canonical reference for why single-cell SNV calling is hard. Every duplex-sequencing paper since 2017 cites it.
-- **NanoSeq's post-mitotic neuron finding** (mutation accumulation at constant rate without division) bookends [[10-Summaries/taejeong-2018-science|Bae 2018's]] finding (mutation rate ~5/day during neurogenesis division). Together they cover the lifelong brain mosaicism trajectory.
+- **NanoSeq's post-mitotic neuron finding** (mutation accumulation at constant rate without division) bookends [[10-Summaries/bae-2017-pregastrulation-mutations|Bae 2018's]] finding (mutation rate ~5/day during neurogenesis division). Together they cover the lifelong brain mosaicism trajectory.
 - **Landau lab's three-paper methodology arc**: GoT (Anna 2019) for SNV+RNA → epimutation lineage (Gaiti 2019) for methylation clock → GoT-ChA (Franco 2024) for SNV+chromatin. The §4.5 + §4.6 anchors for personalized cancer lineage in human disease.
 - **mtDNA as endogenous lineage marker** is methodologically distinct from nuclear-mutation lineage (Bae 2018 clonal expansion) and engineered-scar lineage (CRISPR scar) — three independent pillars of single-cell lineage reconstruction for §4.5.
 
@@ -1155,9 +1155,9 @@ Brain mosaicism + mtDNA + applications:
 **Filename surprise**: `Sarah_2019_Cell.pdf` turned out to be **not** a Walsh-lab neuro-mosaicism paper but Hainer et al. 2019 *Cell* "Profiling of Pluripotency Factors in Single Cells and Early Embryos" — i.e., **uliCUT&RUN**, an ultra-low-input CUT&RUN method paper. Still wiki-valuable (sits between bulk CUT&RUN and sciCUT&Tag), so summarized but flagged as not-mosaicism. No primary Lodato 2015 or 2018 Walsh-lab papers are yet in 00-Sources/ — a future neuro batch should target them.
 
 **Ingested (4 papers)**:
-- [[10-Summaries/taejeong-2018-science]] — Bae et al. 2018 *Science* 359:550. First-author Taejeong Bae (Abyzov lab, Mayo Clinic); senior authors Abyzov + Vaccarino. **Clonal-cell-population approach** (31 clones from 3 fetal brains), 200–400 SNVs/cell, mutation rate ~1.3/division pre-gastrulation vs ~8.6/division during neurogenesis (3 orders of magnitude higher than adult germline). **Mutation spectrum shifts CpG-deamination → oxidative damage** between the two developmental windows. 10% depletion of mosaic SNVs in fetal-brain DNase-hypersensitive sites — direct chromatin-state × mutation-distribution evidence.
+- [[10-Summaries/bae-2017-pregastrulation-mutations]] — Bae et al. 2018 *Science* 359:550. First-author Taejeong Bae (Abyzov lab, Mayo Clinic); senior authors Abyzov + Vaccarino. **Clonal-cell-population approach** (31 clones from 3 fetal brains), 200–400 SNVs/cell, mutation rate ~1.3/division pre-gastrulation vs ~8.6/division during neurogenesis (3 orders of magnitude higher than adult germline). **Mutation spectrum shifts CpG-deamination → oxidative damage** between the two developmental windows. 10% depletion of mosaic SNVs in fetal-brain DNase-hypersensitive sites — direct chromatin-state × mutation-distribution evidence.
 - [[10-Summaries/taejeong-2022-science]] — Bae et al. 2022 *Science* 377:511. BSMN cohort: 131 brains across normal/Tourette/SCZ/ASD phenotypes at ≥200×. **~6% of brains hypermutable** (>101 SNVs), age-associated (16% >60y vs 2% <40y, P=8.2×10⁻³). Cancer-implicated gene mutations (NRAS, DNMT3A, TET2, MTOR, IDH2) overrepresented in hypermutable brains. **NRAS-driven clonal expansion in striatal interneurons of brain NC7** validated at 94% in single nuclei. **ASD brains enriched for somatic mutations creating MEIS TF binding motifs in fetal-brain enhancer-like regions** — the field's leading direct mosaic-mutation-to-regulatory-element causal pathway.
-- [[10-Summaries/eran-2025-neuron]] — Mukamel et al. 2025 *Neuron* 113:2814. Salk + UCSD (Ecker lab). **snmC-seq logic for CNV detection extended to 415,103 BICCN mouse brain cells**. 0.175–0.349% aneuploidy rate. **Trisomy 16 (mouse syntenic with human chr21) 13-fold enriched** (P<10⁻³⁰⁰), cell-type-specifically concentrated in OPCs, Pons neurons, pericytes. **This is the scTrio-seq CNV-from-methylation trick scaled to atlas size** — a major new anchor for the synthesis claim.
+- [[10-Summaries/mukamel-2025-aneuploidy-brain]] — Mukamel et al. 2025 *Neuron* 113:2814. Salk + UCSD (Ecker lab). **snmC-seq logic for CNV detection extended to 415,103 BICCN mouse brain cells**. 0.175–0.349% aneuploidy rate. **Trisomy 16 (mouse syntenic with human chr21) 13-fold enriched** (P<10⁻³⁰⁰), cell-type-specifically concentrated in OPCs, Pons neurons, pericytes. **This is the scTrio-seq CNV-from-methylation trick scaled to atlas size** — a major new anchor for the synthesis claim.
 - [[10-Summaries/sarah-2019-cell]] — Hainer et al. 2019 *Cell* 177:1319. uliCUT&RUN ultra-low-input CUT&RUN: TF mapping from 10 cells, single cells, blastocysts. Demonstrated NANOG binding in mouse blastocysts **depends on BRG1 in vivo** despite being BRG1-independent in cultured cells — a methodological lesson about bulk reference vs primary tissue.
 
 **Created (new pages)**:
@@ -1275,7 +1275,7 @@ Brain mosaicism + mtDNA + applications:
 - **Notable cleanup**: the pending-sources output listed the 5mC/5hmC paper twice (a glob quirk with parentheses in filenames). Verified only one unique file exists. Wiki has 31 unique summaries, not 32.
 - **Tooling note**: no new tooling work; existing Quartz + Graphify pipelines untouched.
 - **Pending in `00-Sources/papers/`**: 122 - 31 = ~91 primary PDFs still unsummarized. Natural future batches: (a) brain mosaicism primary papers (Lodato 2018 Science, Miller 2022 Nature, etc.); (b) methylation-clock primary papers; (c) lineage-tracing primary papers; (d) 3D-genome primary papers (Dip-C, sn-m3C, HiRES); (e) duplex-sequencing protocol papers for the six SMaHT methods individually.
-- **Next**: future ingest sessions can continue the primary-paper skim approach. Natural promotion target for `50-Notes/`: "Single-cell duplex sequencing — the open methodological frontier" (would synthesize the gap identified across [[10-Summaries/diane-2025-naturereviewsgenetics]], [[10-Summaries/luquette-2025-pta-duplex-mosaicism]], and [[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).
+- **Next**: future ingest sessions can continue the primary-paper skim approach. Natural promotion target for `50-Notes/`: "Single-cell duplex sequencing — the open methodological frontier" (would synthesize the gap identified across [[10-Summaries/shao-2025-scDNA-mosaicism-review]], [[10-Summaries/luquette-2025-pta-duplex-mosaicism]], and [[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).
 
 ---
 
@@ -1283,17 +1283,17 @@ Brain mosaicism + mtDNA + applications:
 
 - **Discovered:** 133 new papers landed in `00-Sources/papers/` (user ran `download_papers.py` to pull a scDNA literature corpus). At user direction, **scoped this ingest to the 11 review papers** that will scaffold the topic layer for the remaining 122 primary papers to slot into later. Depth strategy: full-depth read of each review; skim approach for future primary-paper batches.
 - **Ingested reviews:**
-  - [[10-Summaries/diane-2025-naturereviewsgenetics]] — Shao/Walsh 2025 keystone scDNA-seq review.
-  - [[10-Summaries/charles-2016-naturereviewsgenetics]] — Gawad/Quake 2016 foundational scDNA review.
-  - [[10-Summaries/gilad-2021-annualreviewofgenomicsandhumangenetics]] — Evrony 2021 capabilities framework.
-  - [[10-Summaries/lars-2017-naturereviewsgenetics]] — Forsberg 2017 mosaicism in health/disease.
+  - [[10-Summaries/shao-2025-scDNA-mosaicism-review]] — Shao/Walsh 2025 keystone scDNA-seq review.
+  - [[10-Summaries/gawad-2016-scgenome-review]] — Gawad/Quake 2016 foundational scDNA review.
+  - [[10-Summaries/evrony-2021-scDNA-applications-review]] — Evrony 2021 capabilities framework.
+  - [[10-Summaries/forsberg-2017-mosaicism-review]] — Forsberg 2017 mosaicism in health/disease.
   - [[10-Summaries/ian-2015-trendsingenetics]] — Campbell/Lupski 2015 mosaicism transmission genetics.
-  - [[10-Summaries/sandy-2019-naturereviewsgenetics]] — Klemm/Greenleaf 2019 chromatin accessibility.
-  - [[10-Summaries/zachary-2013-naturereviewsgenetics]] — Smith/Meissner 2013 DNA methylation in development.
-  - [[10-Summaries/yilei-2025-naturereviewsgenetics]] — Fu/Sedlazeck/Timp 2025 long-read methylation.
-  - [[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]] — Baysoy/Fan/Satija 2023 multi-omics landscape.
-  - [[10-Summaries/katy-2023-naturereviewsgenetics]] — Vandereyken/Voet 2023 single-cell + spatial multi-omics.
-  - [[10-Summaries/lukas-2023-naturereviewsgenetics]] — Heumos/Theis 2023 best practices.
+  - [[10-Summaries/klemm-2019-chromatin-accessibility-review]] — Klemm/Greenleaf 2019 chromatin accessibility.
+  - [[10-Summaries/smith-2013-methylation-development]] — Smith/Meissner 2013 DNA methylation in development.
+  - [[10-Summaries/fu-2025-longread-methylation]] — Fu/Sedlazeck/Timp 2025 long-read methylation.
+  - [[10-Summaries/baysoy-2023-multiomics-landscape]] — Baysoy/Fan/Satija 2023 multi-omics landscape.
+  - [[10-Summaries/vandereyken-2023-scmultiomics-review]] — Vandereyken/Voet 2023 single-cell + spatial multi-omics.
+  - [[10-Summaries/heumos-2023-best-practices]] — Heumos/Theis 2023 best practices.
 - **Created:** 11 summaries + 13 entities + 25 concepts + 5 topics = **54 new wiki pages** beyond the source PDFs.
   - Entities: [[20-Entities/diane-d-shao]], [[20-Entities/christopher-walsh]], [[20-Entities/charles-gawad]], [[20-Entities/stephen-quake]], [[20-Entities/gilad-evrony]], [[20-Entities/lars-forsberg]], [[20-Entities/james-lupski]], [[20-Entities/william-greenleaf]], [[20-Entities/alexander-meissner]], [[20-Entities/fritz-sedlazeck]], [[20-Entities/winston-timp]], [[20-Entities/rong-fan]], [[20-Entities/rahul-satija]], [[20-Entities/thierry-voet]], [[20-Entities/fabian-theis]].
   - Method concepts: [[30-Concepts/scdna-seq]], [[30-Concepts/scwga]], [[30-Concepts/mda]], [[30-Concepts/pta]], [[30-Concepts/malbac]], [[30-Concepts/dop-pcr]], [[30-Concepts/dlp-plus]], [[30-Concepts/meta-cs]], [[30-Concepts/duplex-sequencing]], [[30-Concepts/scdna-capabilities-framework]], [[30-Concepts/atac-seq]], [[30-Concepts/dnase-seq]], [[30-Concepts/bisulfite-sequencing]], [[30-Concepts/long-read-sequencing]], [[30-Concepts/single-cell-multiomics]], [[30-Concepts/gt-seq]], [[30-Concepts/cite-seq]], [[30-Concepts/spatial-multiomics]].
@@ -1303,9 +1303,9 @@ Brain mosaicism + mtDNA + applications:
 - **Tooling**: Quartz server bg task `bscsqurx6` crashed when a Chrome `*.crdownload` partial-download file appeared in `00-Sources/papers/`. Hardened the Quartz `ignorePatterns` in `.quartz/quartz.config.ts` to filter `*.crdownload`, `*.tmp`, `*.part`, `.DS_Store`, `~$*`, `*.py`, `*.sh`, `*.csv` before restarting.
 - **Notable findings / framings**:
   - **Two organizing axes of the field** emerge clearly from the reviews: (a) technology-organized (Diane 2025, Charles 2016 — chemistries and tradeoffs); (b) application/capability-organized (Gilad 2021 — fidelity/co-presence/phenotypic-association). Both are useful; the [[scdna-capabilities-framework]] is the better entry point for newcomers choosing a method for their question.
-  - **The PTA inflection point**: scWGA technology went from "useful for CNVs, bad for SNVs" (MDA/MALBAC) to "useful for both" (PTA, ~95% coverage with high allelic balance) over ~5 years. This is the methodological backbone of the current scDNA-seq generation, including [[10-Summaries/elliott-2025-naturebiotechnology|scDAF-seq]].
-  - **Single-strand DNA damage as a major scWGA failure mode** is more visible now than in 2016: ~70k ssDNA lesions per cell per day means single-strand dropout produces catastrophic false-positive rates without duplex protection ([[10-Summaries/diane-2025-naturereviewsgenetics]]). This argues for duplex methods becoming the future direction.
-  - **The mosaicism cluster** (Lars 2017 + Ian 2015 + Diane 2025) now connects directly to the **MPN cluster** ([[10-Summaries/anna-2019-nature]] + [[10-Summaries/franco-2024-nature]]) via [[clonal-hematopoiesis]] — JAK2V617F CH is the on-ramp to MPN, and GoT–ChA's pre-disease chromatin priming finding fits directly into the Lars 2017 framing of mosaicism as both biology and disease driver.
+  - **The PTA inflection point**: scWGA technology went from "useful for CNVs, bad for SNVs" (MDA/MALBAC) to "useful for both" (PTA, ~95% coverage with high allelic balance) over ~5 years. This is the methodological backbone of the current scDNA-seq generation, including [[10-Summaries/swanson-2025-daf-seq|scDAF-seq]].
+  - **Single-strand DNA damage as a major scWGA failure mode** is more visible now than in 2016: ~70k ssDNA lesions per cell per day means single-strand dropout produces catastrophic false-positive rates without duplex protection ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]). This argues for duplex methods becoming the future direction.
+  - **The mosaicism cluster** (Lars 2017 + Ian 2015 + Diane 2025) now connects directly to the **MPN cluster** ([[10-Summaries/nam-2019-got]] + [[10-Summaries/izzo-2024-got-cha]]) via [[clonal-hematopoiesis]] — JAK2V617F CH is the on-ramp to MPN, and GoT–ChA's pre-disease chromatin priming finding fits directly into the Lars 2017 framing of mosaicism as both biology and disease driver.
   - **Schema note**: added `doi` and `journal` to summary frontmatter consistently across this batch. Template should be updated next maintenance pass.
 - **Pending in `00-Sources/papers/`**: 122 primary papers, plus `download_papers.py` (user script — should be moved to `tools/` next maintenance).
 - **Next**: future ingest sessions can skim the primary papers and slot them under the topic scaffolds created here. Natural batches: (a) WGA method papers (cite [[scwga]]/[[mda]]/[[pta]]/etc concepts); (b) brain mosaicism papers (cite [[somatic-mosaicism]]/[[lineage-tracing]]); (c) chromatin/methylation primary papers; (d) lineage-tracing in humans; (e) cancer single-cell studies.
@@ -1319,7 +1319,7 @@ Brain mosaicism + mtDNA + applications:
   - `00-Sources/papers/Franco_2024_Nature.pdf` — Izzo et al., *Nature* 629:1149–1157, GoT–ChA method paper.
   - `00-Sources/papers/Elliott_2025_NatureBiotechnology.pdf` — Swanson et al., *Nature Biotechnology*, DAF-seq / scDAF-seq method paper.
 - **Created:** 3 summaries, 6 entities, 12 concepts, 3 topics — 24 pages total beyond the sources.
-  - Summaries: [[10-Summaries/anna-2019-nature]], [[10-Summaries/franco-2024-nature]], [[10-Summaries/elliott-2025-naturebiotechnology]].
+  - Summaries: [[10-Summaries/nam-2019-got]], [[10-Summaries/izzo-2024-got-cha]], [[10-Summaries/swanson-2025-daf-seq]].
   - Entities: [[20-Entities/anna-s-nam]], [[20-Entities/franco-izzo]], [[20-Entities/dan-a-landau]], [[20-Entities/elliott-g-swanson]], [[20-Entities/andrew-b-stergachis]], [[20-Entities/landau-lab]].
   - Concepts (methods): [[30-Concepts/got]], [[30-Concepts/circularization-got]], [[30-Concepts/got-cha]], [[30-Concepts/daf-seq]], [[30-Concepts/fiber-seq]], [[30-Concepts/single-molecule-footprinting]], [[30-Concepts/dogma-seq]], [[30-Concepts/chromatin-accessibility]], [[30-Concepts/chromatin-actuation]].
   - Concepts (biology): [[30-Concepts/calr-mutation]], [[30-Concepts/jak2-v617f]], [[30-Concepts/myeloproliferative-neoplasm]], [[30-Concepts/unfolded-protein-response]], [[30-Concepts/hematopoietic-differentiation]].
@@ -1366,3 +1366,7 @@ Brain mosaicism + mtDNA + applications:
 - Added `tools/pending-sources.sh` to list sources not yet summarized.
 - Seeded `00-Sources/articles/example-llm-wiki.md` so the first ingest has something to chew on.
 - **Next:** user runs first ingest. See `README.md` step 3.
+
+## 2026-05-21 — Dedup pass on 10-Summaries/
+
+Removed 41 duplicate summary files (40 DOI-based pairs + 1 tavares slug variant). For each pair, the descriptive lastname-year-shortdescriptor slug was kept; when the journal-named twin had richer content, its body was moved into the descriptive slug. Updated 717 wikilinks across 188 files. `10-Summaries/` went from 232 → 191 files. `index.md` cleaned of duplicate entries. No broken wikilinks remain to dropped slugs (verified).

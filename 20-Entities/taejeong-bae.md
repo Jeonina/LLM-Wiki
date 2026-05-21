@@ -9,13 +9,13 @@ updated: 2026-05-12
 
 # Taejeong Bae (TJ Bae)
 
-> Computational mosaicism researcher; **PI of the Bae Lab at Korea University** (baelab.org). Previously at Mayo Clinic (Abyzov lab, Department of Quantitative Health Sciences) where he was first author of two foundational human-brain mosaicism papers ([[10-Summaries/taejeong-2018-science|Bae 2018]] and [[10-Summaries/taejeong-2022-science|Bae 2022]]) that anchor the field's understanding of mutational rates, mutation-spectrum shifts during development, and aging-associated hypermutability.
+> Computational mosaicism researcher; **PI of the Bae Lab at Korea University** (baelab.org). Previously at Mayo Clinic (Abyzov lab, Department of Quantitative Health Sciences) where he was first author of two foundational human-brain mosaicism papers ([[10-Summaries/bae-2017-pregastrulation-mutations|Bae 2018]] and [[10-Summaries/taejeong-2022-science|Bae 2022]]) that anchor the field's understanding of mutational rates, mutation-spectrum shifts during development, and aging-associated hypermutability.
 >
 > **PI of this wiki's maintainer (Jeonina).** The planned review paper anchored by this wiki is being written from within his lab. References to Bae 2018 / Bae 2022 in the review are not only citations of foundational work but also the user's lab's own prior contributions.
 
 ## Mentions
 
-- 2018 [[10-Summaries/taejeong-2018-science]] — first author of *Science* 359:550 with senior authors Alexej Abyzov and Flora Vaccarino. Established the **clonal-cell-population approach** to fetal-brain mosaicism: 31 clones from 3 fetal brains (15–21 weeks), 200–400 SNVs/cell, ~1.3 mutations/division pre-gastrulation, ~8.6/division during neurogenesis. Mutation-spectrum shift from CpG-deamination to oxidative damage between the two periods.
+- 2018 [[10-Summaries/bae-2017-pregastrulation-mutations]] — first author of *Science* 359:550 with senior authors Alexej Abyzov and Flora Vaccarino. Established the **clonal-cell-population approach** to fetal-brain mosaicism: 31 clones from 3 fetal brains (15–21 weeks), 200–400 SNVs/cell, ~1.3 mutations/division pre-gastrulation, ~8.6/division during neurogenesis. Mutation-spectrum shift from CpG-deamination to oxidative damage between the two periods.
 - 2022 [[10-Summaries/taejeong-2022-science]] — first author of *Science* 377:511, the BSMN cohort study. 131 human brains across 4 phenotypes (44 normal, 19 Tourette, 9 schizophrenia, 59 ASD). Discovered **aging-associated hypermutability (~6% of brains, >101 SNVs)**, **clonal expansions in striatal interneurons via NRAS**, and **ASD-specific enrichment of mosaic mutations creating MEIS TF binding motifs in fetal-brain enhancer-like regions**.
 - Maintains the [BSMN bulk-mutation-calling pipeline](https://github.com/abyzovlab/bsmn-pipeline) at github.com/abyzovlab.
 

@@ -51,21 +51,21 @@ The topic is organized by **capability** ([[30-Concepts/scdna-capabilities-frame
 
 ### Methods reviews (scDNA-seq landscape)
 
-- [[10-Summaries/diane-2025-naturereviewsgenetics]] — keystone 2025 review; current state of the field.
-- [[10-Summaries/charles-2016-naturereviewsgenetics]] — foundational 2016 review; pre-PTA landscape.
-- [[10-Summaries/gilad-2021-annualreviewofgenomicsandhumangenetics]] — applications/capabilities framework.
+- [[10-Summaries/shao-2025-scDNA-mosaicism-review]] — keystone 2025 review; current state of the field.
+- [[10-Summaries/gawad-2016-scgenome-review]] — foundational 2016 review; pre-PTA landscape.
+- [[10-Summaries/evrony-2021-scDNA-applications-review]] — applications/capabilities framework.
 
 ### Multi-omic extensions (primary papers)
 
-- [[10-Summaries/anna-2019-nature]] — GoT method paper.
-- [[10-Summaries/franco-2024-nature]] — GoT–ChA method paper.
-- [[10-Summaries/elliott-2025-naturebiotechnology]] — DAF-seq / scDAF-seq method paper.
+- [[10-Summaries/nam-2019-got]] — GoT method paper.
+- [[10-Summaries/izzo-2024-got-cha]] — GoT–ChA method paper.
+- [[10-Summaries/swanson-2025-daf-seq]] — DAF-seq / scDAF-seq method paper.
 
 ### Multi-omics surveys
 
-- [[10-Summaries/katy-2023-naturereviewsgenetics]] — single-cell and spatial multi-omics methods.
-- [[10-Summaries/alev-2023-naturereviewsmolecularcellbiology]] — multi-omics technological landscape.
-- [[10-Summaries/lukas-2023-naturereviewsgenetics]] — best practices for single-cell analysis.
+- [[10-Summaries/vandereyken-2023-scmultiomics-review]] — single-cell and spatial multi-omics methods.
+- [[10-Summaries/baysoy-2023-multiomics-landscape]] — multi-omics technological landscape.
+- [[10-Summaries/heumos-2023-best-practices]] — best practices for single-cell analysis.
 
 ## Synthesized notes
 
@@ -73,7 +73,7 @@ _None yet — natural promotion targets: (a) droplet-scale vs single-molecule sc
 
 ## Open questions
 
-- Where does scDAF-seq (single-cell, single-molecule, ~99% genome) win over GoT–ChA (10⁵ cells, single chromatin modality)? ([[10-Summaries/elliott-2025-naturebiotechnology]] vs [[10-Summaries/franco-2024-nature]])
+- Where does scDAF-seq (single-cell, single-molecule, ~99% genome) win over GoT–ChA (10⁵ cells, single chromatin modality)? ([[10-Summaries/swanson-2025-daf-seq]] vs [[10-Summaries/izzo-2024-got-cha]])
 - Throughput vs depth: DLP+ scales to >10⁴ cells at very low coverage; PTA peaks at ~384 cells at ~95%. The right operating point for a given biological question is rarely benchmarked.
 - Can single-cell duplex sequencing be made cost-competitive for cohort-scale studies?
 - How well does imputation-based multi-omic integration (e.g., GoT–ChA + DOGMA via mt-variant bridges) generalize beyond MPN?

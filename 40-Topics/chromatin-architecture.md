@@ -37,15 +37,15 @@ updated: 2026-05-19
 
 ### Single-molecule chromatin profiling
 
-- [[10-Summaries/elliott-2025-naturebiotechnology]] — DAF-seq / scDAF-seq; chromosome-length single-cell single-molecule chromatin maps.
+- [[10-Summaries/swanson-2025-daf-seq]] — DAF-seq / scDAF-seq; chromosome-length single-cell single-molecule chromatin maps.
 
 ### Single-cell chromatin profiling (droplet ATAC-seq integrated with genotyping)
 
-- [[10-Summaries/franco-2024-nature]] — GoT–ChA; droplet-scale chromatin accessibility tied to JAK2V617F genotype.
+- [[10-Summaries/izzo-2024-got-cha]] — GoT–ChA; droplet-scale chromatin accessibility tied to JAK2V617F genotype.
 
 ### Reviews
 
-- [[10-Summaries/sandy-2019-naturereviewsgenetics]] — Klemm/Shipony/Greenleaf canonical chromatin accessibility review.
+- [[10-Summaries/klemm-2019-chromatin-accessibility-review]] — Klemm/Shipony/Greenleaf canonical chromatin accessibility review.
 
 ### Single-cell ATAC-seq tooling
 
@@ -96,7 +96,7 @@ _None yet._
 
 ## Open questions
 
-- **Why is intra-cell haplotype divergence (~61%) almost equal to inter-cell divergence (~63%)?** ([[10-Summaries/elliott-2025-naturebiotechnology]] reports this but does not explain it. Implication: regulatory-element actuation may be closer to a stochastic per-fiber event than a programmed per-cell state.)
-- **Co-actuation domains of ~100 kb** mirror cohesin loops at single-fiber resolution ([[10-Summaries/elliott-2025-naturebiotechnology]]) — but causality (do cohesin loops *cause* co-actuation, or just correlate?) is not directly tested.
+- **Why is intra-cell haplotype divergence (~61%) almost equal to inter-cell divergence (~63%)?** ([[10-Summaries/swanson-2025-daf-seq]] reports this but does not explain it. Implication: regulatory-element actuation may be closer to a stochastic per-fiber event than a programmed per-cell state.)
+- **Co-actuation domains of ~100 kb** mirror cohesin loops at single-fiber resolution ([[10-Summaries/swanson-2025-daf-seq]]) — but causality (do cohesin loops *cause* co-actuation, or just correlate?) is not directly tested.
 - How well do single-molecule chromatin readouts ([[daf-seq]]) reconcile with droplet-scale ([[got-cha]]) data — i.e., when scDAF-seq reports 63% inter-cell actuation divergence, what would scATAC-seq from the same cells say?
 - Generalization of scDAF-seq beyond GM24385 lymphoblastoid cells to primary tissue and disease contexts.

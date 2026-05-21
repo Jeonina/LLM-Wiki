@@ -27,5 +27,5 @@ Computational complement to SCAN-SNV (Luquette 2019) and LiRA (Lodato 2018) for 
 ## Related
 
 - [[10-Summaries/luquette-2019-natcomm]]
-- [[10-Summaries/lodato-2018-science]]
+- [[10-Summaries/lodato-2017-aging-neurons]]
 - [[30-Concepts/single-cell-variant-calling]]

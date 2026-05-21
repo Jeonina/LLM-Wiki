@@ -33,11 +33,11 @@ The two single-cell methods papers in the vault both use MPN as their proving gr
 
 ### CALR-mutated MPN — transcriptomic dissection
 
-- [[10-Summaries/anna-2019-nature]] — GoT in CALR-mutated ET and MF; UPR / NF-κB cell-identity-dependent outputs.
+- [[10-Summaries/nam-2019-got]] — GoT in CALR-mutated ET and MF; UPR / NF-κB cell-identity-dependent outputs.
 
 ### JAK2V617F MPN — chromatin dissection
 
-- [[10-Summaries/franco-2024-nature]] — GoT–ChA in JAK2V617F MF, PV→MF, and clonal hematopoiesis; cell-intrinsic pro-inflammatory chromatin priming.
+- [[10-Summaries/izzo-2024-got-cha]] — GoT–ChA in JAK2V617F MF, PV→MF, and clonal hematopoiesis; cell-intrinsic pro-inflammatory chromatin priming.
 
 ## Synthesized notes
 
@@ -45,8 +45,8 @@ _None yet._
 
 ## Open questions
 
-- Why is CALR-mutant fitness advantage **differentiation-dependent in ET** but **already strong in HSPCs in MF**? ([[10-Summaries/anna-2019-nature]] observes the difference but does not explain the switch.)
-- Is the cell-intrinsic NF-κB chromatin program in JAK2V617F HSCs ([[10-Summaries/franco-2024-nature]]) **causal** for clonal expansion, or downstream of it?
-- Does the IRE1-XBP1 therapeutic hypothesis from [[10-Summaries/anna-2019-nature]] hold up in MPN clinical trials? Wiki has no source on this yet.
-- Ruxolitinib reverses the chromatin TF-motif phenotype but not the clone ([[10-Summaries/franco-2024-nature]]). Does combination therapy targeting the cell-intrinsic chromatin program (e.g. NF-κB or BET inhibitors) eliminate the clone in vivo?
+- Why is CALR-mutant fitness advantage **differentiation-dependent in ET** but **already strong in HSPCs in MF**? ([[10-Summaries/nam-2019-got]] observes the difference but does not explain the switch.)
+- Is the cell-intrinsic NF-κB chromatin program in JAK2V617F HSCs ([[10-Summaries/izzo-2024-got-cha]]) **causal** for clonal expansion, or downstream of it?
+- Does the IRE1-XBP1 therapeutic hypothesis from [[10-Summaries/nam-2019-got]] hold up in MPN clinical trials? Wiki has no source on this yet.
+- Ruxolitinib reverses the chromatin TF-motif phenotype but not the clone ([[10-Summaries/izzo-2024-got-cha]]). Does combination therapy targeting the cell-intrinsic chromatin program (e.g. NF-κB or BET inhibitors) eliminate the clone in vivo?
 - Other hematopoietic malignancies (AML, CLL, MDS) are not yet represented in the vault — the [[20-Entities/landau-lab]] history references CLL clonal-evolution work that would extend this topic substantially.

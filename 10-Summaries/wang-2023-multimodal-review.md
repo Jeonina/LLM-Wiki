@@ -36,11 +36,11 @@ topics: ["[[40-Topics/single-cell-multiomics]]"]
 
 ## Methods / evidence
 
-This is a review paper (no new data). The methods catalog is fairly complete through ~early 2023 but predates: Duplex-Multiome (2025), GoT-ChA (2024), 6-base-CUT&Tag (2024), SIMPLE-seq (2024), DAF-seq single-cell extensions (2025). For current state, supplement with [[10-Summaries/baysoy-2023-multiomics-landscape|Baysoy 2023]] (NRMCB) and [[10-Summaries/katy-2023-naturereviewsgenetics|Vandereyken 2023]] (NRG).
+This is a review paper (no new data). The methods catalog is fairly complete through ~early 2023 but predates: Duplex-Multiome (2025), GoT-ChA (2024), 6-base-CUT&Tag (2024), SIMPLE-seq (2024), DAF-seq single-cell extensions (2025). For current state, supplement with [[10-Summaries/baysoy-2023-multiomics-landscape|Baysoy 2023]] (NRMCB) and [[10-Summaries/vandereyken-2023-scmultiomics-review|Vandereyken 2023]] (NRG).
 
 ## Surprising or load-bearing bits
 
-- **The information-extraction angle.** The review's final section notes that single-cell mono-omics data often contains *additional* hidden modalities — scRNA-seq can yield CNV calls, allele-specific expression, somatic SNVs; scDNase-seq can yield TF-binding SNV effects. This is a cheaper alternative to true multimodal experiments and is the conceptual foundation for tools like [[10-Summaries/eran-2025-neuron|Mukamel 2025]] (CNV from snmC-seq2) and [[10-Summaries/dou-2020-monovar|Monopogen]] (SNV from scATAC/scRNA).
+- **The information-extraction angle.** The review's final section notes that single-cell mono-omics data often contains *additional* hidden modalities — scRNA-seq can yield CNV calls, allele-specific expression, somatic SNVs; scDNase-seq can yield TF-binding SNV effects. This is a cheaper alternative to true multimodal experiments and is the conceptual foundation for tools like [[10-Summaries/mukamel-2025-aneuploidy-brain|Mukamel 2025]] (CNV from snmC-seq2) and [[10-Summaries/dou-2020-monovar|Monopogen]] (SNV from scATAC/scRNA).
 - **The 3-modality ceiling.** Authors acknowledge that >3 modalities from the same cell is fundamentally limited by molecule loss; future progress will come more from computational integration of paired-with-different-thirds datasets than from cramming more modalities into one assay. This framing is conservative — DOGMA-seq and PHAGE-ATAC already read 4 modalities; Duplex-Multiome reads 3+ with genotype.
 - **Methylation+CNV is positively correlated; methylation+expression is negatively correlated; CNV+expression is positively correlated.** Per scTrio-seq findings recapped here: CNV drives expression but does *not* drive local methylation. This decoupling is what makes [[50-Notes/regulatory-layers-overview|regulatory layers]] genuinely orthogonal axes.
 - **Paired vs unpaired integration is a different problem.** Paired-data tools (CCA, MNN, WNN) align cells across modalities measured *together*. Unpaired-data tools (GLUE, MOFA+, MultiVI, Cobolt) try to integrate modalities measured *separately on different cells from the same tissue*. The latter is harder and is where deep generative models dominate.
@@ -68,8 +68,8 @@ This is a review paper (no new data). The methods catalog is fairly complete thr
 
 ## Connections to other sources
 
-- **Echoes** [[10-Summaries/baysoy-2023-multiomics-landscape|Baysoy 2023]] and [[10-Summaries/katy-2023-naturereviewsgenetics|Vandereyken 2023]] — three near-contemporaneous multi-omics reviews; this one is more methods-encyclopedic, Baysoy is more applications-focused, Vandereyken includes spatial in depth.
-- **Echoes** [[10-Summaries/lukas-2023-naturereviewsgenetics|Heumos 2023]] best-practices analysis — Heumos focuses on the *analysis* side; Wang focuses on the *measurement+integration* side.
+- **Echoes** [[10-Summaries/baysoy-2023-multiomics-landscape|Baysoy 2023]] and [[10-Summaries/vandereyken-2023-scmultiomics-review|Vandereyken 2023]] — three near-contemporaneous multi-omics reviews; this one is more methods-encyclopedic, Baysoy is more applications-focused, Vandereyken includes spatial in depth.
+- **Echoes** [[10-Summaries/heumos-2023-best-practices|Heumos 2023]] best-practices analysis — Heumos focuses on the *analysis* side; Wang focuses on the *measurement+integration* side.
 - **Predates** the Duplex-Multiome / mosaicism+epigenome convergence described in [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]].
 - **Supports** [[50-Notes/regulatory-layers-overview]] — the methods-by-layer table in that note draws on the same catalog this review compiles.
 

@@ -13,7 +13,7 @@ updated: 2026-05-11
 
 ## Definition
 
-A diploid human cell contains ~6 pg of DNA — far below the input requirement of any sequencing platform. scWGA bridges that gap. Three method categories ([[10-Summaries/charles-2016-naturereviewsgenetics]], [[10-Summaries/diane-2025-naturereviewsgenetics]]):
+A diploid human cell contains ~6 pg of DNA — far below the input requirement of any sequencing platform. scWGA bridges that gap. Three method categories ([[10-Summaries/gawad-2016-scgenome-review]], [[10-Summaries/shao-2025-scDNA-mosaicism-review]]):
 
 1. **PCR-based amplification** — random or degenerate priming + PCR. Methods: [[dop-pcr]], PicoPLEX, [[malbac]].
 2. **Isothermal amplification** — Φ29 polymerase + random hexamer primers; exponential strand-displacement amplification. Methods: [[mda]], [[pta]].
@@ -21,7 +21,7 @@ A diploid human cell contains ~6 pg of DNA — far below the input requirement o
 
 ## Why it matters
 
-scWGA is **unavoidable** for most single-cell DNA applications because the genome is 20–50× larger than the transcriptome and each locus has only two molecules per cell ([[10-Summaries/diane-2025-naturereviewsgenetics]]). The choice of scWGA method dominates downstream data quality — different applications have different error tolerances.
+scWGA is **unavoidable** for most single-cell DNA applications because the genome is 20–50× larger than the transcriptome and each locus has only two molecules per cell ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]). The choice of scWGA method dominates downstream data quality — different applications have different error tolerances.
 
 **Quality metrics**:
 
@@ -45,8 +45,8 @@ scWGA is **unavoidable** for most single-cell DNA applications because the genom
 
 ## Examples
 
-- DOP-PCR aneuploidy detection in human cleavage-stage embryos (49% aneuploid; [[10-Summaries/diane-2025-naturereviewsgenetics]]).
-- PTA achieving ~95% coverage of single human neurons for lineage reconstruction ([[10-Summaries/diane-2025-naturereviewsgenetics]]).
+- DOP-PCR aneuploidy detection in human cleavage-stage embryos (49% aneuploid; [[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
+- PTA achieving ~95% coverage of single human neurons for lineage reconstruction ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 - META-CS as the only single-cell duplex-sequencing method, achieving <2.4 × 10⁻⁸ error rate.
 
 ## Related

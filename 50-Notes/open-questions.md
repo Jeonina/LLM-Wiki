@@ -13,7 +13,7 @@ Tensions and gaps surfaced during ingest or lint. When a question is resolved, r
 
 ## Duplex sequencing
 
-- ~~**Single-cell + duplex**~~ — Resolved 2025: closed from two directions ([[50-Notes/single-cell-duplex-sequencing]]). Remaining sub-questions: Duplex-Multiome generalization beyond brain ([[10-Summaries/andrea-2025-biorxiv]]); cross-method single-cell duplex benchmark needed.
+- ~~**Single-cell + duplex**~~ — Resolved 2025: closed from two directions ([[50-Notes/single-cell-duplex-sequencing]]). Remaining sub-questions: Duplex-Multiome generalization beyond brain ([[10-Summaries/kriz-2025-duplex-multiome]]); cross-method single-cell duplex benchmark needed.
 - Mutation-rate concordance across duplex platforms (SMaHT benchmark) — does it hold for brain, aging muscle, FFPE samples?
 - UDSeq vs the SMaHT-benchmarked methods — no cross-comparison yet.
 - **Methylation layer absent from single-cell duplex** — Duplex-Multiome reads accessibility + RNA + mutations but not methylation. Closing this would give all four regulatory layers ([[50-Notes/regulatory-layers-overview]]).

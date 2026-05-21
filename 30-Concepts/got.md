@@ -17,6 +17,8 @@ GoT modifies the standard 10x Genomics 3′/5′ scRNA-seq workflow by reserving
 
 The output is **paired (genotype, transcriptome) per cell** for thousands of cells per sample, at ~88% genotyping rates in CD34+ MPN samples vs ~1.4% from standard 10x reads — a ~60× improvement.
 
+This 88% figure is **locus-favorable**: CALR is highly expressed in CD34+ progenitors and the mutation sits within ~1.5 kb of the transcript end ([[10-Summaries/nam-2019-got]]). For drivers with low expression or distal mutation positions, genotyping efficiency falls sharply — JAK2-V617F, for example, is captured at only ~7–10% by cDNA-based methods ([[10-Summaries/izzo-2024-got-cha]]). This expression-and-distance ceiling motivated first [[circularization-got]] within the GoT framework, and then [[got-cha]], which sources genotype from gDNA instead of cDNA and achieves ~38% JAK2 capture.
+
 ## Why it matters
 
 It dissolves a long-standing problem in cancer/clonal-hematopoiesis genomics: **mutated and wild-type cells share surface markers, so you cannot sort them apart** to study how a mutation perturbs a specific cell type. With GoT, the wild-type cells in the same sample become an internal control, eliminating cross-patient confounders. This is what makes the cell-identity-dependent transcriptional findings in [[10-Summaries/nam-2019-got]] (UPR in MkPs vs NF-κB in HSPCs) defensible.

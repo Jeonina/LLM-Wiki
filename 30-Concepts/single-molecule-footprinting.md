@@ -32,8 +32,19 @@ These are precisely the readouts that single-molecule footprinting recovers — 
 
 ## Variants and refinements
 
-- **[[fiber-seq]]** — bulk m6A; the field's first usable single-molecule chromatin readout.
-- **[[daf-seq]]** — bulk and single-cell SsDddA cytidine deamination; extends single-molecule footprinting to chromosome-length single-cell coverage.
+**Methyltransferase stenciling (m6A-based, amplification-erased, bulk-only)**:
+
+- **[[fiber-seq]]** ([[10-Summaries/andrewb-2020-science]]) — the field's first usable single-molecule chromatin readout; Hia5 m6A on accessible adenines + PacBio CCS.
+- **[[samosa]]** ([[10-Summaries/abdulhay-2020-samosa]]) — EcoGII m6A footprinting on isolated nuclei + nanopore long reads; demonstrates per-fiber nucleosome positioning.
+- **[[samosa-tag]]** — adapter-tagmented SAMOSA variant for targeted regions.
+- **[[stam-seq]]** ([[10-Summaries/mo-2023-stam-seq]]) — Fiber-seq-style m6A stenciling adapted to *Arabidopsis* centromeres / telomeres / rDNA; demonstrates the chemistry generalizes to non-mammalian chromatin.
+- **[[smrt-tag]]** ([[10-Summaries/nanda-2024-smrt-tag]]) — Tn5-tagmentation front end for SMRT footprinting; multimodal applications for adjacent assays.
+- **Targeted Fiber-seq** ([[10-Summaries/bohaczuk-2024-targeted-fiberseq]]) — locus-enriched Fiber-seq for deep single-molecule depth at chosen regions.
+
+**Deaminase stenciling (sequence-encoded, amplification-survivable, single-cell-extensible)**:
+
+- **[[daf-seq]]** ([[10-Summaries/swanson-2025-daf-seq]]) — SsDddA cytidine deamination; bulk and single-cell variants; extends single-molecule footprinting to chromosome-length single-cell coverage.
+- **FOODIE** ([[10-Summaries/he-2024-foodie]]) — deaminase-based genome-wide single-cell/single-molecule TF footprinting; parallel deamination chemistry from the He lab.
 
 ## Contested points
 

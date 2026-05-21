@@ -1380,3 +1380,12 @@ Removed 41 duplicate summary files (40 DOI-based pairs + 1 tavares slug variant)
 - Final state: 0 broken wikilinks, 0 orphans.
 - Reconciled PTA-vs-MDA cost contradiction: `pta.md` "Contested points" updated to reflect v1→v2 cost trajectory (PTA v2 ~$5/cell now cheapest); `scwga.md` cost row now cites Shao 2025 Table 1.
 - Open substantive items not auto-fixed (per CLAUDE.md MAINTAIN spec): `scatac-seq.md` is thin relative to peers; `single-molecule-footprinting.md` missing samosa/stam-seq/smrt-tag cross-refs; `got.md` headline (88% genotyping) should acknowledge expression-dependence ceiling that motivated GoT-ChA.
+
+## 2026-05-21 — Lint shelf cleanup
+
+Tackled the three substantive items left from the morning lint pass:
+- Expanded `30-Concepts/scatac-seq.md` from 25 → ~70 lines (platforms, quality metrics, contested points, variants, examples, related). Now references 16 summaries including derop-2024 PUMATAC, luo-2024 benchmark, buenrostro-2015, cusanovich-2015, the multimodal family (sci-CAR, SHARE-seq, scNMT-seq, GoT-ChA), and the analysis tool stack (chromVAR, cisTopic, SnapATAC2, ArchR, EpiScanpy).
+- `30-Concepts/single-molecule-footprinting.md` now lists the full methylation-stencil family (fiber-seq, samosa, samosa-tag, stam-seq, smrt-tag, targeted-fiberseq) alongside the deamination family (daf-seq, FOODIE), matching the variant lists on fiber-seq.md and daf-seq.md.
+- `30-Concepts/got.md` now explicitly acknowledges the expression-and-distance ceiling: 88% CALR genotyping is locus-favorable; low-expression / distal drivers like JAK2 drop to ~7-10% via cDNA, which is what motivated circularization-GoT and then GoT-ChA. Resolves the framing tension with got-cha.md.
+
+State: 0 broken wikilinks, 0 orphans.

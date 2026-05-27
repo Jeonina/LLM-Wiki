@@ -30,6 +30,7 @@ Each cell has hundreds to thousands of mtDNA copies (vs two for nuclear DNA). Th
 
 - m.5024C>T and m.5019A>G mt-tRNA-Ala mutations in mouse models — single-cell heteroplasmy variance increases from prenatal to P365 ([[10-Summaries/glynos-2023-mtdna-mosaicism]]).
 - MELAS (m.3243A>G), MERRF (m.8344A>G), Leigh syndrome (multiple mtDNA mutations).
+- **Single-cell mtDNA burden metrics** — scmtMPM (depth-normalized mutations per million bp) and scwMSS (heteroplasmy-weighted local-constraint score) introduced by [[10-Summaries/hsieh-2026-scmtmpm-scwmss]] for quantifying per-cell mutational load. POLG D274A hypermutator cells show ~15× more variants than bulk-seq detected, with pathogenic variants held at sub-threshold VAF by negative selection ([[10-Summaries/hsieh-2026-scmtmpm-scwmss]]).
 
 ## Related
 

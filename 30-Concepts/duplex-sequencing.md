@@ -47,6 +47,7 @@ Most duplex methods sequence **bulk DNA** at single-molecule resolution — they
 - CODEC: ligated-quadruplex single-read duplex resolution ([[10-Summaries/bae-2023-codec]]).
 - [[meta-cs]] applied to single cells — bridging duplex and scDNA-seq ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 - Duplex-Multiome: 51,400 nuclei from postmortem human brain with point mutations + chromatin + RNA per cell ([[10-Summaries/kriz-2025-duplex-multiome]]).
+- Cardiovascular-tissue duplex toolbox catalog (TwinStrand, NanoSeq, BotSeqS, CODEC, Pro-Seq, META-CS) per [[10-Summaries/hilal-2026-cardiac-somatic-review]].
 
 ## Related
 

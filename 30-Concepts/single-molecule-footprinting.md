@@ -55,6 +55,7 @@ These are precisely the readouts that single-molecule footprinting recovers — 
 
 - TF cooperativity quantified at single-nucleotide resolution on the NAPA promoter ([[10-Summaries/swanson-2025-daf-seq]]).
 - Per-cell, per-haplotype regulatory-element actuation maps in lymphoblastoid GM24385 ([[10-Summaries/swanson-2025-daf-seq]]).
+- Single-molecule chromatin configurations linked to gene expression in human cells (Greenleaf + Bintu labs, [[10-Summaries/doughty-2024-single-molecule-chromatin-config]]) — abstract-only ingest pending full-text re-read.
 
 ## Related
 

@@ -29,7 +29,7 @@ updated: 2026-05-19
 
 - IRE1-XBP1 as a therapeutic target in CALR-mutant CH ([[10-Summaries/nam-2019-got]]) — clinical validation pending.
 - Whether JAK2V617F chromatin priming is causal for clonal expansion or downstream ([[10-Summaries/izzo-2024-got-cha]]).
-- Cardiovascular-disease causality of CH — still being established.
+- Cardiovascular-disease causality of CH — still being established; recent extension to HFpEF and stroke per [[10-Summaries/hilal-2026-cardiac-somatic-review]].
 
 ## Related
 

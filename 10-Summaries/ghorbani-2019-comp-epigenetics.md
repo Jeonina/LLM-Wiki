@@ -5,6 +5,7 @@ aliases: ["Ghorbani Shokri-Gharelo 2019", "computational epigenetics overview"]
 tags: [review, computational-epigenetics, DNA-methylation, machine-learning, bisulfite-sequencing, low-impact]
 created: 2026-05-13
 updated: 2026-05-13
+source: "[[00-Sources/papers/Computational-based approaches in epigenetic research_ Insights from computational tools, mathematical models, and machine learning methods]]"
 sources: ["Roghayeh_2019_JournalOfAppliedBiologyAnd;Biotechnology.pdf"]
 ---
 

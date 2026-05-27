@@ -5,6 +5,7 @@ aliases: [Zong 2012, MALBAC 2012, Chenghang 2012]
 tags: [scWGA, MALBAC, foundational, scDNA-seq, copy-number]
 created: 2026-05-12
 updated: 2026-05-12
+source: "[[00-Sources/papers/Genome-Wide Detection of Single-Nucleotide and Copy-Number Variations of a Single Human Cell]]"
 sources: ["00-Sources/papers/Chenghang_2012_Science.pdf"]
 ---
 

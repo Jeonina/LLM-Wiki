@@ -5,6 +5,7 @@ aliases: [Payne 2021, IGS, in situ genome sequencing, AndrewC_2020_Science]
 tags: [IGS, in-situ-sequencing, 3d-genome, single-cell, spatial-genomics, foundational]
 created: 2026-05-12
 updated: 2026-05-12
+source: "[[00-Sources/papers/In situ genome sequencing resolves DNA sequence and structure in intact biological samples]]"
 sources: ["00-Sources/papers/AndrewC_2020_Science.pdf"]
 ---
 

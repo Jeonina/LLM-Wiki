@@ -1,7 +1,7 @@
 ---
 type: summary
 title: "Nam et al. 2019 — Genotyping of Transcriptomes (GoT)"
-source: "[[00-Sources/papers/Anna_2019_Nature]]"
+source: "[[00-Sources/papers/Somatic mutations and cell identity linked by Genotyping of Transcriptomes]]"
 source_kind: paper
 author: "Anna S. Nam, Kyu-Tae Kim, Ronan Chaligné, Franco Izzo, ... Dan A. Landau (corresponding)"
 published: 2019-07-18

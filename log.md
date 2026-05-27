@@ -4,6 +4,49 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-05-27 (part 2) — pending-sources.sh fixed; backlog burn-down (187 → 2 pending)
+
+**Trigger**: User flagged that 187 pending sources contradicted the "all ingested" claim. Re-audit revealed the legacy `tools/pending-sources.sh` produced 174 false positives by slug-matching filenames; only 13 were genuine, of which 6 turned out to be naming/frontmatter mismatches and 4 were truly missing on-topic ingests.
+
+### Script fix
+
+- Rewrote `tools/pending-sources.sh` to walk summary frontmatter `source:` links by basename rather than slugifying source filenames. Skips hidden directories (e.g. stray `.moai/`).
+- Result: pending count drops from 187 → 8 immediately, then → 6 after 4 frontmatter fixes, then → 2 after 4 ingests. The 2 remaining are off-topic (Collateral sensitivity E. coli, FoldPAthreader protein folding) — awaiting user decision on whether to ingest, move out of 00-Sources, or annotate as off-scope.
+
+### Frontmatter `source:` mismatches fixed (no new content — same paper, wrong link)
+
+- `10-Summaries/chenghang-2012-science.md` — Zong/MALBAC 2012 paper now correctly points at `Genome-Wide Detection of Single-Nucleotide and Copy-Number Variations of a Single Human Cell.md`.
+- `10-Summaries/andrewc-2020-science.md` — IGS paper now correctly points at `In situ genome sequencing resolves DNA sequence and structure in intact biological samples.md`.
+- `10-Summaries/nam-2019-got.md` — GoT paper now correctly points at `Somatic mutations and cell identity linked by Genotyping of Transcriptomes.md`.
+- `10-Summaries/ghorbani-2019-comp-epigenetics.md` — review now correctly points at `Computational-based approaches in epigenetic research...md`.
+- `10-Summaries/izzo-2024-got-cha.md` — GoT-ChA paper now correctly points at `Mapping genotypes to chromatin accessibility profiles in single cells.md`.
+- `10-Summaries/geisenberger-2025-scepi2-seq.md` — **had wrong source link entirely** (pointed at the SIMPLE-seq clipping; the SIMPLE-seq paper is covered by `bai-2024-simple-seq.md`). Fixed to point at `Single-cell multi-omic detection of DNA methylation and histone modifications...md`.
+
+### New summaries ingested
+
+- **[[10-Summaries/forsberg-2017-mosaicism-clones]]** — Forsberg, Gisselsson & Dumanski 2017 NRG review. Structural-variant-centric framing of somatic mosaicism; ACE terminology; LOY as the most common human post-zygotic mutation; revertant mosaicism in Turner syndrome.
+- **[[10-Summaries/hilal-2026-cardiac-somatic-review]]** — Hilal, Arava & Choudhury 2026 Circ Res. Cardiovascular somatic-variation review; cardiomyocyte 4–30k SNVs/cell; CHIP→HFpEF/stroke; duplex-sequencing toolbox catalog (TwinStrand, NanoSeq, CODEC, META-CS, Pro-Seq, BotSeqS).
+- **[[10-Summaries/hsieh-2026-scmtmpm-scwmss]]** — Hsieh/Lareau/Ludwig 2026 Nat Comm. Introduces scmtMPM + scwMSS metrics for per-cell mtDNA mutational burden via mtscATAC-seq; pathogenic mtDNA variants held at sub-threshold VAF by negative selection in POLG hypermutators; MELAS m.3243A>G purifying selection with age.
+- **[[10-Summaries/doughty-2024-single-molecule-chromatin-config]]** — Doughty/Bintu/Greenleaf 2024 bioRxiv. **Abstract-only ingest** (clipping is references-only); placeholder summary noting full-text re-read needed.
+
+### Entities created
+
+- `20-Entities/sangita-choudhury.md` (Hilal review corresponding author)
+- `20-Entities/leif-ludwig.md` (Hsieh paper co-corresponding author, mtscATAC-seq co-developer)
+
+### Notable findings / tensions
+
+- **Existing file misnamed:** `10-Summaries/hsieh-2026-mtdna-mosaicism.md` actually contains the **Glynos 2023** paper (Science Advances), not Hsieh 2026. The new Hsieh summary uses the distinct slug `hsieh-2026-scmtmpm-scwmss.md` to avoid collision. The misnamed file should be renamed `glynos-2023-mtdna-heteroplasmy.md` in a future lint pass (requires updating inbound links).
+- **Bi & Weng review's missing axis:** confirmed via Hilal 2026 ingest that the dominant 2023–2024 multiomics reviews (Bi & Weng, Baysoy, Vandereyken, Wang) all omit the cardiac-resident mosaicism axis. The wiki now has both the blood-centric (Forsberg) and cardiac-centric (Hilal) reviews on this axis.
+- **Forsberg 2017 framing largely lost the war:** structural-variant-centric mosaicism framing (LOY, CNVs as dominant) was correct at the cell-burden level but the 2018+ CHIP/SNV literature dominated subsequent discourse. Worth a synthesis note connecting Forsberg's framing to the duplex-sequencing-enabled SNV revolution of 2021+.
+- **2 off-topic sources remain in `00-Sources/papers/`:** Collateral sensitivity (E. coli antibiotic resistance) and FoldPAthreader (protein folding). User decision needed: ingest as off-scope stubs, move out of sources, or leave pending.
+
+### Graph touch count
+
+This session: 18 files (6 new summaries, 2 new entities, 6 frontmatter fixes on existing summaries, 5 concept/topic touches, index, log, script).
+
+---
+
 ## 2026-05-27 — Ingest: Creyghton 2010 (H3K27ac/enhancers) + Bi & Weng 2024 (multiomics review)
 
 **Trigger**: Two new clippings dropped into `00-Sources/papers/`.

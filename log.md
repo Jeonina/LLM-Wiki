@@ -4,6 +4,44 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-05-27 — Ingest: Creyghton 2010 (H3K27ac/enhancers) + Bi & Weng 2024 (multiomics review)
+
+**Trigger**: Two new clippings dropped into `00-Sources/papers/`.
+
+### Sources ingested
+
+1. **Creyghton et al. 2010, PNAS** — *Histone H3K27ac separates active from poised enhancers and predicts developmental state.* Foundational ChIP-seq paper establishing H3K27ac as the discriminating mark between active and poised (= modern "primed") enhancers across mESC/NPC/proB/liver/iPS, and showing iPS reprogramming resets the enhancer landscape (Pearson 0.81 vs ES).
+2. **Bi & Weng 2024, Fundamental Research** — *Single-cell epigenomics and proteomics methods integrated in multiomics.* Methods-catalog review organized by integration topology (horizontal/vertical/diagonal, Argelaguet frame) and protein-quantification lineage (NGS vs scMS). Overlaps heavily with the existing Baysoy/Vandereyken/Wang trio; main differentiator is the explicit CRISPR-perturbation family treatment and the named integration-topology taxonomy.
+
+### Pages created
+
+- `10-Summaries/creyghton-2010-h3k27ac-enhancers.md`
+- `10-Summaries/bi-2024-multiomics-review.md`
+- `20-Entities/rudolf-jaenisch.md` (corresponding author, Creyghton paper)
+- `20-Entities/richard-a-young.md` (co-author; later super-enhancer concept builds on this framework)
+- `20-Entities/menno-p-creyghton.md` (first author, Creyghton paper)
+- `20-Entities/xiaocheng-weng.md` (corresponding author, Bi review)
+
+### Pages updated
+
+- `30-Concepts/enhancer-states.md` — added Creyghton 2010 as foundational source; explicit terminology-drift note that Creyghton's "poised" = modern "primed" (only 1.2% of his enhancers carried H3K27me3, so his class was not bivalent).
+- `30-Concepts/histone-modifications.md` — cited Creyghton 2010 against H3K4me1 and H3K27ac canonical-mark entries.
+- `30-Concepts/multimodal-integration-methods.md` — added Argelaguet horizontal/vertical/diagonal taxonomy from Bi 2024 to the paired/unpaired section.
+- `40-Topics/single-cell-multiomics.md` — added Bi & Weng to the Reviews list.
+- `index.md` — added enhancer-state pointer under scATAC section; added Bi & Weng to Multi-Omics review row; bumped updated date.
+
+### Notable findings / tensions
+
+- **Terminology drift (poised vs primed).** Creyghton 2010 used "poised" for H3K4me1+/H3K27ac− but found near-zero H3K27me3 enrichment, so his class is what the field later renamed "primed". The wiki's `enhancer-states` page already used the modern convention — now annotated with the historical source.
+- **Bi review misses the scDNA-anchored multiomics axis.** Like the rest of the 2023–2024 review cluster, it does not include GoT / GoT-ChA / DAF-seq / Duplex-Multiome under "multiomics" — consistent with the wiki's central [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap|synthesis-gap thesis]].
+- **Bi 2024 source frontmatter is mangled** (author list contains abstract fragments; no published date). Corrected in the summary frontmatter manually using DOI lookup.
+
+### Graph touch count
+
+11 files written/edited (2 summaries + 4 entities + 4 wiki pages + index).
+
+---
+
 ## 2026-05-19 (part 8) — Methylation cancer-of-origin synthesis written; synthesis-target set complete
 
 **Trigger**: Final synthesis-targets candidate — completes the set of 5.

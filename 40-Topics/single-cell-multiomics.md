@@ -101,6 +101,7 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 - [[10-Summaries/vandereyken-2023-scmultiomics-review]] — Vandereyken/Voet methods and applications, including spatial.
 - [[10-Summaries/heumos-2023-best-practices]] — Heumos/Theis best-practices analysis recommendations.
 - [[10-Summaries/wang-2023-multimodal-review]] — Wang/Jin methods catalog + integration tool taxonomy (matrix factorization vs manifold alignment vs deep generative).
+- [[10-Summaries/bi-2024-multiomics-review]] — Bi & Weng methods catalog organized by integration topology (horizontal/vertical/diagonal) and protein-quantification lineage (NGS-based vs mass-spectrometry-based); covers CRISPR-perturbation dual-modal family explicitly.
 
 ### Methylation × chromatin / histone-mark single-cell methods
 

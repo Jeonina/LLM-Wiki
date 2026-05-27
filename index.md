@@ -1,7 +1,7 @@
 ---
 title: LLM Wiki — scDNA-seq & Single-Cell Epigenomics
 description: A living knowledge base on single-cell DNA sequencing, somatic mosaicism, and adjacent epigenomics.
-updated: 2026-05-15
+updated: 2026-05-27
 ---
 
 # LLM Wiki
@@ -44,6 +44,7 @@ Measuring open chromatin at single-cell resolution. Includes founding methods, c
 **Start here →** [[30-Concepts/scatac-seq]] · [[30-Concepts/chromatin-accessibility]] · [[30-Concepts/cut-and-tag]]
 **Founding methods →** [[10-Summaries/buenrostro-2015-nature|Buenrostro 2015]] · [[10-Summaries/cusanovich-2015-sciatac|Cusanovich 2015 (sci-ATAC)]]
 **Tools →** [[30-Concepts/chromvar]] · [[30-Concepts/cistopic]] · [[30-Concepts/snapatac]] · [[10-Summaries/granja-2021-archr|ArchR]]
+**Enhancer state →** [[10-Summaries/creyghton-2010-h3k27ac-enhancers|Creyghton 2010 (H3K27ac active/poised partition)]] · [[30-Concepts/enhancer-states]]
 
 ---
 
@@ -74,7 +75,7 @@ Methods that read two or more modalities from the same cell: genotype + transcri
 **Start here →** [[30-Concepts/single-cell-multiomics]] · [[30-Concepts/got]] · [[30-Concepts/got-cha]]
 **GoT family →** [[10-Summaries/nam-2019-got|Nam 2019]] · [[10-Summaries/izzo-2024-got-cha|Izzo 2024]] · [[10-Summaries/cortes-lopez-2023-cellstemcell|GoT-Splice]]
 **DNA + Epigenome →** [[10-Summaries/swanson-2025-daf-seq|DAF-seq]] · [[10-Summaries/kriz-2025-duplex-multiome|Duplex-Multiome]]
-**Reviews →** [[10-Summaries/wang-2023-multimodal-review|Wang & Jin 2023 methods+integration]] · [[10-Summaries/baysoy-2023-multiomics-landscape|Baysoy 2023]] · [[10-Summaries/vandereyken-2023-scmultiomics-review|Vandereyken 2023]]
+**Reviews →** [[10-Summaries/wang-2023-multimodal-review|Wang & Jin 2023 methods+integration]] · [[10-Summaries/baysoy-2023-multiomics-landscape|Baysoy 2023]] · [[10-Summaries/vandereyken-2023-scmultiomics-review|Vandereyken 2023]] · [[10-Summaries/bi-2024-multiomics-review|Bi & Weng 2024 (integration topology + protein lineages)]]
 
 ---
 
@@ -146,4 +147,4 @@ The maintainer reads each new source in full, writes a summary, and **touches 5�
 
 ---
 
-*This wiki is a personal research tool. Papers are summarized by an LLM; always verify against the original sources. Last updated 2026-05-15.*
+*This wiki is a personal research tool. Papers are summarized by an LLM; always verify against the original sources. Last updated 2026-05-27.*

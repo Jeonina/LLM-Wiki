@@ -4,7 +4,7 @@ title: Histone modifications
 aliases: [histone marks, PTMs, chromatin marks]
 tags: [chromatin, epigenetics, enhancers, promoters]
 created: 2026-05-12
-updated: 2026-05-19
+updated: 2026-05-27
 ---
 
 # Histone modifications
@@ -16,8 +16,8 @@ updated: 2026-05-19
 Modifications occur predominantly on histone H3 and H4 lysines and arginines ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]). Canonical mark-state mapping:
 
 - **H3K4me3**: active promoters ([[10-Summaries/klemm-2019-chromatin-accessibility-review]])
-- **H3K4me1**: enhancers — alone = primed; + H3K27ac = active; + H3K27me3 = poised ([[10-Summaries/klemm-2019-chromatin-accessibility-review]])
-- **H3K27ac**: active promoters and enhancers ([[10-Summaries/klemm-2019-chromatin-accessibility-review]])
+- **H3K4me1**: enhancers — alone = primed; + H3K27ac = active; + H3K27me3 = poised ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]; foundational partition established by [[10-Summaries/creyghton-2010-h3k27ac-enhancers]])
+- **H3K27ac**: active promoters and enhancers ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]; [[10-Summaries/creyghton-2010-h3k27ac-enhancers]] established H3K27ac as the discriminating mark separating active from inactive enhancers, with eRNA production specifically at H3K27ac+ regions)
 - **H3K36me3**: actively transcribed gene bodies ([[10-Summaries/klemm-2019-chromatin-accessibility-review]])
 - **H3K27me3**: facultative heterochromatin (Polycomb-repressed) ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]; LAD borders per [[10-Summaries/van-steensel-2017-lads-review]])
 - **H3K9me3**: constitutive heterochromatin ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]; cLAD anchoring mark per [[10-Summaries/van-steensel-2017-lads-review]])

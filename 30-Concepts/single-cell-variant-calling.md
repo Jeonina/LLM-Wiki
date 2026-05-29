@@ -20,7 +20,7 @@ updated: 2026-05-19
 - **MosaicForecast** ([[10-Summaries/dou-2020-mosaicforecast]]) — random-forest classifier.
 - **DeepMosaic** ([[10-Summaries/yang-2023-deepmosaic]]) — deep-learning mosaic caller.
 - **Monopogen** ([[10-Summaries/dou-2023-monopogen]]) — SNV calls from scRNA/scATAC.
-- **SCOUT** ([[10-Summaries/tu-2021-scout]]) — leverages local genome territory for genotyping.
+- **SCOUT** ([[10-Summaries/tu-2021-scout-genotyper]]) — leverages local genome territory for genotyping.
 
 ## Benchmarks
 

@@ -18,8 +18,6 @@ topics: ["[[40-Topics/somatic-mosaicism]]"]
 
 # Hsieh 2026 — quantifying per-cell mtDNA mutational burden via scmtMPM and scwMSS
 
-> NOTE on slug: The file `hsieh-2026-mtdna-mosaicism.md` already exists in this wiki, but its *content* is actually about **Glynos 2023** (random-drift mtDNA divergence in *Science Advances*), not Hsieh 2026. That file is mis-slugged and should be renamed `glynos-2023-mtdna-heteroplasmy.md` in a future lint pass. The present summary uses the distinct slug `hsieh-2026-scmtmpm-scwmss.md` to avoid collision.
-
 > Introduces two single-cell metrics — **scmtMPM** (mtDNA mutations per million bp, depth-normalized) and **scwMSS** (heteroplasmy-weighted mitochondrial local-constraint score) — for quantifying genome-wide mtDNA mutational burden in individual cells via mtscATAC-seq. Validates on POLG D274A hypermutator HEK293 lines (~15× more variants than bulk-seq detected) and applies to PBMCs from healthy donors and MELAS patients. Key finding: **pathogenic and truncating mtDNA variants are systematically held at sub-threshold heteroplasmy** in hypermutator cells, indicative of strong negative selection acting well below the canonical 60–80% biochemical threshold.
 
 ## Key claims
@@ -56,8 +54,8 @@ mtscATAC-seq (Lareau/Ludwig 2021 protocol) with cell hashing; mgatk variant-call
 ## Connections to other sources
 
 - **Extends** the mtscATAC-seq foundational work (Lareau 2021 Nat Biotech, not yet ingested).
-- **Companion to** the mis-slugged Glynos 2023 paper at `[[10-Summaries/hsieh-2026-mtdna-mosaicism]]` — both address mtDNA heteroplasmy dynamics but from different angles (drift vs selection, healthy vs hypermutator).
-- **Complementary to** [[10-Summaries/forsberg-2017-mosaicism-clones]] — addresses one mosaicism axis (mtDNA) explicitly excluded from that 2017 review's scope.
+- **Companion to** the mis-slugged Glynos 2023 paper at `[[10-Summaries/glynos-2023-mtdna-mosaicism]]` — both address mtDNA heteroplasmy dynamics but from different angles (drift vs selection, healthy vs hypermutator).
+- **Complementary to** [[10-Summaries/forsberg-2017-mosaicism-review]] — addresses one mosaicism axis (mtDNA) explicitly excluded from that 2017 review's scope.
 
 ## Open questions
 
@@ -67,4 +65,4 @@ mtscATAC-seq (Lareau/Ludwig 2021 protocol) with cell hashing; mgatk variant-call
 ## Related
 
 - [[40-Topics/somatic-mosaicism]] · [[30-Concepts/mitochondrial-heteroplasmy]] · [[30-Concepts/mitochondrial-lineage-tracing]]
-- [[10-Summaries/forsberg-2017-mosaicism-clones]] — mtDNA mosaicism was excluded from this 2017 review
+- [[10-Summaries/forsberg-2017-mosaicism-review]] — mtDNA mosaicism was excluded from this 2017 review

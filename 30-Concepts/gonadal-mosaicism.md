@@ -13,7 +13,7 @@ updated: 2026-05-11
 
 ## Definition
 
-A post-zygotic mutation that arises before primordial germ cell (PGC) differentiation (within the first ~15 mitotic divisions, by day 24 post-fertilization) can populate the gonad with mutated germ cells alongside (or instead of) somatic cells ([[10-Summaries/ian-2015-trendsingenetics]]).
+A post-zygotic mutation that arises before primordial germ cell (PGC) differentiation (within the first ~15 mitotic divisions, by day 24 post-fertilization) can populate the gonad with mutated germ cells alongside (or instead of) somatic cells ([[10-Summaries/campbell-2015-mosaicism-review]]).
 
 - **Gonadal-only mosaicism** — mutation confined to germline; parent has normal somatic phenotype but transmits the mutation.
 - **Gonosomal mosaicism** — present in both soma and germline; parent may have mild somatic phenotype + transmits to offspring.

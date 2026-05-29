@@ -41,7 +41,7 @@ updated: 2026-05-19
 
 ### Single-cell + duplex validation
 - [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — Luquette/Walsh 2025. Uses DS to validate PTA-scDNA-seq mutation calls.
-- [[10-Summaries/luquette-2025-smaht-pta]] — companion paper, SMaHT PTA pipeline.
+- [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — companion paper, SMaHT PTA pipeline.
 - [[10-Summaries/kriz-2025-duplex-multiome]] — Kriz 2025. Duplex-Multiome: duplex consensus integrated into 10x Multiome (point mutations + chromatin + RNA per nucleus).
 
 ### Reviews

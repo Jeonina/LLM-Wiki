@@ -24,7 +24,7 @@ Two parallel cell-barcoding strategies emerged in 2015 and define the family tod
 
 Subsequent platforms split along the same axis:
 
-- **Nanowell / nanoliter Tn5** — µATAC-seq ([[10-Summaries/mezger-2018-uatac]]) increases throughput while preserving per-cell coverage.
+- **Nanowell / nanoliter Tn5** — µATAC-seq ([[10-Summaries/mezger-2018-microfluidic-atac]]) increases throughput while preserving per-cell coverage.
 - **Droplet** — 10x Genomics Chromium scATAC (and 10x Multiome, which co-captures RNA in the same droplet); the dominant commercial platform today.
 - **Combinatorial-droplet hybrids** — benchmarked by De Rop 2024's PUMATAC pipeline across 10x, sci-ATAC, dscATAC, ddSEQ-ATAC ([[10-Summaries/derop-2024-natbiotech]]).
 

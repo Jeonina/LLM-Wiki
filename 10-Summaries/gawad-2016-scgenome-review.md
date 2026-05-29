@@ -69,7 +69,7 @@ Synthesizing review with extensive comparison tables across published single-cel
 
 - **Updated and effectively superseded by** [[10-Summaries/shao-2025-scDNA-mosaicism-review]] — the 2025 review covers PTA, duplex sequencing, and computational advances that didn't exist in 2016.
 - **Methodological grandparent of** [[10-Summaries/nam-2019-got]] (GoT) — though GoT is targeted genotyping rather than scWGA, it is also a Quake-era droplet-platform innovation.
-- **Mosaicism framing inherited by** [[10-Summaries/forsberg-2017-mosaicism-review]] and [[10-Summaries/ian-2015-trendsingenetics]].
+- **Mosaicism framing inherited by** [[10-Summaries/forsberg-2017-mosaicism-review]] and [[10-Summaries/campbell-2015-mosaicism-review]].
 
 ## Open questions
 

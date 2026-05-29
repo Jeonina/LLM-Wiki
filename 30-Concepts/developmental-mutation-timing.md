@@ -9,11 +9,11 @@ updated: 2026-05-11
 
 # Developmental mutation timing
 
-> The when of a post-zygotic mutation determines the where: mutations early in embryogenesis affect a large fraction of the soma; mutations later are progressively restricted to specific tissue lineages or to a single side of the body. The framework that connects mutation timing to clinical phenotype and to transmission risk ([[10-Summaries/ian-2015-trendsingenetics]]).
+> The when of a post-zygotic mutation determines the where: mutations early in embryogenesis affect a large fraction of the soma; mutations later are progressively restricted to specific tissue lineages or to a single side of the body. The framework that connects mutation timing to clinical phenotype and to transmission risk ([[10-Summaries/campbell-2015-mosaicism-review]]).
 
 ## Definition
 
-The geometry of mutation distribution as a function of embryonic timing ([[10-Summaries/ian-2015-trendsingenetics]] Fig 1):
+The geometry of mutation distribution as a function of embryonic timing ([[10-Summaries/campbell-2015-mosaicism-review]] Fig 1):
 
 - **First mitosis** → ~50% of all cells affected. Phenotype often manifests with midline demarcation (CHILD syndrome).
 - **Before left-right determination** → both sides of the body and potentially one or both gonads affected.
@@ -31,7 +31,7 @@ Inverts the diagnostic question: from the phenotype distribution of a mosaic dis
 ## Variants and refinements
 
 - **PGC bottleneck timing** — ~15 mitotic divisions / day 24 post-fertilization in humans.
-- **Up to 70% of human embryos** show ≥1 aneuploid blastomere in week 1 — early development is genome-unstable but most aneuploid cells are selected against ([[10-Summaries/ian-2015-trendsingenetics]]).
+- **Up to 70% of human embryos** show ≥1 aneuploid blastomere in week 1 — early development is genome-unstable but most aneuploid cells are selected against ([[10-Summaries/campbell-2015-mosaicism-review]]).
 
 ## Contested points
 

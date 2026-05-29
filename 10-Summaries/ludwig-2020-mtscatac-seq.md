@@ -48,5 +48,5 @@ Abstract + introduction only; full PDF re-ingest will deepen quantitative mtDNA 
 ## Related
 
 - [[30-Concepts/mitochondrial-heteroplasmy]] · [[30-Concepts/mitochondrial-lineage-tracing]] · [[30-Concepts/scatac-seq]]
-- [[10-Summaries/hsieh-2026-mtdna-mosaicism]]
+- [[10-Summaries/glynos-2023-mtdna-mosaicism]]
 - [[40-Topics/single-cell-multiomics]] · [[40-Topics/somatic-mosaicism]]

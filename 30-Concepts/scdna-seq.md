@@ -26,7 +26,7 @@ The human genome is 20–50× larger than the transcribed or chromatin-accessibl
 
 The biology questions scDNA-seq uniquely addresses:
 
-- **Somatic mosaicism**: detection of low-VAF variants in single cells ([[10-Summaries/forsberg-2017-mosaicism-review]], [[10-Summaries/ian-2015-trendsingenetics]]).
+- **Somatic mosaicism**: detection of low-VAF variants in single cells ([[10-Summaries/forsberg-2017-mosaicism-review]], [[10-Summaries/campbell-2015-mosaicism-review]]).
 - **Lineage tracing in human tissue**: natural mutation accumulation (~2–4 per division) as endogenous lineage markers ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 - **Pre-implantation genetic screening**: aneuploidy and CNV detection from single embryonic cells.
 - **Cancer subclonal evolution**: joint detection of mutations and inference of clonal hierarchy.

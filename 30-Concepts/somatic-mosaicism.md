@@ -9,13 +9,13 @@ updated: 2026-05-19
 
 # Somatic mosaicism
 
-> The presence of genetically distinct lineages of cells within a single organism derived from one zygote ([[10-Summaries/forsberg-2017-mosaicism-review]]). Every human is mosaic — accumulating ~2–4 SNVs per cell division during life ([[10-Summaries/forsberg-2017-mosaicism-review]]; [[10-Summaries/cagan-2022-nature]]) — but the clinical and biological consequences depend on the developmental timing and lineage of the mosaic mutation ([[10-Summaries/ian-2015-trendsingenetics]]).
+> The presence of genetically distinct lineages of cells within a single organism derived from one zygote ([[10-Summaries/forsberg-2017-mosaicism-review]]). Every human is mosaic — accumulating ~2–4 SNVs per cell division during life ([[10-Summaries/forsberg-2017-mosaicism-review]]; [[10-Summaries/cagan-2022-nature]]) — but the clinical and biological consequences depend on the developmental timing and lineage of the mosaic mutation ([[10-Summaries/campbell-2015-mosaicism-review]]).
 
 ## Definition
 
-Mosaicism arises from any post-zygotic mutation that escapes correction and is propagated to a clone of daughter cells. With ~10¹⁶ mitoses required to make an adult human body and ~2–4 mutations per division, every cell carries some number of mosaic variants relative to the zygote ([[10-Summaries/forsberg-2017-mosaicism-review]], [[10-Summaries/ian-2015-trendsingenetics]]).
+Mosaicism arises from any post-zygotic mutation that escapes correction and is propagated to a clone of daughter cells. With ~10¹⁶ mitoses required to make an adult human body and ~2–4 mutations per division, every cell carries some number of mosaic variants relative to the zygote ([[10-Summaries/forsberg-2017-mosaicism-review]], [[10-Summaries/campbell-2015-mosaicism-review]]).
 
-**Classes by lineage** ([[10-Summaries/ian-2015-trendsingenetics]]):
+**Classes by lineage** ([[10-Summaries/campbell-2015-mosaicism-review]]):
 
 - **Somatic-only**: variants confined to non-germline tissues, not transmissible.
 - **Gonadal mosaicism**: variants in germline only, transmissible to multiple offspring.
@@ -25,7 +25,7 @@ Mosaicism arises from any post-zygotic mutation that escapes correction and is p
 
 - **SNVs and indels** (most numerous).
 - **CNVs and structural variants** (largest genomic footprint per event).
-- **Aneuploidy and chromosomal rearrangements** (most clinically severe in some contexts; up to 70% of week-1 embryos show ≥1 aneuploid blastomere — [[10-Summaries/ian-2015-trendsingenetics]]).
+- **Aneuploidy and chromosomal rearrangements** (most clinically severe in some contexts; up to 70% of week-1 embryos show ≥1 aneuploid blastomere — [[10-Summaries/campbell-2015-mosaicism-review]]).
 
 Distinct from **chimerism** (cells from a different individual — fertilization events) and **[[microchimerism]]** (small numbers of foreign cells, e.g., maternal-fetal exchange).
 
@@ -34,7 +34,7 @@ Distinct from **chimerism** (cells from a different individual — fertilization
 - **Confounds clinical genetics**: bulk DNA from one tissue can miss mosaic variants present in another tissue ([[10-Summaries/forsberg-2017-mosaicism-review]]).
 - **Drives disease**: clonal hematopoiesis ([[10-Summaries/izzo-2024-got-cha]]), cancer ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]), neurodevelopmental disorders ([[10-Summaries/bizzotto-2022-brain-mosaicism-review]]; mosaic syndromes per [[10-Summaries/forsberg-2017-mosaicism-review]]).
 - **Tracks development**: natural mutation accumulation serves as endogenous lineage marker for [[lineage-tracing]] in humans where engineered markers are unethical ([[10-Summaries/coorens-2021-nature]]; [[10-Summaries/lee-six-2018-hsc-dynamics]]).
-- **Pre-implantation screening**: aneuploidy in early embryos shapes IVF outcomes ([[10-Summaries/ian-2015-trendsingenetics]]).
+- **Pre-implantation screening**: aneuploidy in early embryos shapes IVF outcomes ([[10-Summaries/campbell-2015-mosaicism-review]]).
 - **Universal in aged tissue**: detected in every solid organ examined to date ([[10-Summaries/cagan-2022-nature]]); aged stem cell milieu acts as the selective environment that determines which clones expand — see [[10-Summaries/kapadia-2024-stem-cell-aging|Kapadia & Goodell 2024]] for the stem-cell-aging framing ("adaptive oncogenesis").
 
 The biology motivated the methods. [[scdna-seq]] became technically tractable largely *because* of demand from mosaicism researchers — Walsh lab, Vijg, Quake, Evrony — who needed single-cell DNA resolution to detect what bulk could not.

@@ -23,7 +23,7 @@ For each candidate SNV at locus *s*, SCOUT estimates the multinomial allele-succ
 
 ## Examples
 
-- [[10-Summaries/tu-2021-scout]].
+- [[10-Summaries/tu-2021-scout-genotyper]].
 
 ## Related
 

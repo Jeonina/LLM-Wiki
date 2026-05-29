@@ -52,7 +52,7 @@ Review of ~70 sources. Tabulates 9 sequencing/error-correction technologies (Tab
 
 ## Connections to other sources
 
-- **Complementary to** [[10-Summaries/forsberg-2017-mosaicism-clones]] — the cardiac-resident angle was largely missing from the 2017 framing; Hilal 2026 fills that gap.
+- **Complementary to** [[10-Summaries/forsberg-2017-mosaicism-review]] — the cardiac-resident angle was largely missing from the 2017 framing; Hilal 2026 fills that gap.
 - **Aligned with** [[10-Summaries/shao-2025-scDNA-mosaicism-review]] on the SMaHT framing.
 - **Extends** [[10-Summaries/kennedy-2014-duplex-protocol]] etc. by cataloging the post-Kennedy duplex methods (NanoSeq, CODEC, META-CS) developed 2018–2024.
 
@@ -64,5 +64,5 @@ Review of ~70 sources. Tabulates 9 sequencing/error-correction technologies (Tab
 ## Related
 
 - [[40-Topics/somatic-mosaicism]] · [[40-Topics/clonal-hematopoiesis]]
-- [[10-Summaries/forsberg-2017-mosaicism-clones]] — earlier blood-centric review
+- [[10-Summaries/forsberg-2017-mosaicism-review]] — earlier blood-centric review
 - [[10-Summaries/shao-2025-scDNA-mosaicism-review]] — broader SMaHT-era survey

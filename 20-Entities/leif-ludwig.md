@@ -15,7 +15,7 @@ updated: 2026-05-27
 
 ## Mentions in this wiki
 
-- **2026-03-16** — Corresponding author with [[20-Entities/caleb-lareau]] on [[10-Summaries/hsieh-2026-mtdna-mosaicism]], introducing scmtMPM and scwMSS metrics for quantifying per-cell mtDNA mutational burden via mtscATAC-seq.
+- **2026-03-16** — Corresponding author with [[20-Entities/caleb-lareau]] on [[10-Summaries/hsieh-2026-scmtmpm-scwmss]], introducing scmtMPM and scwMSS metrics for quantifying per-cell mtDNA mutational burden via mtscATAC-seq.
 
 ## Related
 

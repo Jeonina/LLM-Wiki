@@ -37,7 +37,7 @@ Most duplex methods sequence **bulk DNA** at single-molecule resolution — they
 ## Contested points
 
 - Trade-off: duplex sequencing requires twice the read depth per molecule and complex library prep — cost per variant detected is high ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
-- Whether single-molecule long-read direct sequencing (PacBio HiFi without amplification, ONT) will displace duplex sequencing as long-read accuracy improves ([[10-Summaries/liu-2025-longread-epigenome-review]]).
+- Whether single-molecule long-read direct sequencing (PacBio HiFi without amplification, ONT) will displace duplex sequencing as long-read accuracy improves ([[10-Summaries/liu-2025-long-read-epigenome-review]]).
 - Benchmarking heterogeneity: different duplex protocols disagree on mutation spectra at extreme low VAF ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).
 
 ## Examples

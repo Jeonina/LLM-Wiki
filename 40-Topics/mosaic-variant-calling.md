@@ -21,7 +21,7 @@ updated: 2026-05-19
 
 - [[10-Summaries/zafar-2016-monovar]] (Monovar) · [[10-Summaries/dong-2017-sccaller]] (SCcaller) · [[10-Summaries/sarah-2019-cell]] (ProSolo)
 - [[10-Summaries/huang-2017-mosaichunter]] (MosaicHunter) · [[10-Summaries/dou-2020-mosaicforecast]] (MosaicForecast) · [[10-Summaries/yang-2023-deepmosaic]] (DeepMosaic)
-- [[10-Summaries/dou-2023-monopogen]] (Monopogen) · [[10-Summaries/tu-2021-scout]] (SCOUT)
+- [[10-Summaries/dou-2023-monopogen]] (Monopogen) · [[10-Summaries/tu-2021-scout-genotyper]] (SCOUT)
 
 ## Benchmarks
 
@@ -44,5 +44,5 @@ updated: 2026-05-19
 
 ## Linked summaries (lint pass 2026-05-21)
 
-- [[10-Summaries/tu-2021-scout-genotyper]] — Tu 2021 — SCOUT genotyper using local genome territory.
+- [[10-Summaries/tu-2021-scout-genotyper-genotyper]] — Tu 2021 — SCOUT genotyper using local genome territory.
 

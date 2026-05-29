@@ -9,7 +9,7 @@ updated: 2026-05-19
 
 # Long-read sequencing
 
-> The enabling platform layer beneath several recent breakthroughs in this vault: single-molecule chromatin footprinting ([[fiber-seq]] per [[10-Summaries/andrewb-2020-science]]; [[daf-seq]] per [[10-Summaries/swanson-2025-daf-seq]]), direct methylation detection without bisulfite conversion ([[10-Summaries/fu-2025-longread-methylation]]; [[10-Summaries/liu-2025-longread-epigenome-review]]), scDAF-seq chromosome-length consensus reads ([[10-Summaries/swanson-2025-daf-seq]]), and duplex sequencing variants like HiDEF-seq ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
+> The enabling platform layer beneath several recent breakthroughs in this vault: single-molecule chromatin footprinting ([[fiber-seq]] per [[10-Summaries/andrewb-2020-science]]; [[daf-seq]] per [[10-Summaries/swanson-2025-daf-seq]]), direct methylation detection without bisulfite conversion ([[10-Summaries/fu-2025-longread-methylation]]; [[10-Summaries/liu-2025-long-read-epigenome-review]]), scDAF-seq chromosome-length consensus reads ([[10-Summaries/swanson-2025-daf-seq]]), and duplex sequencing variants like HiDEF-seq ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
 ## Core concepts
 
@@ -45,7 +45,7 @@ updated: 2026-05-19
 
 - [[10-Summaries/fu-2025-longread-methylation]] — Fu/Sedlazeck/Timp NRG computational long-read methylation analysis.
 - [[10-Summaries/fu-2025-longread-methylation]] — Fu et al. detailed computational methylation analysis.
-- [[10-Summaries/liu-2025-longread-epigenome-review]] — Liu/Conesa 2025 NRG broader epigenome review (methylation + accessibility + 3D + transcriptomic LRS).
+- [[10-Summaries/liu-2025-long-read-epigenome-review]] — Liu/Conesa 2025 NRG broader epigenome review (methylation + accessibility + 3D + transcriptomic LRS).
 
 ### Long-read single-molecule chromatin
 
@@ -58,7 +58,7 @@ updated: 2026-05-19
 ### Long-read SV detection
 
 - [[10-Summaries/liu-2025-nanopore-lscc-svs]] — SomaGauss-SV in LSCC.
-- [[10-Summaries/liu-2025-somagauss-lscc]] — SomaGauss-SV companion paper.
+- [[10-Summaries/liu-2025-nanopore-lscc-svs]] — SomaGauss-SV companion paper.
 
 ### Long-read referenced in scDNA-seq context
 

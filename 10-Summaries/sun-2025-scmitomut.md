@@ -30,5 +30,5 @@ A 2025 advance over MAESTER (Miller 2022) and mgatk (Lareau 2021) on the same pr
 
 - lareau 2021 natbiotech
 - [[10-Summaries/miller-2022-maester]]
-- [[10-Summaries/hsieh-2026-mtdna-mosaicism]]
+- [[10-Summaries/glynos-2023-mtdna-mosaicism]]
 - [[30-Concepts/mitochondrial-lineage-tracing]]

@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Senior author of [[10-Summaries/tu-2021-scout]] (SCOUT) and co-author on [[10-Summaries/liu-2025-nanopore-lscc-svs]] (LSCC nanopore SVs).
+- **2026-05-12** — Senior author of [[10-Summaries/tu-2021-scout-genotyper]] (SCOUT) and co-author on [[10-Summaries/liu-2025-nanopore-lscc-svs]] (LSCC nanopore SVs).
 
 ## Related
 

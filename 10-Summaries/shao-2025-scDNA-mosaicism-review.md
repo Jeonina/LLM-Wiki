@@ -82,7 +82,7 @@ This is a synthesizing review from the Walsh lab (Boston Children's), which has 
 
 - **Synthesizes and supersedes** [[10-Summaries/gawad-2016-scgenome-review]] (Gawad/Quake): nine years on, PTA + duplex sequencing have replaced the MDA/MALBAC tradeoffs that dominated the 2016 landscape.
 - **Defines the framework that places** [[10-Summaries/swanson-2025-daf-seq]] (scDAF-seq) in context — scDAF-seq uses PTA for amplification, which is exactly the scWGA breakthrough Diane 2025 highlights as enabling the current generation of scDNA-seq applications.
-- **Complements** [[10-Summaries/forsberg-2017-mosaicism-review]] (mosaicism biology) and [[10-Summaries/ian-2015-trendsingenetics]] (mosaicism implications) — those provide the biological context; Diane 2025 provides the technical framework now mature enough to answer the questions those reviews raised.
+- **Complements** [[10-Summaries/forsberg-2017-mosaicism-review]] (mosaicism biology) and [[10-Summaries/campbell-2015-mosaicism-review]] (mosaicism implications) — those provide the biological context; Diane 2025 provides the technical framework now mature enough to answer the questions those reviews raised.
 - **Conceptually parallel to** [[10-Summaries/evrony-2021-scDNA-applications-review]] (Evrony et al.) which provides the applications-focused framework (fidelity / co-presence / phenotypic association).
 
 ## Open questions

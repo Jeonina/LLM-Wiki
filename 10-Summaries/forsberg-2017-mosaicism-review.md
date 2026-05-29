@@ -1,7 +1,7 @@
 ---
 type: summary
 title: "Forsberg, Gisselsson & Dumanski 2017 — Mosaicism in health and disease"
-source: "[[00-Sources/papers/Lars_2017_NatureReviewsGenetics]]"
+source: "[[00-Sources/papers/Mosaicism in health and disease — clones picking up speed]]"
 source_kind: paper
 author: "Lars A. Forsberg, David Gisselsson, Jan P. Dumanski"
 published: 2017-02
@@ -60,7 +60,7 @@ Synthesizing review. Catalogs evidence from microarray, bulk sequencing, and eme
 ## Connections to other sources
 
 - **Biological context for** [[10-Summaries/shao-2025-scDNA-mosaicism-review]] — Diane 2025 provides the technical methods that finally make the mosaicism questions Lars 2017 raises answerable.
-- **Complementary perspective to** [[10-Summaries/ian-2015-trendsingenetics]] (Campbell, Lupski) — Lars 2017 emphasizes health implications and structural variants; Ian 2015 emphasizes developmental timing and transmission genetics.
+- **Complementary perspective to** [[10-Summaries/campbell-2015-mosaicism-review]] (Campbell, Lupski) — Lars 2017 emphasizes health implications and structural variants; Ian 2015 emphasizes developmental timing and transmission genetics.
 - **Disease relevance for** [[10-Summaries/nam-2019-got]] (CALR-mutated MPN — a clonal hematopoiesis disorder) and [[10-Summaries/izzo-2024-got-cha]] (JAK2V617F clonal hematopoiesis stage).
 
 ## Open questions

@@ -64,7 +64,7 @@ Synthesizing review across mouse and human studies, with extensive ESC focus. Me
 ## Connections to other sources
 
 - **Methodological foundation for** [[10-Summaries/fu-2025-longread-methylation]] — Yilei 2025 reviews the computational analysis of DNA methylation from long-read sequencing, building on the biological framework Smith & Meissner establish here.
-- **Provides developmental context for** [[10-Summaries/ian-2015-trendsingenetics]] and [[10-Summaries/forsberg-2017-mosaicism-review]] — methylation reprogramming windows partly overlap with the developmental periods of high genome instability and mosaicism.
+- **Provides developmental context for** [[10-Summaries/campbell-2015-mosaicism-review]] and [[10-Summaries/forsberg-2017-mosaicism-review]] — methylation reprogramming windows partly overlap with the developmental periods of high genome instability and mosaicism.
 
 ## Open questions
 

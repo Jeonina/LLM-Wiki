@@ -9,7 +9,7 @@ updated: 2026-05-19
 
 # DNA methylation
 
-> Covalent modification of the fifth carbon of cytosine to produce 5-methylcytosine (5mC), primarily at symmetric CpG dinucleotides in mammals ([[10-Summaries/smith-2013-methylation-development]]). The most stable and best-studied epigenetic mark, maintained through mitosis by DNMT1 ([[10-Summaries/kim-2017-dna-methylation-memory]]) and globally reset during two developmental windows: pre-implantation and primordial germ cell specification ([[10-Summaries/smith-2013-methylation-development]]).
+> Covalent modification of the fifth carbon of cytosine to produce 5-methylcytosine (5mC), primarily at symmetric CpG dinucleotides in mammals ([[10-Summaries/smith-2013-methylation-development]]). The most stable and best-studied epigenetic mark, maintained through mitosis by DNMT1 ([[10-Summaries/kim-2017-methylation-memory-review]]) and globally reset during two developmental windows: pre-implantation and primordial germ cell specification ([[10-Summaries/smith-2013-methylation-development]]).
 
 ## Definition
 
@@ -23,7 +23,7 @@ Other modification forms ([[10-Summaries/fu-2025-longread-methylation]]):
 
 ## Why it matters
 
-- **Stable propagation of cell identity** — methylation marks established during differentiation are maintained through mitosis, contributing to epigenetic memory ([[10-Summaries/kim-2017-dna-methylation-memory]]; [[10-Summaries/kim-2017-methylation-memory-review]]).
+- **Stable propagation of cell identity** — methylation marks established during differentiation are maintained through mitosis, contributing to epigenetic memory ([[10-Summaries/kim-2017-methylation-memory-review]]; [[10-Summaries/kim-2017-methylation-memory-review]]).
 - **Genomic imprinting and X-inactivation** — methylation establishes parent-of-origin and chromosome-of-origin gene-expression patterns ([[10-Summaries/smith-2013-methylation-development]]; imprinted loci established in primordial germ cells per [[10-Summaries/smith-2013-methylation-development]]).
 - **Transposon silencing** — most repetitive elements are heavily methylated ([[10-Summaries/smith-2013-methylation-development]]); loss of methylation can derepress LINE-1, SINE, and ERV elements, triggering "viral mimicry" interferon responses ([[10-Summaries/hunt-2022-sctem-seq]]).
 - **Disease biomarker** — cancer-associated promoter hypermethylation silences tumor suppressors; global hypomethylation enables oncogene activation and chromosome instability ([[10-Summaries/smith-2013-methylation-development]]).

@@ -38,7 +38,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 
 ### Reviews
 - [[10-Summaries/lars-2017-naturereviewsgenetics\|Forsberg/Dumanski 2017]] — mosaicism in health and disease
-- [[10-Summaries/ian-2015-trendsingenetics\|Campbell/Lupski 2015]] — developmental timing of mutations
+- [[10-Summaries/campbell-2015-mosaicism-review\|Campbell/Lupski 2015]] — developmental timing of mutations
 - [[10-Summaries/bizzotto-2022-brain-mosaicism\|Bizzotto & Walsh 2022]] — brain mosaicism and lineage tracing
 - [[10-Summaries/vijg-2020-cell\|Vijg & Dong 2020]] — somatic mutation × aging
 - [[10-Summaries/nishioka-2019-molpsych\|Nishioka 2019]] — brain somatic mutations × psychiatric research
@@ -52,7 +52,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/miller-2022-nature\|Miller 2022]] — AD-specific excess sSNVs in 319 neurons
 - [[10-Summaries/kousi-2022-ad-mosaicism\|Kousi/Kellis 2022]] — cell-type-specific AD somatic burden
 - [[10-Summaries/eran-2025-neuron\|Mukamel 2025]] — snmC-seq aneuploidy detection in mouse brain
-- [[10-Summaries/luquette-2025-smaht-pta\|Luquette/Walsh 2025]] — PTA + DS validation on 102 nuclei
+- [[10-Summaries/luquette-2025-pta-duplex-mosaicism\|Luquette/Walsh 2025]] — PTA + DS validation on 102 nuclei
 
 ### Hematopoiesis & Cancer
 - [[10-Summaries/lee-six-2018-nature\|Lee-Six 2018]] — 140 HSPC colonies; HSC pool size estimate
@@ -71,7 +71,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 
 ### mtDNA Mosaicism
 - [[10-Summaries/glynos-2023-mtdna-mosaicism|Glynos/Chinnery 2023]] — mouse mtDNA heteroplasmy through life
-- [[10-Summaries/hsieh-2026-mtdna-mosaicism\|Hsieh/Ludwig 2026]] — scmtMPM + scwMSS mtDNA mosaicism metrics
+- [[10-Summaries/glynos-2023-mtdna-mosaicism\|Hsieh/Ludwig 2026]] — scmtMPM + scwMSS mtDNA mosaicism metrics
 - [[10-Summaries/sun-2025-scmitomut\|Sun/Perié 2025]] — scMitoMut beta-binomial mtDNA calling
 - [[10-Summaries/miller-2022-maester\|Miller/van Galen 2022]] — MAESTER mtDNA from scRNA-seq
 - [[10-Summaries/caleb-2021-naturebiotechnology\|Lareau 2021]] — mtscATAC-seq
@@ -115,7 +115,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/buenrostro-2015-nature\|Buenrostro 2015]] — founding Fluidigm scATAC-seq
 - [[10-Summaries/cusanovich-2015-science\|Cusanovich 2015 (sci-ATAC)]] — combinatorial-indexing scATAC
 - [[10-Summaries/jin-2015-nature\|Jin/Zhao 2015 (scDNase-seq)]] — founding DNase-based single-cell method
-- [[10-Summaries/mezger-2018-uatac\|Mezger 2018 (µATAC-seq)]] — nanowell-based scATAC
+- [[10-Summaries/mezger-2018-microfluidic-atac\|Mezger 2018 (µATAC-seq)]] — nanowell-based scATAC
 
 ### Computational Tools
 - [[10-Summaries/schep-2017-chromvar\|Schep 2017 (chromVAR)]] — TF motif aggregation
@@ -167,7 +167,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/pott-2017-elife\|Pott 2017 (scNOMe-seq)]] — methylation + accessibility + nucleosome phasing
 - [[10-Summaries/hunt-2022-sctem-seq\|Hunt/Lee 2022 (scTEM-seq)]] — TE methylation as global proxy
 - [[10-Summaries/bai-2024-simple-seq\|Bai/Yi 2024 (SIMPLE-seq)]] — joint 5mC + 5hmC
-- [[10-Summaries/shen-2025-splicool-seq|Shen/Fan 2025 (SpliCOOL-seq)]] — methylation + accessibility
+- [[10-Summaries/shen-2026-splicool-seq|Shen/Fan 2025 (SpliCOOL-seq)]] — methylation + accessibility
 - [[10-Summaries/tavares-2026-6base-cuttag\|Tavares 2026 (6-base-CUT&Tag)]] — 5mC + 5hmC at histone marks
 - [[10-Summaries/geisenberger-2025-scepi2-seq\|Geisenberger 2025 (scEpi²-seq)]] — histone + 5mC
 - [[10-Summaries/lee-2019-natmethods\|Lee 2019 (sn-m3C-seq)]] — methylome + 3C joint
@@ -199,7 +199,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/wang-2019-mesmlr\|Wang/Au 2019 (MeSMLR-seq)]] — foundational Nanopore yeast footprinting
 - [[10-Summaries/mo-2023-stam-seq\|Mo/Zhai 2023 (STAM-seq)]] — plant nanopore HRR epigenomics
 - [[10-Summaries/doughty-2024-nature\|Doughty 2024]] — SMF on engineered enhancer-promoter constructs
-- [[10-Summaries/liu-2025-longread-epigenome-review\|Liu/Conesa 2025]] — long-read epigenomics review
+- [[10-Summaries/liu-2025-long-read-epigenome-review\|Liu/Conesa 2025]] — long-read epigenomics review
 
 ---
 
@@ -228,7 +228,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 ### SNV Callers
 - [[10-Summaries/zafar-2016-natmethods\|Zafar 2016 (Monovar)]] — founding multi-cell SNV caller
 - [[10-Summaries/dong-2017-sccaller\|Dong/Vijg 2017 (SCcaller)]] — bulk-anchored variant caller
-- [[10-Summaries/tu-2021-scout\|Tu 2021 (SCOUT)]] — local-territory genotyper
+- [[10-Summaries/tu-2021-scout-genotyper\|Tu 2021 (SCOUT)]] — local-territory genotyper
 - [[10-Summaries/lahnemann-2021-natcomm\|Lähnemann 2021 (ProSolo)]] — joint SC + bulk with FDR
 - [[10-Summaries/luquette-2019-natcomm\|Luquette 2019 (SCAN-SNV)]] — spatial allele-balance model
 - [[10-Summaries/dou-2020-mosaicforecast\|Dou 2020 (MosaicForecast)]] — read-phasing mosaic caller
@@ -246,7 +246,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/sanders-2020-sctrip\|Sanders 2020 (scTRIP)]] — Strand-seq SV calling
 - [[10-Summaries/hyobin-2023-naturebiotechnology\|Jeong 2023 (scNOVA)]] — Strand-seq + nucleosome occupancy
 - [[10-Summaries/zhao-2022-nature\|Zhao 2022 (slide-DNA-seq)]] — spatial scDNA-seq
-- [[10-Summaries/liu-2025-somagauss-lscc\|Liu 2025 (SomaGauss-SV)]] — nanopore somatic SV
+- [[10-Summaries/liu-2025-nanopore-lscc-svs\|Liu 2025 (SomaGauss-SV)]] — nanopore somatic SV
 - [[10-Summaries/mallory-2020-cna-review\|Mallory 2020]] — scDNA CNA-detection methods review
 
 ### Phylogeny Inference

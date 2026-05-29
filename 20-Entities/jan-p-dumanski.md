@@ -15,7 +15,7 @@ updated: 2026-05-27
 
 ## Mentions in this wiki
 
-- **2016-12-12** — Corresponding author on [[10-Summaries/forsberg-2017-mosaicism-clones]], the NRG review framing structural variants (CNV/LOY/CNNLOH) as the dominant ACE category in human aging.
+- **2016-12-12** — Corresponding author on [[10-Summaries/forsberg-2017-mosaicism-review]], the NRG review framing structural variants (CNV/LOY/CNNLOH) as the dominant ACE category in human aging.
 
 ## Related
 

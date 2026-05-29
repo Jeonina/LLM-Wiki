@@ -60,7 +60,7 @@ Conceptual/synthesizing review. Reorganizes the scDNA-seq literature around capa
 
 - **Conceptually parallel to** [[10-Summaries/shao-2025-scDNA-mosaicism-review]] — both organize the scDNA-seq field, but Diane 2025 is technology-organized and Gilad 2021 is application/capability-organized. Reading them together gives both axes.
 - **Framework applies to** [[10-Summaries/nam-2019-got]] (GoT — *phenotypic association*), [[10-Summaries/izzo-2024-got-cha]] (GoT–ChA — *phenotypic association*), [[10-Summaries/swanson-2025-daf-seq]] (scDAF-seq — *fidelity + co-presence + phenotypic association* via deamination footprints).
-- **Provides the application context for** [[10-Summaries/forsberg-2017-mosaicism-review]] and [[10-Summaries/ian-2015-trendsingenetics]] mosaicism biology.
+- **Provides the application context for** [[10-Summaries/forsberg-2017-mosaicism-review]] and [[10-Summaries/campbell-2015-mosaicism-review]] mosaicism biology.
 
 ## Open questions
 

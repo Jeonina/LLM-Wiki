@@ -10,7 +10,7 @@ updated: 2026-05-11
 
 # James R. Lupski
 
-> Baylor College of Medicine clinical geneticist; major figure in human structural variation and mosaicism. Senior author of [[10-Summaries/ian-2015-trendsingenetics]] (Campbell et al.) on somatic mosaicism implications for disease.
+> Baylor College of Medicine clinical geneticist; major figure in human structural variation and mosaicism. Senior author of [[10-Summaries/campbell-2015-mosaicism-review]] (Campbell et al.) on somatic mosaicism implications for disease.
 
 ## Profile
 
@@ -18,11 +18,11 @@ Department of Molecular and Human Genetics, Department of Pediatrics, Baylor Col
 
 ## Mentions
 
-- **2026-05-11** — [[10-Summaries/ian-2015-trendsingenetics]]: senior author of the mosaicism + transmission genetics review.
+- **2026-05-11** — [[10-Summaries/campbell-2015-mosaicism-review]]: senior author of the mosaicism + transmission genetics review.
 
 ## Positions and claims
 
-- Holds that **the developmental timing of a post-zygotic mutation determines its tissue distribution and clinical phenotype** — the timing-geometry framework that is central to clinical mosaicism interpretation ([[10-Summaries/ian-2015-trendsingenetics]]).
+- Holds that **the developmental timing of a post-zygotic mutation determines its tissue distribution and clinical phenotype** — the timing-geometry framework that is central to clinical mosaicism interpretation ([[10-Summaries/campbell-2015-mosaicism-review]]).
 - Holds that **gonadal mosaicism is an under-recognized recurrence risk** in apparently sporadic dominant disorders.
 
 ## Related

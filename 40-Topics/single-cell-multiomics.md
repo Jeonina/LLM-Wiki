@@ -131,5 +131,5 @@ _None yet — the three methods papers cluster cleanly enough that a synthesis c
 
 - [[10-Summaries/ma-2020-cell]] — Ma 2020 — SHARE-seq: shared single-cell RNA + chromatin profiling reveals chromatin potential.
 - [[10-Summaries/macaulay-2016-gt-seq-protocol]] — Macaulay 2016 — G&T-seq protocol: parallel single-cell genome + transcriptome.
-- [[10-Summaries/shen-2025-splicool-seq]] — Shen 2025 — SpliCOOL-seq: scalable scDNA methylation + chromatin via split-pool.
+- [[10-Summaries/shen-2026-splicool-seq]] — Shen 2025 — SpliCOOL-seq: scalable scDNA methylation + chromatin via split-pool.
 

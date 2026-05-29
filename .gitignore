@@ -58,3 +58,6 @@ graphify-out/.graphify_*
 graphify-out/.extract.sh
 graphify-out/.validate.py
 graphify-out/cache/
+
+# Off-topic clippings moved out of 00-Sources but kept on disk
+99-OffTopic/

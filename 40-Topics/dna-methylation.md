@@ -9,7 +9,7 @@ updated: 2026-05-19
 
 # DNA methylation
 
-> Covalent modification of cytosine (predominantly 5-methylcytosine at CpG dinucleotides) that propagates through mitosis ([[10-Summaries/kim-2017-dna-methylation-memory]]), contributes to cell identity ([[10-Summaries/kim-2017-methylation-memory-review]]), silences transposons ([[10-Summaries/smith-2013-methylation-development]]), establishes imprints ([[10-Summaries/smith-2013-methylation-development]]), and is dysregulated in cancer and aging ([[10-Summaries/smith-2013-methylation-development]]). The wiki's methylation cluster covers the biology of methylation, the canonical measurement chemistries (bisulfite, long-read direct detection), and the enzymatic machinery (DNMT, TET).
+> Covalent modification of cytosine (predominantly 5-methylcytosine at CpG dinucleotides) that propagates through mitosis ([[10-Summaries/kim-2017-methylation-memory-review]]), contributes to cell identity ([[10-Summaries/kim-2017-methylation-memory-review]]), silences transposons ([[10-Summaries/smith-2013-methylation-development]]), establishes imprints ([[10-Summaries/smith-2013-methylation-development]]), and is dysregulated in cancer and aging ([[10-Summaries/smith-2013-methylation-development]]). The wiki's methylation cluster covers the biology of methylation, the canonical measurement chemistries (bisulfite, long-read direct detection), and the enzymatic machinery (DNMT, TET).
 
 ## Core concepts
 
@@ -56,14 +56,14 @@ updated: 2026-05-19
 ### Biology
 
 - [[10-Summaries/smith-2013-methylation-development]] — Smith & Meissner foundational review.
-- [[10-Summaries/kim-2017-dna-methylation-memory]] — Kim/Costello 2017 epigenetic memory review.
+- [[10-Summaries/kim-2017-methylation-memory-review]] — Kim/Costello 2017 epigenetic memory review.
 - [[10-Summaries/smith-2013-methylation-development]] — Smith & Meissner 2013 development review.
 
 ### Computational analysis and long-read methods
 
 - [[10-Summaries/fu-2025-longread-methylation]] — long-read computational methylation analysis.
 - [[10-Summaries/fu-2025-longread-methylation]] — Fu et al. computational long-read methylation analysis.
-- [[10-Summaries/liu-2025-longread-epigenome-review]] — Liu/Conesa 2025 NRG epigenome long-read review.
+- [[10-Summaries/liu-2025-long-read-epigenome-review]] — Liu/Conesa 2025 NRG epigenome long-read review.
 
 ### Single-cell methylation methods
 

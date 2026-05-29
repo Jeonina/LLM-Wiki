@@ -53,7 +53,7 @@ updated: 2026-05-19
 ### Mosaicism biology and clinical implications
 
 - [[10-Summaries/forsberg-2017-mosaicism-review]] — health-and-disease perspective.
-- [[10-Summaries/ian-2015-trendsingenetics]] — transmission genetics, developmental timing.
+- [[10-Summaries/campbell-2015-mosaicism-review]] — transmission genetics, developmental timing.
 
 ### Methods reviews
 
@@ -78,7 +78,7 @@ updated: 2026-05-19
 ### Single-cell mosaicism studies
 
 - [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — Luquette 2025: PTA + duplex validation, 102 nuclei from lung+colon of 74-yo donor.
-- [[10-Summaries/luquette-2025-smaht-pta]] — companion PTA pipeline paper.
+- [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — companion PTA pipeline paper.
 - [[10-Summaries/glynos-2023-mtdna-mosaicism]] — Glynos/Chinnery 2023: mouse mtDNA heteroplasmy variance increases through life.
 - [[10-Summaries/kousi-2022-ad-mosaicism]] — Kousi/Kellis 2022: cell-type-specific AD mosaicism.
 - [[10-Summaries/lodato-2017-aging-neurons]] — Lodato et al. 2018 aging-neuron mosaic mutation burden.
@@ -109,7 +109,7 @@ _None yet._
 - [[10-Summaries/oroak-2012-autism-targeted-seq]] — O'Roak 2012 — Multiplex targeted sequencing of recurrently mutated genes in ASD.
 - [[10-Summaries/campbell-2015-mosaicism-review]] — Campbell 2015 — Somatic mosaicism: implications for disease and transmission (review).
 - [[10-Summaries/mckenna-2016-science]] — McKenna 2016 — GESTALT: whole-organism lineage tracing by combinatorial genome editing.
-- [[10-Summaries/forsberg-2017-mosaicism-clones]] — Forsberg, Gisselsson & Dumanski 2017 NRG — structural-variant-centric framing of mosaicism; introduces ACE terminology; LOY as the most common human post-zygotic mutation.
+- [[10-Summaries/forsberg-2017-mosaicism-review]] — Forsberg, Gisselsson & Dumanski 2017 NRG — structural-variant-centric framing of mosaicism; introduces ACE terminology; LOY as the most common human post-zygotic mutation.
 - [[10-Summaries/hilal-2026-cardiac-somatic-review]] — Hilal, Arava & Choudhury 2026 — cardiovascular somatic-variation review; cardiomyocyte 4–30k SNVs/cell and CHIP→HFpEF/stroke links.
 - [[10-Summaries/hsieh-2026-scmtmpm-scwmss]] — Hsieh 2026 — single-cell mtDNA mutational burden metrics (scmtMPM, scwMSS); negative selection at sub-threshold VAF.
 

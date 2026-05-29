@@ -13,7 +13,7 @@ updated: 2026-05-19
 
 ## Underlying biology
 
-Epimutations accumulate at predictable rates at clock-like CpGs (e.g., ELOVL2, scaffold ICRs). Maintenance errors of DNMT1 during replication produce these — they are heritable but not deterministic ([[10-Summaries/kim-2017-dna-methylation-memory]]).
+Epimutations accumulate at predictable rates at clock-like CpGs (e.g., ELOVL2, scaffold ICRs). Maintenance errors of DNMT1 during replication produce these — they are heritable but not deterministic ([[10-Summaries/kim-2017-methylation-memory-review]]).
 
 ## Methods
 

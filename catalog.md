@@ -12,14 +12,14 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 
 | Paper | Topic | Year |
 |-------|-------|------|
-| [[10-Summaries/diane-2025-naturereviewsgenetics\|Shao et al.]] | scDNA-seq for somatic mosaicism (NRG) | 2025 |
-| [[10-Summaries/charles-2016-naturereviewsgenetics\|Gawad & Quake]] | scDNA-seq state-of-the-science (NRG) | 2016 |
-| [[10-Summaries/gilad-2021-annualreviewofgenomicsandhumangenetics\|Evrony et al.]] | scDNA-seq applications framework (ARGHG) | 2021 |
-| [[10-Summaries/alev-2023-naturereviewsmolecularcellbiology\|Baysoy/Fan/Satija]] | Multi-omics landscape (NRMCB) | 2023 |
-| [[10-Summaries/katy-2023-naturereviewsgenetics\|Vandereyken/Voet]] | Single-cell + spatial multi-omics (NRG) | 2023 |
-| [[10-Summaries/lukas-2023-naturereviewsgenetics\|Heumos/Theis]] | Best practices for SC analysis (NRG) | 2023 |
-| [[10-Summaries/sandy-2019-naturereviewsgenetics\|Klemm/Greenleaf]] | Chromatin accessibility (NRG) | 2019 |
-| [[10-Summaries/zachary-2013-naturereviewsgenetics\|Smith/Meissner]] | DNA methylation in development (NRG) | 2013 |
+| [[10-Summaries/shao-2025-scDNA-mosaicism-review\|Shao et al.]] | scDNA-seq for somatic mosaicism (NRG) | 2025 |
+| [[10-Summaries/gawad-2016-scgenome-review\|Gawad & Quake]] | scDNA-seq state-of-the-science (NRG) | 2016 |
+| [[10-Summaries/evrony-2021-scDNA-applications-review\|Evrony et al.]] | scDNA-seq applications framework (ARGHG) | 2021 |
+| [[10-Summaries/baysoy-2023-multiomics-landscape\|Baysoy/Fan/Satija]] | Multi-omics landscape (NRMCB) | 2023 |
+| [[10-Summaries/vandereyken-2023-scmultiomics-review\|Vandereyken/Voet]] | Single-cell + spatial multi-omics (NRG) | 2023 |
+| [[10-Summaries/heumos-2023-best-practices\|Heumos/Theis]] | Best practices for SC analysis (NRG) | 2023 |
+| [[10-Summaries/klemm-2019-chromatin-accessibility-review\|Klemm/Greenleaf]] | Chromatin accessibility (NRG) | 2019 |
+| [[10-Summaries/smith-2013-methylation-development\|Smith/Meissner]] | DNA methylation in development (NRG) | 2013 |
 | [[10-Summaries/andrew-2011-cellresearch\|Bannister & Kouzarides]] | Histone modifications (foundational) | 2011 |
 
 ---
@@ -29,7 +29,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/macaulay-2014-plosgenet\|Macaulay & Voet 2014]] — scWGA methods review (pre-PTA era)
 - [[10-Summaries/debourcy-2014-plosone\|de Bourcy/Quake 2014]] — quantitative WGA-chemistry benchmark
 - [[10-Summaries/chenghang-2012-science\|Zong 2012 (MALBAC)]] — hybrid PCR/isothermal scWGA
-- [[10-Summaries/chongyi-2017-science\|Chen 2017 (LIANTI)]] — linear amplification via Tn5+T7
+- [[10-Summaries/chen-2017-lianti\|Chen 2017 (LIANTI)]] — linear amplification via Tn5+T7
 - [[10-Summaries/gonzalez-pena-2021-pnas\|Gonzalez-Pena 2021 (PTA)]] — current scWGA gold standard
 
 ---
@@ -37,35 +37,35 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 ## Somatic Mosaicism
 
 ### Reviews
-- [[10-Summaries/lars-2017-naturereviewsgenetics\|Forsberg/Dumanski 2017]] — mosaicism in health and disease
+- [[10-Summaries/forsberg-2017-mosaicism-review\|Forsberg/Dumanski 2017]] — mosaicism in health and disease
 - [[10-Summaries/campbell-2015-mosaicism-review\|Campbell/Lupski 2015]] — developmental timing of mutations
-- [[10-Summaries/bizzotto-2022-brain-mosaicism\|Bizzotto & Walsh 2022]] — brain mosaicism and lineage tracing
+- [[10-Summaries/bizzotto-2022-brain-mosaicism-review\|Bizzotto & Walsh 2022]] — brain mosaicism and lineage tracing
 - [[10-Summaries/vijg-2020-cell\|Vijg & Dong 2020]] — somatic mutation × aging
 - [[10-Summaries/nishioka-2019-molpsych\|Nishioka 2019]] — brain somatic mutations × psychiatric research
 
 ### Brain Mosaicism (Primary)
 - [[10-Summaries/lodato-2015-science\|Lodato 2015]] — foundational scWGS of 36 cortical neurons
-- [[10-Summaries/lodato-2018-science\|Lodato 2018]] — LiRA pipeline; "genosenium" aging signatures
-- [[10-Summaries/taejeong-2018-science\|Bae 2018]] — 200–400 SNVs/cell in fetal-brain progenitors
+- [[10-Summaries/lodato-2017-aging-neurons\|Lodato 2018]] — LiRA pipeline; "genosenium" aging signatures
+- [[10-Summaries/bae-2017-pregastrulation-mutations\|Bae 2018]] — 200–400 SNVs/cell in fetal-brain progenitors
 - [[10-Summaries/taejeong-2022-science\|Bae 2022]] — 131-brain BSMN cohort; ASD enhancer enrichment
 - [[10-Summaries/mcconnell-2017-science\|McConnell 2017]] — founding BSMN review
 - [[10-Summaries/miller-2022-nature\|Miller 2022]] — AD-specific excess sSNVs in 319 neurons
 - [[10-Summaries/kousi-2022-ad-mosaicism\|Kousi/Kellis 2022]] — cell-type-specific AD somatic burden
-- [[10-Summaries/eran-2025-neuron\|Mukamel 2025]] — snmC-seq aneuploidy detection in mouse brain
+- [[10-Summaries/mukamel-2025-aneuploidy-brain\|Mukamel 2025]] — snmC-seq aneuploidy detection in mouse brain
 - [[10-Summaries/luquette-2025-pta-duplex-mosaicism\|Luquette/Walsh 2025]] — PTA + DS validation on 102 nuclei
 
 ### Hematopoiesis & Cancer
-- [[10-Summaries/lee-six-2018-nature\|Lee-Six 2018]] — 140 HSPC colonies; HSC pool size estimate
+- [[10-Summaries/lee-2019-natmethods\|Lee-Six 2018]] — 140 HSPC colonies; HSC pool size estimate
 - [[10-Summaries/coorens-2021-nature\|Coorens 2021]] — 511 LCM-WGS; asymmetric zygote contribution
 - [[10-Summaries/cagan-2022-nature\|Cagan 2022]] — 16 mammalian species; mutation rate × lifespan
-- [[10-Summaries/kim-2018-cell\|Kim 2018]] — TNBC chemoresistance scDNA + scRNA
-- [[10-Summaries/frankell-2019-natgenet\|Frankell 2019]] — 551-EAC bulk WGS
+- [[10-Summaries/kim-2018-tnbc-chemoresistance\|Kim 2018]] — TNBC chemoresistance scDNA + scRNA
+- [[10-Summaries/frankell-2019-eac-landscape\|Frankell 2019]] — 551-EAC bulk WGS
 - [[10-Summaries/navin-2011-sns-tumor-evolution\|Navin/Wigler 2011]] — founding single-nucleus tumor sequencing
 - [[10-Summaries/lim-2020-cancercell\|Lim/Navin 2020]] — cancer + single-cell genomics review
 
 ### Lineage Tracing
 - [[10-Summaries/mckenna-2016-science\|McKenna 2016 (GESTALT)]] — CRISPR barcode lineage tracing
-- [[10-Summaries/federico-2019-nature\|Gaiti 2019]] — epimutation as molecular clock in CLL
+- [[10-Summaries/gaiti-2019-cll-epigenetic\|Gaiti 2019]] — epimutation as molecular clock in CLL
 - [[10-Summaries/scherer-2025-nature\|Scherer 2025 (EPI-Clone)]] — methylation-based lineage tracing
 - [[10-Summaries/chen-2025-methyltree\|Chen 2025 (MethylTree)]] — epimutation lineage from scBS-seq
 
@@ -74,15 +74,15 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/glynos-2023-mtdna-mosaicism\|Hsieh/Ludwig 2026]] — scmtMPM + scwMSS mtDNA mosaicism metrics
 - [[10-Summaries/sun-2025-scmitomut\|Sun/Perié 2025]] — scMitoMut beta-binomial mtDNA calling
 - [[10-Summaries/miller-2022-maester\|Miller/van Galen 2022]] — MAESTER mtDNA from scRNA-seq
-- [[10-Summaries/caleb-2021-naturebiotechnology\|Lareau 2021]] — mtscATAC-seq
+- [[10-Summaries/ludwig-2020-mtscatac-seq\|Ludwig/Lareau 2020]] — mtscATAC-seq
 
 ---
 
 ## Multi-Omics Joint Assays
 
 ### Genotype + Transcriptome / Chromatin
-- [[10-Summaries/anna-2019-nature\|Nam 2019 (GoT)]] — genotype + scRNA in CALR-MPN
-- [[10-Summaries/franco-2024-nature\|Izzo 2024 (GoT-ChA)]] — genotype + scATAC in JAK2-MPN
+- [[10-Summaries/nam-2019-got\|Nam 2019 (GoT)]] — genotype + scRNA in CALR-MPN
+- [[10-Summaries/izzo-2024-got-cha\|Izzo 2024 (GoT-ChA)]] — genotype + scATAC in JAK2-MPN
 - [[10-Summaries/cortes-lopez-2023-cellstemcell\|Cortés-López 2023 (GoT-Splice)]] — four-modality joint assay
 - [[10-Summaries/nam-2022-natgenet\|Nam 2022]] — GoT + scMethylome on DNMT3A-R882
 
@@ -92,19 +92,19 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/hou-2016-sctrio-seq\|Hou 2016 (scTrio-seq)]] — CNV + methylation + RNA
 
 ### Chromatin + Transcriptome
-- [[10-Summaries/cao-2018-science\|Cao 2018 (sci-CAR)]] — scATAC + scRNA via combinatorial indexing
+- [[10-Summaries/cao-2018-sci-car\|Cao 2018 (sci-CAR)]] — scATAC + scRNA via combinatorial indexing
 - [[10-Summaries/ma-2020-cell\|Ma 2020 (SHARE-seq)]] — joint scATAC + scRNA; chromatin potential
 - [[10-Summaries/clark-2018-scnmt-seq|Clark 2018 (scNMT-seq)]] — accessibility + methylation + RNA
 
 ### Gap-Closing Methods (2025)
-- [[10-Summaries/andrea-2025-biorxiv\|Kriz 2025 (Duplex-Multiome)]] — duplex + snATAC + snRNA in same nucleus
-- [[10-Summaries/elliott-2025-naturebiotechnology\|Swanson 2025 (DAF-seq)]] — deaminase single-cell diploid chromatin fiber seq
+- [[10-Summaries/kriz-2025-duplex-multiome\|Kriz 2025 (Duplex-Multiome)]] — duplex + snATAC + snRNA in same nucleus
+- [[10-Summaries/swanson-2025-daf-seq\|Swanson 2025 (DAF-seq)]] — deaminase single-cell diploid chromatin fiber seq
 
 ### Computational Integration
 - [[10-Summaries/argelaguet-2020-mofa-plus\|Argelaguet 2020 (MOFA+)]] — scalable multimodal factor analysis
 - [[10-Summaries/ashuach-2023-multivi\|Ashuach 2023 (MultiVI)]] — deep generative multimodal integration
 - [[10-Summaries/cao-2022-glue\|Cao 2022 (GLUE)]] — graph-linked unpaired multi-omics
-- [[10-Summaries/gong-2021-genomebiol\|Gong 2021 (Cobolt)]] — multimodal VAE for scRNA + scATAC
+- [[10-Summaries/gong-2021-cobolt\|Gong 2021 (Cobolt)]] — multimodal VAE for scRNA + scATAC
 - [[10-Summaries/xiao-2024-multiomics-benchmark\|Xiao 2024]] — 12-method multi-omics benchmark
 
 ---
@@ -113,7 +113,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 
 ### Founding Methods
 - [[10-Summaries/buenrostro-2015-nature\|Buenrostro 2015]] — founding Fluidigm scATAC-seq
-- [[10-Summaries/cusanovich-2015-science\|Cusanovich 2015 (sci-ATAC)]] — combinatorial-indexing scATAC
+- [[10-Summaries/cusanovich-2015-sciatac\|Cusanovich 2015 (sci-ATAC)]] — combinatorial-indexing scATAC
 - [[10-Summaries/jin-2015-nature\|Jin/Zhao 2015 (scDNase-seq)]] — founding DNase-based single-cell method
 - [[10-Summaries/mezger-2018-microfluidic-atac\|Mezger 2018 (µATAC-seq)]] — nanowell-based scATAC
 
@@ -124,7 +124,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/zhang-2024-snapatac2\|Zhang 2024 (SnapATAC2)]] — next-gen scalable tool
 - [[10-Summaries/danese-2021-episcanpy\|Danese 2021 (EpiScanpy)]] — unified epigenomics framework
 - [[10-Summaries/zamanighomi-2018-scabc\|Zamanighomi 2018 (scABC)]] — weighted k-medoids
-- [[10-Summaries/jeffrey-2021-naturegenetics\|Granja 2021 (ArchR)]] — 1.2M-cell scATAC toolkit
+- [[10-Summaries/granja-2021-archr\|Granja 2021 (ArchR)]] — 1.2M-cell scATAC toolkit
 - [[10-Summaries/stuart-2021-natmethods\|Stuart 2021 (Signac)]] — Seurat-compatible chromatin toolkit
 - [[10-Summaries/yuan-2022-scbasset\|Yuan 2022 (scBasset)]] — deep-CNN sequence model
 - [[10-Summaries/cui-2024-natmethods\|Cui 2024 (scGPT)]] — transformer foundation model
@@ -138,10 +138,10 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 
 ## Histone Modifications (Single-Cell)
 
-- [[10-Summaries/rotem-2015-natbiotech\|Rotem 2015 (Drop-ChIP)]] — founding scChIP-seq via droplets
+- [[10-Summaries/rotem-2015-drop-chip\|Rotem 2015 (Drop-ChIP)]] — founding scChIP-seq via droplets
 - [[10-Summaries/sarah-2019-cell\|Hainer 2019 (uliCUT&RUN)]] — ultra-low-input from 10–50 cells
-- [[10-Summaries/marek-2021-naturebiotechnology\|Bartosovic 2021 (scCUT&Tag)]] — droplet-based mouse CNS
-- [[10-Summaries/marek-2023-naturebiotechnology\|Bartosovic 2023 (nano-CT)]] — three-modality per nucleus
+- [[10-Summaries/bartosovic-2021-sccut-tag\|Bartosovic 2021 (scCUT&Tag)]] — droplet-based mouse CNS
+- [[10-Summaries/bartosovic-2022-nano-cut-tag\|Bartosovic 2023 (nano-CT)]] — three-modality per nucleus
 - [[10-Summaries/ku-2019-scchic-seq\|Ku 2019 (scChIC-seq)]] — MNase-based histone profiling
 - [[10-Summaries/yeung-2023-scchix-seq\|Yeung 2023 (scChIX-seq)]] — two-mark deconvolution
 - [[10-Summaries/janssens-2023-scicut-tag\|Janssens 2023 (sciCUT&Tag)]] — combinatorial indexing at scale
@@ -153,14 +153,14 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 
 ### Foundational Methods
 - [[10-Summaries/smallwood-2014-natmethods\|Smallwood 2014 (scBS-seq)]] — founding genome-wide single-cell bisulfite
-- [[10-Summaries/hongshan-2013-genomeresearch\|Guo/Tang 2013 (scRRBS)]] — foundational single-cell methylome
-- [[10-Summaries/chongyuan-2018-naturecommunications\|Luo/Ecker 2018 (snmC-seq2)]] — improved chemistry for brain atlas
+- [[10-Summaries/guo-2013-scrrbs\|Guo/Tang 2013 (scRRBS)]] — foundational single-cell methylome
+- [[10-Summaries/luo-2018-snmc-seq2\|Luo/Ecker 2018 (snmC-seq2)]] — improved chemistry for brain atlas
 - [[10-Summaries/nichols-2022-scimet-v2\|Nichols 2022 (sciMETv2)]] — high-throughput combinatorial indexing
 
 ### Reviews
-- [[10-Summaries/schubeler-2015-nature\|Schübeler 2015]] — methylation as consequence, not instruction
+- [[10-Summaries/schubeler-2015-methylation-review\|Schübeler 2015]] — methylation as consequence, not instruction
 - [[10-Summaries/kim-2017-methylation-memory-review|Kim/Costello 2017]] — methylation as cellular memory
-- [[10-Summaries/yilei-2025-naturereviewsgenetics\|Fu/Timp/Sedlazeck 2025]] — long-read methylation computational analysis
+- [[10-Summaries/fu-2025-longread-methylation\|Fu/Timp/Sedlazeck 2025]] — long-read methylation computational analysis
 - [[10-Summaries/iqbal-2023-methylome-review\|Iqbal/Zhou 2023]] — scDNA methylome computational review
 
 ### Joint Methylation Assays
@@ -168,12 +168,12 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/hunt-2022-sctem-seq\|Hunt/Lee 2022 (scTEM-seq)]] — TE methylation as global proxy
 - [[10-Summaries/bai-2024-simple-seq\|Bai/Yi 2024 (SIMPLE-seq)]] — joint 5mC + 5hmC
 - [[10-Summaries/shen-2026-splicool-seq|Shen/Fan 2025 (SpliCOOL-seq)]] — methylation + accessibility
-- [[10-Summaries/tavares-2026-6base-cuttag\|Tavares 2026 (6-base-CUT&Tag)]] — 5mC + 5hmC at histone marks
+- [[10-Summaries/tavares-2026-6-base-cut-tag\|Tavares 2026 (6-base-CUT&Tag)]] — 5mC + 5hmC at histone marks
 - [[10-Summaries/geisenberger-2025-scepi2-seq\|Geisenberger 2025 (scEpi²-seq)]] — histone + 5mC
 - [[10-Summaries/lee-2019-natmethods\|Lee 2019 (sn-m3C-seq)]] — methylome + 3C joint
 
 ### Atlas-Scale
-- [[10-Summaries/liu-2023-nature\|Liu/Ecker 2023]] — 301K methylome whole-mouse-brain atlas
+- [[10-Summaries/liu-2023-mouse-brain-methylome-3d\|Liu/Ecker 2023]] — 301K methylome whole-mouse-brain atlas
 - [[10-Summaries/argelaguet-2019-nature\|Argelaguet 2019]] — scNMT-seq in mouse gastrulation
 
 ### Computational
@@ -198,7 +198,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/lee-2020-nanonome\|Lee/Timp 2020 (nanoNOMe)]] — nanopore joint methylation + accessibility
 - [[10-Summaries/wang-2019-mesmlr\|Wang/Au 2019 (MeSMLR-seq)]] — foundational Nanopore yeast footprinting
 - [[10-Summaries/mo-2023-stam-seq\|Mo/Zhai 2023 (STAM-seq)]] — plant nanopore HRR epigenomics
-- [[10-Summaries/doughty-2024-nature\|Doughty 2024]] — SMF on engineered enhancer-promoter constructs
+- [[10-Summaries/doughty-2024-single-molecule-chromatin-config\|Doughty 2024]] — SMF on engineered enhancer-promoter constructs
 - [[10-Summaries/liu-2025-long-read-epigenome-review\|Liu/Conesa 2025]] — long-read epigenomics review
 
 ---
@@ -216,7 +216,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 
 - [[10-Summaries/schmitt-2012-pnas\|Schmitt/Loeb 2012]] — founding Duplex Sequencing
 - [[10-Summaries/kennedy-2014-duplex-protocol\|Kennedy/Loeb 2014]] — founding DS protocol
-- [[10-Summaries/federico-2021-nature\|Abascal 2021 (NanoSeq)]] — <5 errors/billion bp
+- [[10-Summaries/abascal-2021-nanoseq\|Abascal 2021 (NanoSeq)]] — <5 errors/billion bp
 - [[10-Summaries/bae-2023-codec\|Bae 2023 (CODEC)]] — concatenated single-duplex sequencing
 - [[10-Summaries/nandi-2025-udseq\|Nandi/Alexandrov 2025 (UDSeq)]] — universal DS from 100 pg
 - [[10-Summaries/zhang-2025-smaht-duplex-benchmark\|Zhang/Coorens 2025]] — SMaHT 6-platform benchmark
@@ -226,7 +226,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 ## Variant Calling & Phylogeny Tools
 
 ### SNV Callers
-- [[10-Summaries/zafar-2016-natmethods\|Zafar 2016 (Monovar)]] — founding multi-cell SNV caller
+- [[10-Summaries/zafar-2016-monovar\|Zafar 2016 (Monovar)]] — founding multi-cell SNV caller
 - [[10-Summaries/dong-2017-sccaller\|Dong/Vijg 2017 (SCcaller)]] — bulk-anchored variant caller
 - [[10-Summaries/tu-2021-scout-genotyper\|Tu 2021 (SCOUT)]] — local-territory genotyper
 - [[10-Summaries/lahnemann-2021-natcomm\|Lähnemann 2021 (ProSolo)]] — joint SC + bulk with FDR
@@ -251,7 +251,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 
 ### Phylogeny Inference
 - [[10-Summaries/jahn-2016-scite\|Jahn 2016 (SCITE)]] — founding tumor-phylogeny inference
-- [[10-Summaries/zafar-2017-genomebiol\|Zafar 2017 (SiFit)]] — finite-sites tumor phylogeny
+- [[10-Summaries/zafar-2017-sifit\|Zafar 2017 (SiFit)]] — finite-sites tumor phylogeny
 - [[10-Summaries/satas-2020-scarlet\|Satas 2020 (SCARLET)]] — CN-constrained SNV-loss phylogeny
 - [[10-Summaries/kaufmann-2022-medicc2\|Kaufmann 2022 (MEDICC2)]] — WGD-aware CN phylogeny
 - [[10-Summaries/lu-2024-cnaphylogeny-review\|Lu 2025]] — CNA-based phylogenetic inference review

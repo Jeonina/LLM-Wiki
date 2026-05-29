@@ -44,5 +44,5 @@ updated: 2026-05-19
 
 ## Linked summaries (lint pass 2026-05-21)
 
-- [[10-Summaries/tu-2021-scout-genotyper-genotyper]] — Tu 2021 — SCOUT genotyper using local genome territory.
+- [[10-Summaries/tu-2021-scout-genotyper]] — Tu 2021 — SCOUT genotyper using local genome territory.
 

@@ -31,6 +31,7 @@ GoT is also the foundational method in the [[20-Entities/landau-lab|Landau Lab]]
 - **Multiplexed GoT** ([[10-Summaries/nam-2019-got]]) — multiple gene-specific primers in parallel; demonstrated for CALR + NFE2 + SF3B1 simultaneously.
 - **[[30-Concepts/circularization-got]]** ([[10-Summaries/nam-2019-got]]) — circularization + inverse PCR to genotype loci distant from transcript ends (e.g. JAK2V617F).
 - **[[30-Concepts/got-cha]]** ([[10-Summaries/izzo-2024-got-cha]]) — replaces RNA with chromatin accessibility and cDNA capture with gDNA capture; supersedes circularization GoT for low-expression / distal-locus drivers.
+- **[[30-Concepts/sdr-seq]]** ([[10-Summaries/lindenhofer-2025-sdr-seq]]) — generalizes the genotype-to-transcriptome logic to a direct targeted gDNA readout (≤480 loci+genes on Tapestri), capturing coding *and* noncoding variants rather than only those present in mRNA.
 
 ## Contested points
 
@@ -46,6 +47,7 @@ GoT is also the foundational method in the [[20-Entities/landau-lab|Landau Lab]]
 
 - [[circularization-got]]
 - [[got-cha]]
+- [[30-Concepts/sdr-seq]]
 - [[chromatin-accessibility]]
 - [[single-molecule-footprinting]]
 - [[40-Topics/single-cell-multiomics]]

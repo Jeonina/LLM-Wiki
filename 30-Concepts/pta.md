@@ -32,6 +32,7 @@ PTA simultaneously fixed three of MDA's failure modes — coverage, uniformity, 
 - **PTA v1** vs **v2** — v2 lower cost, comparable performance.
 - **SCAN2** — variant caller designed for PTA data (somatic indels and SNVs).
 - Used in Tn5-based extensions: scDAF-seq specifically pairs PTA + PacBio long reads, because PTA generates partially overlapping amplicons from the same haplotype-strand which can be merged into long consensus reads.
+- **Joint genome + transcriptome via PTA** — ResolveOME and SMART-PTA (preprints) leverage primary template-directed amplification to read a cell's transcriptome alongside its clonal genome, an alternative to the nucleosome-depletion route of DEFND-seq ([[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review]]). DEFND-seq's coverage uniformity is benchmarked against PTA ([[10-Summaries/olsen-2025-defnd-seq]]).
 
 ## Contested points
 

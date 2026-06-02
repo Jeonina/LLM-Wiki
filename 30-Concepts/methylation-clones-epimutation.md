@@ -25,7 +25,11 @@ Epimutations accumulate at predictable rates at clock-like CpGs (e.g., ELOVL2, s
 
 Methylation-based lineage tracing works in human tissue without genetic engineering. It complements somatic-mutation-based lineage tracing ([[30-Concepts/lineage-tracing]]) — methylation is denser but noisier; mutations are sparser but more confident.
 
+## Cross-modal comparison
+
+A head-to-head of methylation, ATAC-seq, and RNA against ground-truth barcodes points to the **superiority of the methylome for inferring clonal relationships** — methylation patterns are noisy but carry the strongest clonal signal once cell-type and cell-state variation are regressed out ([[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review]]). The discovery of slow-fluctuating "static" CpGs widens epimutation tracing from cancer to normal-tissue clonal dynamics ([[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review]]).
+
 ## Related
 
-- [[30-Concepts/lineage-tracing]] · [[30-Concepts/epigenetic-memory]] · [[30-Concepts/epigenetic-aging]]
-- [[40-Topics/dna-methylation]]
+- [[30-Concepts/lineage-tracing]] · [[30-Concepts/epigenetic-memory]] · [[30-Concepts/epigenetic-aging]] · [[30-Concepts/phylogenetic-inference]]
+- [[40-Topics/dna-methylation]] · [[40-Topics/single-cell-lineage-tracing]]

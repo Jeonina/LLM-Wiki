@@ -26,6 +26,8 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 - [[30-Concepts/cite-seq]] — scRNA + surface protein via antibody-derived tags.
 - [[30-Concepts/g-t-seq]] — G&T-seq, physical-separation scDNA + scRNA (1st joint DNA+RNA assay).
 - [[30-Concepts/dr-seq]] — DR-seq, one-pot quasilinear scDNA + scRNA alternative to G&T-seq.
+- [[30-Concepts/defnd-seq]] — DEFND-seq, scalable droplet whole-genome + RNA via nucleosome depletion on stock 10x Multiome.
+- [[30-Concepts/sdr-seq]] — SDR-seq, targeted droplet DNA + RNA on Tapestri with low allelic dropout and per-cell zygosity.
 - [[30-Concepts/sci-car]] — sci-CAR, combinatorial-indexing scATAC + scRNA at thousands of cells.
 - [[30-Concepts/share-seq]] — SHARE-seq, split-pool scATAC + scRNA at tens of thousands of cells; introduces chromatin-potential framework.
 - [[30-Concepts/scnmt-seq]] — scNMT-seq, first single-cell triple-omics (methylation + accessibility + RNA).
@@ -68,6 +70,8 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 
 - [[10-Summaries/macaulay-2015-gt-seq]] — Macaulay 2015: G&T-seq, separation-based scDNA + scRNA; trisomy-11 subclone in HCC38-BL.
 - [[10-Summaries/dey-2015-dr-seq]] — Dey 2015: DR-seq, one-pot scDNA + scRNA; CNVs drive expression variability.
+- [[10-Summaries/olsen-2025-defnd-seq]] — Olsen/Sims 2025: DEFND-seq, scalable droplet whole-genome + RNA on 10x Multiome; glioblastoma CNV/SNV-to-expression links.
+- [[10-Summaries/lindenhofer-2025-sdr-seq]] — Lindenhofer/Steinmetz 2025: SDR-seq, targeted Tapestri DNA + RNA (≤480 loci+genes), ~90% allele recovery; B-cell lymphoma clonal/variant phenotyping.
 
 ### Joint chromatin + RNA (accessibility-anchored)
 

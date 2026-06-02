@@ -45,7 +45,7 @@ Subsequent platforms split along the same axis:
 
 - **Platform comparability** — PUMATAC benchmarking ([[10-Summaries/derop-2024-natbiotech]]) shows non-trivial systematic differences in peak calls and cell-type assignment across 10x / sci-ATAC / dscATAC / ddSEQ-ATAC; cross-platform meta-analysis requires platform-aware correction.
 - **Peak vs bin matrix** — fixed-genomic-bin matrices (SnapATAC2 — [[10-Summaries/zhang-2024-snapatac2]]) avoid peak-calling bias but inflate feature count; peak-based matrices (ArchR — [[10-Summaries/granja-2021-archr]]) are more interpretable but sensitive to peak-call parameters.
-- **Sparsity vs information content** — only ~5–15% of accessible peaks fire per cell; binarization vs continuous count modeling remains a live methods debate ([[10-Summaries/yuan-2022-scbasset]]).
+- **Sparsity vs information content** — only ~5–15% of accessible peaks fire per cell; binarization vs continuous count modeling remains a live methods debate ([[10-Summaries/yuan-2022-scbasset]]). Imputation/denoising is one response: scOpen (regularized NMF, [[10-Summaries/li-2021-scopen]]) and SCALE (VAE + GMM, [[10-Summaries/xiong-2019-scale]]) recover dropout signal, though whether imputation clarifies or hallucinates remains contested ([[10-Summaries/li-2021-scopen]]). See [[30-Concepts/scatac-imputation]].
 
 ## Variants and refinements
 
@@ -64,5 +64,6 @@ Subsequent platforms split along the same axis:
 
 - [[30-Concepts/atac-seq]] · [[30-Concepts/tn5-tagmentation]] · [[30-Concepts/chromatin-accessibility]]
 - [[30-Concepts/chromvar]] · [[30-Concepts/cistopic]] · [[30-Concepts/snapatac]] · [[30-Concepts/episcanpy]] · [[30-Concepts/scabc]]
+- [[30-Concepts/scatac-imputation]] · [[30-Concepts/scopen]] · [[30-Concepts/scale]]
 - [[30-Concepts/cut-and-tag]] · [[30-Concepts/scchic-seq]] · [[30-Concepts/single-cell-multiomics]]
 - [[40-Topics/single-cell-atac-seq]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/chromatin-architecture]]

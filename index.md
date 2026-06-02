@@ -30,8 +30,10 @@ The foundation: how to sequence a genome from one cell. Covers whole-genome ampl
 
 Post-zygotic mutations as both disease drivers and natural lineage barcodes. From brain mosaicism to clonal hematopoiesis, from Peto's paradox to aging.
 
-**Start here →** [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/lineage-tracing]] · [[30-Concepts/clonal-hematopoiesis]]
+**Start here →** [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/lineage-tracing]] · [[30-Concepts/clonal-hematopoiesis]] · [[40-Topics/single-cell-lineage-tracing]]
 **Key papers →** [[10-Summaries/lodato-2015-science|Lodato 2015]] · [[10-Summaries/coorens-2021-nature|Coorens 2021]] · [[10-Summaries/cagan-2022-nature|Cagan 2022]]
+**Lineage-tracing reviews (NRG 2026) →** [[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review|Rodriguez-Fraticelli & Parreno (technologies)]] · [[10-Summaries/wang-2026-multimodal-lineage-computational|Wang, He & Hu (computational)]]
+**Tracing concepts →** [[30-Concepts/crispr-lineage-recording]] · [[30-Concepts/phylogenetic-inference]] · [[30-Concepts/mitochondrial-lineage-tracing]] · [[30-Concepts/methylation-clones-epimutation]]
 **Brain focus →** [[10-Summaries/bae-2017-pregastrulation-mutations|Bae 2018]] · [[10-Summaries/taejeong-2022-science|Bae 2022]] · [[10-Summaries/miller-2022-nature|Miller 2022 (AD)]]
 **Reviews →** [[10-Summaries/forsberg-2017-mosaicism-review|Forsberg/Dumanski 2017 NRG]] · [[10-Summaries/hilal-2026-cardiac-somatic-review|Hilal 2026 (cardiac)]] · [[10-Summaries/hsieh-2026-scmtmpm-scwmss|Hsieh 2026 (mtDNA burden metrics)]]
 **Stem cell aging →** [[10-Summaries/kapadia-2024-stem-cell-aging|Kapadia & Goodell 2024]]
@@ -45,6 +47,7 @@ Measuring open chromatin at single-cell resolution. Includes founding methods, c
 **Start here →** [[30-Concepts/scatac-seq]] · [[30-Concepts/chromatin-accessibility]] · [[30-Concepts/cut-and-tag]]
 **Founding methods →** [[10-Summaries/buenrostro-2015-nature|Buenrostro 2015]] · [[10-Summaries/cusanovich-2015-sciatac|Cusanovich 2015 (sci-ATAC)]]
 **Tools →** [[30-Concepts/chromvar]] · [[30-Concepts/cistopic]] · [[30-Concepts/snapatac]] · [[10-Summaries/granja-2021-archr|ArchR]]
+**Imputation / denoising →** [[30-Concepts/scatac-imputation]] · [[10-Summaries/li-2021-scopen|scOpen (NMF)]] · [[10-Summaries/xiong-2019-scale|SCALE (VAE+GMM)]]
 **Enhancer state →** [[10-Summaries/creyghton-2010-h3k27ac-enhancers|Creyghton 2010 (H3K27ac active/poised partition)]] · [[30-Concepts/enhancer-states]]
 
 ---
@@ -76,6 +79,7 @@ Methods that read two or more modalities from the same cell: genotype + transcri
 **Start here →** [[30-Concepts/single-cell-multiomics]] · [[30-Concepts/got]] · [[30-Concepts/got-cha]]
 **GoT family →** [[10-Summaries/nam-2019-got|Nam 2019]] · [[10-Summaries/izzo-2024-got-cha|Izzo 2024]] · [[10-Summaries/cortes-lopez-2023-cellstemcell|GoT-Splice]]
 **DNA + Epigenome →** [[10-Summaries/swanson-2025-daf-seq|DAF-seq]] · [[10-Summaries/kriz-2025-duplex-multiome|Duplex-Multiome]]
+**Scalable DNA + RNA →** [[30-Concepts/defnd-seq]] · [[10-Summaries/olsen-2025-defnd-seq|DEFND-seq (whole-genome)]] · [[30-Concepts/sdr-seq]] · [[10-Summaries/lindenhofer-2025-sdr-seq|SDR-seq (targeted, low ADO)]]
 **Reviews →** [[10-Summaries/wang-2023-multimodal-review|Wang & Jin 2023 methods+integration]] · [[10-Summaries/baysoy-2023-multiomics-landscape|Baysoy 2023]] · [[10-Summaries/vandereyken-2023-scmultiomics-review|Vandereyken 2023]] · [[10-Summaries/bi-2024-multiomics-review|Bi & Weng 2024 (integration topology + protein lineages)]]
 
 ---

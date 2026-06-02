@@ -4,6 +4,52 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-06-02 — Ingest: 6 new clippings (scATAC imputation + joint DNA-RNA + lineage-tracing reviews)
+
+**Trigger**: User said "ingest new clippings." `tools/pending-sources.sh` found 6 pending of 191 sources.
+
+### Sources ingested
+
+- [[10-Summaries/li-2021-scopen]] — scOpen: regularized NMF imputation for scATAC-seq (Nat Commun; Costa lab).
+- [[10-Summaries/xiong-2019-scale]] — SCALE: VAE + Gaussian Mixture Model for scATAC-seq (Nat Commun; Q.C. Zhang lab).
+- [[10-Summaries/olsen-2025-defnd-seq]] — DEFND-seq: scalable droplet whole-genome + RNA via nucleosome depletion on 10x Multiome (Nat Methods; Sims lab).
+- [[10-Summaries/lindenhofer-2025-sdr-seq]] — SDR-seq: targeted Tapestri DNA + RNA, low ADO, variant phenotyping (Nat Methods; Steinmetz lab).
+- [[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review]] — lineage-tracing *technologies* review (Nat Rev Genet 2026).
+- [[10-Summaries/wang-2026-multimodal-lineage-computational]] — lineage-tracing *computational* review (Nat Rev Genet 2026).
+
+### Pages created (16)
+
+- **Concepts (7)**: [[30-Concepts/scopen]], [[30-Concepts/scale]], [[30-Concepts/scatac-imputation]] (hub), [[30-Concepts/defnd-seq]], [[30-Concepts/sdr-seq]], [[30-Concepts/crispr-lineage-recording]], [[30-Concepts/phylogenetic-inference]].
+- **Topic (1)**: [[40-Topics/single-cell-lineage-tracing]] (new backbone topic; static/evolvable × prospective/retrospective taxonomy).
+- **Entities (7)**: [[20-Entities/ivan-costa]], [[20-Entities/qiangfeng-cliff-zhang]], [[20-Entities/peter-a-sims]], [[20-Entities/lars-steinmetz]], [[20-Entities/oliver-stegle]], [[20-Entities/alejo-rodriguez-fraticelli]], [[20-Entities/zheng-hu]].
+- Plus the 6 summaries above.
+
+### Existing pages touched (graph weave)
+
+- [[30-Concepts/scatac-seq]] — added imputation note + Related links.
+- [[30-Concepts/cistopic]] — noted cisTopic-impute is the imputation baseline scOpen/SCALE beat.
+- [[30-Concepts/joint-single-cell-multi-omics]] — added DEFND-seq/SDR-seq breadth-vs-depth (ADO) variant.
+- [[30-Concepts/got]] — SDR-seq generalizes genotyping-of-transcriptomes to direct gDNA readout.
+- [[30-Concepts/pta]] — added ResolveOME/SMART-PTA joint WGS+RNA + DEFND-seq benchmark.
+- [[30-Concepts/lineage-tracing]] — added synthetic/CRISPR + multimodal/computational branches and the two reviews.
+- [[30-Concepts/mitochondrial-lineage-tracing]] — added caveats + method summaries + topic link.
+- [[30-Concepts/methylation-clones-epimutation]] — added the methylome-beats-ATAC/RNA cross-modal claim.
+- Topics [[40-Topics/single-cell-atac-seq]] and [[40-Topics/single-cell-multiomics]] — added new methods + sources.
+- [[index]] — added new sources/concepts/topic across three sections.
+
+### Notable findings / tensions
+
+- **scATAC imputation is contested**: scOpen (NMF) reports beating SCALE (deep) on AUPR + memory; SCALE's edge is interpretability and batch-effect detection. Whether imputation clarifies or hallucinates remains an open methods question.
+- **Breadth vs depth in joint DNA-RNA** mirrors the existing droplet-vs-single-molecule note: DEFND-seq = whole-genome but >90%+ ADO; SDR-seq = targeted but ~90% allele recovery (per-cell zygosity). Logged into [[50-Notes/droplet-vs-single-molecule-scdna]] family.
+- The two NRG 2026 reviews are an explicit technology/algorithm pair (each cites the other); they anchor the new [[40-Topics/single-cell-lineage-tracing]] topic.
+- Rodriguez-Fraticelli claims the **methylome outperforms ATAC and RNA for clonal inference** against ground-truth barcodes — a strong, trackable claim now flagged on [[30-Concepts/methylation-clones-epimutation]].
+
+### Verification
+
+- All wikilinks in the 6 summaries + 16 new pages + edited hubs verified to resolve (0 broken). Fixed 2 self-introduced typos pre-commit (`got.md` link, `scite` concept link).
+
+---
+
 ## 2026-05-29 — Off-topic move + dedup sweep (9 duplicate summaries collapsed)
 
 **Trigger**: User asked "anything else you missed?" after the prior pending-burndown session. Audit surfaced:

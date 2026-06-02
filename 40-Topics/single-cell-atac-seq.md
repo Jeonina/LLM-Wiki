@@ -22,6 +22,9 @@ updated: 2026-05-12
 - [[30-Concepts/snapatac]] — peak-free 5-kb-window Jaccard clustering
 - [[30-Concepts/episcanpy]] — scanpy-based unified epigenomics framework
 - [[30-Concepts/scabc]] — weighted k-medoids clustering
+- [[30-Concepts/scatac-imputation]] — dropout recovery / denoising landscape
+- [[30-Concepts/scopen]] — regularized NMF imputation
+- [[30-Concepts/scale]] — VAE + Gaussian Mixture Model deep generative method
 
 ## Key entities
 
@@ -47,6 +50,10 @@ updated: 2026-05-12
 
 ### Comparison to bulk
 - [[10-Summaries/gur-2025-scatac-vs-bulk]] — Gur/Hughes 2025. Pseudo-bulked scATAC matches bulk ATAC and reveals within-population heterogeneity.
+
+### Imputation and denoising
+- [[10-Summaries/li-2021-scopen]] — Li/Costa 2021. scOpen: regularized NMF imputation; lowest memory; Runx1 in kidney fibrosis.
+- [[10-Summaries/xiong-2019-scale]] — Xiong/Zhang 2019. SCALE: VAE + GMM; interpretable latent features; reveals batch effects.
 
 ## Synthesized notes
 

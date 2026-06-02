@@ -20,6 +20,7 @@ Input: binary cell × region accessibility matrix. LDA derives two distributions
 - Resolves temporal heterogeneity that chromVAR averages away (e.g., GATA-mediated regulation at HSC vs intermediate vs MEP stages, each a distinct topic).
 - Naturally handles sparsity via topic aggregation.
 - Topic regions enrich for TF motifs that correspond to cell-type master regulators.
+- Its multiplied topic-cell × region-topic distributions also serve as an imputation ("cisTopic-impute"), a baseline later benchmarked against scOpen and SCALE ([[10-Summaries/li-2021-scopen]], [[10-Summaries/xiong-2019-scale]]). See [[30-Concepts/scatac-imputation]].
 
 ## Examples
 
@@ -27,4 +28,4 @@ Input: binary cell × region accessibility matrix. LDA derives two distributions
 
 ## Related
 
-- [[30-Concepts/latent-dirichlet-allocation]] · [[30-Concepts/scatac-seq]] · [[30-Concepts/chromvar]] · [[30-Concepts/snapatac]] · [[40-Topics/single-cell-atac-seq]] · [[20-Entities/stein-aerts]]
+- [[30-Concepts/latent-dirichlet-allocation]] · [[30-Concepts/scatac-seq]] · [[30-Concepts/chromvar]] · [[30-Concepts/snapatac]] · [[30-Concepts/scatac-imputation]] · [[30-Concepts/scopen]] · [[30-Concepts/scale]] · [[40-Topics/single-cell-atac-seq]] · [[20-Entities/stein-aerts]]

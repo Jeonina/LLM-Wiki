@@ -39,6 +39,8 @@ In humans specifically, [[lineage-tracing]] using endogenous mutations is one of
 - **Targeted sequencing of lineage-informative loci** — cheaper, allows thousands of cells (e.g., leukemia lineage studies cited in [[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 - **Whole-genome reconstruction** — slower but unbiased; preferred when lineage markers are unknown a priori.
 - **Combined with single-cell phenotype** (scRNA-seq, surface protein) to map lineage onto cell type — the "phenotypic association" capability in [[10-Summaries/evrony-2021-scDNA-applications-review]].
+- **Synthetic / prospective barcoding** — engineered static (lentiviral, recombinase, transposase) or evolvable CRISPR recorders that accrue heritable edits; the modern prospective vs retrospective and static vs evolvable taxonomy is laid out in [[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review]]. See [[30-Concepts/crispr-lineage-recording]].
+- **Multimodal / computational** — joint genotype + state assays (DEFND-seq [[10-Summaries/olsen-2025-defnd-seq]], SDR-seq [[10-Summaries/lindenhofer-2025-sdr-seq]]) feed phylogenetic-inference algorithms reviewed in [[10-Summaries/wang-2026-multimodal-lineage-computational]]. See [[30-Concepts/phylogenetic-inference]].
 
 ## Contested points
 
@@ -58,4 +60,5 @@ In humans specifically, [[lineage-tracing]] using endogenous mutations is one of
 - [[scwga]]
 - [[pta]]
 - [[scdna-capabilities-framework]]
-- [[40-Topics/scdna-seq]]
+- [[30-Concepts/crispr-lineage-recording]] · [[30-Concepts/phylogenetic-inference]] · [[30-Concepts/mitochondrial-lineage-tracing]] · [[30-Concepts/methylation-clones-epimutation]]
+- [[40-Topics/scdna-seq]] · [[40-Topics/single-cell-lineage-tracing]]

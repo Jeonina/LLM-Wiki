@@ -23,10 +23,11 @@ A joint multi-omic assay reads ≥2 of: DNA sequence, RNA, chromatin accessibili
 ## Variants
 
 - **Joint genome + transcriptome** — G&T-seq ([[10-Summaries/macaulay-2015-gt-seq]]), DR-seq ([[10-Summaries/dey-2015-dr-seq]]), GoT ([[10-Summaries/nam-2019-got]]).
+- **Scalable droplet DNA + RNA** — DEFND-seq (whole-genome, nucleosome depletion + 10x Multiome, [[10-Summaries/olsen-2025-defnd-seq]]) and SDR-seq (targeted, Tapestri, low allelic dropout, [[10-Summaries/lindenhofer-2025-sdr-seq]]); these trade off **genome-wide breadth (high ADO)** vs **targeted depth (low ADO, per-cell zygosity)** ([[10-Summaries/lindenhofer-2025-sdr-seq]]).
 - **Joint chromatin + transcriptome** — sci-CAR ([[10-Summaries/cao-2018-sci-car]]), SHARE-seq ([[10-Summaries/ma-2020-share-seq]]).
 - **Joint methylation + chromatin + RNA** — scNMT-seq ([[10-Summaries/clark-2018-scnmt-seq]]).
 - **Joint mutation + chromatin + RNA** — Duplex-Multiome ([[10-Summaries/kriz-2025-duplex-multiome]]).
 
 ## Related
 
-- [[40-Topics/single-cell-multiomics]] · [[30-Concepts/single-cell-multiomics]] · [[50-Notes/regulatory-layers-overview]]
+- [[40-Topics/single-cell-multiomics]] · [[30-Concepts/single-cell-multiomics]] · [[30-Concepts/defnd-seq]] · [[30-Concepts/sdr-seq]] · [[30-Concepts/allele-dropout]] · [[50-Notes/regulatory-layers-overview]] · [[50-Notes/droplet-vs-single-molecule-scdna]]

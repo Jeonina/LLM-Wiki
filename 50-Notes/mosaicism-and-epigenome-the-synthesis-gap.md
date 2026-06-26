@@ -182,4 +182,5 @@ The neuro-mosaicism literature provides the empirical foundation for the planned
 - [[sctrio-seq]], [[got-cha]], [[daf-seq]], [[scnmt-seq]] — four anchor concept pages.
 - [[40-Topics/somatic-mosaicism]] — topic-level mosaicism index.
 - [[40-Topics/single-cell-multiomics]] — joint-assay landscape.
+- [[50-Notes/joint-assays-by-layer-pair]] — joint assays cataloged by layer-pair; the methodological-integration companion to this gap analysis.
 - [[scdna-capabilities-framework]] — the DNA-centric "locus state" framing the review will articulate.

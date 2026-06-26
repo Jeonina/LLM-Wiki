@@ -138,5 +138,6 @@ No published single-cell method reads all four molecular layers simultaneously. 
 - [[40-Topics/histone-modifications]]
 - [[40-Topics/3d-genome]]
 - [[40-Topics/single-cell-multiomics]] — methods that read multiple layers
+- [[50-Notes/joint-assays-by-layer-pair]] — joint assays cataloged by which of these layer-pairs they bridge
 - [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]] — applies this framing to somatic mosaicism interpretation
 - [[50-Notes/synthesis-targets]]

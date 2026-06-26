@@ -133,7 +133,7 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 
 ## Synthesized notes
 
-_None yet — the three methods papers cluster cleanly enough that a synthesis comparing droplet-scale vs single-molecule approaches would be a natural  page once a fourth source lands._
+- [[50-Notes/joint-assays-by-layer-pair]] — joint single-cell assays organized by which layer-pair they bridge (genotype-anchored first), climaxing on Duplex-Multiome; methodological-integration companion to the synthesis-gap note.
 
 ## Open questions
 

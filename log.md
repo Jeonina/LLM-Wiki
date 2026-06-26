@@ -4,6 +4,24 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-06-26 — Synthesis: joint-assays-by-layer-pair note (review draft anchor)
+
+**Trigger**: User drafting the review's joint-assay subsection; asked to capture the layer-pair organization in the wiki. Companion to the same-day D&D-seq/ResolveOME ingest.
+
+### Page created (1)
+
+- [[50-Notes/joint-assays-by-layer-pair]] — joint single-cell assays cataloged by which layer-pair they bridge (genotype-anchored first), climaxing on Duplex-Multiome; names the unmet SNV+methylation configuration and bridges to the computational problem. Per-claim inline citations.
+
+### Existing pages touched
+
+- [[index]] — added to Synthesis & open threads; updated regulatory-layers description to "five (or six) axes" with the TF-binding axis named.
+- [[40-Topics/single-cell-multiomics]] — replaced the empty "Synthesized notes" placeholder with the new note.
+- [[50-Notes/regulatory-layers-overview]], [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]] — cross-linked as methodological-integration companion.
+
+### Decision recorded
+
+- Review keeps a **5-layer** locus-state framework (genetic / accessibility / methylation / chromatin-state / 3D). TF/DNA-protein binding folds into the chromatin-state layer (protein occupancy), not a sixth axis — D&D-seq lives there. The wiki's regulatory-layers note retains the broader six-axis exposition for reference; the two are reconciled by treating TF occupancy as a sub-component of chromatin state.
+
 ## 2026-06-26 — Ingest: 2 new clippings (D&D-seq DNA–protein axis + ResolveOME genome+RNA)
 
 **Trigger**: User added two papers via Obsidian and said "ingest new clipping." `tools/pending-sources.sh` found 2 pending of 193 sources. Context: this followed a literature-currency check (PubMed/web) of the user's review framework, which surfaced D&D-seq and ResolveOME as the two most framework-relevant new methods.

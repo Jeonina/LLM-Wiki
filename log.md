@@ -4,6 +4,38 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-06-26 — Ingest: 2 new clippings (D&D-seq DNA–protein axis + ResolveOME genome+RNA)
+
+**Trigger**: User added two papers via Obsidian and said "ingest new clipping." `tools/pending-sources.sh` found 2 pending of 193 sources. Context: this followed a literature-currency check (PubMed/web) of the user's review framework, which surfaced D&D-seq and ResolveOME as the two most framework-relevant new methods.
+
+### Sources ingested
+
+- [[10-Summaries/chi-2026-dd-seq]] — D&D-seq: nanobody-deaminase footprinting of DNA–protein interactions in single cells; D&D-GoT-ChA adds genotype + TF binding (Cell 2026; Landau lab). DOI 10.1016/j.cell.2026.05.014.
+- [[10-Summaries/marks-2023-resolveome]] — ResolveOME: PTA whole-genome + full-transcriptome same-cell; AML quizartinib resistance + breast cancer PIK3CA (bioRxiv 2022/2023; West/Gawad, BioSkryb). DOI 10.1101/2022.04.29.489440.
+
+### Pages created (4)
+
+- **Concepts (2)**: [[30-Concepts/dd-seq]], [[30-Concepts/resolveome]].
+- **Entity (1)**: [[20-Entities/jay-a-a-west]] (ResolveOME corresponding author, BioSkryb).
+- Plus the 2 summaries above.
+
+### Existing pages touched (graph weave)
+
+- [[50-Notes/regulatory-layers-overview]] — **added a fifth molecular axis: DNA–protein (TF) binding** (D&D-seq). Retitled "four (or five)" → "five (or six)"; structural/physical became the sixth axis. Updated quick-map table.
+- [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]] — added two rows to the cross-domain framing table (D&D-GoT-ChA targeted SNV+TF binding; ResolveOME genome-wide SNV+RNA); marked two "closest hypothetical combinations" as now realized.
+- [[30-Concepts/got-cha]] — added D&D-GoT-ChA variant + Related link.
+- [[30-Concepts/scdna-capabilities-framework]] — added ResolveOME + D&D-GoT-ChA rows to the capability table.
+- [[40-Topics/single-cell-multiomics]] — added two new method sub-themes, concept links, entity.
+- [[20-Entities/dan-a-landau]], [[20-Entities/franco-izzo]] — D&D-seq mentions (GoT → GoT-ChA → D&D-GoT-ChA trajectory).
+- [[20-Entities/charles-gawad]] — ResolveOME mention.
+- [[index]] — added both under Multi-Omics Joint Assays; new "Genotype + TF binding" line.
+
+### Notable findings / tensions
+
+- **D&D-seq directly supplies the "sixth axis" the prior literature-check recommended** — DNA-protein/TF occupancy, readable in *closed* chromatin (which scATAC misses). It is the mechanistic bridge between a mosaic mutation in a TF motif and downstream accessibility/expression change.
+- **D&D-GoT-ChA and ResolveOME both narrow the synthesis gap further** but neither adds methylation; the SNV+methylation genome-wide same-cell configuration remains unmet (bisulfite C→T conflict persists).
+- Both are from labs already central to the wiki (Landau; Gawad/PTA lineage) — tight graph integration, no orphans.
+
 ## 2026-06-02 — Ingest: 6 new clippings (scATAC imputation + joint DNA-RNA + lineage-tracing reviews)
 
 **Trigger**: User said "ingest new clippings." `tools/pending-sources.sh` found 6 pending of 191 sources.

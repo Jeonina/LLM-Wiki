@@ -20,6 +20,7 @@ Co-author on the original [[30-Concepts/got]] paper ([[10-Summaries/nam-2019-got
 
 - **2026-05-07** — [[10-Summaries/nam-2019-got]]: co-author on the original GoT paper.
 - **2026-05-07** — [[10-Summaries/izzo-2024-got-cha]]: first/co-corresponding author. Led development of GoT–ChA, which extends GoT to chromatin accessibility and switches the genotype capture from cDNA to gDNA — eliminating the expression-level and transcript-distance limitations that motivated [[30-Concepts/circularization-got]] in the 2019 paper.
+- **2026-06-26** — [[10-Summaries/chi-2026-dd-seq]]: co-author. Bridges the GoT-ChA platform to D&D-GoT-ChA, adding a same-cell TF-binding readout via [[30-Concepts/dd-seq|D&D-seq]].
 
 ## Positions and claims
 

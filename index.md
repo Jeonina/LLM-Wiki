@@ -1,7 +1,7 @@
 ---
 title: LLM Wiki — scDNA-seq & Single-Cell Epigenomics
 description: A living knowledge base on single-cell DNA sequencing, somatic mosaicism, and adjacent epigenomics.
-updated: 2026-05-27
+updated: 2026-06-26
 ---
 
 # LLM Wiki
@@ -77,9 +77,10 @@ The transcriptomic axis underlying every multi-omics method. Why bulk RNA-seq av
 Methods that read two or more modalities from the same cell: genotype + transcriptome (GoT), genotype + chromatin (GoT-ChA), triple-omics, and beyond.
 
 **Start here →** [[30-Concepts/single-cell-multiomics]] · [[30-Concepts/got]] · [[30-Concepts/got-cha]]
-**GoT family →** [[10-Summaries/nam-2019-got|Nam 2019]] · [[10-Summaries/izzo-2024-got-cha|Izzo 2024]] · [[10-Summaries/cortes-lopez-2023-cellstemcell|GoT-Splice]]
+**GoT family →** [[10-Summaries/nam-2019-got|Nam 2019]] · [[10-Summaries/izzo-2024-got-cha|Izzo 2024]] · [[10-Summaries/cortes-lopez-2023-cellstemcell|GoT-Splice]] · [[10-Summaries/chi-2026-dd-seq|D&D-GoT-ChA (Chi 2026)]]
 **DNA + Epigenome →** [[10-Summaries/swanson-2025-daf-seq|DAF-seq]] · [[10-Summaries/kriz-2025-duplex-multiome|Duplex-Multiome]]
-**Scalable DNA + RNA →** [[30-Concepts/defnd-seq]] · [[10-Summaries/olsen-2025-defnd-seq|DEFND-seq (whole-genome)]] · [[30-Concepts/sdr-seq]] · [[10-Summaries/lindenhofer-2025-sdr-seq|SDR-seq (targeted, low ADO)]]
+**Genotype + TF binding →** [[30-Concepts/dd-seq]] · [[10-Summaries/chi-2026-dd-seq|D&D-seq (Chi 2026, DNA–protein interaction axis)]]
+**Scalable DNA + RNA →** [[30-Concepts/defnd-seq]] · [[10-Summaries/olsen-2025-defnd-seq|DEFND-seq (whole-genome)]] · [[30-Concepts/sdr-seq]] · [[10-Summaries/lindenhofer-2025-sdr-seq|SDR-seq (targeted, low ADO)]] · [[30-Concepts/resolveome]] · [[10-Summaries/marks-2023-resolveome|ResolveOME (PTA genome + RNA)]]
 **Reviews →** [[10-Summaries/wang-2023-multimodal-review|Wang & Jin 2023 methods+integration]] · [[10-Summaries/baysoy-2023-multiomics-landscape|Baysoy 2023]] · [[10-Summaries/vandereyken-2023-scmultiomics-review|Vandereyken 2023]] · [[10-Summaries/bi-2024-multiomics-review|Bi & Weng 2024 (integration topology + protein lineages)]]
 
 ---
@@ -152,4 +153,4 @@ The maintainer reads each new source in full, writes a summary, and **touches 5�
 
 ---
 
-*This wiki is a personal research tool. Papers are summarized by an LLM; always verify against the original sources. Last updated 2026-05-27.*
+*This wiki is a personal research tool. Papers are summarized by an LLM; always verify against the original sources. Last updated 2026-06-26.*

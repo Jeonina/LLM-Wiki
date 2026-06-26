@@ -4,7 +4,7 @@ title: Single-cell multi-omics
 aliases: [single-cell multiomics, sc-multiomics]
 tags: [single-cell, methods, multiomics]
 created: 2026-05-07
-updated: 2026-05-12
+updated: 2026-06-26
 ---
 
 # Single-cell multi-omics
@@ -18,6 +18,8 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 - [[30-Concepts/single-cell-multiomics]] — umbrella concept.
 - [[30-Concepts/got]] — single-cell genotype + transcriptome on droplet 10x scRNA-seq.
 - [[30-Concepts/got-cha]] — single-cell genotype + chromatin accessibility on droplet 10x scATAC-seq, via gDNA capture.
+- [[30-Concepts/dd-seq]] — single-cell DNA–protein/TF binding via nanobody-deaminase footprinting; composes with GoT–ChA (D&D-GoT-ChA) for genotype + TF binding.
+- [[30-Concepts/resolveome]] — PTA genome-wide genotype + full transcriptome in the same cell.
 - [[30-Concepts/circularization-got]] — extension of GoT for distal mutation loci.
 - [[30-Concepts/daf-seq]] — single-cell, single-molecule chromatin + DNA sequence at near-nucleotide resolution via deaminase footprinting.
 - [[30-Concepts/fiber-seq]] — bulk single-molecule chromatin via methyltransferase stenciling; methodological ancestor of DAF-seq.
@@ -48,7 +50,8 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 ## Key entities
 
 - [[20-Entities/dan-a-landau]] — leads the GoT → GoT–ChA methods program at the Landau Lab.
-- [[20-Entities/franco-izzo]] — first author of GoT–ChA; co-author on the original GoT.
+- [[20-Entities/franco-izzo]] — first author of GoT–ChA; co-author on the original GoT and on D&D-seq.
+- [[20-Entities/jay-a-a-west]] — corresponding author of ResolveOME; BioSkryb / PTA commercialization.
 - [[20-Entities/anna-s-nam]] — first author of the original GoT paper.
 - [[20-Entities/landau-lab]] — group behind GoT, circularization GoT, and GoT–ChA.
 - [[20-Entities/elliott-g-swanson]] — co-first author of DAF-seq.
@@ -98,6 +101,14 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 ### Genotype + chromatin (single-molecule, deaminase)
 
 - [[10-Summaries/swanson-2025-daf-seq]] — DAF-seq / scDAF-seq; chromosome-length single-cell single-molecule chromatin maps.
+
+### Genotype + TF binding / DNA–protein interaction
+
+- [[10-Summaries/chi-2026-dd-seq]] — Chi 2026: D&D-seq / D&D-GoT-ChA; nanobody-deaminase TF footprinting, CTCF binding in closed chromatin, IDH2-mutant T cells show disrupted CTCF binding.
+
+### Genotype + transcriptome (genome-wide, PTA)
+
+- [[10-Summaries/marks-2023-resolveome]] — Marks 2023: ResolveOME; PTA whole-genome + full transcriptome same cell; AML quizartinib resistance (FLT3 + AXL) and breast cancer PIK3CA.
 
 ### Reviews of the multi-omics landscape
 

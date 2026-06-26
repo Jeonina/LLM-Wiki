@@ -19,6 +19,7 @@ Departments of Oncology and Computational Biology, St. Jude Children's Research 
 ## Mentions
 
 - **2026-05-11** — [[10-Summaries/gawad-2016-scgenome-review]]: first author of the 2016 scDNA-seq landscape review (with Quake and Koh).
+- **2026-06-26** — [[10-Summaries/marks-2023-resolveome]]: co-author. PTA-based whole-genome + full-transcriptome single-cell assay ([[30-Concepts/resolveome]]), applied to AML drug resistance and breast cancer.
 
 ## Positions and claims
 

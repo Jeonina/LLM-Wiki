@@ -4,7 +4,7 @@ title: scDNA-seq capabilities framework
 aliases: [Evrony framework, fidelity-copresence-association framework]
 tags: [framework, scDNA-seq]
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-06-26
 ---
 
 # scDNA-seq capabilities framework
@@ -36,6 +36,8 @@ Methods organized by capability profile:
 | [[meta-cs]] | high | per-cell | none alone |
 | [[got]] | med | per-cell | RNA |
 | [[got-cha]] | med | per-cell | chromatin |
+| D&D-GoT-ChA ([[dd-seq]]) | med | per-cell | TF binding (+ accessibility) |
+| [[resolveome]] | med–high (PTA) | per-cell | RNA (genome-wide genotype) |
 | [[daf-seq]] (single-cell) | high | per-fiber | sequence + chromatin |
 
 ## Contested points
@@ -54,4 +56,6 @@ Methods organized by capability profile:
 - [[duplex-sequencing]]
 - [[scwga]]
 - [[got]], [[got-cha]], [[daf-seq]]
+- [[dd-seq]] — D&D-GoT-ChA (fidelity + co-presence + TF binding)
+- [[resolveome]] — genome-wide genotype + RNA (fidelity + co-presence + RNA)
 - [[40-Topics/scdna-seq]]

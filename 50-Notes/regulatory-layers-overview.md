@@ -1,25 +1,26 @@
 ---
 type: note
-title: "Regulatory layers — the four (or five) axes of epigenome interpretation"
-aliases: [regulatory layers, epigenome layers, regulatory axes, four regulatory layers]
+title: "Regulatory layers — the five (or six) axes of epigenome interpretation"
+aliases: [regulatory layers, epigenome layers, regulatory axes, four regulatory layers, five regulatory layers]
 tags: [synthesis, epigenome, regulation, overview, entry-point]
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-06-26
 sources: [
   "[[10-Summaries/clark-2018-scnmt-seq]]",
   "[[10-Summaries/hou-2016-sctrio-seq]]",
   "[[10-Summaries/swanson-2025-daf-seq]]",
   "[[10-Summaries/izzo-2024-got-cha]]",
+  "[[10-Summaries/chi-2026-dd-seq]]",
   "[[10-Summaries/baysoy-2023-multiomics-landscape]]",
   "[[10-Summaries/vandereyken-2023-scmultiomics-review]]"
 ]
 ---
 
-# Regulatory layers — the four (or five) axes of epigenome interpretation
+# Regulatory layers — the five (or six) axes of epigenome interpretation
 
-> When asking "what does this region of DNA do, and is it active in this cell?", the field reads four molecular axes — **accessibility, DNA methylation, histone modifications, 3D genome organization** — plus a fifth structural/physical axis (lamina position, phase separation, mechanics) that gates which of the four are even possible at a given locus. This page is an entry point that maps each layer to its concept pages, single-cell assays, and cross-layer dependencies. (synthesis)
+> When asking "what does this region of DNA do, and is it active in this cell?", the field reads five molecular axes — **accessibility, DNA methylation, histone modifications, 3D genome organization, and DNA–protein (TF) binding** — plus a sixth structural/physical axis (lamina position, phase separation, mechanics) that gates which of the others are even possible at a given locus. This page is an entry point that maps each layer to its concept pages, single-cell assays, and cross-layer dependencies. (synthesis) The TF-binding axis was added 2026-06-26 after D&D-seq made it readable in single cells ([[10-Summaries/chi-2026-dd-seq]]).
 
-## The four molecular layers
+## The molecular layers
 
 ### 1. Chromatin accessibility (open chromatin)
 
@@ -61,7 +62,17 @@ sources: [
 
 **Interpretive role.** 3D organization explains **which enhancer regulates which gene**. Two regulatory elements at the same linear distance can have very different effects depending on whether they're in the same TAD. A mutation in an enhancer can only act on genes its TAD allows it to contact.
 
-## The fifth axis: structural/physical
+### 5. DNA–protein interactions (TF / chromatin-factor binding)
+
+**What it measures.** *Which* protein is actually bound at a regulatory element — the occupancy of specific transcription factors and chromatin remodelers — rather than whether the region is merely open ([[10-Summaries/chi-2026-dd-seq]]). Accessibility says a region is usable; binding says who is using it ([[10-Summaries/chi-2026-dd-seq]]).
+
+**Bulk assays.** ChIP-seq, CUT&RUN, CUT&Tag, BANC-seq (absolute affinity) ([[10-Summaries/chi-2026-dd-seq]]).
+
+**Single-cell assays.** scCUT&Tag and uliCUT&RUN (antibody-tethered, but confounded by open-chromatin bleed-through); [[30-Concepts/dd-seq|D&D-seq]] (nanobody-deaminase footprinting, higher motif specificity, and uniquely able to read binding in *closed/heterochromatic* compartments via WGS coupling) ([[10-Summaries/chi-2026-dd-seq]]).
+
+**Interpretive role.** This axis is the **mechanistic bridge** between sequence and the other layers: a mosaic mutation in a TF motif acts by altering binding, which then changes accessibility, marks, and expression. D&D-GoT-ChA reads it jointly with genotype, showing IDH2-mutant T cells have disrupted CTCF binding ([[10-Summaries/chi-2026-dd-seq]]). I treat it as distinct from accessibility because binding can occur in closed chromatin that ATAC scores as inaccessible ([[10-Summaries/chi-2026-dd-seq]]).
+
+## The sixth axis: structural/physical
 
 This sits adjacent to "3D genome" but is conceptually distinct: it's about **where in the nucleus** a locus lives and **what physical environment** it's embedded in, not whether two loci touch.
 
@@ -71,7 +82,7 @@ This sits adjacent to "3D genome" but is conceptually distinct: it's about **whe
 
 **Interpretive role.** This layer **gates** the four molecular layers. A locus in a LAD is by definition closed, methylated, and H3K9me3-marked — you don't measure those independently, you measure the physical state once and it predicts the rest. The wiki is still developing this axis; see [[40-Topics/chromatin-architecture]].
 
-## Why "four layers" is a useful framing
+## Why the layered framing is useful
 
 Each layer captures a different *kind* of regulatory information:
 
@@ -104,6 +115,7 @@ See [[40-Topics/single-cell-multiomics]] for the full catalog. Quick map:
 | scATAC, [[30-Concepts/daf-seq]], [[30-Concepts/got-cha]] | Accessibility (+ genotype for GoT-ChA, DAF-seq) |
 | scBS-seq, [[30-Concepts/simple-seq]] | Methylation (5mC, + 5hmC for SIMPLE) |
 | scCUT&Tag, [[30-Concepts/scchix-seq]] | Histone marks |
+| [[30-Concepts/dd-seq]] (scD&D-seq, D&D-GoT-ChA) | DNA–protein / TF binding (+ accessibility, + genotype) |
 | scHi-C, [[30-Concepts/dip-c]], [[30-Concepts/igs]] | 3D genome |
 | [[30-Concepts/scnmt-seq]] | Accessibility + methylation + RNA |
 | [[30-Concepts/sctrio-seq]] | CNV + methylation + RNA |

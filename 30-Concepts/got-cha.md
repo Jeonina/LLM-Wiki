@@ -28,6 +28,7 @@ It also opens the chromatin readout — a richer functional layer than RNA for t
 - **Single-target GoT–ChA** ([[10-Summaries/izzo-2024-got-cha]]) — TP53 R248, JAK2 V617, NRAS Q61, TP53 M133, FOXO1 S22 each validated.
 - **Multiplexed GoT–ChA** ([[10-Summaries/izzo-2024-got-cha]]) — up to 4 targets simultaneously; per-cell genotyping for individual loci ranges 56–73%.
 - **GoT–ChA + DOGMA-seq integration** ([[10-Summaries/izzo-2024-got-cha]]) — using mitochondrial variant + cell-surface protein bridges, GoT–ChA can be imputation-extended onto DOGMA-seq, giving genotype + chromatin + RNA + surface protein in single cells.
+- **D&D-GoT-ChA** ([[10-Summaries/chi-2026-dd-seq]]) — composes GoT–ChA with [[dd-seq|D&D-seq]] to add a same-cell **transcription-factor-binding** readout; applied to an IDH2^R140Q CHIP patient, it showed mutant T cells have disrupted CTCF binding vs wild-type — a same-cell genotype → DNA-protein-interaction consequence.
 
 ## Contested points
 
@@ -46,6 +47,7 @@ It also opens the chromatin readout — a richer functional layer than RNA for t
 - [[chromatin-accessibility]]
 - [[jak2-v617f]]
 - [[dogma-seq]]
+- [[dd-seq]] — D&D-GoT-ChA extension (genotype + TF binding)
 - [[40-Topics/single-cell-multiomics]]
 - [[20-Entities/franco-izzo]]
 - [[20-Entities/landau-lab]]

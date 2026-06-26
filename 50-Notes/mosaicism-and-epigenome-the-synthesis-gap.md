@@ -4,14 +4,16 @@ title: "Mosaicism × epigenome at single-cell resolution — the synthesis gap"
 aliases: [mosaicism-epigenome gap, the synthesis gap, dna-anchored joint-mosaicism]
 tags: [synthesis, somatic-mosaicism, single-cell-multiomics, review-paper-anchor]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-06-26
 sources: [
   "[[10-Summaries/hou-2016-sctrio-seq]]",
   "[[10-Summaries/izzo-2024-got-cha]]",
   "[[10-Summaries/swanson-2025-daf-seq]]",
   "[[10-Summaries/clark-2018-scnmt-seq]]",
   "[[10-Summaries/kousi-2022-ad-mosaicism]]",
-  "[[10-Summaries/luquette-2025-pta-duplex-mosaicism]]"
+  "[[10-Summaries/luquette-2025-pta-duplex-mosaicism]]",
+  "[[10-Summaries/chi-2026-dd-seq]]",
+  "[[10-Summaries/marks-2023-resolveome]]"
 ]
 ---
 
@@ -135,7 +137,8 @@ The closest hypothetical combinations:
 - DAF-seq + bisulfite (would give DNA + accessibility + methylation per fiber) — chemistry incompatibility (deamination vs bisulfite use the same C→T signal channel).
 - scNMT-seq + a low-error WGA (PTA) before the bisulfite step — would in principle give DNA + methylation + accessibility, but bisulfite-degraded DNA limits SNV sensitivity.
 - 10x Multiome + targeted gDNA capture per mutation site (the GoT-ChA template) extended to a panel of mosaic loci — feasible today, throughput-permitting.
-- scTrio-seq with WGA (instead of RRBS) on the nuclear fraction — would give SNV + methylation + RNA at higher cost.
+- scTrio-seq with WGA (instead of RRBS) on the nuclear fraction — would give SNV + methylation + RNA at higher cost. **Partially realized**: [[10-Summaries/marks-2023-resolveome|ResolveOME]] now delivers genome-wide SNV + RNA same-cell via PTA (no methylation arm).
+- GoT-ChA extended with a deaminase-footprint TF-binding readout — **realized** as D&D-GoT-ChA ([[10-Summaries/chi-2026-dd-seq]]), giving same-cell targeted genotype + TF occupancy.
 
 ## The cross-domain framing for the planned review
 
@@ -149,6 +152,8 @@ The review's stated novelty is "**DNA-centric, locus-as-unit, mutation + epigeno
 | **Targeted SNV + chromatin** | GoT-ChA | Direct SNV → chromatin link in single cells | Few loci, no methylation |
 | **Single-molecule DNA + chromatin** | DAF-seq | Direct same-fiber readout, 1.5% VAF mosaic CC→TT case | Low cell throughput, no methylation, no SNV at scale |
 | **Methylation + accessibility + RNA** | scNMT-seq | Three layers in one cell | DNA sequence destroyed by bisulfite |
+| **Targeted SNV + TF binding** | D&D-GoT-ChA ([[10-Summaries/chi-2026-dd-seq]]) | Same-cell genotype → CTCF/TF-occupancy; reads binding in *closed* chromatin (NEW 2026) | Targeted loci, pseudobulk-level binding, no methylation |
+| **Genome-wide SNV + RNA** | ResolveOME ([[10-Summaries/marks-2023-resolveome]]) | Genome-wide point mutations + full transcriptome, same cell, PTA-based | No epigenetic layer; preprint/throughput unproven |
 | **mtDNA + chromatin** | mtscATAC-seq | Same-cell mtDNA mutations + chromatin at thousands of cells | Restricted to mtDNA only |
 | **Bulk-epi-annotated mosaic SNVs** | Bae 2022 ASD MEIS-motif | Genome-wide SNV + enhancer annotation | Annotation is from *reference* fetal brain epi, not the same cell |
 

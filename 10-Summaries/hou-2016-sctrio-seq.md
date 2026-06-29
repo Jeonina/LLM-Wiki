@@ -43,7 +43,7 @@ First single-cell **triple-omics** assay that simultaneously yields (1) genomic 
 
 ## Entities / concepts touched
 
-[[scdna-seq]] · [[scbs-seq]] · [[dna-methylation]] · [[single-cell-multiomics]] · [[cpg-island]] · [[mutational-signatures]] · [[20-Entities/xiaoying-fan]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/dna-methylation]]
+[[30-Concepts/scdna-seq]] · [[scbs-seq]] · [[30-Concepts/dna-methylation]] · [[30-Concepts/single-cell-multiomics]] · [[cpg-island]] · [[mutational-signatures]] · [[20-Entities/xiaoying-fan]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/dna-methylation]]
 
 ## Related summaries
 

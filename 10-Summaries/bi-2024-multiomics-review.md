@@ -51,7 +51,7 @@ This is a review, not primary data. Tables 1–3 catalog scMethyl-mRNA methods (
 - [[30-Concepts/multimodal-integration-methods]] — introduces horizontal/vertical/diagonal frame
 - [[30-Concepts/cite-seq]] — central to the protein-measurement section
 - [[30-Concepts/dogma-seq]] — exemplar triomics platform
-- [[30-Concepts/share-seq]] · [[30-Concepts/sci-car]] · [[30-Concepts/scnmt-seq]] · [[30-Concepts/sctrio-seq]] · [[30-Concepts/g-t-seq]] · [[30-Concepts/dr-seq]] — all covered
+- [[30-Concepts/share-seq]] · [[30-Concepts/sci-car]] · [[30-Concepts/scnmt-seq]] · [[30-Concepts/sctrio-seq]] · [[30-Concepts/gt-seq]] · [[30-Concepts/dr-seq]] — all covered
 
 ## Connections to other sources
 

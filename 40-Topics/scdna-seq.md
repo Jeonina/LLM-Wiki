@@ -9,7 +9,7 @@ updated: 2026-05-11
 
 # Single-cell DNA sequencing (scDNA-seq)
 
-> The umbrella topic for technologies that interrogate single-cell genomes — either via [[scwga]] + scWGS or via [[duplex-sequencing]] of bulk DNA at single-molecule resolution. Two decades of technological iteration have brought the field from low-coverage DOP-PCR (2008) through MDA / MALBAC (2010s) to PTA + duplex sequencing (2020s), finally making routine human-tissue mosaicism and lineage-tracing studies feasible.
+> The umbrella topic for technologies that interrogate single-cell genomes — either via [[scwga]] + scWGS or via [[30-Concepts/duplex-sequencing]] of bulk DNA at single-molecule resolution. Two decades of technological iteration have brought the field from low-coverage DOP-PCR (2008) through MDA / MALBAC (2010s) to PTA + duplex sequencing (2020s), finally making routine human-tissue mosaicism and lineage-tracing studies feasible.
 
 The topic is organized by **capability** ([[30-Concepts/scdna-capabilities-framework]]) rather than purely by chemistry — fidelity, co-presence, phenotypic association — and by **application**: mosaicism, lineage tracing, cancer clonal evolution, pre-implantation screening, microbial dark matter.
 

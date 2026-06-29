@@ -4,6 +4,29 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-06-29 — Maintenance: lint pass ("rinse the wiki")
+
+**Trigger**: User said "rinse the wiki" — interpreted as a MAINTAIN lint pass. No new sources (0 pending of 193).
+
+### Checks run
+- **Broken links**: full-wiki sweep → **0 broken** (194 `source:` frontmatter links into `00-Sources/` all resolve; one apparent hit was the table-escaped `\|` pipe in the new Browse links, a regex artifact, not a real break).
+- **Orphans**: 2 found, both linked in.
+- **Index drift**: the three category catalogs were stale — 76 pages on disk missing from them.
+- **Duplicates**: surfaced `g-t-seq.md` vs `gt-seq.md` (same method, both titled "G&T-seq") — **flagged for user, not merged**.
+
+### Fixes (mechanical, no approval needed)
+- **Orphans linked in**: [[20-Entities/jan-p-dumanski]] → added to [[10-Summaries/forsberg-2017-mosaicism-review]] (co-author) and [[40-Topics/somatic-mosaicism]]; [[10-Summaries/garrison-2023-bsmn-data]] → linked from [[40-Topics/brain-somatic-mosaicism]] consortium section.
+- **Category catalog drift repaired** (via 3 parallel agents): [[20-Entities/index]] +37 entries (now 100/100), [[30-Concepts/index]] +33 (now 170/170), [[40-Topics/index]] +6 (now 20/20). All `updated:` bumped to 2026-06-29.
+- **Root [[index]] refreshed**: stale "~130 papers" → "~190" (2 spots); "Browse the wiki" table cells (People/Concepts/Topics) were dead text → now link to the category catalogs; dates bumped.
+
+### Follow-ups (user approved all three, same session)
+- **Duplicate page merged**: consolidated `g-t-seq` + `gt-seq` (both titled "G&T-seq") into the canonical [[30-Concepts/gt-seq]] — kept gt-seq's slug but merged in g-t-seq's richer content (Macaulay 2015 original citation, trisomy-11/reversine-embryo/MTAP-PCDH7 biology, scNMT-seq lineage). Repointed all 8 inbound links, removed the duplicate catalog line, deleted `g-t-seq.md`. Now 20 files reference gt-seq; 0 g-t-seq refs remain.
+- **Ambiguous bare links disambiguated**: 104 bare links across the 9 concept/topic slug pairs, all resolved to the **concept** page (`[[30-Concepts/<slug>]]`). Confirmed the wiki's standing convention — topic links always carry an explicit `[[40-Topics/...]]` prefix, so bare = concept. 0 ambiguous bare links remain.
+- **Papers catalog created**: [[10-Summaries/index]] — 194 entries (1:1 with summary files), 16 thematic sections mirroring the Concepts/Topics catalogs. Root index Browse table's "Papers" cell now links to it. All four content categories now have complete catalogs.
+
+### Final state
+- Broken links: **0** (full-wiki sweep). Catalogs: Summaries 194/194, Entities 100/100, Concepts 170/170 (after merge), Topics 20/20. Ambiguous bare links: **0**. Orphans: **0**.
+
 ## 2026-06-26 — Synthesis: joint-assays-by-layer-pair note (review draft anchor)
 
 **Trigger**: User drafting the review's joint-assay subsection; asked to capture the layer-pair organization in the wiki. Companion to the same-day D&D-seq/ResolveOME ingest.

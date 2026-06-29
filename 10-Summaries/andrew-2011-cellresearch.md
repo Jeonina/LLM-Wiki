@@ -30,13 +30,13 @@ This is a comprehensive review; the load-bearing points for the wiki are:
 
 ## Why this is in the wiki
 
-- **Background reference** for any concept page touching histone modifications: [[histone-modifications]], [[cut-and-tag]], [[cut-and-run]], [[scchic-seq]], [[scicut-tag]], [[multi-tag]], [[scchix-seq]].
+- **Background reference** for any concept page touching histone modifications: [[30-Concepts/histone-modifications]], [[cut-and-tag]], [[cut-and-run]], [[scchic-seq]], [[scicut-tag]], [[multi-tag]], [[scchix-seq]].
 - For the review paper §3.4 (Chromatin State): Bannister & Kouzarides is the foundational reference that anchors why histone-modification-based single-cell methods (scCUT&Tag, etc.) target the marks they target.
 - For the somatic-mosaicism + epi synthesis: Bannister & Kouzarides defines the layer of epigenetic memory (especially H3K4me3/H3K27me3 bivalency, H3K9me3 heterochromatin) that scNMT-seq, scTrio-seq, and scCUT&Tag-based assays read at single-cell resolution.
 
 ## Entities / concepts touched
 
-[[histone-modifications]] · [[chromatin-accessibility]] · [[dna-methylation]] · [[chip-seq]] · [[40-Topics/histone-modifications]] · [[40-Topics/chromatin-architecture]]
+[[30-Concepts/histone-modifications]] · [[chromatin-accessibility]] · [[30-Concepts/dna-methylation]] · [[chip-seq]] · [[40-Topics/histone-modifications]] · [[40-Topics/chromatin-architecture]]
 
 ## Note on filename
 

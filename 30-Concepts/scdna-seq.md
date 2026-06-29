@@ -9,7 +9,7 @@ updated: 2026-05-11
 
 # scDNA-seq (single-cell DNA sequencing)
 
-> Umbrella term covering technologies that interrogate the DNA of single cells — either by amplifying single-cell genomes ([[scwga]] + scWGS) or by reading single DNA molecules with strand-paired error correction ([[duplex-sequencing]]). Together these methods provide single-cell-level resolution of somatic genomic variation that bulk DNA sequencing cannot detect.
+> Umbrella term covering technologies that interrogate the DNA of single cells — either by amplifying single-cell genomes ([[scwga]] + scWGS) or by reading single DNA molecules with strand-paired error correction ([[30-Concepts/duplex-sequencing]]). Together these methods provide single-cell-level resolution of somatic genomic variation that bulk DNA sequencing cannot detect.
 
 ## Definition
 
@@ -52,9 +52,9 @@ The biology questions scDNA-seq uniquely addresses:
 ## Related
 
 - [[scwga]]
-- [[duplex-sequencing]]
+- [[30-Concepts/duplex-sequencing]]
 - [[mda]], [[pta]], [[malbac]], [[dop-pcr]], [[dlp-plus]], [[meta-cs]]
-- [[somatic-mosaicism]]
+- [[30-Concepts/somatic-mosaicism]]
 - [[lineage-tracing]]
 - [[scdna-capabilities-framework]]
 - [[40-Topics/scdna-seq]]

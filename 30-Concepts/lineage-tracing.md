@@ -9,7 +9,7 @@ updated: 2026-05-11
 
 # Lineage tracing
 
-> Reconstruction of the developmental ancestry of cells in a tissue — which cells descend from which progenitor, and when each lineage diverged. In humans, where engineered markers cannot be used, **endogenous somatic mutations** that accumulate at ~2–4 per cell division serve as natural lineage barcodes recoverable by [[scdna-seq]].
+> Reconstruction of the developmental ancestry of cells in a tissue — which cells descend from which progenitor, and when each lineage diverged. In humans, where engineered markers cannot be used, **endogenous somatic mutations** that accumulate at ~2–4 per cell division serve as natural lineage barcodes recoverable by [[30-Concepts/scdna-seq]].
 
 ## Definition
 
@@ -32,7 +32,7 @@ Lineage tracing answers questions inaccessible to bulk sequencing:
 - Which adult tissue cells descend from which embryonic clone?
 - What is the clonal architecture of a tumor and how did it evolve?
 
-In humans specifically, [[lineage-tracing]] using endogenous mutations is one of the major motivations for [[scdna-seq]] advancement.
+In humans specifically, [[lineage-tracing]] using endogenous mutations is one of the major motivations for [[30-Concepts/scdna-seq]] advancement.
 
 ## Variants and refinements
 
@@ -55,8 +55,8 @@ In humans specifically, [[lineage-tracing]] using endogenous mutations is one of
 
 ## Related
 
-- [[scdna-seq]]
-- [[somatic-mosaicism]]
+- [[30-Concepts/scdna-seq]]
+- [[30-Concepts/somatic-mosaicism]]
 - [[scwga]]
 - [[pta]]
 - [[scdna-capabilities-framework]]

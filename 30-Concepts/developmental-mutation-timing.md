@@ -46,6 +46,6 @@ Inverts the diagnostic question: from the phenotype distribution of a mosaic dis
 
 ## Related
 
-- [[somatic-mosaicism]]
+- [[30-Concepts/somatic-mosaicism]]
 - [[post-zygotic-variation]]
 - [[40-Topics/somatic-mosaicism]]

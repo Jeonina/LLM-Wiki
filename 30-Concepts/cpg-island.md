@@ -40,7 +40,7 @@ Mammalian genomes are globally CpG-depleted (~21% of expected CpG counts), an ar
 
 ## Related
 
-- [[dna-methylation]]
+- [[30-Concepts/dna-methylation]]
 - [[dnmt]]
 - [[tet-enzymes]]
 - [[40-Topics/dna-methylation]]

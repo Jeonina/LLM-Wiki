@@ -47,7 +47,7 @@ DR-seq is the **one-pot** alternative to G&T-seq for joint single-cell DNA + RNA
 
 ## Entities / concepts touched
 
-[[scdna-seq]] · [[scwga]] · [[malbac]] · [[umi-molecular-barcoding]] · [[single-cell-multiomics]] · [[20-Entities/alexander-van-oudenaarden]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/whole-genome-amplification]]
+[[30-Concepts/scdna-seq]] · [[scwga]] · [[malbac]] · [[umi-molecular-barcoding]] · [[30-Concepts/single-cell-multiomics]] · [[20-Entities/alexander-van-oudenaarden]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/whole-genome-amplification]]
 
 ## Related summaries
 

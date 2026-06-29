@@ -44,7 +44,7 @@ G&T-seq physically **separates** polyadenylated mRNA from genomic DNA in a singl
 
 ## Entities / concepts touched
 
-[[scdna-seq]] · [[scwga]] · [[mda]] · [[malbac]] · [[single-cell-multiomics]] · [[20-Entities/thierry-voet]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/whole-genome-amplification]]
+[[30-Concepts/scdna-seq]] · [[scwga]] · [[mda]] · [[malbac]] · [[30-Concepts/single-cell-multiomics]] · [[20-Entities/thierry-voet]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/whole-genome-amplification]]
 
 ## Related summaries
 

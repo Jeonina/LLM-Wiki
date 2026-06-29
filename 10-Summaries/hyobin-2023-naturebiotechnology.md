@@ -40,7 +40,7 @@ updated: 2026-05-12
 
 ## Entities / concepts touched
 
-[[strand-seq|Strand-seq]] · [[scdna-seq]] · [[structural-variants]] · [[dlp-plus]] · [[chromatin-accessibility]] · [[40-Topics/single-cell-multiomics]]
+[[strand-seq|Strand-seq]] · [[30-Concepts/scdna-seq]] · [[structural-variants]] · [[dlp-plus]] · [[chromatin-accessibility]] · [[40-Topics/single-cell-multiomics]]
 
 ## Related summaries
 

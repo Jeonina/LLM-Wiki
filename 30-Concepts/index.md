@@ -1,7 +1,7 @@
 ---
 title: Concepts
 description: Definitions, methods, and theoretical ideas referenced across the wiki.
-updated: 2026-05-13
+updated: 2026-06-29
 ---
 
 # Concepts
@@ -23,6 +23,9 @@ Each entry links to its definition page. Grouped by domain.
 - [[30-Concepts/monovar]] — multi-cell-pooled single-cell SNV caller.
 - [[30-Concepts/sccaller]] — bulk-anchored single-cell SNV caller.
 - [[30-Concepts/allele-dropout]] — scWGA failure mode.
+- [[30-Concepts/scwga-chemistries]] — family of scWGA chemistries; uniformity/dropout/error tradeoffs.
+- [[30-Concepts/single-cell-variant-calling]] — somatic SNV/indel detection from scDNA despite amplification artifacts.
+- [[30-Concepts/strand-seq]] — BrdU strand-selective scDNA for SVs and haplotype phasing.
 
 ## Duplex sequencing
 
@@ -47,6 +50,20 @@ Each entry links to its definition page. Grouped by domain.
 - [[30-Concepts/single-cell-multiomics]] — umbrella concept.
 - [[30-Concepts/spatial-multiomics]] — spatially-resolved multi-omic methods.
 - [[30-Concepts/combinatorial-indexing]] — split-pool barcoding.
+- [[30-Concepts/joint-single-cell-multi-omics]] — physical co-capture of ≥2 modalities per cell.
+- [[30-Concepts/multimodal-integration-methods]] — computational integration of single-cell omics modalities.
+- [[30-Concepts/scrna-seq]] — single-cell RNA sequencing; transcriptomic axis of joint assays.
+- [[30-Concepts/drop-seq]] — droplet scRNA-seq founding method (STAMPs, cell barcodes).
+- [[30-Concepts/dr-seq]] — one-pot scDNA + scRNA via MALBAC quasilinear amplification.
+- [[30-Concepts/sci-car]] — combinatorial-indexing joint chromatin accessibility + mRNA.
+- [[30-Concepts/scnmt-seq]] — triple-omics: methylation + accessibility + transcriptome per cell.
+- [[30-Concepts/sctrio-seq]] — first triple-omics: CNV + methylome + transcriptome.
+- [[30-Concepts/share-seq]] — split-pool joint scATAC + scRNA; introduces DORCs.
+- [[30-Concepts/scdamt-seq]] — joint single-cell DamID protein–DNA contacts + transcriptome.
+- [[30-Concepts/defnd-seq]] — droplet scDNA + scRNA via nucleosome depletion + 10x Multiome.
+- [[30-Concepts/sdr-seq]] — targeted droplet scDNA + scRNA on Tapestri; low dropout.
+- [[30-Concepts/resolveome]] — PTA whole-genome + full-transcriptome single-cell (BioSkryb).
+- [[30-Concepts/dd-seq]] — nanobody-DddA deaminase records DNA–protein/TF binding footprints.
 
 ## scATAC-seq + chromatin accessibility
 
@@ -70,6 +87,9 @@ Each entry links to its definition page. Grouped by domain.
 - [[30-Concepts/scanpy]] / [[30-Concepts/anndata]] — Python scRNA framework.
 - [[30-Concepts/icell8-nanowell]] — Takara 5,184-well platform.
 - [[30-Concepts/jaccard-similarity]] / [[30-Concepts/nystrom-method]] / [[30-Concepts/k-medoids]] / [[30-Concepts/latent-dirichlet-allocation]] — algorithm primitives.
+- [[30-Concepts/scatac-imputation]] — recovery of missing open-chromatin signal in sparse scATAC.
+- [[30-Concepts/scopen]] — regularized NMF imputation/denoising for scATAC.
+- [[30-Concepts/scale]] — VAE + Gaussian-mixture deep generative scATAC modeling.
 
 ## Histone modifications
 
@@ -111,6 +131,7 @@ Each entry links to its definition page. Grouped by domain.
 - [[30-Concepts/epigenetic-memory]] — heritable methylation states.
 - [[30-Concepts/epigenetic-aging]] — methylation clocks (Horvath, scAge).
 - [[30-Concepts/cancer-of-unknown-primary]] — EPICUP methylation classifier.
+- [[30-Concepts/methylation-clones-epimutation]] — heritable CpG epimutations as endogenous lineage markers.
 
 ## Long-read sequencing
 
@@ -138,6 +159,13 @@ Each entry links to its definition page. Grouped by domain.
 - [[30-Concepts/stark]] — unified sc3DG-seq pipeline.
 - [[30-Concepts/sscce]] — single-cell structural quality metric.
 - [[30-Concepts/empty-cells-algorithm]] — sc3DG-seq barcode filtering.
+- [[30-Concepts/igs]] — in situ genome sequencing; reads with (x,y,z) coordinates.
+- [[30-Concepts/damid]] — maps protein–DNA contacts via Dam-fusion m6A-GATC footprint.
+- [[30-Concepts/lamina-associated-domains]] — gene-poor genomic regions contacting the nuclear lamina.
+- [[30-Concepts/nuclear-lamina]] — lamin meshwork anchoring peripheral heterochromatin.
+- [[30-Concepts/chromatin-phase-separation]] — LLPS organizing chromatin into membraneless condensates.
+- [[30-Concepts/chromatin-mechanical-properties]] — viscoelastic/biophysical sub-axis of DNA locus state.
+- [[30-Concepts/conformational-heterogeneity]] — metric for cell-to-cell variability of 3D folding.
 
 ## Mosaicism / disease biology
 
@@ -148,6 +176,10 @@ Each entry links to its definition page. Grouped by domain.
 - [[30-Concepts/gonadal-mosaicism]] — germline mosaicism; recurrence risk.
 - [[30-Concepts/clonal-hematopoiesis]] — mosaic HSC clones in blood.
 - [[30-Concepts/lineage-tracing]] — endogenous mutations as lineage barcodes.
+- [[30-Concepts/lineage-tracing-somatic-mutations]] — natural somatic mutations as endogenous lineage barcodes.
+- [[30-Concepts/crispr-lineage-recording]] — evolvable synthetic CRISPR barcodes for prospective lineage tracing.
+- [[30-Concepts/phylogenetic-inference]] — reconstructing cell-division trees from heritable markers.
+- [[30-Concepts/genosenium]] — accumulated somatic-mutation landscape of aged cells.
 - [[30-Concepts/mitochondrial-heteroplasmy]] — mtDNA mosaicism in cells.
 - [[30-Concepts/mitochondrial-lineage-tracing]] — mtDNA mutations as lineage barcodes.
 - [[30-Concepts/kimura-distribution]] — drift-model distribution for heteroplasmy.

@@ -41,6 +41,6 @@ Captures 100s–1000s of surface protein markers in panels.
 
 ## Related
 
-- [[single-cell-multiomics]]
+- [[30-Concepts/single-cell-multiomics]]
 - [[dogma-seq]]
 - [[40-Topics/single-cell-multiomics]]

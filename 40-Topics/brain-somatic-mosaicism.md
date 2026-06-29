@@ -32,7 +32,7 @@ updated: 2026-05-19
 ## Network / consortium
 
 - [[20-Entities/smaht-network]] — Somatic Mosaicism Across Human Tissues
-- BSMN (Brain Somatic Mosaicism Network) — NIH program
+- BSMN (Brain Somatic Mosaicism Network) — NIH program; see [[10-Summaries/garrison-2023-bsmn-data]] for the consortium data-resource descriptor (ASD, schizophrenia, bipolar, FCD, Tourette cohorts).
 
 ## Related
 

@@ -94,7 +94,7 @@ updated: 2026-05-19
 
 - Methylation calling accuracy benchmarking across PacBio and ONT platforms — no community-standard benchmark ([[10-Summaries/fu-2025-longread-methylation]]).
 - 5hmC: functional mark vs intermediate — unresolved ([[10-Summaries/bai-2024-simple-seq]]; [[10-Summaries/fu-2025-longread-methylation]]).
-- Single-cell methylation at scale — current methods are sparse; intersection with [[scdna-seq]] remains an open methodological frontier ([[10-Summaries/iqbal-2023-methylome-review]]).
+- Single-cell methylation at scale — current methods are sparse; intersection with [[30-Concepts/scdna-seq]] remains an open methodological frontier ([[10-Summaries/iqbal-2023-methylome-review]]).
 - Non-CpG methylation (mCpH) in adult tissues, especially brain — functional significance ([[10-Summaries/fu-2025-longread-methylation]]).
 - Are HMAs (decitabine vs azacitidine) clinically interchangeable? Single-cell data argues no ([[10-Summaries/shen-2026-splicool-seq]]; [[10-Summaries/hunt-2022-sctem-seq]]).
 

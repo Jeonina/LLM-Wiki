@@ -37,11 +37,11 @@ Distinct from **chimerism** (cells from a different individual — fertilization
 - **Pre-implantation screening**: aneuploidy in early embryos shapes IVF outcomes ([[10-Summaries/campbell-2015-mosaicism-review]]).
 - **Universal in aged tissue**: detected in every solid organ examined to date ([[10-Summaries/cagan-2022-nature]]); aged stem cell milieu acts as the selective environment that determines which clones expand — see [[10-Summaries/kapadia-2024-stem-cell-aging|Kapadia & Goodell 2024]] for the stem-cell-aging framing ("adaptive oncogenesis").
 
-The biology motivated the methods. [[scdna-seq]] became technically tractable largely *because* of demand from mosaicism researchers — Walsh lab, Vijg, Quake, Evrony — who needed single-cell DNA resolution to detect what bulk could not.
+The biology motivated the methods. [[30-Concepts/scdna-seq]] became technically tractable largely *because* of demand from mosaicism researchers — Walsh lab, Vijg, Quake, Evrony — who needed single-cell DNA resolution to detect what bulk could not.
 
 ## Variants and refinements
 
-- **[[clonal-hematopoiesis]]** — mosaic blood-cell clones expanding with age; drivers include DNMT3A, TET2, JAK2 V617F, CALR ([[10-Summaries/izzo-2024-got-cha]]; [[10-Summaries/nam-2022-natgenet]]).
+- **[[30-Concepts/clonal-hematopoiesis]]** — mosaic blood-cell clones expanding with age; drivers include DNMT3A, TET2, JAK2 V617F, CALR ([[10-Summaries/izzo-2024-got-cha]]; [[10-Summaries/nam-2022-natgenet]]).
 - **[[developmental-mutation-timing]]** — the timing-of-mutation → tissue-distribution mapping that determines clinical phenotype ([[10-Summaries/bae-2017-pregastrulation-mutations]]).
 - **Mosaic disease syndromes**: CHILD syndrome (first mitosis), Proteus syndrome (AKT1), hemimegalencephaly (PI3K-AKT-mTOR), Pallister-Killian (i(12p)) ([[10-Summaries/forsberg-2017-mosaicism-review]]).
 
@@ -86,8 +86,8 @@ This is the gap PI Jeonina's review aims to articulate: **a DNA-centric framing 
 - [[microchimerism]]
 - [[developmental-mutation-timing]]
 - [[lineage-tracing]]
-- [[clonal-hematopoiesis]]
-- [[scdna-seq]]
+- [[30-Concepts/clonal-hematopoiesis]]
+- [[30-Concepts/scdna-seq]]
 - [[got-cha]]
 - [[daf-seq]]
 - [[40-Topics/somatic-mosaicism]]

@@ -25,7 +25,7 @@ sources: [
 
 ## Why the gap matters
 
-Somatic mosaicism is the body's record of post-zygotic mutational history ([[somatic-mosaicism]]; [[10-Summaries/forsberg-2017-mosaicism-review]]; [[10-Summaries/campbell-2015-mosaicism-review]]). The interpretive question almost always lands on **what does this mutation do to the cell's regulatory state?** — does it sit in a heterochromatin region (silent), an active enhancer (locus-specific consequence), a methylated CpG island (potentially disrupting silencing)? In practice the answer is currently inferred from *bulk* epigenome reference data (ENCODE, Roadmap, BluePrint) overlaid on single-cell genotype calls.
+Somatic mosaicism is the body's record of post-zygotic mutational history ([[30-Concepts/somatic-mosaicism]]; [[10-Summaries/forsberg-2017-mosaicism-review]]; [[10-Summaries/campbell-2015-mosaicism-review]]). The interpretive question almost always lands on **what does this mutation do to the cell's regulatory state?** — does it sit in a heterochromatin region (silent), an active enhancer (locus-specific consequence), a methylated CpG island (potentially disrupting silencing)? In practice the answer is currently inferred from *bulk* epigenome reference data (ENCODE, Roadmap, BluePrint) overlaid on single-cell genotype calls.
 
 This is the workflow that has produced cell-type-specific somatic-mutation burden estimates in Alzheimer's brain ([[10-Summaries/kousi-2022-ad-mosaicism]]) and lung/colon ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]). It works because cell-type identity (and therefore which bulk reference to use) can usually be inferred from the same cell's transcriptome. But it cannot answer:
 
@@ -157,7 +157,7 @@ The review's stated novelty is "**DNA-centric, locus-as-unit, mutation + epigeno
 | **mtDNA + chromatin** | mtscATAC-seq | Same-cell mtDNA mutations + chromatin at thousands of cells | Restricted to mtDNA only |
 | **Bulk-epi-annotated mosaic SNVs** | Bae 2022 ASD MEIS-motif | Genome-wide SNV + enhancer annotation | Annotation is from *reference* fetal brain epi, not the same cell |
 
-The DNA-centric "locus state" framing in [[scdna-capabilities-framework]] anticipates this synthesis. The wiki's [[somatic-mosaicism]] page now flags the gap. This 50-Notes page is the canonical articulation, citable from review §1 (somatic mosaicism opening, framing the unsolved problem), §4.6 (joint-assay landscape, identifying the missing combination), §6 (limitations, naming what current methods cannot do), and §7 (future perspectives, what a future assay would look like).
+The DNA-centric "locus state" framing in [[scdna-capabilities-framework]] anticipates this synthesis. The wiki's [[30-Concepts/somatic-mosaicism]] page now flags the gap. This 50-Notes page is the canonical articulation, citable from review §1 (somatic mosaicism opening, framing the unsolved problem), §4.6 (joint-assay landscape, identifying the missing combination), §6 (limitations, naming what current methods cannot do), and §7 (future perspectives, what a future assay would look like).
 
 ## Open questions
 
@@ -178,7 +178,7 @@ The neuro-mosaicism literature provides the empirical foundation for the planned
 
 ## Related
 
-- [[somatic-mosaicism]] — concept page; this note expands the "epigenome gap" section.
+- [[30-Concepts/somatic-mosaicism]] — concept page; this note expands the "epigenome gap" section.
 - [[sctrio-seq]], [[got-cha]], [[daf-seq]], [[scnmt-seq]] — four anchor concept pages.
 - [[40-Topics/somatic-mosaicism]] — topic-level mosaicism index.
 - [[40-Topics/single-cell-multiomics]] — joint-assay landscape.

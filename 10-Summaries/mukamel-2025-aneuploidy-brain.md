@@ -58,7 +58,7 @@ updated: 2026-05-12
 
 ## Entities / concepts touched
 
-[[somatic-mosaicism]] · [[scbs-seq]] · [[dna-methylation]] · [[single-cell-multiomics]] · [[3d-genome]] · [[alzheimers-disease]] · [[autism-spectrum-disorder]] · [[40-Topics/somatic-mosaicism]] · [[40-Topics/dna-methylation]] · [[40-Topics/3d-genome]] · [[40-Topics/single-cell-multiomics]]
+[[30-Concepts/somatic-mosaicism]] · [[scbs-seq]] · [[30-Concepts/dna-methylation]] · [[30-Concepts/single-cell-multiomics]] · [[30-Concepts/3d-genome]] · [[alzheimers-disease]] · [[autism-spectrum-disorder]] · [[40-Topics/somatic-mosaicism]] · [[40-Topics/dna-methylation]] · [[40-Topics/3d-genome]] · [[40-Topics/single-cell-multiomics]]
 
 ## Related summaries
 

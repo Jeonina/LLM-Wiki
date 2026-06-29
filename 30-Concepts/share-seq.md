@@ -38,5 +38,5 @@ Ma et al. 2020 (*Cell* 183, 1103) developed SHARE-seq as a high-throughput alter
 - [[scatac-seq]]
 - [[tn5-tagmentation]]
 - [[combinatorial-indexing]]
-- [[single-cell-multiomics]]
+- [[30-Concepts/single-cell-multiomics]]
 - [[40-Topics/single-cell-multiomics]]

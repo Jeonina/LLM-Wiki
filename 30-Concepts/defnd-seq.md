@@ -34,5 +34,5 @@ DEFND-seq (DNA and Expression Following Nucleosome Depletion) treats nuclei with
 
 ## Related
 
-- [[30-Concepts/joint-single-cell-multi-omics]] · [[30-Concepts/sdr-seq]] · [[30-Concepts/g-t-seq]] · [[30-Concepts/dr-seq]] · [[30-Concepts/tn5-tagmentation]] · [[30-Concepts/pta]]
+- [[30-Concepts/joint-single-cell-multi-omics]] · [[30-Concepts/sdr-seq]] · [[30-Concepts/gt-seq]] · [[30-Concepts/dr-seq]] · [[30-Concepts/tn5-tagmentation]] · [[30-Concepts/pta]]
 - [[40-Topics/single-cell-multiomics]] · [[40-Topics/scdna-cancer-applications]] · [[20-Entities/peter-a-sims]]

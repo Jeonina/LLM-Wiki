@@ -40,6 +40,7 @@ updated: 2026-05-19
 - [[20-Entities/diane-d-shao]] — Walsh lab scDNA-seq review author.
 - [[20-Entities/gilad-evrony]] — former Walsh postdoc; applications framework.
 - [[20-Entities/lars-forsberg]] — health-and-disease mosaicism review author.
+- [[20-Entities/jan-p-dumanski]] — Uppsala; co-author of the Forsberg/Dumanski review; LOY (loss of Y) mosaicism.
 - [[20-Entities/james-lupski]] — clinical genetics of mosaicism; transmission risk.
 - [[20-Entities/sara-bizzotto]] — Walsh lab; brain mosaicism review (Bizzotto/Walsh 2022).
 - [[20-Entities/patrick-chinnery]] — mtDNA heteroplasmy single-cell biology.

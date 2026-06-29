@@ -9,7 +9,7 @@ updated: 2026-05-11
 
 # META-CS (Multiplexed End-Tagging Amplification of Complementary Strands)
 
-> The only [[duplex-sequencing]] method that can be applied to **single cells** rather than bulk DNA. Uses Tn5 transposase to insert sequencing adapters into DNA in a way that the adapter orientation distinguishes the two complementary strands — combining the per-cell resolution of scWGA with the per-base accuracy of duplex sequencing.
+> The only [[30-Concepts/duplex-sequencing]] method that can be applied to **single cells** rather than bulk DNA. Uses Tn5 transposase to insert sequencing adapters into DNA in a way that the adapter orientation distinguishes the two complementary strands — combining the per-cell resolution of scWGA with the per-base accuracy of duplex sequencing.
 
 ## Definition
 
@@ -19,7 +19,7 @@ Because Tn5 inserts adapters directly without an end-repair / A-tailing step, ME
 
 ## Why it matters
 
-META-CS bridges the long-standing gap between [[scwga]]-based scDNA-seq (per-cell, but high false-positive rate) and bulk [[duplex-sequencing]] (low false-positive rate, but no per-cell assignment). It is the only method that gives single-cell genotypes at near-duplex error rates.
+META-CS bridges the long-standing gap between [[scwga]]-based scDNA-seq (per-cell, but high false-positive rate) and bulk [[30-Concepts/duplex-sequencing]] (low false-positive rate, but no per-cell assignment). It is the only method that gives single-cell genotypes at near-duplex error rates.
 
 In the [[evrony-2021-scDNA-applications-review|Evrony capabilities framework]], META-CS uniquely combines **fidelity** (duplex error correction) and **co-presence** (per-cell assignment) at genome-wide scale.
 
@@ -40,7 +40,7 @@ In the [[evrony-2021-scDNA-applications-review|Evrony capabilities framework]], 
 ## Related
 
 - [[scwga]]
-- [[duplex-sequencing]]
-- [[scdna-seq]]
+- [[30-Concepts/duplex-sequencing]]
+- [[30-Concepts/scdna-seq]]
 - [[dlp-plus]] — Tn5-based sibling without duplex correction.
 - [[scdna-capabilities-framework]]

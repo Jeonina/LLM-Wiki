@@ -1,7 +1,7 @@
 ---
 title: Entities
 description: People, labs, and consortia referenced across the wiki.
-updated: 2026-05-13
+updated: 2026-06-29
 ---
 
 # Entities
@@ -23,6 +23,13 @@ People, labs, and consortia that appear repeatedly in the corpus. Grouped by the
 - [[20-Entities/peter-park]] — HMS; SMaHT bioinformatics.
 - [[20-Entities/flora-vaccarino]] — Yale; SMaHT co-senior.
 - [[20-Entities/smaht-network]] — NIH consortium for somatic mosaicism atlas.
+- [[20-Entities/nicholas-navin]] — MD Anderson; single-cell DNA-seq of cancer, punctuated clonal evolution.
+- [[20-Entities/taejeong-bae]] — Korea U (ex-Mayo/Abyzov); brain mosaicism, BSMN pipeline.
+- [[20-Entities/margaret-goodell]] — Baylor; HSC aging and clonal hematopoiesis.
+- [[20-Entities/alejo-rodriguez-fraticelli]] — IRB Barcelona; lineage-tracing barcodes, clonal hematopoiesis.
+- [[20-Entities/zheng-hu]] — CAS; cancer evolution, PhyloVelo, computational lineage tracing.
+- [[20-Entities/jan-p-dumanski]] — Uppsala; somatic mosaicism, LOY, post-zygotic SVs.
+- [[20-Entities/sangita-choudhury]] — Boston Children's; cardiac somatic mosaicism, duplex sequencing.
 
 ## Duplex sequencing
 
@@ -36,11 +43,14 @@ People, labs, and consortia that appear repeatedly in the corpus. Grouped by the
 
 - [[20-Entities/patrick-chinnery]] — Cambridge; single-cell mtDNA biology.
 - [[20-Entities/james-stewart]] — Max Planck; pathogenic mtDNA mouse models.
+- [[20-Entities/caleb-lareau]] — MSKCC; mtscATAC-seq co-developer, mgatk variant-calling pipeline.
+- [[20-Entities/leif-ludwig]] — BIH/MDC Berlin; mtscATAC-seq co-developer, mtDNA lineage tracing.
 
 ## Neurodegeneration
 
 - [[20-Entities/manolis-kellis]] — MIT/Broad; AD single-cell mosaicism.
 - [[20-Entities/li-huei-tsai]] — MIT Picower; AD biology.
+- [[20-Entities/david-bennett]] — Rush; founder of ROS/MAP Alzheimer's brain cohorts.
 
 ## Multi-omics methods
 
@@ -54,6 +64,18 @@ People, labs, and consortia that appear repeatedly in the corpus. Grouped by the
 - [[20-Entities/fabian-theis]] — Helmholtz Munich; EpiScanpy, best practices.
 - [[20-Entities/maria-colome-tatche]] — Helmholtz Munich; EpiScanpy.
 - [[20-Entities/alexander-van-oudenaarden]] — Hubrecht; sortChIC, scChIX, scEpi².
+- [[20-Entities/aviv-regev]] — Genentech (ex-Broad); Human Cell Atlas co-founder, single-cell genomics.
+- [[20-Entities/evan-macosko]] — Broad/MGH; Drop-seq and Slide-seq developer.
+- [[20-Entities/steven-mccarroll]] — Harvard/Broad; Drop-seq co-developer, psychiatric genetics.
+- [[20-Entities/fuchou-tang]] — Peking U; first author of founding scRNA-seq paper, scTrio-seq.
+- [[20-Entities/jay-shendure]] — UW; combinatorial-indexing sci-methods (sci-CAR, sci-ATAC-seq).
+- [[20-Entities/siddharth-dey]] — UCSB; scDam&T-seq, G&T-seq precursor.
+- [[20-Entities/lars-steinmetz]] — EMBL/Stanford; SDR-seq senior author.
+- [[20-Entities/oliver-stegle]] — EMBL/DKFZ; MOFA, SDR-seq co-author.
+- [[20-Entities/peter-a-sims]] — Columbia; DEFND-seq joint snRNA+DNA.
+- [[20-Entities/jay-a-a-west]] — BioSkryb; ResolveOME, PTA whole-genome+transcriptome.
+- [[20-Entities/wolf-reik]] — Babraham/Altos; scNMT-seq, developmental epigenetics.
+- [[20-Entities/xiaocheng-weng]] — Wuhan U; chemical-biology single-cell multiomics review.
 
 ## Methylation chemistry
 
@@ -67,6 +89,7 @@ People, labs, and consortia that appear repeatedly in the corpus. Grouped by the
 - [[20-Entities/joseph-costello]] — UCSF; glioma methylation, EPICUP.
 - [[20-Entities/shankar-balasubramanian]] — Cambridge / biomodal; 6-base sequencing.
 - [[20-Entities/biomodal]] — biotech; evoC kit for 6-base sequencing.
+- [[20-Entities/joseph-ecker]] — Salk; snmC-seq2, BICCN brain methylome atlas.
 
 ## Single-cell chromatin (ATAC + histone)
 
@@ -81,6 +104,13 @@ People, labs, and consortia that appear repeatedly in the corpus. Grouped by the
 - [[20-Entities/steven-henikoff]] — Fred Hutch; CUT&Tag/CUT&RUN, sciCUT&Tag.
 - [[20-Entities/jake-yeung]] — first author of scChIX-seq.
 - [[20-Entities/rui-jiang]] — Tsinghua; DeepHistone.
+- [[20-Entities/alicia-schep]] — Stanford; lead author of chromVAR.
+- [[20-Entities/ivan-costa]] — RWTH Aachen; HINT-ATAC footprinting, scOpen imputation.
+- [[20-Entities/qiangfeng-cliff-zhang]] — Tsinghua; SCALE (VAE+GMM for scATAC-seq).
+- [[20-Entities/wenfei-jin]] — SUSTech; scDNase-seq, scNOMeRe-seq triple-omics.
+- [[20-Entities/menno-p-creyghton]] — Hubrecht/Erasmus; H3K27ac as active-enhancer mark.
+- [[20-Entities/richard-a-young]] — Whitehead/MIT; super-enhancers, transcriptional condensates.
+- [[20-Entities/rudolf-jaenisch]] — Whitehead/MIT; iPSC reprogramming, enhancer epigenetics.
 
 ## Long-read chromatin / 3D-genome
 
@@ -93,6 +123,13 @@ People, labs, and consortia that appear repeatedly in the corpus. Grouped by the
 - [[20-Entities/dan-xie]] — Sichuan U; SCOUT, SomaGauss-SV.
 - [[20-Entities/fuying-dao]] — sc 3D-genome review.
 - [[20-Entities/hua-jun-wu]] — Peking U; STARK, scNucleome.
+- [[20-Entities/bas-van-steensel]] — NKI; DamID inventor, LAD field pioneer.
+- [[20-Entities/andrew-s-belmont]] — UIUC; microscopy chromosome architecture, NL tethering.
+- [[20-Entities/jop-kind]] — Hubrecht; single-cell DamID, scDam&T-seq.
+- [[20-Entities/kim-de-luca]] — Hubrecht/Kind lab; canonical scDamID bench protocol.
+- [[20-Entities/alexey-onufriev]] — Virginia Tech; polymer-physics chromatin 3D modeling, C.H. metric.
+- [[20-Entities/bin-zhang]] — MIT; Hi-C-parameterized polymer models of chromatin.
+- [[20-Entities/michael-rosen]] — UTSW/HHMI; chromatin LLPS / condensate principles.
 
 ## Other
 

@@ -46,7 +46,7 @@ A subset of mature blood cells share a somatic mutation traceable to a common HS
 
 ## Related
 
-- [[somatic-mosaicism]]
+- [[30-Concepts/somatic-mosaicism]]
 - [[jak2-v617f]]
 - [[calr-mutation]]
 - [[myeloproliferative-neoplasm]]

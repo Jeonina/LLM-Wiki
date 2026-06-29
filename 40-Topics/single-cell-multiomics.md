@@ -26,7 +26,7 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 - [[30-Concepts/single-molecule-footprinting]] — the broader method class.
 - [[30-Concepts/dogma-seq]] — chromatin + RNA + protein trimodal platform; integrated with GoT–ChA via imputation in [[10-Summaries/izzo-2024-got-cha]].
 - [[30-Concepts/cite-seq]] — scRNA + surface protein via antibody-derived tags.
-- [[30-Concepts/g-t-seq]] — G&T-seq, physical-separation scDNA + scRNA (1st joint DNA+RNA assay).
+- [[30-Concepts/gt-seq]] — G&T-seq, physical-separation scDNA + scRNA (1st joint DNA+RNA assay).
 - [[30-Concepts/dr-seq]] — DR-seq, one-pot quasilinear scDNA + scRNA alternative to G&T-seq.
 - [[30-Concepts/defnd-seq]] — DEFND-seq, scalable droplet whole-genome + RNA via nucleosome depletion on stock 10x Multiome.
 - [[30-Concepts/sdr-seq]] — SDR-seq, targeted droplet DNA + RNA on Tapestri with low allelic dropout and per-cell zygosity.
@@ -35,7 +35,7 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 - [[30-Concepts/scnmt-seq]] — scNMT-seq, first single-cell triple-omics (methylation + accessibility + RNA).
 - [[30-Concepts/sctrio-seq]] — scTrio-seq, alternative triple-omics (CNV + methylation + RNA); closest existing precedent for DNA-anchored mutation + epi + transcriptome.
 - [[30-Concepts/igs]] — IGS, in-situ genome sequencing for spatial 3D-DNA at single-cell resolution.
-- [[30-Concepts/gt-seq]] — alias kept for legacy backlinks; canonical page is [[30-Concepts/g-t-seq]].
+- [[30-Concepts/gt-seq]] — alias kept for legacy backlinks; canonical page is [[30-Concepts/gt-seq]].
 - [[30-Concepts/spatial-multiomics]] — spatially-resolved multi-omic measurements.
 - [[30-Concepts/chromatin-accessibility]] — readout layer.
 - [[30-Concepts/chromatin-actuation]] — single-molecule refinement of accessibility.

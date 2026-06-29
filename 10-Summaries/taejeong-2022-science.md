@@ -60,7 +60,7 @@ The largest brain-mosaicism cohort study to date: 131 human brains (44 neurotypi
 
 ## Entities / concepts touched
 
-[[somatic-mosaicism]] · [[clonal-hematopoiesis]] · [[autism-spectrum-disorder]] · [[mtor-pathway]] · [[developmental-mutation-timing]] · [[transcription-factor-motif]] · [[enhancer-states]] · [[20-Entities/alexej-abyzov]] · [[20-Entities/flora-vaccarino]] · [[20-Entities/christopher-walsh]] · [[20-Entities/peter-park]] · [[20-Entities/joseph-gleeson]] · [[40-Topics/somatic-mosaicism]]
+[[30-Concepts/somatic-mosaicism]] · [[30-Concepts/clonal-hematopoiesis]] · [[autism-spectrum-disorder]] · [[mtor-pathway]] · [[developmental-mutation-timing]] · [[transcription-factor-motif]] · [[enhancer-states]] · [[20-Entities/alexej-abyzov]] · [[20-Entities/flora-vaccarino]] · [[20-Entities/christopher-walsh]] · [[20-Entities/peter-park]] · [[20-Entities/joseph-gleeson]] · [[40-Topics/somatic-mosaicism]]
 
 ## Related
 - [[20-Entities/taejeong-bae]] — first/co-author on the foundational Bae et al. brain mosaicism papers (2018 pregastrulation-timing, 2022 NeuN-sorted neurons). summaries

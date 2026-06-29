@@ -41,6 +41,6 @@ The paper explicitly framed sci-CAR as a template for future DNA-anchored joint 
 - [[combinatorial-indexing]]
 - [[scatac-seq]]
 - [[tn5-tagmentation]]
-- [[single-cell-multiomics]]
+- [[30-Concepts/single-cell-multiomics]]
 - [[20-Entities/vijay-ramani]]
 - [[40-Topics/single-cell-multiomics]]

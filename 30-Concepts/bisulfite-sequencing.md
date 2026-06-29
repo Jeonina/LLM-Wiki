@@ -46,6 +46,6 @@ Per-CpG methylation = count of unconverted C / total reads at the site.
 
 ## Related
 
-- [[dna-methylation]]
-- [[long-read-sequencing]] — direct methylation detection alternative.
+- [[30-Concepts/dna-methylation]]
+- [[30-Concepts/long-read-sequencing]] — direct methylation detection alternative.
 - [[40-Topics/dna-methylation]]

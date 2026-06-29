@@ -21,7 +21,7 @@ updated: 2026-05-11
 
 - Maintenance fidelity is essential — without DNMT1, methylation patterns are diluted at each cell division.
 - Loss of any DNMT is embryonic-lethal in mice.
-- DNMT3A loss-of-function mutations are recurrent drivers of [[clonal-hematopoiesis]] and AML.
+- DNMT3A loss-of-function mutations are recurrent drivers of [[30-Concepts/clonal-hematopoiesis]] and AML.
 - DNMT inhibitors (5-azacytidine, decitabine) are approved for MDS and AML.
 
 ## Variants and refinements
@@ -40,8 +40,8 @@ updated: 2026-05-11
 
 ## Related
 
-- [[dna-methylation]]
+- [[30-Concepts/dna-methylation]]
 - [[cpg-island]]
 - [[tet-enzymes]] — opposing demethylation pathway.
-- [[clonal-hematopoiesis]]
+- [[30-Concepts/clonal-hematopoiesis]]
 - [[40-Topics/dna-methylation]]

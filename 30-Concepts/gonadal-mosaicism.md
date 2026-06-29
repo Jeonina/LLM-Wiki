@@ -9,7 +9,7 @@ updated: 2026-05-11
 
 # Gonadal mosaicism
 
-> Subclass of [[somatic-mosaicism]] in which the mosaic mutation is present in the gonadal lineage (sperm or eggs) and therefore can be transmitted to multiple offspring even though the parent appears clinically unaffected. A major source of unexplained recurrence in apparently de novo dominant genetic disorders.
+> Subclass of [[30-Concepts/somatic-mosaicism]] in which the mosaic mutation is present in the gonadal lineage (sperm or eggs) and therefore can be transmitted to multiple offspring even though the parent appears clinically unaffected. A major source of unexplained recurrence in apparently de novo dominant genetic disorders.
 
 ## Definition
 
@@ -39,7 +39,7 @@ A post-zygotic mutation that arises before primordial germ cell (PGC) differenti
 
 ## Related
 
-- [[somatic-mosaicism]]
+- [[30-Concepts/somatic-mosaicism]]
 - [[post-zygotic-variation]]
 - [[developmental-mutation-timing]]
 - [[40-Topics/somatic-mosaicism]]

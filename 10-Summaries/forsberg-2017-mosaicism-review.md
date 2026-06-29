@@ -49,6 +49,7 @@ Synthesizing review. Catalogs evidence from microarray, bulk sequencing, and eme
 ## Entities mentioned
 
 - [[20-Entities/lars-forsberg]] — first author; Uppsala University.
+- [[20-Entities/jan-p-dumanski]] — senior author; Uppsala University; LOY (loss of Y) as the most common human post-zygotic mutation.
 
 ## Concepts touched
 

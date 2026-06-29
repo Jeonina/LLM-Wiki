@@ -58,7 +58,7 @@ Other modification forms ([[10-Summaries/fu-2025-longread-methylation]]):
 - [[dnmt]]
 - [[tet-enzymes]]
 - [[bisulfite-sequencing]]
-- [[long-read-sequencing]]
+- [[30-Concepts/long-read-sequencing]]
 - [[5hmc]]
 - [[decitabine]]
 - [[epigenetic-memory]]

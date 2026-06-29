@@ -9,7 +9,7 @@ updated: 2026-05-11
 
 # TET enzymes
 
-> Ten-eleven translocation (TET) dioxygenases that catalyze oxidation of 5-methylcytosine (5mC) to 5-hydroxymethylcytosine (5hmC), the first step in active demethylation. Three family members: **TET1**, **TET2**, **TET3**. TET2 loss-of-function is among the most common drivers of [[clonal-hematopoiesis]] and myeloid neoplasia.
+> Ten-eleven translocation (TET) dioxygenases that catalyze oxidation of 5-methylcytosine (5mC) to 5-hydroxymethylcytosine (5hmC), the first step in active demethylation. Three family members: **TET1**, **TET2**, **TET3**. TET2 loss-of-function is among the most common drivers of [[30-Concepts/clonal-hematopoiesis]] and myeloid neoplasia.
 
 ## Definition
 
@@ -41,8 +41,8 @@ TET enzymes use molecular oxygen and α-ketoglutarate to iteratively oxidize 5mC
 
 ## Related
 
-- [[dna-methylation]]
+- [[30-Concepts/dna-methylation]]
 - [[dnmt]] — opposing methylation enzymes.
 - [[cpg-island]]
-- [[clonal-hematopoiesis]]
+- [[30-Concepts/clonal-hematopoiesis]]
 - [[40-Topics/dna-methylation]]

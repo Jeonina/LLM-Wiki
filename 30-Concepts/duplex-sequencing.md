@@ -51,7 +51,7 @@ Most duplex methods sequence **bulk DNA** at single-molecule resolution — they
 
 ## Related
 
-- [[scdna-seq]]
+- [[30-Concepts/scdna-seq]]
 - [[meta-cs]] — single-cell-compatible duplex method.
 - [[scdna-capabilities-framework]] — fidelity capability.
 - [[codec]] · [[nanoseq]]

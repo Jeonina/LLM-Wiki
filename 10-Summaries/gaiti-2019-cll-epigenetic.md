@@ -44,7 +44,7 @@ updated: 2026-05-12
 
 ## Entities / concepts touched
 
-[[dna-methylation]] · [[scbs-seq]] · [[lineage-tracing]] · [[clonal-hematopoiesis]] · [[20-Entities/dan-a-landau]] · [[20-Entities/landau-lab]] · [[20-Entities/alexander-meissner]] · [[40-Topics/dna-methylation]] · [[40-Topics/hematopoietic-malignancies]]
+[[30-Concepts/dna-methylation]] · [[scbs-seq]] · [[lineage-tracing]] · [[30-Concepts/clonal-hematopoiesis]] · [[20-Entities/dan-a-landau]] · [[20-Entities/landau-lab]] · [[20-Entities/alexander-meissner]] · [[40-Topics/dna-methylation]] · [[40-Topics/hematopoietic-malignancies]]
 
 ## Related summaries
 

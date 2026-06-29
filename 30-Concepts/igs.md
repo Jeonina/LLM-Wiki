@@ -43,7 +43,7 @@ The source file `AndrewC_2020_Science.pdf` is named for first author Andrew C. P
 
 ## Related
 
-- [[3d-genome]]
+- [[30-Concepts/3d-genome]]
 - [[single-cell-hi-c]]
 - [[dip-c]]
 - [[tn5-tagmentation]]

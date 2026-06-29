@@ -9,7 +9,7 @@ updated: 2026-05-12
 
 # scNMT-seq
 
-> First single-cell triple-omics assay that simultaneously profiles **chromatin accessibility + DNA methylation + transcriptome** in the same cell. Uses NOMe-seq chemistry (GpC methyltransferase M.CviPI labels accessible DNA) over a [[g-t-seq|G&T-seq]]-style physical DNA/RNA separation.
+> First single-cell triple-omics assay that simultaneously profiles **chromatin accessibility + DNA methylation + transcriptome** in the same cell. Uses NOMe-seq chemistry (GpC methyltransferase M.CviPI labels accessible DNA) over a [[gt-seq|G&T-seq]]-style physical DNA/RNA separation.
 
 ## Definition
 
@@ -39,9 +39,9 @@ Clark et al. 2018 ([[10-Summaries/clark-2018-scnmt-seq]]). Cell is lysed in M.Cv
 - [[nome-seq]]
 - [[scbs-seq]]
 - [[chromatin-accessibility]]
-- [[dna-methylation]]
-- [[single-cell-multiomics]]
-- [[g-t-seq]]
+- [[30-Concepts/dna-methylation]]
+- [[30-Concepts/single-cell-multiomics]]
+- [[gt-seq]]
 - [[20-Entities/heather-lee]]
 - [[40-Topics/single-cell-multiomics]]
 - [[40-Topics/dna-methylation]]

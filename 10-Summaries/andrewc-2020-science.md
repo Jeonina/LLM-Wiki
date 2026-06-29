@@ -44,7 +44,7 @@ IGS sequences DNA **directly inside intact, fixed cells**, then matches each in-
 
 ## Entities / concepts touched
 
-[[3d-genome]] · [[single-cell-hi-c]] · [[tn5-tagmentation]] · [[umi-molecular-barcoding]] · [[chromatin-compartments]] · [[topologically-associating-domain]] · [[40-Topics/3d-genome]] · [[40-Topics/single-cell-multiomics]]
+[[30-Concepts/3d-genome]] · [[single-cell-hi-c]] · [[tn5-tagmentation]] · [[umi-molecular-barcoding]] · [[chromatin-compartments]] · [[topologically-associating-domain]] · [[40-Topics/3d-genome]] · [[40-Topics/single-cell-multiomics]]
 
 ## Related summaries
 

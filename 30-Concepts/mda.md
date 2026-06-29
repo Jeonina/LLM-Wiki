@@ -19,7 +19,7 @@ Typical metrics: coverage ~70–75%, MAPD low but variable, allelic balance low,
 
 ## Why it matters
 
-MDA democratized [[scdna-seq]]: Φ29 polymerase enabled high-fidelity, high-coverage amplification at low cost. Most pre-2020 single-cell genome sequencing — including microbial dark matter discovery, the early human brain mosaicism studies, and the foundational cancer single-cell papers — used MDA.
+MDA democratized [[30-Concepts/scdna-seq]]: Φ29 polymerase enabled high-fidelity, high-coverage amplification at low cost. Most pre-2020 single-cell genome sequencing — including microbial dark matter discovery, the early human brain mosaicism studies, and the foundational cancer single-cell papers — used MDA.
 
 **Limitations** (which motivated PTA and other successors):
 - **Allelic imbalance and dropout** from exponential amplification — early-amplified loci dominate the read pool, suppressing the under-amplified allele.
@@ -49,5 +49,5 @@ MDA democratized [[scdna-seq]]: Φ29 polymerase enabled high-fidelity, high-cove
 - [[scwga]]
 - [[pta]] — direct successor.
 - [[malbac]] — hybrid PCR/isothermal alternative.
-- [[scdna-seq]]
+- [[30-Concepts/scdna-seq]]
 - [[40-Topics/whole-genome-amplification]]

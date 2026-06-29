@@ -44,8 +44,8 @@ updated: 2026-05-11
 ## Related
 
 - [[bisulfite-sequencing]]
-- [[dna-methylation]]
-- [[duplex-sequencing]]
+- [[30-Concepts/dna-methylation]]
+- [[30-Concepts/duplex-sequencing]]
 - [[fiber-seq]]
 - [[daf-seq]]
 - [[40-Topics/long-read-sequencing]]

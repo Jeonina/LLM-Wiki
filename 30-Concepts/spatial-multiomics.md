@@ -54,5 +54,5 @@ Tissue context matters: dissociation for conventional scRNA-seq destroys spatial
 
 ## Related
 
-- [[single-cell-multiomics]]
+- [[30-Concepts/single-cell-multiomics]]
 - [[40-Topics/single-cell-multiomics]]

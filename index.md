@@ -1,14 +1,14 @@
 ---
 title: LLM Wiki — scDNA-seq & Single-Cell Epigenomics
 description: A living knowledge base on single-cell DNA sequencing, somatic mosaicism, and adjacent epigenomics.
-updated: 2026-06-26
+updated: 2026-06-29
 ---
 
 # LLM Wiki
 
 A living knowledge base on **single-cell DNA sequencing**, **somatic mosaicism**, and **single-cell epigenomics** — built and maintained with the help of an LLM, following [Andrej Karpathy's LLM Wiki pattern](10-Summaries/example-llm-wiki).
 
-> This wiki synthesizes ~130 papers spanning scDNA-seq methods, chromatin profiling, DNA methylation, multi-omics assays, and computational tools. Start from a topic below, or browse the full catalog.
+> This wiki synthesizes ~190 papers spanning scDNA-seq methods, chromatin profiling, DNA methylation, multi-omics assays, and computational tools. Start from a topic below, or browse the full catalog.
 
 The central motivation: there is no DNA-centric locus-state framework that jointly interprets mutation + epigenome + RNA at single-cell scale. The wiki tracks the methods that get us closer to one — see [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap|the synthesis gap note]] for the framing.
 
@@ -120,10 +120,10 @@ Ultra-accurate error correction by reading both strands of a DNA molecule. Essen
 
 | | |
 |---|---|
-| Papers | All ~130 paper summaries, organized by topic |
-| People & labs | Researchers, labs, consortia |
-| Concepts | Definitions: methods, terms, ideas |
-| Topics | Broad themes that gather concepts and papers |
+| [[10-Summaries/index\|Papers]] | All ~190 paper summaries, organized by topic |
+| [[20-Entities/index\|People & labs]] | Researchers, labs, consortia |
+| [[30-Concepts/index\|Concepts]] | Definitions: methods, terms, ideas |
+| [[40-Topics/index\|Topics]] | Broad themes that gather concepts and papers |
 
 ---
 
@@ -154,4 +154,4 @@ The maintainer reads each new source in full, writes a summary, and **touches 5�
 
 ---
 
-*This wiki is a personal research tool. Papers are summarized by an LLM; always verify against the original sources. Last updated 2026-06-26.*
+*This wiki is a personal research tool. Papers are summarized by an LLM; always verify against the original sources. Last updated 2026-06-29.*

@@ -17,6 +17,7 @@ The notes that span all layers — start here.
 - [[50-Notes/regulatory-layers-overview]] — defines the five (or six) molecular axes of epigenome interpretation and maps each to its concepts, assays, and cross-layer dependencies. The wiki's main entry point (most-linked note).
 - [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]] 🎯 — the unmet problem of reading somatic mutation × epigenetic state in the *same* cell; the originating motivation for the wiki.
 - [[50-Notes/joint-assays-by-layer-pair]] 🎯 — single-cell joint assays cataloged by which layer-pair they bridge (genotype-anchored first), climaxing on Duplex-Multiome.
+- [[50-Notes/computational-framework-structure]] 🎯 — draft scaffold for the manuscript's main (computational) section: why to invert the 5-layer frame and organize by analysis task ending in integration, with the task × layer matrix and method-to-subsection mapping.
 
 ## Genetic variation layer
 

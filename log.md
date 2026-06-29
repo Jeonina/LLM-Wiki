@@ -4,6 +4,21 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-06-29 — Draft: computational-framework-structure note (review main-section scaffold)
+
+**Trigger**: User asked to draft the manuscript's computational-framework section after deciding (this session) not to mirror the 5-layer measurement frame.
+
+### Page created (1)
+- [[50-Notes/computational-framework-structure]] 🎯 — draft scaffold (not prose) for the paper's main section. Core argument: invert the 5-layer frame; organize computation by analysis task (shared substrate → layer-specific inference → cross-layer integration → frontier), climaxing in integration. Includes the **task × layer matrix** and a method-to-subsection mapping with 45 cited wiki pages (variant callers, chromVAR/cisTopic/scOpen/SCALE, DeepCpG/Melissa/scMET/Epiclomal, scChIX, MOFA+/MultiVI/GLUE/Cobolt/WNN, lähnemann grand-challenges). Tagged `draft` + `review-paper-anchor`.
+
+### Existing pages touched
+- [[50-Notes/index]] + root [[index]] Synthesis section — registered the new anchor note.
+
+### Note
+- Surfaced gap: accessibility & 3D layers still lack their own synthesis notes; 3D has thinner computational-tool coverage in the corpus (flagged as an open question in the draft).
+
+---
+
 ## 2026-06-29 — Maintenance: organize 50-Notes (index + frontmatter standardization)
 
 **Trigger**: User (writing the scDNA-seq review) felt 50-Notes was scattered; asked to tidy it before drafting the computational-framework note. Scope chosen: index + frontmatter standardization (no content merges); grouping by the paper's layer structure.

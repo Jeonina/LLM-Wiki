@@ -17,8 +17,8 @@ concepts:
   - "[[30-Concepts/scepi2-seq]]"
   - "[[30-Concepts/sortchic]]"
   - "[[30-Concepts/taps]]"
-  - "[[30-Concepts/histone-modifications]]"
-  - "[[30-Concepts/dna-methylation]]"
+  - "[[40-Topics/histone-modifications]]"
+  - "[[40-Topics/dna-methylation]]"
   - "[[30-Concepts/replication-timing]]"
   - "[[30-Concepts/uhrf1]]"
 topics:

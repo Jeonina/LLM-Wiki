@@ -14,7 +14,7 @@ entities:
   - "[[20-Entities/michael-rosen]]"
 concepts:
   - "[[30-Concepts/chromatin-phase-separation]]"
-  - "[[30-Concepts/histone-modifications]]"
+  - "[[40-Topics/histone-modifications]]"
   - "[[30-Concepts/chromatin-mechanical-properties]]"
 topics:
   - "[[40-Topics/chromatin-architecture]]"
@@ -80,6 +80,6 @@ topics:
 
 ## Related
 
-- [[30-Concepts/chromatin-phase-separation]] · [[30-Concepts/histone-modifications]] · [[30-Concepts/chromatin-mechanical-properties]]
+- [[30-Concepts/chromatin-phase-separation]] · [[40-Topics/histone-modifications]] · [[30-Concepts/chromatin-mechanical-properties]]
 - [[10-Summaries/ahn-2021-llps-cancer-looping]] · [[10-Summaries/qi-zhang-2021-nucleoli-coalescence]] · [[10-Summaries/daugird-2024-viscoelastic-chromatin]]
 - [[40-Topics/chromatin-architecture]]

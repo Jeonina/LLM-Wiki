@@ -19,11 +19,11 @@ entities:
   - "[[20-Entities/smaht-network]]"
 concepts:
   - "[[30-Concepts/pta]]"
-  - "[[30-Concepts/duplex-sequencing]]"
-  - "[[30-Concepts/somatic-mosaicism]]"
+  - "[[40-Topics/duplex-sequencing]]"
+  - "[[40-Topics/somatic-mosaicism]]"
   - "[[30-Concepts/lineage-tracing]]"
   - "[[30-Concepts/mutational-signatures]]"
-  - "[[30-Concepts/clonal-hematopoiesis]]"
+  - "[[40-Topics/clonal-hematopoiesis]]"
 topics:
   - "[[40-Topics/somatic-mosaicism]]"
   - "[[40-Topics/scdna-seq]]"
@@ -68,4 +68,4 @@ topics:
 **Source:** [DOI](https://doi.org/10.1101/2025.10.31.685648)
 ## Related
 
-- [[40-Topics/somatic-mosaicism]] · [[30-Concepts/pta]] · [[30-Concepts/duplex-sequencing]] · [[20-Entities/smaht-network]]
+- [[40-Topics/somatic-mosaicism]] · [[30-Concepts/pta]] · [[40-Topics/duplex-sequencing]] · [[20-Entities/smaht-network]]

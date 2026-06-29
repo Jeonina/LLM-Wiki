@@ -25,4 +25,4 @@ Lower-cost duplex chemistry; benchmark-comparable accuracy to NanoSeq and HiDEF-
 
 ## Related
 
-- [[30-Concepts/duplex-sequencing]] · [[30-Concepts/nanoseq]] · [[30-Concepts/hidef-seq]] · [[40-Topics/duplex-sequencing]]
+- [[40-Topics/duplex-sequencing]] · [[30-Concepts/nanoseq]] · [[30-Concepts/hidef-seq]] · [[40-Topics/duplex-sequencing]]

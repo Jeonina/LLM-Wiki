@@ -9,7 +9,7 @@ updated: 2026-05-11
 
 # Microchimerism
 
-> Persistent presence of a small number of cells from another individual in a host, typically at ratios of 1:10⁵–10⁶ host cells. Conceptually distinct from [[30-Concepts/somatic-mosaicism]] (one zygote, multiple genotypes) and from full chimerism (one organism, multiple zygotes).
+> Persistent presence of a small number of cells from another individual in a host, typically at ratios of 1:10⁵–10⁶ host cells. Conceptually distinct from [[40-Topics/somatic-mosaicism]] (one zygote, multiple genotypes) and from full chimerism (one organism, multiple zygotes).
 
 ## Definition
 
@@ -42,5 +42,5 @@ Most common sources ([[10-Summaries/forsberg-2017-mosaicism-review]] Box 1):
 
 ## Related
 
-- [[30-Concepts/somatic-mosaicism]] — distinct phenomenon.
+- [[40-Topics/somatic-mosaicism]] — distinct phenomenon.
 - [[40-Topics/somatic-mosaicism]]

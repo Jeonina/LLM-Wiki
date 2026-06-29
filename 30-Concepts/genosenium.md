@@ -28,5 +28,5 @@ Is genosenium *causal* for aging-related disease, or a *biomarker*? Distinction 
 
 ## Related
 
-- [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/clonal-hematopoiesis]] · [[30-Concepts/epigenetic-aging]]
+- [[40-Topics/somatic-mosaicism]] · [[40-Topics/clonal-hematopoiesis]] · [[30-Concepts/epigenetic-aging]]
 - [[40-Topics/somatic-mosaicism]]

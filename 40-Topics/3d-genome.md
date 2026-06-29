@@ -1,19 +1,30 @@
 ---
 type: topic
 title: 3D genome
-aliases: [chromatin conformation, Hi-C, nuclear architecture]
-tags: [Hi-C, TAD, compartments, loops, single-cell, chromatin-structure]
+aliases: [chromatin conformation, Hi-C, nuclear architecture, 3D chromatin organization]
+tags: [Hi-C, TAD, compartments, loops, single-cell, chromatin-structure, chromatin]
 created: 2026-05-12
-updated: 2026-05-19
+updated: 2026-06-29
 ---
 
 # 3D genome
 
-> The 3D organization of chromatin within the nucleus — compartments (A/B), topologically associating domains (TADs), chromatin loops ([[10-Summaries/nagano-2013-nature]]; [[10-Summaries/tan-2018-science]]), and **spatial positioning relative to the nuclear lamina** ([[10-Summaries/van-steensel-2017-lads-review]]) — is a regulatory layer that shapes gene expression, replication timing, and cellular identity. Bulk Hi-C revealed the principles ([[10-Summaries/nagano-2013-nature]]); single-cell methods (scHi-C, sciHi-C, Dip-C, scSPRITE, scNanoHi-C, scDamID) revealed the heterogeneity ([[10-Summaries/hong-2025-sc3d-genome-review]]), with TAD boundaries, compartments, loops, and lamina contacts varying substantially between cells in ways that bulk data cannot resolve ([[10-Summaries/tan-2018-science]]; [[10-Summaries/mali-2025-conformational-heterogeneity]]).
+> The three-dimensional organization of DNA within the nucleus — chromosome territories, A/B compartments (active vs inactive) ([[10-Summaries/van-steensel-2017-lads-review]]), topologically associating domains (TADs) ([[10-Summaries/nagano-2013-nature]]), chromatin loops (e.g. enhancer–promoter, CTCF-anchored) ([[10-Summaries/ahn-2021-llps-cancer-looping]]), and **spatial positioning relative to the nuclear lamina** ([[10-Summaries/van-steensel-2017-lads-review]]) — is a regulatory layer that shapes gene expression, replication timing, and cellular identity. Bulk Hi-C revealed the principles ([[10-Summaries/nagano-2013-nature]]); single-cell methods (scHi-C, sciHi-C, Dip-C, scSPRITE, scNanoHi-C, scDamID) revealed the heterogeneity ([[10-Summaries/hong-2025-sc3d-genome-review]]), with TAD boundaries, compartments, loops, and lamina contacts varying substantially between cells in ways that bulk data cannot resolve ([[10-Summaries/tan-2018-science]]; [[10-Summaries/mali-2025-conformational-heterogeneity]]).
+
+## Hierarchical organization
+
+The 3D genome is organized hierarchically across scales: chromosomes → compartments (~5–10 Mb) → TADs (~100 kb–1 Mb) → loops (kb-scale) ([[10-Summaries/hong-2025-sc3d-genome-review]]; [[10-Summaries/nagano-2013-nature]]). It is mapped via 3C-family proximity-ligation methods — 3C, 4C, 5C, ChIA-PET, Hi-C, Capture Hi-C, Micro-C ([[10-Summaries/hong-2025-sc3d-genome-review]]). Single-cell variants — scHi-C, sciHi-C, Dip-C, scSPRITE, scNanoHi-C — extend these to per-cell 3D measurement ([[10-Summaries/hong-2025-sc3d-genome-review]]; [[10-Summaries/tan-2018-science]]), revealing substantial cell-to-cell variability in compartments and TAD boundaries that bulk Hi-C smears together ([[10-Summaries/nagano-2013-nature]]; [[10-Summaries/mali-2025-conformational-heterogeneity]]).
+
+## Why it matters
+
+- **Regulatory layer**: enhancer–promoter loops drive gene expression, while TAD boundaries constrain which regulatory interactions occur ([[10-Summaries/hong-2025-sc3d-genome-review]]).
+- **Compartment switching** tracks cell-state changes during development and in cancer ([[10-Summaries/hong-2025-sc3d-genome-review]]).
+- **LADs ≈ Compartment B** at megabase scale — lamina-associated domains coincide with the inactive B compartment ([[10-Summaries/van-steensel-2017-lads-review]]).
+- **LLPS-driven loops** can rewire 3D contacts independently of CTCF ([[10-Summaries/ahn-2021-llps-cancer-looping]]).
+- **Lamin depletion** raises conformational heterogeneity genome-wide → predicted increase in transcriptional noise ([[10-Summaries/mali-2025-conformational-heterogeneity]]).
 
 ## Core concepts
 
-- [[30-Concepts/3d-genome]] — the overall framework
 - [[30-Concepts/single-cell-hi-c]] — the assay class
 - [[30-Concepts/topologically-associating-domain]] — TADs
 - [[30-Concepts/chromatin-compartments]] — A/B compartments
@@ -23,7 +34,7 @@ updated: 2026-05-19
 - [[30-Concepts/sscce]] — single-cell structural quality metric
 - [[30-Concepts/empty-cells-algorithm]] — filtering sc3DG-seq barcodes
 - [[30-Concepts/nuclear-lamina]] — peripheral organizing surface
-- [[30-Concepts/lamina-associated-domains]] — LADs; the cLAD/fLAD distinction
+- [[30-Concepts/lamina-associated-domains]] — LADs; the cLAD/fLAD distinction (compartment B substrate)
 - [[30-Concepts/damid]] — protein–DNA contact mapping; the lamina assay class
 - [[30-Concepts/scdamt-seq]] — joint genome–protein + transcriptome readout
 - [[30-Concepts/conformational-heterogeneity]] — across-cell 3D variability metric
@@ -79,8 +90,8 @@ None yet. The single-cell 3D-genome story spans three measurement modalities —
 ## Related
 
 - [[40-Topics/chromatin-architecture]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/long-read-sequencing]]
+- [[50-Notes/regulatory-layers-overview]] — 3D genome as one of the four molecular regulatory layers
 
 ## Linked summaries (lint pass 2026-05-21)
 
 - [[10-Summaries/bersaglieri-2019-cells]] — Bersaglieri & Santoro 2019 — Genome organization in and around the nucleolus.
-

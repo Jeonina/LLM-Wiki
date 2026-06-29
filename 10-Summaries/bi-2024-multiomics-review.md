@@ -10,7 +10,7 @@ doi: "10.1016/j.fmre.2023.11.014"
 journal: "Fundamental Research"
 tags: [review, single-cell-multiomics, epigenome, proteome, integration, taxonomy]
 entities: ["[[20-Entities/xiaocheng-weng]]"]
-concepts: ["[[30-Concepts/single-cell-multiomics]]", "[[30-Concepts/joint-single-cell-multi-omics]]", "[[30-Concepts/multimodal-integration-methods]]", "[[30-Concepts/cite-seq]]", "[[30-Concepts/dogma-seq]]"]
+concepts: ["[[40-Topics/single-cell-multiomics]]", "[[30-Concepts/joint-single-cell-multi-omics]]", "[[30-Concepts/multimodal-integration-methods]]", "[[30-Concepts/cite-seq]]", "[[30-Concepts/dogma-seq]]"]
 topics: ["[[40-Topics/single-cell-multiomics]]"]
 ---
 
@@ -46,7 +46,7 @@ This is a review, not primary data. Tables 1–3 catalog scMethyl-mRNA methods (
 
 ## Concepts touched
 
-- [[30-Concepts/single-cell-multiomics]] — this review is one of the broad catalogs
+- [[40-Topics/single-cell-multiomics]] — this review is one of the broad catalogs
 - [[30-Concepts/joint-single-cell-multi-omics]] — methodology family
 - [[30-Concepts/multimodal-integration-methods]] — introduces horizontal/vertical/diagonal frame
 - [[30-Concepts/cite-seq]] — central to the protein-measurement section
@@ -66,6 +66,6 @@ This is a review, not primary data. Tables 1–3 catalog scMethyl-mRNA methods (
 
 ## Related
 
-- [[40-Topics/single-cell-multiomics]] · [[30-Concepts/single-cell-multiomics]]
+- [[40-Topics/single-cell-multiomics]] · [[40-Topics/single-cell-multiomics]]
 - [[10-Summaries/baysoy-2023-multiomics-landscape]] · [[10-Summaries/vandereyken-2023-scmultiomics-review]] · [[10-Summaries/wang-2023-multimodal-review]] — companion reviews
 - [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]] — what this catalog *misses*

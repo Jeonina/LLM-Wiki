@@ -23,5 +23,5 @@ Cells are grown for one division in BrdU-containing medium, then BrdU-labeled st
 
 ## Related
 
-- [[30-Concepts/scdna-seq]] · [[30-Concepts/structural-variants]]
+- [[40-Topics/scdna-seq]] · [[30-Concepts/structural-variants]]
 - [[40-Topics/scdna-seq]]

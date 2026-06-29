@@ -34,4 +34,4 @@ Signatures reveal **mutagenic etiology** from sequence data alone — e.g., SBS4
 
 ## Related
 
-- [[30-Concepts/duplex-sequencing]] · [[30-Concepts/somatic-mosaicism]] · [[20-Entities/ludmil-alexandrov]]
+- [[40-Topics/duplex-sequencing]] · [[40-Topics/somatic-mosaicism]] · [[20-Entities/ludmil-alexandrov]]

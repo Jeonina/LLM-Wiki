@@ -23,4 +23,4 @@ Workflow: formaldehyde crosslinking → chromatin shearing (sonication) → anti
 
 ## Related
 
-- [[30-Concepts/cut-and-run]] · [[30-Concepts/cut-and-tag]] · [[30-Concepts/chic-seq]] · [[30-Concepts/histone-modifications]] · [[30-Concepts/deephistone]]
+- [[30-Concepts/cut-and-run]] · [[30-Concepts/cut-and-tag]] · [[30-Concepts/chic-seq]] · [[40-Topics/histone-modifications]] · [[30-Concepts/deephistone]]

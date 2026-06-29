@@ -29,5 +29,5 @@ Center for Human Genetics and Genomics, Grossman School of Medicine, New York Un
 
 - [[20-Entities/christopher-walsh]] — former mentor.
 - [[30-Concepts/scdna-capabilities-framework]] — Evrony framework.
-- [[30-Concepts/scdna-seq]]
+- [[40-Topics/scdna-seq]]
 - [[40-Topics/scdna-seq]]

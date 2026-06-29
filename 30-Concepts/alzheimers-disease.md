@@ -23,4 +23,4 @@ AD is the most common form of dementia. ~5% of cases are early-onset familial; t
 
 ## Related
 
-- [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/post-zygotic-variation]] · [[20-Entities/manolis-kellis]] · [[20-Entities/li-huei-tsai]]
+- [[40-Topics/somatic-mosaicism]] · [[30-Concepts/post-zygotic-variation]] · [[20-Entities/manolis-kellis]] · [[20-Entities/li-huei-tsai]]

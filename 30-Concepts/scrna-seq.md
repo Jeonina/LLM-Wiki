@@ -70,7 +70,7 @@ The argument structure for an introduction section:
 - [[10-Summaries/tang-2009-scrna-seq]] · [[10-Summaries/macosko-2015-drop-seq]] · [[10-Summaries/svensson-2017-power-analysis]]
 - [[30-Concepts/drop-seq]] · [[30-Concepts/umi-molecular-barcoding]] · [[30-Concepts/combinatorial-indexing]]
 - [[30-Concepts/pseudo-bulk]] — aggregation of scRNA-seq back to a bulk-like profile, used for differential expression at cell-type resolution
-- [[30-Concepts/single-cell-multiomics]]
+- [[40-Topics/single-cell-multiomics]]
 - [[40-Topics/single-cell-multiomics]]
 - [[30-Concepts/got]] — scRNA-seq + targeted DNA genotyping
 - [[30-Concepts/cite-seq]] — scRNA-seq + surface protein

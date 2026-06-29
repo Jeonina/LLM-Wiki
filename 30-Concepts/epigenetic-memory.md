@@ -23,4 +23,4 @@ Memory is enforced by **maintenance machinery**: DNMT1+UHRF1 at the replication 
 
 ## Related
 
-- [[30-Concepts/dna-methylation]] · [[30-Concepts/dnmt]] · [[30-Concepts/cancer-of-unknown-primary]] · [[40-Topics/dna-methylation]]
+- [[40-Topics/dna-methylation]] · [[30-Concepts/dnmt]] · [[30-Concepts/cancer-of-unknown-primary]] · [[40-Topics/dna-methylation]]

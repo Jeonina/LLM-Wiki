@@ -32,7 +32,7 @@ Methods organized by capability profile:
 | Method | Fidelity | Co-presence | Phenotypic association |
 |---|---|---|---|
 | [[mda]] / [[pta]] scWGA + scWGS | low–med | per-cell | none alone |
-| [[30-Concepts/duplex-sequencing]] (bulk) | high | per-molecule | none |
+| [[40-Topics/duplex-sequencing]] (bulk) | high | per-molecule | none |
 | [[meta-cs]] | high | per-cell | none alone |
 | [[got]] | med | per-cell | RNA |
 | [[got-cha]] | med | per-cell | chromatin |
@@ -52,8 +52,8 @@ Methods organized by capability profile:
 
 ## Related
 
-- [[30-Concepts/scdna-seq]]
-- [[30-Concepts/duplex-sequencing]]
+- [[40-Topics/scdna-seq]]
+- [[40-Topics/duplex-sequencing]]
 - [[scwga]]
 - [[got]], [[got-cha]], [[daf-seq]]
 - [[dd-seq]] — D&D-GoT-ChA (fidelity + co-presence + TF binding)

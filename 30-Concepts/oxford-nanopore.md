@@ -29,4 +29,4 @@ ONT instruments range from portable MinION/Flongle to PromethION. Read lengths r
 
 ## Related
 
-- [[30-Concepts/long-read-sequencing]] · [[30-Concepts/pacbio]] · [[30-Concepts/nanopore-adaptive-sampling]] · [[40-Topics/long-read-sequencing]]
+- [[40-Topics/long-read-sequencing]] · [[30-Concepts/pacbio]] · [[30-Concepts/nanopore-adaptive-sampling]] · [[40-Topics/long-read-sequencing]]

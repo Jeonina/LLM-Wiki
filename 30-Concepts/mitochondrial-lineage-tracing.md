@@ -30,5 +30,5 @@ mtDNA's high copy number and random segregation between daughter cells mean only
 
 ## Related
 
-- [[30-Concepts/lineage-tracing]] · [[30-Concepts/mitochondrial-heteroplasmy]] · [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/phylogenetic-inference]]
+- [[30-Concepts/lineage-tracing]] · [[30-Concepts/mitochondrial-heteroplasmy]] · [[40-Topics/somatic-mosaicism]] · [[30-Concepts/phylogenetic-inference]]
 - [[40-Topics/somatic-mosaicism]] · [[40-Topics/single-cell-lineage-tracing]]

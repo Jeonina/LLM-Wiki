@@ -9,7 +9,7 @@ updated: 2026-05-12
 
 # scTrio-seq
 
-> First single-cell **triple-omics** assay: simultaneously yields copy-number variation (from RRBS read distribution), DNA methylome, and transcriptome from the same cell. Methodological landmark for **DNA + epigenome + transcriptome co-measurement at single-cell resolution** — the conceptual ancestor of the somatic-mosaicism × epigenome synthesis ([[30-Concepts/somatic-mosaicism]]).
+> First single-cell **triple-omics** assay: simultaneously yields copy-number variation (from RRBS read distribution), DNA methylome, and transcriptome from the same cell. Methodological landmark for **DNA + epigenome + transcriptome co-measurement at single-cell resolution** — the conceptual ancestor of the somatic-mosaicism × epigenome synthesis ([[40-Topics/somatic-mosaicism]]).
 
 ## Definition
 
@@ -38,11 +38,11 @@ Hou et al. 2016 ([[10-Summaries/hou-2016-sctrio-seq]]). Mild lysis breaks only t
 ## Related
 
 - [[scbs-seq]]
-- [[30-Concepts/dna-methylation]]
-- [[30-Concepts/single-cell-multiomics]]
+- [[40-Topics/dna-methylation]]
+- [[40-Topics/single-cell-multiomics]]
 - [[scnmt-seq]]
 - [[gt-seq]]
 - [[dr-seq]]
-- [[30-Concepts/somatic-mosaicism]]
+- [[40-Topics/somatic-mosaicism]]
 - [[40-Topics/single-cell-multiomics]]
 - [[40-Topics/dna-methylation]]

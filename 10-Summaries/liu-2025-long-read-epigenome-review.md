@@ -13,10 +13,10 @@ entities:
   - "[[20-Entities/ana-conesa]]"
   - "tianyuan liu"
 concepts:
-  - "[[30-Concepts/long-read-sequencing]]"
+  - "[[40-Topics/long-read-sequencing]]"
   - "[[30-Concepts/oxford-nanopore]]"
   - "[[30-Concepts/pacbio]]"
-  - "[[30-Concepts/dna-methylation]]"
+  - "[[40-Topics/dna-methylation]]"
   - "[[30-Concepts/fiber-seq]]"
   - "[[30-Concepts/nome-seq]]"
   - "[[30-Concepts/allele-specific-methylation]]"

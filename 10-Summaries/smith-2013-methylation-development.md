@@ -12,7 +12,7 @@ tags: [review, DNA-methylation, development, ESC, CpG-islands, DNMT, TET]
 entities:
   - "[[20-Entities/alexander-meissner]]"
 concepts:
-  - "[[30-Concepts/dna-methylation]]"
+  - "[[40-Topics/dna-methylation]]"
   - "[[30-Concepts/cpg-island]]"
   - "[[30-Concepts/dnmt]]"
   - "[[30-Concepts/tet-enzymes]]"
@@ -56,7 +56,7 @@ Synthesizing review across mouse and human studies, with extensive ESC focus. Me
 
 ## Concepts touched
 
-- [[30-Concepts/dna-methylation]] — central concept.
+- [[40-Topics/dna-methylation]] — central concept.
 - [[30-Concepts/cpg-island]] — defined here as the constitutively unmethylated regulatory features.
 - [[30-Concepts/dnmt]] — maintenance and de novo methyltransferases.
 - [[30-Concepts/tet-enzymes]] — active demethylation.

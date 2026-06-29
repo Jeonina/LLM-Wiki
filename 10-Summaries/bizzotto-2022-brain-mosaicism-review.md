@@ -13,7 +13,7 @@ entities:
   - "[[20-Entities/sara-bizzotto]]"
   - "[[20-Entities/christopher-walsh]]"
 concepts:
-  - "[[30-Concepts/somatic-mosaicism]]"
+  - "[[40-Topics/somatic-mosaicism]]"
   - "[[30-Concepts/lineage-tracing]]"
   - "[[30-Concepts/post-zygotic-variation]]"
   - "[[30-Concepts/focal-cortical-dysplasia]]"

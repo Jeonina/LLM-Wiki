@@ -27,5 +27,5 @@ Coverage uniformity ↑, allelic dropout ↓, error rate ↓ — but no chemistr
 
 ## Related
 
-- [[30-Concepts/scwga]] · [[30-Concepts/pta]] · [[30-Concepts/duplex-sequencing]]
+- [[30-Concepts/scwga]] · [[30-Concepts/pta]] · [[40-Topics/duplex-sequencing]]
 - [[40-Topics/whole-genome-amplification]] · [[40-Topics/scdna-seq]]

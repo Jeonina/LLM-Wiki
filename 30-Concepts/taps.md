@@ -27,4 +27,4 @@ Bisulfite degrades up to 90% of input DNA and destroys cell-barcode adaptors use
 
 ## Related
 
-- [[30-Concepts/bisulfite-sequencing]] · [[30-Concepts/5hmc]] · [[30-Concepts/tet-enzymes]] · [[30-Concepts/dna-methylation]] · [[20-Entities/chun-xiao-song]]
+- [[30-Concepts/bisulfite-sequencing]] · [[30-Concepts/5hmc]] · [[30-Concepts/tet-enzymes]] · [[40-Topics/dna-methylation]] · [[20-Entities/chun-xiao-song]]

@@ -19,4 +19,4 @@ updated: 2026-05-12
 
 ## Related
 
-- [[30-Concepts/dnmt]] · [[30-Concepts/dna-methylation]] · [[30-Concepts/replication-timing]] · [[30-Concepts/epigenetic-memory]]
+- [[30-Concepts/dnmt]] · [[40-Topics/dna-methylation]] · [[30-Concepts/replication-timing]] · [[30-Concepts/epigenetic-memory]]

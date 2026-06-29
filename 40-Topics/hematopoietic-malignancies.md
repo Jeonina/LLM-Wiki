@@ -16,7 +16,7 @@ The two single-cell methods papers in the vault both use MPN as their proving gr
 ## Core concepts
 
 - [[30-Concepts/myeloproliferative-neoplasm]] — the disease class (ET, PV, MF) and its driver landscape.
-- [[30-Concepts/clonal-hematopoiesis]] — mosaic HSC clonal expansions; precursor state to MPN/MDS/AML.
+- [[40-Topics/clonal-hematopoiesis]] — mosaic HSC clonal expansions; precursor state to MPN/MDS/AML.
 - [[30-Concepts/calr-mutation]] — driver in ~25–30% of MPN; chaperone disruption → UPR; cell-identity-dependent transcriptional output.
 - [[30-Concepts/jak2-v617f]] — most common MPN driver; constitutive JAK-STAT activation; cell-intrinsic chromatin priming visible at clonal hematopoiesis.
 - [[30-Concepts/unfolded-protein-response]] — load-bearing biological output of CALR mutation, with branch deployment depending on cell type.

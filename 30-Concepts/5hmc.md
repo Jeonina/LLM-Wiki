@@ -29,4 +29,4 @@ TET (1/2/3) enzymes oxidize 5mC → 5hmC → 5fC → 5caC. 5fC and 5caC are exci
 
 ## Related
 
-- [[30-Concepts/dna-methylation]] · [[30-Concepts/tet-enzymes]] · [[30-Concepts/simple-seq]] · [[30-Concepts/6-base-cut-and-tag]]
+- [[40-Topics/dna-methylation]] · [[30-Concepts/tet-enzymes]] · [[30-Concepts/simple-seq]] · [[30-Concepts/6-base-cut-and-tag]]

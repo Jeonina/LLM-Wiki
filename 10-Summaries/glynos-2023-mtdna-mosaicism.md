@@ -14,7 +14,7 @@ entities:
   - "[[20-Entities/james-stewart]]"
 concepts:
   - "[[30-Concepts/mitochondrial-heteroplasmy]]"
-  - "[[30-Concepts/somatic-mosaicism]]"
+  - "[[40-Topics/somatic-mosaicism]]"
   - "[[30-Concepts/kimura-distribution]]"
   - "[[30-Concepts/lineage-tracing]]"
 topics:

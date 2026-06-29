@@ -1,21 +1,44 @@
 ---
 type: topic
 title: Single-cell multi-omics
-aliases: [single-cell multiomics, sc-multiomics]
-tags: [single-cell, methods, multiomics]
+aliases: [single-cell multiomics, sc-multiomics, multimodal omics]
+tags: [single-cell, methods, multiomics, multi-omics]
 created: 2026-05-07
-updated: 2026-06-26
+updated: 2026-06-29
 ---
 
 # Single-cell multi-omics
 
 > Methods that measure two or more molecular modalities (DNA sequence, RNA, chromatin accessibility, surface protein, methylation, …) in the same single cell, enabling joint analysis that uncoupled single-modality assays cannot.
 
-The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+ cells but profile each modality coarsely; single-molecule and plate-based platforms profile deeply but at much lower cell number. The wiki's current sources span both ends of that spectrum.
+Single-cell multi-omics is the maturing axis of single-cell biology: most modality *pairs* (and some triples) are now technically feasible, and computational integration has become the dominant bottleneck ([[10-Summaries/baysoy-2023-multiomics-landscape]], [[10-Summaries/vandereyken-2023-scmultiomics-review]]). The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+ cells but profile each modality coarsely; single-molecule and plate-based platforms profile deeply but at much lower cell number ([[10-Summaries/swanson-2025-daf-seq]], [[10-Summaries/izzo-2024-got-cha]]). The wiki's current sources span both ends of that spectrum.
+
+## Organizing axes
+
+Two axes organize the method landscape ([[10-Summaries/baysoy-2023-multiomics-landscape]], [[10-Summaries/vandereyken-2023-scmultiomics-review]]):
+
+**1. By modality pair:**
+- scRNA + scATAC (10x Multiome, SHARE-seq) ([[10-Summaries/ma-2020-share-seq]]).
+- scRNA + surface protein (CITE-seq, REAP-seq) — see [[cite-seq]] ([[10-Summaries/baysoy-2023-multiomics-landscape]]).
+- scDNA + scRNA (G&T-seq — see [[gt-seq]], DR-seq, SIDR-seq, DNTR-seq) ([[10-Summaries/macaulay-2015-gt-seq]], [[10-Summaries/dey-2015-dr-seq]]).
+- scRNA + methylome (scM&T-seq, snmCT-seq) ([[10-Summaries/vandereyken-2023-scmultiomics-review]]).
+- CRISPR-perturbed scRNA (Perturb-seq, CROP-seq) ([[10-Summaries/bi-2024-multiomics-review]]).
+- scDNA + scRNA + protein (DOGMA-seq variants) — see [[dogma-seq]] ([[10-Summaries/izzo-2024-got-cha]]).
+- scDNA + scATAC + RNA + protein (GoT–ChA + DOGMA via imputation) ([[10-Summaries/izzo-2024-got-cha]]).
+
+**2. By when modalities are uncoupled:**
+- Before library prep — physical separation (G&T-seq, SIDR-seq) ([[10-Summaries/macaulay-2015-gt-seq]]).
+- During library prep — joint barcoding ([[10-Summaries/vandereyken-2023-scmultiomics-review]]).
+- After library prep — diagonal computational integration ([[10-Summaries/wang-2023-multimodal-review]]).
+
+## Why it matters
+
+- Lets the same cell answer multiple questions at once: "what is this cell's genotype, and what does it express?" ([[10-Summaries/nam-2019-got]]).
+- Provides the **phenotypic association** capability of the [[scdna-capabilities-framework]] (synthesis).
+- Cell-type atlases (Human Cell Atlas) and disease atlases are increasingly multi-omic by default ([[10-Summaries/baysoy-2023-multiomics-landscape]]).
 
 ## Core concepts
 
-- [[30-Concepts/single-cell-multiomics]] — umbrella concept.
 - [[30-Concepts/got]] — single-cell genotype + transcriptome on droplet 10x scRNA-seq.
 - [[30-Concepts/got-cha]] — single-cell genotype + chromatin accessibility on droplet 10x scATAC-seq, via gDNA capture.
 - [[30-Concepts/dd-seq]] — single-cell DNA–protein/TF binding via nanobody-deaminase footprinting; composes with GoT–ChA (D&D-GoT-ChA) for genotype + TF binding.
@@ -35,7 +58,6 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 - [[30-Concepts/scnmt-seq]] — scNMT-seq, first single-cell triple-omics (methylation + accessibility + RNA).
 - [[30-Concepts/sctrio-seq]] — scTrio-seq, alternative triple-omics (CNV + methylation + RNA); closest existing precedent for DNA-anchored mutation + epi + transcriptome.
 - [[30-Concepts/igs]] — IGS, in-situ genome sequencing for spatial 3D-DNA at single-cell resolution.
-- [[30-Concepts/gt-seq]] — alias kept for legacy backlinks; canonical page is [[30-Concepts/gt-seq]].
 - [[30-Concepts/spatial-multiomics]] — spatially-resolved multi-omic measurements.
 - [[30-Concepts/chromatin-accessibility]] — readout layer.
 - [[30-Concepts/chromatin-actuation]] — single-molecule refinement of accessibility.
@@ -46,6 +68,11 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 - [[30-Concepts/scchix-seq]] — two histone marks per cell with computational deconvolution.
 - [[30-Concepts/scicut-tag]], [[30-Concepts/multi-tag]] — combinatorial-indexing single-cell CUT&Tag, multi-epitope.
 - [[30-Concepts/samosa-tag]], [[30-Concepts/smrt-tag]] — long-read multi-modal chromatin.
+
+## Variants and refinements
+
+- **Spatial multi-omics** — preserves tissue context; imaging-based (MERFISH, seqFISH, in situ) vs NGS-based (Visium, Slide-seq, Stereo-seq) ([[10-Summaries/vandereyken-2023-scmultiomics-review]]). See [[30-Concepts/spatial-multiomics]].
+- **Multi-omic best practices** — modality-specific QC and integration recommendations documented in [[10-Summaries/heumos-2023-best-practices]].
 
 ## Key entities
 
@@ -135,6 +162,11 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 
 - [[50-Notes/joint-assays-by-layer-pair]] — joint single-cell assays organized by which layer-pair they bridge (genotype-anchored first), climaxing on Duplex-Multiome; methodological-integration companion to the synthesis-gap note.
 
+## Contested points
+
+- Cost-per-cell scaling: multi-omic methods are substantially more expensive than unimodal assays at equal cell number ([[10-Summaries/baysoy-2023-multiomics-landscape]]).
+- Integration accuracy across diagonal (different cells, different modalities) approaches is hard to benchmark ([[10-Summaries/wang-2023-multimodal-review]]).
+
 ## Open questions
 
 - Where does scDAF-seq's per-cell ~99% genome coverage / ~10-cell throughput become more useful than GoT–ChA's ~38% genotyping / 10⁵-cell throughput? What experimental questions sit on each side of that line?
@@ -148,3 +180,12 @@ The recurring tension is **breadth vs depth**: droplet platforms scale to 10⁵+
 - [[10-Summaries/macaulay-2016-gt-seq-protocol]] — Macaulay 2016 — G&T-seq protocol: parallel single-cell genome + transcriptome.
 - [[10-Summaries/shen-2026-splicool-seq]] — Shen 2025 — SpliCOOL-seq: scalable scDNA methylation + chromatin via split-pool.
 
+## Related
+
+- [[got]], [[got-cha]], [[daf-seq]]
+- [[cite-seq]]
+- [[gt-seq]]
+- [[dogma-seq]]
+- [[spatial-multiomics]]
+- [[scdna-capabilities-framework]]
+- [[50-Notes/joint-assays-by-layer-pair]]

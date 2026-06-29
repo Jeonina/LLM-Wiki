@@ -28,4 +28,4 @@ Three datasets per experiment: single-incubated dataset A (mark 1 only), single-
 
 ## Related
 
-- [[30-Concepts/sortchic]] · [[30-Concepts/latent-dirichlet-allocation]] · [[30-Concepts/chromatin-velocity]] · [[30-Concepts/histone-modifications]] · [[40-Topics/histone-modifications]] · [[20-Entities/alexander-van-oudenaarden]]
+- [[30-Concepts/sortchic]] · [[30-Concepts/latent-dirichlet-allocation]] · [[30-Concepts/chromatin-velocity]] · [[40-Topics/histone-modifications]] · [[40-Topics/histone-modifications]] · [[20-Entities/alexander-van-oudenaarden]]

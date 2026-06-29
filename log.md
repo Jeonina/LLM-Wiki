@@ -4,6 +4,26 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-06-29 — Refactor: merge 9 concept/topic duplicate pairs into single Topic pages
+
+**Trigger**: User: "merge the duplicate concept/topic pairs into single pages." Nine slugs existed as BOTH a `30-Concepts/` page and a `40-Topics/` page. User chose **merge-into-Topics** (survivor lives in `40-Topics/`, concept twin absorbed and deleted).
+
+### Pairs merged (concept → topic survivor)
+`3d-genome`, `clonal-hematopoiesis`, `dna-methylation`, `duplex-sequencing`, `histone-modifications`, `long-read-sequencing`, `scdna-seq`, `single-cell-multiomics`, `somatic-mosaicism`.
+
+### Process
+- **Content merge** (9 parallel agents, one per topic file): each rewrote `40-Topics/<slug>.md` to absorb ALL substantive content from the concept twin — definitions, mechanisms, examples, per-claim citations — deduped (not concatenated). Frontmatter kept `type: topic`; aliases/tags unioned (dropped awkward "X topic" placeholders); self-references to the deleted twin removed.
+- **Link repointing** (central): every `[[30-Concepts/<slug>]]` and bare `[[<slug>]]` for the 9 → `[[40-Topics/<slug>]]`, wiki-wide (also fixes the cross-links the merged topic pages make to each other, and the root index "Start here" links).
+- **Deleted** the 9 `30-Concepts/<slug>.md`; **pruned** their 9 lines from `30-Concepts/index.md`.
+- Side effect: the concept/topic bare-link ambiguity (from the prior pass) is now structurally gone — one page per slug.
+
+### Final state
+- Concepts 169 → **160**; Topics **20** (unchanged count, survivors now richer: somatic-mosaicism 205 ln, single-cell-multiomics 191 ln, dna-methylation 148 ln, …).
+- **0 broken links · 0 orphans · 0 self-links**; every survivor catalogued in `40-Topics/index.md`, concepts catalog complete (160/160).
+- Note: shell is **zsh** — unquoted `$VAR` is NOT word-split in `for` loops; use `${=VAR}`. A first repoint attempt silently no-op'd because of this; redone correctly.
+
+---
+
 ## 2026-06-29 — Maintenance: lint pass ("rinse the wiki")
 
 **Trigger**: User said "rinse the wiki" — interpreted as a MAINTAIN lint pass. No new sources (0 pending of 193).

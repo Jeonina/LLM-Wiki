@@ -12,7 +12,7 @@ journal: "Science"
 tags: [somatic-mosaicism, neurons, aging, neurodegeneration, single-neuron-WGS, MDA, Walsh-lab, Cockayne, xeroderma]
 entities: []
 concepts:
-  - "[[30-Concepts/somatic-mosaicism]]"
+  - "[[40-Topics/somatic-mosaicism]]"
   - "[[30-Concepts/post-zygotic-variation]]"
 topics:
   - "[[40-Topics/somatic-mosaicism]]"
@@ -44,6 +44,6 @@ Abstract + introduction only; full PDF re-ingest will deepen the methods/mutatio
 
 ## Related
 
-- [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/post-zygotic-variation]] · [[30-Concepts/mda]]
+- [[40-Topics/somatic-mosaicism]] · [[30-Concepts/post-zygotic-variation]] · [[30-Concepts/mda]]
 - [[10-Summaries/bae-2017-pregastrulation-mutations]] · [[10-Summaries/bizzotto-2022-brain-mosaicism-review]] · [[10-Summaries/kapadia-2024-stem-cell-aging]]
 - [[40-Topics/somatic-mosaicism]]

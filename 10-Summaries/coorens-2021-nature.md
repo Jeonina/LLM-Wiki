@@ -24,6 +24,6 @@ Foundational demonstration that bulk-genotyped microdissection-WGS, rather than 
 ## Related
 
 - [[30-Concepts/lineage-tracing-somatic-mutations]]
-- [[30-Concepts/somatic-mosaicism]]
+- [[40-Topics/somatic-mosaicism]]
 - [[10-Summaries/lodato-2015-science]]
 - [[10-Summaries/bae-2017-pregastrulation-mutations]]

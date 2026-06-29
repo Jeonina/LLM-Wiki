@@ -16,7 +16,7 @@ concepts:
   - "[[30-Concepts/splicool-seq]]"
   - "[[30-Concepts/nome-seq]]"
   - "[[30-Concepts/combinatorial-indexing]]"
-  - "[[30-Concepts/dna-methylation]]"
+  - "[[40-Topics/dna-methylation]]"
   - "[[30-Concepts/chromatin-accessibility]]"
   - "[[30-Concepts/lung-adenocarcinoma]]"
   - "[[30-Concepts/epigenetic-aging]]"

@@ -10,7 +10,7 @@ doi: "10.1016/j.cell.2017.04.022"
 journal: "Cell"
 tags: [review, LADs, nuclear-lamina, heterochromatin, DamID, H3K9me2, H3K9me3, structural-axis]
 entities: ["[[20-Entities/bas-van-steensel]]", "[[20-Entities/andrew-s-belmont]]", "[[20-Entities/jop-kind]]"]
-concepts: ["[[30-Concepts/lamina-associated-domains]]", "[[30-Concepts/damid]]", "[[30-Concepts/chromatin-compartments]]", "[[30-Concepts/histone-modifications]]", "[[30-Concepts/3d-genome]]"]
+concepts: ["[[30-Concepts/lamina-associated-domains]]", "[[30-Concepts/damid]]", "[[30-Concepts/chromatin-compartments]]", "[[40-Topics/histone-modifications]]", "[[40-Topics/3d-genome]]"]
 topics: ["[[40-Topics/3d-genome]]", "[[40-Topics/chromatin-architecture]]"]
 ---
 
@@ -57,8 +57,8 @@ This is a **review** of work primarily from the van Steensel and Belmont groups.
 - [[30-Concepts/lamina-associated-domains]] — this is the canonical review; extends the cLAD/fLAD distinction and the three-compartment competition framework
 - [[30-Concepts/damid]] — the workhorse technology
 - [[30-Concepts/chromatin-compartments]] — LADs ≈ compartment B at megabase scale
-- [[30-Concepts/histone-modifications]] — H3K9me2/3 anchor LADs; H3K27me3 at boundaries; redundant methyltransferases
-- [[30-Concepts/3d-genome]] — NL anchoring shapes interphase chromosome topology
+- [[40-Topics/histone-modifications]] — H3K9me2/3 anchor LADs; H3K27me3 at boundaries; redundant methyltransferases
+- [[40-Topics/3d-genome]] — NL anchoring shapes interphase chromosome topology
 - [[30-Concepts/chromatin-mechanical-properties]] — LADs may serve mechanotransduction; LINC complex
 - [[30-Concepts/chromatin-phase-separation]] — implicit: peripheral heterochromatin behaves as a compartment, even without explicit LLPS language
 

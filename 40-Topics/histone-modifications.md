@@ -1,33 +1,58 @@
 ---
 type: topic
 title: Histone modifications
-aliases: [chromatin marks, post-translational modifications, PTMs, single-cell chromatin]
-tags: [chromatin, epigenetics, H3K27me3, H3K4me3, CUT&Tag, ChIC, MNase]
+aliases: [chromatin marks, post-translational modifications, PTMs, single-cell chromatin, histone marks]
+tags: [chromatin, epigenetics, H3K27me3, H3K4me3, CUT&Tag, ChIC, MNase, enhancers, promoters]
 created: 2026-05-12
-updated: 2026-05-19
+updated: 2026-06-29
 ---
 
 # Histone modifications
 
-> Post-translational modifications of histone tails (methylation, acetylation, ubiquitylation, phosphorylation) demarcate functional chromatin states ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]) — active promoters (H3K4me3), enhancers (H3K4me1/H3K27ac), gene bodies (H3K36me3), facultative heterochromatin (H3K27me3), constitutive heterochromatin (H3K9me3) ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]; [[10-Summaries/van-steensel-2017-lads-review]] for H3K9me3/H3K27me3 anchoring roles). Single-cell profiling of these marks emerged around 2019 with scChIC-seq ([[10-Summaries/ku-2019-scchic-seq]]) and scCUT&Tag ([[10-Summaries/bartosovic-2021-sccut-tag]]), and has rapidly expanded into multi-mark / multi-modal readouts (scChIX, scEpi², sciCUT&Tag/MulTI-Tag, 6-base-CUT&Tag).
+> Post-translational modifications of histone tails — methylation, acetylation, ubiquitylation, phosphorylation — that demarcate functional chromatin states ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]).
 
-## Core concepts
+Modifications occur predominantly on histone H3 and H4 lysines and arginines ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]). They are the substrate for cell-type-specific gene regulation: profile them and you know which regions are active, primed, repressed, or silenced ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]). Single-cell profiling of these marks emerged around 2019 with scChIC-seq ([[10-Summaries/ku-2019-scchic-seq]]) and scCUT&Tag ([[10-Summaries/bartosovic-2021-sccut-tag]]), and has rapidly expanded into multi-mark / multi-modal readouts (scChIX, scEpi², sciCUT&Tag/MulTI-Tag, 6-base-CUT&Tag) ([[10-Summaries/yeung-2023-scchix-seq]]; [[10-Summaries/geisenberger-2025-scepi2-seq]]; [[10-Summaries/janssens-2023-scicut-tag]]; [[10-Summaries/tavares-2026-6-base-cut-tag]]).
 
-- [[30-Concepts/histone-modifications]] — the marks and their biological meaning
-- [[30-Concepts/chip-seq]] — bulk ancestor
-- [[30-Concepts/cut-and-run]] — antibody-tethered MNase (Skene/Henikoff)
-- [[30-Concepts/cut-and-tag]] — antibody-tethered Tn5 (Kaya-Okur/Henikoff)
-- [[30-Concepts/chic-seq]] — original chromatin immunocleavage (Schmid)
-- [[30-Concepts/sortchic]] — FACS-integrated single-cell ChIC
-- [[30-Concepts/scchic-seq]], [[30-Concepts/scchix-seq]], [[30-Concepts/scicut-tag]], [[30-Concepts/scepi2-seq]], [[30-Concepts/6-base-cut-and-tag]], [[30-Concepts/multi-tag]] — single-cell variants
+## Canonical mark → state mapping
+
+- **H3K4me3**: active promoters ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]).
+- **H3K4me1**: enhancers — alone = primed; + H3K27ac = active; + H3K27me3 = poised ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]; foundational partition established by [[10-Summaries/creyghton-2010-h3k27ac-enhancers]]).
+- **H3K27ac**: active promoters and enhancers ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]); the discriminating mark separating active from inactive enhancers, with eRNA production specifically at H3K27ac+ regions ([[10-Summaries/creyghton-2010-h3k27ac-enhancers]]).
+- **H3K36me3**: actively transcribed gene bodies ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]).
+- **H3K27me3**: facultative heterochromatin (Polycomb-repressed) ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]); enriched at LAD borders in some cell types ([[10-Summaries/van-steensel-2017-lads-review]]).
+- **H3K9me3**: constitutive heterochromatin ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]); the cLAD anchoring mark ([[10-Summaries/van-steensel-2017-lads-review]]).
+
+## Redundancy with chromatin compartments
+
+Histone marks are not independent of other regulatory axes:
+
+- **H3K9me2/3 anchors LADs to the nuclear lamina** via G9a and SUV39H1/2 acting redundantly ([[10-Summaries/van-steensel-2017-lads-review]]).
+- **H3K27me3 is enriched at LAD boundaries** in some cell types ([[10-Summaries/van-steensel-2017-lads-review]]).
+- **H3K27ac and other active marks** co-localize with accessible chromatin and compartment A regions ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]).
+- **DNA methylation is partially redundant with H3K9me3** at heterochromatic regions, but *not* at LADs, where CpG methylation is not enriched ([[10-Summaries/van-steensel-2017-lads-review]]).
+
+## Examples
+
+- LLPS-competent IDR fusions (NUP98-HOXA9) induce H3K27ac at off-target proto-oncogenes ([[10-Summaries/ahn-2021-llps-cancer-looping]]).
+- Polycomb (H3K27me3) occupancy decoupled from gene expression in mouse embryoid bodies, profiled by EpiDamID ([[10-Summaries/rooijers-2019-scdamt-seq]]).
+- scCUT&Tag profiles H3K4me3/H3K27me3 transitions during oligodendrocyte differentiation in mouse brain ([[10-Summaries/bartosovic-2021-sccut-tag]]).
+
+## Methods, by lineage
+
+- [[30-Concepts/chip-seq]] — bulk ancestor.
+- [[30-Concepts/cut-and-run]] — antibody-tethered MNase (Skene/Henikoff).
+- [[30-Concepts/cut-and-tag]] — antibody-tethered Tn5 (Kaya-Okur/Henikoff).
+- [[30-Concepts/chic-seq]] — original chromatin immunocleavage (Schmid).
+- [[30-Concepts/sortchic]] — FACS-integrated single-cell ChIC.
+- [[30-Concepts/scchic-seq]], [[30-Concepts/scchix-seq]], [[30-Concepts/scicut-tag]], [[30-Concepts/scepi2-seq]], [[30-Concepts/6-base-cut-and-tag]], [[30-Concepts/multi-tag]] — single-cell variants.
 
 ## Key entities
 
-- [[20-Entities/keji-zhao]] — Zhao lab; scChIC-seq
-- [[20-Entities/steven-henikoff]] — Henikoff lab; CUT&RUN, CUT&Tag, sciCUT&Tag, MulTI-Tag
-- [[20-Entities/alexander-van-oudenaarden]] — van Oudenaarden lab; sortChIC, scChIX-seq, scEpi²-seq
-- [[20-Entities/shankar-balasubramanian]] — Balasubramanian lab; 6-base-CUT&Tag
-- [[20-Entities/jake-yeung]] — Yeung; scChIX-seq
+- [[20-Entities/keji-zhao]] — Zhao lab; scChIC-seq.
+- [[20-Entities/steven-henikoff]] — Henikoff lab; CUT&RUN, CUT&Tag, sciCUT&Tag, MulTI-Tag.
+- [[20-Entities/alexander-van-oudenaarden]] — van Oudenaarden lab; sortChIC, scChIX-seq, scEpi²-seq.
+- [[20-Entities/shankar-balasubramanian]] — Balasubramanian lab; 6-base-CUT&Tag.
+- [[20-Entities/jake-yeung]] — Yeung; scChIX-seq.
 
 ## Sources, by sub-theme
 
@@ -44,11 +69,17 @@ updated: 2026-05-19
 - [[10-Summaries/geisenberger-2025-scepi2-seq]] — Geisenberger/van Oudenaarden 2025. scEpi²-seq: sortChIC + TAPS.
 - [[10-Summaries/tavares-2026-6-base-cut-tag]] — Tavares/Balasubramanian 2026. 6-base-CUT&Tag: 5mC + 5hmC + histone mark per fragment.
 
+### Enhancer / promoter biology
+- [[10-Summaries/creyghton-2010-h3k27ac-enhancers]] — Creyghton 2010. H3K27ac discriminates active from poised enhancers.
+- [[10-Summaries/ahn-2021-llps-cancer-looping]] — IDR-fusion-driven aberrant H3K27ac at oncogenes.
+- [[10-Summaries/rooijers-2019-scdamt-seq]] — EpiDamID; Polycomb occupancy vs expression decoupling.
+
 ### Computational prediction
 - [[10-Summaries/yin-2019-deephistone]] — Yin/Jiang 2019. CNN predicts 7 marks from DNA + DNase-seq.
 
 ### Bulk reference
 - [[10-Summaries/klemm-2019-chromatin-accessibility-review]] — Bannister & Kouzarides-style canonical histone-marks review.
+- [[10-Summaries/andrew-2011-cellresearch]] — Bannister & Kouzarides 2011 — Regulation of chromatin by histone modifications (review).
 
 ## Synthesized notes
 
@@ -64,8 +95,4 @@ updated: 2026-05-19
 ## Related
 
 - [[40-Topics/chromatin-architecture]] · [[40-Topics/dna-methylation]] · [[40-Topics/single-cell-multiomics]]
-
-## Linked summaries (lint pass 2026-05-21)
-
-- [[10-Summaries/andrew-2011-cellresearch]] — Bannister & Kouzarides 2011 — Regulation of chromatin by histone modifications (review).
-
+- [[50-Notes/regulatory-layers-overview]]

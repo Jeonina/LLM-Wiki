@@ -29,5 +29,5 @@ updated: 2026-05-19
 
 ## Related
 
-- [[30-Concepts/single-cell-multiomics]] · [[30-Concepts/dnase-seq]] · [[30-Concepts/chromatin-accessibility]]
+- [[40-Topics/single-cell-multiomics]] · [[30-Concepts/dnase-seq]] · [[30-Concepts/chromatin-accessibility]]
 - [[40-Topics/single-cell-multiomics]] · [[40-Topics/single-cell-atac-seq]]

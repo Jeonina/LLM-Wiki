@@ -17,9 +17,9 @@ concepts:
   - "[[30-Concepts/stam-seq]]"
   - "[[30-Concepts/nanopore-adaptive-sampling]]"
   - "[[30-Concepts/highly-repetitive-regions]]"
-  - "[[30-Concepts/dna-methylation]]"
+  - "[[40-Topics/dna-methylation]]"
   - "[[30-Concepts/chromatin-accessibility]]"
-  - "[[30-Concepts/long-read-sequencing]]"
+  - "[[40-Topics/long-read-sequencing]]"
 topics:
   - "[[40-Topics/long-read-sequencing]]"
   - "[[40-Topics/chromatin-architecture]]"

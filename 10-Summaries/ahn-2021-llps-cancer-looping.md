@@ -14,7 +14,7 @@ entities: []
 concepts:
   - "[[30-Concepts/chromatin-phase-separation]]"
   - "[[30-Concepts/topologically-associating-domain]]"
-  - "[[30-Concepts/histone-modifications]]"
+  - "[[40-Topics/histone-modifications]]"
 topics:
   - "[[40-Topics/chromatin-architecture]]"
   - "[[40-Topics/hematopoietic-malignancies]]"
@@ -80,6 +80,6 @@ topics:
 
 ## Related
 
-- [[30-Concepts/chromatin-phase-separation]] · [[30-Concepts/topologically-associating-domain]] · [[30-Concepts/histone-modifications]]
+- [[30-Concepts/chromatin-phase-separation]] · [[30-Concepts/topologically-associating-domain]] · [[40-Topics/histone-modifications]]
 - [[10-Summaries/gibson-2019-chromatin-llps]] · [[10-Summaries/daugird-2024-viscoelastic-chromatin]] · [[10-Summaries/qi-zhang-2021-nucleoli-coalescence]]
 - [[40-Topics/chromatin-architecture]] · [[40-Topics/hematopoietic-malignancies]]

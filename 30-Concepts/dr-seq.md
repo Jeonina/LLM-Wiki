@@ -40,6 +40,6 @@ Dey et al. 2015 ([[10-Summaries/dey-2015-dr-seq]]). Cell lysed with poly-T prime
 - [[scwga]]
 - [[umi-molecular-barcoding]]
 - [[20-Entities/alexander-van-oudenaarden]]
-- [[30-Concepts/single-cell-multiomics]]
+- [[40-Topics/single-cell-multiomics]]
 - [[40-Topics/single-cell-multiomics]]
 - [[40-Topics/whole-genome-amplification]]

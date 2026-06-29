@@ -44,5 +44,5 @@ Sub-axis 3 is the youngest measurement frontier; single-cell readouts are still 
 
 ## Related
 
-- [[30-Concepts/chromatin-mechanical-properties]] · [[30-Concepts/histone-modifications]] · [[30-Concepts/topologically-associating-domain]] · [[30-Concepts/3d-genome]]
+- [[30-Concepts/chromatin-mechanical-properties]] · [[40-Topics/histone-modifications]] · [[30-Concepts/topologically-associating-domain]] · [[40-Topics/3d-genome]]
 - Sources: [[10-Summaries/gibson-2019-chromatin-llps]] · [[10-Summaries/ahn-2021-llps-cancer-looping]] · [[10-Summaries/daugird-2024-viscoelastic-chromatin]] · [[10-Summaries/qi-zhang-2021-nucleoli-coalescence]]

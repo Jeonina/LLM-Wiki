@@ -34,4 +34,4 @@ Each cell has hundreds to thousands of mtDNA copies (vs two for nuclear DNA). Th
 
 ## Related
 
-- [[30-Concepts/kimura-distribution]] · [[30-Concepts/somatic-mosaicism]] · [[40-Topics/somatic-mosaicism]] · [[20-Entities/patrick-chinnery]]
+- [[30-Concepts/kimura-distribution]] · [[40-Topics/somatic-mosaicism]] · [[40-Topics/somatic-mosaicism]] · [[20-Entities/patrick-chinnery]]

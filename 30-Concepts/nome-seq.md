@@ -22,4 +22,4 @@ GpC methylation marks open regions; CpG methylation is the endogenous epigenetic
 
 ## Related
 
-- [[30-Concepts/dna-methylation]] · [[30-Concepts/chromatin-accessibility]] · [[30-Concepts/splicool-seq]] · [[30-Concepts/fiber-seq]]
+- [[40-Topics/dna-methylation]] · [[30-Concepts/chromatin-accessibility]] · [[30-Concepts/splicool-seq]] · [[30-Concepts/fiber-seq]]

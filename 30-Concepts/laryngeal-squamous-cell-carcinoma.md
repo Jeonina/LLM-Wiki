@@ -25,4 +25,4 @@ Early-stage LSCC has good survival but late-stage outcomes are poor. Molecular b
 
 ## Related
 
-- [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/structural-variants]] · [[30-Concepts/somagauss-sv]]
+- [[40-Topics/somatic-mosaicism]] · [[30-Concepts/structural-variants]] · [[30-Concepts/somagauss-sv]]

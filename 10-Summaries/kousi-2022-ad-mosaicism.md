@@ -15,10 +15,10 @@ entities:
   - "[[20-Entities/david-bennett]]"
   - "maria kousi"
 concepts:
-  - "[[30-Concepts/somatic-mosaicism]]"
+  - "[[40-Topics/somatic-mosaicism]]"
   - "[[30-Concepts/alzheimers-disease]]"
   - "[[30-Concepts/post-zygotic-variation]]"
-  - "[[30-Concepts/clonal-hematopoiesis]]"
+  - "[[40-Topics/clonal-hematopoiesis]]"
 topics:
   - "[[40-Topics/somatic-mosaicism]]"
   - "[[40-Topics/scdna-seq]]"

@@ -13,7 +13,7 @@ entities:
   - "[[20-Entities/fuying-dao]]"
   - "hao lin"
 concepts:
-  - "[[30-Concepts/3d-genome]]"
+  - "[[40-Topics/3d-genome]]"
   - "[[30-Concepts/single-cell-hi-c]]"
   - "[[30-Concepts/topologically-associating-domain]]"
   - "[[30-Concepts/chromatin-compartments]]"

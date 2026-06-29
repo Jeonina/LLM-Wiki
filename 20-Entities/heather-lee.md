@@ -18,4 +18,4 @@ updated: 2026-05-12
 
 ## Related
 
-- [[30-Concepts/sctem-seq]] · [[30-Concepts/dna-methylation]] · [[40-Topics/dna-methylation]]
+- [[30-Concepts/sctem-seq]] · [[40-Topics/dna-methylation]] · [[40-Topics/dna-methylation]]

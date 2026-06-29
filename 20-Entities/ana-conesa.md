@@ -18,4 +18,4 @@ updated: 2026-05-12
 
 ## Related
 
-- [[30-Concepts/long-read-sequencing]] · [[40-Topics/long-read-sequencing]]
+- [[40-Topics/long-read-sequencing]] · [[40-Topics/long-read-sequencing]]

@@ -17,12 +17,12 @@ entities:
   - "chenghang zong"
   - "[[20-Entities/smaht-network]]"
 concepts:
-  - "[[30-Concepts/duplex-sequencing]]"
+  - "[[40-Topics/duplex-sequencing]]"
   - "[[30-Concepts/codec]]"
   - "[[30-Concepts/nanoseq]]"
   - "[[30-Concepts/hidef-seq]]"
   - "[[30-Concepts/mutational-signatures]]"
-  - "[[30-Concepts/somatic-mosaicism]]"
+  - "[[40-Topics/somatic-mosaicism]]"
 topics:
   - "[[40-Topics/duplex-sequencing]]"
   - "[[40-Topics/somatic-mosaicism]]"

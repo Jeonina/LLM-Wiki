@@ -48,6 +48,6 @@ PTA simultaneously fixed three of MDA's failure modes — coverage, uniformity, 
 
 - [[scwga]]
 - [[mda]] — direct predecessor.
-- [[30-Concepts/scdna-seq]]
+- [[40-Topics/scdna-seq]]
 - [[daf-seq]] — uses PTA for single-cell amplification.
 - [[40-Topics/whole-genome-amplification]]

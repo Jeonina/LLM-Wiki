@@ -26,4 +26,4 @@ The Zhang lab provides the **mechanistic polymer-physics layer** between Hi-C me
 
 ## Related
 
-- [[30-Concepts/chromatin-phase-separation]] · [[30-Concepts/chromatin-mechanical-properties]] · [[30-Concepts/conformational-heterogeneity]] · [[30-Concepts/3d-genome]]
+- [[30-Concepts/chromatin-phase-separation]] · [[30-Concepts/chromatin-mechanical-properties]] · [[30-Concepts/conformational-heterogeneity]] · [[40-Topics/3d-genome]]

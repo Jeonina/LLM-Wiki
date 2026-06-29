@@ -27,5 +27,5 @@ New York Genome Center; Center for Genomics and Systems Biology, New York Univer
 ## Related
 
 - [[20-Entities/rong-fan]]
-- [[30-Concepts/single-cell-multiomics]]
+- [[40-Topics/single-cell-multiomics]]
 - [[40-Topics/single-cell-multiomics]]

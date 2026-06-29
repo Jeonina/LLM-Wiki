@@ -122,7 +122,7 @@ Neither chemistry yet reads all four layers per cell at scale. The closest is 6-
 ## Related
 
 - [[40-Topics/histone-modifications]] · [[40-Topics/chromatin-architecture]] · [[40-Topics/single-cell-multiomics]]
-- [[30-Concepts/histone-modifications]] · [[30-Concepts/cut-and-tag]] · [[30-Concepts/cut-and-run]] · [[30-Concepts/chic-seq]]
+- [[40-Topics/histone-modifications]] · [[30-Concepts/cut-and-tag]] · [[30-Concepts/cut-and-run]] · [[30-Concepts/chic-seq]]
 - [[30-Concepts/scchic-seq]] · [[30-Concepts/scchix-seq]] · [[30-Concepts/scicut-tag]] · [[30-Concepts/scepi2-seq]] · [[30-Concepts/6-base-cut-and-tag]] · [[30-Concepts/multi-tag]]
 - [[50-Notes/regulatory-layers-overview]] — histone marks as one of four layers
 - [[50-Notes/droplet-vs-single-molecule-scdna]] — the parallel scale-vs-depth tradeoff for scDNA-seq

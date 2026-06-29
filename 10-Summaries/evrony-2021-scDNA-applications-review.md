@@ -12,8 +12,8 @@ tags: [review, scDNA-seq, applications-framework, somatic-mosaicism, lineage-tra
 entities:
   - "[[20-Entities/gilad-evrony]]"
 concepts:
-  - "[[30-Concepts/scdna-seq]]"
-  - "[[30-Concepts/somatic-mosaicism]]"
+  - "[[40-Topics/scdna-seq]]"
+  - "[[40-Topics/somatic-mosaicism]]"
   - "[[30-Concepts/lineage-tracing]]"
   - "[[30-Concepts/scdna-capabilities-framework]]"
 topics:
@@ -52,8 +52,8 @@ Conceptual/synthesizing review. Reorganizes the scDNA-seq literature around capa
 ## Concepts touched
 
 - [[30-Concepts/scdna-capabilities-framework]] — fidelity / co-presence / phenotypic association.
-- [[30-Concepts/scdna-seq]]
-- [[30-Concepts/somatic-mosaicism]]
+- [[40-Topics/scdna-seq]]
+- [[40-Topics/somatic-mosaicism]]
 - [[30-Concepts/lineage-tracing]]
 
 ## Connections to other sources

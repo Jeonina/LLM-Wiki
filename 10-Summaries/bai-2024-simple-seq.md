@@ -16,7 +16,7 @@ entities:
 concepts:
   - "[[30-Concepts/simple-seq]]"
   - "[[30-Concepts/5hmc]]"
-  - "[[30-Concepts/dna-methylation]]"
+  - "[[40-Topics/dna-methylation]]"
   - "[[30-Concepts/taps]]"
   - "[[30-Concepts/tet-enzymes]]"
   - "[[30-Concepts/combinatorial-indexing]]"

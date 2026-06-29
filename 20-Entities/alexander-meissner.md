@@ -27,7 +27,7 @@ Originally Department of Stem Cell and Regenerative Biology, Harvard / Broad Ins
 
 ## Related
 
-- [[30-Concepts/dna-methylation]]
+- [[40-Topics/dna-methylation]]
 - [[30-Concepts/cpg-island]]
 - [[30-Concepts/dnmt]]
 - [[30-Concepts/tet-enzymes]]

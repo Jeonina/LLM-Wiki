@@ -18,7 +18,7 @@ concepts:
   - "[[30-Concepts/cut-and-tag]]"
   - "[[30-Concepts/combinatorial-indexing]]"
   - "[[30-Concepts/multi-tag]]"
-  - "[[30-Concepts/histone-modifications]]"
+  - "[[40-Topics/histone-modifications]]"
 topics:
   - "[[40-Topics/histone-modifications]]"
   - "[[40-Topics/single-cell-multiomics]]"

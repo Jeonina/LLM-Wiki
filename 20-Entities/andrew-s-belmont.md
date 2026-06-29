@@ -30,5 +30,5 @@ updated: 2026-05-19
 ## Related
 
 - [[20-Entities/bas-van-steensel]] — co-author on the 2017 review
-- [[30-Concepts/lamina-associated-domains]] · [[30-Concepts/3d-genome]]
+- [[30-Concepts/lamina-associated-domains]] · [[40-Topics/3d-genome]]
 - [[40-Topics/chromatin-architecture]]

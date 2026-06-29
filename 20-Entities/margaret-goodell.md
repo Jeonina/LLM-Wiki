@@ -28,6 +28,6 @@ Affiliations: Department of Molecular and Cellular Biology, Center for Cell and 
 
 ## Related
 
-- [[30-Concepts/clonal-hematopoiesis]] · [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/hematopoietic-differentiation]]
+- [[40-Topics/clonal-hematopoiesis]] · [[40-Topics/somatic-mosaicism]] · [[30-Concepts/hematopoietic-differentiation]]
 - [[10-Summaries/kapadia-2024-stem-cell-aging]]
 - [[40-Topics/hematopoietic-malignancies]]

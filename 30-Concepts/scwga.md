@@ -9,7 +9,7 @@ updated: 2026-05-11
 
 # scWGA (single-cell whole-genome amplification)
 
-> The set of biochemical methods that amplify the ~6 pg of DNA in a single diploid human cell by hundreds- to thousands-fold to produce enough material for whole-genome sequencing. The central technical challenge of [[30-Concepts/scdna-seq]] — every scWGA chemistry introduces some combination of amplification bias, allelic dropout, and polymerase error that must be controlled.
+> The set of biochemical methods that amplify the ~6 pg of DNA in a single diploid human cell by hundreds- to thousands-fold to produce enough material for whole-genome sequencing. The central technical challenge of [[40-Topics/scdna-seq]] — every scWGA chemistry introduces some combination of amplification bias, allelic dropout, and polymerase error that must be controlled.
 
 ## Definition
 
@@ -51,8 +51,8 @@ scWGA is **unavoidable** for most single-cell DNA applications because the genom
 
 ## Related
 
-- [[30-Concepts/scdna-seq]]
+- [[40-Topics/scdna-seq]]
 - [[mda]], [[pta]], [[malbac]], [[dop-pcr]], [[dlp-plus]], [[meta-cs]]
-- [[30-Concepts/duplex-sequencing]]
+- [[40-Topics/duplex-sequencing]]
 - [[40-Topics/whole-genome-amplification]]
 - [[40-Topics/scdna-seq]]

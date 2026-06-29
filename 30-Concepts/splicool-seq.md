@@ -27,4 +27,4 @@ Universal Tn5 removes per-cell fragmentation variability that hampered sciMETv2/
 
 ## Related
 
-- [[30-Concepts/nome-seq]] · [[30-Concepts/combinatorial-indexing]] · [[30-Concepts/dna-methylation]] · [[30-Concepts/chromatin-accessibility]] · [[40-Topics/single-cell-multiomics]]
+- [[30-Concepts/nome-seq]] · [[30-Concepts/combinatorial-indexing]] · [[40-Topics/dna-methylation]] · [[30-Concepts/chromatin-accessibility]] · [[40-Topics/single-cell-multiomics]]

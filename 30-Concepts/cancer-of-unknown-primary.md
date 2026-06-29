@@ -27,4 +27,4 @@ CUP cases are heterogeneous: metastases of carcinomas, neuroendocrine tumors, ly
 
 ## Related
 
-- [[30-Concepts/dna-methylation]] · [[30-Concepts/epigenetic-memory]] · [[40-Topics/dna-methylation]]
+- [[40-Topics/dna-methylation]] · [[30-Concepts/epigenetic-memory]] · [[40-Topics/dna-methylation]]

@@ -114,7 +114,7 @@ Two pages need follow-up edits:
 - [[40-Topics/duplex-sequencing]] — sub-theme index
 - [[40-Topics/somatic-mosaicism]] — biological domain
 - [[40-Topics/scdna-seq]] — methodology parent
-- [[30-Concepts/duplex-sequencing]] · [[30-Concepts/pta]] · [[30-Concepts/meta-cs]]
+- [[40-Topics/duplex-sequencing]] · [[30-Concepts/pta]] · [[30-Concepts/meta-cs]]
 - [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]] — the broader synthesis this enables
 - [[50-Notes/regulatory-layers-overview]] — the four molecular regulatory layers, three of which Duplex-Multiome now co-measures
 - [[50-Notes/synthesis-targets]] — this note resolves the "Single-cell duplex sequencing" target

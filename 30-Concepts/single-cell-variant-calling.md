@@ -28,5 +28,5 @@ updated: 2026-05-19
 
 ## Related
 
-- [[30-Concepts/scdna-seq]] · [[40-Topics/mosaic-variant-calling]] · [[30-Concepts/duplex-sequencing]]
+- [[40-Topics/scdna-seq]] · [[40-Topics/mosaic-variant-calling]] · [[40-Topics/duplex-sequencing]]
 - [[40-Topics/scdna-seq]] · [[40-Topics/mosaic-variant-calling]]

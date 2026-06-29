@@ -27,4 +27,4 @@ Workflow: FACS-sort cells → bind to antibody-recruited pA-MNase → MNase dige
 
 ## Related
 
-- [[30-Concepts/sortchic]] · [[30-Concepts/taps]] · [[30-Concepts/histone-modifications]] · [[30-Concepts/dna-methylation]] · [[30-Concepts/replication-timing]] · [[40-Topics/single-cell-multiomics]]
+- [[30-Concepts/sortchic]] · [[30-Concepts/taps]] · [[40-Topics/histone-modifications]] · [[40-Topics/dna-methylation]] · [[30-Concepts/replication-timing]] · [[40-Topics/single-cell-multiomics]]

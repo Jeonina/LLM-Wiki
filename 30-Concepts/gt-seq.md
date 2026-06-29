@@ -50,8 +50,8 @@ The separation-before-amplification design gives three advantages over the one-p
 
 ## Related
 
-- [[30-Concepts/scdna-seq]]
-- [[30-Concepts/single-cell-multiomics]]
+- [[40-Topics/scdna-seq]]
+- [[40-Topics/single-cell-multiomics]]
 - [[mda]]
 - [[malbac]]
 - [[dr-seq]]

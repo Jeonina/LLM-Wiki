@@ -10,7 +10,7 @@ doi: "10.1161/CIRCRESAHA.125.325797"
 journal: "Circulation Research 138(1)"
 tags: [review, cardiovascular, somatic-mosaicism, CHIP, cardiomyocytes, duplex-sequencing]
 entities: ["[[20-Entities/sangita-choudhury]]"]
-concepts: ["[[30-Concepts/clonal-hematopoiesis]]", "[[30-Concepts/somatic-mosaicism]]", "[[30-Concepts/duplex-sequencing]]", "[[30-Concepts/codec]]", "[[30-Concepts/nanoseq]]", "[[30-Concepts/meta-cs]]"]
+concepts: ["[[40-Topics/clonal-hematopoiesis]]", "[[40-Topics/somatic-mosaicism]]", "[[40-Topics/duplex-sequencing]]", "[[30-Concepts/codec]]", "[[30-Concepts/nanoseq]]", "[[30-Concepts/meta-cs]]"]
 topics: ["[[40-Topics/somatic-mosaicism]]", "[[40-Topics/clonal-hematopoiesis]]"]
 ---
 
@@ -46,8 +46,8 @@ Review of ~70 sources. Tabulates 9 sequencing/error-correction technologies (Tab
 
 ## Concepts touched
 
-- [[30-Concepts/clonal-hematopoiesis]] — CHIP→CVD as central organizing concept
-- [[30-Concepts/duplex-sequencing]] · [[30-Concepts/nanoseq]] · [[30-Concepts/codec]] · [[30-Concepts/meta-cs]] — duplex-toolbox catalog
+- [[40-Topics/clonal-hematopoiesis]] — CHIP→CVD as central organizing concept
+- [[40-Topics/duplex-sequencing]] · [[30-Concepts/nanoseq]] · [[30-Concepts/codec]] · [[30-Concepts/meta-cs]] — duplex-toolbox catalog
 - [[30-Concepts/mutational-signatures]] — SBS/ID assignments in cardiac endothelium
 
 ## Connections to other sources

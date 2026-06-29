@@ -10,7 +10,6 @@ Each entry links to its definition page. Grouped by domain.
 
 ## scDNA-seq methods + variant calling
 
-- [[30-Concepts/scdna-seq]] — umbrella for single-cell DNA sequencing.
 - [[30-Concepts/scwga]] — single-cell whole-genome amplification.
 - [[30-Concepts/mda]] — multiple displacement amplification (Φ29).
 - [[30-Concepts/pta]] — primary template amplification; current gold standard.
@@ -29,7 +28,6 @@ Each entry links to its definition page. Grouped by domain.
 
 ## Duplex sequencing
 
-- [[30-Concepts/duplex-sequencing]] — strand-paired single-molecule error correction.
 - [[30-Concepts/umi-molecular-barcoding]] — degenerate-tag adapters.
 - [[30-Concepts/mutational-signatures]] — 96-channel SBS context patterns.
 - [[30-Concepts/codec]] — Broad duplex chemistry.
@@ -47,7 +45,6 @@ Each entry links to its definition page. Grouped by domain.
 - [[30-Concepts/dogma-seq]] — chromatin + RNA + protein.
 - [[30-Concepts/cite-seq]] — scRNA + surface protein via antibody-derived tags.
 - [[30-Concepts/gt-seq]] — physical-separation scDNA + scRNA (G&T-seq).
-- [[30-Concepts/single-cell-multiomics]] — umbrella concept.
 - [[30-Concepts/spatial-multiomics]] — spatially-resolved multi-omic methods.
 - [[30-Concepts/combinatorial-indexing]] — split-pool barcoding.
 - [[30-Concepts/joint-single-cell-multi-omics]] — physical co-capture of ≥2 modalities per cell.
@@ -93,7 +90,6 @@ Each entry links to its definition page. Grouped by domain.
 
 ## Histone modifications
 
-- [[30-Concepts/histone-modifications]] — H3K4me3 / H3K4me1 / H3K27ac / H3K27me3 / H3K9me3 / H3K36me3.
 - [[30-Concepts/chip-seq]] — bulk ChIP-seq.
 - [[30-Concepts/cut-and-run]] — antibody-tethered MNase + release.
 - [[30-Concepts/cut-and-tag]] — antibody-tethered pA-Tn5.
@@ -112,7 +108,6 @@ Each entry links to its definition page. Grouped by domain.
 
 ## DNA methylation
 
-- [[30-Concepts/dna-methylation]] — 5mC and related modifications.
 - [[30-Concepts/cpg-island]] — unmethylated promoter features.
 - [[30-Concepts/dnmt]] — DNA methyltransferase enzymes.
 - [[30-Concepts/tet-enzymes]] — active demethylation pathway.
@@ -135,7 +130,6 @@ Each entry links to its definition page. Grouped by domain.
 
 ## Long-read sequencing
 
-- [[30-Concepts/long-read-sequencing]] — PacBio + ONT direct modification detection.
 - [[30-Concepts/oxford-nanopore]] — ONT nanopore platform.
 - [[30-Concepts/pacbio]] — PacBio SMRT platform.
 - [[30-Concepts/samosa]] — EcoGII + PacBio chromatin (bulk).
@@ -150,7 +144,6 @@ Each entry links to its definition page. Grouped by domain.
 
 ## 3D genome
 
-- [[30-Concepts/3d-genome]] — nuclear chromatin organization.
 - [[30-Concepts/single-cell-hi-c]] — sc3DG-seq method family.
 - [[30-Concepts/topologically-associating-domain]] — TADs.
 - [[30-Concepts/chromatin-compartments]] — A/B compartments.
@@ -169,12 +162,10 @@ Each entry links to its definition page. Grouped by domain.
 
 ## Mosaicism / disease biology
 
-- [[30-Concepts/somatic-mosaicism]] — mosaic somatic variation.
 - [[30-Concepts/post-zygotic-variation]] — broader umbrella term.
 - [[30-Concepts/microchimerism]] — foreign cells in host.
 - [[30-Concepts/developmental-mutation-timing]] — timing→tissue-distribution geometry.
 - [[30-Concepts/gonadal-mosaicism]] — germline mosaicism; recurrence risk.
-- [[30-Concepts/clonal-hematopoiesis]] — mosaic HSC clones in blood.
 - [[30-Concepts/lineage-tracing]] — endogenous mutations as lineage barcodes.
 - [[30-Concepts/lineage-tracing-somatic-mutations]] — natural somatic mutations as endogenous lineage barcodes.
 - [[30-Concepts/crispr-lineage-recording]] — evolvable synthetic CRISPR barcodes for prospective lineage tracing.

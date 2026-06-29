@@ -26,4 +26,4 @@ Rosen's chromatin LLPS framework is the biophysical foundation for understanding
 
 ## Related
 
-- [[30-Concepts/chromatin-phase-separation]] · [[30-Concepts/histone-modifications]] · [[30-Concepts/chromatin-mechanical-properties]]
+- [[30-Concepts/chromatin-phase-separation]] · [[40-Topics/histone-modifications]] · [[30-Concepts/chromatin-mechanical-properties]]

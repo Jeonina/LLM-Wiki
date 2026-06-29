@@ -10,7 +10,7 @@ doi: "10.1073/pnas.1016071107"
 journal: "PNAS"
 tags: [h3k27ac, h3k4me1, enhancers, chip-seq, mESC, ipsc, foundational]
 entities: ["[[20-Entities/menno-p-creyghton]]", "[[20-Entities/rudolf-jaenisch]]", "[[20-Entities/richard-a-young]]"]
-concepts: ["[[30-Concepts/enhancer-states]]", "[[30-Concepts/histone-modifications]]", "[[30-Concepts/chip-seq]]", "[[30-Concepts/cis-regulatory-element]]"]
+concepts: ["[[30-Concepts/enhancer-states]]", "[[40-Topics/histone-modifications]]", "[[30-Concepts/chip-seq]]", "[[30-Concepts/cis-regulatory-element]]"]
 topics: ["[[40-Topics/histone-modifications]]", "[[40-Topics/chromatin-architecture]]"]
 ---
 
@@ -49,7 +49,7 @@ ChIP-seq for H3K4me1, H3K4me3, H3K27ac, H3K27me3, p300, Oct4, Sox2, Klf4, Nanog,
 ## Concepts touched
 
 - [[30-Concepts/enhancer-states]] — this paper *defines* the operational distinction; the wiki's current 4-state model extends it
-- [[30-Concepts/histone-modifications]] — establishes H3K27ac as the canonical active-enhancer mark
+- [[40-Topics/histone-modifications]] — establishes H3K27ac as the canonical active-enhancer mark
 - [[30-Concepts/chip-seq]] — methodology
 - [[30-Concepts/cis-regulatory-element]] — enhancers are the central CRE class here
 
@@ -67,7 +67,7 @@ ChIP-seq for H3K4me1, H3K4me3, H3K27ac, H3K27me3, p300, Oct4, Sox2, Klf4, Nanog,
 
 ## Related
 
-- [[30-Concepts/enhancer-states]] · [[30-Concepts/histone-modifications]] · [[30-Concepts/chip-seq]]
+- [[30-Concepts/enhancer-states]] · [[40-Topics/histone-modifications]] · [[30-Concepts/chip-seq]]
 - [[40-Topics/histone-modifications]] · [[40-Topics/chromatin-architecture]]
 - [[10-Summaries/klemm-2019-chromatin-accessibility-review]] — modern synthesis of the enhancer-state framework
 - [[10-Summaries/tavares-2026-6-base-cut-tag]] — adds 5mC/5hmC as a fourth coordinate on primed vs active

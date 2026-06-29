@@ -12,7 +12,7 @@ journal: "bioRxiv (preprint)"
 tags: [spatial-genomics, clonal-heterogeneity, multi-modal, CNV, lineage, Lareau-lab, Macosko-lab]
 entities: []
 concepts:
-  - "[[30-Concepts/somatic-mosaicism]]"
+  - "[[40-Topics/somatic-mosaicism]]"
   - "[[30-Concepts/spatial-multiomics]]"
   - "[[30-Concepts/lineage-tracing]]"
 topics:
@@ -46,6 +46,6 @@ Abstract + intro only; full PDF re-ingest will deepen the spatial-CNV calling me
 
 ## Related
 
-- [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/spatial-multiomics]] · [[30-Concepts/lineage-tracing]]
+- [[40-Topics/somatic-mosaicism]] · [[30-Concepts/spatial-multiomics]] · [[30-Concepts/lineage-tracing]]
 - [[10-Summaries/andrewc-2020-science]] (IGS Payne 2021)
 - [[40-Topics/somatic-mosaicism]] · [[40-Topics/single-cell-multiomics]]

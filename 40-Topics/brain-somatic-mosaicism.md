@@ -13,7 +13,7 @@ updated: 2026-05-19
 
 ## Core concepts
 
-- [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/developmental-mutation-timing]]
+- [[40-Topics/somatic-mosaicism]] · [[30-Concepts/developmental-mutation-timing]]
 
 ## Key sources
 

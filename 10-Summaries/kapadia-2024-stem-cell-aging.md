@@ -77,10 +77,10 @@ These changes "provide the backdrop for somatic mosaicism to emerge" — the cen
 
 ## Related
 
-- [[30-Concepts/clonal-hematopoiesis]] — concept page extensively updated by this review
-- [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/post-zygotic-variation]]
+- [[40-Topics/clonal-hematopoiesis]] — concept page extensively updated by this review
+- [[40-Topics/somatic-mosaicism]] · [[30-Concepts/post-zygotic-variation]]
 - [[30-Concepts/hematopoietic-differentiation]] · [[30-Concepts/jak2-v617f]] · [[30-Concepts/calr-mutation]]
-- [[30-Concepts/duplex-sequencing]] — the detection technology the review highlights as critical for next-generation discovery
+- [[40-Topics/duplex-sequencing]] — the detection technology the review highlights as critical for next-generation discovery
 - [[10-Summaries/forsberg-2017-mosaicism-review]] — Forsberg 2017 mosaicism review (broader scope)
 - [[10-Summaries/nam-2019-got]] (Nam 2019 GoT) · [[10-Summaries/izzo-2024-got-cha]] (Izzo 2024 GoT-ChA) — CH methodology papers cited within
 - [[20-Entities/margaret-goodell]]

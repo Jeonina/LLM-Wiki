@@ -18,7 +18,7 @@ concepts:
   - "[[30-Concepts/lamina-associated-domains]]"
   - "[[30-Concepts/nuclear-lamina]]"
   - "[[30-Concepts/chromatin-accessibility]]"
-  - "[[30-Concepts/single-cell-multiomics]]"
+  - "[[40-Topics/single-cell-multiomics]]"
 topics:
   - "[[40-Topics/3d-genome]]"
   - "[[40-Topics/chromatin-architecture]]"
@@ -69,7 +69,7 @@ topics:
 - [[30-Concepts/lamina-associated-domains]] — operationalizes fLAD vs cLAD distinction at single-cell resolution; only fLADs are transcriptionally responsive to NL detachment.
 - [[30-Concepts/nuclear-lamina]] — single-cell measurement of genome–NL contact heterogeneity in cycling mammalian cells.
 - [[30-Concepts/chromatin-accessibility]] — untethered Dam as an alternative to ATAC/DNase, with gene-body sensitivity advantage.
-- [[30-Concepts/single-cell-multiomics]] — extends the genome+RNA single-cell family (G&T-seq, scNMT-seq) into the protein–DNA contact axis.
+- [[40-Topics/single-cell-multiomics]] — extends the genome+RNA single-cell family (G&T-seq, scNMT-seq) into the protein–DNA contact axis.
 
 ## Connections to other sources
 

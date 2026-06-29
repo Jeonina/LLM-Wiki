@@ -29,6 +29,6 @@ Departments of Oncology and Computational Biology, St. Jude Children's Research 
 ## Related
 
 - [[20-Entities/stephen-quake]]
-- [[30-Concepts/scdna-seq]]
+- [[40-Topics/scdna-seq]]
 - [[30-Concepts/scwga]]
 - [[40-Topics/scdna-seq]]

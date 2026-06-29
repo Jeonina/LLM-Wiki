@@ -53,7 +53,7 @@ The previously-stated gap in [[50-Notes/mosaicism-and-epigenome-the-synthesis-ga
 
 ## Entities / concepts touched
 
-[[30-Concepts/somatic-mosaicism]] · [[30-Concepts/duplex-sequencing]] · [[scatac-seq]] · [[30-Concepts/single-cell-multiomics]] · [[autism-spectrum-disorder]] · [[20-Entities/christopher-walsh]] · [[20-Entities/diane-d-shao]] · [[40-Topics/somatic-mosaicism]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/duplex-sequencing]]
+[[40-Topics/somatic-mosaicism]] · [[40-Topics/duplex-sequencing]] · [[scatac-seq]] · [[40-Topics/single-cell-multiomics]] · [[autism-spectrum-disorder]] · [[20-Entities/christopher-walsh]] · [[20-Entities/diane-d-shao]] · [[40-Topics/somatic-mosaicism]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/duplex-sequencing]]
 
 ## Related summaries
 

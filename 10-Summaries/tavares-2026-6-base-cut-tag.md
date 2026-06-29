@@ -17,8 +17,8 @@ concepts:
   - "[[30-Concepts/6-base-cut-and-tag]]"
   - "[[30-Concepts/cut-and-tag]]"
   - "[[30-Concepts/5hmc]]"
-  - "[[30-Concepts/dna-methylation]]"
-  - "[[30-Concepts/histone-modifications]]"
+  - "[[40-Topics/dna-methylation]]"
+  - "[[40-Topics/histone-modifications]]"
   - "[[30-Concepts/enhancer-states]]"
 topics:
   - "[[40-Topics/histone-modifications]]"

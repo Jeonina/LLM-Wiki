@@ -28,6 +28,6 @@ Department of Biomedical Engineering, Yale University; Yale Stem Cell Center, Ya
 ## Related
 
 - [[20-Entities/rahul-satija]]
-- [[30-Concepts/single-cell-multiomics]]
+- [[40-Topics/single-cell-multiomics]]
 - [[30-Concepts/spatial-multiomics]]
 - [[40-Topics/single-cell-multiomics]]

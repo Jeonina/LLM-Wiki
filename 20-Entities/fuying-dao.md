@@ -18,4 +18,4 @@ updated: 2026-05-12
 
 ## Related
 
-- [[20-Entities/hua-jun-wu]] · [[30-Concepts/3d-genome]] · [[40-Topics/3d-genome]]
+- [[20-Entities/hua-jun-wu]] · [[40-Topics/3d-genome]] · [[40-Topics/3d-genome]]

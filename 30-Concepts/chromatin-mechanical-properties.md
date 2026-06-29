@@ -47,5 +47,5 @@ Single-cell coverage is strongest for axis 1, growing for axis 2, sparse for axi
 
 ## Related
 
-- [[30-Concepts/chromatin-phase-separation]] · [[30-Concepts/nuclear-lamina]] · [[30-Concepts/conformational-heterogeneity]] · [[30-Concepts/topologically-associating-domain]] · [[30-Concepts/3d-genome]]
+- [[30-Concepts/chromatin-phase-separation]] · [[30-Concepts/nuclear-lamina]] · [[30-Concepts/conformational-heterogeneity]] · [[30-Concepts/topologically-associating-domain]] · [[40-Topics/3d-genome]]
 - Sources: [[10-Summaries/daugird-2024-viscoelastic-chromatin]] · [[10-Summaries/qi-zhang-2021-nucleoli-coalescence]] · [[10-Summaries/gibson-2019-chromatin-llps]] · [[10-Summaries/mali-2025-conformational-heterogeneity]]

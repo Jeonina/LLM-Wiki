@@ -31,5 +31,5 @@ Enhancer rewiring is also part of pluripotency reprogramming: fibroblast→iPS c
 
 ## Related
 
-- [[30-Concepts/histone-modifications]] · [[30-Concepts/cis-regulatory-element]] · [[30-Concepts/6-base-cut-and-tag]] · [[40-Topics/chromatin-architecture]]
+- [[40-Topics/histone-modifications]] · [[30-Concepts/cis-regulatory-element]] · [[30-Concepts/6-base-cut-and-tag]] · [[40-Topics/chromatin-architecture]]
 - [[10-Summaries/creyghton-2010-h3k27ac-enhancers]] — foundational source for the active/poised partition

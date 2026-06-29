@@ -25,4 +25,4 @@ NanoSeq has been the workhorse for measuring somatic mutation accumulation rates
 
 ## Related
 
-- [[30-Concepts/duplex-sequencing]] · [[30-Concepts/codec]] · [[30-Concepts/hidef-seq]] · [[40-Topics/duplex-sequencing]]
+- [[40-Topics/duplex-sequencing]] · [[30-Concepts/codec]] · [[30-Concepts/hidef-seq]] · [[40-Topics/duplex-sequencing]]

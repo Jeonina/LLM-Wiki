@@ -13,7 +13,7 @@ entities:
   - "[[20-Entities/rong-fan]]"
   - "[[20-Entities/rahul-satija]]"
 concepts:
-  - "[[30-Concepts/single-cell-multiomics]]"
+  - "[[40-Topics/single-cell-multiomics]]"
   - "[[30-Concepts/cite-seq]]"
   - "[[30-Concepts/spatial-multiomics]]"
 topics:
@@ -51,7 +51,7 @@ Comprehensive landscape review with Table 1 cataloging dozens of methods. From Y
 
 ## Concepts touched
 
-- [[30-Concepts/single-cell-multiomics]]
+- [[40-Topics/single-cell-multiomics]]
 - [[30-Concepts/cite-seq]]
 - [[30-Concepts/spatial-multiomics]]
 

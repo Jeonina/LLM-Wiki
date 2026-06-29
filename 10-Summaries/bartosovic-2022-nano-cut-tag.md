@@ -13,7 +13,7 @@ tags: [nano-CUT&Tag, nanobody-Tn5, multimodal, single-cell, H3K27ac, H3K27me3, A
 entities: []
 concepts:
   - "[[30-Concepts/cut-and-tag]]"
-  - "[[30-Concepts/histone-modifications]]"
+  - "[[40-Topics/histone-modifications]]"
   - "[[30-Concepts/chromatin-accessibility]]"
   - "[[30-Concepts/chromatin-velocity]]"
 topics:
@@ -52,6 +52,6 @@ Abstract + intro only; full PDF re-ingest will deepen the nanobody-Tn5 engineeri
 
 ## Related
 
-- [[30-Concepts/cut-and-tag]] · [[30-Concepts/histone-modifications]] · [[30-Concepts/chromatin-accessibility]] · [[30-Concepts/chromatin-velocity]]
+- [[30-Concepts/cut-and-tag]] · [[40-Topics/histone-modifications]] · [[30-Concepts/chromatin-accessibility]] · [[30-Concepts/chromatin-velocity]]
 - [[10-Summaries/bartosovic-2021-sccut-tag]] · [[10-Summaries/janssens-2023-scicut-tag]] · [[10-Summaries/geisenberger-2025-scepi2-seq]] · [[10-Summaries/ma-2020-share-seq]]
 - [[40-Topics/single-cell-multiomics]] · [[40-Topics/chromatin-architecture]]

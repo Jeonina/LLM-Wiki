@@ -22,7 +22,7 @@ updated: 2026-05-11
 
 ### Alternatives that skip scWGA
 
-- [[30-Concepts/duplex-sequencing]] — bulk-DNA single-molecule methods.
+- [[40-Topics/duplex-sequencing]] — bulk-DNA single-molecule methods.
 - DNTR-seq (in [[10-Summaries/vandereyken-2023-scmultiomics-review]]) — direct nuclear DNA tagmentation, skipping WGA.
 
 ### Errors introduced by scWGA

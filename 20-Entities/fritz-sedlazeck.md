@@ -28,7 +28,7 @@ Human Genome Sequencing Center, Baylor College of Medicine; also Rice University
 ## Related
 
 - [[20-Entities/winston-timp]]
-- [[30-Concepts/dna-methylation]]
-- [[30-Concepts/long-read-sequencing]]
+- [[40-Topics/dna-methylation]]
+- [[40-Topics/long-read-sequencing]]
 - [[40-Topics/long-read-sequencing]]
 - [[40-Topics/dna-methylation]]

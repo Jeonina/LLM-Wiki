@@ -13,12 +13,12 @@ entities:
   - "[[20-Entities/charles-gawad]]"
   - "[[20-Entities/stephen-quake]]"
 concepts:
-  - "[[30-Concepts/scdna-seq]]"
+  - "[[40-Topics/scdna-seq]]"
   - "[[30-Concepts/scwga]]"
   - "[[30-Concepts/mda]]"
   - "[[30-Concepts/malbac]]"
   - "[[30-Concepts/dop-pcr]]"
-  - "[[30-Concepts/somatic-mosaicism]]"
+  - "[[40-Topics/somatic-mosaicism]]"
 topics:
   - "[[40-Topics/scdna-seq]]"
   - "[[40-Topics/whole-genome-amplification]]"
@@ -61,9 +61,9 @@ Synthesizing review with extensive comparison tables across published single-cel
 
 ## Concepts touched
 
-- [[30-Concepts/scdna-seq]] — foundational review of the field.
+- [[40-Topics/scdna-seq]] — foundational review of the field.
 - [[30-Concepts/scwga]], [[30-Concepts/mda]], [[30-Concepts/malbac]], [[30-Concepts/dop-pcr]] — the 2016 method landscape.
-- [[30-Concepts/somatic-mosaicism]] — cancer applications.
+- [[40-Topics/somatic-mosaicism]] — cancer applications.
 
 ## Connections to other sources
 

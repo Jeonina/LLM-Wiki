@@ -25,4 +25,4 @@ Reveals 5mC and 5hmC distributions at **specific** chromatin states (active vs p
 
 ## Related
 
-- [[30-Concepts/cut-and-tag]] · [[30-Concepts/dna-methylation]] · [[30-Concepts/5hmc]] · [[30-Concepts/histone-modifications]] · [[20-Entities/biomodal]]
+- [[30-Concepts/cut-and-tag]] · [[40-Topics/dna-methylation]] · [[30-Concepts/5hmc]] · [[40-Topics/histone-modifications]] · [[20-Entities/biomodal]]

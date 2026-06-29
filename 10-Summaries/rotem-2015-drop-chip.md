@@ -26,6 +26,6 @@ The first published single-cell ChIP-seq method, predating CUT\&Tag-based single
 ## Related
 
 - scchip seq
-- [[30-Concepts/histone-modifications]]
+- [[40-Topics/histone-modifications]]
 - bradley bernstein
 - [[10-Summaries/bartosovic-2021-sccut-tag]]

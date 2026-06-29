@@ -10,7 +10,7 @@ doi: "10.1007/s12551-023-01092-3"
 journal: "Biophysical Reviews"
 tags: [review, single-cell, multiomics, integration, scNMT, CITE-seq, SHARE-seq, MOFA, GLUE]
 entities: ["[[20-Entities/wenfei-jin]]", "[[20-Entities/rahul-satija]]"]
-concepts: ["[[30-Concepts/single-cell-multiomics]]", "[[30-Concepts/scnmt-seq]]", "[[30-Concepts/sctrio-seq]]", "[[30-Concepts/cite-seq]]", "[[30-Concepts/dogma-seq]]"]
+concepts: ["[[40-Topics/single-cell-multiomics]]", "[[30-Concepts/scnmt-seq]]", "[[30-Concepts/sctrio-seq]]", "[[30-Concepts/cite-seq]]", "[[30-Concepts/dogma-seq]]"]
 topics: ["[[40-Topics/single-cell-multiomics]]"]
 ---
 
@@ -56,7 +56,7 @@ This is a review paper (no new data). The methods catalog is fairly complete thr
 
 ## Concepts touched
 
-- [[30-Concepts/single-cell-multiomics]] — comprehensive catalog
+- [[40-Topics/single-cell-multiomics]] — comprehensive catalog
 - [[30-Concepts/scnmt-seq]], [[30-Concepts/sctrio-seq]] — covered with their key findings
 - [[30-Concepts/cite-seq]] — CITE-seq family
 - [[30-Concepts/dogma-seq]] — DOGMA-seq as 4-modality platform

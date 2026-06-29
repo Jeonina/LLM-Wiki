@@ -59,7 +59,7 @@ Single neuronal progenitor cells from three human fetal brains (15–21 weeks po
 
 ## Entities / concepts touched
 
-[[30-Concepts/somatic-mosaicism]] · [[post-zygotic-variation]] · [[developmental-mutation-timing]] · [[lineage-tracing]] · [[mutational-signatures]] · [[20-Entities/alexej-abyzov]] · [[20-Entities/flora-vaccarino]] · [[20-Entities/christopher-walsh]] · [[40-Topics/somatic-mosaicism]]
+[[40-Topics/somatic-mosaicism]] · [[post-zygotic-variation]] · [[developmental-mutation-timing]] · [[lineage-tracing]] · [[mutational-signatures]] · [[20-Entities/alexej-abyzov]] · [[20-Entities/flora-vaccarino]] · [[20-Entities/christopher-walsh]] · [[40-Topics/somatic-mosaicism]]
 
 ## Related
 - [[20-Entities/taejeong-bae]] — first/co-author on the foundational Bae et al. brain mosaicism papers (2018 pregastrulation-timing, 2022 NeuN-sorted neurons). summaries

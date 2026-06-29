@@ -25,4 +25,4 @@ updated: 2026-05-12
 
 ## Related
 
-- [[30-Concepts/dna-methylation]] · [[30-Concepts/viral-mimicry]] · [[30-Concepts/dnmt]] · [[40-Topics/hematopoietic-malignancies]]
+- [[40-Topics/dna-methylation]] · [[30-Concepts/viral-mimicry]] · [[30-Concepts/dnmt]] · [[40-Topics/hematopoietic-malignancies]]

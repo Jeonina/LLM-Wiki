@@ -13,7 +13,7 @@ updated: 2026-05-14
 
 ## Definition
 
-A 6–24-nt degenerate oligo, often paired between adapter ends so each duplex DNA fragment gets a complementary pair of tags. After PCR, reads sharing the same UMI pair come from the same original molecule and can be collapsed to a consensus sequence (or, for [[30-Concepts/duplex-sequencing]], compared between strands to call mutations only when both strands agree).
+A 6–24-nt degenerate oligo, often paired between adapter ends so each duplex DNA fragment gets a complementary pair of tags. After PCR, reads sharing the same UMI pair come from the same original molecule and can be collapsed to a consensus sequence (or, for [[40-Topics/duplex-sequencing]], compared between strands to call mutations only when both strands agree).
 
 ## Why it matters
 
@@ -30,6 +30,6 @@ UMIs make NGS quantitative (counts reflect input molecules, not PCR duplicates) 
 
 ## Related
 
-- [[30-Concepts/duplex-sequencing]] · [[30-Concepts/combinatorial-indexing]] · [[40-Topics/duplex-sequencing]]
+- [[40-Topics/duplex-sequencing]] · [[30-Concepts/combinatorial-indexing]] · [[40-Topics/duplex-sequencing]]
 - [[30-Concepts/drop-seq]] · [[30-Concepts/scrna-seq]] — UMI is now standard in droplet scRNA-seq
 - [[10-Summaries/svensson-2017-power-analysis]] — quantifies UMI saturation (exponent ~0.8)

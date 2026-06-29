@@ -43,4 +43,4 @@ Now largely superseded by [[pta]] for high-coverage applications, but remains in
 - [[scwga]]
 - [[mda]] — pure-isothermal alternative.
 - [[dop-pcr]], PicoPLEX — adjacent PCR-based methods.
-- [[30-Concepts/scdna-seq]]
+- [[40-Topics/scdna-seq]]

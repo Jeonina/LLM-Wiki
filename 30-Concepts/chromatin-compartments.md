@@ -23,4 +23,4 @@ Identified by principal-component analysis on Hi-C contact matrices. A and B com
 
 ## Related
 
-- [[30-Concepts/3d-genome]] · [[30-Concepts/topologically-associating-domain]] · [[30-Concepts/replication-timing]] · [[40-Topics/3d-genome]]
+- [[40-Topics/3d-genome]] · [[30-Concepts/topologically-associating-domain]] · [[30-Concepts/replication-timing]] · [[40-Topics/3d-genome]]

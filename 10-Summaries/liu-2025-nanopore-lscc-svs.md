@@ -16,7 +16,7 @@ entities:
 concepts:
   - "[[30-Concepts/somagauss-sv]]"
   - "[[30-Concepts/structural-variants]]"
-  - "[[30-Concepts/long-read-sequencing]]"
+  - "[[40-Topics/long-read-sequencing]]"
   - "[[30-Concepts/oxford-nanopore]]"
   - "[[30-Concepts/laryngeal-squamous-cell-carcinoma]]"
 topics:

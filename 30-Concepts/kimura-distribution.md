@@ -25,4 +25,4 @@ Fitting single-cell mtDNA heteroplasmy data to a Kimura distribution allows quan
 
 ## Related
 
-- [[30-Concepts/mitochondrial-heteroplasmy]] · [[30-Concepts/somatic-mosaicism]]
+- [[30-Concepts/mitochondrial-heteroplasmy]] · [[40-Topics/somatic-mosaicism]]

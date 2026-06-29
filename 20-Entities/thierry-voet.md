@@ -28,6 +28,6 @@ KU Leuven Institute for Single Cell Omics (LISCO); Department of Human Genetics,
 ## Related
 
 - [[30-Concepts/gt-seq]] — co-developed.
-- [[30-Concepts/single-cell-multiomics]]
-- [[30-Concepts/scdna-seq]]
+- [[40-Topics/single-cell-multiomics]]
+- [[40-Topics/scdna-seq]]
 - [[40-Topics/single-cell-multiomics]]

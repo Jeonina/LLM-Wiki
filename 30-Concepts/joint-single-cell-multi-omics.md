@@ -30,4 +30,4 @@ A joint multi-omic assay reads ≥2 of: DNA sequence, RNA, chromatin accessibili
 
 ## Related
 
-- [[40-Topics/single-cell-multiomics]] · [[30-Concepts/single-cell-multiomics]] · [[30-Concepts/defnd-seq]] · [[30-Concepts/sdr-seq]] · [[30-Concepts/allele-dropout]] · [[50-Notes/regulatory-layers-overview]] · [[50-Notes/droplet-vs-single-molecule-scdna]]
+- [[40-Topics/single-cell-multiomics]] · [[40-Topics/single-cell-multiomics]] · [[30-Concepts/defnd-seq]] · [[30-Concepts/sdr-seq]] · [[30-Concepts/allele-dropout]] · [[50-Notes/regulatory-layers-overview]] · [[50-Notes/droplet-vs-single-molecule-scdna]]

@@ -12,10 +12,10 @@ tags: [review, somatic-mosaicism, post-zygotic-variation, microchimerism, struct
 entities:
   - "[[20-Entities/lars-forsberg]]"
 concepts:
-  - "[[30-Concepts/somatic-mosaicism]]"
+  - "[[40-Topics/somatic-mosaicism]]"
   - "[[30-Concepts/post-zygotic-variation]]"
   - "[[30-Concepts/microchimerism]]"
-  - "[[30-Concepts/clonal-hematopoiesis]]"
+  - "[[40-Topics/clonal-hematopoiesis]]"
 topics:
   - "[[40-Topics/somatic-mosaicism]]"
 ---
@@ -53,10 +53,10 @@ Synthesizing review. Catalogs evidence from microarray, bulk sequencing, and eme
 
 ## Concepts touched
 
-- [[30-Concepts/somatic-mosaicism]] — central concept of the review.
+- [[40-Topics/somatic-mosaicism]] — central concept of the review.
 - [[30-Concepts/post-zygotic-variation]] — broader umbrella term used here.
 - [[30-Concepts/microchimerism]] — distinct phenomenon distinguished from true mosaicism.
-- [[30-Concepts/clonal-hematopoiesis]] — emerging at the time of writing; key application.
+- [[40-Topics/clonal-hematopoiesis]] — emerging at the time of writing; key application.
 
 ## Connections to other sources
 

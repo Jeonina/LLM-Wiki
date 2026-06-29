@@ -14,7 +14,7 @@ entities:
   - "qijin yin"
 concepts:
   - "[[30-Concepts/deephistone]]"
-  - "[[30-Concepts/histone-modifications]]"
+  - "[[40-Topics/histone-modifications]]"
   - "[[30-Concepts/chip-seq]]"
   - "[[30-Concepts/dnase-seq]]"
   - "[[30-Concepts/convolutional-neural-network]]"

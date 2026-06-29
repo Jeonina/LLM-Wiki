@@ -26,4 +26,4 @@ ASD risk is not captured entirely by inherited variation. Somatic SNVs and large
 
 ## Related
 
-- [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/post-zygotic-variation]] · [[40-Topics/somatic-mosaicism]]
+- [[40-Topics/somatic-mosaicism]] · [[30-Concepts/post-zygotic-variation]] · [[40-Topics/somatic-mosaicism]]

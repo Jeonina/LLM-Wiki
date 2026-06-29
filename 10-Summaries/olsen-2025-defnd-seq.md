@@ -18,7 +18,7 @@ concepts:
   - "[[30-Concepts/structural-variants]]"
   - "[[30-Concepts/single-cell-variant-calling]]"
 concepts_secondary:
-  - "[[30-Concepts/scdna-seq]]"
+  - "[[40-Topics/scdna-seq]]"
   - "[[30-Concepts/combinatorial-indexing]]"
 topics:
   - "[[40-Topics/single-cell-multiomics]]"

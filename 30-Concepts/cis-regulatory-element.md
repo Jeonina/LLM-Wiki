@@ -17,4 +17,4 @@ cREs encode tissue-specific and developmental gene-expression programs. They are
 
 ## Related
 
-- [[30-Concepts/chromatin-accessibility]] · [[30-Concepts/scatac-seq]] · [[30-Concepts/histone-modifications]] · [[40-Topics/chromatin-architecture]]
+- [[30-Concepts/chromatin-accessibility]] · [[30-Concepts/scatac-seq]] · [[40-Topics/histone-modifications]] · [[40-Topics/chromatin-architecture]]

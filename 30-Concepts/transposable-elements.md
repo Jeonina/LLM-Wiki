@@ -27,4 +27,4 @@ Major families:
 
 ## Related
 
-- [[30-Concepts/dna-methylation]] · [[30-Concepts/sctem-seq]] · [[30-Concepts/viral-mimicry]] · [[30-Concepts/somatic-mosaicism]]
+- [[40-Topics/dna-methylation]] · [[30-Concepts/sctem-seq]] · [[30-Concepts/viral-mimicry]] · [[40-Topics/somatic-mosaicism]]

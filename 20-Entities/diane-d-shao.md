@@ -28,6 +28,6 @@ Department of Neurology and Division of Genetics, Boston Children's Hospital and
 ## Related
 
 - [[20-Entities/christopher-walsh]]
-- [[30-Concepts/scdna-seq]]
-- [[30-Concepts/somatic-mosaicism]]
+- [[40-Topics/scdna-seq]]
+- [[40-Topics/somatic-mosaicism]]
 - [[40-Topics/scdna-seq]]

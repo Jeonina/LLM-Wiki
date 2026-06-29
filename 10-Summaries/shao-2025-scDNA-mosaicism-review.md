@@ -13,7 +13,7 @@ entities:
   - "[[20-Entities/diane-d-shao]]"
   - "[[20-Entities/christopher-walsh]]"
 concepts:
-  - "[[30-Concepts/scdna-seq]]"
+  - "[[40-Topics/scdna-seq]]"
   - "[[30-Concepts/scwga]]"
   - "[[30-Concepts/mda]]"
   - "[[30-Concepts/pta]]"
@@ -21,8 +21,8 @@ concepts:
   - "[[30-Concepts/dop-pcr]]"
   - "[[30-Concepts/dlp-plus]]"
   - "[[30-Concepts/meta-cs]]"
-  - "[[30-Concepts/duplex-sequencing]]"
-  - "[[30-Concepts/somatic-mosaicism]]"
+  - "[[40-Topics/duplex-sequencing]]"
+  - "[[40-Topics/somatic-mosaicism]]"
   - "[[30-Concepts/lineage-tracing]]"
 topics:
   - "[[40-Topics/scdna-seq]]"
@@ -71,11 +71,11 @@ This is a synthesizing review from the Walsh lab (Boston Children's), which has 
 
 ## Concepts touched
 
-- [[30-Concepts/scdna-seq]] — defined here as the umbrella for scWGA+scWGS and single-molecule duplex methods.
+- [[40-Topics/scdna-seq]] — defined here as the umbrella for scWGA+scWGS and single-molecule duplex methods.
 - [[30-Concepts/scwga]] — three categories: PCR-based, isothermal, Tn5-based.
 - [[30-Concepts/mda]], [[30-Concepts/pta]], [[30-Concepts/malbac]], [[30-Concepts/dop-pcr]], [[30-Concepts/dlp-plus]], [[30-Concepts/meta-cs]] — individual methods.
-- [[30-Concepts/duplex-sequencing]] — single-molecule strand-pairing strategy for SNV calling.
-- [[30-Concepts/somatic-mosaicism]] — the central biology motivation.
+- [[40-Topics/duplex-sequencing]] — single-molecule strand-pairing strategy for SNV calling.
+- [[40-Topics/somatic-mosaicism]] — the central biology motivation.
 - [[30-Concepts/lineage-tracing]] — natural mutation accumulation as endogenous lineage marker.
 
 ## Connections to other sources

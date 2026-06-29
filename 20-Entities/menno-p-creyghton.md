@@ -20,4 +20,4 @@ updated: 2026-05-27
 ## Related
 
 - [[20-Entities/rudolf-jaenisch]] · [[20-Entities/richard-a-young]]
-- [[30-Concepts/enhancer-states]] · [[30-Concepts/histone-modifications]]
+- [[30-Concepts/enhancer-states]] · [[40-Topics/histone-modifications]]

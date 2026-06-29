@@ -23,7 +23,7 @@ Comparative-genomics extension of the somatic-mutation framework: mutation rate 
 
 ## Related
 
-- [[30-Concepts/somatic-mosaicism]]
+- [[40-Topics/somatic-mosaicism]]
 - [[30-Concepts/mutational-signatures]]
 - [[30-Concepts/genosenium]]
 - [[10-Summaries/lodato-2017-aging-neurons]]

@@ -27,4 +27,4 @@ Three modules: DNA module (CNN on one-hot-encoded 1 kb regions, densely connecte
 
 ## Related
 
-- [[30-Concepts/histone-modifications]] · [[30-Concepts/chip-seq]] · [[30-Concepts/dnase-seq]] · [[30-Concepts/convolutional-neural-network]] · [[40-Topics/histone-modifications]]
+- [[40-Topics/histone-modifications]] · [[30-Concepts/chip-seq]] · [[30-Concepts/dnase-seq]] · [[30-Concepts/convolutional-neural-network]] · [[40-Topics/histone-modifications]]

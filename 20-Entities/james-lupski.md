@@ -27,7 +27,7 @@ Department of Molecular and Human Genetics, Department of Pediatrics, Baylor Col
 
 ## Related
 
-- [[30-Concepts/somatic-mosaicism]]
+- [[40-Topics/somatic-mosaicism]]
 - [[30-Concepts/developmental-mutation-timing]]
 - [[30-Concepts/gonadal-mosaicism]]
 - [[40-Topics/somatic-mosaicism]]

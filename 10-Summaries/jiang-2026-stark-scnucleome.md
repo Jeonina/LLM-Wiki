@@ -15,7 +15,7 @@ entities:
 concepts:
   - "[[30-Concepts/stark]]"
   - "[[30-Concepts/single-cell-hi-c]]"
-  - "[[30-Concepts/3d-genome]]"
+  - "[[40-Topics/3d-genome]]"
   - "[[30-Concepts/sscce]]"
   - "[[30-Concepts/empty-cells-algorithm]]"
   - "[[30-Concepts/topologically-associating-domain]]"

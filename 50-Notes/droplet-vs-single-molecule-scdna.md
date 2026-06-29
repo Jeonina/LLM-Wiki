@@ -133,6 +133,6 @@ None of these is currently in published form. The breadth-depth tradeoff is the 
 ## Related
 
 - [[40-Topics/scdna-seq]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/long-read-sequencing]]
-- [[30-Concepts/scdna-seq]] · [[30-Concepts/single-molecule-footprinting]] · [[30-Concepts/got]] · [[30-Concepts/got-cha]]
+- [[40-Topics/scdna-seq]] · [[30-Concepts/single-molecule-footprinting]] · [[30-Concepts/got]] · [[30-Concepts/got-cha]]
 - [[30-Concepts/fiber-seq]] · [[30-Concepts/daf-seq]] · [[30-Concepts/samosa]]
 - [[50-Notes/synthesis-targets]] — this note resolves the "Droplet-scale vs single-molecule scDNA-seq" target

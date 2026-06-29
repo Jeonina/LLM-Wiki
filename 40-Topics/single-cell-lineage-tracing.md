@@ -21,7 +21,7 @@ The field organizes along two axes ([[10-Summaries/rodriguez-fraticelli-2026-lin
 - [[30-Concepts/lineage-tracing-somatic-mutations]] — retrospective tracing from nuclear SNVs/CNVs.
 - [[30-Concepts/mitochondrial-lineage-tracing]] — mtDNA-based clonal tracing.
 - [[30-Concepts/methylation-clones-epimutation]] — clonally heritable DNA-methylation epimutations.
-- [[30-Concepts/clonal-hematopoiesis]] — the central ageing/cancer biology payoff.
+- [[40-Topics/clonal-hematopoiesis]] — the central ageing/cancer biology payoff.
 
 ## Key entities
 

@@ -34,7 +34,7 @@ sources: [
 
 ### 2. DNA methylation
 
-**What it measures.** Covalent modifications of cytosine bases — primarily 5mC (and 5hmC as an intermediate / signaling mark). At CpG islands in promoters: typically silencing. At gene bodies and enhancers: more nuanced ([[30-Concepts/dna-methylation]], [[30-Concepts/cpg-island]], [[30-Concepts/5hmc]]).
+**What it measures.** Covalent modifications of cytosine bases — primarily 5mC (and 5hmC as an intermediate / signaling mark). At CpG islands in promoters: typically silencing. At gene bodies and enhancers: more nuanced ([[40-Topics/dna-methylation]], [[30-Concepts/cpg-island]], [[30-Concepts/5hmc]]).
 
 **Bulk assays.** [[30-Concepts/bisulfite-sequencing|Bisulfite-seq]] (WGBS), reduced-representation BS-seq, EM-seq, oxBS-seq for 5hmC.
 
@@ -44,7 +44,7 @@ sources: [
 
 ### 3. Histone modifications
 
-**What it measures.** Post-translational modifications on histone tails (H3K4me3 = active promoter, H3K27ac = active enhancer, H3K27me3 = polycomb-repressed, H3K9me3 = heterochromatin, etc.) that recruit/repel chromatin machinery ([[30-Concepts/histone-modifications]], [[30-Concepts/enhancer-states]]).
+**What it measures.** Post-translational modifications on histone tails (H3K4me3 = active promoter, H3K27ac = active enhancer, H3K27me3 = polycomb-repressed, H3K9me3 = heterochromatin, etc.) that recruit/repel chromatin machinery ([[40-Topics/histone-modifications]], [[30-Concepts/enhancer-states]]).
 
 **Bulk assays.** [[30-Concepts/chip-seq]] (antibody pull-down + seq); [[30-Concepts/cut-and-run]] and [[30-Concepts/cut-and-tag]] (tethered enzyme, lower-input modern replacements).
 
@@ -54,7 +54,7 @@ sources: [
 
 ### 4. 3D genome organization
 
-**What it measures.** How chromatin folds in 3D — A/B compartments (active vs inactive megabase domains), TADs (topologically associating domains), and CTCF/cohesin loops connecting enhancers to promoters across linear distance ([[30-Concepts/3d-genome]], [[30-Concepts/chromatin-compartments]]).
+**What it measures.** How chromatin folds in 3D — A/B compartments (active vs inactive megabase domains), TADs (topologically associating domains), and CTCF/cohesin loops connecting enhancers to promoters across linear distance ([[40-Topics/3d-genome]], [[30-Concepts/chromatin-compartments]]).
 
 **Bulk assays.** Hi-C, Micro-C, ChIA-PET, [[30-Concepts/damid]] (lamina contacts).
 

@@ -18,4 +18,4 @@ updated: 2026-05-12
 
 ## Related
 
-- [[30-Concepts/taps]] · [[30-Concepts/dna-methylation]]
+- [[30-Concepts/taps]] · [[40-Topics/dna-methylation]]

@@ -22,4 +22,4 @@ Pathologist and biochemist. Lab homepage: github.com/loeblab. Long-standing focu
 
 ## Related
 
-- [[20-Entities/scott-kennedy]] · [[30-Concepts/duplex-sequencing]] · [[40-Topics/duplex-sequencing]]
+- [[20-Entities/scott-kennedy]] · [[40-Topics/duplex-sequencing]] · [[40-Topics/duplex-sequencing]]

@@ -41,7 +41,7 @@ sources: ["00-Sources/papers/Chenghang_2012_Science.pdf"]
 
 ## Entities / concepts touched
 
-[[malbac]] · [[scwga]] · [[30-Concepts/scdna-seq]] · [[mda]] · [[dop-pcr]] · [[allele-dropout]] · [[20-Entities/stephen-quake]] · [[40-Topics/whole-genome-amplification]]
+[[malbac]] · [[scwga]] · [[40-Topics/scdna-seq]] · [[mda]] · [[dop-pcr]] · [[allele-dropout]] · [[20-Entities/stephen-quake]] · [[40-Topics/whole-genome-amplification]]
 
 ## Related summaries
 

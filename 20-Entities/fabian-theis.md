@@ -28,7 +28,7 @@ Institute of Computational Biology, Department of Computational Health, Helmholt
 
 ## Related
 
-- [[30-Concepts/single-cell-multiomics]]
+- [[40-Topics/single-cell-multiomics]]
 - [[30-Concepts/episcanpy]]
 - [[30-Concepts/scanpy]]
 - [[30-Concepts/anndata]]

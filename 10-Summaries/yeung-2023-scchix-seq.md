@@ -16,7 +16,7 @@ concepts:
   - "[[30-Concepts/scchix-seq]]"
   - "[[30-Concepts/sortchic]]"
   - "[[30-Concepts/latent-dirichlet-allocation]]"
-  - "[[30-Concepts/histone-modifications]]"
+  - "[[40-Topics/histone-modifications]]"
   - "[[30-Concepts/chromatin-velocity]]"
 topics:
   - "[[40-Topics/histone-modifications]]"

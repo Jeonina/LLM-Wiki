@@ -23,4 +23,4 @@ A methylation clock is a weighted linear combination of methylation β-values at
 
 ## Related
 
-- [[30-Concepts/dna-methylation]] · [[30-Concepts/epigenetic-memory]] · [[40-Topics/dna-methylation]]
+- [[40-Topics/dna-methylation]] · [[30-Concepts/epigenetic-memory]] · [[40-Topics/dna-methylation]]

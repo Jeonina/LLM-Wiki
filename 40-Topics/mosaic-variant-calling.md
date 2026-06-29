@@ -14,7 +14,7 @@ updated: 2026-05-19
 ## Core concepts
 
 - [[30-Concepts/single-cell-variant-calling]] — the computational problem
-- [[30-Concepts/duplex-sequencing]] — fidelity at extreme low VAF
+- [[40-Topics/duplex-sequencing]] — fidelity at extreme low VAF
 - [[30-Concepts/compounding-artifact]] — the failure mode of cascaded callers
 
 ## Callers

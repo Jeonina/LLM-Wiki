@@ -26,4 +26,4 @@ Reveals cell-to-cell variability in TADs, A/B compartments, and chromatin loops 
 
 ## Related
 
-- [[30-Concepts/3d-genome]] · [[30-Concepts/topologically-associating-domain]] · [[30-Concepts/chromatin-compartments]] · [[40-Topics/3d-genome]]
+- [[40-Topics/3d-genome]] · [[30-Concepts/topologically-associating-domain]] · [[30-Concepts/chromatin-compartments]] · [[40-Topics/3d-genome]]

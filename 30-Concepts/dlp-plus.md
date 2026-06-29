@@ -42,5 +42,5 @@ Tn5-based tagmentation has a useful side-effect: **specific overlap patterns of 
 
 - [[scwga]]
 - [[meta-cs]] — Tn5-based duplex-sequencing sibling method.
-- [[30-Concepts/scdna-seq]]
+- [[40-Topics/scdna-seq]]
 - [[40-Topics/whole-genome-amplification]]

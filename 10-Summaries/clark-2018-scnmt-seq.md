@@ -47,7 +47,7 @@ First single-cell method that simultaneously profiles **three molecular layers �
 
 ## Entities / concepts touched
 
-[[30-Concepts/dna-methylation]] · [[chromatin-accessibility]] · [[bisulfite-sequencing]] · [[nome-seq]] · [[scbs-seq]] · [[30-Concepts/single-cell-multiomics]] · [[20-Entities/heather-lee]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/dna-methylation]]
+[[40-Topics/dna-methylation]] · [[chromatin-accessibility]] · [[bisulfite-sequencing]] · [[nome-seq]] · [[scbs-seq]] · [[40-Topics/single-cell-multiomics]] · [[20-Entities/heather-lee]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/dna-methylation]]
 
 ## Related summaries
 

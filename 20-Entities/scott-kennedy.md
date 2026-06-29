@@ -18,4 +18,4 @@ updated: 2026-05-12
 
 ## Related
 
-- [[20-Entities/lawrence-loeb]] · [[30-Concepts/duplex-sequencing]]
+- [[20-Entities/lawrence-loeb]] · [[40-Topics/duplex-sequencing]]

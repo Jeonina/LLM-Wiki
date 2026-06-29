@@ -24,7 +24,7 @@ Distinguishes from:
 
 ## Why it matters
 
-Post-zygotic variation is the molecular substrate of [[30-Concepts/somatic-mosaicism]] and the focus of single-cell DNA sequencing for human-development and disease applications. The framing is useful clinically because it predicts:
+Post-zygotic variation is the molecular substrate of [[40-Topics/somatic-mosaicism]] and the focus of single-cell DNA sequencing for human-development and disease applications. The framing is useful clinically because it predicts:
 
 - Whether a mutation may be transmitted to offspring (depends on whether it predates PGC differentiation — [[developmental-mutation-timing]]).
 - Whether bulk DNA from one tissue captures the mutation (depends on which lineages inherit it).
@@ -45,7 +45,7 @@ Post-zygotic variation is the molecular substrate of [[30-Concepts/somatic-mosai
 
 ## Related
 
-- [[30-Concepts/somatic-mosaicism]]
+- [[40-Topics/somatic-mosaicism]]
 - [[microchimerism]]
 - [[developmental-mutation-timing]]
 - [[40-Topics/somatic-mosaicism]]

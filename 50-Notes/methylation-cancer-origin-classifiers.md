@@ -99,7 +99,7 @@ This note is the weakest of the wiki's 5 synthesis notes because the corpus does
 
 ## Related
 
-- [[30-Concepts/cancer-of-unknown-primary]] · [[30-Concepts/epigenetic-memory]] · [[30-Concepts/dna-methylation]]
+- [[30-Concepts/cancer-of-unknown-primary]] · [[30-Concepts/epigenetic-memory]] · [[40-Topics/dna-methylation]]
 - [[40-Topics/dna-methylation]] · [[40-Topics/scdna-cancer-applications]]
 - [[50-Notes/regulatory-layers-overview]] — methylation as one of four molecular regulatory layers
 - [[50-Notes/synthesis-targets]] — this note resolves the "DNA-methylation-based cancer-of-origin classifiers" target, but with the caveat that primary sources are missing

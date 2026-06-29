@@ -28,6 +28,6 @@ Departments of Bioengineering and Applied Physics, Stanford University; HHMI. Qu
 ## Related
 
 - [[20-Entities/charles-gawad]]
-- [[30-Concepts/scdna-seq]]
+- [[40-Topics/scdna-seq]]
 - [[30-Concepts/mda]]
 - [[40-Topics/scdna-seq]]

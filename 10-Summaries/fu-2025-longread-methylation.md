@@ -13,8 +13,8 @@ entities:
   - "[[20-Entities/fritz-sedlazeck]]"
   - "[[20-Entities/winston-timp]]"
 concepts:
-  - "[[30-Concepts/dna-methylation]]"
-  - "[[30-Concepts/long-read-sequencing]]"
+  - "[[40-Topics/dna-methylation]]"
+  - "[[40-Topics/long-read-sequencing]]"
   - "[[30-Concepts/bisulfite-sequencing]]"
 topics:
   - "[[40-Topics/dna-methylation]]"
@@ -55,8 +55,8 @@ Computational-methods-focused review. Authors are at major long-read centers (Ba
 
 ## Concepts touched
 
-- [[30-Concepts/dna-methylation]] — measurement modalities updated to current long-read era.
-- [[30-Concepts/long-read-sequencing]] — PacBio + ONT capabilities.
+- [[40-Topics/dna-methylation]] — measurement modalities updated to current long-read era.
+- [[40-Topics/long-read-sequencing]] — PacBio + ONT capabilities.
 - [[30-Concepts/bisulfite-sequencing]] — predecessor with structural limitations.
 
 ## Connections to other sources
@@ -68,7 +68,7 @@ Computational-methods-focused review. Authors are at major long-read centers (Ba
 
 - Methylation calling accuracy benchmarking across platforms and tools — no community-accepted gold-standard benchmark yet.
 - 5hmC and 6mA detection sensitivity — lags 5mC for both platforms.
-- Single-cell long-read methylation — technically possible but limited by per-cell yield; an intersection of [[30-Concepts/scdna-seq]] and long-read methylation that remains open.
+- Single-cell long-read methylation — technically possible but limited by per-cell yield; an intersection of [[40-Topics/scdna-seq]] and long-read methylation that remains open.
 
 ---
 **Source:** [DOI](https://doi.org/10.1038/s41576-025-00822-5)

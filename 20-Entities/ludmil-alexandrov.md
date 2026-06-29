@@ -23,4 +23,4 @@ Bioinformatics + cancer biology. Sanger-Cambridge alumnus (Stratton lab). UCSD M
 
 ## Related
 
-- [[30-Concepts/duplex-sequencing]] · [[30-Concepts/mutational-signatures]] · [[40-Topics/duplex-sequencing]]
+- [[40-Topics/duplex-sequencing]] · [[30-Concepts/mutational-signatures]] · [[40-Topics/duplex-sequencing]]

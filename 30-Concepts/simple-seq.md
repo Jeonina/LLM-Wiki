@@ -26,4 +26,4 @@ Combines TAPS chemistry (for 5mC → uracil conversion) with hmC-CATCH-style 5hm
 
 ## Related
 
-- [[30-Concepts/taps]] · [[30-Concepts/5hmc]] · [[30-Concepts/dna-methylation]] · [[30-Concepts/tet-enzymes]] · [[30-Concepts/combinatorial-indexing]]
+- [[30-Concepts/taps]] · [[30-Concepts/5hmc]] · [[40-Topics/dna-methylation]] · [[30-Concepts/tet-enzymes]] · [[30-Concepts/combinatorial-indexing]]

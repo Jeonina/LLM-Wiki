@@ -21,7 +21,7 @@ updated: 2026-05-19
 - [[30-Concepts/dnase-seq]] — original ENCODE accessibility assay; largely superseded by ATAC-seq.
 - [[30-Concepts/fiber-seq]] — bulk single-molecule via m6A methyltransferase stenciling.
 - [[30-Concepts/daf-seq]] — single-cell single-molecule via cytidine deaminase footprinting.
-- [[30-Concepts/histone-modifications]] — covalent chromatin marks.
+- [[40-Topics/histone-modifications]] — covalent chromatin marks.
 - [[30-Concepts/replication-timing]] — temporal axis of chromatin state.
 - [[30-Concepts/enhancer-states]] — active/primed/poised functional categories.
 - [[30-Concepts/cis-regulatory-element]] — enhancers, promoters, insulators.

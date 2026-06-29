@@ -29,5 +29,5 @@ Every cell division has some probability of introducing a unique SNV, indel, or 
 
 ## Related
 
-- [[30-Concepts/lineage-tracing]] · [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/methylation-clones-epimutation]]
+- [[30-Concepts/lineage-tracing]] · [[40-Topics/somatic-mosaicism]] · [[30-Concepts/methylation-clones-epimutation]]
 - [[40-Topics/somatic-mosaicism]] · [[40-Topics/scdna-seq]]

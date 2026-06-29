@@ -25,4 +25,4 @@ Specifically designed for somatic mutation profiling in non-cancer tissues with 
 
 ## Related
 
-- [[30-Concepts/duplex-sequencing]] · [[20-Entities/gilad-evrony]] · [[40-Topics/duplex-sequencing]]
+- [[40-Topics/duplex-sequencing]] · [[20-Entities/gilad-evrony]] · [[40-Topics/duplex-sequencing]]

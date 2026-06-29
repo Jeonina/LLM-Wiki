@@ -20,4 +20,4 @@ updated: 2026-05-27
 ## Related
 
 - [[40-Topics/somatic-mosaicism]] · [[40-Topics/clonal-hematopoiesis]]
-- [[30-Concepts/duplex-sequencing]]
+- [[40-Topics/duplex-sequencing]]

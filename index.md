@@ -20,7 +20,7 @@ The central motivation: there is no DNA-centric locus-state framework that joint
 
 The foundation: how to sequence a genome from one cell. Covers whole-genome amplification chemistries (MDA → MALBAC → LIANTI → **PTA**), variant calling, and error correction.
 
-**Start here →** [[30-Concepts/scdna-seq]] · [[30-Concepts/scwga]] · [[30-Concepts/pta]]
+**Start here →** [[40-Topics/scdna-seq]] · [[30-Concepts/scwga]] · [[30-Concepts/pta]]
 **Key review →** [[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao et al. 2025 (NRG)]]
 **Foundational →** [[10-Summaries/gawad-2016-scgenome-review|Gawad & Quake 2016]] · [[10-Summaries/dean-2002-mda|Dean 2002 (MDA founding paper)]]
 
@@ -30,7 +30,7 @@ The foundation: how to sequence a genome from one cell. Covers whole-genome ampl
 
 Post-zygotic mutations as both disease drivers and natural lineage barcodes. From brain mosaicism to clonal hematopoiesis, from Peto's paradox to aging.
 
-**Start here →** [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/lineage-tracing]] · [[30-Concepts/clonal-hematopoiesis]] · [[40-Topics/single-cell-lineage-tracing]]
+**Start here →** [[40-Topics/somatic-mosaicism]] · [[30-Concepts/lineage-tracing]] · [[40-Topics/clonal-hematopoiesis]] · [[40-Topics/single-cell-lineage-tracing]]
 **Key papers →** [[10-Summaries/lodato-2015-science|Lodato 2015]] · [[10-Summaries/coorens-2021-nature|Coorens 2021]] · [[10-Summaries/cagan-2022-nature|Cagan 2022]]
 **Lineage-tracing reviews (NRG 2026) →** [[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review|Rodriguez-Fraticelli & Parreno (technologies)]] · [[10-Summaries/wang-2026-multimodal-lineage-computational|Wang, He & Hu (computational)]]
 **Tracing concepts →** [[30-Concepts/crispr-lineage-recording]] · [[30-Concepts/phylogenetic-inference]] · [[30-Concepts/mitochondrial-lineage-tracing]] · [[30-Concepts/methylation-clones-epimutation]]
@@ -56,7 +56,7 @@ Measuring open chromatin at single-cell resolution. Includes founding methods, c
 
 From bisulfite sequencing to single-cell methylomes, 5hmC detection, and methylation-based lineage tracing (EPI-Clone, MethylTree).
 
-**Start here →** [[30-Concepts/dna-methylation]] · [[30-Concepts/bisulfite-sequencing]] · [[30-Concepts/scbs-seq]]
+**Start here →** [[40-Topics/dna-methylation]] · [[30-Concepts/bisulfite-sequencing]] · [[30-Concepts/scbs-seq]]
 **Foundational →** [[10-Summaries/smallwood-2014-natmethods|Smallwood 2014 (scBS-seq)]] · [[10-Summaries/schubeler-2015-methylation-review|Schübeler 2015]]
 **Lineage tracing →** [[10-Summaries/scherer-2025-nature|EPI-Clone (Scherer 2025)]] · [[10-Summaries/chen-2025-methyltree|MethylTree (Chen 2025)]]
 
@@ -76,7 +76,7 @@ The transcriptomic axis underlying every multi-omics method. Why bulk RNA-seq av
 
 Methods that read two or more modalities from the same cell: genotype + transcriptome (GoT), genotype + chromatin (GoT-ChA), triple-omics, and beyond.
 
-**Start here →** [[30-Concepts/single-cell-multiomics]] · [[30-Concepts/got]] · [[30-Concepts/got-cha]]
+**Start here →** [[40-Topics/single-cell-multiomics]] · [[30-Concepts/got]] · [[30-Concepts/got-cha]]
 **GoT family →** [[10-Summaries/nam-2019-got|Nam 2019]] · [[10-Summaries/izzo-2024-got-cha|Izzo 2024]] · [[10-Summaries/cortes-lopez-2023-cellstemcell|GoT-Splice]] · [[10-Summaries/chi-2026-dd-seq|D&D-GoT-ChA (Chi 2026)]]
 **DNA + Epigenome →** [[10-Summaries/swanson-2025-daf-seq|DAF-seq]] · [[10-Summaries/kriz-2025-duplex-multiome|Duplex-Multiome]]
 **Genotype + TF binding →** [[30-Concepts/dd-seq]] · [[10-Summaries/chi-2026-dd-seq|D&D-seq (Chi 2026, DNA–protein interaction axis)]]
@@ -89,7 +89,7 @@ Methods that read two or more modalities from the same cell: genotype + transcri
 
 PacBio and Nanopore approaches that capture chromatin state, methylation, and structural variants on native DNA molecules.
 
-**Start here →** [[30-Concepts/long-read-sequencing]] · [[30-Concepts/fiber-seq]] · [[30-Concepts/daf-seq]]
+**Start here →** [[40-Topics/long-read-sequencing]] · [[30-Concepts/fiber-seq]] · [[30-Concepts/daf-seq]]
 **Key papers →** [[10-Summaries/andrewb-2020-science|Fiber-seq (Stergachis 2020)]] · [[10-Summaries/altemose-2022-dimelo-seq|DiMeLo-seq]] · [[10-Summaries/nanda-2024-smrt-tag|SMRT-Tag]]
 
 ---
@@ -98,7 +98,7 @@ PacBio and Nanopore approaches that capture chromatin state, methylation, and st
 
 Chromatin conformation capture (Hi-C) adapted for single cells, haplotype-resolved structures, computational harmonization, and **nuclear-lamina spatial positioning** as a third measurement axis.
 
-**Start here →** [[30-Concepts/3d-genome]] · [[30-Concepts/single-cell-hi-c]] · [[30-Concepts/dip-c]] · [[30-Concepts/nuclear-lamina]] · [[30-Concepts/lamina-associated-domains]] · [[30-Concepts/damid]]
+**Start here →** [[40-Topics/3d-genome]] · [[30-Concepts/single-cell-hi-c]] · [[30-Concepts/dip-c]] · [[30-Concepts/nuclear-lamina]] · [[30-Concepts/lamina-associated-domains]] · [[30-Concepts/damid]]
 **Founding →** [[10-Summaries/nagano-2013-nature|Nagano 2013]] · [[10-Summaries/tan-2018-science|Dip-C (Tan 2018)]]
 **Lamina lineage →** [[10-Summaries/van-steensel-2017-lads-review|LADs review (van Steensel & Belmont 2017)]] · [[10-Summaries/rooijers-2019-scdamt-seq|scDam&T-seq (Rooijers 2019)]] · [[10-Summaries/de-luca-2021-scdamid-protocol|scDamID protocol (de Luca & Kind 2021)]]
 **Heterogeneity metric →** [[10-Summaries/mali-2025-conformational-heterogeneity|C.H. metric (Mali 2025)]]
@@ -110,7 +110,7 @@ Chromatin conformation capture (Hi-C) adapted for single cells, haplotype-resolv
 
 Ultra-accurate error correction by reading both strands of a DNA molecule. Essential for detecting rare somatic variants.
 
-**Start here →** [[30-Concepts/duplex-sequencing]] · [[30-Concepts/nanoseq]] · [[30-Concepts/codec]]
+**Start here →** [[40-Topics/duplex-sequencing]] · [[30-Concepts/nanoseq]] · [[30-Concepts/codec]]
 **Founding →** [[10-Summaries/schmitt-2012-pnas|Schmitt & Loeb 2012]] · [[10-Summaries/kennedy-2014-duplex-protocol|Kennedy 2014]]
 **Benchmark →** [[10-Summaries/zhang-2025-smaht-duplex-benchmark|SMaHT Benchmark (Zhang 2025)]]
 

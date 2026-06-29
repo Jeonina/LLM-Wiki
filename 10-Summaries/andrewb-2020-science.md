@@ -36,7 +36,7 @@ Current chromatin-mapping methods (DNase-seq, ATAC-seq, MNase-seq, Hi-C) sample 
 
 ## Surprising / load-bearing
 
-- The single most important insight for the [[30-Concepts/somatic-mosaicism]] + epigenetic-state synthesis being assembled in this wiki is the **all-or-none actuation finding**: bulk accessibility signal at a DHS is a population frequency, not a continuous variable. This makes single-cell single-molecule chromatin profiling fundamentally different in interpretation from bulk, even when bulk data exists.
+- The single most important insight for the [[40-Topics/somatic-mosaicism]] + epigenetic-state synthesis being assembled in this wiki is the **all-or-none actuation finding**: bulk accessibility signal at a DHS is a population frequency, not a continuous variable. This makes single-cell single-molecule chromatin profiling fundamentally different in interpretation from bulk, even when bulk data exists.
 - The **boundary model of nucleosome positioning** flips a long-standing question (sequence-encoded vs activity-driven) decisively toward activity-driven for regulatory regions.
 - The **CTCF "70% unbound but accessible" finding** is in tension with the textbook view that CTCF gating establishes loops; it argues that loops persist through TF unbinding cycles.
 
@@ -46,7 +46,7 @@ Fiber-seq is a **bulk method**. m6A marks on DNA are erased during any DNA ampli
 
 ## Entities / concepts touched
 
-[[20-Entities/andrew-b-stergachis]] · [[fiber-seq]] · [[single-molecule-footprinting]] · [[chromatin-actuation]] · [[chromatin-accessibility]] · [[atac-seq]] · [[dnase-seq]] · [[pacbio]] · [[30-Concepts/long-read-sequencing]] · [[transcription-factor-motif]] · [[cis-regulatory-element]] · [[daf-seq]] (successor)
+[[20-Entities/andrew-b-stergachis]] · [[fiber-seq]] · [[single-molecule-footprinting]] · [[chromatin-actuation]] · [[chromatin-accessibility]] · [[atac-seq]] · [[dnase-seq]] · [[pacbio]] · [[40-Topics/long-read-sequencing]] · [[transcription-factor-motif]] · [[cis-regulatory-element]] · [[daf-seq]] (successor)
 
 ## Related summaries
 

@@ -13,7 +13,7 @@ entities:
   - "[[20-Entities/ludmil-alexandrov]]"
   - "[[20-Entities/joseph-gleeson]]"
 concepts:
-  - "[[30-Concepts/duplex-sequencing]]"
+  - "[[40-Topics/duplex-sequencing]]"
   - "[[30-Concepts/mutational-signatures]]"
   - "[[30-Concepts/umi-molecular-barcoding]]"
 topics:
@@ -58,4 +58,4 @@ UDSeq couples random shearing with adapter ligation that places UMIs on both str
 **Source:** [DOI](https://doi.org/10.1101/2025.09.14.676103)
 ## Related
 
-- [[30-Concepts/duplex-sequencing]] · [[30-Concepts/mutational-signatures]] · [[40-Topics/duplex-sequencing]] · [[10-Summaries/zhang-2025-smaht-duplex-benchmark]]
+- [[40-Topics/duplex-sequencing]] · [[30-Concepts/mutational-signatures]] · [[40-Topics/duplex-sequencing]] · [[10-Summaries/zhang-2025-smaht-duplex-benchmark]]

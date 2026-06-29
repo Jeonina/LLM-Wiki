@@ -65,5 +65,5 @@ Subsequent platforms split along the same axis:
 - [[30-Concepts/atac-seq]] · [[30-Concepts/tn5-tagmentation]] · [[30-Concepts/chromatin-accessibility]]
 - [[30-Concepts/chromvar]] · [[30-Concepts/cistopic]] · [[30-Concepts/snapatac]] · [[30-Concepts/episcanpy]] · [[30-Concepts/scabc]]
 - [[30-Concepts/scatac-imputation]] · [[30-Concepts/scopen]] · [[30-Concepts/scale]]
-- [[30-Concepts/cut-and-tag]] · [[30-Concepts/scchic-seq]] · [[30-Concepts/single-cell-multiomics]]
+- [[30-Concepts/cut-and-tag]] · [[30-Concepts/scchic-seq]] · [[40-Topics/single-cell-multiomics]]
 - [[40-Topics/single-cell-atac-seq]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/chromatin-architecture]]

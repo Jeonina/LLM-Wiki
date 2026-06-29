@@ -18,4 +18,4 @@ updated: 2026-05-12
 
 ## Related
 
-- [[30-Concepts/chromatin-compartments]] · [[30-Concepts/uhrf1]] · [[30-Concepts/dna-methylation]] · [[40-Topics/chromatin-architecture]]
+- [[30-Concepts/chromatin-compartments]] · [[30-Concepts/uhrf1]] · [[40-Topics/dna-methylation]] · [[40-Topics/chromatin-architecture]]

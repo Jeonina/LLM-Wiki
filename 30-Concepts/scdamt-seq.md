@@ -49,6 +49,6 @@ updated: 2026-05-15
 
 ## Related
 
-- [[30-Concepts/damid]] · [[30-Concepts/lamina-associated-domains]] · [[30-Concepts/nuclear-lamina]] · [[30-Concepts/chromatin-accessibility]] · [[30-Concepts/single-cell-multiomics]]
+- [[30-Concepts/damid]] · [[30-Concepts/lamina-associated-domains]] · [[30-Concepts/nuclear-lamina]] · [[30-Concepts/chromatin-accessibility]] · [[40-Topics/single-cell-multiomics]]
 - Anchor source: [[10-Summaries/rooijers-2019-scdamt-seq]]
 - Protocol companion: [[10-Summaries/de-luca-2021-scdamid-protocol]]

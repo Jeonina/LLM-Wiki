@@ -13,7 +13,7 @@ tags: [G&T-seq, single-cell-multiomics, WGA, Smart-seq2, oligo-dT-bead, protocol
 entities: []
 concepts:
   - "[[30-Concepts/gt-seq]]"
-  - "[[30-Concepts/single-cell-multiomics]]"
+  - "[[40-Topics/single-cell-multiomics]]"
   - "[[30-Concepts/scwga]]"
 topics:
   - "[[40-Topics/single-cell-multiomics]]"
@@ -46,6 +46,6 @@ Abstract + introduction only; full PDF re-ingest will deepen the bench-step-by-s
 
 ## Related
 
-- [[30-Concepts/gt-seq]] · [[30-Concepts/single-cell-multiomics]] · [[30-Concepts/scwga]]
+- [[30-Concepts/gt-seq]] · [[40-Topics/single-cell-multiomics]] · [[30-Concepts/scwga]]
 - [[10-Summaries/clark-2018-scnmt-seq]] · [[10-Summaries/dey-2015-dr-seq]] · [[10-Summaries/hou-2016-sctrio-seq]]
 - [[40-Topics/single-cell-multiomics]]

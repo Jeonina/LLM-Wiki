@@ -25,4 +25,4 @@ Somatic activating mutations in *AKT3, PIK3CA, RHEB, MTOR* or loss-of-function m
 
 ## Related
 
-- [[30-Concepts/mtor-pathway]] · [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/post-zygotic-variation]] · [[20-Entities/christopher-walsh]]
+- [[30-Concepts/mtor-pathway]] · [[40-Topics/somatic-mosaicism]] · [[30-Concepts/post-zygotic-variation]] · [[20-Entities/christopher-walsh]]

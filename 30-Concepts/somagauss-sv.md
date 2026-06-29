@@ -21,4 +21,4 @@ Designed for high-sensitivity detection of cancer-driven structural variation. B
 
 ## Related
 
-- [[30-Concepts/structural-variants]] · [[30-Concepts/long-read-sequencing]] · [[30-Concepts/oxford-nanopore]] · [[40-Topics/long-read-sequencing]]
+- [[30-Concepts/structural-variants]] · [[40-Topics/long-read-sequencing]] · [[30-Concepts/oxford-nanopore]] · [[40-Topics/long-read-sequencing]]

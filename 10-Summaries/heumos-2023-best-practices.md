@@ -12,7 +12,7 @@ tags: [review, best-practices, single-cell-analysis, computational, benchmarking
 entities:
   - "[[20-Entities/fabian-theis]]"
 concepts:
-  - "[[30-Concepts/single-cell-multiomics]]"
+  - "[[40-Topics/single-cell-multiomics]]"
 topics:
   - "[[40-Topics/single-cell-multiomics]]"
 ---
@@ -50,7 +50,7 @@ Consortium consensus document. Helmholtz Munich (Theis group) led with contribut
 
 ## Concepts touched
 
-- [[30-Concepts/single-cell-multiomics]] — analysis side rather than wet-lab side.
+- [[40-Topics/single-cell-multiomics]] — analysis side rather than wet-lab side.
 
 ## Connections to other sources
 

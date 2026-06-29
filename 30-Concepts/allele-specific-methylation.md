@@ -21,4 +21,4 @@ ASM-QTLs are emerging as a regulatory mechanism for expression variability. A de
 
 ## Related
 
-- [[30-Concepts/long-read-sequencing]] · [[30-Concepts/dna-methylation]] · [[40-Topics/long-read-sequencing]]
+- [[40-Topics/long-read-sequencing]] · [[40-Topics/dna-methylation]] · [[40-Topics/long-read-sequencing]]

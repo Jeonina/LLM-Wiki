@@ -49,7 +49,7 @@ Before sci-CAR, joint single-cell profiling of chromatin accessibility + transcr
 
 ## Entities / concepts touched
 
-[[chromatin-accessibility]] · [[scatac-seq]] · [[combinatorial-indexing]] · [[tn5-tagmentation]] · [[30-Concepts/single-cell-multiomics]] · [[40-Topics/single-cell-multiomics]] · [[lung-adenocarcinoma]]
+[[chromatin-accessibility]] · [[scatac-seq]] · [[combinatorial-indexing]] · [[tn5-tagmentation]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/single-cell-multiomics]] · [[lung-adenocarcinoma]]
 
 ## Related summaries
 

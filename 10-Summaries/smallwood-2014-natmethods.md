@@ -27,7 +27,7 @@ The founding genome-wide single-cell DNA methylome chemistry, parent to scRRBS, 
 ## Related
 
 - [[30-Concepts/scbs-seq]]
-- [[30-Concepts/dna-methylation]]
+- [[40-Topics/dna-methylation]]
 - [[10-Summaries/guo-2013-scrrbs]]
 - [[10-Summaries/luo-2018-snmc-seq2]]
 - [[10-Summaries/liu-2023-mouse-brain-methylome-3d]]

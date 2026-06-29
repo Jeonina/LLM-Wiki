@@ -16,7 +16,7 @@ concepts:
   - "[[30-Concepts/scchic-seq]]"
   - "[[30-Concepts/chic-seq]]"
   - "[[30-Concepts/cut-and-run]]"
-  - "[[30-Concepts/histone-modifications]]"
+  - "[[40-Topics/histone-modifications]]"
   - "mnase"
 topics:
   - "[[40-Topics/histone-modifications]]"

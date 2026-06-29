@@ -27,6 +27,6 @@ Department of Biomedical Engineering, Johns Hopkins University. Patents 8,748,09
 ## Related
 
 - [[20-Entities/fritz-sedlazeck]]
-- [[30-Concepts/long-read-sequencing]]
-- [[30-Concepts/dna-methylation]]
+- [[40-Topics/long-read-sequencing]]
+- [[40-Topics/dna-methylation]]
 - [[40-Topics/long-read-sequencing]]

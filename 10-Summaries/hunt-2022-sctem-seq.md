@@ -14,7 +14,7 @@ entities:
   - "kooper hunt"
 concepts:
   - "[[30-Concepts/sctem-seq]]"
-  - "[[30-Concepts/dna-methylation]]"
+  - "[[40-Topics/dna-methylation]]"
   - "[[30-Concepts/transposable-elements]]"
   - "[[30-Concepts/bisulfite-sequencing]]"
   - "[[30-Concepts/decitabine]]"

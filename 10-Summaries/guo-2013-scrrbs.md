@@ -41,7 +41,7 @@ updated: 2026-05-12
 
 ## Entities / concepts touched
 
-[[scbs-seq]] · [[bisulfite-sequencing]] · [[30-Concepts/dna-methylation]] · [[cpg-island]] · [[20-Entities/xiaoying-fan]] · [[40-Topics/dna-methylation]]
+[[scbs-seq]] · [[bisulfite-sequencing]] · [[40-Topics/dna-methylation]] · [[cpg-island]] · [[20-Entities/xiaoying-fan]] · [[40-Topics/dna-methylation]]
 
 ## Related summaries
 

@@ -43,7 +43,7 @@ Chromatin accessibility ([[chromatin-accessibility]]) tells you a region is *ope
 - [[chromatin-accessibility]] — D&D distinguishes bound from merely open
 - [[transcription-factor-motif]] — binding validated by de novo motif recovery
 - [[cut-and-tag]] — antibody-tethered alternative D&D-seq outperforms on specificity
-- [[30-Concepts/3d-genome]] — scD&D CTCF enables single-cell 3D structure prediction
+- [[40-Topics/3d-genome]] — scD&D CTCF enables single-cell 3D structure prediction
 - [[40-Topics/single-cell-multiomics]]
 - [[40-Topics/chromatin-architecture]]
 - [[20-Entities/landau-lab]]

@@ -13,9 +13,9 @@ entities:
   - "[[20-Entities/lawrence-loeb]]"
   - "[[20-Entities/scott-kennedy]]"
 concepts:
-  - "[[30-Concepts/duplex-sequencing]]"
+  - "[[40-Topics/duplex-sequencing]]"
   - "[[30-Concepts/umi-molecular-barcoding]]"
-  - "[[30-Concepts/somatic-mosaicism]]"
+  - "[[40-Topics/somatic-mosaicism]]"
 topics:
   - "[[40-Topics/duplex-sequencing]]"
   - "[[40-Topics/somatic-mosaicism]]"
@@ -57,4 +57,4 @@ Step-by-step Nature Protocols paper. Library prep follows standard Illumina (son
 **Source:** [DOI](https://doi.org/10.1038/nprot.2014.170)
 ## Related
 
-- [[30-Concepts/duplex-sequencing]] · [[30-Concepts/umi-molecular-barcoding]] · [[40-Topics/duplex-sequencing]] · [[40-Topics/somatic-mosaicism]]
+- [[40-Topics/duplex-sequencing]] · [[30-Concepts/umi-molecular-barcoding]] · [[40-Topics/duplex-sequencing]] · [[40-Topics/somatic-mosaicism]]

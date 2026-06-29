@@ -45,5 +45,5 @@ But this association is statistical, not deterministic; the cell-to-cell variabi
 ## Related
 
 - [[30-Concepts/lamina-associated-domains]] · [[30-Concepts/damid]] · [[30-Concepts/scdamt-seq]] · [[30-Concepts/conformational-heterogeneity]]
-- [[30-Concepts/chromatin-compartments]] · [[30-Concepts/3d-genome]]
+- [[30-Concepts/chromatin-compartments]] · [[40-Topics/3d-genome]]
 - Sources: [[10-Summaries/rooijers-2019-scdamt-seq]] · [[10-Summaries/de-luca-2021-scdamid-protocol]] · [[10-Summaries/mali-2025-conformational-heterogeneity]]

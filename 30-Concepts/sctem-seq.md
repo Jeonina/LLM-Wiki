@@ -25,4 +25,4 @@ Most experiments need a global methylation readout, not per-locus calls. scTEM-s
 
 ## Related
 
-- [[30-Concepts/dna-methylation]] · [[30-Concepts/bisulfite-sequencing]] · [[30-Concepts/transposable-elements]] · [[30-Concepts/viral-mimicry]] · [[40-Topics/dna-methylation]]
+- [[40-Topics/dna-methylation]] · [[30-Concepts/bisulfite-sequencing]] · [[30-Concepts/transposable-elements]] · [[30-Concepts/viral-mimicry]] · [[40-Topics/dna-methylation]]

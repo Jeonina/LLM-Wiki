@@ -18,4 +18,4 @@ updated: 2026-05-12
 
 ## Related
 
-- [[20-Entities/biomodal]] · [[30-Concepts/6-base-cut-and-tag]] · [[30-Concepts/dna-methylation]]
+- [[20-Entities/biomodal]] · [[30-Concepts/6-base-cut-and-tag]] · [[40-Topics/dna-methylation]]

@@ -12,9 +12,9 @@ tags: [review, multi-omics, scDNA-scRNA, spatial-omics, KU-Leuven]
 entities:
   - "[[20-Entities/thierry-voet]]"
 concepts:
-  - "[[30-Concepts/single-cell-multiomics]]"
+  - "[[40-Topics/single-cell-multiomics]]"
   - "[[30-Concepts/gt-seq]]"
-  - "[[30-Concepts/scdna-seq]]"
+  - "[[40-Topics/scdna-seq]]"
 topics:
   - "[[40-Topics/single-cell-multiomics]]"
 ---
@@ -53,9 +53,9 @@ Methodological review from KU Leuven (Voet lab — co-developer of G&T-seq). Hea
 
 ## Concepts touched
 
-- [[30-Concepts/single-cell-multiomics]]
+- [[40-Topics/single-cell-multiomics]]
 - [[30-Concepts/gt-seq]] — G&T-seq method.
-- [[30-Concepts/scdna-seq]] — covered in the multi-omic context.
+- [[40-Topics/scdna-seq]] — covered in the multi-omic context.
 
 ## Connections to other sources
 

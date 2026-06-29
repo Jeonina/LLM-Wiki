@@ -43,4 +43,4 @@ Limitations:
 
 - [[scwga]]
 - [[mda]], [[malbac]], [[pta]] — modern alternatives.
-- [[30-Concepts/scdna-seq]]
+- [[40-Topics/scdna-seq]]

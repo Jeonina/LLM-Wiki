@@ -39,7 +39,7 @@ updated: 2026-05-12
 
 ## Entities / concepts touched
 
-[[scbs-seq]] · [[30-Concepts/dna-methylation]] · [[bisulfite-sequencing]] · [[30-Concepts/single-cell-multiomics]] · [[40-Topics/dna-methylation]]
+[[scbs-seq]] · [[40-Topics/dna-methylation]] · [[bisulfite-sequencing]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/dna-methylation]]
 
 ## Related summaries
 

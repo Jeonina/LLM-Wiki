@@ -26,7 +26,7 @@ A canonical conceptual reference for the somatic-mutation-aging link. Anchors §
 
 ## Related
 
-- [[30-Concepts/somatic-mosaicism]]
+- [[40-Topics/somatic-mosaicism]]
 - [[30-Concepts/genosenium]]
 - [[10-Summaries/cagan-2022-nature]]
 - [[10-Summaries/lodato-2017-aging-neurons]]

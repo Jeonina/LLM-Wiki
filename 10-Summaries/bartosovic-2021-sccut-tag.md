@@ -13,7 +13,7 @@ tags: [scCUT&Tag, histone-modifications, transcription-factors, droplet, CUT&Tag
 entities: []
 concepts:
   - "[[30-Concepts/cut-and-tag]]"
-  - "[[30-Concepts/histone-modifications]]"
+  - "[[40-Topics/histone-modifications]]"
   - "[[30-Concepts/transcription-factor-motif]]"
 topics:
   - "[[40-Topics/chromatin-architecture]]"
@@ -47,6 +47,6 @@ Abstract + intro only; full PDF re-ingest will deepen comparison vs bulk CUT&Tag
 
 ## Related
 
-- [[30-Concepts/cut-and-tag]] · [[30-Concepts/histone-modifications]] · [[30-Concepts/transcription-factor-motif]]
+- [[30-Concepts/cut-and-tag]] · [[40-Topics/histone-modifications]] · [[30-Concepts/transcription-factor-motif]]
 - [[10-Summaries/bartosovic-2022-nano-cut-tag]] · [[10-Summaries/janssens-2023-scicut-tag]] · [[10-Summaries/ku-2019-scchic-seq]] · [[10-Summaries/yeung-2023-scchix-seq]]
 - [[40-Topics/chromatin-architecture]] · [[40-Topics/histone-modifications]]

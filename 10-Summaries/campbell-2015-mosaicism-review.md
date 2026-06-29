@@ -12,7 +12,7 @@ tags: [review, somatic-mosaicism, developmental-timing, transmission-genetics, r
 entities:
   - "[[20-Entities/james-lupski]]"
 concepts:
-  - "[[30-Concepts/somatic-mosaicism]]"
+  - "[[40-Topics/somatic-mosaicism]]"
   - "[[30-Concepts/post-zygotic-variation]]"
   - "[[30-Concepts/gonadal-mosaicism]]"
   - "[[30-Concepts/developmental-mutation-timing]]"
@@ -57,7 +57,7 @@ Synthesizing review with clinical case examples (CHILD syndrome, Proteus syndrom
 
 ## Concepts touched
 
-- [[30-Concepts/somatic-mosaicism]]
+- [[40-Topics/somatic-mosaicism]]
 - [[30-Concepts/post-zygotic-variation]]
 - [[30-Concepts/gonadal-mosaicism]]
 - [[30-Concepts/developmental-mutation-timing]] — the timing-geometry framework.

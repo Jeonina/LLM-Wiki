@@ -29,4 +29,4 @@ PacBio Sequel II/IIe/Revio instruments. **HiFi reads**: ≥5 CCS passes yields >
 
 ## Related
 
-- [[30-Concepts/long-read-sequencing]] · [[30-Concepts/oxford-nanopore]] · [[30-Concepts/single-molecule-footprinting]] · [[40-Topics/long-read-sequencing]]
+- [[40-Topics/long-read-sequencing]] · [[30-Concepts/oxford-nanopore]] · [[30-Concepts/single-molecule-footprinting]] · [[40-Topics/long-read-sequencing]]

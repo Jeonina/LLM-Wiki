@@ -21,4 +21,4 @@ TADs constrain which enhancer–promoter contacts can occur. Disrupting TAD boun
 
 ## Related
 
-- [[30-Concepts/3d-genome]] · [[30-Concepts/chromatin-compartments]] · [[30-Concepts/single-cell-hi-c]] · [[40-Topics/3d-genome]]
+- [[40-Topics/3d-genome]] · [[30-Concepts/chromatin-compartments]] · [[30-Concepts/single-cell-hi-c]] · [[40-Topics/3d-genome]]

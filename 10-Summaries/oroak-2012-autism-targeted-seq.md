@@ -13,7 +13,7 @@ tags: [autism, ASD, targeted-sequencing, molecular-inversion-probes, MIP, de-nov
 entities: []
 concepts:
   - "[[30-Concepts/autism-spectrum-disorder]]"
-  - "[[30-Concepts/somatic-mosaicism]]"
+  - "[[40-Topics/somatic-mosaicism]]"
   - "[[30-Concepts/post-zygotic-variation]]"
 topics:
   - "[[40-Topics/somatic-mosaicism]]"
@@ -45,6 +45,6 @@ Abstract + intro only; full PDF re-ingest will deepen the gene-level findings an
 
 ## Related
 
-- [[30-Concepts/autism-spectrum-disorder]] · [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/post-zygotic-variation]]
+- [[30-Concepts/autism-spectrum-disorder]] · [[40-Topics/somatic-mosaicism]] · [[30-Concepts/post-zygotic-variation]]
 - [[10-Summaries/lodato-2017-aging-neurons]] · [[10-Summaries/bizzotto-2022-brain-mosaicism-review]]
 - [[40-Topics/somatic-mosaicism]]

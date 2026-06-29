@@ -27,4 +27,4 @@ The most recent major advance in duplex sequencing, completing the trajectory Sc
 - [[10-Summaries/abascal-2021-nanoseq]]
 - hoang 2016 pnas
 - [[30-Concepts/codec]]
-- [[30-Concepts/duplex-sequencing]]
+- [[40-Topics/duplex-sequencing]]

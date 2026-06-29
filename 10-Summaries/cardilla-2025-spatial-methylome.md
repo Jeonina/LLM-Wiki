@@ -12,8 +12,8 @@ journal: "Nature"
 tags: [spatial-omics, methylation, transcriptome, near-single-cell, tissue, embryogenesis, brain, Deng-lab, Zhou-lab]
 entities: []
 concepts:
-  - "[[30-Concepts/dna-methylation]]"
-  - "[[30-Concepts/single-cell-multiomics]]"
+  - "[[40-Topics/dna-methylation]]"
+  - "[[40-Topics/single-cell-multiomics]]"
   - "[[30-Concepts/spatial-multiomics]]"
 topics:
   - "[[40-Topics/dna-methylation]]"
@@ -48,6 +48,6 @@ Abstract + intro only; full PDF re-ingest will deepen the spatial-resolution met
 
 ## Related
 
-- [[30-Concepts/dna-methylation]] · [[30-Concepts/spatial-multiomics]] · [[30-Concepts/single-cell-multiomics]] · [[30-Concepts/bisulfite-sequencing]]
+- [[40-Topics/dna-methylation]] · [[30-Concepts/spatial-multiomics]] · [[40-Topics/single-cell-multiomics]] · [[30-Concepts/bisulfite-sequencing]]
 - [[10-Summaries/guo-2013-scrrbs]] · [[10-Summaries/smallwood-2014-natmethods]] · [[10-Summaries/bai-2024-simple-seq]] · [[10-Summaries/clark-2018-scnmt-seq]]
 - [[40-Topics/dna-methylation]] · [[40-Topics/single-cell-multiomics]]

@@ -35,4 +35,4 @@ SVs include:
 
 ## Related
 
-- [[30-Concepts/somatic-mosaicism]] · [[30-Concepts/long-read-sequencing]] · [[30-Concepts/somagauss-sv]] · [[40-Topics/somatic-mosaicism]]
+- [[40-Topics/somatic-mosaicism]] · [[40-Topics/long-read-sequencing]] · [[30-Concepts/somagauss-sv]] · [[40-Topics/somatic-mosaicism]]

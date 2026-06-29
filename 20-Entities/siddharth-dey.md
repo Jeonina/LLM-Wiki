@@ -27,4 +27,4 @@ updated: 2026-05-15
 
 ## Related
 
-- [[20-Entities/jop-kind]] · [[30-Concepts/scdamt-seq]] · [[30-Concepts/damid]] · [[30-Concepts/single-cell-multiomics]]
+- [[20-Entities/jop-kind]] · [[30-Concepts/scdamt-seq]] · [[30-Concepts/damid]] · [[40-Topics/single-cell-multiomics]]

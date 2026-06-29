@@ -13,7 +13,7 @@ entities:
   - "[[20-Entities/joseph-costello]]"
   - "mirang kim"
 concepts:
-  - "[[30-Concepts/dna-methylation]]"
+  - "[[40-Topics/dna-methylation]]"
   - "[[30-Concepts/dnmt]]"
   - "[[30-Concepts/tet-enzymes]]"
   - "[[30-Concepts/uhrf1]]"

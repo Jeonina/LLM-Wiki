@@ -1,10 +1,11 @@
 ---
 type: note
-title: Synthesis Targets
+title: "Synthesis targets — candidate cross-source syntheses"
+aliases: [synthesis targets, synthesis candidates, notes to write]
 description: Candidate syntheses that would pull together 3+ sources into a durable note.
 tags: [meta, synthesis-candidates]
 created: 2026-05-13
-updated: 2026-05-19
+updated: 2026-06-29
 ---
 
 # Synthesis Targets

@@ -4,6 +4,25 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+## 2026-06-29 — Maintenance: organize 50-Notes (index + frontmatter standardization)
+
+**Trigger**: User (writing the scDNA-seq review) felt 50-Notes was scattered; asked to tidy it before drafting the computational-framework note. Scope chosen: index + frontmatter standardization (no content merges); grouping by the paper's layer structure.
+
+### Created
+- [[50-Notes/index]] — new catalog (the folder lacked one; all other folders have it). Groups the 10 notes by the review's structure: **Cross-cutting framing** (regulatory-layers-overview, mosaicism-synthesis-gap, joint-assays-by-layer-pair) → **per-layer** (genetic: pta-inflection / single-cell-duplex / droplet-vs-single-molecule; methylation: methylation-cancer-classifiers; histone: mnase-vs-tn5; accessibility/3D: none yet, placeholder) → **meta/trackers** (synthesis-targets, open-questions). The two review-paper anchors flagged 🎯.
+
+### Standardized
+- Meta notes given descriptive titles + aliases: `Open Questions` → "Open questions — tensions and gaps by domain"; `Synthesis Targets` → "Synthesis targets — candidate cross-source syntheses".
+- Deduped `sources:` arrays: methylation-cancer-origin-classifiers (kim-2017, smith-2013 ×2), mnase-vs-tn5 (klemm-2019 ×2), pta-inflection-point (evrony-2021, shao-2025 ×2).
+- `updated: 2026-06-29` on the 5 touched notes.
+- Root [[index]] "Browse the wiki" table: added a **Notes** row → [[50-Notes/index]] (was missing).
+
+### Verified
+- 10/10 notes catalogued; all index links resolve; 0 duplicate sources; 0 broken links wiki-wide.
+- Note: the 3 genetic-layer notes (pta-inflection / single-cell-duplex / droplet-vs-single-molecule) overlap in scope but each holds a distinct angle (chronology / frontier-closing / breadth-depth) — kept separate, not merged.
+
+---
+
 ## 2026-06-29 — Refactor: merge 9 concept/topic duplicate pairs into single Topic pages
 
 **Trigger**: User: "merge the duplicate concept/topic pairs into single pages." Nine slugs existed as BOTH a `30-Concepts/` page and a `40-Topics/` page. User chose **merge-into-Topics** (survivor lives in `40-Topics/`, concept twin absorbed and deleted).

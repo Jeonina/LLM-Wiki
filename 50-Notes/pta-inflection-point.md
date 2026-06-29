@@ -4,7 +4,7 @@ title: "The PTA inflection point — when scDNA-seq became trustworthy"
 aliases: [PTA inflection, MDA-to-PTA, scWGA chronology]
 tags: [synthesis, scDNA-seq, PTA, MDA, scWGA, methods-chronology, somatic-mosaicism]
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-06-29
 sources: [
   "[[10-Summaries/dean-2002-mda]]",
   "[[10-Summaries/navin-2011-sns-tumor-evolution]]",
@@ -14,13 +14,11 @@ sources: [
   "[[10-Summaries/bae-2017-pregastrulation-mutations]]",
   "[[10-Summaries/gonzalez-pena-2021-pnas]]",
   "[[10-Summaries/evrony-2021-scDNA-applications-review]]",
-  "[[10-Summaries/evrony-2021-scDNA-applications-review]]",
   "[[10-Summaries/taejeong-2022-science]]",
   "[[10-Summaries/kousi-2022-ad-mosaicism]]",
   "[[10-Summaries/luquette-2025-pta-duplex-mosaicism]]",
   "[[10-Summaries/mukamel-2025-aneuploidy-brain]]",
   "[[10-Summaries/kriz-2025-duplex-multiome]]",
-  "[[10-Summaries/shao-2025-scDNA-mosaicism-review]]",
   "[[10-Summaries/shao-2025-scDNA-mosaicism-review]]"
 ]
 ---

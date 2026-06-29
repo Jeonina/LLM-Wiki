@@ -1,10 +1,11 @@
 ---
 type: note
-title: Open Questions
+title: "Open questions — tensions and gaps by domain"
+aliases: [open questions, open threads, unresolved tensions]
 description: Tensions and gaps surfaced during ingest or lint. Resolve, then move out.
 tags: [meta, open-questions]
 created: 2026-05-13
-updated: 2026-05-19
+updated: 2026-06-29
 ---
 
 # Open Questions

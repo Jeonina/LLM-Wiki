@@ -124,6 +124,7 @@ Ultra-accurate error correction by reading both strands of a DNA molecule. Essen
 | [[20-Entities/index\|People & labs]] | Researchers, labs, consortia |
 | [[30-Concepts/index\|Concepts]] | Definitions: methods, terms, ideas |
 | [[40-Topics/index\|Topics]] | Broad themes that gather concepts and papers |
+| [[50-Notes/index\|Notes]] | Cross-source syntheses, organized by layer |
 
 ---
 

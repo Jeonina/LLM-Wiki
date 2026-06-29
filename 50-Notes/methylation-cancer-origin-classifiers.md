@@ -4,11 +4,9 @@ title: "Methylation-based cancer-of-origin classifiers — clinical-grade epigen
 aliases: [methylation classifiers, EPICUP, MNP classifier, tissue-of-origin methylation]
 tags: [synthesis, methylation, cancer, classifier, EPICUP, brain-tumor-MNP, epigenetic-memory]
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-06-29
 sources: [
   "[[10-Summaries/kim-2017-methylation-memory-review]]",
-  "[[10-Summaries/kim-2017-methylation-memory-review]]",
-  "[[10-Summaries/smith-2013-methylation-development]]",
   "[[10-Summaries/smith-2013-methylation-development]]",
   "[[10-Summaries/fu-2025-longread-methylation]]",
   "[[10-Summaries/hunt-2022-sctem-seq]]",

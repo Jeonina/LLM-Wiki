@@ -4,7 +4,7 @@ title: "MNase vs Tn5 — two chemistries for single-cell histone profiling"
 aliases: [MNase vs Tn5, scChIC vs scCUT&Tag, single-cell chromatin chemistry]
 tags: [synthesis, histone-modifications, single-cell-chromatin, MNase, Tn5, methods-tradeoff]
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-06-29
 sources: [
   "[[10-Summaries/rotem-2015-drop-chip]]",
   "[[10-Summaries/ku-2019-scchic-seq]]",
@@ -14,7 +14,6 @@ sources: [
   "[[10-Summaries/bartosovic-2022-nano-cut-tag]]",
   "[[10-Summaries/janssens-2023-scicut-tag]]",
   "[[10-Summaries/tavares-2026-6-base-cut-tag]]",
-  "[[10-Summaries/klemm-2019-chromatin-accessibility-review]]",
   "[[10-Summaries/klemm-2019-chromatin-accessibility-review]]"
 ]
 ---

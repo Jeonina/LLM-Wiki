@@ -22,8 +22,6 @@ concepts:
   - "[[30-Concepts/replication-timing]]"
   - "[[30-Concepts/uhrf1]]"
 topics:
-  - "[[40-Topics/histone-modifications]]"
-  - "[[40-Topics/dna-methylation]]"
   - "[[40-Topics/single-cell-multiomics]]"
 ---
 

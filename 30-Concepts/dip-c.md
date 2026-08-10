@@ -21,4 +21,4 @@ Reveals allele-specific 3D architecture — important for genomic imprinting, X-
 
 ## Related
 
-- [[30-Concepts/single-cell-hi-c]] · [[40-Topics/3d-genome]] · [[40-Topics/3d-genome]]
+- [[30-Concepts/single-cell-hi-c]] · [[40-Topics/3d-genome]]

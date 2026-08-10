@@ -17,7 +17,6 @@ concepts:
   - "[[30-Concepts/microchimerism]]"
   - "[[40-Topics/clonal-hematopoiesis]]"
 topics:
-  - "[[40-Topics/somatic-mosaicism]]"
 ---
 
 **Citation:** Forsberg et al. (2017) — *Mosaicism in health and disease* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/nrg.2016.145)

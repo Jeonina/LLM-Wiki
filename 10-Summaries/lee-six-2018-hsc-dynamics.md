@@ -26,7 +26,7 @@ Demonstrates that somatic mutations + WGS of single-cell-derived colonies can qu
 
 ## Related
 
-- [[30-Concepts/lineage-tracing-somatic-mutations]]
+- [[30-Concepts/lineage-tracing]]
 - [[40-Topics/clonal-hematopoiesis]]
 - [[10-Summaries/coorens-2021-nature]]
 - [[10-Summaries/scherer-2025-nature]]

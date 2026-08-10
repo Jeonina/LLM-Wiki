@@ -1,14 +1,14 @@
 ---
 title: LLM Wiki — scDNA-seq & Single-Cell Epigenomics
 description: A living knowledge base on single-cell DNA sequencing, somatic mosaicism, and adjacent epigenomics.
-updated: 2026-06-29
+updated: 2026-08-10
 ---
 
 # LLM Wiki
 
 A living knowledge base on **single-cell DNA sequencing**, **somatic mosaicism**, and **single-cell epigenomics** — built and maintained with the help of an LLM, following [Andrej Karpathy's LLM Wiki pattern](10-Summaries/example-llm-wiki).
 
-> This wiki synthesizes ~190 papers spanning scDNA-seq methods, chromatin profiling, DNA methylation, multi-omics assays, and computational tools. Start from a topic below, or browse the full catalog.
+> This wiki synthesizes ~253 papers spanning scDNA-seq methods, chromatin profiling, DNA methylation, multi-omics assays, and computational tools. Start from a topic below, or browse the full catalog.
 
 The central motivation: there is no DNA-centric locus-state framework that jointly interprets mutation + epigenome + RNA at single-cell scale. The wiki tracks the methods that get us closer to one — see [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap|the synthesis gap note]] for the framing.
 
@@ -22,7 +22,8 @@ The foundation: how to sequence a genome from one cell. Covers whole-genome ampl
 
 **Start here →** [[40-Topics/scdna-seq]] · [[30-Concepts/scwga]] · [[30-Concepts/pta]]
 **Key review →** [[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao et al. 2025 (NRG)]]
-**Foundational →** [[10-Summaries/gawad-2016-scgenome-review|Gawad & Quake 2016]] · [[10-Summaries/dean-2002-mda|Dean 2002 (MDA founding paper)]]
+**Foundational →** [[10-Summaries/gawad-2016-scgenome-review|Gawad & Quake 2016]] · [[10-Summaries/dean-2002-mda|Dean 2002 (MDA founding paper)]] · [[10-Summaries/telenius-1992-dop-pcr|Telenius 1992 (DOP-PCR)]]
+**Amplification-free →** [[10-Summaries/laks-2019-dlp-plus|Laks 2019 (DLP+)]] · **Bulk baseline →** [[10-Summaries/mckenna-2010-gatk|McKenna 2010 (GATK)]]
 
 ---
 
@@ -48,7 +49,8 @@ Measuring open chromatin at single-cell resolution. Includes founding methods, c
 **Founding methods →** [[10-Summaries/buenrostro-2015-nature|Buenrostro 2015]] · [[10-Summaries/cusanovich-2015-sciatac|Cusanovich 2015 (sci-ATAC)]]
 **Tools →** [[30-Concepts/chromvar]] · [[30-Concepts/cistopic]] · [[30-Concepts/snapatac]] · [[10-Summaries/granja-2021-archr|ArchR]]
 **Imputation / denoising →** [[30-Concepts/scatac-imputation]] · [[10-Summaries/li-2021-scopen|scOpen (NMF)]] · [[10-Summaries/xiong-2019-scale|SCALE (VAE+GMM)]]
-**Enhancer state →** [[10-Summaries/creyghton-2010-h3k27ac-enhancers|Creyghton 2010 (H3K27ac active/poised partition)]] · [[30-Concepts/enhancer-states]]
+**Enhancer state →** [[10-Summaries/creyghton-2010-h3k27ac-enhancers|Creyghton 2010 (H3K27ac active/poised partition)]] · [[10-Summaries/heinz-2010-homer|Heinz 2010 (priming + HOMER)]] · [[30-Concepts/enhancer-states]]
+**Reference & tooling →** [[10-Summaries/roadmap-2015-111-epigenomes|Roadmap 2015 (127 epigenomes)]] · [[10-Summaries/mclean-2010-great|GREAT]] · [[10-Summaries/zhang-2021-chromap|Chromap]] · [[10-Summaries/traag-2019-leiden|Leiden]] · [[10-Summaries/mcinnes-2018-umap|UMAP]]
 
 ---
 
@@ -57,6 +59,7 @@ Measuring open chromatin at single-cell resolution. Includes founding methods, c
 From bisulfite sequencing to single-cell methylomes, 5hmC detection, and methylation-based lineage tracing (EPI-Clone, MethylTree).
 
 **Start here →** [[40-Topics/dna-methylation]] · [[30-Concepts/bisulfite-sequencing]] · [[30-Concepts/scbs-seq]]
+**Function & 5hmC →** [[10-Summaries/jones-2012-dna-methylation-functions|Jones 2012 (context-dependence)]] · [[10-Summaries/tahiliani-2009-tet1-5hmc|Tahiliani 2009 (5hmC)]] · [[10-Summaries/chen-2025-sctaps-sccaps-plus|scTAPS/scCAPS+]] · [[10-Summaries/kremer-2024-methscan|MethSCAn]]
 **Foundational →** [[10-Summaries/smallwood-2014-natmethods|Smallwood 2014 (scBS-seq)]] · [[10-Summaries/schubeler-2015-methylation-review|Schübeler 2015]]
 **Lineage tracing →** [[10-Summaries/scherer-2025-nature|EPI-Clone (Scherer 2025)]] · [[10-Summaries/chen-2025-methyltree|MethylTree (Chen 2025)]]
 
@@ -120,7 +123,7 @@ Ultra-accurate error correction by reading both strands of a DNA molecule. Essen
 
 | | |
 |---|---|
-| [[10-Summaries/index\|Papers]] | All ~190 paper summaries, organized by topic |
+| [[10-Summaries/index\|Papers]] | All ~225 paper summaries, organized by topic |
 | [[20-Entities/index\|People & labs]] | Researchers, labs, consortia |
 | [[30-Concepts/index\|Concepts]] | Definitions: methods, terms, ideas |
 | [[40-Topics/index\|Topics]] | Broad themes that gather concepts and papers |
@@ -156,4 +159,4 @@ The maintainer reads each new source in full, writes a summary, and **touches 5�
 
 ---
 
-*This wiki is a personal research tool. Papers are summarized by an LLM; always verify against the original sources. Last updated 2026-06-29.*
+*This wiki is a personal research tool. Papers are summarized by an LLM; always verify against the original sources. Last updated 2026-08-10.*

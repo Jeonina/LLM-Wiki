@@ -17,7 +17,6 @@ concepts:
   - "[[30-Concepts/transcription-factor-motif]]"
 topics:
   - "[[40-Topics/chromatin-architecture]]"
-  - "[[40-Topics/histone-modifications]]"
 ---
 
 **Citation:** Bartosovic et al. (2021) — *scCUT&Tag: single-cell CUT&Tag for histone modifications + TFs in tissue* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-021-00869-9)

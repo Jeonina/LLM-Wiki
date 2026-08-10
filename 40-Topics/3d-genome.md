@@ -4,7 +4,7 @@ title: 3D genome
 aliases: [chromatin conformation, Hi-C, nuclear architecture, 3D chromatin organization]
 tags: [Hi-C, TAD, compartments, loops, single-cell, chromatin-structure, chromatin]
 created: 2026-05-12
-updated: 2026-06-29
+updated: 2026-08-10
 ---
 
 # 3D genome
@@ -55,8 +55,20 @@ The 3D genome is organized hierarchically across scales: chromosomes → compart
 - [[10-Summaries/van-steensel-2017-lads-review]] — van Steensel & Belmont 2017. Canonical LADs review; three-compartment competition (NL/nucleoli/pericentric).
 
 ### Foundational Hi-C
+- [[10-Summaries/lieberman-aiden-2009-hic]] — Lieberman-Aiden et al. 2009. The founding assay; A/B compartments, chromosome territories, fractal globule, and the *n*²-resolution rule.
+- [[10-Summaries/dixon-2012-tads]] — Dixon et al. 2012. Topological domains from the directionality index; boundaries marked by CTCF *plus* housekeeping genes, tRNAs and SINEs.
+- [[10-Summaries/naumova-2013-mitotic-chromosome]] — Naumova et al. 2013. Compartments and TADs both vanish in metaphase; two folding states, not a continuum.
 - [[10-Summaries/nagano-2013-nature]] — Nagano et al. 2013. First single-cell Hi-C; cell-to-cell variability in TADs.
+- [[10-Summaries/ramani-2017-scihi-c]] — Ramani et al. 2017. sciHi-C; combinatorial indexing to 10,696 cells, in-silico cell-cycle sorting.
 - [[10-Summaries/tan-2018-science]] — Tan et al. 2018. Dip-C; haplotype-resolved single-cell 3D structures.
+
+### Pipelines, storage, visualization
+- [[10-Summaries/servant-2015-hicpro]] — Servant et al. 2015. Valid-pair filtering, sparse ICE, allele-specific maps; filtering stringency is a free parameter (0.83 correlation against hiclib on identical input).
+- [[10-Summaries/durand-2016-juicer]] — Durand et al. 2016. Juicer, HiCCUPS loops, Arrowhead domains, the `.hic` format.
+- [[10-Summaries/abdennur-2020-cooler]] — Abdennur & Mirny 2020. Sparse HDF5 storage; 4D Nucleome standard; multi-resolution `.mcool`.
+- [[10-Summaries/kerpedjiev-2018-higlass]] — Kerpedjiev et al. 2018. Composable linked views; seven TAD callers disagree on one matrix.
+- [[10-Summaries/zhou-2019-schicluster]] — Zhou et al. 2019. Convolution + random-walk imputation; coverage bias is the leading factor in scHi-C clustering.
+- [[10-Summaries/zhang-2022-higashi]] — Zhang et al. 2022. Hypergraph representation learning; per-cell compartments and sliding TAD-like boundaries.
 
 ### Clinical / cancer SVs (related to 3D regulation)
 - [[10-Summaries/liu-2025-nanopore-lscc-svs]] — Liu et al. 2025. Repeat expansions regulating *TP53BP2*/*FBXO28* via spatial proximity.
@@ -77,7 +89,7 @@ The 3D genome is organized hierarchically across scales: chromosomes → compart
 
 ## Synthesized notes
 
-None yet. The single-cell 3D-genome story spans three measurement modalities — proximity ligation (scHi-C family, Hong 2025 + Jiang 2026), protein-tethered methylation (DamID lineage, Kind/Rooijers/de Luca), and polymer modeling (Onufriev). The three should be read together.
+The single-cell 3D-genome story spans three measurement modalities — proximity ligation (scHi-C family, Hong 2025 + Jiang 2026), protein-tethered methylation (DamID lineage, Kind/Rooijers/de Luca), and polymer modeling (Onufriev). The three should be read together.
 
 ## Open questions
 
@@ -85,7 +97,24 @@ None yet. The single-cell 3D-genome story spans three measurement modalities —
 - Causality: do TAD/loop changes drive gene-expression changes or follow them? Multi-omics methods (sn-m3C, HiRES, scDam&T-seq) begin to address this.
 - Single-cell SV-driven 3D rearrangements (Liu 2025) point to a new genome-instability axis.
 - Why does the lamina↔transcription coupling restrict to fLADs (H3K27me3) and not cLADs (H3K9me3) ([[10-Summaries/rooijers-2019-scdamt-seq]])? The differential heterochromatin "floor" vs "regulatable" interpretation needs perturbation testing.
+- **Does imputation manufacture the variability it measures?** Both scHi-C imputation frameworks smooth toward neighbouring cells, so per-cell compartment and boundary variability is partly a function of the algorithm; neither quantifies the trade ([[10-Summaries/zhou-2019-schicluster]], [[10-Summaries/zhang-2022-higashi]]).
+- **Which TAD definition is canonical?** Caller disagreement is documented but undiagnosed ([[10-Summaries/kerpedjiev-2018-higlass]]), and Dixon's own caveat — that cell-type differences in domain calls may be noise — remains unresolved ([[10-Summaries/dixon-2012-tads]]).
 - Are bulk-Hi-C and scHi-C trained 3D models genuinely orthogonal in what they capture ([[10-Summaries/mali-2025-conformational-heterogeneity]])? The C.H. divergence at 1–10 Mb suggests yes.
+
+## Additions — 2026-08-10 ingests
+
+- **Two folding states, not a continuum.** Interphase (G₁/S) 5C and Hi-C patterns correlate with each other (Spearman r > 0.67) but not with mitosis (r < 0.27); in metaphase both compartments and TADs disappear genome-wide, giving a homogeneous fold identical across HeLa S3, K562 and primary HFF1 ([[10-Summaries/naumova-2013-mitotic-chromosome]]).
+- **Mitotic structure is a compressed array of consecutive ~80–120 kb loops.** *P(s)* ~ s^−0.5 from 100 kb to 10 Mb with a fall-off at 10 Mb; polymer simulation rejects hierarchical coiling and requires stochastic, consecutive loops plus axial compression — loop extrusion inferred from contact-probability shape ([[10-Summaries/naumova-2013-mitotic-chromosome]]).
+- **Epigenetic memory cannot live in the fold.** Since compartments and cell-type-invariant TADs are both absent in mitosis, higher-order structure must be rebuilt de novo in early G₁ from marks and bookmarking proteins ([[10-Summaries/naumova-2013-mitotic-chromosome]]).
+- **Boundary disruption is causal for disease** — and boundary-sparing controls of the same size are benign ([[10-Summaries/lupianez-2015-tad-disruption]]); the clinical taxonomy of intra-TAD / TAD-fusion / neo-TAD / TAD-shuffling SVs is in [[10-Summaries/spielmann-2018-sv-3d-genome]].
+- **Bulk feature definitions** (HiCCUPS loops with 7/7 CRISPR-validated anchors, Arrowhead contact domains, `.hic` at 18 resolutions) come from [[10-Summaries/durand-2016-juicer]]; single-cell methods try to recover them from sparse data.
+
+**Foundational layer, now in place.** [[10-Summaries/lieberman-aiden-2009-hic]] is the founding Hi-C paper — biotin fill-in at the ligation junction, 1 Mb contact maps from 8.4 million read pairs, the discovery of A/B compartments by PCA, FISH validation at Spearman ρ = −0.916 between contact count and 3D distance, and the fractal-globule model. [[10-Summaries/dixon-2012-tads]] pushes resolution below 100 kb with >1.7 billion read pairs and identifies topological domains via the directionality index — 2,200 domains in mouse ES cells, median 880 kb, covering ~91% of the genome, with only 15% of CTCF sites falling at boundaries.
+
+The single-cell branch: [[10-Summaries/ramani-2017-scihi-c]] applies combinatorial indexing to conformation, producing 10,696 single-cell maps and demonstrating in-silico cell-cycle sorting from the *P(s)* scaling coefficient alone.
+
+Infrastructure is catalogued under *Pipelines, storage, visualization* above. Two findings from it belong here as caveats on every 3D claim on this page: **TAD calls are caller-dependent** — seven callers produce inconsistent domains of widely varying size on one matrix ([[10-Summaries/kerpedjiev-2018-higlass]]) — and **pipeline filtering stringency is a free parameter**, with two pipelines correlating at only 0.83 on identical raw data ([[10-Summaries/servant-2015-hicpro]]).
+
 
 ## Related
 
@@ -95,3 +124,4 @@ None yet. The single-cell 3D-genome story spans three measurement modalities —
 ## Linked summaries (lint pass 2026-05-21)
 
 - [[10-Summaries/bersaglieri-2019-cells]] — Bersaglieri & Santoro 2019 — Genome organization in and around the nucleolus.
+- [[10-Summaries/naumova-2013-mitotic-chromosome]] · [[10-Summaries/lupianez-2015-tad-disruption]] · [[10-Summaries/spielmann-2018-sv-3d-genome]] · [[10-Summaries/durand-2016-juicer]]

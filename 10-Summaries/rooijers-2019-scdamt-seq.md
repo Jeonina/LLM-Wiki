@@ -22,7 +22,6 @@ concepts:
 topics:
   - "[[40-Topics/3d-genome]]"
   - "[[40-Topics/chromatin-architecture]]"
-  - "[[40-Topics/single-cell-multiomics]]"
 ---
 
 **Citation:** Rooijers et al. (2019) — *scDam&T-seq: simultaneous protein–DNA contacts + transcriptome in single cells* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-019-0150-y)

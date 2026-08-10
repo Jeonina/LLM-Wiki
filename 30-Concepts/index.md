@@ -1,7 +1,7 @@
 ---
 title: Concepts
 description: Definitions, methods, and theoretical ideas referenced across the wiki.
-updated: 2026-06-29
+updated: 2026-08-10
 ---
 
 # Concepts
@@ -167,7 +167,6 @@ Each entry links to its definition page. Grouped by domain.
 - [[30-Concepts/developmental-mutation-timing]] — timing→tissue-distribution geometry.
 - [[30-Concepts/gonadal-mosaicism]] — germline mosaicism; recurrence risk.
 - [[30-Concepts/lineage-tracing]] — endogenous mutations as lineage barcodes.
-- [[30-Concepts/lineage-tracing-somatic-mutations]] — natural somatic mutations as endogenous lineage barcodes.
 - [[30-Concepts/crispr-lineage-recording]] — evolvable synthetic CRISPR barcodes for prospective lineage tracing.
 - [[30-Concepts/phylogenetic-inference]] — reconstructing cell-division trees from heritable markers.
 - [[30-Concepts/genosenium]] — accumulated somatic-mutation landscape of aged cells.
@@ -193,3 +192,28 @@ Each entry links to its definition page. Grouped by domain.
 - [[30-Concepts/compounding-artifact]] — value-compounding knowledge.
 - [[30-Concepts/maintenance-asymmetry]] — humans defer cross-references; LLMs don't.
 - [[30-Concepts/ingest-workflow]] — per-source procedure.
+
+## Computational & analytical concepts (added 2026-08-10)
+
+- [[30-Concepts/read-alignment]] — placing reads on a reference; BWT search, SAM/BAM, and assay-specific complications.
+- [[30-Concepts/mappability]] — whether a read can be assigned uniquely; the bias every binned method must correct.
+- [[30-Concepts/duplicate-marking]] — why coordinate-based deduplication is only valid when fragmentation precedes amplification.
+- [[30-Concepts/quality-control-metrics]] — spikiness, MAD, collision rates; QC as a substantive analytical step.
+- [[30-Concepts/doublet-detection]] — collision rates by platform, and what they do to cluster counts.
+- [[30-Concepts/sequencing-depth-and-coverage]] — the depth/breadth trade and its economics.
+- [[30-Concepts/peak-calling]] — matching the caller to the assay's background regime, not its signal type.
+- [[30-Concepts/hi-c-normalization]] — valid-pair filtering, ICE, and the fact that stringency is a free parameter.
+- [[30-Concepts/imputation]] — smoothing sparse contact maps, and what it costs in measured variability.
+- [[30-Concepts/data-standards]] — SAM/BAM and cooler; why format design determines which algorithms are feasible.
+- [[30-Concepts/dimensionality-reduction]] — embeddings, and what the axes actually encode.
+- [[30-Concepts/clustering-algorithms]] — community detection, and resolution as a choice rather than a discovery.
+- [[30-Concepts/cell-type-annotation]] — markers, cross-modal identity, and operational type definitions.
+- [[30-Concepts/batch-effect]] — correction strategies and the LISI integration/accuracy trade.
+- [[30-Concepts/trajectory-inference]] — pseudotime, graph abstraction, and why topology claims are sampling claims.
+- [[30-Concepts/gene-regulatory-network]] — eRegulons, directionality from sequence, networks as perturbation operators.
+
+## Cancer genome concepts (added 2026-08-10)
+
+- [[30-Concepts/copy-number-variation]] — calling approaches, resolution limits, and the infinite-sites problem.
+- [[30-Concepts/chromosomal-instability]] — the rate, distinguished from aneuploidy the state.
+- [[30-Concepts/intratumor-heterogeneity]] — why measured heterogeneity depends on how many cells were sequenced.

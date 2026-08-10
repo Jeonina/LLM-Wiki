@@ -1,7 +1,7 @@
 ---
 title: Entities
 description: People, labs, and consortia referenced across the wiki.
-updated: 2026-06-29
+updated: 2026-08-10
 ---
 
 # Entities
@@ -134,3 +134,19 @@ People, labs, and consortia that appear repeatedly in the corpus. Grouped by the
 ## Other
 
 - [[20-Entities/andrej-karpathy]] — proposed the LLM Wiki pattern.
+
+## Added 2026-08-10
+
+- [[20-Entities/heng-li]] — BWA and SAM/BAM; the core sequence-analysis infrastructure.
+- [[20-Entities/job-dekker]] — originated 3C; corresponding author of the founding Hi-C paper.
+- [[20-Entities/jesse-dixon]] — first author of the topological-domain paper.
+- [[20-Entities/leonid-mirny]] — polymer physics of the 3D genome; cooler and HiGlass.
+- [[20-Entities/jian-ma]] — hypergraph representation learning for single-cell Hi-C.
+- [[20-Entities/cole-trapnell]] — Monocle and Cicero.
+- [[20-Entities/ken-chen]] — copy-number lineage reconstruction (MEDALT).
+- [[20-Entities/jonathan-weissman]] — CRISPR screening and engineered lineage recorders.
+- [[20-Entities/nir-yosef]] — computational single-cell methods; Cassiopeia.
+- [[20-Entities/samantha-morris]] — cell identity and reprogramming via GRN modelling (CellOracle).
+- [[20-Entities/soumya-raychaudhuri]] — immunogenomics; Harmony and the LISI metrics.
+- [[20-Entities/joshua-welch]] — factorization-based integration (LIGER).
+- [[20-Entities/bradley-bernstein]] — chromatin state and bivalent domains; co-author of MACS.

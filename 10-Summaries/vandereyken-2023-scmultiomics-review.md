@@ -16,7 +16,6 @@ concepts:
   - "[[30-Concepts/gt-seq]]"
   - "[[40-Topics/scdna-seq]]"
 topics:
-  - "[[40-Topics/single-cell-multiomics]]"
 ---
 
 **Citation:** Vandereyken et al. (2023) — *Methods and applications for single-cell and spatial multi-omics* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-023-00580-2)

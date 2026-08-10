@@ -4,7 +4,7 @@ title: LLM tooling patterns
 aliases: [agentic patterns, llm patterns]
 tags: [llm, patterns]
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-08-10
 ---
 
 # LLM tooling patterns
@@ -37,3 +37,7 @@ _None yet — promote one once ≥3 sources connect across this topic._
 - How do these patterns compose? Is "LLM Wiki" a building block for larger LLM-as-knowledge-worker systems, or is it terminal?
 - What does **observability** look like for an LLM-maintained artifact? How does the user know the LLM is doing the propagation step honestly?
 - Are there patterns where the LLM should *not* be the maintainer — e.g., where ground truth must be human-asserted?
+
+## Related
+
+- [[40-Topics/knowledge-management]] · [[30-Concepts/llm-wiki]] · [[30-Concepts/ingest-workflow]] · [[30-Concepts/three-layer-architecture]]

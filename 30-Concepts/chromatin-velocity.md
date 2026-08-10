@@ -25,4 +25,4 @@ Provides a chromatin-layer prediction of cell fate. Extends the RNA-velocity fra
 
 ## Related
 
-- [[30-Concepts/scchix-seq]] · [[40-Topics/histone-modifications]] · [[40-Topics/histone-modifications]]
+- [[30-Concepts/scchix-seq]] · [[40-Topics/histone-modifications]]

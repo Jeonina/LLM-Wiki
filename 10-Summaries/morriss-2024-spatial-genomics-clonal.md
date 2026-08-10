@@ -16,7 +16,6 @@ concepts:
   - "[[30-Concepts/spatial-multiomics]]"
   - "[[30-Concepts/lineage-tracing]]"
 topics:
-  - "[[40-Topics/somatic-mosaicism]]"
   - "[[40-Topics/single-cell-multiomics]]"
 ---
 

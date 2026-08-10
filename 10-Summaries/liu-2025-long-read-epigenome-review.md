@@ -21,8 +21,6 @@ concepts:
   - "[[30-Concepts/nome-seq]]"
   - "[[30-Concepts/allele-specific-methylation]]"
 topics:
-  - "[[40-Topics/long-read-sequencing]]"
-  - "[[40-Topics/dna-methylation]]"
   - "[[40-Topics/chromatin-architecture]]"
 ---
 

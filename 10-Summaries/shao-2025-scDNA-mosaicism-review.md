@@ -25,8 +25,6 @@ concepts:
   - "[[40-Topics/somatic-mosaicism]]"
   - "[[30-Concepts/lineage-tracing]]"
 topics:
-  - "[[40-Topics/scdna-seq]]"
-  - "[[40-Topics/somatic-mosaicism]]"
   - "[[40-Topics/whole-genome-amplification]]"
 ---
 

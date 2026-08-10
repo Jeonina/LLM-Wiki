@@ -4,7 +4,7 @@ title: Lamina-associated domains (LADs)
 aliases: [LAD, LADs, lamina associated domain, fLAD, cLAD, facultative LAD, constitutive LAD]
 tags: [nuclear-architecture, heterochromatin, H3K9me3, H3K27me3, lamina, single-cell, DamID]
 created: 2026-05-15
-updated: 2026-05-19
+updated: 2026-08-10
 ---
 
 # Lamina-associated domains (LADs)
@@ -50,6 +50,13 @@ In single-cell experiments this collapses to a measurable question: in a given c
 - H3K9 methylation is the primary chromatin mark recruiting LADs to the NL. G9a (H3K9me2) and SUV39H1/2 (H3K9me3) act **redundantly** — only triple knockdown peels the HBB LAD from the NL ([[10-Summaries/van-steensel-2017-lads-review]]).
 - NL proteins (lamins, LBR, emerin) also act redundantly; mouse ES cell lamin triple-KO has marginal effect on NL contacts ([[10-Summaries/van-steensel-2017-lads-review]]).
 - LADs occupy **Hi-C compartment B**, with NL contact maps and A/B-compartment maps nearly identical at megabase scale ([[10-Summaries/van-steensel-2017-lads-review]]).
+
+## Added 2026-08-10
+
+[[10-Summaries/peric-hupkes-2010-lad-differentiation]] supplies the canonical figures — ~1,100–1,400 LADs per cell type, 40 kb to 15 Mb, ~40% of the genome, containing 13–18% of all genes at 5–10× lower median expression — across an isogenic ESC → NPC → astrocyte lineage plus fibroblasts. LAD overlap between cell types is 73–87%, so the architecture is largely shared with hundreds of gene-sized relocation events layered on it.
+
+Two claims worth carrying forward: **replication timing correlates globally with LAD organization but does not follow the sharp LAD borders**, so near boundaries it is not a predictor of lamina contact; and **binary LAD classification is an oversimplification** — each locus has a probability of lamina contact, which population DamID cannot decompose into "some cells" versus "some of the time" ([[10-Summaries/peric-hupkes-2010-lad-differentiation]]). A subset of TAD boundaries coincides with LAD/non-LAD transitions ([[10-Summaries/dixon-2012-tads]]).
+
 
 ## Related
 

@@ -20,7 +20,6 @@ concepts:
   - "[[30-Concepts/multi-tag]]"
   - "[[40-Topics/histone-modifications]]"
 topics:
-  - "[[40-Topics/histone-modifications]]"
   - "[[40-Topics/single-cell-multiomics]]"
 ---
 

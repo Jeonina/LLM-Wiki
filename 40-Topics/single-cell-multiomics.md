@@ -4,7 +4,7 @@ title: Single-cell multi-omics
 aliases: [single-cell multiomics, sc-multiomics, multimodal omics]
 tags: [single-cell, methods, multiomics, multi-omics]
 created: 2026-05-07
-updated: 2026-06-29
+updated: 2026-08-10
 ---
 
 # Single-cell multi-omics
@@ -180,6 +180,29 @@ Two axes organize the method landscape ([[10-Summaries/baysoy-2023-multiomics-la
 - [[10-Summaries/macaulay-2016-gt-seq-protocol]] — Macaulay 2016 — G&T-seq protocol: parallel single-cell genome + transcriptome.
 - [[10-Summaries/shen-2026-splicool-seq]] — Shen 2025 — SpliCOOL-seq: scalable scDNA methylation + chromatin via split-pool.
 
+## Additions — 2026-08-10 ingest
+
+Three complementary taxonomies now anchor this topic:
+
+- **By throughput vs depth** — one-cell-at-a-time deep assays vs droplet/combinatorial-indexing scalable assays, with histone modifications, proteome and spatial named as the 2020 gaps ([[10-Summaries/zhu-2020-multimodal-power-of-many]]).
+- **By coupling mechanism** — when the analytes are uncoupled: physical separation, preamplification-and-split, seq-split by differential barcoding, or combinatorial indexing. This predicts each method's throughput ceiling, and explains why genome+transcriptome lags epigenome+transcriptome ([[10-Summaries/vandereyken-2023-spatial-multiomics]]).
+- **By computational anchor** — horizontal / vertical / diagonal / mosaic ([[10-Summaries/argelaguet-2021-integration-principles]]), with bridge integration removing the gene-activity assumption diagonal methods otherwise require ([[10-Summaries/hao-2024-seurat-v5]]).
+
+Results worth carrying:
+
+- **Dosage compensation breaks CNV→expression inference**: DNTR-seq showed *MYC* and *TCF7L2* largely unaffected by copy number despite strong structural imbalance ([[10-Summaries/vandereyken-2023-spatial-multiomics]]).
+- **~16% of *OCT4*-edited human embryo cells carried unintended edits** — LOH beyond the on-target locus plus chromosome-6 segmental changes — detectable only by reading genome and transcriptome in the same cells ([[10-Summaries/vandereyken-2023-spatial-multiomics]]).
+- **GpC-methyltransferase accessibility gives higher promoter coverage than ATAC** and distinguishes truly closed from unsampled, because every read reports ([[10-Summaries/vandereyken-2023-spatial-multiomics]]).
+- **Protein as the integration currency**: 173 surface antibodies let six separately-measured histone marks be harmonized and interpolated per cell, though not co-measured ([[10-Summaries/zhang-2022-sccut-tag-pro]]).
+- Layer-by-layer protocol catalog, including the single-cell proteome methods this wiki otherwise lacks, in [[10-Summaries/lim-2024-single-cell-omics-review]].
+
+## Added 2026-08-10
+
+Integration methods now span three strategies: embedding correction with multi-covariate support and the LISI metric pair ([[10-Summaries/korsunsky-2019-harmony]]), factorization into shared *and* dataset-specific factors so differences stay legible ([[10-Summaries/welch-2019-liger]]), and joint modelling where a co-assayed modality is a prediction target rather than an input ([[10-Summaries/zhang-2022-higashi]]).
+
+Regulatory-network inference from joint accessibility and expression: [[10-Summaries/pliner-2018-cicero]] links elements to genes by co-accessibility; [[10-Summaries/kamimoto-2023-celloracle]] uses the resulting network as a simulation operator for in-silico TF perturbation; [[10-Summaries/bravo-2023-scenicplus]] infers enhancer-driven regulons and reports that only 49% of enhancers regulate their most proximal gene.
+
+
 ## Related
 
 - [[got]], [[got-cha]], [[daf-seq]]
@@ -189,3 +212,4 @@ Two axes organize the method landscape ([[10-Summaries/baysoy-2023-multiomics-la
 - [[spatial-multiomics]]
 - [[scdna-capabilities-framework]]
 - [[50-Notes/joint-assays-by-layer-pair]]
+- [[10-Summaries/argelaguet-2021-integration-principles]] · [[10-Summaries/hao-2024-seurat-v5]] · [[10-Summaries/vandereyken-2023-spatial-multiomics]] · [[10-Summaries/lim-2024-single-cell-omics-review]]

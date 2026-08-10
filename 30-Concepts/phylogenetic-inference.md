@@ -4,7 +4,7 @@ title: Single-cell phylogenetic inference
 aliases: [phylogenetic reconstruction, cell phylogeny, lineage tree inference]
 tags: [lineage-tracing, phylogenetics, computational, fate-mapping]
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-08-10
 ---
 
 # Single-cell phylogenetic inference
@@ -32,7 +32,14 @@ Given a character matrix (e.g. CRISPR indels) or variant calls per cell, phyloge
 - Synthetic barcodes have heterogeneous mutation rates and hotspots that distort trees ([[10-Summaries/wang-2026-multimodal-lineage-computational]]).
 - Without ground truth, branch support relies on bootstrap/approximately-unbiased tests and Robinson–Foulds congruence; phylogenetic artifacts (long-branch attraction, saturation) can create clusters from technical noise ([[10-Summaries/wang-2026-multimodal-lineage-computational]]).
 
+## Added 2026-08-10
+
+Two papers make the same structural point from different data. [[10-Summaries/wang-2021-medalt]]: under aneuploidy a locus is repeatedly altered by successive CNAs, so the **infinite-sites assumption is violated**, and Euclidean, Hamming or correlation distances misrepresent the segmental, non-linear nature of CNA evolution. Minimal event distance is the appropriate metric, with homozygous loss encoded as infinite distance because deleted fragments cannot be recovered. [[10-Summaries/jones-2020-cassiopeia]]: encoding the recorder's irreversibility and unedited founder state into the algorithm is what reduces an NP-hard multi-state perfect-phylogeny problem to a tractable binary one.
+
+The transferable lesson is that assay-specific physical constraints belong in the model, not around it (synthesis).
+
+
 ## Related
 
-- [[30-Concepts/crispr-lineage-recording]] · [[30-Concepts/lineage-tracing]] · [[30-Concepts/lineage-tracing-somatic-mutations]] · [[30-Concepts/single-cell-variant-calling]] · [[30-Concepts/monovar]] · [[10-Summaries/jahn-2016-scite]]
+- [[30-Concepts/crispr-lineage-recording]] · [[30-Concepts/lineage-tracing]] · [[30-Concepts/single-cell-variant-calling]] · [[30-Concepts/monovar]] · [[10-Summaries/jahn-2016-scite]]
 - [[40-Topics/single-cell-lineage-tracing]] · [[20-Entities/zheng-hu]]

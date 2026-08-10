@@ -16,7 +16,6 @@ concepts:
   - "[[40-Topics/somatic-mosaicism]]"
   - "[[30-Concepts/post-zygotic-variation]]"
 topics:
-  - "[[40-Topics/somatic-mosaicism]]"
 ---
 
 **Citation:** O'Roak et al. (2012) — *Multiplex targeted sequencing identifies recurrently mutated genes in autism spectrum disorders* — *Science*. [DOI](https://doi.org/10.1126/science.1227764)

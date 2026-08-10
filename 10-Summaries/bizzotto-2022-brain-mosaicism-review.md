@@ -21,7 +21,6 @@ concepts:
   - "[[30-Concepts/mtor-pathway]]"
   - "[[30-Concepts/mitochondrial-lineage-tracing]]"
 topics:
-  - "[[40-Topics/somatic-mosaicism]]"
   - "[[40-Topics/scdna-seq]]"
 ---
 

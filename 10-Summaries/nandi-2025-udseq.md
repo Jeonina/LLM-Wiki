@@ -17,7 +17,6 @@ concepts:
   - "[[30-Concepts/mutational-signatures]]"
   - "[[30-Concepts/umi-molecular-barcoding]]"
 topics:
-  - "[[40-Topics/duplex-sequencing]]"
   - "[[40-Topics/somatic-mosaicism]]"
 ---
 

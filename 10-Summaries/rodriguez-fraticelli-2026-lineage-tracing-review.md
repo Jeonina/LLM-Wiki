@@ -15,7 +15,6 @@ entities:
 concepts:
   - "[[30-Concepts/lineage-tracing]]"
   - "[[30-Concepts/crispr-lineage-recording]]"
-  - "[[30-Concepts/lineage-tracing-somatic-mutations]]"
   - "[[30-Concepts/mitochondrial-lineage-tracing]]"
   - "[[30-Concepts/methylation-clones-epimutation]]"
   - "[[40-Topics/clonal-hematopoiesis]]"
@@ -24,7 +23,6 @@ concepts_secondary:
   - "[[30-Concepts/scwga]]"
 topics:
   - "[[40-Topics/single-cell-lineage-tracing]]"
-  - "[[40-Topics/clonal-hematopoiesis]]"
   - "[[40-Topics/cancer-clonal-evolution]]"
 ---
 
@@ -64,7 +62,7 @@ Authoritative narrative review (Nat Rev Genet) with two method tables and a meth
 ## Concepts touched
 
 - [[30-Concepts/crispr-lineage-recording]] — defines the evolvable-barcode landscape.
-- [[30-Concepts/lineage-tracing-somatic-mutations]], [[30-Concepts/mitochondrial-lineage-tracing]], [[30-Concepts/methylation-clones-epimutation]] — the three natural-variant routes.
+- [[30-Concepts/lineage-tracing]], [[30-Concepts/mitochondrial-lineage-tracing]], [[30-Concepts/methylation-clones-epimutation]] — the three natural-variant routes.
 - [[40-Topics/clonal-hematopoiesis]] — central biological payoff.
 
 ## Connections to other sources

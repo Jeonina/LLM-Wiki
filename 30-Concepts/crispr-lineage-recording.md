@@ -33,5 +33,5 @@ Inducible Cas9 plus single-guide RNAs generate double-strand breaks in a multi-t
 
 ## Related
 
-- [[30-Concepts/lineage-tracing]] · [[30-Concepts/phylogenetic-inference]] · [[30-Concepts/lineage-tracing-somatic-mutations]]
+- [[30-Concepts/phylogenetic-inference]] · [[30-Concepts/lineage-tracing]]
 - [[40-Topics/single-cell-lineage-tracing]] · [[20-Entities/jay-shendure]]

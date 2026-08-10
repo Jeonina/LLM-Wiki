@@ -21,8 +21,6 @@ concepts:
   - "[[40-Topics/histone-modifications]]"
   - "[[30-Concepts/enhancer-states]]"
 topics:
-  - "[[40-Topics/histone-modifications]]"
-  - "[[40-Topics/dna-methylation]]"
   - "[[40-Topics/chromatin-architecture]]"
 ---
 

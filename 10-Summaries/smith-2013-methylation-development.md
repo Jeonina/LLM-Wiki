@@ -17,7 +17,6 @@ concepts:
   - "[[30-Concepts/dnmt]]"
   - "[[30-Concepts/tet-enzymes]]"
 topics:
-  - "[[40-Topics/dna-methylation]]"
 ---
 
 **Citation:** Smith et al. (2013) — *DNA methylation: roles in mammalian development* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/nrg3354)

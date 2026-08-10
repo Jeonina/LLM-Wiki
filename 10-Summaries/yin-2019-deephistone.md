@@ -19,7 +19,6 @@ concepts:
   - "[[30-Concepts/dnase-seq]]"
   - "[[30-Concepts/convolutional-neural-network]]"
 topics:
-  - "[[40-Topics/histone-modifications]]"
   - "[[40-Topics/chromatin-architecture]]"
 ---
 

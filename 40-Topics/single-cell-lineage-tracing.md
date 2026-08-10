@@ -4,7 +4,7 @@ title: Single-cell lineage tracing
 aliases: [lineage tracing, clonal tracing, cell phylogeny, fate mapping]
 tags: [lineage-tracing, clonal-analysis, phylogenetics, development, cancer-evolution]
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-08-10
 ---
 
 # Single-cell lineage tracing
@@ -15,10 +15,9 @@ The field organizes along two axes ([[10-Summaries/rodriguez-fraticelli-2026-lin
 
 ## Core concepts
 
-- [[30-Concepts/lineage-tracing]] — umbrella concept.
+- [[30-Concepts/lineage-tracing]] — umbrella concept; also covers retrospective tracing from nuclear SNVs and CNVs.
 - [[30-Concepts/crispr-lineage-recording]] — prospective evolvable barcodes (Cas9/base/prime editing).
 - [[30-Concepts/phylogenetic-inference]] — algorithms that turn markers into cell-division trees.
-- [[30-Concepts/lineage-tracing-somatic-mutations]] — retrospective tracing from nuclear SNVs/CNVs.
 - [[30-Concepts/mitochondrial-lineage-tracing]] — mtDNA-based clonal tracing.
 - [[30-Concepts/methylation-clones-epimutation]] — clonally heritable DNA-methylation epimutations.
 - [[40-Topics/clonal-hematopoiesis]] — the central ageing/cancer biology payoff.
@@ -67,3 +66,13 @@ The field organizes along two axes ([[10-Summaries/rodriguez-fraticelli-2026-lin
 - Do driver-less clonal expansions reflect positive selection or neutral drift? ([[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review]])
 - Can lineage data's temporal/heritable structure supply the causal constraints that correlation-based "virtual cell" foundation models lack? ([[10-Summaries/wang-2026-multimodal-lineage-computational]])
 - Methylome reportedly beats ATAC and RNA for clonal inference against ground-truth barcodes — how general is this? ([[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review]])
+
+## Added 2026-08-10
+
+Three substrates now have founding sources on the wiki. **Engineered Cas9 recorders**: [[10-Summaries/jones-2020-cassiopeia]] — maximum-parsimony algorithms tuned to the mutational process (irreversibility and an unedited founder license reducing the multi-state problem to binary), a simulation engine, and 34,557 continuously traced cells as a benchmark; homoplasy is identified as the fundamental limit of any recorder. **Endogenous mtDNA**: [[10-Summaries/ludwig-2019-mtdna-lineage-tracing]] — heteroplasmic variants already captured by scATAC and scRNA-seq, the only lineage substrate usable in intact humans, and a better clonality measure than transcriptome-inferred CNVs. **Copy number**: [[10-Summaries/wang-2021-medalt]] — minimal event distance as a CNA-appropriate metric, explicitly rejecting the infinite-sites assumption.
+
+Process-level (as opposed to ancestry-level) alternatives: [[10-Summaries/wolf-2019-paga]] and [[10-Summaries/cao-2019-moca]].
+
+## Related
+
+- [[30-Concepts/lineage-tracing]] · [[30-Concepts/phylogenetic-inference]] · [[30-Concepts/crispr-lineage-recording]] · [[40-Topics/somatic-mosaicism]] · [[40-Topics/clonal-hematopoiesis]]

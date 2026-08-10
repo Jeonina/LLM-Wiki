@@ -27,7 +27,7 @@ The first method to read clonal identity and cellular state from a single methyl
 ## Related
 
 - scTAM seq
-- [[30-Concepts/lineage-tracing-somatic-mutations]]
+- [[30-Concepts/lineage-tracing]]
 - [[30-Concepts/methylation-clones-epimutation]]
 - [[10-Summaries/gaiti-2019-cll-epigenetic]]
 - [[10-Summaries/coorens-2021-nature]]

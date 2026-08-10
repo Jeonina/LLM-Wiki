@@ -17,8 +17,6 @@ concepts:
   - "[[40-Topics/long-read-sequencing]]"
   - "[[30-Concepts/bisulfite-sequencing]]"
 topics:
-  - "[[40-Topics/dna-methylation]]"
-  - "[[40-Topics/long-read-sequencing]]"
 ---
 
 **Citation:** Fu et al. (2025) — *Computational analysis of DNA methylation from long-read sequencing* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-025-00822-5)

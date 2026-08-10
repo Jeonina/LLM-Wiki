@@ -20,7 +20,6 @@ concepts:
   - "[[30-Concepts/post-zygotic-variation]]"
   - "[[40-Topics/clonal-hematopoiesis]]"
 topics:
-  - "[[40-Topics/somatic-mosaicism]]"
   - "[[40-Topics/scdna-seq]]"
 ---
 

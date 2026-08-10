@@ -20,7 +20,6 @@ concepts:
   - "[[30-Concepts/decitabine]]"
   - "[[30-Concepts/viral-mimicry]]"
 topics:
-  - "[[40-Topics/dna-methylation]]"
   - "[[40-Topics/single-cell-multiomics]]"
 ---
 

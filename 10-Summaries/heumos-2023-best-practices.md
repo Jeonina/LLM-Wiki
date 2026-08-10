@@ -14,7 +14,6 @@ entities:
 concepts:
   - "[[40-Topics/single-cell-multiomics]]"
 topics:
-  - "[[40-Topics/single-cell-multiomics]]"
 ---
 
 **Citation:** Heumos et al. (2023) — *Best practices for single-cell analysis across modalities* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/s41576-023-00586-w)

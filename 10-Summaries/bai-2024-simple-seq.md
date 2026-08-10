@@ -21,7 +21,6 @@ concepts:
   - "[[30-Concepts/tet-enzymes]]"
   - "[[30-Concepts/combinatorial-indexing]]"
 topics:
-  - "[[40-Topics/dna-methylation]]"
   - "[[40-Topics/single-cell-multiomics]]"
 ---
 

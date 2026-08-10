@@ -17,8 +17,6 @@ concepts:
   - "[[30-Concepts/lineage-tracing]]"
   - "[[30-Concepts/scdna-capabilities-framework]]"
 topics:
-  - "[[40-Topics/scdna-seq]]"
-  - "[[40-Topics/somatic-mosaicism]]"
 ---
 
 **Citation:** Evrony et al. (2021) — *Applications of single-cell DNA sequencing* — *Annu Rev Genomics Hum Genet*. [DOI](https://doi.org/10.1146/annurev-genom-111320-090436)

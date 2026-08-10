@@ -16,8 +16,6 @@ concepts:
   - "[[40-Topics/single-cell-multiomics]]"
   - "[[30-Concepts/spatial-multiomics]]"
 topics:
-  - "[[40-Topics/dna-methylation]]"
-  - "[[40-Topics/single-cell-multiomics]]"
 ---
 
 **Citation:** Cardilla et al. (2025) — *Spatial joint profiling of DNA methylome and transcriptome in tissues* — *Nature*. [DOI](https://doi.org/10.1038/s41586-025-09484-z)

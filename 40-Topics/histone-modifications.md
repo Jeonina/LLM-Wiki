@@ -4,7 +4,7 @@ title: Histone modifications
 aliases: [chromatin marks, post-translational modifications, PTMs, single-cell chromatin, histone marks]
 tags: [chromatin, epigenetics, H3K27me3, H3K4me3, CUT&Tag, ChIC, MNase, enhancers, promoters]
 created: 2026-05-12
-updated: 2026-06-29
+updated: 2026-08-10
 ---
 
 # Histone modifications
@@ -92,7 +92,17 @@ Histone marks are not independent of other regulatory axes:
 - Active vs repressive mark mutual exclusivity at the single-cell level: bulk data show clean separation, but scChIX-seq results show **cell-type-specific** transitions at individual loci that bulk averages obscure ([[10-Summaries/yeung-2023-scchix-seq]]).
 - How redundant are histone marks with LAD position? H3K9me2/3 anchors LADs ([[10-Summaries/van-steensel-2017-lads-review]]) — does any histone mark add information once you know LAD status?
 
+## Additions — 2026-08-10 ingest
+
+- **Bivalency** established in ES cells across 61 tiled regions, replicated in an independent line with a non-crosslinked MNase protocol (94/95 domains recovered) and confirmed on the same chromatin by sequential ChIP ([[10-Summaries/bernstein-2006-bivalent-chromatin]]); refined to adjacent histones within one nucleosome ([[10-Summaries/rothbart-2014-histone-dna-language]]).
+- **The histone code is more complex than one-mark-one-domain**: PTMs at the histone–DNA interface act physically on nucleosome stability; >200 distinct modified H3.2 and H4 N-terminal forms exist; readers engage multivalently in *cis* and *trans*; and acyl-CoA-derived marks couple chromatin state to metabolic flux ([[10-Summaries/rothbart-2014-histone-dna-language]]).
+- **Sequence predicts the ES-cell ground state**: H3K4me3 tracks CpG density (r_phi = 0.73) and H3K27me3 tracks conserved transposon-exclusion zones (r_phi = 0.69), with the correlation weakening in differentiated cells ([[10-Summaries/bernstein-2006-bivalent-chromatin]]).
+- **Single-cell profiling**: CUT&Tag's founding paper ([[10-Summaries/kaya-okur-2019-cut-and-tag]]) → repressive-mark cell typing in tissue and tumors ([[10-Summaries/wu-2021-sccut-tag]]) → multimodal chromatin-state inference via surface protein ([[10-Summaries/zhang-2022-sccut-tag-pro]]) → barcoded multi-epitope co-localization ([[10-Summaries/gopalan-2022-multi-cut-and-tag]]).
+- **Population reference**: 127 epigenomes on five core marks, a shared 15-state model, and the finding that enhancer-associated marks carry essentially all the GWAS tissue signal while H3K27me3 and H3K9me3 carry none ([[10-Summaries/roadmap-2015-111-epigenomes]]).
+- **Enhancer priming** by collaborative lineage-determining TF binding, with HOMER as the tool built to find it ([[10-Summaries/heinz-2010-homer]]).
+
 ## Related
 
 - [[40-Topics/chromatin-architecture]] · [[40-Topics/dna-methylation]] · [[40-Topics/single-cell-multiomics]]
 - [[50-Notes/regulatory-layers-overview]]
+- [[10-Summaries/bernstein-2006-bivalent-chromatin]] · [[10-Summaries/rothbart-2014-histone-dna-language]] · [[10-Summaries/kaya-okur-2019-cut-and-tag]] · [[10-Summaries/roadmap-2015-111-epigenomes]]

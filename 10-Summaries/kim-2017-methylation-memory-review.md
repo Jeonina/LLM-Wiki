@@ -22,7 +22,6 @@ concepts:
   - "[[30-Concepts/cancer-of-unknown-primary]]"
   - "[[30-Concepts/cpg-island]]"
 topics:
-  - "[[40-Topics/dna-methylation]]"
 ---
 
 **Citation:** Kim et al. (2017) — *DNA methylation as an epigenetic mark of cellular memory* — *Exp Mol Med*. [DOI](https://doi.org/10.1038/emm.2017.10)

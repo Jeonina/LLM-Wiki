@@ -15,7 +15,6 @@ concepts:
   - "[[40-Topics/somatic-mosaicism]]"
   - "[[30-Concepts/post-zygotic-variation]]"
 topics:
-  - "[[40-Topics/somatic-mosaicism]]"
 ---
 
 **Citation:** Lodato et al. (2017) — *Aging and neurodegeneration are associated with increased somatic mutations in single human neurons* — *Science*. [DOI](https://doi.org/10.1126/science.aao4426)

@@ -20,7 +20,6 @@ concepts:
   - "[[30-Concepts/empty-cells-algorithm]]"
   - "[[30-Concepts/topologically-associating-domain]]"
 topics:
-  - "[[40-Topics/3d-genome]]"
   - "[[40-Topics/chromatin-architecture]]"
 ---
 

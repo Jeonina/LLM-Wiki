@@ -1,7 +1,7 @@
 ---
 title: Topics
 description: Broad themes that gather concepts and entities across the wiki.
-updated: 2026-06-29
+updated: 2026-08-10
 ---
 
 # Topics
@@ -28,3 +28,7 @@ Themes broader than a single concept. Each topic page gathers the concepts, enti
 - [[40-Topics/single-cell-lineage-tracing]] — reconstructing per-cell ancestry and phylogeny.
 - [[40-Topics/llm-tooling-patterns]] — LLM design patterns.
 - [[40-Topics/knowledge-management]] — knowledge capture and refinement.
+
+## Added 2026-08-10
+
+- [[40-Topics/computational-methods]] — the tool layer: aligners, formats, callers, imputers, integrators, network inference, and the cross-cutting tensions between them.

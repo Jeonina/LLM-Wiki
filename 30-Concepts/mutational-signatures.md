@@ -4,7 +4,7 @@ title: Mutational signatures
 aliases: [SBS signatures, COSMIC signatures]
 tags: [somatic-mutation, mutational-process, cancer, aging]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-08-10
 ---
 
 # Mutational signatures
@@ -31,6 +31,13 @@ Signatures reveal **mutagenic etiology** from sequence data alone — e.g., SBS4
 - SBS4 (tobacco) detected in lung tissue of a 74-year-old male via PTA-scDNA-seq + DS validation ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]).
 - UDSeq reproduces exposure-specific signatures across cell lines and rodent models ([[10-Summaries/nandi-2025-udseq]]).
 - SBS1 (5mC deamination at CpG) dominant in early embryonic mutations; SBS5 dominates aging neurons ([[10-Summaries/bizzotto-2022-brain-mosaicism-review]]).
+
+## Founding source (added 2026-08-10)
+
+[[10-Summaries/alexandrov-2013-mutational-signatures]] established the 96-substitution classification (six pyrimidine-referenced base changes × 16 trinucleotide contexts) and extracted 21 validated signatures from 4,938,362 mutations across 7,042 cancers of 30 classes. Signature 1A/B — C>T at NpCpG from spontaneous deamination of 5-methylcytosine — appears in 25 of 30 cancer classes, making the most universal mutational process in human cancer a direct chemical consequence of the epigenome.
+
+Two constraints for single-cell work: mutation prevalence spans five orders of magnitude between cancer types, so burden thresholds must be set per tissue; and WGA amplification artefacts carry their own context biases that can mimic real signatures, so any per-cell signature claim requires an explicit artefact model ([[10-Summaries/alexandrov-2013-mutational-signatures]], synthesis).
+
 
 ## Related
 

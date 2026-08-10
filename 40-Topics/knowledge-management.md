@@ -4,7 +4,7 @@ title: Knowledge management
 aliases: [km, personal knowledge management, pkm]
 tags: [knowledge, wiki]
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-08-10
 ---
 
 # Knowledge management
@@ -37,3 +37,7 @@ _None yet._
 - How do you measure whether a knowledge base is actually compounding, vs. just accumulating?
 - What's the right policy for resolving contradictions between sources, beyond "flag and defer"?
 - Schema evolution: how do you migrate a knowledge base when its conventions change?
+
+## Related
+
+- [[40-Topics/llm-tooling-patterns]] · [[30-Concepts/three-layer-architecture]] · [[30-Concepts/llm-wiki]] · [[30-Concepts/ingest-workflow]]

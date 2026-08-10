@@ -21,7 +21,6 @@ concepts:
   - "[[30-Concepts/lung-adenocarcinoma]]"
   - "[[30-Concepts/epigenetic-aging]]"
 topics:
-  - "[[40-Topics/dna-methylation]]"
   - "[[40-Topics/single-cell-multiomics]]"
   - "[[40-Topics/chromatin-architecture]]"
 ---

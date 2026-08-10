@@ -20,7 +20,6 @@ concepts:
   - "[[30-Concepts/dop-pcr]]"
   - "[[40-Topics/somatic-mosaicism]]"
 topics:
-  - "[[40-Topics/scdna-seq]]"
   - "[[40-Topics/whole-genome-amplification]]"
 ---
 

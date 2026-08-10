@@ -4,7 +4,7 @@ title: Chromatin architecture
 aliases: [chromatin biology, chromatin organization]
 tags: [chromatin, regulation, single-molecule]
 created: 2026-05-07
-updated: 2026-05-19
+updated: 2026-08-10
 ---
 
 # Chromatin architecture
@@ -105,3 +105,12 @@ _None yet._
 
 - [[10-Summaries/he-2024-foodie]] — He 2024 — FOODIE: genome-wide single-molecule TF footprinting via deaminase.
 
+## Added 2026-08-10
+
+[[10-Summaries/peric-hupkes-2010-lad-differentiation]] maps Lamin B1 DamID across an isogenic ESC → NPC → astrocyte lineage: ~1,100–1,400 LADs per cell type covering ~40% of the genome, relocation events often confined to a single transcription unit, and the "unlocking" result in which silent genes detaching from the lamina become more likely to activate one differentiation step later. It also notes, from population data, that binary LAD/inter-LAD classification is an oversimplification — each locus has a *probability* of lamina contact.
+
+[[10-Summaries/dixon-2012-tads]] shows topological domain boundaries pre-mark where heterochromatin spreading will stop rather than following from it, and that domains are related to but independent of LADs and replication-timing zones. [[10-Summaries/pliner-2018-cicero]] approaches regulatory-element-to-gene linkage from co-accessibility rather than from conformation.
+
+## Related
+
+- [[40-Topics/3d-genome]] · [[30-Concepts/lamina-associated-domains]] · [[30-Concepts/topologically-associating-domain]] · [[40-Topics/histone-modifications]]

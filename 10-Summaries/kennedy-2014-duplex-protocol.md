@@ -17,8 +17,6 @@ concepts:
   - "[[30-Concepts/umi-molecular-barcoding]]"
   - "[[40-Topics/somatic-mosaicism]]"
 topics:
-  - "[[40-Topics/duplex-sequencing]]"
-  - "[[40-Topics/somatic-mosaicism]]"
 ---
 
 **Citation:** Kennedy et al. (2014) — *Duplex Sequencing: detecting ultralow-frequency mutations* — *Nature Protocols*. [DOI](https://doi.org/10.1038/nprot.2014.170)

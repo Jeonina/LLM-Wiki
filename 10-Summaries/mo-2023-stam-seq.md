@@ -21,9 +21,7 @@ concepts:
   - "[[30-Concepts/chromatin-accessibility]]"
   - "[[40-Topics/long-read-sequencing]]"
 topics:
-  - "[[40-Topics/long-read-sequencing]]"
   - "[[40-Topics/chromatin-architecture]]"
-  - "[[40-Topics/dna-methylation]]"
 ---
 
 **Citation:** Mo et al. (2023) — *STAM-seq: nanopore-adaptive-sampling accessibility + methylation in plant HRRs* — *Nature Plants*. [DOI](https://doi.org/10.1038/s41477-023-01498-7)

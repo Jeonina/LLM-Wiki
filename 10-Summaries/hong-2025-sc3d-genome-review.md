@@ -20,7 +20,6 @@ concepts:
   - "[[30-Concepts/sc-sprite]]"
   - "[[30-Concepts/dip-c]]"
 topics:
-  - "[[40-Topics/3d-genome]]"
   - "[[40-Topics/chromatin-architecture]]"
 ---
 

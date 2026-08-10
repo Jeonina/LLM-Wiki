@@ -24,8 +24,6 @@ concepts:
   - "[[30-Concepts/mutational-signatures]]"
   - "[[40-Topics/somatic-mosaicism]]"
 topics:
-  - "[[40-Topics/duplex-sequencing]]"
-  - "[[40-Topics/somatic-mosaicism]]"
 ---
 
 **Citation:** Zhang et al. (2025) — *SMaHT duplex-seq benchmark: six methods, concordant mutation rates* — *bioRxiv (preprint)*. [DOI](https://doi.org/10.64898/2025.12.12.692823)

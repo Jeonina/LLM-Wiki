@@ -18,7 +18,6 @@ concepts:
   - "[[30-Concepts/chromatin-velocity]]"
 topics:
   - "[[40-Topics/chromatin-architecture]]"
-  - "[[40-Topics/histone-modifications]]"
   - "[[40-Topics/single-cell-multiomics]]"
 ---
 

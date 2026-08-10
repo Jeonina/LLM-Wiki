@@ -16,7 +16,6 @@ concepts:
   - "[[40-Topics/single-cell-multiomics]]"
   - "[[30-Concepts/scwga]]"
 topics:
-  - "[[40-Topics/single-cell-multiomics]]"
 ---
 
 **Citation:** Macaulay et al. (2016) — *G&T-seq protocol: parallel sequencing of single-cell genomes and transcriptomes* — *Nature Protocols*. [DOI](https://doi.org/10.1038/nprot.2016.138)

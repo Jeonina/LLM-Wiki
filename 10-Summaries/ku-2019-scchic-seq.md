@@ -19,7 +19,6 @@ concepts:
   - "[[40-Topics/histone-modifications]]"
   - "mnase"
 topics:
-  - "[[40-Topics/histone-modifications]]"
   - "[[40-Topics/chromatin-architecture]]"
 ---
 

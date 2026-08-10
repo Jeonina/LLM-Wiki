@@ -4,7 +4,7 @@ title: Whole-genome amplification (scWGA)
 aliases: [scWGA topic, WGA topic, whole-genome amplification methods]
 tags: [scWGA, methods, amplification]
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-08-10
 ---
 
 # Whole-genome amplification (scWGA)
@@ -68,3 +68,6 @@ _None yet — natural target: "Choosing a scWGA method: tradeoffs and applicatio
 
 - [[10-Summaries/debourcy-2014-plosone]] — de Bourcy 2014 — Quantitative comparison of single-cell WGA methods.
 
+## Related
+
+- [[30-Concepts/scwga-chemistries]] · [[30-Concepts/scwga]] · [[30-Concepts/duplicate-marking]] · [[30-Concepts/sequencing-depth-and-coverage]] · [[40-Topics/scdna-seq]]

@@ -17,7 +17,6 @@ concepts:
   - "[[30-Concepts/lineage-tracing]]"
   - "[[30-Concepts/chromatin-velocity]]"
 concepts_secondary:
-  - "[[30-Concepts/lineage-tracing-somatic-mutations]]"
   - "[[30-Concepts/mitochondrial-lineage-tracing]]"
 topics:
   - "[[40-Topics/single-cell-lineage-tracing]]"

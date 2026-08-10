@@ -20,7 +20,6 @@ concepts:
   - "[[30-Concepts/oxford-nanopore]]"
   - "[[30-Concepts/laryngeal-squamous-cell-carcinoma]]"
 topics:
-  - "[[40-Topics/long-read-sequencing]]"
   - "[[40-Topics/somatic-mosaicism]]"
 ---
 

@@ -17,7 +17,6 @@ concepts:
   - "[[30-Concepts/gonadal-mosaicism]]"
   - "[[30-Concepts/developmental-mutation-timing]]"
 topics:
-  - "[[40-Topics/somatic-mosaicism]]"
 ---
 
 **Citation:** Campbell et al. (2015) — *Somatic mosaicism: implications for disease and transmission genetics* — *Trends in Genetics*. [DOI](https://doi.org/10.1016/j.tig.2015.03.013)

@@ -4,6 +4,125 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+# 2026-08-10 — Maintenance: merge + link-convention normalization
+
+Follow-up resolving the two items the rinse pass had flagged for a decision.
+
+**Merged `lineage-tracing-somatic-mutations` into `lineage-tracing`.** The child page duplicated the parent, which already defined lineage tracing in terms of endogenous somatic mutations. Unique content was folded into a new `## Retrospective tracing from somatic mutations` section on the parent — the per-division mutation-inheritance rationale, the three routes to mutation calls (bulk colony/microdissection, single-cell PTA + duplex, and copy-number-based minimal event distance), the SCITE / SiFit / SCARLET tree-builders, and the three established applications. The child's aliases (`lineage tracing with somatic mutations`, `somatic lineage tracing`, `mutation-based lineage tracing`) and tags were absorbed into the parent's frontmatter, so old references still resolve. The `## Added 2026-08-10` heading was renamed to `## Endogenous mtDNA and engineered recorders`.
+
+Inbound links rewritten in 11 files (`rodriguez-fraticelli-2026-lineage-tracing-review`, `wang-2026-multimodal-lineage-computational`, `scherer-2025-nature`, `coorens-2021-nature`, `lee-six-2018-hsc-dynamics`, `mckenna-2016-science`, `phylogenetic-inference`, `crispr-lineage-recording`, `cancer-clonal-evolution`, `single-cell-lineage-tracing`, `30-Concepts/index`). Redirection created duplicate targets on several `Related` lines and in one frontmatter list; these were de-duplicated across 50 files. The child page was deleted.
+
+**Link convention normalized.** All 96 pages written today were converted from path-prefixed wikilinks (`[[30-Concepts/scwga]]`) to the bare form (`[[scwga]]`) that `CLAUDE.md` specifies — **2,250 links** rewritten. `[[00-Sources/...]]` links were deliberately left intact, because `tools/pending-sources.sh` parses the `source:` frontmatter field by that exact path and stripping the prefix would break source-coverage detection.
+
+**Verification.** 0 broken wikilinks; 0 residual path-prefixed links in today's pages; `tools/pending-sources.sh` reports 0 pending of 256.
+
+---
+
+# 2026-08-10 — Maintenance: rinse pass (post-ingest)
+
+Lint pass over the wiki following the 28-source ingest earlier the same day.
+
+**Clean on arrival.** 0 orphan pages (every page has at least one inbound link), 0 index drift (every page appears in a catalog), 0 broken wikilinks, 0 pending sources (0 of 256).
+
+**Fixed — mechanical.**
+
+- `40-Topics/3d-genome.md` consolidated: two same-day sections merged into one; the `### Foundational Hi-C` sub-theme, which previously listed only single-cell papers, now leads with Lieberman-Aiden 2009, Dixon 2012 and Naumova 2013; a new `### Pipelines, storage, visualization` sub-theme collects HiC-Pro, Juicer, cooler, HiGlass, scHiCluster and Higashi; the stale "Synthesized notes — None yet" opener removed.
+- `## Related` sections added to six topic pages that lacked them: `chromatin-architecture`, `single-cell-lineage-tracing`, `whole-genome-amplification`, `hematopoietic-malignancies`, `knowledge-management`, `llm-tooling-patterns`.
+- `30-Concepts/lineage-tracing.md`: self-referential wikilink removed; duplicated/fragmented `## Related` block consolidated from seven bullets into three grouped lines.
+- One bare claim on `30-Concepts/gene-regulatory-network.md` marked `(synthesis)`. Citation-density check over the 20 pages created today: 1 bare claim found, now 0.
+
+**Fixed — substantive refinements from the new sources.**
+
+- `40-Topics/3d-genome.md` gains two open questions: whether scHi-C imputation manufactures the per-cell variability it reports (neither scHiCluster nor Higashi quantifies the smoothing trade), and which TAD definition should be canonical given documented caller disagreement.
+- `30-Concepts/scwga-chemistries.md`: the amplification-free branch was attributed only to DLP+ (Laks 2019). Added the founding mechanistic argument from Zahn 2017 — amplify-then-fragment forfeits duplicate detection — plus DOP-PCR's coverage-breadth saturation.
+- `30-Concepts/lineage-tracing.md` "Contested points" refined: missing data splits into heritable and stochastic dropout with opposite implications, and homoplasy is an assay-design limit rather than an inference problem (both from Cassiopeia). Flagged that the heritable/stochastic distinction has not been made for scWGA allelic dropout anywhere in this corpus.
+
+**Flagged, not resolved — needs a decision.**
+
+- ~~**Possible merge:** `lineage-tracing` and `lineage-tracing-somatic-mutations` overlap substantially.~~ **Resolved same day** — merged, see the follow-up entry below.
+- ~~**Mixed link convention:** 355 wikilinks use bare slugs rather than path prefixes.~~ **Resolved same day** — today's pages converted to the bare form, see below.
+- **Incomplete summaries:** `welch-2019-liger` and `pliner-2018-cicero` remain metadata-only clippings with source-caveat blocks. Two `*(not bookmarked)*` markers remain, for Simpson 2017 (nanopore methylation) and SNARE-seq.
+
+**Non-issue, checked.** 140 summary pages report no `updated:` field — this is correct: the summary template uses `ingested:` instead. Index pages report no `type:` field, also by template.
+
+---
+
+# 2026-08-10 — Ingest: 28 foundational & tooling sources (second batch)
+
+**Sources ingested (28).** The corrected gap list from the manuscript reference audit, all now bookmarked and summarized.
+
+*Foundational (5):* Lieberman-Aiden 2009 (Hi-C), Dixon 2012 (TADs), Zahn 2017 (DLP), Ramani 2017 (sciHi-C), Peric-Hupkes 2010 (LADs).
+*Somatic mutation & lineage (3):* Alexandrov 2013 (mutational signatures), Xu 2012 (ccRCC single-cell exomes), Ludwig 2019 (mtDNA lineage tracing).
+*Preprocessing & calling (5):* Li & Durbin 2009 (BWA), Li 2009 (SAMtools), Chen 2018 (fastp), Zhang 2008 (MACS), Meers 2019 (SEACR).
+*Hi-C tooling (5):* Servant 2015 (HiC-Pro), Abdennur 2020 (cooler), Kerpedjiev 2018 (HiGlass), Zhou 2019 (scHiCluster), Zhang 2022 (Higashi).
+*Integration & trajectory (4):* Korsunsky 2019 (Harmony), Welch 2019 (LIGER), Wolf 2019 (PAGA), Cao 2019 (MOCA / Monocle 3).
+*Cancer & lineage inference (3):* Bakker 2016 (AneuFinder), Wang 2021 (MEDALT), Jones 2020 (Cassiopeia).
+*Regulatory networks (3):* Pliner 2018 (Cicero), Kamimoto 2023 (CellOracle), Bravo 2023 (SCENIC+).
+
+**Pages created (61).** 28 summaries in `10-Summaries/`; 19 concept pages (`read-alignment`, `mappability`, `duplicate-marking`, `quality-control-metrics`, `doublet-detection`, `sequencing-depth-and-coverage`, `peak-calling`, `hi-c-normalization`, `imputation`, `data-standards`, `dimensionality-reduction`, `clustering-algorithms`, `cell-type-annotation`, `batch-effect`, `trajectory-inference`, `gene-regulatory-network`, `copy-number-variation`, `chromosomal-instability`, `intratumor-heterogeneity`); 1 topic page (`40-Topics/computational-methods`); 13 entity pages (Heng Li, Job Dekker, Jesse Dixon, Leonid Mirny, Jian Ma, Cole Trapnell, Ken Chen, Jonathan Weissman, Nir Yosef, Samantha Morris, Soumya Raychaudhuri, Joshua Welch, Bradley Bernstein).
+
+**Pages updated (~20).** Topics: `3d-genome`, `chromatin-architecture`, `cancer-clonal-evolution`, `single-cell-lineage-tracing`, `single-cell-multiomics`. Concepts: `topologically-associating-domain`, `chromatin-compartments`, `lamina-associated-domains`, `dlp-plus`, `single-cell-hi-c`, `mutational-signatures`, `lineage-tracing`, `phylogenetic-inference`. All four catalogs plus root `index.md` (count 225 → 253).
+
+**Repair work.** 33 `*(not bookmarked)*` placeholders left by the first ingest were converted back to live wikilinks now that their targets exist — Lieberman-Aiden, Dixon, Zahn/DLP, Cooler, HiGlass, Higashi, scHiCluster, HiC-Pro, Harmony, LIGER, Cicero, MACS, SEACR, BWA, SAMtools, AneuFinder. Only Simpson 2017 (nanopore methylation) and SNARE-seq remain marked as unbookmarked. Twelve link targets were remapped to existing slugs (e.g. `allelic-dropout` → `allele-dropout`, `unique-molecular-identifier` → `umi-molecular-barcoding`, `somatic-mutation` → `somatic-mosaicism`); seven with no wiki page were de-linked to plain text (`heterochromatin`, `cohesin`, `data visualization`, `allele-specific analysis`, `X inactivation`, `kNN graph`).
+
+**Verification.** `tools/pending-sources.sh`: **0 pending of 256** source files. Wiki-layer wikilink check: **0 broken links**.
+
+**Notable findings and tensions.**
+
+- *The n² rule propagates everywhere.* Hi-C resolution scales as reads² (Lieberman-Aiden), so 5–10% linear genome coverage becomes 0.25–1% of possible contacts per cell (scHiCluster). Clustering degrades below 25,000 contacts and collapses at 5,000 — below what sciHi-C's ~8,000–9,000 delivers. This single inequality explains why the scHi-C imputation literature exists.
+- *Method choice is a hidden variable in this corpus.* Seven TAD callers disagree on one matrix (HiGlass); two Hi-C pipelines on identical raw data correlate at 0.83 (HiC-Pro); a ChIP-era peak caller emits ~900 false peaks on CUT&RUN data for an unexpressed factor (SEACR). Recorded in the new `40-Topics/computational-methods` page.
+- *Ongoing chromosomal instability and a clonal karyotype are compatible.* Pooled cells reproduce the aCGH karyotype exactly while 56% of individual cells are unique (AneuFinder). Recurrent aneuploidy is evidence about selection, not stability.
+- *Sampling depth determines heterogeneity findings.* Xu 2012 finds no subclones in 17 cells; DLP reaches ~0.05% subclone sensitivity with 6,000. Both results stand; the resolutions differ by two orders of magnitude. The same pattern governs trajectory topology — PAGA's basophil-origin ambiguity resolves only in the most densely sampled of three datasets.
+- *Signature 1 links the epigenome to the mutational spectrum.* C>T at NpCpG from 5mC deamination is present in 25 of 30 cancer classes, making the most universal mutational process a chemical consequence of DNA methylation.
+- *Two contradictions worth watching.* Imputation that enables per-cell clustering necessarily suppresses the cell-to-cell variability being measured, and neither scHiCluster nor Higashi quantifies the trade. And CellOracle's vector-field formulation structurally cannot represent proliferation or death, producing a documented false negative (Spi1 knockout erythroid depletion).
+
+**Incomplete pages.** Two sources were clipped as metadata only and carry explicit source-caveat blocks: `welch-2019-liger` and `pliner-2018-cicero`. Both need a full-text re-clip before their Methods and Results sections can be written.
+
+---
+
+## 2026-08-10 — Ingest: 35 foundational & infrastructure papers (reference-gap fill)
+
+**Trigger**: User audited three manuscript reference lists (114 unique refs) against the wiki, found 33 unbookmarked, saved them all, and asked for an ingest. Two previously-pending sources were swept in, for 35 total.
+
+### Summaries created (35)
+
+**Genome / WGA / variant calling (6)** — [[10-Summaries/telenius-1992-dop-pcr]] (DOP-PCR), [[10-Summaries/zong-2017-malbac-protocol]] (MALBAC protocol), [[10-Summaries/laks-2019-dlp-plus]] (DLP+, 51,926 amplification-free genomes), [[10-Summaries/mckenna-2010-gatk]] (GATK), [[10-Summaries/smukowski-heil-2023-loh]] (LOH), [[10-Summaries/eichler-2007-completing-sv-map]] (NHGRI SV proposal).
+
+**3D genome (4)** — [[10-Summaries/naumova-2013-mitotic-chromosome]], [[10-Summaries/lupianez-2015-tad-disruption]], [[10-Summaries/spielmann-2018-sv-3d-genome]], [[10-Summaries/durand-2016-juicer]].
+
+**Histone modifications (7)** — [[10-Summaries/bernstein-2006-bivalent-chromatin]], [[10-Summaries/rothbart-2014-histone-dna-language]], [[10-Summaries/heinz-2010-homer]], [[10-Summaries/roadmap-2015-111-epigenomes]], [[10-Summaries/kaya-okur-2019-cut-and-tag]], [[10-Summaries/wu-2021-sccut-tag]], [[10-Summaries/zhang-2022-sccut-tag-pro]], [[10-Summaries/gopalan-2022-multi-cut-and-tag]].
+
+**DNA methylation (4)** — [[10-Summaries/jones-2012-dna-methylation-functions]], [[10-Summaries/tahiliani-2009-tet1-5hmc]], [[10-Summaries/kremer-2024-methscan]], [[10-Summaries/chen-2025-sctaps-sccaps-plus]], plus [[10-Summaries/flusberg-2010-smrt-methylation]] on the long-read side.
+
+**Multi-omics & integration (6)** — [[10-Summaries/zhu-2020-multimodal-power-of-many]], [[10-Summaries/argelaguet-2021-integration-principles]], [[10-Summaries/hao-2024-seurat-v5]], [[10-Summaries/vandereyken-2023-spatial-multiomics]], [[10-Summaries/lim-2024-single-cell-omics-review]], [[10-Summaries/lake-2018-brain-snrna-scths]].
+
+**Computational infrastructure (7)** — [[10-Summaries/mclean-2010-great]], [[10-Summaries/zhang-2021-chromap]], [[10-Summaries/traag-2019-leiden]], [[10-Summaries/mcinnes-2018-umap]], [[10-Summaries/gao-2021-copykat]], [[10-Summaries/tickle-2019-infercnv]].
+
+### Graph touched (16 pages)
+
+Concepts: [[30-Concepts/5hmc]], [[30-Concepts/taps]], [[30-Concepts/structural-variants]], [[30-Concepts/topologically-associating-domain]], [[30-Concepts/scwga-chemistries]], [[30-Concepts/cut-and-tag]], [[30-Concepts/scbs-seq]], [[30-Concepts/multimodal-integration-methods]], [[30-Concepts/enhancer-states]], [[30-Concepts/single-cell-variant-calling]].
+Topics: [[40-Topics/dna-methylation]], [[40-Topics/3d-genome]], [[40-Topics/histone-modifications]], [[40-Topics/single-cell-multiomics]].
+Notes: [[50-Notes/open-questions]] (new section — cross-cutting artifact confounds, untested method assumptions, biology left open, methods that do not exist).
+Indexes: [[10-Summaries/index]] (+35 entries, count 190 → 225) and root [[index]].
+
+### Notable findings
+
+- **Four sources are metadata-only clippings** (DOP-PCR, MALBAC, UMAP, inferCNV are landing/abstract/README pages). Each summary carries an explicit source caveat; UMAP was never journal-published and inferCNV's README now opens with a deprecation notice redirecting to CopyKAT and Numbat.
+- **Two prior wiki assumptions are now stale**: inferCNV is unsupported, and every bisulfite-based single-cell methylome in the corpus reports a 5mC+5hmC composite — a 22% confound in hippocampal neurons per scCAPS+.
+- **Cell-line vs tissue aneuploidy** differs ~4–8× (5.2% vs 0.6–1.2%, DLP+); *TP53* loss reverses gain/loss direction without changing rate.
+- **TADs are interphase-only** (Naumova), which reframes Lupiáñez boundary function as re-established every cycle and constrains what single-cell Hi-C can read from mitotic cells.
+- **Three complementary multi-omics taxonomies** now coexist in the wiki: by throughput/depth (Zhu), by coupling mechanism (Vandereyken), by computational anchor (Argelaguet).
+
+### Correction to the prior gap report
+
+The reference-gap list given to the user before this ingest was **under-inclusive**. It matched DOIs anywhere in the wiki, so papers appearing only inside *other clippings' reference sections* counted as bookmarked. A stricter check (source-file title match) finds **~27 further references with no source file** — including SAMtools, BWA, fastp, MACS, SEACR, HiC-Pro, Cooler, HiGlass, Higashi, scHiCluster, Harmony, LIGER, Monocle3, PAGA, MEDALT, Cassiopeia, Cicero, CellOracle, SCENIC+, AneuFinder, Ginkgo(dup), Lieberman-Aiden 2009, Dixon 2012, Peric-Hupkes 2010, Alexandrov 2013, Zahn 2017 (DLP), Xu 2012, Ludwig 2019, Ramani 2017. Wikilinks to these were de-linked to plain text marked *(not bookmarked)* rather than left broken.
+
+### Verified
+
+- 0 pending sources (228 total source files); 0 broken wikilinks wiki-wide.
+
+---
+
 ## 2026-06-29 — Draft: computational-framework-structure note (review main-section scaffold)
 
 **Trigger**: User asked to draft the manuscript's computational-framework section after deciding (this session) not to mirror the 5-layer measurement frame.

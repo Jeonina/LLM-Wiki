@@ -22,4 +22,4 @@ Unlike ligation-based Hi-C methods that capture pairs of fragments, SPRITE-famil
 
 ## Related
 
-- [[30-Concepts/single-cell-hi-c]] · [[40-Topics/3d-genome]] · [[40-Topics/3d-genome]]
+- [[30-Concepts/single-cell-hi-c]] · [[40-Topics/3d-genome]]

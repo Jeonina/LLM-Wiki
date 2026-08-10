@@ -4,7 +4,7 @@ title: DNA methylation
 aliases: [5mC, cytosine methylation, methylation]
 tags: [methylation, epigenetics, regulation]
 created: 2026-05-11
-updated: 2026-06-29
+updated: 2026-08-10
 ---
 
 # DNA methylation
@@ -135,6 +135,15 @@ scBS-seq, scRRBS, snmC-seq2, and sciMETv2 are sparse but compatible with multi-o
 - Non-CpG methylation (mCpH) in adult tissues, especially brain — functional significance ([[10-Summaries/fu-2025-longread-methylation]]).
 - Are HMAs (decitabine vs azacitidine) clinically interchangeable? Single-cell data argues no — divergent demethylation patterns, and viral-mimicry response decoupled from raw methylation loss ([[10-Summaries/shen-2026-splicool-seq]]; [[10-Summaries/hunt-2022-sctem-seq]]).
 
+## Additions — 2026-08-10 ingest
+
+- **Function is context-dependent, not uniformly repressive.** Methylation near the TSS blocks initiation; gene-body methylation does not block and may stimulate elongation and affect splicing; in *Neurospora* the relationship is exactly inverted, so the mark does not carry the meaning — the context does ([[10-Summaries/jones-2012-dna-methylation-functions]]).
+- **Silencing usually precedes methylation.** De novo methylation requires a nucleosome, and active TSSs are nucleosome-depleted, so methylation acts as a lock on an already-silenced state; the less-expressed allele is preferentially methylated ([[10-Summaries/jones-2012-dna-methylation-functions]]).
+- **Enhancers are "low-methylated regions" whose intermediate bulk values must reflect either dynamic turnover or inefficient maintenance through division** — the bulk statement of why methylation epimutation clocks work ([[10-Summaries/jones-2012-dna-methylation-functions]]), operationalized as de novo VMR discovery in single cells ([[10-Summaries/kremer-2024-methscan]]).
+- **Population-scale confirmation**: >18,000 intermediate-methylation regions (~57% mCpG) persist within purified cell types, "probably reflecting a stable state of cell-to-cell variability" ([[10-Summaries/roadmap-2015-111-epigenomes]]).
+- **Methylation-dependent activation breaks the silencing dogma** — KLF2/KLF4/KLF5 bind specific sequences *because* they are methylated, and 5mC recognition stimulates KLF4-mediated transcription ([[10-Summaries/rothbart-2014-histone-dna-language]]).
+- **Bisulfite-free single-cell chemistry** now separates 5mC from 5hmC at single-base resolution ([[10-Summaries/chen-2025-sctaps-sccaps-plus]]); the kinetic route dates to [[10-Summaries/flusberg-2010-smrt-methylation]] and the enzymatic origin of 5hmC to [[10-Summaries/tahiliani-2009-tet1-5hmc]].
+
 ## Related
 
 - [[cpg-island]]
@@ -146,3 +155,4 @@ scBS-seq, scRRBS, snmC-seq2, and sciMETv2 are sparse but compatible with multi-o
 - [[decitabine]]
 - [[epigenetic-memory]]
 - [[50-Notes/regulatory-layers-overview]]
+- [[10-Summaries/jones-2012-dna-methylation-functions]] · [[10-Summaries/kremer-2024-methscan]] · [[10-Summaries/chen-2025-sctaps-sccaps-plus]] · [[10-Summaries/tahiliani-2009-tet1-5hmc]]

@@ -4,7 +4,7 @@ title: 5-hydroxymethylcytosine (5hmC)
 aliases: [5hmC, hydroxymethylcytosine]
 tags: [methylation, TET, demethylation, brain]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-08-10
 ---
 
 # 5-hydroxymethylcytosine (5hmC)
@@ -27,6 +27,16 @@ TET (1/2/3) enzymes oxidize 5mC → 5hmC → 5fC → 5caC. 5fC and 5caC are exci
 - Type-1 5hmCG = basal-level, not co-occurring with 5mCG.
 - Type-2 5hmCG = co-occurring with 5mCG on the same molecule, associated with active demethylation regions ([[10-Summaries/bai-2024-simple-seq]]).
 
+## Origin and single-cell measurement
+
+- **Enzymatic origin.** TET1 is a 2-oxoglutarate/Fe(II)-dependent dioxygenase that oxidizes 5mC to 5hmC in vitro and in cells; the catalytically dead H1671Y/D1673A mutant does not ([[10-Summaries/tahiliani-2009-tet1-5hmc]]).
+- **Abundance.** 4–6% of cytosine species at MspI CpG sites in mouse ES cells (~1 base in 3,000 genome-wide, ~2 × 10⁶ per haploid genome); undetectable in activated T cells and dendritic cells ([[10-Summaries/tahiliani-2009-tet1-5hmc]]).
+- **Bisulfite cannot see it.** Bisulfite conversion does not discriminate C from 5mC from 5hmC, so every bisulfite-based methylome — bulk or single-cell — reports a 5mC+5hmC composite ([[10-Summaries/jones-2012-dna-methylation-functions]]; [[10-Summaries/flusberg-2010-smrt-methylation]]).
+- **Two routes to discrimination.** Polymerase-kinetic signatures in SMRT sequencing separate C/5mC/5hmC by PCA over IPD and pulse-width features ([[10-Summaries/flusberg-2010-smrt-methylation]]); enzymatic/chemical conversion does it at single-cell, single-base resolution ([[10-Summaries/chen-2025-sctaps-sccaps-plus]]).
+- **5hmC alone classifies cell type.** Gene-body 5hmC clusters hippocampal neurons from non-neurons and annotates OPCs without any transcriptome; neurons carry 22.04% vs 9.29% in non-neurons ([[10-Summaries/chen-2025-sctaps-sccaps-plus]]).
+- **Readers exist.** UHRF2 reads 5hmC and 5caC but not 5mC or 5fC; MBD3 and MeCP2 read 5hmC, and a Rett-syndrome MeCP2 mutation disrupts 5hmC but not 5mC binding — implying demethylation-independent function ([[10-Summaries/rothbart-2014-histone-dna-language]]).
+
 ## Related
 
 - [[40-Topics/dna-methylation]] · [[30-Concepts/tet-enzymes]] · [[30-Concepts/simple-seq]] · [[30-Concepts/6-base-cut-and-tag]]
+- [[10-Summaries/tahiliani-2009-tet1-5hmc]] · [[10-Summaries/chen-2025-sctaps-sccaps-plus]] · [[10-Summaries/flusberg-2010-smrt-methylation]]

@@ -4,7 +4,7 @@ title: Single-cell variant calling
 aliases: [scSNV calling, single-cell SNV detection, scDNA variant calling]
 tags: [scDNA-seq, variant-calling, SNV, computational]
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-08-10
 ---
 
 # Single-cell variant calling
@@ -26,7 +26,16 @@ updated: 2026-05-19
 
 [[10-Summaries/ha-2023-natmethods]] benchmarks 11 strategies on a constructed reference standard from 6 mixed cell lines.
 
+## The bulk null model these tools reject
+
+- **GATK is the substrate and the assumption.** Its locus-based traversal (all reads spanning each base, plus reference-ordered data) is the data model every single-cell caller inherits; what they replace is its **diploid, uniform-coverage prior**, which WGA violates ([[10-Summaries/mckenna-2010-gatk]]).
+- The demonstration genotyper in that paper is explicitly naïve — 99.76% concordance but only 81.70% dbSNP rate against ~90% expected, i.e. an honestly-reported false-positive problem ([[10-Summaries/mckenna-2010-gatk]]).
+- **Multi-locus traversals were never implemented** in the original framework and were flagged as memory-expensive — which is why haplotype-aware and phasing-based methods needed separate engineering rather than a walker ([[10-Summaries/mckenna-2010-gatk]]).
+- **LOH detection reuses the same logic in reverse**: restrict to ancestral heterozygous sites, then read allele fraction, calling tracts from ≥3 consecutive deviating SNPs ([[10-Summaries/smukowski-heil-2023-loh]]). In single cells this collides with allele dropout, which produces the identical signature.
+- **Clone-level aggregation is the amplification-free alternative** to per-cell calling: cluster on copy number, treat each clone as pseudo-bulk, then call SNVs, breakpoints and allele-specific copy number per clone ([[10-Summaries/laks-2019-dlp-plus]]).
+
 ## Related
 
 - [[40-Topics/scdna-seq]] · [[40-Topics/mosaic-variant-calling]] · [[40-Topics/duplex-sequencing]]
 - [[40-Topics/scdna-seq]] · [[40-Topics/mosaic-variant-calling]]
+- [[10-Summaries/mckenna-2010-gatk]] · [[10-Summaries/smukowski-heil-2023-loh]] · [[10-Summaries/laks-2019-dlp-plus]]

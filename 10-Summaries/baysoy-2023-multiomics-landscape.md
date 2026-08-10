@@ -17,7 +17,6 @@ concepts:
   - "[[30-Concepts/cite-seq]]"
   - "[[30-Concepts/spatial-multiomics]]"
 topics:
-  - "[[40-Topics/single-cell-multiomics]]"
 ---
 
 **Citation:** Baysoy et al. (2023) — *Technological landscape and applications of single-cell multi-omics* — *Nature Reviews Molecular Cell Biology*. [DOI](https://doi.org/10.1038/s41580-023-00615-w)

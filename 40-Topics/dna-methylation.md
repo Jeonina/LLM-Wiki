@@ -156,3 +156,15 @@ scBS-seq, scRRBS, snmC-seq2, and sciMETv2 are sparse but compatible with multi-o
 - [[epigenetic-memory]]
 - [[50-Notes/regulatory-layers-overview]]
 - [[10-Summaries/jones-2012-dna-methylation-functions]] · [[10-Summaries/kremer-2024-methscan]] · [[10-Summaries/chen-2025-sctaps-sccaps-plus]] · [[10-Summaries/tahiliani-2009-tet1-5hmc]]
+
+## Added 2026-08-13
+
+Five sources ingested 2026-08-13 complete the single-cell methylation methods tree.
+
+**The founding cell-typing result.** [[10-Summaries/luo-2017-snmc-seq]] (snmC-seq) established methylation as a primary typing modality by exploiting **mCH**: modulated over large domains, so 100-kb-bin estimates hold across >90% of the genome despite 4.7–5.7% coverage per cell. 16 mouse / 21 human cortical neuron clusters, ~500,000 CG-DMRs per species (68–73% >10 kb from any TSS), with an ISH-validated prediction that cluster mDL-2 differs in projection target. Its DMRs are now the annotation reference every higher-throughput method depends on.
+
+**Two protocols defining opposite ends of the coverage axis.** [[10-Summaries/clark-2017-scbs-seq-protocol]] (PBAT, five-round preamplification, ~50% of CpGs per cell) and [[10-Summaries/guo-2015-scrrbs-protocol]] (one-tube MspI-based reduced representation, ~1M CpGs but **consistently the same** CpGs across cells, ~70% of CGIs).
+
+**Two throughput strategies.** [[10-Summaries/mulqueen-2018-sci-met]] (combinatorial indexing via cytosine-depleted adaptors; alignment rate 68 ± 8% vs the field's 25 ± 20%) and [[10-Summaries/zhang-2023-drop-bs]] (droplets, up to 10,000 cells in 2 days; in-droplet bisulfite conversion yields 9× more library than bulk).
+
+See [[30-Concepts/bisulfite-sequencing]] for the consolidated comparison table.

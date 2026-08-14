@@ -28,3 +28,15 @@ updated: 2026-08-10
 
 - [[30-Concepts/bisulfite-sequencing]] · [[40-Topics/dna-methylation]] · [[30-Concepts/taps]]
 - [[10-Summaries/kremer-2024-methscan]] · [[10-Summaries/chen-2025-sctaps-sccaps-plus]] · [[10-Summaries/jones-2012-dna-methylation-functions]]
+
+## Added 2026-08-13
+
+Protocol source ingested 2026-08-13: [[10-Summaries/clark-2017-scbs-seq-protocol]].
+
+**PBAT is the enabling inversion.** In conventional bisulfite sequencing, adaptor-tagged molecules are bisulfite-treated and most are destroyed; PBAT uses bisulfite to do both the conversion and the fragmentation, tagging afterwards ([[10-Summaries/clark-2017-scbs-seq-protocol]]). Protocol topology, not chemistry, is what set the input floor. (synthesis)
+
+**Five rounds of random priming with intermediate heat denaturation** is the single-cell modification — five chances to capture each locus, and multiple copies per fragment so purification does not collapse complexity ([[10-Summaries/clark-2017-scbs-seq-protocol]]). Random hexamers are recommended over tetramers (yield) or nonamers (trimming burden) ([[10-Summaries/clark-2017-scbs-seq-protocol]]).
+
+**Coverage: up to ~50% of CpGs per single mouse cell** — the highest per-cell coverage of any single-cell methylation method in the corpus, and the opposite end of the design axis from [[10-Summaries/mulqueen-2018-sci-met|sci-MET]] (~1%) and [[10-Summaries/zhang-2023-drop-bs|Drop-BS]] ([[10-Summaries/clark-2017-scbs-seq-protocol]]). Whole methylomes of rare cell types are reconstructed by merging <20 cells ([[10-Summaries/clark-2017-scbs-seq-protocol]]).
+
+The protocol's own analysis advice — sliding-window averaging for cross-cell comparison — is the part that was superseded: tile-averaging dilutes signal, and VMR-based discovery replaces it ([[10-Summaries/kremer-2024-methscan]]). (synthesis)

@@ -114,3 +114,9 @@ _None yet._
 ## Related
 
 - [[40-Topics/3d-genome]] · [[30-Concepts/lamina-associated-domains]] · [[30-Concepts/topologically-associating-domain]] · [[40-Topics/histone-modifications]]
+
+## Added 2026-08-13
+
+The protein-anchored branch of interaction mapping is now covered: [[10-Summaries/li-2014-chia-pet]] ([[30-Concepts/chia-pet|ChIA-PET]]), source of the ">40% of enhancers do not regulate their nearest promoter" statistic and of the "chromatin communities" scale-free network framing.
+
+Its structural implication for single-cell work: immunoprecipitation cannot be done on one cell, so the protein-anchored branch has **no single-cell member** and instead serves as reference truth for protein-agnostic single-cell loop callers ([[10-Summaries/yu-2021-snaphic]]). The single-cell 3D field traded the functional handle for per-cell resolution — unlike the histone field, where [[30-Concepts/cut-and-tag|CUT&Tag]] replaced ChIP with a low-input chemistry that *did* reach single cells ([[10-Summaries/kaya-okur-2019-cut-and-tag]]). (synthesis)

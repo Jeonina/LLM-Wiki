@@ -25,3 +25,7 @@ updated: 2026-05-19
 
 - [[20-Entities/alexander-meissner]]
 - [[40-Topics/dna-methylation]] · [[40-Topics/single-cell-multiomics]]
+
+## Added 2026-08-13
+
+Corresponding author of [[10-Summaries/clark-2017-scbs-seq-protocol]], the scBS-seq protocol. Its core is **PBAT** — bisulfite-treat and fragment first, tag with adaptors after — plus a five-round preamplification giving five chances to capture each locus. Reaches ~50% of CpGs per single mouse cell, the highest per-cell coverage of any method in the corpus.

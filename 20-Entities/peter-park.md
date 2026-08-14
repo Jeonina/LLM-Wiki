@@ -19,3 +19,7 @@ updated: 2026-05-12
 ## Related
 
 - [[20-Entities/smaht-network]] · [[40-Topics/somatic-mosaicism]]
+
+## Added 2026-08-13
+
+Senior author of [[10-Summaries/luquette-2021-scan2]] (SCAN2), which revised the human neuronal somatic SNV rate to 15/year and produced the first genome-wide single-neuron indel rate.

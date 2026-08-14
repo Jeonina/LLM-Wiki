@@ -31,3 +31,7 @@ Departments of Bioengineering and Applied Physics, Stanford University; HHMI. Qu
 - [[40-Topics/scdna-seq]]
 - [[30-Concepts/mda]]
 - [[40-Topics/scdna-seq]]
+
+## Added 2026-08-13
+
+Corresponding author of [[10-Summaries/gawad-2014-all-clonal-origins]], which used microfluidic MDA on 1,479 single ALL cells. The paper states the field's central design axis explicitly: "a carefully calibrated balance in the trade-off between the amount of data obtained per cell versus the number of cells that can be practically analyzed."

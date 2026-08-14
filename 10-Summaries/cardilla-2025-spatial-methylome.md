@@ -7,7 +7,7 @@ author: "Angelysia Cardilla, ... Wanding Zhou, Yanxiang Deng (corresponding)"
 published: 2025-09-03
 ingested: 2026-05-18
 ingest_depth: abstract+intro
-doi: "10.1038/s41586-025-09484-z"
+doi: "10.1038/s41586-025-09478-x"
 journal: "Nature"
 tags: [spatial-omics, methylation, transcriptome, near-single-cell, tissue, embryogenesis, brain, Deng-lab, Zhou-lab]
 entities: []
@@ -18,7 +18,7 @@ concepts:
 topics:
 ---
 
-**Citation:** Cardilla et al. (2025) — *Spatial joint profiling of DNA methylome and transcriptome in tissues* — *Nature*. [DOI](https://doi.org/10.1038/s41586-025-09484-z)
+**Citation:** Cardilla et al. (2025) — *Spatial joint profiling of DNA methylome and transcriptome in tissues* — *Nature*. [DOI](https://doi.org/10.1038/s41586-025-09478-x)
 
 # Cardilla et al. 2025 — spatial DNA methylome + transcriptome
 
@@ -42,7 +42,7 @@ Pioneers **spatial DNA methylation** as a measurable modality. Complements spati
 Abstract + intro only; full PDF re-ingest will deepen the spatial-resolution metrics and embryo-stage integration methodology.
 
 ---
-**Source:** [DOI](https://doi.org/10.1038/s41586-025-09484-z)
+**Source:** [DOI](https://doi.org/10.1038/s41586-025-09478-x)
 
 ## Related
 

@@ -45,3 +45,7 @@ Boston Children's Hospital, Harvard Medical School, Howard Hughes Medical Instit
 - [[40-Topics/scdna-seq]]
 - [[40-Topics/somatic-mosaicism]]
 - [[40-Topics/duplex-sequencing]]
+
+## Added 2026-08-13
+
+Senior author of [[10-Summaries/luquette-2021-scan2]] (SCAN2), the PTA-based revision of the neuronal somatic mutation rate.

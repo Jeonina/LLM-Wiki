@@ -103,3 +103,9 @@ Long-read sequencing is the enabling platform layer beneath several recent break
 - [[fiber-seq]]
 - [[daf-seq]]
 - [[50-Notes/regulatory-layers-overview]]
+
+## Added 2026-08-13
+
+HiDEF-seq ([[10-Summaries/liu-2024-hidef-seq]]) uses PacBio long reads not for length but for **passes**: ~32 independent sequencing passes per strand on median 1.7 kb molecules build a per-strand consensus good enough to call substitutions on unamplified single molecules. An incidental finding is that PacBio's per-pass substitution fidelity is better than previously estimated — concordant dsDNA burdens were obtained at ≥5 passes rather than ≥20 ([[10-Summaries/liu-2024-hidef-seq]]).
+
+The design tradeoff: ssDNA analysis needs ≥20 passes, which forces shorter fragments (1.7 kb rather than 4.2 kb) and roughly 4× the sequencing per molecule ([[10-Summaries/liu-2024-hidef-seq]]).

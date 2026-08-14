@@ -19,3 +19,7 @@ updated: 2026-05-12
 ## Related
 
 - [[30-Concepts/sctem-seq]] · [[40-Topics/dna-methylation]] · [[40-Topics/dna-methylation]]
+
+## Added 2026-08-13
+
+Coauthor of [[10-Summaries/clark-2017-scbs-seq-protocol]], the optimised scBS-seq protocol with automation support.

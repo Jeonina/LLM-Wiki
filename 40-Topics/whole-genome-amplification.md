@@ -71,3 +71,13 @@ _None yet — natural target: "Choosing a scWGA method: tradeoffs and applicatio
 ## Related
 
 - [[30-Concepts/scwga-chemistries]] · [[30-Concepts/scwga]] · [[30-Concepts/duplicate-marking]] · [[30-Concepts/sequencing-depth-and-coverage]] · [[40-Topics/scdna-seq]]
+
+## Added 2026-08-13
+
+Six sources ingested 2026-08-13 fill in the pre-PTA era and the computational response to it.
+
+**Benchmarks.** Two independent 2015 comparisons converge: [[10-Summaries/hou-2015-wga-comparison]] (seven commercial kits, 29 cells, with a 0.1× downsampling step so uniformity comparisons are not confounded by sequencing effort) and [[10-Summaries/huang-2015-scwga-review]] (the eight-axis evaluation vocabulary, plus five kits deep-sequenced). Both conclude there is no best method, only a best method per variant class — see [[30-Concepts/scwga-chemistries]] for the table.
+
+**Input copy number as a fourth lever.** [[10-Summaries/wang-2014-nuc-seq]] sorts G2/M nuclei so MDA starts from four copies rather than one — 91% breadth, 9.73% ADO, FPR 1.24 × 10⁻⁶ — without changing the chemistry at all.
+
+**Assembly as the first computational response.** [[10-Summaries/chitsaz-2011-velvet-sc]], [[10-Summaries/peng-2012-idba-ud]] and [[10-Summaries/bankevich-2012-spades]] solved MDA's coverage catastrophe for de novo assembly years before the variant-calling field faced the same statistics; see [[30-Concepts/single-cell-genome-assembly]]. This is also the earliest place in the corpus where WGA's problems are declared computational rather than experimental ([[10-Summaries/chitsaz-2011-velvet-sc]]).

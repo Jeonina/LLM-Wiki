@@ -26,3 +26,9 @@ NanoSeq has been the workhorse for measuring somatic mutation accumulation rates
 ## Related
 
 - [[40-Topics/duplex-sequencing]] · [[30-Concepts/codec]] · [[30-Concepts/hidef-seq]] · [[40-Topics/duplex-sequencing]]
+
+## Added 2026-08-13
+
+HiDEF-seq adopts NanoSeq's A-tailing artifact-control approach while **refuting its single-strand calls**: across nine samples run on both, dsDNA burdens and patterns agree, but HiDEF-seq measures 18-fold lower ssDNA call burdens (5-fold for C>T only) with distinct patterns, indicating NanoSeq's ssDNA calls are largely artifactual — as its own developers suspected ([[10-Summaries/liu-2024-hidef-seq]]).
+
+The practical implication: NanoSeq remains sound for **double-strand** mutation burdens and signatures; any prior single-strand claim from duplex-family methods should be re-read against [[10-Summaries/liu-2024-hidef-seq]]. (synthesis)

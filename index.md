@@ -1,14 +1,14 @@
 ---
 title: LLM Wiki — scDNA-seq & Single-Cell Epigenomics
 description: A living knowledge base on single-cell DNA sequencing, somatic mosaicism, and adjacent epigenomics.
-updated: 2026-08-10
+updated: 2026-08-13
 ---
 
 # LLM Wiki
 
 A living knowledge base on **single-cell DNA sequencing**, **somatic mosaicism**, and **single-cell epigenomics** — built and maintained with the help of an LLM, following [Andrej Karpathy's LLM Wiki pattern](10-Summaries/example-llm-wiki).
 
-> This wiki synthesizes ~253 papers spanning scDNA-seq methods, chromatin profiling, DNA methylation, multi-omics assays, and computational tools. Start from a topic below, or browse the full catalog.
+> This wiki synthesizes ~273 papers spanning scDNA-seq methods, chromatin profiling, DNA methylation, multi-omics assays, and computational tools. Start from a topic below, or browse the full catalog.
 
 The central motivation: there is no DNA-centric locus-state framework that jointly interprets mutation + epigenome + RNA at single-cell scale. The wiki tracks the methods that get us closer to one — see [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap|the synthesis gap note]] for the framing.
 
@@ -24,6 +24,9 @@ The foundation: how to sequence a genome from one cell. Covers whole-genome ampl
 **Key review →** [[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao et al. 2025 (NRG)]]
 **Foundational →** [[10-Summaries/gawad-2016-scgenome-review|Gawad & Quake 2016]] · [[10-Summaries/dean-2002-mda|Dean 2002 (MDA founding paper)]] · [[10-Summaries/telenius-1992-dop-pcr|Telenius 1992 (DOP-PCR)]]
 **Amplification-free →** [[10-Summaries/laks-2019-dlp-plus|Laks 2019 (DLP+)]] · **Bulk baseline →** [[10-Summaries/mckenna-2010-gatk|McKenna 2010 (GATK)]]
+**WGA benchmarks →** [[10-Summaries/hou-2015-wga-comparison|Hou 2015 (7 kits)]] · [[10-Summaries/huang-2015-scwga-review|Huang/Xie 2015 (8-axis framework)]] · [[30-Concepts/scwga-chemistries]]
+**Input-copy lever →** [[10-Summaries/wang-2014-nuc-seq|Wang 2014 (nuc-seq, G2/M nuclei)]] · **Targeted at scale →** [[10-Summaries/gawad-2014-all-clonal-origins|Gawad 2014 (1,479 ALL cells)]]
+**Assembly →** [[30-Concepts/single-cell-genome-assembly]] · [[10-Summaries/chitsaz-2011-velvet-sc|Velvet-SC]] · [[10-Summaries/peng-2012-idba-ud|IDBA-UD]] · [[10-Summaries/bankevich-2012-spades|SPAdes]]
 
 ---
 
@@ -38,6 +41,8 @@ Post-zygotic mutations as both disease drivers and natural lineage barcodes. Fro
 **Brain focus →** [[10-Summaries/bae-2017-pregastrulation-mutations|Bae 2018]] · [[10-Summaries/taejeong-2022-science|Bae 2022]] · [[10-Summaries/miller-2022-nature|Miller 2022 (AD)]]
 **Reviews →** [[10-Summaries/forsberg-2017-mosaicism-review|Forsberg/Dumanski 2017 NRG]] · [[10-Summaries/hilal-2026-cardiac-somatic-review|Hilal 2026 (cardiac)]] · [[10-Summaries/hsieh-2026-scmtmpm-scwmss|Hsieh 2026 (mtDNA burden metrics)]]
 **Stem cell aging →** [[10-Summaries/kapadia-2024-stem-cell-aging|Kapadia & Goodell 2024]]
+**Rate revisions →** [[10-Summaries/luquette-2021-scan2|SCAN2 (Luquette 2021) — 15 SNVs/yr + first indel rate]]
+**Upstream of mutation →** [[30-Concepts/hidef-seq]] · [[10-Summaries/liu-2024-hidef-seq|HiDEF-seq (Liu 2024) — single-strand mismatch & damage signatures]]
 
 ---
 
@@ -62,6 +67,9 @@ From bisulfite sequencing to single-cell methylomes, 5hmC detection, and methyla
 **Function & 5hmC →** [[10-Summaries/jones-2012-dna-methylation-functions|Jones 2012 (context-dependence)]] · [[10-Summaries/tahiliani-2009-tet1-5hmc|Tahiliani 2009 (5hmC)]] · [[10-Summaries/chen-2025-sctaps-sccaps-plus|scTAPS/scCAPS+]] · [[10-Summaries/kremer-2024-methscan|MethSCAn]]
 **Foundational →** [[10-Summaries/smallwood-2014-natmethods|Smallwood 2014 (scBS-seq)]] · [[10-Summaries/schubeler-2015-methylation-review|Schübeler 2015]]
 **Lineage tracing →** [[10-Summaries/scherer-2025-nature|EPI-Clone (Scherer 2025)]] · [[10-Summaries/chen-2025-methyltree|MethylTree (Chen 2025)]]
+**Cell typing by mCH →** [[10-Summaries/luo-2017-snmc-seq|Luo 2017 (snmC-seq)]] · [[10-Summaries/luo-2018-snmc-seq2|snmC-seq2]]
+**Protocols →** [[10-Summaries/clark-2017-scbs-seq-protocol|scBS-seq / PBAT (~50% CpG)]] · [[10-Summaries/guo-2015-scrrbs-protocol|scRRBS one-tube (~70% CGIs)]]
+**Throughput →** [[10-Summaries/mulqueen-2018-sci-met|sci-MET (combinatorial indexing)]] · [[10-Summaries/zhang-2023-drop-bs|Drop-BS (droplets, 10k cells)]]
 
 ---
 
@@ -84,6 +92,7 @@ Methods that read two or more modalities from the same cell: genotype + transcri
 **DNA + Epigenome →** [[10-Summaries/swanson-2025-daf-seq|DAF-seq]] · [[10-Summaries/kriz-2025-duplex-multiome|Duplex-Multiome]]
 **Genotype + TF binding →** [[30-Concepts/dd-seq]] · [[10-Summaries/chi-2026-dd-seq|D&D-seq (Chi 2026, DNA–protein interaction axis)]]
 **Scalable DNA + RNA →** [[30-Concepts/defnd-seq]] · [[10-Summaries/olsen-2025-defnd-seq|DEFND-seq (whole-genome)]] · [[30-Concepts/sdr-seq]] · [[10-Summaries/lindenhofer-2025-sdr-seq|SDR-seq (targeted, low ADO)]] · [[30-Concepts/resolveome]] · [[10-Summaries/marks-2023-resolveome|ResolveOME (PTA genome + RNA)]]
+**Spatial inference →** [[10-Summaries/debnath-2026-ison|ISON (Debnath 2026) — spatial ATAC from ST + sc-multiome]] · [[30-Concepts/spatial-multiomics]]
 **Reviews →** [[10-Summaries/wang-2023-multimodal-review|Wang & Jin 2023 methods+integration]] · [[10-Summaries/baysoy-2023-multiomics-landscape|Baysoy 2023]] · [[10-Summaries/vandereyken-2023-scmultiomics-review|Vandereyken 2023]] · [[10-Summaries/bi-2024-multiomics-review|Bi & Weng 2024 (integration topology + protein lineages)]]
 
 ---
@@ -104,6 +113,9 @@ Chromatin conformation capture (Hi-C) adapted for single cells, haplotype-resolv
 **Start here →** [[40-Topics/3d-genome]] · [[30-Concepts/single-cell-hi-c]] · [[30-Concepts/dip-c]] · [[30-Concepts/nuclear-lamina]] · [[30-Concepts/lamina-associated-domains]] · [[30-Concepts/damid]]
 **Founding →** [[10-Summaries/nagano-2013-nature|Nagano 2013]] · [[10-Summaries/tan-2018-science|Dip-C (Tan 2018)]]
 **Lamina lineage →** [[10-Summaries/van-steensel-2017-lads-review|LADs review (van Steensel & Belmont 2017)]] · [[10-Summaries/rooijers-2019-scdamt-seq|scDam&T-seq (Rooijers 2019)]] · [[10-Summaries/de-luca-2021-scdamid-protocol|scDamID protocol (de Luca & Kind 2021)]]
+**Feature callers →** [[30-Concepts/chromatin-loop]] · [[10-Summaries/yu-2021-snaphic|SnapHiC (loops)]] · [[10-Summaries/xiong-2024-scghost|scGHOST (subcompartments)]] · [[30-Concepts/multi-way-chromatin-interaction]] · [[10-Summaries/park-2026-mintsc|MINTsC (multi-way)]]
+**Differential compartments →** [[10-Summaries/chakraborty-2022-dchic|dcHiC (Chakraborty 2022)]] · [[30-Concepts/chromatin-compartments]]
+**Protein-anchored branch →** [[30-Concepts/chia-pet]] · [[10-Summaries/li-2014-chia-pet|Li & Ruan 2014 (ChIA-PET)]]
 **Heterogeneity metric →** [[10-Summaries/mali-2025-conformational-heterogeneity|C.H. metric (Mali 2025)]]
 **Biophysical / LLPS →** [[10-Summaries/gibson-2019-chromatin-llps|Gibson 2019]] · [[10-Summaries/ahn-2021-llps-cancer-looping|Ahn 2021]] · [[10-Summaries/daugird-2024-viscoelastic-chromatin|Daugird 2024]] · [[10-Summaries/qi-zhang-2021-nucleoli-coalescence|Qi & Zhang 2021]]
 
@@ -116,6 +128,7 @@ Ultra-accurate error correction by reading both strands of a DNA molecule. Essen
 **Start here →** [[40-Topics/duplex-sequencing]] · [[30-Concepts/nanoseq]] · [[30-Concepts/codec]]
 **Founding →** [[10-Summaries/schmitt-2012-pnas|Schmitt & Loeb 2012]] · [[10-Summaries/kennedy-2014-duplex-protocol|Kennedy 2014]]
 **Benchmark →** [[10-Summaries/zhang-2025-smaht-duplex-benchmark|SMaHT Benchmark (Zhang 2025)]]
+**Beyond duplex →** [[10-Summaries/liu-2024-hidef-seq|HiDEF-seq (Liu 2024)]] — unamplified single molecules reach the single-strand lesions duplex methods destroy; finds NanoSeq ssDNA calls ~18× inflated
 
 ---
 
@@ -123,7 +136,7 @@ Ultra-accurate error correction by reading both strands of a DNA molecule. Essen
 
 | | |
 |---|---|
-| [[10-Summaries/index\|Papers]] | All ~225 paper summaries, organized by topic |
+| [[10-Summaries/index\|Papers]] | All ~245 paper summaries, organized by topic |
 | [[20-Entities/index\|People & labs]] | Researchers, labs, consortia |
 | [[30-Concepts/index\|Concepts]] | Definitions: methods, terms, ideas |
 | [[40-Topics/index\|Topics]] | Broad themes that gather concepts and papers |
@@ -159,4 +172,4 @@ The maintainer reads each new source in full, writes a summary, and **touches 5�
 
 ---
 
-*This wiki is a personal research tool. Papers are summarized by an LLM; always verify against the original sources. Last updated 2026-08-10.*
+*This wiki is a personal research tool. Papers are summarized by an LLM; always verify against the original sources. Last updated 2026-08-13.*

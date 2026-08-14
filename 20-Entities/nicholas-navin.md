@@ -25,3 +25,7 @@ updated: 2026-05-19
 ## Related
 
 - [[40-Topics/scdna-seq]] · [[40-Topics/somatic-mosaicism]] · [[40-Topics/scdna-cancer-applications]] · [[40-Topics/cancer-clonal-evolution]]
+
+## Added 2026-08-13
+
+Corresponding author of [[10-Summaries/wang-2014-nuc-seq]] (nuc-seq): flow-sorting **G2/M nuclei** gives MDA four copies of each locus instead of one, taking coverage breadth from ~10% to 91% and allele dropout to 9.73%. The biological result is the two-clock model — **aneuploid rearrangements arise early and freeze; point mutations accumulate gradually** — and the conclusion that no two single tumour cells are genetically identical.

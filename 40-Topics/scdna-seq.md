@@ -119,3 +119,9 @@ _None yet — natural promotion targets: (a) droplet-scale vs single-molecule sc
 - [[lineage-tracing]]
 - [[scdna-capabilities-framework]]
 - [[40-Topics/whole-genome-amplification]]
+
+## Added 2026-08-13
+
+The 2026-08-13 ingest fills the corpus's pre-2016 methodology gap: [[10-Summaries/wang-2014-nuc-seq]] (nuc-seq, G2/M input), [[10-Summaries/gawad-2014-all-clonal-origins]] (microfluidic targeted, 1,479 cells), [[10-Summaries/hou-2015-wga-comparison]] and [[10-Summaries/huang-2015-scwga-review]] (the two 2015 WGA benchmarks), and the assembly trio [[10-Summaries/chitsaz-2011-velvet-sc]] / [[10-Summaries/peng-2012-idba-ud]] / [[10-Summaries/bankevich-2012-spades]].
+
+Stated most clearly in [[10-Summaries/gawad-2014-all-clonal-origins]], the axis that organises the whole field is **depth per cell versus cells per experiment** — "a carefully calibrated balance in the trade-off between the amount of data obtained per cell versus the number of cells that can be practically analyzed." The same axis reappears verbatim in single-cell methylation ([[30-Concepts/bisulfite-sequencing]]). (synthesis)

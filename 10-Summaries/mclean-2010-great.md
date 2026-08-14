@@ -58,7 +58,7 @@ Recovery of the known experimental timepoint from MGI-Expression is the stronges
 - Complementary to [[heinz-2010-homer|HOMER]] (same year): HOMER answers *which factors bind* a peak set, GREAT answers *which genes and functions* it regulates. Most scATAC papers need both.
 - Its linear-distance heuristic is superseded in principle by co-accessibility ([[pliner-2018-cicero|Pliner 2018 (Cicero)]]) and domain-aware assignment ([[lupianez-2015-tad-disruption]], [[spielmann-2018-sv-3d-genome]]).
 - Downstream of peak calls from [[zhang-2008-macs|MACS]]; used on scATAC peak sets from [[granja-2021-archr]] / [[stuart-2021-natmethods]].
-- Appears in this corpus's usage already: [[morriss-2024-spatial-genomics-clonal]], [[bae-2023-codec]].
+- Appears in this corpus's usage already: [[10-Summaries/zhao-2022-nature]], [[bae-2023-codec]].
 
 ## Open questions
 

@@ -32,3 +32,11 @@ Practical floor: clustering performance degrades below **25,000 contacts** per c
 ## Related
 
 - [[single-cell-hi-c]] · [[scatac-imputation]] · [[dimensionality-reduction]] · [[computational-methods]]
+
+## Added 2026-08-13
+
+Random walk with restart, introduced for scHi-C clustering by [[10-Summaries/zhou-2019-schicluster|scHiCluster]], is reused for a different downstream task in [[10-Summaries/yu-2021-snaphic|SnapHiC]]: per-cell RWR (restart probability 0.05) on a binary 10-kb contact graph, followed by distance-stratified *z*-score normalisation, as the front end of loop calling ([[10-Summaries/yu-2021-snaphic]]).
+
+[[10-Summaries/xiong-2024-scghost|scGHOST]] instead consumes [[10-Summaries/zhang-2022-higashi|Higashi]]-imputed maps and layers graph embedding on top — inheriting whatever Higashi gets wrong ([[10-Summaries/xiong-2024-scghost]]). (synthesis)
+
+A sharper claim about imputation appears outside 3D genomics: ISON's *inferred* spatial chromatin accessibility recovers *cis*-eQTL and Hi-C-supported regulatory links **better than the directly measured** spatial ATAC, because the measurement is so dropout-ridden ([[10-Summaries/debnath-2026-ison]]). The caveat is circularity — the strong correlation numbers use MAGIC-imputed data as ground truth ([[10-Summaries/debnath-2026-ison]]). (synthesis)

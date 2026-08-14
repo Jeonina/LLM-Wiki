@@ -42,3 +42,13 @@ updated: 2026-05-19
 
 - [[10-Summaries/miller-2022-nature]] — Miller 2022 — Somatic genomic changes in single Alzheimer's disease neurons.
 
+
+## Added 2026-08-13
+
+Two additions from the 2026-08-13 ingest.
+
+[[10-Summaries/luquette-2021-scan2]] revises the neuronal somatic SNV accumulation rate to **15 SNVs/year** across 76 PTA-amplified single neurons, and reports the first genome-wide single-neuron **indel** rate (≥2/year) — with the note that indels may matter more for gene function than SNVs.
+
+[[10-Summaries/liu-2024-hidef-seq]] profiles cortical neurons among 134 samples and measures ssDNA call burdens ~13-fold lower than Meta-CS single-cell duplex sequencing, again indicating that amplification-based single-strand estimates are inflated.
+
+On the epigenomic side, [[10-Summaries/luo-2017-snmc-seq]] supplies the methylation-based neuronal cell-type taxonomy (16 mouse / 21 human clusters) that the 3D-genome brain studies use as their annotation ([[10-Summaries/yu-2021-snaphic]]; [[10-Summaries/xiong-2024-scghost]]; [[10-Summaries/park-2026-mintsc]]).

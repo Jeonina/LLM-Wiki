@@ -20,3 +20,7 @@ updated: 2026-08-10
 ## Related
 
 - [[trajectory-inference]] · [[cis-regulatory-element]] · [[computational-methods]]
+
+## Added 2026-08-13
+
+Coauthor of [[10-Summaries/mulqueen-2018-sci-met]] (sci-MET).

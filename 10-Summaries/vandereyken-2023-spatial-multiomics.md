@@ -71,7 +71,7 @@ Review from a lab that builds these assays (G&T-seq is Voet's). Consistently can
 - Three complementary taxonomies: this (coupling mechanism), [[zhu-2020-multimodal-power-of-many]] (depth vs throughput), [[argelaguet-2021-integration-principles]] (computational anchor).
 - Primary sources: [[macaulay-2015-gt-seq]], [[dey-2015-dr-seq]], [[cao-2018-sci-car]], [[ma-2020-share-seq]], [[clark-2018-scnmt-seq]], [[pott-2017-elife]], [[lee-2019-natmethods]], [[rooijers-2019-scdamt-seq]], [[de-luca-2021-scdamid-protocol]].
 - Fiber-seq connection ([[andrewb-2020-science]]) noted for combining 6mA marking with long reads.
-- Spatial: [[cardilla-2025-spatial-methylome]], [[morriss-2024-spatial-genomics-clonal]].
+- Spatial: [[cardilla-2025-spatial-methylome]], [[10-Summaries/zhao-2022-nature]].
 - Layer-pair coverage tracked at [[joint-assays-by-layer-pair]].
 
 ## Open questions

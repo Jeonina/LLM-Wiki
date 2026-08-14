@@ -19,3 +19,7 @@ updated: 2026-05-12
 ## Related
 
 - [[30-Concepts/snapatac]] · [[40-Topics/single-cell-atac-seq]]
+
+## Added 2026-08-13
+
+Coauthor of [[10-Summaries/yu-2021-snaphic]] (SnapHiC), the first chromatin-loop caller built for scHi-C. Applied to prefrontal cortex sn-m3C-seq it assigned 788 SNP–gene linkages for neuropsychiatric GWAS variants, including two astrocyte-specific loops connecting the *APOE* TSS to Alzheimer's-associated enhancers.

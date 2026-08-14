@@ -20,3 +20,7 @@ updated: 2026-08-10
 ## Related
 
 - [[topologically-associating-domain]] · [[3d-genome]] · [[single-cell-hi-c]]
+
+## Added 2026-08-13
+
+Cited as the domain-level reference throughout the 2026-08-13 3D-genome ingest — [[10-Summaries/yu-2021-snaphic]], [[10-Summaries/xiong-2024-scghost]] and [[10-Summaries/chakraborty-2022-dchic]] all position their features (loops, subcompartments, differential compartments) against the TAD framework.

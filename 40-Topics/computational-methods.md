@@ -44,3 +44,11 @@ Method choice is not neutral. Seven TAD callers disagree on the same contact mat
 ## Related
 
 - [[3d-genome]] · [[single-cell-multiomics]] · [[cancer-clonal-evolution]] · [[scdna-seq]]
+
+## Added 2026-08-13
+
+The 2026-08-13 ingest adds a historical layer the corpus was missing: [[30-Concepts/single-cell-genome-assembly|single-cell genome assembly]] ([[10-Summaries/chitsaz-2011-velvet-sc]], [[10-Summaries/peng-2012-idba-ud]], [[10-Summaries/bankevich-2012-spades]]), where MDA's coverage pathology was first met with algorithms rather than better chemistry.
+
+The transferable statistical lesson is the **abundance inversion**: under uneven coverage, incorrect *k*-mers in high-depth regions can outnumber correct *k*-mers in low-depth regions, so no global multiplicity threshold works ([[10-Summaries/peng-2012-idba-ud]]). The same inversion, in a different data type, is what single-cell variant callers negotiate as allelic imbalance ([[10-Summaries/dong-2017-sccaller]]; [[10-Summaries/luquette-2019-natcomm]]). (synthesis)
+
+New tools this session: SCAN2 ([[10-Summaries/luquette-2021-scan2]]), SnapHiC ([[10-Summaries/yu-2021-snaphic]]), scGHOST ([[10-Summaries/xiong-2024-scghost]]), MINTsC ([[10-Summaries/park-2026-mintsc]]), dcHiC ([[10-Summaries/chakraborty-2022-dchic]]), ISON ([[10-Summaries/debnath-2026-ison]]).

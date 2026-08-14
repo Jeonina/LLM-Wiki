@@ -4,6 +4,70 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+# 2026-08-14 — Maintenance: DOI audit + duplicate merge + index reconciliation
+
+**DOI audit (all 277 summaries).** Every summary's DOI was resolved against the CrossRef API and the returned title compared against the **source-file title** (the clipping's own `title:` field) rather than the wiki's summary title — the source file is ground truth, the summary title is editorial. 271 verified clean.
+
+Genuinely wrong DOIs — 2:
+
+- **[[10-Summaries/cardilla-2025-spatial-methylome]]** carried `10.1038/s41586-025-09484-z`, which resolves to *"Long-distance remote epitaxy"* (Nature 2025) — an unrelated materials-science paper. Corrected to **`10.1038/s41586-025-09478-x`**, verified as *"Spatial joint profiling of DNA methylome and transcriptome in tissues"*.
+- **`morriss-2024-spatial-genomics-clonal`** carried `10.1101/2024.10.07.617096`, resolving to an unrelated bioRxiv preprint on environment and diet. Root cause turned out to be a duplicate page, not a typo — see below.
+
+Other DOI-layer fixes:
+
+- **[[10-Summaries/telenius-1992-dop-pcr]]** — the DOI `10.1016/0888-7543(92)90147-K` contains parentheses, which truncated the markdown link at the first `)`. The DOI itself was correct; the rendered link was dead. Percent-encoded to `%2892%2990147-K`.
+- **[[10-Summaries/ghorbani-2019-comp-epigenetics]]** — no DOI, and journal recorded as the mangled string `JournalOfAppliedBiologyAnd`. Added `10.7324/JABB.2019.70114` and the correct journal name.
+- **[[10-Summaries/ma-2020-share-seq]]** — cited as "Ma (2020) … *?*". This page summarises a *Nature Reviews Genetics* research highlight **by Dorothy Clyde**, not the primary paper. Attribution corrected, DOI `10.1038/s41576-020-00308-6` added, and a note added pointing to the primary source [[10-Summaries/ma-2020-cell]].
+- **[[10-Summaries/mcinnes-2018-umap]]** — CrossRef returns 404 for `10.48550/arXiv.1802.03426`. This is expected: arXiv DOIs are registered with DataCite, not CrossRef. Confirmed valid via the DataCite API. **No change.**
+- **[[10-Summaries/tickle-2019-infercnv]]** — no DOI because it is software (Broad Institute Trinity CTAT), cited by GitHub URL. **No change; correct as-is.**
+
+**Duplicate merged.** `morriss-2024-spatial-genomics-clonal` and [[10-Summaries/zhao-2022-nature]] both pointed at the *same source file* (`Spatial genomics enables multi-modal study of clonal heterogeneity in tissues`) whose own frontmatter URL is the Nature article. The Morriss page — created 2026-05-18 at `ingest_depth: abstract+intro` — named a middle author as first author, dated the paper 2024 instead of 2022, and carried a DOI belonging to a different preprint; its body text is generic enough to have been written from the title alone. The 2026-05-14 log entry had already flagged the pair as "one of them is misattributed … left both for now"; this resolves it. The page was deleted, its aliases and its one genuinely useful framing (slide-DNA-seq as the sequencing-side counterpart to in-situ genome sequencing) folded into `zhao-2022-nature`, and 6 inbound links repointed.
+
+**Index reconciliation.**
+
+- [[10-Summaries/index]] was missing all 20 summaries from the 2026-08-13 ingest, and carried a duplicate `zhao-2022-nature` row after the merge. Both fixed; the index now matches the directory exactly — 0 missing, 0 stale.
+- [[catalog]] claimed to list "All papers in this wiki" while covering 162 of 277. The 20 new summaries were added, and the scope line was rewritten to describe it accurately as a curated reading path pointing to [[10-Summaries/index]] for complete coverage. **~93 pre-existing entries remain uncovered** — flagged rather than backfilled, because `catalog.md` and `10-Summaries/index.md` substantially overlap in purpose and whether to keep both is a schema question for the user.
+
+**Verification.** 0 broken wikilinks (excluding illustrative `<slug>` placeholders in this log's own prose); 0 orphan pages; 277 summaries for 276 source files with 0 pending; 271/271 resolvable DOIs now matching their source titles.
+
+---
+
+# 2026-08-13 — Ingest: 20 bookmarked sources (WGA history, methylation protocols, single-cell 3D callers, single-molecule lesions)
+
+**Sources ingested (20).** All had accumulated in `00-Sources/papers/` without summaries. They cluster into five groups.
+
+*scDNA-seq methodology and applications (6).* [[10-Summaries/wang-2014-nuc-seq]] (nuc-seq — G2/M nuclei give MDA four template copies; 91% breadth, 9.73% ADO; punctuated CNAs vs gradual SNVs), [[10-Summaries/gawad-2014-all-clonal-origins]] (1,479 ALL cells; codominant clones in 5/6 patients; four-way ADO measurement; clone-detection design rule), [[10-Summaries/hou-2015-wga-comparison]] and [[10-Summaries/huang-2015-scwga-review]] (the two independent 2015 WGA benchmarks), [[10-Summaries/luquette-2021-scan2]] (SCAN2 — neuronal rate revised to 15 SNVs/yr, first indel rate), [[10-Summaries/liu-2024-hidef-seq]] (HiDEF-seq — unamplified single molecules, single-strand mismatch and damage signatures).
+
+*Single-cell methylation (5).* [[10-Summaries/luo-2017-snmc-seq]] (snmC-seq founding paper — mCH in 100-kb bins as the sparsity workaround), [[10-Summaries/clark-2017-scbs-seq-protocol]] (PBAT protocol, ~50% CpG/cell), [[10-Summaries/guo-2015-scrrbs-protocol]] (one-tube scRRBS, ~70% CGIs, consistent CpGs across cells), [[10-Summaries/mulqueen-2018-sci-met]] (combinatorial indexing; alignment rate 68% vs the field's 25%), [[10-Summaries/zhang-2023-drop-bs]] (droplets; in-droplet bisulfite conversion yields 9× more library).
+
+*Single-cell 3D genome (5).* [[10-Summaries/yu-2021-snaphic]] (loops), [[10-Summaries/xiong-2024-scghost]] (subcompartments), [[10-Summaries/park-2026-mintsc]] (multi-way interactions), [[10-Summaries/chakraborty-2022-dchic]] (differential compartments), [[10-Summaries/li-2014-chia-pet]] (the protein-anchored branch).
+
+*Single-cell genome assembly (3).* [[10-Summaries/chitsaz-2011-velvet-sc]], [[10-Summaries/peng-2012-idba-ud]], [[10-Summaries/bankevich-2012-spades]] — a historical layer the corpus was missing entirely.
+
+*Spatial (1).* [[10-Summaries/debnath-2026-ison]] (ISON — inferring spatial chromatin accessibility from ST + sc-multiome).
+
+**Pages created (33).** 20 summaries; 4 concepts ([[30-Concepts/chromatin-loop]], [[30-Concepts/multi-way-chromatin-interaction]], [[30-Concepts/single-cell-genome-assembly]], [[30-Concepts/chia-pet]]); 9 entities ([[20-Entities/chongyuan-luo]], [[20-Entities/andrew-adey]], [[20-Entities/chang-lu]], [[20-Entities/ming-hu]], [[20-Entities/sunduz-keles]], [[20-Entities/ferhat-ay]], [[20-Entities/yijun-ruan]], [[20-Entities/pavel-pevzner]], [[20-Entities/zhana-duren]]).
+
+**Pages updated (52).** 19 entity pages, 17 concept pages, 16 topic pages, plus `index.md`. All updates are dated `## Added 2026-08-13` sections.
+
+**Notable findings and tensions.**
+
+- **Chemistry sets biological constants.** SCAN2 revises the neuronal somatic SNV rate down to 15/year and attributes the revision to artifacts in older amplification chemistries ([[10-Summaries/luquette-2021-scan2]]). Read alongside the 2014 duplex-validation result that only 19.4–27.0% of single-cell-only mutation calls survive orthogonal confirmation ([[10-Summaries/wang-2014-nuc-seq]]), the corpus now has two independent demonstrations that single-cell-only calls need an arbiter.
+- **HiDEF-seq refutes NanoSeq's single-strand calls** — ~18-fold inflated across nine matched samples ([[10-Summaries/liu-2024-hidef-seq]]). Flagged on [[30-Concepts/nanoseq]]; NanoSeq remains sound for double-strand burdens. This is the session's one direct contradiction between sources.
+- **"MDA" is not one thing.** Three MDA kits diverged more on some metrics than the three chemistries did ([[10-Summaries/hou-2015-wga-comparison]]) — recorded on [[30-Concepts/scwga-chemistries]].
+- **Binary A/B compartments are too coarse**, reached independently at bulk scale (~26% of significant changes involve no flip — [[10-Summaries/chakraborty-2022-dchic]]) and at single-cell scale (bulk A2 and B1 are not separable by single-cell scores — [[10-Summaries/xiong-2024-scghost]]).
+- **A shared limitation across all four single-cell 3D callers**: every one reports features per *cell type*, not per cell, and assumes within-cluster homogeneity. The single-cell formulation currently buys statistical power rather than per-cell feature variability. Recorded on [[30-Concepts/single-cell-hi-c]] and [[40-Topics/3d-genome]].
+- **All high-throughput methylation methods share an annotation dependency**: they cluster on mCH bins then label against snmC-seq reference DMRs rather than annotating de novo ([[10-Summaries/mulqueen-2018-sci-met]]; [[10-Summaries/zhang-2023-drop-bs]]). Recorded on [[30-Concepts/bisulfite-sequencing]].
+- **Reduced representation is the road not taken.** scRRBS covers ~1M *consistent* CpGs per cell; the high-throughput successors cover ~1% *randomly*, so two cells rarely share a site. No benchmark in the corpus tests whether consistency beats coverage for cross-cell comparison ([[10-Summaries/guo-2015-scrrbs-protocol]]).
+- **The protein-anchored 3D branch has no single-cell member** and instead serves as reference truth for single-cell loop callers — so those callers are scored against a bulk-defined truth, which penalises genuinely single-cell-specific loops by construction ([[10-Summaries/li-2014-chia-pet]]; [[10-Summaries/yu-2021-snaphic]]).
+- **Source limitation.** [[10-Summaries/luquette-2021-scan2]] was clipped as abstract-only (58 lines, no methods or results). The summary is marked accordingly; the peer-reviewed Cell Genomics 2022 version should replace it.
+
+**Verification.** 0 broken wikilinks across all 85 created/modified files (checked by extracting every wikilink target and diffing against the set of existing page basenames).
+
+**Open maintenance item.** Link convention is mixed repo-wide: ~7,300 path-prefixed links (of the form `[[10-Summaries/<slug>]]`) versus bare links, despite `CLAUDE.md` preferring bare. The 2026-08-10 pass normalized only the pages written that day. This session's pages follow the prefixed majority. A repo-wide normalization is a large refactor and was **not** performed — flagged for a decision.
+
+---
+
 # 2026-08-10 — Maintenance: merge + link-convention normalization
 
 Follow-up resolving the two items the rinse pass had flagged for a decision.
@@ -604,7 +668,7 @@ Found 4 May 18 PDFs that the slug-based pending-sources.sh flagged but which wer
 - Updated [[30-Concepts/lamina-associated-domains]] — added van Steensel 2017 as canonical source; added Open questions section (cLAD/fLAD continuous-vs-categorical, three-compartment competition, laminopathy mechanisms)
 - Updated [[40-Topics/chromatin-architecture]] — added van Steensel 2017 to Nuclear lamina lineage
 - Updated [[40-Topics/single-cell-multiomics]] — added Wang 2023 to Reviews
-- Updated [[index.md]] — added LADs review to Lamina lineage; added Reviews line to Multi-Omics Joint Assays; added regulatory-layers note to Synthesis section
+- Updated [[index]] — added LADs review to Lamina lineage; added Reviews line to Multi-Omics Joint Assays; added regulatory-layers note to Synthesis section
 
 ### Open questions surfaced
 
@@ -1636,7 +1700,7 @@ Brain mosaicism + mtDNA + applications:
 
 **Created (new pages)**:
 - 9 summary pages.
-- 8 new concept pages: [[30-Concepts/sci-car]], [[30-Concepts/share-seq]], [[30-Concepts/scnmt-seq]], [[30-Concepts/g-t-seq]], [[30-Concepts/dr-seq]], [[30-Concepts/sctrio-seq]], [[30-Concepts/igs]] (the eighth: existing fiber-seq.md was substantially rewritten — see Updated).
+- 8 new concept pages: [[30-Concepts/sci-car]], [[30-Concepts/share-seq]], [[30-Concepts/scnmt-seq]], [[30-Concepts/gt-seq]], [[30-Concepts/dr-seq]], [[30-Concepts/sctrio-seq]], [[30-Concepts/igs]] (the eighth: existing fiber-seq.md was substantially rewritten — see Updated).
 
 **Updated existing pages**:
 - [[30-Concepts/fiber-seq]] — rewrote major sections with primary-source content (Stergachis 2020): operating point, all-or-none actuation, co-actuation in cis, boundary nucleosome model, single-molecule CTCF footprinting. Concept page grew from 44 to ~110 lines.
@@ -1681,7 +1745,7 @@ Brain mosaicism + mtDNA + applications:
   - 4 new topic pages: [[40-Topics/duplex-sequencing]], [[40-Topics/single-cell-atac-seq]], [[40-Topics/histone-modifications]], [[40-Topics/3d-genome]].
   - ~70 new concept pages spanning: duplex methods (codec, nanoseq, hidef-seq, umi-molecular-barcoding, mutational-signatures); methylation chemistry (taps, 5hmc, nome-seq, sctem-seq, simple-seq, splicool-seq, scepi2-seq, 6-base-cut-and-tag, viral-mimicry, transposable-elements, decitabine, uhrf1, epigenetic-memory, cancer-of-unknown-primary, epigenetic-aging, scbs-seq, allele-specific-methylation); scATAC-seq tools (chromvar, cistopic, snapatac, episcanpy, scabc, micro-atac-seq, scatac-seq, scanpy, anndata, pseudo-bulk, tn5-tagmentation, combinatorial-indexing, icell8-nanowell, latent-dirichlet-allocation, jaccard-similarity, nystrom-method, k-medoids, transcription-factor-motif, de-novo-motif-discovery, cis-regulatory-element, replication-timing, enhancer-states); histone modifications (histone-modifications, chip-seq, cut-and-tag, cut-and-run, chic-seq, sortchic, scchic-seq, scchix-seq, scicut-tag, multi-tag, chromatin-velocity, deephistone, convolutional-neural-network); 3D genome (3d-genome, single-cell-hi-c, topologically-associating-domain, chromatin-compartments, sc-sprite, dip-c, stark, sscce, empty-cells-algorithm); long-read (oxford-nanopore, pacbio, smrt-tag, samosa-tag, samosa, stam-seq, nanopore-adaptive-sampling, highly-repetitive-regions, structural-variants, somagauss-sv, laryngeal-squamous-cell-carcinoma, lung-adenocarcinoma); mosaicism biology (mitochondrial-heteroplasmy, kimura-distribution, mitochondrial-lineage-tracing, focal-cortical-dysplasia, mtor-pathway, autism-spectrum-disorder, alzheimers-disease); variant calling (scout-variant-caller, monovar, sccaller, allele-dropout).
   - ~30 new entity pages: scott-kennedy, lawrence-loeb, ludmil-alexandrov, joseph-gleeson, tim-coorens, lovelace-luquette, alexej-abyzov, peter-park, flora-vaccarino, smaht-network, patrick-chinnery, james-stewart, sara-bizzotto, manolis-kellis, li-huei-tsai, heather-lee, chengqi-yi, xiaoying-fan, joseph-costello, shankar-balasubramanian, biomodal, alexander-van-oudenaarden, chun-xiao-song, dan-xie, stein-aerts, bing-ren, jason-buenrostro, sandy-klemm, wing-hung-wong, keji-zhao, steven-henikoff, jake-yeung, ana-conesa, vijay-ramani, jixian-zhai, hua-jun-wu, jim-hughes, maria-colome-tatche, rui-jiang, jifeng-liu, fuying-dao.
-- **Updated existing pages:** [[40-Topics/somatic-mosaicism]], [[40-Topics/dna-methylation]], [[40-Topics/long-read-sequencing]], [[40-Topics/chromatin-architecture]], [[40-Topics/single-cell-multiomics]] (added new sources, concepts, entities, sub-themes). [[20-Entities/christopher-walsh]], [[20-Entities/william-greenleaf]], [[20-Entities/fabian-theis]] (added new paper mentions). [[index.md]] heavily reorganized with new sections for duplex sequencing, methylation methods, scATAC-seq tooling, histone modifications, 3D genome, and long-read methods.
+- **Updated existing pages:** [[40-Topics/somatic-mosaicism]], [[40-Topics/dna-methylation]], [[40-Topics/long-read-sequencing]], [[40-Topics/chromatin-architecture]], [[40-Topics/single-cell-multiomics]] (added new sources, concepts, entities, sub-themes). [[20-Entities/christopher-walsh]], [[20-Entities/william-greenleaf]], [[20-Entities/fabian-theis]] (added new paper mentions). [[index]] heavily reorganized with new sections for duplex sequencing, methylation methods, scATAC-seq tooling, histone modifications, 3D genome, and long-read methods.
 - **Notable findings / framings**:
   - **The duplex-sequencing field has converged**: six methods in the SMaHT benchmark ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]) give concordant mutation-rate and signature estimates despite distinct chemistries. The implications: (a) cross-platform meta-analysis is now legitimate within SMaHT-class studies; (b) accuracy is no longer the differentiator — pick the method by input requirement / cost / target footprint.
   - **The single-cell + duplex gap remains**: every duplex method requires intact dsDNA, but scWGA loses strand identity. Closing this is the single biggest open methodological frontier in mosaicism research — flagged in [[40-Topics/duplex-sequencing]] open questions.

@@ -1,6 +1,8 @@
 ---
 type: summary
 title: "Ghorbani 2019 — Computational-based approaches in epigenetic research"
+doi: "10.7324/JABB.2019.70114"
+journal: "Journal of Applied Biology & Biotechnology"
 aliases: ["Ghorbani Shokri-Gharelo 2019", "computational epigenetics overview"]
 tags: [review, computational-epigenetics, DNA-methylation, machine-learning, bisulfite-sequencing, low-impact]
 created: 2026-05-13
@@ -9,7 +11,7 @@ source: "[[00-Sources/papers/Computational-based approaches in epigenetic resear
 sources: ["Roghayeh_2019_JournalOfAppliedBiologyAnd;Biotechnology.pdf"]
 ---
 
-**Citation:** Ghorbani et al. (2019) — *Computational-based approaches in epigenetic research* — *JournalOfAppliedBiologyAnd*.
+**Citation:** Ghorbani et al. (2019) — *Computational-based approaches in epigenetic research* — *Journal of Applied Biology & Biotechnology* 7(1):89–98. [DOI](https://doi.org/10.7324/JABB.2019.70114)
 
 Ghorbani and Shokri-Gharelo (University of Tabriz) authored a brief, general review of computational-based approaches to epigenetic data in the Journal of Applied Biology & Biotechnology. Covers: experimental methods feeding computational analysis (ChIP-seq, MeDIP, methyl-seq, bisulfite sequencing, MBD-seq); databases (MethDB, REBASE, MethPrimerDB, MethyLogiX); computational methods for CpG island identification (algorithms, ANN, SVM); HMM-based methylation prediction; general machine-learning applications to epigenetic markers.
 

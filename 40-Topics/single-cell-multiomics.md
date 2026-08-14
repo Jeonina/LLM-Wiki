@@ -213,3 +213,11 @@ Regulatory-network inference from joint accessibility and expression: [[10-Summa
 - [[scdna-capabilities-framework]]
 - [[50-Notes/joint-assays-by-layer-pair]]
 - [[10-Summaries/argelaguet-2021-integration-principles]] · [[10-Summaries/hao-2024-seurat-v5]] · [[10-Summaries/vandereyken-2023-spatial-multiomics]] · [[10-Summaries/lim-2024-single-cell-omics-review]]
+
+## Added 2026-08-13
+
+ISON ([[10-Summaries/debnath-2026-ison]]) addresses a gap that is commercial rather than conceptual: spatial multiome kits do not exist, while spatial transcriptomics and single-cell multiome kits do. It learns a shared embedding across the two and decodes spatial RNA through the multiome's ATAC decoder to infer spatial chromatin accessibility, then reconstructs spatially resolved GRNs.
+
+Two findings worth carrying beyond the spatial context: the **linear KL-NMF model beat a contrastive VAE** consistently, and the *inferred* accessibility recovered eQTL- and Hi-C-supported regulatory links **better than the directly measured** spatial ATAC ([[10-Summaries/debnath-2026-ison]]).
+
+A validation trick from a different domain belongs here too: [[10-Summaries/park-2026-mintsc]] validates chromatin contacts using **DNA methylation partial correlations** from the same sn-m3C-seq cells — an argument only available in joint assays, and the sharpest demonstration in the corpus that co-measurement pays off analytically rather than only descriptively. (synthesis)

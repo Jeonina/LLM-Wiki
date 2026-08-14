@@ -31,3 +31,7 @@ Affiliations: Wellcome Trust-Cancer Research UK Gurdon Institute, University of 
 - [[30-Concepts/scrna-seq]] — concept Tang's 2009 paper anchors
 - [[10-Summaries/tang-2009-scrna-seq]] · [[10-Summaries/hou-2016-sctrio-seq]]
 - [[40-Topics/single-cell-multiomics]]
+
+## Added 2026-08-13
+
+Corresponding author of [[10-Summaries/guo-2015-scrrbs-protocol]], the scRRBS protocol. The design argument is a counting argument: a diploid cell has two DNA molecules, so every purification step loses information irreplaceably — scRRBS collapses all five pre-PCR purifications into **one tube**. Result: ~1 million CpGs per cell including ~70% of CpG islands, and crucially a **consistent** set of CpGs across cells (MspI cuts the same sites everywhere), unlike the random sampling of whole-genome methods.

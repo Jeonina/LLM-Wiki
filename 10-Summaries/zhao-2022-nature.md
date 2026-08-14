@@ -2,10 +2,10 @@
 type: summary
 title: "Zhao 2022 — Spatial genomics enables multi-modal study of clonal heterogeneity in tissues (slide-DNA-seq)"
 source: "[[00-Sources/papers/Spatial genomics enables multi-modal study of clonal heterogeneity in tissues]]"
-aliases: ["slide-DNA-seq", "Zhao 2022", "spatial scDNA"]
+aliases: ["slide-DNA-seq", "Zhao 2022", "spatial scDNA", "Morriss 2024 spatial genomics", "spatial genomics clonal heterogeneity"]
 tags: [slide-DNA-seq, spatial-genomics, scDNA, cancer, CNV, Chen-lab, Buenrostro-lab]
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-08-13
 ---
 
 **Citation:** Zhao et al. (2022) — *Spatial genomics enables multi-modal study of clonal heterogeneity in tissues (slide-DNA-seq)* — *Nature*. [DOI](https://doi.org/10.1038/s41586-021-04217-4)
@@ -31,3 +31,11 @@ The first scalable spatial scDNA-seq method, complementary to in-situ genome seq
 - [[10-Summaries/kim-2018-tnbc-chemoresistance]]
 - [[20-Entities/jason-buenrostro]]
 - fei chen
+
+## Added 2026-08-13 — merged duplicate page
+
+A second summary of this same paper existed as `morriss-2024-spatial-genomics-clonal`, created 2026-05-18 at `ingest_depth: abstract+intro`. It pointed at **the same source file** but carried three errors: it named a middle author (Julia Morriss) as first author, dated the paper 2024 instead of 2022, and cited DOI `10.1101/2024.10.07.617096`, which resolves to an unrelated bioRxiv preprint on environment and diet. The page has been deleted and its inbound links repointed here. (synthesis)
+
+Content worth keeping from the merged page: slide-DNA-seq is positioned as the **sequencing-side** answer to a two-sided problem — sequencing loses spatial information, imaging loses genome-wide variant information — and is complementary to in-situ genome sequencing ([[10-Summaries/andrewc-2020-science]], Payne 2021 IGS), which approaches the same axis from the imaging side.
+
+Author list (corrected): Tongtong Zhao, Zachary D. Chiang, Julia W. Morriss, Lindsay M. LaFave, Evan M. Murray, Isabella Del Priore, Kevin Meli, Caleb A. Lareau, Naeem M. Nadaf, Jilong Li, Andrew S. Earl, Evan Z. Macosko, Tyler Jacks, Fei Chen, Jason D. Buenrostro — *Nature* 601, 85–91 (2022).

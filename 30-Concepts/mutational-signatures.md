@@ -42,3 +42,13 @@ Two constraints for single-cell work: mutation prevalence spans five orders of m
 ## Related
 
 - [[40-Topics/duplex-sequencing]] · [[40-Topics/somatic-mosaicism]] · [[20-Entities/ludmil-alexandrov]]
+
+## Added 2026-08-13
+
+The framework extends from 96 to **192 trinucleotide contexts** once single-strand events can be read: the standard 96-context spectrum collapses each mutation onto its pyrimidine representation, discarding strand, but with per-strand single-molecule data the pyrimidine/purine split carries real information ([[10-Summaries/liu-2024-hidef-seq]]).
+
+**New nomenclature**: an `ss` suffix marks a single-strand mismatch signature, `ss*` a single-strand damage signature. SBS10ss (*POLE* proofreading deficiency) projects onto its samples' own dsDNA signatures at cosine 0.97 and onto COSMIC SBS10c at 0.90; SBS14ss covers combined MMR + proofreading deficiency; SBS30ss* is cytosine deamination damage ([[10-Summaries/liu-2024-hidef-seq]]).
+
+This resolves **which chemical event initiated which mutation class** — previously inferrable only indirectly from replication-timing asymmetry or from in vitro gap-filling assays lacking replication and repair context ([[10-Summaries/liu-2024-hidef-seq]]).
+
+Signature reasoning also appears without a formal signature framework: TC-motif cytosine bias in childhood ALL was read as APOBEC rather than AID activity, supported by the absence of a WRCY motif and the lack of correlation with VH-segment mutation ([[10-Summaries/gawad-2014-all-clonal-origins]]).

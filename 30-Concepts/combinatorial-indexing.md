@@ -27,3 +27,11 @@ Cells are partitioned into N wells, each receiving a unique first-round barcode;
 ## Related
 
 - [[30-Concepts/icell8-nanowell]] · [[30-Concepts/scicut-tag]] · [[30-Concepts/simple-seq]] · [[30-Concepts/splicool-seq]]
+
+## Added 2026-08-13
+
+Extended to bisulfite sequencing by sci-MET, via **cytosine-depleted transposome adaptors** that survive conversion; the second adaptor is added after conversion by five rounds of random priming, making sci-MET a hybrid of indexed tagmentation and PBAT ([[10-Summaries/mulqueen-2018-sci-met]]).
+
+**Nucleosome depletion chemistry silently sets the collision rate.** Lithium-3,5-diiodosalicylate gave a 22% barcode collision rate — unusable — while crosslinking + SDS gave 7.3%, in line with other sci- protocols ([[10-Summaries/mulqueen-2018-sci-met]]). An apparently upstream sample-prep choice determines the doublet rate of the whole experiment. (synthesis)
+
+Throughput algebra is `N × D`: wells in the second indexing stage × pre-indexed nuclei per well; collision rate is tunable by D ([[10-Summaries/mulqueen-2018-sci-met]]). Efficiency across runs varied from 33.5% to 78.5% with no stated chemistry change ([[10-Summaries/mulqueen-2018-sci-met]]).

@@ -34,3 +34,17 @@ The sparsity arithmetic: 5–10% linear genome coverage becomes **0.25–1% of p
 ## Related
 
 - [[40-Topics/3d-genome]] · [[30-Concepts/topologically-associating-domain]] · [[30-Concepts/chromatin-compartments]] · [[40-Topics/3d-genome]]
+
+## Added 2026-08-13
+
+Three 2021–2026 methods extend scHi-C beyond clustering to per-feature calling, and share a common statistical move — **treat cells as replicates rather than as reads**.
+
+- **Loops**: [[10-Summaries/yu-2021-snaphic|SnapHiC]] imputes each cell separately (random walk with restart), then paired *t*-tests across cells at each bin pair. Pseudobulk approaches need >500–1,000 cells; SnapHiC calls 1,050–1,420 loops from 75 ([[10-Summaries/yu-2021-snaphic]]).
+- **Subcompartments**: [[10-Summaries/xiong-2024-scghost|scGHOST]] embeds loci as graph nodes via constrained random walks over Higashi-imputed maps. Subcompartments resisted single-cell analysis for a coverage-arithmetic reason — bulk annotation needs ≥50M *trans* reads, and scHi-C has almost none even at pseudobulk ([[10-Summaries/xiong-2024-scghost]]).
+- **Multi-way interactions**: [[10-Summaries/park-2026-mintsc|MINTsC]] reads scHi-C as a multilayer network where a multi-way contact is a clique — a question bulk Hi-C cannot express at all ([[10-Summaries/park-2026-mintsc]]).
+
+**Systematic biases in imputed scHi-C are negligible**: normalisation against fragment size, GC content, or mappability is unnecessary, unlike bulk Hi-C — sparsity apparently swamps the systematic biases ([[10-Summaries/yu-2021-snaphic]]).
+
+**A shared unresolved dependency**: all three assume a homogeneous cell group and report features per *cell type*, not per cell. The single-cell formulation buys statistical power but does not yet deliver per-cell feature variability ([[10-Summaries/yu-2021-snaphic]]; [[10-Summaries/park-2026-mintsc]]). (synthesis)
+
+Cell-type labels in the brain applications come from methylation, independently of contacts ([[10-Summaries/luo-2017-snmc-seq]]; [[10-Summaries/lee-2019-natmethods]]).

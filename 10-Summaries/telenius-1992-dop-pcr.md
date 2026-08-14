@@ -14,7 +14,7 @@ concepts: ["[[dop-pcr]]", "[[scwga]]", "[[scwga-chemistries]]"]
 topics: ["[[whole-genome-amplification]]"]
 ---
 
-**Citation:** Telenius et al. (1992) — *Degenerate oligonucleotide-primed PCR: general amplification of target DNA by a single degenerate primer* — *Genomics* 13, 718–725. [DOI](https://doi.org/10.1016/0888-7543(92)90147-K)
+**Citation:** Telenius et al. (1992) — *Degenerate oligonucleotide-primed PCR: general amplification of target DNA by a single degenerate primer* — *Genomics* 13, 718–725. [DOI](https://doi.org/10.1016/0888-7543%2892%2990147-K)
 
 # Telenius 1992 — DOP-PCR
 

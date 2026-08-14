@@ -46,3 +46,13 @@ SVs include:
 
 - [[40-Topics/somatic-mosaicism]] · [[40-Topics/long-read-sequencing]] · [[30-Concepts/somagauss-sv]] · [[40-Topics/somatic-mosaicism]]
 - [[10-Summaries/eichler-2007-completing-sv-map]] · [[10-Summaries/spielmann-2018-sv-3d-genome]] · [[10-Summaries/lupianez-2015-tad-disruption]] · [[30-Concepts/topologically-associating-domain]]
+
+## Added 2026-08-13
+
+Why single-cell SV calling lagged single-cell CNV calling by a decade: **chimeras**. Chimera formation during φ29's branching amplification joins non-contiguous sequences, and this is named as the reason structural variations are difficult to observe at single-cell level, while CNVs from hundreds of kilobases to megabases are detectable relatively easily ([[10-Summaries/huang-2015-scwga-review]]).
+
+Chimeras also appear as an **assembly-graph** problem rather than a calling problem. [[10-Summaries/chitsaz-2011-velvet-sc|Velvet-SC]] worked around them by discarding read pairing entirely; [[10-Summaries/bankevich-2012-spades|SPAdes]] promoted chimera detection and removal to a named pipeline stage and thereby recovered the use of read pairs ([[10-Summaries/chitsaz-2011-velvet-sc]]; [[10-Summaries/bankevich-2012-spades]]).
+
+This is why [[30-Concepts/strand-seq|Strand-seq]] and scTRIP took a completely different route — template-strand inheritance rather than improved amplification — to single-cell SV detection ([[10-Summaries/falconer-2012-natmethods]]; [[10-Summaries/sanders-2020-sctrip]]). (synthesis)
+
+Chimera *rate* is named as a WGA evaluation axis but no standard assay for measuring it exists in the corpus ([[10-Summaries/huang-2015-scwga-review]]). (synthesis)

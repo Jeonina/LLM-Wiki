@@ -19,3 +19,9 @@ updated: 2026-08-10
 ## Related
 
 - [[imputation]] · [[single-cell-hi-c]] · [[3d-genome]]
+
+## Added 2026-08-13
+
+Corresponding author of [[10-Summaries/xiong-2024-scghost]] (scGHOST), the first method for annotating **single-cell 3D genome subcompartments**. Subcompartments had resisted single-cell analysis for a coverage-arithmetic reason — bulk annotation needs ≥50M *trans* reads and scHi-C has almost none — so scGHOST substitutes graph-embedding structure via constrained random walks over [[10-Summaries/zhang-2022-higashi|Higashi]]-imputed maps.
+
+Its most consequential finding: on HiRES joint RNA+Hi-C embryo data, **~50% of marker genes switch subcompartment before upregulation** and only 14% change synchronously.

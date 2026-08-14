@@ -125,3 +125,15 @@ Infrastructure is catalogued under *Pipelines, storage, visualization* above. Tw
 
 - [[10-Summaries/bersaglieri-2019-cells]] — Bersaglieri & Santoro 2019 — Genome organization in and around the nucleolus.
 - [[10-Summaries/naumova-2013-mitotic-chromosome]] · [[10-Summaries/lupianez-2015-tad-disruption]] · [[10-Summaries/spielmann-2018-sv-3d-genome]] · [[10-Summaries/durand-2016-juicer]]
+
+## Added 2026-08-13
+
+Five sources ingested 2026-08-13 extend the single-cell 3D toolkit from clustering to per-feature calling, and add the protein-anchored branch.
+
+- **Loops**: [[10-Summaries/yu-2021-snaphic]] (SnapHiC) — cells as replicates, not as reads; 1,050–1,420 loops from 75 cells; 788 SNP–gene linkages for neuropsychiatric GWAS variants including astrocyte-specific *APOE* enhancer loops. See [[30-Concepts/chromatin-loop]].
+- **Subcompartments**: [[10-Summaries/xiong-2024-scghost]] (scGHOST) — graph embedding substitutes for the *trans* reads scHi-C does not have; ~50% of marker genes switch subcompartment *before* upregulation.
+- **Multi-way interactions**: [[10-Summaries/park-2026-mintsc]] (MINTsC) — scHi-C as a multilayer network, multi-way contact as a clique; used to collapse the multiple-testing burden for epistatic eQTLs. See [[30-Concepts/multi-way-chromatin-interaction]].
+- **Differential compartments**: [[10-Summaries/chakraborty-2022-dchic]] (dcHiC) — ~26% of significant compartment changes involve no A↔B flip; works on pseudobulk scHi-C from as few as 100 cells per condition.
+- **The protein-anchored branch**: [[10-Summaries/li-2014-chia-pet]] — source of the ">40% of enhancers skip their nearest promoter" statistic, and of the observation that this branch has no single-cell member. See [[30-Concepts/chia-pet]].
+
+**A cross-cutting gap.** All four single-cell methods report features per *cell type*, not per cell, and all assume within-cluster homogeneity. The single-cell formulation currently buys statistical power rather than per-cell feature variability. (synthesis)

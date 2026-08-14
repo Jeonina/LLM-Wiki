@@ -39,3 +39,13 @@ updated: 2026-08-10
 ## Related
 
 - [[40-Topics/scdna-cancer-applications]] · [[40-Topics/somatic-mosaicism]]
+
+## Added 2026-08-13
+
+Two 2014 studies ingested 2026-08-13 establish the two design poles and the two architectural findings.
+
+[[10-Summaries/wang-2014-nuc-seq]] (breast cancer, deep per cell): **aneuploid rearrangements early and frozen, point mutations gradual** — two clocks in one tumour. A stochastic birth–death model parameterised with Ki-67, caspase-3, cell counts and doubling time gives 13.3× elevated mutation rate for the TNBC and a normal-cell-equivalent rate for the ER⁺ tumour (n = 1 each).
+
+[[10-Summaries/gawad-2014-all-clonal-origins]] (childhood ALL, many cells at targeted loci): **codominant clones in five of six patients**; structural variants precede point mutations (13/16 deletions present in all clones); *KRAS* mutations are late and insufficient for dominance; clones within a patient are arrested at different B-cell developmental stages, a treatment-resistance hypothesis derived from IgH sequences.
+
+See [[30-Concepts/intratumor-heterogeneity]] for the consolidated argument and the clone-detection design rule.

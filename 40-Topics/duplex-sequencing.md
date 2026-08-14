@@ -97,3 +97,11 @@ _Future synthesis target_: "Duplex vs scDNA-seq complementarity" — duplex capt
 - [[meta-cs]] — single-cell-compatible duplex method.
 - [[scdna-capabilities-framework]] — fidelity capability.
 - [[40-Topics/somatic-mosaicism]] · [[40-Topics/scdna-seq]] · [[40-Topics/long-read-sequencing]]
+
+## Added 2026-08-13
+
+HiDEF-seq ([[10-Summaries/liu-2024-hidef-seq]]) marks the boundary of what duplex sequencing can do. Duplex methods achieve high fidelity for **double-strand** mutations, but because they amplify before reading they either convert single-strand lesions into double-strand mutations or manufacture artifactual ones — so the **precursor** events are invisible to them ([[10-Summaries/liu-2024-hidef-seq]]).
+
+Concretely: across nine samples run on both platforms, HiDEF-seq and [[10-Summaries/abascal-2021-nanoseq|NanoSeq]] agree on dsDNA burdens and patterns, but NanoSeq's ssDNA call burdens are ~18-fold higher with distinct patterns — largely artifact ([[10-Summaries/liu-2024-hidef-seq]]).
+
+The pairing of duplex sequencing with single-cell calls as an **arbiter** predates the current frontier by a decade: [[10-Summaries/wang-2014-nuc-seq]] used targeted duplex sequencing at ~5,700–6,600× single-molecule depth to test single-cell mutation calls, finding only 19.4–27.0% of single-cell-only calls validated. (synthesis)

@@ -39,7 +39,7 @@ A Comment, not a benchmark — its weight is taxonomic and agenda-setting, and i
 - The stated gaps are the interesting part, and they aged well:
   1. **Histone modifications and TF occupancy were missing** from every scalable joint assay. The authors point at Kaya-Okur's pA-Tn5 ([[kaya-okur-2019-cut-and-tag]]) and propose combining it with sci-CAR/SNARE-seq/Paired-seq — which is precisely what [[zhang-2022-sccut-tag-pro]] and scCUT&Tag-derived joint assays then did.
   2. **Transcriptome × proteome** joint profiling: called out as blocked because RNA and protein resist conversion to a common capture chemistry, and single-cell proteomics was not established. Still largely true in this corpus.
-  3. **Spatial** integration (Slide-seq, imaging), with the specific ask that in-situ profiling be extended to methylation and accessibility — answered later by [[cardilla-2025-spatial-methylome]] and [[morriss-2024-spatial-genomics-clonal]].
+  3. **Spatial** integration (Slide-seq, imaging), with the specific ask that in-situ profiling be extended to methylation and accessibility — answered later by [[cardilla-2025-spatial-methylome]] and [[10-Summaries/zhao-2022-nature]].
 - Data sparsity is named as possibly requiring "fundamentally new biochemistry" rather than better protocols — a stronger claim than most reviews make, and one that the corpus's imputation tools ([[scatac-imputation]], [[angermueller-2017-genomebiol|DeepCpG]]) implicitly dispute.
 - Conspicuously absent from the 2020 taxonomy: the **genotype × epigenome** cell, which had no scalable method until [[izzo-2024-got-cha|GoT-ChA]]. That absence is a direct citation for this wiki's [[mosaicism-and-epigenome-the-synthesis-gap|synthesis gap]] framing.
 

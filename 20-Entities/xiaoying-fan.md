@@ -19,3 +19,7 @@ updated: 2026-05-12
 ## Related
 
 - [[30-Concepts/splicool-seq]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/dna-methylation]]
+
+## Added 2026-08-13
+
+Coauthor of [[10-Summaries/guo-2015-scrrbs-protocol]], the single-tube scRRBS protocol.

@@ -31,3 +31,9 @@ Center for Human Genetics and Genomics, Grossman School of Medicine, New York Un
 - [[30-Concepts/scdna-capabilities-framework]] — Evrony framework.
 - [[40-Topics/scdna-seq]]
 - [[40-Topics/scdna-seq]]
+
+## Added 2026-08-13
+
+Corresponding author of [[10-Summaries/liu-2024-hidef-seq]] (HiDEF-seq), which sequences **unamplified single molecules** on PacBio to read the **single-strand mismatches and damage that precede** double-strand mutations — a class every amplification-based method destroys or fabricates. It derives the first single-strand mutational signatures (SBS10ss, SBS14ss, SBS30ss*) and shows NanoSeq's ssDNA calls are ~18-fold inflated.
+
+This sharpens the [[30-Concepts/scdna-capabilities-framework|capabilities framework]]: the tradeoff is not only among amplification chemistries but between amplifying at all and reading lesions. (synthesis)

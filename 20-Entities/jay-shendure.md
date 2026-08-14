@@ -25,3 +25,7 @@ updated: 2026-05-19
 
 - [[20-Entities/aviv-regev]]
 - [[40-Topics/single-cell-multiomics]] · [[40-Topics/single-cell-atac-seq]]
+
+## Added 2026-08-13
+
+Coauthor of [[10-Summaries/mulqueen-2018-sci-met]] (sci-MET), which extended the sci- combinatorial-indexing family to bisulfite sequencing using cytosine-depleted transposome adaptors.

@@ -38,3 +38,22 @@ Coverage uniformity ↑, allelic dropout ↓, error rate ↓ — but no chemistr
 - [[30-Concepts/scwga]] · [[30-Concepts/pta]] · [[40-Topics/duplex-sequencing]]
 - [[40-Topics/whole-genome-amplification]] · [[40-Topics/scdna-seq]]
 - [[10-Summaries/telenius-1992-dop-pcr]] · [[10-Summaries/zong-2017-malbac-protocol]] · [[10-Summaries/laks-2019-dlp-plus]] · [[30-Concepts/dlp-plus]]
+
+## Added 2026-08-13
+
+Two 2015 benchmarks, published three weeks apart from independent groups, converge on the same ordering — and on the same conclusion that **there is no best WGA method, only a best method per variant class** ([[10-Summaries/hou-2015-wga-comparison]]; [[10-Summaries/huang-2015-scwga-review]]).
+
+| Axis | DOP-PCR | MDA | MALBAC |
+|---|---|---|---|
+| Genome recovery (consensus-genotype detection efficiency) | ~6% | ~84% | ~52% ([[10-Summaries/hou-2015-wga-comparison]]) |
+| Read evenness / CNV accuracy | best | variable by kit | good ([[10-Summaries/hou-2015-wga-comparison]]) |
+| Mapping ratio | 89.31% | 98.36% | 97.68% ([[10-Summaries/hou-2015-wga-comparison]]) |
+| Concordance where detected | 82.05% | 97.10% | 96.74% ([[10-Summaries/hou-2015-wga-comparison]]) |
+
+**Kit identity matters as much as chemistry identity.** Three MDA kits diverged more on some metrics than the chemistries did: REPLI-g Single Cell gave the best coverage (8.84%), REPLI-g Mini had the *highest* read-distribution bias of all seven kits tested, and GenomiPhi V2 showed strong GC dependence ([[10-Summaries/hou-2015-wga-comparison]]). "We used MDA" is insufficient methods description. (synthesis)
+
+DOP-PCR is specifically depleted in Alu and L1 repeat regions, a direct consequence of degenerate-primer annealing ([[10-Summaries/hou-2015-wga-comparison]]).
+
+**The eight-axis evaluation vocabulary** — coverage, uniformity, reproducibility, unmappable rate, chimera rate, allele dropout rate, SNV false-positive rate, CNV-calling ability — comes from [[10-Summaries/huang-2015-scwga-review]] and is still how the field argues about WGA. Note that "reproducibility" is a distinct axis from "uniformity": consistent bias is workable for CNV calling with matched controls; random bias is not. (synthesis)
+
+A fourth lever exists that is not a chemistry at all: **input copy number**. Sorting G2/M nuclei gives MDA four copies of each locus instead of one, cutting allele dropout to 9.73% and lifting breadth to 91% ([[10-Summaries/wang-2014-nuc-seq]]).

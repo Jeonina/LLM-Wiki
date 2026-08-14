@@ -34,3 +34,15 @@ A textbook ccRCC lacked both canonical drivers — no *VHL* coding mutation, *PB
 ## Related
 
 - [[chromosomal-instability]] · [[copy-number-variation]] · [[phylogenetic-inference]] · [[cancer-clonal-evolution]]
+
+## Added 2026-08-13
+
+Two 2014 papers made complementary design choices and reached complementary conclusions about clonal architecture.
+
+**Depth per cell** ([[10-Summaries/wang-2014-nuc-seq]], 4–59 nuclei at 91% breadth): aneuploid rearrangements arise early and remain highly stable through clonal expansion, while point mutations accumulate gradually — **two clocks running at different speeds in the same tumour**. Clonality survives at the copy-number level and fails at the point-mutation level in the same cells; no two single tumour cells are genetically identical ([[10-Summaries/wang-2014-nuc-seq]]).
+
+**Cells per experiment** ([[10-Summaries/gawad-2014-all-clonal-origins]], 1,479 cells at targeted loci): **five of six childhood ALL patients had ≥2 clones each comprising ≥25% of cells**. Codominance, not one dominant clone with minor satellites, is the normal architecture — and bulk allele frequencies structurally cannot resolve it, because clones at similar frequency produce mutations at similar VAF ([[10-Summaries/gawad-2014-all-clonal-origins]]).
+
+Codominance breaks the linear-succession model: if the fittest clone always sweeps, two clones would not each hold a quarter of the tumour. What sustains the balance is unresolved; a *KRAS*-mutant clone coexisting with a *RAB27B*-mutant sibling hints at parallel adaptive peaks ([[10-Summaries/gawad-2014-all-clonal-origins]]). (synthesis)
+
+**Design rule for clone detection**: ~200 cells to detect a 1% clone, 75 for 2%, 50 for 4% — roughly 2–3 cells from a clone are needed to call it, and mutation count stops mattering above ~30 ([[10-Summaries/gawad-2014-all-clonal-origins]]).

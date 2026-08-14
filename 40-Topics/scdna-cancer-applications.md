@@ -44,6 +44,12 @@ updated: 2026-05-19
 
 ## Linked summaries (lint pass 2026-05-21)
 
-- [[10-Summaries/morriss-2024-spatial-genomics-clonal]] — Morriss 2024 — Spatial genomics for multimodal clonal heterogeneity in tissues.
+- [[10-Summaries/zhao-2022-nature]] — Morriss 2024 — Spatial genomics for multimodal clonal heterogeneity in tissues.
 - [[10-Summaries/zhao-2022-nature]] — Zhao 2022 — slide-DNA-seq: spatial genomics of clonal heterogeneity.
 
+
+## Added 2026-08-13
+
+Two foundational applications ingested 2026-08-13: [[10-Summaries/wang-2014-nuc-seq]] (breast cancer, punctuated CNAs vs gradual SNVs, 13.3× TNBC mutation rate) and [[10-Summaries/gawad-2014-all-clonal-origins]] (childhood ALL, codominant clones in 5/6 patients, deletions before SNVs, late *KRAS*).
+
+Also relevant to cancer predisposition: [[10-Summaries/liu-2024-hidef-seq]] profiles 17 samples across 8 inherited cancer predisposition syndromes and finds elevated single-strand mismatch burdens in *POLE* PPAP (2.6-fold) and CMMRD (1.6-fold), plus distinct patterns in tumours deficient in **both** mismatch repair and polymerase proofreading.

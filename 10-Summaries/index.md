@@ -1,12 +1,12 @@
 ---
 title: Papers
 description: One summary page per source — the distillation layer of the wiki.
-updated: 2026-08-10
+updated: 2026-08-14
 ---
 
 # Papers
 
-Catalog of ~253 paper summaries, the distillation layer of the wiki. Each entry links to a single-source summary, grouped by theme.
+Catalog of ~277 paper summaries, the distillation layer of the wiki. Each entry links to a single-source summary, grouped by theme.
 
 ## scDNA-seq methods & WGA
 
@@ -22,6 +22,13 @@ Catalog of ~253 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/telenius-1992-dop-pcr]] — Telenius 1992, DOP-PCR, the first general-purpose WGA chemistry and the bias baseline for all successors.
 - [[10-Summaries/zong-2017-malbac-protocol]] — Zong 2017, MALBAC protocol chapter framed for single-neuron CNV analysis.
 - [[10-Summaries/laks-2019-dlp-plus]] — Laks 2019, DLP+ amplification-free single-cell genomes at scale (51,926 cells) with imaging-based QC, clone-resolved variants and replication state.
+- [[10-Summaries/wang-2014-nuc-seq]] — Wang 2014, nuc-seq: G2/M nuclei give MDA four template copies; 91% breadth, 9.73% ADO.
+- [[10-Summaries/gawad-2014-all-clonal-origins]] — Gawad 2014, microfluidic MDA + targeted resequencing of 1,479 single ALL cells.
+- [[10-Summaries/hou-2015-wga-comparison]] — Hou 2015, seven commercial WGA kits compared at matched depth.
+- [[10-Summaries/huang-2015-scwga-review]] — Huang & Xie 2015, WGA methodology review and the eight-axis evaluation framework.
+- [[10-Summaries/chitsaz-2011-velvet-sc]] — Chitsaz 2011, Velvet-SC/E+V-SC: progressive coverage cutoff for MDA assembly.
+- [[10-Summaries/peng-2012-idba-ud]] — Peng 2012, IDBA-UD: depth-relative thresholds and iterative k for uneven coverage.
+- [[10-Summaries/bankevich-2012-spades]] — Bankevich 2012, SPAdes: paired de Bruijn graphs and explicit chimera removal.
 
 ## Variant calling & mosaic detection
 
@@ -42,6 +49,7 @@ Catalog of ~253 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/valecha-2022-scsnv-review]] — Valecha 2022, review of somatic variant calling from single-cell DNA.
 - [[10-Summaries/mckenna-2010-gatk]] — McKenna 2010, GATK; the diploid, uniform-coverage bulk null model every single-cell caller replaces.
 - [[10-Summaries/smukowski-heil-2023-loh]] — Smukowski Heil 2023, loss of heterozygosity: rates, adaptive role, and the detection pipeline that collides with allele dropout in single cells.
+- [[10-Summaries/luquette-2021-scan2]] — Luquette 2021, SCAN2: PTA-native SNV + indel calling; neuronal rate revised to 15 SNVs/yr.
 
 ## Duplex / error-corrected sequencing
 
@@ -52,6 +60,7 @@ Catalog of ~253 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/schmitt-2012-pnas]] — Schmitt 2012, Duplex Sequencing founding method for ultra-rare mutations.
 - [[10-Summaries/zhang-2025-smaht-duplex-benchmark]] — Zhang 2025, SMaHT duplex-seq benchmark; six methods give concordant rates.
 - [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — Luquette 2025, PTA + duplex validation across 102 lung/colon nuclei.
+- [[10-Summaries/liu-2024-hidef-seq]] — Liu 2024, HiDEF-seq: unamplified single molecules resolve single-strand mismatch and damage signatures.
 
 ## Somatic mosaicism & disease biology
 
@@ -103,7 +112,6 @@ Catalog of ~253 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/lim-2020-cancercell]] — Lim & Navin 2020, review of single-cell genomics in cancer.
 - [[10-Summaries/liu-2025-nanopore-lscc-svs]] — Liu 2025, nanopore somatic SVs in laryngeal squamous carcinoma.
 - [[10-Summaries/lu-2024-cnaphylogeny-review]] — Lu 2024, review of copy-number-based cancer phylogenetic inference.
-- [[10-Summaries/morriss-2024-spatial-genomics-clonal]] — Morriss 2024, spatial genomics for multi-modal clonal heterogeneity.
 - [[10-Summaries/zhao-2022-nature]] — Zhao 2022, slide-DNA-seq spatial genomics of clonal heterogeneity.
 - [[10-Summaries/gao-2021-copykat]] — Gao 2021, CopyKAT: Bayesian CNV inference from 3′ scRNA-seq at ~5 Mb, 98% tumor/normal classification, clonal substructure.
 - [[10-Summaries/tickle-2019-infercnv]] — Tickle 2019, inferCNV; now formally unsupported, redirecting to CopyKAT and Numbat.
@@ -152,6 +160,7 @@ Catalog of ~253 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/argelaguet-2021-integration-principles]] — Argelaguet 2021, the anchor taxonomy: horizontal / vertical / diagonal / mosaic integration and their assumptions.
 - [[10-Summaries/hao-2024-seurat-v5]] — Hao 2024, bridge integration and atomic sketching (Seurat v5); cross-modality mapping without the gene-activity assumption.
 - [[10-Summaries/lake-2018-brain-snrna-scths]] — Lake 2018, snDrop-seq + scTHS-seq in human brain; a diagonal integration with its failure boundary reported.
+- [[10-Summaries/debnath-2026-ison]] — Debnath 2026, ISON: infers spatial chromatin accessibility from spatial RNA + sc-multiome.
 
 ## scATAC-seq & chromatin accessibility
 
@@ -222,6 +231,11 @@ Catalog of ~253 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/tahiliani-2009-tet1-5hmc]] — Tahiliani 2009, TET1 converts 5mC to 5hmC; the founding 5hmC paper.
 - [[10-Summaries/kremer-2024-methscan]] — Kremer 2024, MethSCAn: tile-averaging dilutes signal; VMR discovery and the first scBS DMR method.
 - [[10-Summaries/chen-2025-sctaps-sccaps-plus]] — Chen 2025, scTAPS/scCAPS+: direct bisulfite-free 5mC and 5hmC at single-cell, single-base resolution.
+- [[10-Summaries/luo-2017-snmc-seq]] — Luo 2017, snmC-seq: mCH in 100-kb bins types 16 mouse / 21 human cortical neuron clusters.
+- [[10-Summaries/clark-2017-scbs-seq-protocol]] — Clark 2017, scBS-seq protocol (PBAT + five-round preamplification, ~50% CpG/cell).
+- [[10-Summaries/guo-2015-scrrbs-protocol]] — Guo 2015, scRRBS protocol: one-tube reaction, ~1M consistent CpGs, ~70% of CGIs.
+- [[10-Summaries/mulqueen-2018-sci-met]] — Mulqueen 2018, sci-MET: combinatorial indexing via cytosine-depleted adaptors; 68% alignment.
+- [[10-Summaries/zhang-2023-drop-bs]] — Zhang 2023, Drop-BS: droplet scWGBS, 10,000 cells in 2 days; in-droplet conversion yields 9x more library.
 
 ## Long-read & single-molecule
 
@@ -261,6 +275,11 @@ Catalog of ~253 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/lupianez-2015-tad-disruption]] — Lupiáñez 2015, TAD boundary disruption causes enhancer hijacking and limb malformation; boundary-sparing controls are benign.
 - [[10-Summaries/spielmann-2018-sv-3d-genome]] — Spielmann 2018, structural variation in the 3D genome: intra-TAD, TAD fusion, neo-TAD, TAD shuffling.
 - [[10-Summaries/durand-2016-juicer]] — Durand 2016, Juicer: HiCCUPS loops (CRISPR-validated anchors), Arrowhead domains, the .hic format.
+- [[10-Summaries/yu-2021-snaphic]] — Yu 2021, SnapHiC: cells-as-replicates loop calling from as few as 75 scHi-C cells.
+- [[10-Summaries/xiong-2024-scghost]] — Xiong 2024, scGHOST: single-cell 3D genome subcompartments by graph embedding.
+- [[10-Summaries/park-2026-mintsc]] — Park 2026, MINTsC: multi-way chromatin interactions as cliques in a multilayer network.
+- [[10-Summaries/chakraborty-2022-dchic]] — Chakraborty 2022, dcHiC: differential compartments across many Hi-C datasets.
+- [[10-Summaries/li-2014-chia-pet]] — Li & Ruan 2014, ChIA-PET protocol and applications; >40% of enhancers skip their nearest promoter.
 
 ## scRNA-seq foundations & computational tools
 

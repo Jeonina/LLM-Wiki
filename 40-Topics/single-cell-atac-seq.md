@@ -74,3 +74,9 @@ None yet. A natural note: "How to choose a scATAC-seq analysis tool" — chromVA
 - [[10-Summaries/derop-2024-natbiotech]] — De Rop 2024 — PUMATAC: systematic benchmarking of scATAC protocols.
 - [[10-Summaries/luo-2024-scatac-benchmark]] — Luo 2024 — Benchmarking computational methods for single-cell chromatin data.
 
+
+## Added 2026-08-13
+
+A computational route to accessibility where the assay is unavailable: ISON infers **spatial** chromatin accessibility from spatial transcriptomics plus single-cell multiome, and reports that the inference recovers regulatory signal better than sparse direct measurement ([[10-Summaries/debnath-2026-ison]]).
+
+It also fills a capability gap in motif-based accessibility analysis: because paralogous TFs share motifs, [[30-Concepts/chromvar|chromVAR]]-style methods cannot separate them, whereas joint expression + accessibility modelling can estimate spot-level TF activity **distinguishing TFs within the same family** ([[10-Summaries/debnath-2026-ison]]).

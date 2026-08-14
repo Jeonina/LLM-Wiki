@@ -39,3 +39,13 @@ updated: 2026-08-10
 - [[40-Topics/scdna-seq]] · [[40-Topics/mosaic-variant-calling]] · [[40-Topics/duplex-sequencing]]
 - [[40-Topics/scdna-seq]] · [[40-Topics/mosaic-variant-calling]]
 - [[10-Summaries/mckenna-2010-gatk]] · [[10-Summaries/smukowski-heil-2023-loh]] · [[10-Summaries/laks-2019-dlp-plus]]
+
+## Added 2026-08-13
+
+SCAN2 extends the SCAN line from SNVs to **indels** and is matched to [[30-Concepts/pta|PTA]] rather than MDA ([[10-Summaries/luquette-2021-scan2]]). The consequence is not just a new variant class but a revised biological constant: neuronal somatic SNV accumulation drops to **15 SNVs/year**, with the revision attributed to artifacts in the older amplification chemistries ([[10-Summaries/luquette-2021-scan2]]). Somatic indels accumulate at ≥2/year per neuron and may have larger functional impact per event ([[10-Summaries/luquette-2021-scan2]]).
+
+Indels were effectively unmeasurable before PTA because MDA's polymerase-slippage artifacts sit on top of the indel signal — getting a rate at all is a chemistry result as much as an algorithm result. (synthesis)
+
+**Validation is the recurring weak point.** Duplex sequencing of nuc-seq calls found that only **19.4–27.0% of single-cell-only ("de novo") mutations validated**, against 90.5–64.8% of subclonal and 94.4–99.7% of clonal calls ([[10-Summaries/wang-2014-nuc-seq]]). Read the other way: the majority of single-cell-only calls are artifact even in a high-quality library — which is why the field converged on orthogonal duplex confirmation ([[50-Notes/single-cell-duplex-sequencing]]). (synthesis)
+
+The abundance-inversion problem these callers negotiate — where an artifact in a well-amplified region outweighs a true signal in a poorly-amplified one — was first named a decade earlier in [[30-Concepts/single-cell-genome-assembly|single-cell assembly]] ([[10-Summaries/peng-2012-idba-ud]]). (synthesis)

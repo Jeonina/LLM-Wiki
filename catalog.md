@@ -4,7 +4,7 @@ title: Full Paper Catalog
 
 # Full Paper Catalog
 
-All papers in this wiki, organized by topic. See also the [[index|landing page]] for guided entry points.
+A curated, topic-organized selection. **Not exhaustive** — for complete coverage of every summary see [[10-Summaries/index|the papers index]]; this page is a reading path, not a registry. See also the [[index|landing page]] for guided entry points.
 
 ---
 
@@ -31,6 +31,10 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/chenghang-2012-science\|Zong 2012 (MALBAC)]] — hybrid PCR/isothermal scWGA
 - [[10-Summaries/chen-2017-lianti\|Chen 2017 (LIANTI)]] — linear amplification via Tn5+T7
 - [[10-Summaries/gonzalez-pena-2021-pnas\|Gonzalez-Pena 2021 (PTA)]] — current scWGA gold standard
+- [[10-Summaries/hou-2015-wga-comparison\|Hou 2015]] — seven commercial kits benchmarked at matched depth
+- [[10-Summaries/huang-2015-scwga-review\|Huang/Xie 2015]] — WGA review; the eight-axis evaluation vocabulary
+- [[10-Summaries/wang-2014-nuc-seq\|Wang/Navin 2014 (nuc-seq)]] — G2/M nuclei as the input-copy-number lever
+- [[10-Summaries/chitsaz-2011-velvet-sc\|Chitsaz 2011 (Velvet-SC)]] · [[10-Summaries/peng-2012-idba-ud\|Peng 2012 (IDBA-UD)]] · [[10-Summaries/bankevich-2012-spades\|Bankevich 2012 (SPAdes)]] — single-cell assembly under uneven coverage
 
 ---
 
@@ -106,6 +110,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/cao-2022-glue\|Cao 2022 (GLUE)]] — graph-linked unpaired multi-omics
 - [[10-Summaries/gong-2021-cobolt\|Gong 2021 (Cobolt)]] — multimodal VAE for scRNA + scATAC
 - [[10-Summaries/xiao-2024-multiomics-benchmark\|Xiao 2024]] — 12-method multi-omics benchmark
+- [[10-Summaries/debnath-2026-ison\|Debnath/Duren 2026 (ISON)]] — inferred spatial chromatin accessibility from ST + sc-multiome
 
 ---
 
@@ -182,6 +187,11 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/kapourani-2019-melissa\|Kapourani 2019 (Melissa)]] — Bayesian methylation imputation
 - [[10-Summaries/kapourani-2021-scmet\|Kapourani 2021 (scMET)]] — methylation-heterogeneity quantification
 - [[10-Summaries/krueger-2011-bismark\|Krueger 2011 (Bismark)]] — founding bisulfite aligner
+- [[10-Summaries/luo-2017-snmc-seq\|Luo 2017 (snmC-seq)]] — mCH-based neuronal cell typing; ~500k CG-DMRs
+- [[10-Summaries/clark-2017-scbs-seq-protocol\|Clark 2017]] — scBS-seq protocol (PBAT, ~50% CpG/cell)
+- [[10-Summaries/guo-2015-scrrbs-protocol\|Guo 2015]] — scRRBS protocol (one tube, ~70% of CGIs, consistent CpGs)
+- [[10-Summaries/mulqueen-2018-sci-met\|Mulqueen 2018 (sci-MET)]] — combinatorial indexing; 68% alignment rate
+- [[10-Summaries/zhang-2023-drop-bs\|Zhang 2023 (Drop-BS)]] — droplet scWGBS, 10k cells in 2 days
 
 ---
 
@@ -209,6 +219,11 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/tan-2018-science\|Tan 2018 (Dip-C)]] — haplotype-resolved diploid 3D genome
 - [[10-Summaries/jiang-2026-stark-scnucleome\|Jiang/Wu 2026 (STARK + scNucleome)]] — unified pipeline + atlas
 - [[10-Summaries/hong-2025-sc3d-genome-review\|Hong/Dao 2025]] — sc 3D-genome review
+- [[10-Summaries/yu-2021-snaphic\|Yu 2021 (SnapHiC)]] — loops from 75 cells; cells as replicates
+- [[10-Summaries/xiong-2024-scghost\|Xiong 2024 (scGHOST)]] — single-cell subcompartments by graph embedding
+- [[10-Summaries/park-2026-mintsc\|Park 2026 (MINTsC)]] — multi-way interactions as cliques; epistatic eQTL prior
+- [[10-Summaries/chakraborty-2022-dchic\|Chakraborty 2022 (dcHiC)]] — differential compartments across many datasets
+- [[10-Summaries/li-2014-chia-pet\|Li/Ruan 2014 (ChIA-PET)]] — protein-anchored interaction mapping
 
 ---
 
@@ -220,6 +235,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/bae-2023-codec\|Bae 2023 (CODEC)]] — concatenated single-duplex sequencing
 - [[10-Summaries/nandi-2025-udseq\|Nandi/Alexandrov 2025 (UDSeq)]] — universal DS from 100 pg
 - [[10-Summaries/zhang-2025-smaht-duplex-benchmark\|Zhang/Coorens 2025]] — SMaHT 6-platform benchmark
+- [[10-Summaries/liu-2024-hidef-seq\|Liu/Evrony 2024 (HiDEF-seq)]] — unamplified single molecules; single-strand mismatch and damage signatures
 
 ---
 
@@ -256,6 +272,7 @@ All papers in this wiki, organized by topic. See also the [[index|landing page]]
 - [[10-Summaries/kaufmann-2022-medicc2\|Kaufmann 2022 (MEDICC2)]] — WGD-aware CN phylogeny
 - [[10-Summaries/lu-2024-cnaphylogeny-review\|Lu 2025]] — CNA-based phylogenetic inference review
 - [[10-Summaries/xiao-2025-epitrace\|Xiao 2025 (EpiTrace)]] — ATAC-based mitotic age
+- [[10-Summaries/luquette-2021-scan2\|Luquette 2021 (SCAN2)]] — PTA-native SNV + indel calling; neuronal rate revised to 15/yr
 
 ---
 

@@ -44,3 +44,11 @@ Mammalian genomes are globally CpG-depleted (~21% of expected CpG counts), an ar
 - [[dnmt]]
 - [[tet-enzymes]]
 - [[40-Topics/dna-methylation]]
+
+## Added 2026-08-13
+
+Reduced-representation bisulfite sequencing exists to enrich for CGIs: MspI digestion plus size selection sequences ~10% of the genome yet reproducibly covers >70% of promoters and >80% of CGIs ([[10-Summaries/guo-2015-scrrbs-protocol]]). At single-cell scale, scRRBS recovers ~1 million CpGs per diploid cell including ~70% of mouse CGIs ([[10-Summaries/guo-2015-scrrbs-protocol]]).
+
+**The underappreciated advantage is consistency, not coverage.** Because MspI cuts the same sites in every cell, scRRBS covers *the same* CpGs across cells, whereas whole-genome methods sample randomly and two cells rarely share a site — which makes per-site cross-cell comparison mostly missing data ([[10-Summaries/guo-2015-scrrbs-protocol]]). No benchmark in the corpus tests whether this translates into better cross-cell DMR detection, despite it being the strongest argument for the method. (synthesis)
+
+The structural cost: CpGs outside CCGG-proximal fragments are invisible, which matters for the distal-enhancer discovery that whole-genome methylome work makes central ([[10-Summaries/luo-2017-snmc-seq]]). (synthesis)

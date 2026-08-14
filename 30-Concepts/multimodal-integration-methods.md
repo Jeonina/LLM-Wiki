@@ -36,3 +36,13 @@ updated: 2026-08-10
 
 - [[40-Topics/single-cell-multiomics]] · [[30-Concepts/joint-single-cell-multi-omics]]
 - [[10-Summaries/argelaguet-2021-integration-principles]] · [[10-Summaries/hao-2024-seurat-v5]] · [[10-Summaries/lake-2018-brain-snrna-scths]]
+
+## Added 2026-08-13
+
+A useful counterexample to the deep-generative default: in ISON, the **linear KL-NMF model consistently beat a contrastive joint VAE** on both datasets and both metrics (peak-wise PCC 0.23 vs 0.09, and 0.15 vs 0.07) ([[10-Summaries/debnath-2026-ison]]). The NMF variant carries a Laplacian spatial-smoothness prior and modality-specific batch-correction vectors — structure a VAE would have to learn from data. (synthesis)
+
+ISON also outperformed MOFA, CCA+KNN, Tangram, RCTD, SPAGE and GIMVI at predicting spatial chromatin accessibility from spatial transcriptomics plus sc-multiome ([[10-Summaries/debnath-2026-ison]]).
+
+In [[30-Concepts/spatial-multiomics|spatial]] terms this is **diagonal integration with a physical anchor** — different modalities, different cells, bridged by a shared latent space and constrained by spatial adjacency ([[10-Summaries/argelaguet-2021-integration-principles]]; [[10-Summaries/debnath-2026-ison]]). (synthesis)
+
+One capability is specific to joint expression + accessibility modelling: **distinguishing TFs within the same family**, which motif-based accessibility methods structurally cannot do because paralogues share motifs ([[10-Summaries/debnath-2026-ison]]).

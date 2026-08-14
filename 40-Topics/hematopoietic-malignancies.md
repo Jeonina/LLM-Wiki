@@ -54,3 +54,7 @@ _None yet._
 ## Related
 
 - [[40-Topics/clonal-hematopoiesis]] · [[40-Topics/cancer-clonal-evolution]] · [[30-Concepts/intratumor-heterogeneity]] · [[30-Concepts/chromosomal-instability]]
+
+## Added 2026-08-13
+
+[[10-Summaries/gawad-2014-all-clonal-origins]] adds the childhood ALL clonal-architecture baseline: 1,479 single cells from six patients, **codominant clones in five of six**, structural variants acquired before point mutations, an APOBEC-like TC-motif cytosine bias, subclonal and late *KRAS*, and clones arrested at different B-cell developmental stages within the same patient.

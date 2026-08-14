@@ -19,3 +19,7 @@ updated: 2026-08-10
 ## Related
 
 - [[copy-number-variation]] · [[phylogenetic-inference]] · [[cancer-clonal-evolution]]
+
+## Added 2026-08-13
+
+Coauthor of [[10-Summaries/wang-2014-nuc-seq]], the nuc-seq breast cancer clonal-evolution study.

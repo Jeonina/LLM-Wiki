@@ -56,3 +56,11 @@ Tissue context matters: dissociation for conventional scRNA-seq destroys spatial
 
 - [[40-Topics/single-cell-multiomics]]
 - [[40-Topics/single-cell-multiomics]]
+
+## Added 2026-08-13
+
+Spatial multiome kits are not commercially available, while spatial transcriptomics and single-cell multiome kits both are — an asymmetry that ISON exploits computationally, inferring spatial chromatin accessibility and then spatially resolved GRNs from the two available data types ([[10-Summaries/debnath-2026-ison]]).
+
+**The evaluation is constrained by the same data gap it addresses**: no dataset pairs spatial multiome with sc-multiome from the same tissue, so every benchmark splits one spatial multiome dataset into pseudo-sc-multiome and pseudo-spatial halves, or transfers across timepoints ([[10-Summaries/debnath-2026-ison]]). (synthesis)
+
+The method is a bet against the hardware roadmap: if spatial epigenome assays commercialise, the motivation weakens ([[10-Summaries/cardilla-2025-spatial-methylome]]; [[10-Summaries/debnath-2026-ison]]). (synthesis)

@@ -21,3 +21,7 @@ updated: 2026-08-13
 ## Related
 
 - [[spatial-multiomics]] · [[multimodal-integration-methods]] · [[gene-regulatory-network]] · [[40-Topics/single-cell-multiomics]]
+
+## Added 2026-08-17
+
+Corresponding author of [[10-Summaries/yuan-2024-linger]] (LINGER), the GRN method that ISON later builds on. LINGER treats GRN inference as a data problem — most single cells are not independent, so the effective sample size is far below the cell count — and imports atlas-scale external **bulk** data by lifelong learning, with motif priors injected via manifold regularisation. Reported fourfold to sevenfold relative accuracy increase over a field the paper describes as previously "only marginally better than random prediction".

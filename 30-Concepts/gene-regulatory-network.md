@@ -39,3 +39,15 @@ The strongest argument for network reasoning: *Gata1*'s mild phenotype in early 
 ## Related
 
 - [[cis-regulatory-element]] · [[enhancer-states]] · [[transcription-factor-motif]] · [[computational-methods]]
+
+## Added 2026-08-17
+
+[[10-Summaries/yuan-2024-linger|LINGER]] reframes GRN inference as a **data** problem rather than a modelling one: single-cell data supplies many cells but few *independent* data points, while the model has enormous numbers of parameters. Its fix is **lifelong learning** — pre-load knowledge from atlas-scale external **bulk** data across diverse contexts, then adapt to the multiome at hand — plus **manifold regularisation** to inject TF–RE motif priors into a non-linear model ([[10-Summaries/yuan-2024-linger]]).
+
+Reported gain: a **fourfold to sevenfold relative increase** in accuracy — against a field the paper itself describes as having been "only marginally better than random prediction" ([[10-Summaries/yuan-2024-linger]]). A relative improvement on a weak baseline is the honest reading. (synthesis)
+
+**Two structural limitations of prior approaches, named precisely** ([[10-Summaries/yuan-2024-linger]]): co-expression methods (WGCNA, ARACNe, GENIE3) produce **undirected** edges — TF_A–TF_B cannot be oriented — and correlation is not causal regulation. Motif-based footprinting **cannot distinguish within-family TFs** that share a motif; only bringing expression into the model breaks the tie, an argument the same group repeats for spatial data in [[10-Summaries/debnath-2026-ison]].
+
+Output is three network levels (cell-population, cell-type-specific, cell-level) each with three edge types — *trans* (TF–TG), *cis* (RE–TG), TF-binding (TF–RE). TF self-regulation is explicitly excluded as unmodellable without additional data ([[10-Summaries/yuan-2024-linger]]).
+
+**"Most single cells are not independent"** is the underappreciated point, and it generalises: thousands of cells from one donor, tissue and state carry far less information than the cell count suggests. The same caution applies to every method that treats cells as statistical replicates, including [[10-Summaries/yu-2021-snaphic|SnapHiC]] and [[10-Summaries/park-2026-mintsc|MINTsC]]. (synthesis)

@@ -49,3 +49,11 @@ Two 2014 studies ingested 2026-08-13 establish the two design poles and the two 
 [[10-Summaries/gawad-2014-all-clonal-origins]] (childhood ALL, many cells at targeted loci): **codominant clones in five of six patients**; structural variants precede point mutations (13/16 deletions present in all clones); *KRAS* mutations are late and insufficient for dominance; clones within a patient are arrested at different B-cell developmental stages, a treatment-resistance hypothesis derived from IgH sequences.
 
 See [[30-Concepts/intratumor-heterogeneity]] for the consolidated argument and the clone-detection design rule.
+
+## Added 2026-08-17
+
+Five tumour-phylogeny methods ingested 2026-08-14 complete the corpus's coverage of the 2016–2019 generation: [[10-Summaries/ross-2016-onconem]] (nested effects models; infers **unobserved** subpopulations), [[10-Summaries/el-kebir-2018-sphyr]] (*k*-Dollo, because CNAs delete SNVs constantly), [[10-Summaries/singer-2018-sciphi]] (joint calling + tree by MCMC), [[10-Summaries/malikic-2019-phiscs]] (subperfect phylogeny; bulk VAF constraints; ILP *and* Boolean CSP), [[10-Summaries/foroughmand-2022-scelestial]] (Steiner-tree approximation with performance guarantees). See [[30-Concepts/phylogenetic-inference]] for the model × search-strategy table.
+
+**"Fewer than 100 cells" was the design constraint of the whole 2016 generation** ([[10-Summaries/ross-2016-onconem]]), which is why mixture models were rejected and why these methods should be re-evaluated against droplet-scale data ([[10-Summaries/pellegrino-2018-tapestri]]). (synthesis)
+
+Two additions from outside the SNV-tree tradition: [[10-Summaries/kwok-2022-mquad]] brings mtDNA variants in as a complementary clonal marker, and [[10-Summaries/gabbutt-2025-evoflux]] infers growth rate, malignancy age and epimutation rate from **bulk methylation arrays** across 1,976 lymphoid cancers — deliberately trading per-cell resolution for the cohort scale that clinical association testing requires. Its most striking result: the seed of a Richter-transformed CLL clone existed **decades before presentation**.

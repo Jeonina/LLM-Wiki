@@ -19,3 +19,9 @@ updated: 2026-08-10
 ## Related
 
 - [[phylogenetic-inference]] · [[lineage-tracing]] · [[computational-methods]]
+
+## Added 2026-08-17
+
+Corresponding author of [[10-Summaries/gayoso-2021-totalvi]] (totalVI), the deep-generative model for CITE-seq. Its distinguishing contribution is not the neural network but the **protein background model**: antibody counts carry a large ambient / non-specifically-bound component that RNA counts do not, and totalVI separates protein signal into background and foreground inside the generative model rather than as a preprocessing step.
+
+Part of the scvi-tools framework, which also produces [[10-Summaries/ashuach-2023-multivi]] — so the CITE-seq and RNA+ATAC problems share a codebase and a modelling philosophy.

@@ -19,3 +19,9 @@ updated: 2026-08-10
 ## Related
 
 - [[batch-effect]] · [[multimodal-integration-methods]] · [[computational-methods]]
+
+## Added 2026-08-17
+
+Corresponding author of [[10-Summaries/kang-2021-symphony]] (Symphony), built on the same group's [[10-Summaries/korsunsky-2019-harmony]]. Symphony makes **reference atlas mapping** a distinct operation from integration: compress an integrated reference into a portable form and localise query cells within the **frozen** embedding in seconds, rather than re-integrating de novo — which is intractable at atlas scale and corrupts the annotated reference.
+
+Its most striking capability is inferring a modality the query never measured — surface protein predicted by mapping onto a CITE-seq atlas. See [[30-Concepts/reference-atlas-mapping]].

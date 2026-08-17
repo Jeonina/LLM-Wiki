@@ -44,3 +44,21 @@ Captures 100s–1000s of surface protein markers in panels.
 - [[40-Topics/single-cell-multiomics]]
 - [[dogma-seq]]
 - [[40-Topics/single-cell-multiomics]]
+
+## Added 2026-08-17
+
+Two 2021 methods and one 2022 successor define the computational side of CITE-seq, and they disagree productively.
+
+**Protein has a noise problem RNA does not.** Antibody counts carry a large ambient / non-specifically-bound **background** component — systematic and additive, not statistical noise — so treating it as noise inflates apparent expression in every negative population. [[10-Summaries/gayoso-2021-totalvi|totalVI]] separates protein signal into background and foreground inside the generative model ([[10-Summaries/gayoso-2021-totalvi]]). This is the CITE-seq analogue of the ambient-RNA problem. (synthesis)
+
+**Post-hoc contextualisation breaks at scale.** With a handful of markers you can cluster on RNA and inspect protein afterwards; at **208–228 antibodies** ([[10-Summaries/gayoso-2021-totalvi]]; [[10-Summaries/hao-2021-seurat-wnn]]) that sequential approach "biases the analysis to one modality and becomes increasingly inefficient" ([[10-Summaries/gayoso-2021-totalvi]]).
+
+**Three approaches, four months apart, from different traditions:**
+
+| Method | Tradition | Distinctive property |
+|---|---|---|
+| [[10-Summaries/hao-2021-seurat-wnn]] (WNN) | nearest-neighbour graph | per-cell modality weights; 211,000-cell / 228-antibody PBMC reference atlas |
+| [[10-Summaries/gayoso-2021-totalvi]] | deep generative | protein background model; each cell a *distribution* in latent space |
+| [[10-Summaries/lakkis-2022-scipenn]] | deep learning | censored loss merges **partially overlapping antibody panels**; returns **uncertainty**; faster than both |
+
+**Predicting protein from RNA alone** — training on a CITE-seq reference and applying to cheaper scRNA-seq — is now a standard capability ([[10-Summaries/lakkis-2022-scipenn]]; also achievable by reference mapping, [[10-Summaries/kang-2021-symphony]]). Only sciPENN returns a confidence estimate, so elsewhere an imputed protein value is indistinguishable from a measured one in the output matrix. (synthesis) See [[reference-atlas-mapping]].

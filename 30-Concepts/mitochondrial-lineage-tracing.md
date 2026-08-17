@@ -32,3 +32,15 @@ mtDNA's high copy number and random segregation between daughter cells mean only
 
 - [[30-Concepts/lineage-tracing]] · [[30-Concepts/mitochondrial-heteroplasmy]] · [[40-Topics/somatic-mosaicism]] · [[30-Concepts/phylogenetic-inference]]
 - [[40-Topics/somatic-mosaicism]] · [[40-Topics/single-cell-lineage-tracing]]
+
+## Added 2026-08-17
+
+mtDNA is the **cheap** endogenous barcode: high copy number, mutation rate >10× the nuclear genome, and variants come along free with any scRNA-seq, scATAC-seq or scDNA-seq experiment — no deep whole-genome sequencing required, which is why mtDNA tracing scaled where nuclear-SNV tracing did not ([[10-Summaries/kwok-2022-mquad]]). (synthesis)
+
+**The bottleneck is variant selection, not variant detection.** Most mtDNA variants are noise or non-clonal. [[10-Summaries/kwok-2022-mquad|MQuad]] fits each variant to a binomial with one shared allele frequency (H₀) versus a two-component mixture (H₁) and ranks by **ΔBIC**, with the cutoff set automatically at the knee of the cumulative ΔBIC curve ([[10-Summaries/kwok-2022-mquad]]).
+
+**Nuclear callers fail structurally**: [[monovar|Monovar]] and Conbase assume a **diploid context** that the mitochondrial genome violates, so the binomial parameter must range freely from 0 to 1 to accommodate any heteroplasmy level ([[10-Summaries/kwok-2022-mquad]]). Benchmark on simulated Smart-seq2 data: AUPRC 0.976 (MQuad) vs 0.800 (mgatk) vs 0.147 (Monovar) — and the authors note AUROC is uninformative under 150-vs-16,000 class imbalance ([[10-Summaries/kwok-2022-mquad]]).
+
+**Two hard limits.** Below **~1% allele frequency all tools fail**, because average technical noise sits at 0.44% — the boundary is set by chemistry, not statistics ([[10-Summaries/kwok-2022-mquad]]). And **linear evolution is the hardest topology**: when clones nest rather than branch, most variants are shared and carry little discriminative signal ([[10-Summaries/kwok-2022-mquad]]) — a point that generalises to every clonal-inference method. (synthesis)
+
+Positioned as **complementary** to nuclear SNVs and CNVs rather than a replacement, giving finer clonal resolution in combination ([[10-Summaries/kwok-2022-mquad]]). Pipeline: cellSNP-lite → MQuad → vireoSNP.

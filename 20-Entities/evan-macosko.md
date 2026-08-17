@@ -25,3 +25,7 @@ updated: 2026-05-19
 
 - [[20-Entities/aviv-regev]] · [[20-Entities/steven-mccarroll]]
 - [[40-Topics/single-cell-multiomics]]
+
+## Added 2026-08-17
+
+Coauthor of [[10-Summaries/biancalani-2021-tangram]] (Tangram, spatial alignment), alongside his Slide-seq lineage and the spatial genomics work at [[10-Summaries/zhao-2022-nature]] (slide-DNA-seq).

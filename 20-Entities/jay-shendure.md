@@ -29,3 +29,7 @@ updated: 2026-05-19
 ## Added 2026-08-13
 
 Coauthor of [[10-Summaries/mulqueen-2018-sci-met]] (sci-MET), which extended the sci- combinatorial-indexing family to bisulfite sequencing using cytosine-depleted transposome adaptors.
+
+## Added 2026-08-17
+
+Coauthor of [[10-Summaries/seidel-2026-sciphy]] (SciPhy), the Bayesian framework for **sequential** prime-editing lineage recorders — where each insertion deactivates its site and activates the next, so edit *order* is recorded. Prior analyses of such data used UPGMA with custom distances and discarded the ordering entirely.

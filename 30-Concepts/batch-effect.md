@@ -37,3 +37,17 @@ Coverage heterogeneity is the leading factor driving clustering results, ahead o
 ## Related
 
 - [[multimodal-integration-methods]] · [[dimensionality-reduction]] · [[cell-type-annotation]] · [[computational-methods]]
+
+## Added 2026-08-17
+
+Founding single-cell treatment ingested 2026-08-14: [[10-Summaries/haghverdi-2018-mnn]].
+
+**The composition-invariance assumption is the flaw.** limma's `removeBatchEffect` and ComBat fit a linear model with a batch blocking term and zero its coefficient; RUVseq and svaseq identify unknown factors and regress them out. All assume population composition is identical across batches — true enough for bulk, false for single cell, because dissociation, culture, and sorting all shift cell-type abundance. When composition differs, "the estimated coefficients for the batch blocking factors are not purely technical but contain a nonzero biological component", and correction "might potentially be worse than if no correction were performed" ([[10-Summaries/haghverdi-2018-mnn]]).
+
+**MNN's weaker assumption**: only a *subset* of the population need be shared. Cells that are mutually nearest neighbours across batches are taken to be the same type; their expression difference estimates the batch effect, averaged over many pairs ([[10-Summaries/haghverdi-2018-mnn]]). Overlap is discovered rather than assumed, so batch-specific cell types do not distort the estimate.
+
+**Landmark projection fails on novel types** — cells outside the reference's transcriptional space get projected somewhere arbitrary ([[10-Summaries/haghverdi-2018-mnn]]), the same limitation that [[reference-atlas-mapping|reference mapping]] inherits by design.
+
+The MNN pair is the **ancestor of the "anchor"**: Seurat v3 generalised it, and [[10-Summaries/hao-2024-seurat-v5|bridge integration]] and [[10-Summaries/kang-2021-symphony|Symphony]] are both descendants of the same intuition — find provably corresponding cells, then use their difference as the correction. (synthesis)
+
+Batch effects are structural rather than accidental at atlas scale: large projects must generate data at different times, by different operators, with different dissociation protocols, chemistries and sequencers ([[10-Summaries/haghverdi-2018-mnn]]).

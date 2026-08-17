@@ -80,3 +80,7 @@ None yet. A natural note: "How to choose a scATAC-seq analysis tool" — chromVA
 A computational route to accessibility where the assay is unavailable: ISON infers **spatial** chromatin accessibility from spatial transcriptomics plus single-cell multiome, and reports that the inference recovers regulatory signal better than sparse direct measurement ([[10-Summaries/debnath-2026-ison]]).
 
 It also fills a capability gap in motif-based accessibility analysis: because paralogous TFs share motifs, [[30-Concepts/chromvar|chromVAR]]-style methods cannot separate them, whereas joint expression + accessibility modelling can estimate spot-level TF activity **distinguishing TFs within the same family** ([[10-Summaries/debnath-2026-ison]]).
+
+## Added 2026-08-17
+
+Two additions from the 2026-08-14 ingest. [[10-Summaries/song-2021-scgcn]] benchmarks label transfer **across molecular layers** (RNA→ATAC) among 30 datasets — the demanding case, since the two modalities share no feature space and the mapping must run through gene-activity scores. [[10-Summaries/yuan-2024-linger]] uses paired accessibility and expression for GRN inference, and articulates why accessibility alone is insufficient: motif-based footprinting **cannot distinguish within-family TFs** that share a motif.

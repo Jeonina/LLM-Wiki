@@ -43,3 +43,30 @@ The transferable lesson is that assay-specific physical constraints belong in th
 
 - [[30-Concepts/crispr-lineage-recording]] · [[30-Concepts/lineage-tracing]] · [[30-Concepts/single-cell-variant-calling]] · [[30-Concepts/monovar]] · [[10-Summaries/jahn-2016-scite]]
 - [[40-Topics/single-cell-lineage-tracing]] · [[20-Entities/zheng-hu]]
+
+## Added 2026-08-17
+
+Eleven sources ingested 2026-08-14 make the single-cell tree-inference landscape sortable on **two axes: evolutionary model × search strategy** ([[10-Summaries/foroughmand-2022-scelestial]] supplies the taxonomy). (synthesis)
+
+**Evolutionary model — a claim about the mutational process, not a ladder of generality.**
+
+| Model | Rule | Method |
+|---|---|---|
+| Infinite sites (perfect phylogeny) | gained once, never lost | [[10-Summaries/jahn-2016-scite]], [[10-Summaries/ross-2016-onconem]] |
+| *k*-Dollo | gained once, lost ≤ *k* times | [[10-Summaries/el-kebir-2018-sphyr]] (and SASC) |
+| Finite sites | any state change allowed | [[10-Summaries/zafar-2017-sifit]] |
+| Subperfect | keep perfect phylogeny as target, **penalise** violations | [[10-Summaries/malikic-2019-phiscs]] |
+| Star homoplasy | mutate at most once *per lineage*, convergence allowed | [[10-Summaries/sashittal-2023-startle]] |
+| PMM (mixed-type missing) | non-modifiability + rate decay + heritable vs dropout missingness + heterogeneous sites | [[10-Summaries/chu-2025-laml]] |
+
+For cancer SNVs the model encodes a biological claim — loss via copy-number aberration is ubiquitous, parallel gain is rare ([[10-Summaries/el-kebir-2018-sphyr]]). For CRISPR recorders it encodes a property of the *engineering*: non-modifiability exists because an edited target no longer matches its guide RNA ([[10-Summaries/sashittal-2023-startle]]), which makes those models far better justified. (synthesis)
+
+**Search strategy**: MCMC ([[10-Summaries/jahn-2016-scite]], [[10-Summaries/singer-2018-sciphi]], [[10-Summaries/seidel-2022-tidetree]], [[10-Summaries/seidel-2026-sciphy]]) · heuristic likelihood ([[10-Summaries/ross-2016-onconem]]) · ILP/CSP with optimality guarantees ([[10-Summaries/el-kebir-2018-sphyr]], [[10-Summaries/malikic-2019-phiscs]]) · approximation algorithm with performance bounds ([[10-Summaries/foroughmand-2022-scelestial]]) · EM + topology search ([[10-Summaries/chu-2025-laml]]) · distance-based ([[10-Summaries/gong-2022-dclear]]).
+
+**Three ideas worth carrying beyond phylogenetics.**
+
+- **Tree inference and error correction are the same problem.** Reached independently in 2018 at two different levels — read counts ([[10-Summaries/singer-2018-sciphi]]) and genotype matrices ([[10-Summaries/el-kebir-2018-sphyr]]). The tree is a prior on genotypes, so a mutation can be called in a cell with zero variant reads ([[10-Summaries/singer-2018-sciphi]]) — powerful when the tree is right, and a generator of correlated false positives when it is not. (synthesis)
+- **Imputation belongs inside the objective**, not before it ([[10-Summaries/foroughmand-2022-scelestial]]; [[10-Summaries/chu-2025-laml]]).
+- **Missing data can be informative.** Heritable missingness is inherited by descendants and carries phylogenetic signal; dropout does not — and the two look identical in the data ([[10-Summaries/chu-2025-laml]]).
+
+**Only topology, or topology plus time?** Non-probabilistic methods (distance, parsimony) are robust and scalable but cannot produce time-resolved branch lengths, which precludes asking *when* migration, fate or fitness changes occurred ([[10-Summaries/chu-2025-laml]]). That gap is what the probabilistic generation closes — and [[10-Summaries/chu-2025-laml|LAML]] uses it to map metastasis to real time, finding three epochs and a burst at ~month 2.

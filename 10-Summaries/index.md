@@ -6,7 +6,7 @@ updated: 2026-08-14
 
 # Papers
 
-Catalog of ~277 paper summaries, the distillation layer of the wiki. Each entry links to a single-source summary, grouped by theme.
+Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry links to a single-source summary, grouped by theme.
 
 ## scDNA-seq methods & WGA
 
@@ -50,6 +50,7 @@ Catalog of ~277 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/mckenna-2010-gatk]] — McKenna 2010, GATK; the diploid, uniform-coverage bulk null model every single-cell caller replaces.
 - [[10-Summaries/smukowski-heil-2023-loh]] — Smukowski Heil 2023, loss of heterozygosity: rates, adaptive role, and the detection pipeline that collides with allele dropout in single cells.
 - [[10-Summaries/luquette-2021-scan2]] — Luquette 2021, SCAN2: PTA-native SNV + indel calling; neuronal rate revised to 15 SNVs/yr.
+- [[10-Summaries/singer-2018-sciphi]] — Singer 2018, SCIΦ: joint mutation calling and tumour phylogeny by MCMC.
 
 ## Duplex / error-corrected sequencing
 
@@ -99,6 +100,18 @@ Catalog of ~277 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/miller-2022-maester]] — Miller 2022, MAESTER mtDNA variant enrichment from scRNA-seq.
 - [[10-Summaries/sun-2025-scmitomut]] — Sun 2025, scMitoMut calls mitochondrial lineage mutations in single cells.
 - [[10-Summaries/hsieh-2026-scmtmpm-scwmss]] — Hsieh 2026, multi-omic mitochondrial mutational mosaicism and dynamics.
+- [[10-Summaries/ross-2016-onconem]] — Ross & Markowetz 2016, OncoNEM: nested effects models; infers unobserved subpopulations.
+- [[10-Summaries/el-kebir-2018-sphyr]] — El-Kebir 2018, SPhyR: k-Dollo model, because CNAs delete SNVs.
+- [[10-Summaries/malikic-2019-phiscs]] — Malikic 2019, PhISCS: subperfect phylogeny from single-cell + bulk, by ILP and Boolean CSP.
+- [[10-Summaries/foroughmand-2022-scelestial]] — Foroughmand-Araabi 2022, Scelestial: Steiner-tree approximation with performance guarantees.
+- [[10-Summaries/gong-2022-dclear]] — Gong 2022, DCLEAR: distance-based CRISPR lineage reconstruction; DREAM Challenge winner.
+- [[10-Summaries/seidel-2022-tidetree]] — Seidel & Stadler 2022, TiDeTree: Bayesian phylodynamics for lineage recorders in BEAST 2.
+- [[10-Summaries/sashittal-2023-startle]] — Sashittal 2023, Startle: star homoplasy model for CRISPR-Cas9 non-modifiability.
+- [[10-Summaries/chu-2025-laml]] — Chu 2025, LAML: time-resolved lineage trees; separates heritable missingness from dropout.
+- [[10-Summaries/seidel-2026-sciphy]] — Seidel 2026, SciPhy: Bayesian framework using the order of sequential prime-editing insertions.
+- [[10-Summaries/kwok-2022-mquad]] — Kwok 2022, MQuad: selecting clonally informative mtDNA variants by binomial-mixture ΔBIC.
+- [[10-Summaries/shahryary-2020-alphabeta]] — Shahryary 2020, AlphaBeta: forward/backward epimutation rates from pedigree methylomes (plants).
+- [[10-Summaries/gabbutt-2025-evoflux]] — Gabbutt 2025, EVOFLUx: cancer evolutionary dynamics from bulk fluctuating-CpG methylation, 1,976 samples.
 
 ## Cancer & clonal evolution
 
@@ -161,6 +174,16 @@ Catalog of ~277 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/hao-2024-seurat-v5]] — Hao 2024, bridge integration and atomic sketching (Seurat v5); cross-modality mapping without the gene-activity assumption.
 - [[10-Summaries/lake-2018-brain-snrna-scths]] — Lake 2018, snDrop-seq + scTHS-seq in human brain; a diagonal integration with its failure boundary reported.
 - [[10-Summaries/debnath-2026-ison]] — Debnath 2026, ISON: infers spatial chromatin accessibility from spatial RNA + sc-multiome.
+- [[10-Summaries/haghverdi-2018-mnn]] — Haghverdi 2018, MNN: batch correction by mutual nearest neighbours; kills the composition-invariance assumption.
+- [[10-Summaries/butler-2018-seurat-cca]] — Butler 2018, Seurat CCA alignment across conditions, technologies and species.
+- [[10-Summaries/hao-2021-seurat-wnn]] — Hao 2021, weighted nearest neighbor (Seurat v4); per-cell modality weights; 211k-cell CITE-seq atlas.
+- [[10-Summaries/gayoso-2021-totalvi]] — Gayoso 2021, totalVI: deep generative CITE-seq model with a protein background component.
+- [[10-Summaries/lakkis-2022-scipenn]] — Lakkis 2022, sciPENN: protein prediction/imputation with uncertainty; merges partial antibody panels.
+- [[10-Summaries/kang-2021-symphony]] — Kang 2021, Symphony: compressed frozen reference; query mapping in seconds.
+- [[10-Summaries/song-2021-scgcn]] — Song 2021, scGCN: graph convolutional label transfer across tissues, species and molecular layers.
+- [[10-Summaries/biancalani-2021-tangram]] — Biancalani 2021, Tangram: aligning sc/snRNA-seq to five kinds of spatial data.
+- [[10-Summaries/kleshchevnikov-2022-cell2location]] — Kleshchevnikov 2022, cell2location: Bayesian deconvolution of spatial transcriptomics.
+- [[10-Summaries/yuan-2024-linger]] — Yuan & Duren 2024, LINGER: GRN inference using atlas-scale external bulk data via lifelong learning.
 
 ## scATAC-seq & chromatin accessibility
 

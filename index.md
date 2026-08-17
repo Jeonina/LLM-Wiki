@@ -1,14 +1,14 @@
 ---
 title: LLM Wiki — scDNA-seq & Single-Cell Epigenomics
 description: A living knowledge base on single-cell DNA sequencing, somatic mosaicism, and adjacent epigenomics.
-updated: 2026-08-13
+updated: 2026-08-14
 ---
 
 # LLM Wiki
 
 A living knowledge base on **single-cell DNA sequencing**, **somatic mosaicism**, and **single-cell epigenomics** — built and maintained with the help of an LLM, following [Andrej Karpathy's LLM Wiki pattern](10-Summaries/example-llm-wiki).
 
-> This wiki synthesizes ~273 papers spanning scDNA-seq methods, chromatin profiling, DNA methylation, multi-omics assays, and computational tools. Start from a topic below, or browse the full catalog.
+> This wiki synthesizes ~296 papers spanning scDNA-seq methods, chromatin profiling, DNA methylation, multi-omics assays, and computational tools. Start from a topic below, or browse the full catalog.
 
 The central motivation: there is no DNA-centric locus-state framework that jointly interprets mutation + epigenome + RNA at single-cell scale. The wiki tracks the methods that get us closer to one — see [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap|the synthesis gap note]] for the framing.
 
@@ -37,6 +37,9 @@ Post-zygotic mutations as both disease drivers and natural lineage barcodes. Fro
 **Start here →** [[40-Topics/somatic-mosaicism]] · [[30-Concepts/lineage-tracing]] · [[40-Topics/clonal-hematopoiesis]] · [[40-Topics/single-cell-lineage-tracing]]
 **Key papers →** [[10-Summaries/lodato-2015-science|Lodato 2015]] · [[10-Summaries/coorens-2021-nature|Coorens 2021]] · [[10-Summaries/cagan-2022-nature|Cagan 2022]]
 **Lineage-tracing reviews (NRG 2026) →** [[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review|Rodriguez-Fraticelli & Parreno (technologies)]] · [[10-Summaries/wang-2026-multimodal-lineage-computational|Wang, He & Hu (computational)]]
+**Tree inference →** [[30-Concepts/phylogenetic-inference]] · [[10-Summaries/ross-2016-onconem|OncoNEM]] · [[10-Summaries/el-kebir-2018-sphyr|SPhyR]] · [[10-Summaries/singer-2018-sciphi|SCIΦ]] · [[10-Summaries/foroughmand-2022-scelestial|Scelestial]]
+**CRISPR recorders →** [[10-Summaries/gong-2022-dclear|DCLEAR]] · [[10-Summaries/sashittal-2023-startle|Startle]] · [[10-Summaries/chu-2025-laml|LAML (time-resolved)]] · [[10-Summaries/seidel-2026-sciphy|SciPhy]]
+**Endogenous clocks →** [[10-Summaries/kwok-2022-mquad|MQuad (mtDNA)]] · [[10-Summaries/shahryary-2020-alphabeta|AlphaBeta]] · [[10-Summaries/gabbutt-2025-evoflux|EVOFLUx]]
 **Tracing concepts →** [[30-Concepts/crispr-lineage-recording]] · [[30-Concepts/phylogenetic-inference]] · [[30-Concepts/mitochondrial-lineage-tracing]] · [[30-Concepts/methylation-clones-epimutation]]
 **Brain focus →** [[10-Summaries/bae-2017-pregastrulation-mutations|Bae 2018]] · [[10-Summaries/taejeong-2022-science|Bae 2022]] · [[10-Summaries/miller-2022-nature|Miller 2022 (AD)]]
 **Reviews →** [[10-Summaries/forsberg-2017-mosaicism-review|Forsberg/Dumanski 2017 NRG]] · [[10-Summaries/hilal-2026-cardiac-somatic-review|Hilal 2026 (cardiac)]] · [[10-Summaries/hsieh-2026-scmtmpm-scwmss|Hsieh 2026 (mtDNA burden metrics)]]
@@ -92,7 +95,11 @@ Methods that read two or more modalities from the same cell: genotype + transcri
 **DNA + Epigenome →** [[10-Summaries/swanson-2025-daf-seq|DAF-seq]] · [[10-Summaries/kriz-2025-duplex-multiome|Duplex-Multiome]]
 **Genotype + TF binding →** [[30-Concepts/dd-seq]] · [[10-Summaries/chi-2026-dd-seq|D&D-seq (Chi 2026, DNA–protein interaction axis)]]
 **Scalable DNA + RNA →** [[30-Concepts/defnd-seq]] · [[10-Summaries/olsen-2025-defnd-seq|DEFND-seq (whole-genome)]] · [[30-Concepts/sdr-seq]] · [[10-Summaries/lindenhofer-2025-sdr-seq|SDR-seq (targeted, low ADO)]] · [[30-Concepts/resolveome]] · [[10-Summaries/marks-2023-resolveome|ResolveOME (PTA genome + RNA)]]
-**Spatial inference →** [[10-Summaries/debnath-2026-ison|ISON (Debnath 2026) — spatial ATAC from ST + sc-multiome]] · [[30-Concepts/spatial-multiomics]]
+**Integration origins →** [[10-Summaries/haghverdi-2018-mnn|MNN]] · [[10-Summaries/butler-2018-seurat-cca|Seurat CCA]] (same journal issue, 2 Apr 2018) · [[30-Concepts/multimodal-integration-methods]]
+**Paired-modality →** [[10-Summaries/hao-2021-seurat-wnn|WNN (Seurat v4)]] · [[10-Summaries/gayoso-2021-totalvi|totalVI]] · [[10-Summaries/lakkis-2022-scipenn|sciPENN]]
+**Reference mapping →** [[30-Concepts/reference-atlas-mapping]] · [[10-Summaries/kang-2021-symphony|Symphony]] · [[10-Summaries/song-2021-scgcn|scGCN]]
+**Spatial inference →** [[10-Summaries/biancalani-2021-tangram|Tangram]] · [[10-Summaries/kleshchevnikov-2022-cell2location|cell2location]] · [[10-Summaries/debnath-2026-ison|ISON]] · [[30-Concepts/spatial-multiomics]]
+**Regulatory networks →** [[10-Summaries/yuan-2024-linger|LINGER]] · [[30-Concepts/gene-regulatory-network]]
 **Reviews →** [[10-Summaries/wang-2023-multimodal-review|Wang & Jin 2023 methods+integration]] · [[10-Summaries/baysoy-2023-multiomics-landscape|Baysoy 2023]] · [[10-Summaries/vandereyken-2023-scmultiomics-review|Vandereyken 2023]] · [[10-Summaries/bi-2024-multiomics-review|Bi & Weng 2024 (integration topology + protein lineages)]]
 
 ---
@@ -136,7 +143,7 @@ Ultra-accurate error correction by reading both strands of a DNA molecule. Essen
 
 | | |
 |---|---|
-| [[10-Summaries/index\|Papers]] | All ~245 paper summaries, organized by topic |
+| [[10-Summaries/index\|Papers]] | All ~299 paper summaries, organized by topic |
 | [[20-Entities/index\|People & labs]] | Researchers, labs, consortia |
 | [[30-Concepts/index\|Concepts]] | Definitions: methods, terms, ideas |
 | [[40-Topics/index\|Topics]] | Broad themes that gather concepts and papers |
@@ -172,4 +179,4 @@ The maintainer reads each new source in full, writes a summary, and **touches 5�
 
 ---
 
-*This wiki is a personal research tool. Papers are summarized by an LLM; always verify against the original sources. Last updated 2026-08-13.*
+*This wiki is a personal research tool. Papers are summarized by an LLM; always verify against the original sources. Last updated 2026-08-14.*

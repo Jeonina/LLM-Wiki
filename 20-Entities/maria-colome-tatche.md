@@ -19,3 +19,9 @@ updated: 2026-05-12
 ## Related
 
 - [[20-Entities/fabian-theis]] · [[30-Concepts/episcanpy]] · [[40-Topics/single-cell-atac-seq]]
+
+## Added 2026-08-17
+
+Coauthor of [[10-Summaries/shahryary-2020-alphabeta]] (AlphaBeta), which estimates forward and backward **epimutation rates** from pedigree-structured methylation data in plants. Its three findings are the prerequisites for using epimutations as a lineage clock: neutral genome-wide accumulation, **somatic** rather than germline origin, and the ability to age-date trees.
+
+This is the quantitative ancestor of the mammalian epimutation-tracing line ([[10-Summaries/scherer-2025-nature]], [[10-Summaries/chen-2025-methyltree]], [[10-Summaries/gabbutt-2025-evoflux]]), which generally assumes the neutrality that AlphaBeta tested. (synthesis)

@@ -76,3 +76,15 @@ Process-level (as opposed to ancestry-level) alternatives: [[10-Summaries/wolf-2
 ## Related
 
 - [[30-Concepts/lineage-tracing]] · [[30-Concepts/phylogenetic-inference]] · [[30-Concepts/crispr-lineage-recording]] · [[40-Topics/somatic-mosaicism]] · [[40-Topics/clonal-hematopoiesis]]
+
+## Added 2026-08-17
+
+Eight sources ingested 2026-08-14 fill in the reconstruction side of lineage tracing, which the corpus had covered only through [[10-Summaries/jones-2020-cassiopeia]] and the reviews.
+
+**Engineered recorders** — see [[30-Concepts/crispr-lineage-recording]] for the full model progression. Distance-based [[10-Summaries/gong-2022-dclear]] (DREAM Challenge winner at 1,000 and 10,000 cells); parsimony [[10-Summaries/sashittal-2023-startle]] (star homoplasy); maximum likelihood [[10-Summaries/chu-2025-laml]] (PMM, time-resolved); Bayesian phylodynamics [[10-Summaries/seidel-2022-tidetree]] and [[10-Summaries/seidel-2026-sciphy]].
+
+**Endogenous markers** — [[10-Summaries/kwok-2022-mquad]] (mtDNA variant selection, the step that makes mtDNA tracing practical) and the epimutation clock, quantified in plants by [[10-Summaries/shahryary-2020-alphabeta]] and applied at clinical scale in human cancer by [[10-Summaries/gabbutt-2025-evoflux]].
+
+**The division that matters for the review**: engineered recorders give high-information barcodes and a controlled recording window but **cannot be used in humans**; endogenous markers work in human tissue but at far lower mutation rates with no controlled window. Every methodological advance in the recorder literature — timing, phylodynamics, uncertainty — is therefore unavailable for human somatic mosaicism, which is the corpus's central subject. (synthesis)
+
+**Topology or time?** Non-probabilistic methods are robust and scalable but produce topology only, precluding questions about *when* migration, fate or fitness changes occurred ([[10-Summaries/chu-2025-laml]]). LAML's three metastasis epochs with a burst at ~month 2 is the first concrete demonstration of what timing buys.

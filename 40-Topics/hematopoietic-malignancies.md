@@ -58,3 +58,9 @@ _None yet._
 ## Added 2026-08-13
 
 [[10-Summaries/gawad-2014-all-clonal-origins]] adds the childhood ALL clonal-architecture baseline: 1,479 single cells from six patients, **codominant clones in five of six**, structural variants acquired before point mutations, an APOBEC-like TC-motif cytosine bias, subclonal and late *KRAS*, and clones arrested at different B-cell developmental stages within the same patient.
+
+## Added 2026-08-17
+
+[[10-Summaries/gabbutt-2025-evoflux]] applies fluctuating-CpG methylation barcodes to **1,976 lymphoid cancer samples**, finding that growth rate, malignancy age and epimutation rate vary by orders of magnitude across disease types, that evolutionary history is a strong independent prognostic factor in two separate CLL series, and that the seed of a Richter-transformed CLL clone existed **decades before presentation**.
+
+Also relevant: [[10-Summaries/singer-2018-sciphi]] validates on a panel ALL dataset, and [[10-Summaries/kwok-2022-mquad]] supplies the mtDNA-variant selection step used for clonal substructure discovery in blood.

@@ -52,3 +52,15 @@ The 2026-08-13 ingest adds a historical layer the corpus was missing: [[30-Conce
 The transferable statistical lesson is the **abundance inversion**: under uneven coverage, incorrect *k*-mers in high-depth regions can outnumber correct *k*-mers in low-depth regions, so no global multiplicity threshold works ([[10-Summaries/peng-2012-idba-ud]]). The same inversion, in a different data type, is what single-cell variant callers negotiate as allelic imbalance ([[10-Summaries/dong-2017-sccaller]]; [[10-Summaries/luquette-2019-natcomm]]). (synthesis)
 
 New tools this session: SCAN2 ([[10-Summaries/luquette-2021-scan2]]), SnapHiC ([[10-Summaries/yu-2021-snaphic]]), scGHOST ([[10-Summaries/xiong-2024-scghost]]), MINTsC ([[10-Summaries/park-2026-mintsc]]), dcHiC ([[10-Summaries/chakraborty-2022-dchic]]), ISON ([[10-Summaries/debnath-2026-ison]]).
+
+## Added 2026-08-17
+
+Twenty-three sources ingested 2026-08-14 add two method families the corpus had barely covered.
+
+**Tumour and lineage phylogenetics (11)** — see [[30-Concepts/phylogenetic-inference]] and [[30-Concepts/crispr-lineage-recording]]. The transferable ideas: tree inference and error correction are the same problem, reached independently at the read level ([[10-Summaries/singer-2018-sciphi]]) and the genotype-matrix level ([[10-Summaries/el-kebir-2018-sphyr]]) in 2018; imputation belongs inside the objective rather than before it ([[10-Summaries/foroughmand-2022-scelestial]], [[10-Summaries/chu-2025-laml]]); and missing data can carry signal when it is heritable ([[10-Summaries/chu-2025-laml]]).
+
+**Integration, batch correction and reference mapping (10)** — see [[30-Concepts/multimodal-integration-methods]] and the new [[30-Concepts/reference-atlas-mapping]]. The field starts on 2 April 2018 with [[10-Summaries/haghverdi-2018-mnn]] and [[10-Summaries/butler-2018-seurat-cca]] in the same journal issue.
+
+**A recurring statistical caution**: most single cells are not independent, so the effective sample size is far below the cell count ([[10-Summaries/yuan-2024-linger]]) — which applies to every method that treats cells as replicates, including the 3D-genome callers [[10-Summaries/yu-2021-snaphic]] and [[10-Summaries/park-2026-mintsc]]. (synthesis)
+
+**And a recurring benchmarking caution**: nearly every tool paper here benchmarks itself. The two exceptions worth weighting more heavily are the Allen Institute DREAM Challenge ([[10-Summaries/gong-2022-dclear]]) and independent comparisons such as [[10-Summaries/ha-2023-natmethods]] and [[10-Summaries/xiao-2024-multiomics-benchmark]]. (synthesis)

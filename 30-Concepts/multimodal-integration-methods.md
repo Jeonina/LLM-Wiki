@@ -46,3 +46,25 @@ ISON also outperformed MOFA, CCA+KNN, Tangram, RCTD, SPAGE and GIMVI at predicti
 In [[30-Concepts/spatial-multiomics|spatial]] terms this is **diagonal integration with a physical anchor** — different modalities, different cells, bridged by a shared latent space and constrained by spatial adjacency ([[10-Summaries/argelaguet-2021-integration-principles]]; [[10-Summaries/debnath-2026-ison]]). (synthesis)
 
 One capability is specific to joint expression + accessibility modelling: **distinguishing TFs within the same family**, which motif-based accessibility methods structurally cannot do because paralogues share motifs ([[10-Summaries/debnath-2026-ison]]).
+
+## Added 2026-08-17
+
+The modern integration literature has a birthday: **2 April 2018**, when [[10-Summaries/haghverdi-2018-mnn|MNN correction]] and [[10-Summaries/butler-2018-seurat-cca|Seurat CCA alignment]] appeared in the same issue of *Nature Biotechnology*, solving the same problem from opposite directions — MNN corrects in high-dimensional expression space via mutually-nearest cross-batch cells; Seurat aligns in a shared low-dimensional CCA space. The field's two dominant strategies were born the same day. (synthesis)
+
+**What single-cell integration must do that bulk batch correction cannot** ([[10-Summaries/butler-2018-seurat-cca]]): align subpopulations even when **each has a unique response**; tolerate **shifts in subpopulation frequency**; be robust to feature-scale changes; and require no pre-established markers. Bulk methods (limma, ComBat, RUVseq, svaseq) assume confounders act uniformly on all cells and that **population composition is identical across batches** — false in practice, and when it fails the batch coefficient absorbs real biology so that "the results might potentially be worse than if no correction were performed" ([[10-Summaries/haghverdi-2018-mnn]]).
+
+**Method families now represented in the corpus:**
+
+| Family | Methods |
+|---|---|
+| Anchor / nearest-neighbour | [[10-Summaries/haghverdi-2018-mnn]], [[10-Summaries/butler-2018-seurat-cca]], [[10-Summaries/hao-2021-seurat-wnn]], [[10-Summaries/hao-2024-seurat-v5]] |
+| Embedding-space iterative | [[10-Summaries/korsunsky-2019-harmony]] |
+| Matrix factorisation | [[10-Summaries/welch-2019-liger]], [[10-Summaries/argelaguet-2020-mofa-plus]], [[10-Summaries/debnath-2026-ison]] |
+| Deep generative | [[10-Summaries/gayoso-2021-totalvi]], [[10-Summaries/ashuach-2023-multivi]], [[10-Summaries/cao-2022-glue]], [[10-Summaries/lakkis-2022-scipenn]] |
+| Graph neural network | [[10-Summaries/song-2021-scgcn]] |
+
+**Per-cell modality weighting** is the honest answer to a question most methods dodge — concatenation implicitly weights by feature count and choosing a "primary" modality biases the analysis, whereas WNN *learns the relative utility of each data type in each cell* ([[10-Summaries/hao-2021-seurat-wnn]]). Whether it holds up when one modality is far sparser (RNA+ATAC rather than RNA+protein) is untested. (synthesis)
+
+**Correcting expression versus correcting embeddings** is an unresolved trade: MNN returns corrected expression values usable for differential testing; Harmony corrects only the embedding and leaves expression untouched. Neither the risk nor the benefit has been quantified. (synthesis)
+
+See [[reference-atlas-mapping]] for the asymmetric case, where the reference is frozen.

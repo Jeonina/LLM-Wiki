@@ -26,3 +26,7 @@ updated: 2026-05-19
 
 - [[20-Entities/rahul-satija]] · [[20-Entities/fabian-theis]]
 - [[40-Topics/single-cell-multiomics]]
+
+## Added 2026-08-17
+
+Corresponding author of [[10-Summaries/biancalani-2021-tangram]] (Tangram), which aligns sc/snRNA-seq onto five kinds of spatial data — MERFISH, STARmap, smFISH, Visium, and histological images. Applied to [[10-Summaries/ma-2020-cell|SHARE-seq]] input, the alignment carries the paired chromatin measurement along and thereby reveals **spatial patterns of chromatin accessibility** — spatial epigenomics obtained by propagation rather than by a dedicated assay. (synthesis)

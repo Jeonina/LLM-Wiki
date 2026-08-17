@@ -4,6 +4,41 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+# 2026-08-17 — Ingest: 23 clippings (tumour/lineage phylogenetics, integration & reference mapping, epimutation clocks)
+
+**Sources ingested (23).** Three clusters, two of which were near-absent from the corpus.
+
+*Tumour and lineage phylogenetics (11).* Cancer SNV trees: [[10-Summaries/ross-2016-onconem]] (nested effects models; the only method here that infers **unobserved** subpopulations), [[10-Summaries/el-kebir-2018-sphyr]] (*k*-Dollo), [[10-Summaries/singer-2018-sciphi]] (joint calling + tree by MCMC), [[10-Summaries/malikic-2019-phiscs]] (subperfect phylogeny; ILP *and* Boolean CSP), [[10-Summaries/foroughmand-2022-scelestial]] (Steiner-tree approximation with performance guarantees). CRISPR recorders: [[10-Summaries/gong-2022-dclear]], [[10-Summaries/seidel-2022-tidetree]], [[10-Summaries/sashittal-2023-startle]], [[10-Summaries/chu-2025-laml]], [[10-Summaries/seidel-2026-sciphy]]. Endogenous markers: [[10-Summaries/kwok-2022-mquad]].
+
+*Integration, batch correction and reference mapping (10).* [[10-Summaries/haghverdi-2018-mnn]] and [[10-Summaries/butler-2018-seurat-cca]] (same *Nature Biotechnology* issue, 2 April 2018 — the field's origin), [[10-Summaries/hao-2021-seurat-wnn]], [[10-Summaries/gayoso-2021-totalvi]], [[10-Summaries/kang-2021-symphony]], [[10-Summaries/song-2021-scgcn]], [[10-Summaries/biancalani-2021-tangram]], [[10-Summaries/kleshchevnikov-2022-cell2location]], [[10-Summaries/lakkis-2022-scipenn]], [[10-Summaries/yuan-2024-linger]].
+
+*Epimutation clocks (2).* [[10-Summaries/shahryary-2020-alphabeta]] (plants) and [[10-Summaries/gabbutt-2025-evoflux]] (human, clinical scale).
+
+**Pages created (24).** 23 summaries plus one concept, [[30-Concepts/reference-atlas-mapping]] — reference mapping is a distinct operation from integration (the reference is frozen and asymmetric) and now has five methods pointing at it.
+
+**Pages updated (23).** 9 concepts, 9 entities, 7 topics, plus `index.md`, `10-Summaries/index.md` and `catalog.md`. All updates carry dated `## Added 2026-08-17` sections.
+
+**Correction to an earlier claim.** In the 2026-08-11 triage discussion I described `stuart-2021-natmethods` as "Seurat WNN". It is **Signac** (single-cell chromatin state analysis). The actual WNN paper — Hao et al. 2021, *Cell* — was absent from the corpus until this ingest and is now at [[10-Summaries/hao-2021-seurat-wnn]]. Any manuscript sentence citing "Seurat WNN" needs that citation, not Stuart 2021.
+
+**Notable findings and tensions.**
+
+- **Tree inference and error correction are the same problem**, reached independently in 2018 at two levels — read counts ([[10-Summaries/singer-2018-sciphi]]) and genotype matrices ([[10-Summaries/el-kebir-2018-sphyr]]). Neither cites the other's framing. The consequence is powerful and double-edged: a mutation can be called in a cell with zero variant reads because the tree says it belongs there — and when the tree is wrong, the same mechanism manufactures *correlated* false positives, which neither paper characterises.
+- **Missing data can be informative.** [[10-Summaries/chu-2025-laml]] separates heritable missingness (inherited by descendants, phylogenetically informative) from dropout (not) — they look identical in the data and no prior method distinguished them. Recorded on [[30-Concepts/phylogenetic-inference]]; the same conflation of technical and biological zeros plausibly recurs across single-cell modalities.
+- **Only one blinded benchmark exists in this literature.** The Allen Institute DREAM Challenge ([[10-Summaries/gong-2022-dclear]]) is organiser-scored on common data; every other tool paper here benchmarks itself, including the seven-method comparison in [[10-Summaries/foroughmand-2022-scelestial]]. Flagged on [[40-Topics/computational-methods]].
+- **The reconstruction method changes the biology.** [[10-Summaries/seidel-2026-sciphy]] reports significant differences from UPGMA trees on the same data, "underscoring the impact of the reconstruction method on the inferred cellular relationships and growth dynamics" — the lineage-tracing counterpart of the caller-concordance problem in [[10-Summaries/ha-2023-natmethods]].
+- **A new genre named: predicting a modality you never measured.** Five instances now in the corpus, five mechanisms, and only [[10-Summaries/lakkis-2022-scipenn]] returns an uncertainty estimate — so elsewhere an imputed value is indistinguishable from a measured one in the output matrix. Recorded on [[30-Concepts/reference-atlas-mapping]].
+- **Every reference-based method shares one failure**: a cell state absent from the reference has nowhere correct to go — projected arbitrarily, silently redistributed, or confidently mislabelled. Also on [[30-Concepts/reference-atlas-mapping]].
+- **"Most single cells are not independent"** ([[10-Summaries/yuan-2024-linger]]) — the effective sample size is far below the cell count. This applies to every method that treats cells as replicates, including the 3D-genome callers ingested on 2026-08-13.
+- **The epimutation clock was quantified in plants first.** [[10-Summaries/shahryary-2020-alphabeta]] established neutral accumulation, somatic origin, and demonstrable age-dating in 2020; the mammalian epimutation-tracing literature generally *assumes* the neutrality AlphaBeta *tested*. Both it and [[10-Summaries/gabbutt-2025-evoflux]] share an unquantified limit: gain/loss equilibrium means the clock saturates.
+- **Engineered recorders do not work in humans.** Every methodological advance in the CRISPR lineage literature — timing, phylodynamics, uncertainty — is unavailable for human somatic mosaicism, which is this corpus's central subject. Recorded on [[40-Topics/single-cell-lineage-tracing]].
+- **Source limitations.** [[10-Summaries/malikic-2019-phiscs]] was clipped as abstract plus two figure captions; [[10-Summaries/seidel-2022-tidetree]] as appendices plus abstract, with no real-data application. Both summaries are marked accordingly and flagged for full-text re-ingest.
+
+**Verification.** All 23 DOIs resolved against CrossRef and checked against source-file titles **before** writing, following the 2026-08-14 audit — 23/23 correct, no repeat of the cardilla/morriss failures. 0 broken wikilinks; 0 orphan pages; `10-Summaries/index.md` matches the directory exactly.
+
+**Not done.** `catalog.md` received the 23 new entries but its ~93 pre-existing gaps remain — still awaiting the keep-both-or-merge decision flagged on 2026-08-14.
+
+---
+
 # 2026-08-14 — Maintenance: DOI audit + duplicate merge + index reconciliation
 
 **DOI audit (all 277 summaries).** Every summary's DOI was resolved against the CrossRef API and the returned title compared against the **source-file title** (the clipping's own `title:` field) rather than the wiki's summary title — the source file is ground truth, the summary title is editorial. 271 verified clean.

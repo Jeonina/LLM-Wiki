@@ -168,3 +168,11 @@ Five sources ingested 2026-08-13 complete the single-cell methylation methods tr
 **Two throughput strategies.** [[10-Summaries/mulqueen-2018-sci-met]] (combinatorial indexing via cytosine-depleted adaptors; alignment rate 68 ± 8% vs the field's 25 ± 20%) and [[10-Summaries/zhang-2023-drop-bs]] (droplets, up to 10,000 cells in 2 days; in-droplet bisulfite conversion yields 9× more library than bulk).
 
 See [[30-Concepts/bisulfite-sequencing]] for the consolidated comparison table.
+
+## Added 2026-08-17
+
+Two epimutation-clock sources ingested 2026-08-14 add a use of methylation the corpus had not covered: methylation as a **timer** rather than as a cell-type fingerprint.
+
+[[10-Summaries/shahryary-2020-alphabeta]] (plants) estimates forward and backward epimutation rates from pedigree data and establishes the three properties a clock needs — neutral accumulation, somatic origin, and demonstrable age-dating. [[10-Summaries/gabbutt-2025-evoflux]] (human) reads **fluctuating CpGs** from bulk methylation arrays across 1,976 lymphoid cancers to infer growth rate, malignancy age, epimutation rate and subclonal structure at clinical scale.
+
+Both share an unquantified limit: gain/loss equilibrium means the clock **saturates**, bounding how far back it can read. (synthesis) See [[30-Concepts/methylation-clones-epimutation]].

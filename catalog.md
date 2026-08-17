@@ -111,6 +111,11 @@ A curated, topic-organized selection. **Not exhaustive** — for complete covera
 - [[10-Summaries/gong-2021-cobolt\|Gong 2021 (Cobolt)]] — multimodal VAE for scRNA + scATAC
 - [[10-Summaries/xiao-2024-multiomics-benchmark\|Xiao 2024]] — 12-method multi-omics benchmark
 - [[10-Summaries/debnath-2026-ison\|Debnath/Duren 2026 (ISON)]] — inferred spatial chromatin accessibility from ST + sc-multiome
+- [[10-Summaries/haghverdi-2018-mnn\|Haghverdi 2018 (MNN)]] · [[10-Summaries/butler-2018-seurat-cca\|Butler 2018 (Seurat CCA)]] — the two 2018 origins of single-cell integration
+- [[10-Summaries/hao-2021-seurat-wnn\|Hao 2021 (WNN, Seurat v4)]] · [[10-Summaries/gayoso-2021-totalvi\|Gayoso 2021 (totalVI)]] · [[10-Summaries/lakkis-2022-scipenn\|Lakkis 2022 (sciPENN)]] — paired RNA+protein
+- [[10-Summaries/kang-2021-symphony\|Kang 2021 (Symphony)]] · [[10-Summaries/song-2021-scgcn\|Song 2021 (scGCN)]] — reference mapping and label transfer
+- [[10-Summaries/biancalani-2021-tangram\|Biancalani 2021 (Tangram)]] · [[10-Summaries/kleshchevnikov-2022-cell2location\|Kleshchevnikov 2022 (cell2location)]] — spatial alignment and deconvolution
+- [[10-Summaries/yuan-2024-linger\|Yuan & Duren 2024 (LINGER)]] — GRNs from multiome plus atlas-scale bulk
 
 ---
 
@@ -192,6 +197,8 @@ A curated, topic-organized selection. **Not exhaustive** — for complete covera
 - [[10-Summaries/guo-2015-scrrbs-protocol\|Guo 2015]] — scRRBS protocol (one tube, ~70% of CGIs, consistent CpGs)
 - [[10-Summaries/mulqueen-2018-sci-met\|Mulqueen 2018 (sci-MET)]] — combinatorial indexing; 68% alignment rate
 - [[10-Summaries/zhang-2023-drop-bs\|Zhang 2023 (Drop-BS)]] — droplet scWGBS, 10k cells in 2 days
+- [[10-Summaries/shahryary-2020-alphabeta\|Shahryary 2020 (AlphaBeta)]] — epimutation rates from pedigree methylomes (plants)
+- [[10-Summaries/gabbutt-2025-evoflux\|Gabbutt 2025 (EVOFLUx)]] — cancer evolution from bulk fluctuating-CpG barcodes, 1,976 samples
 
 ---
 
@@ -273,6 +280,16 @@ A curated, topic-organized selection. **Not exhaustive** — for complete covera
 - [[10-Summaries/lu-2024-cnaphylogeny-review\|Lu 2025]] — CNA-based phylogenetic inference review
 - [[10-Summaries/xiao-2025-epitrace\|Xiao 2025 (EpiTrace)]] — ATAC-based mitotic age
 - [[10-Summaries/luquette-2021-scan2\|Luquette 2021 (SCAN2)]] — PTA-native SNV + indel calling; neuronal rate revised to 15/yr
+- [[10-Summaries/ross-2016-onconem\|Ross & Markowetz 2016 (OncoNEM)]] — nested effects models; unobserved subpopulations
+- [[10-Summaries/el-kebir-2018-sphyr\|El-Kebir 2018 (SPhyR)]] — k-Dollo model for CNA-driven SNV loss
+- [[10-Summaries/singer-2018-sciphi\|Singer 2018 (SCIΦ)]] — joint variant calling + phylogeny by MCMC
+- [[10-Summaries/malikic-2019-phiscs\|Malikic 2019 (PhISCS)]] — subperfect phylogeny; single-cell + bulk; ILP/CSP
+- [[10-Summaries/foroughmand-2022-scelestial\|Foroughmand-Araabi 2022 (Scelestial)]] — Steiner-tree approximation with guarantees
+- [[10-Summaries/gong-2022-dclear\|Gong 2022 (DCLEAR)]] — distance-based; DREAM Challenge winner
+- [[10-Summaries/sashittal-2023-startle\|Sashittal 2023 (Startle)]] — star homoplasy for CRISPR non-modifiability
+- [[10-Summaries/seidel-2022-tidetree\|Seidel 2022 (TiDeTree)]] · [[10-Summaries/seidel-2026-sciphy\|Seidel 2026 (SciPhy)]] — Bayesian phylodynamics in BEAST 2
+- [[10-Summaries/chu-2025-laml\|Chu 2025 (LAML)]] — time-resolved trees; heritable missingness vs dropout
+- [[10-Summaries/kwok-2022-mquad\|Kwok 2022 (MQuad)]] — clonally informative mtDNA variant selection
 
 ---
 

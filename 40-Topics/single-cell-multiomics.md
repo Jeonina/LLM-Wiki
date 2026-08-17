@@ -221,3 +221,16 @@ ISON ([[10-Summaries/debnath-2026-ison]]) addresses a gap that is commercial rat
 Two findings worth carrying beyond the spatial context: the **linear KL-NMF model beat a contrastive VAE** consistently, and the *inferred* accessibility recovered eQTL- and Hi-C-supported regulatory links **better than the directly measured** spatial ATAC ([[10-Summaries/debnath-2026-ison]]).
 
 A validation trick from a different domain belongs here too: [[10-Summaries/park-2026-mintsc]] validates chromatin contacts using **DNA methylation partial correlations** from the same sn-m3C-seq cells — an argument only available in joint assays, and the sharpest demonstration in the corpus that co-measurement pays off analytically rather than only descriptively. (synthesis)
+
+## Added 2026-08-17
+
+Nine integration sources ingested 2026-08-14 give the corpus the full method genealogy, from the 2018 origin to reference mapping.
+
+**Origin**: [[10-Summaries/haghverdi-2018-mnn]] and [[10-Summaries/butler-2018-seurat-cca]], same journal issue, same day, opposite strategies.
+**Paired (vertical) integration**: [[10-Summaries/hao-2021-seurat-wnn]] (per-cell modality weights) and [[10-Summaries/gayoso-2021-totalvi]] (deep generative with a protein background model) — the WNN reference the corpus previously lacked.
+**CITE-seq at scale**: [[10-Summaries/lakkis-2022-scipenn]] adds partially-overlapping antibody panels and uncertainty quantification.
+**Reference mapping**: [[10-Summaries/kang-2021-symphony]], [[10-Summaries/song-2021-scgcn]] — see [[30-Concepts/reference-atlas-mapping]].
+**Spatial**: [[10-Summaries/biancalani-2021-tangram]] (alignment) and [[10-Summaries/kleshchevnikov-2022-cell2location]] (deconvolution).
+**Regulatory networks**: [[10-Summaries/yuan-2024-linger]].
+
+**The genre this batch makes visible: predicting a modality you never measured.** Five instances, five mechanisms — RNA→protein by reference mapping ([[10-Summaries/kang-2021-symphony]]) or deep learning ([[10-Summaries/lakkis-2022-scipenn]]); RNA→space by alignment ([[10-Summaries/biancalani-2021-tangram]]) or deconvolution ([[10-Summaries/kleshchevnikov-2022-cell2location]]); RNA→spatial chromatin via a paired assay ([[10-Summaries/biancalani-2021-tangram]]) or a learned decoder ([[10-Summaries/debnath-2026-ison]]). The shared premise is that a reference substitutes for an experiment; the shared risk is that only one of them returns an uncertainty estimate. (synthesis)

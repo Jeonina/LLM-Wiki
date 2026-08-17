@@ -52,3 +52,11 @@ updated: 2026-05-19
 SCAN2 ([[10-Summaries/luquette-2021-scan2]]) is the PTA-native caller and the first to report a genome-wide single-neuron **indel** rate (≥2/year). Its more consequential result is a correction to a published biological constant: the neuronal SNV accumulation rate falls to **15 SNVs/year**, with the revision attributed to artifacts in older amplification chemistries.
 
 That is the sharpest case in the corpus of chemistry determining a biological number — and it sits alongside the validation result from a decade earlier that only **19.4–27.0% of single-cell-only mutation calls survive orthogonal duplex confirmation** ([[10-Summaries/wang-2014-nuc-seq]]). Both point the same way: single-cell-only calls need an independent arbiter. (synthesis)
+
+## Added 2026-08-17
+
+[[10-Summaries/singer-2018-sciphi]] (SCIΦ) adds the joint-calling strategy the corpus was missing: rather than calling variants per cell or by pooling, use the **cell lineage tree as a prior** — a mutation can be assigned to a cell with very low or even zero variant-read support because the tree says it belongs there.
+
+Its critique of the alternatives is precise ([[10-Summaries/singer-2018-sciphi]]): GATK and SAMtools assume bulk noise profiles; [[10-Summaries/zafar-2016-monovar|Monovar]] pools across cells but assumes independence across sites; [[10-Summaries/dong-2017-sccaller|SCcaller]] models local allelic amplification bias but works per cell, needs germline SNPs (unavailable for panel data), and **cannot recover mutations lost to dropout or LOH** — a structural limit of any per-cell caller, since an absent allele cannot be recovered from within one cell.
+
+The risk is symmetric and unaddressed: when the tree is wrong, the same mechanism manufactures **correlated** false positives. (synthesis)

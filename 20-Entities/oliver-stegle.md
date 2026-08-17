@@ -19,3 +19,7 @@ updated: 2026-06-02
 ## Related
 
 - [[30-Concepts/sdr-seq]] · [[30-Concepts/joint-single-cell-multi-omics]] · [[20-Entities/lars-steinmetz]]
+
+## Added 2026-08-17
+
+Coauthor of [[10-Summaries/kleshchevnikov-2022-cell2location]], the Bayesian deconvolution method for spatial transcriptomics. Its mechanism — borrowing statistical strength across locations — is what resolves fine-grained subtypes that per-spot estimation cannot, yielding regional astrocyte subtypes and a rare pre-germinal-centre B cell population.

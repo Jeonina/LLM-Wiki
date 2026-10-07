@@ -4,6 +4,17 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+# 2026-10-07 — Maintenance: SCAN2 preprint merged into the published paper
+
+**Decision (user).** `luquette-2021-scan2` (abstract-only bioRxiv clipping) and [[10-Summaries/luquette-2022-neuron-scan2-indels]] (Nature Genetics 2022, full text) are the same study; merge into the published version.
+
+**Done.** Preprint-only content moved to a "Preprint version" section on the published page: bioRxiv DOI, the preprint's numbers (76 neurons, 15 SNVs/yr, ≥2 indels/yr) labelled as superseded, and the BioSkryb competing-interest disclosure absent from the journal clipping. Old slug kept as an alias; both clippings listed under `source:`. 24 inbound links redirected across 15 pages, and every place that quoted the preprint numbers now uses the published ones (52 neurons, 16.5 SNVs/yr, ~3 indels/yr). Also corrected the preprint page's wrong claim that the paper was published in *Cell Genomics*.
+
+- **Deleted:** `10-Summaries/luquette-2021-scan2.md`
+- **Left as-is:** both clippings stay in `00-Sources/papers/`; earlier log entries still name the old slug (history).
+
+---
+
 # 2026-10-07 — Ingest: 70 sources (paper-list gap fill: variant callers, scHi-C, scCUT&Tag/histone, single-cell methylation, phylogenetics)
 
 **Why.** The paper-list workbook (`~/Desktop/20261006_paperlist_ij.xlsx`) had ~80 rows with no source in the wiki; the user clipped them (plus two extra reviews) into `00-Sources/papers/`.

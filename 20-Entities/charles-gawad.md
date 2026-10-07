@@ -37,4 +37,4 @@ Departments of Oncology and Computational Biology, St. Jude Children's Research 
 
 First author of [[10-Summaries/gawad-2014-all-clonal-origins]] — targeted single-cell sequencing of **1,479 ALL cells** from six patients, showing **codominant clones in five of six patients**, a structure bulk allele frequencies cannot resolve. The paper is also the corpus's most careful early treatment of [[30-Concepts/allele-dropout]] (four independent measurements) and supplies the reusable design rule: ~200 cells to detect a 1% clone, 75 for 2%, 50 for 4%.
 
-Also coauthor of [[10-Summaries/luquette-2021-scan2]], with a declared competing interest as BioSkryb cofounder — relevant because that paper's central claim is that PTA is cleaner than the alternative chemistries.
+Also coauthor of [[10-Summaries/luquette-2022-neuron-scan2-indels]], with a declared competing interest as BioSkryb cofounder — relevant because that paper's central claim is that PTA is cleaner than the alternative chemistries.

@@ -44,7 +44,7 @@ Post-zygotic mutations as both disease drivers and natural lineage barcodes. Fro
 **Brain focus →** [[10-Summaries/bae-2017-pregastrulation-mutations|Bae 2018]] · [[10-Summaries/taejeong-2022-science|Bae 2022]] · [[10-Summaries/miller-2022-nature|Miller 2022 (AD)]]
 **Reviews →** [[10-Summaries/forsberg-2017-mosaicism-review|Forsberg/Dumanski 2017 NRG]] · [[10-Summaries/hilal-2026-cardiac-somatic-review|Hilal 2026 (cardiac)]] · [[10-Summaries/hsieh-2026-scmtmpm-scwmss|Hsieh 2026 (mtDNA burden metrics)]]
 **Stem cell aging →** [[10-Summaries/kapadia-2024-stem-cell-aging|Kapadia & Goodell 2024]]
-**Rate revisions →** [[10-Summaries/luquette-2021-scan2|SCAN2 (Luquette 2021) — 15 SNVs/yr + first indel rate]]
+**Rate revisions →** [[10-Summaries/luquette-2022-neuron-scan2-indels|SCAN2 (Luquette 2022) — 16.5 SNVs/yr + indel rate]]
 **Upstream of mutation →** [[30-Concepts/hidef-seq]] · [[10-Summaries/liu-2024-hidef-seq|HiDEF-seq (Liu 2024) — single-strand mismatch & damage signatures]]
 
 ---

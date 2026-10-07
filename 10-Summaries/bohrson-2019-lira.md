@@ -54,7 +54,7 @@ Weight: a conceptually clean and highly specific filter; no ground-truth spike-i
 ## Connections to other sources
 
 - Applied to data from [[lodato-2015-science]]; the neuron aging-rate study built on it: [[lodato-2017-aging-neurons]].
-- Same group's successors: [[luquette-2019-natcomm]] (SCAN-SNV, allele-balance model genome-wide), [[luquette-2021-scan2]] / [[luquette-2022-neuron-scan2-indels]] (SCAN2 with PTA; LiRA used as a cross-check, 17 vs 16.5 sSNVs/year).
+- Same group's successors: [[luquette-2019-natcomm]] (SCAN-SNV, allele-balance model genome-wide), [[luquette-2022-neuron-scan2-indels]] (SCAN2 with PTA; LiRA used as a cross-check, 17 vs 16.5 sSNVs/year).
 - Orthogonal rate reference: [[hoang-2016-botseqs]] (bottleneck sequencing).
 - Comparator callers: [[dong-2017-sccaller]] (also uses nearby heterozygous SNPs, but not read-backed phasing), [[zafar-2016-monovar]], [[mckenna-2010-gatk]].
 - Benchmarks/reviews of single-cell callers: [[valecha-2022-scsnv-review]], [[ha-2023-natmethods]].

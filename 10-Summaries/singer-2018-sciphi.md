@@ -50,7 +50,7 @@ Weight: the comparison is against Monovar only, because at the time no other cal
 ## Connections to other sources
 
 - Direct comparator and the only prior cross-cell caller: [[zafar-2016-monovar]].
-- Critiqued per-cell alternative: [[dong-2017-sccaller]]; see also [[luquette-2019-natcomm]] and [[luquette-2021-scan2]] for the mosaicism-side caller line.
+- Critiqued per-cell alternative: [[dong-2017-sccaller]]; see also [[luquette-2019-natcomm]] and [[luquette-2022-neuron-scan2-indels]] for the mosaicism-side caller line.
 - Tree-building contemporaries whose trees SCIΦ effectively co-estimates: [[jahn-2016-scite]] (same group), [[ross-2016-onconem]], [[el-kebir-2018-sphyr]], [[zafar-2017-sifit]].
 - Benchmarked against by [[foroughmand-2022-scelestial]] (as SCIPhI).
 - Caller-concordance context: [[ha-2023-natmethods]], [[valecha-2022-scsnv-review]].

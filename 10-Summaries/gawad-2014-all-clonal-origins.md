@@ -49,7 +49,7 @@ Weight: the ADO quantification and the detection-limit simulations are unusually
 
 ## Entities mentioned
 
-- [[charles-gawad]] — first author; later cofounder of BioSkryb and coauthor on [[luquette-2021-scan2]] and [[gonzalez-pena-2021-pnas]].
+- [[charles-gawad]] — first author; later cofounder of BioSkryb and coauthor on [[luquette-2022-neuron-scan2-indels]] and [[gonzalez-pena-2021-pnas]].
 - [[stephen-quake]] — corresponding author; microfluidic single-cell platforms.
 
 ## Concepts touched

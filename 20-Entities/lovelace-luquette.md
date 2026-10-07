@@ -24,6 +24,6 @@ updated: 2026-10-07
 
 ## Added 2026-08-13
 
-First author of [[10-Summaries/luquette-2021-scan2]] (SCAN2), the PTA-native successor to SCAN-SNV extended to **indels**. Two numbers: the neuronal SNV accumulation rate is revised down to **15 SNVs/year** — attributed to artifacts in older amplification chemistries — and somatic **indels accumulate at ≥2/year per neuron**, with potentially larger functional impact than the SNVs.
+First author of [[10-Summaries/luquette-2022-neuron-scan2-indels]] (SCAN2; Nature Genetics 2022, preprint 2021), the PTA-native successor to SCAN-SNV extended to **indels**. Two numbers: the neuronal SNV accumulation rate is revised down to **16.5 SNVs/year** (15 in the preprint) — attributed to artifacts in older amplification chemistries — and somatic **indels accumulate at ~3/year per neuron**, with potentially larger functional impact than the SNVs.
 
-This completes a three-paper arc: [[10-Summaries/luquette-2019-natcomm]] (MDA, SNVs) → [[10-Summaries/luquette-2021-scan2]] (PTA, SNVs + indels) → [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] (orthogonal duplex validation). (synthesis)
+This completes a three-paper arc: [[10-Summaries/luquette-2019-natcomm]] (MDA, SNVs) → [[10-Summaries/luquette-2022-neuron-scan2-indels]] (PTA, SNVs + indels) → [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] (orthogonal duplex validation). (synthesis)

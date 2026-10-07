@@ -1,7 +1,11 @@
 ---
 type: summary
 title: "Luquette et al. 2022 — Single-cell genome sequencing of human neurons identifies somatic point mutation and indel enrichment in regulatory elements"
-source: "[[00-Sources/papers/Single-cell genome sequencing of human neurons identifies somatic point mutation and indel enrichment in regulatory elements]]"
+source: [
+  "[[00-Sources/papers/Single-cell genome sequencing of human neurons identifies somatic point mutation and indel enrichment in regulatory elements]]",
+  "[[00-Sources/papers/Ultraspecific somatic SNV and indel detection in single neurons using primary template-directed amplification]]"
+]
+aliases: ["luquette-2021-scan2", "Luquette 2021 SCAN2", "SCAN2", "Luquette 2022"]
 source_kind: paper
 author: "Lovelace J. Luquette, Michael B. Miller, Zinan Zhou, Craig L. Bohrson, Yifan Zhao, Hu Jin, Doga Gulhan, Javier Ganz, Sara Bizzotto, Samantha Kirkham, Tino Hochepied, Claude Libert, Alon Galor, Junho Kim, Michael A. Lodato, Juan I. Garaycoechea, Charles Gawad, Jay West, Christopher A. Walsh, Peter J. Park (corresponding)"
 published: 2022-09-26
@@ -35,7 +39,7 @@ topics: ["[[brain-somatic-mosaicism]]", "[[mosaic-variant-calling]]", "[[whole-g
 
 FANS-sorted NeuN⁺ nuclei from postmortem PFC; ResolveDNA (BioSkryb) PTA; NovaSeq 150-bp PE, BWA-MEM to hs37d5. Benchmarks: synthetic diploid X chromosomes with SNV/indel spike-ins (63 SDs; multiple COSMIC signatures), kindred crossbred mESC clones with bulk truth, MDA vs PTA from the same individuals. Enrichment via signature-matched permutations (scan2 permtool, 10,000 sets) restricted to callable genome; robust to higher depth cutoffs. Annotations: GTEx, Roadmap H3K27ac/H3K4me3 and ChromHMM, FACS-purified brain cell-type enhancers/promoters, sorted-cell ATAC OCRs, phyloP, SAR-seq and Repair-seq hotspots.
 
-Weight: strong for the calling methodology (multiple orthogonal truth sets) and for the rate revision (same-individual MDA vs PTA). The rescue step is signature-dependent, so the authors themselves recommend VAF-only calls for signature extraction and nucleotide-content-matched permutations for regional enrichment. (The clipping carries no competing-interest statement; see [[luquette-2021-scan2]] for the disclosure in the preprint.)
+Weight: strong for the calling methodology (multiple orthogonal truth sets) and for the rate revision (same-individual MDA vs PTA). The rescue step is signature-dependent, so the authors themselves recommend VAF-only calls for signature extraction and nucleotide-content-matched permutations for regional enrichment. (The journal clipping carries no competing-interest statement; the preprint discloses one — see "Preprint version" below.)
 
 ## Surprising or load-bearing bits
 
@@ -55,7 +59,6 @@ Weight: strong for the calling methodology (multiple orthogonal truth sets) and 
 
 ## Connections to other sources
 
-- Preprint of (apparently) this work: [[luquette-2021-scan2]] — that abstract reports 76 neurons, 15 SNVs/year and ≥2 indels/year; this published version reports 52 PTA neurons, 16 SNVs/year and ≥3 indels/year. (synthesis)
 - Method lineage: [[luquette-2019-natcomm]] (SCAN-SNV), [[bohrson-2019-lira]] (LiRA, used here as a cross-check), [[luquette-2025-pta-duplex-mosaicism]] (later PTA + duplex validation).
 - Chemistry: [[gonzalez-pena-2021-pnas]] (PTA). Comparator callers: [[zafar-2016-monovar]], [[dong-2017-sccaller]].
 - MDA-era neuron mutation burden it revises: [[lodato-2017-aging-neurons]], [[lodato-2015-science]].
@@ -69,6 +72,12 @@ Weight: strong for the calling methodology (multiple orthogonal truth sets) and 
 - Indel sensitivity is lowest in homopolymers and tandem repeats >4 units, so the ~3/year rate is a lower bound and repeat-rich regulatory regions may be under-counted.
 - Whether the indel enrichment in neuronal enhancers has functional consequence (e.g. altered regulation in aged or diseased brain) is proposed, not tested.
 
+## Preprint version (merged 2026-10-07)
+
+This page also covers the bioRxiv preprint *Ultraspecific somatic SNV and indel detection in single neurons using primary template-directed amplification* (Luquette et al., posted 2021-05-01, [DOI](https://doi.org/10.1101/2021.04.30.442032)), previously summarised separately as `luquette-2021-scan2` from an abstract-only clipping. The preprint abstract reported **76 PTA neurons, 15 sSNVs/year and ≥2 indels/year**; the published version analyses **52 PTA neurons** and reports **16.5 sSNVs/year and ~3 indels/year**. Cite the published numbers.
+
+**Competing interests (from the preprint).** Two authors, C. Gawad and J. West, are cofounders/officers of BioSkryb, which makes the PTA (ResolveDNA) kits used — relevant because a central claim is that PTA is cleaner than other chemistries.
+
 ## Related
 
-- [[luquette-2021-scan2]] · [[pta]] · [[40-Topics/brain-somatic-mosaicism]] · [[40-Topics/mosaic-variant-calling]]
+- [[luquette-2019-natcomm]] · [[pta]] · [[40-Topics/brain-somatic-mosaicism]] · [[40-Topics/mosaic-variant-calling]]

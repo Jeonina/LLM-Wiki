@@ -59,7 +59,7 @@ updated: 2026-10-07
 
 ## Added 2026-08-13
 
-SCAN2 ([[10-Summaries/luquette-2021-scan2]]) is the PTA-native caller and reports a genome-wide single-neuron **indel** rate (≥2/year). Its more consequential result is a correction to a published biological constant: the neuronal SNV accumulation rate falls to **15 SNVs/year**, with the revision attributed to artifacts in older amplification chemistries.
+SCAN2 ([[10-Summaries/luquette-2022-neuron-scan2-indels]]) is the PTA-native caller and reports a genome-wide single-neuron **indel** rate (~3/year). Its more consequential result is a correction to a published biological constant: the neuronal SNV accumulation rate falls to **16.5 SNVs/year**, with the revision attributed to artifacts in older amplification chemistries.
 
 That is the sharpest case in the corpus of chemistry determining a biological number — and it sits alongside the validation result from a decade earlier that only **19.4–27.0% of single-cell-only mutation calls survive orthogonal duplex confirmation** ([[10-Summaries/wang-2014-nuc-seq]]). Both point the same way: single-cell-only calls need an independent arbiter. (synthesis)
 

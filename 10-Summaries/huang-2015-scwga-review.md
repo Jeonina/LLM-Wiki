@@ -61,7 +61,7 @@ Narrative review plus original comparative deep sequencing of five commercial ki
 
 ## Open questions
 
-- The review's parameter framework has no axis for **indels**, which later proved to be the most chemistry-sensitive variant class ([[luquette-2021-scan2]]).
+- The review's parameter framework has no axis for **indels**, which later proved to be the most chemistry-sensitive variant class ([[luquette-2022-neuron-scan2-indels]]).
 - Chimera *rate* is named as a parameter but the review does not establish a standard way to measure it; no consensus assay exists in the corpus.
 - Whether the clean-room contamination floor (0.1%) is achievable in routine clinical PGD settings is asserted rather than demonstrated.
 

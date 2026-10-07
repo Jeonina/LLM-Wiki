@@ -93,7 +93,7 @@ Tensions and gaps surfaced during ingest or lint. When a question is resolved, r
 
 **Biology claims revised by newer primary data**
 - **Neuronal CNAs**: PTA found large CNAs in only 2/52 neurons, "in contrast to previous reports of pervasive copy number alterations" ([[10-Summaries/luquette-2022-neuron-scan2-indels]]) — MDA/DOP-era neuronal CNV claims (e.g. [[10-Summaries/mcconnell-2017-science]]) need this caveat.
-- **Neuronal SNV rate converges ~15–16/year** across PTA ([[10-Summaries/luquette-2021-scan2]]) and META-CS ([[10-Summaries/xing-2021-meta-cs]]), below MDA-era estimates ([[10-Summaries/lodato-2017-aging-neurons]]). META-CS's single-strand calls read as ssDNA damage are ~13× higher than HiDEF-seq's ([[10-Summaries/liu-2024-hidef-seq]]).
+- **Neuronal SNV rate converges ~15–16/year** across PTA ([[10-Summaries/luquette-2022-neuron-scan2-indels]]) and META-CS ([[10-Summaries/xing-2021-meta-cs]]), below MDA-era estimates ([[10-Summaries/lodato-2017-aging-neurons]]). META-CS's single-strand calls read as ssDNA damage are ~13× higher than HiDEF-seq's ([[10-Summaries/liu-2024-hidef-seq]]).
 - **Strand dropout on MDA**: negligible for LiRA's phased subset ([[10-Summaries/bohrson-2019-lira]]) vs ~550 SNV / 136 indel artefacts per MDA genome estimated from haploid X ([[10-Summaries/luquette-2022-neuron-scan2-indels]]).
 - **CRC2 metastatic seeding**: monoclonal per CellPhy and SCARLET ([[10-Summaries/kozlov-2022-cellphy]]; [[10-Summaries/satas-2020-scarlet]]) vs polyclonal per SCITE/SiCloneFit ([[10-Summaries/zafar-2019-siclonefit]]).
 - **Infinite-sites violations** are frequent in TNBC16 scWES but absent in CRC28 scWGS ([[10-Summaries/kang-2022-sieve]]) — biological or artefactual double mutants?
@@ -109,7 +109,7 @@ Tensions and gaps surfaced during ingest or lint. When a question is resolved, r
 
 **Source quality to fix by re-clipping** — abstract- or reference-only clippings: [[10-Summaries/argelaguet-2018-mofa]], [[10-Summaries/pancikova-2025-splongget]], [[10-Summaries/wang-2024-wellda-seq]], [[10-Summaries/fan-2026-gfetm]]; partial: [[10-Summaries/hsieh-2015-micro-c]]. Internal inconsistencies noted in [[10-Summaries/sollier-2023-compass]] (123 vs 120 samples), [[10-Summaries/acharya-2024-scimet-cap]], [[10-Summaries/dautle-2025-schic-review]], [[10-Summaries/yadav-2025-scffpe-atac]], [[10-Summaries/zhou-2024-scdmv]], [[10-Summaries/hard-2023-long-read-scwgs]] (28 somatic SNVs = 27 nuclear + 1 mtDNA).
 
-**Pending decision**: [[10-Summaries/luquette-2021-scan2]] (bioRxiv: 76 PTA neurons, 15 SNVs/yr) looks like the preprint of [[10-Summaries/luquette-2022-neuron-scan2-indels]] (Nature Genetics: 52 neurons analysed, 16.5 SNVs/yr) — merge or keep both?
+**Resolved 2026-10-07**: the SCAN2 preprint summary was merged into [[10-Summaries/luquette-2022-neuron-scan2-indels]] (published numbers: 52 neurons, 16.5 SNVs/yr, ~3 indels/yr).
 
 ## Related
 

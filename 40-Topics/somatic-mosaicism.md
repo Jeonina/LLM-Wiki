@@ -216,4 +216,4 @@ _None yet._
 
 HiDEF-seq ([[10-Summaries/liu-2024-hidef-seq]]) shifts the object of study one step upstream: from mutations to the **single-strand mismatches and damage that precede them**. Double-strand mutations are the endpoint of an interaction between lesion formation, DNA repair, and replication, so dsDNA signatures need not reflect the patterns of the originating events — and until 2024 no method could read those events, because every method amplified first.
 
-Practical consequences for the corpus: single-strand burden estimates from duplex-family methods are inflated ~18-fold ([[10-Summaries/liu-2024-hidef-seq]]); and neuronal somatic SNV rates from MDA-era data were overestimated, revised to 15/year with PTA ([[10-Summaries/luquette-2021-scan2]]). (synthesis)
+Practical consequences for the corpus: single-strand burden estimates from duplex-family methods are inflated ~18-fold ([[10-Summaries/liu-2024-hidef-seq]]); and neuronal somatic SNV rates from MDA-era data were overestimated, revised to 16.5/year with PTA ([[10-Summaries/luquette-2022-neuron-scan2-indels]]). (synthesis)

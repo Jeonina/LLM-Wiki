@@ -57,7 +57,7 @@ Downstream tree inference can use genotype likelihoods instead of hard calls. Ce
 
 ## Added 2026-08-13
 
-SCAN2 extends the SCAN line from SNVs to **indels** and is matched to [[30-Concepts/pta|PTA]] rather than MDA ([[10-Summaries/luquette-2021-scan2]]). The consequence is not just a new variant class but a revised biological constant: neuronal somatic SNV accumulation drops to **15 SNVs/year**, with the revision attributed to artifacts in the older amplification chemistries ([[10-Summaries/luquette-2021-scan2]]). Somatic indels accumulate at ≥2/year per neuron and may have larger functional impact per event ([[10-Summaries/luquette-2021-scan2]]).
+SCAN2 extends the SCAN line from SNVs to **indels** and is matched to [[30-Concepts/pta|PTA]] rather than MDA ([[10-Summaries/luquette-2022-neuron-scan2-indels]]). The consequence is not just a new variant class but a revised biological constant: neuronal somatic SNV accumulation drops to **16.5 SNVs/year**, with the revision attributed to artifacts in the older amplification chemistries ([[10-Summaries/luquette-2022-neuron-scan2-indels]]). Somatic indels accumulate at ~3/year per neuron and are enriched in conserved sequence and neuronal enhancers ([[10-Summaries/luquette-2022-neuron-scan2-indels]]).
 
 Indels were effectively unmeasurable before PTA because MDA's polymerase-slippage artifacts sit on top of the indel signal — getting a rate at all is a chemistry result as much as an algorithm result. (synthesis)
 

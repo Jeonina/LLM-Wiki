@@ -50,7 +50,6 @@ Catalog of ~370 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/valecha-2022-scsnv-review]] — Valecha 2022, review of somatic variant calling from single-cell DNA.
 - [[10-Summaries/mckenna-2010-gatk]] — McKenna 2010, GATK; the diploid, uniform-coverage bulk null model every single-cell caller replaces.
 - [[10-Summaries/smukowski-heil-2023-loh]] — Smukowski Heil 2023, loss of heterozygosity: rates, adaptive role, and the detection pipeline that collides with allele dropout in single cells.
-- [[10-Summaries/luquette-2021-scan2]] — Luquette 2021, SCAN2: PTA-native SNV + indel calling; neuronal rate revised to 15 SNVs/yr.
 - [[10-Summaries/singer-2018-sciphi]] — Singer 2018, SCIΦ: joint mutation calling and tumour phylogeny by MCMC.
 - [[10-Summaries/bohrson-2019-lira]] — Bohrson 2019, LiRA: read-backed phasing with germline hets filters MDA artifacts, validates singleton sSNVs, per-cell FDR model.
 - [[10-Summaries/chen-2009-breakdancer]] — Chen 2009, BreakDancer: read-pair SV caller (Max: Poisson-scored anomalous pairs; Mini: KS insert-size test for 10–100 bp indels), validated on simulation, NA18507, an AML tumour/normal pair and 1000 Genomes trios.

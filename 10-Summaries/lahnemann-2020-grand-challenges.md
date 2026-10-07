@@ -70,12 +70,12 @@ Weight: authoritative as a map of problems circa early 2020, with authors spanni
 
 - Tools it discusses that the wiki covers: [[zafar-2016-monovar]], [[dong-2017-sccaller]], [[luquette-2019-natcomm]] (SCAN-SNV), [[zafar-2019-siclonefit]], [[singer-2018-sciphi]], [[jahn-2016-scite]], [[ross-2016-onconem]], [[zafar-2017-sifit]], [[el-kebir-2018-sphyr]] (Dollo-k), [[bakker-2016-aneufinder]], [[tickle-2019-infercnv]], [[wolf-2019-paga]], [[haghverdi-2018-mnn]], [[zahn-2017-dlp]].
 - The RAxML-NG single-cell extension it previews appears as [[kozlov-2022-cellphy]], whose simulations use CellCoal ([[kozlov-2022-cellphy]]).
-- The indel gap is later addressed for PTA data by [[luquette-2021-scan2]]; ProSolo ([[lahnemann-2021-natcomm]], same first author) addresses FDR-controlled calling with bulk pairing.
+- The indel gap is later addressed for PTA data by [[luquette-2022-neuron-scan2-indels]]; ProSolo ([[lahnemann-2021-natcomm]], same first author) addresses FDR-controlled calling with bulk pairing.
 - Later reviews of the same terrain: [[valecha-2022-scsnv-review]], [[lu-2024-cnaphylogeny-review]], [[heumos-2023-best-practices]].
 
 ## Open questions
 
-- Several 2020 "gaps" need re-checking against the later corpus: scDNA indel calling (cf. [[luquette-2021-scan2]]), scDNA simulators (CellCoal is used in [[kozlov-2022-cellphy]]), and systematic caller benchmarks. (synthesis)
+- Several 2020 "gaps" need re-checking against the later corpus: scDNA indel calling (cf. [[luquette-2022-neuron-scan2-indels]]), scDNA simulators (CellCoal is used in [[kozlov-2022-cellphy]]), and systematic caller benchmarks. (synthesis)
 - Measurement linkage in same-cell multi-omics (e.g., DNA + RNA) remains a modelling challenge the review flags but does not solve.
 - Whether heterotachy-aware and population-genetic models can be fitted at single-cell scale is still open.
 

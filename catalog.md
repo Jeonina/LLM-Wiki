@@ -279,7 +279,7 @@ A curated, topic-organized selection. **Not exhaustive** — for complete covera
 - [[10-Summaries/kaufmann-2022-medicc2\|Kaufmann 2022 (MEDICC2)]] — WGD-aware CN phylogeny
 - [[10-Summaries/lu-2024-cnaphylogeny-review\|Lu 2025]] — CNA-based phylogenetic inference review
 - [[10-Summaries/xiao-2025-epitrace\|Xiao 2025 (EpiTrace)]] — ATAC-based mitotic age
-- [[10-Summaries/luquette-2021-scan2\|Luquette 2021 (SCAN2)]] — PTA-native SNV + indel calling; neuronal rate revised to 15/yr
+- [[10-Summaries/luquette-2022-neuron-scan2-indels\|Luquette 2022 (SCAN2)]] — PTA-native SNV + indel calling; neuronal rate revised to 16.5/yr
 - [[10-Summaries/ross-2016-onconem\|Ross & Markowetz 2016 (OncoNEM)]] — nested effects models; unobserved subpopulations
 - [[10-Summaries/el-kebir-2018-sphyr\|El-Kebir 2018 (SPhyR)]] — k-Dollo model for CNA-driven SNV loss
 - [[10-Summaries/singer-2018-sciphi\|Singer 2018 (SCIΦ)]] — joint variant calling + phylogeny by MCMC

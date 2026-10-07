@@ -49,4 +49,4 @@ Boston Children's Hospital, Harvard Medical School, Howard Hughes Medical Instit
 
 ## Added 2026-08-13
 
-Senior author of [[10-Summaries/luquette-2021-scan2]] (SCAN2), the PTA-based revision of the neuronal somatic mutation rate.
+Senior author of [[10-Summaries/luquette-2022-neuron-scan2-indels]] (SCAN2), the PTA-based revision of the neuronal somatic mutation rate.

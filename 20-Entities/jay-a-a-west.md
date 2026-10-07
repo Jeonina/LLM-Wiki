@@ -34,4 +34,4 @@ Affiliation: BioSkryb Genomics. Work centers on primary template-directed amplif
 
 ## Added 2026-08-13
 
-Coauthor of [[10-Summaries/luquette-2021-scan2]], with a declared competing interest as BioSkryb CEO — BioSkryb manufactures the PTA kits used in the study.
+Coauthor of [[10-Summaries/luquette-2022-neuron-scan2-indels]], with a declared competing interest as BioSkryb CEO — BioSkryb manufactures the PTA kits used in the study.

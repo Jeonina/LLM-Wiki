@@ -23,4 +23,4 @@ updated: 2026-10-07
 
 ## Added 2026-08-13
 
-Senior author of [[10-Summaries/luquette-2021-scan2]] (SCAN2), which revised the human neuronal somatic SNV rate to 15/year and produced the first genome-wide single-neuron indel rate.
+Senior author of [[10-Summaries/luquette-2022-neuron-scan2-indels]] (SCAN2), which revised the human neuronal somatic SNV rate to 16.5/year and reported a genome-wide single-neuron indel rate (~3/year).

@@ -62,7 +62,7 @@ Weight: the kindred-cell and sperm controls are a well-designed truth set for th
 ## Connections to other sources
 
 - Successor chemistry to [[chen-2017-lianti]] (same carrier ssDNA, same lianti code base); META, the WGA it builds on (its ref. 10), is the same amplification used in Dip-C ([[tan-2018-science]], same core authors).
-- **Echoes** [[luquette-2021-scan2]]: PTA+SCAN2 revises the neuronal rate to 15 SNVs/year, close to META-CS's ~16/year, and both attribute higher earlier estimates to amplification artifacts; contrasts with MDA-era [[lodato-2017-aging-neurons]].
+- **Echoes** [[luquette-2022-neuron-scan2-indels]]: PTA+SCAN2 revises the neuronal rate to 16.5 SNVs/year, close to META-CS's ~16/year, and both attribute higher earlier estimates to amplification artifacts; contrasts with MDA-era [[lodato-2017-aging-neurons]].
 - **Disputed downstream by** [[liu-2024-hidef-seq]], which measures ssDNA call burdens ~13-fold lower than Meta-CS in cortical neurons — implying META-CS's single-strand "damage" calls are partly artifact.
 - HSC comparison data from [[lee-six-2018-hsc-dynamics]].
 - Duplex-sequencing context: [[kennedy-2014-duplex-protocol]], [[kriz-2025-duplex-multiome]], [[luquette-2025-pta-duplex-mosaicism]]; reviewed in [[shao-2025-scDNA-mosaicism-review]] and [[lim-2024-single-cell-omics-review]].

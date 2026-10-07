@@ -53,7 +53,7 @@ updated: 2026-10-07
 
 Two additions from the 2026-08-13 ingest.
 
-[[10-Summaries/luquette-2021-scan2]] revises the neuronal somatic SNV accumulation rate to **15 SNVs/year** across 76 PTA-amplified single neurons, and reports a genome-wide single-neuron **indel** rate (≥2/year) — with the note that indels may matter more for gene function than SNVs.
+[[10-Summaries/luquette-2022-neuron-scan2-indels]] revises the neuronal somatic SNV accumulation rate to **16.5 SNVs/year** across 52 PTA-amplified single neurons, and reports a genome-wide single-neuron **indel** rate (~3/year) — with the note that indels may matter more for gene function than SNVs.
 
 [[10-Summaries/liu-2024-hidef-seq]] profiles cortical neurons among 134 samples and measures ssDNA call burdens ~13-fold lower than Meta-CS single-cell duplex sequencing, again indicating that amplification-based single-strand estimates are inflated.
 

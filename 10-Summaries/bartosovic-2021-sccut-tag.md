@@ -2,6 +2,8 @@
 type: summary
 title: "Bartosovic et al. 2021 — scCUT&Tag: single-cell CUT&Tag for histone modifications + TFs in tissue"
 source: "[[00-Sources/papers/Single-cell CUT&Tag profiles histone modifications and transcription factors in complex tissues]]"
+source_quality: full
+source_sha256: "47eb90942afa4be200fc5fb39b61a86f29fc8d397911e70a63368e4a4cea2032"
 source_kind: paper
 author: "Marek Bartosovic, Mukund Kabbe, Gonçalo Castelo-Branco (corresponding)"
 published: 2021-04-12

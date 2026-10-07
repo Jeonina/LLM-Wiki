@@ -2,6 +2,8 @@
 type: summary
 title: "Bohaczuk 2024 — Resolving the chromatin impact of mosaic variants with targeted Fiber-seq"
 source: "[[00-Sources/papers/Resolving the chromatin impact of mosaic variants with targeted Fiber-seq]]"
+source_quality: abstract
+source_sha256: "df5f1cf096995bfdeb1a38ad1e5eafe25dd38a79a39d6d70b0d714846c15d8ff"
 aliases: ["Bohaczuk 2024", "targeted Fiber-seq", "mosaic Fiber-seq"]
 tags: [targeted-Fiber-seq, mosaic-variants, chromatin-impact, DMPK, myotonic-dystrophy, HBG1, Stergachis-lab, UW]
 created: 2026-05-13

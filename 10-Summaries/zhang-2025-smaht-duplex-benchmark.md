@@ -2,6 +2,8 @@
 type: summary
 title: "Zhang et al. 2025 — SMaHT duplex-seq benchmark: six methods, concordant mutation rates"
 source: "[[00-Sources/papers/Benchmarking of duplex sequencing approaches to reveal somatic mutation landscapes]]"
+source_quality: abstract
+source_sha256: "cc13bb7fa3b1677e3821e247b03486ccd40cf8925bc3ce88849d6c62e7be88d7"
 source_kind: paper
 author: "Yang Zhang, Vinayak V. Viswanadham, ... Diane Shao, Christopher A. Walsh, Gilad D. Evrony, Chenghang Zong, Tim H. H. Coorens (corresponding)"
 published: 2025-12-15

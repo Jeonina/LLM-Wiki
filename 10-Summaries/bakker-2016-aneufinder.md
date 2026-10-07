@@ -2,6 +2,8 @@
 type: summary
 title: "Bakker et al. 2016 — Single-cell sequencing reveals karyotype heterogeneity in murine and human malignancies (AneuFinder)"
 source: "[[00-Sources/papers/Single-cell sequencing reveals karyotype heterogeneity in murine and human malignancies]]"
+source_quality: full
+source_sha256: "3a8f4c2b6345f5e2c9f446be576dbd5e9911b98a7ca39acff2685d1c46bfd120"
 source_kind: paper
 author: "Bjorn Bakker, Aaron Taudt, Mirjam E. Belderbos, David Porubsky, Diana C. J. Spierings, ... Peter M. Lansdorp, Maria Colomé-Tatché, Floris Foijer (corresponding)"
 published: 2016-05-31

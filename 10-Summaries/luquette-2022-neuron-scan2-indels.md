@@ -5,6 +5,8 @@ source: [
   "[[00-Sources/papers/Single-cell genome sequencing of human neurons identifies somatic point mutation and indel enrichment in regulatory elements]]",
   "[[00-Sources/papers/Ultraspecific somatic SNV and indel detection in single neurons using primary template-directed amplification]]"
 ]
+source_quality: full
+source_sha256: ["75a0503de6c9aba009c9727ab1b7d12b6644c26a5a4b9a4d449561e7f09a9650", "f4e6e0ade5db04070d74e5f9b9fe4d13751f0012b4c905ab236a7673d481eb33"]
 aliases: ["luquette-2021-scan2", "Luquette 2021 SCAN2", "SCAN2", "Luquette 2022"]
 source_kind: paper
 author: "Lovelace J. Luquette, Michael B. Miller, Zinan Zhou, Craig L. Bohrson, Yifan Zhao, Hu Jin, Doga Gulhan, Javier Ganz, Sara Bizzotto, Samantha Kirkham, Tino Hochepied, Claude Libert, Alon Galor, Junho Kim, Michael A. Lodato, Juan I. Garaycoechea, Charles Gawad, Jay West, Christopher A. Walsh, Peter J. Park (corresponding)"

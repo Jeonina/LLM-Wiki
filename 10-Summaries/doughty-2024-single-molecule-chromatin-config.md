@@ -2,6 +2,8 @@
 type: summary
 title: "Doughty et al. 2024 — Single-molecule chromatin configurations link TF binding to expression in human cells (bioRxiv preprint)"
 source: "[[00-Sources/papers/Single-molecule chromatin configurations link transcription factor binding to expression in human cells]]"
+source_quality: abstract
+source_sha256: "abb36c8c28cb1be7046c26b2f756354261eba266ce793cfb377dbbfea643dc2c"
 source_kind: paper
 author: Benjamin R. Doughty, Michaela M. Hinks, Julia M. Schaepe, ..., Lacramioara Bintu, William J. Greenleaf (co-corresponding)
 published: 2024-02-04

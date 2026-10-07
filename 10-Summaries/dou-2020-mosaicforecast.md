@@ -2,6 +2,8 @@
 type: summary
 title: "Dou 2020 — Accurate detection of mosaic variants in sequencing data without matched controls (MosaicForecast)"
 source: "[[00-Sources/papers/Accurate detection of mosaic variants in sequencing data without matched controls]]"
+source_quality: full
+source_sha256: "c96e078a3e73ee3d158ddf17ca30bffd9df3d4152175d492e2a2d546c5f494fc"
 aliases: ["Dou 2020", "MosaicForecast", "MF"]
 tags: [MosaicForecast, mosaic-variant-calling, read-phasing, machine-learning, brain-mosaicism, Park-lab, Walsh-lab, Harvard]
 created: 2026-05-13

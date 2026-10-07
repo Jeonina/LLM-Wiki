@@ -2,6 +2,8 @@
 type: summary
 title: "Stergachis 2020 — Single-molecule regulatory architectures captured by chromatin fiber sequencing (Fiber-seq)"
 source: "[[00-Sources/papers/Single-molecule regulatory architectures captured by chromatin fiber sequencing]]"
+source_quality: full
+source_sha256: "29180f0db87ce908ff72a976dbc4fc5d58d18003e61cacb71e52012544c677a8"
 aliases: [Stergachis 2020, Fiber-seq paper, AndrewB_2020_Science]
 tags: [fiber-seq, single-molecule, chromatin, m6A, methyltransferase, PacBio, foundational]
 created: 2026-05-12

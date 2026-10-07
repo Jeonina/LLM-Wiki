@@ -2,6 +2,8 @@
 type: summary
 title: "Mallory 2020 — Assessing the performance of methods for copy number aberration detection from single-cell DNA sequencing data"
 source: "[[00-Sources/papers/Methods for copy number aberration detection from single-cell DNA-sequencing data]]"
+source_quality: full
+source_sha256: "31f1a93b00056820f79a526b9ddc291051543a805b5dec097a1ccb6f838d6192"
 aliases: ["Mallory 2020 review", "scDNA CNA methods review", "Nakhleh CNA review"]
 tags: [review, CNA-detection, scDNA-seq, segmentation, tumor-evolution, Nakhleh-lab, Rice, Navin-lab]
 created: 2026-05-13

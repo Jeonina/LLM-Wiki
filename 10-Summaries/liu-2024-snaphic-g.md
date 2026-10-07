@@ -2,6 +2,8 @@
 type: summary
 title: "Liu et al. 2024 — SnapHiC-G: identifying long-range enhancer–promoter interactions from single-cell Hi-C data via a global background model"
 source: "[[00-Sources/papers/SnapHiC-G_ identifying long-range enhancer–promoter interactions from single-cell Hi-C data via a global background model]]"
+source_quality: full
+source_sha256: "a5dd4fa18b0e3f562cfd51d7f7263be1992a7c33c3847fd87461504bded3356b"
 source_kind: paper
 author: "Weifang Liu, Wujuan Zhong, Paola Giusti-Rodríguez, Zhiyun Jiang, Geoffery W. Wang, Huaigu Sun, Ming Hu, Yun Li"
 published: 2024-09-02

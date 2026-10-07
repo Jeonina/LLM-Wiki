@@ -2,6 +2,8 @@
 type: summary
 title: "Telenius et al. 1992 — Degenerate oligonucleotide-primed PCR (DOP-PCR)"
 source: "[[00-Sources/papers/Degenerate oligonucleotide-primed PCR_ General amplification of target DNA by a single degenerate primer]]"
+source_quality: abstract
+source_sha256: "9225c5e8b5f675d6325ddb5ebe5d5320b1082db3e8dbc979647b4b36e742a1c3"
 source_kind: paper
 author: "Hakan Telenius, Nigel P. Carter, Charles E. Bebb, Marisa Nordenskjöld, Bruce A. J. Ponder, Alfredo Tunnacliffe"
 published: 1992-07

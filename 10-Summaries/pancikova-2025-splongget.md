@@ -2,6 +2,8 @@
 type: summary
 title: "Pančíková et al. 2025 — Long-read single-cell genome, transcriptome and open chromatin profiling links genotype to phenotypes (SPLONGGET)"
 source: "[[00-Sources/papers/Long-read single-cell genome, transcriptome and open chromatin profiling links genotype to phenotypes.pdf]]"
+source_quality: full
+source_sha256: "82753e327c9d000ad6ac2be29112ddd5e8dc05640bc91b86e4600d157c5e23cf"
 source_kind: paper
 author: "Alexandra Pančíková, Ruben Cools, Marios Eftychiou, Margo Aertgeerts, Joris Vande Velde, Heidi Segers, Jan Cools, Luuk Harbers, Jonas Demeulemeester (corresponding)"
 published: 2025-09-09

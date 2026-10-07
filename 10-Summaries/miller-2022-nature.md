@@ -2,6 +2,8 @@
 type: summary
 title: "Miller 2022 — Somatic genomic changes in single Alzheimer's disease neurons"
 source: "[[00-Sources/papers/Somatic genomic changes in single Alzheimer’s disease neurons]]"
+source_quality: full
+source_sha256: "d0d6ad8fcba9ffd4c3b13d2b2f4ff73ad2b69ed57f8cae1b8b65ab5ce5e0841c"
 aliases: ["Miller 2022 AD neurons", "Signature C AD"]
 tags: [scWGS, Alzheimer's, neurodegeneration, mutational-signatures, oxidative-damage]
 created: 2026-05-13

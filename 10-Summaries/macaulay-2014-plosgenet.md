@@ -2,6 +2,8 @@
 type: summary
 title: "Macaulay & Voet 2014 — Single cell genomics: advances and future perspectives"
 source: "[[00-Sources/papers/Single Cell Genomics_ Advances and Future Perspectives]]"
+source_quality: full
+source_sha256: "af4119dcbe616a4d755b81a9b1cb24a7d5925823fa51cfffc608daad148acef4"
 aliases: ["Macaulay Voet 2014", "scWGA review"]
 tags: [review, scWGA, single-cell-genomics, methods]
 created: 2026-05-13

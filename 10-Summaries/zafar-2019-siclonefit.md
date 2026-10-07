@@ -2,6 +2,8 @@
 type: summary
 title: "Zafar et al. 2019 — SiCloneFit: Bayesian inference of population structure, genotype, and phylogeny of tumor clones from single-cell genome sequencing data"
 source: "[[00-Sources/papers/SiCloneFit_ Bayesian inference of population structure, genotype, and phylogeny of tumor clones from single-cell genome sequencing data]]"
+source_quality: full
+source_sha256: "e80b19b2158682e73dab04fed7ad40b791f565a7740f1c6fbe1d0f203735ddc8"
 source_kind: paper
 author: "Hamim Zafar, Nicholas Navin, Ken Chen, Luay Nakhleh"
 published: 2019-11

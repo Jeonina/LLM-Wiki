@@ -2,6 +2,8 @@
 type: summary
 title: "Kapourani 2019 — Melissa: Bayesian clustering and imputation of single-cell methylomes"
 source: "[[00-Sources/papers/Melissa_ Bayesian clustering and imputation of single-cell methylomes]]"
+source_quality: full
+source_sha256: "877bee732fba5b38bc8b7e0fb5922a94ce03c2a811fcef9cb1a1af192ac46d54"
 aliases: ["Kapourani 2019 Melissa", "Melissa", "MEthyLation Inference for Single cell Analysis"]
 tags: [Melissa, scBS-seq, Bayesian-clustering, imputation, methylation, Sanguinetti-lab, Edinburgh]
 created: 2026-05-13

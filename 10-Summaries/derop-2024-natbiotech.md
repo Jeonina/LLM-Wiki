@@ -2,6 +2,8 @@
 type: summary
 title: "De Rop 2024 — Systematic benchmarking of single-cell ATAC-sequencing protocols (PUMATAC)"
 source: "[[00-Sources/papers/Systematic benchmarking of single-cell ATAC-sequencing protocols]]"
+source_quality: full
+source_sha256: "5611cddf2a34a5d82ef82abbeceae099cbefc9022286b2bd9f06e423e2aea05d"
 aliases: ["De Rop 2024", "PUMATAC benchmark", "scATAC-seq benchmark"]
 tags: [scATAC-seq, benchmarking, computational, PBMC, PUMATAC, Aerts-lab, Heyn-lab]
 created: 2026-05-13

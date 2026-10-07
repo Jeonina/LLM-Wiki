@@ -2,6 +2,8 @@
 type: summary
 title: "Lodato 2015 — Somatic mutation in single human neurons tracks developmental and transcriptional history"
 source: "[[00-Sources/papers/Somatic mutation in single human neurons tracks developmental and transcriptional history]]"
+source_quality: full
+source_sha256: "0d5625405e8bec07e1e1548985d7d1875bee3bcc3869b7449ebabbaab7cacd13"
 aliases: ["Lodato Walsh 2015", "single-neuron WGS 2015"]
 tags: [scWGS, neurons, somatic-mosaicism, lineage, Walsh-lab]
 created: 2026-05-13

@@ -2,6 +2,8 @@
 type: summary
 title: "Wang et al. 2021 — MEDALT: single-cell copy number lineage tracing enabling gene discovery"
 source: "[[00-Sources/papers/MEDALT_ single-cell copy number lineage tracing enabling gene discovery]]"
+source_quality: full
+source_sha256: "cbcf5dc6d0b66eaf41a9be1e269387280242fb03e6b6ff5798a3c56c79b2a4ce"
 source_kind: paper
 author: "Fang Wang, Qihan Wang, Vakul Mohanty, Shaoheng Liang, Jinzhuang Dou, Jincheng Han, Darlan Conterno Minussi, Ruli Gao, Li Ding, Nicholas Navin, Ken Chen (corresponding)"
 published: 2021-02-23

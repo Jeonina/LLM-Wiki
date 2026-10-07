@@ -2,6 +2,8 @@
 type: summary
 title: "Wu et al. 2026 — Advances in scCUT&Tag and computational analysis for single-cell gene regulatory element mapping"
 source: "[[00-Sources/papers/Advances in scCUT&Tag and computational analysis for single-cell gene regulatory element mapping]]"
+source_quality: full
+source_sha256: "768ff3ce1be1e9a7b74a21e3cc3a44db38a45ce5343cc4d00188fc2438cca3d9"
 source_kind: paper
 author: "Jun Wu, Md Wahiduzzaman, Pengfei Yin, Puxuan Sun, Haoping Chen, Yongwen Ding, Jiankang Wang (supervising author)"
 published: 2026-01-29

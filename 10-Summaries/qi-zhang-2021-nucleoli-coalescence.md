@@ -2,6 +2,8 @@
 type: summary
 title: "Qi & Zhang 2021 — Chromatin network retards nucleoli coalescence"
 source: "[[00-Sources/papers/Chromatin network retards nucleoli coalescence]]"
+source_quality: full
+source_sha256: "ff146ba8a4e55a56988a93e0a13e4d5cb66f439ac612ed9067ccf098743734d7"
 source_kind: paper
 author: "Yifeng Qi, Bin Zhang (corresponding)"
 published: 2021-11-24

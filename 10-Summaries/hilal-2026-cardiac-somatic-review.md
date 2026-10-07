@@ -2,6 +2,8 @@
 type: summary
 title: "Hilal, Arava & Choudhury 2026 — Single-cell genomics and somatic variation in circulating and cardiac resident cells"
 source: "[[00-Sources/papers/Single-Cell Genomics and Somatic Variation in Circulating and Cardiac Resident Cells]]"
+source_quality: full
+source_sha256: "e31d0512b474d955dac0bdca06843e99666392a5c88207c08dead682d76ceee3"
 source_kind: paper
 author: Nazia Hilal, Maniteja Arava, Sangita Choudhury (corresponding)
 published: 2026-01-02

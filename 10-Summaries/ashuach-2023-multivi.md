@@ -2,6 +2,8 @@
 type: summary
 title: "Ashuach 2023 — MultiVI: deep generative model for the integration of multimodal data"
 source: "[[00-Sources/papers/MultiVI_ deep generative model for the integration of multimodal data]]"
+source_quality: full
+source_sha256: "3cf54e18f15100186320972cec1e3356c0a1b327a989d566834d043210062a71"
 aliases: ["MultiVI", "Ashuach 2023", "scvi-tools MultiVI"]
 tags: [MultiVI, deep-learning, multimodal-integration, VAE, scvi-tools, Yosef-lab, computational]
 created: 2026-05-13

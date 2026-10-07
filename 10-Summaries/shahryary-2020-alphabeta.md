@@ -2,6 +2,8 @@
 type: summary
 title: "Shahryary et al. 2020 — AlphaBeta: computational inference of epimutation rates and spectra from high-throughput DNA methylation data in plants"
 source: "[[00-Sources/papers/AlphaBeta_ computational inference of epimutation rates and spectra from high-throughput DNA methylation data in plants]]"
+source_quality: full
+source_sha256: "66235383da065f1bf7874700354c4d9e24d70e6c7c08e37908f4278726a815ab"
 source_kind: paper
 author: "Yadollah Shahryary, Aikaterini Symeonidi, Rashmi R. Hazarika, Johanna Denkena, Talha Mubeen, Brigitte Hofmeister, Thomas van Gurp, Maria Colomé-Tatché, Koen J. F. Verhoeven, Gerald Tuskan, Robert J. Schmitz, Frank Johannes (corresponding)"
 published: 2020-10-06

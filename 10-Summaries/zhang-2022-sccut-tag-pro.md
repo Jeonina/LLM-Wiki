@@ -2,6 +2,8 @@
 type: summary
 title: "Zhang et al. 2022 — Characterizing cellular heterogeneity in chromatin state with scCUT&Tag-pro"
 source: "[[00-Sources/papers/Characterizing cellular heterogeneity in chromatin state with scCUT&Tag-pro]]"
+source_quality: full
+source_sha256: "69b13384b2d7edab3a714fdc246ed98bf3022b8b019b46ad77628513da32261c"
 source_kind: paper
 author: "Bingjie Zhang, Avi Srivastava, Eleni Mimitou, Tim Stuart, Ivan Raimondi, Yuhan Hao, Peter Smibert, Rahul Satija (corresponding)"
 published: 2022-03-24

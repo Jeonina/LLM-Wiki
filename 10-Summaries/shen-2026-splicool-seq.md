@@ -2,6 +2,8 @@
 type: summary
 title: "Shen et al. 2026 — SpliCOOL-seq: scalable single-cell methylation + accessibility via split-pool barcoding"
 source: "[[00-Sources/papers/High‐throughput single‐cell DNA methylation and chromatin accessibility co‐profiling with SpliCOOL‐seq]]"
+source_quality: full
+source_sha256: "99e6a77bf405505129572e6d7519c419573573026f5e0cff792d230c10529082"
 source_kind: paper
 author: "Qingmei Shen, Enze Deng, Ling Luo, Jingna Zhang, Qifeng Yang, Dan Su, Xiaoying Fan (corresponding)"
 published: 2026-04-01

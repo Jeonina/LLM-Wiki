@@ -2,6 +2,8 @@
 type: summary
 title: "Ahn et al. 2021 — Phase separation drives aberrant chromatin looping and cancer development (NUP98-HOXA9)"
 source: "[[00-Sources/papers/Phase separation drives aberrant chromatin looping and cancer development]]"
+source_quality: full
+source_sha256: "ba875867b9e16fa92357d0fcd23606398157b11111704b1e2ac878edfc35a1c2"
 source_kind: paper
 author: "Jeong Hyun Ahn, Eric S. Davis, Timothy A. Daugird, Shuai Zhao, Ivana Yoseli Quiroga, Hidetaka Uryu, Jie Li, Aaron J. Storey, Yi-Hsuan Tsai, Daniel P. Keeley, Samuel G. Mackintosh, Ricky D. Edmondson, Stephanie D. Byrum, Ling Cai, Alan J. Tackett, Deyou Zheng, Wesley R. Legant, Douglas H. Phanstiel, Gang Greg Wang (corresponding)"
 published: 2021-06-23

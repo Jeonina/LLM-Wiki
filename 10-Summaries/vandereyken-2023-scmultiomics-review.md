@@ -6,6 +6,8 @@ source: [
   "[[00-Sources/papers/Methods and applications for single-cell and spatial multi-omics - Nature Reviews Genetics]]",
   "[[00-Sources/papers/Methods and applications for single-cell and spatial multi-omics]]"
 ]
+source_quality: full
+source_sha256: ["3a501b7967b7836b80cf87acaa4e0f7f7fef9cf5ea10e4bd16cf56ce8606ac2f", "e540c0f571efe320754e5b14db466623bbe27361f914c220471bdb119befaf54"]
 source_kind: paper
 author: "Katy Vandereyken, Alejandro Sifrim, Bernard Thienpont, Thierry Voet (corresponding)"
 published: 2023-03-02

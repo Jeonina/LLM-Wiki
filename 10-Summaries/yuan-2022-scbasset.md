@@ -2,6 +2,8 @@
 type: summary
 title: "Yuan & Kelley 2022 — scBasset: sequence-based modeling of single-cell ATAC-seq using convolutional neural networks"
 source: "[[00-Sources/papers/scBasset_ sequence-based modeling of single-cell ATAC-seq using convolutional neural networks]]"
+source_quality: full
+source_sha256: "8b12dc6b66cedc777d5729ff207f6f205cfbbd62c776b124e6e3dd9af5728cee"
 aliases: ["scBasset", "Yuan 2022"]
 tags: [scATAC-seq, deep-learning, CNN, sequence-based, computational]
 created: 2026-05-13

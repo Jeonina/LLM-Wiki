@@ -2,6 +2,8 @@
 type: summary
 title: "Coorens 2021 — Extensive phylogenies of human development inferred from somatic mutations"
 source: "[[00-Sources/papers/Extensive phylogenies of human development inferred from somatic mutations]]"
+source_quality: full
+source_sha256: "df2205d1e46d87b47e870d07e86986c6da5af56031ecf527023e9ed1ba6ebe75"
 aliases: ["Coorens 2021", "human-development phylogenies"]
 tags: [lineage-tracing, somatic-mutations, phylogeny, embryogenesis, LCM-WGS]
 created: 2026-05-13

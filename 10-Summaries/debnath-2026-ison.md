@@ -2,6 +2,8 @@
 type: summary
 title: "Debnath & Duren 2026 — Inference of spatial chromatin accessibility via integration of spatial transcriptomics and single-cell multi-omics data (ISON)"
 source: "[[00-Sources/papers/Inference of spatial chromatin accessibility via integration of spatial transcriptomics and single-cell multi-omics data]]"
+source_quality: full
+source_sha256: "0ee58600e948904ff4aaae3010abd7af576c692307ac1b9d97b77996a464cb08"
 source_kind: paper
 author: "Ishita Debnath, Zhana Duren (corresponding)"
 published: 2026-06-04

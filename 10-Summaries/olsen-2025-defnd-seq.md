@@ -2,6 +2,8 @@
 type: summary
 title: "Olsen et al. 2025 — DEFND-seq: scalable joint RNA + DNA from single nuclei"
 source: "[[00-Sources/papers/Scalable co-sequencing of RNA and DNA from individual nuclei]]"
+source_quality: full
+source_sha256: "e32579ffb9263b34323677042724cbb45440a359466ff0d56d24e625358bc909"
 source_kind: paper
 author: "Timothy R. Olsen, Pranay Talla, Romella K. Sagatelian, Julia Furnari, Jeffrey N. Bruce, Peter Canoll, Shan Zha, Peter A. Sims (corresponding)"
 published: 2025-02-12

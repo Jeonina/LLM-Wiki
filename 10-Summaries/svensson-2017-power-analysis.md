@@ -2,6 +2,8 @@
 type: summary
 title: "Svensson 2017 — Power analysis of single-cell RNA-sequencing experiments"
 source: "[[00-Sources/papers/Power analysis of single-cell RNA-sequencing experiments]]"
+source_quality: full
+source_sha256: "6c82b2804ee0cf6622724c71db772e145d0a3403a8ecfd9f558d71186597050e"
 aliases: ["Svensson 2017", "scRNA-seq power analysis", "Svensson power analysis"]
 tags: [scRNA-seq, benchmarking, ERCC, spike-in, sensitivity, accuracy, dropout, UMI, Teichmann-lab, EMBL-EBI, Sanger]
 created: 2026-05-14

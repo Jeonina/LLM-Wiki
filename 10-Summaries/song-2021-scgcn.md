@@ -2,6 +2,8 @@
 type: summary
 title: "Song, Su & Zhang 2021 — scGCN is a graph convolutional networks algorithm for knowledge transfer in single cell omics"
 source: "[[00-Sources/papers/scGCN is a graph convolutional networks algorithm for knowledge transfer in single cell omics]]"
+source_quality: full
+source_sha256: "acc4238e237d63c15fdf95d8d53d5c27f7b68522e1059c2a31b09aa905338a17"
 source_kind: paper
 author: "Qianqian Song, Jing Su, Wei Zhang (corresponding)"
 published: 2021-06-22

@@ -2,6 +2,8 @@
 type: summary
 title: "Peng et al. 2012 — IDBA-UD: a de novo assembler for single-cell and metagenomic sequencing data with highly uneven depth"
 source: "[[00-Sources/papers/IDBA-UD_ a de novo assembler for single-cell and metagenomic sequencing data with highly uneven depth]]"
+source_quality: full
+source_sha256: "5d4cfac1697912847e8da71d0d85d5847250eb056c6a214960f2b21e99d16f94"
 source_kind: paper
 author: "Yu Peng, Henry C. M. Leung, S. M. Yiu, Francis Y. L. Chin (corresponding)"
 published: 2012-04-11

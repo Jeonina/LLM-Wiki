@@ -2,6 +2,8 @@
 type: summary
 title: "Lähnemann et al. 2020 — Eleven grand challenges in single-cell data science"
 source: "[[00-Sources/papers/Eleven grand challenges in single-cell data science]]"
+source_quality: full
+source_sha256: "1701c0e45d8d057e0ee7d897dbd9ec2135697e58bdfd38d4b7686f4e530939c2"
 source_kind: paper
 author: "David Lähnemann, Johannes Köster, Ewa Szczurek, Davis J. McCarthy, Stephanie C. Hicks, Mark D. Robinson, Catalina A. Vallejos, Kieran R. Campbell, Niko Beerenwinkel, Ahmed Mahfouz, Luca Pinello, Pavel Skums, Alexandros Stamatakis, ... Oliver Stegle, Fabian J. Theis, ... Alexander Schönhuth (last author)"
 published: 2020-02-07

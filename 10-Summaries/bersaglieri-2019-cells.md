@@ -2,6 +2,8 @@
 type: summary
 title: "Bersaglieri & Santoro 2019 — Genome organization in and around the nucleolus"
 source: "[[00-Sources/papers/Genome Organization in and around the Nucleolus]]"
+source_quality: abstract
+source_sha256: "d657b014edf46b57aa50a9d6675e854f278db4bb5685d94ca187ba178e4c4fa4"
 aliases: ["Bersaglieri 2019", "nucleolar genome organization review"]
 tags: [review, nucleolus, 3D-genome, heterochromatin, rRNA, NoRC]
 created: 2026-05-13

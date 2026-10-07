@@ -2,6 +2,8 @@
 type: summary
 title: "Ross & Markowetz 2016 — OncoNEM: inferring tumor evolution from single-cell sequencing data"
 source: "[[00-Sources/papers/OncoNEM_ inferring tumor evolution from single-cell sequencing data]]"
+source_quality: full
+source_sha256: "1ffd3a40ed73a34e4055ddbbc3b30fd4680c0dc90380c7155443ffad4298fa78"
 source_kind: paper
 author: "Edith M. Ross, Florian Markowetz (corresponding)"
 published: 2016-04-15

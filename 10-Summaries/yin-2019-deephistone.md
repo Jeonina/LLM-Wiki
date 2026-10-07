@@ -2,6 +2,8 @@
 type: summary
 title: "Yin et al. 2019 — DeepHistone: CNN prediction of 7 histone marks from DNA + DNase"
 source: "[[00-Sources/papers/DeepHistone_ a deep learning approach to predicting histone modifications]]"
+source_quality: full
+source_sha256: "f11017ca12d4d2617e2f997ad3eb7400b5c05064f2f632121128fda20046fc74"
 source_kind: paper
 author: "Qijin Yin, Mengmeng Wu, Qiao Liu, Hairong Lv, Rui Jiang (corresponding)"
 published: 2019-04-04

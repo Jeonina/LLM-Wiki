@@ -2,6 +2,8 @@
 type: summary
 title: "Gur & Hughes 2025 — scATAC-seq pseudobulk vs bulk ATAC-seq: same signal, better data quality"
 source: "[[00-Sources/papers/scATAC-seq generates more accurate and complete regulatory maps than bulk ATAC-seq]]"
+source_quality: full
+source_sha256: "bf0a38924b8653f6131cb573c0cae3c50753567ef14a7a19a949184848bd5441"
 source_kind: paper
 author: "E. Ravza Gur, Jim R. Hughes (corresponding)"
 published: 2025-01-29

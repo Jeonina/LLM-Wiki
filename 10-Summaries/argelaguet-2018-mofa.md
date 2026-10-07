@@ -2,6 +2,8 @@
 type: summary
 title: "Argelaguet et al. 2018 — Multi-Omics Factor Analysis: a framework for unsupervised integration of multi-omics data sets"
 source: "[[00-Sources/papers/Multi‐Omics Factor Analysis—a framework for unsupervised integration of multi‐omics data sets - Molecular Systems Biology.pdf]]"
+source_quality: full
+source_sha256: "2d7b93439f8f9da516cad52d3bf2ebe0195525a20d7361b42191b4a90b3fd209"
 source_kind: paper
 author: "Ricard Argelaguet, Britta Velten, Damien Arnol, Sascha Dietrich, Thorsten Zenz, John C Marioni, Florian Buettner (corresponding), Wolfgang Huber (corresponding), Oliver Stegle (corresponding)"
 published: 2018-06-20

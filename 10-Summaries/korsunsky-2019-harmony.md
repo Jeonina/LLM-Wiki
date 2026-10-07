@@ -2,6 +2,8 @@
 type: summary
 title: "Korsunsky et al. 2019 — Fast, sensitive and accurate integration of single-cell data with Harmony"
 source: "[[00-Sources/papers/Fast, sensitive and accurate integration of single-cell data with Harmony]]"
+source_quality: full
+source_sha256: "5d21dc20ce89e900c4d2a7053fc39d5b17b8b84e2e80e1fd0729f1602ac33f4f"
 source_kind: paper
 author: "Ilya Korsunsky, Nghia Millard, Jean Fan, Kamil Slowikowski, Fan Zhang, Kevin Wei, Yuriy Baglaenko, Michael Brenner, Po-ru Loh, Soumya Raychaudhuri (corresponding)"
 published: 2019-11-18

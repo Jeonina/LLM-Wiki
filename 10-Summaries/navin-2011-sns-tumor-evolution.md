@@ -2,6 +2,8 @@
 type: summary
 title: "Navin 2011 — Tumour evolution inferred by single-cell sequencing"
 source: "[[00-Sources/papers/Tumour evolution inferred by single-cell sequencing]]"
+source_quality: full
+source_sha256: "cdb3d809f325d0500269d4f9c3bb07fa70c2b4e060fe938c784f6639ceb37232"
 aliases: ["Navin 2011 SNS", "single-nucleus sequencing tumor", "founding tumor scDNA"]
 tags: [single-nucleus-sequencing, SNS, scDNA-seq, CNV, breast-cancer, tumor-evolution, founding-method, Wigler-lab, Navin-lab]
 created: 2026-05-13

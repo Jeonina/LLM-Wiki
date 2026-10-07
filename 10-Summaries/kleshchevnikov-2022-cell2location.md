@@ -2,6 +2,8 @@
 type: summary
 title: "Kleshchevnikov et al. 2022 — Cell2location maps fine-grained cell types in spatial transcriptomics"
 source: "[[00-Sources/papers/Cell2location maps fine-grained cell types in spatial transcriptomics]]"
+source_quality: full
+source_sha256: "a4bc74d3d49345ac36d3fc8ec152c99e47d37f3dfbfdd4fc0f6392dc66583539"
 source_kind: paper
 author: "Vitalii Kleshchevnikov, Artem Shmatko, Emma Dann, … Roser Vento-Tormo, Moritz Gerstung, Louisa James, Oliver Stegle, Omer Ali Bayraktar (corresponding)"
 published: 2022-01-13

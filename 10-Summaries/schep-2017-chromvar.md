@@ -2,6 +2,8 @@
 type: summary
 title: "Schep et al. 2017 — chromVAR: TF motif accessibility from sparse single-cell data"
 source: "[[00-Sources/papers/chromVAR_ inferring transcription-factor-associated accessibility from single-cell epigenomic data]]"
+source_quality: full
+source_sha256: "41573ea12f6cf1c43f320ce8fa895a0d92c676b8e48fa5c25ebed8a2d16b78d1"
 source_kind: paper
 author: "Alicia N. Schep, Beijing Wu, Jason D. Buenrostro, William J. Greenleaf (corresponding)"
 published: 2017-08-21

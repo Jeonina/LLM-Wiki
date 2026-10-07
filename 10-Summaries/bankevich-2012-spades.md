@@ -2,6 +2,8 @@
 type: summary
 title: "Bankevich et al. 2012 — SPAdes: a new genome assembly algorithm and its applications to single-cell sequencing"
 source: "[[00-Sources/papers/SPAdes_ A New Genome Assembly Algorithm and Its Applications to Single-Cell Sequencing - Anton Bankevich, Sergey Nurk, Dmitry Antipov, Alexey A. Gurevich, Mikhail Dvorkin, Alexander S. Kulikov, Valery M. Lesin, Sergey I. Nikolenko, Son Pham,]]"
+source_quality: full
+source_sha256: "ac8ec04542d2b14a85ab6e3bea54a0cb4dc4175974eec5da6e3bb89ba66275ff"
 source_kind: paper
 author: "Anton Bankevich, Sergey Nurk, Dmitry Antipov, Alexey A. Gurevich, Mikhail Dvorkin, Alexander S. Kulikov, Valery M. Lesin, Sergey I. Nikolenko, Son Pham, Andrey D. Prjibelski, Alexey V. Pyshkin, Alexander V. Sirotkin, Nikolay Vyahhi, Glenn Tesler, Max A. Alekseyev, Pavel A. Pevzner (corresponding)"
 published: 2012-05-01

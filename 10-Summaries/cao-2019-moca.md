@@ -2,6 +2,8 @@
 type: summary
 title: "Cao et al. 2019 — The single-cell transcriptional landscape of mammalian organogenesis (MOCA, sci-RNA-seq3, Monocle 3)"
 source: "[[00-Sources/papers/The single-cell transcriptional landscape of mammalian organogenesis]]"
+source_quality: full
+source_sha256: "c34118e8552d470f0b29d7c16b0cdca0a38978352f062b85398fc0c2537b1c1b"
 source_kind: paper
 author: "Junyue Cao, Malte Spielmann, Xiaojie Qiu, Xingfan Huang, Daniel M. Ibrahim, Andrew J. Hill, Fan Zhang, Stefan Mundlos, Lena Christiansen, Frank J. Steemers, Cole Trapnell, Jay Shendure (corresponding)"
 published: 2019-02-20

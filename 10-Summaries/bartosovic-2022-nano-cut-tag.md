@@ -2,6 +2,8 @@
 type: summary
 title: "Bartosovic et al. 2022 — nano-CUT&Tag: multimodal single-cell chromatin profiling with nanobody-Tn5 fusions"
 source: "[[00-Sources/papers/Multimodal chromatin profiling using nanobody-based single-cell CUT&Tag]]"
+source_quality: full
+source_sha256: "a545df459414ee8f6191b897d8073479b946929b4a246d8c90c1c57282fba150"
 source_kind: paper
 author: "Marek Bartosovic, Gonçalo Castelo-Branco (corresponding)"
 published: 2022-12-19

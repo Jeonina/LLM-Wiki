@@ -2,6 +2,8 @@
 type: summary
 title: "<FirstAuthor [et al.] YYYY — Paper title>"
 source: "[[00-Sources/<subfolder>/<source-file>]]"
+source_quality: full | partial | abstract   # what the source file holds: full text / some body sections missing / abstract or landing page only
+source_sha256: "<filled by tools/source-hash.py>"
 source_kind: article | paper | book | image | data
 author: <FirstLast, F2 Last2, ... (corresponding name marked)>
 published: <YYYY-MM-DD or year>
@@ -29,6 +31,14 @@ topics: []     # [[40-Topics/...]] links
 ## Methods / evidence
 
 How does the source back its claims? (Empirical study, argument, anecdote, derivation, dataset, etc.) Note anything that affects how much weight the claims should carry.
+
+## Limitations
+
+**Authors' own:**
+- Limitations the paper itself states, in its terms.
+
+**Reviewer notes:** (at most three, each marked `(synthesis)`)
+- Limitations the paper does not state but the evidence shows. (synthesis)
 
 ## Surprising or load-bearing bits
 

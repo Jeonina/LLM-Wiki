@@ -2,6 +2,8 @@
 type: summary
 title: "Wang, Wu, Hong & Jin 2023 — Progress in single-cell multimodal sequencing and multi-omics data integration"
 source: "[[00-Sources/papers/Progress in single-cell multimodal sequencing and multi-omics data integration]]"
+source_quality: full
+source_sha256: "5139e43326f8792a53963063ea108b0bd675f75ab99ce85609e73ad105f0d98a"
 source_kind: paper
 author: Xuefei Wang, Xinchao Wu, Ni Hong, Wenfei Jin (corresponding)
 published: 2023-07-15

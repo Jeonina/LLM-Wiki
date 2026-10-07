@@ -2,6 +2,8 @@
 type: summary
 title: "Gawad, Koh & Quake 2016 — Single-cell genome sequencing: current state of the science"
 source: "[[00-Sources/papers/Single-cell genome sequencing_ current state of the science]]"
+source_quality: full
+source_sha256: "0d2ffe25645692d2346da9b41d14ddf77f352639d7079d90a0608edd2d617b34"
 source_kind: paper
 author: "Charles Gawad, Winston Koh, Stephen R. Quake"
 published: 2016-03

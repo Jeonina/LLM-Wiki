@@ -2,6 +2,8 @@
 type: summary
 title: "Yadav et al. 2025 — scFFPE-ATAC enables high-throughput single cell chromatin accessibility profiling in formalin-fixed paraffin-embedded samples"
 source: "[[00-Sources/papers/scFFPE-ATAC enables high-throughput single cell chromatin accessibility profiling in formalin-fixed paraffin-embedded samples]]"
+source_quality: full
+source_sha256: "2b23f2e73e26eec80dce70d2e2c5b56c8f25788f620e71a67b742f766dd6986f"
 source_kind: paper
 author: "Ram Prakash Yadav, Pengwei Xing, Miao Zhao, Peter Hollander, Carina Strell, Minglu Xie, Maede Salehi, Emma Torell, Tobias Sjöblom, Gunilla Enblad, Rose-Marie Amini, Fredrik Johansson Swartling, Ingrid Glimelius, Patrick Micke, Mats Hellström, Xingqi Chen (corresponding)"
 published: 2025-11-14

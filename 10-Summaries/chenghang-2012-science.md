@@ -6,6 +6,8 @@ tags: [scWGA, MALBAC, foundational, scDNA-seq, copy-number]
 created: 2026-05-12
 updated: 2026-05-12
 source: "[[00-Sources/papers/Genome-Wide Detection of Single-Nucleotide and Copy-Number Variations of a Single Human Cell]]"
+source_quality: full
+source_sha256: "7e706aac73384f12f5e031cf4f8b8e49bceb8b7e21d7b071d25da9002ecd4d7c"
 sources: ["00-Sources/papers/Chenghang_2012_Science.pdf"]
 ---
 

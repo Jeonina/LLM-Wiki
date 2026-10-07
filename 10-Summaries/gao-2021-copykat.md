@@ -2,6 +2,8 @@
 type: summary
 title: "Gao et al. 2021 — Delineating copy number and clonal substructure in human tumors from single-cell transcriptomes (CopyKAT)"
 source: "[[00-Sources/papers/Delineating copy number and clonal substructure in human tumors from single-cell transcriptomes]]"
+source_quality: full
+source_sha256: "ddf89d6c55dddc7264ecd4557a2de030aa652a91d6cf912fe97a8c46d609278b"
 source_kind: paper
 author: "Ruli Gao, Shanshan Bai, Ying C. Henderson, ... Ken Chen, Stephen Y. Lai, Nicholas E. Navin (corresponding)"
 published: 2021-01-18

@@ -2,6 +2,8 @@
 type: summary
 title: "Lodato et al. 2018 — Aging and neurodegeneration are associated with increased mutations in single human neurons"
 source: "[[00-Sources/papers/Aging and neurodegeneration are associated with increased mutations in single human neurons]]"
+source_quality: full
+source_sha256: "4d11d35773117b7f31ff69e4d26f832c71855451d6d937fa75b927d301fdf4b7"
 source_kind: paper
 author: "Michael A. Lodato, Rachel E. Rodin, Craig L. Bohrson, Michael E. Coulter, Alison R. Barton, Minseok Kwon, Maxwell A. Sherman, Carl M. Vitzthum, Lovelace J. Luquette, Chandri N. Yandava, Peter Park, Christopher A. Walsh (corresponding)"
 published: 2017-12-08

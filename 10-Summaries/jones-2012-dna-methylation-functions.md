@@ -2,6 +2,8 @@
 type: summary
 title: "Jones 2012 — Functions of DNA methylation: islands, start sites, gene bodies and beyond"
 source: "[[00-Sources/papers/Functions of DNA methylation_ islands, start sites, gene bodies and beyond - Nature Reviews Genetics]]"
+source_quality: full
+source_sha256: "8d7f775c54a350742b1c6115aae01e629fa7b47022bd1e1c1b60d41f4d261632"
 source_kind: paper
 author: "Peter A. Jones (University of Southern California)"
 published: 2012-05-29

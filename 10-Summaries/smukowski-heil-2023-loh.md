@@ -2,6 +2,8 @@
 type: summary
 title: "Smukowski Heil 2023 — Loss of heterozygosity and its importance in evolution"
 source: "[[00-Sources/papers/Loss of Heterozygosity and Its Importance in Evolution - Journal of Molecular Evolution]]"
+source_quality: full
+source_sha256: "a970326359b3aa22302f6ef44ad629d8a2ab0f70f82aa9d2084524fb21c62e50"
 source_kind: paper
 author: "Caiti Smukowski Heil (North Carolina State University)"
 published: 2023-02-08

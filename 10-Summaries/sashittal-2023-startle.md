@@ -2,6 +2,8 @@
 type: summary
 title: "Sashittal et al. 2023 — Startle: a star homoplasy approach for CRISPR-Cas9 lineage tracing"
 source: "[[00-Sources/papers/Startle_ A star homoplasy approach for CRISPR-Cas9 lineage tracing]]"
+source_quality: full
+source_sha256: "e8f42faa96589f124a75465fa544ffd3f327815533c72c91837558d2e59e8c2c"
 source_kind: paper
 author: "Palash Sashittal, Henri Schmidt, Michelle Chan, Benjamin J. Raphael (corresponding)"
 published: 2023-12-20

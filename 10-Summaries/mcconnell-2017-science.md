@@ -2,6 +2,8 @@
 type: summary
 title: "McConnell 2017 — Intersection of diverse neuronal genomes and neuropsychiatric disease: The Brain Somatic Mosaicism Network"
 source: "[[00-Sources/papers/Intersection of diverse neuronal genomes and neuropsychiatric disease_ The Brain Somatic Mosaicism Network]]"
+source_quality: full
+source_sha256: "cb0aa701b1f4e99a35bb362cdcddbc3df123e6954b7c0c956c61b49895c6f738"
 aliases: ["BSMN review", "McConnell 2017"]
 tags: [review, BSMN, brain-mosaicism, neuropsychiatric, consortium]
 created: 2026-05-13

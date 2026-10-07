@@ -2,6 +2,8 @@
 type: summary
 title: "Huang et al. 2015 — Single-Cell Whole-Genome Amplification and Sequencing: Methodology and Applications"
 source: "[[00-Sources/papers/Single-Cell Whole-Genome Amplification and Sequencing_ Methodology and Applications]]"
+source_quality: full
+source_sha256: "ee9276bccbcaf097e9a8a2fbeb060f0f3522f1a126f141ee297733ddcee98dd7"
 source_kind: paper
 author: "Lei Huang, Fei Ma, Alec Chapman, Sijia Lu, Xiaoliang Sunney Xie (corresponding)"
 published: 2015-08-24

@@ -2,6 +2,8 @@
 type: summary
 title: "Example seed: paraphrase of Karpathy's LLM Wiki idea"
 source: "[[00-Sources/articles/example-llm-wiki]]"
+source_quality: full
+source_sha256: "48bab45475273cb46837f78a087f917b9b43efbc9c318b21935a093239a96a7d"
 source_kind: article
 author: Unknown (paraphrase of Andrej Karpathy)
 published: 2026

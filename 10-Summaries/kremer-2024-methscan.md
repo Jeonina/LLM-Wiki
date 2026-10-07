@@ -2,6 +2,8 @@
 type: summary
 title: "Kremer et al. 2024 — Analyzing single-cell bisulfite sequencing data with MethSCAn"
 source: "[[00-Sources/papers/Analyzing single-cell bisulfite sequencing data with MethSCAn]]"
+source_quality: full
+source_sha256: "433f018a4f6513e91434a645583f716b4032b433bc1621eec4ab1e819f2a75b9"
 source_kind: paper
 author: "Lukas P. M. Kremer, Martina M. Braun, Svetlana Ovchinnikova, Leonie Küchenhoff, Santiago Cerrizuela, Ana Martin-Villalba, Simon Anders (corresponding)"
 published: 2024-07-31

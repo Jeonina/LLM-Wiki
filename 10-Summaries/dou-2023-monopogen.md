@@ -2,6 +2,8 @@
 type: summary
 title: "Dou 2023 — Single-nucleotide variant calling in single-cell sequencing data with Monopogen"
 source: "[[00-Sources/papers/Single-nucleotide variant calling in single-cell sequencing data with Monopogen]]"
+source_quality: full
+source_sha256: "1e8255d5963b8827f6e2c8c0215abe77c8f9e5d12c03486d23a4a80849084a0a"
 aliases: ["Monopogen", "Dou 2023", "Dou Monopogen"]
 tags: [Monopogen, scSNV-calling, LD-refinement, scRNA-seq, snRNA-seq, scATAC-seq, scDNA-seq, KenChen-lab, MDAnderson]
 created: 2026-05-13

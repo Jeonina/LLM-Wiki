@@ -2,6 +2,8 @@
 type: summary
 title: "Weinreb et al. 2020 — Lineage tracing on transcriptional landscapes links state to fate during differentiation (LARRY)"
 source: "[[00-Sources/papers/Lineage tracing on transcriptional landscapes links state to fate during differentiation]]"
+source_quality: full
+source_sha256: "2300c00728ef83ab6593d05bd3081d68547de829bab3ecba13e70b9d6b5b429a"
 source_kind: paper
 author: "Caleb Weinreb, Alejo Rodriguez-Fraticelli, Fernando D. Camargo, Allon M. Klein (corresponding)"
 published: 2020-02-14

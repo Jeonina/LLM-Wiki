@@ -2,6 +2,8 @@
 type: summary
 title: "Wang et al. 2024 — Single cell genome and epigenome co-profiling reveals hardwiring and plasticity in breast cancer"
 source: "[[00-Sources/papers/Single cell genome and epigenome co-profiling reveals hardwiring and plasticity in breast cancer.pdf]]"
+source_quality: full
+source_sha256: "c44dbb7cbedbe30a816db531014f45605997188df187db4f184604d6d655ed4f"
 source_kind: paper
 author: "Kaile Wang*, Yun Yan*, Heba Elgamal*, Jianzhuo Li, Chenling Tang, Shanshan Bai, Zhenna Xiao, Emi Sei, Yiyun Lin, Junke Wang, Jessica Montalvan, Changandeep Nagi, Alastair M. Thompson, Nicholas Navin (corresponding) (*equal contribution)"
 published: 2024-09-10

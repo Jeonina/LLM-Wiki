@@ -2,6 +2,8 @@
 type: summary
 title: "Ramakrishnan et al. 2023 — epiAneufinder identifies copy number alterations from single-cell ATAC-seq data"
 source: "[[00-Sources/papers/epiAneufinder identifies copy number alterations from single-cell ATAC-seq data]]"
+source_quality: full
+source_sha256: "f21cf2a3c36bdb3c0a8e7b7ae3c63817ef52c0575173ade0b44bf3a94bb63d16"
 source_kind: paper
 author: "Akshaya Ramakrishnan, Aikaterini Symeonidi, Patrick Hanel, Katharina T. Schmid, Maria L. Richter, Michael Schubert, Maria Colomé-Tatché (last author)"
 published: 2023-09-20

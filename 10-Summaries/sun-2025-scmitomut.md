@@ -2,6 +2,8 @@
 type: summary
 title: "Sun 2025 — scMitoMut for calling mitochondrial lineage-related mutations in single cells"
 source: "[[00-Sources/papers/scMitoMut for calling mitochondrial lineage-related mutations in single cells]]"
+source_quality: full
+source_sha256: "23fb6d30e4fcf1bbe4425cbe7e6dc98ba1f8606513d5c4cf3f3d98106b3d2316"
 aliases: ["Sun 2025 scMitoMut", "scMitoMut", "Perié-lab mtDNA"]
 tags: [scMitoMut, mtDNA, lineage-tracing, beta-binomial, scATAC-seq, multiome, Perie-lab, Institut-Curie]
 created: 2026-05-13

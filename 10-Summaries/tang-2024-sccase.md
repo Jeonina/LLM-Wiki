@@ -2,6 +2,8 @@
 type: summary
 title: "Tang et al. 2024 — scCASE: accurate and interpretable enhancement for single-cell chromatin accessibility sequencing data"
 source: "[[00-Sources/papers/scCASE_ accurate and interpretable enhancement for single-cell chromatin accessibility sequencing data]]"
+source_quality: full
+source_sha256: "09c92c4bd8e0a993d85ead1d49b07b55b6524e359c9cedc9e621a6fa271b2af7"
 source_kind: paper
 author: "Songming Tang, Xuejian Cui, Rongxiang Wang, Sijie Li, Siyu Li, Xin Huang, Shengquan Chen (corresponding)"
 published: 2024-02-22

@@ -2,6 +2,8 @@
 type: summary
 title: "Mo et al. 2023 — STAM-seq: nanopore-adaptive-sampling accessibility + methylation in plant HRRs"
 source: "[[00-Sources/papers/Single-molecule targeted accessibility and methylation sequencing of centromeres, telomeres and rDNAs in Arabidopsis]]"
+source_quality: full
+source_sha256: "8900e6abb1f12aa3a8c94ab139f670671ab75117e06b49c8bf7b56b71662b0ef"
 source_kind: paper
 author: "Weipeng Mo, Yi Shu, Bo Liu, Yanping Long, Tong Li, Xiaofeng Cao, Xian Deng, Jixian Zhai (corresponding)"
 published: 2023-08-20

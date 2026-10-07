@@ -2,6 +2,8 @@
 type: summary
 title: "Servant et al. 2015 — HiC-Pro: an optimized and flexible pipeline for Hi-C data processing"
 source: "[[00-Sources/papers/HiC-Pro_ an optimized and flexible pipeline for Hi-C data processing]]"
+source_quality: full
+source_sha256: "714f4bb8cdfc6544aff806fb55e66fa06b846ef48e8d917854c0f64ab9325f5d"
 source_kind: paper
 author: "Nicolas Servant, Nelle Varoquaux, Bryan R. Lajoie, Eric Viara, Chong-Jian Chen, Jean-Philippe Vert, Edith Heard, Job Dekker, Emmanuel Barillot"
 published: 2015-12-01

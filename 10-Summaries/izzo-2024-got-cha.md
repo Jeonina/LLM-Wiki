@@ -2,6 +2,8 @@
 type: summary
 title: "Izzo et al. 2024 — GoT–ChA: genotyping with single-cell chromatin accessibility"
 source: "[[00-Sources/papers/Mapping genotypes to chromatin accessibility profiles in single cells]]"
+source_quality: full
+source_sha256: "848fa3905221599ccb0655e22d50bf011059d4298be6267796873bc1361688be"
 source_kind: paper
 author: "Franco Izzo, Robert M. Myers, Saravanan Ganesan, Levan Mekerishvili, ... Dan A. Landau (corresponding)"
 published: 2024-05-08

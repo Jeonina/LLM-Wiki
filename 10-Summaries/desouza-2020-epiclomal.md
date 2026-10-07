@@ -2,6 +2,8 @@
 type: summary
 title: "de Souza 2020 — Epiclomal: Probabilistic clustering of sparse single-cell DNA methylation data"
 source: "[[00-Sources/papers/Epiclomal_ Probabilistic clustering of sparse single-cell DNA methylation data]]"
+source_quality: full
+source_sha256: "959f61b25a7b366112ff3995ffd137737a2433802a40c1e87cb7a09722e6cd6c"
 aliases: ["de Souza 2020", "Epiclomal", "epiclonal methylation"]
 tags: [Epiclomal, scBS-seq, methylation-clustering, missing-data-imputation, cancer-clones, Shah-lab, BC-Cancer]
 created: 2026-05-13

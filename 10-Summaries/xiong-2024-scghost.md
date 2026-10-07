@@ -2,6 +2,8 @@
 type: summary
 title: "Xiong, Zhang & Ma 2024 — scGHOST: identifying single-cell 3D genome subcompartments"
 source: "[[00-Sources/papers/scGHOST_ identifying single-cell 3D genome subcompartments]]"
+source_quality: full
+source_sha256: "9f8f4c0b8cb2b1a98cd7f5bfd8f49f718f839c3a7a667e0568fb5d77e3027d21"
 source_kind: paper
 author: "Kyle Xiong, Ruochi Zhang, Jian Ma (corresponding)"
 published: 2024-04-08

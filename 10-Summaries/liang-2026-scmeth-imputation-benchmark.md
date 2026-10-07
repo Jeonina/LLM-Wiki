@@ -2,6 +2,8 @@
 type: summary
 title: "Liang et al. 2026 — A systematic benchmarking framework and dual-view optimization strategy for single-cell DNA methylation imputation"
 source: "[[00-Sources/papers/A systematic benchmarking framework and dual-view optimization strategy for single-cell DNA methylation imputation]]"
+source_quality: full
+source_sha256: "ddc3a8994b12c8a890d18450f264a96e17c96f93f8853ea2268fc02348748f9d"
 source_kind: paper
 author: "Haitian Liang, Heyang Hua, Siyu Li, Shengquan Chen (corresponding)"
 published: 2026-08-12

@@ -2,6 +2,8 @@
 type: summary
 title: "Xiong et al. 2019 — SCALE: VAE + Gaussian Mixture Model for scATAC-seq"
 source: "[[00-Sources/papers/SCALE method for single-cell ATAC-seq analysis via latent feature extraction]]"
+source_quality: full
+source_sha256: "ab0ecee4c1b18949b612fc5611c47265a38123d5ad77a78669223a1b637bad45"
 source_kind: paper
 author: "Lei Xiong, Kui Xu, Kang Tian, Yanqiu Shao, Lei Tang, Ge Gao, Michael Zhang, Tao Jiang, Qiangfeng Cliff Zhang (corresponding)"
 published: 2019-10-08

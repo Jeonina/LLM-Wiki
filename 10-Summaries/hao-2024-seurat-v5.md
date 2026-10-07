@@ -2,6 +2,8 @@
 type: summary
 title: "Hao et al. 2024 — Dictionary learning for integrative, multimodal and scalable single-cell analysis (Seurat v5)"
 source: "[[00-Sources/papers/Dictionary learning for integrative, multimodal and scalable single-cell analysis]]"
+source_quality: full
+source_sha256: "3fad85dbb747a42cf10a81e1cd0f5ec31582c06a0343e03c7b1dbe476f3cc1df"
 source_kind: paper
 author: "Yuhan Hao, Tim Stuart, Madeline H. Kowalski, Saket Choudhary, Paul Hoffman, Austin Hartman, Avi Srivastava, Gesmira Molla, Shaista Madad, Carlos Fernandez-Granda, Rahul Satija (corresponding)"
 published: 2023-05-25

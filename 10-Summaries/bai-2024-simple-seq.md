@@ -2,6 +2,8 @@
 type: summary
 title: "Bai et al. 2024 — SIMPLE-seq: joint single-cell 5mC and 5hmC at base resolution"
 source: "[[00-Sources/papers/Simultaneous single-cell analysis of 5mC and 5hmC with SIMPLE-seq]]"
+source_quality: full
+source_sha256: "af1eb6960f672994cbf1f95d0b8e06bac1112b47553f82b705baefd12d4b281c"
 source_kind: paper
 author: "Dongsheng Bai, Xiaoting Zhang, Huifen Xiang, Zijian Guo, Chenxu Zhu, Chengqi Yi (corresponding)"
 published: 2024-02-09

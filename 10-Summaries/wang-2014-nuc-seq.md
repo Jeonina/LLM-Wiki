@@ -2,6 +2,8 @@
 type: summary
 title: "Wang et al. 2014 — Clonal evolution in breast cancer revealed by single nucleus genome sequencing (nuc-seq)"
 source: "[[00-Sources/papers/Clonal evolution in breast cancer revealed by single nucleus genome sequencing]]"
+source_quality: full
+source_sha256: "3d6a5aa4211efa318a54befca3a585f47467ce410cc9e3e7a7257a7c6b3367c1"
 source_kind: paper
 author: "Yong Wang, Jill Waters, Marco L. Leung, Anna Unruh, Whijae Roh, Xiuqing Shi, Ken Chen, Paul Scheet, Selina Vattathil, Han Liang, Asha Multani, Hong Zhang, Rui Zhao, Franziska Michor, Funda Meric-Bernstam, Nicholas E. Navin (corresponding)"
 published: 2014-07-30

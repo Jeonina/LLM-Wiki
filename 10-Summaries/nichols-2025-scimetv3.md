@@ -2,6 +2,8 @@
 type: summary
 title: "Nichols et al. 2025 — Atlas-scale single-cell DNA methylation profiling with sciMETv3"
 source: "[[00-Sources/papers/Atlas-scale single-cell DNA methylation profiling with sciMETv3]]"
+source_quality: full
+source_sha256: "38ee02aef074cc93d7bfcaec3d340d828b75be77755c9581d82827f333fcc173"
 source_kind: paper
 author: "Ruth V. Nichols, Lauren E. Rylaarsdam, Brendan L. O'Connell, Zohar Shipony, Nika Iremadze, Sonia N. Acharya, Andrew C. Adey (corresponding)"
 published: 2025-01

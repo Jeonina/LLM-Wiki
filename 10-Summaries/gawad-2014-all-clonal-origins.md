@@ -2,6 +2,8 @@
 type: summary
 title: "Gawad, Koh & Quake 2014 — Dissecting the clonal origins of childhood acute lymphoblastic leukemia by single-cell genomics"
 source: "[[00-Sources/papers/Dissecting the clonal origins of childhood acute lymphoblastic leukemia by single-cell genomics]]"
+source_quality: full
+source_sha256: "3adbe4181f2248d6d8dc0e484a61603d7d31d4451a562a31ba987e2c105c28bd"
 source_kind: paper
 author: "Charles Gawad, Winston Koh, Stephen R. Quake (corresponding)"
 published: 2014-11-04

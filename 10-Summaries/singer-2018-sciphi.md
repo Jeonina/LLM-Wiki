@@ -2,6 +2,8 @@
 type: summary
 title: "Singer et al. 2018 — Single-cell mutation identification via phylogenetic inference (SCIΦ)"
 source: "[[00-Sources/papers/Single-cell mutation identification via phylogenetic inference]]"
+source_quality: full
+source_sha256: "9ee3e128c7ad4b4595032c8bee27a73e2c9e97b37d97d78e61134bb68b2170e3"
 source_kind: paper
 author: "Jochen Singer, Jack Kuipers, Katharina Jahn, Niko Beerenwinkel (corresponding)"
 published: 2018-12-04

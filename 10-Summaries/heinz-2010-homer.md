@@ -2,6 +2,8 @@
 type: summary
 title: "Heinz et al. 2010 — Lineage-determining TFs prime cis-regulatory elements (HOMER founding paper)"
 source: "[[00-Sources/papers/Simple Combinations of Lineage-Determining Transcription Factors Prime cis-Regulatory Elements Required for Macrophage and B Cell Identities]]"
+source_quality: full
+source_sha256: "20634457157a367935d6a770b5af7b1aa06a841c4122c03c4ba509f5f1d4249b"
 source_kind: paper
 author: "Sven Heinz, Christopher Benner, Nathanael Spann, Eric Bertolino, Yin C. Lin, Peter Laslo, Jason X. Cheng, Cornelis Murre, Harinder Singh, Christopher K. Glass (corresponding)"
 published: 2010-05-28

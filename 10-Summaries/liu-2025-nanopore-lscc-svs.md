@@ -2,6 +2,8 @@
 type: summary
 title: "Liu et al. 2025 — Nanopore somatic SVs in laryngeal squamous cell carcinoma"
 source: "[[00-Sources/papers/Nanopore Sequencing Unveils Somatic Structural Variations as Biomarkers in Laryngeal squamous cell carcinoma Genomes]]"
+source_quality: abstract
+source_sha256: "773d3ec744db72fcded6c93fd215e19ca1dd1d801ce5782b97dd287ed39ac3d7"
 source_kind: paper
 author: "Xuyan Liu, Lin Xia, ... Dan Xie, Jifeng Liu (corresponding)"
 published: 2025-06-17

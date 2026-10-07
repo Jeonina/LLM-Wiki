@@ -2,6 +2,8 @@
 type: summary
 title: "Bravo González-Blas et al. 2023 — SCENIC+: single-cell multiomic inference of enhancers and gene regulatory networks"
 source: "[[00-Sources/papers/SCENIC+_ single-cell multiomic inference of enhancers and gene regulatory networks]]"
+source_quality: full
+source_sha256: "140650516b43fc57b2639bad646abcbbfeff102e629354dfaac5607e357daa25"
 source_kind: paper
 author: "Carmen Bravo González-Blas, Seppe De Winter, Gert Hulselmans, Nikolai Hecker, Irina Matetovici, Valerie Christiaens, Suresh Poovathingal, Jasper Wouters, Sara Aibar, Stein Aerts (corresponding)"
 published: 2023-07-13

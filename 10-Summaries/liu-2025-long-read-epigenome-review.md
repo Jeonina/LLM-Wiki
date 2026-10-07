@@ -2,6 +2,8 @@
 type: summary
 title: "Liu & Conesa 2025 — Profiling the epigenome using long-read sequencing (review)"
 source: "[[00-Sources/papers/Profiling the epigenome using long-read sequencing]]"
+source_quality: full
+source_sha256: "3dd7ca05dc5108303951473dc9247999d34f613dbd191378628eb70574f85ea4"
 source_kind: paper
 author: "Tianyuan Liu, Ana Conesa (corresponding)"
 published: 2025-01-08

@@ -2,6 +2,8 @@
 type: summary
 title: "Zhou et al. 2019 — Robust single-cell Hi-C clustering by convolution- and random-walk-based imputation (scHiCluster)"
 source: "[[00-Sources/papers/Robust single-cell Hi-C clustering by convolution- and random-walk–based imputation]]"
+source_quality: full
+source_sha256: "943f6bbce6cea3f2732553a3cf3962576cc65c99c79573ac1b01bc85149e3f81"
 source_kind: paper
 author: "Jingtian Zhou, Jianzhu Ma, Yusi Chen, Chuankai Cheng, Bokan Bao, Jian Peng, Terrence J. Sejnowski, Jesse R. Dixon, Joseph R. Ecker"
 published: 2019-05-20

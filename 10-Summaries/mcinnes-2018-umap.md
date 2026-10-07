@@ -2,6 +2,8 @@
 type: summary
 title: "McInnes, Healy & Melville 2018 — UMAP: Uniform Manifold Approximation and Projection"
 source: "[[00-Sources/papers/UMAP_ Uniform Manifold Approximation and Projection for Dimension Reduction]]"
+source_quality: abstract
+source_sha256: "a37c1fd79a95129b1076c9e9b2b876ae886b92f4c3336004717911b98ec0c3f2"
 source_kind: paper
 author: "Leland McInnes, John Healy, James Melville"
 published: 2018-02-09

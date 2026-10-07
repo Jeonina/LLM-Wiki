@@ -2,6 +2,8 @@
 type: summary
 title: "Bravo González-Blas et al. 2019 — cisTopic: LDA topic modeling for scATAC-seq"
 source: "[[00-Sources/papers/cisTopic_ cis-regulatory topic modeling on single-cell ATAC-seq data]]"
+source_quality: full
+source_sha256: "05a2e34f6f08455bfc3f6ae4bff4fd446135a2f99b6f52d44c7b28a6122e003a"
 source_kind: paper
 author: "Carmen Bravo González-Blas, Liesbeth Minnoye, Dafni Papasokrati, Sara Aibar, Gert Hulselmans, Valerie Christiaens, Kristofer Davie, Jasper Wouters, Stein Aerts (corresponding)"
 published: 2019-04-08

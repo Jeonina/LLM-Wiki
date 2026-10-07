@@ -2,6 +2,8 @@
 type: summary
 title: "Wolf et al. 2019 — PAGA: graph abstraction reconciles clustering with trajectory inference"
 source: "[[00-Sources/papers/PAGA_ graph abstraction reconciles clustering with trajectory inference through a topology preserving map of single cells]]"
+source_quality: full
+source_sha256: "11608491190d41f5e704fc84ada944386f82b41c2b9925d63da04eb295447dda"
 source_kind: paper
 author: "F. Alexander Wolf, Fiona K. Hamey, Mireya Plass, Jordi Solana, Joakim S. Dahlin, Berthold Göttgens, Nikolaus Rajewsky, Lukas Simon, Fabian J. Theis (corresponding)"
 published: 2019-03-19

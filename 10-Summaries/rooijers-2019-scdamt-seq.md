@@ -2,6 +2,8 @@
 type: summary
 title: "Rooijers et al. 2019 — scDam&T-seq: simultaneous protein–DNA contacts + transcriptome in single cells"
 source: "[[00-Sources/papers/Simultaneous quantification of protein–DNA contacts and transcriptomes in single cells]]"
+source_quality: full
+source_sha256: "fc862b60680a39ab1c863e862adf24223b48fa55f2b2676e7854948753be22ac"
 source_kind: paper
 author: "Koos Rooijers, Corina M. Markodimitraki, Franka J. Rang, Sandra S. de Vries, Alex Chialastri, Kim L. de Luca, Dylan Mooijman, Siddharth S. Dey, Jop Kind (corresponding)"
 published: 2019-06-17

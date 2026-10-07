@@ -2,6 +2,8 @@
 type: summary
 title: "Wang et al. 2019 — CoBATCH for High-Throughput Single-Cell Epigenomic Profiling"
 source: "[[00-Sources/papers/CoBATCH for High-Throughput Single-Cell Epigenomic Profiling]]"
+source_quality: full
+source_sha256: "2835696ee4d3e67ac13d368daac6263d22cebd313b2f8a5cb768f6ba53681108"
 source_kind: paper
 author: "Qianhao Wang, Haiqing Xiong, Shanshan Ai, Xianhong Yu, Yaxi Liu, Jiejie Zhang, Aibin He (corresponding)"
 published: 2019-10

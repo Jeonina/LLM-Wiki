@@ -5,6 +5,8 @@ doi: "10.1038/s41576-020-00308-6"
 journal: "Nature Reviews Genetics"
 author: "Dorothy Clyde"
 source: "[[00-Sources/papers/SHARE-seq reveals chromatin potential]]"
+source_quality: abstract
+source_sha256: "79802d435fa6c8048c9b75184300b9719554fa49c8dfe6b62a890e98830d87e7"
 aliases: [SHARE-seq perspective, Clyde 2020 NRG SHARE-seq, Ma 2020 SHARE-seq]
 tags: [share-seq, single-cell-multiomics, atac-seq, scRNA-seq, joint-assay, split-pool, chromatin-potential]
 created: 2026-05-12

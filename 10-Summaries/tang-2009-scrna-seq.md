@@ -2,6 +2,8 @@
 type: summary
 title: "Tang 2009 — mRNA-Seq whole-transcriptome analysis of a single cell"
 source: "[[00-Sources/papers/mRNA-Seq whole-transcriptome analysis of a single cell]]"
+source_quality: full
+source_sha256: "2c766be29347db26282b91253a9ca133adc82a8acfbcca4a90c7c27c493473e0"
 aliases: ["Tang 2009", "Tang mRNA-Seq 2009", "first scRNA-seq"]
 tags: [scRNA-seq, mRNA-Seq, founding-method, single-cell-transcriptomics, blastomere, Surani-lab, Gurdon-Institute]
 created: 2026-05-14

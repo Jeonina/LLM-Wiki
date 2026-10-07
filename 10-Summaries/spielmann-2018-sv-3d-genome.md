@@ -2,6 +2,8 @@
 type: summary
 title: "Spielmann, Lupiáñez & Mundlos 2018 — Structural variation in the 3D genome"
 source: "[[00-Sources/papers/Structural variation in the 3D genome - Nature Reviews Genetics]]"
+source_quality: full
+source_sha256: "65dcba6ee33ecd45a53791c4eeb506ffac0cf7b60c0cf8e7088fc890e4c17880"
 source_kind: paper
 author: "Malte Spielmann, Darío G. Lupiáñez, Stefan Mundlos (corresponding)"
 published: 2018-04-24

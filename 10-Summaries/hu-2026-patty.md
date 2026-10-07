@@ -2,6 +2,8 @@
 type: summary
 title: "Hu et al. 2026 — PATTY corrects open-chromatin bias for improved bulk and single-cell CUT&Tag profiling"
 source: "[[00-Sources/papers/PATTY corrects open-chromatin bias for improved bulk and single-cell CUT&Tag profiling]]"
+source_quality: full
+source_sha256: "79fd28c9596d23d4d8df3b71838f0001bc2c74b9154347e1c423e35d758b3265"
 source_kind: paper
 author: "Shengen Shawn Hu, Zhangli Su, Lin Liu, Qingying Chen, Megan C. Grieco, Mengxue Tian, Anindya Dutta, Chongzhi Zang"
 published: 2026-05-22

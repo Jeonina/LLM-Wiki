@@ -2,6 +2,8 @@
 type: summary
 title: "Marks et al. 2023 — Unifying comprehensive genomics and transcriptomics in individual cells (ResolveOME)"
 source: "[[00-Sources/papers/Unifying comprehensive genomics and transcriptomics in individual cells to illuminate oncogenic and drug resistance mechanisms]]"
+source_quality: abstract
+source_sha256: "d55daffb92c33ca284719092b7c609135a752e37aba512f4da20f4725eac99f8"
 source_kind: paper
 author: "Jeffrey R. Marks, Jon S. Zawistowski, ..., Charles Gawad, E. Shelley Hwang, Jay A.A. West (corresponding)"
 published: 2023

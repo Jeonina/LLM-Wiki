@@ -2,6 +2,8 @@
 type: summary
 title: "Chang et al. 2025 — Droplet Hi-C enables scalable, single-cell profiling of chromatin architecture in heterogeneous tissues"
 source: "[[00-Sources/papers/Droplet Hi-C enables scalable, single-cell profiling of chromatin architecture in heterogeneous tissues]]"
+source_quality: full
+source_sha256: "f2c3916ffd5bb7fbc73cb0bbe2cf069ed265835778e0bb074fe6de7ca51cad60"
 source_kind: paper
 author: "Lei Chang, Yang Xie, Brett Taylor, Zhaoning Wang, Jiachen Sun, Ethan J. Armand, Shreya Mishra, Jie Xu, Melodi Tastemel, Audrey Lie, Zane A. Gibbs, Hannah S. Indralingam, Tuyet M. Tan, Rafael Bejar, Clark C. Chen, Frank B. Furnari, Ming Hu, Bing Ren (corresponding)"
 published: 2024-10-18

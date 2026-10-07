@@ -2,6 +2,8 @@
 type: summary
 title: "Schmitt 2012 — Detection of ultra-rare mutations by next-generation sequencing (Duplex Sequencing)"
 source: "[[00-Sources/papers/Detection of ultra-rare mutations by next-generation sequencing]]"
+source_quality: abstract
+source_sha256: "22ea103c45b0532ee9b76d50d553fb6cccaf0e35c12ff903e6ff3c6416ac0f29"
 aliases: ["Schmitt 2012", "Duplex Sequencing", "founding duplex method"]
 tags: [duplex-sequencing, error-correction, mutation-detection, mosaicism, Loeb-lab, founding-method]
 created: 2026-05-13

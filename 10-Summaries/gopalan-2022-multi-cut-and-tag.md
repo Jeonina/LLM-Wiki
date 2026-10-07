@@ -2,6 +2,8 @@
 type: summary
 title: "Gopalan & Fazzio 2022 — Multi-CUT&Tag to simultaneously profile multiple chromatin factors (protocol)"
 source: "[[00-Sources/papers/Multi-CUT&Tag to simultaneously profile multiple chromatin factors]]"
+source_quality: full
+source_sha256: "68d532ef661ce70987b7efdfdc874950d53192f7d0ace62c9027150d9b6d5120"
 source_kind: paper
 author: "Sneha Gopalan, Thomas G. Fazzio (corresponding)"
 published: 2022

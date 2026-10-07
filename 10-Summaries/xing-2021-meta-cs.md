@@ -2,6 +2,8 @@
 type: summary
 title: "Xing et al. 2021 — Accurate SNV detection in single cells by transposon-based whole-genome amplification of complementary strands"
 source: "[[00-Sources/papers/Accurate SNV detection in single cells by transposon-based whole-genome amplification of complementary strands]]"
+source_quality: full
+source_sha256: "cb157aa7c55933949fa43e62ac8a12981f0f59d2c39fab3e832f245ddc2880f7"
 source_kind: paper
 author: "Dong Xing, Longzhi Tan, Chi-Han Chang, Heng Li (corresponding), X. Sunney Xie (corresponding)"
 published: 2021-02-15

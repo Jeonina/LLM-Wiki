@@ -2,6 +2,8 @@
 type: summary
 title: "Arrastia et al. 2022 — Single-cell measurement of higher-order 3D genome organization with scSPRITE"
 source: "[[00-Sources/papers/Single-cell measurement of higher-order 3D genome organization with scSPRITE]]"
+source_quality: full
+source_sha256: "ba5a51e30379154c7b5ec39cccbe3943f0e0d2e6e7a6bd2e1dd47ad4c064efaa"
 source_kind: paper
 author: "Mary V. Arrastia, Joanna W. Jachowicz, Noah Ollikainen, Matthew S. Curtis, Charlotte Lai, Sofia A. Quinodoz, David A. Selck, Rustem F. Ismagilov, Mitchell Guttman (corresponding)"
 published: 2021-08-23

@@ -2,6 +2,8 @@
 type: summary
 title: "Laks et al. 2019 — Clonal decomposition and DNA replication states defined by scaled single-cell genome sequencing (DLP+)"
 source: "[[00-Sources/papers/Clonal Decomposition and DNA Replication States Defined by Scaled Single-Cell Genome Sequencing]]"
+source_quality: full
+source_sha256: "f3507199559ac6df19866936fd9751cd95311370c3eba1ff61d8343be852b292"
 source_kind: paper
 author: "Emma Laks, Andrew McPherson, Steven Poon, ... Samuel Aparicio, Sohrab P. Shah (corresponding)"
 published: 2019-11-14

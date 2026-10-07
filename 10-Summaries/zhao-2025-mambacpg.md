@@ -2,6 +2,8 @@
 type: summary
 title: "Zhao et al. 2025 — MambaCpG: an accurate model for single-cell DNA methylation status imputation using mamba"
 source: "[[00-Sources/papers/MambaCpG_ an accurate model for single-cell DNA methylation status imputation using mamba]]"
+source_quality: full
+source_sha256: "a3d84780b47c24ca66f2942aef2f7c9be04c61e231473d71b3ad03ae550edb90"
 source_kind: paper
 author: "Qi Zhao, Ze Li, Qian Mao, Tingwei Chen, Yiran Zhang, Bingle Li, Zheng Zhao, Xiaoya Fan"
 published: 2025-07-28

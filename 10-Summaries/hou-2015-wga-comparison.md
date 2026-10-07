@@ -2,6 +2,8 @@
 type: summary
 title: "Hou et al. 2015 — Comparison of variations detection between whole-genome amplification methods used in single-cell resequencing"
 source: "[[00-Sources/papers/Comparison of variations detection between whole-genome amplification methods used in single-cell resequencing]]"
+source_quality: full
+source_sha256: "8f968c65c4410aaac538a2c89e4908cd06e5c95c269d1b0ff1a5ab5387d3a046"
 source_kind: paper
 author: "Yong Hou, Kui Wu, Xulian Shi, Fuqiang Li, … Michael Dean, Han Liang, Xun Xu, Ling Wang, Jun Wang"
 published: 2015-08-06

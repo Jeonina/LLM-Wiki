@@ -2,6 +2,8 @@
 type: summary
 title: "Yuan & Duren 2024 — Inferring gene regulatory networks from single-cell multiome data using atlas-scale external data (LINGER)"
 source: "[[00-Sources/papers/Inferring gene regulatory networks from single-cell multiome data using atlas-scale external data]]"
+source_quality: full
+source_sha256: "2f766c90ecfa46ce144c2e176cd994aa9cf520a817c2a77826ed1c86695cb612"
 source_kind: paper
 author: "Qiuyue Yuan, Zhana Duren (corresponding)"
 published: 2024-04-12

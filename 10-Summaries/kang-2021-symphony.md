@@ -2,6 +2,8 @@
 type: summary
 title: "Kang et al. 2021 — Efficient and precise single-cell reference atlas mapping with Symphony"
 source: "[[00-Sources/papers/Efficient and precise single-cell reference atlas mapping with Symphony]]"
+source_quality: full
+source_sha256: "3c180cfb07839ef7f245a7585430a48aa3fb698c71d96ab753478aac51f9ed59"
 source_kind: paper
 author: "Joyce B. Kang, Aparna Nathan, Kathryn Weinand, Fan Zhang, Nghia Millard, Laurie Rumker, D. Branch Moody, Ilya Korsunsky, Soumya Raychaudhuri (corresponding)"
 published: 2021-10-07

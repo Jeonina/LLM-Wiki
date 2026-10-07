@@ -2,6 +2,8 @@
 type: summary
 title: "Kamimoto et al. 2023 — Dissecting cell identity via network inference and in silico gene perturbation (CellOracle)"
 source: "[[00-Sources/papers/Dissecting cell identity via network inference and in silico gene perturbation]]"
+source_quality: full
+source_sha256: "9906a0e0eff6c80fe0a5dea38203bbcbe115f2167e1784fa6e044350b9819bbe"
 source_kind: paper
 author: "Kenji Kamimoto, Blerta Stringa, Christy M. Hoffmann, Kunal Jindal, Lilianna Solnica-Krezel, Samantha A. Morris (corresponding)"
 published: 2023-02-08

@@ -2,6 +2,8 @@
 type: summary
 title: "Gong et al. 2022 — Single cell lineage reconstruction using distance-based algorithms and the R package, DCLEAR"
 source: "[[00-Sources/papers/Single cell lineage reconstruction using distance-based algorithms and the R package, DCLEAR]]"
+source_quality: full
+source_sha256: "7d2b18f142cf06f9f7731518288b32b61e4eb72b4c236440b66a06fa73d3fabc"
 source_kind: paper
 author: "Wuming Gong, Hyunwoo J. Kim, Daniel J. Garry, Il-Youp Kwak (corresponding)"
 published: 2022-03-24

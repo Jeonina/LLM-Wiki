@@ -2,6 +2,8 @@
 type: summary
 title: "Luquette et al. 2025 — PTA + duplex validation across 102 nuclei from lung and colon"
 source: "[[00-Sources/papers/A comprehensive view of somatic mosaicism by single-cell DNA analysis]]"
+source_quality: abstract
+source_sha256: "88d8a9fff8fcf42cfdc485dc66edb4e86ce12e07149ec5702af4e66e0c2926aa"
 source_kind: paper
 author: "Lovelace J. Luquette, Tim H. H. Coorens, ... Dan Landau, Peter J. Park, Flora M. Vaccarino, Christopher Walsh, Alexej Abyzov (corresponding)"
 published: 2025-11-03

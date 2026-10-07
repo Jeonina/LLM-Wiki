@@ -2,6 +2,8 @@
 type: summary
 title: "El-Kebir 2018 — SPhyR: tumor phylogeny estimation from single-cell sequencing data under loss and error"
 source: "[[00-Sources/papers/SPhyR_ tumor phylogeny estimation from single-cell sequencing data under loss and error]]"
+source_quality: full
+source_sha256: "dca86d846d68a00a29a4aad47b7f0d8e94017e79778f1e67b89d2a523f05e074"
 source_kind: paper
 author: "Mohammed El-Kebir"
 published: 2018-09-08

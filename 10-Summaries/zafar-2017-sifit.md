@@ -2,6 +2,8 @@
 type: summary
 title: "Zafar 2017 — SiFit: inferring tumor trees from single-cell sequencing data under finite-sites models"
 source: "[[00-Sources/papers/SiFit_ inferring tumor trees from single-cell sequencing data under finite-sites models]]"
+source_quality: full
+source_sha256: "99c5d62722236085ade765ae5ae29d1a0ba08cf2fd6de52a56b715778e2bc9bd"
 aliases: ["Zafar 2017 SiFit", "SiFit", "finite-sites tumor phylogeny"]
 tags: [SiFit, tumor-phylogeny, finite-sites-model, scDNA-seq, allelic-dropout, Nakhleh-lab, Navin-lab, Rice]
 created: 2026-05-13

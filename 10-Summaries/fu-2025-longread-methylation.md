@@ -2,6 +2,8 @@
 type: summary
 title: "Fu, Timp & Sedlazeck 2025 — Computational analysis of DNA methylation from long-read sequencing"
 source: "[[00-Sources/papers/Computational analysis of DNA methylation from long-read sequencing]]"
+source_quality: full
+source_sha256: "fb77e7868b1d8ab5bec3468c73d0522b270e98210ec33209eaf5f6d1bea99fac"
 source_kind: paper
 author: "Yilei Fu, Winston Timp, Fritz J. Sedlazeck"
 published: 2025-09

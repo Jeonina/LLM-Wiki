@@ -2,6 +2,8 @@
 type: summary
 title: "Hunt et al. 2022 — scTEM-seq: cheap single-cell global methylation via SINE Alu amplicons"
 source: "[[00-Sources/papers/scTEM-seq_ Single-cell analysis of transposable element methylation to link global epigenetic heterogeneity with transcriptional programs]]"
+source_quality: full
+source_sha256: "4ef235d5396c3cb729dd57c122944b4b81e70eb9869ece2d4440067f463e60d8"
 source_kind: paper
 author: "Kooper V. Hunt, Sean M. Burnard, Ellise A. Roper, Danielle R. Bond, Matthew D. Dun, Nicole M. Verrills, Anoop K. Enjeti, Heather J. Lee (corresponding)"
 published: 2022-04-06

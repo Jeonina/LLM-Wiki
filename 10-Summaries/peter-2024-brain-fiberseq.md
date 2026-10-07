@@ -2,6 +2,8 @@
 type: summary
 title: "Peter 2024 — Single chromatin fiber profiling and nucleosome position mapping in the human brain"
 source: "[[00-Sources/papers/Single chromatin fiber profiling and nucleosome position mapping in the human brain]]"
+source_quality: full
+source_sha256: "1272260e408abf01884ee85b72f287999bc0263351ee97db83c031573183802a"
 aliases: ["Peter 2024 brain Fiber-seq", "brain Fiber-seq"]
 tags: [Fiber-seq, brain, nucleosome-positioning, single-molecule, m6A, FACS-NeuN, Akbarian-lab, Stergachis-lab, Mt-Sinai]
 created: 2026-05-13

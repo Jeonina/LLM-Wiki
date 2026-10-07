@@ -2,6 +2,8 @@
 type: summary
 title: "Fang et al. 2021 — SnapATAC: peak-free scATAC-seq analysis to 1 M cells"
 source: "[[00-Sources/papers/Comprehensive analysis of single cell ATAC-seq data with SnapATAC]]"
+source_quality: full
+source_sha256: "5045c80323685ea98c78a2bf061c24d1b623add34be8f6aa5b00994e99d1b56e"
 source_kind: paper
 author: "Rongxin Fang, Sebastian Preissl, ... Joseph R. Ecker, Bing Ren (corresponding)"
 published: 2021-02-26

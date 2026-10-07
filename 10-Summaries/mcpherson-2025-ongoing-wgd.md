@@ -2,6 +2,8 @@
 type: summary
 title: "McPherson et al. 2025 — Ongoing genome doubling shapes evolvability and immunity in ovarian cancer"
 source: "[[00-Sources/papers/Ongoing genome doubling shapes evolvability and immunity in ovarian cancer]]"
+source_quality: full
+source_sha256: "37f43e353eca54bd83bea195f9642c7297fe0282451c8fe326a9b00717102dae"
 source_kind: paper
 author: "Andrew McPherson, Ignacio Vázquez-García, Matthew A. Myers, Duaa H. Al-Rawi, Matthew Zatzman, Adam C. Weiner, ... Simon Tavaré, Samuel Aparicio, ..., Britta Weigelt, Samuel F. Bakhoum, Sohrab P. Shah"
 published: 2025-07-16

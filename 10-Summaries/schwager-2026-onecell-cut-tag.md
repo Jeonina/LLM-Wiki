@@ -2,6 +2,8 @@
 type: summary
 title: "Schwager et al. 2026 — Simultaneous single-cell profiling of chromatin, transcriptome and surface markers with OneCell CUT&Tag captures epigenomic reprogramming"
 source: "[[00-Sources/papers/Simultaneous single-cell profiling of chromatin, transcriptome and surface markers with OneCell CUT&Tag captures epigenomic reprogramming]]"
+source_quality: full
+source_sha256: "e55a8d1918c46407d381cbf4c858efe54044c865973cbfc988265a1f26f6c767"
 source_kind: paper
 author: "Anna Schwager, Eve Moutaux, Adeline Durand, Alexandra Van Keymeulen, Amélie Viaene, ... Déborah Bourc'his, Elisabetta Marangoni, Nicolas Servant, Cédric Blanpain, Leïla Perié, Céline Vallot (corresponding; 26 authors)"
 published: 2026-08-12

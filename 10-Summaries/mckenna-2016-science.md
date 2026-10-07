@@ -2,6 +2,8 @@
 type: summary
 title: "McKenna 2016 — Whole-organism lineage tracing by combinatorial and cumulative genome editing (GESTALT)"
 source: "[[00-Sources/papers/Whole-organism lineage tracing by combinatorial and cumulative genome editing]]"
+source_quality: full
+source_sha256: "c6b46caee3b59eadaca3fad4ff07071cf1020ef71c0b484a2783e424ea1f5c5d"
 aliases: ["GESTALT", "McKenna 2016", "CRISPR lineage tracing"]
 tags: [lineage-tracing, CRISPR, GESTALT, zebrafish, Shendure-lab]
 created: 2026-05-13

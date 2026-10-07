@@ -2,6 +2,8 @@
 type: summary
 title: "Luo 2018 — Robust single-cell DNA methylome profiling with snmC-seq2"
 source: "[[00-Sources/papers/Robust single-cell DNA methylome profiling with snmC-seq2]]"
+source_quality: full
+source_sha256: "3102c4886f2bab0676341195392646d66d98ef023a00a288c8d425ae7ba80e18"
 aliases: [Luo 2018, snmC-seq2, Chongyuan 2018]
 tags: [scbs-seq, dna-methylation, single-cell-methylome, snmC-seq, foundational, brain]
 created: 2026-05-12

@@ -2,6 +2,8 @@
 type: summary
 title: "Tu et al. 2021 — SCOUT: single-cell genotyping using local-territory base counts"
 source: "[[00-Sources/papers/Accurate single-cell genotyping utilizing information from the local genome territory]]"
+source_quality: full
+source_sha256: "ce74eba6a6b9feec41ac6016615f271fe94575a350d9822f812fd56f5826dbbc"
 source_kind: paper
 author: "Kailing Tu, Keying Lu, Qilin Zhang, Wei Huang, Dan Xie (corresponding)"
 published: 2021-02-22

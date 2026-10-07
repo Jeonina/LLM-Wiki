@@ -2,6 +2,8 @@
 type: summary
 title: "Tahiliani et al. 2009 — Conversion of 5-methylcytosine to 5-hydroxymethylcytosine in mammalian DNA by MLL partner TET1"
 source: "[[00-Sources/papers/Conversion of 5-Methylcytosine to 5-Hydroxymethylcytosine in Mammalian DNA by MLL Partner TET1]]"
+source_quality: full
+source_sha256: "74d7d490057e32178d16b26a41af1089917366ff6df3694304374584b94eec12"
 source_kind: paper
 author: "Mamta Tahiliani, Kian Peng Koh, Yinghua Shen, William A. Pastor, Hozefa Bandukwala, Yevgeny Brudno, Suneet Agarwal, Lakshminarayan M. Iyer, David R. Liu, L. Aravind, Anjana Rao (corresponding)"
 published: 2009-04-17

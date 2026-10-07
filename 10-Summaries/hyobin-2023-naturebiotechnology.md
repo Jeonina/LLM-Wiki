@@ -2,6 +2,8 @@
 type: summary
 title: "Jeong 2023 — Functional analysis of structural variants in single cells using Strand-seq (scNOVA)"
 source: "[[00-Sources/papers/Functional analysis of structural variants in single cells using Strand-seq]]"
+source_quality: full
+source_sha256: "6ace081d4e4a4c89dea1e75f1cfc4c49cf3096ee7e22b29dada8e2764d610d21"
 aliases: [Jeong 2023, scNOVA, Hyobin 2023, Strand-seq SV functional]
 tags: [Strand-seq, structural-variants, single-cell, nucleosome-occupancy, scNOVA, CLL, method]
 created: 2026-05-12

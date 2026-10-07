@@ -2,6 +2,8 @@
 type: summary
 title: "Lakkis et al. 2022 — A multi-use deep learning method for CITE-seq and single-cell RNA-seq data integration with cell surface protein prediction and imputation (sciPENN)"
 source: "[[00-Sources/papers/A multi-use deep learning method for CITE-seq and single-cell RNA-seq data integration with cell surface protein prediction and imputation - Nature Machine Intelligence]]"
+source_quality: full
+source_sha256: "09ab4b508f46da4ae45383351f32d0d1100e86c986f70a42bbc9a21dccbefb9e"
 source_kind: paper
 author: "Justin Lakkis, Amelia Schroeder, Kenong Su, Michelle Y. Y. Lee, Alexander C. Bashore, Muredach P. Reilly, Mingyao Li (corresponding)"
 published: 2022-10-27

@@ -2,6 +2,8 @@
 type: summary
 title: "Chen et al. 2025 — EpiAgent: foundation model for single-cell epigenomics"
 source: "[[00-Sources/papers/EpiAgent_ foundation model for single-cell epigenomics]]"
+source_quality: full
+source_sha256: "54aeb8ff421cf3e886d5a85b1a93b7616488d359dc2232ed34fb76b4b24b15b3"
 source_kind: paper
 author: "Xiaoyang Chen, Keyi Li, Xuejian Cui, Zian Wang, Qun Jiang, Jiacheng Lin, Zhen Li, Zijing Gao, Hairong Lv, Rui Jiang"
 published: 2025-09-25

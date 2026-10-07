@@ -2,6 +2,8 @@
 type: summary
 title: "Hong et al. 2025 — Navigating the 3D genome at single-cell resolution (review)"
 source: "[[00-Sources/papers/Navigating the 3D genome at single-cell resolution_ techniques, computation, and mechanistic landscapes]]"
+source_quality: full
+source_sha256: "a7dd5bb8b67a75d3ca5187fac90b98343275222d0c292bfc3158be4ff80e662d"
 source_kind: paper
 author: "Feitong Hong, Kaiyuan Han, ... Hao Lin, Fuying Dao (corresponding)"
 published: 2025-10-06

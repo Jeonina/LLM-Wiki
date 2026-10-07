@@ -2,6 +2,8 @@
 type: summary
 title: "Gabbutt et al. 2025 — Fluctuating DNA methylation tracks cancer evolution at clinical scale (EVOFLUx)"
 source: "[[00-Sources/papers/Fluctuating DNA methylation tracks cancer evolution at clinical scale]]"
+source_quality: full
+source_sha256: "90c987492ca1bfae10d54fb996e2c627b450653832e1481ed27a4b78cd98e720"
 source_kind: paper
 author: "Calum Gabbutt, Martí Duran-Ferrer, Heather E. Grant, … Darryl Shibata, José I. Martin-Subero, Trevor A. Graham (corresponding)"
 published: 2025-09-10

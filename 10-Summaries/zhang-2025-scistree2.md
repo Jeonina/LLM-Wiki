@@ -2,6 +2,8 @@
 type: summary
 title: "Zhang et al. 2025 — ScisTree2 enables large-scale inference of cell lineage trees and genotype calling using efficient local search"
 source: "[[00-Sources/papers/ScisTree2 enables large-scale inference of cell lineage trees and genotype calling using efficient local search]]"
+source_quality: full
+source_sha256: "c263c293cd1924a94cf7b593d89c22a4a87697f46ad3aba439528ab93968441b"
 source_kind: paper
 author: "Haotian Zhang, Yiming Zhang, Teng Gao, Yufeng Wu"
 published: 2025-12

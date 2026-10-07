@@ -2,6 +2,8 @@
 type: summary
 title: "Peng et al. 2026 — scDIAGRAM: detecting chromatin compartments from individual single-cell Hi-C matrix without imputation or reference features"
 source: "[[00-Sources/papers/scDIAGRAM_ detecting chromatin compartments from individual single-cell Hi-C matrix without imputation or reference features]]"
+source_quality: full
+source_sha256: "c38c179b6c6870518a183d785193d4ff8ae16827befc2768846acc9cdae3d49a"
 source_kind: paper
 author: "Yongli Peng, Yujing Deng, Menghan Liu, Zhiyuan Liu, Ya-Hui Li, Xiang-Yu Zhao, Dong Xing, Jinzhu Jia, Hao Ge"
 published: 2026-03-08

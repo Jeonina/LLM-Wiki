@@ -2,6 +2,8 @@
 type: summary
 title: "Kozlov et al. 2022 — CellPhy: accurate and fast probabilistic inference of single-cell phylogenies from scDNA-seq data"
 source: "[[00-Sources/papers/CellPhy_ accurate and fast probabilistic inference of single-cell phylogenies from scDNA-seq data]]"
+source_quality: full
+source_sha256: "2433f82dd3ee2c636e9472148f8ce48076db64dbc561b0e7f14e61bf06764961"
 source_kind: paper
 author: "Alexey Kozlov, Joao M. Alves, Alexandros Stamatakis, David Posada (corresponding)"
 published: 2022-01-26

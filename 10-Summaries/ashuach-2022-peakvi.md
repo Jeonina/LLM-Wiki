@@ -2,6 +2,8 @@
 type: summary
 title: "Ashuach et al. 2022 — PeakVI: A deep generative model for single-cell chromatin accessibility analysis"
 source: "[[00-Sources/papers/PeakVI_ A deep generative model for single-cell chromatin accessibility analysis]]"
+source_quality: full
+source_sha256: "5116770c9e73d4554a1de0914a9d65558c0dacc8dccaf3964f0c607100186ef8"
 source_kind: paper
 author: "Tal Ashuach, Daniel A. Reidenbach, Adam Gayoso, Nir Yosef (corresponding)"
 published: 2022-03

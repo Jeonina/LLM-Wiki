@@ -2,6 +2,8 @@
 type: summary
 title: "Bae 2023 — Single duplex DNA sequencing with CODEC detects mutations with high sensitivity"
 source: "[[00-Sources/papers/Single duplex DNA sequencing with CODEC detects mutations with high sensitivity]]"
+source_quality: full
+source_sha256: "1cb4b9e237bbdf911217661a6180e87abf12d507128aae8f18e0fdc463b4b634"
 aliases: ["Bae 2023 CODEC", "CODEC", "Concatenating Original Duplex"]
 tags: [CODEC, duplex-sequencing, error-correction, single-duplex, Adalsteinsson-lab, Broad, mosaicism, cfDNA, sperm-mutation]
 created: 2026-05-13

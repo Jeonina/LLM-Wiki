@@ -2,6 +2,8 @@
 type: summary
 title: "Xu et al. 2012 — Single-cell exome sequencing reveals single-nucleotide mutation characteristics of a kidney tumor"
 source: "[[00-Sources/papers/Single-Cell Exome Sequencing Reveals Single-Nucleotide Mutation Characteristics of a Kidney Tumor]]"
+source_quality: full
+source_sha256: "2c39c9c7ed18c89e769aee457106f043cb1b2cc5d2e5910a63150e204ee23f83"
 source_kind: paper
 author: "Xun Xu, Yong Hou, Xuyang Yin, ... Jun Wang, Xiuqing Zhang (BGI)"
 published: 2012-03-16

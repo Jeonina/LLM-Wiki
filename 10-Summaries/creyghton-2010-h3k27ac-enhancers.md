@@ -2,6 +2,8 @@
 type: summary
 title: "Creyghton 2010 — H3K27ac separates active from poised enhancers and predicts developmental state"
 source: "[[00-Sources/papers/Histone H3K27ac separates active from poised enhancers and predicts developmental state]]"
+source_quality: full
+source_sha256: "dc12eec941f09b4f646c55a9638e85b0fabe4597ddb6b0a3f70f929cac46c764"
 source_kind: paper
 author: Menno P. Creyghton, Albert W. Cheng, G. Grant Welstead, Tristan Kooistra, Bryce W. Carey, Eveline J. Steine, Jacob Hanna, Michael A. Lodato, Garrett M. Frampton, Phillip A. Sharp, Laurie A. Boyer, Richard A. Young, Rudolf Jaenisch (corresponding)
 published: 2010-10-26

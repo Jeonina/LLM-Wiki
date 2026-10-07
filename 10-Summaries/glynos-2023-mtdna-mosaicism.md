@@ -2,6 +2,8 @@
 type: summary
 title: "Glynos et al. 2023 — single-cell mtDNA heteroplasmy: random drift drives life-long divergence"
 source: "[[00-Sources/papers/High-throughput single-cell analysis reveals progressive mitochondrial DNA mosaicism throughout life]]"
+source_quality: full
+source_sha256: "8e50ecaef62f159b755a4098f245a970280a336ba1547e9d55f9d9983109e4d3"
 source_kind: paper
 author: "Angelos Glynos, Lyuba V. Bozhilova, Michele Frison, Stephen Burr, James B. Stewart, Patrick F. Chinnery (corresponding)"
 published: 2023-10-26

@@ -2,6 +2,8 @@
 type: summary
 title: "de Boer & Regev 2018 — BROCKMAN: deciphering variance in epigenomic regulators by k-mer factorization"
 source: "[[00-Sources/papers/BROCKMAN_ deciphering variance in epigenomic regulators by k-mer factorization]]"
+source_quality: full
+source_sha256: "aa51feb86dedeb23b10a695595c2d930048bbdbc086d6feb2471202cce770dad"
 source_kind: paper
 author: "Carl G. de Boer, Aviv Regev"
 published: 2018-07-03

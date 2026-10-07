@@ -2,6 +2,8 @@
 type: summary
 title: "Lähnemann 2021 — Accurate and scalable variant calling from single cell DNA sequencing data with ProSolo"
 source: "[[00-Sources/papers/Accurate and scalable variant calling from single cell DNA sequencing data with ProSolo]]"
+source_quality: full
+source_sha256: "a39c5c8e4627dd068ec7923641d357397b5a3c23c7b7b1c5818a74d0e502e6d3"
 aliases: ["ProSolo", "Lähnemann 2021"]
 tags: [computational, variant-calling, MDA, single-cell, ProSolo]
 created: 2026-05-13

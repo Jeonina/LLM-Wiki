@@ -2,6 +2,8 @@
 type: summary
 title: "Garrison 2023 — Genomic data resources of the Brain Somatic Mosaicism Network for neuropsychiatric diseases"
 source: "[[00-Sources/papers/Genomic data resources of the Brain Somatic Mosaicism Network for neuropsychiatric diseases]]"
+source_quality: full
+source_sha256: "3792f977a28563aac158fdeffbf7b68bfe0cbf60be225da456e2886601d22ea9"
 aliases: ["Garrison 2023", "BSMN data descriptor", "BSMN data resources"]
 tags: [BSMN, data-descriptor, brain-mosaicism, ASD, schizophrenia, bipolar, FCD, Tourette, NIMH, consortium-resource]
 created: 2026-05-13

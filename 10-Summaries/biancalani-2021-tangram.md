@@ -2,6 +2,8 @@
 type: summary
 title: "Biancalani et al. 2021 — Deep learning and alignment of spatially resolved single-cell transcriptomes with Tangram"
 source: "[[00-Sources/papers/Deep learning and alignment of spatially resolved single-cell transcriptomes with Tangram]]"
+source_quality: full
+source_sha256: "5bc2c39c4d9e1be6131b88fcd56279d7848c4b71dc471e363b7baffb131c2dff"
 source_kind: paper
 author: "Tommaso Biancalani, Gabriele Scalia, Lorenzo Buffoni, … Xiaowei Zhuang, Evan Z. Macosko, Aviv Regev (corresponding)"
 published: 2021-10-28

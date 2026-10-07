@@ -2,6 +2,8 @@
 type: summary
 title: "Jones et al. 2020 — Inference of single-cell phylogenies from lineage tracing data using Cassiopeia"
 source: "[[00-Sources/papers/Inference of single-cell phylogenies from lineage tracing data using Cassiopeia]]"
+source_quality: full
+source_sha256: "d7168ecb4a05ec6e1bebd979b028842916abdc63e9ce521d493ceebd0d89fbcb"
 source_kind: paper
 author: "Matthew G. Jones, Alex Khodaverdian, Jeffrey J. Quinn, Michelle M. Chan, Jeffrey A. Hussmann, Robert Wang, Chenling Xu, Jonathan S. Weissman, Nir Yosef (corresponding)"
 published: 2020-04-14

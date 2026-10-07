@@ -2,6 +2,8 @@
 type: summary
 title: "Koboldt et al. 2009 — VarScan: variant detection in massively parallel sequencing of individual and pooled samples"
 source: "[[00-Sources/papers/VarScan_ variant detection in massively parallel sequencing of individual and pooled samples]]"
+source_quality: full
+source_sha256: "4386384772c3d21f99a3407a6b1f97165439d6da5dba07f5d3619043499983bb"
 source_kind: paper
 author: "Daniel C. Koboldt (corresponding), Ken Chen, Todd Wylie, David E. Larson, Michael D. McLellan, Elaine R. Mardis, George M. Weinstock, Richard K. Wilson, Li Ding"
 published: 2009-06-19

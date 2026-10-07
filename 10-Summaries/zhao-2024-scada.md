@@ -2,6 +2,8 @@
 type: summary
 title: "Zhao et al. 2024 — scaDA: A novel statistical method for differential analysis of single-cell chromatin accessibility sequencing data"
 source: "[[00-Sources/papers/scaDA_ A novel statistical method for differential analysis of single-cell chromatin accessibility sequencing data]]"
+source_quality: full
+source_sha256: "ea56827a5ac28bd5c557158cb1f63305b2798589dd288b28d57dd23bf7cec275"
 source_kind: paper
 author: "Fengdi Zhao, Xin Ma, Bing Yao, Qing Lu, Li Chen"
 published: 2024-08-02

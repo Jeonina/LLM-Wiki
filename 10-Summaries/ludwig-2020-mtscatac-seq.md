@@ -3,6 +3,8 @@ type: summary
 title: "Lareau, Ludwig et al. 2021 — mtscATAC-seq: massively parallel single-cell mtDNA genotyping + chromatin profiling"
 aliases: ["Lareau 2021 mtscATAC-seq", "Ludwig 2020 mtscATAC-seq"]
 source: "[[00-Sources/papers/Massively parallel single-cell mitochondrial DNA genotyping and chromatin profiling]]"
+source_quality: full
+source_sha256: "a6f46c5b5e0741e9ebc6bf6095877c8528d43077e0cb6fcddb57470eafa11673"
 source_kind: paper
 author: "Caleb A. Lareau, Leif S. Ludwig, Christoph Muus, Satyen H. Gohil, Tongtong Zhao, Zachary Chiang, Karin Pelka, Jeffrey M. Verboon, Wendy Luo, Elena Christian, Daniel Rosebrock, Gad Getz, Genevieve M. Boland, Fei Chen, Jason D. Buenrostro, Nir Hacohen, Catherine J. Wu, Martin J. Aryee, Aviv Regev, Vijay G. Sankaran (corresponding)"
 published: 2020-08-12

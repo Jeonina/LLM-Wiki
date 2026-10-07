@@ -2,6 +2,8 @@
 type: summary
 title: "Li et al. 2025 — Chromatin accessibility landscape of mouse early embryos revealed by single-cell NanoATAC-seq2"
 source: "[[00-Sources/papers/Chromatin accessibility landscape of mouse early embryos revealed by single-cell NanoATAC-seq2]]"
+source_quality: full
+source_sha256: "6bc65c0daf93a0223f27f1b5331a82f772cd5d17babe0ad9e54e3495fc5015b7"
 source_kind: paper
 author: "Mengyao Li, Zhenhuan Jiang, Xueqiang Xu, Xinglong Wu, Yun Liu, Kexuan Chen, Yuhan Liao, Wen Li, Xiao Wang, Yuqing Guo, Bo Zhang, Lu Wen, Kehkooi Kee, Fuchou Tang (conceived project)"
 published: 2025-03-28

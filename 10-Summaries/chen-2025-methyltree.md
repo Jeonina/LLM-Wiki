@@ -2,6 +2,8 @@
 type: summary
 title: "Chen 2025 — High-resolution, noninvasive single-cell lineage tracing in mice and humans based on DNA methylation epimutations (MethylTree)"
 source: "[[00-Sources/papers/High-resolution, noninvasive single-cell lineage tracing in mice and humans based on DNA methylation epimutations]]"
+source_quality: full
+source_sha256: "e754f78f9981ffe04f5dce8fc7f0d341a1beaebbc05f61c2aaea36b58b56913a"
 aliases: ["MethylTree", "Chen 2025", "methylation lineage tracing"]
 tags: [methylation, lineage-tracing, epimutation, scBS-seq, MethylTree, hematopoiesis, Wang-lab]
 created: 2026-05-13

@@ -2,6 +2,8 @@
 type: summary
 title: "Farlik et al. 2015 — Single-Cell DNA Methylome Sequencing and Bioinformatic Inference of Epigenomic Cell-State Dynamics"
 source: "[[00-Sources/papers/Single-Cell DNA Methylome Sequencing and Bioinformatic Inference of Epigenomic Cell-State Dynamics]]"
+source_quality: full
+source_sha256: "190d28eb5e87755f00c475dd83d8823ed9bf5f51f46171bf439788754f6e3b56"
 source_kind: paper
 author: "Matthias Farlik, Nathan C. Sheffield, Angelo Nuzzo, Paul Datlinger, Andreas Schönegger, Johanna Klughammer, Christoph Bock (corresponding)"
 published: 2015-03

@@ -2,6 +2,8 @@
 type: summary
 title: "Rothbart & Strahl 2014 — Interpreting the language of histone and DNA modifications"
 source: "[[00-Sources/papers/Interpreting the language of histone and DNA modifications]]"
+source_quality: full
+source_sha256: "1e76f712735ea1f3b456b9dd99d403efe9ba302324e1f4638d08fe64b670d9e3"
 source_kind: paper
 author: "Scott B. Rothbart, Brian D. Strahl (corresponding)"
 published: 2014

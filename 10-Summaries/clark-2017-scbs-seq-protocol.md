@@ -2,6 +2,8 @@
 type: summary
 title: "Clark et al. 2017 — Genome-wide base-resolution mapping of DNA methylation in single cells using single-cell bisulfite sequencing (scBS-seq) [protocol]"
 source: "[[00-Sources/papers/Genome-wide base-resolution mapping of DNA methylation in single cells using single-cell bisulfite sequencing (scBS-seq)]]"
+source_quality: full
+source_sha256: "af0045e9eb3961377538969e7d9042673b2f6933ac0646a1a404f034558e12b4"
 source_kind: paper
 author: "Stephen J. Clark, Sébastien A. Smallwood, Heather J. Lee, Felix Krueger, Wolf Reik, Gavin Kelsey (corresponding)"
 published: 2017-02-09

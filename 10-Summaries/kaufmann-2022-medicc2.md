@@ -2,6 +2,8 @@
 type: summary
 title: "Kaufmann 2022 — MEDICC2: whole-genome doubling aware copy-number phylogenies for cancer evolution"
 source: "[[00-Sources/papers/MEDICC2_ whole-genome doubling aware copy-number phylogenies for cancer evolution]]"
+source_quality: full
+source_sha256: "32e0587e36b99462a34fd3cdf41be3e7a7bf819e43877982e49635f35bdc7959"
 aliases: ["Kaufmann 2022 MEDICC2", "MEDICC2", "WGD-aware phylogeny"]
 tags: [MEDICC2, copy-number-phylogeny, WGD, whole-genome-doubling, tumor-evolution, Schwarz-lab, BIH-Berlin]
 created: 2026-05-13

@@ -2,6 +2,8 @@
 type: summary
 title: "Rodriguez-Fraticelli & Parreno 2026 — Charting single-cell lineages with synthetic and natural barcodes"
 source: "[[00-Sources/papers/Charting single-cell lineages with synthetic and natural barcodes - Nature Reviews Genetics]]"
+source_quality: full
+source_sha256: "5b864cbf93232639b7e39105ae51908cb66b28ed0810869515bf69aa1d6d92d8"
 source_kind: paper
 author: "Alejo E. Rodriguez-Fraticelli (corresponding), Victoria Parreno"
 published: 2026-02-27

@@ -2,6 +2,8 @@
 type: summary
 title: "Dixon et al. 2012 — Topological domains in mammalian genomes identified by analysis of chromatin interactions"
 source: "[[00-Sources/papers/Topological domains in mammalian genomes identified by analysis of chromatin interactions]]"
+source_quality: full
+source_sha256: "85463721608cd156b6a5b6584b21c8a2424a479f50fff3b8983de7cfcca89051"
 source_kind: paper
 author: "Jesse R. Dixon, Siddarth Selvaraj, Feng Yue, Audrey Kim, Yan Li, Yin Shen, Ming Hu, Jun S. Liu, Bing Ren (corresponding)"
 published: 2012-04-11

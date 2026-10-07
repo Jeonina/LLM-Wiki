@@ -2,6 +2,8 @@
 type: summary
 title: "Ha 2023 — Comprehensive benchmarking and guidelines of mosaic variant calling strategies"
 source: "[[00-Sources/papers/Comprehensive benchmarking and guidelines of mosaic variant calling strategies]]"
+source_quality: full
+source_sha256: "29aa4b28fae9c7ae7becd9f65d7495a77a7783f58cc726731076bc1f5f19cc6c"
 aliases: ["Ha 2023", "mosaic-caller benchmark", "Yoo-Jin Ha"]
 tags: [benchmark, mosaic-variant-calling, MosaicHunter, MosaicForecast, DeepMosaic, MuTect2, M2SMH, Kim-lab, Yonsei]
 created: 2026-05-13

@@ -2,6 +2,8 @@
 type: summary
 title: "Dean 2002 — Comprehensive human genome amplification using multiple displacement amplification (MDA)"
 source: "[[00-Sources/papers/Comprehensive human genome amplification using multiple displacement amplification]]"
+source_quality: full
+source_sha256: "ed1dd020f4be7bafc609ddc89b7eaaf4cb3349d965d8ec78dedb02c3f3701b3a"
 aliases: ["Dean 2002", "MDA founding paper", "Φ29 WGA"]
 tags: [MDA, scWGA, Phi29, isothermal-amplification, founding-method, whole-genome-amplification, Molecular-Staging]
 created: 2026-05-14

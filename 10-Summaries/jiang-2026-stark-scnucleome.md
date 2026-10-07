@@ -2,6 +2,8 @@
 type: summary
 title: "Jiang et al. 2026 — STARK + scNucleome: unified pipeline and atlas for sc3DG-seq"
 source: "[[00-Sources/papers/Harmonizing single-cell 3D genome data with STARK and scNucleome]]"
+source_quality: full
+source_sha256: "d6f6c29471de8c1d0ac77e225af7f8fb688e0c42d95fda5eedfbade44ff29144"
 source_kind: paper
 author: "Wen-Jie Jiang, KangWen Cai, YuanChen Sun, An Liu, HanWen Zhu, RuiXiang Gao, Chunge Zhong, Nana Wei, Futing Lai, Teng Fei, Yu-Juan Wang, Xiaoqi Zheng, Ming Xu, Hua-Jun Wu (corresponding)"
 published: 2026-01-21

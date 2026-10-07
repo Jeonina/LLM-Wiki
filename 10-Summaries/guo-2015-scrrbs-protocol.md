@@ -2,6 +2,8 @@
 type: summary
 title: "Guo et al. 2015 — Profiling DNA methylome landscapes of mammalian cells with single-cell reduced-representation bisulfite sequencing (scRRBS) [protocol]"
 source: "[[00-Sources/papers/Profiling DNA methylome landscapes of mammalian cells with single-cell reduced-representation bisulfite sequencing]]"
+source_quality: full
+source_sha256: "1da1df95358c2fc0b5bb906d12a67fa85d67be76dfe8c964bde8dd91547cc279"
 source_kind: paper
 author: "Hongshan Guo, Ping Zhu, Fan Guo, Xianlong Li, Xinglong Wu, Xiaoying Fan, Lu Wen, Fuchou Tang (corresponding)"
 published: 2015-04-02

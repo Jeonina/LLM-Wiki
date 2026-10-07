@@ -2,6 +2,8 @@
 type: summary
 title: "Lee 2020 — Simultaneous profiling of chromatin accessibility and methylation on human cell lines with nanopore sequencing (nanoNOMe)"
 source: "[[00-Sources/papers/Simultaneous profiling of chromatin accessibility and methylation on human cell lines with nanopore sequencing]]"
+source_quality: full
+source_sha256: "fad65577a8022c01a1de5075e3a40ef6b2ffe4d6d702d77e5460fa049f151773"
 aliases: ["Lee 2020 nanoNOMe", "nanoNOMe", "long-read NOMe"]
 tags: [nanoNOMe, nanopore, methylation, accessibility, long-read, joint-assay, Timp-lab, JHU, breast-cancer]
 created: 2026-05-13

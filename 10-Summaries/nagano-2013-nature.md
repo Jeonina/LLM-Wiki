@@ -2,6 +2,8 @@
 type: summary
 title: "Nagano 2013 — Single-cell Hi-C reveals cell-to-cell variability in chromosome structure"
 source: "[[00-Sources/papers/Single-cell Hi-C reveals cell-to-cell variability in chromosome structure]]"
+source_quality: full
+source_sha256: "0e02ca014a1117195ebbbb74c094982fc634e0156a7eda86f953a96cd7144bfb"
 aliases: ["Nagano 2013", "scHi-C founding paper", "single-cell Hi-C"]
 tags: [3D-genome, scHi-C, chromosome-conformation, Fraser-lab, Tanay-lab, Babraham]
 created: 2026-05-13

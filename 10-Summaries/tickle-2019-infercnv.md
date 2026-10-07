@@ -2,6 +2,8 @@
 type: summary
 title: "Tickle et al. 2019 — inferCNV (Trinity CTAT): inferring CNV from single-cell RNA-seq"
 source: "[[00-Sources/papers/broadinstitute_infercnv_ Inferring CNV from Single-Cell RNA-Seq]]"
+source_quality: abstract
+source_sha256: "365d33de4619c8d6656cb3e24df03caef4fdf363d43794433e1ab2f0774b9d3e"
 source_kind: paper
 author: "Timothy Tickle, Itay Tirosh, Christophe Georgescu, Maxwell Brown, Brian Haas (Broad Institute)"
 published: 2019

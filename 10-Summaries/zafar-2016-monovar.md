@@ -2,6 +2,8 @@
 type: summary
 title: "Zafar 2016 — Monovar: single-nucleotide variant detection in single cells"
 source: "[[00-Sources/papers/Monovar_ single-nucleotide variant detection in single cells]]"
+source_quality: full
+source_sha256: "541553aef56ac185dacef814f723251b5a427f0f18f2d4aa67560d02785f7e14"
 aliases: ["Zafar 2016 Monovar", "Monovar"]
 tags: [Monovar, scDNA-SNV-calling, allelic-dropout, multi-cell-pooled, Nakhleh-lab, Navin-lab, founding-tool]
 created: 2026-05-13

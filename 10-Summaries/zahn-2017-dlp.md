@@ -2,6 +2,8 @@
 type: summary
 title: "Zahn et al. 2017 — Scalable whole-genome single-cell library preparation without preamplification (DLP)"
 source: "[[00-Sources/papers/Scalable whole-genome single-cell library preparation without preamplification]]"
+source_quality: full
+source_sha256: "be15b6e8d6c78df522e6e3594c8fda98edbce81ec3d68757f781b9d11788d73b"
 source_kind: paper
 author: "Hans Zahn, Adi Steif, Emma Laks, Peter Eirew, Michael VanInsberghe, Sohrab P. Shah, Samuel Aparicio, Carl L. Hansen (corresponding)"
 published: 2017-01-09

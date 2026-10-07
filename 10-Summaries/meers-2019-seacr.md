@@ -2,6 +2,8 @@
 type: summary
 title: "Meers, Tenenbaum & Henikoff 2019 — Peak calling by Sparse Enrichment Analysis for CUT&RUN (SEACR)"
 source: "[[00-Sources/papers/Peak calling by Sparse Enrichment Analysis for CUT&RUN chromatin profiling - Epigenetics & Chromatin]]"
+source_quality: full
+source_sha256: "a33ea642aed276bc5925ea82a9f4070809b9b7dd4546301ef66d82258a20f8ae"
 source_kind: paper
 author: "Michael P. Meers, Dan Tenenbaum, Steven Henikoff (corresponding)"
 published: 2019-07-12

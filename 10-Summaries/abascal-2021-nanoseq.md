@@ -2,6 +2,8 @@
 type: summary
 title: "Abascal 2021 — Somatic mutation landscapes at single-molecule resolution (NanoSeq)"
 source: "[[00-Sources/papers/Somatic mutation landscapes at single-molecule resolution]]"
+source_quality: full
+source_sha256: "f411b94688daa86383094b34d8f37624b487eec053b8d80c12947fe7ac79749f"
 aliases: [Abascal 2021, NanoSeq, Federico 2021, Sanger NanoSeq]
 tags: [duplex-sequencing, somatic-mosaicism, NanoSeq, post-mitotic-neurons, mutation-rate, foundational]
 created: 2026-05-12

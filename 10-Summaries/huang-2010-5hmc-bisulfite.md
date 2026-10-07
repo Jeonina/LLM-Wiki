@@ -2,6 +2,8 @@
 type: summary
 title: "Huang et al. 2010 — The Behaviour of 5-Hydroxymethylcytosine in Bisulfite Sequencing"
 source: "[[00-Sources/papers/The Behaviour of 5-Hydroxymethylcytosine in Bisulfite Sequencing]]"
+source_quality: full
+source_sha256: "e7106fe6843b4b005e675d5f86fc4856c8cb7e60e721a3afc5d5416ecf23bbb2"
 source_kind: paper
 author: "Yun Huang, William A. Pastor, Yinghua Shen, Mamta Tahiliani, David R. Liu, Anjana Rao"
 published: 2010-01-26

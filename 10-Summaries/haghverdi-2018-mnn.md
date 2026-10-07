@@ -2,6 +2,8 @@
 type: summary
 title: "Haghverdi et al. 2018 — Batch effects in single-cell RNA-sequencing data are corrected by matching mutual nearest neighbors (MNN)"
 source: "[[00-Sources/papers/Batch effects in single-cell RNA-sequencing data are corrected by matching mutual nearest neighbors]]"
+source_quality: full
+source_sha256: "098a06da1510483a06241e903b877c00fe14bf2a15fd94530c4d1ee459d9e83f"
 source_kind: paper
 author: "Laleh Haghverdi, Aaron T. L. Lun, Michael D. Morgan, John C. Marioni (corresponding)"
 published: 2018-04-02

@@ -2,6 +2,8 @@
 type: summary
 title: "Stuart 2021 — Single-cell chromatin state analysis with Signac"
 source: "[[00-Sources/papers/Single-cell chromatin state analysis with Signac]]"
+source_quality: full
+source_sha256: "fb77d2b301d010f723fa7107108b897cd7183637e64d356871a273466d873028"
 aliases: ["Signac", "Stuart 2021"]
 tags: [scATAC-seq, multi-omics, computational, Seurat, software]
 created: 2026-05-13

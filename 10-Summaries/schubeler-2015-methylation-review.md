@@ -2,6 +2,8 @@
 type: summary
 title: "Schübeler 2015 — Function and information content of DNA methylation"
 source: "[[00-Sources/papers/Function and information content of DNA methylation]]"
+source_quality: full
+source_sha256: "ba62030793326436d4eb903da18837d96dd090d5dea1124593c0d830272296dd"
 aliases: ["Schübeler 2015", "methylation function review"]
 tags: [review, DNA-methylation, 5mC, regulatory-function, epigenetics]
 created: 2026-05-13

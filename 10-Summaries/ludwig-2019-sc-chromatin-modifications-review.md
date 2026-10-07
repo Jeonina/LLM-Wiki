@@ -2,6 +2,8 @@
 type: summary
 title: "Ludwig & Bintu 2019 — Mapping chromatin modifications at the single cell level"
 source: "[[00-Sources/papers/Mapping chromatin modifications at the single cell level]]"
+source_quality: full
+source_sha256: "11f24d89f7d41a762a1c5a810636d6d3998edff7a4e4754358f01eecff48fccb"
 source_kind: paper
 author: "Connor H. Ludwig, Lacramioara Bintu (corresponding)"
 published: 2019-06-27

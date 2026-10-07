@@ -2,6 +2,8 @@
 type: summary
 title: "Dong 2017 — Accurate identification of single-nucleotide variants in whole-genome-amplified single cells (SCcaller + SCMDA)"
 source: "[[00-Sources/papers/Accurate identification of single-nucleotide variants in whole-genome-amplified single cells]]"
+source_quality: full
+source_sha256: "98f1272712082b6a2adfa4eccd5279877fe9f9e5def33b51fae209d4aa08076e"
 aliases: ["Dong 2017 SCcaller", "SCcaller", "SCMDA"]
 tags: [SCcaller, SCMDA, scWGS, MDA, variant-calling, allelic-bias, Vijg-lab, Einstein]
 created: 2026-05-13

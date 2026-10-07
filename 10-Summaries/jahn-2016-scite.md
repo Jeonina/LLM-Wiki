@@ -2,6 +2,8 @@
 type: summary
 title: "Jahn 2016 — Tree inference for single-cell data (SCITE)"
 source: "[[00-Sources/papers/Tree inference for single-cell data]]"
+source_quality: full
+source_sha256: "836831c63f93c0dd2494a533118e4712a5ee26226b0a0781d7015ea6d19c057c"
 aliases: ["Jahn 2016 SCITE", "SCITE", "Beerenwinkel-lab phylogeny"]
 tags: [SCITE, tumor-phylogeny, MCMC, allelic-dropout, infinite-sites, Beerenwinkel-lab, ETH-Zurich, founding-method]
 created: 2026-05-13

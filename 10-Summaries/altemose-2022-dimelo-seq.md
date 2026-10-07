@@ -2,6 +2,8 @@
 type: summary
 title: "Altemose 2022 — DiMeLo-seq: long-read single-molecule mapping of protein-DNA interactions"
 source: "[[00-Sources/papers/DiMeLo-seq_ a long-read, single-molecule method for mapping protein–DNA interactions genome wide]]"
+source_quality: full
+source_sha256: "888843daed1d454e494fa831ef80fa1807823551417a7eccce3cca064ea497eb"
 aliases: ["Altemose 2022 DiMeLo-seq", "DiMeLo-seq"]
 tags: [DiMeLo-seq, long-read, pA-Hia5, antibody-directed-methylation, protein-DNA-mapping, CENP-A, repetitive-regions, Straight-lab, Streets-lab]
 created: 2026-05-13

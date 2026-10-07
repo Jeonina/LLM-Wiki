@@ -2,6 +2,8 @@
 type: summary
 title: "Gaiti 2019 — Epigenetic evolution and lineage histories of chronic lymphocytic leukaemia"
 source: "[[00-Sources/papers/Epigenetic evolution and lineage histories of chronic lymphocytic leukaemia]]"
+source_quality: full
+source_sha256: "0d9c55209ce901a740fb382c11999be3646f01f94459aada6ea194771f7aae4f"
 aliases: [Gaiti 2019, CLL epimutation, Federico 2019, Landau methylome lineage]
 tags: [single-cell-methylation, epimutation, lineage-tracing, CLL, multi-omics, foundational]
 created: 2026-05-12

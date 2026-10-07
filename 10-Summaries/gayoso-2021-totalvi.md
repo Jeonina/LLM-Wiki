@@ -2,6 +2,8 @@
 type: summary
 title: "Gayoso et al. 2021 — Joint probabilistic modeling of single-cell multi-omic data with totalVI"
 source: "[[00-Sources/papers/Joint probabilistic modeling of single-cell multi-omic data with totalVI]]"
+source_quality: full
+source_sha256: "70ff443da8e0ccb8339b5e2370babd8fdd3b1f64a00ea386c8496b87d664fe00"
 source_kind: paper
 author: "Adam Gayoso, Zoë Steier, Romain Lopez, Jeffrey Regier, Kristopher L. Nazor, Aaron Streets, Nir Yosef (corresponding)"
 published: 2021-02-15

@@ -2,6 +2,8 @@
 type: summary
 title: "Chen et al. 2025 — Direct, bisulfite-free 5mC and 5hmC sequencing at single-cell resolution with scTAPS and scCAPS+"
 source: "[[00-Sources/papers/Direct and bisulfite-free 5-methylcytosine and 5-hydroxymethylcytosine sequencing at single-cell resolution with scTAPS and scCAPS +]]"
+source_quality: full
+source_sha256: "14fd64220b904021687ecf7ef4f5c832adb808d346d718d7c3b71c4e83889e3d"
 source_kind: paper
 author: "Xiufei Chen, Jingfei Cheng, Linzhen Kong, Xiao Shu, Haiqi Xu, Masato Inoue, Marion Silvana Fernández-Berrocal, Dagny Sanden Døskeland, Magnar Bjørås, Shivan Sivakumar, Yibin Liu, Jing Ye, Chun-Xiao Song (corresponding)"
 published: 2025-08-18

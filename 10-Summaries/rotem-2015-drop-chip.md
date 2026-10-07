@@ -2,6 +2,8 @@
 type: summary
 title: "Rotem 2015 — Single-cell ChIP-seq reveals cell subpopulations defined by chromatin state (Drop-ChIP)"
 source: "[[00-Sources/papers/Single-cell ChIP-seq reveals cell subpopulations defined by chromatin state]]"
+source_quality: full
+source_sha256: "de3e2c12af1100fbc89d36afe7d3592be2dd464d1bb40e21bbd9bd22a4c03dc7"
 aliases: ["Drop-ChIP", "Rotem 2015", "scChIP-seq founding paper"]
 tags: [scChIP-seq, Drop-ChIP, histone-modifications, microfluidics, Bernstein-lab]
 created: 2026-05-13

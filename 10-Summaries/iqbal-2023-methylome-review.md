@@ -2,6 +2,8 @@
 type: summary
 title: "Iqbal 2023 — Computational Methods for Single-cell DNA Methylome Analysis"
 source: "[[00-Sources/papers/Computational Methods for Single-Cell DNA Methylome Analysis]]"
+source_quality: full
+source_sha256: "5e7f9333839a9c7995dd059c2b2b945808cadd4852cec9725fe83cfe9e2950cd"
 aliases: ["Iqbal 2023", "Wanding Zhou methylome review", "scDNA methylome review"]
 tags: [review, single-cell-methylome, computational-tools, scBS-seq, Zhou-lab, UPenn, CHOP]
 created: 2026-05-13

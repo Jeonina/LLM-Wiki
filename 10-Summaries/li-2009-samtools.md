@@ -2,6 +2,8 @@
 type: summary
 title: "Li et al. 2009 — The Sequence Alignment/Map format and SAMtools"
 source: "[[00-Sources/papers/The Sequence Alignment_Map format and SAMtools]]"
+source_quality: full
+source_sha256: "5e1a533f2be37a6c2c6d686745c619089eea448a0f9a5873eb688865b5986f88"
 source_kind: paper
 author: "Heng Li, Bob Handsaker, Alec Wysoker, Tim Fennell, Jue Ruan, Nils Homer, Gabor Marth, Goncalo Abecasis, Richard Durbin (corresponding), 1000 Genomes Project Data Processing Subgroup"
 published: 2009-06-08

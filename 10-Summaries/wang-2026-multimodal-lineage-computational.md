@@ -2,6 +2,8 @@
 type: summary
 title: "Wang, He & Hu 2026 — Computational approaches for multimodal lineage tracing"
 source: "[[00-Sources/papers/Computational approaches for multimodal lineage tracing - Nature Reviews Genetics]]"
+source_quality: full
+source_sha256: "86567e0eb497e233bd6210421b0d49f4597f4327929800e14643340d72109f06"
 source_kind: paper
 author: "Kun Wang, Xionglei He, Zheng Hu (corresponding)"
 published: 2026-05-18

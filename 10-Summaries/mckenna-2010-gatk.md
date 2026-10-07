@@ -2,6 +2,8 @@
 type: summary
 title: "McKenna et al. 2010 — The Genome Analysis Toolkit (GATK): a MapReduce framework for NGS data"
 source: "[[00-Sources/papers/The Genome Analysis Toolkit_ A MapReduce framework for analyzing next-generation DNA sequencing data]]"
+source_quality: full
+source_sha256: "65bd05cb6daac722cf258b1b26e4a7d8e098b6da17b75be25707f868ec61fe1b"
 source_kind: paper
 author: "Aaron McKenna, Matthew Hanna, Eric Banks, Andrey Sivachenko, Kristian Cibulskis, Andrew Kernytsky, Kiran Garimella, David Altshuler, Stacey Gabriel, Mark Daly, Mark A. DePristo (corresponding)"
 published: 2010-09-01

@@ -2,6 +2,8 @@
 type: summary
 title: "Chu et al. 2025 — Maximum likelihood inference of time-scaled cell lineage trees with mixed-type missing data using LAML"
 source: "[[00-Sources/papers/Maximum likelihood inference of time-scaled cell lineage trees with mixed-type missing data using LAML]]"
+source_quality: full
+source_sha256: "4acf260ac111f0da41d2e33fd6559fcb446938a538760dc44933537c05f0b530"
 source_kind: paper
 author: "Gillian Chu, Uyen Mai, Henri Schmidt, Benjamin J. Raphael (corresponding)"
 published: 2025-07-02

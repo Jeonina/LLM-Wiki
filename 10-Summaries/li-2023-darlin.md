@@ -2,6 +2,8 @@
 type: summary
 title: "Li et al. 2023 — A mouse model with high clonal barcode diversity for joint lineage, transcriptomic, and epigenomic profiling in single cells"
 source: "[[00-Sources/papers/A mouse model with high clonal barcode diversity for joint lineage, transcriptomic, and epigenomic profiling in single cells]]"
+source_quality: full
+source_sha256: "65a7b7a449b5769ba77d41104c9e4e771c8ab57167f6752f27763554659c4318"
 source_kind: paper
 author: "Li Li, Sarah Bowling, Sean E. McGeary, Qi Yu, Bianca Lemke, Karel Alcedo, Yuemeng Jia, Xugeng Liu, Mark Ferreira, Allon M. Klein, Shou-Wen Wang, Fernando D. Camargo (corresponding)"
 published: 2023-11

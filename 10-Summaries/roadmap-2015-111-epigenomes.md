@@ -2,6 +2,8 @@
 type: summary
 title: "Roadmap Epigenomics Consortium 2015 — Integrative analysis of 111 reference human epigenomes"
 source: "[[00-Sources/papers/Integrative analysis of 111 reference human epigenomes]]"
+source_quality: full
+source_sha256: "7b322478f35fc9be43970660be1661060bbec5cca47f806c3cfc54df8068d421"
 source_kind: paper
 author: "Anshul Kundaje, Wouter Meuleman, Jason Ernst, Misha Bilenky, Angela Yen, ... Bradley E. Bernstein, Joseph F. Costello, Joseph R. Ecker, Martin Hirst, Alexander Meissner, Aleksandar Milosavljevic, Bing Ren, John A. Stamatoyannopoulos, Ting Wang, Manolis Kellis (corresponding)"
 published: 2015-02-18

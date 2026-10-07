@@ -6,6 +6,8 @@ tags: [IGS, in-situ-sequencing, 3d-genome, single-cell, spatial-genomics, founda
 created: 2026-05-12
 updated: 2026-05-12
 source: "[[00-Sources/papers/In situ genome sequencing resolves DNA sequence and structure in intact biological samples]]"
+source_quality: full
+source_sha256: "220d8b3c4867b71843fdb59ee75652d524eda378f681c56c6de86ade59fdea61"
 sources: ["00-Sources/papers/AndrewC_2020_Science.pdf"]
 ---
 

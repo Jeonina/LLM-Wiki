@@ -2,6 +2,8 @@
 type: summary
 title: "Li & Durbin 2009 — Fast and accurate short read alignment with Burrows–Wheeler transform (BWA)"
 source: "[[00-Sources/papers/Fast and accurate short read alignment with Burrows–Wheeler transform]]"
+source_quality: full
+source_sha256: "ebcdce3d15a19efc08cb21ee5dcfd08a336db666ca994c3bfe2d51d8ca8ac6aa"
 source_kind: paper
 author: "Heng Li, Richard Durbin (corresponding)"
 published: 2009-05-18

@@ -2,6 +2,8 @@
 type: summary
 title: "Liu et al. 2024 — DNA mismatch and damage patterns revealed by single-molecule sequencing (HiDEF-seq)"
 source: "[[00-Sources/papers/DNA mismatch and damage patterns revealed by single-molecule sequencing]]"
+source_quality: full
+source_sha256: "f0b7f87d66feae6c4a238e3cb095dacbafed2efce998922acdbaa7d028046983"
 source_kind: paper
 author: "Mei Hong Liu, Benjamin M. Costa, Emilia C. Bianchini, Una Choi, Rachel C. Bandler, … Uri Tabori, Jonathan E. Shoag, Gilad D. Evrony (corresponding)"
 published: 2024-06-12

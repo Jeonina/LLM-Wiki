@@ -2,6 +2,8 @@
 type: summary
 title: "Naumova et al. 2013 — Organization of the mitotic chromosome"
 source: "[[00-Sources/papers/Organization of the Mitotic Chromosome]]"
+source_quality: full
+source_sha256: "6ade5d31a55f3581973dad429b683510c358d0afa84910a855871c10d32d20be"
 source_kind: paper
 author: "Natalia Naumova, Maxim Imakaev, Geoffrey Fudenberg, Ye Zhan, Bryan R. Lajoie, Leonid A. Mirny, Job Dekker (corresponding)"
 published: 2013-11-08

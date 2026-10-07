@@ -2,6 +2,8 @@
 type: summary
 title: "Peric-Hupkes et al. 2010 — Molecular maps of the reorganization of genome-nuclear lamina interactions during differentiation"
 source: "[[00-Sources/papers/Molecular Maps of the Reorganization of Genome-Nuclear Lamina Interactions during Differentiation]]"
+source_quality: full
+source_sha256: "93470626f678817246f57f89cc68465dcf62df91ed1420abe7d635fffe152197"
 source_kind: paper
 author: "Daan Peric-Hupkes, Wouter Meuleman, Ludo Pagie, ... Bas van Steensel (corresponding)"
 published: 2010-05-28

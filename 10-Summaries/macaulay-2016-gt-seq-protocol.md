@@ -2,6 +2,8 @@
 type: summary
 title: "Macaulay et al. 2016 — G&T-seq protocol: parallel sequencing of single-cell genomes and transcriptomes"
 source: "[[00-Sources/papers/Separation and parallel sequencing of the genomes and transcriptomes of single cells using G&T-seq]]"
+source_quality: full
+source_sha256: "c71f0e7d7c597aa789da2a256e3cd3cc490c4e8b680bb9808aebd067ca2ce0de"
 source_kind: paper
 author: "Iain C. Macaulay, Mabel J. Teng, Wilfried Haerty, Parveen Kumar, Chris P. Ponting, Thierry Voet (corresponding)"
 published: 2016-09-29

@@ -2,6 +2,8 @@
 type: summary
 title: "Mezger et al. 2018 — µATAC-seq: 5,184 nano-wells, ~1,800 cells/chip, $0.81/cell"
 source: "[[00-Sources/papers/High-throughput chromatin accessibility profiling at single-cell resolution]]"
+source_quality: full
+source_sha256: "0654c3cf96fe921f8f8eb07f003703430f7c9278c2fe3b954806311303e697c8"
 source_kind: paper
 author: "Anja Mezger, Sandy Klemm, Ishminder Mann, Kara Brower, Alain Mir, Magnolia Bostick, Andrew Farmer, Polly Fordyce, Sten Linnarsson, William Greenleaf (corresponding)"
 published: 2018-09-07

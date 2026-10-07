@@ -3,6 +3,8 @@ type: summary
 title: "Lee et al. 2025 — Spatial joint profiling of DNA methylome and transcriptome in tissues"
 aliases: ["Lee 2025 spatial methylome", "Cardilla 2025"]
 source: "[[00-Sources/papers/Spatial joint profiling of DNA methylome and transcriptome in tissues]]"
+source_quality: full
+source_sha256: "65780a7c4bf0a5693beb4196a7f36684fb262fe25942fdd528e286493496a647"
 source_kind: paper
 author: "Chin Nien Lee, Hongxiang Fu, Angelysia Cardilla, Wanding Zhou, Yanxiang Deng (corresponding)"
 published: 2025-09-03

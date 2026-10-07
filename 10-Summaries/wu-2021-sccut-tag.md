@@ -2,6 +2,8 @@
 type: summary
 title: "Wu et al. 2021 — Single-cell CUT&Tag analysis of chromatin modifications in differentiation and tumor progression"
 source: "[[00-Sources/papers/Single-cell CUT&Tag analysis of chromatin modifications in differentiation and tumor progression]]"
+source_quality: full
+source_sha256: "1e99cc08f60ac7ce601161b6bf2702503612a368448d3f4dffb2fa9dce61d6af"
 source_kind: paper
 author: "Steven J. Wu, Scott N. Furlan, Anca B. Mihalas, Hatice S. Kaya-Okur, ... Kami Ahmad, Steven Henikoff, Anoop P. Patel (corresponding)"
 published: 2021-04-12

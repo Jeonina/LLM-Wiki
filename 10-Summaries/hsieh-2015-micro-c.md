@@ -2,6 +2,8 @@
 type: summary
 title: "Hsieh et al. 2015 — Mapping Nucleosome Resolution Chromosome Folding in Yeast by Micro-C"
 source: "[[00-Sources/papers/Mapping Nucleosome Resolution Chromosome Folding in Yeast by Micro-C.pdf]]"
+source_quality: full
+source_sha256: "7585a5a00ff65ba2c523e739b37959ee91bfb893e72577cd5626190c6f91f48e"
 source_kind: paper
 author: "Tsung-Han S. Hsieh, Assaf Weiner, Bryan Lajoie, Job Dekker, Nir Friedman, Oliver J. Rando"
 published: 2015-07

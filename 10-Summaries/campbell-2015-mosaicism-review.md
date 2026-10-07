@@ -2,6 +2,8 @@
 type: summary
 title: "Campbell et al. 2015 — Somatic mosaicism: implications for disease and transmission genetics"
 source: "[[00-Sources/papers/Somatic mosaicism_ implications for disease and transmission genetics]]"
+source_quality: full
+source_sha256: "879eb237c521b72de9980a2918a7fd274ee6d14753b34232c2003998b9e98ba1"
 source_kind: paper
 author: "Ian M. Campbell, Chad A. Shaw, Pawel Stankiewicz, James R. Lupski"
 published: 2015-07

@@ -2,6 +2,8 @@
 type: summary
 title: "Traag, Waltman & van Eck 2019 — From Louvain to Leiden: guaranteeing well-connected communities"
 source: "[[00-Sources/papers/From Louvain to Leiden_ guaranteeing well-connected communities]]"
+source_quality: full
+source_sha256: "58bd51782bd07dfaa7aa5cb02baeeef8f269758fc94fc17d37cfc377b10e13ef"
 source_kind: paper
 author: "V. A. Traag, L. Waltman, N. J. van Eck (Centre for Science and Technology Studies, Leiden University)"
 published: 2019-03-26

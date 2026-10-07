@@ -2,6 +2,8 @@
 type: summary
 title: "Luo et al. 2017 — Single-cell methylomes identify neuronal subtypes and regulatory elements in mammalian cortex (snmC-seq)"
 source: "[[00-Sources/papers/Single-cell methylomes identify neuronal subtypes and regulatory elements in mammalian cortex]]"
+source_quality: full
+source_sha256: "fb4cfea54eb87d8573d73b85164954717497f252c5e86445eb2070a3d9fb4f7e"
 source_kind: paper
 author: "Chongyuan Luo, Christopher L. Keown, Laurie Kurihara, Jingtian Zhou, Yupeng He, Junhao Li, Rosa Castanon, Jacinta Lucero, Joseph R. Nery, Justin P. Sandoval, … Eran A. Mukamel, M. Margarita Behrens, Joseph R. Ecker (corresponding)"
 published: 2017-08-11

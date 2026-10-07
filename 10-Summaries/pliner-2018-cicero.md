@@ -2,6 +2,8 @@
 type: summary
 title: "Pliner et al. 2018 — Cicero predicts cis-regulatory DNA interactions from single-cell chromatin accessibility data"
 source: "[[00-Sources/papers/Cicero Predicts cis-Regulatory DNA Interactions from Single-Cell Chromatin Accessibility Data]]"
+source_quality: full
+source_sha256: "0f076e7715b7145cf6e42db33ad995f7f713d3a70d559a4a02c4c500b4e6a406"
 source_kind: paper
 author: "Hannah A. Pliner, Jonathan S. Packer, José L. McFaline-Figueroa, Darren A. Cusanovich, Riza M. Daza, Delasa Aghamirzaie, Sanjay Srivatsan, Xiaojie Qiu, Dana Jackson, Anna Minkina, Andrew C. Adey, Frank J. Steemers, Jay Shendure, Cole Trapnell (corresponding)"
 published: 2018-09-06

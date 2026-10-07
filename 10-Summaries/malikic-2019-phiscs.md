@@ -2,6 +2,8 @@
 type: summary
 title: "Malikic et al. 2019 — PhISCS: a combinatorial approach for subperfect tumor phylogeny reconstruction via integrative use of single-cell and bulk sequencing data"
 source: "[[00-Sources/papers/PhISCS_ a combinatorial approach for subperfect tumor phylogeny reconstruction via integrative use of single-cell and bulk sequencing data]]"
+source_quality: abstract
+source_sha256: "767efd4c72a17838b2e1ab35e53182b106b487939661a6d8143b80e02417382a"
 source_kind: paper
 author: "Salem Malikic, et al."
 published: 2019-11-01

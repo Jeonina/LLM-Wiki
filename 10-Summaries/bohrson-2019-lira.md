@@ -2,6 +2,8 @@
 type: summary
 title: "Bohrson et al. 2019 — Linked-read analysis identifies mutations in single-cell DNA-sequencing data (LiRA)"
 source: "[[00-Sources/papers/Linked-read analysis identifies mutations in single-cell DNA-sequencing data]]"
+source_quality: full
+source_sha256: "6bb0c2cc75378b17884a9f7144d87c03e395dc5a161b2009d5d2007b3455dcd8"
 source_kind: paper
 author: "Craig L. Bohrson, Alison R. Barton, Michael A. Lodato, Rachel E. Rodin, Lovelace J. Luquette, Vinay V. Viswanadham, Doga C. Gulhan, Isidro Cortés-Ciriano, Maxwell A. Sherman, Minseok Kwon, Michael E. Coulter, Alon Galor, Christopher A. Walsh, Peter J. Park (corresponding)"
 published: 2019-03-18

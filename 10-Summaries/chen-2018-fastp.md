@@ -2,6 +2,8 @@
 type: summary
 title: "Chen et al. 2018 — fastp: an ultra-fast all-in-one FASTQ preprocessor"
 source: "[[00-Sources/papers/fastp_ an ultra-fast all-in-one FASTQ preprocessor]]"
+source_quality: full
+source_sha256: "26669d2c7288868f6496e5fca4aff6a64a38e348f394d3753bdde58465a429d8"
 source_kind: paper
 author: "Shifu Chen, Yanqing Zhou, Yaru Chen, Jia Gu"
 published: 2018-09-08

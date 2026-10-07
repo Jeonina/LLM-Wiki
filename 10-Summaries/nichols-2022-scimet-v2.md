@@ -2,6 +2,8 @@
 type: summary
 title: "Nichols 2022 — High-throughput robust scDNA methylation profiling with sciMETv2"
 source: "[[00-Sources/papers/High-throughput robust single-cell DNA methylation profiling with sciMETv2]]"
+source_quality: full
+source_sha256: "427b99e76ac8948b1805de2e4a27744fe86e397b69bb5a5df672863cd0f5ce71"
 aliases: ["Nichols Adey 2022 sciMETv2", "sciMETv2"]
 tags: [sciMETv2, single-cell-methylome, combinatorial-indexing, sci-MET, Adey-lab, OHSU, high-throughput]
 created: 2026-05-13

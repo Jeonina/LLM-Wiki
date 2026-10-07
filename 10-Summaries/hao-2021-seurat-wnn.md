@@ -2,6 +2,8 @@
 type: summary
 title: "Hao et al. 2021 — Integrated analysis of multimodal single-cell data (Seurat v4 / weighted nearest neighbor)"
 source: "[[00-Sources/papers/Integrated analysis of multimodal single-cell data]]"
+source_quality: full
+source_sha256: "7d2748af3041869bdffa1ad4ff7950315903c221508b555b59ee6197c34708a6"
 source_kind: paper
 author: "Yuhan Hao, Stephanie Hao, Erica Andersen-Nissen, William M. Mauck, … Tim Stuart, Peter Smibert, Rahul Satija (corresponding)"
 published: 2021-06-24

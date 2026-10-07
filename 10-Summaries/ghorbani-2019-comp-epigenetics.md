@@ -8,6 +8,8 @@ tags: [review, computational-epigenetics, DNA-methylation, machine-learning, bis
 created: 2026-05-13
 updated: 2026-05-13
 source: "[[00-Sources/papers/Computational-based approaches in epigenetic research_ Insights from computational tools, mathematical models, and machine learning methods]]"
+source_quality: full
+source_sha256: "2bb4ac373231b1d57b88f3b7d8a5e7b21a81dca2b5fa1e596bb08d8ce958a91a"
 sources: ["Roghayeh_2019_JournalOfAppliedBiologyAnd;Biotechnology.pdf"]
 ---
 

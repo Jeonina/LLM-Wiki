@@ -2,6 +2,8 @@
 type: summary
 title: "Zhou et al. 2024 — scDMV: a zero–one inflated beta mixture model for DNA methylation variability with scBS-seq data"
 source: "[[00-Sources/papers/scDMV_ a zero–one inflated beta mixture model for DNA methylation variability with scBS-seq data]]"
+source_quality: full
+source_sha256: "04508b36ac840475b2cda78ffab32cc86a88a46a1c89010bcf86bb9367d7011f"
 source_kind: paper
 author: "Yan Zhou, Ying Zhang, Minjiao Peng, Yaru Zhang, Chenghao Li, Lianjie Shu, Yaohua Hu, Jianzhong Su, Jinfeng Xu"
 published: 2023-12-23

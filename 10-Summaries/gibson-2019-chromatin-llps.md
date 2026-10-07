@@ -2,6 +2,8 @@
 type: summary
 title: "Gibson et al. 2019 — Organization of Chromatin by Intrinsic and Regulated Phase Separation"
 source: "[[00-Sources/papers/Organization of Chromatin by Intrinsic and Regulated Phase Separation]]"
+source_quality: partial
+source_sha256: "49097b0431e055d4da24c71595c0e2db19a40fa2c983232b58417df5250395e2"
 source_kind: paper
 author: "Bryan A. Gibson, Lynda K. Doolittle, Maximillian W. G. Schneider, Liv E. Jensen, Nathan Gamarra, Lisa Henry, Daniel W. Gerlich, Sy Redding, Michael K. Rosen (corresponding)"
 published: 2019-09-19

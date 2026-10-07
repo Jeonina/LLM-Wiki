@@ -2,6 +2,8 @@
 type: summary
 title: "Barski et al. 2007 — High-Resolution Profiling of Histone Methylations in the Human Genome"
 source: "[[00-Sources/papers/High-Resolution Profiling of Histone Methylations in the Human Genome]]"
+source_quality: full
+source_sha256: "e415c749e5b8d171d4c45d8108a5bf690cd64b6f8bca5b04eb28ee08cffca8ab"
 source_kind: paper
 author: "Artem Barski, Suresh Cuddapah, Kairong Cui, Tae-Young Roh, Dustin E. Schones, Zhibin Wang, Gang Wei, Iouri Chepelev, Keji Zhao (corresponding)"
 published: 2007-05

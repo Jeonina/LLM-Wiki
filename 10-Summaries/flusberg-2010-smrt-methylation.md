@@ -2,6 +2,8 @@
 type: summary
 title: "Flusberg et al. 2010 — Direct detection of DNA methylation during single-molecule, real-time sequencing"
 source: "[[00-Sources/papers/Direct detection of DNA methylation during single-molecule, real-time sequencing]]"
+source_quality: full
+source_sha256: "378e4b0bf9865f9fb78fe89aa4bc717a8d7f219cabb1de441236703579ba6aef"
 source_kind: paper
 author: "Benjamin A. Flusberg, Dale R. Webster, Jessica H. Lee, Kevin J. Travers, Eric C. Olivares, Tyson A. Clark, Jonas Korlach, Stephen W. Turner (corresponding)"
 published: 2010-05-09

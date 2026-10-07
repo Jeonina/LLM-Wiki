@@ -2,6 +2,8 @@
 type: summary
 title: "Ramani et al. 2017 — Massively multiplex single-cell Hi-C (sciHi-C)"
 source: "[[00-Sources/papers/Massively multiplex single-cell Hi-C]]"
+source_quality: full
+source_sha256: "efd7e0cfdd0046784962fa695812fc1fb61f3a282d2dbe5ab281d954b32ae061"
 source_kind: paper
 author: "Vijay Ramani, Xinxian Deng, Ruolan Qiu, Kevin L. Gunderson, Frank J. Steemers, Christine M. Disteche, William S. Noble, Zhijun Duan, Jay Shendure (corresponding)"
 published: 2017-01-30

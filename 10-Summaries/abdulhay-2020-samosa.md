@@ -2,6 +2,8 @@
 type: summary
 title: "Abdulhay 2020 — SAMOSA: massively multiplex single-molecule oligonucleosome footprinting"
 source: "[[00-Sources/papers/Massively multiplex single-molecule oligonucleosome footprinting]]"
+source_quality: abstract
+source_sha256: "880d3a35e2f41546fb291d1fdc46c033968a2dc3f956dc61d03c278cdb7c5842"
 aliases: ["Abdulhay 2020 SAMOSA", "SAMOSA"]
 tags: [SAMOSA, single-molecule-footprinting, EcoGII, m6A, PacBio-SMRT, oligonucleosome, nucleosome-positioning, Ramani-lab, UCSF]
 created: 2026-05-13

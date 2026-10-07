@@ -2,6 +2,8 @@
 type: summary
 title: "Falconer 2012 — DNA template strand sequencing of single-cells maps genomic rearrangements at high resolution (Strand-seq)"
 source: "[[00-Sources/papers/DNA template strand sequencing of single-cells maps genomic rearrangements at high resolution]]"
+source_quality: full
+source_sha256: "8e89112f5f633c33024fc41637c876a96bee549a7e265712d906efb98943f811"
 aliases: ["Strand-seq founding paper", "Falconer 2012"]
 tags: [Strand-seq, scDNA-seq, SCE, structural-variant, single-cell, Lansdorp-lab]
 created: 2026-05-13

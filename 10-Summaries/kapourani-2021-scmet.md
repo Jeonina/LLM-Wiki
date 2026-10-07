@@ -2,6 +2,8 @@
 type: summary
 title: "Kapourani 2021 — scMET: Bayesian modeling of DNA methylation heterogeneity at single-cell resolution"
 source: "[[00-Sources/papers/scMET_ Bayesian modeling of DNA methylation heterogeneity at single-cell resolution]]"
+source_quality: full
+source_sha256: "fdc62f86a81da0ef08f6bb34c0c97197557542c4815b222637170ef67f2a6efa"
 aliases: ["Kapourani 2021 scMET", "scMET"]
 tags: [scMET, scBS-seq, methylation-heterogeneity, beta-binomial, Bayesian, overdispersion, Vallejos-lab, Sanguinetti-lab, Edinburgh]
 created: 2026-05-13

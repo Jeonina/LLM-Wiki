@@ -2,6 +2,8 @@
 type: summary
 title: "Chitsaz et al. 2011 — Efficient de novo assembly of single-cell bacterial genomes from short-read data sets (Velvet-SC / E+V-SC)"
 source: "[[00-Sources/papers/Efficient de novo assembly of single-cell bacterial genomes from short-read data sets]]"
+source_quality: full
+source_sha256: "23d539694b94f0ffdb384637365671d9751aaa72611033b38f6c261748d6ff7e"
 source_kind: paper
 author: "Hamidreza Chitsaz, Joyclyn L. Yee-Greenbaum, Glenn Tesler, Mary-Jane Lombardo, Christopher L. Dupont, Jonathan H. Badger, Mark Novotny, Douglas B. Rusch, Louise J. Fraser, Niall A. Gormley, Ole Schulz-Trieglaff, Geoffrey P. Smith, Dirk J. Evers, Pavel A. Pevzner, Roger S. Lasken"
 published: 2011-09-18

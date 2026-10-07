@@ -2,6 +2,8 @@
 type: summary
 title: "Li et al. 2022 — SnapHiC2: A computationally efficient loop caller for single cell Hi-C data"
 source: "[[00-Sources/papers/SnapHiC2_ A computationally efficient loop caller for single cell Hi-C data _ Computational and Structural Biotechnology Journal]]"
+source_quality: full
+source_sha256: "29c7918a23e68dc1fbfe62492d7500f3966fee2027393f434c89a83b19245a60"
 source_kind: paper
 author: "Xiaoqi Li, Lindsay Lee, Armen Abnousi, Miao Yu, Weifang Liu, Le Huang, Yun Li, Ming Hu"
 published: 2022-06-04

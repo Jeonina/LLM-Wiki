@@ -2,6 +2,8 @@
 type: summary
 title: "Pott 2017 — Simultaneous measurement of chromatin accessibility, DNA methylation and nucleosome phasing in single cells (scNOMe-seq)"
 source: "[[00-Sources/papers/Simultaneous measurement of chromatin accessibility, DNA methylation, and nucleosome phasing in single cells]]"
+source_quality: abstract
+source_sha256: "ef26f26ab378d7999495aa2136c0bfcb7927cb38029e5b3d7be688a6461c1e34"
 aliases: ["scNOMe-seq", "Pott 2017"]
 tags: [scNOMe-seq, methylation, accessibility, nucleosome, joint-assay, NOMe-seq]
 created: 2026-05-13

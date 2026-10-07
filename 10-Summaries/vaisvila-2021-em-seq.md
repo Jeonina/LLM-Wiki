@@ -2,6 +2,8 @@
 type: summary
 title: "Vaisvila et al. 2021 — Enzymatic methyl sequencing detects DNA methylation at single-base resolution from picograms of DNA"
 source: "[[00-Sources/papers/Enzymatic methyl sequencing detects DNA methylation at single-base resolution from picograms of DNA]]"
+source_quality: full
+source_sha256: "3bb8b6e9a97bd03c7fb4a1b6ad272a5ca5e5794aa15d9ea19be81c5347cd7246"
 source_kind: paper
 author: "Romualdas Vaisvila, V.K. Chaithanya Ponnaluri, Zhiyi Sun, Bradley W. Langhorst, ... Theodore B. Davis (corresponding) — 20 authors, New England Biolabs"
 published: 2021-06-17

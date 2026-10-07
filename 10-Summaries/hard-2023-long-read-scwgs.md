@@ -2,6 +2,8 @@
 type: summary
 title: "Hård et al. 2023 — Long-read whole-genome analysis of human single cells"
 source: "[[00-Sources/papers/Long-read whole-genome analysis of human single cells]]"
+source_quality: full
+source_sha256: "5a859507b96473fcc9cc8c4712f1992394c1730fc1a6057d85e5158230fee03c"
 source_kind: paper
 author: "Joanna Hård, Jeff E. Mold, Jesper Eisfeldt, Christian Tellgren-Roth, Susana Häggqvist, Ignas Bunikis, Orlando Contreras-Lopez, Chen-Shan Chin, Jessica Nordlund, Carl-Johan Rubin, Lars Feuk, Jakob Michaëlsson, Adam Ameur"
 published: 2023-08-24

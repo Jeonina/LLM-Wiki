@@ -2,6 +2,8 @@
 type: summary
 title: "Dautle & Chen 2025 — Single-Cell Hi-C Technologies and Computational Data Analysis"
 source: "[[00-Sources/papers/Single‐Cell Hi‐C Technologies and Computational Data Analysis]]"
+source_quality: full
+source_sha256: "73be9b5897d0cd67d4103c5afdc5c534bf17236b42bce7814116ed3fb157612a"
 source_kind: paper
 author: "Madison A. Dautle, Yong Chen (corresponding)"
 published: 2025-01-30

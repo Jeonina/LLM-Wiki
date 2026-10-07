@@ -2,6 +2,8 @@
 type: summary
 title: "Doughty 2024 — Single-molecule states link transcription factor binding to gene expression"
 source: "[[00-Sources/papers/Single-molecule states link transcription factor binding to gene expression]]"
+source_quality: full
+source_sha256: "804be1c6586d6085985333e64d7688b238de3315ec0e1476da41afe559f42abc"
 aliases: ["Doughty 2024", "SMF TF binding"]
 tags: [single-molecule-footprinting, SMF, transcription-factor, enhancer, Greenleaf-lab, Bintu-lab]
 created: 2026-05-13

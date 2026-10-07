@@ -2,6 +2,8 @@
 type: summary
 title: "Human Genome Structural Variation Working Group 2007 — Completing the map of human genetic variation"
 source: "[[00-Sources/papers/Completing the map of human genetic variation]]"
+source_quality: full
+source_sha256: "4b69e048375389742fc892ba2c7af4ade915d84073dc16264138f094352ce9e3"
 source_kind: paper
 author: "The Human Genome Structural Variation Working Group (Evan E. Eichler corresponding; D. A. Nickerson, D. Altshuler, A. Fritz, J. R. Lupski, S. T. Sherry et al.)"
 published: 2007-05-09

@@ -2,6 +2,8 @@
 type: summary
 title: "Lindenhofer et al. 2025 — SDR-seq: targeted joint single-cell DNA–RNA sequencing"
 source: "[[00-Sources/papers/Functional phenotyping of genomic variants using joint multiomic single-cell DNA–RNA sequencing]]"
+source_quality: full
+source_sha256: "3139ee6929336d7bf24f3014a6093258d05e41d9cec21927c684bffe9ba724b3"
 source_kind: paper
 author: "Dominik Lindenhofer, Julia R. Bauman, John A. Hawkins, Donnacha Fitzgerald, Umut Yildiz, Haeyeon Jung, Anastasiia Korosteleva, Mikael Marttinen, Moritz Kueblbeck, Judith B. Zaugg, Kyung-Min Noh, Sascha Dietrich, Wolfgang Huber, Oliver Stegle, Lars M. Steinmetz (corresponding)"
 published: 2025-09-01

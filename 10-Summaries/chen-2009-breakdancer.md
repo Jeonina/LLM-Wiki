@@ -2,6 +2,8 @@
 type: summary
 title: "Chen et al. 2009 — BreakDancer: an algorithm for high-resolution mapping of genomic structural variation"
 source: "[[00-Sources/papers/BreakDancer_ an algorithm for high-resolution mapping of genomic structural variation]]"
+source_quality: full
+source_sha256: "cd8683f9397d0893d9c64d7b23b1428c2ee721601a031b6bcb82349223d0f908"
 source_kind: paper
 author: "Ken Chen, John W. Wallis, Michael D. McLellan, David E. Larson, Joelle M. Kalicki, Craig S. Pohl, Sean D. McGrath, Michael C. Wendl, Qunyuan Zhang, Devin P. Locke, Xiaoqi Shi, Robert S. Fulton, Timothy J. Ley, Richard K. Wilson, Li Ding, Elaine R. Mardis"
 published: 2009-08-09

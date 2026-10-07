@@ -2,6 +2,8 @@
 type: summary
 title: "Seidel & Stadler 2022 — TiDeTree: a Bayesian phylogenetic framework to estimate single-cell trees and population dynamic parameters from genetic lineage tracing data"
 source: "[[00-Sources/papers/TiDeTree_ a Bayesian phylogenetic framework to estimate single-cell trees and population dynamic parameters from genetic lineage tracing data]]"
+source_quality: abstract
+source_sha256: "c57617341f6b1c3f53abcadab1c3d94420c1260e9a433a7522932a5747ee6aac"
 source_kind: paper
 author: "Sophie Seidel, Tanja Stadler (corresponding)"
 published: 2022-11-09

@@ -2,6 +2,8 @@
 type: summary
 title: "Mukamel 2025 — Cell-type-specific enrichment of somatic aneuploidy in the mammalian brain"
 source: "[[00-Sources/papers/Cell-type-specific enrichment of somatic aneuploidy in the mammalian brain]]"
+source_quality: full
+source_sha256: "124c500b603d5a9105bd169a6d2d824dd5cadf2486911601b54bab16eeafd38b"
 aliases: [Mukamel 2025, Eran 2025, snmC-seq aneuploidy detection, chr16 trisomy mouse brain]
 tags: [somatic-mosaicism, neuro-mosaicism, aneuploidy, single-cell-methylation, snmC-seq, snm3C-seq, BICCN, foundational]
 created: 2026-05-12

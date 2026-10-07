@@ -2,6 +2,8 @@
 type: summary
 title: "Zong 2017 — MALBAC for the analysis of DNA copy number variation (Neuromethods protocol chapter)"
 source: "[[00-Sources/papers/Multiple Annealing and Looping-Based Amplification Cycles (MALBAC) for the Analysis of DNA Copy Number Variation]]"
+source_quality: abstract
+source_sha256: "d1d497ba0133db5f30df0f31c8673a7bcfcf896eb6269f74eb0dab70c3212a4c"
 source_kind: paper
 author: "Chenghang Zong"
 published: 2017

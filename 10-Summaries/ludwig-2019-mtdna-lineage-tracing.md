@@ -2,6 +2,8 @@
 type: summary
 title: "Ludwig et al. 2019 — Lineage tracing in humans enabled by mitochondrial mutations and single-cell genomics"
 source: "[[00-Sources/papers/Lineage Tracing in Humans Enabled by Mitochondrial Mutations and Single-Cell Genomics]]"
+source_quality: full
+source_sha256: "ff8616b1e06a5dc7aed675aade43804dae7f0d84b7e5cd8d11222ccdede1b623"
 source_kind: paper
 author: "Leif S. Ludwig, Caleb A. Lareau, Jacob C. Ulirsch, ... Aviv Regev, Vijay G. Sankaran (corresponding)"
 published: 2019-03-07

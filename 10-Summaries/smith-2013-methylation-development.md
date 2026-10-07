@@ -2,6 +2,8 @@
 type: summary
 title: "Smith & Meissner 2013 — DNA methylation: roles in mammalian development"
 source: "[[00-Sources/papers/DNA methylation_ roles in mammalian development]]"
+source_quality: full
+source_sha256: "fb493d26621f80dd6cc2deaa0c688a32ebdc2db3dc12df2e08b14becca0c0dd9"
 source_kind: paper
 author: "Zachary D. Smith, Alexander Meissner"
 published: 2013-03

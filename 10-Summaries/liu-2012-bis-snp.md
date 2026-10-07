@@ -2,6 +2,8 @@
 type: summary
 title: "Liu et al. 2012 — Bis-SNP: Combined DNA methylation and SNP calling for Bisulfite-seq data"
 source: "[[00-Sources/papers/Bis-SNP_ Combined DNA methylation and SNP calling for Bisulfite-seq data]]"
+source_quality: full
+source_sha256: "c3ffc974d3a91892762b7343b2a077c12e3b8ea98470f603c2f027bc4a44102b"
 source_kind: paper
 author: "Yaping Liu, Kimberly D Siegmund, Peter W Laird, Benjamin P Berman (corresponding)"
 published: 2012-07-11

@@ -2,6 +2,8 @@
 type: summary
 title: "Hsieh et al. 2026 — Single-cell multi-omic analysis of mitochondrial mutational mosaicism and dynamics (scmtMPM/scwMSS)"
 source: "[[00-Sources/papers/Single-cell multi-omic analysis of mitochondrial mutational mosaicism and dynamics]]"
+source_quality: full
+source_sha256: "875bb43098d605ccbaf68f603e3bb45ad03e0b94e01f463cb38240db550e8d35"
 source_kind: paper
 author: Yu-Hsin Hsieh, Pauline Kautz, Lena Nitsch, ..., Caleb A. Lareau, Leif S. Ludwig (corresponding)
 published: 2026-03-16

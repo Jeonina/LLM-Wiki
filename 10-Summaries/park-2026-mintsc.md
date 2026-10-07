@@ -2,6 +2,8 @@
 type: summary
 title: "Park et al. 2026 — MINTsC learns multi-way chromatin interactions from single cell high throughput chromatin conformation data"
 source: "[[00-Sources/papers/MINTsC learns multi-way chromatin interactions from single cell high throughput chromatin conformation data]]"
+source_quality: full
+source_sha256: "64074139cd9bf3a44315c1a2337f8c9d2034150511c3e0190d10ec00d6d67455"
 source_kind: paper
 author: "Kwangmoon Park, Tianchuan Gao, Jingwen Yan, Sündüz Keleş (corresponding)"
 published: 2026-06-02

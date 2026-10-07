@@ -2,6 +2,8 @@
 type: summary
 title: "Zheng, Shen & Keleş 2022 — Normalization and de-noising of single-cell Hi-C data with BandNorm and scVI-3D"
 source: "[[00-Sources/papers/Normalization and de-noising of single-cell Hi-C data with BandNorm and scVI-3D]]"
+source_quality: full
+source_sha256: "52a635554956d594011f9c4abfcec3a770cf6f6577fd875351335e89dca04fc1"
 source_kind: paper
 author: "Ye Zheng, Siqi Shen, Sündüz Keleş (corresponding)"
 published: 2022-10-17

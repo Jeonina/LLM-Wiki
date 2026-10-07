@@ -2,6 +2,8 @@
 type: summary
 title: "Ku et al. 2019 — scChIC-seq: antibody-MNase-fusion for single-cell histone marks"
 source: "[[00-Sources/papers/Single-cell chromatin immunocleavage sequencing (scChIC-seq) to profile histone modification]]"
+source_quality: full
+source_sha256: "b85e43ab1528d90c5246a74aab6d5818d32bf2d7c8a4d732fb921aef412deb59"
 source_kind: paper
 author: "Wai Lim Ku, Kosuke Nakamura, Weiwu Gao, Kairong Cui, Gangqing Hu, Qingsong Tang, Bing Ni, Keji Zhao (corresponding)"
 published: 2019-03-28

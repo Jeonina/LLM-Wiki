@@ -2,6 +2,8 @@
 type: summary
 title: "Lee 2019 — Simultaneous profiling of 3D genome structure and DNA methylation in single human cells (sn-m3C-seq)"
 source: "[[00-Sources/papers/Simultaneous profiling of 3D genome structure and DNA methylation in single human cells]]"
+source_quality: full
+source_sha256: "6590455396c88eb5c9f5f340b59ad010c64306784e1889d20fbe20f4b5789894"
 aliases: ["sn-m3C-seq", "Lee 2019", "single-nucleus methyl-3C"]
 tags: [sn-m3C-seq, 3D-genome, methylome, joint-assay, brain, Ecker-lab, Dixon-lab]
 created: 2026-05-13

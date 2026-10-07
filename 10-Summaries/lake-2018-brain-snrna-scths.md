@@ -2,6 +2,8 @@
 type: summary
 title: "Lake et al. 2018 — Integrative single-cell analysis of transcriptional and epigenetic states in the human adult brain"
 source: "[[00-Sources/papers/Integrative single-cell analysis of transcriptional and epigenetic states in the human adult brain]]"
+source_quality: full
+source_sha256: "00b5ba3c041231251c24d5427bacef953ac58f881a9e2397f2648e30e3afd294"
 source_kind: paper
 author: "Blue B. Lake, Song Chen, Brandon C. Sos, Jean Fan, Gwendolyn E. Kaeser, Yun C. Yung, Thu E. Duong, Derek Gao, Jerold Chun, Peter V. Kharchenko, Kun Zhang (corresponding)"
 published: 2017-12-11

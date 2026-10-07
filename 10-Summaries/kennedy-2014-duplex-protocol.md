@@ -2,6 +2,8 @@
 type: summary
 title: "Kennedy et al. 2014 — Duplex Sequencing: detecting ultralow-frequency mutations"
 source: "[[00-Sources/papers/Detecting ultralow-frequency mutations by Duplex Sequencing]]"
+source_quality: full
+source_sha256: "40190cf5947bd9a044f5f1fc8c310539e2ae19f573edc201cd21c0a117e514cf"
 source_kind: paper
 author: "Scott R. Kennedy, Michael W. Schmitt, Edward J. Fox, Brendan F. Kohrn, Jesse J. Salk, Eun Hyun Ahn, Marc J. Prindle, Kawai J. Kuong, Jiang-Cheng Shen, Rosa-Ana Risques, Lawrence A. Loeb (corresponding)"
 published: 2014-10-09

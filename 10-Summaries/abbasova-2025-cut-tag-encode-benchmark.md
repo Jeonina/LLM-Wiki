@@ -2,6 +2,8 @@
 type: summary
 title: "Abbasova et al. 2025 — CUT&Tag recovers up to half of ENCODE ChIP-seq histone acetylation peaks"
 source: "[[00-Sources/papers/CUT&Tag recovers up to half of ENCODE ChIP-seq histone acetylation peaks]]"
+source_quality: full
+source_sha256: "9f382af1a9f854031850fae451b0120706c78f67e9b4e6659c26b2bea88710bb"
 source_kind: paper
 author: "Leyla Abbasova, Paulina Urbanaviciute, Di Hu, Joy N. Ismail, Brian M. Schilder, Alexi Nott, Nathan G. Skene, Sarah J. Marzi (corresponding)"
 published: 2025-03-27

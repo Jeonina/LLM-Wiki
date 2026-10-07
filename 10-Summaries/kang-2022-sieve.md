@@ -2,6 +2,8 @@
 type: summary
 title: "Kang et al. 2022 — SIEVE: joint inference of single-nucleotide variants and cell phylogeny from single-cell DNA sequencing data"
 source: "[[00-Sources/papers/SIEVE_ joint inference of single-nucleotide variants and cell phylogeny from single-cell DNA sequencing data]]"
+source_quality: full
+source_sha256: "56b00f9dd456df54250ca49ccb5d101858d1331c95f2f77a73b0f55eea7aca99"
 source_kind: paper
 author: "Senbai Kang, Nico Borgsmüller, Monica Valecha, Jack Kuipers, Joao M. Alves, Sonia Prado-López, Débora Chantada, Niko Beerenwinkel, David Posada, Ewa Szczurek"
 published: 2022-11-30

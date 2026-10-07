@@ -2,6 +2,8 @@
 type: summary
 title: "Zamanighomi et al. 2018 — scABC: weighted k-medoids unsupervised clustering for scATAC-seq"
 source: "[[00-Sources/papers/Unsupervised clustering and epigenetic classification of single cells]]"
+source_quality: full
+source_sha256: "fb3d07ac23ec1182631ebdae25b658ce86c54c70649db809b919383e4a154bc0"
 source_kind: paper
 author: "Mahdi Zamanighomi, Zhixiang Lin, Timothy Daley, Xi Chen, Zhana Duren, Alicia Schep, William J. Greenleaf, Wing Hung Wong (corresponding)"
 published: 2018-06-20

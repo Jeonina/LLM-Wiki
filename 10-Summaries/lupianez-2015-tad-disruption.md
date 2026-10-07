@@ -2,6 +2,8 @@
 type: summary
 title: "Lupiáñez et al. 2015 — Disruptions of topological chromatin domains cause pathogenic rewiring of gene-enhancer interactions"
 source: "[[00-Sources/papers/Disruptions of Topological Chromatin Domains Cause Pathogenic Rewiring of Gene-Enhancer Interactions]]"
+source_quality: full
+source_sha256: "9e96f4c5e6c3577bc9808bf7aa4c0509de8cc20f4ebcf63409f1e0d724340183"
 source_kind: paper
 author: "Darío G. Lupiáñez, Katerina Kraft, Verena Heinrich, Peter Krawitz, Francesco Brancati, Eva Klopocki, Denise Horn, Hülya Kayserili, John M. Opitz, Renata Laxova, Fernando Santos-Simarro, Brigitte Gilbert-Dussardier, Lars Wittler, Marina Borschiwer, Stefan A. Haas, Marco Osterwalder, Martin Franke, Bernd Timmermann, Jochen Hecht, Malte Spielmann, Axel Visel, Stefan Mundlos (corresponding)"
 published: 2015-05-21

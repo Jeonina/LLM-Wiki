@@ -2,6 +2,8 @@
 type: summary
 title: "Li et al. 2023 — scNanoHi-C: a single-cell long-read concatemer sequencing method to reveal high-order chromatin structures within individual cells"
 source: "[[00-Sources/papers/scNanoHi-C_ a single-cell long-read concatemer sequencing method to reveal high-order chromatin structures within individual cells]]"
+source_quality: full
+source_sha256: "fb79ed61904134a3155dc5dbee242d05e5038c9d0b3ba871951cdeed2fae55b1"
 source_kind: paper
 author: "Wen Li, Jiansen Lu, Ping Lu, Yun Gao, Yichen Bai, Kexuan Chen, Xinjie Su, Mengyao Li, Jun'e Liu, Yijun Chen, Lu Wen, Fuchou Tang (corresponding)"
 published: 2023-08-28

@@ -2,6 +2,8 @@
 type: summary
 title: "Raimundo et al. 2023 — A benchmark of computational pipelines for single-cell histone modification data"
 source: "[[00-Sources/papers/A benchmark of computational pipelines for single-cell histone modification data]]"
+source_quality: full
+source_sha256: "289d52509b47a1f533779e8f272f5ad05604ebe2f973571eb8039796658c38ed"
 source_kind: paper
 author: "Félix Raimundo, Pacôme Prompsy, Jean-Philippe Vert, Céline Vallot"
 published: 2023-06-20

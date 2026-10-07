@@ -2,6 +2,8 @@
 type: summary
 title: "Acharya et al. 2024 — sciMET-cap: high-throughput single-cell methylation analysis with a reduced sequencing burden"
 source: "[[00-Sources/papers/sciMET-cap_ high-throughput single-cell methylation analysis with a reduced sequencing burden]]"
+source_quality: full
+source_sha256: "7082866f9a90b8b40cf22065c2428836e7028b226d55cce0e6f4cb8f7b8297d4"
 source_kind: paper
 author: "Sonia N. Acharya, Ruth V. Nichols, Lauren E. Rylaarsdam, Brendan L. O'Connell, Theodore P. Braun, Andrew C. Adey (corresponding)"
 published: 2024-07-10

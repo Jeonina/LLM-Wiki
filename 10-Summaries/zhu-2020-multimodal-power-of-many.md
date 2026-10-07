@@ -2,6 +2,8 @@
 type: summary
 title: "Zhu, Preissl & Ren 2020 — Single-cell multimodal omics: the power of many"
 source: "[[00-Sources/papers/Single-cell multimodal omics_ the power of many]]"
+source_quality: full
+source_sha256: "567ec42fb3643d1a148559e4a1a7ce614e70c9a3a45680350e2dadb429fe8255"
 source_kind: paper
 author: "Chenxu Zhu, Sebastian Preissl, Bing Ren (corresponding)"
 published: 2020-01-06

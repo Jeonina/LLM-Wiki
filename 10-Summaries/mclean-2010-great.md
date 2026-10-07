@@ -2,6 +2,8 @@
 type: summary
 title: "McLean et al. 2010 — GREAT improves functional interpretation of cis-regulatory regions"
 source: "[[00-Sources/papers/GREAT improves functional interpretation of cis-regulatory regions]]"
+source_quality: full
+source_sha256: "c108d8e7786f258959519ffcbdefb1b0655fff5dcf6ec6da8997365654864749"
 source_kind: paper
 author: "Cory Y. McLean, Dave Bristor, Michael Hiller, Shoa L. Clarke, Bruce T. Schaar, Craig B. Lowe, Aaron M. Wenger, Gill Bejerano (corresponding)"
 published: 2010-05-02

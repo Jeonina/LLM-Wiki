@@ -2,6 +2,8 @@
 type: summary
 title: "de Luca & Kind 2021 — Single-cell DamID protocol for nuclear-lamina contacts in mammalian cells"
 source: "[[00-Sources/papers/Single-Cell DamID to Capture Contacts Between DNA and the Nuclear Lamina in Individual Mammalian Cells]]"
+source_quality: full
+source_sha256: "467f453dec2599ce9c107a5fce350dbe08050bcba1737a5520db2336fe36e107"
 source_kind: paper
 author: "Kim L. de Luca, Jop Kind"
 published: 2021

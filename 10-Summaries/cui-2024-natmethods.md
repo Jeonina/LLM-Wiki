@@ -2,6 +2,8 @@
 type: summary
 title: "Cui 2024 — scGPT: toward building a foundation model for single-cell multi-omics using generative AI"
 source: "[[00-Sources/papers/scGPT_ toward building a foundation model for single-cell multi-omics using generative AI]]"
+source_quality: full
+source_sha256: "32f6a2cb2fe4fea9e493d8a5998cfa0dfd5b30039e0ca955a218306349537fbb"
 aliases: ["scGPT", "Cui 2024", "single-cell foundation model"]
 tags: [foundation-model, generative-AI, single-cell, multi-omics, transformer, computational]
 created: 2026-05-13

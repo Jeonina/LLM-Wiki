@@ -2,6 +2,8 @@
 type: summary
 title: "Kousi et al. 2022 — Cell-type-specific somatic mutation burden in Alzheimer's disease"
 source: "[[00-Sources/papers/Single-cell mosaicism analysis reveals cell-type-specific somatic mutational burden in Alzheimer’s Dementia]]"
+source_quality: abstract
+source_sha256: "7e1691ecc3c4cc6dcef5bbe681f1c7b7712637375f8a9a0d4d71c81197d9fb48"
 source_kind: paper
 author: "Maria Kousi, Carles Boix, Yongjin P. Park, Hansruedi Mathys, Samuel Sledzieski, Zhuyu Peng, David A. Bennett, Li-Huei Tsai, Manolis Kellis (corresponding)"
 published: 2022-04-22

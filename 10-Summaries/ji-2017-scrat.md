@@ -2,6 +2,8 @@
 type: summary
 title: "Ji et al. 2017 — Single-cell regulome data analysis by SCRAT"
 source: "[[00-Sources/papers/Single-cell regulome data analysis by SCRAT]]"
+source_quality: full
+source_sha256: "76e50e175ad93cb4fc71937f43dd4af377f5b6d2470ba5fdd19b0b2e07b7f208"
 source_kind: paper
 author: "Zhicheng Ji, Weiqiang Zhou, Hongkai Ji (corresponding)"
 published: 2017-09-15

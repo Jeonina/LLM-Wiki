@@ -2,6 +2,8 @@
 type: summary
 title: "Abdennur & Mirny 2020 — Cooler: scalable storage for Hi-C data and other genomically labeled arrays"
 source: "[[00-Sources/papers/Cooler_ scalable storage for Hi-C data and other genomically labeled arrays]]"
+source_quality: full
+source_sha256: "eaa04e8b6b51e0899b8705d7972375e8ef01493c6feb9381f959d4a69ad434a9"
 source_kind: paper
 author: "Nezar Abdennur, Leonid A. Mirny"
 published: 2019-07-10

@@ -2,6 +2,8 @@
 type: summary
 title: "Foroughmand-Araabi, Goliaei & McHardy 2022 — Scelestial: fast and accurate single-cell lineage tree inference based on a Steiner tree approximation algorithm"
 source: "[[00-Sources/papers/Scelestial_ Fast and accurate single-cell lineage tree inference based on a Steiner tree approximation algorithm]]"
+source_quality: full
+source_sha256: "5718426e26e73f8885f253f03fc14861ee4ab47e702c90aa152c85a453299f19"
 source_kind: paper
 author: "Mohammad-Hadi Foroughmand-Araabi, Sama Goliaei, Alice C. McHardy (corresponding)"
 published: 2022-08-11

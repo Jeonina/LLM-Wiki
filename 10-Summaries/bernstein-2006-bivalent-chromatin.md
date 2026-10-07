@@ -2,6 +2,8 @@
 type: summary
 title: "Bernstein et al. 2006 — A bivalent chromatin structure marks key developmental genes in embryonic stem cells"
 source: "[[00-Sources/papers/A Bivalent Chromatin Structure Marks Key Developmental Genes in Embryonic Stem Cells]]"
+source_quality: full
+source_sha256: "cc8eecba1757b2196890817e6de1c9081fec29627c651244dd03cda6af98de3d"
 source_kind: paper
 author: "Bradley E. Bernstein, Tarjei S. Mikkelsen, Xiaohui Xie, Michael Kamal, Dana J. Huebert, James Cuff, Ben Fry, Alex Meissner, Marius Wernig, Kathrin Plath, Rudolf Jaenisch, Alexandre Wagschal, Robert Feil, Stuart L. Schreiber, Eric S. Lander (corresponding)"
 published: 2006-04-21

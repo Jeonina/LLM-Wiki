@@ -2,6 +2,8 @@
 type: summary
 title: "Kuipers et al. 2025 — Single-cell copy number calling and event history reconstruction"
 source: "[[00-Sources/papers/Single-cell copy number calling and event history reconstruction]]"
+source_quality: full
+source_sha256: "fee3c42dd20aa8560806b20ba93f3ae2a6880b516a51b42a6ea47ef96ccdcfda"
 source_kind: paper
 author: "Jack Kuipers, Mustafa Anıl Tuncel, Pedro F. Ferreira, Katharina Jahn, Niko Beerenwinkel"
 published: 2025-02-13

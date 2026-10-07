@@ -56,9 +56,12 @@ sources: ["[[10-Summaries/some-source]]"]
 
 Triggered when the user says "ingest", "ingest the new sources", drops a file in `00-Sources/`, or similar.
 
-1. **Discover.** Run `tools/pending-sources.sh` (or just diff `00-Sources/` against `10-Summaries/`) to find sources that don't yet have a summary page.
+1. **Discover.** Run `tools/pending-sources.sh` to find sources that don't yet have a summary page (`PENDING`) and sources whose file changed since their summary was written (`CHANGED`, e.g. a re-clipped paper). Treat `CHANGED` sources as re-ingests: rewrite the summary from the new file.
 2. **Read.** Read each pending source in full. For PDFs, use the Read tool with the `pages` parameter for long ones. For URLs referenced inside a source, use WebFetch only if the user asks you to chase them.
-3. **Summarize.** For each source, write `10-Summaries/<source-slug>.md` from the `summary.md` template. The summary captures: thesis, key claims, methods/evidence, surprising bits, and a list of entities/concepts touched.
+3. **Summarize.** For each source, write `10-Summaries/<source-slug>.md` from the `summary.md` template. The summary captures: thesis, key claims, methods/evidence, limitations, surprising bits, and a list of entities/concepts touched.
+   - **Source quality.** Set `source_quality` to what the source file actually holds: `full` (full text), `partial` (some body sections missing, e.g. a paywalled page) or `abstract` (abstract or landing page only). Never present claims from a `partial`/`abstract` source as checked results.
+   - **Limitations.** List the authors' own limitations first, in their terms. Then add at most three reviewer notes, each marked `(synthesis)`.
+   - **Provenance.** After saving, run `tools/source-hash.py <slug>` to record `source_sha256`. Run it again whenever a summary is rewritten from a changed source.
 4. **Touch the graph.** This is the part that makes a wiki a wiki. For each source you ingest, update or create **at least 5–15** other pages:
    - For every notable person/org/product/place mentioned: open or create their entity page; add a dated bullet under `## Mentions` describing what this source says about them.
    - For every concept the source defines, refines, or contradicts: update the concept page. If the source contradicts an existing claim, do not silently overwrite — add the new claim with its citation and flag the contradiction in a `## Open questions` section.
@@ -92,6 +95,7 @@ Check, in order:
 4. **Missing cross-references.** Concepts mentioned in a summary but not linked to their concept page. Entities named in one entity page but not linked to their own page if it exists.
 5. **Index drift.** `index.md` missing pages that exist, or listing pages that were deleted/renamed.
 6. **Broken links.** Wiki-links pointing at filenames that no longer exist.
+7. **Summary lint.** Run `tools/lint-summaries.py`. It reports summaries missing `source_quality`/`source_sha256`, non-full sources, missing canonical sections, and **concept gaps**: tags on 5 or more summaries with no concept/entity/topic page. A gap with a near match is usually a synonym, so add it as an alias on that page. Report true gaps to the user rather than creating pages unasked. Legacy short-format summaries are counted, not rewritten.
 
 Report a punch list. Fix the mechanical items (orphans, missing links, index drift, broken links) without asking. For substantive items (contradictions, stale claims), present them and ask the user how to resolve unless the answer is unambiguous.
 

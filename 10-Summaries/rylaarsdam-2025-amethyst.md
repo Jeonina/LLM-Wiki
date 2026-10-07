@@ -2,6 +2,8 @@
 type: summary
 title: "Rylaarsdam et al. 2025 — Single-cell DNA methylation analysis tool Amethyst resolves distinct non-CG methylation patterns in human astrocytes and oligodendrocytes"
 source: "[[00-Sources/papers/Single-cell DNA methylation analysis tool Amethyst resolves distinct non-CG methylation patterns in human astrocytes and oligodendrocytes]]"
+source_quality: full
+source_sha256: "32da68014586f62f1b4f7807caba6ee7d9809842a973506fc63b44dc9b3dc2a1"
 source_kind: paper
 author: "Lauren E. Rylaarsdam, Benjamin W. Skubi, Ruth V. Nichols, Brendan L. O'Connell, Jack Henry Kotnik, Stephen D. Coleman, Galip Gürkan Yardımcı, Andrew C. Adey (corresponding)"
 published: 2025-10-14

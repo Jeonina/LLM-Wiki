@@ -2,6 +2,8 @@
 type: summary
 title: "Chakraborty, Wang & Ay 2022 — dcHiC detects differential compartments across multiple Hi-C datasets"
 source: "[[00-Sources/papers/dcHiC detects differential compartments across multiple Hi-C datasets]]"
+source_quality: full
+source_sha256: "3fc060af4a2e64418d64ca111e29506b48dcb8eb4f996048223d94f10dba56d2"
 source_kind: paper
 author: "Abhijit Chakraborty, Jeffrey G. Wang, Ferhat Ay (corresponding)"
 published: 2022-11-11

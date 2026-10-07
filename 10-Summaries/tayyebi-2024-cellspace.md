@@ -2,6 +2,8 @@
 type: summary
 title: "Tayyebi et al. 2024 — Scalable and unbiased sequence-informed embedding of single-cell ATAC-seq data with CellSpace"
 source: "[[00-Sources/papers/Scalable and unbiased sequence-informed embedding of single-cell ATAC-seq data with CellSpace]]"
+source_quality: full
+source_sha256: "3e773198e1ffe191b8bb0ccf8b9696fcda46fb0e8a303ca510bb789954ee36ef"
 source_kind: paper
 author: "Zakieh Tayyebi, Allison R. Pine, Christina S. Leslie (corresponding)"
 published: 2024-05-09

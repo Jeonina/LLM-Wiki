@@ -2,6 +2,8 @@
 type: summary
 title: "Fan et al. 2026 — GFETM: Genome foundation-based embedded topic model for scATAC-seq modeling"
 source: "[[00-Sources/papers/GFETM_ Genome foundation-based embedded topic model for scATAC-seq modeling]]"
+source_quality: full
+source_sha256: "77ab573d4b1ca0396be3c1e09116e9449014100ea2d11d23562ebc5f5dd60fca"
 source_kind: paper
 author: "Yimin Fan, Adrien Osakwe, Shi Han, Yu Li, Jun Ding, Yue Li (lead contact)"
 published: 2026-05

@@ -2,6 +2,8 @@
 type: summary
 title: "Zhang et al. 2023 — Droplet-based bisulfite sequencing for high-throughput profiling of single-cell DNA methylomes (Drop-BS)"
 source: "[[00-Sources/papers/Droplet-based bisulfite sequencing for high-throughput profiling of single-cell DNA methylomes]]"
+source_quality: full
+source_sha256: "76c65f49cf3b5d3e2ad0685c5e9ac561190b5bc1ce0288e3f4e3802c95332ab8"
 source_kind: paper
 author: "Qiang Zhang, Sai Ma, Zhengzhi Liu, Bohan Zhu, Zirui Zhou, Gaoshan Li, J. Javier Meana, Javier González-Maeso, Chang Lu (corresponding)"
 published: 2023-08-03

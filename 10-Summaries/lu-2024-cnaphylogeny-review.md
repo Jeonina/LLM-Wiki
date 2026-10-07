@@ -2,6 +2,8 @@
 type: summary
 title: "Lu 2024 — Cancer phylogenetic inference using copy number alterations detected from DNA sequencing data"
 source: "[[00-Sources/papers/Cancer phylogenetic inference using copy number alterations detected from DNA sequencing data]]"
+source_quality: full
+source_sha256: "4b02149c77ebf7f5f9a36f46c99136407e4d4452703044f12df1e82264e285f4"
 aliases: ["Lu 2024 review", "Bingxin Lu", "CNA phylogeny review"]
 tags: [review, CNA-phylogeny, cancer-evolution, tumor-heterogeneity, MEDICC, Lu-lab, Surrey]
 created: 2026-05-13

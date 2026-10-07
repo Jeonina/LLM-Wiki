@@ -2,6 +2,8 @@
 type: summary
 title: "Olova et al. 2018 — Comparison of whole-genome bisulfite sequencing library preparation strategies identifies sources of biases affecting DNA methylation data"
 source: "[[00-Sources/papers/Comparison of whole-genome bisulfite sequencing library preparation strategies identifies sources of biases affecting DNA methylation data]]"
+source_quality: full
+source_sha256: "e5270e03386218f33de5c2a9a643359e975944ad890721718ad46b2cf85a75a8"
 source_kind: paper
 author: "Nelly Olova, Felix Krueger, Simon Andrews, David Oxley, Rebecca V. Berrens, Miguel R. Branco, Wolf Reik (corresponding)"
 published: 2018-03-15

@@ -2,6 +2,8 @@
 type: summary
 title: "Spix et al. 2025 — High-coverage allele-resolved single-cell DNA methylation profiling reveals cell lineage, X-inactivation state, and replication dynamics"
 source: "[[00-Sources/papers/High-coverage allele-resolved single-cell DNA methylation profiling reveals cell lineage, X-inactivation state, and replication dynamics]]"
+source_quality: full
+source_sha256: "7bc201f6a285a25f95288da5847f738314fcb7afc62f71d5c37c9259d5099523"
 source_kind: paper
 author: "Nathan J. Spix, Walid Abi Habib, Zhouwei Zhang, Emily Eugster, Hsiao-yun Milliron, David Sokol, KwangHo Lee, Paula A. Nolte, Jamie L. Endicott, Kelly F. Krzyzanowski, Toshinori Hinoue, Jacob Morrison, Benjamin K. Johnson, Wanding Zhou, Hui Shen, Peter W. Laird (corresponding)"
 published: 2025-07-08

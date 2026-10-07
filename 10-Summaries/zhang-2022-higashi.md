@@ -2,6 +2,8 @@
 type: summary
 title: "Zhang, Zhou & Ma 2022 — Multiscale and integrative single-cell Hi-C analysis with Higashi"
 source: "[[00-Sources/papers/Multiscale and integrative single-cell Hi-C analysis with Higashi]]"
+source_quality: full
+source_sha256: "7f8bb4d7f1d138bb2a3dfc39a377f0b940107b16599089fa62c9980500da4f45"
 source_kind: paper
 author: "Ruochi Zhang, Tianming Zhou, Jian Ma (corresponding)"
 published: 2021-10-11

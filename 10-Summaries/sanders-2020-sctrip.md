@@ -2,6 +2,8 @@
 type: summary
 title: "Sanders 2020 — Single-cell analysis of structural variations and complex rearrangements with tri-channel processing (scTRIP)"
 source: "[[00-Sources/papers/Single-cell analysis of structural variations and complex rearrangements with tri-channel processing]]"
+source_quality: full
+source_sha256: "d770bafa9c8f6ca2f9453cbab5e2e10708cfce94502e8d10949151be2318bda0"
 aliases: ["Sanders 2020 scTRIP", "scTRIP", "Strand-seq SV"]
 tags: [scTRIP, Strand-seq, structural-variants, complex-rearrangements, Korbel-lab, EMBL, leukemia, chromothripsis]
 created: 2026-05-13

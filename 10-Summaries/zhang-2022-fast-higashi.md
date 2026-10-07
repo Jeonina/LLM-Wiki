@@ -2,6 +2,8 @@
 type: summary
 title: "Zhang et al. 2022 — Ultrafast and interpretable single-cell 3D genome analysis with Fast-Higashi"
 source: "[[00-Sources/papers/Ultrafast and interpretable single-cell 3D genome analysis with Fast-Higashi]]"
+source_quality: full
+source_sha256: "829a48ac6c5819d6c91b47a6b0021587c8dc68c046b396699d3e56b6a1913070"
 source_kind: paper
 author: "Ruochi Zhang, Tianming Zhou, Jian Ma (corresponding)"
 published: 2022-10

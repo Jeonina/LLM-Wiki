@@ -2,6 +2,8 @@
 type: summary
 title: "Granja 2021 — ArchR: a scalable software package for integrative single-cell chromatin accessibility analysis"
 source: "[[00-Sources/papers/ArchR is a scalable software package for integrative single-cell chromatin accessibility analysis]]"
+source_quality: full
+source_sha256: "4f6206e851b70dab03c941b560b95a01185e57d68e058ce5fd52feb62bf83b86"
 aliases: [Granja 2021, ArchR, Jeffrey 2021]
 tags: [scATAC-seq, computational-tool, ArchR, software, Greenleaf, foundational]
 created: 2026-05-12

@@ -2,6 +2,8 @@
 type: summary
 title: "Li et al. 2024 — scNanoSeq-CUT&Tag: a single-cell long-read CUT&Tag sequencing method for efficient chromatin modification profiling within individual cells"
 source: "[[00-Sources/papers/scNanoSeq-CUT&Tag_ a single-cell long-read CUT&Tag sequencing method for efficient chromatin modification profiling within individual cells]]"
+source_quality: full
+source_sha256: "174de0cc6b17b12a32dae97cf2c8b34e1ee966eaadc03bbcbe6a224bbee30513"
 source_kind: paper
 author: "Qingqing Li, Yuqing Guo, Zixin Wu, Xueqiang Xu, Zhenhuan Jiang, Shuyue Qi, Zhenyu Liu, Lu Wen, Fuchou Tang"
 published: 2024-10-07

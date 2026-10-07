@@ -2,6 +2,8 @@
 type: summary
 title: "Li et al. 2014 — Chromatin Interaction Analysis with Paired-End Tag (ChIA-PET) sequencing technology and application"
 source: "[[00-Sources/papers/Chromatin Interaction Analysis with Paired-End Tag (ChIA-PET) sequencing technology and application]]"
+source_quality: full
+source_sha256: "79c455f16dd591641b0593ace410320d008c63145ebb131b9d2534895f77815a"
 source_kind: paper
 author: "Guoliang Li, Liuyang Cai, Huidan Chang, Ping Hong, Qiangwei Zhou, Ekaterina V. Kulakova, Nikolay A. Kolchanov, Yijun Ruan"
 published: 2014-12-19

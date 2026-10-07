@@ -2,6 +2,8 @@
 type: summary
 title: "Welch et al. 2019 — Single-cell multi-omic integration compares and contrasts features of brain cell identity (LIGER)"
 source: "[[00-Sources/papers/Single-Cell Multi-omic Integration Compares and Contrasts Features of Brain Cell Identity]]"
+source_quality: full
+source_sha256: "92e5235a133ce5a0857332a98129f9a8e46a51910ae4fa3e5d145078013df38c"
 source_kind: paper
 author: "Joshua D. Welch, Velina Kozareva, Ashley Ferreira, Charles Vanderburg, Carly Martin, Evan Z. Macosko (corresponding)"
 published: 2019-06-13

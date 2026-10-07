@@ -2,6 +2,8 @@
 type: summary
 title: "Vijg & Dong 2020 — Pathogenic mechanisms of somatic mutation and genome mosaicism in aging"
 source: "[[00-Sources/papers/Pathogenic Mechanisms of Somatic Mutation and Genome Mosaicism in Aging]]"
+source_quality: full
+source_sha256: "0e13917fe1e9e8c439602e34b8e7600f4380cd0b696a79240462c704ee2f273d"
 aliases: ["Vijg 2020", "somatic mutation aging review"]
 tags: [review, aging, somatic-mutation, mosaicism, mechanism]
 created: 2026-05-13

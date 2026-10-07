@@ -2,6 +2,8 @@
 type: summary
 title: "Danese et al. 2021 — EpiScanpy: unified scATAC-seq and scBS-seq in the scanpy framework"
 source: "[[00-Sources/papers/EpiScanpy_ integrated single-cell epigenomic analysis]]"
+source_quality: full
+source_sha256: "64fc0f33da415c5c70b2abcc838355cda69375f4b862aec81974881132df5e14"
 source_kind: paper
 author: "Anna Danese, Maria L. Richter, Kridsadakorn Chaichoompu, David S. Fischer, Fabian J. Theis, Maria Colomé-Tatché (corresponding)"
 published: 2021-09-01

@@ -4,6 +4,19 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+# 2026-10-07 — Schema: source provenance, source quality, limitations split, concept-gap lint
+
+**Why.** The user reviewed joonan-lab/byeori (an AWS-hosted LLM-wiki agent) and chose four of its ideas to adopt locally, without installing byeori itself.
+
+**Changes.**
+- **Provenance.** Every summary now records `source_sha256` (a list for the two multi-source summaries). The new `tools/source-hash.py <slug>` writes it, and `tools/pending-sources.sh` now reports `CHANGED` when a source file no longer matches its summary's hash, so re-clipped papers are detected without being pointed out.
+- **Source quality.** Every summary now has `source_quality`: 343 `full`, 1 `partial` ([[10-Summaries/gibson-2019-chromatin-llps]], Introduction only), 23 `abstract` (landing pages or abstracts). Classification: 258 by source structure (Results plus Methods/Discussion headings, >4,000 words), the rest by hand from body length without references and from the source text.
+- **Limitations.** The summary template has a `## Limitations` section with the authors' own limitations first, then at most three reviewer notes marked `(synthesis)`. It applies to new summaries only; existing ones are not back-filled.
+- **Lint.** The new `tools/lint-summaries.py` is read-only. It checks provenance fields and canonical sections, and reports concept gaps: tags on ≥5 summaries with no page, with a near-match column for likely synonyms. First run: 25 summaries missing one or two sections (mostly `## Related`), 125 in the legacy short format, and 35 tag gaps, 12 of them with a near match (e.g. `allelic-dropout` → [[allele-dropout]], `tn5` → [[tn5-tagmentation]]).
+- `CLAUDE.md` INGEST steps 1 and 3 and MAINTAIN step 7, and `90-Meta/templates/summary.md`, were updated to match.
+
+---
+
 # 2026-10-07 — Re-ingest: Micro-C and GFETM rewritten from full text
 
 The user re-clipped the two sources still marked partial. Both summaries were rewritten in full:

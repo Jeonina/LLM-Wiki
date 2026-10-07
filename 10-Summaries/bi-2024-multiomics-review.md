@@ -2,6 +2,8 @@
 type: summary
 title: "Bi & Weng 2024 — Single-cell epigenomics and proteomics methods integrated in multiomics"
 source: "[[00-Sources/papers/Single-cell epigenomics and proteomics methods integrated in multiomics]]"
+source_quality: full
+source_sha256: "3ef3a479af08448aae1181162782073115a6af063d9a03b55eaba05624bdeb64"
 source_kind: paper
 author: Haiyue Bi, Xiaocheng Weng (corresponding)
 published: 2024

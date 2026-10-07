@@ -2,6 +2,8 @@
 type: summary
 title: "Galasso et al. 2026 — map3C: a computational tool for processing multiomic single-cell Hi-C data"
 source: "[[00-Sources/papers/map3C_ a computational tool for processing multiomic single-cell Hi-C data]]"
+source_quality: full
+source_sha256: "89279b55ed00b49731aeaf2a62633b1b5953cb297048d5aad4f2f29be0680136"
 source_kind: paper
 author: "Joseph Galasso, Ye Wang, Frank Alber, Jason Ernst, Chongyuan Luo"
 published: 2026-07-29

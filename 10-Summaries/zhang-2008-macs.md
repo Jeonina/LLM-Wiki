@@ -2,6 +2,8 @@
 type: summary
 title: "Zhang et al. 2008 — Model-based Analysis of ChIP-Seq (MACS)"
 source: "[[00-Sources/papers/Model-based Analysis of ChIP-Seq (MACS)]]"
+source_quality: full
+source_sha256: "2f97fd61d620a23b290bafbeb956f95686f07b38786bd4e1d6e334ebaeed61c1"
 source_kind: paper
 author: "Yong Zhang, Tao Liu, Clifford A. Meyer, Jérôme Eeckhoute, David S. Johnson, Bradley E. Bernstein, Chad Nusbaum, Richard M. Myers, Myles Brown, Wei Li, X. Shirley Liu (corresponding)"
 published: 2008-09-17

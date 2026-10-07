@@ -2,6 +2,8 @@
 type: summary
 title: "van Steensel & Belmont 2017 — Lamina-associated domains: links with chromosome architecture, heterochromatin and gene repression"
 source: "[[00-Sources/papers/Lamina-associated domains_ links with chromosome architecture, heterochromatin and gene repression]]"
+source_quality: full
+source_sha256: "72636966bd36bbb847f97a2b85543ebf964f78d0b7bf53a40ab4f6c43005e032"
 source_kind: paper
 author: Bas van Steensel (NKI), Andrew S. Belmont (UIUC)
 published: 2017-05-18

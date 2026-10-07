@@ -2,6 +2,8 @@
 type: summary
 title: "Daugird et al. 2024 — Correlative single-molecule lattice light-sheet imaging reveals nucleosome-chromatin dynamics"
 source: "[[00-Sources/papers/Correlative single molecule lattice light sheet imaging reveals the dynamic relationship between nucleosomes and the local chromatin environment]]"
+source_quality: full
+source_sha256: "c414d504ce8bb6e8cc134d2186a1ed9d97c9e3c00bdba9a7a1846225ffa83992"
 source_kind: paper
 author: "Timothy A. Daugird, Yu Shi, Katie L. Holland, Hosein Rostamian, Zhe Liu, Luke D. Lavis, Joseph Rodriguez, Brian D. Strahl, Wesley R. Legant (corresponding)"
 published: 2024-05-16

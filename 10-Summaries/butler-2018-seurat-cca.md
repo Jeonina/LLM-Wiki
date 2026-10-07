@@ -2,6 +2,8 @@
 type: summary
 title: "Butler et al. 2018 — Integrating single-cell transcriptomic data across different conditions, technologies, and species (Seurat CCA alignment)"
 source: "[[00-Sources/papers/Integrating single-cell transcriptomic data across different conditions, technologies, and species]]"
+source_quality: full
+source_sha256: "61db8e0d614db47bcec17a510a996b7f363aec36ddcbbd42b5d456557f680593"
 source_kind: paper
 author: "Andrew Butler, Paul Hoffman, Peter Smibert, Efthymia Papalexi, Rahul Satija (corresponding)"
 published: 2018-04-02

@@ -2,6 +2,8 @@
 type: summary
 title: "Huang 2017 — MosaicHunter: accurate detection of postzygotic single-nucleotide mosaicism through next-generation sequencing of unpaired, trio, and paired samples"
 source: "[[00-Sources/papers/MosaicHunter_ accurate detection of postzygotic single-nucleotide mosaicism through next-generation sequencing of unpaired, trio, and paired samples]]"
+source_quality: full
+source_sha256: "cd42899676f8fb7a02446e25c02ef27a81ecfb0fb8442c118893ecf46f17a1ec"
 aliases: ["Huang 2017 MosaicHunter", "MosaicHunter", "August Yue Huang"]
 tags: [MosaicHunter, mosaic-variant-calling, Bayesian-genotyper, unpaired-detection, Wei-lab, PKU, founding-method]
 created: 2026-05-13

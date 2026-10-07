@@ -2,6 +2,8 @@
 type: summary
 title: "Garvin 2015 — Interactive analysis and assessment of single-cell copy-number variations (Ginkgo)"
 source: "[[00-Sources/papers/Interactive analysis and assessment of single-cell copy-number variations]]"
+source_quality: full
+source_sha256: "8853f8f5cf7ec73f4b9c4fe4617166e4559453c1cfe68b4905d5a8096defb28c"
 aliases: ["Ginkgo", "Garvin 2015"]
 tags: [computational, CNV, scDNA-seq, Ginkgo, web-tool, Wigler-lab, Schatz-lab]
 created: 2026-05-13

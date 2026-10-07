@@ -2,6 +2,8 @@
 type: summary
 title: "Shi et al. 2026 — Genome-wide profiling of histone modifications and transcription factor binding at single-cell resolution by DeChIC-seq"
 source: "[[00-Sources/papers/Genome-wide profiling of histone modifications and transcription factor binding at single-cell resolution by DeChIC-seq]]"
+source_quality: full
+source_sha256: "6bce05b453172248aa5e03f25b5eb633a131b5d951521759a4716d17bc2afb4e"
 source_kind: paper
 author: "Zhifei Shi, Xiyang Chen, Yijia Yang, Ang Wu, Heng Wang, Kai Chen, Chong Li, Lina Zou, Zhipeng Qu, Yuyan Zhao, Wenjing Gan, Shuhui Li, Jiayu Chen, Wenqiang Liu, Jiejun Shi, Hong Wang, Jia-min Zhang, Chenfei Wang, Shaorong Gao, Xiaoyu Liu"
 published: 2026-07-13

@@ -2,6 +2,8 @@
 type: summary
 title: "Duan et al. 2026 — mist: a hierarchical Bayesian framework for detecting differential DNA methylation dynamics in single-cell data"
 source: "[[00-Sources/papers/mist_ a hierarchical Bayesian framework for detecting differential DNA methylation dynamics in single-cell data]]"
+source_quality: full
+source_sha256: "7f702f13e5deb62653bc17dad202f82bd33959fd183892ac174fac956e286972"
 source_kind: paper
 author: "Daoyu Duan, Wenjing Ma, Wen Tang, Hao Wu, Liangliang Zhang, Hao Feng"
 published: 2026-03-12

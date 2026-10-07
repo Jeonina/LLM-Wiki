@@ -2,6 +2,8 @@
 type: summary
 title: "Kerpedjiev et al. 2018 — HiGlass: web-based visual exploration and analysis of genome interaction maps"
 source: "[[00-Sources/papers/HiGlass_ web-based visual exploration and analysis of genome interaction maps]]"
+source_quality: full
+source_sha256: "ccec13eac163120ce1b435e0882fa54c9d52d59c453aaeae87913c1659776965"
 source_kind: paper
 author: "Peter Kerpedjiev, Nezar Abdennur, Fritz Lekschas, ... Leonid A. Mirny, Peter J. Park, Nils Gehlenborg (corresponding)"
 published: 2018-08-24

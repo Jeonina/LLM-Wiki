@@ -2,6 +2,8 @@
 type: summary
 title: "Cao 2022 — Multi-omics single-cell data integration and regulatory inference with graph-linked embedding (GLUE)"
 source: "[[00-Sources/papers/Multi-omics single-cell data integration and regulatory inference with graph-linked embedding]]"
+source_quality: full
+source_sha256: "62da35946821cfaf46e23ba11f1e3bdcc5d631b56b43fdf6227f50ddf7576b3d"
 aliases: ["Cao 2022 GLUE", "GLUE", "graph-linked unified embedding"]
 tags: [GLUE, multi-omics-integration, deep-learning, graph-VAE, unpaired-integration, Gao-lab, PKU]
 created: 2026-05-13

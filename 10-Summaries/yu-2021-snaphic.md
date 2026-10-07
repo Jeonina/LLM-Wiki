@@ -2,6 +2,8 @@
 type: summary
 title: "Yu et al. 2021 — SnapHiC: a computational pipeline to identify chromatin loops from single-cell Hi-C data"
 source: "[[00-Sources/papers/SnapHiC_ a computational pipeline to identify chromatin loops from single-cell Hi-C data]]"
+source_quality: full
+source_sha256: "6637500094a104412c56a55ef6d7426d924a3e605eb79fa89adb690b0281a5e2"
 source_kind: paper
 author: "Miao Yu, Armen Abnousi, Yanxiao Zhang, Guoqiang Li, Lindsay Lee, Ziyin Chen, Rongxin Fang, Taylor M. Lagler, Yuchen Yang, Jia Wen, Quan Sun, Yun Li, Bing Ren, Ming Hu (corresponding)"
 published: 2021-08-26

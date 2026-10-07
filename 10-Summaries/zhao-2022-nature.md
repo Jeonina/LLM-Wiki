@@ -2,6 +2,8 @@
 type: summary
 title: "Zhao 2022 — Spatial genomics enables multi-modal study of clonal heterogeneity in tissues (slide-DNA-seq)"
 source: "[[00-Sources/papers/Spatial genomics enables multi-modal study of clonal heterogeneity in tissues]]"
+source_quality: full
+source_sha256: "fbbfda7880fc1c3e93fc2d4396184a8bad59d0dc3c1e8a853e9617c46b029d48"
 aliases: ["slide-DNA-seq", "Zhao 2022", "spatial scDNA", "Morriss 2024 spatial genomics", "spatial genomics clonal heterogeneity"]
 tags: [slide-DNA-seq, spatial-genomics, scDNA, cancer, CNV, Chen-lab, Buenrostro-lab]
 created: 2026-05-13

@@ -2,6 +2,8 @@
 type: summary
 title: "Lim et al. 2024 — Advances in single-cell omics and multiomics for high-resolution molecular profiling"
 source: "[[00-Sources/papers/Advances in single-cell omics and multiomics for high-resolution molecular profiling - Experimental & Molecular Medicine]]"
+source_quality: full
+source_sha256: "e5d33969807d2cc5a6a9dae7f806771aed3c73663c2de5f3595a638ec85235e5"
 source_kind: paper
 author: "Jongsu Lim, Chanho Park, Minjae Kim, Hyukhee Kim, Junil Kim, Dong-Sung Lee (corresponding)"
 published: 2024-03-05

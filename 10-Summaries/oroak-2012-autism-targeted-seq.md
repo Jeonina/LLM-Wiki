@@ -2,6 +2,8 @@
 type: summary
 title: "O'Roak et al. 2012 — Multiplex targeted sequencing identifies recurrently mutated genes in autism spectrum disorders"
 source: "[[00-Sources/papers/Multiplex Targeted Sequencing Identifies Recurrently Mutated Genes in Autism Spectrum Disorders]]"
+source_quality: full
+source_sha256: "9cccbe7e9e59e9a3aeddaa1e1fd054640e63725a36a90922e70842e54c90cbcb"
 source_kind: paper
 author: "Brian J. O'Roak, Laura Vives, Wenqing Fu, Jarrett D. Egertson, Ian B. Stanaway, Ian G. Phelps, Gemma Carvill, Akash Kumar, Choli Lee, Katy Ankenman, Jay Shendure, Evan E. Eichler (corresponding)"
 published: 2012-11-16

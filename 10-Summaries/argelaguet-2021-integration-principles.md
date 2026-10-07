@@ -2,6 +2,8 @@
 type: summary
 title: "Argelaguet, Cuomo, Stegle & Marioni 2021 — Computational principles and challenges in single-cell data integration"
 source: "[[00-Sources/papers/Computational principles and challenges in single-cell data integration]]"
+source_quality: full
+source_sha256: "5bc1c061ce1143b58f087a3ab98f6734d35414c6f93c787f3c524a400f0dab4a"
 source_kind: paper
 author: "Ricard Argelaguet, Anna S. E. Cuomo, Oliver Stegle, John C. Marioni (corresponding)"
 published: 2021-05-03

@@ -2,6 +2,8 @@
 type: summary
 title: "Sollier et al. 2023 — COMPASS: joint copy number and mutation phylogeny reconstruction from amplicon single-cell sequencing data"
 source: "[[00-Sources/papers/COMPASS_ joint copy number and mutation phylogeny reconstruction from amplicon single-cell sequencing data]]"
+source_quality: full
+source_sha256: "ae4766eb6537b52461e8ca7004b310db4b7941c4ec8dad23cd9721519065e070"
 source_kind: paper
 author: "Etienne Sollier, Jack Kuipers, Koichi Takahashi, Niko Beerenwinkel, Katharina Jahn (corresponding)"
 published: 2023-08-15

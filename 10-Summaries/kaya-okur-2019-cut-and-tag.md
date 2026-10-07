@@ -2,6 +2,8 @@
 type: summary
 title: "Kaya-Okur et al. 2019 — CUT&Tag for efficient epigenomic profiling of small samples and single cells"
 source: "[[00-Sources/papers/CUT&Tag for efficient epigenomic profiling of small samples and single cells]]"
+source_quality: full
+source_sha256: "620567b89f41cbbab79cb05d6c80b778372d176c6a8cd994de8a7f9b6039eb17"
 source_kind: paper
 author: "Hatice S. Kaya-Okur, Steven J. Wu, Christine A. Codomo, Erica S. Pledger, Terri D. Bryson, Jorja G. Henikoff, Kami Ahmad, Steven Henikoff (corresponding)"
 published: 2019-04-29

@@ -2,6 +2,8 @@
 type: summary
 title: "Durand et al. 2016 — Juicer: a one-click system for analyzing loop-resolution Hi-C experiments"
 source: "[[00-Sources/papers/Juicer Provides a One-Click System for Analyzing Loop-Resolution Hi-C Experiments]]"
+source_quality: full
+source_sha256: "7194fe9b3df5d2cc7ad3cd2a0e08c7a56207b6651a208955591663cc1731f4ec"
 source_kind: paper
 author: "Neva C. Durand, Muhammad S. Shamim, Ido Machol, Suhas S. P. Rao, Miriam H. Huntley, Eric S. Lander, Erez Lieberman Aiden (corresponding)"
 published: 2016-07-27

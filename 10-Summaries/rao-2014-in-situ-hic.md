@@ -2,6 +2,8 @@
 type: summary
 title: "Rao et al. 2014 — A 3D Map of the Human Genome at Kilobase Resolution Reveals Principles of Chromatin Looping"
 source: "[[00-Sources/papers/A 3D Map of the Human Genome at Kilobase Resolution Reveals Principles of Chromatin Looping]]"
+source_quality: full
+source_sha256: "b8f30e3d6bae534c48925d9cfdcb24c004680b0d0d130260bcb82c5dc78e7bed"
 source_kind: paper
 author: "Suhas S. P. Rao, Miriam H. Huntley, Neva C. Durand, Elena K. Stamenova, Ivan D. Bochkov, James T. Robinson, Adrian L. Sanborn, Ido Machol, Arina D. Omer, Eric S. Lander, Erez Lieberman Aiden (corresponding)"
 published: 2014-12

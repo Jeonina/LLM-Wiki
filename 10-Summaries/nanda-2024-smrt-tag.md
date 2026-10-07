@@ -2,6 +2,8 @@
 type: summary
 title: "Nanda et al. 2024 — SMRT-Tag and SAMOSA-Tag: tagmentation for PacBio at 40 ng input"
 source: "[[00-Sources/papers/Direct transposition of native DNA for sensitive multimodal single-molecule sequencing]]"
+source_quality: full
+source_sha256: "fa17e743880a261f717e8aee29b2d3a290883ca3edcc35212df504339a8d2524"
 source_kind: paper
 author: "Arjun S. Nanda, Ke Wu, Iryna Irkliyenko, Brian Woo, Megan S. Ostrowski, Andrew S. Clugston, Leanne C. Sayles, Lingru Xu, Ansuman T. Satpathy, Hao G. Nguyen, E. Alejandro Sweet-Cordero, Hani Goodarzi, Sivakanthan Kasinathan, Vijay Ramani (corresponding)"
 published: 2024-05-09

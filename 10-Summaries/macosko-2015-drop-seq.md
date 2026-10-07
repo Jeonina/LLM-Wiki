@@ -2,6 +2,8 @@
 type: summary
 title: "Macosko 2015 — Drop-seq: highly parallel scRNA-seq via nanoliter droplets"
 source: "[[00-Sources/papers/Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets]]"
+source_quality: full
+source_sha256: "2ae7a9f81091e05270d2ce32fddc4f660d756e11230c8e715522c5aa357e3fa3"
 aliases: ["Macosko 2015", "Drop-seq", "Drop-Seq"]
 tags: [Drop-seq, scRNA-seq, droplet-microfluidics, UMI, cell-barcode, retina-atlas, McCarroll-lab, Regev-lab, Broad-Institute, Harvard]
 created: 2026-05-14

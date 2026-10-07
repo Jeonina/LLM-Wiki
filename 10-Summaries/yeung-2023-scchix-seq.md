@@ -2,6 +2,8 @@
 type: summary
 title: "Yeung et al. 2023 — scChIX-seq: computational deconvolution of two histone marks per cell"
 source: "[[00-Sources/papers/scChIX-seq infers dynamic relationships between histone modifications in single cells]]"
+source_quality: full
+source_sha256: "f8d85e275ae8e34b46c0a0d1c2cf24a8e0abffd57cc08f591656a1d02de841bb"
 source_kind: paper
 author: "Jake Yeung, Maria Florescu, Peter Zeller, Buys Anton de Barbanson, Max D. Wellenstein, Alexander van Oudenaarden (corresponding)"
 published: 2023-01-02

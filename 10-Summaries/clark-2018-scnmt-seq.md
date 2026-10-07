@@ -2,6 +2,8 @@
 type: summary
 title: "Clark 2018 — scNMT-seq: Joint chromatin accessibility, DNA methylation, and transcription in single cells"
 source: "[[00-Sources/papers/scNMT-seq enables joint profiling of chromatin accessibility DNA methylation and transcription in single cells]]"
+source_quality: full
+source_sha256: "51d6f7b090e7184783f771b3dcaca7d5644dc8ce5f6251634d4f30185fdbc1db"
 aliases: [Clark 2018, scNMT-seq, NMT-seq]
 tags: [scNMT-seq, joint-assay, single-cell-multiomics, dna-methylation, chromatin-accessibility, NOMe-seq, foundational]
 created: 2026-05-12

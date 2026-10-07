@@ -2,6 +2,8 @@
 type: summary
 title: "Zhang et al. 2021 — Fast alignment and preprocessing of chromatin profiles with Chromap"
 source: "[[00-Sources/papers/Fast alignment and preprocessing of chromatin profiles with Chromap]]"
+source_quality: full
+source_sha256: "b2df942f0d16f7065a719a1d4a83f965bf1771ff75020b105aa9fe046db7910b"
 source_kind: paper
 author: "Haowen Zhang, Li Song, Xiaotao Wang, Haoyu Cheng, Chenfei Wang, Clifford A. Meyer, Tao Liu, Ming Tang, Srinivas Aluru, Feng Yue, X. Shirley Liu, Heng Li (corresponding)"
 published: 2021-11-12

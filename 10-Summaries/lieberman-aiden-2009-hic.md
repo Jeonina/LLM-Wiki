@@ -2,6 +2,8 @@
 type: summary
 title: "Lieberman-Aiden et al. 2009 — Comprehensive mapping of long-range interactions reveals folding principles of the human genome (Hi-C)"
 source: "[[00-Sources/papers/Comprehensive Mapping of Long-Range Interactions Reveals Folding Principles of the Human Genome]]"
+source_quality: full
+source_sha256: "e543ff8ddafe186c7a3e802ca8a94631216453fdc95c63953bf8af3ee242c877"
 source_kind: paper
 author: "Erez Lieberman-Aiden, Nynke L. van Berkum, Louise Williams, Maxim Imakaev, Tobias Ragoczy, Agnes Telling, Ido Amit, Bryan R. Lajoie, Peter J. Sabo, Michael O. Dorschner, ... Leonid A. Mirny, Eric S. Lander, Job Dekker (corresponding)"
 published: 2009-10-09

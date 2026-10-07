@@ -2,6 +2,8 @@
 type: summary
 title: "Bannister & Kouzarides 2011 — Regulation of chromatin by histone modifications (review)"
 source: "[[00-Sources/papers/Regulation of chromatin by histone modifications]]"
+source_quality: full
+source_sha256: "fdda0cdcc44ef43480387e8e3a8b2f06bd0c33fd38a09995ef25f60dbc9013dc"
 aliases: [Bannister 2011, Bannister Kouzarides 2011]
 tags: [histone-modifications, chromatin, review, foundational, epigenetics]
 created: 2026-05-12

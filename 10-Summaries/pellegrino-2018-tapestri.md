@@ -2,6 +2,8 @@
 type: summary
 title: "Pellegrino 2018 — High-throughput single-cell DNA sequencing of acute myeloid leukemia tumors with droplet microfluidics"
 source: "[[00-Sources/papers/High-throughput single-cell DNA sequencing of acute myeloid leukemia tumors with droplet microfluidics]]"
+source_quality: abstract
+source_sha256: "8d1255b9a7ba715ac5b2c25e4296f14fb9c3b5b1bd7ea592fbf35c5f458c685c"
 aliases: ["Pellegrino 2018", "Tapestri", "Mission Bio scDNA", "MissionBio"]
 tags: [Tapestri, MissionBio, droplet-scDNA, AML, targeted-panel, clonal-evolution, Eastburn]
 created: 2026-05-13

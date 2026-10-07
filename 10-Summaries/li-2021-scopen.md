@@ -2,6 +2,8 @@
 type: summary
 title: "Li et al. 2021 — scOpen: regularized NMF imputation for scATAC-seq"
 source: "[[00-Sources/papers/Chromatin-accessibility estimation from single-cell ATAC-seq data with scOpen]]"
+source_quality: full
+source_sha256: "b528b44a51a6fc140711d0f8d931ccf651411e78ee8002ee379621df033f3fb6"
 source_kind: paper
 author: "Zhijian Li, Christoph Kuppe, Susanne Ziegler, Mingbo Cheng, Nazanin Kabgani, Sylvia Menzel, Martin Zenke, Rafael Kramann, Ivan G. Costa (corresponding)"
 published: 2021-11-04

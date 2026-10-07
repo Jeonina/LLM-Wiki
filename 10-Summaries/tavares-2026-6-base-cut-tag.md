@@ -2,6 +2,8 @@
 type: summary
 title: "Tavares et al. 2026 — 6-base-CUT&Tag: 5mC + 5hmC at targeted histone marks"
 source: "[[00-Sources/papers/Sequencing DNA methylation and hydroxymethylation at co-occurring chromatin features]]"
+source_quality: full
+source_sha256: "a04d127043a17cfe23d9c0cd0d6b71551692c3653b30b63580c2495ac25f6a0e"
 source_kind: paper
 author: "Rafael de Cesaris Araujo Tavares, Somdutta Dhir, Xuan He, Jack Monahan, Minna Taipale, Paula Golder, Aldo Ciau-Uitz, Walraj Gosal, David Tannahill, Shankar Balasubramanian (corresponding)"
 published: 2026-02-10

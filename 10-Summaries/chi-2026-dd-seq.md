@@ -2,6 +2,8 @@
 type: summary
 title: "Chi et al. 2026 — Single-cell mapping of regulatory DNA–protein interactions (D&D-seq)"
 source: "[[00-Sources/papers/Single-cell mapping of regulatory DNA-protein interactions]]"
+source_quality: full
+source_sha256: "49478b6d9ed5aae9714df31308fbc256460c98034f178d0958b25228ed111b10"
 source_kind: paper
 author: "Wei-Yu Chi, Sang-Ho Yoon, ..., Franco Izzo, Dan A. Landau, Ivan Raimondi (corresponding)"
 published: 2026

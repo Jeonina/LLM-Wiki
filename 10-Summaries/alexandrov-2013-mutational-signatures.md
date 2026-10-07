@@ -2,6 +2,8 @@
 type: summary
 title: "Alexandrov et al. 2013 — Signatures of mutational processes in human cancer"
 source: "[[00-Sources/papers/Signatures of mutational processes in human cancer]]"
+source_quality: full
+source_sha256: "24a17381239f81b8ff693458423e497a2b65c5e7111ede575829a3f242abdd23"
 source_kind: paper
 author: "Ludmil B. Alexandrov, Serena Nik-Zainal, David C. Wedge, ... Peter J. Campbell, Michael R. Stratton (corresponding)"
 published: 2013-08-14

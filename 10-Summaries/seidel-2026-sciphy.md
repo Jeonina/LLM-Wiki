@@ -2,6 +2,8 @@
 type: summary
 title: "Seidel et al. 2026 — SciPhy: a Bayesian phylogenetic framework using sequential genetic lineage tracing data"
 source: "[[00-Sources/papers/SciPhy_ A Bayesian phylogenetic framework using sequential genetic lineage tracing data]]"
+source_quality: full
+source_sha256: "2690bc80edde805f094550a4fd884a01a4ae9925f9b4675cb4721e5e51fa69a3"
 source_kind: paper
 author: "Sophie Seidel, Antoine Zwaans, Samuel Regalado, Junhong Choi, Jay Shendure, Tanja Stadler (corresponding)"
 published: 2026-06-10

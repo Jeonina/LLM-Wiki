@@ -2,6 +2,8 @@
 type: summary
 title: "Skene & Henikoff 2017 — An efficient targeted nuclease strategy for high-resolution mapping of DNA binding sites"
 source: "[[00-Sources/papers/An efficient targeted nuclease strategy for high-resolution mapping of DNA binding sites]]"
+source_quality: full
+source_sha256: "3eb1da0145a4e7cc4b63c5be094e7b7e015818ad76bb2b20aeab25e35150f08e"
 source_kind: paper
 author: "Peter J Skene, Steven Henikoff (corresponding)"
 published: 2017-01-16

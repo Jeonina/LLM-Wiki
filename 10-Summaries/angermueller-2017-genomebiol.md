@@ -2,6 +2,8 @@
 type: summary
 title: "Angermueller 2017 — DeepCpG: accurate prediction of single-cell DNA methylation states using deep learning"
 source: "[[00-Sources/papers/DeepCpG_ accurate prediction of single-cell DNA methylation states using deep learning]]"
+source_quality: full
+source_sha256: "8475a0653bd2480515facb44c6fa4f6a56e8517d09828a72af63f20ec56d3fa5"
 aliases: ["DeepCpG", "Angermueller 2017"]
 tags: [deep-learning, methylation, single-cell, computational, sequence-prediction, Stegle-lab]
 created: 2026-05-13

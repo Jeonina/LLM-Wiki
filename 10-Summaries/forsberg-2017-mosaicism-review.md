@@ -2,6 +2,8 @@
 type: summary
 title: "Forsberg, Gisselsson & Dumanski 2017 — Mosaicism in health and disease"
 source: "[[00-Sources/papers/Mosaicism in health and disease — clones picking up speed]]"
+source_quality: full
+source_sha256: "8c81f83be4af30b25c66125aea13c03be4487c54ce479fba511e010cf34fac11"
 source_kind: paper
 author: "Lars A. Forsberg, David Gisselsson, Jan P. Dumanski"
 published: 2017-02

@@ -2,6 +2,8 @@
 type: summary
 title: "Janssens et al. 2023 — sciCUT&Tag: combinatorial indexing for 40,000 cells/chip"
 source: "[[00-Sources/papers/Scalable single-cell profiling of chromatin modifications with sciCUT&Tag]]"
+source_quality: full
+source_sha256: "152954323d95aeac96267f686900bf76193c0bbd5d98e43793a204e3cb6287b6"
 source_kind: paper
 author: "Derek H. Janssens, Jacob E. Greene, Steven J. Wu, Christine A. Codomo, Samuel S. Minot, Scott N. Furlan, Kami Ahmad, Steven Henikoff (corresponding)"
 published: 2023-11-07

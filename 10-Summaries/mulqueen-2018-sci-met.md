@@ -2,6 +2,8 @@
 type: summary
 title: "Mulqueen et al. 2018 — Highly scalable generation of DNA methylation profiles in single cells (sci-MET)"
 source: "[[00-Sources/papers/Highly scalable generation of DNA methylation profiles in single cells]]"
+source_quality: full
+source_sha256: "d14fe0216b18d7d593f0cc1b4db59b27c87866a88f262c000962fa8e37335716"
 source_kind: paper
 author: "Ryan M. Mulqueen, Dmitry Pokholok, Steven J. Norberg, Kristof A. Torkenczy, Andrew J. Fields, Duanchen Sun, John R. Sinnamon, Jay Shendure, Cole Trapnell, Brian J. O'Roak, Zheng Xia, Frank J. Steemers, Andrew C. Adey (corresponding)"
 published: 2018-04-09

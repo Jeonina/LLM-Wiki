@@ -2,6 +2,8 @@
 type: summary
 title: "Mali et al. 2025 — Conformational Heterogeneity: a metric for cell-to-cell 3D-genome variability"
 source: "[[00-Sources/papers/Quantifying conformational heterogeneity of 3D genome organization in fruit fly]]"
+source_quality: full
+source_sha256: "7d6660295172f89dcb3d4bb7b60919478da9d25046eea1eebb058693790e8ccf"
 source_kind: paper
 author: "Samira Mali, Igor S. Tolokh, Erik Cross, Alexey V. Onufriev (corresponding)"
 published: 2025-07-03

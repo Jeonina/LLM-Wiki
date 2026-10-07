@@ -22,6 +22,12 @@ The original protocol uses MNase digestion to >95% mononucleosomes, biotin end-l
 - In yeast it revealed gene-scaled chromosomal interaction domains and no periodic 30-nm-fibre signal in vivo ([[10-Summaries/hsieh-2015-micro-c]]).
 - It captures long-range contacts such as centromere clustering poorly, so it complements rather than replaces Hi-C ([[10-Summaries/hsieh-2015-micro-c]]).
 
+## Added 2026-10-07 (full-text re-ingest)
+
+- CID boundaries fall mostly at +1 nucleosomes of promoters (~40% of boundary nucleosomes vs ~7% genome-wide), enriched for H3K18ac, H3K4me3, histone turnover, RSC and the cohesin loader Scc2 ([[10-Summaries/hsieh-2015-micro-c]]).
+- Gene compaction is anticorrelated with transcription (r = −0.56), but transcription explains only 31% of its variance ([[10-Summaries/hsieh-2015-micro-c]]). Mediator (*med1Δ*), Rtt109 and Rpd3 loss decompact genes independently of mRNA changes, while RSC and Scc2 inactivation compact them ([[10-Summaries/hsieh-2015-micro-c]]).
+- Contact decay has no 30-nm periodicity, but N/N+1 and N/N+2 contacts are similarly abundant, consistent with a sparse tri-/tetranucleosome motif; the H4 N-terminal tail is needed for folding signal ([[10-Summaries/hsieh-2015-micro-c]]).
+
 ## Related
 
 - [[topologically-associating-domain]] · [[chromatin-loop]] · [[multi-way-chromatin-interaction]] · [[40-Topics/3d-genome]]

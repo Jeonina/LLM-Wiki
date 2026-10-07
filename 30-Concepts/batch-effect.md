@@ -42,7 +42,7 @@ For band-normalized scHi-C (Lee2019, 5 libraries), Harmony removed batch effects
 
 An optional extension of scCASE corrects protocol batch effects in scATAC data. On a mouse-brain dataset mixing 10X and snATAC, it improved kBET and batch ASW and merged L2/3 IT cells from both batches into one cluster ([[10-Summaries/tang-2024-sccase]]).
 
-GFETM attributes its scalability on large scATAC datasets to batch-agnostic embeddings, and notes that cross-tissue and cross-species scATAC integration is hard because, unlike genes in scRNA-seq, scATAC lacks a common feature set ([[10-Summaries/fan-2026-gfetm]]). Representing peaks by sequence embeddings rather than coordinates is a plausible way around that (synthesis).
+On Buenrostro 2018, GFETM without any batch term had the highest ARI and second-highest kBET, and adding a linear batch term gave the best kBET at slightly lower ARI ([[10-Summaries/fan-2026-gfetm]]). GFETM attributes its scalability on large scATAC datasets to batch-agnostic embeddings, and notes that cross-tissue and cross-species scATAC integration is hard because, unlike genes in scRNA-seq, scATAC lacks a common feature set ([[10-Summaries/fan-2026-gfetm]]). Representing peaks by sequence embeddings rather than coordinates is a plausible way around that (synthesis).
 
 ## Related
 

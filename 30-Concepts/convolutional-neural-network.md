@@ -25,7 +25,7 @@ In genomics, CNNs power DeepBind, DeepSEA, DanQ, DeepEnhancer, DeepHistone, Base
 
 ## Added 2026-10-07
 
-GFETM argues that CNN sequence models for scATAC such as scBasset are trained supervised and see only short-range sequence context, and proposes self-supervised, attention-based genome foundation models (DNABERT, DNABERT-2, Nucleotide Transformer, HyenaDNA) as the replacement peak-sequence encoder ([[10-Summaries/fan-2026-gfetm]]). The clipping holds no head-to-head numbers ([[10-Summaries/fan-2026-gfetm]]).
+GFETM argues that CNN sequence models for scATAC such as scBasset are trained supervised and see only short-range sequence context, and proposes self-supervised, attention-based genome foundation models (DNABERT, DNABERT-2, Nucleotide Transformer, HyenaDNA) as the replacement peak-sequence encoder ([[10-Summaries/fan-2026-gfetm]]). In the full preprint, GFETM is competitive with, not clearly better than, scBasset on clustering, and an ETM with a CNN peak encoder did worse than GFETM, though CNN designs were not explored thoroughly ([[10-Summaries/fan-2026-gfetm]]). scBasset gave better marker enrichment within 1 kb of the TSS and GFETM beyond it, which the authors attribute to CNN receptive fields vs attention ([[10-Summaries/fan-2026-gfetm]]).
 
 
 ## Related

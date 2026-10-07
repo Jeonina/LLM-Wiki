@@ -55,6 +55,8 @@ The hierarchy itself — recovered from healthy CD34⁺ cells — defines the "n
 Native-context clonal barcoding (DARLIN) found low-level HSC migration between bones: ~5% of HSC clones shared across bones 4 months after adult labelling (~12% after 1 year), higher for MPPs (~14%) and myeloid progenitors (~40%), and predominantly local haematopoiesis even when labelled at E17.0 [[10-Summaries/li-2023-darlin]]. Megakaryocyte-biased HSCs were already present when labelled at E17.0 [[10-Summaries/li-2023-darlin]]. Expressed-barcode state–fate maps showed haematopoietic priming as a structured continuum with two monocyte routes (GMP-like and MDP-like) [[10-Summaries/weinreb-2020-larry]].
 
 
+GFETM topics on Buenrostro 2018 haematopoiesis link IRF1/IRF2 motifs to MEP-enriched topics, CTCF to topics enriched in CLP, MEP and monocytes, and ETV2/5/6 to a monocyte topic ([[10-Summaries/fan-2026-gfetm]]).
+
 ## Related
 
 - [[calr-mutation]]

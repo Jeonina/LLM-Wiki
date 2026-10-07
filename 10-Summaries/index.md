@@ -235,7 +235,7 @@ Catalog of ~370 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/mcinnes-2018-umap]] — McInnes 2018, UMAP (arXiv preprint, never journal-published).
 - [[10-Summaries/ashuach-2022-peakvi]] — Ashuach 2022, PeakVI: scvi-tools Bernoulli VAE for scATAC with region/cell nuisance factors, batch correction, scArches mapping and calibrated single-region differential accessibility.
 - [[10-Summaries/de-boer-2018-brockman]] — de Boer & Regev 2018, BROCKMAN: peak-free gapped k-mer PCA of scATAC insertion sites; out-of-peak reads group cells better; PCs map to co-varying, physically interacting TFs.
-- [[10-Summaries/fan-2026-gfetm]] — Fan 2026, GFETM: embedded topic model jointly trained with a genome foundation model for transferable, sequence-informed scATAC-seq modeling (partial clipping; no Results).
+- [[10-Summaries/fan-2026-gfetm]] — Fan 2026, GFETM: embedded topic model jointly trained with a genome foundation model for sequence-informed scATAC-seq modeling; matches scBasset on clustering, better on unseen cells, unseen-peak imputation and cross-tissue/species transfer (bioRxiv v3 full text).
 - [[10-Summaries/ji-2017-scrat]] — Ji 2017, SCRAT: GUI toolbox aggregating sparse scATAC/scDNase/scChIP reads over motifs, gene sets and DHS clusters.
 - [[10-Summaries/li-2025-scnanoatac-seq2]] — Li 2025, scNanoATAC-seq2: single-tube, nanopore long-read scATAC of 3,302 mouse preimplantation cells; allele-resolved XCI/imprinting and copy-resolved LINE1/MERVL accessibility.
 - [[10-Summaries/ramakrishnan-2023-epianeufinder]] — Ramakrishnan 2023, epiAneufinder: reference-free per-cell CNA calling from scATAC-seq read depth (Anderson–Darling binary segmentation); r = 0.86 vs scWGS.
@@ -396,7 +396,7 @@ Catalog of ~370 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/dixon-2012-tads]] — Dixon 2012, topological domains via the directionality index; only 15% of CTCF sites sit at boundaries.
 - [[10-Summaries/ramani-2017-scihi-c]] — Ramani 2017, sciHi-C: combinatorial indexing to 10,696 single-cell contact maps, in-silico cell-cycle sorting.
 - [[10-Summaries/peric-hupkes-2010-lad-differentiation]] — Peric-Hupkes 2010, LAD reorganization across an ESC→NPC→astrocyte lineage; the gene "unlocking" result.
-- [[10-Summaries/hsieh-2015-micro-c]] — Hsieh 2015, Micro-C: MNase-based Hi-C at nucleosome resolution in yeast; gene-scaled chromosomal interaction domains bounded at promoters; no regular 30-nm fibre.
+- [[10-Summaries/hsieh-2015-micro-c]] — Hsieh 2015, Micro-C: MNase-based Hi-C at nucleosome resolution in yeast; gene-scaled chromosomal interaction domains bounded at promoters; compaction anticorrelated with transcription (r = −0.56); no regular 30-nm fibre, tri-/tetranucleosome motif.
 
 ## Preprocessing, alignment & formats (added 2026-08-10)
 

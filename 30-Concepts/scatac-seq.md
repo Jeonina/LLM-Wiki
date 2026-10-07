@@ -66,7 +66,7 @@ Beyond accessibility, scATAC-seq read depth carries copy-number signal: in basal
 
 scNanoATAC-seq2 performs isolation, permeabilisation and Tn5 transposition of a single cell in one tube and reads fragments on Oxford Nanopore (median fragment 5,486 bp), giving a median 0.65% mitochondrial reads versus >50% in short-read embryo ATAC ([[10-Summaries/li-2025-scnanoatac-seq2]]). In 3,302 mouse preimplantation cells it detected ICM/TE epigenomic heterogeneity already at the 16-cell stage ([[10-Summaries/li-2025-scnanoatac-seq2]]).
 
-GFETM jointly trains an embedded topic model (VAE with a linear decoder) and a pretrained genome foundation model over peak sequences, and claims transfer across tissues, species and omics plus imputation at unseen regions; the clipping holds no quantitative results ([[10-Summaries/fan-2026-gfetm]]).
+GFETM jointly trains an embedded topic model (VAE with a linear decoder) and a pretrained genome foundation model over peak sequences, and reports transfer across tissues, species and omics plus imputation at unseen peaks ([[10-Summaries/fan-2026-gfetm]]). On clustering it matches scBasset; its gains are on unseen cells, unseen peaks and transfer, at about 3× scBasset's runtime ([[10-Summaries/fan-2026-gfetm]]).
 
 Because scATAC-seq signal is nearly binary per locus, aggregating reads over feature sets (motif sites, co-regulated ENCODE DHS clusters, genes, MSigDB gene sets) separated GM12878 from HEK293T cells where peak-level clustering failed; SCRAT packaged this as a GUI toolbox with ENCODE-DNase-based identity inference [[10-Summaries/ji-2017-scrat]].
 

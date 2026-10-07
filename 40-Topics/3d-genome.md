@@ -120,7 +120,7 @@ Infrastructure is catalogued under *Pipelines, storage, visualization* above. Tw
 
 - [[10-Summaries/liu-2024-snaphic-g]] — SnapHiC-G: enhancer–promoter interaction calling from scHi-C with cell-type-specific GWAS target-gene mapping.
 - [[10-Summaries/galasso-2026-map3c]] — map3C: contact calling, QC and SV-breakpoint annotation for multiomic scHi-C.
-- [[10-Summaries/hsieh-2015-micro-c]] — Micro-C: nucleosome-resolution folding in yeast; gene-scaled domains bounded at promoters.
+- [[10-Summaries/hsieh-2015-micro-c]] — Micro-C: nucleosome-resolution folding in yeast; gene-scaled domains bounded at promoters; compaction tied to transcription, RSC, Mediator, Rtt109 and the H4 tail.
 - [[10-Summaries/chang-2025-droplet-hi-c]] — Droplet Hi-C / Paired Hi-C: single-cell Hi-C on the 10x scATAC/Multiome kits; cortex 3D maps, multi-way hubs, ecDNA/HSR calling in tumors.
 - [[10-Summaries/arrastia-2022-scsprite]] — scSPRITE primary paper: multi-way single-cell contacts, nuclear-body hubs and heterogeneous TADs in mESCs.
 - [[10-Summaries/li-2023-scnanohi-c]] — scNanoHi-C: long-read single-cell Hi-C capturing direct multi-way E–P and ecDNA hubs.

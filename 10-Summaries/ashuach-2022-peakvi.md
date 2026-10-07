@@ -59,6 +59,7 @@ Weight: a fair, multi-angle benchmark on two real datasets — the authors expli
 - Contrasts with peak-free featurisation in [[de-boer-2018-brockman]] (k-mers around insertion sites) and [[fang-2021-snapatac]] (bins) — the alternative answer to PeakVI's peak-dependence limitation. (synthesis)
 - Later scATAC benchmarking: [[luo-2024-scatac-benchmark]]; dedicated scATAC DA method: [[zhao-2024-scada]].
 - Imputation-oriented alternative: [[li-2021-scopen]].
+- Later used as the main transfer baseline by [[fan-2026-gfetm]] (GFETM), which reports better zero-shot cross-tissue and human→mouse transfer and better unseen-cell generalisation than PeakVI.
 
 ## Open questions
 

@@ -4,6 +4,19 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+# 2026-10-07 — Re-ingest: Micro-C and GFETM rewritten from full text
+
+The user re-clipped the two sources still marked partial. Both summaries were rewritten in full:
+
+- [[10-Summaries/hsieh-2015-micro-c]] now uses the full *Cell* PDF (13 pp) instead of a clipping without the abstract or most Results. New material: boundaries at promoter +1 nucleosomes (~40% vs ~7% genome-wide); gene compaction anticorrelated with transcription (r = −0.56) but explaining only 31% of variance; diamide and thiolutin perturbations; a 24-mutant screen (14 deep), in which Mediator, Rtt109 and Rpd3 loss decompact genes independently of mRNA change while RSC and Scc2 inactivation compact them; H4-tail and H4R23A effects; a tri-/tetranucleosome motif; and a "gene crumple" rather than gene-loop model.
+- [[10-Summaries/fan-2026-gfetm]] now uses the **bioRxiv v3 (July 2024) full text**, not the 2026 *Cell Systems* version (which adds author Shi Han). Results: frozen GFM embeddings do not beat random ones, and joint fine-tuning drives the gain. Clustering is at parity with scBasset; GFETM is better on unseen cells, leave-one-chromosome-out peak imputation (+10/6/3% top-K precision at K = 5/10/20) and transfer (against PeakVI), and is ~3× slower. Small preprint inconsistencies are noted in the summary.
+
+**Pages updated (15):** [[30-Concepts/micro-c]], [[30-Concepts/topologically-associating-domain]], [[30-Concepts/chromatin-loop]], [[30-Concepts/scatac-imputation]], [[30-Concepts/convolutional-neural-network]], [[30-Concepts/scatac-seq]], [[30-Concepts/transcription-factor-motif]], [[30-Concepts/batch-effect]], [[30-Concepts/hematopoietic-differentiation]], [[10-Summaries/yuan-2022-scbasset]], [[10-Summaries/ashuach-2022-peakvi]], [[10-Summaries/tayyebi-2024-cellspace]], [[40-Topics/3d-genome]], [[40-Topics/computational-methods]], [[40-Topics/single-cell-atac-seq]], plus [[10-Summaries/index]] and [[50-Notes/open-questions]] (the "still partial" list is now empty).
+
+**Correction:** [[30-Concepts/transcription-factor-motif]] said GFETM gets TF activity from attention analysis, a claim taken from the published introduction. The preprint instead uses MEME-SEA motif enrichment on topic top-peaks. The page now says so.
+
+---
+
 # 2026-10-07 — Re-ingest: 4 thin summaries rewritten from new full-text sources
 
 The user replaced four abstract/reference-only clippings. Three are now full-text PDFs, so these summaries were rewritten in full: [[10-Summaries/argelaguet-2018-mofa]] (MSB 2018, 13 pp), [[10-Summaries/wang-2024-wellda-seq]] (bioRxiv 2024, 28 pp; no journal version per Crossref) and [[10-Summaries/pancikova-2025-splongget]] (bioRxiv 2025, 62 pp; preprint still has placeholders, EGA "XXXX", and a single patient). [[10-Summaries/fan-2026-gfetm]] was re-clipped but is still a non-subscribed ScienceDirect page with no Results, so its caveat stays and a full-text copy is still needed.

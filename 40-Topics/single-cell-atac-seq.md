@@ -68,7 +68,7 @@ None yet. A natural note: "How to choose a scATAC-seq analysis tool" — chromVA
 
 - [[10-Summaries/ramakrishnan-2023-epianeufinder]] — epiAneufinder: per-cell copy-number alterations from scATAC-seq read depth.
 - [[10-Summaries/li-2025-scnanoatac-seq2]] — scNanoATAC-seq2: long-read single-cell ATAC atlas of mouse preimplantation embryos (ZGA, lineage segregation, iXCI, repeats).
-- [[10-Summaries/fan-2026-gfetm]] — GFETM: genome-foundation-model-enhanced topic model for transferable scATAC-seq modeling (partial clipping: Introduction and method snippets, no Results).
+- [[10-Summaries/fan-2026-gfetm]] — GFETM: genome-foundation-model-enhanced topic model for transferable scATAC-seq modeling: unseen-cell embedding, leave-one-chromosome-out peak imputation, cross-tissue/species/omic transfer (bioRxiv v3 full text).
 - [[10-Summaries/ji-2017-scrat]] — SCRAT: early GUI toolbox for feature-aggregated scATAC/scDNase/scChIP analysis.
 - [[10-Summaries/ashuach-2022-peakvi]] — PeakVI Bernoulli VAE: batch-corrected latent space and calibrated single-region differential accessibility.
 - [[10-Summaries/zhao-2024-scada]] — scaDA: ZINB composite differential-accessibility test with dispersion shrinkage.

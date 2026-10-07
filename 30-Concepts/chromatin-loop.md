@@ -53,6 +53,8 @@ Loops are tied to gene regulation: 2,854 of 9,448 GM12878 loops join a promoter 
 A 2025 survey names SnapHiC2 as the only pipeline built to call loops from single-cell Hi-C. It resolves loops at up to 5 kb and does not require imputation ([[10-Summaries/dautle-2025-schic-review]]).
 
 
+In budding yeast, Micro-C found contacts spread through gene bodies rather than preferential promoter–terminator contacts. Compaction also fell with transcription, the opposite of reported gene loops, so the authors favour "gene crumples" (globules); the gene-looping factor mutant *ssu72-2* only modestly reduced global compaction ([[10-Summaries/hsieh-2015-micro-c]]).
+
 ## Related
 
 - [[single-cell-hi-c]] · [[chia-pet]] · [[chromatin-compartments]] · [[topologically-associating-domain]] · [[multi-way-chromatin-interaction]] · [[cis-regulatory-element]] · [[40-Topics/3d-genome]]

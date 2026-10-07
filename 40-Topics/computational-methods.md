@@ -61,7 +61,7 @@ Method choice is not neutral. Seven TAD callers disagree on the same contact mat
 - [[10-Summaries/raimundo-2023-schptm-benchmark]] — >10,000-run benchmark of matrix construction, feature/cell selection and embedding for single-cell histone PTM data.
 
 - [[10-Summaries/argelaguet-2018-mofa]] — MOFA: sparse Bayesian group factor analysis for multi-omics integration with native handling of missing assays and non-Gaussian data; the origin of the MOFA/MOFA+ family.
-- [[10-Summaries/fan-2026-gfetm]] — GFETM: embedded topic model jointly trained with a genome foundation model for transferable, sequence-informed scATAC-seq modeling (partial clipping; no Results).
+- [[10-Summaries/fan-2026-gfetm]] — GFETM: embedded topic model jointly trained with a genome foundation model for transferable, sequence-informed scATAC-seq modeling; parity with scBasset on clustering, gains on unseen cells/peaks and transfer (bioRxiv v3 full text).
 
 ## Related
 

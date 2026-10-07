@@ -24,6 +24,10 @@ Demonstrates that DNA sequence is a sufficient predictor of cell-type-specific a
 ---
 **Source:** [DOI](https://doi.org/10.1038/s41592-022-01562-8) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/35941239/)
 
+## Later comparisons
+
+- [[fan-2026-gfetm]] (GFETM) benchmarks against scBasset on the same three datasets: competitive on clustering, better on unseen cells (scBasset must be fine-tuned because cell embeddings are parameters), on leave-one-chromosome-out peak imputation, and on marker enrichment >1 kb from the TSS; scBasset is better within 1 kb and about 3× faster.
+
 ## Related
 
 - [[10-Summaries/schep-2017-chromvar]]

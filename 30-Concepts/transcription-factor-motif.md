@@ -23,7 +23,7 @@ Aggregating single-cell accessibility across all sites of each TF motif is one o
 
 TF motifs can be scored per cell after training by embedding a motif's consensus k-mers into a learned k-mer/cell space, so motif choice does not bias the embedding ([[10-Summaries/tayyebi-2024-cellspace]]). The same space yielded 29 de novo motifs resembling haematopoietic CIS-BP motifs ([[10-Summaries/tayyebi-2024-cellspace]]).
 
-GFETM groups k-mer and TF-motif features with CNNs as limited to short-range sequence context, and claims that post hoc attention analysis plus zero-shot inference of its genome-foundation-model embeddings captures cell-state TF activities instead of motif scanning ([[10-Summaries/fan-2026-gfetm]]). This is a stated claim; the supporting Results are not in the clipping ([[10-Summaries/fan-2026-gfetm]]).
+GFETM groups k-mer and TF-motif features with CNNs as limited to short-range sequence context ([[10-Summaries/fan-2026-gfetm]]). In the bioRxiv v3 text, TF links come from conventional motif scanning: the top 100 peaks of each topic go through MEME-SEA with HOCOMOCO v11, linking IRF1/IRF2 to MEP topics, CTCF to CLP, MEP and monocyte topics, and ETV2/5/6 to a monocyte topic ([[10-Summaries/fan-2026-gfetm]]). The attention-based TF analysis mentioned in the published introduction is not in the preprint ([[10-Summaries/fan-2026-gfetm]]).
 
 ## Related
 

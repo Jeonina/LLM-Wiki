@@ -39,6 +39,8 @@ In normal human tissues, rare mtDNA point-mutation prevalence (1.4 ± 1.3 × 10�
 Long-read scWGS found a clone-specific heteroplasmy (chrM:16,218 C>T at 41–67% in three clone-B T cells, absent in clone A and in bulk), confirmed in Illumina data. 17% of mtDNA HiFi reads covered at least 25% of the mitochondrial genome, which makes phasing possible at the molecule level ([[10-Summaries/hard-2023-long-read-scwgs]]).
 
 
+In 818 cells from a MERRF patient line, 8344A>G heteroplasmy spanned 0–100% (median 38%, bulk 44%), and MEF2A/MEF2C activity was anticorrelated with it ([[10-Summaries/ludwig-2020-mtscatac-seq]]).
+
 ## Related
 
 - [[30-Concepts/kimura-distribution]] · [[40-Topics/somatic-mosaicism]] · [[20-Entities/patrick-chinnery]]

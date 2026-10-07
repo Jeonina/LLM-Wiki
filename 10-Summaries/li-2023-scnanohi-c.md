@@ -75,7 +75,7 @@ Weight: strong as a methods paper — orthogonal validation for CNVs (MALBAC) an
 - Multi-way analysis downstream: [[park-2026-mintsc]] uses scNanoHi-C concatemer counts to validate cliques and derives its 200-kb clique-distance constraint from scNanoHi-C support.
 - Benchmark/framework context: [[jiang-2026-stark-scnucleome]] (processes scNanoHi-C but does not deeply benchmark it), [[hong-2025-sc3d-genome-review]] — that summary marks the "first long-read single-cell Hi-C" framing as unverified; this source states it detects proximal high-order interactions in single cells "for the first time".
 - SVs and 3D genome: [[spielmann-2018-sv-3d-genome]]. Long-read epigenome context: [[liu-2025-long-read-epigenome-review]] (Pore-C family).
-- MALBAC validation chemistry: [[zong-2017-malbac-protocol]].
+- MALBAC validation chemistry: [[chenghang-2012-science]] (overview in [[zong-2017-malbac-protocol]]).
 
 ## Open questions
 

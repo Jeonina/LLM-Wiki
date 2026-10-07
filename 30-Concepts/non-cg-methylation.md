@@ -21,6 +21,10 @@ sources: ["[[10-Summaries/liu-2012-bis-snp]]", "[[10-Summaries/luo-2017-snmc-seq
 - Bulk bisulfite genotyping tools report CH-context methylation separately; mouse frontal cortex showed elevated CpH methylation ([[10-Summaries/liu-2012-bis-snp]]).
 - Random-priming scWGBS designs that assume unmethylated CpH may bias against high-mCH regions (synthesis from [[10-Summaries/spix-2025-scdeep-mc]]).
 
+## Added 2026-10-07
+
+In P21 mouse brain, spatial-DMT measured mCA at ~3–4% (<1% in embryos), and hippocampal genes were tied to mCG only (*Ntrk3*, *Satb1*), to both marks (*Prox1*, *Bcl11b*) or region-dependently (*Cux1*) ([[10-Summaries/cardilla-2025-spatial-methylome]]).
+
 ## Related
 
 - [[bisulfite-sequencing]] · [[luo-2018-snmc-seq2]] · [[40-Topics/dna-methylation]]

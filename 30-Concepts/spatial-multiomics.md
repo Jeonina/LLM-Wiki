@@ -4,7 +4,7 @@ title: Spatial multi-omics
 aliases: [spatial omics, spatial transcriptomics, spatial multi-omic]
 tags: [spatial, multi-omics, tissue-context]
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-10-07
 ---
 
 # Spatial multi-omics
@@ -51,6 +51,10 @@ Tissue context matters: dissociation for conventional scRNA-seq destroys spatial
 
 - Mapping tumor immune infiltration via Visium + CODEX in cancer biopsies.
 - Brain region atlases using MERFISH (Allen Brain Cell Atlas).
+
+## Added 2026-10-07
+
+Spatial-DMT co-profiles whole-genome DNA methylation (EM-seq chemistry) and the transcriptome on one tissue section by in situ microfluidic barcoding (50×50 grid, 10–50 μm pixels), recovering 136,639–281,447 CpGs and 1,890–4,626 genes per pixel ([[10-Summaries/cardilla-2025-spatial-methylome]]).
 
 ## Related
 

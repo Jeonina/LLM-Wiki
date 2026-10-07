@@ -54,6 +54,8 @@ BreakDancer calls SVs from short-insert paired-end reads in two complementary wa
 
 Long reads from a single-cell Multiome library can resolve transgene integration. SPLONGGET assembled the ~5 kb tisagenlecleucel (CTL019) CAR vector de novo with Flye from LTR-containing reads, then used supplementary alignments to place integration sites across nearly all chromosomes, consistent with a polyclonal CAR-T population ([[10-Summaries/pancikova-2025-splongget]]). Severus called 1,362 somatic SVs from pseudobulks of the same B-ALL samples ([[10-Summaries/pancikova-2025-splongget]]).
 
+Current duplex methods cannot detect CNVs or SVs because chimeric-read background exceeds the true somatic SV rate, and only Illumina-based duplex methods support indel calling ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).
+
 ## Related
 
 - [[40-Topics/somatic-mosaicism]] · [[40-Topics/long-read-sequencing]] · [[30-Concepts/somagauss-sv]] · [[40-Topics/somatic-mosaicism]]

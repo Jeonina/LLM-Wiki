@@ -17,7 +17,7 @@ updated: 2026-10-07
 
 ## Key sources
 
-- [[10-Summaries/lodato-2017-aging-neurons]] — Lodato 2018: neurons accumulate somatic SNVs with age, faster with DNA-repair defects.
+- [[10-Summaries/lodato-2017-aging-neurons]] — Lodato 2018: 159 MDA single neurons; ~23 sSNVs/year in PFC and ~40/year in DG, ~2.3–2.5-fold excess in Cockayne syndrome / xeroderma pigmentosum, a replication-independent clocklike signature; coins "genosenium".
 - [[10-Summaries/bae-2017-pregastrulation-mutations]] — Bae 2018: pre-gastrulation vs neurogenesis mutation rates.
 - [[10-Summaries/bae-2017-pregastrulation-mutations]] — Bae 2018: fetal brain progenitor SNVs.
 - [[10-Summaries/taejeong-2022-science]] — Bae 2022: hypermutable brains as glioma precursors.
@@ -39,6 +39,8 @@ updated: 2026-10-07
 - [[10-Summaries/luquette-2022-neuron-scan2-indels]] — Published SCAN2/PTA neuron study: 16 sSNVs/yr, ≥3 indels/yr, enrichment in neuronal enhancers and promoters.
 - [[10-Summaries/xing-2021-meta-cs]] — META-CS in 32 PFC neurons from 3 donors (19/49/76 y): ~16 SNVs/year, lower than earlier estimates; ssDNA G>T damage calls rise in the oldest brain.
 
+
+Duplex-Multiome estimates 15.05 ± 3.15 sSNVs/year in excitatory neurons and 32.34 ± 2.39 in oligodendrocytes, with astrocytes faster than microglia and upper-layer faster than deep-layer neurons; low-VAF clonal sSNVs are more frequent in glia than neurons (P = 0.036) ([[10-Summaries/kriz-2025-duplex-multiome]]). Bulk duplex sequencing of brain homogenates gave ~18.6 somatic SNVs per cell per year averaged across methods ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).
 
 ## Related
 

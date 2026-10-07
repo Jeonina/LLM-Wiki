@@ -72,7 +72,7 @@ Eleven sources ingested 2026-08-14 make the single-cell tree-inference landscape
 | Infinite sites (perfect phylogeny) | gained once, never lost | [[10-Summaries/jahn-2016-scite]], [[10-Summaries/ross-2016-onconem]] |
 | *k*-Dollo | gained once, lost ≤ *k* times | [[10-Summaries/el-kebir-2018-sphyr]] (and SASC) |
 | Finite sites | any state change allowed | [[10-Summaries/zafar-2017-sifit]] |
-| Subperfect | keep perfect phylogeny as target, **penalise** violations | [[10-Summaries/malikic-2019-phiscs]] |
+| Subperfect | keep perfect phylogeny as target, **eliminate** up to k_max violating mutations (likelihood objective under FP/FN rates) | [[10-Summaries/malikic-2019-phiscs]] |
 | Star homoplasy | mutate at most once *per lineage*, convergence allowed | [[10-Summaries/sashittal-2023-startle]] |
 | PMM (mixed-type missing) | non-modifiability + rate decay + heritable vs dropout missingness + heterogeneous sites | [[10-Summaries/chu-2025-laml]] |
 

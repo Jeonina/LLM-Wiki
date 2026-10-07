@@ -4,7 +4,7 @@ title: G&T-seq
 aliases: [Genome and Transcriptome sequencing, G and T-seq, GnT-seq, G&T-seq]
 tags: [multi-omics, scDNA-scRNA, physical-separation, joint-assay, foundational, method]
 created: 2026-05-11
-updated: 2026-06-29
+updated: 2026-10-07
 ---
 
 # G&T-seq (Genome and Transcriptome sequencing)
@@ -25,7 +25,7 @@ The separation-before-amplification design gives three advantages over the one-p
 
 ## Why it matters
 
-- **First true single-cell joint DNA + RNA assay** — provided the proof that paired genome + transcriptome at single-cell scale is achievable.
+- **Early same-cell DNA + RNA assay with physical separation** — compatible with any WGA chemistry and automatable; the protocol itself cites DR-seq and microfluidic methods as other same-cell DNA + RNA approaches ([[10-Summaries/macaulay-2016-gt-seq-protocol]]).
 - **Modality independence**: each fraction can be processed by the best-of-class single-modality protocol — G&T-seq doesn't force a compromise on either RNA or DNA quality.
 - **Compatible with long-read sequencing** of the RNA fraction for isoform detection.
 - Demonstrated detection of a **trisomy-11 subclone in HCC38-BL lymphoblastoid cells** (10% frequency, confirmed by FISH).
@@ -41,8 +41,8 @@ The separation-before-amplification design gives three advantages over the one-p
 
 ## Contested points
 
-- Plate-based throughput limits — 172 cells in the original benchmark; hundreds per day even with robotic automation, far below later combinatorial-indexing methods.
-- Beadwash losses reduce per-cell DNA yield vs nuclear-cytosolic partitioning methods; some RNA is lost to the gDNA supernatant during separation.
+- Plate-based throughput limits — 172 cells in the original benchmark; 96 cells take about 3 days even on a liquid-handling robot ([[10-Summaries/macaulay-2016-gt-seq-protocol]]), far below later combinatorial-indexing methods.
+- Beadwash losses reduce per-cell DNA yield vs nuclear-cytosolic partitioning methods; the authors also note that separation "may contribute further" to allelic dropout ([[10-Summaries/macaulay-2016-gt-seq-protocol]]).
 
 ## Examples
 

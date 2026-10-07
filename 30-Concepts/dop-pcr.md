@@ -4,7 +4,7 @@ title: DOP-PCR (Degenerate Oligonucleotide-Primed PCR)
 aliases: [Degenerate Oligonucleotide Primed PCR]
 tags: [scWGA, PCR-based, method, historical]
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-10-07
 ---
 
 # DOP-PCR (Degenerate Oligonucleotide-Primed PCR)
@@ -38,6 +38,10 @@ Limitations:
 
 - Detection of 49% aneuploidy in single cells from human early cleavage-stage embryos via DOP-PCR ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 - Original Navin et al. breast cancer single-cell phylogenetics (2011, Nature).
+
+## Added 2026-10-07
+
+**From the founding paper:** the 6-MW primer is 22 nt in total (5′ XhoI tag, six degenerate N, six fixed 3′ bases ATGTGG) used with five 30 °C annealing cycles; it was introduced for chromosome painting and cloning from 500 flow-sorted chromosomes or ~10 ng DNA, not single cells ([[10-Summaries/telenius-1992-dop-pcr]]). The authors argued amplification is effectively linear per fragment (~35–40× each), because primers and Taq become limiting within the first cycles ([[10-Summaries/telenius-1992-dop-pcr]]). This conflicts with this page's earlier description (random 6–8 nt + 22 nt anchor, picogram input) and with the wiki's "exponential bias" framing; later single-cell use differs from the original design (synthesis).
 
 ## Related
 

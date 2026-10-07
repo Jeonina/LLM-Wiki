@@ -4,7 +4,7 @@ title: "Joint single-cell assays, organized by layer-pair"
 aliases: [joint assays, layer-pair assays, joint-assay landscape, multi-layer single-cell assays]
 tags: [synthesis, single-cell-multiomics, joint-assay, locus-state, review-paper-anchor]
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-07
 sources: [
   "[[10-Summaries/izzo-2024-got-cha]]",
   "[[10-Summaries/swanson-2025-daf-seq]]",
@@ -45,7 +45,7 @@ sources: [
 
 ## What no assay yet closes
 
-No current assay closes the framework entirely (synthesis). Duplex-Multiome substitutes accessibility for DNA methylation, and the inherent conflict between bisulfite conversion and sequence-level variant calling means point mutations and genome-wide methylation cannot yet be read together in the same cell ([[10-Summaries/kriz-2025-duplex-multiome]]; [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]]). These joint assays narrow but do not eliminate the gap between the conceptual locus state and what is measurable — and because every added layer compounds data sparsity and modality-specific bias, they sharpen rather than resolve the computational problem of reconstructing integrated locus states (synthesis).
+No current assay closes the framework entirely (synthesis). Duplex-Multiome substitutes accessibility for DNA methylation, and the inherent conflict between bisulfite conversion and sequence-level variant calling means point mutations and genome-wide methylation cannot yet be read together in the same cell ([[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]]) (synthesis). These joint assays narrow but do not eliminate the gap between the conceptual locus state and what is measurable — and because every added layer compounds data sparsity and modality-specific bias, they sharpen rather than resolve the computational problem of reconstructing integrated locus states (synthesis).
 
 ## Related
 

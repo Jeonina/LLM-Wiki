@@ -4,7 +4,7 @@ title: Post-zygotic variation
 aliases: [post-zygotic mutation, postzygotic variation]
 tags: [genetics, mosaicism]
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-10-07
 ---
 
 # Post-zygotic variation
@@ -42,6 +42,10 @@ Post-zygotic variation is the molecular substrate of [[40-Topics/somatic-mosaici
 
 - Mosaic CALR or JAK2 mutations in MPN clonal hematopoiesis ([[10-Summaries/izzo-2024-got-cha]]).
 - CHILD syndrome — midline-demarcated (half-body) phenotype illustrating mutation timing relative to left–right axis determination ([[10-Summaries/campbell-2015-mosaicism-review]]).
+
+## Added 2026-10-07
+
+Neurons already carry ~300–900 sSNVs within a year of birth, consistent with estimates for fetal neural progenitors ([[10-Summaries/lodato-2017-aging-neurons]]; [[10-Summaries/bae-2017-pregastrulation-mutations]]).
 
 ## Related
 

@@ -182,7 +182,7 @@ _None yet._
 ## Linked summaries (lint pass 2026-05-21)
 
 - [[10-Summaries/ludwig-2020-mtscatac-seq]] — Lareau & Ludwig 2021 — mtscATAC-seq: massively parallel mtDNA genotyping + chromatin in single cells.
-- [[10-Summaries/oroak-2012-autism-targeted-seq]] — O'Roak 2012 — Multiplex targeted sequencing of recurrently mutated genes in ASD.
+- [[10-Summaries/oroak-2012-autism-targeted-seq]] — O'Roak 2012 — MIP resequencing of 44 genes in 2,446 ASD probands; germline de novo burden in six genes (~1% of sporadic ASD). A germline baseline for ASD mosaicism, not itself a mosaicism study.
 - [[10-Summaries/campbell-2015-mosaicism-review]] — Campbell 2015 — Somatic mosaicism: implications for disease and transmission (review).
 - [[10-Summaries/mckenna-2016-science]] — McKenna 2016 — GESTALT: whole-organism lineage tracing by combinatorial genome editing.
 - [[10-Summaries/forsberg-2017-mosaicism-review]] — Forsberg, Gisselsson & Dumanski 2017 NRG — structural-variant-centric framing of mosaicism; introduces ACE terminology; LOY as the most common human post-zygotic mutation.
@@ -197,6 +197,8 @@ _None yet._
 - [[10-Summaries/maslov-2022-smm-seq]] — SMM-seq bulk detection of private somatic SNVs; liver mutation frequency 0.34 vs 0.96 SNV/Mbp in young vs aged donors.
 
 - [[10-Summaries/wang-2024-wellda-seq]] — wellDA-seq: same-cell CNA + chromatin accessibility; in two normal breasts, 0.75% and 0.45% of cells were aneuploid, all LumSec, all with chr1q gain; in ER+ tumours, chrX-loss T cells and pericytes. A genome-wide CNA (not SNV) instance of the mosaicism × epigenome pairing.
+
+Haplotype-phased targeted Fiber-seq showed that a somatically unstable DMPK CTG expansion of >1000 repeats ablates a putative SIX5 enhancer and halves CTCF occupancy (52% to 24% of fibers), while a ~60-repeat allele shows no change ([[10-Summaries/bohaczuk-2024-targeted-fiberseq]]).
 
 ## Related
 

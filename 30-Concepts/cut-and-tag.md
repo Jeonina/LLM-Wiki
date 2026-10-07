@@ -51,6 +51,10 @@ scNanoSeq-CUT&Tag ports single-cell CUT&Tag to nanopore with a single-adaptor pG
 A 2026 review catalogues 21 public scCUT&Tag-family datasets (2019–2025) spanning histone marks, CTCF/RAD21, Pol II, TFs, m6A and G-quadruplexes, typically with <10³ fragments per cell versus >10⁴ for scATAC-seq ([[10-Summaries/wu-2026-sccut-tag-review]]). Because pA-Tn5 is tethered to the epitope, TF events appear as narrow high-amplitude peaks rather than ATAC-style footprint dips ([[10-Summaries/wu-2026-sccut-tag-review]]). For analysis, a systematic benchmark recommends 100–200 kbp fixed bins, no feature selection, and TF-IDF followed by SVD or NMF ([[10-Summaries/raimundo-2023-schptm-benchmark]]).
 
 
+Droplet scCUT&Tag runs bulk CUT&Tag with 1% BSA against nuclear clumping, then loads tagmented nuclei into the 10x scATAC kit with its transposition step skipped, giving a median 98–453 unique fragments per cell across four histone marks in 47,340 mouse brain cells ([[10-Summaries/bartosovic-2021-sccut-tag]]).
+
+nano-CUT&Tag tagments first with P5-only adapters and linearly amplifies before a second P7 tagmentation, so single-insertion fragments become library molecules; H3K27me3 fragments per cell rose 15.8-fold over scCUT&Tag while FrIP fell from 69% to 39% ([[10-Summaries/bartosovic-2022-nano-cut-tag]]).
+
 ## Related
 
 - [[30-Concepts/cut-and-run]] · [[30-Concepts/chic-seq]] · [[30-Concepts/chip-seq]] · [[30-Concepts/tn5-tagmentation]] · [[40-Topics/histone-modifications]] · [[20-Entities/steven-henikoff]]

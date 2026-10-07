@@ -55,7 +55,7 @@ mtscATAC-seq (Lareau/Ludwig 2021 protocol) with cell hashing; mgatk variant-call
 
 ## Connections to other sources
 
-- **Extends** the mtscATAC-seq foundational work (Lareau 2021 Nat Biotech, not yet ingested).
+- **Extends** the mtscATAC-seq foundational work ([[10-Summaries/ludwig-2020-mtscatac-seq]]).
 - **Companion to** the mis-slugged Glynos 2023 paper at `[[10-Summaries/glynos-2023-mtdna-mosaicism]]` — both address mtDNA heteroplasmy dynamics but from different angles (drift vs selection, healthy vs hypermutator).
 - **Complementary to** [[10-Summaries/forsberg-2017-mosaicism-review]] — addresses one mosaicism axis (mtDNA) explicitly excluded from that 2017 review's scope.
 

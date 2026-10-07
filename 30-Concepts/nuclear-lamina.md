@@ -47,6 +47,8 @@ But this association is statistical, not deterministic; the cell-to-cell variabi
 Hi-C subcompartments differ in lamina association: B2 is enriched at the nuclear lamina (1.8×) and at NADs (4.6×), B3 is lamina-enriched (1.6×) but strongly NAD-depleted (76×), and A1/A2 are depleted at the lamina ([[10-Summaries/rao-2014-in-situ-hic]]).
 
 
+Nucleolar hubs detected by SPRITE are largely inter-chromosomal, unlike lamina contacts ([[10-Summaries/bersaglieri-2019-cells]]). **Open question:** the review places 74% of NADs in B2/B3 heterochromatin, while Rao 2014 reports B3 as strongly NAD-depleted and B2 NAD-enriched; the figures agree only if most NADs fall in B2 ([[10-Summaries/bersaglieri-2019-cells]]; [[10-Summaries/rao-2014-in-situ-hic]]).
+
 ## Related
 
 - [[30-Concepts/lamina-associated-domains]] · [[30-Concepts/damid]] · [[30-Concepts/scdamt-seq]] · [[30-Concepts/conformational-heterogeneity]]

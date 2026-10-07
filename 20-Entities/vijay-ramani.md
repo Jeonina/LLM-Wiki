@@ -5,7 +5,7 @@ aliases: [Ramani lab]
 entity_kind: person
 tags: [single-molecule, chromatin, long-read, UCSF, Gladstone]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Vijay Ramani
@@ -14,7 +14,7 @@ updated: 2026-05-12
 
 ## Mentions
 
-- **2026-05-12** — Senior author of [[10-Summaries/abdulhay-2020-samosa]] (SMRT-Tag, SAMOSA-Tag).
+- **2026-05-12** — Corresponding author of [[10-Summaries/abdulhay-2020-samosa]] (SAMOSA: EcoGII m6dA footprinting of MNase-released oligonucleosomes read on PacBio; K562).
 
 ## Related
 

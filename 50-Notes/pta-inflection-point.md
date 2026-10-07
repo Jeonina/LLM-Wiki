@@ -4,7 +4,7 @@ title: "The PTA inflection point — when scDNA-seq became trustworthy"
 aliases: [PTA inflection, MDA-to-PTA, scWGA chronology]
 tags: [synthesis, scDNA-seq, PTA, MDA, scWGA, methods-chronology, somatic-mosaicism]
 created: 2026-05-19
-updated: 2026-06-29
+updated: 2026-10-07
 sources: [
   "[[10-Summaries/dean-2002-mda]]",
   "[[10-Summaries/navin-2011-sns-tumor-evolution]]",
@@ -45,7 +45,7 @@ The intermediate generation — MALBAC (2012), LIANTI ([[10-Summaries/chen-2017-
 
 ## The PTA mechanism
 
-[[10-Summaries/gonzalez-pena-2021-pnas|Gonzalez-Pena et al. 2021]] modified the canonical MDA reaction by adding **irreversible-terminator dideoxynucleotides at low concentration**. The terminators stochastically halt amplification at short distances (~100 bp amplicons), forcing the reaction to operate on the *primary template* rather than on daughter amplicons. This converts MDA's exponential, error-propagating amplification into a **quasilinear, primary-template-restricted amplification** ([[10-Summaries/gonzalez-pena-2021-pnas]]).
+[[10-Summaries/gonzalez-pena-2021-pnas|Gonzalez-Pena et al. 2021]] modified the canonical MDA reaction by adding **exonuclease-resistant alpha-thio dideoxynucleotide terminators** (1,200 µM in the published protocol). The terminators halt extension early, producing short amplicons and forcing the reaction to operate on the *primary template* rather than on daughter amplicons. This converts MDA's exponential, error-propagating amplification into a **quasilinear, primary-template-restricted amplification** ([[10-Summaries/gonzalez-pena-2021-pnas]]).
 
 The mechanistic consequence: errors do not compound across amplification cycles. Each region of the genome is amplified from the original cellular template, not from previously-amplified copies.
 
@@ -58,10 +58,9 @@ Direct measurements from [[10-Summaries/gonzalez-pena-2021-pnas]]:
 | Coverage uniformity (chr1 depth tracks) | Order-of-magnitude variation | Near-flat |
 | Allelic balance at heterozygous loci | Heavily skewed | ~0.5 |
 | Per-cell genome coverage at ~30× | ~70–75% (Shao 2025) | **~95%** |
-| Variant-calling FP rate at low VAF | High; requires LiRA/SCAN-SNV correction | Low; direct calling viable |
-| Per-cell DNA input requirement | Higher | Reduced |
+| SNV precision vs bulk | Lower; thermostable-polymerase methods lose precision with depth | Highest of methods tested, but ~2,785 FP calls/cell at 99.9% germline precision; PTA-aware callers (SCAN2) still needed ([[10-Summaries/gonzalez-pena-2021-pnas]]) |
 
-The most consequential shift: **direct SNV calling without allele-balance correction became feasible** ([[10-Summaries/gonzalez-pena-2021-pnas]]). This unblocked cohort-scale workflows that had been throttled by per-cell QC overhead.
+The most consequential shift: **much higher per-cell SNV sensitivity (>90% vs 65–70% for LIANTI) with reduced allelic skew** ([[10-Summaries/gonzalez-pena-2021-pnas]]), although residual false positives still required PTA-aware callers such as SCAN2 ([[10-Summaries/luquette-2022-neuron-scan2-indels]]). This unblocked cohort-scale workflows that had been throttled by per-cell QC overhead.
 
 ## What PTA enabled
 
@@ -71,7 +70,7 @@ The post-2021 mosaicism literature is largely PTA-anchored:
 - **[[10-Summaries/kousi-2022-ad-mosaicism|Kousi 2022]]** — cell-type-specific somatic mutational burden in Alzheimer's brains (preprint; only its reference list is clipped, so its scWGA chemistry and AD-vs-control results are unverified).
 - **[[10-Summaries/mukamel-2025-aneuploidy-brain|Mukamel 2025]]** — aneuploidy atlas in mouse brain from single-cell methylome reads (not PTA); overall aneuploidy highest in pericytes and OPCs, with chr16 trisomy enriched in OPCs and Pons neurons.
 - **[[10-Summaries/luquette-2025-pta-duplex-mosaicism|Luquette 2025 (SMaHT-flagship)]]** — 102 PTA-amplified nuclei from lung and colon of one 74-year-old donor, validated via bulk duplex sequencing; body-wide cellular ancestry from shared embryonic mutations.
-- **[[10-Summaries/kriz-2025-duplex-multiome|Kriz 2025 (Duplex-Multiome)]]** — duplex consensus integrated into 10x Multiome; per-nucleus point mutations + chromatin + RNA at >51,400 nuclei scale. Built on the foundation PTA established.
+- **[[10-Summaries/kriz-2025-duplex-multiome|Kriz 2025 (Duplex-Multiome)]]** — duplex consensus integrated into 10x Multiome; per-nucleus point mutations + chromatin + RNA at >51,400 nuclei scale. It does not use PTA; PTA scWGS of neurons and oligodendrocytes is its gold-standard comparator.
 
 The 2025 SMaHT flagship uses PTA as its scWGA chemistry ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]), and PTA is the current gold-standard scWGA chemistry ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 

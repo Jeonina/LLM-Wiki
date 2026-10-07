@@ -4,7 +4,7 @@ title: Mitochondrial lineage tracing
 aliases: [mtDNA lineage tracing, mtscATAC]
 tags: [lineage-tracing, mtDNA, mosaicism]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Mitochondrial lineage tracing
@@ -22,11 +22,15 @@ Provides a non-invasive, retrospective lineage system for human tissues where ge
 ## Examples
 
 - Walker et al. 2020 NEJM used mtDNA mutations to track T-cell purifying selection.
-- mtDNA lineage tracing used in clonal hematopoiesis studies; implemented via mtscATAC-seq ([[10-Summaries/ludwig-2020-mtscatac-seq]]) and the scRNA-seq-based MAESTER ([[10-Summaries/miller-2022-maester]]); variant calling refined by scMitoMut ([[10-Summaries/sun-2025-scmitomut]]).
+- mtDNA lineage tracing used in clonal hematopoiesis studies; implemented via droplet-scale mtscATAC-seq with the mgatk caller ([[10-Summaries/ludwig-2020-mtscatac-seq]]) and the scRNA-seq-based MAESTER ([[10-Summaries/miller-2022-maester]]); variant calling refined by scMitoMut ([[10-Summaries/sun-2025-scmitomut]]).
 
 ## Caveats
 
 mtDNA's high copy number and random segregation between daughter cells mean only high-heteroplasmy variants persist robustly as labels, and some mutations may be under selection rather than neutral; hybridization capture recovers more variants but risks artifacts ([[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review]]). Despite few reliable variants per cell, mtDNA tracing succeeds when tissues undergo clonal expansion ([[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review]]).
+
+## Added 2026-10-07
+
+Without formaldehyde fixation ~8.7% of droplet barcodes carried another cell's mtDNA variants; fixation cut cross-contamination ~3×, to 0.19% after doublet removal ([[10-Summaries/ludwig-2020-mtscatac-seq]]). Monovar also failed on mtscATAC data for a computational reason, a factorial of the maximum depth that overflows at mtDNA coverage ([[10-Summaries/ludwig-2020-mtscatac-seq]]), in addition to its diploid assumption ([[10-Summaries/kwok-2022-mquad]]).
 
 ## Related
 

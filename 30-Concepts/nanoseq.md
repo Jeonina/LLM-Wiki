@@ -21,7 +21,7 @@ NanoSeq has been the workhorse for measuring somatic mutation accumulation rates
 
 ## Examples
 
-- One of six methods in the SMaHT benchmark ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).
+- One of six methods in the SMaHT benchmark, run as restriction NanoSeq-Hpy (~35% genome breadth) and sonication + mung bean nuclease NanoSeq-MBN (~94% breadth, low trinucleotide bias, ~$76 per billion interrogated bp) ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).
 
 ## Added 2026-10-07
 

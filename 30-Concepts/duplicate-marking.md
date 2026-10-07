@@ -29,6 +29,8 @@ In CUT&Tag data with high duplication (mean 82%), retaining PCR duplicates sligh
 scCUT&Tag libraries typically contain 30–50% duplicated fragments (nano-CT); the original scCUT&Tag study did not explicitly report deduplication, but later pipelines remove PCR duplicates with Picard, SAMtools, Cell Ranger ATAC or MACS2 `--keep-dup=1`, even though in bulk CUT&Tag some duplicates may reflect genuine repeated tagmentation ([[10-Summaries/wu-2026-sccut-tag-review]]).
 
 
+**Open question:** the 30–50% duplicate figure for nano-CUT&Tag comes from a 2026 review ([[10-Summaries/wu-2026-sccut-tag-review]]); the nano-CUT&Tag paper itself reports only 0.11–0.14% linear-amplification duplicates and no PCR-duplicate rate ([[10-Summaries/bartosovic-2022-nano-cut-tag]]). The two numbers may measure different things.
+
 ## Related
 
 - [[scwga-chemistries]] · [[umi-molecular-barcoding]] · [[read-alignment]] · [[dlp-plus]]

@@ -1,7 +1,7 @@
 ---
 type: concept
 title: Chromatin accessibility
-aliases: [open chromatin, chromatin openness]
+aliases: [open chromatin, chromatin openness, accessibility]
 tags: [chromatin, regulation]
 created: 2026-05-07
 updated: 2026-10-07
@@ -45,6 +45,8 @@ In single-cell genomics, accessibility complements RNA: it captures regulatory p
 
 Differential accessibility in scATAC-seq is statistically fragile: in a replicate-vs-replicate null, a Wilcoxon test called 6,761 regions and a Signac-style GLM 910, whereas PeakVI's posterior-sampling test called none ([[10-Summaries/ashuach-2022-peakvi]]). scaDA instead models peaks as zero-inflated negative binomial and tests mean, prevalence and dispersion jointly, arguing cell types differ in accessibility distributions, not only means ([[10-Summaries/zhao-2024-scada]]). BROCKMAN found reads outside called peaks grouped K562 samples better than reads inside peaks ([[10-Summaries/de-boer-2018-brockman]]).
 
+
+Before interferon stimulation, ISREs are accessible and carry narrow IRF9 footprints with no expression, so accessibility can be decoupled from transcriptional activity ([[10-Summaries/doughty-2024-smf-tf]]). At the DM1 SIX5 promoter, accessibility falls on expanded haplotypes while CpG methylation does not change ([[10-Summaries/bohaczuk-2024-targeted-fiberseq]]).
 
 ## Related
 

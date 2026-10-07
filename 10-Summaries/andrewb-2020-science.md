@@ -7,7 +7,7 @@ source_sha256: "29180f0db87ce908ff72a976dbc4fc5d58d18003e61cacb71e52012544c677a8
 aliases: [Stergachis 2020, Fiber-seq paper, AndrewB_2020_Science]
 tags: [fiber-seq, single-molecule, chromatin, m6A, methyltransferase, PacBio, foundational]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 **Citation:** Stergachis et al. (2020) — *Single-molecule regulatory architectures captured by chromatin fiber sequencing (Fiber-seq)* — *Science*. [DOI](https://doi.org/10.1126/science.aaz1646)
@@ -53,7 +53,7 @@ Fiber-seq is a **bulk method**. m6A marks on DNA are erased during any DNA ampli
 ## Related summaries
 
 - [[swanson-2025-daf-seq]] — DAF-seq, the deamination-based successor that extends single-molecule chromatin profiling to single cells.
-- [[10-Summaries/abdulhay-2020-samosa]] — SMRT-Tag, methodologically adjacent single-molecule footprinting.
+- [[10-Summaries/abdulhay-2020-samosa]] — SAMOSA (EcoGII + PacBio); reanalysed this paper's K562 Fiber-seq data and also found H3K9me3 domains enriched for irregular fibres.
 - [[10-Summaries/mo-2023-stam-seq]] — STAM-seq, m6A-MTase chromatin footprinting in plants.
 
 ---

@@ -4,7 +4,7 @@ title: MALBAC (Multiple Annealing and Loop-based Amplification Cycles)
 aliases: [Multiple Annealing and Loop-based Amplification Cycles]
 tags: [scWGA, hybrid, PCR-based, method]
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-10-07
 ---
 
 # MALBAC (Multiple Annealing and Loop-based Amplification Cycles)
@@ -37,6 +37,10 @@ Now largely superseded by [[pta]] for high-coverage applications, but remains in
 
 - Single-cell CNV phylogenetics in breast cancer (cited in [[10-Summaries/gawad-2016-scgenome-review]]; note that Navin et al. 2011 predates MALBAC and used single-nucleus sequencing — [[10-Summaries/navin-2011-sns-tumor-evolution]]).
 - Capture of SNVs in circulating tumor cells with high uniformity.
+
+## Added 2026-10-07
+
+MALBAC primers combine a 27-nt G/A/T common sequence with eight variable 3′ nucleotides; five quasi-linear looping cycles (0/65/94/58 °C, Bst) precede PCR ([[10-Summaries/zong-2017-malbac-protocol]]). **Open question:** the chapter reports ~85% (up to 93%) genome coverage at ~25× against 72% for MDA ([[10-Summaries/zong-2017-malbac-protocol]]), while this page's coverage figure (55–60%, from a review) is lower; depth and definition may differ.
 
 ## Related
 

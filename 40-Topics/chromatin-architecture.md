@@ -103,7 +103,7 @@ _None yet._
 
 ## Linked summaries (lint pass 2026-05-21)
 
-- [[10-Summaries/he-2024-foodie]] — He 2024 — FOODIE: genome-wide single-molecule TF footprinting via deaminase.
+- [[10-Summaries/he-2024-foodie]] — He 2024 — FOODIE: short-read deaminase (DddB) TF footprinting of Tn5-open chromatin, with single-molecule binding fractions and pairwise cooperativity.
 
 ## Added 2026-08-10
 

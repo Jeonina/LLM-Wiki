@@ -4,7 +4,7 @@ title: HiDEF-seq
 aliases: [High-Definition Sequencing]
 tags: [duplex-sequencing, single-strand, mutation-detection]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # HiDEF-seq
@@ -21,7 +21,7 @@ Specifically designed for somatic mutation profiling in non-cancer tissues with 
 
 ## Examples
 
-- One of six methods compared in [[10-Summaries/zhang-2025-smaht-duplex-benchmark]].
+- One of six methods compared in the SMaHT benchmark, which introduced HiDEF-seq v3 (random ~4 kb fragmentation, whole-genome coverage); highest duplex efficiency (~64%) but highest cost (~$220 per billion interrogated bp) ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).
 
 ## Related
 

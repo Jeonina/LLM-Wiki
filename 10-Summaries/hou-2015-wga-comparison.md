@@ -57,7 +57,7 @@ Weight: n is small per kit (29 cells across seven kits, deep sequencing on five)
 ## Connections to other sources
 
 - Contemporaneous review covering the same three chemistries with the Xie lab's own data: [[huang-2015-scwga-review]] — the two should be read together; they agree on the chemistry ordering.
-- Founding chemistry papers: [[telenius-1992-dop-pcr]], [[dean-2002-mda]], [[chenghang-2012-science]] (MALBAC), protocol at [[zong-2017-malbac-protocol]].
+- Founding chemistry papers: [[telenius-1992-dop-pcr]], [[dean-2002-mda]], [[chenghang-2012-science]] (MALBAC), review chapter at [[zong-2017-malbac-protocol]].
 - Cited comparisons it builds on: Quake lab's *E. coli* three-way comparison and an 11-hippocampal-neuron comparison (both referenced, neither ingested).
 - Superseded on the accuracy frontier by: [[chen-2017-lianti]] (LIANTI), [[gonzalez-pena-2021-pnas]] (PTA).
 - The amplification-free escape route: [[zahn-2017-dlp]], [[laks-2019-dlp-plus]].

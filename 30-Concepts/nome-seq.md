@@ -27,6 +27,8 @@ scNOMe-seq and scCOOL-seq read GpC methyltransferase footprints plus endogenous 
 ATAC-based alternative: sciMET+ATAC encodes accessibility by Tn5 insertion rather than GpC methylation, avoiding the confound of endogenous non-CG methylation in brain and ESCs and giving enough per-cell accessibility signal for cell-level ATAC analysis ([[10-Summaries/nichols-2025-scimetv3]]).
 
 
+scNOMe-seq treats isolated nuclei with M.CviPI before FACS sorting and bisulfite conversion, covering ~2.9% of GpCs and ~3.6% of CpGs per cell; only 32–44% (GM12878) and 26–37% (K562) of covered DHSs were accessible in a given cell ([[10-Summaries/pott-2017-elife]]).
+
 ## Related
 
 - [[40-Topics/dna-methylation]] · [[30-Concepts/chromatin-accessibility]] · [[30-Concepts/splicool-seq]] · [[30-Concepts/fiber-seq]]

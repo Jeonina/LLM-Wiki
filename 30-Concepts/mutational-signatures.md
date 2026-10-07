@@ -29,7 +29,7 @@ Signatures reveal **mutagenic etiology** from sequence data alone — e.g., SBS4
 ## Examples
 
 - SBS4 (tobacco) detected in lung tissue of a 74-year-old male via PTA-scDNA-seq + DS validation ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]).
-- UDSeq reproduces exposure-specific signatures across cell lines and rodent models ([[10-Summaries/nandi-2025-udseq]]).
+- UDSeq reproduces exposure-specific signatures (AA-I/SBS22a, 4NQO, NNK, UV) in once-passaged polyclonal cell populations without clonal expansion (cosine 0.95–0.99 to clonal references), and in UV-exposed mice and NNK-exposed rats ([[10-Summaries/nandi-2025-udseq]]).
 - SBS1 (5mC deamination at CpG) dominant in early embryonic mutations; SBS5 dominates aging neurons ([[10-Summaries/bizzotto-2022-brain-mosaicism-review]]).
 
 ## Founding source (added 2026-08-10)
@@ -49,6 +49,8 @@ In bulk liver DNA assayed by SMM-seq (3 young, 3 aged donors), de novo NMF found
 
 With low-false-positive single-cell calls, NMF found three signatures in 53 PBMCs: an HSPC-like signature (r = 0.976 with HSPC spectra), one specific to SHM+ B cells, and a T-cell signature whose contribution rose with SNV burden. PCA on trinucleotide spectra separated neurons from blood cells and most T cells from B cells ([[10-Summaries/xing-2021-meta-cs]]). CellPhy's simulations used COSMIC signatures 1 and 5 to generate realistic somatic substitution spectra ([[10-Summaries/kozlov-2022-cellphy]]).
 
+
+A clocklike signature resembling cancer Signature 5 rises with age in postmitotic neurons (P = 1×10⁻¹¹), so this clocklike process does not require DNA replication ([[10-Summaries/lodato-2017-aging-neurons]]).
 
 ## Related
 

@@ -4,7 +4,7 @@ title: CODEC
 aliases: [Concatenating Original Duplex for Error Correction]
 tags: [duplex-sequencing, library-prep, low-input]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # CODEC
@@ -21,7 +21,7 @@ Lower-cost duplex chemistry; benchmark-comparable accuracy to NanoSeq and HiDEF-
 
 ## Examples
 
-- One of six methods compared in [[10-Summaries/zhang-2025-smaht-duplex-benchmark]].
+- One of six methods compared in the SMaHT benchmark, in three end-repair versions (restriction-based ~41% breadth; whole-genome DRv1/DRv2 ~98% breadth); ~$126 per billion interrogated bp ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).
 
 ## Related
 

@@ -1,7 +1,7 @@
 ---
 type: concept
 title: Oxford Nanopore Technologies
-aliases: [ONT, nanopore sequencing]
+aliases: [ONT, nanopore sequencing, nanopore]
 tags: [long-read, sequencing, direct-RNA, methylation]
 created: 2026-05-12
 updated: 2026-10-07

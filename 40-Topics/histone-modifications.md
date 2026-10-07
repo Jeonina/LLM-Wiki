@@ -11,7 +11,7 @@ updated: 2026-10-07
 
 > Post-translational modifications of histone tails — methylation, acetylation, ubiquitylation, phosphorylation — that demarcate functional chromatin states ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]).
 
-Modifications occur predominantly on histone H3 and H4 lysines and arginines ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]). They are the substrate for cell-type-specific gene regulation: profile them and you know which regions are active, primed, repressed, or silenced ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]). Single-cell profiling of these marks emerged around 2019 with scChIC-seq ([[10-Summaries/ku-2019-scchic-seq]]) and scCUT&Tag ([[10-Summaries/bartosovic-2021-sccut-tag]]), and has rapidly expanded into multi-mark / multi-modal readouts (scChIX, scEpi², sciCUT&Tag/MulTI-Tag, 6-base-CUT&Tag) ([[10-Summaries/yeung-2023-scchix-seq]]; [[10-Summaries/geisenberger-2025-scepi2-seq]]; [[10-Summaries/janssens-2023-scicut-tag]]; [[10-Summaries/tavares-2026-6-base-cut-tag]]).
+Modifications occur predominantly on histone H3 and H4 lysines and arginines ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]). They are the substrate for cell-type-specific gene regulation: profile them and you know which regions are active, primed, repressed, or silenced ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]). Single-cell profiling of these marks emerged around 2019 with scChIC-seq ([[10-Summaries/ku-2019-scchic-seq]]) and iCell8 scCUT&Tag ([[10-Summaries/kaya-okur-2019-cut-and-tag]]), was scaled to droplet-based tissue profiling in 2021 ([[10-Summaries/bartosovic-2021-sccut-tag]]), and has rapidly expanded into multi-mark / multi-modal readouts (scChIX, scEpi², sciCUT&Tag/MulTI-Tag, 6-base-CUT&Tag) ([[10-Summaries/yeung-2023-scchix-seq]]; [[10-Summaries/geisenberger-2025-scepi2-seq]]; [[10-Summaries/janssens-2023-scicut-tag]]; [[10-Summaries/tavares-2026-6-base-cut-tag]]).
 
 ## Canonical mark → state mapping
 
@@ -59,7 +59,7 @@ Histone marks are not independent of other regulatory axes:
 ### Foundational single-cell methods
 - [[10-Summaries/ku-2019-scchic-seq]] — Ku/Zhao 2019. First single-cell ChIC.
 - [[10-Summaries/bartosovic-2021-sccut-tag]] — Bartošovič 2021. scCUT&Tag in tissue.
-- [[10-Summaries/bartosovic-2022-nano-cut-tag]] — Bartošovič 2022. nano-CUT&Tag multi-modal.
+- [[10-Summaries/bartosovic-2022-nano-cut-tag]] — Bartosovic 2022. nano-CUT&Tag: ATAC + H3K27ac + H3K27me3 per cell, 15.8-fold more H3K27me3 fragments than scCUT&Tag; two sequential H3K27me3 waves in oligodendrocyte differentiation.
 
 ### Multiplexing histone marks within a cell
 - [[10-Summaries/yeung-2023-scchix-seq]] — Yeung/van Oudenaarden 2023. Two marks per cell with computational deconvolution.
@@ -115,6 +115,10 @@ Histone marks are not independent of other regulatory axes:
 - [[10-Summaries/raimundo-2023-schptm-benchmark]] — benchmark of scHPTM analysis pipelines: bin size dominates, TF-IDF/LSI wins, feature selection hurts.
 - [[10-Summaries/wu-2026-sccut-tag-review]] — computational review of scCUT&Tag: 21 datasets, workflow, differences from scATAC, integration gaps.
 
+
+In P19 mouse oligodendrocyte differentiation, H3K27me3 is deposited in two waves: first at neuronal genes, then at neuronal and OPC genes such as *Sox5*, *Sox6* and *Ptprz1* ([[10-Summaries/bartosovic-2022-nano-cut-tag]]).
+
+Single-cell H3K4me3 shows promoter breadth increasing along OPC → mature oligodendrocyte differentiation ([[10-Summaries/bartosovic-2021-sccut-tag]]).
 
 ## Related
 

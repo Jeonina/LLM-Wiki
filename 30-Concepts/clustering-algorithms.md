@@ -1,10 +1,10 @@
 ---
 type: concept
 title: Clustering Algorithms
-aliases: [community detection, Louvain, Leiden, k-means clustering]
+aliases: [community detection, Louvain, Leiden, k-means clustering, clustering]
 tags: [clustering, Leiden, Louvain, community-detection, resolution]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Clustering Algorithms

@@ -59,6 +59,8 @@ _None yet._
 - [[10-Summaries/argelaguet-2018-mofa]] — MOFA on 200 CLL patients (mutations, RNA, methylation, ex vivo drug response): factors for IGHV status and trisomy 12, an oxidative-stress axis, and factors predicting time to next treatment.
 - [[10-Summaries/pancikova-2025-splongget]] — SPLONGGET long-read multiome of one high-hyperdiploid paediatric B-ALL across diagnosis and three relapses; CD19-negative relapse after CAR-T explained by 8 Mb chr16 deletion plus four phased splice-site SNVs (preprint).
 
+In one AML patient, bulk VAFs predicted a 23.6% DNMT3A single-mutant founder population, but single-cell genotyping found 1.7% and pointed to TP53 as the founder ([[10-Summaries/pellegrino-2018-tapestri]]).
+
 ## Related
 
 - [[40-Topics/clonal-hematopoiesis]] · [[40-Topics/cancer-clonal-evolution]] · [[30-Concepts/intratumor-heterogeneity]] · [[30-Concepts/chromosomal-instability]]

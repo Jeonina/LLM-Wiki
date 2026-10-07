@@ -4,7 +4,7 @@ title: DAF-seq (Deaminase-Assisted single-molecule chromatin Fiber sequencing)
 aliases: [DAF-seq, scDAF-seq]
 tags: [single-molecule, single-cell, chromatin, deaminase, footprinting, method]
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-10-07
 ---
 
 # DAF-seq (Deaminase-Assisted single-molecule chromatin Fiber sequencing)
@@ -44,6 +44,10 @@ It also yields **synchronous DNA sequence + chromatin readout from the same fibe
 - **SLC39A4 eQTL mechanism**: rs2280838-T haplotype increases liver expression by altering nucleosome positioning over the promoter — visible as a chromatin epiallele only at single-molecule resolution.
 - **Low-VAF mosaic variant**: a 1.5% VAF CC→TT mutation in COLO829 BL/T mixture ablates a CTCF binding element, with chromatin loss visible only on the variant reads.
 - **Pervasive plasticity**: between-cell regulatory-element actuation differs by ~63%; haplotype-vs-haplotype within the same cell differs by ~61%.
+
+## Added 2026-10-07
+
+FOODIE is a short-read deaminase counterpart: DddB deamination after Tn5 tagmentation, with cooperativity measured only for footprint pairs within one fragment; a processive deaminase was rejected because correlated conversion would mimic cooperativity ([[10-Summaries/he-2024-foodie]]).
 
 ## Related
 

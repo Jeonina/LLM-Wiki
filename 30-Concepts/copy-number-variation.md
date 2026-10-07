@@ -1,7 +1,7 @@
 ---
 type: concept
 title: Copy Number Variation
-aliases: [CNV, CNA, copy number alteration, copy number profiling]
+aliases: [CNV, CNA, copy number alteration, copy number profiling, copy number]
 tags: [CNV, aneuploidy, cancer, single-cell, segmentation]
 created: 2026-08-10
 updated: 2026-10-07

@@ -34,6 +34,8 @@ Random shear-point coordinates can serve as endogenous molecular barcodes: BotSe
 In SMM-seq a 6-nt UMI sits in the stem of a hairpin adapter. It identifies both the fragment's UMI family and its two strand families, and reads from each strand family (≥7 required) must agree before a variant is called ([[10-Summaries/maslov-2022-smm-seq]]).
 
 
+Single-strand UMI consensus removes ~99% of sequencing errors but cannot remove first-round PCR errors at damaged bases (15-fold G→T and 11-fold C→T excess), which is why complementary double-stranded tags are needed ([[10-Summaries/schmitt-2012-pnas]]).
+
 ## Related
 
 - [[40-Topics/duplex-sequencing]] · [[30-Concepts/combinatorial-indexing]] · [[40-Topics/duplex-sequencing]]

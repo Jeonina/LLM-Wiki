@@ -1,7 +1,7 @@
 ---
 type: concept
 title: Allele dropout
-aliases: [ADO]
+aliases: [ADO, allelic dropout]
 tags: [single-cell, scWGA, amplification-bias]
 created: 2026-05-12
 updated: 2026-10-07
@@ -33,6 +33,12 @@ SIEVE models ADO as a hidden number-of-sequenced-alleles variable identifiable o
 
 CellPhy treats the ADO rate (δ) as a free parameter that is separate from the amplification/sequencing error rate (ε) and estimates it from the data. Simulations showed ADO estimates were more variable than error estimates and tended to come out low (MSE 0.002–0.02). On clonal colonies with no amplification, the estimated ADO was zero, as it should be ([[10-Summaries/kozlov-2022-cellphy]]).
 
+
+The G&T-seq developers state that physically separating mRNA from gDNA "may contribute further to the problem of allelic dropout", although they saw no megabase-scale dropouts in normal cells ([[10-Summaries/macaulay-2016-gt-seq-protocol]]).
+
+Droplet targeted scDNA-seq measured allele dropout in each run from a ~1% Raji spike-in, at 8.7% ± 1.1% across nine heterozygous variants in six runs ([[10-Summaries/pellegrino-2018-tapestri]]). LIANTI amplifies the genome evenly yet shows MDA-like allelic skew, whereas PTA greatly reduces dropout and skew ([[10-Summaries/gonzalez-pena-2021-pnas]]).
+
+Because NOMe-seq recovers DNA whether or not it is accessible, scNOMe-seq can tell closed chromatin from read loss, which count-based scATAC-seq cannot ([[10-Summaries/pott-2017-elife]]).
 
 ## Related
 

@@ -36,6 +36,8 @@ In SPLONGGET long-read Multiome data, Scrublet 'proved to be ineffective'. Doubl
 
 wellDA-seq combines physical and computational doublet control: nanowells are imaged to keep only single-cell wells, and non-diploid subclones whose consensus CNA profile correlates with an aneuploid subclone but with a smaller log2 ratio are removed as tumour-diploid doublets ([[10-Summaries/wang-2024-wellda-seq]]).
 
+PhISCS assumes doublets were removed beforehand and names this as its main limitation, unlike SiCloneFit, which models doublets directly ([[10-Summaries/malikic-2019-phiscs]]).
+
 ## Related
 
 - [[quality-control-metrics]] · [[combinatorial-indexing]] · [[cell-type-annotation]] · [[computational-methods]]

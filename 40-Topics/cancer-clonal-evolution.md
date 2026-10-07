@@ -51,6 +51,8 @@ updated: 2026-10-07
 
 - [[10-Summaries/pancikova-2025-splongget]] — longitudinal single-cell CNAs, pseudobulk SVs/SNVs and parallel evolution of CD19 immune-escape alleles in B-ALL under CAR-T selection (preprint).
 
+Over a 3-year remission, an IDH2/NRAS/ASXL1 triple-mutant AML clone expanded from 7% to 64% ([[10-Summaries/pellegrino-2018-tapestri]]). In colorectal patient CRC2, allowing elimination of one ISA-violating mutation (*ATP7B*) changed the inferred number of metastatic seeding events from two to one ([[10-Summaries/malikic-2019-phiscs]]).
+
 ## Related
 
 - [[40-Topics/scdna-cancer-applications]] · [[40-Topics/somatic-mosaicism]]

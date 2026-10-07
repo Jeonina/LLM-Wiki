@@ -4,7 +4,7 @@ title: Autism spectrum disorder
 aliases: [ASD, autism]
 tags: [neurodevelopment, somatic-variation, mosaicism, neuropsychiatric]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Autism spectrum disorder
@@ -23,6 +23,10 @@ ASD risk is not captured entirely by inherited variation. Mosaic missense SNVs i
 
 - Mosaic missense mutations in intolerant genes occur in 0.8–1.3% of ASD probands ([[10-Summaries/bizzotto-2022-brain-mosaicism-review]]).
 - Large mosaic CNVs (>4 Mb) correlate positively with ASD severity.
+
+## Added 2026-10-07
+
+Germline de novo mutations in six genes (CHD8, DYRK1A, GRIN2B, TBR1, PTEN, TBL1XR1) were found in ~1% (24/2,573) of Simons Simplex Collection probands, CHD8 alone at 0.35%; CHD8 mutations go with larger and DYRK1A with smaller heads ([[10-Summaries/oroak-2012-autism-targeted-seq]]).
 
 ## Related
 

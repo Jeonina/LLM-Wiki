@@ -4,7 +4,7 @@ title: "Mosaicism × epigenome at single-cell resolution — the synthesis gap"
 aliases: [mosaicism-epigenome gap, the synthesis gap, dna-anchored joint-mosaicism]
 tags: [synthesis, somatic-mosaicism, single-cell-multiomics, review-paper-anchor]
 created: 2026-05-12
-updated: 2026-06-26
+updated: 2026-10-07
 sources: [
   "[[10-Summaries/hou-2016-sctrio-seq]]",
   "[[10-Summaries/izzo-2024-got-cha]]",
@@ -19,7 +19,7 @@ sources: [
 
 # Mosaicism × epigenome at single-cell resolution — the synthesis gap
 
-> **STATUS UPDATE (2026-05-13).** The gap that motivated this note has just been *methodologically closed* by a bioRxiv preprint: [[10-Summaries/kriz-2025-duplex-multiome|Kriz et al. 2025 — Duplex-Multiome]] (Walsh + Lee labs, Boston Children's). Duplex-Multiome integrates duplex consensus sequencing into the 10X Multiome platform to measure **point mutations + snATAC + snRNA in the same nucleus**, scaled to 51,400 nuclei from postmortem human brain. **All four wishlist criteria are met in one assay.** This note's framing shifts: the *technological* gap is closed; the *conceptual* gap — articulating a DNA-centric locus-state framework that interprets what such joint measurements mean — remains open and is exactly what the planned review can contribute.
+> **STATUS UPDATE (2026-05-13).** The gap that motivated this note has just been *methodologically closed* by a bioRxiv preprint: [[10-Summaries/kriz-2025-duplex-multiome|Kriz et al. 2025 — Duplex-Multiome]] (Walsh + Lee labs, Boston Children's). Duplex-Multiome integrates duplex consensus sequencing into the 10X Multiome platform to measure **point mutations + snATAC + snRNA in the same nucleus**, scaled to 51,400 nuclei from postmortem human brain. **All four wishlist criteria are met in kind in one assay — though "genome-wide" holds only for cell-type burdens after open-chromatin correction; per-nucleus calls are confined to accessible chromatin ([[10-Summaries/kriz-2025-duplex-multiome]]).** This note's framing shifts: the *technological* gap is closed; the *conceptual* gap — articulating a DNA-centric locus-state framework that interprets what such joint measurements mean — remains open and is exactly what the planned review can contribute.
 >
 > **Original framing (still useful as historical context).** Before Duplex-Multiome, no published single-cell assay measured somatic point mutations + chromatin/methylation state genome-wide in the same cell. The closest precedents — [[sctrio-seq]] (CNV+methylation+RNA), [[got-cha]] (targeted SNV + accessibility), [[daf-seq]] (single-fiber DNA+chromatin), [[10-Summaries/mukamel-2025-aneuploidy-brain|Mukamel 2025]] (aneuploidy+methylation atlas-scale) — each covered a slice. The neuro-mosaicism field measured mutations cell-type-specifically but used *bulk* epigenome annotations to interpret them. This note articulates why the gap mattered, who approached its edges, and how Duplex-Multiome closes it.
 

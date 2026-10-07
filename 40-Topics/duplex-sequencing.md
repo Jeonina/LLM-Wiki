@@ -9,13 +9,13 @@ updated: 2026-10-07
 
 # Duplex sequencing
 
-> Duplex sequencing (DS) is a single-molecule NGS strategy that tags both the Watson and Crick strands of each input dsDNA molecule with complementary UMIs, sequences each strand independently, and calls a base only when both strands agree at that position ([[10-Summaries/schmitt-2012-pnas]]; [[10-Summaries/kennedy-2014-duplex-protocol]]). This drops the false-positive error rate below 10⁻⁸ per base — orders of magnitude below standard sequencing, and sufficient to detect somatic mutations at any allele fraction ([[10-Summaries/schmitt-2012-pnas]]) — and underpins modern mosaicism, mutational-signature, and aging-genome biology ([[10-Summaries/abascal-2021-nanoseq]]; [[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
+> Duplex sequencing (DS) is a single-molecule NGS strategy that tags both the Watson and Crick strands of each input dsDNA molecule with complementary UMIs, sequences each strand independently, and calls a base only when both strands agree at that position ([[10-Summaries/schmitt-2012-pnas]]; [[10-Summaries/kennedy-2014-duplex-protocol]]). This lowers the calculated error floor to ~3.8 × 10⁻¹⁰ per base, about 10⁷-fold below standard Illumina analysis; experimentally the original method recovered mutants down to 1 in 10,000 molecules ([[10-Summaries/schmitt-2012-pnas]]) — and underpins modern mosaicism, mutational-signature, and aging-genome biology ([[10-Summaries/abascal-2021-nanoseq]]; [[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
 ## How it works
 
 Standard sequencing reads one strand of a DNA fragment, so sequencing/polymerase errors and ssDNA damage are indistinguishable from true variants ([[10-Summaries/schmitt-2012-pnas]]). Duplex sequencing tags both strands of each original molecule so that strand identity is preserved through library prep and sequencing; only variants observed in **both** strands of the same molecule are called true ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]; [[10-Summaries/schmitt-2012-pnas]]).
 
-This exploits the fact that polymerase and sequencing errors land on only one strand, while a true mutation is present on both ([[10-Summaries/schmitt-2012-pnas]]). Single-strand errors are filtered ([[10-Summaries/kennedy-2014-duplex-protocol]]), as is single-strand DNA damage — of which a typical cell sustains ~70,000 lesions per day ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]). The error floor approaches the probability of the polymerase making the *exact same* error on both strands of the same molecule (≤10⁻⁸) ([[10-Summaries/schmitt-2012-pnas]]).
+This exploits the fact that polymerase and sequencing errors land on only one strand, while a true mutation is present on both ([[10-Summaries/schmitt-2012-pnas]]). Single-strand errors are filtered ([[10-Summaries/kennedy-2014-duplex-protocol]]), as is single-strand DNA damage — of which a typical cell sustains ~70,000 lesions per day ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]). The theoretical error floor is the product of the two single-strand error rates times 1/3 for a complementary match, (3.4 × 10⁻⁵)² × 1/3 ≈ 3.8 × 10⁻¹⁰ ([[10-Summaries/schmitt-2012-pnas]]); a later empirical estimate for the original chemistry is much higher, ~2 × 10⁻⁷ ([[10-Summaries/nandi-2025-udseq]]).
 
 The principle relies on [[30-Concepts/umi-molecular-barcoding]] — random-yet-complementary tag adapters that link the two strands of one molecule ([[10-Summaries/kennedy-2014-duplex-protocol]]).
 
@@ -23,7 +23,7 @@ The principle relies on [[30-Concepts/umi-molecular-barcoding]] — random-yet-c
 
 Duplex sequencing redefines the **fidelity** floor of variant detection ([[10-Summaries/evrony-2021-scDNA-applications-review]]). Without it, the false-positive rate at low VAFs is dominated by ssDNA damage; with it, true variants below 1% VAF become detectable ([[10-Summaries/kennedy-2014-duplex-protocol]]; [[10-Summaries/schmitt-2012-pnas]]). This is what makes population-scale [[30-Concepts/mutational-signatures]] — trinucleotide-context substitution patterns revealing mutagenic exposures — readable from bulk DNA ([[10-Summaries/abascal-2021-nanoseq]]).
 
-Most duplex methods sequence **bulk DNA** at single-molecule resolution — capturing the full mutational landscape but unable to assign variants to specific cells ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]). [[meta-cs]] is the exception and the bridge to per-cell duplex resolution ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]). **Duplex-Multiome** integrates duplex consensus into the 10x Multiome platform, achieving per-nucleus point-mutation + scATAC + scRNA ([[10-Summaries/kriz-2025-duplex-multiome]]).
+Most duplex methods sequence **bulk DNA** at single-molecule resolution — capturing the full mutational landscape but unable to assign variants to specific cells ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]). [[meta-cs]] is the exception and the bridge to per-cell duplex resolution ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]). **Duplex-Multiome** adds strand tagging to the 10x Multiome ATAC library so sSNVs are called by duplex consensus from the same nuclei that give snATAC and snRNA profiles; calls are restricted to accessible chromatin and sparse per nucleus, so burdens are estimated per cell type ([[10-Summaries/kriz-2025-duplex-multiome]]).
 
 ## Implementation strategies
 
@@ -34,7 +34,7 @@ Four implementation strategies have emerged ([[10-Summaries/shao-2025-scDNA-mosa
 - **Quadruplex adaptor** — [[codec]]: adapter physically concatenates both strands so they appear in the same read ([[10-Summaries/bae-2023-codec]]).
 - **Circularized sequencing** — [[hidef-seq]] (PacBio HiFi, error rate ~7×10⁻¹⁶) and SMM-seq (Illumina rolling-circle) ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
-Newer chemistries also push input down: UDSeq reaches ~2.5×10⁻⁹/bp from 100 pg ([[10-Summaries/nandi-2025-udseq]]). [[nanoseq]] adapts DS to the nuclear genome ([[10-Summaries/abascal-2021-nanoseq]]). [[10-Summaries/swanson-2025-daf-seq]] (DAF-seq) achieves an analogous fidelity gain by a different route — using deamination patterns as per-molecule UMIs for consensus-read assembly ([[10-Summaries/swanson-2025-daf-seq]]).
+Newer chemistries also push input down: UDSeq works from 100 pg with ≥95% genome coverage and an error rate of ~2.5×10⁻⁹/bp, estimated from sperm against trio de novo rates ([[10-Summaries/nandi-2025-udseq]]). [[nanoseq]] adapts DS to the nuclear genome ([[10-Summaries/abascal-2021-nanoseq]]). [[10-Summaries/swanson-2025-daf-seq]] (DAF-seq) achieves an analogous fidelity gain by a different route — using deamination patterns as per-molecule UMIs for consensus-read assembly ([[10-Summaries/swanson-2025-daf-seq]]).
 
 ## Examples
 
@@ -88,8 +88,8 @@ _Future synthesis target_: "Duplex vs scDNA-seq complementarity" — duplex capt
 
 ## Open questions
 
-- **Single-cell duplex** is not yet broadly practical: DS needs both strands of one molecule, but scWGA loses strand identity ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]). [[meta-cs]] is the only single-cell-compatible variant so far; Duplex-Multiome solves it for nuclear sSNV calling via the 10x Multiome library ([[10-Summaries/kriz-2025-duplex-multiome]]).
-- Will the convergence of mutation-rate estimates across methods (shown in the SMaHT benchmark) hold when applied to harder tissues like brain or aging muscle ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]])?
+- **Single-cell duplex** is not yet broadly practical: DS needs both strands of one molecule, but scWGA loses strand identity ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]). [[meta-cs]] is the only single-cell-compatible variant so far; Duplex-Multiome solves it for nuclear sSNV calling within Tn5-accessible regions via the 10x Multiome library ([[10-Summaries/kriz-2025-duplex-multiome]]).
+- The SMaHT benchmark already included two brain homogenates (22 y and 73 y) with concordant burdens, but cord-blood estimates still split ~2.6-fold between method groups and ppmSeq diverged; does site-level concordance on private mutations hold ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]])?
 
 ## Added 2026-10-07
 
@@ -98,6 +98,10 @@ _Future synthesis target_: "Duplex vs scDNA-seq complementarity" — duplex capt
 
 **SMM-seq primary source.** SMM-seq ligates hairpin adapters (6-nt UMI in the stem) to make dumbbell templates. Linear pulse-RCA then produces many independent copies of both strands before PCR, so the theoretical error rate is P(E)^N rather than duplex's P(E)² ([[10-Summaries/maslov-2022-smm-seq]]). A minimum of 7 reads per strand family was set empirically, at the point where apparent mutation frequency plateaued, and both strands are still required to reject single-strand DNA damage ([[10-Summaries/maslov-2022-smm-seq]]). Libraries are sequenced on Illumina NovaSeq 150PE ([[10-Summaries/maslov-2022-smm-seq]]).
 
+
+**Open question — error-rate figures.** The original Duplex Sequencing floor is calculated (<10⁻⁹) ([[10-Summaries/schmitt-2012-pnas]]), while UDSeq's Table 1 lists an empirical ~2 × 10⁻⁷ for the original method and also ~2 × 10⁻⁷ for BotSeqS ([[10-Summaries/nandi-2025-udseq]]); the wiki elsewhere quotes BotSeqS at 2.6 × 10⁻¹² ([[10-Summaries/hoang-2016-botseqs]]). Theoretical and empirical figures should not be compared directly (synthesis).
+
+Shallow duplex sequencing finds mutations largely absent from ~1000X bulk WGS: <0.5% of tissue duplex calls overlapped bulk truth sets, and duplex calls captured COLO829-BLT50 clones down to ~0.002% VAF ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]). Both this benchmark and Duplex-Multiome found clonal changes in COLO829-BLT50 that arose in culture, so the mixture is not a fixed truth set ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]; [[10-Summaries/kriz-2025-duplex-multiome]]).
 
 ## Related
 

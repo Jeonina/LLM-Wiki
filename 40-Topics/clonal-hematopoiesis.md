@@ -4,7 +4,7 @@ title: Clonal hematopoiesis
 aliases: [CH, CHIP, clonal hematopoiesis of indeterminate potential, MPN]
 tags: [clonal-hematopoiesis, MPN, JAK2, DNMT3A, TET2, CALR, hematology, mosaicism, mutation, aging]
 created: 2026-05-19
-updated: 2026-06-29
+updated: 2026-10-07
 ---
 
 # Clonal hematopoiesis
@@ -68,6 +68,10 @@ Most common drivers ([[10-Summaries/forsberg-2017-mosaicism-review]]):
 - Whether CHIP-associated cardiovascular risk is causal or shared-risk-factor mediated ([[10-Summaries/forsberg-2017-mosaicism-review]]); causality is still being established, with recent extension to HFpEF and stroke ([[10-Summaries/hilal-2026-cardiac-somatic-review]]).
 - IRE1-XBP1 as a therapeutic target in CALR-mutant CH — clinical validation pending ([[10-Summaries/nam-2019-got]]).
 - Whether JAK2V617F chromatin priming is causal for clonal expansion or downstream ([[10-Summaries/izzo-2024-got-cha]]).
+
+## Added 2026-10-07
+
+mtDNA tracing of 7,474 bone-marrow HSPCs and 8,591 blood cells from one healthy 47-year-old donor resolved 257 clones, 92% holding <1% of cells, with no detectable lineage bias ([[10-Summaries/ludwig-2020-mtscatac-seq]]).
 
 ## Related
 

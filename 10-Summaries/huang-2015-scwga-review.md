@@ -54,7 +54,7 @@ Narrative review plus original comparative deep sequencing of five commercial ki
 ## Connections to other sources
 
 - Matched independent benchmark published the same year: [[hou-2015-wga-comparison]].
-- Chemistry primaries: [[telenius-1992-dop-pcr]], [[dean-2002-mda]], [[chenghang-2012-science]] (MALBAC, this lab), [[zong-2017-malbac-protocol]].
+- Chemistry primaries: [[telenius-1992-dop-pcr]], [[dean-2002-mda]], [[chenghang-2012-science]] (MALBAC, this lab); overview chapter [[zong-2017-malbac-protocol]].
 - Later chemistries that reset the parameter table: [[chen-2017-lianti]], [[gonzalez-pena-2021-pnas]] (PTA).
 - The amplification-free alternative the review predates: [[zahn-2017-dlp]], [[laks-2019-dlp-plus]].
 - Broader single-cell genome reviews: [[gawad-2016-scgenome-review]], [[evrony-2021-scDNA-applications-review]], [[shao-2025-scDNA-mosaicism-review]].

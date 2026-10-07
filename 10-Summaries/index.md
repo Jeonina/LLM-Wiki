@@ -19,8 +19,8 @@ Catalog of ~370 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/hyobin-2023-naturebiotechnology]] — Jeong 2023, scNOVA functional analysis of structural variants via Strand-seq.
 - [[10-Summaries/pellegrino-2018-tapestri]] — Pellegrino 2018, Tapestri droplet high-throughput single-cell DNA sequencing of AML.
 - [[10-Summaries/sanders-2020-sctrip]] — Sanders 2020, scTRIP tri-channel Strand-seq SV and complex-rearrangement detection.
-- [[10-Summaries/telenius-1992-dop-pcr]] — Telenius 1992, DOP-PCR, the first general-purpose WGA chemistry and the bias baseline for all successors.
-- [[10-Summaries/zong-2017-malbac-protocol]] — Zong 2017, MALBAC protocol chapter framed for single-neuron CNV analysis.
+- [[10-Summaries/telenius-1992-dop-pcr]] — Telenius 1992, DOP-PCR: one degenerate primer gives species-independent amplification of flow-sorted chromosomes; the first general-purpose WGA chemistry.
+- [[10-Summaries/zong-2017-malbac-protocol]] — Zong 2017, Neuromethods review chapter on MALBAC chemistry and single-cell CNV uses (CTCs, polar-body PGS); no bench protocol or new data.
 - [[10-Summaries/laks-2019-dlp-plus]] — Laks 2019, DLP+ amplification-free single-cell genomes at scale (51,926 cells) with imaging-based QC, clone-resolved variants and replication state.
 - [[10-Summaries/wang-2014-nuc-seq]] — Wang 2014, nuc-seq: G2/M nuclei give MDA four template copies; 91% breadth, 9.73% ADO.
 - [[10-Summaries/gawad-2014-all-clonal-origins]] — Gawad 2014, microfluidic MDA + targeted resequencing of 1,479 single ALL cells.
@@ -63,7 +63,7 @@ Catalog of ~370 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/abascal-2021-nanoseq]] — Abascal 2021, NanoSeq single-molecule somatic mutation landscapes.
 - [[10-Summaries/bae-2023-codec]] — Bae 2023, CODEC single-duplex sequencing with high mutation sensitivity.
 - [[10-Summaries/kennedy-2014-duplex-protocol]] — Kennedy 2014, Duplex Sequencing protocol for ultralow-frequency mutations.
-- [[10-Summaries/nandi-2025-udseq]] — Nandi 2025, UDSeq universal duplex sequencing at ~2.5×10⁻⁹/bp.
+- [[10-Summaries/nandi-2025-udseq]] — Nandi 2025, UDSeq: random-fragmentation duplex sequencing from 100 pg, ~2.5×10⁻⁹/bp error estimated from sperm.
 - [[10-Summaries/schmitt-2012-pnas]] — Schmitt 2012, Duplex Sequencing founding method for ultra-rare mutations.
 - [[10-Summaries/zhang-2025-smaht-duplex-benchmark]] — Zhang 2025, SMaHT duplex-seq benchmark; six methods give concordant rates.
 - [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — Luquette 2025, PTA + duplex validation across 102 lung/colon nuclei.
@@ -90,7 +90,7 @@ Catalog of ~370 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/taejeong-2022-science]] — Bae 2022, 131 human brains reveal aging-associated hypermutability.
 - [[10-Summaries/vijg-2020-cell]] — Vijg & Dong 2020, review of somatic mutation mechanisms in aging.
 - [[10-Summaries/hilal-2026-cardiac-somatic-review]] — Hilal 2026, review of somatic variation in cardiac and circulating cells.
-- [[10-Summaries/oroak-2012-autism-targeted-seq]] — O'Roak 2012, targeted sequencing of recurrently mutated autism genes.
+- [[10-Summaries/oroak-2012-autism-targeted-seq]] — O'Roak 2012, low-cost MIP resequencing of 44 ASD candidate genes; six genes (CHD8, DYRK1A, GRIN2B, TBR1, PTEN, TBL1XR1) carry de novo burden, ~1% of sporadic ASD.
 - [[10-Summaries/cagan-2022-nature]] — Cagan 2022, somatic mutation rates scale with mammalian lifespan.
 
 ## Lineage tracing & phylogenetics
@@ -320,8 +320,7 @@ Catalog of ~370 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/altemose-2022-dimelo-seq]] — Altemose 2022, DiMeLo-seq long-read mapping of protein–DNA interactions.
 - [[10-Summaries/andrewb-2020-science]] — Stergachis 2020, Fiber-seq single-molecule regulatory architectures.
 - [[10-Summaries/bohaczuk-2024-targeted-fiberseq]] — Bohaczuk 2024, targeted Fiber-seq resolving chromatin impact of mosaic variants.
-- [[10-Summaries/doughty-2024-single-molecule-chromatin-config]] — Doughty 2024, single-molecule chromatin configurations linking TF binding to expression.
-- [[10-Summaries/doughty-2024-smf-tf]] — Doughty 2024, single-molecule states link TF binding to gene expression.
+- [[10-Summaries/doughty-2024-smf-tf]] — Doughty 2024 (Nature; merged with the bioRxiv preprint), amplicon GpC-SMF on engineered reporters: nucleosome-mediated TF cooperativity, additive promoter activation, occupancy × potency.
 - [[10-Summaries/he-2024-foodie]] — He 2024, FOODIE single-cell/single-molecule deaminase footprinting of TFs.
 - [[10-Summaries/mo-2023-stam-seq]] — Mo 2023, STAM-seq nanopore accessibility and methylation in plants.
 - [[10-Summaries/nanda-2024-smrt-tag]] — Nanda 2024, SMRT-Tag tagmentation for low-input PacBio.

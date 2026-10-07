@@ -4,6 +4,64 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+# 2026-10-07 — Re-ingest: 15 abstract-only summaries rewritten from re-clipped full texts
+
+The user re-clipped the 15 abstract-only papers not excluded in the paper list. `pending-sources.sh` caught 12 as `CHANGED`. The other 3 were renamed files, and their `source:` links were repointed: [[10-Summaries/schmitt-2012-pnas]], [[10-Summaries/malikic-2019-phiscs]], [[10-Summaries/pott-2017-elife]]. Eight parallel agents rewrote the summaries; graph edits were applied in the main session. All 15 are now `source_quality: full`, with new hashes and a `## Limitations` section. Twelve `source:` links gained the missing `.pdf` extension.
+
+**Summary-level corrections the full texts forced:**
+- **Wrong titles** in FOODIE, SAMOSA, UDSeq and the SMaHT benchmark.
+- **Wrong author names** in Telenius (three co-authors) and in the SMaHT corresponding authors.
+- **PhISCS:** ISA violations are eliminated (capped at k_max), not weighted.
+- **FOODIE:** the brain data are mouse hippocampus, and the method is from the Xie lab.
+- **SAMOSA:** methylation happens after MNase release, so there are no TF footprints; SMRT-Tag and SAMOSA-Tag are later papers.
+- **Doughty:** short-read amplicon GpC-SMF, not long-read.
+- **DOP-PCR:** not single-cell, and the "4–6 orders bias" figure is Dean 2002's, not this paper's.
+- **Zong 2017:** a review chapter, not a protocol.
+- **Tapestri:** the name does not appear in the paper, and the lineage claims were removed.
+- **PTA:** alpha-thio ddNTPs at 1,200 µM; ~2,785 false-positive calls per cell.
+- **Kriz:** per-cell-type pooled burdens, not genome-wide per cell; the ASD variant is from Rodin 2021.
+
+**Graph corrections (46):**
+- [[50-Notes/pta-inflection-point]] no longer claims PTA enables direct calling without correction or reduces input.
+- [[40-Topics/duplex-sequencing]] and [[50-Notes/single-cell-duplex-sequencing]] now give the duplex error floor as calculated (~3.8 × 10⁻¹⁰), not measured.
+- [[30-Concepts/single-molecule-footprinting]]: the methyltransferase "bulk-only" line is narrowed to native m6A; FOODIE, SAMOSA, targeted Fiber-seq and Doughty lines are rewritten.
+- Six pages called Zong 2017 a "protocol"; six SAMOSA citations wrongly carried SMRT-Tag or SAMOSA-Tag numbers.
+- [[50-Notes/joint-assays-by-layer-pair]] cited Kriz for a methylation claim it does not make, so the line is now marked (synthesis).
+
+**New claims (21)** added on 19 pages.
+
+**Open questions** recorded:
+- Duplex error rates, theoretical vs empirical, and the BotSeqS figure of 2.6 × 10⁻¹² vs ~2 × 10⁻⁷ ([[40-Topics/duplex-sequencing]]).
+- MALBAC coverage, 55–60% vs 85–93% ([[30-Concepts/malbac]]).
+- NADs in B2/B3 vs Rao 2014 ([[30-Concepts/nuclear-lamina]]).
+- The DOP-PCR original design and linearity vs the wiki's "exponential bias" framing ([[30-Concepts/dop-pcr]]).
+- COLO829-BLT50 changed in culture, so it is not a fixed truth set.
+
+**Merge (user-approved):** the bioRxiv summary `doughty-2024-single-molecule-chromatin-config` was merged into [[10-Summaries/doughty-2024-smf-tf]]. That page was rewritten from the Nature full text, with a `## Preprint version` section: 24,715,362 vs 26,365,210 molecules, and the ISG reporters described as silent before stimulation in the preprint but low in Nature. Most preprint-only statistics sit in main-figure legends that are absent from the Nature clipping, so they are marked unverified, not superseded. The old slug is kept as an alias, and 3 inbound links were redirected. The preprint page was deleted; both source files remain in `00-Sources/`.
+
+---
+
+# 2026-10-07 — Follow-ups: 7 shallow summaries rewritten, 6 aliases, source-quality fixes
+
+**Rewritten from full text** (they had been written from the abstract and introduction only, though their sources are full text; done by parallel agents, graph edits applied in the main session): [[10-Summaries/bartosovic-2021-sccut-tag]], [[10-Summaries/bartosovic-2022-nano-cut-tag]], [[10-Summaries/cardilla-2025-spatial-methylome]], [[10-Summaries/lodato-2017-aging-neurons]], [[10-Summaries/ludwig-2020-mtscatac-seq]], [[10-Summaries/macaulay-2016-gt-seq-protocol]], [[10-Summaries/oroak-2012-autism-targeted-seq]]. All now have a `## Limitations` section, and the `ingest_depth: abstract+intro` fields and notes are gone.
+
+**Corrections from the full texts (19 edits):**
+- [[30-Concepts/genosenium]]: the term was coined by Lodato et al., and their rates are ~23 (PFC) and ~40 (DG) sSNVs/year, not "15–20".
+- [[20-Entities/joseph-ecker]]: spatial-DMT is not an Ecker paper.
+- [[40-Topics/somatic-mosaicism]] and the index: O'Roak 2012 is a germline de novo study, not a mosaicism study.
+- [[50-Notes/mnase-vs-tn5-chromatin]]: nano-CUT&Tag multiplexes by the primary antibody's host species, not "epitope variants"; an unsupported "complexity preserved" claim removed; an uncited throughput bullet now cited.
+- [[30-Concepts/gt-seq]]: throughput is 96 cells per ~3 days on a robot; "first true joint assay" softened, since the protocol cites DR-seq.
+- [[40-Topics/histone-modifications]]: scCUT&Tag dating fixed.
+- [[10-Summaries/hsieh-2026-scmtmpm-scwmss]]: now links mtscATAC-seq.
+
+**New claims (15)** added under `## Added 2026-10-07` on 13 pages, including mutational-signatures, cut-and-tag, chromatin-velocity, spatial-multiomics, non-cg-methylation, autism-spectrum-disorder, mitochondrial-heteroplasmy, clonal-hematopoiesis and allele-dropout. **Open question** recorded on [[30-Concepts/duplicate-marking]]: the review's "30–50% duplicates" for nano-CUT&Tag versus the paper's 0.11–0.14% linear-amplification duplicates.
+
+**Also:**
+- 6 synonym aliases added: allelic dropout, Tn5, nanopore, copy number, clustering and accessibility. The other 6 near matches (variant-calling, integration, single-molecule, aging, transcription-factors, enhancers) are different concepts and were left alone.
+- `source_quality` corrected to `full` for [[10-Summaries/ma-2020-share-seq]] (a complete research highlight) and [[10-Summaries/tickle-2019-infercnv]] (a complete GitHub README). There are now 21 `abstract` summaries; the 15 not excluded in the paper list were given to the user to re-clip.
+
+---
+
 # 2026-10-07 — Schema: source provenance, source quality, limitations split, concept-gap lint
 
 **Why.** The user reviewed joonan-lab/byeori (an AWS-hosted LLM-wiki agent) and chose four of its ideas to adopt locally, without installing byeori itself.

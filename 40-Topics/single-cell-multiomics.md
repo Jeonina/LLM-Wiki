@@ -156,7 +156,7 @@ Two axes organize the method landscape ([[10-Summaries/baysoy-2023-multiomics-la
 
 ### Long-read multi-modal chromatin
 
-- [[10-Summaries/abdulhay-2020-samosa]] (SAMOSA-Tag).
+- [[10-Summaries/abdulhay-2020-samosa]] (SAMOSA; the tagmentation variant SAMOSA-Tag is a later paper).
 
 ## Synthesized notes
 

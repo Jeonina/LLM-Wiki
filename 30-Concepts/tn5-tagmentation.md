@@ -1,7 +1,7 @@
 ---
 type: concept
 title: Tn5 tagmentation
-aliases: [Tn5 transposition, tagmentation]
+aliases: [Tn5 transposition, tagmentation, Tn5]
 tags: [transposase, library-prep, ATAC-seq]
 created: 2026-05-12
 updated: 2026-10-07

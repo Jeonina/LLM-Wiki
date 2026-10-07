@@ -49,6 +49,8 @@ PTA simultaneously fixed three of MDA's failure modes — coverage, uniformity, 
 In a same-individual comparison, PTA-amplified neurons gave ~10× fewer infant-neuron sSNV calls than MDA (26 vs 282 per neuron) and showed no artifact signature B; MDA carried an estimated ~550 SNV and 136 indel single-strand-dropout artifacts per genome [[10-Summaries/luquette-2022-neuron-scan2-indels]]. With PTA + SCAN2 the neuronal rate is 16.5 sSNVs/year and ≥3 indels/year [[10-Summaries/luquette-2022-neuron-scan2-indels]].
 
 
+PTA's terminators are alpha-thio ddNTPs whose exonuclease-resistant bond stops the polymerase removing them; with ordinary ddNTPs only 15.0% of reads mapped, against 97.9% with irreversible terminators ([[10-Summaries/gonzalez-pena-2021-pnas]]). Even so, 99.9% germline precision leaves ~2,785 false-positive calls per cell, so PTA-specific callers are still needed ([[10-Summaries/gonzalez-pena-2021-pnas]]).
+
 ## Related
 
 - [[scwga]]

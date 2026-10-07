@@ -5,7 +5,7 @@ aliases: [Joe Ecker, J.R. Ecker]
 entity_kind: person
 tags: [methylation, snmC-seq, salk, brain-atlas]
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-10-07
 ---
 
 # Joseph Ecker
@@ -19,7 +19,7 @@ updated: 2026-05-19
 
 ## Mentions
 
-- **2026-05-19** — Senior author on snmC-seq2 ([[10-Summaries/luo-2018-snmc-seq2]]) and the spatial methylome work ([[10-Summaries/cardilla-2025-spatial-methylome]]).
+- **2026-05-19** — Senior author on snmC-seq2 ([[10-Summaries/luo-2018-snmc-seq2]]). His lab's 2021 mouse-brain single-cell methylome atlas is the reference that spatial-DMT (Lee, Fu, Cardilla, Zhou, Deng; not an Ecker paper) is checked against ([[10-Summaries/cardilla-2025-spatial-methylome]]).
 
 ## Related
 

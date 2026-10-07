@@ -4,7 +4,7 @@ title: "MNase vs Tn5 — two chemistries for single-cell histone profiling"
 aliases: [MNase vs Tn5, scChIC vs scCUT&Tag, single-cell chromatin chemistry]
 tags: [synthesis, histone-modifications, single-cell-chromatin, MNase, Tn5, methods-tradeoff]
 created: 2026-05-19
-updated: 2026-06-29
+updated: 2026-10-07
 sources: [
   "[[10-Summaries/rotem-2015-drop-chip]]",
   "[[10-Summaries/ku-2019-scchic-seq]]",
@@ -39,10 +39,10 @@ Key properties:
 The mechanism: a fusion of Protein A and hyperactive Tn5 transposase (pA-Tn5) loaded with sequencing adapters is targeted to antibody-bound chromatin; tagmentation inserts adapters in situ around the bound site without prior DNA fragmentation ([[10-Summaries/bartosovic-2021-sccut-tag]]).
 
 Key properties:
-- **Tagmented fragments include flanking adapter sequences immediately** — no separate library-prep step required, so per-cell library complexity is preserved ([[10-Summaries/bartosovic-2021-sccut-tag]]).
+- **Tagmented fragments include flanking adapter sequences immediately** — so tagmented nuclei go straight into 10x scATAC barcoding (skipping the kit's own transposition step), followed by 16–20 PCR cycles ([[10-Summaries/bartosovic-2021-sccut-tag]]).
 - **Compatible with droplet and combinatorial-indexing platforms** — scCUT&Tag on 10x Genomics ([[10-Summaries/bartosovic-2021-sccut-tag]]); sciCUT&Tag scales to 40k cells/chip via combinatorial indexing ([[10-Summaries/janssens-2023-scicut-tag]]).
-- **Multi-mark per cell via different chemistries** — nano-CUT&Tag uses nanobodies for multi-epitope detection ([[10-Summaries/bartosovic-2022-nano-cut-tag]]); MulTI-Tag uses different antibody-barcoded Tn5 complexes ([[10-Summaries/janssens-2023-scicut-tag]]); 6-base-CUT&Tag adds enzymatic 5mC/5hmC discrimination on the same fragments ([[10-Summaries/tavares-2026-6-base-cut-tag]]).
-- **Throughput typically higher** — sciCUT&Tag ~40k cells/run; commercial 10x scCUT&Tag at thousands of cells routinely.
+- **Multi-mark per cell via different chemistries** — nano-CUT&Tag uses barcoded anti-mouse and anti-rabbit nanobody–Tn5 fusions to read two marks whose primary antibodies come from different host species, plus optional ATAC ([[10-Summaries/bartosovic-2022-nano-cut-tag]]); MulTI-Tag uses different antibody-barcoded Tn5 complexes ([[10-Summaries/janssens-2023-scicut-tag]]); 6-base-CUT&Tag adds enzymatic 5mC/5hmC discrimination on the same fragments ([[10-Summaries/tavares-2026-6-base-cut-tag]]).
+- **Throughput typically higher** — sciCUT&Tag ~40k cells/run ([[10-Summaries/janssens-2023-scicut-tag]]); 10x scCUT&Tag gave 47,340 mouse brain cells across four histone marks, ~3,900–4,900 cells per cell-line run ([[10-Summaries/bartosovic-2021-sccut-tag]]).
 
 ## Quantitative comparison
 
@@ -53,7 +53,7 @@ Key properties:
 | Nucleosome positioning fidelity | High (preserves boundaries) | Lower (Tn5 inserts within nucleosomes too) |
 | Cells per experiment (best case) | ~10⁴ (Drop-ChIP, low coverage) / ~10³ (sortChIC, higher quality) | ~40k (sciCUT&Tag) / ~10⁴ (10x scCUT&Tag) |
 | Peaks per cell at standard depth | ~hundreds-low thousands | ~1-2k (scCUT&Tag) |
-| Multi-mark per cell? | scChIX deconvolutes 2 marks ([[10-Summaries/yeung-2023-scchix-seq]]) | MulTI-Tag, nano-CUT&Tag multiplex via epitope variants |
+| Multi-mark per cell? | scChIX deconvolutes 2 marks ([[10-Summaries/yeung-2023-scchix-seq]]) | MulTI-Tag (antibody-barcoded Tn5) and nano-CUT&Tag (host-species-specific nanobody–Tn5; two marks + ATAC) ([[10-Summaries/janssens-2023-scicut-tag]]; [[10-Summaries/bartosovic-2022-nano-cut-tag]]) |
 | Joint with methylation? | scEpi²-seq via TAPS ([[10-Summaries/geisenberger-2025-scepi2-seq]]) | 6-base-CUT&Tag via enzymatic 5mC/5hmC ([[10-Summaries/tavares-2026-6-base-cut-tag]]) |
 | Bulk reference assay | ChIP-seq, ChIC-seq, CUT&RUN | CUT&Tag (Henikoff lab) |
 | Sequence bias | MNase A/T preference | Tn5 GC preference (synthesis) |
@@ -89,7 +89,7 @@ Recent developments suggest the two chemistry lineages are **converging on multi
 - 6-base-CUT&Tag (Tn5 side) — fragment-level histone mark + 5mC + 5hmC ([[10-Summaries/tavares-2026-6-base-cut-tag]]).
 - scEpi²-seq (MNase side) — chromatin mark + DNA methylation at single-cell scale via sortChIC + TAPS ([[10-Summaries/geisenberger-2025-scepi2-seq]]).
 - scChIX-seq (MNase side) — two histone marks per cell via deconvolution ([[10-Summaries/yeung-2023-scchix-seq]]).
-- nano-CUT&Tag (Tn5 side) — multi-epitope per cell via nanobody scaffold ([[10-Summaries/bartosovic-2022-nano-cut-tag]]).
+- nano-CUT&Tag (Tn5 side) — two histone marks (mouse- and rabbit-raised antibodies) plus ATAC per cell via barcoded nanobody–Tn5 fusions ([[10-Summaries/bartosovic-2022-nano-cut-tag]]).
 
 Each lineage is trying to read more layers per cell. The chemistry choice has consequences for *which* additional layer is accessible (methylation via TAPS pairs more naturally with MNase; methylation via enzymatic 5mC/5hmC pairs with Tn5; droplet multi-omics is Tn5-only).
 

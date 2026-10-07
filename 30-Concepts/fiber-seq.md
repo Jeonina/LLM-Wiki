@@ -4,7 +4,7 @@ title: Fiber-seq
 aliases: [fiber-seq]
 tags: [single-molecule, chromatin, methyltransferase, footprinting, method]
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-10-07
 ---
 
 # Fiber-seq
@@ -54,6 +54,10 @@ m6A marks are erased during any DNA amplification (PCR, MDA, PTA, LIANTI). A sin
 - All-or-none actuation rates at TSS-distal DHSs in *Drosophila* S2 cells track DNase-seq cleavage density tightly ([[10-Summaries/andrewb-2020-science]] Fig. 3).
 - Most actuated fibers at CTCF-bound elements in K562 cells are accessible but CTCF-vacant, with the CTCF-footprinted fraction predicting long-range loop participation ([[10-Summaries/andrewb-2020-science]] Fig. 5).
 - The chr.17:19447245–19447246 CC>TT somatic CTCF-ablating variant in COLO829T melanoma was originally analyzed via Fiber-seq before DAF-seq took over for the BL/T mixture ([[10-Summaries/swanson-2025-daf-seq]]).
+
+## Added 2026-10-07
+
+Targeted Fiber-seq pairs Fiber-seq with in-gel CRISPR–Cas9 excision of 100–250 kb loci, reaching a median 10-fold enrichment and multiplexing at least 5 samples per SMRT cell ([[10-Summaries/bohaczuk-2024-targeted-fiberseq]]).
 
 ## Related
 

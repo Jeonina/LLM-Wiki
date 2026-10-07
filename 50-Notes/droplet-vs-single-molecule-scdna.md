@@ -4,7 +4,7 @@ title: "Droplet-scale vs single-molecule scDNA-seq — the breadth/depth tradeof
 aliases: [droplet vs single-molecule, breadth vs depth scDNA, scDNA platform tradeoffs]
 tags: [synthesis, scDNA-seq, single-cell-multiomics, single-molecule-footprinting, methods-tradeoff]
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-10-07
 sources: [
   "[[10-Summaries/nam-2019-got]]",
   "[[10-Summaries/izzo-2024-got-cha]]",
@@ -26,7 +26,7 @@ sources: [
 
 # Droplet-scale vs single-molecule scDNA-seq — the breadth/depth tradeoff
 
-> Single-cell DNA sequencing has bifurcated into two architectures that solve different problems. **Droplet/combinatorial platforms** (10x Genomics, Mission Bio Tapestri, sci-CAR, SHARE-seq, GoT/GoT-ChA) scale to 10⁴-10⁶ cells per experiment but read each cell shallowly — typically targeted loci, sparse coverage, no per-fiber resolution ([[10-Summaries/nam-2019-got]]; [[10-Summaries/izzo-2024-got-cha]]; [[10-Summaries/pellegrino-2018-tapestri]]). **Single-molecule long-read platforms** (Fiber-seq, DAF-seq, SAMOSA-Tag, SMRT-Tag, DiMeLo-seq) profile each cell deeply at per-base, per-fiber resolution but are constrained to 10-100 cells per run ([[10-Summaries/andrewb-2020-science]]; [[10-Summaries/swanson-2025-daf-seq]]; [[10-Summaries/abdulhay-2020-samosa]]; [[10-Summaries/nanda-2024-smrt-tag]]). The tradeoff is not a transient engineering problem — it is rooted in the physics of microfluidic compartmentalization vs molecule-by-molecule sequencing ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
+> Single-cell DNA sequencing has bifurcated into two architectures that solve different problems. **Droplet/combinatorial platforms** (10x Genomics, Mission Bio Tapestri, sci-CAR, SHARE-seq, GoT/GoT-ChA) scale to 10⁴-10⁶ cells per experiment but read each cell shallowly — typically targeted loci, sparse coverage, no per-fiber resolution ([[10-Summaries/nam-2019-got]]; [[10-Summaries/izzo-2024-got-cha]]; [[10-Summaries/pellegrino-2018-tapestri]]). **Single-molecule long-read platforms** (Fiber-seq, DAF-seq, SAMOSA-Tag, SMRT-Tag, DiMeLo-seq) profile each cell deeply at per-base, per-fiber resolution but are constrained to 10-100 cells per run ([[10-Summaries/andrewb-2020-science]]; [[10-Summaries/swanson-2025-daf-seq]]; [[10-Summaries/nanda-2024-smrt-tag]]; SAMOSA itself is bulk-input, [[10-Summaries/abdulhay-2020-samosa]]). The tradeoff is not a transient engineering problem — it is rooted in the physics of microfluidic compartmentalization vs molecule-by-molecule sequencing ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
 ## The two architectures
 
@@ -35,7 +35,7 @@ sources: [
 Droplet platforms encapsulate one cell + one barcoded bead per droplet, lyse, amplify, and pool for sequencing ([[10-Summaries/gawad-2016-scgenome-review]]). Combinatorial-indexing variants (sci-CAR, SHARE-seq) skip the droplet step entirely, using split-pool barcoding to label cells across hundreds of thousands per experiment ([[10-Summaries/cao-2018-sci-car]]; [[10-Summaries/ma-2020-share-seq]]). The defining feature is **scale**: 10⁴-10⁶ cells per run, enough for cell-type-resolved population biology ([[10-Summaries/baysoy-2023-multiomics-landscape]]).
 
 The defining cost is **per-cell depth**. Droplet scDNA-seq typically reads either:
-- A handful of targeted loci with high allele recovery (Tapestri, up to 62 disease-relevant loci across >16,000 cells, [[10-Summaries/pellegrino-2018-tapestri]]).
+- A handful of targeted loci (Tapestri prototype: 62-amplicon AML panel, >16,000 cells from two patients, in-run allele dropout 2–10% per run, [[10-Summaries/pellegrino-2018-tapestri]]).
 - Sparse genome-wide coverage with high allelic dropout (10x CNV at ~0.1× per cell, [[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
 The droplet architecture **cannot** read per-fiber, per-base accessibility or methylation patterns simultaneously with genotype — the amplification step destroys the original-molecule context ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
@@ -49,7 +49,7 @@ Single-molecule platforms sequence individual native DNA molecules directly, pre
 
 PacBio HiFi or Oxford Nanopore reads these modifications directly without conversion, yielding per-fiber, per-base accessibility + sequence simultaneously ([[10-Summaries/andrewb-2020-science]]; [[10-Summaries/swanson-2025-daf-seq]]).
 
-The defining feature is **information density per cell**: each fiber tells you genotype, methylation, and accessibility on the same molecule. The defining cost is **throughput**: scDAF-seq published with 12 cells, while SAMOSA-Tag (30–50k nuclei) and SMRT-Tag (≥40 ng, ~7,000 cells) remain bulk-input methods ([[10-Summaries/swanson-2025-daf-seq]]; [[10-Summaries/abdulhay-2020-samosa]]; [[10-Summaries/nanda-2024-smrt-tag]]).
+The defining feature is **information density per cell**: each fiber tells you genotype, methylation, and accessibility on the same molecule. The defining cost is **throughput**: scDAF-seq published with 12 cells, while SAMOSA (100 × 10⁶ K562 cells as input) and SMRT-Tag (≥40 ng, ~7,000 cells) remain bulk-input methods ([[10-Summaries/swanson-2025-daf-seq]]; [[10-Summaries/abdulhay-2020-samosa]]; [[10-Summaries/nanda-2024-smrt-tag]]).
 
 ## Quantitative comparison
 

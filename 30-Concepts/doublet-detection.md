@@ -32,6 +32,9 @@ Modelling doublets in amplicon scDNA phylogenetics removed apparent mutation rec
 
 In CellPhy's simulations, cell doublets lowered phylogenetic accuracy for every method tested. The authors recommend removing doublets with scDNA-seq-specific detectors before building trees ([[10-Summaries/kozlov-2022-cellphy]]).
 
+In SPLONGGET long-read Multiome data, Scrublet 'proved to be ineffective'. Doublets were instead removed with count thresholds (>20,000 RNA UMIs or >60,000 DNA reads), validated with a genotype score: tumour cells carry only the retained haplotype in a region of copy-neutral LOH (chr3), so cells with an intermediate haplotype ratio and high counts were flagged as tumour–normal doublets ([[10-Summaries/pancikova-2025-splongget]]).
+
+wellDA-seq combines physical and computational doublet control: nanowells are imaged to keep only single-cell wells, and non-diploid subclones whose consensus CNA profile correlates with an aneuploid subclone but with a smaller log2 ratio are removed as tumour-diploid doublets ([[10-Summaries/wang-2024-wellda-seq]]).
 
 ## Related
 

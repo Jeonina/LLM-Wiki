@@ -206,13 +206,14 @@ Regulatory-network inference from joint accessibility and expression: [[10-Summa
 ## Added 2026-10-07
 
 - [[10-Summaries/li-2023-darlin]] — Camellia-seq: lineage barcodes + RNA + CpG methylation + GpC accessibility in the same cell.
-- [[10-Summaries/argelaguet-2018-mofa]] — Original MOFA paper (stub; clipping lacks main text).
+- [[10-Summaries/argelaguet-2018-mofa]] — Original MOFA paper: sparse Bayesian factor analysis across omics layers; CLL cohort (N = 200) and scM&T-seq mESC (87 cells) applications.
 - [[10-Summaries/chang-2025-droplet-hi-c]] — Paired Hi-C: joint single-nucleus Hi-C + RNA on the 10x Multiome kit.
 - [[10-Summaries/schwager-2026-onecell-cut-tag]] — OneCell CUT&Tag: histone mark + full-length RNA + surface markers per cell from ≥1 cell; epigenome/RNA identity discordance and asynchronous remodelling in mammary transdifferentiation.
 - [[10-Summaries/wang-2024-wellda-seq]] — wellDA-seq: single-cell whole genome + chromatin accessibility co-assay.
 - [[10-Summaries/pancikova-2025-splongget]] — SPLONGGET joint long-read genotype/accessibility/transcriptome; CD19 escape in B-ALL.
 - [[10-Summaries/nichols-2025-scimetv3]] — sciMET+ATAC: methylome plus chromatin accessibility from the same cells via sequential tagmentation.
 
+Contrast with scTrio-seq's finding that CNVs do not perturb local DNA methylation: wellDA-seq reports that subclonal CNAs do reshape chromatin accessibility in cis, with ~80% of differential chromatin-hub bins on subclonal CNA bins in breast tumours ([[10-Summaries/wang-2024-wellda-seq]]; [[10-Summaries/hou-2016-sctrio-seq]]). Different epigenetic layers, so not a contradiction (synthesis).
 
 ## Related
 

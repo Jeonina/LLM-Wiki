@@ -52,6 +52,7 @@ Long-read single-cell WGS (dMDA + PacBio HiFi) found an average of 5473 bulk-con
 
 BreakDancer calls SVs from short-insert paired-end reads in two complementary ways. BreakDancerMax clusters anomalously mapped read pairs with a Poisson confidence score, covering deletions, insertions, inversions and intra- and inter-chromosomal translocations. BreakDancerMini runs a sliding-window Kolmogorov–Smirnov test on normal pairs to catch 10–100 bp indels; together they cover 10 bp–1 Mb ([[10-Summaries/chen-2009-breakdancer]]). Read-pair signal is geometrically limited: only 43.2% of 844 simulated chr17 SVs had two or more anomalous pairs at 100× physical coverage. Insertions longer than 100 bp were undetectable with 200 bp inserts and 50 bp reads ([[10-Summaries/chen-2009-breakdancer]]).
 
+Long reads from a single-cell Multiome library can resolve transgene integration. SPLONGGET assembled the ~5 kb tisagenlecleucel (CTL019) CAR vector de novo with Flye from LTR-containing reads, then used supplementary alignments to place integration sites across nearly all chromosomes, consistent with a polyclonal CAR-T population ([[10-Summaries/pancikova-2025-splongget]]). Severus called 1,362 somatic SVs from pseudobulks of the same B-ALL samples ([[10-Summaries/pancikova-2025-splongget]]).
 
 ## Related
 

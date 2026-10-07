@@ -56,6 +56,8 @@ _None yet._
 - [[10-Summaries/sollier-2023-compass]] — Tapestri AML/MPN re-analysis: FLT3 CNLOH, EZH2 deletion, subclonal TP53 loss and JAK2 CNLOH.
 - [[10-Summaries/yadav-2025-scffpe-atac]] — archival FFPE scATAC of paired primary/relapsed follicular lymphoma and FL→DLBCL transformation.
 
+- [[10-Summaries/argelaguet-2018-mofa]] — MOFA on 200 CLL patients (mutations, RNA, methylation, ex vivo drug response): factors for IGHV status and trisomy 12, an oxidative-stress axis, and factors predicting time to next treatment.
+- [[10-Summaries/pancikova-2025-splongget]] — SPLONGGET long-read multiome of one high-hyperdiploid paediatric B-ALL across diagnosis and three relapses; CD19-negative relapse after CAR-T explained by 8 Mb chr16 deletion plus four phased splice-site SNVs (preprint).
 
 ## Related
 

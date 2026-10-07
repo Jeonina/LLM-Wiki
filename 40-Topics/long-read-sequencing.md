@@ -101,7 +101,7 @@ Long-read sequencing is the enabling platform layer beneath several recent break
 - [[10-Summaries/li-2024-scnanoseq-cut-tag]] — Nanopore single-cell CUT&Tag; per-copy L1Hs chromatin states.
 - [[10-Summaries/li-2023-scnanohi-c]] — Nanopore concatemer sequencing applied to single-cell Hi-C.
 - [[10-Summaries/hard-2023-long-read-scwgs]] — first genome-wide long-read (PacBio HiFi) WGS of single human cells, using droplet MDA; strong for SNVs, indel-type SVs and TRs, but chimeras make inversion and duplication calls unusable.
-- [[10-Summaries/pancikova-2025-splongget]] — SPLONGGET long-read single-cell genome + accessibility + full-length transcriptome (preprint; stub).
+- [[10-Summaries/pancikova-2025-splongget]] — SPLONGGET long-read single-cell genome + accessibility + full-length transcriptome from 10x Multiome on PromethION; targeted re-enrichment; CD19 splice-site escape in B-ALL (preprint).
 
 
 ## Related

@@ -4,6 +4,16 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+# 2026-10-07 — Re-ingest: 4 thin summaries rewritten from new full-text sources
+
+The user replaced four abstract/reference-only clippings. Three are now full-text PDFs, so these summaries were rewritten in full: [[10-Summaries/argelaguet-2018-mofa]] (MSB 2018, 13 pp), [[10-Summaries/wang-2024-wellda-seq]] (bioRxiv 2024, 28 pp; no journal version per Crossref) and [[10-Summaries/pancikova-2025-splongget]] (bioRxiv 2025, 62 pp; preprint still has placeholders, EGA "XXXX", and a single patient). [[10-Summaries/fan-2026-gfetm]] was re-clipped but is still a non-subscribed ScienceDirect page with no Results, so its caveat stays and a full-text copy is still needed.
+
+Applied 13 of 15 proposed fixes to pages citing these slugs. The 2 not applied were superseded edits to the same open-questions line, which was rewritten by hand. Notable fixes: wellDA-seq's cell type is **LumHR**, not "LHR" ([[20-Entities/nicholas-navin]], [[40-Topics/scdna-cancer-applications]]); "stub"/"abstract-level" labels removed. Added 29 graph entries across 25 pages under `## Added 2026-10-07`, updated index lines, and recorded a new tension in [[50-Notes/open-questions]]: scATAC-based copy number agrees with scWGS as pseudo-bulk (epiAneufinder r = 0.86) but not per cell (wellDA-seq median R = 0.47).
+
+Also fixed `tools/pending-sources.sh` (commit cb8f7cf) so it reads list-valued `source:` fields and `.pdf` links (0 pending).
+
+---
+
 # 2026-10-07 — Maintenance: SCAN2 preprint merged into the published paper
 
 **Decision (user).** `luquette-2021-scan2` (abstract-only bioRxiv clipping) and [[10-Summaries/luquette-2022-neuron-scan2-indels]] (Nature Genetics 2022, full text) are the same study; merge into the published version.

@@ -33,7 +33,7 @@ Nanopore long-read scATAC (scNanoATAC-seq2) yields allele-tagging rates of 96.8%
 
 Nanopore read length enables single-cell multi-way 3D genome profiling. scNanoHi-C sequences ~3-kb amplicons of Hi-C concatemers on PromethION R9.4.1 at ~USD 3 per cell when ~500 cells share a run ([[10-Summaries/li-2023-scnanohi-c]]).
 
-SPLONGGET couples 10x Genomics barcoding with Nanopore sequencing, retaining all tagmentation fragments so that one single-cell library yields whole-genome coverage, chromatin accessibility and full-length transcripts; applied to paediatric B-ALL it reports parallel CD19 immune-escape evolution (preprint; abstract-level only) ([[10-Summaries/pancikova-2025-splongget]]).
+SPLONGGET couples 10x Genomics barcoding with Nanopore sequencing, retaining all tagmentation fragments so that one single-cell library yields whole-genome coverage, chromatin accessibility and full-length transcripts; the DNA library spans 200 bp to >10 kb, which Nanopore reads independent of fragment length, giving 79–93% of the genome at ≥5× per time-point library versus 6% for the same library read with short reads. Applied to one paediatric B-ALL across four time points, it reports parallel CD19 immune-escape evolution (preprint) ([[10-Summaries/pancikova-2025-splongget]]).
 
 
 ## Related

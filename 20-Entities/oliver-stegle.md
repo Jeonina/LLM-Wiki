@@ -16,7 +16,7 @@ updated: 2026-10-07
 
 - **2026-06-02** — Co-author of [[10-Summaries/lindenhofer-2025-sdr-seq]] (SDR-seq).
 - **2026-10-07** — Co-author in [[10-Summaries/lahnemann-2020-grand-challenges]] (community review defining eleven grand challenges in single-cell data science).
-- **2026-10-07** — Last author in [[10-Summaries/argelaguet-2018-mofa]] (original MOFA paper; clipping currently lacks main text).
+- **2026-10-07** — Co-corresponding last author in [[10-Summaries/argelaguet-2018-mofa]] (original MOFA paper: Bayesian group factor analysis with ARD + spike-and-slab sparsity, applied to a 200-patient CLL multi-omics cohort and to scM&T-seq data from 87 mESCs).
 
 ## Related
 

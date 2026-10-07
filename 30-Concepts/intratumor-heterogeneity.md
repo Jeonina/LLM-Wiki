@@ -41,6 +41,7 @@ Single-cell Hi-C can track how ecDNA species are distributed and change within a
 
 Detecting subclonal mutations in bulk requires sensitivity at low allele fraction: MuTect detected 53.2% of AF-0.1 mutations at 30× versus 29.7% (Strelka), 16.8% (JointSNVMix) and 7.4% (SomaticSniper) at matched false-positive rates ([[10-Summaries/cibulskis-2013-mutect]]). Single-cell phylogenies resolve the same heterogeneity cell by cell; SIEVE recovered biopsy-matched clades in a 28-cell colorectal scWGS dataset ([[10-Summaries/kang-2022-sieve]]).
 
+Same-cell DNA + ATAC profiling of 9 ER+ breast tumours quantified how tightly chromatin state tracks genotype: the correlation between subclone-pairwise CNA and ATAC distances ranged 0.43-0.99 across tumours, about half being highly concordant ([[10-Summaries/wang-2024-wellda-seq]]). On average 82.27% of bins with differentially accessible chromatin hubs between subclones lay in subclonal CNA bins, whereas only 25.12% of subclonal CNA bins showed such hub changes ([[10-Summaries/wang-2024-wellda-seq]]). ROS, myogenesis, apoptosis and P53 programs were recurrently heritable along CNA lineages, while G2M checkpoint, coagulation, EMT and interferon-gamma response were recurrently plastic ([[10-Summaries/wang-2024-wellda-seq]]).
 
 ## Related
 

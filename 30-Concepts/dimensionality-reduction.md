@@ -33,6 +33,7 @@ UMAP's layout depends on initialization, so a random start can place globally di
 
 For single-cell histone PTM data, TF-IDF-based embeddings (ChromSCape_LSI, TFIDF-NMF, Signac) consistently outperform CPM-PCA, cisTopic's LDA and the VAEs PeakVI and SCALE; the matrix-construction (bin size) choice has an even larger effect than the method choice ([[10-Summaries/raimundo-2023-schptm-benchmark]]). This contrasts with scATAC-seq, where SnapATAC/SnapATAC2 and feature aggregation beat LSI ([[10-Summaries/luo-2024-scatac-benchmark]]), so method rankings are modality-specific (synthesis). In scCUT&Tag practice, LSI dimensions 2–30 are typically kept, and the first component is dropped because it tracks sequencing depth ([[10-Summaries/wu-2026-sccut-tag-review]]).
 
+MOFA frames multi-omics factor analysis as a generalisation of PCA to multiple data modalities, with sparse loadings for interpretability and an ARD prior that prunes factors explaining less than a user-set variance threshold (2% in the paper) so the number of factors is learned ([[10-Summaries/argelaguet-2018-mofa]]). Its key readout is a factor × modality R² matrix showing whether each axis is shared across omics layers or private to one ([[10-Summaries/argelaguet-2018-mofa]]).
 
 ## Related
 

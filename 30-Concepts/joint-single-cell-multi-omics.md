@@ -42,6 +42,7 @@ sciMET+ATAC obtains chromatin accessibility and genome-wide methylation from the
 
 Re-analysis of public scHi-C datasets found that multi-omic scHi-C protocols, such as sn-m3C-seq and HiRES, capture as many contacts per cell, with similar cis/trans ratios, as protocols that measure contacts only (no significant difference) ([[10-Summaries/dautle-2025-schic-review]]).
 
+An early factor-model analysis of same-cell transcriptome + methylome data (scM&T-seq, 87 mESCs) found one factor shared across RNA and methylation at promoters, enhancers and CpG islands, explaining 7% of RNA variance but 53–72% of methylation variance and tracking the naive → primed pluripotency transition ([[10-Summaries/argelaguet-2018-mofa]]).
 
 ## Related
 

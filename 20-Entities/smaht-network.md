@@ -5,7 +5,7 @@ aliases: [Somatic Mosaicism across Human Tissues]
 entity_kind: organization
 tags: [consortium, NIH, somatic-mosaicism, single-cell, duplex-sequencing]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # SMaHT Network
@@ -20,6 +20,7 @@ updated: 2026-05-12
 ## Mentions
 
 - **2026-05-12** — Co-author institutional credit on [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] and [[10-Summaries/zhang-2025-smaht-duplex-benchmark]].
+- **2026-10-07** — Named in [[10-Summaries/wang-2024-wellda-seq]] (discussion) as the kind of multi-tissue somatic-mosaicism effort wellDA-seq could support, after it found rare CNA-bearing LumSec cells in normal breast.
 
 ## Related
 

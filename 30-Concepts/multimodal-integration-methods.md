@@ -36,12 +36,13 @@ updated: 2026-10-07
 
 A six-setup taxonomy of single-cell integration distinguishes one sample (1S), across samples (+S), across experiments (+X+S), multiple modalities in the same cell (+M1C), different modalities in different cells (+M+C) and a full reference (+all) ([[10-Summaries/lahnemann-2020-grand-challenges]]). It flags "measurement linkage" — e.g., copy number raising expression — as unaddressed for same-cell modalities ([[10-Summaries/lahnemann-2020-grand-challenges]]).
 
-The factor-analysis branch originates with MOFA (Molecular Systems Biology 2018), whose wiki summary is currently a bibliographic stub because the clipping lacks the main text ([[10-Summaries/argelaguet-2018-mofa]]); MOFA+ is its scalable successor ([[10-Summaries/argelaguet-2020-mofa-plus]]).
+The factor-analysis branch originates with MOFA (Molecular Systems Biology 2018), a Bayesian group factor analysis model that decomposes each modality as Yᵐ = ZWᵐᵀ + εᵐ with shared factors Z and sparse per-modality weights, and reports the variance each factor explains in each modality so shared and modality-specific axes can be told apart ([[10-Summaries/argelaguet-2018-mofa]]); MOFA+ is its scalable successor ([[10-Summaries/argelaguet-2020-mofa-plus]]).
 
 MOFA on matched RNA, H3K4me1 and H3K27me3 from OneCell CUT&Tag separated a multiomic basal factor from an epigenome-only factor. The epigenome-only factor is an H3K4me1 signature in a basal subset, enriched for Zfx, Trp63 and Tcfap2c motifs and undetectable at the RNA level ([[10-Summaries/schwager-2026-onecell-cut-tag]]).
 
 For scCUT&Tag, WNN integration with matched scRNA-seq is the dominant route to cell-type annotation (sn-m6A-CT, NTT-seq, nano-CT, scCUT&Tag-pro), but it may obscure native chromatin variation, and ChromHMM/scChromHMM are described as the only promising approaches for combining multiple marks within one dataset ([[10-Summaries/wu-2026-sccut-tag-review]]).
 
+MOFA's own benchmarks set it against earlier multi-omics latent-variable models: in simulations GFA and iCluster tended to infer redundant factors and recovered shared-factor activity less accurately, and on the 200-patient CLL data MOFA trained in 25 min versus 34 h for GFA and 5–6 days for iCluster ([[10-Summaries/argelaguet-2018-mofa]]). On scM&T-seq data, MOFA's continuous factors recovered a naive → primed → differentiated trajectory that the clustering methods SNF and iCluster could not, as they only separated subpopulations ([[10-Summaries/argelaguet-2018-mofa]]).
 
 ## Related
 

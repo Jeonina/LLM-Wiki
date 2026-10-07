@@ -34,6 +34,7 @@ cisTopic (15 topics) was applied beyond accessibility data to single-cell Pol II
 
 In a benchmark on single-cell histone PTM data, cisTopic ranked behind the TF-IDF methods (ChromSCape_LSI, TFIDF-NMF, Signac) as well as SnapATAC and PeakVI, despite being among the best tools in an earlier scATAC-seq benchmark ([[10-Summaries/raimundo-2023-schptm-benchmark]]).
 
+GFETM classes cisTopic with PCA, Cicero, SCALE and PeakVI as a sequence-free method that ignores the DNA under each peak, and extends the topic-model idea with an embedded topic model (a VAE with a linear, interpretable decoder) whose peak embeddings come from a genome foundation model ([[10-Summaries/fan-2026-gfetm]]).
 
 ## Related
 

@@ -4,7 +4,7 @@ title: ICELL8 nanowell platform
 aliases: [Takara ICELL8, SMARTer ICELL8]
 tags: [single-cell, nanowell, platform, Takara, throughput]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # ICELL8 nanowell platform
@@ -20,6 +20,11 @@ updated: 2026-05-12
 ## Examples
 
 - [[10-Summaries/mezger-2018-microfluidic-atac]] (µATAC-seq), [[10-Summaries/janssens-2023-scicut-tag]] (sciCUT&Tag).
+
+## Added 2026-10-07
+
+wellDA-seq uses the 5,184-nanowell ICELL8 chip with DAPI imaging to keep only single-nucleus wells (1,200-2,600 per chip), then lyses each nucleus with protease in the well so that a second Tn5 can tagment chromatin-free DNA for whole-genome copy number alongside the first Tn5's ATAC library ([[10-Summaries/wang-2024-wellda-seq]]). The authors argue this compartmentalisation is what allows full chromatin removal while keeping each cell's DNA together ([[10-Summaries/wang-2024-wellda-seq]]).
+
 
 ## Related
 

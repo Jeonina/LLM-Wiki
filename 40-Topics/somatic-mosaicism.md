@@ -196,6 +196,7 @@ _None yet._
 - [[10-Summaries/hard-2023-long-read-scwgs]] — 27 phased somatic SNVs plus one mtDNA heteroplasmy separate two T-cell clones; no somatic SVs or TRs were found between the clones.
 - [[10-Summaries/maslov-2022-smm-seq]] — SMM-seq bulk detection of private somatic SNVs; liver mutation frequency 0.34 vs 0.96 SNV/Mbp in young vs aged donors.
 
+- [[10-Summaries/wang-2024-wellda-seq]] — wellDA-seq: same-cell CNA + chromatin accessibility; in two normal breasts, 0.75% and 0.45% of cells were aneuploid, all LumSec, all with chr1q gain; in ER+ tumours, chrX-loss T cells and pericytes. A genome-wide CNA (not SNV) instance of the mosaicism × epigenome pairing.
 
 ## Related
 

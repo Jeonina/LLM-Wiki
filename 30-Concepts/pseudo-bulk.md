@@ -37,6 +37,7 @@ In sciMET-cap, about 70% of reads fall off target. Aggregated per cluster, they 
 
 Because scCUT&Tag is so sparse, peak calling and global correlation analyses (e.g. against ENCODE ChIP-seq) are run on pseudobulk profiles, and ChromHMM chromatin states are learned from multi-mark pseudobulk tracks; a dedicated method for matching cells across marks or modalities is still lacking, beyond pseudobulk or metacell aggregation ([[10-Summaries/wu-2026-sccut-tag-review]]).
 
+Cell-type labels can build a matched normal from the same sample. SPLONGGET pools reads from non-tumour cells across time points into a normal pseudobulk and runs tumour–normal ASCAT, Severus and ClairS-TO calling against tumour pseudobulks ([[10-Summaries/pancikova-2025-splongget]]). The authors argue this avoids extra sampling or sorting when no germline control is taken, for example in tumour biopsies ([[10-Summaries/pancikova-2025-splongget]]).
 
 ## Related
 

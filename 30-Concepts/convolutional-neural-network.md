@@ -4,7 +4,7 @@ title: Convolutional neural network
 aliases: [CNN, deep convolutional network]
 tags: [deep-learning, machine-learning, image-recognition, genomics]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Convolutional neural network (CNN)
@@ -22,6 +22,11 @@ In genomics, CNNs power DeepBind, DeepSEA, DanQ, DeepEnhancer, DeepHistone, Base
 ## Examples
 
 - [[30-Concepts/deephistone]] uses DenseNet-style CNN modules for sequence and accessibility.
+
+## Added 2026-10-07
+
+GFETM argues that CNN sequence models for scATAC such as scBasset are trained supervised and see only short-range sequence context, and proposes self-supervised, attention-based genome foundation models (DNABERT, DNABERT-2, Nucleotide Transformer, HyenaDNA) as the replacement peak-sequence encoder ([[10-Summaries/fan-2026-gfetm]]). The clipping holds no head-to-head numbers ([[10-Summaries/fan-2026-gfetm]]).
+
 
 ## Related
 

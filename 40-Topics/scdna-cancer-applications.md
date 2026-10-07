@@ -42,8 +42,9 @@ updated: 2026-10-07
 
 - [[10-Summaries/mcpherson-2025-ongoing-wgd]] — DLP+ scWGS of 41 HGSOC patients: ongoing WGD, divergent cells, micronuclei and immune phenotypes.
 - [[10-Summaries/kuipers-2025-scicone]] — copy-number calling and CNA history for DLP and 10x single-cell CNV breast cancer data.
-- [[10-Summaries/wang-2024-wellda-seq]] — scDNA + scATAC co-profiling of breast cancer; ancestral cells and LHR cell-of-origin in ER+ tumours (abstract only).
+- [[10-Summaries/wang-2024-wellda-seq]] — wellDA-seq (bioRxiv preprint): same-cell scDNA + scATAC in 2 normal breasts and 9 ER+ tumours; LumHR-derived ancestral clones, ~82% of subclonal chromatin-hub changes in cis with CNAs, ATAC-inferred CNAs unreliable (median R = 0.47).
 
+- [[10-Summaries/pancikova-2025-splongget]] — genome-inclusive 10x Multiome on Nanopore: 3,800 single-cell CN profiles plus targeted per-cell genotyping in paediatric B-ALL (preprint).
 
 ## Related
 

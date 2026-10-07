@@ -55,7 +55,7 @@ Weight: comparisons are carefully done (bootstraps, FDR, with and without batch 
 ## Connections to other sources
 
 - Sequence-informed competitor: [[yuan-2022-scbasset]]; matrix-based competitors: [[granja-2021-archr]] (itLSI), [[ashuach-2022-peakvi]], [[schep-2017-chromvar]]; batch correction baseline [[korsunsky-2019-harmony]]; clustering via [[butler-2018-seurat-cca]]/Seurat.
-- Later sequence-aware alternative that critiques k-mer models: [[fan-2026-gfetm]].
+- Later sequence-aware alternative that critiques CellSpace for inferring only on cells seen during training and for k-mer features limited to short-range sequence context: [[fan-2026-gfetm]].
 - Broader scATAC benchmarking context: [[luo-2024-scatac-benchmark]]; other embeddings: [[bravo-2019-cistopic]], [[xiong-2019-scale]], [[fang-2021-snapatac]], [[zhang-2024-snapatac2]].
 
 ## Open questions

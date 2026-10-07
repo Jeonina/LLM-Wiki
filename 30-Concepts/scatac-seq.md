@@ -76,6 +76,7 @@ Analysis models for scATAC-seq now span peak-free k-mer factorisation ([[10-Summ
 
 **Sequence-informed embedding.** CellSpace co-embeds DNA k-mers and cells (StarSpace with N-grams and negative sampling) instead of reducing the cell-by-peak matrix, giving covariate-free batch mitigation and post hoc per-cell TF motif scores; it can integrate datasets processed against different peak atlases ([[10-Summaries/tayyebi-2024-cellspace]]).
 
+Same-cell ground truth from wellDA-seq shows that copy number inferred from scATAC reads (10-Mb sliding windows, Satpathy-style method) correlated with directly measured CNAs at only median Pearson R = 0.47 in MDA-MB-231, with many false-positive events, and resolved none of the DNA-defined subclonal structure in three breast tumours ([[10-Summaries/wang-2024-wellda-seq]]). In the same data, ATAC clustering recovered DNA superclones but not finer subclones ([[10-Summaries/wang-2024-wellda-seq]]).
 
 ## Related
 

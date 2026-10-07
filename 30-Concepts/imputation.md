@@ -43,6 +43,7 @@ For scHi-C, Fast-Higashi computes a partial random walk with restart batch-wise 
 
 For scHi-C, imputation methods fall into five families: random walk, Gaussian convolution, Bayesian hierarchical, deep learning and LDA topics ([[10-Summaries/dautle-2025-schic-review]]). Each has a stated failure mode. Random walks are biased toward neighbouring observations, and Gaussian smoothing can over-smooth high-frequency regions such as heterochromatin ([[10-Summaries/dautle-2025-schic-review]]). The authors warn that neighbour-based imputation dilutes high-frequency contacts and raises false positives. They propose clustering cells first and then imputing within clusters, iteratively ([[10-Summaries/dautle-2025-schic-review]]).
 
+Model-based imputation of whole missing assays: MOFA imputes masked values from its shared factors (Y = ZWᵀ), and on CLL data it beat feature-wise mean, SoftImpute and kNN imputation and was more robust than GFA, both for scattered missing values and for entirely missing drug-response assays ([[10-Summaries/argelaguet-2018-mofa]]).
 
 ## Related
 

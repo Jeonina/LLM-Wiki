@@ -49,6 +49,7 @@ updated: 2026-10-07
 - [[10-Summaries/kang-2022-sieve]] — SIEVE: finite-sites joint phylogeny and SNV calling; double mutants rare in CRC, frequent in TNBC.
 - [[10-Summaries/kozlov-2022-cellphy]] — CellPhy reanalysis of metastatic CRC patient CRC2 (86 cells): all metastatic cells form one well-supported clade (monoclonal seeding), agreeing with SCARLET over SCITE/SiCloneFit.
 
+- [[10-Summaries/pancikova-2025-splongget]] — longitudinal single-cell CNAs, pseudobulk SVs/SNVs and parallel evolution of CD19 immune-escape alleles in B-ALL under CAR-T selection (preprint).
 
 ## Related
 

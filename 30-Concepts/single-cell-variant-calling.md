@@ -48,6 +48,7 @@ VarScan is an early, aligner-agnostic bulk caller built on read-level filters an
 
 Downstream tree inference can use genotype likelihoods instead of hard calls. CellPhy reads the VCF PL field, and doing so improved accuracy most at low (5×) depth. The PL field means different things in different callers: SC-Caller's must be converted before use, while Monovar writes a standard PL ([[10-Summaries/kozlov-2022-cellphy]]). A chemistry-side alternative is to require the variant on both complementary strands. META-CS does this, calls SNVs from ≥4 reads (≥2 per strand), and does not depend on heterozygous germline SNPs, so it also works in haploid or aneuploid cells ([[10-Summaries/xing-2021-meta-cs]]).
 
+Sparse droplet genome libraries genotype almost no cells per variant: untargeted SPLONGGET covered 0.01% of cells on average at known B-ALL driver sites ([[10-Summaries/pancikova-2025-splongget]]). Re-amplifying the same barcoded libraries with biotinylated multiplex PCR raised on-target coverage 3,242-fold (DNA) and 4,402-fold (cDNA), and on average 18.4% of cells (range 0–75.1%) could then be genotyped. Targeted VAFs correlated with MissionBio Tapestri at PCC 0.92 ([[10-Summaries/pancikova-2025-splongget]]).
 
 ## Related
 

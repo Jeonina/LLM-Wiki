@@ -41,6 +41,7 @@ EpiAgent imputes by decoding all cCREs from a transformer cell embedding, improv
 
 Over-smoothing can be quantified rather than just flagged as a risk. scCASE defines over-, under- and smoothing scores and reports over-smoothing when the NMF rank K < 7 and added noise when K > 20, while results stay stable for λ between 10⁵ and 10⁸ ([[10-Summaries/tang-2024-sccase]]). Enhancement can also reduce the sequencing-depth confound: PC1–depth correlation fell by 45.6% in a bone-marrow dataset and by 19.6% in a mouse lung dataset ([[10-Summaries/tang-2024-sccase]]).
 
+- **GFETM** claims imputation of peak accessibility on unseen chromosome regions and denoising of raw scATAC by jointly training an embedded topic model with a genome foundation model over peak sequences ([[10-Summaries/fan-2026-gfetm]]). No quantitative results are available in the clipping ([[10-Summaries/fan-2026-gfetm]]).
 
 ## Related
 

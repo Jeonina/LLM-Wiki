@@ -178,9 +178,9 @@ Catalog of ~370 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/zhu-2020-multimodal-power-of-many]] — Zhu, Preissl & Ren 2020, the depth-vs-throughput taxonomy of joint assays and its three stated gaps.
 - [[10-Summaries/vandereyken-2023-scmultiomics-review]] — Vandereyken 2023, coupling-principle taxonomy (when analytes are uncoupled) plus spatial multi-omics.
 - [[10-Summaries/lim-2024-single-cell-omics-review]] — Lim 2024, layer-by-layer protocol catalog including single-cell proteome methods.
-- [[10-Summaries/pancikova-2025-splongget]] — Pančíková 2025 (preprint; stub — clipping has references only), SPLONGGET: 10x barcoding + Nanopore for joint per-cell genome, accessibility and full-length transcriptome; CD19 immune-escape evolution in paediatric B-ALL.
+- [[10-Summaries/pancikova-2025-splongget]] — Pančíková 2025 (bioRxiv preprint), SPLONGGET: modified 10x Multiome read on Nanopore retains all Tn5 fragments for per-cell genome + accessibility + full-length transcriptome, with targeted re-enrichment for single-cell genotyping; one paediatric B-ALL through CAR-T shows CD19 escape by chr16 LOH plus four phased splice-site SNVs.
 - [[10-Summaries/schwager-2026-onecell-cut-tag]] — Schwager 2026, OneCell CUT&Tag: plate-based CUT&Tag that starts from single sorted cells, plus FLASH-seq RNA and index-sorted surface markers from ≥1 cell; zygote H3K27me3/H3K4me1, basal-cell epigenomic priming, gradual chromatin vs abrupt RNA change in basal-to-luminal transdifferentiation.
-- [[10-Summaries/wang-2024-wellda-seq]] — Wang 2024 (bioRxiv, abstract only), wellDA-seq: joint single-cell whole-genome + chromatin accessibility in 22,123 breast cells; genetic hardwiring and epigenetic plasticity, LHR cell-of-origin for ER+ tumours.
+- [[10-Summaries/wang-2024-wellda-seq]] — Wang 2024 (bioRxiv preprint, full text), wellDA-seq: two-Tn5 nanowell co-assay of single-cell whole-genome CNA + chromatin accessibility in 22,123 breast cells; LumSec aneuploid cells in normal breast, chrX-loss T cells/pericytes, LumHR-derived ancestral clones, ~82% of subclonal chromatin-hub changes in cis with CNAs, ATAC-inferred CNAs unreliable.
 
 ## Multi-omics integration & foundation models
 
@@ -204,7 +204,7 @@ Catalog of ~370 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/biancalani-2021-tangram]] — Biancalani 2021, Tangram: aligning sc/snRNA-seq to five kinds of spatial data.
 - [[10-Summaries/kleshchevnikov-2022-cell2location]] — Kleshchevnikov 2022, cell2location: Bayesian deconvolution of spatial transcriptomics.
 - [[10-Summaries/yuan-2024-linger]] — Yuan & Duren 2024, LINGER: GRN inference using atlas-scale external bulk data via lifelong learning.
-- [[10-Summaries/argelaguet-2018-mofa]] — Argelaguet 2018, MOFA: original Multi-Omics Factor Analysis paper (clipping lacks main text; bibliographic stub pending re-clip).
+- [[10-Summaries/argelaguet-2018-mofa]] — Argelaguet 2018, MOFA: sparse Bayesian group factor analysis for unsupervised multi-omics integration (shared vs modality-specific factors, missing assays); CLL cohort and scM&T-seq applications.
 - [[10-Summaries/chen-2025-epiagent]] — Chen 2025, EpiAgent: ~1.4B-parameter scATAC foundation model on ~5M cells using accessible-cCRE 'cell sentences'; annotation, imputation, perturbation prediction, in silico cCRE knockout.
 
 ## scATAC-seq & chromatin accessibility
@@ -235,7 +235,7 @@ Catalog of ~370 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/mcinnes-2018-umap]] — McInnes 2018, UMAP (arXiv preprint, never journal-published).
 - [[10-Summaries/ashuach-2022-peakvi]] — Ashuach 2022, PeakVI: scvi-tools Bernoulli VAE for scATAC with region/cell nuisance factors, batch correction, scArches mapping and calibrated single-region differential accessibility.
 - [[10-Summaries/de-boer-2018-brockman]] — de Boer & Regev 2018, BROCKMAN: peak-free gapped k-mer PCA of scATAC insertion sites; out-of-peak reads group cells better; PCs map to co-varying, physically interacting TFs.
-- [[10-Summaries/fan-2026-gfetm]] — Fan 2026, GFETM: embedded topic model jointly trained with a genome foundation model for transferable, sequence-informed scATAC-seq modeling (abstract-level clipping).
+- [[10-Summaries/fan-2026-gfetm]] — Fan 2026, GFETM: embedded topic model jointly trained with a genome foundation model for transferable, sequence-informed scATAC-seq modeling (partial clipping; no Results).
 - [[10-Summaries/ji-2017-scrat]] — Ji 2017, SCRAT: GUI toolbox aggregating sparse scATAC/scDNase/scChIP reads over motifs, gene sets and DHS clusters.
 - [[10-Summaries/li-2025-scnanoatac-seq2]] — Li 2025, scNanoATAC-seq2: single-tube, nanopore long-read scATAC of 3,302 mouse preimplantation cells; allele-resolved XCI/imprinting and copy-resolved LINE1/MERVL accessibility.
 - [[10-Summaries/ramakrishnan-2023-epianeufinder]] — Ramakrishnan 2023, epiAneufinder: reference-free per-cell CNA calling from scATAC-seq read depth (Anderson–Darling binary segmentation); r = 0.86 vs scWGS.

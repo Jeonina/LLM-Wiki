@@ -37,6 +37,9 @@ CoBATCH pre-assembles PA-Tn5 with well-specific barcoded adapters, so the cell b
 
 META-CS loads Tn5 with an equimolar mix of 16 transposon sequences, so each fragment carries two random tags. The tags act as fragment barcodes and reduce the amplification loss from intramolecular hairpins that form when both ends carry the same sequence. Strand identity comes from later primer-extension rounds, not from the tagmentation step itself ([[10-Summaries/xing-2021-meta-cs]]).
 
+Tn5 tagmentation of nuclei yields fragments from ~35 bp to several kbp. Standard bead clean-ups, PCR and Illumina sequencing keep only the short ones, which is why ATAC libraries look enriched for open chromatin ([[10-Summaries/pancikova-2025-splongget]]). SPLONGGET retains all fragment sizes, giving DNA libraries of 200 bp to >10 kb that supply whole-genome coverage alongside the ATAC signal. Only reads under 1 kb are used for the accessibility analysis ([[10-Summaries/pancikova-2025-splongget]]).
+
+Two Tn5 loadings with different adapter sets can split one nucleus's genome by chromatin state: in wellDA-seq, Tn5-1 tagments open chromatin in intact permeabilised nuclei, and Tn5-2 tagments the remaining DNA after in-well protease removal of chromatin, with modality-specific PCR separating the ATAC and DNA libraries ([[10-Summaries/wang-2024-wellda-seq]]).
 
 ## Related
 

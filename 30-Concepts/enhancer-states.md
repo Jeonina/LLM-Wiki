@@ -4,7 +4,7 @@ title: Enhancer states
 aliases: [active enhancer, primed enhancer, poised enhancer]
 tags: [enhancers, histone-modifications, regulatory-elements]
 created: 2026-05-12
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Enhancer states
@@ -36,6 +36,17 @@ Enhancer rewiring is also part of pluripotency reprogramming: fibroblast→iPS c
 - **Primed enhancers.** Collaborative binding of small sets of lineage-determining TFs at closely spaced motifs displaces nucleosomes and induces H3K4me1; only ~15% of PU.1 sites drove constitutive reporter activity, while 10/11 LXR-co-bound regions were ligand-dependent — primed ≠ active ([[10-Summaries/heinz-2010-homer]]).
 - **Population scale.** Enhancer/promoter signatures cover ~5% of each of 127 reference epigenomes and are enriched for evolutionarily conserved non-exonic regions; H3K4me1-associated states are the most tissue-specific, and **repressive marks carry no GWAS enrichment at all** ([[10-Summaries/roadmap-2015-111-epigenomes]]).
 - **Regulatory priming persists into repressive chromatin.** Of 1,597 monocyte-specific repressive-state TSS shifts, only 16.1% have a matching transcriptional shift; the rest are silent in every cell type yet cell-type-specifically marked ([[10-Summaries/zhang-2022-sccut-tag-pro]]).
+
+## Added 2026-10-07
+
+Enhancer methylation is the fastest-moving compartment of the methylome in single cells. Enhancers of essentially any lineage lost methylation faster than expected under 2i, ESC-specific enhancers fastest, and the same sets regained methylation fastest during EB/ATRA differentiation ([[10-Summaries/farlik-2015-scwgbs]]).
+
+H3K4me1 in mouse zygotes accumulates genome-wide without the enhancer and promoter enrichment seen in differentiated cells and does not correlate with expression. It is therefore not an enhancer proxy at that stage ([[10-Summaries/schwager-2026-onecell-cut-tag]]). CoBATCH used H3K27ac as an active-enhancer surrogate to find dynamic gastrulation enhancers in single E6.5–E7.75 embryos and enhancer modules in endothelial cells ([[10-Summaries/wang-2019-cobatch]]).
+
+An earlier T-cell atlas reported all three H3K4 methylation states, H2A.Z and H3K9me1 enriched at 3,507 non-promoter, non-CTCF DNase HS sites and at known *IFNG* and *IL13* enhancers, explicitly disputing an H3K4me1-but-not-H3K4me3 enhancer signature ([[10-Summaries/barski-2007-histone-methylation-chip-seq]]).
+
+ChromHMM applied to pseudobulk scCUT&Tag tracks of six histone marks in human PBMC recovers promoter, enhancer, repressive and heterochromatin states, with cell-type-specific differences such as broader repressive-domain coverage in monocytes ([[10-Summaries/wu-2026-sccut-tag-review]]).
+
 
 ## Related
 

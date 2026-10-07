@@ -4,7 +4,7 @@ title: TAPS
 aliases: [TET-assisted pyridine borane sequencing]
 tags: [methylation, bisulfite-free, 5mC, TET, base-resolution]
 created: 2026-05-12
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # TAPS
@@ -31,6 +31,11 @@ Bisulfite degrades up to 90% of input DNA and destroys cell-barcode adaptors use
 - **Direct conversion preserves complexity.** TAPS converts the modified base (5mC/5hmC → T) rather than unmodified cytosine, so mapping reaches 93.0% (scTAPS) and 89.4% (scCAPS+) ([[10-Summaries/chen-2025-sctaps-sccaps-plus]]).
 - **Quantified accuracy.** Spike-in conversion rates: scTAPS 5mCG 96.6% / 5hmCG 85.0%; scCAPS+ 5hmCG 93.0%. False positives 0.19% and 0.38% on unmodified C, and 0.25% on 5mCG for scCAPS+ ([[10-Summaries/chen-2025-sctaps-sccaps-plus]]).
 - **Depth over throughput.** 2.0–2.3 M CpG sites covered per cell (8.08–10.88% of all CpGs), against 1.96%/0.79% for the higher-throughput SIMPLE-seq, which also needs a standard curve to correct its ~87% 5mC conversion ([[10-Summaries/chen-2025-sctaps-sccaps-plus]]).
+
+## Added 2026-10-07
+
+EM-seq is the fully enzymatic counterpart: TET2 and T4-BGT protect 5mC/5hmC and APOBEC3A deaminates unmodified C, so modified bases read as C as in bisulfite data and existing pipelines apply unchanged, unlike TAPS whose modified bases read as T ([[10-Summaries/vaisvila-2021-em-seq]]).
+
 
 ## Related
 

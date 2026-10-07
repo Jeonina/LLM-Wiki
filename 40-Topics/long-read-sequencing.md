@@ -4,7 +4,7 @@ title: Long-read sequencing
 aliases: [PacBio, Oxford Nanopore, ONT, HiFi, long-read]
 tags: [sequencing, long-read, third-generation]
 created: 2026-05-11
-updated: 2026-06-29
+updated: 2026-10-07
 ---
 
 # Long-read sequencing
@@ -39,7 +39,7 @@ Long-read sequencing is the enabling platform layer beneath several recent break
 - [[30-Concepts/pacbio]] — PacBio SMRT platform.
 - [[30-Concepts/fiber-seq]] — m6A-based single-molecule chromatin footprinting (PacBio).
 - [[30-Concepts/daf-seq]] — deaminase-based single-molecule chromatin footprinting (PacBio).
-- [[40-Topics/duplex-sequencing]] — HiDEF-seq, SMM-seq are long-read duplex variants.
+- [[40-Topics/duplex-sequencing]] — HiDEF-seq is a long-read (PacBio) duplex variant; SMM-seq is sequenced on Illumina ([[10-Summaries/maslov-2022-smm-seq]]).
 - [[30-Concepts/bisulfite-sequencing]] — short-read alternative that long-read methods supplant for methylation.
 - [[40-Topics/dna-methylation]] — directly read without conversion via long-read base modification calling.
 - [[30-Concepts/samosa]], [[30-Concepts/samosa-tag]], [[30-Concepts/smrt-tag]] — PacBio chromatin-accessibility methods.
@@ -94,6 +94,15 @@ Long-read sequencing is the enabling platform layer beneath several recent break
 - Cost per Gb at scale — still higher than short-read Illumina; gap closing but not closed (synthesis).
 - Per-platform methylation calling accuracy varies and benchmarking lags chemistry development ([[10-Summaries/fu-2025-longread-methylation]]).
 - Long-read single-cell methods — emerging but not yet routine; scDAF-seq is currently the most successful single-cell long-read application ([[10-Summaries/swanson-2025-daf-seq]]).
+
+## Added 2026-10-07
+
+- [[10-Summaries/li-2025-scnanoatac-seq2]] — nanopore-based scATAC (scNanoATAC-seq2) with allele- and repeat-copy-resolved accessibility.
+- [[10-Summaries/li-2024-scnanoseq-cut-tag]] — Nanopore single-cell CUT&Tag; per-copy L1Hs chromatin states.
+- [[10-Summaries/li-2023-scnanohi-c]] — Nanopore concatemer sequencing applied to single-cell Hi-C.
+- [[10-Summaries/hard-2023-long-read-scwgs]] — first genome-wide long-read (PacBio HiFi) WGS of single human cells, using droplet MDA; strong for SNVs, indel-type SVs and TRs, but chimeras make inversion and duplication calls unusable.
+- [[10-Summaries/pancikova-2025-splongget]] — SPLONGGET long-read single-cell genome + accessibility + full-length transcriptome (preprint; stub).
+
 
 ## Related
 

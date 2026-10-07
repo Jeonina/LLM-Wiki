@@ -4,7 +4,7 @@ title: Single-cell multi-omics
 aliases: [single-cell multiomics, sc-multiomics, multimodal omics]
 tags: [single-cell, methods, multiomics, multi-omics]
 created: 2026-05-07
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Single-cell multi-omics
@@ -201,6 +201,17 @@ Results worth carrying:
 Integration methods now span three strategies: embedding correction with multi-covariate support and the LISI metric pair ([[10-Summaries/korsunsky-2019-harmony]]), factorization into shared *and* dataset-specific factors so differences stay legible ([[10-Summaries/welch-2019-liger]]), and joint modelling where a co-assayed modality is a prediction target rather than an input ([[10-Summaries/zhang-2022-higashi]]).
 
 Regulatory-network inference from joint accessibility and expression: [[10-Summaries/pliner-2018-cicero]] links elements to genes by co-accessibility; [[10-Summaries/kamimoto-2023-celloracle]] uses the resulting network as a simulation operator for in-silico TF perturbation; [[10-Summaries/bravo-2023-scenicplus]] infers enhancer-driven regulons and reports that only 49% of enhancers regulate their most proximal gene.
+
+
+## Added 2026-10-07
+
+- [[10-Summaries/li-2023-darlin]] — Camellia-seq: lineage barcodes + RNA + CpG methylation + GpC accessibility in the same cell.
+- [[10-Summaries/argelaguet-2018-mofa]] — Original MOFA paper (stub; clipping lacks main text).
+- [[10-Summaries/chang-2025-droplet-hi-c]] — Paired Hi-C: joint single-nucleus Hi-C + RNA on the 10x Multiome kit.
+- [[10-Summaries/schwager-2026-onecell-cut-tag]] — OneCell CUT&Tag: histone mark + full-length RNA + surface markers per cell from ≥1 cell; epigenome/RNA identity discordance and asynchronous remodelling in mammary transdifferentiation.
+- [[10-Summaries/wang-2024-wellda-seq]] — wellDA-seq: single-cell whole genome + chromatin accessibility co-assay.
+- [[10-Summaries/pancikova-2025-splongget]] — SPLONGGET joint long-read genotype/accessibility/transcriptome; CD19 escape in B-ALL.
+- [[10-Summaries/nichols-2025-scimetv3]] — sciMET+ATAC: methylome plus chromatin accessibility from the same cells via sequential tagmentation.
 
 
 ## Related

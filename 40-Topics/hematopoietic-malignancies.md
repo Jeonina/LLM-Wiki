@@ -4,7 +4,7 @@ title: Hematopoietic malignancies
 aliases: [blood cancers, myeloid malignancies]
 tags: [hematology, cancer, clonal-evolution]
 created: 2026-05-07
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Hematopoietic malignancies
@@ -50,6 +50,12 @@ _None yet._
 - Does the IRE1-XBP1 therapeutic hypothesis from [[10-Summaries/nam-2019-got]] hold up in MPN clinical trials? Wiki has no source on this yet.
 - Ruxolitinib reverses the chromatin TF-motif phenotype but not the clone ([[10-Summaries/izzo-2024-got-cha]]). Does combination therapy targeting the cell-intrinsic chromatin program (e.g. NF-κB or BET inhibitors) eliminate the clone in vivo?
 - Other hematopoietic malignancies (AML, CLL, MDS) are not yet represented in the vault — the [[20-Entities/landau-lab]] history references CLL clonal-evolution work that would extend this topic substantially.
+
+## Added 2026-10-07
+
+- [[10-Summaries/sollier-2023-compass]] — Tapestri AML/MPN re-analysis: FLT3 CNLOH, EZH2 deletion, subclonal TP53 loss and JAK2 CNLOH.
+- [[10-Summaries/yadav-2025-scffpe-atac]] — archival FFPE scATAC of paired primary/relapsed follicular lymphoma and FL→DLBCL transformation.
+
 
 ## Related
 

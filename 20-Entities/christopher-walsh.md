@@ -5,7 +5,7 @@ aliases: [Walsh CA, Walsh C]
 entity_kind: person
 tags: [neurology, mosaicism, brain-development, scDNA-seq]
 created: 2026-05-11
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Christopher Walsh
@@ -26,6 +26,7 @@ Boston Children's Hospital, Harvard Medical School, Howard Hughes Medical Instit
 - **2026-05-12** — [[10-Summaries/bizzotto-2022-brain-mosaicism-review]]: senior author of the NRN brain mosaicism review with first-author postdoc Sara Bizzotto. Articulates the framework that "somatic developmental mutations are natural barcodes for retrospective lineage tracing in humans."
 - **2026-05-12** — Co-author of [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] (Luquette/Walsh 2025): PTA + duplex on 102 nuclei from 74-yo lung and colon; SMaHT-network single-cell paper.
 - **2026-05-12** — Co-author of [[10-Summaries/zhang-2025-smaht-duplex-benchmark]] (SMaHT duplex-seq benchmark).
+- **2026-10-07** — Senior co-author on [[10-Summaries/luquette-2022-neuron-scan2-indels]] (neuronal somatic indel enrichment in regulatory elements) and [[10-Summaries/bohrson-2019-lira]] (LiRA).
 
 ## Positions and claims
 

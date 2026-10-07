@@ -4,7 +4,7 @@ title: MDA (Multiple Displacement Amplification)
 aliases: [Multiple Displacement Amplification, Φ29 amplification]
 tags: [scWGA, isothermal, Φ29, method]
 created: 2026-05-11
-updated: 2026-05-14
+updated: 2026-10-07
 ---
 
 # MDA (Multiple Displacement Amplification)
@@ -42,6 +42,13 @@ MDA democratized [[40-Topics/scdna-seq]]: Φ29 polymerase enabled high-fidelity,
 
 - Original brain mosaicism studies (Lodato et al. 2015 — 84% coverage on neurons via MDA).
 - Microbial dark-matter sequencing (TM7, TM6 phyla via microfluidic MDA).
+
+## Added 2026-10-07
+
+Haploid male X chromosomes revealed a median excess of 15 sSNVs and 3.7 indels per MDA X versus PTA from the same individual — single-strand-dropout artifacts that VAF-based filters cannot remove [[10-Summaries/luquette-2022-neuron-scan2-indels]]. Read-backed phasing (LiRA) flags MDA artifacts enriched for C>T and C>A, consistent with pre-amplification lesions [[10-Summaries/bohrson-2019-lira]].
+
+Droplet MDA (dMDA) splits one cell's lysed DNA into ~50,000 Xdrop droplets so each droplet amplifies only one or a few fragments ([[10-Summaries/hard-2023-long-read-scwgs]]). In matched T-cell comparisons, 68.9% of reads fell in ≥200× regions after tube MDA versus 16.0% after dMDA, and genome-wide coverage SD was 2.46× higher for MDA ([[10-Summaries/hard-2023-long-read-scwgs]]). Partitioning removes inter-molecular chimeras in single-fragment droplets, but intramolecular chimeras remain: on average each HiFi read gave 2.7 separate alignments ([[10-Summaries/hard-2023-long-read-scwgs]]).
+
 
 ## Related
 

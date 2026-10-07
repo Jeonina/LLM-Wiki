@@ -4,7 +4,7 @@ title: Mutational signatures
 aliases: [SBS signatures, COSMIC signatures]
 tags: [somatic-mutation, mutational-process, cancer, aging]
 created: 2026-05-12
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Mutational signatures
@@ -37,6 +37,17 @@ Signatures reveal **mutagenic etiology** from sequence data alone — e.g., SBS4
 [[10-Summaries/alexandrov-2013-mutational-signatures]] established the 96-substitution classification (six pyrimidine-referenced base changes × 16 trinucleotide contexts) and extracted 21 validated signatures from 4,938,362 mutations across 7,042 cancers of 30 classes. Signature 1A/B — C>T at NpCpG from spontaneous deamination of 5-methylcytosine — appears in 25 of 30 cancer classes, making the most universal mutational process in human cancer a direct chemical consequence of the epigenome.
 
 Two constraints for single-cell work: mutation prevalence spans five orders of magnitude between cancer types, so burden thresholds must be set per tissue; and WGA amplification artefacts carry their own context biases that can mimic real signatures, so any per-cell signature claim requires an explicit artefact model ([[10-Summaries/alexandrov-2013-mutational-signatures]], synthesis).
+
+
+## Added 2026-10-07
+
+Mutations called from scRNA-seq by SComatic reproduce expected signatures at cell-type resolution — UV SBS7 in cutaneous SCC (cosine 0.98 with WES), MMR and POLE signatures in hypermutated colorectal tumours, and SBS44 in cardiomyocytes — after renormalising trinucleotide frequencies to callable regions ([[10-Summaries/muyas-2024-scomatic]]).
+
+In PTA-amplified neurons, indel signature ID4 (deletion-rich, unknown mechanism) was the most prevalent and most age-correlated (r = 0.82), while replication-linked ID1/ID2 were absent; MDA artifact SNVs match signatures B/scF [[10-Summaries/luquette-2022-neuron-scan2-indels]]. In normal tissues measured by BotSeqS, rare-mutation spectra were tissue-specific and resembled spectra of cancers from the same organs [[10-Summaries/hoang-2016-botseqs]].
+
+In bulk liver DNA assayed by SMM-seq (3 young, 3 aged donors), de novo NMF found signature S1. S1 was enriched in the aged group and resembled SBS5 (cosine 0.904). A young-dominant S2 matched no COSMIC signature ([[10-Summaries/maslov-2022-smm-seq]]).
+
+With low-false-positive single-cell calls, NMF found three signatures in 53 PBMCs: an HSPC-like signature (r = 0.976 with HSPC spectra), one specific to SHM+ B cells, and a T-cell signature whose contribution rose with SNV burden. PCA on trinucleotide spectra separated neurons from blood cells and most T cells from B cells ([[10-Summaries/xing-2021-meta-cs]]). CellPhy's simulations used COSMIC signatures 1 and 5 to generate realistic somatic substitution spectra ([[10-Summaries/kozlov-2022-cellphy]]).
 
 
 ## Related

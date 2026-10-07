@@ -4,7 +4,7 @@ title: ChIA-PET
 aliases: [Chromatin Interaction Analysis with Paired-End Tag sequencing, HiChIP, PLAC-seq, protein-anchored interaction mapping]
 tags: [3D-genome, ChIP, proximity-ligation, enhancer-promoter, CTCF, RNAPII]
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-10-07
 ---
 
 # ChIA-PET
@@ -31,6 +31,11 @@ The protocol is described in three co-equal parts — wet lab, data analysis, an
 Protein-anchored interaction mapping has **no single-cell member**, because immunoprecipitation requires many cells. Its descendants — PLAC-seq and HiChIP — therefore appear in the single-cell literature not as assays but as the **reference truth** against which single-cell loop callers are scored ([[10-Summaries/yu-2021-snaphic]]). The single-cell 3D field traded the functional handle for per-cell resolution: [[single-cell-hi-c|scHi-C]] is protein-agnostic and is the only 3D modality available at single-cell scale. (synthesis)
 
 This mirrors the ChIP-to-[[cut-and-tag|CUT&Tag]] transition in the histone field, where a low-input tethering chemistry replaced immunoprecipitation and *did* reach single cells ([[10-Summaries/kaya-okur-2019-cut-and-tag]]) — no equivalent chemistry has yet rescued protein-anchored *interaction* mapping. (synthesis)
+
+## Added 2026-10-07
+
+Genome-wide Hi-C loop calls in GM12878 and K562 agreed strongly with three ENCODE CTCF/RAD21 ChIA-PET experiments ([[10-Summaries/rao-2014-in-situ-hic]]).
+
 
 ## Related
 

@@ -4,7 +4,7 @@ title: sortChIC
 aliases: [FACS-sorted ChIC]
 tags: [histone-modifications, single-cell, MNase, FACS, van-Oudenaarden-lab]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # sortChIC
@@ -23,6 +23,11 @@ Workflow: bind antibody to histone mark in suspension → recruit pA-MNase → F
 ## Examples
 
 - Mouse intestine epithelial vs immune lineage profiling with anteroposterior CellTrace labeling ([[10-Summaries/geisenberger-2025-scepi2-seq]]).
+
+## Added 2026-10-07
+
+In a depth-equalized benchmark on MDA-MB-468 H3K27me3 (38,716 reads/cell), sortChIC gave 20,581 median unique reads/cell and FrIP 0.79, close to OneCell CUT&Tag (26,008; 0.77) and well above scChIP-seq (5,722) and 10x droplet scCUT&Tag (5,156). sortChIC still requires ≥10,000 input cells ([[10-Summaries/schwager-2026-onecell-cut-tag]]).
+
 
 ## Related
 

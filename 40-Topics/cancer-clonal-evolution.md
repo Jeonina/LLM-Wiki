@@ -4,7 +4,7 @@ title: Cancer clonal evolution
 aliases: [tumor clonal evolution, cancer phylogeny, tumor evolution]
 tags: [cancer, clonal-evolution, phylogeny, intratumor-heterogeneity]
 created: 2026-05-19
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Cancer clonal evolution
@@ -34,6 +34,20 @@ updated: 2026-08-10
 ## Added 2026-08-10
 
 [[10-Summaries/zahn-2017-dlp]] is the founding amplification-free single-cell platform (DLP): fragment before amplifying so PCR copies are removable duplicates, 782 cells, and clonal dynamics across serial xenograft passages in which minor clones vanish and the dominant clone diversifies. [[10-Summaries/bakker-2016-aneufinder]] separates chromosomal instability (a rate) from aneuploidy (a state) — pooled cells reproduce a clonal aCGH karyotype while 56% of individual cells are unique. [[10-Summaries/xu-2012-single-cell-exome-kidney]] is the counterexample: a ccRCC with no detectable subclonal structure in 17 cells, and no *VHL* or *PBRM1* driver. [[10-Summaries/wang-2021-medalt]] supplies a CNA-appropriate lineage metric (minimal event distance) plus a statistic linking alterations to lineage expansion, validated against survival in 20 TNBC patients. [[10-Summaries/alexandrov-2013-mutational-signatures]] provides the process-level interpretation of passenger mutations across 7,042 cancers.
+
+
+## Added 2026-10-07
+
+- [[10-Summaries/lahnemann-2020-grand-challenges]] — open problems in single-cell tumour phylogenetics (scale, CNV/indel integration, population-genetic parameters, metastatic seeding).
+- [[10-Summaries/zafar-2019-siclonefit]] — SiCloneFit: Bayesian joint clone clustering, genotyping and finite-site clonal phylogeny with doublet modelling.
+- [[10-Summaries/sollier-2023-compass]] — COMPASS joint SNV+CNA phylogenies from targeted scDNA-seq; convergent evolution in AML/MPN.
+- [[10-Summaries/mcpherson-2025-ongoing-wgd]] — Ongoing whole-genome doubling in HGSOC from 30,260 DLP+ tumour genomes; WGD raises CIN but represses STING1.
+- [[10-Summaries/zhang-2025-scistree2]] — ScisTree2: scalable infinite-sites lineage trees and genotype calling, tested on HGSOC DLP+ data.
+- [[10-Summaries/chang-2025-droplet-hi-c]] — single-cell Hi-C tracks ecDNA gain/loss and boundary changes under erlotinib (GBM39) and after azacitidine + venetoclax (AML).
+- [[10-Summaries/kuipers-2025-scicone]] — SCICoNE: jointly infers single-cell copy numbers and the CNA event tree; finds TNBC event histories and whole-genome duplication as the first tumour event.
+- [[10-Summaries/wang-2024-wellda-seq]] — genotype-to-epigenotype mapping across breast-cancer subclones (hardwiring vs plasticity).
+- [[10-Summaries/kang-2022-sieve]] — SIEVE: finite-sites joint phylogeny and SNV calling; double mutants rare in CRC, frequent in TNBC.
+- [[10-Summaries/kozlov-2022-cellphy]] — CellPhy reanalysis of metastatic CRC patient CRC2 (86 cells): all metastatic cells form one well-supported clade (monoclonal seeding), agreeing with SCARLET over SCITE/SiCloneFit.
 
 
 ## Related

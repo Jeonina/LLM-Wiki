@@ -4,7 +4,7 @@ title: scNMT-seq
 aliases: [scNMT-seq, single-cell nucleosome methylation transcription sequencing]
 tags: [joint-assay, single-cell-multiomics, triple-omics, dna-methylation, chromatin-accessibility, NOMe-seq, method]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # scNMT-seq
@@ -32,6 +32,13 @@ Clark et al. 2018 ([[10-Summaries/clark-2018-scnmt-seq]]). Cell is lysed in M.Cv
 
 - Throughput limited (61 + 40 cells in the original paper); subsequent split-pool / combinatorial methods scale higher but typically drop one layer.
 - Requires discarding G-C-G and C-C-G positions (~48% of CpG sites genome-wide) — a fundamental NOMe-seq trade-off.
+
+## Added 2026-10-07
+
+Camellia-seq extends scNMT-seq by also capturing expressed lineage-barcode transcripts from the cytoplasmic fraction (modified STRT-seq) while the nucleus undergoes GpC methyltransferase treatment and scBS-seq; in HSCs it covered ~70% of promoters and ~90% of gene bodies and gave ~100,000 UMIs from ~3,000 genes per cell [[10-Summaries/li-2023-darlin]]. It is plate-based, low-throughput and costly [[10-Summaries/li-2023-darlin]].
+
+The scNMT-seq mouse gastrulation data (E4.5–E7.5) were used to fit and benchmark mist, which found higher methylation dispersion in early than late pseudotime stages and 3,927 differentially methylated genes not shared with GAM or polynomial regression ([[10-Summaries/duan-2026-mist]]).
+
 
 ## Related
 

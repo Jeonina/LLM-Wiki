@@ -44,7 +44,7 @@ Authoritative narrative review with tables comparing 12 single-cell (plus bulk) 
 ## Surprising or load-bearing bits
 
 - The framing that **3D genome architecture is a regulatory layer that varies cell-to-cell**, not just a structural scaffold, is the conceptual through-line. Bulk Hi-C produced a misleading picture of stable architecture.
-- scNanoHi-C as the first long-read single-cell Hi-C is noteworthy *(not found in source clipping — unverified)* — the long-read advantage is **detecting higher-order interactions** (multi-way contacts) that ligation-based short-read methods can't see.
+- scNanoHi-C as the first long-read single-cell Hi-C is noteworthy *(not in this review; the primary paper [[10-Summaries/li-2023-scnanohi-c]] claims first single-cell detection of proximal high-order interactions)* — the long-read advantage is **detecting higher-order interactions** (multi-way contacts) that ligation-based short-read methods can't see.
 - Multi-omics integration is the field's active frontier: simultaneous 3D contacts + methylation (sn-m3C-seq) or + expression (HiRES) reveals causal-relationship questions inaccessible to single-modality work.
 
 ## Connections to other sources

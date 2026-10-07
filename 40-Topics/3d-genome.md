@@ -4,7 +4,7 @@ title: 3D genome
 aliases: [chromatin conformation, Hi-C, nuclear architecture, 3D chromatin organization]
 tags: [Hi-C, TAD, compartments, loops, single-cell, chromatin-structure, chromatin]
 created: 2026-05-12
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # 3D genome
@@ -28,7 +28,7 @@ The 3D genome is organized hierarchically across scales: chromosomes → compart
 - [[30-Concepts/single-cell-hi-c]] — the assay class
 - [[30-Concepts/topologically-associating-domain]] — TADs
 - [[30-Concepts/chromatin-compartments]] — A/B compartments
-- [[30-Concepts/sc-sprite]] — sonication-based multi-way contact capture
+- [[30-Concepts/sc-sprite]] — split-pool barcoding of crosslinked clusters for multi-way contact capture
 - [[30-Concepts/dip-c]] — diploid Hi-C
 - [[30-Concepts/stark]] — unified sc3DG-seq analysis pipeline
 - [[30-Concepts/sscce]] — single-cell structural quality metric
@@ -114,6 +114,22 @@ The single-cell 3D-genome story spans three measurement modalities — proximity
 The single-cell branch: [[10-Summaries/ramani-2017-scihi-c]] applies combinatorial indexing to conformation, producing 10,696 single-cell maps and demonstrating in-silico cell-cycle sorting from the *P(s)* scaling coefficient alone.
 
 Infrastructure is catalogued under *Pipelines, storage, visualization* above. Two findings from it belong here as caveats on every 3D claim on this page: **TAD calls are caller-dependent** — seven callers produce inconsistent domains of widely varying size on one matrix ([[10-Summaries/kerpedjiev-2018-higlass]]) — and **pipeline filtering stringency is a free parameter**, with two pipelines correlating at only 0.83 on identical raw data ([[10-Summaries/servant-2015-hicpro]]).
+
+
+## Added 2026-10-07
+
+- [[10-Summaries/liu-2024-snaphic-g]] — SnapHiC-G: enhancer–promoter interaction calling from scHi-C with cell-type-specific GWAS target-gene mapping.
+- [[10-Summaries/galasso-2026-map3c]] — map3C: contact calling, QC and SV-breakpoint annotation for multiomic scHi-C.
+- [[10-Summaries/hsieh-2015-micro-c]] — Micro-C: nucleosome-resolution folding in yeast; gene-scaled domains bounded at promoters.
+- [[10-Summaries/chang-2025-droplet-hi-c]] — Droplet Hi-C / Paired Hi-C: single-cell Hi-C on the 10x scATAC/Multiome kits; cortex 3D maps, multi-way hubs, ecDNA/HSR calling in tumors.
+- [[10-Summaries/arrastia-2022-scsprite]] — scSPRITE primary paper: multi-way single-cell contacts, nuclear-body hubs and heterogeneous TADs in mESCs.
+- [[10-Summaries/li-2023-scnanohi-c]] — scNanoHi-C: long-read single-cell Hi-C capturing direct multi-way E–P and ecDNA hubs.
+- [[10-Summaries/zhang-2022-fast-higashi]] — Fast-Higashi tensor-decomposition scHi-C embedding with interpretable meta-interactions.
+- [[10-Summaries/peng-2026-scdiagram]] — scDIAGRAM: imputation-free single-cell A/B compartments and compartment heterogeneity.
+- [[10-Summaries/li-2022-snaphic2]] — SnapHiC2: efficient 5 kb single-cell Hi-C loop calling.
+- [[10-Summaries/zheng-2022-bandnorm-scvi-3d]] — BandNorm/scVI-3D scHi-C normalization benchmark; simple band scaling beats imputation except for rare or very sparse cells.
+- [[10-Summaries/rao-2014-in-situ-hic]] — In situ Hi-C at kilobase resolution: ~10,000 convergent-CTCF loops, 185 kb contact domains, six subcompartments, diploid and inactive-X maps.
+- [[10-Summaries/dautle-2025-schic-review]] — review: 13 scHi-C protocols scored on contacts and cis/trans; tool catalogue across QC, imputation, compartments, TADs, loops, 3D reconstruction and differential analysis.
 
 
 ## Related

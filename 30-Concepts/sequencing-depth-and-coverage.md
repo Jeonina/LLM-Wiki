@@ -4,7 +4,7 @@ title: Sequencing Depth and Coverage
 aliases: [coverage breadth, depth vs breadth, shallow sequencing]
 tags: [coverage, depth, breadth, economics, study-design]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Sequencing Depth and Coverage
@@ -32,6 +32,13 @@ Improving Hi-C resolution *n*-fold requires *n*² more reads ([[lieberman-aiden-
 ## Peak calling has its own saturation logic
 
 High-fold-enrichment peaks saturate early while lower-fold sites keep accruing with depth, so "have I sequenced enough?" is answerable only per fold-enrichment stratum ([[zhang-2008-macs]]).
+
+## Added 2026-10-07
+
+MuTect makes sensitivity an explicit function of depth and allele fraction: 95.6% at 30× for AF 0.2, 99.9% at 50×, 58.9% at AF 0.1 (30×), and 66.4% for AF 0.03 at 150× ([[10-Summaries/cibulskis-2013-mutect]]). Unfiltered false positives also rise with depth (6.7/Mb at 5× to 20.1/Mb at 30×) because power to call low-AF noise increases ([[10-Summaries/cibulskis-2013-mutect]]).
+
+In sciMET-cap, the useful cost metric was unique CpGs per raw read, not percent on target. A higher wash temperature raised the on-target fraction but cut library complexity, leaving less information per cell ([[10-Summaries/acharya-2024-scimet-cap]]). The recommended depth is 200–275 thousand raw reads per cell for 5,000–10,000-cell datasets. That compares with about 2 million for non-capture single-cell methylation, 50–100 thousand for scRNA-seq and 75–125 thousand for scATAC-seq ([[10-Summaries/acharya-2024-scimet-cap]]).
+
 
 ## Related
 

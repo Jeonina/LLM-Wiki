@@ -4,7 +4,7 @@ title: Highly repetitive regions (HRRs)
 aliases: [HRR, repetitive DNA, satellite repeats]
 tags: [genomics, repeats, centromeres, telomeres, rDNA, long-read]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Highly repetitive regions (HRRs)
@@ -20,6 +20,11 @@ HRRs include constitutive heterochromatin at centromeres, the ~5–15 kb telomer
 - Telomere-to-telomere genome assemblies (CHM13 for human, Col-CEN/Col-PEK for *Arabidopsis*) revealed HRR sequence for the first time.
 - HRR epigenetic profiling (methylation, accessibility) was a blind spot of short-read methods.
 - Long-read methods like [[30-Concepts/stam-seq]] and adaptive sampling now enable single-molecule HRR analysis.
+
+## Added 2026-10-07
+
+Single-cell HiFi data resolved variation that short reads miss: 284k high-confidence SNVs per cell escaped Illumina bulk calling (6336 of them in health-relevant 'dark' genic regions such as *NBPF8* and *CDC73*), and on average 4770 tandem-repeat alleles per cell were genotyped consistently with bulk ([[10-Summaries/hard-2023-long-read-scwgs]]).
+
 
 ## Related
 

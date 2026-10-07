@@ -5,7 +5,7 @@ aliases: [Satija R]
 entity_kind: person
 tags: [computational-biology, single-cell, integration, Seurat]
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-10-07
 ---
 
 # Rahul Satija
@@ -19,6 +19,7 @@ New York Genome Center; Center for Genomics and Systems Biology, New York Univer
 ## Mentions
 
 - **2026-05-11** — [[10-Summaries/baysoy-2023-multiomics-landscape]]: co-senior author of the multi-omics review.
+- **2026-10-07** — Senior author of the scCUT&Tag-pro PBMC dataset used as a benchmark dataset in [[10-Summaries/raimundo-2023-schptm-benchmark]] and as the demo dataset (GSE195725, six marks) in [[10-Summaries/wu-2026-sccut-tag-review]].
 
 ## Positions and claims
 

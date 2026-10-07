@@ -5,7 +5,7 @@ aliases: [Yosef lab]
 entity_kind: person
 tags: [computational-biology, single-cell, probabilistic-models]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Nir Yosef
@@ -15,6 +15,7 @@ updated: 2026-08-10
 ## Mentions
 
 - **2026-08-10** — Corresponding author of [[jones-2020-cassiopeia]], a maximum-parsimony suite scaling to 50,000 cells.
+- **2026-10-07** — Lead contact in [[10-Summaries/ashuach-2022-peakvi]] (PeakVI, the scvi-tools Bernoulli VAE for scATAC-seq with batch correction and calibrated single-region differential accessibility).
 
 ## Related
 

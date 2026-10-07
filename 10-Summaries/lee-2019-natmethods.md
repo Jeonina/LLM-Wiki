@@ -5,7 +5,7 @@ source: "[[00-Sources/papers/Simultaneous profiling of 3D genome structure and D
 aliases: ["sn-m3C-seq", "Lee 2019", "single-nucleus methyl-3C"]
 tags: [sn-m3C-seq, 3D-genome, methylome, joint-assay, brain, Ecker-lab, Dixon-lab]
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-10-07
 ---
 
 **Citation:** Lee et al. (2019) — *Simultaneous profiling of 3D genome structure and DNA methylation in single human cells (sn-m3C-seq)* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-019-0547-z)
@@ -23,6 +23,11 @@ The founding single-nucleus joint methylome + 3D-genome assay. Demonstrates that
 
 ---
 **Source:** [DOI](https://doi.org/10.1038/s41592-019-0547-z) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/31501549/)
+
+## Added 2026-10-07
+
+See also [[10-Summaries/galasso-2026-map3c]]: map3C reprocesses sn-m3C-seq data with MAPQ filtering and reports roughly 3× higher intra/inter contact ratios than TAURUS-MH, the original contact caller.
+
 
 ## Related
 

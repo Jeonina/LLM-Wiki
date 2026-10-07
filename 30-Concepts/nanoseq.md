@@ -4,7 +4,7 @@ title: NanoSeq
 aliases: [nano-rate sequencing]
 tags: [duplex-sequencing, library-prep, somatic-mutation]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # NanoSeq
@@ -22,6 +22,13 @@ NanoSeq has been the workhorse for measuring somatic mutation accumulation rates
 ## Examples
 
 - One of six methods in the SMaHT benchmark ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).
+
+## Added 2026-10-07
+
+BotSeqS introduced bottleneck dilution of a PCR-free, adaptor-ligated library so that random double-stranded molecules are read from both strands; with ≥90% Watson and Crick family concordance it reached a 2.6 × 10⁻¹² per-bp false-positive rate but covered only ~0.4% of the nuclear genome per library [[10-Summaries/hoang-2016-botseqs]]. NanoSeq builds on bottleneck-style duplex sequencing (synthesis; see [[10-Summaries/abascal-2021-nanoseq]]).
+
+SMM-seq borrows NanoSeq's strand-family-size-2 baseline for normalizing mutation frequency, and argues that NanoSeq, Duplex-Seq and BotSeqS share a P(E)² error bound that multi-copy RCA overcomes. No head-to-head comparison on the same DNA is reported ([[10-Summaries/maslov-2022-smm-seq]]).
+
 
 ## Related
 

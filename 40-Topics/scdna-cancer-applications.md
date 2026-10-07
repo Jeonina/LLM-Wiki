@@ -4,7 +4,7 @@ title: scDNA-seq in cancer applications
 aliases: [cancer scDNA-seq, single-cell oncology, tumor scDNA]
 tags: [cancer, scDNA-seq, clonal-evolution, intratumor-heterogeneity]
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-10-07
 ---
 
 # scDNA-seq in cancer applications
@@ -37,6 +37,13 @@ updated: 2026-05-19
 - Clinical-grade scDNA-seq workflows — cost and reproducibility still barriers.
 - Integration with clinical sequencing — bulk panels vs scDNA tradeoffs.
 - Liquid biopsy with single-cell resolution.
+
+## Added 2026-10-07
+
+- [[10-Summaries/mcpherson-2025-ongoing-wgd]] — DLP+ scWGS of 41 HGSOC patients: ongoing WGD, divergent cells, micronuclei and immune phenotypes.
+- [[10-Summaries/kuipers-2025-scicone]] — copy-number calling and CNA history for DLP and 10x single-cell CNV breast cancer data.
+- [[10-Summaries/wang-2024-wellda-seq]] — scDNA + scATAC co-profiling of breast cancer; ancestral cells and LHR cell-of-origin in ER+ tumours (abstract only).
+
 
 ## Related
 

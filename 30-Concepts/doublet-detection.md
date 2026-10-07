@@ -4,7 +4,7 @@ title: Doublet Detection
 aliases: [doublets, collisions, multiplets]
 tags: [QC, artefacts, single-cell, barcoding]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Doublet Detection
@@ -23,6 +23,15 @@ updated: 2026-08-10
 
 - Whole clusters can be doublet artefacts: one 40-cluster analysis discarded a cluster with a 52% detected doublet rate, and 13% of 655 subclusters were annotated as artefacts under a >10% predicted-doublet rule ([[cao-2019-moca]]). Subtype counts from atlases without such a rule should be read as upper bounds (synthesis).
 - In lineage tracing a doublet's chimeric character vector is placed on the tree, producing a false relationship rather than an obvious outlier ([[jones-2020-cassiopeia]]).
+
+## Added 2026-10-07
+
+SiCloneFit models doublets inside clonal phylogeny inference by giving each cell a second clone indicator, something lineage-tree-only methods cannot represent; on a 370-cell ovarian dataset it and SCG agreed on 17 doublets, with SCG calling 11 more ([[10-Summaries/zafar-2019-siclonefit]]).
+
+Modelling doublets in amplicon scDNA phylogenetics removed apparent mutation recurrences: COMPASS trees for TP53-mutated MPNs were more compact than originally published because cells carrying mutations from different lineages were explained as doublets [[10-Summaries/sollier-2023-compass]].
+
+In CellPhy's simulations, cell doublets lowered phylogenetic accuracy for every method tested. The authors recommend removing doublets with scDNA-seq-specific detectors before building trees ([[10-Summaries/kozlov-2022-cellphy]]).
+
 
 ## Related
 

@@ -4,7 +4,7 @@ title: scATAC-seq
 aliases: [single-cell ATAC-seq, single-cell ATAC]
 tags: [chromatin-accessibility, single-cell, ATAC, Tn5]
 created: 2026-05-12
-updated: 2026-05-21
+updated: 2026-10-07
 ---
 
 # scATAC-seq
@@ -59,6 +59,23 @@ Subsequent platforms split along the same axis:
 - JAK2-V617F cell-intrinsic pro-inflammatory chromatin priming in HSCs, visible only by linking genotype to accessibility in the same cell ([[10-Summaries/izzo-2024-got-cha]]).
 - Systematic benchmark of 8 scATAC-seq protocols across 47 PBMC experiments via the PUMATAC pipeline ([[10-Summaries/derop-2024-natbiotech]]).
 - Computational benchmark of analysis methods across multiple datasets ([[10-Summaries/luo-2024-scatac-benchmark]]).
+
+## Added 2026-10-07
+
+Beyond accessibility, scATAC-seq read depth carries copy-number signal: in basal cell carcinoma, epiAneufinder found CNA clones that peak-based embedding and Leiden clustering could not recover ([[10-Summaries/ramakrishnan-2023-epianeufinder]]).
+
+scNanoATAC-seq2 performs isolation, permeabilisation and Tn5 transposition of a single cell in one tube and reads fragments on Oxford Nanopore (median fragment 5,486 bp), giving a median 0.65% mitochondrial reads versus >50% in short-read embryo ATAC ([[10-Summaries/li-2025-scnanoatac-seq2]]). In 3,302 mouse preimplantation cells it detected ICM/TE epigenomic heterogeneity already at the 16-cell stage ([[10-Summaries/li-2025-scnanoatac-seq2]]).
+
+GFETM jointly trains an embedded topic model (VAE with a linear decoder) and a pretrained genome foundation model over peak sequences, and claims transfer across tissues, species and omics plus imputation at unseen regions; the clipping holds no quantitative results ([[10-Summaries/fan-2026-gfetm]]).
+
+Because scATAC-seq signal is nearly binary per locus, aggregating reads over feature sets (motif sites, co-regulated ENCODE DHS clusters, genes, MSigDB gene sets) separated GM12878 from HEK293T cells where peak-level clustering failed; SCRAT packaged this as a GUI toolbox with ENCODE-DNase-based identity inference [[10-Summaries/ji-2017-scrat]].
+
+Analysis models for scATAC-seq now span peak-free k-mer factorisation ([[10-Summaries/de-boer-2018-brockman]]), Bernoulli VAEs with region- and cell-level nuisance factors ([[10-Summaries/ashuach-2022-peakvi]]), ZINB-based differential tests ([[10-Summaries/zhao-2024-scada]]) and a ~1.4B-parameter transformer pretrained on ~5 million cells that tokenises each cell as its accessible cCREs ([[10-Summaries/chen-2025-epiagent]]). Peak-by-cell matrices are cited as about 3% non-zero versus over 10% for scRNA-seq gene matrices ([[10-Summaries/zhao-2024-scada]]).
+
+**Archival FFPE tissue.** Conventional split-and-pool scATAC-seq on FFPE nuclei fails to resolve cell types because formalin/paraffin DNA breaks collapse per-cell library complexity (e.g. only 30–595 cells passing QC vs 4843 fresh in mouse spleen) ([[10-Summaries/yadav-2025-scffpe-atac]]). scFFPE-ATAC rescues this by anchoring amplification on a single T7-promoter-bearing barcode and in vitro transcription, recovering 13,954 high-quality cells with r = 0.83 to fresh tissue, at the cost of lower FRiP (21% vs 42% fresh) ([[10-Summaries/yadav-2025-scffpe-atac]]).
+
+**Sequence-informed embedding.** CellSpace co-embeds DNA k-mers and cells (StarSpace with N-grams and negative sampling) instead of reducing the cell-by-peak matrix, giving covariate-free batch mitigation and post hoc per-cell TF motif scores; it can integrate datasets processed against different peak atlases ([[10-Summaries/tayyebi-2024-cellspace]]).
+
 
 ## Related
 

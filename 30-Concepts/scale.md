@@ -4,7 +4,7 @@ title: SCALE (scATAC-seq analysis)
 aliases: [SCALE, Single-Cell ATAC-seq analysis via Latent feature Extraction]
 tags: [scATAC-seq, deep-learning, VAE, gaussian-mixture-model, imputation]
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-10-07
 ---
 
 # SCALE (scATAC-seq analysis via Latent feature Extraction)
@@ -29,6 +29,15 @@ SCALE encodes each cell into a 10-dimensional latent variable on a GMM manifold 
 
 - Separated Epcam+ tumor from CD45+ immune cells in Pi-ATAC breast-tumor data from chromatin alone, comparable to the protein-indexed experimental method ([[10-Summaries/xiong-2019-scale]]).
 - Imputation raised chromVAR significant motifs from 52 to 105 in forebrain data, recovering Mafb/Hoxd9 and MGE-pathway TFs ([[10-Summaries/xiong-2019-scale]]).
+
+## Added 2026-10-07
+
+PeakVI found SCALE especially sensitive to library-size effects and weaker than PeakVI at separating sorted cell types, though good at mixing batches ([[10-Summaries/ashuach-2022-peakvi]]); EpiAgent also benchmarks above SCALE on clustering metrics ([[10-Summaries/chen-2025-epiagent]]).
+
+SCALE was used as a baseline in the scCASE benchmark, where it was outperformed on clustering metrics. As a GPU-based method it uses less CPU memory than CPU tools ([[10-Summaries/tang-2024-sccase]]).
+
+On single-cell histone PTM datasets (<12,000 cells), SCALE was not competitive with LSI-based methods; it gained 21% from coverage-based cell filtering, and the authors conjecture that VAE methods could catch up at larger cell numbers ([[10-Summaries/raimundo-2023-schptm-benchmark]]).
+
 
 ## Related
 

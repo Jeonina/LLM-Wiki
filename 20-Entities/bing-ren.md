@@ -5,7 +5,7 @@ aliases: [Ren lab]
 entity_kind: person
 tags: [chromatin, single-cell, atlas, UCSD]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Bing Ren
@@ -15,6 +15,7 @@ updated: 2026-05-12
 ## Mentions
 
 - **2026-05-12** — Senior author of [[10-Summaries/fang-2021-snapatac]] (SnapATAC).
+- **2026-10-07** — Corresponding author of [[10-Summaries/chang-2025-droplet-hi-c]] (Droplet Hi-C and Paired Hi-C: droplet-scale single-cell Hi-C applied to mouse cortex and to ecDNA in glioblastoma and AML; the paper declares him cofounder of Epigenome Technologies with equity in Arima Genomics).
 
 ## Related
 

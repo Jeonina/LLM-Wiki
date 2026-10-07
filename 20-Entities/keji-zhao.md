@@ -5,7 +5,7 @@ aliases: [Zhao lab]
 entity_kind: person
 tags: [chromatin, histone-modifications, NHLBI, NIH]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Keji Zhao
@@ -15,6 +15,7 @@ updated: 2026-05-12
 ## Mentions
 
 - **2026-05-12** — Senior author of [[10-Summaries/ku-2019-scchic-seq]] (scChIC-seq).
+- **2026-10-07** — Senior author of [[10-Summaries/barski-2007-histone-methylation-chip-seq]] (the paper that coined ChIP-Seq; 20 histone methylations, H2A.Z, Pol II and CTCF in human CD4⁺ T cells).
 
 ## Related
 

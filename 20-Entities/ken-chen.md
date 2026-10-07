@@ -5,7 +5,7 @@ aliases: [Chen lab, MD Anderson]
 entity_kind: person
 tags: [computational-biology, CNV, lineage, MD-Anderson]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Ken Chen
@@ -15,6 +15,7 @@ updated: 2026-08-10
 ## Mentions
 
 - **2026-08-10** — Corresponding author of [[wang-2021-medalt]], introducing minimal-event-distance lineage trees and lineage speciation analysis.
+- **2026-10-07** — Co-author in [[10-Summaries/zafar-2019-siclonefit]] (SiCloneFit, Bayesian clonal phylogeny inference from single-cell SNV data).
 
 ## Related
 

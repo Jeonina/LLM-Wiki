@@ -4,7 +4,7 @@ title: scChIC-seq
 aliases: [single-cell chromatin immunocleavage]
 tags: [histone-modifications, single-cell, MNase, Zhao-lab]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # scChIC-seq
@@ -24,6 +24,11 @@ Workflow: fix cells → bind antibody-MNase conjugate (or pA-MNase + Ab) → MNa
 ## Examples
 
 - Human WBCs profiled for H3K4me3 → identifies T cells, B cells, NK cells, monocytes by chromatin state alone ([[10-Summaries/ku-2019-scchic-seq]]).
+
+## Added 2026-10-07
+
+CoBATCH reported markedly more non-duplicated reads per cell, a higher mapping rate and less read redundancy than scChIC-seq, with slightly higher FRiP for scChIC-seq. The comparison set CoBATCH H3K27ac in 2,161 ESCs against scChIC-seq H3K4me3 in 281 white blood cells, and FRiP was computed differently in the two studies ([[10-Summaries/wang-2019-cobatch]]).
+
 
 ## Related
 

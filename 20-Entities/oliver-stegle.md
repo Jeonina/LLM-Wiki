@@ -5,7 +5,7 @@ aliases: [Stegle lab]
 entity_kind: person
 tags: [computational-biology, statistical-genomics, single-cell, EMBL, DKFZ]
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-10-07
 ---
 
 # Oliver Stegle
@@ -15,6 +15,8 @@ updated: 2026-06-02
 ## Mentions
 
 - **2026-06-02** — Co-author of [[10-Summaries/lindenhofer-2025-sdr-seq]] (SDR-seq).
+- **2026-10-07** — Co-author in [[10-Summaries/lahnemann-2020-grand-challenges]] (community review defining eleven grand challenges in single-cell data science).
+- **2026-10-07** — Last author in [[10-Summaries/argelaguet-2018-mofa]] (original MOFA paper; clipping currently lacks main text).
 
 ## Related
 

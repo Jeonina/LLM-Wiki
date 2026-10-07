@@ -4,7 +4,7 @@ title: Mappability
 aliases: [multi-mapping, uniquely mappable regions, alignability]
 tags: [alignment, repeats, bias, QC]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Mappability
@@ -26,6 +26,11 @@ Exact repeats collapse onto a single path during BWT-based search, so a read mat
 ## Open questions
 
 Highly repetitive and segmentally duplicated regions are the parts of the genome where somatic variation is least characterized, and no method in this corpus resolves them with short reads; see [[highly-repetitive-regions]].
+
+## Added 2026-10-07
+
+Long reads rescue low-mappability regions in chromatin accessibility data: scNanoATAC-seq2 recovers an intronic CRE in every Zscan4 paralog and accessibility of individual Tcstv paralogs and LTRs that short-read ATAC-seq largely misses ([[10-Summaries/li-2025-scnanoatac-seq2]]).
+
 
 ## Related
 

@@ -5,7 +5,7 @@ source: "[[00-Sources/papers/SiFit_ inferring tumor trees from single-cell seque
 aliases: ["Zafar 2017 SiFit", "SiFit", "finite-sites tumor phylogeny"]
 tags: [SiFit, tumor-phylogeny, finite-sites-model, scDNA-seq, allelic-dropout, Nakhleh-lab, Navin-lab, Rice]
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-10-07
 ---
 
 **Citation:** Zafar et al. (2017) — *SiFit: inferring tumor trees from single-cell sequencing data under finite-sites models* — *Genome Biology*. [DOI](https://doi.org/10.1186/s13059-017-1311-2)
@@ -20,6 +20,11 @@ A key methodological advance over SCITE — SiFit's finite-sites accommodation i
 
 ---
 **Source:** [DOI](https://doi.org/10.1186/s13059-017-1311-2) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/28927434/)
+
+## Added 2026-10-07
+
+See also [[10-Summaries/zafar-2019-siclonefit]]: SiCloneFit reuses SiFit's finite-site and error models inside a nonparametric clone-clustering model and beats SiFit on genotyping and tree error in simulations, including infinite-sites data.
+
 
 ## Related
 

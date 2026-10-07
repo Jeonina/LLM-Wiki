@@ -4,7 +4,7 @@ title: Imputation
 aliases: [data smoothing, missing-value imputation, contact map imputation]
 tags: [sparsity, single-cell, smoothing, scHi-C, denoising]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Imputation
@@ -28,6 +28,21 @@ updated: 2026-08-10
 Smoothing that makes cells clusterable necessarily reduces apparent cell-to-cell variability, and the trade is not quantified in either framework ([[zhou-2019-schicluster]], [[zhang-2022-higashi]]). Borrowing across neighbours risks circularity — cells are imputed toward their neighbours, so measured variability is partly a function of the imputation ([[zhang-2022-higashi]]). Validation against orthogonal imaging data is what keeps the claims credible ([[zhang-2022-higashi]]).
 
 Practical floor: clustering performance degrades below **25,000 contacts** per cell and collapses at 5,000 ([[zhou-2019-schicluster]]) — which is below what combinatorial-indexing scHi-C delivers ([[ramani-2017-scihi-c]]).
+
+## Added 2026-10-07
+
+Lähnemann et al. group scRNA-seq imputation into model-based, data-smoothing, data-reconstruction and external-reference (transfer) families, and warn that imputation from internal information alone is circular and can inflate gene–gene correlations ([[10-Summaries/lahnemann-2020-grand-challenges]]). They also recommend against using "dropout" as a catch-all for observed zeros, since it conflates technical and biological zeros ([[10-Summaries/lahnemann-2020-grand-challenges]]).
+
+**Single-cell methylation imputation.** Across 13 scDNAm datasets, accuracy of five CpG imputers was governed more by sparsity and methylome Shannon entropy than by cell number or coverage; random CpG splits inflate scores relative to chromosome hold-out because neighbouring CpGs correlate; and no method finished whole-genome datasets above ~500 cells within 72 h ([[10-Summaries/liang-2026-scmeth-imputation-benchmark]]). Atlas-scale tools instead aggregate over windows and set missing values to zero without imputation ([[10-Summaries/rylaarsdam-2025-amethyst]]).
+
+For scHi-C, Fast-Higashi computes a partial random walk with restart batch-wise inside its tensor-decomposition optimisation (correlation >0.9 with full RWR at batch size 32–64), trading imputation power for memory and speed ([[10-Summaries/zhang-2022-fast-higashi]]).
+
+**Imputation trade-offs across modalities.** For scHi-C compartments, scDIAGRAM reports that imputation-based callers produce more homogeneous calls than the imaging ground truth (scHiCluster also unstable), motivating imputation-free calling ([[10-Summaries/peng-2026-scdiagram]]); for scHi-C loops, windowed RWR imputation remains the enabling step ([[10-Summaries/li-2022-snaphic2]]). For single-cell methylation, MambaCpG's bidirectional state-space model uses windows up to 1,024 CpGs and is top-ranked on large sparse datasets in its own benchmark ([[10-Summaries/zhao-2025-mambacpg]]), although an independent benchmark found no universal winner ([[10-Summaries/liang-2026-scmeth-imputation-benchmark]]).
+
+**Documented imputation artefacts.** Measured against bulk Hi-C, Higashi-imputed aggregate maps look blurry and show recurrent over-enriched off-diagonal blocks across all five Kim2020 cell types, which the authors attribute to over-imputation driven by outlier cells ([[10-Summaries/zheng-2022-bandnorm-scvi-3d]]). Higashi and scHiCluster both inflate the similarity of the rare IMR90 population to other cell types, because borrowing from neighbours homogenizes cells that are poorly separated ([[10-Summaries/zheng-2022-bandnorm-scvi-3d]]). A non-imputing scaling method (BandNorm) recovered more bulk TAD boundaries (85.71% vs 60% median for GM12878) and more top bulk interactions ([[10-Summaries/zheng-2022-bandnorm-scvi-3d]]).
+
+For scHi-C, imputation methods fall into five families: random walk, Gaussian convolution, Bayesian hierarchical, deep learning and LDA topics ([[10-Summaries/dautle-2025-schic-review]]). Each has a stated failure mode. Random walks are biased toward neighbouring observations, and Gaussian smoothing can over-smooth high-frequency regions such as heterochromatin ([[10-Summaries/dautle-2025-schic-review]]). The authors warn that neighbour-based imputation dilutes high-frequency contacts and raises false positives. They propose clustering cells first and then imputing within clusters, iteratively ([[10-Summaries/dautle-2025-schic-review]]).
+
 
 ## Related
 

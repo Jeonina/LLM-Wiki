@@ -4,7 +4,7 @@ title: UMI / molecular barcoding
 aliases: [unique molecular identifier, molecular tag, degenerate barcode]
 tags: [sequencing, error-correction, library-prep]
 created: 2026-05-12
-updated: 2026-05-14
+updated: 2026-10-07
 ---
 
 # UMI (Unique Molecular Identifier)
@@ -26,6 +26,13 @@ UMIs make NGS quantitative (counts reflect input molecules, not PCR duplicates) 
 - 12-nt random tag in Kennedy 2014 ([[10-Summaries/kennedy-2014-duplex-protocol]])
 - Combinatorial split-pool barcoding in [[10-Summaries/bai-2024-simple-seq]] and [[10-Summaries/shen-2026-splicool-seq]]
 - 8-nt random UMI on every Drop-seq bead primer for PCR-duplicate collapse in droplet scRNA-seq ([[10-Summaries/macosko-2015-drop-seq]])
+
+## Added 2026-10-07
+
+Random shear-point coordinates can serve as endogenous molecular barcodes: BotSeqS groups reads into Watson and Crick families by fragment ends after bottleneck dilution, without synthetic UMIs [[10-Summaries/hoang-2016-botseqs]].
+
+In SMM-seq a 6-nt UMI sits in the stem of a hairpin adapter. It identifies both the fragment's UMI family and its two strand families, and reads from each strand family (≥7 required) must agree before a variant is called ([[10-Summaries/maslov-2022-smm-seq]]).
+
 
 ## Related
 

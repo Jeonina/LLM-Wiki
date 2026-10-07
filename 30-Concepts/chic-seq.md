@@ -4,7 +4,7 @@ title: ChIC-seq
 aliases: [chromatin immunocleavage]
 tags: [histone-modifications, MNase, Schmid]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # ChIC-seq
@@ -19,6 +19,11 @@ Antibody tethered to MNase (via protein A or covalent linkage) recruits the nucl
 
 - First "no-ChIP-needed" chromatin profiling approach.
 - Established the antibody-tethered-nuclease paradigm now widespread in CUT&-family methods.
+
+## Added 2026-10-07
+
+A 2019 review notes that MNase-based scChIC-seq is less affected by accessibility bias than Tn5-based methods for H3K27me3 (bulk correlation r = 0.67 vs 0.26–0.31 for ChIL-seq) [[10-Summaries/ludwig-2019-sc-chromatin-modifications-review]].
+
 
 ## Related
 

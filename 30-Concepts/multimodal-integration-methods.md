@@ -4,7 +4,7 @@ title: Multimodal integration methods
 aliases: [multi-omics integration, multimodal integration, cross-modality integration]
 tags: [computational, integration, multiomics, machine-learning]
 created: 2026-05-19
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Multimodal integration methods
@@ -31,6 +31,17 @@ updated: 2026-08-10
 - **Feature-count imbalance** lets the modality with more features dominate a joint latent space — the problem WNN reweighting exists to solve ([[10-Summaries/argelaguet-2021-integration-principles]]).
 - **Diagonal integration usually rests on the gene-activity assumption**, which is known to fail in early development where gene-body methylation and accessibility do not predict expression ([[10-Summaries/argelaguet-2021-integration-principles]]).
 - **Bridge integration removes that assumption** by treating each cell of a multiomic dataset as a dictionary atom, learning the cross-modality relationship instead of assuming it; ~50 bridge cells per cell type suffice, and prediction confidence drops sharply (0.907 → 0.514) when a cell type is missing from the bridge ([[10-Summaries/hao-2024-seurat-v5]]).
+
+## Added 2026-10-07
+
+A six-setup taxonomy of single-cell integration distinguishes one sample (1S), across samples (+S), across experiments (+X+S), multiple modalities in the same cell (+M1C), different modalities in different cells (+M+C) and a full reference (+all) ([[10-Summaries/lahnemann-2020-grand-challenges]]). It flags "measurement linkage" — e.g., copy number raising expression — as unaddressed for same-cell modalities ([[10-Summaries/lahnemann-2020-grand-challenges]]).
+
+The factor-analysis branch originates with MOFA (Molecular Systems Biology 2018), whose wiki summary is currently a bibliographic stub because the clipping lacks the main text ([[10-Summaries/argelaguet-2018-mofa]]); MOFA+ is its scalable successor ([[10-Summaries/argelaguet-2020-mofa-plus]]).
+
+MOFA on matched RNA, H3K4me1 and H3K27me3 from OneCell CUT&Tag separated a multiomic basal factor from an epigenome-only factor. The epigenome-only factor is an H3K4me1 signature in a basal subset, enriched for Zfx, Trp63 and Tcfap2c motifs and undetectable at the RNA level ([[10-Summaries/schwager-2026-onecell-cut-tag]]).
+
+For scCUT&Tag, WNN integration with matched scRNA-seq is the dominant route to cell-type annotation (sn-m6A-CT, NTT-seq, nano-CT, scCUT&Tag-pro), but it may obscure native chromatin variation, and ChromHMM/scChromHMM are described as the only promising approaches for combining multiple marks within one dataset ([[10-Summaries/wu-2026-sccut-tag-review]]).
+
 
 ## Related
 

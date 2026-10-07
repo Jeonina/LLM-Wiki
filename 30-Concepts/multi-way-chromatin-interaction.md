@@ -4,7 +4,7 @@ title: Multi-way chromatin interaction
 aliases: [multi-way interactions, higher-order chromatin contacts, chromatin clique, multi-contact]
 tags: [3D-genome, multi-way, clique, SPRITE, GAM, Pore-C, epistasis]
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-10-07
 ---
 
 # Multi-way chromatin interaction
@@ -36,6 +36,15 @@ Genes participating in multi-way interactions are also more highly expressed acr
 - Cliques above order ~6 are undetectable — a ligation and sparsity ceiling, not a statistical one ([[10-Summaries/park-2026-mintsc]]).
 - Detection requires a homogeneous cell group; each cell is treated as an independent sample of one context's true contact matrix, and uncertainty in cluster assignment is not currently propagated ([[10-Summaries/park-2026-mintsc]]).
 - Multi-way interactions are reported per cell type, so their cell-to-cell variability — the thing the single-cell formulation ought to enable — is not measured. (synthesis)
+
+## Added 2026-10-07
+
+Short-read single-cell Hi-C can also recover multi-way contacts. Droplet Hi-C used `pairtools parse2` to rescue complex ligation events, counted a read pair as multi-way if it touched ≥3 unique 10 kb bins, and called a bin a hub when its per-cell-type frequency had Z > 1.96 ([[10-Summaries/chang-2025-droplet-hi-c]]). About 5% of bins were hubs, mostly cell-type specific and enriched at super-enhancers and marker genes ([[10-Summaries/chang-2025-droplet-hi-c]]).
+
+The single-cell case for multi-way capture is combinatorial: a DNA fragment can be ligated only once per allele, so a four-fragment complex yields at most two pairwise contacts by proximity ligation but six by complex barcoding, and the maximum grows quadratically with complex size ([[10-Summaries/arrastia-2022-scsprite]]). Because a cluster of n reads is counted as n-choose-2 contacts, SPRITE-type contact counts are not like-for-like with ligation-based counts (synthesis).
+
+Ligation-based and ligation-free multi-way assays sample different physical scales. With matched sequencing volume in mESC, ~70% of scSPRITE reads fall in >10-way clusters (trans ratio 54%). In scNanoHi-C such clusters are negligible (trans 11%), and its multi-way contacts decay with distance like pairwise Hi-C, i.e. the ~200-nm 3C contact radius ([[10-Summaries/li-2023-scnanohi-c]]). In GM12878, scNanoHi-C single concatemers linked 1,097 promoter bins to ≥2 ABC-predicted enhancer bins, and 917 enhancer–promoter 'synergies' were called, ~20% of them inter-chromosomal ([[10-Summaries/li-2023-scnanohi-c]]).
+
 
 ## Related
 

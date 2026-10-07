@@ -5,7 +5,7 @@ aliases: [Jiang lab]
 entity_kind: person
 tags: [computational-biology, deep-learning, genomics, Tsinghua]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Rui Jiang
@@ -15,6 +15,7 @@ updated: 2026-05-12
 ## Mentions
 
 - **2026-05-12** — Senior author of [[10-Summaries/yin-2019-deephistone]].
+- **2026-10-07** — Last author in [[10-Summaries/chen-2025-epiagent]] (EpiAgent, a transformer foundation model pretrained on ~5 million scATAC-seq cells).
 
 ## Related
 

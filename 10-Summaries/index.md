@@ -1,12 +1,12 @@
 ---
 title: Papers
 description: One summary page per source — the distillation layer of the wiki.
-updated: 2026-08-14
+updated: 2026-10-07
 ---
 
 # Papers
 
-Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry links to a single-source summary, grouped by theme.
+Catalog of ~370 paper summaries, the distillation layer of the wiki. Each entry links to a single-source summary, grouped by theme.
 
 ## scDNA-seq methods & WGA
 
@@ -29,6 +29,7 @@ Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/chitsaz-2011-velvet-sc]] — Chitsaz 2011, Velvet-SC/E+V-SC: progressive coverage cutoff for MDA assembly.
 - [[10-Summaries/peng-2012-idba-ud]] — Peng 2012, IDBA-UD: depth-relative thresholds and iterative k for uneven coverage.
 - [[10-Summaries/bankevich-2012-spades]] — Bankevich 2012, SPAdes: paired de Bruijn graphs and explicit chimera removal.
+- [[10-Summaries/xing-2021-meta-cs]] — Xing 2021, META-CS: one-tube Tn5 complementary-strand scWGA; both-strand SNV calling from ≥4 reads, FPR ≤2.4×10⁻⁸, ~16 SNVs/year in neurons.
 
 ## Variant calling & mosaic detection
 
@@ -51,6 +52,12 @@ Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/smukowski-heil-2023-loh]] — Smukowski Heil 2023, loss of heterozygosity: rates, adaptive role, and the detection pipeline that collides with allele dropout in single cells.
 - [[10-Summaries/luquette-2021-scan2]] — Luquette 2021, SCAN2: PTA-native SNV + indel calling; neuronal rate revised to 15 SNVs/yr.
 - [[10-Summaries/singer-2018-sciphi]] — Singer 2018, SCIΦ: joint mutation calling and tumour phylogeny by MCMC.
+- [[10-Summaries/bohrson-2019-lira]] — Bohrson 2019, LiRA: read-backed phasing with germline hets filters MDA artifacts, validates singleton sSNVs, per-cell FDR model.
+- [[10-Summaries/chen-2009-breakdancer]] — Chen 2009, BreakDancer: read-pair SV caller (Max: Poisson-scored anomalous pairs; Mini: KS insert-size test for 10–100 bp indels), validated on simulation, NA18507, an AML tumour/normal pair and 1000 Genomes trios.
+- [[10-Summaries/cibulskis-2013-mutect]] — Cibulskis 2013, MuTect: Bayesian tumor-normal somatic SNV caller with free allele fraction, artifact filters and panel of normals; virtual-tumor benchmarking of sensitivity vs depth and AF.
+- [[10-Summaries/koboldt-2009-varscan]] — Koboldt 2009, VarScan: threshold-based SNP/indel caller that works with any aligner and on individual or pooled samples; ~1% VAF detection in a ~6,000× pool, pooled-vs-individual allele-frequency r = 0.962.
+- [[10-Summaries/luquette-2022-neuron-scan2-indels]] — Luquette 2022, SCAN2 on 52 PTA neurons: 16 sSNVs/yr, ≥3 indels/yr, enrichment in neuronal enhancers; MDA artifact quantification.
+- [[10-Summaries/muyas-2024-scomatic]] — Muyas 2024, SComatic: de novo somatic SNV calling from scRNA-seq/scATAC-seq without matched DNA (cell-type pooling, beta-binomial error model, panel of normals); precision 0.67–0.87 vs ≤0.24.
 
 ## Duplex / error-corrected sequencing
 
@@ -62,6 +69,8 @@ Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/zhang-2025-smaht-duplex-benchmark]] — Zhang 2025, SMaHT duplex-seq benchmark; six methods give concordant rates.
 - [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — Luquette 2025, PTA + duplex validation across 102 lung/colon nuclei.
 - [[10-Summaries/liu-2024-hidef-seq]] — Liu 2024, HiDEF-seq: unamplified single molecules resolve single-strand mismatch and damage signatures.
+- [[10-Summaries/hoang-2016-botseqs]] — Hoang 2016, BotSeqS bottleneck duplex sequencing: rare nuclear/mtDNA mutations by age, tissue, repair deficiency and mutagens.
+- [[10-Summaries/maslov-2022-smm-seq]] — Maslov 2022, SMM-seq: hairpin adapters plus linear pulse-RCA give many independent copies of each strand, used for bulk detection of rare somatic SNVs (ENU dose-response, aging in liver).
 
 ## Somatic mosaicism & disease biology
 
@@ -112,6 +121,12 @@ Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/kwok-2022-mquad]] — Kwok 2022, MQuad: selecting clonally informative mtDNA variants by binomial-mixture ΔBIC.
 - [[10-Summaries/shahryary-2020-alphabeta]] — Shahryary 2020, AlphaBeta: forward/backward epimutation rates from pedigree methylomes (plants).
 - [[10-Summaries/gabbutt-2025-evoflux]] — Gabbutt 2025, EVOFLUx: cancer evolutionary dynamics from bulk fluctuating-CpG methylation, 1,976 samples.
+- [[10-Summaries/kang-2022-sieve]] — Kang 2022, SIEVE: BEAST 2 finite-sites phylogenetic model jointly inferring scDNA cell trees, SNV genotypes (incl. double mutants) and ADO, with acquisition-bias-corrected branch lengths.
+- [[10-Summaries/kozlov-2022-cellphy]] — Kozlov 2022, CellPhy: finite-site ML single-cell SNV phylogenies (GT16 genotype model + ADO/error model in RAxML-NG, genotype likelihoods, bootstrap support).
+- [[10-Summaries/li-2023-darlin]] — Li 2023, DARLIN (Cas9-TdT, three arrays, ~60% of cells clonally labelled) + Camellia-seq; DNA methylation carries HSC clonal memory.
+- [[10-Summaries/weinreb-2020-larry]] — Weinreb 2020, LARRY expressed lentiviral barcodes: state–fate maps in haematopoiesis; scRNA misses heritable fate bias; trajectory benchmark.
+- [[10-Summaries/zafar-2019-siclonefit]] — Zafar 2019, SiCloneFit: tree-structured CRP jointly inferring clones, genotypes and finite-site clonal phylogeny with doublet model; metastatic CRC seeding.
+- [[10-Summaries/zhang-2025-scistree2]] — Zhang 2025, ScisTree2: infinite-sites cell lineage trees + genotype calling with O(n²m) SPR local search and branch-and-bound, scaling to tens of thousands of cells.
 
 ## Cancer & clonal evolution
 
@@ -128,6 +143,9 @@ Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/zhao-2022-nature]] — Zhao 2022, slide-DNA-seq spatial genomics of clonal heterogeneity.
 - [[10-Summaries/gao-2021-copykat]] — Gao 2021, CopyKAT: Bayesian CNV inference from 3′ scRNA-seq at ~5 Mb, 98% tumor/normal classification, clonal substructure.
 - [[10-Summaries/tickle-2019-infercnv]] — Tickle 2019, inferCNV; now formally unsupported, redirecting to CopyKAT and Numbat.
+- [[10-Summaries/kuipers-2025-scicone]] — Kuipers 2025, SCICoNE: calls copy numbers and infers the CNA event tree jointly (MCMC, Dirichlet-multinomial, no infinite-sites assumption) for shallow scWGS. It beats Ginkgo, SCOPE, HMMcopy, CONET and NestedBD in simulations and detects whole-genome duplication in a 10x TNBC sample.
+- [[10-Summaries/mcpherson-2025-ongoing-wgd]] — McPherson 2025, DLP+ scWGS of 30,260 HGSOC tumour genomes shows whole-genome doubling is an ongoing process that raises CIN yet represses STING1/interferon signalling (doubleTime WGD timing).
+- [[10-Summaries/sollier-2023-compass]] — Sollier 2023, COMPASS: joint SNV + CNA/CNLOH trees from Tapestri amplicon data; 123-patient AML cohort, convergent evolution.
 
 ## Multi-omics joint assays
 
@@ -161,6 +179,9 @@ Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/zhu-2020-multimodal-power-of-many]] — Zhu, Preissl & Ren 2020, the depth-vs-throughput taxonomy of joint assays and its three stated gaps.
 - [[10-Summaries/vandereyken-2023-scmultiomics-review]] — Vandereyken 2023, coupling-principle taxonomy (when analytes are uncoupled) plus spatial multi-omics.
 - [[10-Summaries/lim-2024-single-cell-omics-review]] — Lim 2024, layer-by-layer protocol catalog including single-cell proteome methods.
+- [[10-Summaries/pancikova-2025-splongget]] — Pančíková 2025 (preprint; stub — clipping has references only), SPLONGGET: 10x barcoding + Nanopore for joint per-cell genome, accessibility and full-length transcriptome; CD19 immune-escape evolution in paediatric B-ALL.
+- [[10-Summaries/schwager-2026-onecell-cut-tag]] — Schwager 2026, OneCell CUT&Tag: plate-based CUT&Tag that starts from single sorted cells, plus FLASH-seq RNA and index-sorted surface markers from ≥1 cell; zygote H3K27me3/H3K4me1, basal-cell epigenomic priming, gradual chromatin vs abrupt RNA change in basal-to-luminal transdifferentiation.
+- [[10-Summaries/wang-2024-wellda-seq]] — Wang 2024 (bioRxiv, abstract only), wellDA-seq: joint single-cell whole-genome + chromatin accessibility in 22,123 breast cells; genetic hardwiring and epigenetic plasticity, LHR cell-of-origin for ER+ tumours.
 
 ## Multi-omics integration & foundation models
 
@@ -184,6 +205,8 @@ Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/biancalani-2021-tangram]] — Biancalani 2021, Tangram: aligning sc/snRNA-seq to five kinds of spatial data.
 - [[10-Summaries/kleshchevnikov-2022-cell2location]] — Kleshchevnikov 2022, cell2location: Bayesian deconvolution of spatial transcriptomics.
 - [[10-Summaries/yuan-2024-linger]] — Yuan & Duren 2024, LINGER: GRN inference using atlas-scale external bulk data via lifelong learning.
+- [[10-Summaries/argelaguet-2018-mofa]] — Argelaguet 2018, MOFA: original Multi-Omics Factor Analysis paper (clipping lacks main text; bibliographic stub pending re-clip).
+- [[10-Summaries/chen-2025-epiagent]] — Chen 2025, EpiAgent: ~1.4B-parameter scATAC foundation model on ~5M cells using accessible-cCRE 'cell sentences'; annotation, imputation, perturbation prediction, in silico cCRE knockout.
 
 ## scATAC-seq & chromatin accessibility
 
@@ -211,6 +234,16 @@ Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/zhang-2021-chromap]] — Zhang 2021, Chromap: coordinate-only alignment plus fused preprocessing, 10–68× faster for chromatin assays.
 - [[10-Summaries/traag-2019-leiden]] — Traag 2019, Leiden; Louvain returns up to 25% badly connected and 16% disconnected communities.
 - [[10-Summaries/mcinnes-2018-umap]] — McInnes 2018, UMAP (arXiv preprint, never journal-published).
+- [[10-Summaries/ashuach-2022-peakvi]] — Ashuach 2022, PeakVI: scvi-tools Bernoulli VAE for scATAC with region/cell nuisance factors, batch correction, scArches mapping and calibrated single-region differential accessibility.
+- [[10-Summaries/de-boer-2018-brockman]] — de Boer & Regev 2018, BROCKMAN: peak-free gapped k-mer PCA of scATAC insertion sites; out-of-peak reads group cells better; PCs map to co-varying, physically interacting TFs.
+- [[10-Summaries/fan-2026-gfetm]] — Fan 2026, GFETM: embedded topic model jointly trained with a genome foundation model for transferable, sequence-informed scATAC-seq modeling (abstract-level clipping).
+- [[10-Summaries/ji-2017-scrat]] — Ji 2017, SCRAT: GUI toolbox aggregating sparse scATAC/scDNase/scChIP reads over motifs, gene sets and DHS clusters.
+- [[10-Summaries/li-2025-scnanoatac-seq2]] — Li 2025, scNanoATAC-seq2: single-tube, nanopore long-read scATAC of 3,302 mouse preimplantation cells; allele-resolved XCI/imprinting and copy-resolved LINE1/MERVL accessibility.
+- [[10-Summaries/ramakrishnan-2023-epianeufinder]] — Ramakrishnan 2023, epiAneufinder: reference-free per-cell CNA calling from scATAC-seq read depth (Anderson–Darling binary segmentation); r = 0.86 vs scWGS.
+- [[10-Summaries/tang-2024-sccase]] — Tang 2024, scCASE: NMF-based scCAS enhancement with an iteratively learned cell-to-cell similarity matrix (output XZ), plus reference-guided scCASER; benchmarked against SCALE, scBFA, scOpen, scBasset.
+- [[10-Summaries/tayyebi-2024-cellspace]] — Tayyebi 2024, CellSpace: StarSpace co-embedding of DNA k-mers and cells for scATAC; covariate-free batch mitigation, post hoc TF motif scores, integration across different peak atlases, scales to ~720k cells.
+- [[10-Summaries/yadav-2025-scffpe-atac]] — Yadav 2025, scFFPE-ATAC: split-and-pool scATAC for archival FFPE tissue using an FFPE-Tn5, 56.6M barcodes and T7 in vitro transcription to rescue DNA breaks; lymph nodes archived 8–12 years, lung tumor center vs edge, FL relapse/DLBCL transformation.
+- [[10-Summaries/zhao-2024-scada]] — Zhao 2024, scaDA: ZINB composite test (mean, prevalence, dispersion) with empirical-Bayes dispersion shrinkage for scATAC differential accessibility.
 
 ## Histone modifications
 
@@ -231,6 +264,15 @@ Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/bernstein-2006-bivalent-chromatin]] — Bernstein 2006, bivalent domains in ES cells and the sequence determinants of the epigenetic ground state.
 - [[10-Summaries/rothbart-2014-histone-dna-language]] — Rothbart & Strahl 2014, the histone code revisited: interface PTMs, asymmetry, multivalency, DNA-modification readers.
 - [[10-Summaries/roadmap-2015-111-epigenomes]] — Roadmap Epigenomics 2015, 127 reference epigenomes, chromatin states, and GWAS enrichment by tissue.
+- [[10-Summaries/abbasova-2025-cut-tag-encode-benchmark]] — Abbasova 2025, CUT&Tag vs ENCODE in K562: ~54% recall of strongest peaks, no S/N gain for H3K27ac; MACS2 vs SEACR, drop duplicates.
+- [[10-Summaries/barski-2007-histone-methylation-chip-seq]] — Barski 2007, the founding ChIP-Seq paper: 20 histone methylations, H2A.Z, Pol II and CTCF at nucleosome resolution in human CD4+ T cells; promoter/gene-body/enhancer/insulator signatures, bivalency in differentiated cells.
+- [[10-Summaries/hu-2026-patty]] — Hu 2026, PATTY: documents Tn5 open-chromatin bias across 277 H3K27me3 CUT&Tag datasets and corrects it with a pre-trained ATAC-informed logistic-regression model (bulk and single-cell).
+- [[10-Summaries/li-2024-scnanoseq-cut-tag]] — Li 2024, scNanoSeq-CUT&Tag: single-adaptor Tn5 + nanopore single-cell CUT&Tag; allele-specific peaks, per-copy L1Hs/L1Md and blacklist-region histone marks.
+- [[10-Summaries/raimundo-2023-schptm-benchmark]] — Raimundo 2023, 11,970-combination benchmark of scHPTM (scCUT&Tag/scChIP) pipelines: large fixed bins (100–200 kbp), no feature selection, TF-IDF + SVD/NMF; matrix construction matters more than embedding method.
+- [[10-Summaries/shi-2026-dechic-seq]] — Shi 2026, DeChIC-seq: antibody-tethered pA-DddA deaminase records histone marks and TF binding as C-to-U edits without enrichment; scDeChIC-seq profiles H3K4me3/CTCF/RAD21/TFs in single mouse blastomeres.
+- [[10-Summaries/skene-2017-cut-and-run]] — Skene & Henikoff 2017, CUT&RUN: antibody-tethered pA-MNase cleavage on ice releases TF-DNA complexes in situ; near base-pair footprints at ~1/10th ChIP sequencing depth, spike-in quantification.
+- [[10-Summaries/wang-2019-cobatch]] — Wang 2019, CoBATCH: protein A–Tn5 in situ ChIP from 100 cells plus two-round combinatorial barcoding (~12,000 reads/cell); H3K27ac in ~3,000 E16.5 endothelial cells from 10 organs, and cardiac Pol II/H3K36me3.
+- [[10-Summaries/wu-2026-sccut-tag-review]] — Wu 2026, bioinformatics review of scCUT&Tag: 21 public datasets, seven-step workflow, where scATAC tooling breaks (bins vs peaks, mark-specific QC, repressive-mark TSS logic, duplicates, multi-mark integration).
 
 ## DNA methylation
 
@@ -259,6 +301,19 @@ Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/guo-2015-scrrbs-protocol]] — Guo 2015, scRRBS protocol: one-tube reaction, ~1M consistent CpGs, ~70% of CGIs.
 - [[10-Summaries/mulqueen-2018-sci-met]] — Mulqueen 2018, sci-MET: combinatorial indexing via cytosine-depleted adaptors; 68% alignment.
 - [[10-Summaries/zhang-2023-drop-bs]] — Zhang 2023, Drop-BS: droplet scWGBS, 10,000 cells in 2 days; in-droplet conversion yields 9x more library.
+- [[10-Summaries/acharya-2024-scimet-cap]] — Acharya 2024, sciMET-cap: hybrid capture of pooled sciMETv2 libraries, about 200–275k reads per cell, with off-target reads pooled per cluster for genome-wide DMRs.
+- [[10-Summaries/duan-2026-mist]] — Duan 2026, mist: hierarchical Bayesian (logit-normal, horseshoe, stage-specific variance) differential methylation along pseudotime in single-cell methylation data.
+- [[10-Summaries/farlik-2015-scwgbs]] — Farlik 2015, scWGBS/μWGBS without pre-amplification (82 one-cell and 89 four-cell methylomes). Region-set residual analysis gives 'lineage plots' of epigenomic cell-state dynamics.
+- [[10-Summaries/huang-2010-5hmc-bisulfite]] — Huang 2010, bisulfite converts 5hmC to CMS (99.7%), read as C (indistinguishable from 5mC), and CMS stalls Taq so dense 5hmC may be under-amplified.
+- [[10-Summaries/liang-2026-scmeth-imputation-benchmark]] — Liang 2026, benchmark of five scDNAm CpG imputers (CaMelia, DeepCpG, CpG Transformer, GraphCpG, MambaCpG) on 13 datasets; entropy and sparsity drive accuracy, random splits leak, none finish >500 cells; proposes BridgeCpG ensemble and divide-and-conquer.
+- [[10-Summaries/liu-2012-bis-snp]] — Liu 2012, Bis-SNP: GATK-based Bayesian genotyper for bisulfite-seq exploiting directional-library G-strand reads to separate C>T SNPs from conversion; joint SNP + methylation calling.
+- [[10-Summaries/nichols-2025-scimetv3]] — Nichols 2025, sciMETv3: three-tier combinatorial indexing for atlas-scale single-cell methylomes (>140,000 human cortex cells; EM-seq and Ultima compatible) plus sciMET+ATAC co-assay.
+- [[10-Summaries/olova-2018-wgbs-library-bias]] — Olova 2018, WGBS library-prep bias benchmark: BS degradation is the root bias, amplification-free PBAT least biased; Bismark bam2nuc.
+- [[10-Summaries/rylaarsdam-2025-amethyst]] — Rylaarsdam 2025, Amethyst: R package for atlas-scale sciMET analysis (hdf5, IRLBA, DMR calling) benchmarked vs ALLCools/MethSCAn; finds neuron-like hyper-mCH in astrocytes and oligodendrocytes and female hyper-mCH over X-escape genes.
+- [[10-Summaries/spix-2025-scdeep-mc]] — Spix 2025, scDEEP-mC: high-complexity PBAT scWGBS (~30% CpGs at 20M reads/cell) enabling allele- and strand-resolved methylation, hemi-methylation, SNP-free X-inactivation calls and S-phase detection.
+- [[10-Summaries/vaisvila-2021-em-seq]] — Vaisvila 2021, EM-seq: TET2/T4-BGT/APOBEC3A enzymatic conversion replacing bisulfite; even GC coverage, ~54M CpGs at 1×, works from 100 pg, cfDNA and FFPE DNA.
+- [[10-Summaries/zhao-2025-mambacpg]] — Zhao 2025, MambaCpG: bidirectional Mamba state-space model for single-cell CpG imputation; wide windows, best on large sparse datasets, CpG Transformer still better on small ones.
+- [[10-Summaries/zhou-2024-scdmv]] — Zhou 2024, scDMV: zero-one inflated beta-binomial model with EM and Wald test for DMR calling between groups of single cells; benchmarked only against methylpy and CGmapTools.
 
 ## Long-read & single-molecule
 
@@ -278,6 +333,7 @@ Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/fu-2025-longread-methylation]] — Fu 2025, review of computational methylation analysis from long reads.
 - [[10-Summaries/liu-2025-long-read-epigenome-review]] — Liu & Conesa 2025, review of epigenome profiling using long-read sequencing.
 - [[10-Summaries/flusberg-2010-smrt-methylation]] — Flusberg 2010, methylation read directly from polymerase kinetics in SMRT sequencing; C/5mC/5hmC separable.
+- [[10-Summaries/hard-2023-long-read-scwgs]] — Hård 2023, droplet MDA (Xdrop) + PacBio HiFi sequencing of single T cells: phased SNVs, 5473 true SVs per cell (>16× Illumina), tandem repeats and partial single-cell de novo assembly. Chimeras make inversion and duplication calls false.
 
 ## 3D genome
 
@@ -303,6 +359,16 @@ Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/park-2026-mintsc]] — Park 2026, MINTsC: multi-way chromatin interactions as cliques in a multilayer network.
 - [[10-Summaries/chakraborty-2022-dchic]] — Chakraborty 2022, dcHiC: differential compartments across many Hi-C datasets.
 - [[10-Summaries/li-2014-chia-pet]] — Li & Ruan 2014, ChIA-PET protocol and applications; >40% of enhancers skip their nearest promoter.
+- [[10-Summaries/arrastia-2022-scsprite]] — Arrastia 2022, scSPRITE: two-stage split-pool barcoding (cell + spatial cluster) captures multi-way contacts in 1,000 mESCs (~35M pairwise contacts/cell vs ~375k scHi-C); nuclear-body hubs and heterogeneous TADs in single cells.
+- [[10-Summaries/chang-2025-droplet-hi-c]] — Chang 2025, Droplet Hi-C: in situ Hi-C run through the 10x scATAC kit (≥40,000 cells per run), with cortex 3D maps, per-cell CNV/SV calls, a CNN that tells ecDNA from HSR (tracked under erlotinib in GBM and after therapy in AML), and Paired Hi-C (Hi-C + RNA).
+- [[10-Summaries/dautle-2025-schic-review]] — Dautle 2025, review that re-scores 13 scHi-C protocols on contacts per cell and cis/trans ratio and catalogues QC, normalization, imputation and downstream tools.
+- [[10-Summaries/li-2022-snaphic2]] — Li 2022, SnapHiC2: sliding-window RWR imputation makes single-cell Hi-C loop calling 3x faster with ~70% less memory, enabling 5 kb loops and cell-type-specific GWAS target nomination.
+- [[10-Summaries/li-2023-scnanohi-c]] — Li 2023, scNanoHi-C: plate-based single-cell Hi-C on Nanopore. About half of concatemers are multi-way. Also gives direct E–P and ecDNA hubs, 25% vs 9% phasing compared with Dip-C, CNV/SV calls and assembly scaffolding.
+- [[10-Summaries/liu-2024-snaphic-g]] — Liu 2024, SnapHiC-G: global-background enhancer–promoter caller for scHi-C (80% reference recall in 742 mESCs) with cell-type-specific GWAS-to-gene mapping in brain sn-m3C-seq.
+- [[10-Summaries/peng-2026-scdiagram]] — Peng 2026, scDIAGRAM: per-cell A/B compartment calling by Bayesian 2D change-point detection plus normalized-cut graph partitioning, without imputation or CpG-guided features.
+- [[10-Summaries/rao-2014-in-situ-hic]] — Rao 2014, in situ Hi-C at kilobase resolution: ~10,000 loops (9,448 in GM12878) anchored at convergent CTCF/cohesin sites, 185 kb contact domains, six subcompartments, diploid maps and inactive-X superdomains; introduces HiCCUPS/Arrowhead/APA/Juicebox.
+- [[10-Summaries/zhang-2022-fast-higashi]] — Zhang 2022, Fast-Higashi: core-PARAFAC2 tensor decomposition + partial RWR for scHi-C embedding with interpretable meta-interactions; ~40× faster than 3DVI, ~9× faster than Higashi; separates cortical layer neurons.
+- [[10-Summaries/zheng-2022-bandnorm-scvi-3d]] — Zheng 2022, BandNorm (band-wise scaling) and scVI-3D (per-band ZINB VAE) for scHi-C normalization and de-noising, an 8-method benchmark, and scGAD gene-level scores.
 
 ## scRNA-seq foundations & computational tools
 
@@ -322,6 +388,8 @@ Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/vandereyken-2023-scmultiomics-review]] — Vandereyken 2023, methods and applications for single-cell and spatial multi-omics.
 - [[10-Summaries/wang-2023-multimodal-review]] — Wang 2023, progress in single-cell multimodal sequencing and integration.
 - [[10-Summaries/eichler-2007-completing-sv-map]] — Human Genome Structural Variation Working Group 2007, the NHGRI proposal that launched sequence-resolved SV discovery.
+- [[10-Summaries/lahnemann-2020-grand-challenges]] — Lähnemann 2020, community agenda of 11 single-cell data-science challenges (sparsity, scDNA variant calling under WGA errors, phylogenetic scaling/variant types, population genetics, integration, benchmarking).
+- [[10-Summaries/ludwig-2019-sc-chromatin-modifications-review]] — Ludwig & Bintu 2019, review of single-cell histone and DNA-modification methods and live reporters, five-metric framework.
 
 ## Foundational 3D genome & chromatin architecture (added 2026-08-10)
 
@@ -329,6 +397,7 @@ Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/dixon-2012-tads]] — Dixon 2012, topological domains via the directionality index; only 15% of CTCF sites sit at boundaries.
 - [[10-Summaries/ramani-2017-scihi-c]] — Ramani 2017, sciHi-C: combinatorial indexing to 10,696 single-cell contact maps, in-silico cell-cycle sorting.
 - [[10-Summaries/peric-hupkes-2010-lad-differentiation]] — Peric-Hupkes 2010, LAD reorganization across an ESC→NPC→astrocyte lineage; the gene "unlocking" result.
+- [[10-Summaries/hsieh-2015-micro-c]] — Hsieh 2015, Micro-C: MNase-based Hi-C at nucleosome resolution in yeast; gene-scaled chromosomal interaction domains bounded at promoters; no regular 30-nm fibre.
 
 ## Preprocessing, alignment & formats (added 2026-08-10)
 
@@ -348,6 +417,7 @@ Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/kerpedjiev-2018-higlass]] — Kerpedjiev 2018, HiGlass: composable linked views; seven TAD callers disagree on one matrix.
 - [[10-Summaries/zhou-2019-schicluster]] — Zhou 2019, scHiCluster: convolution + random-walk imputation, top-20% selection against coverage bias.
 - [[10-Summaries/zhang-2022-higashi]] — Zhang 2022, Higashi: hypergraph representation learning; sliding single-cell TAD-like boundaries.
+- [[10-Summaries/galasso-2026-map3c]] — Galasso 2026, map3C: multiomic scHi-C (LiMCA, snm3C-seq) contact calling with junction-multimapping trimming, MAPQ QC and 1-bp SV breakpoint flags.
 
 ## Integration, clustering & trajectories (added 2026-08-10)
 

@@ -5,7 +5,7 @@ aliases: []
 entity_kind: person
 tags: [brain-mosaicism, neuroscience]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Sara Bizzotto
@@ -15,6 +15,7 @@ updated: 2026-05-12
 ## Mentions
 
 - **2026-05-12** — First author of [[10-Summaries/bizzotto-2022-brain-mosaicism-review]] (NRN review with Walsh).
+- **2026-10-07** — Co-author on [[10-Summaries/luquette-2022-neuron-scan2-indels]] (PTA + SCAN2 single-neuron mutation catalogue).
 
 ## Related
 

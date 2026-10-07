@@ -4,7 +4,7 @@ title: Duplex sequencing
 aliases: [DS, duplex-seq, duplex consensus sequencing, single-molecule duplex sequencing, ultra-accurate sequencing]
 tags: [sequencing, error-correction, somatic-mutation, mutational-signatures, single-molecule, low-VAF, method]
 created: 2026-05-12
-updated: 2026-06-29
+updated: 2026-10-07
 ---
 
 # Duplex sequencing
@@ -30,7 +30,7 @@ Most duplex methods sequence **bulk DNA** at single-molecule resolution — capt
 Four implementation strategies have emerged ([[10-Summaries/shao-2025-scDNA-mosaicism-review]] Fig 3a):
 
 - **Y-adaptor based** — BotSeqS, NanoSeq: asymmetric Y-shaped adapter with distinct strand barcodes; requires bottleneck dilution ([[10-Summaries/abascal-2021-nanoseq]]; [[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
-- **Tn5-based** — [[meta-cs]], the only single-cell-compatible variant; Tn5 inserts adapters with orientation distinguishing the two strands ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
+- **Tn5-based** — [[meta-cs]], the only single-cell-compatible variant; strands are labelled by melting and two sequential primer-extension rounds after Tn5 tagging ([[10-Summaries/xing-2021-meta-cs]]; [[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 - **Quadruplex adaptor** — [[codec]]: adapter physically concatenates both strands so they appear in the same read ([[10-Summaries/bae-2023-codec]]).
 - **Circularized sequencing** — [[hidef-seq]] (PacBio HiFi, error rate ~7×10⁻¹⁶) and SMM-seq (Illumina rolling-circle) ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
@@ -90,6 +90,14 @@ _Future synthesis target_: "Duplex vs scDNA-seq complementarity" — duplex capt
 
 - **Single-cell duplex** is not yet broadly practical: DS needs both strands of one molecule, but scWGA loses strand identity ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]). [[meta-cs]] is the only single-cell-compatible variant so far; Duplex-Multiome solves it for nuclear sSNV calling via the 10x Multiome library ([[10-Summaries/kriz-2025-duplex-multiome]]).
 - Will the convergence of mutation-rate estimates across methods (shown in the SMaHT benchmark) hold when applied to harder tissues like brain or aging muscle ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]])?
+
+## Added 2026-10-07
+
+- [[10-Summaries/hoang-2016-botseqs]] — BotSeqS bottleneck duplex sequencing: genome-wide rare nuclear and mtDNA mutation rates in normal tissues.
+- [[10-Summaries/xing-2021-meta-cs]] — META-CS primary paper: one-tube complementary-strand scWGA; both-strand consensus calling in single cells from ≥4 reads.
+
+**SMM-seq primary source.** SMM-seq ligates hairpin adapters (6-nt UMI in the stem) to make dumbbell templates. Linear pulse-RCA then produces many independent copies of both strands before PCR, so the theoretical error rate is P(E)^N rather than duplex's P(E)² ([[10-Summaries/maslov-2022-smm-seq]]). A minimum of 7 reads per strand family was set empirically, at the point where apparent mutation frequency plateaued, and both strands are still required to reject single-strand DNA damage ([[10-Summaries/maslov-2022-smm-seq]]). Libraries are sequenced on Illumina NovaSeq 150PE ([[10-Summaries/maslov-2022-smm-seq]]).
+
 
 ## Related
 

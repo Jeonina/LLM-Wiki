@@ -4,7 +4,7 @@ title: Chromatin accessibility
 aliases: [open chromatin, chromatin openness]
 tags: [chromatin, regulation]
 created: 2026-05-07
-updated: 2026-05-19
+updated: 2026-10-07
 ---
 
 # Chromatin accessibility
@@ -40,6 +40,11 @@ In single-cell genomics, accessibility complements RNA: it captures regulatory p
 - JAK2V617F-mutant HSCs show increased accessibility at NF-κB target genes (TRAPPC9), TGF-β receptor BMPR1B, and matrix-remodeling MMP15 ([[10-Summaries/izzo-2024-got-cha]]).
 - The SLC39A4 eQTL locus is resolved per haplotype by same-molecule genotype + chromatin readout ([[10-Summaries/swanson-2025-daf-seq]]).
 - Chromatin potential — accessibility precedes transcription during differentiation, predicting cell-fate decisions in keratinocytes ([[10-Summaries/ma-2020-share-seq]]).
+
+## Added 2026-10-07
+
+Differential accessibility in scATAC-seq is statistically fragile: in a replicate-vs-replicate null, a Wilcoxon test called 6,761 regions and a Signac-style GLM 910, whereas PeakVI's posterior-sampling test called none ([[10-Summaries/ashuach-2022-peakvi]]). scaDA instead models peaks as zero-inflated negative binomial and tests mean, prevalence and dispersion jointly, arguing cell types differ in accessibility distributions, not only means ([[10-Summaries/zhao-2024-scada]]). BROCKMAN found reads outside called peaks grouped K562 samples better than reads inside peaks ([[10-Summaries/de-boer-2018-brockman]]).
+
 
 ## Related
 

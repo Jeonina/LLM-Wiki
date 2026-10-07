@@ -4,7 +4,7 @@ title: CUT&Tag
 aliases: [Cleavage Under Targets and Tagmentation]
 tags: [histone-modifications, Tn5, Henikoff-lab, in-situ]
 created: 2026-05-12
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # CUT&Tag
@@ -35,6 +35,21 @@ Workflow: light formaldehyde fixation → nuclei isolation → primary antibody 
 - **The ATAC background is real and diagnostic.** Untethered pA-Tn5 binds exposed DNA, so every run carries a low-level accessibility signal; salt stringency controls it, and in single cells it appears as a nucleosomal fragment-length ladder in specific clusters ([[10-Summaries/kaya-okur-2019-cut-and-tag]]; QC procedure in [[10-Summaries/wu-2021-sccut-tag]]).
 - **Repressive marks work best at single-cell scale** because feature breadth (~5 nucleosomes for H3K4me2 vs hundreds for H3K27me3 domains) compensates for sparse sampling — H3K27me3 types cells at 300–1,100 fragments per cell ([[10-Summaries/kaya-okur-2019-cut-and-tag]]; [[10-Summaries/wu-2021-sccut-tag]]).
 - **Multiplexing routes**: barcoded adapters per antibody give direct co-localization of epitopes in the same cells ([[10-Summaries/gopalan-2022-multi-cut-and-tag]]), while adding surface protein enables computational interpolation of six marks per cell ([[10-Summaries/zhang-2022-sccut-tag-pro]]) — the latter explicitly *cannot* detect per-cell mark co-occurrence.
+
+## Added 2026-10-07
+
+Benchmarked against ENCODE ChIP-seq in K562, CUT&Tag recovered on average ~54% of ENCODE peaks for H3K27ac and H3K27me3 (max 63%), specifically the strongest and most accessible peaks, while reproducing ENCODE GO terms and TF motifs [[10-Summaries/abbasova-2025-cut-tag-encode-benchmark]]. For H3K27ac the expected signal-to-noise advantage over ChIP-seq was not observed (similar FRiP in overlapping regions), whereas H3K27me3 CUT&Tag gave about twice as many reads in overlapping intervals [[10-Summaries/abbasova-2025-cut-tag-encode-benchmark]]. HDAC inhibitors did not improve H3K27ac CUT&Tag [[10-Summaries/abbasova-2025-cut-tag-encode-benchmark]].
+
+scNanoSeq-CUT&Tag ports single-cell CUT&Tag to nanopore with a single-adaptor pG-Tn5, giving up to 13,373 unique reads per cell across 17,211 cells, five histone marks plus CTCF and RAD21, and access to repeats and blacklist regions that short reads cannot map ([[10-Summaries/li-2024-scnanoseq-cut-tag]]). Merged tracks from as few as 146 cells were highly comparable with bulk ChIP-seq ([[10-Summaries/li-2024-scnanoseq-cut-tag]]).
+
+**Independent pA-Tn5 design (CoBATCH, 2019).** Wang et al. fused protein A to the N-terminus of Tn5 for antibody-tethered tagmentation with one-tube library PCR, profiling histone marks from as few as 100 cells and also P300, CBP, EZH2 and NKX2-5 ([[10-Summaries/wang-2019-cobatch]]). The CoBATCH clipping cites CUT&RUN and ChIL-seq as precedents but not CUT&Tag, so it reads as a parallel development (synthesis).
+
+**Plate-based variant that starts from single cells (OneCell CUT&Tag, 2026).** OneCell CUT&Tag sorts single cells into 384-well plates before any antibody step and runs the whole CUT&Tag protocol per well. This removes the ≥10⁴-cell input floor of bulk-targeting methods and yields 26,008 median unique reads/cell (FrIP 0.77) on MDA-MB-468 H3K27me3, against 5,156 for 10x droplet scCUT&Tag at equalized depth ([[10-Summaries/schwager-2026-onecell-cut-tag]]).
+
+**Open-chromatin bias.** Because CUT&Tag uses Tn5, H3K27me3 libraries show false enrichment at active promoters: on average 18% of K562 H3K27me3 CUT&Tag peaks are absent from ChIP-seq and sit in ATAC-open regions, and the promoter excess persists across 277 datasets published since 2024, including high-salt protocols ([[10-Summaries/hu-2026-patty]]). PATTY corrects this with a mark-specific logistic-regression model using CUT&Tag plus ATAC-seq signal, validated for H3K27me3, H3K27ac and H3K9me3 ([[10-Summaries/hu-2026-patty]]). Deaminase-based DeChIC-seq reports low correlation with ATAC-seq, positioning it as an alternative without this bias ([[10-Summaries/shi-2026-dechic-seq]]).
+
+A 2026 review catalogues 21 public scCUT&Tag-family datasets (2019–2025) spanning histone marks, CTCF/RAD21, Pol II, TFs, m6A and G-quadruplexes, typically with <10³ fragments per cell versus >10⁴ for scATAC-seq ([[10-Summaries/wu-2026-sccut-tag-review]]). Because pA-Tn5 is tethered to the epitope, TF events appear as narrow high-amplitude peaks rather than ATAC-style footprint dips ([[10-Summaries/wu-2026-sccut-tag-review]]). For analysis, a systematic benchmark recommends 100–200 kbp fixed bins, no feature selection, and TF-IDF followed by SVD or NMF ([[10-Summaries/raimundo-2023-schptm-benchmark]]).
+
 
 ## Related
 

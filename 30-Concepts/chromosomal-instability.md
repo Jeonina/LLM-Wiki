@@ -4,7 +4,7 @@ title: Chromosomal Instability
 aliases: [CIN, ongoing aneuploidy, karyotype heterogeneity, aneuploidy]
 tags: [CIN, aneuploidy, cancer, spindle-assembly-checkpoint, karyotype]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Chromosomal Instability
@@ -31,6 +31,13 @@ A **heterogeneity score** (number of cells with distinct copy-number profiles) a
 ## Open questions
 
 Whether karyotype heterogeneity predicts treatment outcome is proposed but not shown — the human data establish differing CIN rates without outcome data ([[bakker-2016-aneufinder]]).
+
+## Added 2026-10-07
+
+Single-cell WGS of 30,260 HGSOC tumour genomes measured CIN three ways — cell-specific CNAs on phylogenies, highly divergent 'hopeful monster' cells (38/41 patients, mean 2.6% of cells) and cGAS-positive ruptured micronuclei — all elevated after whole-genome doubling ([[10-Summaries/mcpherson-2025-ongoing-wgd]]). Ploidy-adjusted chromosome and arm losses were 2.6- and 2.4-fold higher in WGD-high 1×WGD cells than in WGD-low 0×WGD cells ([[10-Summaries/mcpherson-2025-ongoing-wgd]]). The CIN to cGAS-STING to interferon link held in WGD-low tumours but was decoupled in WGD-high tumours, which repressed STING1 ([[10-Summaries/mcpherson-2025-ongoing-wgd]]).
+
+In a 260-cell TNBC xenograft CNA tree, *AKT1* was amplified repeatedly and *NTRK3* and *TBX3* were each deleted in two parallel lineages. The authors read this as chromosomal instability and as a reason for phylogenetic models to allow recurrent CNAs ([[10-Summaries/kuipers-2025-scicone]]).
+
 
 ## Related
 

@@ -63,6 +63,11 @@ Iterative sequence-profile searching plus secondary-structure prediction for the
 - Genomic localization of 5hmC was unresolved here; whether 5hmC is a stable mark or purely an intermediate remains contested in the corpus.
 - Single-cell 5hmC remains sparse relative to 5mC: does the 4–6% bulk figure hold cell-to-cell, or is it dominated by a subpopulation? Not addressed by any source currently in this wiki.
 
+## Added 2026-10-07
+
+See also [[10-Summaries/huang-2010-5hmc-bisulfite]]: the follow-up from the same group showing how 5hmC behaves in bisulfite sequencing.
+
+
 ## Related
 
 - [[5hmc]] · [[tet-enzymes]] · [[dna-methylation]] · [[chen-2025-sctaps-sccaps-plus]]

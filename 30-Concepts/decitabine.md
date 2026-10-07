@@ -4,7 +4,7 @@ title: Decitabine
 aliases: [DAC, 5-aza-2'-deoxycytidine, Dacogen]
 tags: [chemotherapy, hypomethylating-agent, AML, MDS]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Decitabine
@@ -22,6 +22,11 @@ updated: 2026-05-12
 ## Examples
 
 - KG1a/HL60 AML cells ± DAC in [[10-Summaries/hunt-2022-sctem-seq]].
+
+## Added 2026-10-07
+
+Single-cell methylomes reveal per-cell heterogeneity in response to hypomethylating drugs. Two azacytidine-treated K562 single cells kept untreated-like methylation, which the authors suggest was because they had not divided ([[10-Summaries/farlik-2015-scwgbs]]). Under azacytidine, lineage-specific enhancers and TF sites demethylated faster than expected, and repressive chromatin slower ([[10-Summaries/farlik-2015-scwgbs]]).
+
 
 ## Related
 

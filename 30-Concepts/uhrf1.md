@@ -4,7 +4,7 @@ title: UHRF1
 aliases: [Np95, ICBP90]
 tags: [methylation-maintenance, DNMT1-cofactor, replication-fork]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # UHRF1
@@ -16,6 +16,11 @@ updated: 2026-05-12
 - Loss of UHRF1 causes genome-wide hypomethylation.
 - UHRF1 also binds H3K9me3 (via TTD domain), coupling DNA methylation to heterochromatin.
 - H3K9me3-marked late-replicating regions take longest to remethylate after S phase, which scEpi2-seq attributes to late replication timing rather than the histone mark per se ([[10-Summaries/geisenberger-2025-scepi2-seq]]); a UHRF1-mediated contribution is (synthesis).
+
+## Added 2026-10-07
+
+Single-cell, allele- and strand-resolved scWGBS shows the maintenance intermediate directly: newly replicated (4n) regions in early S-phase carry high intermediate methylation that declines through S and G2 but remains above G1 levels ([[10-Summaries/spix-2025-scdeep-mc]]).
+
 
 ## Related
 

@@ -5,7 +5,7 @@ aliases: [Loeb lab]
 entity_kind: person
 tags: [duplex-sequencing, error-correction, University-of-Washington]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Lawrence A. Loeb
@@ -19,6 +19,7 @@ Pathologist and biochemist. Lab homepage: github.com/loeblab. Long-standing focu
 ## Mentions
 
 - **2026-05-12** — Co-senior author on [[10-Summaries/kennedy-2014-duplex-protocol]] (Kennedy et al. 2014 Nature Protocols), the reference Duplex Sequencing methodology.
+- **2026-10-07** — Cited in [[10-Summaries/hoang-2016-botseqs]] as the developer (with coworkers) of the only comparably sensitive and specific rare-mutation method (duplex sequencing), but limited to predefined regions.
 
 ## Related
 

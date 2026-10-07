@@ -4,7 +4,7 @@ title: Single-cell phylogenetic inference
 aliases: [phylogenetic reconstruction, cell phylogeny, lineage tree inference]
 tags: [lineage-tracing, phylogenetics, computational, fate-mapping]
 created: 2026-06-02
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Single-cell phylogenetic inference
@@ -37,6 +37,23 @@ Given a character matrix (e.g. CRISPR indels) or variant calls per cell, phyloge
 Two papers make the same structural point from different data. [[10-Summaries/wang-2021-medalt]]: under aneuploidy a locus is repeatedly altered by successive CNAs, so the **infinite-sites assumption is violated**, and Euclidean, Hamming or correlation distances misrepresent the segmental, non-linear nature of CNA evolution. Minimal event distance is the appropriate metric, with homozygous loss encoded as infinite distance because deleted fragments cannot be recovered. [[10-Summaries/jones-2020-cassiopeia]]: encoding the recorder's irreversibility and unedited founder state into the algorithm is what reduces an NP-hard multi-state perfect-phylogeny problem to a tractable binary one.
 
 The transferable lesson is that assay-specific physical constraints belong in the model, not around it (synthesis).
+
+
+## Added 2026-10-07
+
+Phylogenetic inference is NP-hard under most scoring criteria, and exhaustive search is infeasible beyond roughly 20 single cells ([[10-Summaries/lahnemann-2020-grand-challenges]]). An extension of RAxML-NG with a 10-state unphased diploid genotype model outperformed a ternary model only slightly and only at very high (10–50%) error rates ([[10-Summaries/lahnemann-2020-grand-challenges]]); this line was later published as CellPhy ([[10-Summaries/kozlov-2022-cellphy]]).
+
+SiCloneFit couples a tree-structured Chinese restaurant process (clones at the leaves of a clonal phylogeny) with SiFit's finite-site model, an FP/FN error model and a Beta-binomial doublet model, sampling clone number, membership, genotypes and tree jointly by MCMC ([[10-Summaries/zafar-2019-siclonefit]]). In two targeted CRC datasets, 104/120 and 347/630 SNV pairs violated the four-gamete test ([[10-Summaries/zafar-2019-siclonefit]]).
+
+COMPASS infers joint trees of SNVs and CNAs (gains, losses, copy-neutral LOH) from amplicon scDNA-seq by modelling per-amplicon coverage weights, per-variant dropout, doublets and learned node attachment probabilities; it outperformed BiTSC² (which assumes uniform coverage) and SCITE (uniform attachment prior) in Tapestri-like simulations [[10-Summaries/sollier-2023-compass]]. Its two-stage search keeps CNA false positives very low but misses CNAs in subclones not marked by an SNV or LOH [[10-Summaries/sollier-2023-compass]].
+
+ScisTree2 scales infinite-sites maximum-posterior tree search to tens of thousands of cells via an SPR local search that evaluates the full O(n²) neighbourhood in O(n²m) time plus branch-and-bound pruning, calling genotypes as a by-product of mutation placement ([[10-Summaries/zhang-2025-scistree2]]). In simulations it remained more accurate than SiFit and CellPhy even with up to 75% finite-sites sites, but no method recovered accurate topologies below 1× coverage or with few sites ([[10-Summaries/zhang-2025-scistree2]]). For copy-number data, WGD-aware MEDICC2 trees plus SNV-based doubleTime timing were used to separate truncal, parallel and subclonal WGD histories ([[10-Summaries/mcpherson-2025-ongoing-wgd]]).
+
+CNA trees differ from SNV mutation trees because overlapping, nested and recurrent CNAs break the infinite-sites assumption. SCICoNE allows arbitrary violations at the bin level, forbids regaining a segment after CN 0, and forbids duplicate genotypes ([[10-Summaries/kuipers-2025-scicone]]). It reuses SCITE's prune-and-reattach and label-swap MCMC moves and adds event, node and genotype-preserving moves ([[10-Summaries/kuipers-2025-scicone]]).
+
+**Acquisition bias and branch lengths.** Using only variant sites overestimates branch lengths; SIEVE corrects this with the count of invariant background sites, reporting branch lengths as expected somatic mutations per site, and outperformed CellPhy and SiFit on branch-score distance in all simulated scenarios ([[10-Summaries/kang-2022-sieve]]). Models under the finite-sites assumption performed as well as ISA models when ISA held, while SCIPhI degraded at 100 cells when ISA was violated ([[10-Summaries/kang-2022-sieve]]).
+
+CellPhy extends the 4-state GTR model to a 16-state diploid-genotype model (GT16) with explicit allelic-dropout and amplification/sequencing-error parameters, implemented in RAxML-NG so that somatic SNV trees get maximum-likelihood search, bootstrap branch support and ancestral-state mutation mapping ([[10-Summaries/kozlov-2022-cellphy]]). In its simulations it was the most accurate of the methods tested (TNT, infSCITE, SiFit, SCIPhI, ScisTree), especially at 5× depth when it uses genotype likelihoods, and it ran about 1–2 orders of magnitude faster than SiFit, SCIPhI or infSCITE ([[10-Summaries/kozlov-2022-cellphy]]). Growing-population genealogies have short internal branches and need hundreds to tens of thousands of SNVs to resolve, a limit the authors say applies to every method ([[10-Summaries/kozlov-2022-cellphy]]).
 
 
 ## Related

@@ -4,7 +4,7 @@ title: Peak Calling
 aliases: [peak detection, enrichment calling, domain calling]
 tags: [ChIP-seq, CUT&Tag, ATAC-seq, statistics, background-model]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Peak Calling
@@ -28,6 +28,15 @@ Shape-modelling callers need separate narrow and broad modes. Signal blocks have
 ## A systematic bias worth knowing
 
 Compact chromatin sonicates poorly and yields longer fragments disfavoured by size selection, so **ChIP-seq efficiency for H3K27me3 and H3K9me3 declines as cells differentiate** — exactly when those marks spread ([[zhang-2008-macs]]). Signal loss reads as biology when it is chemistry, and it is a standing argument for in-situ methods that skip sonication ([[kaya-okur-2019-cut-and-tag]]).
+
+## Added 2026-10-07
+
+For CUT&Tag, SEACR (stringent, threshold 0.01) and MACS2 (narrow, q = 1 × 10⁻⁵, no local lambda) gave similar ~50% ENCODE recall; SEACR had slightly higher precision and was robust to duplication but called wider peaks (1.35–1.68 MACS2 peaks per SEACR peak), while MACS2 called spurious heterochromatic peaks when duplicates were kept in high-duplication samples [[10-Summaries/abbasova-2025-cut-tag-encode-benchmark]].
+
+Conversion-based assays call peaks as differentially converted regions: DeChIC-seq uses Metilene against an IgG or simulated pseudo-IgG track ([[10-Summaries/shi-2026-dechic-seq]]). For CUT&Tag, PATTY-corrected profiles correlated better with expression and antagonistic marks than MACS2 peaks with or without IgG control ([[10-Summaries/hu-2026-patty]]).
+
+For scHPTM embeddings, MACS2 and SICER pseudobulk peak sets and GeneTSS annotations were generally less competitive than fixed-size bins; the gap was smaller for small-peak marks (H3K4me1, H3K4me3) ([[10-Summaries/raimundo-2023-schptm-benchmark]]). In scCUT&Tag, peaks are called on pseudobulk (MACS2 via Signac/ArchR, broad mode for H3K27me3), and published "peaks" are often actually fixed bins ([[10-Summaries/wu-2026-sccut-tag-review]]).
+
 
 ## Related
 

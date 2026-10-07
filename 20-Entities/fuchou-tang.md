@@ -5,7 +5,7 @@ aliases: [Tang F, Tang Fuchou]
 entity_kind: person
 tags: [single-cell-transcriptomics, scRNA-seq-founder, Surani-lab-alumnus, Peking-University]
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-10-07
 ---
 
 # Fuchou Tang
@@ -20,6 +20,10 @@ Affiliations: Wellcome Trust-Cancer Research UK Gurdon Institute, University of 
 
 - **2026-05-14** — [[10-Summaries/tang-2009-scrna-seq]]: first author. Demonstrated mRNA-Seq from a single mouse blastomere, detecting 75% more genes than microarray and 1,753 novel splice junctions.
 - **2026-05-14** — [[10-Summaries/hou-2016-sctrio-seq]]: senior/corresponding author on the scTrio-seq triple-omics paper, extending single-cell sequencing to joint genome + methylome + transcriptome in hepatocellular carcinoma cells.
+- **2026-10-07** — Senior author (conceived the project) in [[10-Summaries/li-2025-scnanoatac-seq2]] (scNanoATAC-seq2 long-read scATAC atlas of mouse preimplantation development).
+- **2026-10-07** — Acknowledged in [[10-Summaries/li-2023-darlin]] for assistance with the multi-omic (Camellia-seq) experiments and analysis.
+- **2026-10-07** — Last author in [[10-Summaries/li-2024-scnanoseq-cut-tag]] (scNanoSeq-CUT&Tag, nanopore single-cell CUT&Tag resolving histone marks on individual repeat copies and blacklist regions).
+- **2026-10-07** — Corresponding author of [[10-Summaries/li-2023-scnanohi-c]] (scNanoHi-C, Peking University: Nanopore long-read single-cell Hi-C for multi-way chromatin contacts; Tang is a co-inventor on a patent covering the method).
 
 ## Positions and claims
 

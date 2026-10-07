@@ -4,7 +4,7 @@ title: Monovar
 aliases: []
 tags: [single-cell, variant-calling, software]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Monovar
@@ -19,6 +19,11 @@ Monovar treats each locus as independently sampled across all cells in the datas
 
 - One of the first single-cell SNV callers; reference benchmark for newer methods like SCcaller and SCOUT.
 - Fails when minor clones or rare variants make multi-cell pooling unreliable.
+
+## Added 2026-10-07
+
+In SIEVE's benchmarks Monovar had precision comparable to SIEVE but much lower recall, more missing entries and more (likely false) double-mutant calls, and its F1 dropped in proportion to the amount of CNA sites included ([[10-Summaries/kang-2022-sieve]]).
+
 
 ## Related
 

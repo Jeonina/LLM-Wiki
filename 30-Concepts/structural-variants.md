@@ -4,7 +4,7 @@ title: Structural variants
 aliases: [SVs, large genomic rearrangements]
 tags: [genome, SV, CNV, inversion, translocation, cancer]
 created: 2026-05-12
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Structural variants (SVs)
@@ -41,6 +41,17 @@ SVs include:
 - **Position relative to TAD boundaries determines pathogenicity**, not size or copy-number direction: intra-TAD SVs alter enhancer dosage, while inter-TAD SVs cause TAD fusion, neo-TAD formation or TAD shuffling ([[10-Summaries/spielmann-2018-sv-3d-genome]]; causally demonstrated in [[10-Summaries/lupianez-2015-tad-disruption]]).
 - **De novo SV rates are unresolved.** Estimates range 0.05–0.16 per generation, and three analyses of the same ASD dataset reached three different conclusions about non-coding SV contribution ([[10-Summaries/spielmann-2018-sv-3d-genome]]).
 - **Frequency of 3D position effects is phenotype-specific**: ~7% of balanced translocations in neurodevelopmental disorders disrupt TADs, but **57%** of congenital limb-malformation CNVs act through cis-regulatory position effects ([[10-Summaries/spielmann-2018-sv-3d-genome]]).
+
+## Added 2026-10-07
+
+Single-cell Hi-C contacts far from restriction cut sites, with soft-clipped junctions, can flag SV breakpoints at 1-bp resolution: in 63 K562 LiMCA cells map3C plus EagleC filtering gave 61 breakpoints, 23 matching WGS SVs (precision 0.30, recall 0.0033) ([[10-Summaries/galasso-2026-map3c]]).
+
+Droplet Hi-C called SVs from CNV-corrected single-cell contact matrices with EagleC. In a primary glioblastoma it found a malignant-specific translocation that moved *IKZF1*, without its promoter, onto *EGFR* ecDNA, and *IKZF1* transcription dropped ([[10-Summaries/chang-2025-droplet-hi-c]]). Per-cell contact features (hub index, i.e. the Gini coefficient of interchromosomal contacts; copy number; *trans*-to-*cis* ratio) separated ecDNA from homogeneously staining regions (HSRs), which aggregate Hi-C and adjnTIF could not ([[10-Summaries/chang-2025-droplet-hi-c]]).
+
+Long-read single-cell WGS (dMDA + PacBio HiFi) found an average of 5473 bulk-confirmed SVs per cell versus 327 in Illumina dMDA cells, with precision of 0.73 for deletions and 0.66 for insertions ([[10-Summaries/hard-2023-long-read-scwgs]]). Nearly all called inversions and duplications were false positives caused by intramolecular dMDA chimeras, so the method is not suited to those SV classes ([[10-Summaries/hard-2023-long-read-scwgs]]).
+
+BreakDancer calls SVs from short-insert paired-end reads in two complementary ways. BreakDancerMax clusters anomalously mapped read pairs with a Poisson confidence score, covering deletions, insertions, inversions and intra- and inter-chromosomal translocations. BreakDancerMini runs a sliding-window Kolmogorov–Smirnov test on normal pairs to catch 10–100 bp indels; together they cover 10 bp–1 Mb ([[10-Summaries/chen-2009-breakdancer]]). Read-pair signal is geometrically limited: only 43.2% of 844 simulated chr17 SVs had two or more anomalous pairs at 100× physical coverage. Insertions longer than 100 bp were undetectable with 200 bp inserts and 50 bp reads ([[10-Summaries/chen-2009-breakdancer]]).
+
 
 ## Related
 

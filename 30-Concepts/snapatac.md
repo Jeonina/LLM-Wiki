@@ -4,7 +4,7 @@ title: SnapATAC
 aliases: [snapATAC2]
 tags: [scATAC-seq, peak-free, Ren-lab, scalable, software]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # SnapATAC
@@ -24,6 +24,11 @@ Workflow: SnapTools for preprocessing → snap file format → 5-kb binary bin v
 ## Examples
 
 - Mouse secondary motor cortex (MOs): 9,529 nuclei → 31 cell populations → ~370k cREs, including rare interneurons Sst+, Vip+ ([[10-Summaries/fang-2021-snapatac]]).
+
+## Added 2026-10-07
+
+On single-cell histone PTM data, SnapATAC (Jaccard similarity + kernel PCA) ranked fourth to fifth, behind the TF-IDF methods but ahead of cisTopic and SCALE ([[10-Summaries/raimundo-2023-schptm-benchmark]]).
+
 
 ## Related
 

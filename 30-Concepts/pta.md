@@ -4,7 +4,7 @@ title: PTA (Primary Template Amplification)
 aliases: [Primary Template-directed Amplification]
 tags: [scWGA, isothermal, Φ29, ResolveServices, method]
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-10-07
 ---
 
 # PTA (Primary Template Amplification)
@@ -43,6 +43,11 @@ PTA simultaneously fixed three of MDA's failure modes — coverage, uniformity, 
 
 - Capturing SNVs, aneuploid chromosomes, and mtDNA from single donor-embryo cells (Diane 2025 preprint reference).
 - scDAF-seq consensus-read assembly reaching N50 of 34.5 kb in a single cell using PTA + PacBio HiFi ([[10-Summaries/swanson-2025-daf-seq]]).
+
+## Added 2026-10-07
+
+In a same-individual comparison, PTA-amplified neurons gave ~10× fewer infant-neuron sSNV calls than MDA (26 vs 282 per neuron) and showed no artifact signature B; MDA carried an estimated ~550 SNV and 136 indel single-strand-dropout artifacts per genome [[10-Summaries/luquette-2022-neuron-scan2-indels]]. With PTA + SCAN2 the neuronal rate is 16.5 sSNVs/year and ≥3 indels/year [[10-Summaries/luquette-2022-neuron-scan2-indels]].
+
 
 ## Related
 

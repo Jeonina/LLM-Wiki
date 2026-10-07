@@ -4,7 +4,7 @@ title: Hi-C Normalization
 aliases: [ICE, iterative correction, matrix balancing, valid pair filtering]
 tags: [Hi-C, normalization, ICE, bias-correction, pipelines]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Hi-C Normalization
@@ -30,6 +30,17 @@ Improving resolution *n*-fold requires *n*² more reads ([[lieberman-aiden-2009-
 ## Open question
 
 ICE assumes equal visibility for all bins after correction — an assumption strained in aneuploid genomes, and unexamined in the source pipeline literature ([[servant-2015-hicpro]]).
+
+## Added 2026-10-07
+
+For sparse single cells, scDIAGRAM runs change-point detection on raw contacts and computes O/E only for graph partitioning, using a pseudo-bulk expected profile in the style of BandNorm ([[10-Summaries/peng-2026-scdiagram]]).
+
+**Single-cell band normalization.** BandNorm divides each diagonal band of a cell's contact matrix by that cell's band total, then multiplies by the across-cell mean band total. This removes distance bias and depth while restoring a common contact-decay curve ([[10-Summaries/zheng-2022-bandnorm-scvi-3d]]). The add-back step is what separates it from plain band scaling (BandScale) in cell-type separation, and the authors read this as up-weighting short-range bands ([[10-Summaries/zheng-2022-bandnorm-scvi-3d]]). The model-based counterpart, scVI-3D, fits a zero-inflated negative binomial VAE to each chromosome × band matrix ([[10-Summaries/zheng-2022-bandnorm-scvi-3d]]).
+
+Rao et al. used a matrix-balancing algorithm to correct coverage non-uniformity caused by restriction-site density and accessibility in their kilobase-resolution in situ Hi-C maps ([[10-Summaries/rao-2014-in-situ-hic]]).
+
+For single-cell Hi-C, scHiCNorm normalizes only cis contacts, using local-bias features and distribution fitting. BandNorm removes genomic-distance bias, normalizes for sequencing depth and applies a band-dependent contact-decay estimate. Most other scHi-C tools fold normalization into their imputation step ([[10-Summaries/dautle-2025-schic-review]]).
+
 
 ## Related
 

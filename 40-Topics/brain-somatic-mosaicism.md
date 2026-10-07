@@ -4,7 +4,7 @@ title: Brain somatic mosaicism
 aliases: [neuronal mosaicism, brain mosaicism, BSMN]
 tags: [brain, mosaicism, neurons, Walsh-lab, BSMN, Alzheimers, autism]
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-10-07
 ---
 
 # Brain somatic mosaicism
@@ -33,6 +33,12 @@ updated: 2026-05-19
 
 - [[20-Entities/smaht-network]] — Somatic Mosaicism Across Human Tissues
 - BSMN (Brain Somatic Mosaicism Network) — NIH program; see [[10-Summaries/garrison-2023-bsmn-data]] for the consortium data-resource descriptor (ASD, schizophrenia, bipolar, FCD, Tourette cohorts).
+
+## Added 2026-10-07
+
+- [[10-Summaries/luquette-2022-neuron-scan2-indels]] — Published SCAN2/PTA neuron study: 16 sSNVs/yr, ≥3 indels/yr, enrichment in neuronal enhancers and promoters.
+- [[10-Summaries/xing-2021-meta-cs]] — META-CS in 32 PFC neurons from 3 donors (19/49/76 y): ~16 SNVs/year, lower than earlier estimates; ssDNA G>T damage calls rise in the oldest brain.
+
 
 ## Related
 

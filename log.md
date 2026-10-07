@@ -4,6 +4,41 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+# 2026-10-07 — Ingest: 70 sources (paper-list gap fill: variant callers, scHi-C, scCUT&Tag/histone, single-cell methylation, phylogenetics)
+
+**Why.** The paper-list workbook (`~/Desktop/20261006_paperlist_ij.xlsx`) had ~80 rows with no source in the wiki; the user clipped them (plus two extra reviews) into `00-Sources/papers/`.
+
+**Process.** Seven parallel agents wrote one summary each (Crossref-verified citation; strict rule that every number/comparison must be in the clipping) and returned proposed graph edits as JSON; the main session merged the 428 proposals by target page and applied them in one pass so no page was edited twice. 70/70 citations re-checked against Crossref after writing.
+
+**Summaries (70).**
+- *3D genome* (10): [[10-Summaries/arrastia-2022-scsprite]], [[10-Summaries/chang-2025-droplet-hi-c]], [[10-Summaries/dautle-2025-schic-review]], [[10-Summaries/li-2022-snaphic2]], [[10-Summaries/li-2023-scnanohi-c]], [[10-Summaries/liu-2024-snaphic-g]], [[10-Summaries/peng-2026-scdiagram]], [[10-Summaries/rao-2014-in-situ-hic]], [[10-Summaries/zhang-2022-fast-higashi]], [[10-Summaries/zheng-2022-bandnorm-scvi-3d]].
+- *Cancer & clonal evolution* (3): [[10-Summaries/kuipers-2025-scicone]], [[10-Summaries/mcpherson-2025-ongoing-wgd]], [[10-Summaries/sollier-2023-compass]].
+- *DNA methylation* (13): [[10-Summaries/acharya-2024-scimet-cap]], [[10-Summaries/duan-2026-mist]], [[10-Summaries/farlik-2015-scwgbs]], [[10-Summaries/huang-2010-5hmc-bisulfite]], [[10-Summaries/liang-2026-scmeth-imputation-benchmark]], [[10-Summaries/liu-2012-bis-snp]], [[10-Summaries/nichols-2025-scimetv3]], [[10-Summaries/olova-2018-wgbs-library-bias]], [[10-Summaries/rylaarsdam-2025-amethyst]], [[10-Summaries/spix-2025-scdeep-mc]], [[10-Summaries/vaisvila-2021-em-seq]], [[10-Summaries/zhao-2025-mambacpg]], [[10-Summaries/zhou-2024-scdmv]].
+- *Duplex / error-corrected sequencing* (2): [[10-Summaries/hoang-2016-botseqs]], [[10-Summaries/maslov-2022-smm-seq]].
+- *Foundational 3D genome & chromatin architecture (added 2026-08-10)* (1): [[10-Summaries/hsieh-2015-micro-c]].
+- *Hi-C pipelines, storage & visualization (added 2026-08-10)* (1): [[10-Summaries/galasso-2026-map3c]].
+- *Histone modifications* (9): [[10-Summaries/abbasova-2025-cut-tag-encode-benchmark]], [[10-Summaries/barski-2007-histone-methylation-chip-seq]], [[10-Summaries/hu-2026-patty]], [[10-Summaries/li-2024-scnanoseq-cut-tag]], [[10-Summaries/raimundo-2023-schptm-benchmark]], [[10-Summaries/shi-2026-dechic-seq]], [[10-Summaries/skene-2017-cut-and-run]], [[10-Summaries/wang-2019-cobatch]], [[10-Summaries/wu-2026-sccut-tag-review]].
+- *Lineage tracing & phylogenetics* (6): [[10-Summaries/kang-2022-sieve]], [[10-Summaries/kozlov-2022-cellphy]], [[10-Summaries/li-2023-darlin]], [[10-Summaries/weinreb-2020-larry]], [[10-Summaries/zafar-2019-siclonefit]], [[10-Summaries/zhang-2025-scistree2]].
+- *Long-read & single-molecule* (1): [[10-Summaries/hard-2023-long-read-scwgs]].
+- *Multi-omics integration & foundation models* (2): [[10-Summaries/argelaguet-2018-mofa]], [[10-Summaries/chen-2025-epiagent]].
+- *Multi-omics joint assays* (3): [[10-Summaries/pancikova-2025-splongget]], [[10-Summaries/schwager-2026-onecell-cut-tag]], [[10-Summaries/wang-2024-wellda-seq]].
+- *Reviews* (2): [[10-Summaries/lahnemann-2020-grand-challenges]], [[10-Summaries/ludwig-2019-sc-chromatin-modifications-review]].
+- *Variant calling & mosaic detection* (6): [[10-Summaries/bohrson-2019-lira]], [[10-Summaries/chen-2009-breakdancer]], [[10-Summaries/cibulskis-2013-mutect]], [[10-Summaries/koboldt-2009-varscan]], [[10-Summaries/luquette-2022-neuron-scan2-indels]], [[10-Summaries/muyas-2024-scomatic]].
+- *scATAC-seq & chromatin accessibility* (10): [[10-Summaries/ashuach-2022-peakvi]], [[10-Summaries/de-boer-2018-brockman]], [[10-Summaries/fan-2026-gfetm]], [[10-Summaries/ji-2017-scrat]], [[10-Summaries/li-2025-scnanoatac-seq2]], [[10-Summaries/ramakrishnan-2023-epianeufinder]], [[10-Summaries/tang-2024-sccase]], [[10-Summaries/tayyebi-2024-cellspace]], [[10-Summaries/yadav-2025-scffpe-atac]], [[10-Summaries/zhao-2024-scada]].
+- *scDNA-seq methods & WGA* (1): [[10-Summaries/xing-2021-meta-cs]].
+
+**Pages created (17).** [[20-Entities/david-posada]], [[20-Entities/erez-lieberman-aiden]], [[20-Entities/fernando-camargo]], [[20-Entities/isidro-cortes-ciriano]], [[20-Entities/jan-vijg]], [[20-Entities/luay-nakhleh]], [[20-Entities/niko-beerenwinkel]], [[20-Entities/peter-w-laird]], [[20-Entities/sohrab-p-shah]], [[20-Entities/x-sunney-xie]], [[30-Concepts/dechic-seq]], [[30-Concepts/differential-accessibility]], [[30-Concepts/em-seq]], [[30-Concepts/latent-semantic-indexing]], [[30-Concepts/micro-c]], [[30-Concepts/non-cg-methylation]], [[30-Concepts/whole-genome-doubling]].
+
+**Pages updated (142 + indexes).** 251 concept additions and 116 topic links under dated `## Added 2026-10-07` sections, 42 entity mentions. `10-Summaries/index.md`, `20-Entities/index.md`, `30-Concepts/index.md` updated.
+
+**Corrections to existing pages from new primary sources.** scSPRITE fragments by HpyCH4V digestion, not sonication ([[30-Concepts/sc-sprite]], [[30-Concepts/single-cell-hi-c]], [[40-Topics/3d-genome]], [[10-Summaries/jiang-2026-stark-scnucleome]]); META-CS labels strands by melting + two primer-extension rounds, its 2.4×10⁻⁸ is an FPR upper bound, and it lowers rather than raises sequencing cost ([[30-Concepts/meta-cs]], [[40-Topics/duplex-sequencing]]); SMM-seq is Illumina, not long-read ([[40-Topics/long-read-sequencing]]); the founding CUT&RUN paper used 0.6–10 M cells, not ~100 ([[30-Concepts/cut-and-run]]).
+
+**Tensions recorded** in [[50-Notes/open-questions]] (new section): imputation helps-vs-hurts in scHi-C and scDNAm; modality-specific embedding rankings and bin sizes; neuronal CNA prevalence revised by PTA; neuronal SNV rate converging at ~15–16/yr; CUT&Tag advantage mark-dependent; parallel invention of pA-Tn5 (CoBATCH); CRC2 seeding mono- vs polyclonal; SComatic blind to cross-lineage mosaicism; map3C reprocessing of snm3C contacts.
+
+**Not done / needs the user.** Ken Chen (BreakDancer 2009) not linked to the MD Anderson entity — identity unconfirmed. Possible preprint/published duplicate [[10-Summaries/luquette-2021-scan2]] vs [[10-Summaries/luquette-2022-neuron-scan2-indels]] — merge decision pending. Abstract/reference-only clippings to re-clip: argelaguet-2018-mofa, pancikova-2025-splongget, wang-2024-wellda-seq, fan-2026-gfetm (partial: hsieh-2015-micro-c). `tools/pending-sources.sh` still lists the two Vandereyken clippings because it does not parse list-valued `source:` frontmatter (they are covered by [[10-Summaries/vandereyken-2023-scmultiomics-review]]).
+
+---
+
 # 2026-10-07 — Maintenance: full fact-check against sources (summaries → synthesis pages)
 
 **Trigger.** User asked for a correctness pass before ingesting a new batch of sources.

@@ -4,7 +4,7 @@ title: Bisulfite sequencing
 aliases: [BS-seq, WGBS, whole-genome bisulfite sequencing]
 tags: [methylation, sequencing, method]
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-10-07
 ---
 
 # Bisulfite sequencing
@@ -43,6 +43,23 @@ Per-CpG methylation = count of unconverted C / total reads at the site.
 
 - Roadmap Epigenomics methylation atlas — predominantly WGBS-derived.
 - Cancer methylation biomarker assays (e.g., Cologuard methylation-based colorectal screening) — bisulfite-based.
+
+## Added 2026-10-07
+
+Beyond conflating 5mC with 5hmC, bisulfite treatment creates a coverage bias: the 5hmC adduct CMS stalls Taq during PCR (strongest at tandem CC contexts, weaker at CpGs), so CMS-dense templates amplify inefficiently ([[10-Summaries/huang-2010-5hmc-bisulfite]]). This was shown on synthetic oligonucleotides, not genomic DNA ([[10-Summaries/huang-2010-5hmc-bisulfite]]).
+
+Bisulfite conversion itself is the main source of WGBS bias: it preferentially degrades unmethylated, C-rich DNA (twofold lower recovery of a 30%-C vs 15%-C fragment under heat denaturation), while 5mC/5hmC protect fragments, so methylated sequence is over-represented [[10-Summaries/olova-2018-wgbs-library-bias]]. PCR amplifies these skews and unconverted-cytosine artefacts; amplified protocols overestimated mESC global 5mC (up to about double the LC-MS value), whereas amplification-free PBAT matched LC-MS [[10-Summaries/olova-2018-wgbs-library-bias]]. Differences of up to 20% between protocols can be purely technical, and absolute and relative methylation calls at intermediately methylated regions vary most [[10-Summaries/olova-2018-wgbs-library-bias]].
+
+Breadth beats depth for low-input methylomes. Deeper sequencing of one library added 62–86% CpG coverage at high duplicate rates, whereas combining a few dozen low-coverage one-cell or four-cell samples covered >90% of CpGs in human and mouse ([[10-Summaries/farlik-2015-scwgbs]]).
+
+**Bisulfite-free conversion.** EM-seq replaces bisulfite with TET2 + T4-BGT protection and APOBEC3A deamination, producing the same C/T readout but GC-even libraries that cover ~54 M of 56 M CpGs at 1× from 10–200 ng and work from 100 pg, cfDNA and FFPE DNA ([[10-Summaries/vaisvila-2021-em-seq]]). In single cells, however, an enzymatic-conversion protocol (Cabernet) showed incomplete CpY conversion in 43–49% of reads when reprocessed alongside bisulfite methods ([[10-Summaries/spix-2025-scdeep-mc]]).
+
+**Genotyping from bisulfite reads.** In directional libraries the strand opposite a cytosine is unaffected by conversion, so Bis-SNP can call C>T SNPs and methylation jointly (95.22% of homozygous cytosines and 93.18% of heterozygous SNPs at 32× vs a SNP array) ([[10-Summaries/liu-2012-bis-snp]]). At single-cell scale, within-read heterozygous SNPs can phase methylation calls to alleles without a custom reference ([[10-Summaries/spix-2025-scdeep-mc]]).
+
+**Enzymatic vs bisulfite in single cells.** In sciMETv3, EM-seq conversion roughly doubled insert size (163 vs 78 bp) and gave methylation profiles and cell-type proportions comparable to bisulfite, but TET2 over-converted methylated adapter cytosines in the Illumina read-2 primer region, impairing Illumina runs but not Ultima sequencing ([[10-Summaries/nichols-2025-scimetv3]]).
+
+Post-bisulfite hybrid capture with the Twist Human Methylome Panel (~123 Mbp of regulatory regions) enriched single-cell sciMETv2 libraries 7–8-fold ([[10-Summaries/acharya-2024-scimet-cap]]). Site-level methylation calls agreed with uncaptured libraries (Pearson ≥0.96), with no strand bias ([[10-Summaries/acharya-2024-scimet-cap]]). Bulk libraries reach about 12–18-fold enrichment with capture, roughly twice the single-cell figure ([[10-Summaries/acharya-2024-scimet-cap]]).
+
 
 ## Related
 

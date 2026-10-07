@@ -4,7 +4,7 @@ title: Mitochondrial heteroplasmy
 aliases: [mtDNA heteroplasmy, mtDNA mosaicism]
 tags: [mitochondria, mtDNA, mosaicism, genetic-drift]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Mitochondrial heteroplasmy
@@ -31,6 +31,13 @@ Each cell has hundreds to thousands of mtDNA copies (vs two for nuclear DNA). Th
 - m.5024C>T and m.5019A>G mt-tRNA-Ala mutations in mouse models — single-cell heteroplasmy variance increases from prenatal to P365 ([[10-Summaries/glynos-2023-mtdna-mosaicism]]).
 - MELAS (m.3243A>G), MERRF (m.8344A>G), Leigh syndrome (multiple mtDNA mutations).
 - **Single-cell mtDNA burden metrics** — scmtMPM (depth-normalized mutations per million bp) and scwMSS (heteroplasmy-weighted local-constraint score) introduced by [[10-Summaries/hsieh-2026-scmtmpm-scwmss]] for quantifying per-cell mutational load. POLG D274A hypermutator cells show ~15× more variants than POLG-wild-type control cells, with pathogenic variants held at sub-threshold VAF by negative selection ([[10-Summaries/hsieh-2026-scmtmpm-scwmss]]).
+
+## Added 2026-10-07
+
+In normal human tissues, rare mtDNA point-mutation prevalence (1.4 ± 1.3 × 10⁻⁵ per bp) was ~25-fold higher than nuclear, transition-dominated (89–97%) with strand bias, and rose with age (e.g. 30-fold in colon over 91 years); unlike nuclear DNA, mtDNA prevalence and spectra were unaffected by smoking or aristolochic-acid exposure [[10-Summaries/hoang-2016-botseqs]].
+
+Long-read scWGS found a clone-specific heteroplasmy (chrM:16,218 C>T at 41–67% in three clone-B T cells, absent in clone A and in bulk), confirmed in Illumina data. 17% of mtDNA HiFi reads covered at least 25% of the mitochondrial genome, which makes phasing possible at the molecule level ([[10-Summaries/hard-2023-long-read-scwgs]]).
+
 
 ## Related
 

@@ -4,7 +4,7 @@ title: Combinatorial indexing
 aliases: [split-pool barcoding, sci-method, combinatorial barcoding]
 tags: [single-cell, library-prep, scalability, throughput]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Combinatorial indexing
@@ -23,6 +23,17 @@ Cells are partitioned into N wells, each receiving a unique first-round barcode;
 ## Examples
 
 - 96 (first round) × 5,184 ICELL8 nanowells (second round) → 40k cells/chip in [[30-Concepts/scicut-tag]].
+
+## Added 2026-10-07
+
+CoBATCH applied two-round combinatorial indexing to histone marks. Barcoded PA-Tn5 transposomes (T5/T7) are loaded per well of a first 96-well plate holding 200–2,000 cells, and i5/i7 PCR indices are added on 20–25 cells per well of a second plate. This gives ~2,400 cells per 96-well plate at a ~7% species-mixing collision rate ([[10-Summaries/wang-2019-cobatch]]). Its stated limitation is a starting requirement of ≥~10,000 cells ([[10-Summaries/wang-2019-cobatch]]).
+
+scFFPE-ATAC combines 64 Tn5 sample indexes with three 96-well ligation rounds for 56,623,104 barcode combinations per run, estimating a 2.77% collision rate for 50,000 input cells with the SHARE-seq birthday-paradox formula ([[10-Summaries/yadav-2025-scffpe-atac]]). On the analysis side, sciMETv3-scale combinatorial methylation data (145,219 cells) required purpose-built tooling, since most single-cell methylation packages could not hold even 1346 cells ([[10-Summaries/rylaarsdam-2025-amethyst]]).
+
+**Three-tier indexing for methylation.** sciMETv3 adds an in situ ligation barcode between indexed tagmentation and PCR indexing, raising nuclei per final well from 15–60 (sciMETv2) to ~600–1,000 and enabling >140,000 human cortex methylomes from one preparation with a doublet bound of 3.4% ([[10-Summaries/nichols-2025-scimetv3]]).
+
+sciMET-cap runs one hybrid-capture reaction on a pooled, combinatorially indexed sciMETv2 library, so a single capture serves thousands of cells ([[10-Summaries/acharya-2024-scimet-cap]]). Capture probes did not saturate when the cell count was doubled to about 4,000 per capture ([[10-Summaries/acharya-2024-scimet-cap]]).
+
 
 ## Related
 

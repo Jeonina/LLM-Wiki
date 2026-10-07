@@ -4,7 +4,7 @@ title: Lineage tracing
 aliases: [cell lineage tracing, lineage reconstruction, lineage tracing with somatic mutations, somatic lineage tracing, mutation-based lineage tracing]
 tags: [development, lineage, single-cell, somatic-mutation, phylogeny]
 created: 2026-05-11
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Lineage tracing
@@ -74,6 +74,11 @@ Established applications: human developmental phylogeny ([[10-Summaries/coorens-
 [[10-Summaries/ludwig-2019-mtdna-lineage-tracing]] is the founding source for endogenous mtDNA barcoding: a 16.6 kb genome with a 10–100× higher mutation rate than nuclear DNA and 100–1,000s of copies per cell, so variants drift to high heteroplasmy and become robustly detectable at shallow depth. ATAC-seq covers it at 3,380-fold per million mapped reads with no enrichment step. Validated against a constructed 65-subclone tree (96% MRCA accuracy between first-generation clones, 79% within sub-clones) and against lentiviral barcodes (AUROC 0.96), and it **outperforms scRNA-inferred CNVs as a clonality measure**.
 
 [[10-Summaries/jones-2020-cassiopeia]] supplies the inference side for engineered Cas9 recorders, including the distinction between heritable and stochastic missing data and the recognition that homoplasy is the fundamental limit of any recorder.
+
+
+## Added 2026-10-07
+
+Expressed lentiviral barcodes (LARRY: random 28-mer in an eGFP 3′ UTR, read by scRNA-seq) link early transcriptional state to later clonal fate; across >300,000 haematopoietic cells, sister cells shared fate far more than transcriptionally similar cells (70% identical fate combinations in split wells vs 22% by chance), implying heritable fate bias not captured by scRNA-seq [[10-Summaries/weinreb-2020-larry]]. Best early fate prediction from expression was 60% in vitro and 51% in vivo [[10-Summaries/weinreb-2020-larry]].
 
 
 ## Related

@@ -4,7 +4,7 @@ title: Single-cell ATAC-seq
 aliases: [scATAC-seq, single-cell chromatin accessibility]
 tags: [scATAC, chromatin-accessibility, cis-regulatory, software, transcription-factors]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Single-cell ATAC-seq
@@ -63,6 +63,23 @@ None yet. A natural note: "How to choose a scATAC-seq analysis tool" — chromVA
 
 - Three-dimensional accessibility (combined ATAC + Hi-C in single cells) is now possible but the analysis tooling has not caught up.
 - Most scATAC-seq tools are built on peak coordinates from aggregate signal — biasing toward abundant cell types. SnapATAC's peak-free approach is a partial solution but field still mostly peak-anchored.
+
+## Added 2026-10-07
+
+- [[10-Summaries/ramakrishnan-2023-epianeufinder]] — epiAneufinder: per-cell copy-number alterations from scATAC-seq read depth.
+- [[10-Summaries/li-2025-scnanoatac-seq2]] — scNanoATAC-seq2: long-read single-cell ATAC atlas of mouse preimplantation embryos (ZGA, lineage segregation, iXCI, repeats).
+- [[10-Summaries/fan-2026-gfetm]] — GFETM: genome-foundation-model-enhanced topic model for transferable scATAC-seq modeling (abstract-level clipping).
+- [[10-Summaries/ji-2017-scrat]] — SCRAT: early GUI toolbox for feature-aggregated scATAC/scDNase/scChIP analysis.
+- [[10-Summaries/ashuach-2022-peakvi]] — PeakVI Bernoulli VAE: batch-corrected latent space and calibrated single-region differential accessibility.
+- [[10-Summaries/zhao-2024-scada]] — scaDA: ZINB composite differential-accessibility test with dispersion shrinkage.
+- [[10-Summaries/de-boer-2018-brockman]] — BROCKMAN: peak-free gapped k-mer PCA; out-of-peak reads informative.
+- [[10-Summaries/chen-2025-epiagent]] — EpiAgent: transformer foundation model for scATAC-seq with perturbation prediction and in silico cCRE knockout.
+- [[10-Summaries/yadav-2025-scffpe-atac]] — scFFPE-ATAC: single-cell accessibility from archival FFPE via T7 IVT damage rescue.
+- [[10-Summaries/tayyebi-2024-cellspace]] — CellSpace sequence-informed k-mer/cell embedding with implicit batch mitigation.
+- [[10-Summaries/nichols-2025-scimetv3]] — sciMET+ATAC co-assay and an iCell8 nanowell implementation of s3-ATAC.
+- [[10-Summaries/tang-2024-sccase]] — scCASE/scCASER: similarity-learning NMF enhancement of scCAS data with optional reference data.
+- [[10-Summaries/wu-2026-sccut-tag-review]] — where scATAC tooling (Signac/ArchR/SnapATAC) does and does not transfer to scCUT&Tag.
+
 
 ## Related
 

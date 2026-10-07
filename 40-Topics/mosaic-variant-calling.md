@@ -4,7 +4,7 @@ title: Mosaic variant calling
 aliases: [mosaic SNV calling, low-VAF variant calling, mosaicism callers]
 tags: [mosaicism, variant-calling, SNV, low-VAF, benchmarking]
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-10-07
 ---
 
 # Mosaic variant calling
@@ -37,6 +37,16 @@ updated: 2026-05-19
 - Per-cell call sensitivity at <1% VAF — still tool-dependent.
 - Mutation-spectrum biases across callers — vary by tool.
 - Integration with copy-number context — most callers ignore CNV state.
+
+## Added 2026-10-07
+
+- [[10-Summaries/muyas-2024-scomatic]] — SComatic: de novo somatic SNV calling from scRNA/scATAC data without matched DNA; per-cell-type burdens and signatures.
+- [[10-Summaries/bohrson-2019-lira]] — LiRA: read-backed phasing validates singleton sSNVs in MDA single cells.
+- [[10-Summaries/koboldt-2009-varscan]] — VarScan (2009): threshold-based SNP/indel caller for individual and pooled samples; historical baseline for low-VAF detection.
+- [[10-Summaries/chen-2009-breakdancer]] — early bulk read-pair SV caller; tumour-only putative somatic indels all validated as germline.
+- [[10-Summaries/cibulskis-2013-mutect]] — MuTect: low-AF somatic SNV calling, panel of normals, virtual-tumor benchmarking.
+- [[10-Summaries/maslov-2022-smm-seq]] — SMM-seq: RCA-based multi-copy consensus for ultra-rare SNVs in bulk DNA, calibrated against single-cell results from the same liver samples.
+
 
 ## Related
 

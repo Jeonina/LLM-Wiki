@@ -4,7 +4,7 @@ title: Oxford Nanopore Technologies
 aliases: [ONT, nanopore sequencing]
 tags: [long-read, sequencing, direct-RNA, methylation]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Oxford Nanopore Technologies (ONT)
@@ -26,6 +26,15 @@ ONT instruments range from portable MinION/Flongle to PromethION. Read lengths r
 - [[10-Summaries/mo-2023-stam-seq]] uses ONT adaptive sampling for plant centromere/telomere/rDNA epigenomics.
 - [[10-Summaries/liu-2025-nanopore-lscc-svs]] uses ONT for somatic SV detection.
 - [[10-Summaries/liu-2025-long-read-epigenome-review]] reviews ONT epigenomics.
+
+## Added 2026-10-07
+
+Nanopore long-read scATAC (scNanoATAC-seq2) yields allele-tagging rates of 96.8% in C57×CAST and 47% in C57×DBA embryos, enabling allele-specific accessibility analysis of imprinting and X inactivation at single-cell resolution ([[10-Summaries/li-2025-scnanoatac-seq2]]).
+
+Nanopore read length enables single-cell multi-way 3D genome profiling. scNanoHi-C sequences ~3-kb amplicons of Hi-C concatemers on PromethION R9.4.1 at ~USD 3 per cell when ~500 cells share a run ([[10-Summaries/li-2023-scnanohi-c]]).
+
+SPLONGGET couples 10x Genomics barcoding with Nanopore sequencing, retaining all tagmentation fragments so that one single-cell library yields whole-genome coverage, chromatin accessibility and full-length transcripts; applied to paediatric B-ALL it reports parallel CD19 immune-escape evolution (preprint; abstract-level only) ([[10-Summaries/pancikova-2025-splongget]]).
+
 
 ## Related
 

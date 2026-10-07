@@ -5,7 +5,7 @@ aliases: [Li lab, Dana-Farber]
 entity_kind: person
 tags: [alignment, formats, infrastructure, Broad, Dana-Farber]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Heng Li
@@ -16,6 +16,7 @@ updated: 2026-08-10
 
 - **2026-08-10** — First author of [[li-2009-bwa]] (BWA), introducing BWT-based read alignment with gapped single-end support.
 - **2026-08-10** — First author of [[li-2009-samtools]], defining SAM/BAM and the toolkit that decoupled alignment from downstream analysis.
+- **2026-10-07** — Co-corresponding author of [[10-Summaries/xing-2021-meta-cs]] (META-CS; the premeta and lianti tools from his GitHub do the preprocessing and both-strand SNV calling, with BWA-MEM and minimap2 used together to suppress mapping false positives).
 
 ## Related
 

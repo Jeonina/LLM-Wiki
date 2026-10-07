@@ -4,7 +4,7 @@ title: Methylation clones and epimutation lineage tracing
 aliases: [epimutation lineage tracing, methylation clones, epi-clone]
 tags: [methylation, lineage-tracing, epimutation, single-cell]
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-10-07
 ---
 
 # Methylation clones and epimutation lineage tracing
@@ -28,6 +28,11 @@ Methylation-based lineage tracing works in human tissue without genetic engineer
 ## Cross-modal comparison
 
 A head-to-head of methylation, ATAC-seq, and RNA against ground-truth barcodes points to the **superiority of the methylome for inferring clonal relationships** — methylation patterns are noisy but carry the strongest clonal signal once cell-type and cell-state variation are regressed out ([[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review]]). The discovery of slow-fluctuating "static" CpGs widens epimutation tracing from cancer to normal-tissue clonal dynamics ([[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review]]).
+
+## Added 2026-10-07
+
+Camellia-seq (lineage barcodes + RNA + CpG methylation + GpC accessibility per cell) showed DNA methylation retains clonal memory in HSCs across five mice and labelling windows from 36 h to 10 weeks, consistently more than expression or accessibility — engineered-barcode support for using methylation as a clonal mark [[10-Summaries/li-2023-darlin]].
+
 
 ## Related
 

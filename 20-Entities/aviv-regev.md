@@ -5,7 +5,7 @@ aliases: [A. Regev]
 entity_kind: person
 tags: [single-cell, cell-atlas, broad-institute, genentech]
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-10-07
 ---
 
 # Aviv Regev
@@ -21,6 +21,7 @@ updated: 2026-05-19
 ## Mentions
 
 - **2026-05-19** — Co-author on the multi-omics technological landscape review ([[10-Summaries/baysoy-2023-multiomics-landscape]]).
+- **2026-10-07** — Co-author in [[10-Summaries/de-boer-2018-brockman]] (BROCKMAN, gapped k-mer factorisation of scATAC-seq linking variable accessibility to co-varying, physically interacting TFs).
 
 ## Related
 

@@ -64,6 +64,11 @@ The design is a controlled genetic model where instability is engineered and its
 - 25 cells for the primary T-ALL analysis is a small sample for a heterogeneity estimate; the 56%-unique figure is a lower bound that will rise with more cells, and the paper does not report its saturation.
 - The sensitivity/robustness trade against Ginkgo means small-CNV calls depend on caller choice, with no external truth set to arbitrate.
 
+## Added 2026-10-07
+
+See also [[10-Summaries/ramakrishnan-2023-epianeufinder]]: epiAneufinder brings per-cell CNA calling to scATAC-seq and uses AneuFinder calls on scWGS as ground truth.
+
+
 ## Related
 
 - [[chromosomal-instability]] · [[garvin-2015-natmethods]] · [[zahn-2017-dlp]] · [[cancer-clonal-evolution]]

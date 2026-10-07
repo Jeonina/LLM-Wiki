@@ -4,7 +4,7 @@ title: CpG island
 aliases: [CpG islands, CGI]
 tags: [epigenetics, regulation, methylation]
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-10-07
 ---
 
 # CpG island
@@ -37,6 +37,11 @@ Mammalian genomes are globally CpG-depleted (~21% of expected CpG counts), an ar
 
 - Hypermethylation of CDKN2A CpG island in glioblastoma → loss of tumor suppressor function.
 - Hypermethylation of MLH1 CpG island in colorectal cancer → microsatellite instability.
+
+## Added 2026-10-07
+
+CpG density is strongly tied to A compartments, which is why CpG-guided single-cell compartment scores (scA/B) collapse toward CpG density at low contact numbers; scDIAGRAM uses CpG density only post hoc to orient A/B labels ([[10-Summaries/peng-2026-scdiagram]]).
+
 
 ## Related
 

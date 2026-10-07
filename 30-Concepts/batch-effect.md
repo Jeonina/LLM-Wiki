@@ -4,7 +4,7 @@ title: Batch Effect
 aliases: [batch correction, dataset integration, technical variation]
 tags: [integration, batch, LISI, Harmony, meta-analysis]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Batch Effect
@@ -33,6 +33,15 @@ Donor is a nuisance variable in meta-analysis and the object of study in others 
 ## The related confound in single-cell Hi-C
 
 Coverage heterogeneity is the leading factor driving clustering results, ahead of biology, and is not removable by simply dropping the first principal component ([[zhou-2019-schicluster]]).
+
+## Added 2026-10-07
+
+**Implicit batch mitigation by sequence.** CellSpace mixes donors without a batch covariate by updating cell embeddings from k-mer content rather than peak identity; on HSPC data it beat ArchR itLSI on batch score (tie on biological score), though batch-corrected PeakVI beat it overall on a large haematopoietic dataset ([[10-Summaries/tayyebi-2024-cellspace]]). FFPE versus fresh scATAC data also show a residual batch effect even when cell-type signals agree ([[10-Summaries/yadav-2025-scffpe-atac]]).
+
+For band-normalized scHi-C (Lee2019, 5 libraries), Harmony removed batch effects and slightly sharpened neuronal sub-type separation. SVA worsened results, dropping the batch-correlated PC did not remove the bias, and Seurat regression introduced new biases in other clusters ([[10-Summaries/zheng-2022-bandnorm-scvi-3d]]).
+
+An optional extension of scCASE corrects protocol batch effects in scATAC data. On a mouse-brain dataset mixing 10X and snATAC, it improved kBET and batch ASW and merged L2/3 IT cells from both batches into one cluster ([[10-Summaries/tang-2024-sccase]]).
+
 
 ## Related
 

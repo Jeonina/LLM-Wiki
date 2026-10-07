@@ -4,7 +4,7 @@ title: Cell Type Annotation
 aliases: [cell typing, marker genes, label transfer, cell identity]
 tags: [annotation, markers, atlases, cell-identity]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Cell Type Annotation
@@ -32,6 +32,15 @@ Annotation quality is uneven: mesenchymal and connective-tissue clusters — the
 ## The standing caveat
 
 Cluster resolution determines type count, and definitions are typically operational rather than external ([[cao-2019-moca]]); see [[clustering-algorithms]].
+
+## Added 2026-10-07
+
+In SComatic, the granularity of cell-type annotation sets which somatic mutations are detectable: mutations acquired before two annotated types diverged appear in both and are discarded as germline, so finer annotations restrict calls to later mutations ([[10-Summaries/muyas-2024-scomatic]]).
+
+An early regulome approach labelled single cells by similarity of aggregated scATAC/scDNase signals to a pre-compiled panel of ENCODE bulk DNase-seq profiles (SCRAT) [[10-Summaries/ji-2017-scrat]].
+
+For scATAC-seq, PeakVI supports both scArches-style reference mapping and de novo annotation via cluster-marker differential accessibility plus gene-signature enrichment ([[10-Summaries/ashuach-2022-peakvi]]). EpiAgent's zero-shot annotators reach accuracy above 0.88 (brain) and 0.95 (non-brain) on held-out datasets ([[10-Summaries/chen-2025-epiagent]]).
+
 
 ## Related
 

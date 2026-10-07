@@ -5,7 +5,7 @@ aliases: [Dekker lab, UMass]
 entity_kind: person
 tags: [3C, Hi-C, chromosome-conformation, UMass]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Job Dekker
@@ -16,6 +16,7 @@ updated: 2026-08-10
 
 - **2026-08-10** — Corresponding author of [[lieberman-aiden-2009-hic]], the founding genome-wide contact map and the discovery of A/B compartments.
 - **2026-08-10** — Co-author of [[servant-2015-hicpro]], the read-to-normalized-matrix pipeline with allele-specific support.
+- **2026-10-07** — Co-author in [[10-Summaries/hsieh-2015-micro-c]] (Micro-C, MNase-based nucleosome-resolution chromosome folding maps in yeast).
 
 ## Related
 

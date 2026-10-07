@@ -5,7 +5,7 @@ aliases: [Theis FJ]
 entity_kind: person
 tags: [computational-biology, single-cell, best-practices, Helmholtz]
 created: 2026-05-11
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Fabian J. Theis
@@ -20,6 +20,7 @@ Institute of Computational Biology, Department of Computational Health, Helmholt
 
 - **2026-05-11** — [[10-Summaries/heumos-2023-best-practices]]: senior author of the cross-modality best-practices review.
 - **2026-05-12** — Co-author of [[10-Summaries/danese-2021-episcanpy]] (EpiScanpy, with Maria Colomé-Tatché).
+- **2026-10-07** — Co-author in [[10-Summaries/lahnemann-2020-grand-challenges]] (community review defining eleven grand challenges in single-cell data science).
 
 ## Positions and claims
 

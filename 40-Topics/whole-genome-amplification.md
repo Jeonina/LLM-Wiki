@@ -4,7 +4,7 @@ title: Whole-genome amplification (scWGA)
 aliases: [scWGA topic, WGA topic, whole-genome amplification methods]
 tags: [scWGA, methods, amplification]
 created: 2026-05-11
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Whole-genome amplification (scWGA)
@@ -67,6 +67,12 @@ _None yet — natural target: "Choosing a scWGA method: tradeoffs and applicatio
 ## Linked summaries (lint pass 2026-05-21)
 
 - [[10-Summaries/debourcy-2014-plosone]] — de Bourcy 2014 — Quantitative comparison of single-cell WGA methods.
+
+## Added 2026-10-07
+
+- [[10-Summaries/hard-2023-long-read-scwgs]] — droplet MDA (Xdrop) improves coverage uniformity over tube MDA and keeps long fragments for long-read sequencing.
+- [[10-Summaries/xing-2021-meta-cs]] — META-CS: Tn5/META-based strand-labeling WGA; FPR upper bound ~2.4×10⁻⁸ validated on kindred eHAP cells and sperm.
+
 
 ## Related
 

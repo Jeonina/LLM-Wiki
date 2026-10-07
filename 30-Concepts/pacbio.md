@@ -4,7 +4,7 @@ title: PacBio
 aliases: [Pacific Biosciences, SMRT sequencing]
 tags: [long-read, sequencing, HiFi, methylation]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # PacBio (Pacific Biosciences) SMRT sequencing
@@ -26,6 +26,11 @@ PacBio Sequel II/IIe/Revio instruments. **HiFi reads**: ≥5 CCS passes yields >
 - [[10-Summaries/swanson-2025-daf-seq]] (DAF-seq / scDAF-seq).
 - [[10-Summaries/abdulhay-2020-samosa]] (SAMOSA).
 - [[10-Summaries/liu-2025-long-read-epigenome-review]] reviews PacBio epigenomics.
+
+## Added 2026-10-07
+
+PacBio HiFi has been applied to amplified single human cells: five dMDA-amplified T cells gave up to 20 Gb of HiFi data (>QV20) per cell from one 8M SMRT cell and up to 40% genome coverage ([[10-Summaries/hard-2023-long-read-scwgs]]). With 32% of the Illumina data volume, single-cell HiFi SNV calling matched Illumina germline SNV yield with higher precision (0.86 vs 0.74) ([[10-Summaries/hard-2023-long-read-scwgs]]).
+
 
 ## Related
 

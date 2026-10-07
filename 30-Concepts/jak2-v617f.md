@@ -4,7 +4,7 @@ title: JAK2 V617F
 aliases: [JAK2V617F, JAK2 V617]
 tags: [hematology, MPN, driver-mutation, kinase]
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-10-07
 ---
 
 # JAK2 V617F
@@ -47,6 +47,11 @@ Only the canonical JAK2/STAT-target (STAT1/5) accessibility gain is already visi
 
 - 21 JAK2V617F MPN samples (150,643 cells) profiled with [[got-cha]]: 38.1% genotyping rate, cell-intrinsic chromatin priming visible at clonal hematopoiesis ([[10-Summaries/izzo-2024-got-cha]]).
 - Mutant cells preferentially distribute into erythroid–megakaryocytic and granulocyte–monocyte progenitors; lymphoid clusters remain ~92% wild-type.
+
+## Added 2026-10-07
+
+In a 123-patient AML Tapestri cohort, all *JAK2* V617F samples also carried CNLOH of *JAK2*, often in a very small subclone — a distinction bulk VAF cannot make (5% homozygous vs 10% heterozygous cells) [[10-Summaries/sollier-2023-compass]].
+
 
 ## Related
 

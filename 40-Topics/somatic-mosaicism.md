@@ -4,7 +4,7 @@ title: Somatic mosaicism
 aliases: [somatic mosaicism, mosaicism, post-zygotic mosaicism]
 tags: [mosaicism, genetics, development, aging, post-zygotic]
 created: 2026-05-11
-updated: 2026-06-29
+updated: 2026-10-07
 ---
 
 # Somatic mosaicism
@@ -188,6 +188,14 @@ _None yet._
 - [[10-Summaries/forsberg-2017-mosaicism-review]] — Forsberg, Gisselsson & Dumanski 2017 NRG — structural-variant-centric framing of mosaicism; introduces ACE terminology; LOY as the most common human post-zygotic mutation.
 - [[10-Summaries/hilal-2026-cardiac-somatic-review]] — Hilal, Arava & Choudhury 2026 — cardiovascular somatic-variation review; cardiomyocyte 4–30k SNVs/cell and CHIP→HFpEF/stroke links.
 - [[10-Summaries/hsieh-2026-scmtmpm-scwmss]] — Hsieh 2026 — single-cell mtDNA mutational burden metrics (scmtMPM, scwMSS); negative selection at sub-threshold VAF.
+
+## Added 2026-10-07
+
+- [[10-Summaries/muyas-2024-scomatic]] — somatic mutation burdens and signatures in polyclonal normal tissues (heart, GTEx, sciATAC atlas) mined from single-cell expression/accessibility data.
+- [[10-Summaries/hoang-2016-botseqs]] — Rare somatic mutation burden rises with age and is tissue-specific; mutagens raise nuclear but not mtDNA load.
+- [[10-Summaries/hard-2023-long-read-scwgs]] — 27 phased somatic SNVs plus one mtDNA heteroplasmy separate two T-cell clones; no somatic SVs or TRs were found between the clones.
+- [[10-Summaries/maslov-2022-smm-seq]] — SMM-seq bulk detection of private somatic SNVs; liver mutation frequency 0.34 vs 0.96 SNV/Mbp in young vs aged donors.
+
 
 ## Related
 

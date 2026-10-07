@@ -4,7 +4,7 @@ title: "D&D-seq (docking and deamination followed by sequencing)"
 aliases: [D&D-seq, DD-seq, docking and deamination, scD&D-seq, D&D-GoT-ChA]
 tags: [single-cell, DNA-protein-interaction, transcription-factor, base-editor, CTCF, method]
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-10-07
 ---
 
 # D&D-seq (docking and deamination followed by sequencing)
@@ -35,6 +35,11 @@ Chromatin accessibility ([[chromatin-accessibility]]) tells you a region is *ope
 
 - IDH2^R140Q clonal hematopoiesis: 33% of 15,807 cells genotyped, mutant cells enriched in CD8 T compartment, mutant T cells show disrupted CTCF binding vs wild-type ([[10-Summaries/chi-2026-dd-seq]]).
 - scD&D CTCF + scATAC fed to the C.Origami pipeline reconstructs Hi-C-like 3D contact maps from single-cell input ([[10-Summaries/chi-2026-dd-seq]]).
+
+## Added 2026-10-07
+
+**Sibling method — DeChIC-seq.** DeChIC-seq also tethers DddA via antibody to write C→U edits at protein-bound chromatin, but uses a protein A–DddA fusion whose activity is switched off at pH 8.0 and on at pH 6.4, rather than a split nanobody–DddA ([[10-Summaries/shi-2026-dechic-seq]]). It is run one cell per tube with META-CS-based WGA instead of in multiomic droplet workflows ([[10-Summaries/shi-2026-dechic-seq]]).
+
 
 ## Related
 

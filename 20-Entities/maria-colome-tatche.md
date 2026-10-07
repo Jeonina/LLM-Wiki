@@ -5,7 +5,7 @@ aliases: []
 entity_kind: person
 tags: [computational-biology, epigenomics, Munich-Helmholtz, IRB-Barcelona]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Maria Colomé-Tatché
@@ -15,6 +15,7 @@ updated: 2026-05-12
 ## Mentions
 
 - **2026-05-12** — Co-corresponding author of [[10-Summaries/danese-2021-episcanpy]].
+- **2026-10-07** — Last author in [[10-Summaries/ramakrishnan-2023-epianeufinder]] (epiAneufinder, reference-free CNA calling from scATAC-seq).
 
 ## Related
 

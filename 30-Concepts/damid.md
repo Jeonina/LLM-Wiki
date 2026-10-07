@@ -4,7 +4,7 @@ title: DamID
 aliases: [DNA adenine methyltransferase identification, scDamID]
 tags: [protein-DNA-contact, m6A, GATC, DpnI, lamina, single-cell]
 created: 2026-05-15
-updated: 2026-05-15
+updated: 2026-10-07
 ---
 
 # DamID (DNA adenine methyltransferase identification)
@@ -45,6 +45,11 @@ updated: 2026-05-15
 | ChIP-seq | Required | Yes | Hard (scChIP) | Instant | Antibody-dep. | Genome-wide |
 | ATAC-seq | No | No | Yes (scATAC) | Instant | Tn5 cuts | Accessible only |
 | DamID | No | No | Yes (scDamID) | Cumulative (hours) | m6A footprint | Genome-wide |
+
+## Added 2026-10-07
+
+Later tethered-enzyme methods position themselves against DamID's GATC-limited resolution: CUT&RUN uses antibody-tethered MNase with near base-pair footprints ([[10-Summaries/skene-2017-cut-and-run]]), and DeChIC-seq uses an antibody-tethered deaminase whose TC-context edits survive WGA for single-cell use ([[10-Summaries/shi-2026-dechic-seq]]).
+
 
 ## Related
 

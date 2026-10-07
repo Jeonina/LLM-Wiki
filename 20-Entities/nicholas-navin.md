@@ -5,7 +5,7 @@ aliases: [Navin, Nick Navin, N. Navin]
 entity_kind: person
 tags: [scDNA-seq, breast-cancer, clonal-evolution, MDACC]
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-10-07
 ---
 
 # Nicholas Navin
@@ -21,6 +21,8 @@ updated: 2026-05-19
 ## Mentions
 
 - **2026-05-19** — Co-author on the Navin lab's foundational SNS scDNA-seq paper ([[10-Summaries/navin-2011-sns-tumor-evolution]]) and TNBC chemoresistance work ([[10-Summaries/kim-2018-tnbc-chemoresistance]]).
+- **2026-10-07** — Co-author in [[10-Summaries/zafar-2019-siclonefit]] (SiCloneFit, Bayesian clonal phylogeny inference from single-cell SNV data).
+- **2026-10-07** — Senior author of [[10-Summaries/wang-2024-wellda-seq]] (bioRxiv preprint: wellDA-seq jointly profiles whole genome and chromatin accessibility in 22,123 single cells from 2 normal and 9 tumour breast tissues; identifies ancestral cells and an LHR cell-of-origin in 6 ER+ cancers).
 
 ## Related
 

@@ -4,7 +4,7 @@ title: Allele dropout
 aliases: [ADO]
 tags: [single-cell, scWGA, amplification-bias]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Allele dropout (ADO)
@@ -20,6 +20,19 @@ ADO arises during the earliest rounds of amplification when one strand or one pa
 - ADO is the primary source of false-negative SNV calls in scDNA-seq.
 - MDA suffers high ADO rates; PTA's quasi-linear amplification reduces it substantially ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 - Variant callers like [[30-Concepts/scout-variant-caller]] flag potential ADO loci based on local context.
+
+## Added 2026-10-07
+
+Read-backed phasing makes absence calls cheap: one read spanning a candidate site and a linked germline heterozygous SNP that shows the null haplotype suffices to call a mutation absent, since 98% of linked germline pairs show only concordant reads [[10-Summaries/bohrson-2019-lira]]. COMPASS instead infers per-variant dropout rates by EM in amplicon data [[10-Summaries/sollier-2023-compass]].
+
+ScisTree2 handles ADO implicitly by taking per-cell genotype posterior probabilities as input and was robust to assumed ADO rates on HGSOC DLP+ data; the authors note ADO rates in current single-cell data can be 50% or higher ([[10-Summaries/zhang-2025-scistree2]]).
+
+In long-read single-cell WGS, allelic dropout remains the limiting factor: sensitivity was 0.17 for SNVs and just above 0.20 for SVs, even though precision was high ([[10-Summaries/hard-2023-long-read-scwgs]]).
+
+SIEVE models ADO as a hidden number-of-sequenced-alleles variable identifiable only through coverage; ADO-calling F1 was 0.86–0.93 at medium/high simulated coverage quality but 0.10 at low quality, described as typical of current scDNA-seq ([[10-Summaries/kang-2022-sieve]]). Estimated ADO rates on real data were 0.20 (CRC28 scWGS), 0.05 (TNBC16) and 0.10 (CRC48) ([[10-Summaries/kang-2022-sieve]]).
+
+CellPhy treats the ADO rate (δ) as a free parameter that is separate from the amplification/sequencing error rate (ε) and estimates it from the data. Simulations showed ADO estimates were more variable than error estimates and tended to come out low (MSE 0.002–0.02). On clonal colonies with no amplification, the estimated ADO was zero, as it should be ([[10-Summaries/kozlov-2022-cellphy]]).
+
 
 ## Related
 

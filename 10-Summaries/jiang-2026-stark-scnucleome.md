@@ -43,7 +43,7 @@ Comprehensive benchmark on published sc3DG-seq datasets (Table 1 enumerates the 
 
 ## Surprising or load-bearing bits
 
-- **scSPRITE captures more contacts per cell than any ligation-based method** because sonication preserves entire spatial clusters of chromatin (rather than pairs of ligated fragments). This is a genuine throughput advantage and points to a future direction beyond ligation-based 3C variants.
+- **scSPRITE captures more contacts per cell than any ligation-based method** because it barcodes entire crosslinked spatial clusters (rather than pairs of ligated fragments); note that the count is n-choose-2 pairs per cluster, so it is not like-for-like with ligation-based counts ([[10-Summaries/arrastia-2022-scsprite]]; [[10-Summaries/li-2023-scnanohi-c]]). This is a genuine throughput advantage and points to a future direction beyond ligation-based 3C variants.
 - The introduction of **SSCE** as a structural-quality metric solves a real measurement problem: cells with few contacts can still be informative if those contacts span TAD boundaries or loop anchors. Contact-count alone biases toward shallow data.
 - scNucleome is a uniformly processed repository of sc3DG-seq datasets. Publicly accessible uniformly processed data accelerates future cross-study work.
 

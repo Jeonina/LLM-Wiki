@@ -4,7 +4,7 @@ title: CRISPR lineage recording
 aliases: [evolvable barcodes, CRISPR recorder, molecular recording, synthetic evolvable barcodes]
 tags: [lineage-tracing, CRISPR, synthetic-barcodes, phylogenetics, prime-editing, base-editing]
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-10-07
 ---
 
 # CRISPR lineage recording
@@ -30,6 +30,11 @@ Inducible Cas9 plus single-guide RNAs generate double-strand breaks in a multi-t
 
 - Original tandem-target reporters suffer inter-site deletions that collapse effective diversity, low reporter expression causing scRNA-seq dropout, and low editing efficiency leaving unedited cells ([[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review]]).
 - Bioinformatic interpretation of sparse edits across many alleles is the main downstream bottleneck ([[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review]]); CRISPR-aware phylogenetic models (Cassiopeia, STARTLE) enforce edit irreversibility and model dropout ([[10-Summaries/wang-2026-multimodal-lineage-computational]]).
+
+## Added 2026-10-07
+
+Fusing Cas9 to terminal deoxynucleotidyl transferase (TdT) shifts CRISPR barcode editing from large deletions toward random insertions: in the DARLIN mouse, ~65% of alleles were singletons versus ~30% for Cas9/CARLIN, with ~5× the Shannon allele diversity [[10-Summaries/li-2023-darlin]]. With three independent target arrays (*Col1a1*, *Tigre*, *Rosa26*) DARLIN has a theoretical ~10¹⁸ barcodes and ~60% of single cells carry a detected, edited, rare allele versus ~10% for Cas9/CARLIN [[10-Summaries/li-2023-darlin]]. Down-sampling DARLIN to CARLIN-level coverage erased an early megakaryocyte-bias signal, showing that barcode coverage determines which fate questions are answerable [[10-Summaries/li-2023-darlin]].
+
 
 ## Related
 

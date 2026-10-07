@@ -4,7 +4,7 @@ title: Single-cell lineage tracing
 aliases: [lineage tracing, clonal tracing, cell phylogeny, fate mapping]
 tags: [lineage-tracing, clonal-analysis, phylogenetics, development, cancer-evolution]
 created: 2026-06-02
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Single-cell lineage tracing
@@ -72,6 +72,15 @@ The field organizes along two axes ([[10-Summaries/rodriguez-fraticelli-2026-lin
 Three substrates now have founding sources on the wiki. **Engineered Cas9 recorders**: [[10-Summaries/jones-2020-cassiopeia]] — maximum-parsimony algorithms tuned to the mutational process (irreversibility and an unedited founder license reducing the multi-state problem to binary), a simulation engine, and 34,557 continuously traced cells as a benchmark; homoplasy is identified as the fundamental limit of any recorder. **Endogenous mtDNA**: [[10-Summaries/ludwig-2019-mtdna-lineage-tracing]] — heteroplasmic variants already captured by scATAC and scRNA-seq, the only lineage substrate usable in intact humans, and a better clonality measure than transcriptome-inferred CNVs. **Copy number**: [[10-Summaries/wang-2021-medalt]] — minimal event distance as a CNA-appropriate metric, explicitly rejecting the infinite-sites assumption.
 
 Process-level (as opposed to ancestry-level) alternatives: [[10-Summaries/wolf-2019-paga]] and [[10-Summaries/cao-2019-moca]].
+
+## Added 2026-10-07
+
+- [[10-Summaries/li-2023-darlin]] — DARLIN Cas9-TdT lineage mouse and Camellia-seq; methylation carries clonal memory.
+- [[10-Summaries/weinreb-2020-larry]] — LARRY expressed barcodes: state–fate maps, hidden heritable fate bias, trajectory-method benchmark.
+- [[10-Summaries/zhang-2025-scistree2]] — ScisTree2: SPR local search for SNV lineage trees at tens of thousands of cells.
+- [[10-Summaries/kang-2022-sieve]] — SIEVE: statistical phylogenetics with acquisition-bias-corrected branch lengths for scDNA-seq.
+- [[10-Summaries/kozlov-2022-cellphy]] — CellPhy: finite-site ML phylogenies from single-cell SNVs with bootstrap support; reanalysis supports monoclonal seeding of a CRC liver metastasis.
+
 
 ## Related
 

@@ -4,7 +4,7 @@ title: Nuclear lamina
 aliases: [NL, lamina, nuclear envelope lamina, lamin meshwork]
 tags: [nuclear-architecture, lamin, LMNB1, LMNA, laminopathy, peripheral-heterochromatin]
 created: 2026-05-15
-updated: 2026-05-15
+updated: 2026-10-07
 ---
 
 # Nuclear lamina
@@ -41,6 +41,11 @@ But this association is statistical, not deterministic; the cell-to-cell variabi
 - **TSA-seq** — proximity-labeling via tyramide radicals; gives continuous NL distance, not just binary contact.
 - **ChIP-seq for lamins** — bulk version; limited by lamin epitope accessibility.
 - **Microscopy / 3D-FISH** — direct spatial measurement.
+
+## Added 2026-10-07
+
+Hi-C subcompartments differ in lamina association: B2 is enriched at the nuclear lamina (1.8×) and at NADs (4.6×), B3 is lamina-enriched (1.6×) but strongly NAD-depleted (76×), and A1/A2 are depleted at the lamina ([[10-Summaries/rao-2014-in-situ-hic]]).
+
 
 ## Related
 

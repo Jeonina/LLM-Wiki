@@ -4,7 +4,7 @@ title: Trajectory Inference
 aliases: [pseudotime, pseudotemporal ordering, lineage trajectory, RNA velocity]
 tags: [trajectory, pseudotime, PAGA, Monocle, development]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Trajectory Inference
@@ -34,6 +34,19 @@ A perturbation's effect is interpretable only relative to the natural differenti
 ## Caution
 
 Proliferation and cell death are outside most trajectory frameworks, so phenotypes mediated by differential expansion rather than fate change are invisible ([[kamimoto-2023-celloracle]]).
+
+## Added 2026-10-07
+
+Clonal ground truth showed that population balance analysis, WaddingtonOT and FateID missed an early neutrophil/monocyte fate boundary in CD34⁺ progenitors (R < 0.26 vs 0.5 for held-out clonal data), while pseudotime ordering was validated: consistent forward velocity and sister-cell pseudotime correlation R ≥ 0.89 [[10-Summaries/weinreb-2020-larry]].
+
+mist extends pseudotime-based differential testing to single-cell DNA methylation, modelling gene-level methylation as logit-normal with a degree-4 polynomial mean and stage-specific variance, and ranking genes by the minimised area between fitted trajectories ([[10-Summaries/duan-2026-mist]]). Its authors recommend inferring pseudotime from another modality to avoid double-dipping, and note that a single scalar pseudotime oversimplifies branching processes ([[10-Summaries/duan-2026-mist]]).
+
+The 'lineage plot' of Farlik et al. places single-cell methylomes on two axes. The axes are mean methylation over region sets whose residuals (after regressing out control methylation and CpG content) are significantly positive or negative between treatment endpoints ([[10-Summaries/farlik-2015-scwgbs]]). It correctly positioned held-out intermediate time points and opposite-direction differentiations, though the authors note overfitting risk at the endpoints used for selection ([[10-Summaries/farlik-2015-scwgbs]]).
+
+In transplanted mammary basal cells at day 4.5, H3K4me1-based diffusion pseudotime showed a continuous basal-to-luminal progression while RNA-based pseudotime showed a binary switch. Epigenomic and transcriptional remodelling were therefore not synchronized during fate conversion ([[10-Summaries/schwager-2026-onecell-cut-tag]]).
+
+Bootstrap-supported Slingshot trajectories on archival FFPE scATAC gene-activity embeddings (branches recovered in 83–97.5% of 1000 bootstraps) were used to propose two epithelial paths from tumor center to invasive edge and two normal-B-to-tumor paths in follicular lymphoma relapse ([[10-Summaries/yadav-2025-scffpe-atac]]).
+
 
 ## Related
 

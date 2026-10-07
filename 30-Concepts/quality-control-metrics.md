@@ -4,7 +4,7 @@ title: Quality Control Metrics
 aliases: [QC metrics, library QC, spikiness]
 tags: [QC, filtering, library-quality, benchmarking]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Quality Control Metrics
@@ -27,6 +27,15 @@ updated: 2026-08-10
 - **Within-species barcode collisions are invisible** to species-mixing controls and are estimated at ~4.5% ([[ramani-2017-scihi-c]]).
 - **Cell-type assignment can come from the data**: three of twenty "tumour" cells were reassigned as normal on their mutation profiles alone ([[xu-2012-single-cell-exome-kidney]]).
 - Publishing the artefact rule matters — 13% of subtypes annotated as likely doublet artefacts, with the threshold stated ([[cao-2019-moca]]). See [[doublet-detection]].
+
+## Added 2026-10-07
+
+For WGBS, Bismark's bam2nuc module compares mono- and dinucleotide composition with genomic expectation (C depletion flags BS degradation; C enrichment flags poor conversion; G or AT skews flag polymerase bias), and filter_non_conversion removes reads with ≥3 unconverted CH cytosines [[10-Summaries/olova-2018-wgbs-library-bias]]. Requiring minimum per-CpG coverage (≥5 or ≥10×) reinforces coverage bias; averaging per-cytosine values within regions is less biased than pooling calls [[10-Summaries/olova-2018-wgbs-library-bias]].
+
+scHi-C quality control is mostly static and empirical. Studies use per-cell contact cutoffs from 1,000 to 5,000, plus cis/trans >1, ≥95% uniquely mapped reads, short/long-range contact ratios and presence of all chromosomes ([[10-Summaries/dautle-2025-schic-review]]). GiniQC is described as the only package whose filtering accounts for contact type and coverage, which it does by measuring how clumped the trans contacts are ([[10-Summaries/dautle-2025-schic-review]]).
+
+In scCUT&Tag, FRiP and TSS-enrichment thresholds must be set per target: H3K4me3 shows high TSS enrichment, H3K9me3 shows minimal enrichment, and for H3K27me3 a TSS chromatin silencing score is low at active genes, so scATAC cut-offs (FRiP <0.2, TSS enrichment <6–8×) do not transfer ([[10-Summaries/wu-2026-sccut-tag-review]]). Filtering scHPTM cells by coverage gives only modest gains (max 15% for ChromSCape_LSI on H3K4me1), so the benchmark advises removing only non-cell barcodes ([[10-Summaries/raimundo-2023-schptm-benchmark]]).
+
 
 ## Related
 

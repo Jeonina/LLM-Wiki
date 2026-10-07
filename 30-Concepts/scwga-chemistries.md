@@ -4,7 +4,7 @@ title: scWGA chemistries
 aliases: [single-cell whole-genome amplification, scWGA chemistry, WGA methods]
 tags: [scWGA, MDA, MALBAC, PTA, DOP-PCR, LIANTI, amplification]
 created: 2026-05-19
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # scWGA chemistries
@@ -32,6 +32,15 @@ Coverage uniformity ↑, allelic dropout ↓, error rate ↓ — but no chemistr
 - **Amplification-free is a separate branch, not a successor.** DLP+ opts out of WGA entirely via direct tagmentation, trading per-cell coverage for integer copy number, clean allele ratios and readable replication state across 51,926 cells ([[10-Summaries/laks-2019-dlp-plus]]).
 - **The mechanistic argument against WGA, from the founding DLP paper.** WGA copies each template as long molecules that are fragmented *afterwards*, so one region yields multiple inserts with non-overlapping coordinates that **cannot be filtered as duplicates**; fragmenting first makes every PCR copy an exact duplicate and therefore removable ([[10-Summaries/zahn-2017-dlp]]). This single fact accounts for most of WGA's coverage pathology, and it generalizes: any protocol amplifying before fragmenting forfeits the distinction between duplicates and independent molecules (synthesis). Among the WGA chemistries, DOP-PCR gives the best uniformity and is the most CNA-amenable, but its coverage breadth **saturates** with deeper sequencing, so extra reads buy nothing and it remains unsuitable for SNVs ([[10-Summaries/zahn-2017-dlp]]). See [[30-Concepts/duplicate-marking]].
 - The shared WGA artifact list — locus and allelic dropout, uneven amplification, chimeric molecules, base-copy errors — plus strand-aware alternatives (META-CS, SISSOR) is catalogued in [[10-Summaries/lim-2024-single-cell-omics-review]].
+
+## Added 2026-10-07
+
+The standard trade-off is stated as: PCR-based WGA gives more uniform coverage and suits CNV calling but uses error-prone thermostable polymerases, whereas MDA with Φ29 has lower error rates and suits SNV calling but shows stronger allelic bias ([[10-Summaries/lahnemann-2020-grand-challenges]]).
+
+For long-read scWGS, fragment length matters as much as uniformity. Most WGA methods give fragments too short for long reads, whereas MDA yields 10–12 kb products; droplet MDA keeps that length and reduces bias ([[10-Summaries/hard-2023-long-read-scwgs]]).
+
+META-CS is a Tn5-based, strand-aware scWGA built on META. In kindred haploid cells its strand-filtered calls had a C>A-dominated spectrum (Ti/Tv 0.27). The same cells without the strand filter gave a transition-dominated spectrum (Ti/Tv 1.73) and roughly 100× more calls at the a4 threshold. The authors cite C>T deamination artifacts in MDA as the kind of single-strand false positive the filter removes ([[10-Summaries/xing-2021-meta-cs]]).
+
 
 ## Related
 

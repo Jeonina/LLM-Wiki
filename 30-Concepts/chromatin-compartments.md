@@ -4,7 +4,7 @@ title: Chromatin compartments
 aliases: [A/B compartments]
 tags: [3D-genome, Hi-C, chromatin]
 created: 2026-05-12
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Chromatin compartments
@@ -26,6 +26,19 @@ Identified by principal-component analysis on Hi-C contact matrices. A and B com
 [[10-Summaries/lieberman-aiden-2009-hic]] is the founding source: normalizing by distance-expected contact reveals a plaid pattern, correlating interaction profiles sharpens it, and PCA on the correlation matrix partitions each chromosome into two compartments with labels consistent genome-wide. Compartment A correlates with gene density (ρ = 0.431), expression (ρ = 0.476) and most strongly DNase I sensitivity (ρ = 0.651), and compartment identity switches between cell types in step with that cell type's own accessibility.
 
 Compartments are now measurable per cell after imputation, with variability that correlates with transcriptional variability in 71% of 50 Mb windows ([[10-Summaries/zhang-2022-higashi]]); their presence or absence is also the discriminator between interphase and mitotic single cells ([[10-Summaries/ramani-2017-scihi-c]]).
+
+
+## Added 2026-10-07
+
+Cell-type-specific compartments can be resolved from single-cell Hi-C in tissue. Droplet Hi-C found 895 cortex regions with variable compartment scores linked to chromatin state, and 1,782 switched compartments between MES-like and OPC-like glioblastoma states that associated with differential expression ([[10-Summaries/chang-2025-droplet-hi-c]]). With Paired Hi-C, erlotinib-treated GBM39 cells showed 1,066 A→B and 2,796 B→A switches, with expression moving in the matching direction ([[10-Summaries/chang-2025-droplet-hi-c]]).
+
+scSPRITE detects A/B compartment segregation in ~95% of single mESCs across 224 compartment-switch regions. Per-region scores are more variable between cells than chromosome territories (mean 0.03 vs 0.08) ([[10-Summaries/arrastia-2022-scsprite]]). Cells carrying an alternative TAD at chr4 show compartment calls that differ from the ensemble ([[10-Summaries/arrastia-2022-scsprite]]).
+
+Aggregated single-cell A/B values over marker-gene bodies were used to annotate scHi-C sub-clusters (e.g. interneuron sub-clusters as Vip vs Pvalb/Sst) in developing mouse brain ([[10-Summaries/zhang-2022-fast-higashi]]).
+
+**Single-cell compartments without imputation.** scDIAGRAM calls A/B compartments per cell by Bayesian 2D change-point detection and normalized-cut partitioning, using CpG density only to orient labels ([[10-Summaries/peng-2026-scdiagram]]). Under heavy downsampling the CpG-guided scA/B score converges to CpG density, whereas scDIAGRAM stays closer to bulk PCA (pseudo-bulk intersection 0.94 vs 0.825) ([[10-Summaries/peng-2026-scdiagram]]). Compartment variance is higher in AML and embryo cells than in brain or GM12878, and variable loci are enriched for H3K27me3 ([[10-Summaries/peng-2026-scdiagram]]).
+
+At 25 kb resolution, A/B compartments split into at least six subcompartments (A1, A2, B1–B4), defined by interchromosomal contact patterns alone ([[10-Summaries/rao-2014-in-situ-hic]]). Each has a distinct epigenomic profile: B1 tracks H3K27me3, B2 holds 62% of pericentromeric heterochromatin and is NAD-enriched, B3 is lamina-enriched but NAD-depleted, and B4 is a chr19 KRAB-ZNF cluster ([[10-Summaries/rao-2014-in-situ-hic]]).
 
 
 ## Related

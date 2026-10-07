@@ -5,7 +5,7 @@ aliases: [W. Reik]
 entity_kind: person
 tags: [methylation, epigenetics, development, scNMT-seq, babraham]
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-10-07
 ---
 
 # Wolf Reik
@@ -20,6 +20,7 @@ updated: 2026-05-19
 ## Mentions
 
 - **2026-05-19** — Senior author on scNMT-seq ([[10-Summaries/clark-2018-scnmt-seq]]) and the Argelaguet 2019 gastrulation atlas ([[10-Summaries/argelaguet-2019-nature]]).
+- **2026-10-07** — Senior author of [[10-Summaries/olova-2018-wgbs-library-bias]] (systematic comparison of WGBS library preparation biases; Bismark bam2nuc QC module).
 
 ## Related
 

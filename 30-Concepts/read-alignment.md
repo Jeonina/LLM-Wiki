@@ -4,7 +4,7 @@ title: Read Alignment
 aliases: [read mapping, sequence alignment, BWT alignment]
 tags: [alignment, BWA, SAM, BAM, infrastructure]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Read Alignment
@@ -30,6 +30,13 @@ Alignments are emitted in **SAM**, a TAB-delimited format with 11 mandatory fiel
 - **Adapter contamination and polyG tails** degrade mappability if not trimmed first ([[chen-2018-fastp]]); WGA-derived adaptor contamination produces measurably low mappability ([[zahn-2017-dlp]]).
 - **Allele-specific analysis** requires an N-masked reference and phased SNPs, and recovers only ~6% of valid interactions even with 2.2 million phased sites ([[servant-2015-hicpro]]).
 - Chromatin assays benefit from purpose-built fast aligners ([[zhang-2021-chromap]]).
+
+## Added 2026-10-07
+
+Ligation-junction multimapping is an aligner-induced artifact in chromatin-conformation reads: 26–30% of soft-clipped alignments multimapped in example LiMCA and snm3C-seq cells ([[10-Summaries/galasso-2026-map3c]]).
+
+Variant-call accuracy depends on the upstream aligner. VarScan accepted BLAT, Newbler, cross_match, Bowtie and Novoalign output and shipped recommended parameters for each, because, in the authors' words, sensitivity and specificity depend on alignment accuracy ([[10-Summaries/koboldt-2009-varscan]]).
+
 
 ## Related
 

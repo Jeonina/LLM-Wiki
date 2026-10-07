@@ -4,7 +4,7 @@ title: scOpen
 aliases: [scOpen NMF, regularized NMF imputation]
 tags: [scATAC-seq, imputation, NMF, denoising]
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-10-07
 ---
 
 # scOpen
@@ -30,6 +30,11 @@ scOpen binarizes the peak × cell count matrix, applies a term-frequency–inver
 
 - Improves downstream chromVAR, Cicero co-accessibility, and scABC clustering when used as input ([[10-Summaries/li-2021-scopen]]).
 - Applied with HINT-ATAC footprinting to a 30k-cell mouse kidney fibrosis (UUO) time course, identifying Runx1 as the driver of fibroblast→myofibroblast differentiation ([[10-Summaries/li-2021-scopen]]).
+
+## Added 2026-10-07
+
+scCASE ([[10-Summaries/tang-2024-sccase]]) is a later NMF-based competitor. It adopts scOpen's evaluation protocol (silhouette on 1 − Pearson distances, PCA + Louvain clustering) and reports beating scOpen on clustering metrics across eight datasets. Going from 20k to 100k cells, scOpen's peak memory rose 8.62× compared with 7.67× for scCASE ([[10-Summaries/tang-2024-sccase]]).
+
 
 ## Related
 

@@ -4,7 +4,7 @@ title: DLP+ (DNA Transposition Single-cell Library Preparation)
 aliases: [DLP+, DLP-plus]
 tags: [scWGA, Tn5, microfluidics, high-throughput, method]
 created: 2026-05-11
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # DLP+ (DNA Transposition Single-cell Library Preparation)
@@ -41,6 +41,11 @@ Tn5-based tagmentation has a useful side-effect: **specific overlap patterns of 
 ## Founding source (added 2026-08-10)
 
 [[10-Summaries/zahn-2017-dlp]] is the original DLP. Its argument is mechanistic: WGA copies templates as long molecules that are fragmented *afterwards*, so one region yields multiple inserts with non-overlapping coordinates that cannot be duplicate-filtered; DLP fragments first, so every PCR copy is an exact duplicate and every retained read represents a unique template. 782 cells at 0.07–0.12× each; 64 merged cells reach 94.5–96.8% breadth; 48 merged cells match a true bulk genome in uniformity. Cost ~$0.50/cell against ~$15/cell for DOP-PCR protocols, and the paper's economics argument — 6,000 cells at 0.05× for the price of ten at 30×, giving ~0.05% subclone sensitivity — is the clearest statement of the breadth/depth trade in this corpus.
+
+
+## Added 2026-10-07
+
+At cohort scale, DLP+ produced 100,054 single-cell genomes (median depth 0.060 per cell) from 70 HGSOC samples, retaining 30,260 tumour genomes after QC that included two-rater review of nozzle images for doublets and optical cell-size readouts used to validate per-cell WGD calls ([[10-Summaries/mcpherson-2025-ongoing-wgd]]). The earlier DLP+ HGSOC cell-line data (891 cells) also serve as a real-data benchmark for SNV lineage-tree inference ([[10-Summaries/zhang-2025-scistree2]]).
 
 
 ## Related

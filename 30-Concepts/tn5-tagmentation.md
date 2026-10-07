@@ -4,7 +4,7 @@ title: Tn5 tagmentation
 aliases: [Tn5 transposition, tagmentation]
 tags: [transposase, library-prep, ATAC-seq]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Tn5 tagmentation
@@ -24,6 +24,19 @@ Tn5 is an Escherichia coli transposase. Each transposition introduces a 9-nt gap
 ## Examples
 
 - [[30-Concepts/atac-seq]], [[30-Concepts/cut-and-tag]], [[30-Concepts/smrt-tag]], [[30-Concepts/scicut-tag]], [[30-Concepts/micro-atac-seq]], [[30-Concepts/splicool-seq]].
+
+## Added 2026-10-07
+
+pA-Tn5's accessibility preference is visible even in targeted CUT&Tag: nearly all H3K27ac CUT&Tag regions fell in H3K27ac sites shared with ATAC peaks, and removing <100-bp fragments reduced H3K27ac reads in ATAC peaks from 29% to 20% [[10-Summaries/abbasova-2025-cut-tag-encode-benchmark]]. Earlier, bulk ChIP vs Tn5-based ChIL-seq correlations for H3K27me3 were only r = 0.26–0.31, versus r = 0.67 for MNase-based scChIC-seq [[10-Summaries/ludwig-2019-sc-chromatin-modifications-review]].
+
+Tn5 can also fragment and barcode proximity-ligated chromatin. Droplet Hi-C runs SDS-treated in situ Hi-C nuclei through the 10x scATAC tagmentation workflow and reports minimal open-chromatin bias in the resulting contact data ([[10-Summaries/chang-2025-droplet-hi-c]]).
+
+CoBATCH pre-assembles PA-Tn5 with well-specific barcoded adapters, so the cell barcode is introduced during antibody-tethered tagmentation itself ([[10-Summaries/wang-2019-cobatch]]). OneCell CUT&Tag uses commercial pA-Tn5 or in-house Nano-Tn5 inside single wells ([[10-Summaries/schwager-2026-onecell-cut-tag]]).
+
+**Two distinct Tn5 biases.** Sequence-level cleavage preference and chromatin-level preference for accessible DNA are separable; the latter confounds antibody-targeted assays such as CUT&Tag and cannot be removed by sequence models alone ([[10-Summaries/hu-2026-patty]]). In sciMETv3, Tn5 loaded with fully methylated adapters is used for methylome indexing, and two sequential tagmentations (native, then after nucleosome disruption) split accessible from total DNA in sciMET+ATAC ([[10-Summaries/nichols-2025-scimetv3]]).
+
+META-CS loads Tn5 with an equimolar mix of 16 transposon sequences, so each fragment carries two random tags. The tags act as fragment barcodes and reduce the amplification loss from intramolecular hairpins that form when both ends carry the same sequence. Strand identity comes from later primer-extension rounds, not from the tagmentation step itself ([[10-Summaries/xing-2021-meta-cs]]).
+
 
 ## Related
 

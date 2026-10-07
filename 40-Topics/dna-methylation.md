@@ -4,7 +4,7 @@ title: DNA methylation
 aliases: [5mC, cytosine methylation, methylation]
 tags: [methylation, epigenetics, regulation]
 created: 2026-05-11
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # DNA methylation
@@ -143,6 +143,23 @@ scBS-seq, scRRBS, snmC-seq2, and sciMETv2 are sparse but compatible with multi-o
 - **Population-scale confirmation**: >18,000 intermediate-methylation regions (~57% mCpG) persist within purified cell types, "probably reflecting a stable state of cell-to-cell variability" ([[10-Summaries/roadmap-2015-111-epigenomes]]).
 - **Methylation-dependent activation breaks the silencing dogma** — KLF2/KLF4/KLF5 bind specific sequences *because* they are methylated, and 5mC recognition stimulates KLF4-mediated transcription ([[10-Summaries/rothbart-2014-histone-dna-language]]).
 - **Bisulfite-free single-cell chemistry** now separates 5mC from 5hmC at single-base resolution ([[10-Summaries/chen-2025-sctaps-sccaps-plus]]); the kinetic route dates to [[10-Summaries/flusberg-2010-smrt-methylation]] and the enzymatic origin of 5hmC to [[10-Summaries/tahiliani-2009-tet1-5hmc]].
+
+## Added 2026-10-07
+
+- [[10-Summaries/huang-2010-5hmc-bisulfite]] — 5hmC is indistinguishable from 5mC by bisulfite and its CMS adduct stalls Taq, biasing quantification.
+- [[10-Summaries/olova-2018-wgbs-library-bias]] — WGBS library-prep bias benchmark; amplification-free PBAT least biased; non-CG methylation needs conversion controls.
+- [[10-Summaries/duan-2026-mist]] — mist: Bayesian differential methylation along pseudotime in single-cell data.
+- [[10-Summaries/farlik-2015-scwgbs]] — scWGBS without pre-amplification plus region-set lineage plots of methylation cell-state dynamics.
+- [[10-Summaries/rylaarsdam-2025-amethyst]] — Amethyst R package for atlas-scale sciMET analysis; glial hyper-mCH and X-escape mCH.
+- [[10-Summaries/liang-2026-scmeth-imputation-benchmark]] — first systematic scDNAm imputation benchmark; entropy/sparsity drive accuracy; BridgeCpG and divide-and-conquer.
+- [[10-Summaries/spix-2025-scdeep-mc]] — scDEEP-mC high-coverage allele-resolved scWGBS; hemi-methylation, X-inactivation, S-phase maintenance dynamics.
+- [[10-Summaries/liu-2012-bis-snp]] — Bis-SNP joint SNP and methylation calling from directional bisulfite-seq.
+- [[10-Summaries/vaisvila-2021-em-seq]] — EM-seq enzymatic conversion: bisulfite-free, GC-even, 100 pg input.
+- [[10-Summaries/nichols-2025-scimetv3]] — sciMETv3: atlas-scale single-cell methylation by three-tier combinatorial indexing.
+- [[10-Summaries/zhao-2025-mambacpg]] — MambaCpG: Mamba state-space model for single-cell CpG imputation.
+- [[10-Summaries/zhou-2024-scdmv]] — scDMV: zero-one inflated beta model for single-cell DMR detection.
+- [[10-Summaries/acharya-2024-scimet-cap]] — sciMET-cap: targeted capture cuts single-cell methylome sequencing to ~200–275k reads per cell; cluster on targets, call DMRs genome-wide from pooled off-target reads.
+
 
 ## Related
 

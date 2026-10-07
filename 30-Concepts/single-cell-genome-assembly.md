@@ -4,7 +4,7 @@ title: Single-cell genome assembly
 aliases: [de novo single-cell assembly, SPAdes, Velvet-SC, IDBA-UD, E+V-SC]
 tags: [assembly, de-Bruijn-graph, MDA, uneven-coverage, chimera, metagenomics, uncultivated-bacteria]
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-10-07
 ---
 
 # Single-cell genome assembly
@@ -38,6 +38,13 @@ Single *E. coli* and *S. aureus* cells yield **>91% of genes within contigs**, a
 This is the earliest place in the corpus where WGA's problems are named as **computational rather than experimental** ([[10-Summaries/chitsaz-2011-velvet-sc]]) — a claim that recurs almost verbatim a decade later in the mosaic-variant-calling literature ([[10-Summaries/lahnemann-2021-natcomm]]; [[10-Summaries/ha-2023-natmethods]]). And the abundance-inversion problem it identifies reappears, in a different data type, as the allelic-imbalance problem that single-cell variant callers solve ([[10-Summaries/dong-2017-sccaller]]; [[10-Summaries/luquette-2019-natcomm]]). (synthesis)
 
 Bacterial single-cell genomics matured years before human single-cell variant calling because gene *presence* is far more robust to dropout than base-level genotype. (synthesis)
+
+## Added 2026-10-07
+
+Single-cell Hi-C can scaffold single-cell draft assemblies. Using SALSA2, 20 scWGS cells plus 12 scNanoHi-C cells reached NG50 2.49 Mb, versus 1.34 Mb for 30 scWGS cells alone (HG002) ([[10-Summaries/li-2023-scnanohi-c]]).
+
+Partial de novo assembly of human single-cell genomes has been shown from HiFi reads after a self-BLAST chimera filter: hifiasm primary assemblies of 598.3 Mb and 454.1 Mb (~19% and 15% of the reference), contig N50 of 35–42 kb, ~40 Mb of haplotype-alternative contigs, and 12.8% complete BUSCO genes in the best cell ([[10-Summaries/hard-2023-long-read-scwgs]]).
+
 
 ## Related
 

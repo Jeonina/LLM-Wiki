@@ -4,7 +4,7 @@ title: cisTopic
 aliases: [LDA-based scATAC clustering]
 tags: [scATAC-seq, topic-modeling, LDA, Aerts-lab, software]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # cisTopic
@@ -25,6 +25,15 @@ Input: binary cell × region accessibility matrix. LDA derives two distributions
 ## Examples
 
 - Hematopoietic differentiation, brain cell types (cortical excitatory layers, glia), SOX10-knockdown dynamics in melanoma ([[10-Summaries/bravo-2019-cistopic]]).
+
+## Added 2026-10-07
+
+In PeakVI's benchmark, cisTopic was nearly as good as PeakVI at matching RNA-defined clusters on 10x PBMC multiome data and at separating sorted hematopoietic cell types, but did not correct batch effects ([[10-Summaries/ashuach-2022-peakvi]]). EpiAgent reports outperforming cisTopic on NMI and ARI after fine-tuning ([[10-Summaries/chen-2025-epiagent]]).
+
+cisTopic (15 topics) was applied beyond accessibility data to single-cell Pol II and H3K36me3 CoBATCH profiles of E16.5 cardiac Cdh5-traced cells. It resolved macrophage-like, mesenchymal, arterial and venous endothelial clusters ([[10-Summaries/wang-2019-cobatch]]).
+
+In a benchmark on single-cell histone PTM data, cisTopic ranked behind the TF-IDF methods (ChromSCape_LSI, TFIDF-NMF, Signac) as well as SnapATAC and PeakVI, despite being among the best tools in an earlier scATAC-seq benchmark ([[10-Summaries/raimundo-2023-schptm-benchmark]]).
+
 
 ## Related
 

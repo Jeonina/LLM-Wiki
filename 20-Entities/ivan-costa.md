@@ -5,7 +5,7 @@ aliases: [Ivan Costa, Costa lab]
 entity_kind: person
 tags: [computational-biology, regulatory-genomics, scATAC-seq, RWTH-Aachen]
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-10-07
 ---
 
 # Ivan G. Costa
@@ -15,6 +15,7 @@ updated: 2026-06-02
 ## Mentions
 
 - **2026-06-02** — Corresponding author of [[10-Summaries/li-2021-scopen]] (scOpen); also author of the HINT-ATAC footprinting used in that work.
+- **2026-10-07** — Developer of a baseline method in [[10-Summaries/tang-2024-sccase]] (scCASE reuses scOpen's benchmarking protocol and reports outperforming scOpen).
 
 ## Related
 

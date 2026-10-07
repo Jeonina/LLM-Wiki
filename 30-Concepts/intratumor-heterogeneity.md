@@ -4,7 +4,7 @@ title: Intratumor Heterogeneity
 aliases: [intratumour heterogeneity, ITH, subclonal structure, clonal architecture]
 tags: [cancer, clonal-evolution, subclones, single-cell]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Intratumor Heterogeneity
@@ -30,6 +30,17 @@ A textbook ccRCC lacked both canonical drivers — no *VHL* coding mutation, *PB
 - Mutations at different allele frequencies show different mutation spectra, read as selection during progression ([[xu-2012-single-cell-exome-kidney]]).
 - Fitness-associated alterations can be identified from lineage structure and predict patient survival ([[wang-2021-medalt]]).
 - Bulk deconvolution cannot recover what pooling destroys — the clearest demonstration being minor clones absent from a merged genome built from the very cells that contain them ([[zahn-2017-dlp]]).
+
+## Added 2026-10-07
+
+Applied to two metastatic colorectal cancers, SiCloneFit with MACHINA inferred polyclonal single-source seeding from colon to liver (migration number 2, comigration 1) and a recurrent GATA1 mutation not reported by the original SCITE analysis ([[10-Summaries/zafar-2019-siclonefit]]).
+
+Karyotype clusters inferred from scATAC-seq of two basal cell carcinomas showed high CNA heterogeneity in one patient and low in the other, with cancer-associated fibroblasts falling into non-disomic clusters ([[10-Summaries/ramakrishnan-2023-epianeufinder]]).
+
+Single-cell Hi-C can track how ecDNA species are distributed and change within a tumor population. In GBM39 under erlotinib, *EGFR* ecDNA nearly disappeared, *MDM2* ecDNA appeared only in resistant cells, and *MYC* ecDNA boundaries became highly variable between cells ([[10-Summaries/chang-2025-droplet-hi-c]]). In 4.7% of cells in one cluster, *MYC* and *EGFR* ecDNA co-occurred ([[10-Summaries/chang-2025-droplet-hi-c]]).
+
+Detecting subclonal mutations in bulk requires sensitivity at low allele fraction: MuTect detected 53.2% of AF-0.1 mutations at 30× versus 29.7% (Strelka), 16.8% (JointSNVMix) and 7.4% (SomaticSniper) at matched false-positive rates ([[10-Summaries/cibulskis-2013-mutect]]). Single-cell phylogenies resolve the same heterogeneity cell by cell; SIEVE recovered biopsy-matched clades in a 28-cell colorectal scWGS dataset ([[10-Summaries/kang-2022-sieve]]).
+
 
 ## Related
 

@@ -4,7 +4,7 @@ title: Computational Methods
 aliases: [bioinformatics tooling, analysis pipelines, computational infrastructure]
 tags: [pipelines, algorithms, tools, infrastructure]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Computational Methods
@@ -40,6 +40,26 @@ Method choice is not neutral. Seven TAD callers disagree on the same contact mat
 - **Imputation that enables clustering also suppresses the variability being measured** — an unresolved trade in both scHi-C imputation frameworks ([[zhou-2019-schicluster]], [[zhang-2022-higashi]]).
 - **Duplicate-removal semantics depend on library chemistry**: coordinate-based deduplication is only valid when fragmentation precedes amplification ([[zahn-2017-dlp]], [[li-2009-samtools]]).
 - **Compute cost is a real selection pressure**: 500,000 cells integrate in 7.2 GB ([[korsunsky-2019-harmony]]) while enhancer-GRN inference can require 461 GB ([[bravo-2023-scenicplus]]).
+
+## Added 2026-10-07
+
+- [[10-Summaries/lahnemann-2020-grand-challenges]] — community agenda of 11 single-cell data-science challenges, including scDNA variant calling, phylogenetic scaling and benchmarking/simulation gaps.
+- [[10-Summaries/koboldt-2009-varscan]] — VarScan: aligner-independent heuristic SNP/indel caller (Perl/C).
+- [[10-Summaries/farlik-2015-scwgbs]] — region-set residual aggregation for sparse single-cell methylomes.
+- [[10-Summaries/kuipers-2025-scicone]] — SCICoNE: Dirichlet-multinomial MCMC over CNA trees with cross-cell breakpoint detection for shallow scWGS.
+- [[10-Summaries/chen-2009-breakdancer]] — BreakDancer: Poisson/Fisher-pooled read-pair SV detection plus a KS-test small-indel module.
+- [[10-Summaries/liang-2026-scmeth-imputation-benchmark]] — scDNAm imputation benchmark showing random-split leakage and entropy-limited accuracy.
+- [[10-Summaries/cibulskis-2013-mutect]] — MuTect (bulk somatic SNV caller) and its virtual-tumor benchmarking approach.
+- [[10-Summaries/kang-2022-sieve]] — SIEVE: BEAST 2 statistical phylogenetics for scDNA-seq.
+- [[10-Summaries/hu-2026-patty]] — PATTY: ML correction of Tn5 open-chromatin bias in CUT&Tag.
+- [[10-Summaries/peng-2026-scdiagram]] — scDIAGRAM: change-point + normalized-cut compartment calling.
+- [[10-Summaries/zhou-2024-scdmv]] — scDMV: single-cell DMR testing.
+- [[10-Summaries/zheng-2022-bandnorm-scvi-3d]] — scHi-C normalization (BandNorm), ZINB-VAE de-noising (scVI-3D) and an 8-method benchmark.
+- [[10-Summaries/kozlov-2022-cellphy]] — CellPhy: GT16 genotype substitution model + scWGA error model in RAxML-NG.
+- [[10-Summaries/tang-2024-sccase]] — scCASE: interpretable NMF-based scATAC imputation with a learned cell-similarity matrix.
+- [[10-Summaries/dautle-2025-schic-review]] — catalogue of scHi-C software, with single-tool gaps for loops, differential contacts, pseudotime and simulation.
+- [[10-Summaries/raimundo-2023-schptm-benchmark]] — >10,000-run benchmark of matrix construction, feature/cell selection and embedding for single-cell histone PTM data.
+
 
 ## Related
 

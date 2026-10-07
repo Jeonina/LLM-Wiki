@@ -4,7 +4,7 @@ title: Compounding artifact
 aliases: [compounding knowledge base]
 tags: [llm-wiki, knowledge-management]
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-10-07
 ---
 
 # Compounding artifact
@@ -34,6 +34,11 @@ This is also the criterion by which to judge an ingest: did it leave the wiki me
 ## Examples
 
 - A new source on retrieval-augmented generation should not just produce a summary; it should update the [[llm-wiki]] concept page (with how RAG relates), update any topic on retrieval, and add a "see also" from the prior LLM Wiki summary.
+
+## Added 2026-10-07
+
+MDA artifacts inflated the published neuronal SNV accumulation rate: SCAN2 on MDA neurons gave 31 sSNVs/year, falling to ~19–22 after removing artifact signature B, versus 16.5 with PTA [[10-Summaries/luquette-2022-neuron-scan2-indels]]. LiRA's fitted error decay (p = 1/2) points to lesions on the original DNA before amplification as a dominant artifact source [[10-Summaries/bohrson-2019-lira]].
+
 
 ## Related
 

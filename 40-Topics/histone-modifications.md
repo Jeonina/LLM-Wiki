@@ -4,7 +4,7 @@ title: Histone modifications
 aliases: [chromatin marks, post-translational modifications, PTMs, single-cell chromatin, histone marks]
 tags: [chromatin, epigenetics, H3K27me3, H3K4me3, CUT&Tag, ChIC, MNase, enhancers, promoters]
 created: 2026-05-12
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Histone modifications
@@ -100,6 +100,21 @@ Histone marks are not independent of other regulatory axes:
 - **Single-cell profiling**: CUT&Tag's founding paper ([[10-Summaries/kaya-okur-2019-cut-and-tag]]) → repressive-mark cell typing in tissue and tumors ([[10-Summaries/wu-2021-sccut-tag]]) → multimodal chromatin-state inference via surface protein ([[10-Summaries/zhang-2022-sccut-tag-pro]]) → barcoded multi-epitope co-localization ([[10-Summaries/gopalan-2022-multi-cut-and-tag]]).
 - **Population reference**: 127 epigenomes on five core marks, a shared 15-state model, and the finding that enhancer-associated marks carry essentially all the GWAS tissue signal while H3K27me3 and H3K9me3 carry none ([[10-Summaries/roadmap-2015-111-epigenomes]]).
 - **Enhancer priming** by collaborative lineage-determining TF binding, with HOMER as the tool built to find it ([[10-Summaries/heinz-2010-homer]]).
+
+## Added 2026-10-07
+
+- [[10-Summaries/abbasova-2025-cut-tag-encode-benchmark]] — CUT&Tag vs ENCODE ChIP benchmark: ~54% recall, mark-dependent S/N, peak-calling guidance.
+- [[10-Summaries/ludwig-2019-sc-chromatin-modifications-review]] — 2019 review of single-cell histone/DNA-modification methods (scChIP, scCUT&Tag, scChIC, Co-ChIP, EpiTOF, live reporters).
+- [[10-Summaries/li-2024-scnanoseq-cut-tag]] — scNanoSeq-CUT&Tag: long-read single-cell histone/TF profiling of repeats, blacklist regions and allele-specific peaks.
+- [[10-Summaries/wang-2019-cobatch]] — CoBATCH: PA-Tn5 in situ ChIP + combinatorial indexing for histone marks and chromatin-binding proteins; H3K27ac across endothelial cells from 10 embryonic organs.
+- [[10-Summaries/schwager-2026-onecell-cut-tag]] — OneCell CUT&Tag: plate-based CUT&Tag that starts from single cells, with matched RNA and surface markers; benchmarked against sortChIC, scChIP-seq and 10x scCUT&Tag.
+- [[10-Summaries/barski-2007-histone-methylation-chip-seq]] — founding ChIP-Seq atlas of 20 histone methylations in human CD4⁺ T cells.
+- [[10-Summaries/shi-2026-dechic-seq]] — DeChIC-seq: deaminase recording of histone marks and TF binding, single blastomere resolution.
+- [[10-Summaries/skene-2017-cut-and-run]] — founding CUT&RUN paper (pA-MNase, in situ release, spike-in).
+- [[10-Summaries/hu-2026-patty]] — PATTY: correcting Tn5 open-chromatin bias in bulk and single-cell CUT&Tag.
+- [[10-Summaries/raimundo-2023-schptm-benchmark]] — benchmark of scHPTM analysis pipelines: bin size dominates, TF-IDF/LSI wins, feature selection hurts.
+- [[10-Summaries/wu-2026-sccut-tag-review]] — computational review of scCUT&Tag: 21 datasets, workflow, differences from scATAC, integration gaps.
+
 
 ## Related
 

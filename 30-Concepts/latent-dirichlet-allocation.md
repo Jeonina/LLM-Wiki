@@ -4,7 +4,7 @@ title: Latent Dirichlet Allocation
 aliases: [LDA]
 tags: [topic-modeling, Bayesian, machine-learning]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-07
 ---
 
 # Latent Dirichlet Allocation (LDA)
@@ -20,6 +20,11 @@ Two Dirichlet priors: α for topic-document distribution, β for word-topic dist
 - Naturally handles sparsity by aggregating signal into topics.
 - Discovers regulatory programs without prior annotation.
 - Used in [[30-Concepts/cistopic]] (cis-regulatory topics from scATAC) and [[30-Concepts/scchix-seq]] (chromatin-mark topics for deconvolution).
+
+## Added 2026-10-07
+
+Embedded topic models extend the LDA/cisTopic line to scATAC with deep encoders while keeping interpretable linear decoders; GFETM additionally embeds peak DNA with a genome foundation model ([[10-Summaries/fan-2026-gfetm]]).
+
 
 ## Related
 

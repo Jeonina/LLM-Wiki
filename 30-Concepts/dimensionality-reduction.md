@@ -4,7 +4,7 @@ title: Dimensionality Reduction
 aliases: [embedding, PCA, UMAP, t-SNE, latent space]
 tags: [embedding, PCA, UMAP, visualization, manifold-learning]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Dimensionality Reduction
@@ -28,6 +28,11 @@ UMAP's layout depends on initialization, so a random start can place globally di
 - Coverage or depth can be the dominant axis of variation, and is not cleanly removable by dropping PC1 because PC1 also carries biology ([[zhou-2019-schicluster]]).
 - Embedding dimension choice affects some methods more than others; robustness to it is worth reporting ([[zhang-2022-higashi]]).
 - An embedding that mixes datasets well may have merged cell types; the two must be measured separately ([[korsunsky-2019-harmony]]).
+
+## Added 2026-10-07
+
+For single-cell histone PTM data, TF-IDF-based embeddings (ChromSCape_LSI, TFIDF-NMF, Signac) consistently outperform CPM-PCA, cisTopic's LDA and the VAEs PeakVI and SCALE; the matrix-construction (bin size) choice has an even larger effect than the method choice ([[10-Summaries/raimundo-2023-schptm-benchmark]]). This contrasts with scATAC-seq, where SnapATAC/SnapATAC2 and feature aggregation beat LSI ([[10-Summaries/luo-2024-scatac-benchmark]]), so method rankings are modality-specific (synthesis). In scCUT&Tag practice, LSI dimensions 2–30 are typically kept, and the first component is dropped because it tracks sequencing depth ([[10-Summaries/wu-2026-sccut-tag-review]]).
+
 
 ## Related
 

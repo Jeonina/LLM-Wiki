@@ -4,7 +4,7 @@ title: TET enzymes
 aliases: [TET, TET1, TET2, TET3, ten-eleven translocation]
 tags: [epigenetics, methylation, enzymes, demethylation]
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-10-07
 ---
 
 # TET enzymes
@@ -38,6 +38,11 @@ TET enzymes use molecular oxygen and α-ketoglutarate to iteratively oxidize 5mC
 
 - TET2 mutation in CHIP (clonal hematopoiesis of indeterminate potential) → elevated risk of MPN/MDS/AML and atherosclerosis.
 - IDH1 R132H glioma → 2-HG accumulation → TET inhibition → CIMP (CpG island methylator phenotype).
+
+## Added 2026-10-07
+
+Following the discovery that TET enzymes generate 5hmC, the same lab showed that bisulfite sequencing reads TET-generated 5hmC as methylated C and that its bisulfite adduct impairs PCR ([[10-Summaries/huang-2010-5hmc-bisulfite]]).
+
 
 ## Related
 

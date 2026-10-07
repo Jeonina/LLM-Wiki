@@ -5,7 +5,7 @@ aliases: [Luo lab, UCLA]
 entity_kind: person
 tags: [DNA-methylation, snmC-seq, single-cell-epigenomics, UCLA]
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-10-07
 ---
 
 # Chongyuan Luo
@@ -16,6 +16,7 @@ updated: 2026-08-13
 
 - **2026-08-13** — First author of [[luo-2017-snmc-seq]], which used non-CG methylation (mCH) in 100-kb bins to type 16 mouse and 21 human cortical neuron clusters from >6,000 single methylomes, and called ~500,000 CG-DMRs per species as regulatory elements.
 - **2026-08-13** — First author of [[luo-2018-snmc-seq2]], the throughput and robustness successor.
+- **2026-10-07** — Co-senior author in [[10-Summaries/galasso-2026-map3c]] (map3C, processing tool for multiomic single-cell Hi-C such as snm3C-seq and LiMCA).
 
 ## Why the mCH insight mattered
 

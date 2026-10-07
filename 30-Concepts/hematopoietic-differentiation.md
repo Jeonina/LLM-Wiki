@@ -4,7 +4,7 @@ title: Hematopoietic differentiation hierarchy
 aliases: [hematopoiesis, HSPC hierarchy, hematopoietic differentiation]
 tags: [hematology, stem-cells, differentiation]
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-10-07
 ---
 
 # Hematopoietic differentiation hierarchy
@@ -49,6 +49,11 @@ The hierarchy itself — recovered from healthy CD34⁺ cells — defines the "n
 
 - 38,290 CD34⁺ cells from 5 ET patients, t-SNE clustered into HSPC / IMP / MEP / MkP / NP / EP / E-B-M / M-D / PreB ([[10-Summaries/nam-2019-got]]).
 - 150,643 cells from 21 MPN samples, integrated UMAP with HSC / HSCMY / HSCLY / LMPP / CMP / GMP / MEP / EP1-3 / MkP / CLP / B / T / NK ([[10-Summaries/izzo-2024-got-cha]]).
+
+## Added 2026-10-07
+
+Native-context clonal barcoding (DARLIN) found low-level HSC migration between bones: ~5% of HSC clones shared across bones 4 months after adult labelling (~12% after 1 year), higher for MPPs (~14%) and myeloid progenitors (~40%), and predominantly local haematopoiesis even when labelled at E17.0 [[10-Summaries/li-2023-darlin]]. Megakaryocyte-biased HSCs were already present when labelled at E17.0 [[10-Summaries/li-2023-darlin]]. Expressed-barcode state–fate maps showed haematopoietic priming as a structured continuum with two monocyte routes (GMP-like and MDP-like) [[10-Summaries/weinreb-2020-larry]].
+
 
 ## Related
 

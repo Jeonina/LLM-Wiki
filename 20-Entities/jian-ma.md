@@ -5,7 +5,7 @@ aliases: [Ma lab, CMU]
 entity_kind: person
 tags: [3D-genome, machine-learning, hypergraph, CMU]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 # Jian Ma
@@ -15,6 +15,7 @@ updated: 2026-08-10
 ## Mentions
 
 - **2026-08-10** — Corresponding author of [[zhang-2022-higashi]], whose hypergraph formulation revealed present/absent and sliding TAD-like boundaries per cell.
+- **2026-10-07** — Corresponding author of [[10-Summaries/zhang-2022-fast-higashi]] (Fast-Higashi: tensor-decomposition scHi-C embedding with interpretable meta-interactions, ~9× faster than Higashi).
 
 ## Related
 

@@ -76,6 +76,11 @@ Weight: the benchmark is thorough and the reference set is multi-assay. The main
 - Reference loops derive from bulk assays, so any loop present only in single cells is scored as a false positive by construction.
 - Whether the paired *t*-test's assumption of a homogeneous cell population holds within methylation-defined clusters is not tested — the same homogeneity assumption [[park-2026-mintsc]] later makes explicit.
 
+## Added 2026-10-07
+
+See also [[10-Summaries/liu-2024-snaphic-g]]: the successor SnapHiC-G removes the local background to raise enhancer–promoter sensitivity (power 0.793 vs 0.076 for SnapHiC in 742 mESCs).
+
+
 ## Related
 
 - [[zhou-2019-schicluster]] · [[zhang-2022-higashi]] · [[chromatin-loop]] · [[40-Topics/3d-genome]]

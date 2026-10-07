@@ -4,7 +4,7 @@ title: Myeloproliferative neoplasm (MPN)
 aliases: [MPN, myeloproliferative neoplasms]
 tags: [hematology, malignancy, clonal-hematopoiesis]
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-10-07
 ---
 
 # Myeloproliferative neoplasm (MPN)
@@ -47,6 +47,11 @@ Together [[10-Summaries/nam-2019-got]] and [[10-Summaries/izzo-2024-got-cha]] es
 
 - ET01–ET05 (5 patients), MF01–MF04, MF05 multi-mutant — [[10-Summaries/nam-2019-got]] cohort.
 - 21 samples from 18 JAK2V617F MF patients (12 untreated, including three longitudinal PV→MF samples from one patient; 6 ruxolitinib-treated) plus 1 JAK2V617F clonal hematopoiesis sample — [[10-Summaries/izzo-2024-got-cha]] cohort.
+
+## Added 2026-10-07
+
+SComatic applied to scRNA-seq of CD34+ cells from five MPN patients detected ~0.12 mutations/Mb per haploid genome, 96% attributed to SBS5/SBS40, with burden correlating with age (r = 0.79, P = 0.09) ([[10-Summaries/muyas-2024-scomatic]]).
+
 
 ## Related
 

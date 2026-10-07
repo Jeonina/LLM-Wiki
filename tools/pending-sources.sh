@@ -32,11 +32,19 @@ for sm in glob.glob(os.path.join(summaries_dir, '*.md')):
             head = f.read(4096)
     except Exception:
         continue
-    # match: source: "[[00-Sources/.../Filename]]" or source: [[...]]
-    for m in re.finditer(r'source:\s*"?\[\[([^\]\"]+)\]\]', head):
-        ref = m.group(1).strip()
-        base = os.path.basename(ref)
-        base = re.sub(r'\.md$', '', base, flags=re.IGNORECASE)
+    # match the `source:` field in frontmatter, either a single link
+    #   source: "[[00-Sources/.../Filename]]"
+    # or a YAML list spanning several lines (used for merged summaries)
+    #   source: [ "[[...]]", "[[...]]" ]
+    fm = re.match(r'---\n(.*?)\n---', head, re.S)
+    if not fm:
+        continue
+    field = re.search(r'^source:(.*?)(?=^\w[\w-]*:|\Z)', fm.group(1), re.M | re.S)
+    if not field:
+        continue
+    for ref in re.findall(r'\[\[(00-Sources/[^\]|"]+)', field.group(1)):
+        base = os.path.basename(ref.strip())
+        base = re.sub(r'\.(md|pdf)$', '', base, flags=re.IGNORECASE)
         covered.add(base.lower())
 
 # 2. Walk all source files; flag those whose basename is not covered.

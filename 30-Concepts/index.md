@@ -25,6 +25,7 @@ Each entry links to its definition page. Grouped by domain.
 - [[30-Concepts/scwga-chemistries]] — family of scWGA chemistries; uniformity/dropout/error tradeoffs.
 - [[30-Concepts/single-cell-variant-calling]] — somatic SNV/indel detection from scDNA despite amplification artifacts.
 - [[30-Concepts/strand-seq]] — BrdU strand-selective scDNA for SVs and haplotype phasing.
+- [[30-Concepts/single-cell-genome-assembly]] — De novo assembly from amplified single-cell DNA with uneven coverage.
 
 ## Duplex sequencing
 
@@ -159,6 +160,9 @@ Each entry links to its definition page. Grouped by domain.
 - [[30-Concepts/chromatin-phase-separation]] — LLPS organizing chromatin into membraneless condensates.
 - [[30-Concepts/chromatin-mechanical-properties]] — viscoelastic/biophysical sub-axis of DNA locus state.
 - [[30-Concepts/conformational-heterogeneity]] — metric for cell-to-cell variability of 3D folding.
+- [[30-Concepts/chromatin-loop]] — Point-to-point chromatin contacts, typically CTCF/cohesin anchored.
+- [[30-Concepts/chia-pet]] — Chromatin interaction analysis by paired-end tag sequencing (protein-centred).
+- [[30-Concepts/multi-way-chromatin-interaction]] — Contacts among three or more loci in the same molecule or cell.
 
 ## Mosaicism / disease biology
 
@@ -211,6 +215,7 @@ Each entry links to its definition page. Grouped by domain.
 - [[30-Concepts/batch-effect]] — correction strategies and the LISI integration/accuracy trade.
 - [[30-Concepts/trajectory-inference]] — pseudotime, graph abstraction, and why topology claims are sampling claims.
 - [[30-Concepts/gene-regulatory-network]] — eRegulons, directionality from sequence, networks as perturbation operators.
+- [[30-Concepts/reference-atlas-mapping]] — Projecting query cells onto a frozen reference; distinct from symmetric integration.
 
 ## Cancer genome concepts (added 2026-08-10)
 

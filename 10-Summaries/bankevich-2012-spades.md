@@ -32,9 +32,9 @@ topics: ["[[whole-genome-amplification]]", "[[computational-methods]]"]
 
 ## Methods / evidence
 
-Benchmarking on single-cell and cultured *E. coli* datasets against E+V-SC, Velvet and SOAPdenovo. The bulk of the paper is algorithmic exposition — terminology for h-paths and h-edges, formal definitions of standard/multisized/paired de Bruijn graphs, and a worked example of paired-assembly-graph construction.
+Benchmarking of seven assemblers (EULER-SR, IDBA, SOAPdenovo, Velvet, Velvet-SC, E+V-SC, SPAdes) on single-cell and cultured E. coli and single-cell SAR324 datasets. The bulk of the paper is algorithmic exposition — terminology for h-paths and h-edges, formal definitions of standard/multisized/paired de Bruijn graphs, and a worked example of paired-assembly-graph construction.
 
-Weight: this is a computational-methods paper in a computational-biology journal, with the algorithm as the contribution and the benchmark as support. The single-cell claim rests on *E. coli* with a matched multicell control — the right design, but one organism.
+Weight: this is a computational-methods paper in a computational-biology journal, with the algorithm as the contribution and the benchmark as support. The single-cell claim rests on single-cell E. coli (with a matched multicell control) plus a single uncultivated marine cell (SAR324).
 
 ## Surprising or load-bearing bits
 
@@ -63,7 +63,7 @@ Weight: this is a computational-methods paper in a computational-biology journal
 
 ## Open questions
 
-- Benchmarking is on *E. coli* only in the captured sections; generalisation across genome size, GC content, and repeat structure is not established here.
+- Benchmarking covers two bacterial genomes (E. coli and SAR324); generalisation across genome size, GC content, and repeat structure is not established here.
 - The multisized de Bruijn graph's *k* range and how it is chosen are not covered in the ingested text.
 - Whether the chimera-detection step's sensitivity was measured against known chimeras is not recoverable from this source.
 

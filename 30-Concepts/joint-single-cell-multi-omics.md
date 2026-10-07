@@ -18,7 +18,7 @@ A joint multi-omic assay reads ≥2 of: DNA sequence, RNA, chromatin accessibili
 ## Why it matters
 
 - Pairs cause and effect at single-cell resolution — e.g., does this mutation alter this cell's accessibility? Only joint measurement can answer.
-- Avoids batch effects and clustering artifacts that confound unpaired integration ([[10-Summaries/heumos-2023-best-practices]]).
+- Avoids batch effects and clustering artifacts that can confound unpaired integration (synthesis).
 
 ## Variants
 

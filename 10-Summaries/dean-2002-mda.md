@@ -10,7 +10,7 @@ doi: "10.1073/pnas.082089499"
 url: "https://www.pnas.org/doi/10.1073/pnas.082089499"
 ---
 
-**Citation:** Dean et al. (2002) — *Comprehensive human genome amplification using multiple displacement amplification (MDA)* — *?*. [DOI](https://doi.org/10.1073/pnas.082089499)
+**Citation:** Dean et al. (2002) — *Comprehensive human genome amplification using multiple displacement amplification (MDA)* — *PNAS*. [DOI](https://doi.org/10.1073/pnas.082089499)
 
 Dean, Hosono, Fang et al. (Molecular Staging Inc., New Haven CT) introduced **Multiple Displacement Amplification (MDA)** ([DOI](https://doi.org/10.1073/pnas.082089499)), the **founding whole-genome amplification chemistry** that subsequently became the dominant scWGA method for the 15+ years preceding PTA. The method exploits the high processivity (~70 kb), strand-displacement activity, and low error rate (~10⁻⁶/base) of bacteriophage φ29 DNA polymerase paired with exonuclease-resistant random hexamer primers. Reactions run isothermally at 30 °C without thermal cycling: hexamers prime the genome at thousands of sites, φ29 extends and displaces downstream strands, displaced strands serve as templates for further priming, and amplification cascades exponentially until reagents saturate (~4–6 h). Key validation: starting from 0.3–300 ng human genomic DNA (down to single-digit cell-equivalents), MDA yielded ~20–30 µg of >10-kb product with **<3-fold locus-to-locus amplification bias** across 8 chromosomal positions — versus 4–6 orders of magnitude bias for DOP-PCR or PEP (PCR-based WGA), establishing MDA as quantitatively superior for unbiased whole-genome representation. Authors demonstrated downstream compatibility with SNP genotyping, RFLP, Southern blot, comparative genome hybridization, subcloning, and direct sequencing. MDA worked from whole blood lysate without DNA purification.
 
@@ -22,7 +22,7 @@ Dean, Hosono, Fang et al. (Molecular Staging Inc., New Haven CT) introduced **Mu
 
 - **Locus-to-locus bias**: <3× across 8 loci for MDA vs. 4–6 orders of magnitude for DOP-PCR (TaqMan quantification, **Table 1** of paper).
 - **Product length**: >10 kb average (alkaline gel electrophoresis).
-- **Input sensitivity**: ~20–30 µg yield from inputs as low as 0.3 ng (≈90 genome copies, ~1–10 human cells).
+- **Input sensitivity**: ~20–30 µg yield from as few as 1–10 copies of the human genome; locus-bias tests used inputs down to 0.3 ng (≈90 genome copies); accurate WGA from <10 human cells.
 - **Direct from biological material**: amplification from whole blood lysate without genomic DNA purification.
 - **Downstream compatibility**: SNP genotyping accurately recapitulated (24/24 RFLP genotypes from MDA product matched ground-truth Coriell genotypes), CGH profiles matched unamplified, restriction-fragment patterns matched, Southern signals matched.
 

@@ -8,7 +8,7 @@ created: 2026-05-12
 updated: 2026-05-12
 ---
 
-**Citation:** Hou et al. (2016) — *scTrio-seq: Triple omics (CNV + methylome + transcriptome) in single hepatocellular carcinoma cells* — *?*. [DOI](https://doi.org/10.1038/cr.2016.23)
+**Citation:** Hou et al. (2016) — *scTrio-seq: Triple omics (CNV + methylome + transcriptome) in single hepatocellular carcinoma cells* — *Cell Research*. [DOI](https://doi.org/10.1038/cr.2016.23)
 
 # Hou et al. 2016 — scTrio-seq
 
@@ -22,7 +22,7 @@ First single-cell **triple-omics** assay that simultaneously yields (1) genomic 
 
 1. **Mild lysis** of cytoplasm only — keeps nucleus intact.
 2. Centrifuge: **supernatant (mRNA) → scRNA-seq** (Tang-lab pipeline); **pellet (nucleus) → scRRBS** (single-cell Reduced Representation Bisulfite Sequencing).
-3. CNV deduced from the scRRBS read distribution (after normalization against normal-liver-RRBS reference and HMM fitting) at 10-Mb resolution. The methylation arm doubles as the CNV signal because RRBS recovers >100,000 unique MspI fragments per cell.
+3. CNV deduced from the scRRBS read distribution (after normalization against normal-liver-RRBS reference and HMM fitting) at 10-Mb resolution. The methylation arm doubles as the CNV signal because RRBS covers ~0.57 million unique MspI fragments (~1,900 per 10-Mb bin) genome-wide.
 4. Output per cell: ~1.5M CpGs, 6,179 genes, CNV map at 10-Mb resolution.
 
 ## Key claims
@@ -43,7 +43,7 @@ First single-cell **triple-omics** assay that simultaneously yields (1) genomic 
 
 ## Entities / concepts touched
 
-[[40-Topics/scdna-seq]] · [[scbs-seq]] · [[40-Topics/dna-methylation]] · [[40-Topics/single-cell-multiomics]] · [[cpg-island]] · [[mutational-signatures]] · [[20-Entities/xiaoying-fan]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/dna-methylation]]
+[[40-Topics/scdna-seq]] · [[scbs-seq]] · [[40-Topics/dna-methylation]] · [[40-Topics/single-cell-multiomics]] · [[cpg-island]] · [[mutational-signatures]] · [[40-Topics/single-cell-multiomics]] · [[40-Topics/dna-methylation]]
 
 ## Related summaries
 

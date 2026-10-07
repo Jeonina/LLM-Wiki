@@ -32,7 +32,7 @@ These are recovered de novo from scRNA-seq and scATAC-seq clustering and serve a
 Both [[10-Summaries/nam-2019-got]] and [[10-Summaries/izzo-2024-got-cha]] make their key claims by **projecting genotypes onto the differentiation map** and asking where the mutated cells accumulate or shift:
 
 - CALR-mutant cells in ET enrich progressively along myeloid differentiation, peaking in MkPs ([[10-Summaries/nam-2019-got]]).
-- JAK2V617F-mutant cells distribute toward erythroid–megakaryocytic and granulocyte–monocyte progenitors and away from CLPs/lymphoid clusters; ruxolitinib re-evens this distribution without removing the clone ([[10-Summaries/izzo-2024-got-cha]]).
+- JAK2V617F-mutant cells distribute toward erythroid–megakaryocytic and granulocyte–monocyte progenitors and away from CLPs/lymphoid clusters; ruxolitinib abolishes the cell-intrinsic TF-motif differences between mutant and wild-type HSCs without removing the clone ([[10-Summaries/izzo-2024-got-cha]]).
 
 The hierarchy itself — recovered from healthy CD34⁺ cells — defines the "native differentiation tree" that mutated clones perturb.
 
@@ -47,7 +47,7 @@ The hierarchy itself — recovered from healthy CD34⁺ cells — defines the "n
 
 ## Examples
 
-- 18,722 CD34⁺ cells from 5 ET patients, t-SNE clustered into HSPC / IMP / MEP / MkP / NP / EP / E-B-M / M-D / PreB ([[10-Summaries/nam-2019-got]]).
+- 38,290 CD34⁺ cells from 5 ET patients, t-SNE clustered into HSPC / IMP / MEP / MkP / NP / EP / E-B-M / M-D / PreB ([[10-Summaries/nam-2019-got]]).
 - 150,643 cells from 21 MPN samples, integrated UMAP with HSC / HSCMY / HSCLY / LMPP / CMP / GMP / MEP / EP1-3 / MkP / CLP / B / T / NK ([[10-Summaries/izzo-2024-got-cha]]).
 
 ## Related

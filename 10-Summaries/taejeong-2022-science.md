@@ -16,15 +16,15 @@ updated: 2026-05-12
 
 ## Thesis
 
-The largest brain-mosaicism cohort study to date: 131 human brains (44 neurotypical, 19 Tourette syndrome, 9 schizophrenia, 59 autism spectrum disorder), each sequenced to ≥200× from bulk cortex/striatum/hippocampus. Typical brain carries 10–60 detectable mosaic SNVs, but **~6% are "hypermutable"** (>101 SNVs). Hypermutability associates with **age**, **damaging mutations in cancer-implicated genes**, and **in vivo clonal expansions**. In ASD specifically, somatic mutations create **putative transcription-factor binding motifs (especially MEIS family) in enhancer-like regions** active in the developing brain — providing a direct mosaic-mutation-to-regulatory-element causal pathway for ASD risk.
+A large brain-mosaicism cohort study: 131 human brains (44 neurotypical, 19 Tourette syndrome, 9 schizophrenia, 59 autism spectrum disorder), each sequenced to ≥200× from bulk cortex/striatum/hippocampus. Typical brain carries 20–60 detectable mosaic SNVs, but **~6% are "hypermutable"** (>101 SNVs). Hypermutability associates with **age**, **damaging mutations in cancer-implicated genes**, and **in vivo clonal expansions**. In ASD specifically, somatic mutations create **putative transcription-factor binding motifs (especially MEIS family) in enhancer-like regions** active in the developing brain — providing a direct mosaic-mutation-to-regulatory-element causal pathway for ASD risk.
 
 ## Method
 
 1. 131 frozen postmortem brains, 1–2 regions each (cortex, striatum, hippocampus) from Yale, LIBD, Harvard.
 2. Bulk WGS at ≥200× per region (some samples 620×).
 3. Somatic-mutation discovery via the BSMN bulk-mutation calling workflow ([github.com/abyzovlab/bsmn-pipeline](https://github.com/abyzovlab/bsmn-pipeline)) distinguishing somatic from germline by frequency and population-database overlap.
-4. For 8 brains, additional FACS-sorted cell fractions (NeuN+/Sox6+, NeuN+/Sox6−, NeuN−/Sox10+, NeuN−/Sox10−, CTIP2+/CTIP2−) for cell-lineage analysis.
-5. Single-nucleus validation in 8 nuclei × 16 wells from brain NC7 striatal interneuron fraction (clonal-expansion validation).
+4. For the 40 Yale brains, up to eight FACS-sorted cell fractions per region (NeuN+/NeuN− in cortex and striatum; STR-MSN and STR-INT in striatum) for cell-lineage analysis.
+5. Single-nucleus validation by sequencing 16 single nuclei from the brain NC7 striatal interneuron (STR-INT) fraction (clonal-expansion validation).
 6. Read-backed phasing assigns mutations to maternal/paternal haplotypes for ~20% of calls.
 7. Structural-mutation calling via CNVpytor.
 
@@ -35,10 +35,10 @@ The largest brain-mosaicism cohort study to date: 131 human brains (44 neurotypi
 2. **Hypermutable brains overrepresent damaging mutations in cancer-implicated genes** (P = 2.4×10⁻³): NRAS (recurrent chr1:115258747 C>T, COSMIC ID COSV54736383), DNMT3A, GBE1, TET2, TENM3, ENDOU, IDH2, BCORL1. Suggests **incipient clonal expansion** in some brains — possibly precursor states of glioma/glioblastoma decades before clinical diagnosis. Brain LIBD82 carried aneuploidies (duplication of chr7, deletion of chr10) consistent with glioblastoma signatures in ~15% of hippocampal cells.
 
 3. **Two mechanistically distinct hypermutability classes**:
-   - **Clonal-expansion type**: brain NC7 (NRAS-mutant) shows the same mutations present in 8/8 striatal interneuron single nuclei (94% of bulk mutations validated at single-cell level), proving a clonal lineage. The expanded lineage originated in embryonic basal ganglia and populated cortex + striatum by interneuron migration.
-   - **Possible intrinsic-hypermutability type**: brains TS9 and NC7 with damaging mutations in MTOR, TET2, DNMT3A, IDH2 — could be due to expanded lineage, or could be due to leaky DNA repair / increased mutation rate.
+   - **Clonal-expansion type**: brain NC7 (NRAS-mutant) had 94% (346) of its bulk mutations genotyped in 8 of 16 sequenced striatal interneuron nuclei (94% of bulk mutations validated at single-cell level), proving a clonal lineage. The expanded lineage originated in embryonic basal ganglia and populated cortex + striatum by interneuron migration.
+   - **Possible intrinsic-hypermutability type**: brains NC7, TS9 and AN05983 carry damaging mutations in cancer genes (MTOR in AN05983; TET2, DNMT3A, IDH2); the authors note a higher mutation rate as a possible alternative cause of hypermutability — could be due to expanded lineage, or could be due to leaky DNA repair / increased mutation rate.
 
-4. **Cell-lineage distribution is non-uniform across brain regions** in many brains. For ≥5 brains (out of 22 Yale + 13 LIBD with full fraction data), VAF in cortex > VAF in striatum or hippocampus (P = 5×10⁻⁴). Interpretation: founder population of cortex is allocated from fewer earlier lineages, so each cortical lineage frequency is higher on average. Alternatively, cortex has higher propensity for clonal expansion.
+4. **Cell-lineage distribution is non-uniform across brain regions** in many brains. For 8 of 22 Yale brains (cortex vs striatum) and 5 of 13 LIBD brains (cortex vs hippocampus), VAF in cortex > VAF in striatum or hippocampus (P = 5×10⁻⁴). Interpretation: founder population of cortex is allocated from fewer earlier lineages, so each cortical lineage frequency is higher on average. Alternatively, cortex has higher propensity for clonal expansion.
 
 5. **ASD enhancer-motif finding** (the cohort's most consequential biological result):
    - ASD brain AN05983: validated splice mutation in **MTOR** (cancer + ASD-implicated; insulin/PI3K signaling).

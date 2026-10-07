@@ -28,9 +28,9 @@ topics:
 ## Key claims
 
 - **Multi-omics catalog by modality combination**: scRNA + scATAC (10x Multiome, SHARE-seq); scRNA + protein (CITE-seq, REAP-seq); scDNA + scRNA (G&T-seq, DR-seq, SIDR-seq); scRNA + methylome (scM&T-seq); CRISPR-perturbed scRNA (Perturb-seq, CROP-seq); scRNA + spatial (Slide-seq, MERFISH, Visium).
-- **Spatial multi-omics** is treated as a co-equal modality: tissue context preserved while measuring molecular profiles. Imaging-based (MERFISH, seqFISH) and NGS-based (Slide-seq, Visium, Stereo-seq) approaches each have strengths.
-- **Computational integration** is now the bottleneck more than wet-lab measurement. Tools: Seurat (Weighted Nearest Neighbor), Scanpy/scvi-tools, MOFA, totalVI for joint embeddings.
-- **Three integration paradigms**: horizontal (same modality, different samples), vertical (same cells, different modalities), diagonal (different cells, different modalities — most computationally demanding).
+- **Spatial multi-omics** is treated as a co-equal modality: tissue context preserved while measuring molecular profiles. Imaging-based (MERFISH, seqFISH) and NGS-based (Slide-seq, Visium) approaches each have strengths.
+- **Computational integration** is now the bottleneck more than wet-lab measurement. Tools discussed: Seurat v3/v4 (WNN), LIGER, GLUE, DeepMAPS; regulatory inference via SCENIC+, FigR, MIRA, CellOracle, MultiVelo.
+- **Two integration pipeline classes**: matched (modalities measured in the same cell) vs unmatched (modalities from different experiments/cells; harder because distinct feature spaces must be co-embedded).
 - **Bridge integration** (e.g., GoT–ChA + DOGMA-seq in [[10-Summaries/izzo-2024-got-cha]]) is a special case of diagonal integration where overlapping modalities act as bridges.
 
 ## Methods / evidence
@@ -56,7 +56,7 @@ Comprehensive landscape review with Table 1 cataloging dozens of methods. From Y
 
 ## Connections to other sources
 
-- **Catalogs and contextualizes** [[10-Summaries/nam-2019-got]] (GoT — genotype + RNA), [[10-Summaries/izzo-2024-got-cha]] (GoT–ChA — genotype + chromatin), [[10-Summaries/swanson-2025-daf-seq]] (DAF-seq — single-molecule chromatin + DNA).
+- **Catalogs and contextualizes** [[10-Summaries/nam-2019-got]] (GoT — genotype + RNA), [[10-Summaries/izzo-2024-got-cha]] (GoT–ChA — genotype + chromatin).
 - **Complementary to** [[10-Summaries/vandereyken-2023-scmultiomics-review]] — both 2023 multi-omics reviews; Alev 2023 is broader (includes proteome, metabolome) while Katy 2023 focuses on genome-proteome combinations with deeper method-by-method protocol detail.
 - **Best-practices counterpart**: [[10-Summaries/heumos-2023-best-practices]] provides the analysis workflow recommendations for the methods cataloged here.
 

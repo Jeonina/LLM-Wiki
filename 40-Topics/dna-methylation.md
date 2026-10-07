@@ -25,7 +25,7 @@ Other modification forms ([[10-Summaries/fu-2025-longread-methylation]]):
 ## Why it matters
 
 - **Stable propagation of cell identity** — marks established during differentiation are maintained through mitosis, contributing to epigenetic memory ([[10-Summaries/kim-2017-methylation-memory-review]]).
-- **Genomic imprinting and X-inactivation** — methylation establishes parent-of-origin and chromosome-of-origin gene-expression patterns, with imprinted loci established in primordial germ cells ([[10-Summaries/smith-2013-methylation-development]]).
+- **Genomic imprinting and X-inactivation** — methylation establishes parent-of-origin and chromosome-of-origin gene-expression patterns, with imprinting marks erased in primordial germ cells and re-established during gametogenesis ([[10-Summaries/smith-2013-methylation-development]]).
 - **Transposon silencing** — most repetitive elements are heavily methylated ([[10-Summaries/smith-2013-methylation-development]]); loss of methylation can derepress LINE-1, SINE, and ERV elements, triggering "viral mimicry" interferon responses ([[10-Summaries/hunt-2022-sctem-seq]]).
 - **Disease biomarker** — cancer-associated promoter hypermethylation silences tumor suppressors; global hypomethylation enables oncogene activation and chromosome instability ([[10-Summaries/smith-2013-methylation-development]]).
 - **Therapeutic target** — DNMT inhibitors (hypomethylating agents) are approved for MDS / AML ([[10-Summaries/hunt-2022-sctem-seq]]); decitabine vs azacitidine produce divergent demethylation patterns ([[10-Summaries/shen-2026-splicool-seq]]).

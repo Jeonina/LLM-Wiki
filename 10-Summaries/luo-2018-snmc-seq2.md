@@ -28,9 +28,9 @@ updated: 2026-05-12
 ## Key claims
 
 - Validated on human frontal cortex (Brodmann area 10).
-- Adapter-dimer + short-insert reads reduced from ~22.6% (snmC-seq) to ~10% (snmC-seq2, P = 9.2×10⁻¹⁰).
+- Adapter-dimer + short-insert reads: 22.6 ± 9.5% with snmC-seq, significantly reduced by RP-H (P = 9.2×10⁻¹⁰); in mouse MOp, 6.1% (snmC-seq2) vs 29.2% (snmC-seq).
 - Library complexity and coverage uniformity both improved across cell types and tissue contexts.
-- snmC-seq2 is the **default chemistry for single-cell methylome atlas projects** (BICCN, BRAIN Initiative).
+- snmC-seq2 is the **default chemistry for single-cell methylome atlas projects** (BICCN, BRAIN Initiative). *(not found in source clipping — unverified)*
 
 ## Surprising / load-bearing for the review
 

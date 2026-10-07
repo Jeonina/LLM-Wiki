@@ -15,7 +15,7 @@ updated: 2026-08-10
 
 - **Monovar** ([[10-Summaries/zafar-2016-monovar]]) — first scSNV caller; multi-cell joint likelihood.
 - **SCcaller** ([[10-Summaries/dong-2017-sccaller]]) — local-allele-frequency model.
-- **ProSolo** ([[10-Summaries/sarah-2019-cell]]) — pairs bulk + single-cell.
+- **ProSolo** ([[10-Summaries/lahnemann-2021-natcomm]]) — pairs bulk + single-cell.
 - **MosaicHunter** ([[10-Summaries/huang-2017-mosaichunter]]) — control-free mosaic SNV detection.
 - **MosaicForecast** ([[10-Summaries/dou-2020-mosaicforecast]]) — random-forest classifier.
 - **DeepMosaic** ([[10-Summaries/yang-2023-deepmosaic]]) — deep-learning mosaic caller.

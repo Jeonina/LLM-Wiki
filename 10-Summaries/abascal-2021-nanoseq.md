@@ -16,13 +16,13 @@ updated: 2026-05-12
 
 ## Thesis
 
-**NanoSeq (nanorate sequencing)** is a duplex-sequencing protocol that **avoids end-repair-associated errors** to achieve **<5 errors per billion base pairs in single DNA molecules** — two orders of magnitude lower than typical somatic mutation loads. This enables **somatic-mutation studies in non-dividing cells** (post-mitotic neurons, polyclonal smooth muscle, differentiated cells) for the first time, independently of clonality. Demonstrates **somatic mutations accumulate at constant rate in post-mitotic neurons throughout life** — proving cell division is not required for mutagenesis.
+**NanoSeq (nanorate sequencing)** is a duplex-sequencing protocol that **avoids end-repair-associated errors** to achieve **<5 errors per billion base pairs in single DNA molecules** — two orders of magnitude lower than typical somatic mutation loads. This enables **somatic-mutation studies in non-dividing cells** (post-mitotic neurons, polyclonal smooth muscle, differentiated cells), independently of clonality. Demonstrates **somatic mutations accumulate at constant rate in post-mitotic neurons throughout life** — proving cell division is not required for mutagenesis.
 
 ## Mechanism
 
 1. Standard duplex consensus sequencing uses unique molecular barcodes on both strands of each DNA molecule; both strands' consensus reads agree → real mutation. Theoretical error rate <10⁻⁹/bp.
 2. **In practice**, mapping errors + accidental cross-strand copying during library prep (especially end-repair) violate the strand-independence assumption → real-world error rates higher.
-3. **NanoSeq** introduces end-repair-aware library construction that eliminates these errors. Validated empirically to <5 errors/billion bp.
+3. **NanoSeq** avoids end repair altogether (restriction-enzyme fragmentation or sonication plus exonuclease blunting), which eliminates these errors. Validated empirically to <5 errors/billion bp.
 
 ## Key claims
 

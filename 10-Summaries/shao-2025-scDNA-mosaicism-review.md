@@ -1,7 +1,7 @@
 ---
 type: summary
 title: "Shao et al. 2025 — Advances in single-cell DNA sequencing for somatic mosaicism"
-source: "[[00-Sources/papers/Advances in single-cell DNA sequencing enable insights into human somatic mosaicism]]"
+source: "[[00-Sources/papers/Advances in single-cell DNA sequencing enable insights into human somatic mosaicism - Nature Reviews Genetics]]"
 source_kind: paper
 author: "Diane D. Shao, Andrea J. Kriz, Daniel A. Snellings, Zinan Zhou, Yifan Zhao, Liz Enyenihi, Christopher Walsh"
 published: 2025-11
@@ -46,7 +46,7 @@ topics:
   - **LIANTI**: Tn5-based linear amplification via transposon insertion, high coverage (80–85%), not commercially available, complex protocol.
   - **DLP+**: Tn5-based microfluidic, **>10,000 cells throughput** at very low coverage per cell.
 - **Duplex sequencing variants**: Y-adaptor (BotSeqS), Tn5-based (META-CS — the only one applicable to single cells), quadruplex adaptor (CODEC), circularized (HiDEF-seq on PacBio, SMM-seq on Illumina). Error rates as low as ~7 × 10⁻¹⁶ for HiDEF-seq.
-- **Errors in scWGA**: allelic dropout (50% chance false-negative), allelic imbalance, single-strand dropout (25% chance false-positive — from ~70,000 daily ssDNA lesions per cell), polymerase errors. **False positives are the dominant problem** because overamplified errors overwhelm true biological signal.
+- **Errors in scWGA**: allelic dropout (50% chance false-negative), allelic imbalance, single-strand dropout (25% chance false-positive *(not found in source clipping — unverified)* — from ~70,000 daily ssDNA lesions per cell), polymerase errors. **False positives are the dominant problem** because overamplified errors overwhelm true biological signal.
 - **CNV callers** (Table 2): Ginkgo, SCOPE, deepCNA (read-depth-only); CHISEL, Alleloscope, HiScanner (read-depth + B-allele frequency for allele-specific copy number).
 - **SNV callers**: SCcaller (MDA), SCAN2 (PTA), duplex-specific callers.
 - **Application axes (Fig 1c)**: cell number vs sequencing depth tradeoff — few cells + deep coverage for SNV/indel signatures, many cells + shallow coverage for lineage tracing and mutation hotspots.
@@ -87,7 +87,7 @@ This is a synthesizing review from the Walsh lab (Boston Children's), which has 
 
 - The clinical promise of unbiased pre-implantation genetic screening from a single embryo cell — currently demonstrated in preprint, not yet validated in clinical trials.
 - Single-cell + single-molecule combined approaches: scDAF-seq is one direction, but is there an analogous "scDNA-seq + chromatin in the same cell" that matches the depth of duplex sequencing while keeping single-cell resolution?
-- Throughput vs depth: DLP+ scales to >10,000 cells at very low per-cell coverage; PTA peaks at ~384 cells per run. The right operating point for a given biological question is rarely benchmarked.
+- Throughput vs depth: DLP+ scales to >10,000 cells at very low per-cell coverage; PTA peaks at ~384 cells per run *(not found in source clipping — unverified)*. The right operating point for a given biological question is rarely benchmarked.
 
 ---
 **Source:** [DOI](https://doi.org/10.1038/s41576-025-00832-3)

@@ -13,7 +13,7 @@ updated: 2026-05-12
 
 ## Definition
 
-PacBio Sequel II/IIe/Revio instruments. **HiFi reads**: ≥5 CCS passes yields >99% per-read accuracy. Read length 5–20 kb. Cost has dropped from $2,000 to $35 per Gb. Kinetic signatures (interpulse distance, pulse width) detect 5mC and 6mA without separate library prep.
+PacBio Sequel II/IIe/Revio instruments. **HiFi reads**: ≥5 CCS passes yields >99% per-read accuracy. Read length 5–20 kb. Kinetic signatures (interpulse distance, pulse width) detect 5mC and 6mA without separate library prep.
 
 ## Why it matters
 
@@ -24,7 +24,7 @@ PacBio Sequel II/IIe/Revio instruments. **HiFi reads**: ≥5 CCS passes yields >
 ## Examples
 
 - [[10-Summaries/swanson-2025-daf-seq]] (DAF-seq / scDAF-seq).
-- [[10-Summaries/abdulhay-2020-samosa]] (SMRT-Tag / SAMOSA-Tag).
+- [[10-Summaries/abdulhay-2020-samosa]] (SAMOSA).
 - [[10-Summaries/liu-2025-long-read-epigenome-review]] reviews PacBio epigenomics.
 
 ## Related

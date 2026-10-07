@@ -35,7 +35,7 @@ sources: [
 Droplet platforms encapsulate one cell + one barcoded bead per droplet, lyse, amplify, and pool for sequencing ([[10-Summaries/gawad-2016-scgenome-review]]). Combinatorial-indexing variants (sci-CAR, SHARE-seq) skip the droplet step entirely, using split-pool barcoding to label cells across hundreds of thousands per experiment ([[10-Summaries/cao-2018-sci-car]]; [[10-Summaries/ma-2020-share-seq]]). The defining feature is **scale**: 10⁴-10⁶ cells per run, enough for cell-type-resolved population biology ([[10-Summaries/baysoy-2023-multiomics-landscape]]).
 
 The defining cost is **per-cell depth**. Droplet scDNA-seq typically reads either:
-- A handful of targeted loci with high allele recovery (Tapestri ~50-300 amplicons per cell at ~95% recovery, [[10-Summaries/pellegrino-2018-tapestri]]).
+- A handful of targeted loci with high allele recovery (Tapestri, up to 62 disease-relevant loci across >16,000 cells, [[10-Summaries/pellegrino-2018-tapestri]]).
 - Sparse genome-wide coverage with high allelic dropout (10x CNV at ~0.1× per cell, [[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
 The droplet architecture **cannot** read per-fiber, per-base accessibility or methylation patterns simultaneously with genotype — the amplification step destroys the original-molecule context ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
@@ -44,12 +44,12 @@ The droplet architecture **cannot** read per-fiber, per-base accessibility or me
 
 Single-molecule platforms sequence individual native DNA molecules directly, preserving per-base chemical modifications and per-fiber occupancy patterns ([[10-Summaries/andrewb-2020-science]]; [[10-Summaries/swanson-2025-daf-seq]]). The two dominant chemistries:
 
-- **Methyltransferase stenciling** — Fiber-seq (m6A on accessible adenines, [[10-Summaries/andrewb-2020-science]]), SAMOSA (m6A from EcoGII, [[10-Summaries/abdulhay-2020-samosa]]), SMRT-Tag ([[10-Summaries/nanda-2024-smrt-tag]]), DiMeLo-seq (m6A targeted by tethered Dam, [[10-Summaries/altemose-2022-dimelo-seq]]).
+- **Methyltransferase stenciling** — Fiber-seq (m6A on accessible adenines, [[10-Summaries/andrewb-2020-science]]), SAMOSA (m6A from EcoGII, [[10-Summaries/abdulhay-2020-samosa]]), SMRT-Tag ([[10-Summaries/nanda-2024-smrt-tag]]), DiMeLo-seq (m6A deposited by antibody-tethered pA-Hia5, [[10-Summaries/altemose-2022-dimelo-seq]]).
 - **Cytidine deamination** — DAF-seq (sssDddA deaminates accessible C→U, [[10-Summaries/swanson-2025-daf-seq]]).
 
 PacBio HiFi or Oxford Nanopore reads these modifications directly without conversion, yielding per-fiber, per-base accessibility + sequence simultaneously ([[10-Summaries/andrewb-2020-science]]; [[10-Summaries/swanson-2025-daf-seq]]).
 
-The defining feature is **information density per cell**: each fiber tells you genotype, methylation, and accessibility on the same molecule. The defining cost is **throughput**: scDAF-seq published with 10 cells; SAMOSA-Tag with ~10²; SMRT-Tag with low hundreds ([[10-Summaries/swanson-2025-daf-seq]]; [[10-Summaries/abdulhay-2020-samosa]]; [[10-Summaries/nanda-2024-smrt-tag]]).
+The defining feature is **information density per cell**: each fiber tells you genotype, methylation, and accessibility on the same molecule. The defining cost is **throughput**: scDAF-seq published with 12 cells, while SAMOSA-Tag (30–50k nuclei) and SMRT-Tag (≥40 ng, ~7,000 cells) remain bulk-input methods ([[10-Summaries/swanson-2025-daf-seq]]; [[10-Summaries/abdulhay-2020-samosa]]; [[10-Summaries/nanda-2024-smrt-tag]]).
 
 ## Quantitative comparison
 
@@ -79,7 +79,7 @@ The two architectures answer **fundamentally different questions** about the sam
 ### Single-molecule wins when:
 
 - The question is about **per-fiber chromatin states** — does this allele actuate? Is the H1 locus open on the active vs inactive haplotype? ([[10-Summaries/swanson-2025-daf-seq]]).
-- **Repeat-rich or highly variable regions** matter — centromeres, telomeres, rDNAs (only LRS resolves these, [[10-Summaries/andrewb-2020-science]]).
+- **Repeat-rich or highly variable regions** matter — centromeres, telomeres, rDNAs (only LRS resolves these, [[10-Summaries/liu-2025-long-read-epigenome-review]]).
 - **The same molecule must yield multiple measurements** — accessibility + sequence + methylation simultaneously, without separate library preps.
 - **Allele-specific or haplotype-specific signatures** are the readout — e.g., parental-of-origin imprinting at single-fiber resolution ([[10-Summaries/altemose-2022-dimelo-seq]]).
 - **TF footprinting at near-nucleotide resolution** is needed — single-molecule shows binding heterogeneity that bulk averaging smears ([[10-Summaries/doughty-2024-smf-tf]]; [[10-Summaries/pott-2017-elife]]).
@@ -108,7 +108,7 @@ The implication: methods that try to scale single-molecule chemistry to droplet-
 
 For mosaicism research specifically, the choice is usually clear from the biological question:
 
-- **Cell-type-resolved mosaic-mutation burden** in aged tissue → droplet PTA workflows ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]).
+- **Cell-type-resolved mosaic-mutation burden** in aged tissue → PTA single-cell WGS workflows ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]).
 - **Per-fiber consequences of a regulatory mutation** (e.g., does an enhancer SNV ablate actuation on the mutant haplotype?) → single-molecule footprinting ([[10-Summaries/swanson-2025-daf-seq]]).
 - **Both** — currently impossible in one experiment. Combine droplet for population sampling + single-molecule for follow-up mechanistic depth on selected cells.
 

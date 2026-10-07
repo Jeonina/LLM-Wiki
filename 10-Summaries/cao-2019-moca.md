@@ -30,7 +30,7 @@ topics: ["[[single-cell-lineage-tracing]]", "[[computational-methods]]", "[[sing
 - **38 major cell types** from Louvain clustering of 40 clusters (two erythroid clusters merged, one 52%-doublet cluster discarded), then **655 subclusters** by iterative re-clustering, of which 13% were annotated as likely artefacts (>10% predicted doublets), leaving **572 subtypes**. Cell types range from 1,000 (neutrophils) to 144,648 cells (connective tissue progenitors); subtypes from 51 to 65,894.
 - **Marker discovery at scale**: 17,789 of 26,183 genes (68%) differentially expressed across major cell types at 5% FDR; **2,863 cell-type-specific markers** (>2-fold between first- and second-ranked type), a median of 20 markers per subtype. Most were not previously known as markers — e.g. *Tox2*, *Stxbp6*, *Schip1*, *Frmd4b* as notochord markers alongside the known *Shh*, with *Tox2* confirmed by whole-mount *in situ* hybridization at E10.5.
 - **Dynamics visible only across time**: primitive erythroid cells (yolk-sac origin, *Hbb-bh1*) are progressively replaced by the definitive lineage (fetal liver, *Hbb-bs*) and are gone by E13.5. Pseudobulk pseudotime ordering of the 61 embryos shows two prominent gaps (E9.5–E10.5 and E11.5–E12.5).
-- Cross-atlas matching linked 96 cell types of the adult-focused Mouse Cell Atlas to 58 MOCA subtypes and 48 brain-atlas types to 68 MOCA subtypes.
+- Cross-atlas matching linked 96 fetal (E14.5) cell types of the Mouse Cell Atlas to 58 MOCA subtypes and 48 brain-atlas types to 68 MOCA subtypes.
 
 ## Methods / evidence
 

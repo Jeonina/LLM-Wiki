@@ -22,7 +22,7 @@ scDAF-seq measures actuation per fiber, per haplotype, per cell — yielding the
 Two findings from [[10-Summaries/swanson-2025-daf-seq]] are only visible because actuation is measurable per fiber:
 
 1. **Pervasive plasticity.** ~63% of regulatory elements differ in actuation status between two random cells. ~61% differ between haplotypes within the same cell. The intra-cellular and inter-cellular numbers being comparable is a strong claim about how much of regulatory variability is stochastic per fiber rather than programmed per cell state or trans-environment.
-2. **Co-actuation in ~100 kb domains.** Pairs of regulatory elements on the same fiber are preferentially actuated together, with the distance dependence mirroring cohesin loops. This is the first chromosome-length single-molecule confirmation of a long-suspected pattern.
+2. **Co-actuation in ~100 kb domains.** Pairs of regulatory elements on the same fiber are preferentially actuated together, with the distance dependence mirroring cohesin loops. Bulk Fiber-seq had already shown same-fiber co-actuation but was limited to 10–100 kb reads and confounded by trans-factor differences between cells; scDAF-seq controls for this with within-cell pseudo-codependency scores.
 
 ## Variants and refinements
 

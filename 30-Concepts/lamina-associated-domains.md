@@ -9,7 +9,7 @@ updated: 2026-08-10
 
 # Lamina-associated domains (LADs)
 
-> **LADs** are large genomic regions (10 kb – 10 Mb, median ~0.5 Mb) that physically contact the **nuclear lamina** — the meshwork of intermediate-filament lamins (LMNA/B1/B2) lining the inner nuclear membrane ([[10-Summaries/van-steensel-2017-lads-review]]). They cover >35% of the mammalian genome ([[10-Summaries/van-steensel-2017-lads-review]]), are gene-poor, A/T-rich, and transcriptionally repressed ([[10-Summaries/van-steensel-2017-lads-review]]). Mapped originally by bulk DamID and resolved at single-cell level by scDamID ([[10-Summaries/de-luca-2021-scdamid-protocol]]) and scDam&T-seq ([[10-Summaries/rooijers-2019-scdamt-seq]]). Canonical review: [[10-Summaries/van-steensel-2017-lads-review|van Steensel & Belmont 2017]].
+> **LADs** are large genomic regions (10 kb – 10 Mb, median ~0.5 Mb) that physically contact the **nuclear lamina** — the meshwork of intermediate-filament lamins (LMNA/B1/B2) lining the inner nuclear membrane ([[10-Summaries/van-steensel-2017-lads-review]]). They cover more than one-third of the mouse and human genome in individual cell types ([[10-Summaries/van-steensel-2017-lads-review]]), are gene-poor, A/T-rich, and transcriptionally repressed ([[10-Summaries/van-steensel-2017-lads-review]]). Mapped originally by bulk DamID and resolved at single-cell level by scDamID ([[10-Summaries/de-luca-2021-scdamid-protocol]]) and scDam&T-seq ([[10-Summaries/rooijers-2019-scdamt-seq]]). Canonical review: [[10-Summaries/van-steensel-2017-lads-review|van Steensel & Belmont 2017]].
 
 ## Two flavors
 
@@ -23,7 +23,7 @@ This distinction is **load-bearing**: single-cell analysis ([[10-Summaries/rooij
 ## Measurement methods
 
 - **DamID-seq** (bulk) — Dam-LMNB1 fusion → m6A at GATC near lamina → DpnI + sequencing ([[10-Summaries/van-steensel-2017-lads-review]]; [[10-Summaries/de-luca-2021-scdamid-protocol]]).
-- **scDamID** — single-cell version; FACS + 384-well; reveals per-locus NL contact frequency varies cell-to-cell ([[10-Summaries/de-luca-2021-scdamid-protocol]]).
+- **scDamID** — single-cell version; FACS into 96-well plates; reveals per-locus NL contact frequency varies cell-to-cell ([[10-Summaries/de-luca-2021-scdamid-protocol]]).
 - **scDam&T-seq** — adds same-cell transcriptome via IVT linear amplification ([[10-Summaries/rooijers-2019-scdamt-seq]]).
 - **TSA-seq** — proximity labeling via biotin-tyramide radicals; orthogonal NL distance readout (synthesis; described as alternative axis in [[10-Summaries/van-steensel-2017-lads-review]]).
 - **Microscopy / FISH** — direct spatial measurement; low-throughput per locus ([[10-Summaries/van-steensel-2017-lads-review]]).
@@ -42,7 +42,7 @@ In single-cell experiments this collapses to a measurable question: in a given c
 
 - LAD nuclear position is partially randomized after each mitosis ([[10-Summaries/van-steensel-2017-lads-review]]).
 - ~15% of the genome — predominantly cLADs with <1 gene/Mb — acts as robust anchors contacting the NL in nearly every cell ([[10-Summaries/van-steensel-2017-lads-review]]).
-- Detachment of fLADs from the NL precedes transcriptional activation; reattachment correlates with repression ([[10-Summaries/rooijers-2019-scdamt-seq]]).
+- Within a single cell, NL contact of low-CF fLADs is associated with lower expression of their genes (an association; temporal order and causality are not shown) ([[10-Summaries/rooijers-2019-scdamt-seq]]).
 - **Lamin depletion ↑ chromatin conformational heterogeneity** at nearly all genomic separations ([[10-Summaries/mali-2025-conformational-heterogeneity]]), supporting the lamina's role as a structural anchor.
 
 ## Anchoring mechanisms

@@ -30,20 +30,20 @@ topics:
 
 # Fang et al. 2021 — SnapATAC
 
-> Thesis: scATAC-seq analysis pipelines that depend on pre-defined accessibility peaks bias clustering toward abundant cell types and miss rare populations whose signal is too sparse to define peaks. **SnapATAC** discards peaks entirely and instead bins the genome into uniform 5 kb windows, computes pairwise Jaccard similarities between cells, and uses the ensemble **Nyström method** to scale low-rank embedding to a million cells. Applied to 55,592 nuclei from mouse secondary motor cortex (MOp), it discovers ~370,000 candidate cis-regulatory elements across 31 cell populations including subpopulations that constitute <0.1% of cells.
+> Thesis: scATAC-seq analysis pipelines that depend on pre-defined accessibility peaks bias clustering toward abundant cell types and miss rare populations whose signal is too sparse to define peaks. **SnapATAC** discards peaks entirely and instead bins the genome into uniform 5 kb windows, computes pairwise Jaccard similarities between cells, and uses the ensemble **Nyström method** to scale low-rank embedding to a million cells. Applied to 55,592 nuclei from mouse secondary motor cortex (MOs), it discovers ~370,000 candidate cis-regulatory elements across 31 cell populations including subpopulations that constitute <0.1% of cells.
 
 ## Key claims
 
 - **Peak-free representation**: 5 kb bins → binary vectors → Jaccard similarity → regression-normalized for sequencing depth → eigenvector decomposition for dimensionality reduction. No peak-calling step before clustering.
 - **Ensemble Nyström method**: compute embedding on a sampled subset of "landmark" cells, project remaining cells to that embedding. Reduces complexity from O(n²) to scalable in n. Multiple sampling rounds combined via consensus improve reproducibility.
 - **Benchmark**: outperforms LSA and cisTopic on simulated and real scATAC-seq for accuracy (ARI, NMI), sensitivity, scalability, and reproducibility (Wilcoxon p < 0.01 across coverage levels).
-- **Off-peak reads contribute signal**: removing reads outside pre-defined peaks degrades clustering. Off-peak reads correlate with Hi-C compartment-A density — they carry euchromatin signal that distinguishes cell types.
-- **Mouse MOp application**: 31 cell populations, ~370k cREs, identification of rare neuronal subtypes (Sst, Vip, L6b, L6.CT) that alternative methods (LSA, cisTopic) miss.
+- **Off-peak reads contribute signal**: clustering on only the off-peak reads (reads overlapping predefined peaks removed) still recapitulates the major cell types. Off-peak reads correlate with Hi-C compartment-A density — they carry euchromatin signal that distinguishes cell types.
+- **Mouse MOs application**: 31 cell populations, ~370k cREs, identification of rare neuronal subtypes (Sst, Vip, L6b, L6.CT) that alternative methods (LSA, cisTopic) miss.
 - Incorporates Harmony for batch correction, integration with scRNA-seq via Seurat, Cicero-style enhancer-target gene linking via logistic regression on imputed scRNA-seq.
 
 ## Methods / evidence
 
-Snap file format for storing single-cell accessibility. SnapTools for preprocessing (alignment, deduplication, barcode filtering). 5 kb bin size chosen by systematic benchmarking. Comparators: LSA, cisTopic. Datasets: simulated downsampled bulk ATAC-seq from 10 cell types; ~1,400 C1-Fluidigm cells (10 cell types); 4,792 PBMCs; ~80k mouse atlas cells; 9,529 mouse MOp cells; simulated 1 M cells.
+Snap file format for storing single-cell accessibility. SnapTools for preprocessing (alignment, deduplication, barcode filtering). 5 kb bin size chosen by systematic benchmarking. Comparators: LSA, cisTopic. Datasets: simulated downsampled bulk ATAC-seq from 10 cell types; ~1,400 C1-Fluidigm cells (10 cell types); 4,792 PBMCs; ~80k mouse atlas cells; 9,529 mouse MOs (secondary motor cortex) nuclei; simulated 1 M cells.
 
 ## Surprising or load-bearing bits
 

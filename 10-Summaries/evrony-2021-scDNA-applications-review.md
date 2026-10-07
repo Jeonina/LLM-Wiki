@@ -27,7 +27,7 @@ topics:
 
 ## Key claims
 
-- **Fidelity capability**: bulk sequencing error is a constant fraction of coverage, so detection of rare variants is fundamentally floor-limited. scDNA-seq breaks the floor by reading single molecules / single cells where the variant is at 100% rather than at 1/(2N) of the bulk read pool.
+- **Fidelity capability**: bulk sequencing error is a constant fraction of coverage, so detection of rare variants is fundamentally floor-limited. scDNA-seq breaks the floor by reading single molecules / single cells where a somatic variant shows the same read-depth distribution as a germline heterozygous variant rather than appearing at 1/(2N) of the bulk read pool.
 - **Co-presence capability**: only single-cell DNA reading tells you whether two variants are on the same haplotype/cell or different. This is the basis of clonal lineage reconstruction.
 - **Phenotypic association**: linking single-cell genotype to other single-cell readouts (RNA, chromatin, surface protein, spatial location). This is the explicit goal of [[30-Concepts/got]], [[30-Concepts/got-cha]], and methods that pair scDNA with scRNA / scATAC.
 - **Application catalog**: somatic mutation and mosaicism, organismal development, germ cell mutation and development, fertility, cancer, epigenetic regulation, genome organization, microbiology.
@@ -40,8 +40,8 @@ Conceptual/synthesizing review. Reorganizes the scDNA-seq literature around capa
 ## Surprising or load-bearing bits
 
 - **The capabilities framework is the highest-leverage organizing principle for this corpus.** It distinguishes "what does this study need?" from "what does this method do?" — a separation the older technology-organized reviews ([[10-Summaries/gawad-2016-scgenome-review]]) collapse.
-- **No single scDNA-seq method possesses all three capabilities on a genome-wide scale.** Duplex sequencing has fidelity and co-presence within a molecule but loses per-cell assignment; scWGA + scWGS has phenotypic association potential but suffers from fidelity floor due to amplification errors. Method choice is application-driven.
-- **Pre-implantation genetic screening** is highlighted as a clinical application where all three capabilities matter simultaneously and where existing methods struggle.
+- **Different scDNA-seq technologies possess different subsets of the three capabilities, although scDNA-seq as a class is distinguished by its potential to achieve all three on a genome-wide scale.** Duplex sequencing has fidelity and co-presence within a molecule but loses per-cell assignment *(not found in source clipping — unverified)*; scWGA + scWGS has phenotypic association potential but suffers from fidelity floor due to amplification errors. Method choice is application-driven.
+- **Pre-implantation genetic screening** is discussed as a major emerging clinical application (embryo aneuploidy and mutation screening during IVF).
 
 ## Entities mentioned
 

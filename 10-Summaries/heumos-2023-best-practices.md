@@ -25,12 +25,12 @@ topics:
 ## Key claims
 
 - **Quality control** is modality-specific:
-  - **scRNA-seq**: filter low-count cells, high-mito cells; remove ambient RNA (SoupX, CellBender); detect doublets (Scrublet, scDblFinder).
+  - **scRNA-seq**: filter low-count cells, high-mito cells; remove ambient RNA (SoupX, CellBender); detect doublets (e.g. scDblFinder).
   - **scATAC-seq**: TSS enrichment, fragment size distribution, peak count.
   - **CITE-seq (protein)**: handle isotype-control normalization, antibody-derived tag (ADT) contamination.
-- **Normalization**: log-transform for scRNA-seq is the default, but pearson residuals (sctransform v2) are better for highly variable genes; for scATAC-seq use TF-IDF.
+- **Normalization**: log-transform for scRNA-seq is the default, but analytic Pearson residuals perform similarly well in benchmarks; for scATAC-seq the most common approach is peak binarization (direct count modelling has also been suggested), followed by LSI/LDA/spectral dimensionality reduction.
 - **Doublet detection**, **batch correction** (Harmony, scVI, scANVI), **cell-type annotation** (CellTypist, automated reference-mapping) all have benchmarked best-practice choices.
-- **Multimodal integration**: Seurat v4 WNN, totalVI, MOFA. Each has tradeoffs documented through benchmarks.
+- **Multimodal integration**: Seurat v4 WNN, totalVI, MOFA *(not found in source clipping — unverified)*. Each has tradeoffs documented through benchmarks.
 - The recommendations are explicitly tied to *independent* benchmark publications wherever those exist; otherwise, popular methods are listed with explicit caveats.
 
 ## Methods / evidence

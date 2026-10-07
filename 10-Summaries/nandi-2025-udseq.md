@@ -28,18 +28,18 @@ topics:
 
 ## Key claims
 
-- Sperm-DNA benchmark estimates UDSeq error at **~2.5×10⁻⁹ per bp**, well below typical somatic mutation rates and similar to NanoSeq.
+- Sperm-DNA benchmark estimates UDSeq error at **~2.5×10⁻⁹ per bp**, well below typical somatic mutation rates and similar to NanoSeq *(not found in source clipping — unverified)*.
 - **Up to 4× more usable duplex molecules** than prior duplex protocols at matched input — yield is the practical bottleneck of duplex chemistry, and library conversion + ligation efficiency are the two levers.
 - Demonstrated capture of exposure-specific mutational signatures in cell lines and rodent models from heterogeneous, non-clonally-expanded cell populations — i.e., reads mutational-signature biology directly from primary tissue without clonal organoid expansion.
 - Cross-species profiling: works on rodent samples; protocol is publishable as a benchtop method with QC checkpoints (fragment size, ligation yield, conversion rate, duplication rate).
 
 ## Methods / evidence
 
-UDSeq couples random shearing with adapter ligation that places UMIs on both strands, then standard duplex pipeline. Cost-effective relative to fixed-panel duplex assays. Benchmarked in sperm (low expected mutation burden), cancer-cell-line mixtures with known signatures (e.g., aristolochic acid, UV, tobacco), and rodent tissues with known carcinogen exposures.
+UDSeq couples random shearing with adapter ligation that places UMIs on both strands, then standard duplex pipeline. Cost-effective relative to fixed-panel duplex assays. Benchmarked in sperm (low expected mutation burden), cell lines and rodent models with exposure-specific mutational patterns.
 
 ## Surprising or load-bearing bits
 
-- The 100 pg input ceiling is the headline: previous duplex methods (Schmitt-style DS) needed 1–3 μg. This brings duplex within reach of FACS-sorted small populations and biopsy specimens.
+- The 100 pg input ceiling is the headline: previous duplex methods (Schmitt-style DS) needed 1–3 μg *(not found in source clipping — unverified)*. This brings duplex within reach of FACS-sorted small populations and biopsy specimens.
 - Patent-encumbered: Alexandrov lab has filed multiple US provisional applications and one European patent on the chemistry. Worth flagging if anyone in the wiki wants to build on this in industry.
 
 ## Connections to other sources

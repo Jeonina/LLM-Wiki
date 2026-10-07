@@ -15,7 +15,7 @@ updated: 2026-05-11
 
 The geometry of mutation distribution as a function of embryonic timing ([[10-Summaries/campbell-2015-mosaicism-review]] Fig 1):
 
-- **First mitosis** → ~50% of all cells affected. Phenotype often manifests with midline demarcation (CHILD syndrome).
+- **First mitosis** → ~50% of all cells affected. Example: possibly identical twins discordant for a new dominant mutation.
 - **Before left-right determination** → both sides of the body and potentially one or both gonads affected.
 - **After left-right determination** → one side only; at most one gonad affected.
 - **After primordial germ cell (PGC) differentiation** (~24 days post-fertilization, after ~15 mitoses) → confined to somatic *or* germline lineages, never both.
@@ -40,7 +40,7 @@ Inverts the diagnostic question: from the phenotype distribution of a mosaic dis
 
 ## Examples
 
-- CHILD syndrome — midline demarcation indicates first-mitosis mutation.
+- CHILD syndrome — midline demarcation illustrates mutation timing relative to left–right determination.
 - Pallister-Killian syndrome — isochromosome 12p, lethal as constitutional, viable as mosaic.
 - Linear and whorled nevoid hypermelanosis — Blashko lines reflect post-determination clonal migration patterns.
 

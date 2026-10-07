@@ -38,8 +38,8 @@ topics:
   1. **Dam-LMNB1** → lamina contact frequencies; defines per-cell LAD attachment.
   2. **Untethered Dam** → accessible-chromatin proxy; gives sharp peaks at active TSSs/enhancers, 174-bp nucleosome periodicity at CTCF sites, comparable to scNMT-seq at 30× shallower depth.
   3. **Dam-RING1B** → single-cell polycomb (PRC1) binding; recapitulates bulk ChIP-seq genome-wide and on HOX clusters.
-- **Single-cell causal coupling, lamina ↔ transcription.** Genome-wide negative log2FC of expression between Dam-LMNB1 contact vs no-contact states (and the symmetric positive coupling for untethered Dam). Critically, the negative association is restricted to **low-CF facultative LADs (fLADs, H3K27me3-enriched)** — not the H3K9me3-rich constitutive cLADs. Implication: it's the dynamic fLADs that mediate transcriptional responses to NL release, not the static heterochromatin floor.
-- **X-inactivation in single cells.** In differentiating F1 hybrid (129/Sv:CAST/EiJ) mESCs, allelic RING1B enrichment marks the inactive X allele in the same cell where transcription is allelically biased — the earliest measurable XCI event, consistent with Zylicz 2019's H2AK119ub priority over H3K27me3.
+- **Single-cell coupling (association), lamina ↔ transcription.** Genome-wide negative log2FC of expression between Dam-LMNB1 contact vs no-contact states (and the symmetric positive coupling for untethered Dam). Critically, the negative association is restricted to **low-CF facultative LADs (fLADs, H3K27me3-enriched)** — not the H3K9me3-rich constitutive cLADs. Implication: it's the dynamic fLADs that mediate transcriptional responses to NL release, not the static heterochromatin floor.
+- **X-inactivation in single cells.** In differentiating F1 hybrid (129/Sv:CAST/EiJ) mESCs, allelic RING1B enrichment marks the inactive X allele in the same cell where transcription is allelically biased — consistent with H2AK119 ubiquitination being one of the earliest events during X inactivation.
 
 ## Methods / evidence
 
@@ -58,7 +58,7 @@ topics:
 ## Entities mentioned
 
 - [[20-Entities/jop-kind]] — corresponding author; PI of scDamID lineage (Kind 2013, 2015); Hubrecht Institute / Oncode.
-- [[20-Entities/siddharth-dey]] — co-senior; UCSB Chemical Engineering; G&T-seq (Dey 2015) prior work.
+- [[20-Entities/siddharth-dey]] — co-senior; UCSB Chemical Engineering; DR-seq (Dey 2015) prior work.
 - Bas van Steensel — DamID inventor (van Steensel 2000, 2001); ancestral citation chain.
 
 ## Concepts touched

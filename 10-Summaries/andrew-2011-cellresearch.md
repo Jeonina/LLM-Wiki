@@ -8,7 +8,7 @@ created: 2026-05-12
 updated: 2026-05-12
 ---
 
-**Citation:** Bannister et al. (2011) — *Regulation of chromatin by histone modifications (review)* — *Cell Research*. [DOI](https://doi.org/10.1038/cr.2011.22)
+**Citation:** Bannister & Kouzarides (2011) — *Regulation of chromatin by histone modifications (review)* — *Cell Research*. [DOI](https://doi.org/10.1038/cr.2011.22)
 
 # Bannister & Kouzarides 2011 — Regulation of chromatin by histone modifications
 
@@ -25,7 +25,7 @@ This is a comprehensive review; the load-bearing points for the wiki are:
 1. **Histone acetylation**: by HATs (Type A: GNAT, MYST, CBP/p300 families; Type B: scHat1-related). Removed by HDACs (Classes I, II, III/sirtuins, IV). Lysine acetylation neutralizes positive charge → weakens histone-DNA interaction → opens chromatin. H3K56ac in the globular core is functionally distinct from N-terminal tail marks.
 2. **Histone phosphorylation**: on Ser/Thr/Tyr, especially N-terminal tails. Kinases lack site-specific DNA-binding domains as a rule (MAPK1 is an exception). Examples: H3S10ph and H3S28ph by Aurora B at mitosis; H3Y41ph by JAK2.
 3. **Histone methylation**: lysines (mono/di/tri-methyl) by SET-domain HKMTs (e.g., SUV39H1 for H3K9, SET7/9 for H3K4), exception DOT1 (H3K79, no SET domain). Arginines (mono/di-symmetric/di-asymmetric) by PRMTs (PRMT1, 4, 5, 6). Unlike acetylation, methylation does not change residue charge — it acts via reader-protein recruitment.
-4. **Histone demethylases**: LSD1 (FAD-dependent, removes mono/di-methyl), Jumonji-family JmjC demethylases (Fe(II)/α-KG, can remove tri-methyl). Discovery of LSD1 (2004) overturned the dogma that methylation was irreversible.
+4. **Histone demethylases**: LSD1 (FAD-dependent, removes mono/di-methyl), Jumonji-family JmjC demethylases (Fe(II)/α-KG, can remove tri-methyl). LSD1 (2004) was the first lysine demethylase identified; the dogma that methylation is irreversible had already been overturned by the discovery of PADI4-mediated arginine deimination.
 5. **The "histone code" perspective**: combinations of marks specify chromatin states (active enhancers, poised promoters, heterochromatin, etc.) — interpreted by reader-domain proteins (bromodomains for acetyl-lys, chromodomains for methyl-lys, etc.).
 
 ## Why this is in the wiki

@@ -19,7 +19,7 @@ Tn5 is an Escherichia coli transposase. Each transposition introduces a 9-nt gap
 
 - Foundation of ATAC-seq (preferentially cuts open chromatin) and many low-input methods.
 - Single-cell adaptable: pA-Tn5 enables CUT&Tag; concentration tuning enables size control in SMRT-Tag.
-- Limitation: invariant transposon mosaic-end sequence is incompatible with [[40-Topics/duplex-sequencing]] strand discrimination.
+- Limitation: standard Tn5 libraries do not preserve strand pairing for [[40-Topics/duplex-sequencing]], although the Tn5-based META-CS achieves duplex calling in single cells ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
 ## Examples
 

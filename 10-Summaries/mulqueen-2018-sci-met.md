@@ -23,7 +23,7 @@ topics: ["[[dna-methylation]]", "[[single-cell-multiomics]]", "[[scdna-seq]]"]
 ## Key claims
 
 - **Cytosine-depleted adaptors are what makes tagmentation compatible with bisulfite.** Standard Tn5 adaptors contain cytosines that bisulfite would convert, destroying the index. Depleting them lets the first index be installed by transposition into intact nuclei, before any conversion.
-- **The second adaptor goes on after conversion, by random priming** — five rounds, as in classic [[clark-2017-scbs-seq-protocol|scBS-seq]]/PBAT. So sci-MET is a hybrid: indexed tagmentation front end, PBAT back end.
+- **The second adaptor goes on after conversion, by random priming** — two to four rounds, as in classic [[clark-2017-scbs-seq-protocol|scBS-seq]]/PBAT. So sci-MET is a hybrid: indexed tagmentation front end, PBAT back end.
 - **Alignment rate is the real gain: 68 ± 8%** in the three-cell-line experiment (59.9 ± 11.9% for mouse cortex). Prior scWGBS protocols ran at 25 ± 20%; the one prior study exceeding 50% did so by brute force with one well per cell for >6,000 cells. The authors attribute the improvement to transposase-based adaptor incorporation.
 - **Nucleosome depletion method determines the collision rate.** Lithium-3,5-diiodosalicylate (LAND) gave a 22% barcode collision rate — unusable. Crosslinking + SDS (xSDS) gave **7.3%**, in line with other sci- protocols. Collision rate is tunable by nuclei per well.
 - **3,282 single-cell libraries total**, across a GM12878-only 96 × 22 run (708 cells, 33.5% efficiency), a 40 × 22 three-cell-line run (691 cells, 78.5% efficiency), and a 96 × 10 mouse cortex run (606 cells). The `N × D` notation (wells in stage two × pre-indexed nuclei per well) is the throughput algebra.
@@ -42,7 +42,7 @@ Weight: this is a Brief Communication; the biology is a demonstration, not a dis
 
 - **Alignment rate, not cell count, is the scaling bottleneck for scWGBS.** At 25% alignment you pay for four reads to get one. Fixing that is a 4× cost reduction that compounds with every other throughput gain — a less glamorous lever than cell count and a more consequential one.
 - **The LAND-vs-xSDS collision result (22% vs 7.3%) is a reusable warning**: nucleosome depletion chemistry, an apparently upstream sample-prep choice, silently sets the doublet rate of a combinatorial-indexing experiment.
-- **Efficiency varied 33.5% → 78.5% between runs** with no chemistry change noted — the protocol was not yet stable, which is what [[nichols-2022-scimet-v2|sciMETv2]] later addressed.
+- **Efficiency varied 33.5% → 78.5% between runs**, which also differed in nucleosome-depletion chemistry (LAND vs xSDS) — the protocol was not yet stable, which is what [[nichols-2022-scimet-v2|sciMETv2]] later addressed.
 - **1.1% mean CpG coverage is an order of magnitude below [[clark-2017-scbs-seq-protocol|scBS-seq]]'s ~50%.** The two methods are not competing on the same axis: scBS-seq answers "what is this cell's methylome"; sci-MET answers "how many kinds of cell are here."
 - Combining CH-over-100-kb-bins with CG-over-regulatory-regions as *two matrices merged through NMF* is an early instance of within-modality multi-feature integration, before that became standard practice.
 
@@ -69,7 +69,7 @@ Weight: this is a Brief Communication; the biology is a demonstration, not a dis
 
 ## Open questions
 
-- **Efficiency instability (33.5% vs 78.5%) is unexplained** in the text.
+- **Efficiency difference (33.5% vs 78.5%) is confounded** with nucleosome-depletion chemistry (LAND vs xSDS) and run design; not separately analysed.
 - Whether the low per-cell coverage supports anything beyond cell typing — e.g. DMR discovery de novo rather than DMR *matching* — is not tested.
 - The xSDS crosslinking step is incompatible with several downstream co-assays; whether sci-MET can be multiplexed with transcriptome or accessibility readouts is unaddressed.
 

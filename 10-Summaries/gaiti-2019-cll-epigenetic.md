@@ -21,7 +21,7 @@ updated: 2026-05-12
 ## Method
 
 1. Multiplexed scRRBS protocol — pooled barcoded single-cell libraries.
-2. 18 samples: 3 healthy donor B-cell populations (NBC + intMBC + hiMBC + B), 12 CLL patients (7 M-CLL IGHV-mutated, 5 U-CLL unmutated).
+2. 18 samples: 6 healthy donors (B cells across the maturation spectrum), 12 CLL patients (7 M-CLL IGHV-mutated, 5 U-CLL unmutated).
 3. **Epimutation rate** = proportion of discordant reads (PDR) per CpG per cell — captures cell-to-cell methylation variation.
 4. **Four-gamete test** at single-CpG resolution to identify low-epimutation CpGs (likely under active regulatory protection).
 5. Joint single-cell DNA methylation + RNA-seq (separate aliquots from same cell, via G&T-seq-style separation) integration on 4 patients.
@@ -29,11 +29,11 @@ updated: 2026-05-12
 
 ## Key claims
 
-- **CLL has higher PDR (~0.28) than normal B cells (~0.20)**, P = 0.0003. Cell-to-cell variability in PDR is *lower* in CLL than normal B → consistent with shared clonal origin.
-- Low-epimutation CpGs are enriched at TF binding motifs (SP1, SP2, KLF5, HINFP, NFKB1, MYBL1, NFATC1, FOXC1) → preserved methylation under regulatory selection.
+- **CLL has higher PDR than normal B cells**, P = 0.0003. Cell-to-cell variability in PDR is *lower* in CLL than normal B → consistent with shared clonal origin.
+- Low-epimutation CpGs are enriched at TF binding motifs (SP1, HINFP, NFKB1, MYBL1) → preserved methylation under regulatory selection.
 - **Higher epimutation rate ↔ higher transcriptional entropy** in CLL: integrative scDNAme + scRNAseq shows the most epimutation-prone cells also have most expression heterogeneity.
-- **Methylation-based lineage trees** of CLL show **earlier branching + rapid drift** vs normal B cells; max tree depth in CLL ~3× normal; Robinson-Foulds distance and patristic distance both elevated.
-- **SF3B1-mutated subclones in CLL12** segregate into a distinct methylation clade with estimated emergence at 2,180 ± 219 days (~6 years) before sampling — clonal-evolution timing from methylation alone.
+- **Methylation-based lineage trees** of CLL show **earlier branching + rapid drift** vs normal B cells; CLL trees have a lower maximum tree depth but higher patristic distances than normal B cell trees; Robinson-Foulds distance and patristic distance both elevated.
+- **SF3B1-mutated subclones in CLL12** segregate into a distinct methylation clade with subclonal divergence estimated at 2,180 ± 219 days after the emergence of the parental clone — clonal-evolution timing from methylation alone.
 - After ibrutinib treatment, lymphocytosis-displaced cells are preferentially expelled from lymph nodes — methylation lineages identify the displaced subsets.
 
 ## Surprising / load-bearing for the review

@@ -34,8 +34,8 @@ Histone marks are not independent of other regulatory axes:
 ## Examples
 
 - LLPS-competent IDR fusions (NUP98-HOXA9) induce H3K27ac at off-target proto-oncogenes ([[10-Summaries/ahn-2021-llps-cancer-looping]]).
-- Polycomb (H3K27me3) occupancy decoupled from gene expression in mouse embryoid bodies, profiled by EpiDamID ([[10-Summaries/rooijers-2019-scdamt-seq]]).
-- scCUT&Tag profiles H3K4me3/H3K27me3 transitions during oligodendrocyte differentiation in mouse brain ([[10-Summaries/bartosovic-2021-sccut-tag]]).
+- Polycomb (RING1B/PRC1) occupancy measured jointly with the transcriptome in single mESCs by scDam&T-seq, with allelic RING1B enrichment marking the inactive X ([[10-Summaries/rooijers-2019-scdamt-seq]]).
+- scCUT&Tag profiles active (H3K4me3, H3K27ac, H3K36me3) and repressive (H3K27me3) marks plus OLIG2 and RAD21 occupancy across tens of thousands of mouse CNS cells ([[10-Summaries/bartosovic-2021-sccut-tag]]).
 
 ## Methods, by lineage
 
@@ -72,7 +72,7 @@ Histone marks are not independent of other regulatory axes:
 ### Enhancer / promoter biology
 - [[10-Summaries/creyghton-2010-h3k27ac-enhancers]] — Creyghton 2010. H3K27ac discriminates active from poised enhancers.
 - [[10-Summaries/ahn-2021-llps-cancer-looping]] — IDR-fusion-driven aberrant H3K27ac at oncogenes.
-- [[10-Summaries/rooijers-2019-scdamt-seq]] — EpiDamID; Polycomb occupancy vs expression decoupling.
+- [[10-Summaries/rooijers-2019-scdamt-seq]] — scDam&T-seq; single-cell lamina contact, accessibility or Polycomb (RING1B) occupancy jointly with the transcriptome.
 
 ### Computational prediction
 - [[10-Summaries/yin-2019-deephistone]] — Yin/Jiang 2019. CNN predicts 7 marks from DNA + DNase-seq.
@@ -88,8 +88,8 @@ Histone marks are not independent of other regulatory axes:
 
 ## Open questions
 
-- Per-cell sensitivity is the recurring constraint: scCUT&Tag yields ~1k–2k peaks per cell at standard depth, vs >24k peaks in bulk pooled ([[10-Summaries/bartosovic-2021-sccut-tag]]). How much can linear amplification or library optimization improve this?
-- Active vs repressive mark mutual exclusivity at the single-cell level: bulk data show clean separation, but scChIX-seq results show **cell-type-specific** transitions at individual loci that bulk averages obscure ([[10-Summaries/yeung-2023-scchix-seq]]).
+- Per-cell sensitivity is the recurring constraint: single-cell histone-modification profiling has lagged scRNA-seq and scATAC-seq in sensitivity and throughput ([[10-Summaries/bartosovic-2021-sccut-tag]]). How much can linear amplification or library optimization improve this?
+- Active vs repressive mark mutual exclusivity at the single-cell level: bulk data show clean separation, but scChIX-seq results show H3K27me3/H3K9me3 transitions at individual loci — cell-type-independent at *Bcl2*, cell-type-specific at *Crim1* — that bulk averages obscure ([[10-Summaries/yeung-2023-scchix-seq]]).
 - How redundant are histone marks with LAD position? H3K9me2/3 anchors LADs ([[10-Summaries/van-steensel-2017-lads-review]]) — does any histone mark add information once you know LAD status?
 
 ## Additions — 2026-08-10 ingest

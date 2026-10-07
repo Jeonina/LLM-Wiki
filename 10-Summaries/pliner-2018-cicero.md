@@ -14,6 +14,8 @@ concepts: ["[[chromatin-accessibility]]", "[[scatac-seq]]", "[[cis-regulatory-el
 topics: ["[[chromatin-architecture]]", "[[computational-methods]]", "[[single-cell-multiomics]]"]
 ---
 
+> **Update 2026-10-07:** the source clipping now contains the full text (Results and STAR Methods). The caveat below describes what this summary was originally written from; the summary should be re-written from the full text.
+
 > ⚠️ **Source caveat.** The clipping in `00-Sources/` captured the article front matter — journal metadata, related-article links, highlights and keywords — but not the Results or Methods. The claims below are limited to what the source states; the co-accessibility statistic, benchmarks against Hi-C/ChIA-PET, and quantitative results are **not** in this source and are deliberately not asserted. Re-clip the full text before extending this page.
 
 **Citation:** Pliner et al. (2018) — *Cicero predicts cis-regulatory DNA interactions from single-cell chromatin accessibility data* — *Molecular Cell* 71, 858–871.e8. [DOI](https://doi.org/10.1016/j.molcel.2018.06.044)
@@ -57,7 +59,7 @@ Not available from this source clipping beyond the myoblast-differentiation appl
 
 ## Connections to other sources
 
-- Assay and atlas context: [[cusanovich-2015-sciatac]]; same-issue companion atlas from the same group.
+- Assay and atlas context: [[cusanovich-2015-sciatac]]; companion atlas from the same group (Cusanovich et al., Cell 2018).
 - Consumed as a component by [[kamimoto-2023-celloracle]]; parallel approach in [[bravo-2023-scenicplus]].
 - The conformation-based route to the same question: [[lieberman-aiden-2009-hic]], [[dixon-2012-tads]], [[durand-2016-juicer]].
 - Region-to-gene annotation alternative: [[mclean-2010-great]].

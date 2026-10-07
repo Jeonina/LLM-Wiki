@@ -15,7 +15,7 @@ updated: 2026-05-12
 
 - Loss of UHRF1 causes genome-wide hypomethylation.
 - UHRF1 also binds H3K9me3 (via TTD domain), coupling DNA methylation to heterochromatin.
-- Direct UHRF1/H3K9me3 interaction explains why H3K9me3-marked late-replicating regions take longer to remethylate after S phase ([[10-Summaries/geisenberger-2025-scepi2-seq]]).
+- H3K9me3-marked late-replicating regions take longest to remethylate after S phase, which scEpi2-seq attributes to late replication timing rather than the histone mark per se ([[10-Summaries/geisenberger-2025-scepi2-seq]]); a UHRF1-mediated contribution is (synthesis).
 
 ## Related
 

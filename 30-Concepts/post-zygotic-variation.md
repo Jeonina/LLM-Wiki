@@ -32,7 +32,7 @@ Post-zygotic variation is the molecular substrate of [[40-Topics/somatic-mosaici
 ## Variants and refinements
 
 - **Single-base** (SNV) vs **structural** (indel, CNV, SV) — different detection requirements.
-- **Mosaic VAF** — variant allele frequency depends on when and where the mutation arose; ranges from <1% (late, single lineage) to ~50% (first mitosis).
+- **Mosaic VAF** — variant allele frequency depends on when and where the mutation arose; ranges from <1% (late, single lineage) to ~25% (first mitosis; ~50% of cells carry the heterozygous variant).
 
 ## Contested points
 
@@ -41,7 +41,7 @@ Post-zygotic variation is the molecular substrate of [[40-Topics/somatic-mosaici
 ## Examples
 
 - Mosaic CALR or JAK2 mutations in MPN clonal hematopoiesis ([[10-Summaries/izzo-2024-got-cha]]).
-- CHILD syndrome (first-mitosis post-zygotic mutation) — half-body phenotype.
+- CHILD syndrome — midline-demarcated (half-body) phenotype illustrating mutation timing relative to left–right axis determination ([[10-Summaries/campbell-2015-mosaicism-review]]).
 
 ## Related
 

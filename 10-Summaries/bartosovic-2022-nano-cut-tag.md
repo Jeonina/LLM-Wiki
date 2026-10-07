@@ -21,7 +21,7 @@ topics:
   - "[[40-Topics/single-cell-multiomics]]"
 ---
 
-**Citation:** Bartosovic et al. (2022) — *nano-CUT&Tag: multimodal single-cell chromatin profiling with nanobody-Tn5 fusions* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-022-01535-4)
+**Citation:** Bartosovic & Castelo-Branco (2022) — *nano-CUT&Tag: multimodal single-cell chromatin profiling with nanobody-Tn5 fusions* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-022-01535-4)
 
 # Bartosovic et al. 2022 — nano-CUT&Tag (nano-CT)
 
@@ -29,7 +29,7 @@ topics:
 
 ## Key claims (abstract + intro)
 
-- **Chemistry**: nanobodies (single-domain antibody fragments) fused directly to Tn5 — eliminates the secondary antibody step, reduces background.
+- **Chemistry**: nanobodies (single-domain antibody fragments) fused directly to Tn5 — eliminates the secondary antibody step (at the cost of somewhat higher background than scCUT&Tag).
 - **Multimodal**: simultaneously profile ATAC + H3K27ac + H3K27me3 in same cell.
 - **Sensitivity**: significantly more fragments per cell than unimodal scCUT&Tag.
 - **Low input**: compatible with 25,000–200,000 starting cells.

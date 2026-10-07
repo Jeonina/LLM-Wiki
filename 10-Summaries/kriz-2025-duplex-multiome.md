@@ -21,9 +21,9 @@ updated: 2026-05-12
 ## Mechanism
 
 1. **Strand-tagging in snATAC-seq library construction**: introduce duplex-consensus barcoding into the 10x Multiome snATAC arm so both strands of each DNA molecule are independently sequenced and reconciled.
-2. **Duplex consensus collapses sequencing error >10,000-fold** by requiring both strands to agree on each base call.
+2. **Duplex consensus collapses sequencing error >10,000-fold *(not found in source clipping — unverified)*** by requiring both strands to agree on each base call.
 3. Per-nucleus output: (a) sSNV calls at duplex-grade accuracy, (b) chromatin accessibility peaks (standard snATAC), (c) gene-expression profile (standard snRNA-seq).
-4. Cell-line mixing validation: 98%/2% cell-line mixture → identifies sSNVs present in **2% of cells with 92% precision** and recovers known sSNV mutational spectra; reveals unexpected subclonal lineages.
+4. Cell-line mixing validation: 98%/2% cell-line mixture → identifies sSNVs present in **2% of cells with 92% precision** *(not found in source clipping — unverified)* and recovers known sSNV mutational spectra; reveals unexpected subclonal lineages.
 5. Human postmortem brain application: >51,400 nuclei across multiple individuals.
 
 ## Key claims

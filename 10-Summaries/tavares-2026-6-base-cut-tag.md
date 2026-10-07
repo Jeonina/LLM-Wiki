@@ -45,7 +45,7 @@ E14TG2A mESCs serum/LIF. pA-Tn5-ME2U transposome, primary antibody targeting (H3
 
 - Bisulfite-based methods couldn't access this question because (a) bisulfite degrades DNA from the few molecules CUT&Tag produces and (b) bisulfite conflates 5mC and 5hmC. 6B-C&T removes both constraints.
 - The H3K4me1 + 5mC/5hmC signature **functionally distinguishes** active, primed, and poised enhancers — extending the well-known H3K4me1-marks-all-enhancers fact with a methylation-state coordinate.
-- This is methodological dependence on a vendor kit (biomodal evoC), which is also used in [[10-Summaries/abdulhay-2020-samosa]]'s SMRT-Tag — biomodal's chemistry is the underlying engine.
+- This is methodological dependence on a vendor kit (biomodal evoC) — biomodal's chemistry is the underlying engine.
 
 ## Connections to other sources
 

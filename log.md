@@ -4,6 +4,41 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+# 2026-10-07 — Maintenance: full fact-check against sources (summaries → synthesis pages)
+
+**Trigger.** User asked for a correctness pass before ingesting a new batch of sources.
+
+**1. Mechanical lint.** 0 broken wikilinks, 0 orphans. Sub-index drift fixed: 9 entities (Adey, Chang Lu, Chongyuan Luo, Ferhat Ay, Ming Hu, Pevzner, Keleş, Yijun Ruan, Zhana Duren) and 5 concepts (chia-pet, chromatin-loop, multi-way-chromatin-interaction, reference-atlas-mapping, single-cell-genome-assembly) added to their `index.md`. Two summaries repointed to re-clipped sources the user replaced today ([[10-Summaries/shao-2025-scDNA-mosaicism-review]], [[10-Summaries/valecha-2022-scsnv-review]]).
+
+**2. Citation metadata (Crossref, 294/296 DOIs).** Wrong first author: [[10-Summaries/cardilla-2025-spatial-methylome]] is **Lee et al. 2025** (Cardilla is 3rd author); [[10-Summaries/ludwig-2020-mtscatac-seq]] is **Lareau, Ludwig et al. 2021** (Lareau was missing from the author list). [[10-Summaries/lodato-2017-aging-neurons]]: title had an inserted word ("somatic"); year set to 2018 to match Bae from the same *Science* issue. Slugs kept, aliases added, index/topic/note mentions updated. Also: 21 two-author/single-author papers cited as "et al." fixed; 6 missing journals filled; 10 run-together journal names fixed; Kapadia & Goodell journal string repaired.
+
+**3. Summaries vs source (all 298).** Ten read-only verifier agents checked every numeric, method, comparison, attribution and priority claim against the clipping (grep-targeted). **342 edits across 159 summaries**: contradictions corrected to the source wording; specific claims absent from the clipping either rewritten to what the source says or marked *(not found in source clipping — unverified)*; unsupported "first" claims removed. Representative errors: Mallory 2020 listed three tools it never reviews (ACE, CONICS, SCYN) and a wrong 7-step pipeline; scGPT was said to beat Geneformer (not benchmarked); LIANTI's second false-positive class (A→G, not G→T) and its artifact compared with MDA, not MALBAC; NanoSeq *avoids* end repair; Monopogen ~100 K (not ~100) new SNVs; snATAC SnapATAC dataset is MOs, not MOp; Bae 2022 brain cohort is bulk WGS, not PTA; Wang 2023 review — CNV has *no* effect on methylation. Pages whose clipping is now full text but whose summary was written from front matter are flagged for re-summarizing: [[10-Summaries/welch-2019-liger]], [[10-Summaries/pliner-2018-cicero]], [[10-Summaries/sashittal-2023-startle]], [[10-Summaries/peng-2012-idba-ud]], [[10-Summaries/gong-2022-dclear]]. [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] has a page-level note: its clipping holds only references, so all specifics are unverified.
+
+**4. Synthesis pages (215 concept/topic/note pages).** Eight agents checked each cited claim against the *corrected* summaries, using a digest of the 342 corrections to catch propagation. **206 edits across 86 pages** — most were propagated errors (e.g. PTA "384 cells/run", Duplex-Multiome "2% VAF at 92% precision" and ">10,000-fold" error reduction, Fiber-seq "30%/70% CTCF" and "R²=0.84", CH "10–15% of adults over 70" and "DNMT3A ~40%", CHILD syndrome as a first-mitosis example) plus wrong-slug citations (ProSolo cited to the uliCUT&RUN summary; IGS summary cited for Fiber-seq; Signac cited for WNN) and misnamed authors (GoT-ChA "Franco 2024" → Izzo; DAF-seq "Elliott 2025" → Swanson). Unsourced numbers that were plausible but uncited were relabelled *(synthesis)* rather than deleted.
+
+**Kept on purpose.** Three proposed deletions of the "49% of cleavage-stage embryo cells aneuploid (DOP-PCR)" claim were **not** applied: the user's re-clipped Shao 2025 full text contains it. Affiliations that are absent from clippings but correct (e.g. Goodell–Baylor, Surani–Gurdon) were left.
+
+**Open.** Shao 2025 and Valecha 2022 were re-clipped as full text today — their summaries were verified against the old partial clippings and should be refreshed. Shao Table 1 (scWGA costs) is not rendered in the clipping; cost figures on [[30-Concepts/pta]] and [[30-Concepts/scwga]] are flagged to verify against the PDF. New sources now in `00-Sources/papers/` (~69) are not yet ingested. Working files: `.scratch/verify/`.
+
+---
+
+# 2026-08-17 — Maintenance: duplicate summary merge (Vandereyken 2023)
+
+**Question asked.** Which of the review-tagged summaries are worth citing where in the manuscript draft (`60-Draft/sections/`) — figures, framework, numbers, limitations. Answered in-session; a review-citation plan was drafted but not yet promoted to `50-Notes/`.
+
+**Defect found.** The same paper — Vandereyken, Sifrim, Thienpont & Voet 2023, *Methods and applications for single-cell and spatial multi-omics*, NRG 24:494–515, DOI `10.1038/s41576-023-00580-2` — had **two summary pages** from two separate source clippings in `00-Sources/papers/` (one ingested 2026-05-11, one 2026-08-10). This inflated the review count to 44 where the true count is 43 papers / 37 in the user's canonical manuscript list.
+
+**Resolution.** Merged into the canonical slug [[10-Summaries/vandereyken-2023-scmultiomics-review]] (18 inbound links vs 8 for the other). The 2026-08-10 body was richer and became the base; unique content from the 2026-05-11 page was folded in (the vertical/horizontal/diagonal integration toolkit with Seurat WNN / MOFA / totalVI / Conos, the Baysoy-complementarity note, method-level references to GoT / GoT-ChA / DAF-seq, and two open questions on scaling plate-based G&T-seq and on when to skip WGA). Frontmatter now lists both source clippings, merged tags, and an alias for the retired slug.
+
+- **Deleted:** `10-Summaries/vandereyken-2023-spatial-multiomics.md`
+- **Links redirected (7 pages):** [[10-Summaries/biancalani-2021-tangram]], [[10-Summaries/kleshchevnikov-2022-cell2location]], [[10-Summaries/welch-2019-liger]], [[10-Summaries/debnath-2026-ison]], [[10-Summaries/index]], [[50-Notes/open-questions]], [[40-Topics/single-cell-multiomics]]
+- **Not touched:** the 2026-08-10 log entry below still names the retired slug. `log.md` is append-only, so the reference stands as history; the alias on the merged page keeps it resolving in Obsidian.
+- **Left as-is:** both clippings remain in `00-Sources/papers/` — sources are immutable, and the duplication there is a record of how the paper was ingested twice, not an error to fix.
+
+**Also noted.** Six review-tagged summaries sit outside the manuscript's 37-paper list: [[10-Summaries/argelaguet-2021-integration-principles]], [[10-Summaries/mcconnell-2017-science]], [[10-Summaries/mallory-2020-cna-review]], [[10-Summaries/spielmann-2018-sv-3d-genome]], [[10-Summaries/li-2014-chia-pet]], [[10-Summaries/bersaglieri-2019-cells]]. Flagged to the user as candidate additions rather than resolved here.
+
+---
+
 # 2026-08-17 — Ingest: 23 clippings (tumour/lineage phylogenetics, integration & reference mapping, epimutation clocks)
 
 **Sources ingested (23).** Three clusters, two of which were near-absent from the corpus.

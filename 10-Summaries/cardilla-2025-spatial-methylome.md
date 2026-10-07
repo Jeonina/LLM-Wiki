@@ -1,9 +1,10 @@
 ---
 type: summary
-title: "Cardilla et al. 2025 — Spatial joint profiling of DNA methylome and transcriptome in tissues"
+title: "Lee et al. 2025 — Spatial joint profiling of DNA methylome and transcriptome in tissues"
+aliases: ["Lee 2025 spatial methylome", "Cardilla 2025"]
 source: "[[00-Sources/papers/Spatial joint profiling of DNA methylome and transcriptome in tissues]]"
 source_kind: paper
-author: "Angelysia Cardilla, ... Wanding Zhou, Yanxiang Deng (corresponding)"
+author: "Chin Nien Lee, Hongxiang Fu, Angelysia Cardilla, Wanding Zhou, Yanxiang Deng (corresponding)"
 published: 2025-09-03
 ingested: 2026-05-18
 ingest_depth: abstract+intro
@@ -18,11 +19,13 @@ concepts:
 topics:
 ---
 
-**Citation:** Cardilla et al. (2025) — *Spatial joint profiling of DNA methylome and transcriptome in tissues* — *Nature*. [DOI](https://doi.org/10.1038/s41586-025-09478-x)
+**Citation:** Lee et al. (2025) — *Spatial joint profiling of DNA methylome and transcriptome in tissues* — *Nature*. [DOI](https://doi.org/10.1038/s41586-025-09478-x)
 
-# Cardilla et al. 2025 — spatial DNA methylome + transcriptome
+> **Attribution corrected 2026-10-07:** first author is Chin Nien Lee (Crossref and the source clipping agree); Cardilla is third author. The slug `cardilla-2025-…` is kept so existing links resolve.
 
-> Thesis: spatial omics has covered transcriptome and protein but not DNA methylation, the canonical epigenetic regulator. Cardilla et al. introduce a method for **whole-genome spatial co-profiling of DNA methylation and the transcriptome** in the same tissue section at **near single-cell resolution**. Applied to mouse embryogenesis and postnatal mouse brain.
+# Lee et al. 2025 — spatial DNA methylome + transcriptome
+
+> Thesis: spatial omics has covered transcriptome and protein but not DNA methylation, the canonical epigenetic regulator. Lee et al. introduce a method for **whole-genome spatial co-profiling of DNA methylation and the transcriptome** in the same tissue section at **near single-cell resolution**. Applied to mouse embryogenesis and postnatal mouse brain.
 
 ## Key claims (abstract + intro)
 

@@ -8,7 +8,7 @@ created: 2026-05-12
 updated: 2026-05-12
 ---
 
-**Citation:** Macaulay et al. (2015) — *G&T-seq: Parallel sequencing of single-cell genomes and transcriptomes* — *?*. [DOI](https://doi.org/10.1038/nmeth.3370)
+**Citation:** Macaulay et al. (2015) — *G&T-seq: Parallel sequencing of single-cell genomes and transcriptomes* — *Nature Methods*. [DOI](https://doi.org/10.1038/nmeth.3370)
 
 # Macaulay et al. 2015 — G&T-seq
 
@@ -30,9 +30,9 @@ G&T-seq physically **separates** polyadenylated mRNA from genomic DNA in a singl
 
 1. **>220 single cells** profiled across mouse and human. QC pass rate 75.6%.
 2. **HCC38 + HCC38-BL benchmarking** (patient-matched breast cancer + lymphoblastoid lines): CNV concordance with bulk maintained; PicoPlex outperforms MDA for CNV; MDA outperforms PicoPlex for SNV discovery and breadth (~78% genome covered, 33× depth on HiSeq X).
-3. **Subclonal trisomy 11 in HCC38-BL** detected at 10% frequency by G&T-seq, confirmed independently by FISH — first demonstration of single-cell joint detection of an aneuploid subclone.
+3. **Subclonal trisomy 11 in HCC38-BL** detected at 10% frequency by G&T-seq, confirmed independently by FISH — first demonstration of single-cell joint detection of an aneuploid subclone *(not found in source clipping — unverified)*.
 4. **Reversine-treated mouse 8-cell embryos**: reciprocal aneuploidies between sister blastomeres, with **concordant chromosome-wide expression dosage** detected in the *same* cells. First evidence that aneuploidy-driven dosage effects are established within a single division.
-5. **Trisomy-21 iPSC-derived neurons**: trisomy detected in 95% of cells (18/19), with elevated chromosome-21 expression. Genome-wide chromatin/expression effects on other chromosomes consistent with prior literature on Down syndrome dysregulation.
+5. **Trisomy-21 iPSC-derived neurons**: trisomy detected in 95% of cells (18/19), with elevated chromosome-21 expression. Chromosome-wide expression variation was also seen on other autosomes, which the authors attribute ambiguously to trisomy-21 trans effects, differing genetic backgrounds of the lines, or chromatin changes.
 6. **MTAP–PCDH7 fusion** in 21% of HCC38 cells confirmed at *both* RNA and DNA levels in the same cells, with PacBio long-read sequencing resolving full fusion transcript structure.
 7. **SNV detection from gDNA + RNA in the same cell**: 86–90% concordance with bulk for DNA SNVs; 88.7–96.8% of concordant DNA variants in transcribed regions also detected in RNA.
 

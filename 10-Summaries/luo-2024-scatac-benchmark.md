@@ -12,7 +12,7 @@ updated: 2026-05-13
 
 Luo, Germain, Robinson and von Meyenn (ETH Zurich, SIB) benchmarked eight feature-engineering pipelines derived from five major scATAC-seq analysis methods on their ability to discover and discriminate cell types. The benchmark spans 10 metrics across cell embedding, shared-nearest-neighbor graph, and partition levels.
 
-Methods tested cover four paradigms: (i) NLP-derived (Signac LSI/TF-IDF+SVD, ArchR iterative LSI, cisTopic LDA); (ii) graph/nonlinear (SnapATAC diffusion maps, SnapATAC2 Laplacian eigenmaps); (iii) feature-aggregation (BROCKMAN k-mer, SCRAT motif/DHS, Cicero gene-activity); (iv) neural network (PeakVI VAE, scBasset CNN, CellSpace).
+Methods tested: Signac (LSI) and ArchR (iterative LSI), SnapATAC (diffusion maps), SnapATAC2 (Laplacian eigenmaps), and a feature-aggregation approach (8 pipelines from 5 methods). cisTopic, BROCKMAN, SCRAT, Cicero, PeakVI, scBasset and CellSpace are only surveyed in the background.
 
 Key findings: **feature-aggregation, SnapATAC and SnapATAC2 outperform latent-semantic-based methods** for cell-type discovery. SnapATAC and SnapATAC2 are preferred for datasets with complex cell-type structures. SnapATAC2 and ArchR are most scalable for large datasets.
 

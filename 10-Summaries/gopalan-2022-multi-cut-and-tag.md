@@ -36,7 +36,7 @@ topics: ["[[histone-modifications]]"]
 A protocol, so its weight is procedural rather than evidentiary. Two details are load-bearing for anyone judging feasibility:
 
 1. **Pre-conjugation with washing away of unbound antibody and adapter is essential** — without it, barcodes would exchange between transposomes and epitope assignment would be meaningless. The barcode-to-epitope mapping is only as good as that purification step.
-2. **Home-made pA-Tn5 is a hard requirement.** Commercial pA-Tn5 comes preloaded with standard adapters. Any lab wanting Multi-CUT&Tag must run a four-day protein prep with ion-exchange polishing — a real adoption barrier that partly explains why barcoded multi-epitope CUT&Tag has not displaced single-target scCUT&Tag.
+2. **Home-made pA-Tn5 is a hard requirement.** Commercial pA-Tn5 comes preloaded with standard adapters. *(not found in source clipping — unverified)* Any lab wanting Multi-CUT&Tag must run a four-day protein prep with ion-exchange polishing — a real adoption barrier that partly explains why barcoded multi-epitope CUT&Tag has not displaced single-target scCUT&Tag.
 
 ## Surprising or load-bearing bits
 
@@ -54,7 +54,7 @@ A protocol, so its weight is procedural rather than evidentiary. Two details are
 ## Connections to other sources
 
 - Downstream of [[kaya-okur-2019-cut-and-tag]]; the multi-epitope branch of the CUT&Tag family alongside [[wu-2021-sccut-tag]] and [[zhang-2022-sccut-tag-pro]].
-- [[yeung-2023-scchix-seq]] solves the same problem by a different mechanism; [[bartosovic-2022-nano-cut-tag]] adds a transcriptome instead of a second mark.
+- [[yeung-2023-scchix-seq]] solves the same problem by a different mechanism; [[bartosovic-2022-nano-cut-tag]] multiplexes two histone marks plus ATAC via nanobody-Tn5 fusions.
 - The nuclease-based counterpart discussion lives at [[mnase-vs-tn5-chromatin]].
 - Named as an existing method in [[heinz-2010-homer]]'s open-question about single-cell collaborative binding.
 

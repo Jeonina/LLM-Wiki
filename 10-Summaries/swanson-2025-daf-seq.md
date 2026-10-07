@@ -42,11 +42,11 @@ topics:
   - Two cells differ in ~63% of regulatory-element actuation states.
   - Two haplotypes within the same cell differ in ~61% — i.e. cell-to-cell trans-environment differences contribute only marginally.
   - Highly accessible / highly expressed elements are more consistent (~9–16% disagreement).
-- **Co-actuation along the same fiber is distance-dependent, mirroring cohesin-mediated loops** (~100 kb domains). This is the first chromosome-length single-molecule confirmation of preferential same-fiber co-actuation; bulk Fiber-seq could only suggest it.
+- **Co-actuation along the same fiber is distance-dependent, mirroring cohesin-mediated loops** (~100 kb domains). Bulk Fiber-seq had shown same-fiber co-actuation but was limited to 10–100 kb reads and confounded by trans-factor differences between cells; scDAF-seq controls for this with within-cell pseudo-codependency scores.
 
 ## Methods / evidence
 
-Recombinant SsDddA expressed in bacteria. Mass-spec for activity. Long-read PacBio sequencing for deamination patterns. PTA from ResolveServices for whole-genome amplification of single cells (preserves the deamination pattern as a strand-specific UMI). 12 single cells sequenced, 4 deeply benchmarked. Bulk comparators: Fiber-seq, scATAC-seq, ATAC-seq, DNase-seq, ChIP-seq.
+Recombinant SsDddA expressed in bacteria. Mass-spec for activity. Long-read PacBio sequencing for deamination patterns. PTA from ResolveServices for whole-genome amplification of single cells (preserves the deamination pattern as a strand-specific UMI). 12 single cells sequenced (eight at median 12 Gb, two at ~22 Gb, one at 91 Gb, one at 133 Gb). Bulk comparators: Fiber-seq, scATAC-seq, ATAC-seq, DNase-seq, ChIP-seq.
 
 The strongest engineering claim — **"deamination marks survive amplification, methylation marks don't"** — is the lever that turns single-molecule chromatin assays from bulk-only to single-cell. Everything else follows from that.
 

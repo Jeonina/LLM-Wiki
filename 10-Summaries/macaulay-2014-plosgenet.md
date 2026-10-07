@@ -8,11 +8,11 @@ created: 2026-05-13
 updated: 2026-05-13
 ---
 
-**Citation:** Macaulay et al. (2014) — *Single cell genomics: advances and future perspectives* — *PLOSGenetics*. [DOI](https://doi.org/10.1371/journal.pgen.1004126)
+**Citation:** Macaulay & Voet (2014) — *Single cell genomics: advances and future perspectives* — *PLOS Genetics*. [DOI](https://doi.org/10.1371/journal.pgen.1004126)
 
 Macaulay and Voet's 2014 review consolidated the state of single-cell whole-genome amplification methods circa 2014. Covers single-cell isolation strategies (manual micropipetting, FACS, microfluidics, LCM, sn-suspension sorting); WGA chemistries (DOP-PCR, MDA, MALBAC) and their failure modes (allelic dropout, preferential amplification, chimeric DNA molecules, GC-bias, nucleotide copy errors); and the downstream readouts those failures complicate (SV detection, CNV calling, B-allele fraction, base mutation report).
 
-The review's central methodological point is that WGA artifacts dominate the scDNA-seq error budget and that no single chemistry minimizes all failure modes simultaneously — DOP-PCR gives uniform CNV-grade coverage at the cost of low-resolution sequence accuracy; MDA gives high coverage breadth but exponential amplification of early errors; MALBAC's quasilinear strategy reduces some bias at the cost of a characteristic C-to-T error profile. Method selection must match the downstream question.
+The review's central methodological point is that WGA artifacts dominate the scDNA-seq error budget and that no single chemistry minimizes all failure modes simultaneously — DOP-PCR gives uniform CNV-grade coverage at the cost of low-resolution sequence accuracy; MDA gives broad coverage and good sequence fidelity (φ29 proofreading) but suffers ADO, preferential amplification and chimeras; MALBAC uses looped displacement pre-amplification to protect copied segments from re-amplification. Method selection must match the downstream question.
 
 ## Why this matters
 

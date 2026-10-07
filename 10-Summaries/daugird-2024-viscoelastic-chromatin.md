@@ -22,7 +22,7 @@ topics:
 
 # Daugird et al. 2024 — viscoelastic chromatin in live cells
 
-> Thesis: live-cell **lattice light-sheet single-molecule imaging** of fluorescently tagged nucleosomes (HaloTag-H2B) simultaneously with the local chromatin environment shows that **nucleosomes diffuse and pack differently across chromatin densities, yet the viscoelastic properties and accessibility of the interchromatin space remain constant**. The differences in nucleosome behavior arise from **active processes** (transcription) that locally stabilize nucleosomes, not from passive crowding. This is the cleanest live-cell measurement of chromatin biophysics at the scale where LLPS theory operates.
+> Thesis: live-cell **lattice light-sheet single-molecule imaging** of fluorescently tagged nucleosomes (HaloTag-H2B) simultaneously with the local chromatin environment shows that **nucleosomes diffuse and pack differently across chromatin densities, yet the viscoelastic properties and accessibility of the interchromatin space remain constant**. The differences in nucleosome behavior arise from **active processes** (transcription) that locally stabilize nucleosomes, with nuclear heterogeneity arising from both active and passive processes. This is the cleanest live-cell measurement of chromatin biophysics at the scale where LLPS theory operates.
 
 ## Verbatim key claims (from source body)
 

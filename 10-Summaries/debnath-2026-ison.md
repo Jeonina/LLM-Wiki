@@ -63,7 +63,7 @@ Weight: the validation design is constrained by data availability and the author
 - Integration taxonomy this fits into: [[argelaguet-2021-integration-principles]]; method families in [[multimodal-integration-methods]].
 - Deep generative comparators from the corpus: [[ashuach-2023-multivi]], [[cao-2022-glue]], [[gong-2021-cobolt]]; matrix-factorisation ancestor [[argelaguet-2020-mofa-plus]] (MOFA is a direct baseline here); anchor-based [[stuart-2021-natmethods]], [[hao-2024-seurat-v5]].
 - Benchmarking context: [[xiao-2024-multiomics-benchmark]].
-- Spatial assays it substitutes for or complements: [[zhao-2022-nature]] (slide-DNA-seq), [[cardilla-2025-spatial-methylome]], [[mo-2023-stam-seq]], [[10-Summaries/zhao-2022-nature]], [[vandereyken-2023-spatial-multiomics]].
+- Spatial assays it substitutes for or complements: [[zhao-2022-nature]] (slide-DNA-seq), [[cardilla-2025-spatial-methylome]], [[mo-2023-stam-seq]], [[10-Summaries/zhao-2022-nature]], [[vandereyken-2023-scmultiomics-review]].
 - Accessibility-only TF-activity methods it improves on: [[schep-2017-chromvar]], [[bravo-2019-cistopic]], [[yuan-2022-scbasset]].
 - GRN inference from multiome: [[bravo-2023-scenicplus]], [[kamimoto-2023-celloracle]], [[pliner-2018-cicero]].
 - Alzheimer's context: [[miller-2022-nature]], [[kousi-2022-ad-mosaicism]].

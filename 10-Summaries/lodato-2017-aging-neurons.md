@@ -1,6 +1,6 @@
 ---
 type: summary
-title: "Lodato et al. 2017 — Aging and neurodegeneration are associated with increased somatic mutations in single human neurons"
+title: "Lodato et al. 2018 — Aging and neurodegeneration are associated with increased mutations in single human neurons"
 source: "[[00-Sources/papers/Aging and neurodegeneration are associated with increased mutations in single human neurons]]"
 source_kind: paper
 author: "Michael A. Lodato, Rachel E. Rodin, Craig L. Bohrson, Michael E. Coulter, Alison R. Barton, Minseok Kwon, Maxwell A. Sherman, Carl M. Vitzthum, Lovelace J. Luquette, Chandri N. Yandava, Peter Park, Christopher A. Walsh (corresponding)"
@@ -17,9 +17,11 @@ concepts:
 topics:
 ---
 
-**Citation:** Lodato et al. (2017) — *Aging and neurodegeneration are associated with increased somatic mutations in single human neurons* — *Science*. [DOI](https://doi.org/10.1126/science.aao4426)
+**Citation:** Lodato et al. (2018; online 2017) — *Aging and neurodegeneration are associated with increased mutations in single human neurons* — *Science* 359:555–559. [DOI](https://doi.org/10.1126/science.aao4426)
 
-# Lodato et al. 2017 — somatic mutations accumulate in aging neurons
+> **Corrected 2026-10-07:** title had an inserted word ("somatic") and the year now follows the issue (2 Feb 2018), matching [[10-Summaries/bae-2017-pregastrulation-mutations]] from the same issue. Slug kept.
+
+# Lodato et al. 2018 — somatic mutations accumulate in aging neurons
 
 > Thesis: postmitotic neurons live for decades without DNA replication, but they nevertheless accumulate somatic mutations across the human lifespan, and the rate increases under conditions of impaired DNA repair (Cockayne syndrome, xeroderma pigmentosum) and neurodegeneration. Single-neuron MDA-based whole-genome sequencing across subjects from 4 months to 82 years of age provides the first direct measurement of this aging clock at single-cell resolution.
 

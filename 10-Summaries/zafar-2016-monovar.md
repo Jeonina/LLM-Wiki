@@ -14,7 +14,7 @@ Zafar, Wang, Nakhleh, Navin and Chen (Rice, MD Anderson, BCM) developed **Monova
 
 Algorithm: for each locus, observed bases and base-quality scores from multiple single cells form the input. A dynamic-programming algorithm computes the posterior probability of the locus carrying a variant, modeling FP rates specific to WGA and explicit ADO terms for heterozygous-genotype likelihoods. After detection, per-cell genotyping derives the posterior probability; an optional consensus filter removes singleton-cell variants.
 
-Benchmarked against GATK HaplotypeCaller, Samtools, SOAPsnp, SNVMix2, and Varscan2 (all bulk-designed) on simulated and real scDNA-seq data. Monovar achieved substantially higher precision (0.8376 vs ~0.6) and reduced C>G:T>A FP transitions (the dominant WGA artefact class). Applied to TNBC, bladder cancer, and pediatric ALL single-cell exome data, Monovar identified driver mutations and delineated clonal substructure that bulk-designed callers missed.
+Benchmarked against GATK (UnifiedGenotyper, HaplotypeCaller) and Samtools (all bulk-designed) on simulated and real scDNA-seq data. Monovar achieved substantially higher precision (0.8376 vs ~0.6) and reduced C:G>T:A FP transitions (the dominant WGA artefact class). Applied to TNBC, bladder cancer, and pediatric ALL single-cell exome data, Monovar identified driver mutations and delineated clonal substructure.
 
 ## Why this matters
 

@@ -13,22 +13,22 @@ updated: 2026-06-29
 
 ## Definition
 
-A subset of mature blood cells share a somatic mutation traceable to a common HSC ancestor, typically detected as ≥2% variant allele frequency (VAF) for canonical drivers ([[10-Summaries/forsberg-2017-mosaicism-review]]). **Clonal Hematopoiesis of Indeterminate Potential (CHIP)** is the clinical term for ≥2% VAF of a leukemia-driver mutation without overt hematologic disease ([[10-Summaries/forsberg-2017-mosaicism-review]]). CH is common with age, detectable in ~10–15% of adults over 70 ([[10-Summaries/forsberg-2017-mosaicism-review]]).
+A subset of mature blood cells share a somatic mutation traceable to a common HSC ancestor, typically detected as ≥2% variant allele frequency (VAF) for canonical drivers ([[10-Summaries/forsberg-2017-mosaicism-review]]). **Clonal Hematopoiesis of Indeterminate Potential (CHIP)** is the clinical term for ≥2% VAF of a leukemia-driver mutation without overt hematologic disease ([[10-Summaries/forsberg-2017-mosaicism-review]]). CH is common with age ([[10-Summaries/forsberg-2017-mosaicism-review]]; [[10-Summaries/kapadia-2024-stem-cell-aging]]).
 
 ## Drivers
 
 Most common drivers ([[10-Summaries/forsberg-2017-mosaicism-review]]):
 
-- **DNMT3A** — methyltransferase loss-of-function, ~40% of CHIP cases ([[10-Summaries/forsberg-2017-mosaicism-review]]); R882 hypomethylation profiled in CH ([[10-Summaries/nam-2022-natgenet]]).
-- **TET2** — demethylation enzyme loss-of-function, ~15% ([[10-Summaries/forsberg-2017-mosaicism-review]]).
+- **DNMT3A** — methyltransferase loss-of-function, the most frequent CHIP driver ([[10-Summaries/kapadia-2024-stem-cell-aging]]); R882 hypomethylation profiled in CH ([[10-Summaries/nam-2022-natgenet]]).
+- **TET2** — demethylation enzyme loss-of-function, the second of the two most frequent drivers ([[10-Summaries/kapadia-2024-stem-cell-aging]]).
 - **ASXL1**, **JAK2 V617F**, **SF3B1**, **TP53**, **CALR**, and others ([[10-Summaries/forsberg-2017-mosaicism-review]]; [[10-Summaries/nam-2019-got]]).
 
 ## Why it matters
 
-- **Cancer risk**: ~0.5–1% per year transition rate to MDS / AML ([[10-Summaries/forsberg-2017-mosaicism-review]]).
+- **Cancer risk**: elevated risk of progression to MDS / AML ([[10-Summaries/forsberg-2017-mosaicism-review]]).
 - **Cardiovascular risk**: independent risk factor for atherosclerosis, mechanistically via an inflammatory monocyte/macrophage phenotype ([[10-Summaries/forsberg-2017-mosaicism-review]]); recently extended to HFpEF and stroke ([[10-Summaries/hilal-2026-cardiac-somatic-review]]).
 - **Precursor state for MPN** drivers including JAK2 V617F — [[10-Summaries/izzo-2024-got-cha]] profiled a JAK2V617F CH sample and showed cell-intrinsic chromatin priming *before* overt MPN ([[10-Summaries/izzo-2024-got-cha]]).
-- **Common with age**: detectable in ~10–15% of adults over 70 ([[10-Summaries/forsberg-2017-mosaicism-review]]).
+- **Common with age** ([[10-Summaries/forsberg-2017-mosaicism-review]]).
 
 ## Variants and refinements
 

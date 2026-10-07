@@ -24,7 +24,7 @@ topics:
 
 # Ahn et al. 2021 — LLPS-driven oncogenic chromatin looping
 
-> Thesis: recurrent leukaemic translocations producing **NUP98-HOXA9** fusion proteins owe their oncogenic capacity to **LLPS**. The intrinsically disordered region (IDR — FG repeats) of NUP98 is *necessary and sufficient* for phase-separated nuclear puncta, leukaemic transformation, broad super-enhancer-like binding, and **CTCF-independent chromatin loops at proto-oncogenes**. Swapping the FG-IDR for an unrelated LLPS-competent IDR (FUS) reproduces all four effects — LLPS competence itself, not specific sequence, is the driving feature.
+> Thesis: recurrent leukaemic translocations producing **NUP98-HOXA9** fusion proteins owe their oncogenic capacity to **LLPS**. The intrinsically disordered region (IDR — FG repeats) of NUP98 is *necessary and sufficient* for phase-separated nuclear puncta, leukaemic transformation, broad super-enhancer-like binding, and **CTCF-independent chromatin loops at proto-oncogenes**. Swapping the FG-IDR for an unrelated LLPS-competent IDR (FUS) reproduces puncta formation, leukaemic transformation and enhanced genome-wide binding (loops were tested only for the NUP98 IDR) — LLPS competence itself, not specific sequence, is the driving feature.
 
 ## Verbatim key claims (from source body)
 

@@ -19,7 +19,7 @@ TET (1/2/3) enzymes oxidize 5mC → 5hmC → 5fC → 5caC. 5fC and 5caC are exci
 
 - Bisulfite sequencing **conflates 5mC and 5hmC** — both read as C. Methods that distinguish them (hmC-CATCH, AbaSI-based scAba-seq, [[30-Concepts/simple-seq]], [[30-Concepts/6-base-cut-and-tag]]) reveal divergent regulatory roles.
 - 5hmC marks active regulatory elements (enhancers, transcribed gene bodies).
-- Loss of 5hmC is associated with cancer (IDH-mutant glioma/AML reduce TET activity via α-KG depletion).
+- Loss of 5hmC is associated with cancer (in IDH-mutant glioma/AML, accumulated D-2-hydroxyglutarate competes with α-KG and inhibits TET; [[10-Summaries/kim-2017-methylation-memory-review]]).
 - TET1 mutant mice show adult-neurogenesis deficits and memory impairment.
 
 ## Variants and refinements

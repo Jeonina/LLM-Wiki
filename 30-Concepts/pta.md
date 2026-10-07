@@ -17,13 +17,13 @@ Standard MDA permits Φ29 polymerase to extend exponentially from amplified prod
 
 Mechanistically this approaches **quasi-linear amplification** while remaining isothermal. The result: coverage ~95%, MAPD 0.1–0.3 (comparable to bulk WGS at 0.1), allelic balance high.
 
-Typical metrics: 2.5–10.5 h reaction time, 1–384 cells, $5/cell (v2) to $20/cell (v1). Commercial via ResolveServices/BioSkryb.
+Typical metrics: 2.5–10.5 h reaction time, $5/cell (v2) to $20/cell (v1). Commercial via ResolveServices/BioSkryb.
 
 ## Why it matters
 
 PTA simultaneously fixed three of MDA's failure modes — coverage, uniformity, and allelic balance — without sacrificing Φ29's low error rate. It is now the default scWGA method for any application needing accurate SNV detection at low VAF:
 
-- **Walsh lab brain mosaicism studies** ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]) — tracking ~15 SNVs per neuron per year as lineage markers.
+- **Walsh lab brain mosaicism studies** ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]) — using naturally accumulated mutations (~2–4 per cell division) as lineage markers.
 - **scDAF-seq** ([[10-Summaries/swanson-2025-daf-seq]]) — PTA enables consensus-read assembly because each unique deamination pattern is preserved across overlapping PTA amplicons.
 - **Pre-implantation genetic screening** (preprint cited in Diane 2025) — first method to reliably capture SNVs, aneuploid chromosomes, and mtDNA from single embryonic cells.
 
@@ -36,7 +36,7 @@ PTA simultaneously fixed three of MDA's failure modes — coverage, uniformity, 
 
 ## Contested points
 
-- Cost trajectory — PTA v1 ($20/cell) was originally pricier than MDA REPLI-g (~$10/cell), but **PTA v2 (~$5/cell) is now the cheapest commercial scWGA chemistry**, undercutting MDA and dramatically undercutting MALBAC (~$50/cell) ([[10-Summaries/shao-2025-scDNA-mosaicism-review]] Table 1). Older comparisons that frame PTA as "the accurate-but-expensive option" are stale.
+- Cost trajectory — PTA v1 ($20/cell) was originally pricier than MDA REPLI-g (~$10/cell), but **PTA v2 (~$5/cell) is reported as among the cheapest commercial scWGA chemistries**, undercutting MDA and MALBAC (~$50/cell) ([[10-Summaries/shao-2025-scDNA-mosaicism-review]] Table 1; the table is not rendered in the source clipping — verify against the PDF). Older comparisons that frame PTA as "the accurate-but-expensive option" are stale.
 - PTA's relative advantage at very low cell numbers (≤96) is largest; at higher cell counts DLP+ may be preferable despite lower coverage.
 
 ## Examples

@@ -38,7 +38,7 @@ Newer chemistries also push input down: UDSeq reaches ~2.5×10⁻⁹/bp from 100
 
 ## Examples
 
-- NanoSeq detects somatic SNVs across normal human tissues at error rate <5×10⁻⁹ ([[10-Summaries/abascal-2021-nanoseq]]; [[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
+- NanoSeq detects somatic SNVs across normal human tissues at error rates two orders of magnitude below somatic mutation loads ([[10-Summaries/abascal-2021-nanoseq]]; [[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 - HiDEF-seq on PacBio reaches ~7×10⁻¹⁶ error rate from concatenated Watson-Crick reads ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 - CODEC: ligated-quadruplex single-read duplex resolution ([[10-Summaries/bae-2023-codec]]).
 - [[meta-cs]] applied to single cells — bridging duplex and scDNA-seq ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
@@ -84,11 +84,11 @@ _Future synthesis target_: "Duplex vs scDNA-seq complementarity" — duplex capt
 
 - **Cost trade-off**: duplex sequencing requires roughly twice the read depth per molecule plus complex library prep — cost per variant detected is high ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 - **Long-read displacement**: whether single-molecule long-read direct sequencing (PacBio HiFi without amplification, ONT) will displace duplex sequencing as long-read accuracy improves ([[10-Summaries/liu-2025-long-read-epigenome-review]]).
-- **Benchmarking heterogeneity**: different duplex protocols disagree on mutation spectra at extreme low VAF ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).
+- **Benchmarking heterogeneity**: duplex protocols differ substantially in genomic footprint, sensitivity and cost, although their mutation-rate estimates and signatures are highly concordant ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).
 
 ## Open questions
 
-- **Single-cell duplex** is not yet broadly practical: DS needs both strands of one molecule, but scWGA loses strand identity ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]). [[meta-cs]] is the only single-cell-compatible variant so far; Duplex-Multiome solves it for mtDNA + nuclear point-mutation calling via the 10x library ([[10-Summaries/kriz-2025-duplex-multiome]]).
+- **Single-cell duplex** is not yet broadly practical: DS needs both strands of one molecule, but scWGA loses strand identity ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]). [[meta-cs]] is the only single-cell-compatible variant so far; Duplex-Multiome solves it for nuclear sSNV calling via the 10x Multiome library ([[10-Summaries/kriz-2025-duplex-multiome]]).
 - Will the convergence of mutation-rate estimates across methods (shown in the SMaHT benchmark) hold when applied to harder tissues like brain or aging muscle ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]])?
 
 ## Related

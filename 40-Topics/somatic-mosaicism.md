@@ -9,11 +9,11 @@ updated: 2026-06-29
 
 # Somatic mosaicism
 
-> The presence of genetically distinct lineages of cells within a single organism, all derived from one zygote ([[10-Summaries/forsberg-2017-mosaicism-review]]). Every human is a mosaic — accumulating ~2–4 SNVs per cell division throughout life ([[10-Summaries/forsberg-2017-mosaicism-review]]; [[10-Summaries/cagan-2022-nature]]) — but the clinical and biological consequences depend on the developmental timing and lineage of each mosaic mutation ([[10-Summaries/campbell-2015-mosaicism-review]]). Detecting, characterizing, and understanding these variants is the biological question driving most of the [[40-Topics/scdna-seq]] technology investment ([[10-Summaries/vijg-2020-cell]]), because they shape both normal physiology (aging, [[40-Topics/clonal-hematopoiesis|clonal hematopoiesis]] per [[10-Summaries/izzo-2024-got-cha]]) and disease (cancer per [[10-Summaries/shao-2025-scDNA-mosaicism-review]], neurodevelopmental disorders per [[10-Summaries/bizzotto-2022-brain-mosaicism-review]]).
+> The presence of genetically distinct lineages of cells within a single organism, all derived from one zygote ([[10-Summaries/forsberg-2017-mosaicism-review]]). Every human is a mosaic — accumulating ~2–4 mutations per cell division ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]) — but the clinical and biological consequences depend on the developmental timing and lineage of each mosaic mutation ([[10-Summaries/campbell-2015-mosaicism-review]]). Detecting, characterizing, and understanding these variants is the biological question driving most of the [[40-Topics/scdna-seq]] technology investment ([[10-Summaries/vijg-2020-cell]]), because they shape both normal physiology (aging, [[40-Topics/clonal-hematopoiesis|clonal hematopoiesis]] per [[10-Summaries/izzo-2024-got-cha]]) and disease (cancer per [[10-Summaries/shao-2025-scDNA-mosaicism-review]], neurodevelopmental disorders per [[10-Summaries/bizzotto-2022-brain-mosaicism-review]]).
 
 ## Definition
 
-Mosaicism arises from any post-zygotic mutation that escapes correction and is propagated to a clone of daughter cells. With ~10¹⁶ mitoses required to build an adult human body and ~2–4 mutations per division, every cell carries some number of mosaic variants relative to the zygote ([[10-Summaries/forsberg-2017-mosaicism-review]]; [[10-Summaries/campbell-2015-mosaicism-review]]).
+Mosaicism arises from any post-zygotic mutation that escapes correction and is propagated to a clone of daughter cells. With >10¹⁶ cells produced over a human lifetime (~3 × 10¹² in an adult body), every cell carries some number of mosaic variants relative to the zygote ([[10-Summaries/forsberg-2017-mosaicism-review]]); mutations accrue at ~2–4 per cell division ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
 **Classes by lineage** ([[10-Summaries/campbell-2015-mosaicism-review]]):
 
@@ -35,7 +35,7 @@ Distinct from **chimerism** (cells from a different individual, via fertilizatio
 - **Drives disease**: clonal hematopoiesis ([[10-Summaries/izzo-2024-got-cha]]), cancer ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]), neurodevelopmental disorders and mosaic syndromes ([[10-Summaries/bizzotto-2022-brain-mosaicism-review]]; [[10-Summaries/forsberg-2017-mosaicism-review]]).
 - **Tracks development**: natural mutation accumulation serves as an endogenous lineage marker for [[30-Concepts/lineage-tracing]] in humans, where engineered markers are unethical ([[10-Summaries/coorens-2021-nature]]; [[10-Summaries/lee-six-2018-hsc-dynamics]]).
 - **Pre-implantation screening**: aneuploidy in early embryos shapes IVF outcomes ([[10-Summaries/campbell-2015-mosaicism-review]]).
-- **Universal in aged tissue**: detected in every solid organ examined to date ([[10-Summaries/cagan-2022-nature]]); the aged stem-cell milieu acts as the selective environment that determines which clones expand — see [[10-Summaries/kapadia-2024-stem-cell-aging|Kapadia & Goodell 2024]] for the stem-cell-aging framing ("adaptive oncogenesis") ([[10-Summaries/kapadia-2024-stem-cell-aging]]).
+- **Universal in aged tissue**: somatic mutations accumulate in intestinal crypts across all 16 mammalian species examined, at rates scaling inversely with lifespan ([[10-Summaries/cagan-2022-nature]]); the aged stem-cell milieu acts as the selective environment that determines which clones expand — see [[10-Summaries/kapadia-2024-stem-cell-aging|Kapadia & Goodell 2024]] for the stem-cell-aging framing ("adaptive oncogenesis") ([[10-Summaries/kapadia-2024-stem-cell-aging]]).
 
 The biology motivated the methods: [[40-Topics/scdna-seq]] became technically tractable largely *because* of demand from mosaicism researchers — the Walsh lab, Vijg, Quake, and Evrony — who needed single-cell DNA resolution to detect what bulk could not (synthesis).
 
@@ -65,17 +65,17 @@ The biology motivated the methods: [[40-Topics/scdna-seq]] became technically tr
 
 - **[[40-Topics/clonal-hematopoiesis]]** — mosaic blood-cell clones expanding with age; drivers include DNMT3A, TET2, JAK2 V617F, and CALR ([[10-Summaries/izzo-2024-got-cha]]; [[10-Summaries/nam-2022-natgenet]]).
 - **[[30-Concepts/developmental-mutation-timing]]** — the timing-of-mutation → tissue-distribution mapping that determines clinical phenotype ([[10-Summaries/bae-2017-pregastrulation-mutations]]).
-- **Mosaic disease syndromes**: CHILD syndrome (first mitosis), Proteus syndrome (AKT1), hemimegalencephaly (PI3K–AKT–mTOR), and Pallister-Killian (i(12p)) ([[10-Summaries/forsberg-2017-mosaicism-review]]).
+- **Mosaic disease syndromes**: CHILD syndrome (midline demarcation reflecting mutation timing relative to left–right axis determination), Proteus syndrome (AKT1), hemimegalencephaly (PI3K–AKT–mTOR), and Pallister-Killian (i(12p)) ([[10-Summaries/campbell-2015-mosaicism-review]]).
 
 ## Examples
 
 - 40% of mid-gestation human prenatal neurons show complex CNV ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
-- Clonal hematopoiesis: JAK2V617F detectable in 1–10% of blood at the PCH stage decades before MPN ([[10-Summaries/izzo-2024-got-cha]]).
-- CHILD syndrome's midline-demarcated phenotype is direct evidence of a first-mitosis mosaic mutation ([[10-Summaries/forsberg-2017-mosaicism-review]]).
-- **Fetal-brain progenitors carry 200–400 mosaic SNVs/cell** at 15–21 weeks postconception, with mutation rate jumping ~3 orders of magnitude from pre-gastrulation to neurogenesis and the mutation spectrum shifting from CpG-deamination to oxidative damage ([[10-Summaries/bae-2017-pregastrulation-mutations]]).
+- Clonal hematopoiesis: JAK2V617F-mutant HSCs already show increased accessibility of canonical JAK2/STAT targets at the clonal hematopoiesis stage, before overt MPN ([[10-Summaries/izzo-2024-got-cha]]).
+- CHILD syndrome's midline-demarcated phenotype illustrates mutation timing relative to left–right axis determination ([[10-Summaries/campbell-2015-mosaicism-review]]).
+- **Fetal-brain progenitors carry 200–400 mosaic SNVs/cell** at 15–21 weeks postconception, with mutation rate rising from ~1.3 SNVs/division before gastrulation to ~8.6/division during neurogenesis (three orders of magnitude above the adult germline rate) and the mutation spectrum shifting from CpG-deamination to oxidative damage ([[10-Summaries/bae-2017-pregastrulation-mutations]]).
 - **~6% of human brains are hypermutable** (>101 detectable somatic SNVs), associated with age and cancer-implicated genes (NRAS, DNMT3A, TET2, MTOR, IDH2) — possibly precursor states for glioma decades before clinical diagnosis ([[10-Summaries/taejeong-2022-science]]).
 - **ASD brains are enriched for somatic mutations creating MEIS TF binding motifs** in fetal-brain enhancer-like regions — a direct mosaic-mutation-to-enhancer causal pathway ([[10-Summaries/taejeong-2022-science]]).
-- **Chromosome 16 trisomy is 13-fold enriched in mouse brain** (syntenic with human chr21), cell-type-specifically concentrated in oligodendrocyte precursor cells, Pons neurons, and pericytes ([[10-Summaries/mukamel-2025-aneuploidy-brain]]).
+- **Chromosome 16 trisomy is 13-fold enriched in mouse brain** (syntenic with human chr21), cell-type-specifically concentrated in oligodendrocyte precursor cells and Pons neurons (also midbrain, dentate gyrus, claustrum and retrosplenial cortex) ([[10-Summaries/mukamel-2025-aneuploidy-brain]]).
 
 ## Mosaicism × epigenome — an open synthesis gap (synthesis)
 
@@ -84,8 +84,8 @@ Most mosaicism literature treats epigenetic state as an *annotation* used to int
 The methodological pieces exist:
 
 - **CNV + methylome + transcriptome** in one cell: [[10-Summaries/hou-2016-sctrio-seq|scTrio-seq]] (Hou 2016) — the closest existing precedent. Demonstrated that CNVs drive proportional expression dosage but do *not* perturb DNA methylation in the same region, at single-cell resolution. Tumor-only; not applied to neuronal or developmental mosaicism ([[10-Summaries/hou-2016-sctrio-seq]]).
-- **SNV + chromatin accessibility** in one cell: [[30-Concepts/got-cha]] ([[10-Summaries/izzo-2024-got-cha|Franco 2024]]) — the GoT–ChA assay co-captures targeted genomic mutations and accessibility. Applied to clonal-hematopoiesis JAK2/CALR but not to broader mosaicism contexts ([[10-Summaries/izzo-2024-got-cha]]).
-- **DNA sequence + chromatin state on the same fiber**: [[30-Concepts/daf-seq]] ([[10-Summaries/swanson-2025-daf-seq|Elliott 2025]]) — single-cell single-molecule deamination footprinting. The low-VAF CC>TT CTCF-ablating variant in COLO829 is the prototype mosaic-mutation + epigenetic-state direct observation ([[10-Summaries/swanson-2025-daf-seq]]).
+- **SNV + chromatin accessibility** in one cell: [[30-Concepts/got-cha]] ([[10-Summaries/izzo-2024-got-cha|Izzo 2024]]) — the GoT–ChA assay co-captures targeted genomic mutations and accessibility. Applied to clonal-hematopoiesis JAK2/CALR but not to broader mosaicism contexts ([[10-Summaries/izzo-2024-got-cha]]).
+- **DNA sequence + chromatin state on the same fiber**: [[30-Concepts/daf-seq]] ([[10-Summaries/swanson-2025-daf-seq|Swanson 2025]]) — single-cell single-molecule deamination footprinting. The low-VAF CC>TT CTCF-ablating variant in COLO829 is the prototype mosaic-mutation + epigenetic-state direct observation ([[10-Summaries/swanson-2025-daf-seq]]).
 - **Methylation + accessibility + RNA in one cell** (no mutation): [[10-Summaries/clark-2018-scnmt-seq|scNMT-seq]] (Clark 2018) and [[10-Summaries/shen-2026-splicool-seq|SpliCOOL-seq]] (Shen 2026) ([[10-Summaries/clark-2018-scnmt-seq]]; [[10-Summaries/shen-2026-splicool-seq]]).
 - **Mutation + accessibility + RNA in one cell** (closes the gap): [[10-Summaries/kriz-2025-duplex-multiome|Duplex-Multiome]] (Kriz 2025) — duplex consensus sequencing integrated into 10x Multiome ([[10-Summaries/kriz-2025-duplex-multiome]]).
 
@@ -118,7 +118,7 @@ This is the gap PI Jeonina's review aims to articulate: **a DNA-centric framing 
 
 - [[10-Summaries/forsberg-2017-mosaicism-review]] — health-and-disease perspective; structural-variant-centric framing; ACE terminology; LOY as the most common human post-zygotic mutation.
 - [[10-Summaries/campbell-2015-mosaicism-review]] — transmission genetics, developmental timing, lineage/variant-type classes.
-- [[10-Summaries/cagan-2022-nature]] — mosaicism universal across aged solid organs.
+- [[10-Summaries/cagan-2022-nature]] — somatic mutation rates scale inversely with lifespan across 16 mammals (intestinal crypts).
 - [[10-Summaries/vijg-2020-cell]] — somatic mutation accumulation and aging.
 - [[10-Summaries/kapadia-2024-stem-cell-aging]] — stem-cell-aging / "adaptive oncogenesis" selective-environment framing.
 
@@ -181,7 +181,7 @@ _None yet._
 
 ## Linked summaries (lint pass 2026-05-21)
 
-- [[10-Summaries/ludwig-2020-mtscatac-seq]] — Ludwig 2020 — mtscATAC-seq: massively parallel mtDNA genotyping + chromatin in single cells.
+- [[10-Summaries/ludwig-2020-mtscatac-seq]] — Lareau & Ludwig 2021 — mtscATAC-seq: massively parallel mtDNA genotyping + chromatin in single cells.
 - [[10-Summaries/oroak-2012-autism-targeted-seq]] — O'Roak 2012 — Multiplex targeted sequencing of recurrently mutated genes in ASD.
 - [[10-Summaries/campbell-2015-mosaicism-review]] — Campbell 2015 — Somatic mosaicism: implications for disease and transmission (review).
 - [[10-Summaries/mckenna-2016-science]] — McKenna 2016 — GESTALT: whole-organism lineage tracing by combinatorial genome editing.

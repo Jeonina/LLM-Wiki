@@ -27,10 +27,10 @@ topics:
 
 ## Key claims
 
-- **Every human is mosaic.** Mutation during mitosis is a common event (DNA changes uncorrected on average every two cell divisions, up to multiple per division). With ~10¹⁶ mitoses to make an adult body, every cell harbors mutations relative to the zygote.
+- **Every human is mosaic.** Mutation during mitosis is a common event (DNA changes uncorrected on average every two cell divisions, up to multiple per division *(not found in source clipping — unverified)*). With >10¹⁶ cells produced over a human lifetime (~3 × 10¹² in an adult body), every cell harbors mutations relative to the zygote.
 - **Post-zygotic variation taxonomy**: somatic-only, germline-only, gonosomal (both). Microchimerism is a distinct phenomenon — cells from another individual present in the soma.
 - **Lynch 2010 estimate**: ~10¹⁶ single-base substitutions across an adult human body. Plus indels, structural variants, CNVs at lower rates.
-- **Microchimerism subtypes** (Box 1): maternal microchimerism (MMC), fetal microchimerism (FMC), dizygotic twin–twin transfusion, iatrogenic (transplant/transfusion).
+- **Microchimerism subtypes** (Box 1): maternal microchimerism (MMC), fetal microchimerism (FMC), dizygotic twin–twin transfusion, iatrogenic (transplant/transfusion). *(not found in source clipping — unverified)*
 - **Clinical implications**: mosaicism is an under-recognized confounder in molecular epidemiology, GWAS, clinical genetic testing, and clinical trials. Bulk DNA from a single tissue can mislead.
 - **Detection** via sorted cell populations and single-cell sequencing (Box 2) is the way forward — single-tissue bulk DNA is insufficient.
 - **Structural variants leave the largest genomic footprint** of mosaicism even though point mutations are more numerous.
@@ -41,7 +41,7 @@ Synthesizing review. Catalogs evidence from microarray, bulk sequencing, and eme
 
 ## Surprising or load-bearing bits
 
-- **Microchimerism is not rare**: 30–50% of healthy post-partum women have detectable fetal cells in circulation that persist for decades. This blurs the conceptual boundary between "self" and "non-self" cells in an organism.
+- **Microchimerism is not rare**: 15% to >50% of mothers carry fetal cells in their blood that may persist for decades. This blurs the conceptual boundary between "self" and "non-self" cells in an organism.
 - **Clonal hematopoiesis** is highlighted as a major mosaic phenomenon with implications for cardiovascular disease, cancer risk, and aging — predating the explosion of CH literature that would follow.
 - The framing that **mosaicism is a confounder** in clinical genetics is a reframing — pre-2017 the default was to assume bulk = constitutional genotype.
 

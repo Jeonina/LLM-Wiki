@@ -8,7 +8,7 @@ created: 2026-05-13
 updated: 2026-05-13
 ---
 
-**Citation:** Nishioka et al. (2019) — *Somatic mutations in the human brain: implications for psychiatric research* — *MolecularPsychiatry*. [DOI](https://doi.org/10.1038/s41380-018-0129-y)
+**Citation:** Nishioka et al. (2019) — *Somatic mutations in the human brain: implications for psychiatric research* — *Molecular Psychiatry*. [DOI](https://doi.org/10.1038/s41380-018-0129-y)
 
 Nishioka, Bundo, Iwamoto and Kato's Molecular Psychiatry review surveys evidence that somatic (postzygotic) mutations in the human brain contribute to psychiatric disease risk, complementing the heritable factors identified by GWAS and rare-CNV studies. The authors classify de novo events along a developmental-timing axis: (i) inherited variants from ancestors, (ii) de novo germline mutations during spermatogenesis/oogenesis, (iii) somatic mutations occurring early in embryogenesis (shared among multiple germ layers), and (iv) somatic mutations occurring later in development (brain-specific). The latter two contribute non-inherited genetic risk that GWAS cannot detect.
 

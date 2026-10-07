@@ -31,7 +31,7 @@ topics:
 
 - The GMM prior is the key advance over a plain VAE: a single isotropic Gaussian (as in scVI) underfits sparse data; a mixture of Gaussians gives a tighter posterior and learns disentangled, interpretable latent dimensions. Ablating the GMM degrades SCALE to scVI-level performance.
 - Architecture: encoder 3200-1600-800-400 (ReLU), 10-dim latent on a GMM manifold, single-layer Bernoulli decoder back to peaks. Trained by maximizing the ELBO (reconstruction + KL-to-GMM).
-- Across six mixture datasets (Leukemia, GM12878/HEK293T, GM12878/HL-60, InSilico, Splenocyte, Forebrain) SCALE gave the best overall clustering (ARI/NMI/F1) vs scABC, SC3, scVI, cisTopic, TF-IDF, Cicero.
+- Across six mixture datasets (Leukemia, GM12878/HEK293T, GM12878/HL-60, InSilico, Splenocyte, Forebrain) SCALE gave the best overall clustering (ARI/NMI/F1) vs scABC, SC3, scVI, cisTopic (TF-IDF and Cicero compared only for visualization).
 - Denoising: SCALE-imputed single cells correlate best with their cell-type "meta-cells" vs scRNA-seq imputers (scImpute, SAVER, MAGIC, scVI) — while preserving within-type variation rather than over-smoothing.
 - Imputation improves downstream chromVAR motif discovery (Forebrain: 52 → 105 significant motifs; recovered Mafb/Hoxd9 in microglia, Dlx2/Lhx8/Arx in MGE pathway).
 - On the Pi-ATAC mouse breast-tumor data SCALE separated Epcam+ tumor from CD45+ immune cells from chromatin alone — comparable to the protein-indexed experimental method — and recovered immune (Runx1, PU.1-IRF, SpiB) vs tumor (Ets1, Nrf2) motifs.
@@ -39,12 +39,12 @@ topics:
 
 ## Methods / evidence
 
-PyTorch + scikit-learn (github.com/jsxlei/SCALE). Cluster number can be auto-chosen via Tracy-Widom eigenvalue thresholding (as in SC3). Robust to simulated dropout up to ~0.6 corruption. GPU used for the two deep methods (SCALE, DCA).
+PyTorch + scikit-learn (github.com/jsxlei/SCALE). Cluster number can be auto-chosen via Tracy-Widom eigenvalue thresholding (as in SC3). Robust to simulated dropout up to ~0.6 corruption. 
 
 ## Surprising or load-bearing bits
 
 - The interpretability angle: because each latent dimension is a separate Gaussian directly wired to output peaks, SCALE features can be read as biological programs *or* as technical artifacts (plate/batch) — a rare combination of generative power and interpretability.
-- A clean demonstration that scRNA-seq imputers (MAGIC, scVI) actively harm scATAC-seq analysis (they made misclassified subgroups *less* similar to their true types) — motivating ATAC-specific tooling.
+- A clean demonstration that scRNA-seq imputers (scVI) actively harm scATAC-seq analysis (they made misclassified subgroups *less* similar to their true types) — motivating ATAC-specific tooling.
 
 ## Entities mentioned
 

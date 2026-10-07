@@ -25,7 +25,7 @@ sources: [
 
 | Layer pair | Assay | Reads in one cell | Key demonstration |
 |---|---|---|---|
-| Genotype + accessibility | GoT-ChA | gDNA genotype (targeted) + accessibility | JAK2^V617F HSCs show cell-intrinsic chromatin priming before transcriptional change ([[10-Summaries/izzo-2024-got-cha]]) |
+| Genotype + accessibility | GoT-ChA | gDNA genotype (targeted) + accessibility | JAK2^V617F HSCs show cell-intrinsic increased STAT-target accessibility already at the clonal-hematopoiesis stage, before overt MPN ([[10-Summaries/izzo-2024-got-cha]]) |
 | Genotype + accessibility (single-molecule) | DAF-seq / scDAF-seq | Same-fiber DNA sequence + nucleosome architecture | A 1.5% VAF mosaic CC→TT variant ablates the local CTCF footprint on the fibers carrying it ([[10-Summaries/swanson-2025-daf-seq]]) |
 | Genotype + protein occupancy (TF binding) | D&D-GoT-ChA | Targeted genotype + accessibility + TF binding | IDH2^R140Q T cells show disrupted CTCF binding vs wild-type ([[10-Summaries/chi-2026-dd-seq]]) |
 | Genotype (genome-wide) + transcriptome | ResolveOME | PTA whole-genome SNV/CNV + full transcriptome | FLT3 mutation co-detected with AXL-pathway upregulation in quizartinib-resistant AML ([[10-Summaries/marks-2023-resolveome]]) |
@@ -41,7 +41,7 @@ sources: [
 
 ## The climax: Duplex-Multiome
 
-[[10-Summaries/kriz-2025-duplex-multiome|Duplex-Multiome]] integrates duplex consensus sequencing into the snATAC arm of the 10x Multiome workflow, reducing sequencing error >10,000-fold so somatic SNVs can be called accurately from the same nucleus that yields an accessibility profile and a transcriptome ([[10-Summaries/kriz-2025-duplex-multiome]]). Applied to >51,400 nuclei from postmortem human brain, it resolved cell-type-specific somatic mutation burdens and signatures — including in glia and rare neurons largely inaccessible to scWGS — and linked clonal somatic variants to expression changes in nearby genes in both neurotypical and ASD brains ([[10-Summaries/kriz-2025-duplex-multiome]]). It thereby demonstrates, within single nuclei and at population scale, the genotype-to-regulatory-consequence inference the locus-state framework anticipates (synthesis). It remains a bioRxiv preprint (peer-review pending as of 2026-06) ([[10-Summaries/kriz-2025-duplex-multiome]]).
+[[10-Summaries/kriz-2025-duplex-multiome|Duplex-Multiome]] integrates duplex consensus sequencing into the snATAC arm of the 10x Multiome workflow so somatic SNVs can be called accurately from the same nucleus that yields an accessibility profile and a transcriptome ([[10-Summaries/kriz-2025-duplex-multiome]]). Applied to >51,400 nuclei from postmortem human brain, it resolved cell-type-specific somatic mutation burdens and signatures — including in glia and rare neurons largely inaccessible to scWGS — and linked clonal somatic variants to expression changes in nearby genes in both neurotypical and ASD brains ([[10-Summaries/kriz-2025-duplex-multiome]]). It thereby demonstrates, within single nuclei and at population scale, the genotype-to-regulatory-consequence inference the locus-state framework anticipates (synthesis). It remains a bioRxiv preprint (peer-review pending as of 2026-06) ([[10-Summaries/kriz-2025-duplex-multiome]]).
 
 ## What no assay yet closes
 

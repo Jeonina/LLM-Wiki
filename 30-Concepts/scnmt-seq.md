@@ -20,7 +20,7 @@ Clark et al. 2018 ([[10-Summaries/clark-2018-scnmt-seq]]). Cell is lysed in M.Cv
 - **First parallel profiling of three molecular layers per cell** — establishes a reference design for any triple-omics extension.
 - **GpC accessibility coverage (~15%) exceeds scATAC-seq (~9.4%)** with single-GpC-site (~1/16 bp) resolution; nucleosome positions visible from 180–200 bp oscillation in single-cell profiles.
 - **Coupling between methylation and accessibility strengthens along the ESC → embryoid body pseudotime trajectory** — a single-cell observation about epigenetic-layer coupling dynamics that bulk cannot resolve.
-- Bivalent (H3K4me3 + H3K27me3) promoters show heterogeneous accessibility clusters independent of expression level.
+- Bivalent (H3K4me3 + H3K27me3) promoters show heterogeneous accessibility clusters and are associated with low expression levels ([[10-Summaries/clark-2018-scnmt-seq]]).
 
 ## Variants and refinements
 

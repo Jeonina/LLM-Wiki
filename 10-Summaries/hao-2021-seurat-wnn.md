@@ -27,13 +27,13 @@ topics: ["[[single-cell-multiomics]]", "[[computational-methods]]"]
 - **Multimodal analysis resolves states single-modality analysis cannot**, and this is demonstrated rather than asserted: previously unreported lymphoid subpopulations were identified and validated.
 - **Reference-based mapping of query datasets onto the multimodal atlas** — the workflow that made "map to a reference" a routine operation rather than a research project.
 - **Applied to interpret immune responses to vaccination and to COVID-19**, i.e. the atlas is built to be used, not only to exist.
-- The stated ambition is definitional: to "look beyond the transcriptome toward a unified and multimodal definition of cellular identity."
+- The stated ambition is definitional: to "move beyond the partial and transcriptome-focused view of a cell and toward a unified definition of cellular behavior, identity, and function."
 
 ## Methods / evidence
 
 CITE-seq on 211,000 PBMCs with up to 228 antibodies; WNN applied to build the reference; novel lymphoid populations identified and experimentally validated; query datasets from vaccination and COVID-19 cohorts mapped onto the reference.
 
-Weight: the scale and the validation of new populations are the strongest evidence. The method is demonstrated primarily on RNA+protein; its behaviour on RNA+ATAC (where modality informativeness differs much more sharply) is a separate question.
+Weight: the scale and the validation of new populations are the strongest evidence. The method is demonstrated primarily on RNA+protein, with a secondary RNA+ATAC demonstration (11,351 10x Multiome PBMCs) where WNN outperformed either modality alone.
 
 ## Surprising or load-bearing bits
 
@@ -65,7 +65,7 @@ Weight: the scale and the validation of new populations are the strongest eviden
 
 ## Open questions
 
-- **Does per-cell weighting behave well when one modality is far sparser?** RNA+protein are both relatively dense; RNA+ATAC or RNA+methylation are not, and the weighting could collapse onto the dense modality. Not tested here. (synthesis)
+- **Does per-cell weighting behave well when one modality is far sparser?** RNA+protein are both relatively dense; RNA+ATAC or RNA+methylation are not, and the weighting could collapse onto the dense modality. RNA+ATAC was tested here (11,351 10x Multiome PBMCs, where WNN beat either modality alone); RNA+methylation was not. (synthesis)
 - Reference atlases embed the reference's biases; mapping a query onto a PBMC atlas built from healthy donors may distort disease states — the vaccination/COVID applications probe this but do not resolve it.
 - Computational cost is flagged as a weakness by later methods ([[lakkis-2022-scipenn]]).
 

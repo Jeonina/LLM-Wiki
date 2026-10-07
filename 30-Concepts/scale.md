@@ -17,12 +17,12 @@ SCALE encodes each cell into a 10-dimensional latent variable on a GMM manifold 
 
 ## Why it matters
 
-- Demonstrated that scRNA-seq imputers (MAGIC, scVI) actively harm scATAC-seq analysis by making misclassified cells *less* similar to their true types — motivating ATAC-specific tooling ([[10-Summaries/xiong-2019-scale]]).
+- Demonstrated that scRNA-seq imputers (scVI) actively harm scATAC-seq analysis by making misclassified cells *less* similar to their true types — motivating ATAC-specific tooling ([[10-Summaries/xiong-2019-scale]]).
 - The GMM yields disentangled latent dimensions that map onto biological cell types *and* can flag technical batch effects (plate-specific features), which can then be excluded from embedding ([[10-Summaries/xiong-2019-scale]]).
 
 ## How it compares
 
-- Best overall clustering (ARI/NMI/F1) across six mixture datasets vs scABC, SC3, scVI, cisTopic, TF-IDF, Cicero ([[10-Summaries/xiong-2019-scale]]).
+- Best overall clustering (ARI/NMI/F1) across six mixture datasets vs scABC, SC3, scVI, cisTopic (TF-IDF and Cicero compared only for visualization) ([[10-Summaries/xiong-2019-scale]]).
 - A leading deep-learning entry in scATAC imputation; later benchmarked by scOpen, which reports higher AUPR and lower memory ([[10-Summaries/li-2021-scopen]]). See [[30-Concepts/scatac-imputation]].
 
 ## Examples

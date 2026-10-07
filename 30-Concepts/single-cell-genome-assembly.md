@@ -21,7 +21,7 @@ A second MDA artifact compounds it: **chimeras** formed during φ29's branching 
 
 | Tool | Core fix | Read pairs | Chimeras |
 |---|---|---|---|
-| Velvet-SC / E+V-SC ([[10-Summaries/chitsaz-2011-velvet-sc]]) | Progressively increasing coverage cutoff, coupled to EULER error correction | Discarded deliberately, to avoid misassembly from chimeric pairs | Not addressed |
+| Velvet-SC / E+V-SC ([[10-Summaries/chitsaz-2011-velvet-sc]]) | Progressively increasing coverage cutoff, coupled to EULER-SR error correction | Discarded deliberately, to avoid misassembly from chimeric pairs | Quantified (2% of *E. coli*, 0.5% of *S. aureus* read pairs) but not removed |
 | IDBA-UD ([[10-Summaries/peng-2012-idba-ud]]) | Multiple depth-relative thresholds; iterative *k* from k_min to k_max carrying contigs forward as reads; local assembly with paired-end info | Used for local assembly of low-depth short repeats | Not addressed |
 | SPAdes ([[10-Summaries/bankevich-2012-spades]]) | Paired de Bruijn graph + *k*-bimer adjustment; multisized de Bruijn graph; Hammer error correction | Used fully — the stated improvement over E+V-SC | Explicit detection and removal stage |
 
@@ -29,9 +29,9 @@ Two SPAdes authors coauthored E+V-SC and stated the reason for rebuilding rather
 
 ## What it delivered
 
-Single *E. coli* and *S. aureus* cells yield **>91% of genes within contigs**, against 95% from a multicell *E. coli* assembly ([[10-Summaries/chitsaz-2011-velvet-sc]]). The motivating application is uncultivated organisms — over 99% of microbes cannot be cultivated — and the demonstration was a genome from a single cell of the marine SAR324 Deltaproteobacteria clade, with metabolic reconstruction indicating an aerobic, motile, chemotaxic organism ([[10-Summaries/chitsaz-2011-velvet-sc]]). Metagenomics is gene-centric and structurally cannot say which genes co-occur in one organism; single-cell assembly can ([[10-Summaries/chitsaz-2011-velvet-sc]]).
+Single *E. coli* and *S. aureus* cells yield **>91% of genes within contigs**, against 95% from a multicell *E. coli* assembly ([[10-Summaries/chitsaz-2011-velvet-sc]]). The motivating application is uncultivated organisms — most microbes cannot be cultured — and the demonstration was a genome from a single cell of the marine SAR324 Deltaproteobacteria clade, with metabolic reconstruction indicating an aerobic, motile, chemotaxic organism ([[10-Summaries/chitsaz-2011-velvet-sc]]). Metagenomics is gene-centric and structurally cannot say which genes co-occur in one organism; single-cell assembly can ([[10-Summaries/chitsaz-2011-velvet-sc]]).
 
-Assembly quality also serves as a WGA benchmarking metric: MALBAC showed comparable assembly quality to MDA but lower stability, judged by mitochondrial assembly ([[10-Summaries/hou-2015-wga-comparison]]).
+
 
 ## The generalisable lesson
 

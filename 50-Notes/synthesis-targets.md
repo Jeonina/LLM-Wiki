@@ -22,7 +22,7 @@ Cross-cutting topics where the corpus has enough material (~3+ sources) that a w
 
 **Status: all 5 synthesis-targets resolved.** Next-generation candidates that would benefit from synthesis (not yet ingested):
 
-- **Spatial multi-omics** — DBiT-seq, spatial CITE-seq, Cardilla 2025 spatial methylome → spatial CITE-seq → broader spatial framework.
+- **Spatial multi-omics** — DBiT-seq, spatial CITE-seq, Lee 2025 spatial methylome → spatial CITE-seq → broader spatial framework.
 - **Mitochondrial mosaicism as lineage marker** — MAESTER, mtscATAC-seq, scMitoMut: mtDNA mutations as a parallel-but-cheaper alternative to nuclear-genome lineage tracing.
 - **TF footprinting at single-molecule resolution** — Doughty 2024, Pott 2017, Stergachis et al.: how single-molecule chromatin reads TF binding heterogeneity that bulk averages.
 

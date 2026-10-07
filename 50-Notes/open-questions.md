@@ -66,7 +66,7 @@ Tensions and gaps surfaced during ingest or lint. When a question is resolved, r
 - **Leiden's badly-connected-community defect** was measured on web and citation graphs (14–25%) — never on sparse binary scATAC/scBS kNN graphs, where every published cell-type call depends on it ([[10-Summaries/traag-2019-leiden]]).
 - **UMAP distortion on sparse binary epigenomic matrices** is unbenchmarked ([[10-Summaries/mcinnes-2018-umap]]).
 - **GREAT's binomial null** assumes point-binding events over a fixed regulatory-domain rule; whether it holds for pseudo-bulked, cluster-size-dependent scATAC differential peaks is unaddressed ([[10-Summaries/mclean-2010-great]]).
-- **No systematic benchmark exists** for tagmentation-based joint accessibility+transcriptome methods — stated outright in [[10-Summaries/vandereyken-2023-spatial-multiomics]].
+- **No systematic benchmark exists** for tagmentation-based joint accessibility+transcriptome methods — stated outright in [[10-Summaries/vandereyken-2023-scmultiomics-review]].
 - **No diagonal integration of an epigenomic modality has been validated against ground truth** in this corpus, though matched multimodal assays are the obvious standard ([[10-Summaries/argelaguet-2021-integration-principles]]).
 
 **Biology left open**
@@ -78,7 +78,7 @@ Tensions and gaps surfaced during ingest or lint. When a question is resolved, r
 - **Do regulatory-primed loci actually get induced later?** 1,340 monocyte-specific repressive-state genes are silent in every cell type ([[10-Summaries/zhang-2022-sccut-tag-pro]]); the priming interpretation is a hypothesis.
 
 **Methods that do not exist**
-- Methylome + 3D structure + transcriptome in one cell ([[10-Summaries/vandereyken-2023-spatial-multiomics]]).
+- Methylome + 3D structure + transcriptome in one cell ([[10-Summaries/vandereyken-2023-scmultiomics-review]]).
 - Single-cell proteome-wide analysis alongside other omics layers.
 - A bridge for modalities with no RNA-paired multiomic assay — single-cell Hi-C and most scDNA-seq have none, so bridge integration cannot reach them ([[10-Summaries/hao-2024-seurat-v5]]).
 

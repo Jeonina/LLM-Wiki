@@ -28,19 +28,19 @@ It also yields **synchronous DNA sequence + chromatin readout from the same fibe
 
 ## Variants and refinements
 
-- **Targeted DAF-seq** ([[10-Summaries/swanson-2025-daf-seq]]) — bulk single-molecule with PCR enrichment; up to 230,000× enrichment over genome-wide.
+- **Targeted DAF-seq** ([[10-Summaries/swanson-2025-daf-seq]]) — bulk single-molecule with PCR enrichment; >25,000× single-molecule depth at chosen loci.
 - **scDAF-seq** ([[10-Summaries/swanson-2025-daf-seq]]) — single-cell variant; FACS + PTA + PacBio.
 - Reaction conditions: 4 μM SsDddA, 10 min, optimal across NAPA / WASF1 promoter benchmarks.
 
 ## Contested points
 
-- **Cell throughput.** scDAF-seq sequenced 12 cells (deeply benchmarked: 4). Whether the method scales to hundreds/thousands of cells is unclear.
+- **Cell throughput.** scDAF-seq sequenced 12 cells (eight at median 12 Gb, two at ~22 Gb, one at 91 Gb, one at 133 Gb). Whether the method scales to hundreds/thousands of cells is unclear.
 - **Cost.** Each deeply sequenced cell consumed ~91–133 Gb of PacBio HiFi data — economics of cohort-scale studies are not established.
 - Generalization to primary tissue is not yet demonstrated; all scDAF-seq cells profiled are GM24385 lymphoblastoid.
 
 ## Examples
 
-- **NAPA promoter cooperativity**: thermodynamic analysis identified a 180,000× cooperative binding interaction between elements 1 and 2 (USF1/2 + NFY-A) ([[10-Summaries/swanson-2025-daf-seq]]).
+- **NAPA promoter cooperativity**: thermodynamic analysis identified a 180,000× cooperative binding interaction between elements 1 and 2 ([[10-Summaries/swanson-2025-daf-seq]]).
 - **SLC39A4 eQTL mechanism**: rs2280838-T haplotype increases liver expression by altering nucleosome positioning over the promoter — visible as a chromatin epiallele only at single-molecule resolution.
 - **Low-VAF mosaic variant**: a 1.5% VAF CC→TT mutation in COLO829 BL/T mixture ablates a CTCF binding element, with chromatin loss visible only on the variant reads.
 - **Pervasive plasticity**: between-cell regulatory-element actuation differs by ~63%; haplotype-vs-haplotype within the same cell differs by ~61%.

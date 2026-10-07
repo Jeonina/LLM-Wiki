@@ -18,7 +18,7 @@ topics: ["[[dna-methylation]]", "[[brain-somatic-mosaicism]]", "[[single-cell-mu
 
 # Luo 2017 — snmC-seq
 
-> The paper that made DNA methylation a **cell-typing modality** rather than a supplementary readout. The trick is **non-CG methylation (mCH)**: because neurons accumulate mCH over large domains during postnatal synaptogenesis, sparse single-cell coverage still estimates mCH accurately in **100-kb bins across >90% of the genome**. 6,000+ single neuronal methylomes → **16 mouse and 21 human** cortical neuron clusters, plus ~500,000 CG-DMRs marking regulatory elements per cell type.
+> The paper that made DNA methylation a **cell-typing modality** rather than a supplementary readout. The trick is **non-CG methylation (mCH)**: because neurons accumulate mCH over large domains during postnatal synaptogenesis, sparse single-cell coverage still estimates mCH accurately in **100-kb bins across >90% of the genome**. 6,000+ single neuronal methylomes → **16 mouse and 21 human** cortical neuron clusters, plus ~500,000 CG-DMRs per species (575,524 mouse, 498,432 human) marking cell-type-specific regulatory elements.
 
 ## Key claims
 

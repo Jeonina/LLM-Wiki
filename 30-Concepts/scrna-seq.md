@@ -20,14 +20,14 @@ scRNA-seq captures and amplifies the mRNA from one cell at a time, then sequence
 Bulk RNA-seq reports the **arithmetic mean** of expression across all input cells. This mean is misleading whenever the sample contains a mixture of cell types or cell states — which is essentially every biological tissue. Three concrete failure modes of bulk RNA-seq that scRNA-seq fixes:
 
 1. **Cell-type composition confounding.** A change in bulk expression of gene *X* may reflect an actual change in transcription per cell, or merely a shift in the proportion of cells that express *X*. Bulk cannot disambiguate.
-2. **Rare-population invisibility.** A transcriptional program present in 1% of cells contributes ~1% to the bulk signal — below typical detection thresholds. scRNA-seq resolves populations down to ~0.1% with sufficient cell numbers ([[10-Summaries/macosko-2015-drop-seq|Macosko 2015]]).
+2. **Rare-population invisibility.** A transcriptional program present in 1% of cells contributes ~1% to the bulk signal — below typical detection thresholds. scRNA-seq resolves rare populations given sufficient cell numbers (synthesis).
 3. **State-transition averaging.** Cells along a developmental trajectory have continuously varying expression. Bulk collapses the trajectory to a single point; scRNA-seq preserves the gradient and supports pseudotime ordering.
 
 For the scDNA/multi-omics wiki, scRNA-seq is the **transcriptomic axis** in every joint-omics method: it is what GoT genotypes against, what DR-seq / G&T-seq / scTrio-seq couple to scDNA, what SHARE-seq and 10x Multiome couple to chromatin accessibility, and what CITE-seq couples to surface protein. Without scRNA-seq there is no single-cell multi-omics.
 
 ## History
 
-- **2009 — Tang et al.** ([[10-Summaries/tang-2009-scrna-seq]]): first whole-transcriptome mRNA-Seq from a single mouse blastomere. Plate-based, SMART template-switching cDNA synthesis, ~75% more genes detected than microarray on the same cell.
+- **2009 — Tang et al.** ([[10-Summaries/tang-2009-scrna-seq]]): first whole-transcriptome mRNA-Seq from a single mouse blastomere. Plate-based; anchored oligo(dT) reverse transcription, terminal-transferase poly(A) tailing and PCR amplification; ~75% more genes detected than microarray on the same cell.
 - **2011–2014**: Plate-based protocols mature — Smart-seq, CEL-seq, MARS-seq, STRT-seq. Throughput in the hundreds to low thousands of cells.
 - **2015 — Drop-seq and inDrop**: Droplet-microfluidic scRNA-seq ([[10-Summaries/macosko-2015-drop-seq|Macosko 2015]], Klein et al. 2015) drops per-cell cost ~100× and enables 10,000+ cells per experiment.
 - **2016+ — Commercial 10x Genomics Chromium** democratises the droplet approach; sci-RNA-seq and SPLiT-seq pioneer combinatorial-indexing-based scaling without microfluidics.
@@ -49,7 +49,7 @@ scRNA-seq protocols differ along several design axes that matter for review fram
 
 ## Limitations
 
-- **Dropout / technical zeros**: capture efficiency is typically 10–25% of endogenous mRNA molecules (quantified by [[10-Summaries/svensson-2017-power-analysis|Svensson 2017]]); absent counts ≠ absent expression.
+- **Dropout / technical zeros**: capture efficiency is roughly 0.5–10% of input molecules (endogenous mRNA ~5–10% of smFISH counts) (quantified by [[10-Summaries/svensson-2017-power-analysis|Svensson 2017]]); absent counts ≠ absent expression.
 - **Loss of spatial context**: dissociation destroys tissue architecture (motivating spatial transcriptomics).
 - **mRNA-only readout**: misses regulatory state (chromatin, methylation), genotype, protein. Motivates multi-omics extensions.
 - **Cell-state perturbation**: dissociation stress induces immediate-early genes (Fos, Jun) — a confound for activation signatures.
@@ -62,7 +62,7 @@ The argument structure for an introduction section:
 1. **Bulk RNA-seq** mixes the transcriptomes of millions of cells in one sample and measures the population mean. It is cheap, deep, and quantitative — and blind to cell-type composition.
 2. **For homogeneous samples** (cell lines, sorted populations), bulk is fine.
 3. **For heterogeneous tissue** (tumor, brain, immune system, development), bulk's mean is a fiction — no individual cell expresses the bulk profile.
-4. **scRNA-seq** restores cell-level resolution at a cost: each cell is sampled shallowly (10–25% of its transcripts), so technical noise is high per cell but population structure is recoverable across thousands of cells.
+4. **scRNA-seq** restores cell-level resolution at a cost: each cell is sampled shallowly (roughly 0.5–10% of its transcripts captured), so technical noise is high per cell but population structure is recoverable across thousands of cells.
 5. **For somatic mutation work** specifically: bulk RNA-seq cannot tell you *which cell type* carries a mutational signature in its expression program. Methods like [[30-Concepts/got|GoT]] need scRNA-seq as their substrate.
 
 ## Related

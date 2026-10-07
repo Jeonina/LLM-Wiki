@@ -15,7 +15,7 @@ updated: 2026-05-15
 
 - **Mechanical scaffold**: lamin stiffness determines nuclear shape and resists mechanical stress; LMNA mutations cause progerin (HGPS) and other laminopathies.
 - **Genome organizer**: tethers transcriptionally repressed chromatin (cLADs especially) to the periphery; loss of lamina integrity de-compartmentalizes the genome.
-- **Spatial gene regulation**: peripheral position correlates with repression for many genes, but causality is partial — release from NL is *permissive*, not sufficient, for activation ([[10-Summaries/rooijers-2019-scdamt-seq]]).
+- **Spatial gene regulation**: peripheral position correlates with repression for many genes, but the single-cell lamina–transcription coupling is an association, restricted to facultative LADs (fLADs) rather than constitutive cLADs ([[10-Summaries/rooijers-2019-scdamt-seq]]).
 - **Mechanotransduction**: lamin-A links cytoskeletal force (LINC complex) to chromatin organization.
 
 ## Genome–lamina contacts as locus state

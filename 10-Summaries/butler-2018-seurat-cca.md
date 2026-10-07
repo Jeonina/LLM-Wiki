@@ -31,7 +31,7 @@ topics: ["[[computational-methods]]", "[[single-cell-multiomics]]"]
 
 ## Methods / evidence
 
-Five sets of published scRNA-seq experiments posing distinct alignment challenges. Validation is by biological interpretability of the aligned subpopulations rather than by a ground-truth metric — appropriate for 2018, before integration benchmarks existed.
+Five sets of published scRNA-seq experiments posing distinct alignment challenges. Validation combines biological interpretability of the aligned subpopulations with a quantitative alignment score (0–1), benchmarked against ComBat and limma on all five datasets.
 
 ## Surprising or load-bearing bits
 

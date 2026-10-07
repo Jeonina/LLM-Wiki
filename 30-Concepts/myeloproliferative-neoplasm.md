@@ -46,7 +46,7 @@ Together [[10-Summaries/nam-2019-got]] and [[10-Summaries/izzo-2024-got-cha]] es
 ## Examples
 
 - ET01–ET05 (5 patients), MF01–MF04, MF05 multi-mutant — [[10-Summaries/nam-2019-got]] cohort.
-- 18 untreated/ruxolitinib-treated MF patients + 1 longitudinal PV→MF + 1 JAK2V617F clonal hematopoiesis case — [[10-Summaries/izzo-2024-got-cha]] cohort.
+- 21 samples from 18 JAK2V617F MF patients (12 untreated, including three longitudinal PV→MF samples from one patient; 6 ruxolitinib-treated) plus 1 JAK2V617F clonal hematopoiesis sample — [[10-Summaries/izzo-2024-got-cha]] cohort.
 
 ## Related
 

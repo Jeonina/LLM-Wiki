@@ -14,7 +14,7 @@ Rotem, Ram, Shoresh and colleagues (Bernstein / Weitz labs) introduced Drop-ChIP
 
 The chemistry: single cells are encapsulated in $\sim$50-µm droplets with lysis buffer and micrococcal nuclease, which preferentially digests accessible linker DNA. A second microfluidic merge introduces one of $\sim$1,152 unique barcoded oligonucleotide adaptors per nucleosome-containing drop, ligating the barcode to chromatin fragments. Drops are then pooled, immunoprecipitated in bulk against H3K4me2 or H3K4me3 with carrier chromatin, and sequenced. The barcode partitions the reads back into per-cell profiles.
 
-Applied to mES cells, embryonic fibroblasts, and EML hematopoietic progenitors, Drop-ChIP recovered $\sim$1,000 marked promoters/enhancers per cell — sparse but sufficient to cluster cells by chromatin state and to identify three subpopulations of mES cells with distinct pluripotency-enhancer and polycomb-target activity reflecting differentiation priming. The signal was orthogonal to single-cell gene-expression heterogeneity, revealing chromatin-state structure that scRNA-seq does not see.
+Applied to mES cells, embryonic fibroblasts, and EML hematopoietic progenitors, Drop-ChIP recovered $\sim$1,000 marked promoters/enhancers per cell — sparse but sufficient to cluster cells by chromatin state and to identify three subpopulations of mES cells with distinct pluripotency-enhancer and polycomb-target activity reflecting differentiation priming. The subpopulations were corroborated by comparison to orthogonal single-cell gene-expression data, while revealing aspects of epigenetic heterogeneity not captured by transcriptional analysis.
 
 ## Why this matters
 

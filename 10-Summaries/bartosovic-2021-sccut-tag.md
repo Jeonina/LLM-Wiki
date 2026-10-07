@@ -27,7 +27,7 @@ topics:
 
 ## Key claims (abstract + intro)
 
-- **scCUT&Tag** = CUT&Tag + 10x Chromium droplet barcoding. Compatible with low-input nuclei (no flow sorting needed).
+- **scCUT&Tag** = CUT&Tag + 10x Chromium droplet barcoding. 
 - Applied to **tens of thousands of mouse CNS cells**; recovers cell identity from histone-mark profiles alone — no scRNA-seq needed.
 - **Profiled marks**: H3K4me3 (active promoters), H3K27ac (active enhancers), H3K36me3 (gene bodies), H3K27me3 (Polycomb repression).
 - **Regulatory principles deconvoluted**: promoter bivalency, H3K4me3 spreading, promoter-enhancer connectivity — all from single-cell data.

@@ -12,7 +12,7 @@ updated: 2026-05-13
 
 Pellegrino, Sciambi, Treusch, Durruthy-Durruthy, Gokhale, Jacob, Chen, Geis, Oldham, Matthews, Kantarjian, Futreal, Patel, Jones, Takahashi and Eastburn (Mission Bio + MD Anderson) developed the founding **droplet-based high-throughput single-cell DNA sequencing** workflow — now commercialized as the Mission Bio Tapestri platform. Two-step droplet workflow: (1) encapsulate single cells with protease for cell-identifying lysis; (2) merge with PCR reagent + cell-identifying barcoded hydrogel beads for amplification of a custom amplicon panel.
 
-The two-step design (with protease pre-lysis) raised genomic-DNA detection rate from ~5% to ~98% — overcoming the genomic-DNA-amplification problem that prevented scDNA equivalents of scRNA Drop-seq. Demonstration: longitudinal AML samples (diagnosis, remission, relapse) from two patients sequenced across >16,000 cells at 62 amplicons covering 23 commonly-mutated genes. The platform identified rare pathogenic clones during complete remission and resolved sub-clonal evolution invisible to bulk WGS.
+The two-step design (with protease pre-lysis) raised genomic-DNA detection rate from ~5% to ~98% *(not found in source clipping — unverified)* — overcoming the genomic-DNA-amplification problem that prevented scDNA equivalents of scRNA Drop-seq. Demonstration: longitudinal AML samples (diagnosis, remission, relapse) from two patients sequenced across >16,000 cells at up to 62 disease-relevant loci. The platform identified rare pathogenic clones during complete remission and resolved sub-clonal evolution not observable with bulk sequencing.
 
 ## Why this matters
 

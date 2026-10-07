@@ -14,6 +14,8 @@ concepts: ["[[multimodal-integration-methods]]", "[[batch-effect]]", "[[dimensio
 topics: ["[[single-cell-multiomics]]", "[[computational-methods]]"]
 ---
 
+> **Update 2026-10-07:** the source clipping now contains the full text (Results and STAR Methods). The caveat below describes what this summary was originally written from; the summary should be re-written from the full text.
+
 > ⚠️ **Source caveat.** The clipping in `00-Sources/` captured the article front matter — title, journal metadata, highlights, keywords and the opening of the introduction — but not the Results or Methods. The claims below are limited to what the source actually states; quantitative results (factor counts, cell numbers, benchmark comparisons) are **not** available from this source and are deliberately not asserted here. Re-clip the full text before extending this page.
 
 **Citation:** Welch et al. (2019) — *Single-cell multi-omic integration compares and contrasts features of brain cell identity* — *Cell* 177, 1873–1887.e17. [DOI](https://doi.org/10.1016/j.cell.2019.05.006)
@@ -58,7 +60,7 @@ Not available from this source clipping. The source records the study design at 
 
 - Published alongside and directly comparable to Seurat v3 anchors, whose lineage continues in [[hao-2024-seurat-v5]]; the embedding-correction alternative is [[korsunsky-2019-harmony]].
 - Conceptual framing: [[argelaguet-2021-integration-principles]], [[zhu-2020-multimodal-power-of-many]], [[lim-2024-single-cell-omics-review]].
-- Brain multi-omic context: [[lake-2018-brain-snrna-scths]]; spatial context: [[vandereyken-2023-spatial-multiomics]].
+- Brain multi-omic context: [[lake-2018-brain-snrna-scths]]; spatial context: [[vandereyken-2023-scmultiomics-review]].
 
 ## Open questions
 

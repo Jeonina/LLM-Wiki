@@ -36,7 +36,7 @@ Original demonstration was on flow-sorted chromosomes and small genomic inputs, 
 
 - DOP-PCR's enduring role is not as a working method but as the **baseline against which every later chemistry is measured**. [[dean-2002-mda|Dean 2002]] reports 4–6 orders of magnitude locus-to-locus bias for DOP-PCR/PEP versus <3-fold for MDA — that contrast is the entire argument for isothermal strand displacement.
 - Despite the bias, DOP-PCR's *uniformity at coarse resolution* kept it in service for CNV/karyotype work long after it was abandoned for SNV calling: [[navin-2011-sns-tumor-evolution|Navin 2011]] used DOP-PCR-style amplification precisely because copy-number binning tolerates amplitude bias that variant calling does not.
-- 1,300+ citations and still cited by [[lahnemann-2021-natcomm|Lähnemann 2020]] and [[gawad-2016-scgenome-review|Gawad 2016]] — the field never stopped referencing its failure modes.
+- 1,300+ citations and still cited by Lähnemann et al. 2020 (Eleven grand challenges, Genome Biology) and [[gawad-2016-scgenome-review|Gawad 2016]] — the field never stopped referencing its failure modes.
 
 ## Concepts touched
 

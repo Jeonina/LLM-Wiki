@@ -24,7 +24,7 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
-**Citation:** Liu et al. (2025) — *Profiling the epigenome using long-read sequencing (review)* — *Nature Genetics*. [DOI](https://doi.org/10.1038/s41588-024-02038-5)
+**Citation:** Liu & Conesa (2025) — *Profiling the epigenome using long-read sequencing (review)* — *Nature Genetics*. [DOI](https://doi.org/10.1038/s41588-024-02038-5)
 
 # Liu & Conesa 2025 — Profiling the epigenome using long-read sequencing
 
@@ -32,16 +32,16 @@ topics:
 
 ## Key claims
 
-- **Direct methylation detection**: ONT measures ionic current "squiggles" perturbed by methylated bases; PacBio measures kinetic interpulse distance and pulse width. Both have advanced to deep-learning callers (Dorado/Remora for ONT; Fibertools/Primrose for PacBio). Recent benchmarks show comparable methylation accuracy. Multiple modifications detectable (5mC, 5hmC, 6mA, 4mC).
+- **Direct methylation detection**: ONT measures ionic current "squiggles" perturbed by methylated bases; PacBio measures kinetic interpulse distance and pulse width. Both have advanced to deep-learning callers (Dorado/Remora for ONT; Fibertools/Primrose for PacBio). Benchmarking has focused mainly on ONT; PacBio 5mC calling initially had low signal-to-noise. Multiple modifications detectable (5mC, 5hmC, 6mA, 4mC).
 - **Allele-specific methylation (ASM)**: long reads span haplotype blocks, enabling phased methylation calls. Recent deCODE genetics work identified ASM-QTLs as drivers of expression variability in cis-regulatory regions and hematological traits.
-- **Chromatin accessibility via methyltransferase footprinting**: exogenous methyltransferases (M.CviPI for GpC, EcoGII for 6mA, DddA-derivatives for cytosine deamination) mark open regions; LRS reads the marks at single-molecule resolution. **Fiber-seq** (EcoGII + PacBio), **nanoNOMe**, **SMAC-seq**, **SAMOSA** (M.CviPI + PacBio), **STAM-seq** (Arabidopsis-adapted), **DAF-seq** (DddA, amplifiable).
-- **Methylation in highly repetitive regions** (HRRs) — centromeres, telomeres, rDNA arrays — is accessible only with long reads. Telomere-to-telomere CHM13 assembly enabled by LRS allowed first complete methylation maps of centromeres.
-- **3D genome and protein–DNA**: long-read Pore-C, scNanoHi-C, Fiber-seq with CTCF/RNAPII profiling. Single-molecule co-detection of chromatin features in one read.
+- **Chromatin accessibility via methyltransferase footprinting**: exogenous methyltransferases (M.CviPI for GpC, EcoGII for 6mA, DddA-derivatives for cytosine deamination) mark open regions; LRS reads the marks at single-molecule resolution. **Fiber-seq** (EcoGII + PacBio), **nanoNOMe**, **SMAC-seq**, **SAMOSA** (6mA methyltransferase + PacBio), **STAM-seq** (Arabidopsis-adapted).
+- **Methylation in highly repetitive regions** (HRRs) — centromeres, telomeres, rDNA arrays — is accessible only with long reads. 
+- **3D genome and protein–DNA**: long-read Pore-C, HiPore-C, MC-3C/MC-4C, Fiber-seq with CTCF/RNAPII profiling. Single-molecule co-detection of chromatin features in one read.
 - **Multi-omics with transcriptomic LRS**: pairing direct RNA sequencing (alternative isoforms, m6A, nascent transcription, translating ribosome profiles) with epigenomic LRS data on the same samples opens integrative analyses of regulation.
 
 ## Methods / evidence
 
-Authoritative review. Covers technology evolution (PacBio HiFi $35/Gb; ONT R10.4.1), bioinformatics pipelines (Nanopolish → Megalodon → Dorado/Remora), and biological applications (development, cancer, repetitive-region biology). Discusses challenges: training set generation, k-mer-specific accuracy, polymerase/pore updates requiring model retraining.
+Authoritative review. Covers technology evolution, bioinformatics pipelines (Nanopolish → Megalodon → Dorado/Remora), and biological applications (development, cancer, repetitive-region biology). Discusses challenges: training set generation, k-mer-specific accuracy, polymerase/pore updates requiring model retraining.
 
 ## Surprising or load-bearing bits
 

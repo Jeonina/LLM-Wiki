@@ -21,7 +21,7 @@ Because Tn5 inserts adapters directly without an end-repair / A-tailing step, ME
 
 META-CS bridges the long-standing gap between [[scwga]]-based scDNA-seq (per-cell, but high false-positive rate) and bulk [[40-Topics/duplex-sequencing]] (low false-positive rate, but no per-cell assignment). It is the only method that gives single-cell genotypes at near-duplex error rates.
 
-In the [[evrony-2021-scDNA-applications-review|Evrony capabilities framework]], META-CS uniquely combines **fidelity** (duplex error correction) and **co-presence** (per-cell assignment) at genome-wide scale.
+In the [[evrony-2021-scDNA-applications-review|Evrony capabilities framework]], META-CS would combine **fidelity** (duplex error correction) and **co-presence** (per-cell assignment) at genome-wide scale (synthesis; the Evrony review does not discuss META-CS).
 
 ## Variants and refinements
 
@@ -35,7 +35,7 @@ In the [[evrony-2021-scDNA-applications-review|Evrony capabilities framework]], 
 
 ## Examples
 
-- Single-cell SNV detection with error rate <2.4 × 10⁻⁸, applied across normal tissues ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
+- Tn5-based single-cell duplex SNV detection (the only duplex method applicable to single cells) ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
 ## Related
 

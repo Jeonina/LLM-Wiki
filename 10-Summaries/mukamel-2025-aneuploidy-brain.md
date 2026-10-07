@@ -20,7 +20,7 @@ updated: 2026-05-12
 
 ## Method
 
-1. **415,103 single nuclei** from adult C57BL/6 male mice (post-natal day 56–63), covering 73 dissected brain regions, **6 major cell classes, 48 cell types, 71 clusters** based on DNA methylation patterns. Source: BICCN multimodal mouse brain atlas (yao 2021 nature family of papers). Two assay types: **snmC-seq3** (methylation only) and **snm3C-seq** (multi-omic methylation + chromatin conformation).
+1. **415,103 single nuclei** from adult C57BL/6 male mice (post-natal day 56–63), covering 73 dissected brain regions, **48 major cell types (6 non-neuronal classes + 42 neuron types)** based on DNA methylation patterns. Source: BICCN multimodal mouse brain atlas (yao 2021 nature family of papers). Two assay types: **snmC-seq3** (methylation only) and **snm3C-seq** (multi-omic methylation + chromatin conformation).
 2. **CNV inference**: snmC-seq fragments are uniformly distributed under bisulfite chemistry, so read density in genomic bins reports relative copy number (Spearman r ≈ 0.85 between read density and GC content; ginkgo-style GC correction recovers uniform bin coverage).
 3. Validate by comparing chrX (single copy in male) vs autosomes (diploid) across bin sizes 100 kb–12.7 Mb: AUROC ≈ 0.94 at 100 kb, >0.9997 at 12.7 Mb. Aneuploidies ≥5 Mb are reliably detected with high sensitivity and specificity (~97.5%).
 4. **Circular binary segmentation** for CNV calling. Quality filter: MAPD <0.3, ≥900,000 uniquely mapped reads per cell. Cell defined as aneuploid if a chromosome has duplication/deletion over >90% of its extent.
@@ -29,10 +29,10 @@ updated: 2026-05-12
 
 1. **723 aneuploid cells at 100 kb resolution / 1,433 at 1 Mb resolution** out of 415,103 — i.e., **0.175–0.349% of brain cells carry whole-chromosome aneuploidy**. Consistent with prior small-scale scWGS estimates (0.5–5%, but typically at the lower end), and **two orders of magnitude lower** than older in-situ FISH/karyotype claims of 10–60% aneuploidy in brain.
 
-2. **Chromosome 16 trisomy is 13-fold enriched** vs other autosomes (P < 10⁻³⁰⁰, binomial test). Mouse chr16 distal region is **syntenic with human chromosome 21** (where constitutional trisomy = Down syndrome). The Ts65Dn mouse model of Down syndrome uses partial chr16 trisomy. Mouse chr16 carries oligodendrocyte-lineage genes Olig1 and Olig2.
+2. **Chromosome 16 trisomy is 13-fold enriched** vs other autosomes (P < 0.001, binomial test). Mouse chr16 distal region is **syntenic with human chromosome 21** (where constitutional trisomy = Down syndrome). The Ts65Dn mouse model of Down syndrome uses partial chr16 trisomy. Mouse chr16 carries oligodendrocyte-lineage genes Olig1 and Olig2.
 
 3. **Cell-type-specific enrichment of aneuploidy** (across 48 cell types):
-   - **Oligodendrocyte precursor cells (OPCs)**: 1.65% aneuploid (95% CI 1.33–2.00%). Highest of all major classes.
+   - **Oligodendrocyte precursor cells (OPCs)**: 1.65% aneuploid (95% CI 1.33–2.00%), second only to pericytes.
    - **Pericytes**: 1.77% (0.89–2.94%).
    - **Pons neurons**: 0.47% (0.29–0.70%). Highest among neurons.
    - **Microglia**: 0.11% (0.043–0.20%).
@@ -53,7 +53,7 @@ updated: 2026-05-12
 - **Limitations** the paper acknowledges:
   - Only male mice, single age (P56–63). Age dependence of brain aneuploidy (Bae 2022 result for SNVs) not addressed.
   - <1% aneuploidy rate means even 415K cells yields only ~720 aneuploid cells — small enough that some cell-type-specific findings have wide confidence intervals.
-  - Methylation reads cover only ~5–15% of the genome per cell, capping CNV resolution; sub-5-Mb events not reliably called.
+  - CNVs ≥~5 Mb are reliably detected (>97.5% sensitivity/specificity); smaller events are less reliable.
   - Bisulfite chemistry destroys DNA sequence → cannot get point-mutation calls from same reads. Joint *mutation* + epi at single-cell is still gap.
 
 ## Entities / concepts touched

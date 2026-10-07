@@ -8,7 +8,7 @@ created: 2026-05-12
 updated: 2026-05-12
 ---
 
-**Citation:** Clark et al. (2018) — *scNMT-seq: Joint chromatin accessibility, DNA methylation, and transcription in single cells* — *?*. [DOI](https://doi.org/10.1038/s41467-018-03149-4)
+**Citation:** Clark et al. (2018) — *scNMT-seq: Joint chromatin accessibility, DNA methylation, and transcription in single cells* — *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-018-03149-4)
 
 # Clark et al. 2018 — scNMT-seq
 
@@ -28,9 +28,9 @@ First single-cell method that simultaneously profiles **three molecular layers �
 ## Key claims
 
 - **Single-cell resolution captures known global associations**: methylation negatively correlated with both transcription and accessibility; accessibility positively correlated with transcription. Recapitulates bulk patterns at single-cell scale.
-- **Locus-specific heterogeneity**: 89 introns, 47 gene-bodies show significant methylation-accessibility coupling at FDR < 0.1. Methylation–transcription coupling stronger than accessibility–transcription coupling in this dataset.
+- **Locus-specific heterogeneity**: up to 89 significant methylation–accessibility associations (introns) and up to 47 methylation–transcription associations (gene bodies) at FDR < 0.1. Methylation–transcription coupling stronger than accessibility–transcription coupling in this dataset.
 - **Base-resolution accessibility profiles**: by adapting BPRMeth, single-fiber accessibility profiles at TSSs are reconstructed at single-GpC resolution, revealing nucleosome positions (180–200 bp oscillation) and cell-to-cell heterogeneity in nucleosome placement.
-- **Bivalent promoters show heterogeneous accessibility clusters** (both H3K4me3 and H3K27me3) — independent of expression level.
+- **Bivalent promoters show heterogeneous accessibility clusters** (both H3K4me3 and H3K27me3) — and are associated with low expression levels.
 - **Coupling strengthens along differentiation**: as ESC → embryoid body cells progress in pseudotime, the negative correlation between DNA methylation and accessibility *increases* across nearly all genomic contexts. Argued as a possible step in lineage priming.
 
 ## Methods scope

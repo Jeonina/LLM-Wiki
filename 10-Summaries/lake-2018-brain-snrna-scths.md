@@ -9,7 +9,7 @@ ingested: 2026-08-10
 doi: "10.1038/nbt.4038"
 journal: "Nature Biotechnology"
 tags: [snDrop-seq, scTHS-seq, single-nucleus, human-brain, postmortem, chromatin-accessibility, diagonal-integration, GWAS, remyelination]
-entities: ["[[peter-a-sims]]"]
+entities: []
 concepts: ["[[scrna-seq]]", "[[dnase-seq]]", "[[combinatorial-indexing]]", "[[tn5-tagmentation]]", "[[atac-seq]]", "[[transcription-factor-motif]]", "[[multimodal-integration-methods]]", "[[drop-seq]]"]
 topics: ["[[single-cell-atac-seq]]", "[[brain-somatic-mosaicism]]", "[[single-cell-multiomics]]"]
 ---
@@ -35,7 +35,7 @@ topics: ["[[single-cell-atac-seq]]", "[[brain-somatic-mosaicism]]", "[[single-ce
 
 ## Methods / evidence
 
-Postmortem tissue from six individuals; human–mouse species-mixing controls for doublet rates in both assays; censored-Poisson clustering for accessibility that accounts for signal saturation after a few reads at any site; cross-validation of branch assignments; permutation-based GWAS significance; comparison of predicted microglial regulatory sites against bulk ATAC-seq.
+Postmortem tissue (snDrop-seq: 4–5 individuals per region; scTHS-seq: one individual per region, three in total); human–mouse species-mixing controls for doublet rates in both assays; censored-Poisson clustering for accessibility that accounts for signal saturation after a few reads at any site; cross-validation of branch assignments; permutation-based GWAS significance; comparison of predicted microglial regulatory sites against bulk ATAC-seq.
 
 Limitations the authors state: neurons are over-represented relative to astrocytes and endothelium, so **cell-type proportions from snDrop-seq carry technical bias**; nuclear data show a systematic bias toward longer genes; cortical astrocyte and oligodendrocyte subpopulations seen in mouse were not resolved, cause undetermined.
 

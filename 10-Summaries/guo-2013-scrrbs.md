@@ -16,7 +16,7 @@ updated: 2026-05-12
 
 ## Thesis
 
-**scRRBS (single-cell Reduced Representation Bisulfite Sequencing)** is the foundational single-cell DNA methylome method. Combines MspI digestion (cuts at CCGG → enriches for CpG-rich regions including CGIs) with single-tube cell lysis + bisulfite conversion + library construction. Recovers **0.5–1.5 million CpG sites per single mESC** (~40% of bulk RRBS coverage), with bisulfite conversion rates >99%. Demonstrated that **the male pronucleus demethylates faster than the female pronucleus** in mouse zygotes — first single-cell demonstration of asymmetric parental-genome demethylation kinetics.
+**scRRBS (single-cell Reduced Representation Bisulfite Sequencing)** is the foundational single-cell DNA methylome method. Combines MspI digestion (cuts at CCGG → enriches for CpG-rich regions including CGIs) with single-tube cell lysis + bisulfite conversion + library construction. Recovers **0.5–1.5 million CpG sites per single mESC** (~40% of bulk RRBS coverage), with bisulfite conversion rates >99%. Demonstrated that **the male pronucleus demethylates faster than the female pronucleus** in mouse zygotes — consistent with prior immunostaining and locus-level bisulfite data; newly, genic regions demethylate faster than intergenic regions in both pronuclei.
 
 ## Mechanism
 
@@ -28,10 +28,10 @@ updated: 2026-05-12
 
 ## Key claims
 
-- **0.5–1.5M CpG sites per single mESC** detected at ≥1× (1.5M = 63% of bulk RRBS coverage with maximal effort; 40% of all detectable RRBS sites typically).
+- **0.5–1.5M CpG sites per single mESC** detected at ≥1× (single cells average 1.02M CpGs = 40% of the 2.5M sites detectable by bulk RRBS; 63% (1.52M) was reached only with 20 pooled mESCs).
 - Eight individual mESCs analyzed; methylome profile is reproducible (R = 0.67 ± across pairs); aggregate of 8 cells correlates with bulk mESC RRBS at R = 0.90.
 - **scRRBS is digital**: 88–94% of CpG sites in a single sperm cell are either fully methylated (100%) or fully unmethylated (0%) — confirms haploid sperm methylation is binary, validating the method's single-CpG accuracy.
-- **Demethylation kinetics asymmetry**: male pronucleus demethylates faster than female pronucleus after fertilization (gene-body regions); first single-cell observation of this developmental hallmark.
+- **Demethylation kinetics asymmetry**: male pronucleus demethylates faster than female pronucleus after fertilization ; consistent with prior immunostaining and locus-level bisulfite data. Separately, genic regions demethylate faster than intergenic regions in both pronuclei.
 
 ## Surprising / load-bearing for the review
 

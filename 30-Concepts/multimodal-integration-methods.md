@@ -63,7 +63,7 @@ The modern integration literature has a birthday: **2 April 2018**, when [[10-Su
 | Deep generative | [[10-Summaries/gayoso-2021-totalvi]], [[10-Summaries/ashuach-2023-multivi]], [[10-Summaries/cao-2022-glue]], [[10-Summaries/lakkis-2022-scipenn]] |
 | Graph neural network | [[10-Summaries/song-2021-scgcn]] |
 
-**Per-cell modality weighting** is the honest answer to a question most methods dodge — concatenation implicitly weights by feature count and choosing a "primary" modality biases the analysis, whereas WNN *learns the relative utility of each data type in each cell* ([[10-Summaries/hao-2021-seurat-wnn]]). Whether it holds up when one modality is far sparser (RNA+ATAC rather than RNA+protein) is untested. (synthesis)
+**Per-cell modality weighting** is the honest answer to a question most methods dodge — concatenation implicitly weights by feature count and choosing a "primary" modality biases the analysis, whereas WNN *learns the relative utility of each data type in each cell* ([[10-Summaries/hao-2021-seurat-wnn]]). It was also tested on RNA+ATAC (11,351 10x Multiome PBMCs), where WNN beat either modality alone ([[10-Summaries/hao-2021-seurat-wnn]]); how it behaves on still sparser pairs such as RNA+methylation is untested. (synthesis)
 
 **Correcting expression versus correcting embeddings** is an unresolved trade: MNN returns corrected expression values usable for differential testing; Harmony corrects only the embedding and leaves expression untouched. Neither the risk nor the benefit has been quantified. (synthesis)
 

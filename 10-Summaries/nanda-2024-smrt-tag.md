@@ -35,10 +35,10 @@ topics:
 
 ## Key claims
 
-- **SMRT-Tag method**: Tn5 with hairpin PacBio adapters (uracil-containing) → tagmentation → gap repair (Phusion + Taq ligase, the optimal pair of 62 tested) → exonuclease digestion to enrich circular molecules → PacBio HiFi sequencing. **Adjustable fragment size** (2–6 kb) via Tn5:DNA ratio and temperature.
+- **SMRT-Tag method**: Tn5 with hairpin PacBio adapters → tagmentation → gap repair (Phusion + Taq ligase or T4 + Ampligase, the two most robust of 62 conditions tested) → exonuclease digestion to enrich circular molecules → PacBio HiFi sequencing. **Adjustable fragment size** via Tn5:DNA ratio and temperature.
 - **Genetic + epigenetic calling at 40 ng input**: SNV/indel/SV F1 scores comparable to ligation-based PacBio at matched coverage (e.g., 0.566 vs 0.664 for SNVs at low coverage; 0.983 vs 0.982 at 11.2× coverage). CpG methylation Pearson r=0.84 with bisulfite reference; AUC 0.935.
 - **SAMOSA-Tag method**: in-nucleus EcoGII methylation (6mA marks accessible regions) + Tn5 hairpin tagmentation. Detects sequence + 5mC (CpG) + 6mA (accessibility) on the same PacBio fiber.
-- **Prostate-cancer PDX application** (50,000 nuclei): single-fiber CTCF and nucleosome footprints; CpG methylation reduced inside CTCF motifs (consistent with CTCF binding); identifies metastasis-associated **global chromatin disorganization** that bulk ATAC-seq misses.
+- **Prostate-cancer PDX application** (50,000 nuclei): single-fiber CTCF and nucleosome footprints; CpG methylation reduced inside CTCF motifs (consistent with CTCF binding); identifies metastasis-associated **global chromatin disorganization**.
 - Tagmentation produces oligonucleosomal-banding fragment size distribution — consistent with cuts adjacent to nucleosome barriers in the chromatin substrate.
 
 ## Methods / evidence

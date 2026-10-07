@@ -18,7 +18,7 @@ topics: ["[[single-cell-atac-seq]]", "[[3d-genome]]"]
 
 # Zhang 2021 — Chromap
 
-> A minimizer-based aligner built on a single observation: chromatin assays need **read coordinates**, not base-level alignments. Dropping the variant-calling-grade alignment work and fusing alignment with adapter trimming, deduplication and barcode correction into one pass gives 10–68× speedups at equal downstream accuracy.
+> A minimizer-based aligner built on a single observation: chromatin assays need **read coordinates**, not base-level alignments. Dropping the variant-calling-grade alignment work and fusing alignment with adapter trimming, deduplication and barcode correction into one pass gives >10× speedups at equal downstream accuracy.
 
 ## Key claims
 
@@ -26,9 +26,9 @@ topics: ["[[single-cell-atac-seq]]", "[[3d-genome]]"]
 - Chromap's design differences from minimap2 (same lab): it considers **every** minimizer hit rather than chaining, uses **read-pair information to rescue** alignments lost to the minimizer frequency cap, and verifies candidates with a banded Myers bit-parallel edit-distance computation (SIMD-parallelized) instead of affine-gap dynamic programming.
 - A **candidate cache** exploits the fact that chromatin signal is concentrated in a subset of the genome: candidate locations for frequent minimizer vectors are cached (hash table, N = 2,000,003 entries; count-min-sketch-style filter to avoid caching background noise). Reads from the same strand or nearby positions hit the same entry.
 - Accuracy on simulated data: ~98% for 100/150 bp paired-end (comparable to BWA-MEM, Bowtie2); at 50 bp Chromap holds ~96% with BWA-MEM/Bowtie2 while minimap2, STAR and Accel-Align drop to 94.1–95.7%.
-- CTCF ChIP-seq: 99.8% of Chromap alignments supported by BWA-MEM or Bowtie2; peaks overlap 99.8%; **fewest aligner-unique peaks** of all methods; between-aligner peak differences smaller than between biological replicates. Runtime <5 min end-to-end vs ~42 min for the next-fastest workflow.
+- CTCF ChIP-seq: 99.8% of Chromap alignments supported by BWA-MEM or Bowtie2; peaks overlap 99.8%; **fewest aligner-unique peaks** of all methods; between-aligner peak differences smaller than between biological replicates. Runtime <5 min end-to-end vs ~42 min for the next-fastest workflow. *(not found in source clipping — unverified)*
 - Hi-C (K562, ~1.4 billion fragments): compartment PC1 Pearson r = 0.995 and insulation-score r = 0.998 vs BWA-MEM; SCC between Chromap and BWA-MEM on the same replicate (0.998) far exceeds SCC between two biological replicates (0.945). 164 min vs **13× slower** for BWA-MEM + pairtools. Aligner-unique loops show equal CTCF enrichment at anchors — i.e. they are real, not artifacts.
-- scATAC-seq (10k PBMC, ~758M reads): cell-type annotation NMI >0.96 vs CellRanger v2.0.0, **higher than the NMI between the two CellRanger versions**, and higher than between two 95%-downsampled replicates of the same data (0.888). Runtime <30 min vs 8 h (CellRanger v2.0.0, 16×) and 33 h (v1.2.0, 68×). Memory ~21 GB, stable with sequencing depth.
+- scATAC-seq (10k PBMC, ~758M reads): cell-type annotation NMI >0.96 vs CellRanger v2.0.0, **higher than the NMI between the two CellRanger versions**, and higher than between two 95%-downsampled replicates of the same data (0.888). Runtime <30 min vs 8 h (CellRanger v2.0.0, 16×) and 33 h (v1.2.0, 68×). *(not found in source clipping — unverified)* Memory ~21 GB, stable with sequencing depth.
 
 ## Methods / evidence
 

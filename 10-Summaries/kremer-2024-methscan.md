@@ -57,7 +57,7 @@ Using **matched transcriptomes as ground truth** is the design decision that mak
 ## Connections to other sources
 
 - Consumes output from [[krueger-2011-bismark|Bismark]], methylpy or BISCUIT; feeds [[mcinnes-2018-umap|UMAP]], [[traag-2019-leiden|Leiden]], [[danese-2021-episcanpy|EpiScanpy]]/Scanpy/Seurat; uses [[mclean-2010-great|GREAT]] for DMR interpretation and benchmarks against [[argelaguet-2020-mofa-plus|MOFA+]].
-- Re-analyzes [[luo-2018-snmc-seq2]] data; supersedes the tiling convention used there.
+- Re-analyzes [[luo-2017-snmc-seq]] data; supersedes the tiling convention used there.
 - Alternative modeling approaches in this corpus: [[kapourani-2019-melissa|Melissa]], [[kapourani-2021-scmet|scMET]], [[desouza-2020-epiclomal|Epiclomal]], [[angermueller-2017-genomebiol|DeepCpG]] — all of which take the feature set as given, which is exactly what MethSCAn declines to do.
 - Method context: [[smallwood-2014-natmethods]], [[nichols-2022-scimet-v2]], [[iqbal-2023-methylome-review]].
 

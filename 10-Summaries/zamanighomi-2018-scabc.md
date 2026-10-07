@@ -48,7 +48,7 @@ R package. In silico mixture of 966 cells from 6 cell lines (Buenrostro 2015). E
 
 - **Weighting cells by coverage** is the methodological insight: deep cells are more informative for clustering, and the algorithm should explicitly use that.
 - The mEB+RA experiment is a clean **biological discovery**: a population thought to be neural-only (because RA induces neural differentiation in mESCs) turns out to also contain visceral endoderm. The outer EB layer differentiates differently from the inner mass.
-- Identifies GM12878 cell-line **internal NF-κB heterogeneity** — a small but real subpopulation distinction that prior chromatin-bulk work had hypothesized but not demonstrated at single-cell resolution.
+- Recovers known context-specific TF motifs per cell line (e.g., NFKB2 in GM12878, SPI1 in HL-60, GATA1::TAL1 in K562) — a small but real subpopulation distinction that prior chromatin-bulk work had hypothesized but not demonstrated at single-cell resolution.
 
 ## Connections to other sources
 

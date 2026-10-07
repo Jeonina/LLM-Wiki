@@ -27,25 +27,25 @@ topics:
 
 # Jiang et al. 2026 — STARK + scNucleome
 
-> Thesis: 15+ sc3DG-seq technologies exist (scHi-C, snHi-C, sciHi-C, Dip-C, sn-m3C, HiRES, scSPRITE, scNanoHi-C, Droplet/Paired Hi-C, GAGE-seq, LiMCA, …), each with its own data format and idiosyncratic processing. No unified analysis framework exists. **STARK** (Structural Topology Analysis and Rich Knowledge base) provides standardized preprocessing, quality control, and downstream analysis for all sc3DG-seq data types. STARK is paired with **scNucleome**, a publicly accessible repository of uniformly processed sc3DG-seq datasets — the "single-cell 3D genome atlas."
+> Thesis: 15+ sc3DG-seq technologies exist (scHi-C, snHi-C, sciHi-C, Dip-C, sn-m3C, HiRES, scSPRITE, scNanoHi-C, Droplet/Paired Hi-C, GAGE-seq, LiMCA, …), each with its own data format and idiosyncratic processing. No unified analysis framework exists. **STARK** provides standardized preprocessing, quality control, and downstream analysis for all sc3DG-seq data types. STARK is paired with **scNucleome**, a publicly accessible repository of uniformly processed sc3DG-seq datasets — the "single-cell 3D genome atlas."
 
 ## Key claims
 
 - **STARK framework** with three modules: (1) Preprocess (sequencing QC, alignment, demultiplexing, .cool file generation, Hi-C correction); (2) Cell QC (EmptyCells algorithm filters by contact count + Monte Carlo simulation; metrics include GiniQC, short-/mid-/long-range contact rates, and the novel **Spatial Structure Capture Efficiency / SSCE**); (3) Downstream Analysis (imputation, clustering, aggregation, A/B compartments, TADs, loops, 3D structure reconstruction).
 - **EmptyCells** algorithm: distinguishes real cells from empty barcodes in high-throughput sc3DG-seq. Critical step missing from prior tools — analogous to EmptyDrops in scRNA-seq.
-- **SSCE metric**: integrates multiple topological features (TAD recovery, compartment recovery, loop signal) to quantify each single cell's structural-information capture. Complements simple contact-count metrics — rescues cells with few contacts but informative structural patterns.
+- **SSCE metric**: integrates topological features (TAD-boundary counts and A/B compartment switches, normalized against inter-chromosomal and unattributable contacts) to quantify each single cell's structural-information capture. Complements simple contact-count metrics — rescues cells with few contacts but informative structural patterns.
 - **Cross-platform benchmark**: 15 technologies compared on read-level efficiency, library complexity, genome coverage, GiniQC. **scSPRITE** has highest average contacts per cell (sonication-based capture preserves spatial clusters); **snHi-C** has second-highest, leveraging whole-genome amplification. Tradeoffs in cells/experiment vs contacts/cell are quantified.
 - Built-in computational optimizations: parallel processing, Monte Carlo acceleration.
 
 ## Methods / evidence
 
-Comprehensive benchmark on published sc3DG-seq datasets (Table 1 enumerates the 15 technologies). EmptyCells uses Monte Carlo simulation against an empty-barcode null. SSCE combines TAD, compartment, and loop scores into a unified structural metric.
+Comprehensive benchmark on published sc3DG-seq datasets (Table 1 enumerates the 15 technologies). EmptyCells uses Monte Carlo simulation against an empty-barcode null. SSCE combines TAD-boundary and A/B-compartment-switch coefficients (ridge regression on per-chromosome contact counts) into a unified structural metric.
 
 ## Surprising or load-bearing bits
 
 - **scSPRITE captures more contacts per cell than any ligation-based method** because sonication preserves entire spatial clusters of chromatin (rather than pairs of ligated fragments). This is a genuine throughput advantage and points to a future direction beyond ligation-based 3C variants.
 - The introduction of **SSCE** as a structural-quality metric solves a real measurement problem: cells with few contacts can still be informative if those contacts span TAD boundaries or loop anchors. Contact-count alone biases toward shallow data.
-- scNucleome positions itself as the "scTL atlas" of 3D-genome data — analogous to TabulaSapiens for transcriptomics. Publicly accessible uniformly processed data accelerates future cross-study work.
+- scNucleome is a uniformly processed repository of sc3DG-seq datasets. Publicly accessible uniformly processed data accelerates future cross-study work.
 
 ## Connections to other sources
 

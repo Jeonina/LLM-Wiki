@@ -22,16 +22,16 @@ topics: ["[[40-Topics/somatic-mosaicism]]", "[[40-Topics/clonal-hematopoiesis]]"
 
 ## Key claims
 
-1. **Cardiomyocytes are not genetically uniform.** Healthy human cardiomyocytes carry 4,000–30,000 somatic SNVs per cell, increasing with age. Mutational signatures point to oxidative DNA damage as the dominant aging process; few SNVs are shared between cardiomyocytes, indicating mostly stochastic accumulation.
-2. **CHIP is a systemic CVD risk factor.** Recent Chinese cohort: 18% CHIP prevalence in middle-aged adults; even <2% VAF clones raise CHD risk ~1.3× over 12 years. TET2-driven CHIP doubles HFpEF risk (Schuermans 2024). CHIP-linked vascular phenotypes now extend to heart failure, ischemic stroke, venous thrombosis.
+1. **Cardiomyocytes are not genetically uniform.** Healthy human cardiomyocytes carry 4,000–30,000 somatic SNVs per cell, increasing with age. Mutational signatures point to oxidative DNA damage as the dominant aging process; few SNVs are shared between cardiomyocytes (the review reads the shared ones as early somatic changes in the common cardiomyocyte lineage).
+2. **CHIP is a systemic CVD risk factor.** Recent Chinese cohort: 18% CHIP prevalence in middle-aged adults; even <2% VAF clones raise CHD risk ~1.3× (overall CHIP HR ~1.4). TET2-driven CHIP doubles HFpEF risk (Schuermans 2024). CHIP-linked vascular phenotypes now extend to heart failure, ischemic stroke, venous thrombosis.
 3. **Smoking leaves a single-cell COSMIC signature in cardiac endothelium.** scWGS reveals SBS4 (tobacco), SBS29 (chewing tobacco), SBS40 (aging), SBS92 (smoking), ID3 (tobacco insertion-deletion) enrichment in cardiac endothelial cells from smokers.
 4. **Duplex-sequencing toolbox enables ultra-rare variant detection.** TwinStrand (10⁻⁷ error rate, targeted), NanoSeq (restriction-enzyme-based, genome-wide), BotSeqS (dilution bottleneck, cost-effective), CODEC (intramolecular ligation linking both strands), Pro-Seq (proximity ligation), META-CS (Tn5-based dual-strand tagging). Each occupies a different point on accuracy/throughput/cost.
 5. **Single-nucleus is needed for polyploid cardiomyocytes.** Cardiomyocytes are often multinucleated; nuclei-level genotyping enables intra-cell heterogeneity assessment that whole-cell methods cannot.
-6. **Structural-variant mosaicism contributes to non-syndromic cardiac disease.** SCN5A (Long QT), GNAI2 (idiopathic VT), FBN1 (thoracic aneurysm in 3% of non-syndromic TAA) — somatic mutations in known Mendelian-disease genes manifest as adult-onset cardiac phenotypes when restricted to a tissue subset.
+6. **Somatic mosaic mutations in Mendelian cardiac genes may contribute to non-syndromic cardiac disease.** SCN5A (Long QT), GNAI2 (idiopathic VT), FBN1 (Marfan gene, somatic variants found in cardiac tissue; separately, ≥3% of non-syndromic TAA estimated to have a somatic-variant basis, not significant after multiple-testing correction) — somatic mutations in known Mendelian-disease genes manifest as adult-onset cardiac phenotypes when restricted to a tissue subset.
 
 ## Methods / evidence
 
-Review of ~70 sources. Tabulates 9 sequencing/error-correction technologies (Table 1). Highlights SMaHT Network (NIH) and SOMATICART (EU) as reference-atlas initiatives. Cites the cardiomyocyte single-cell genomics literature (Wang/Walsh-lab 2022, Hsieh/Choudhury 2025 unpublished or in submission per the review).
+Review of ~110 sources. Tabulates 9 sequencing/error-correction technologies (Table 1). Highlights SMaHT Network (NIH) and SOMATICART (EU) as reference-atlas initiatives. Cites the cardiomyocyte single-cell genomics literature (Choudhury et al., Nat Aging 2022; Hilal et al. 2025 preprint on ischemic cardiomyocytes).
 
 ## Surprising or load-bearing bits
 

@@ -35,7 +35,7 @@ topics:
 ## Key claims
 
 - **GoT–ChA captures genotype + chromatin accessibility in the same single nucleus.** Two custom primers added to the 10x scATAC-seq cell-barcoding PCR amplify the mutation-containing genomic locus directly from gDNA — bypassing both expression-level dependence and the transcript-distance limitation that motivated [[30-Concepts/circularization-got]] in [[10-Summaries/nam-2019-got]].
-- **Cell-line validation across multiple targets:** TP53 R248 (49.5–49.8% genotyping, 99.7% accuracy), JAK2 V617 (63.2% / 96.2%), NRAS Q61, TP53 M133. CNV scores from scATAC orthogonally confirm genotypes. Multiplexable up to 4 targets simultaneously; genotyping efficiency is independent of locus accessibility.
+- **Cell-line validation across multiple targets:** TP53 R248 (49.1–49.8% genotyping, 99.7% accuracy), JAK2 V617 (63.2% / 96.2%), NRAS Q61, TP53 M133. CNV scores from scATAC orthogonally confirm genotypes. Multiplexable up to 4 targets simultaneously; genotyping efficiency is independent of locus accessibility.
 - **In primary human JAK2V617F MPN (21 samples, 19 patients, 150,643 cells)**: GoT–ChA genotyped 38.1% of cells on average vs **7–10% by RNA-based GoT/scRNA-seq genotyping** — a major throughput gain for low-expression drivers like JAK2.
 - **Cell-intrinsic pro-inflammatory phenotype in JAK2V617F-mutant HSCs:** increased gene accessibility for NF-κB target genes (TRAPPC9), TGF-β superfamily (BMPR1B receptor and GDF10 ligand), and MMP15 (matrix remodeling). WT HSCs preferentially accessible at stem/quiescence genes (FRY, HLF, PBX1).
 - **STAT motif accessibility is increased in mutant HSCs**, including STAT1/5 — visible already at the **JAK2V617F clonal-hematopoiesis stage**, *before* overt MPN. NFKB1 and REL motifs are specifically increased in homozygous mutant cells.
@@ -45,13 +45,13 @@ topics:
 
 ## Methods / evidence
 
-Engineering: scATAC-seq with two extra primers in the cell-barcoding PCR; locus-specific GoT–ChA primers + linear amplification + exponential amplification; library construction. Computational framework released as an R package. Cohort: 18 untreated/ruxolitinib-treated MF patients + 1 longitudinal PV→MF + 1 JAK2V617F clonal hematopoiesis sample. Comparisons within-patient between WT and mutant cells of the same cluster — same design move as [[10-Summaries/nam-2019-got]].
+Engineering: scATAC-seq with two extra primers in the cell-barcoding PCR; locus-specific GoT–ChA primers + linear amplification + exponential amplification; library construction. Computational framework released as an R package. Cohort: 21 samples from 18 JAK2V617F MF patients (12 untreated, including three longitudinal PV→MF samples from one patient; 6 ruxolitinib-treated) plus 1 JAK2V617F clonal hematopoiesis sample. Comparisons within-patient between WT and mutant cells of the same cluster — same design move as [[10-Summaries/nam-2019-got]].
 
 Strong validation chain: cell-line mixing, CNV concordance, multi-locus multiplexing, comparison vs prior cDNA-based methods, longitudinal sampling of one patient through PV→MF transition.
 
 ## Surprising or load-bearing bits
 
-- **Pro-inflammatory chromatin priming of HSCs is cell-intrinsic and occurs before overt disease.** Inflammation in MPN was previously framed as microenvironmental; this paper shows the mutated stem cell already carries an open NF-κB/TGF-β chromatin program at the clonal hematopoiesis stage. That's a meaningful causal reframing.
+- **Pro-inflammatory chromatin priming of HSCs is cell-intrinsic and occurs before overt disease.** Inflammation in MPN was previously framed as microenvironmental; this paper shows the mutated stem cell already shows increased accessibility of canonical JAK2/STAT targets at the clonal hematopoiesis stage, while the NF-κB/TGF-β program appears only in MF (not in the CH sample). That's a meaningful causal reframing.
 - **Genotyping rate jumps from ~7–10% to ~38%** by switching from cDNA to gDNA capture. This is the single biggest practical improvement over [[30-Concepts/got]] — JAK2 is too lowly expressed for cDNA-based methods to genotype reliably, and gDNA is one copy per cell.
 - **Ruxolitinib reverses the chromatin difference but not the clone.** That's a clean mechanistic story for why the drug controls symptoms but doesn't cure: it suppresses the *consequence* (cytokine-driven motif activity) without removing the *cause* (the mutant clone).
 - **Compatibility with DOGMA-seq** quietly turns this into a 4-modality assay (genotype + chromatin + RNA + protein) — the most multi-omic single-cell readout in the lineage to date.

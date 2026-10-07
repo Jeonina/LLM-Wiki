@@ -46,7 +46,7 @@ Six sources ingested 2026-08-14 cover the reconstruction side of CRISPR recorder
 
 - **Plain Cas9 indels** → non-modifiability (an edited site can never change again) plus convergent edit outcomes → **star homoplasy** ([[10-Summaries/sashittal-2023-startle]]).
 - **Advanced recorders (KP-tracer, intMEMOIR, CARLIN)** → add heritable missingness, mutation-rate decay, and heterogeneous per-site edit sets → **PMM** ([[10-Summaries/chu-2025-laml]]).
-- **Prime-editing sequential recorders** → each insertion deactivates its site and activates the next, so **edit order is recorded** → sequential-insertion likelihood ([[10-Summaries/seidel-2026-sciphy]]). Prior analyses used UPGMA with custom distances, discarding order entirely.
+- **Prime-editing sequential recorders** → each insertion deactivates its site and activates the next, so **edit order is recorded** → sequential-insertion likelihood ([[10-Summaries/seidel-2026-sciphy]]). Prior analyses used UPGMA with custom (order-aware) distances, which encode order only through pairwise distances and ignore higher-order information ([[10-Summaries/seidel-2026-sciphy]]).
 
 Anyone choosing a tool must first ask which recorder generated the data. (synthesis)
 

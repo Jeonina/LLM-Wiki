@@ -30,12 +30,12 @@ Now largely superseded by [[pta]] for high-coverage applications, but remains in
 
 ## Contested points
 
-- Quake group's MDA-vs-MALBAC benchmarking ([[10-Summaries/gawad-2016-scgenome-review]]) gave mixed results — MALBAC was more uniform but had higher error rate. Conclusion: method choice should match the specific question.
+- Quake group's MDA-vs-MALBAC benchmarking at the *E. coli* single-cell level ([[10-Summaries/gawad-2016-scgenome-review]]) found microfluidic-volume MDA and MALBAC had comparable bias; in microliter volumes MDA bias depended on gain while MALBAC was gain-independent. Conclusion: method choice should match the specific question.
 - MALBAC's ADO rate ~21% was sometimes calculated only on covered sites, masking true false-negative rates.
 
 ## Examples
 
-- Single-cell CNV phylogenetics in breast cancer (Navin et al. 2011, Hou et al. 2013 cited in [[10-Summaries/gawad-2016-scgenome-review]]).
+- Single-cell CNV phylogenetics in breast cancer (cited in [[10-Summaries/gawad-2016-scgenome-review]]; note that Navin et al. 2011 predates MALBAC and used single-nucleus sequencing — [[10-Summaries/navin-2011-sns-tumor-evolution]]).
 - Capture of SNVs in circulating tumor cells with high uniformity.
 
 ## Related

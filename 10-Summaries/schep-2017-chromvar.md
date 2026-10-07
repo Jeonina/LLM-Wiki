@@ -35,13 +35,13 @@ topics:
 - **Bias-corrected deviation**: for each motif and cell, compute (observed fragments in peaks containing motif − expected fragments) / expected. Then subtract the mean deviation from GC-content-matched and accessibility-matched background peak sets. Divide by background SD to get a *z*-score.
 - **Robust at 10,000 fragments per cell** (typical scATAC yield): clustering accuracy matches deep bulk and outperforms PCA/peak-based approaches.
 - Identifies known master regulators of hematopoiesis (HOXA9, SPI1/PU.1, TBX21, GATA1) and reconstructs major hematopoietic lineages in tSNE space.
-- AML application: leukemic stem cells from two patient samples cluster between LMPPs and monocytes; AML blasts cluster with monocytes. SPI1 and CEBPA motifs distinguish stem-like vs differentiated AML — clinical-relevance demonstration.
+- AML application: leukemic stem cells from two patient samples are most similar to LMPPs; AML blasts cluster with monocytes. SPI1 and CEBPA motifs distinguish stem-like vs differentiated AML — clinical-relevance demonstration.
 - **k-mer-based de novo motif discovery**: use covariance between highly variable seed k-mers and their single-mismatch neighbors to construct position-weight matrices. Identifies motifs without prior annotation.
 - TF footprint analysis on de novo motifs reveals atypical footprints (>20 bp) suggesting larger regulatory complexes than canonical single-TF binding.
 
 ## Methods / evidence
 
-R package (github.com/GreenleafLab/chromVAR). cisBP database of human and mouse PWMs as default motif set. User-extensible to k-mers, ChIP-seq peaks, GWAS annotations. Validated by downsampling bulk hematopoiesis ATAC-seq (Buenrostro 2018) and on scATAC-seq from C1 Fluidigm.
+R package (github.com/GreenleafLab/chromVAR). cisBP database of human and mouse PWMs as default motif set. User-extensible to k-mers, ChIP-seq peaks, GWAS annotations. Validated by downsampling bulk hematopoiesis ATAC-seq (Corces 2016) and on single-cell ATAC-seq data.
 
 ## Surprising or load-bearing bits
 

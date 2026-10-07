@@ -31,8 +31,8 @@ topics:
 ## Key claims
 
 - **Architecture**: a DNA module (CNN with one-hot-encoded 1 kb regions, densely connected blocks), a DNase module (parallel CNN on openness scores), and a joint module that fuses the two and outputs 7 parallel sigmoid predictions (one per histone mark, not mutually exclusive).
-- **Performance**: outperforms baseline methods (logistic regression on TFs, linear regression on histone marks) both within-epigenome and across-epigenomes — i.e., trained on one cell type and tested on another.
-- **Trained on Roadmap Epigenomics** ChIP-seq peaks from 21 (filtered to 15) epigenomes that had all 7 marks profiled. 7.6 M positive sites across ~3 billion candidate windows.
+- **Performance**: outperforms baseline methods (DeepSEA, DanQ, gkm-SVM) and its own DNA-only/DNase-only ablations both within-epigenome and across-epigenomes — i.e., trained on one cell type and tested on another.
+- **Trained on Roadmap Epigenomics** ChIP-seq peaks from 21 (filtered to 15) epigenomes that had all 7 marks profiled. 7.6 M positive sites from 200-bp windows tiled across hg19.
 - **Sequence signatures**: the convolutional kernels learned by the DNA module correspond to known TF binding sites, validating that the model has captured biologically meaningful regulatory features.
 - **Functional SNP discrimination**: DeepHistone scores can distinguish disease-associated SNPs from nearby non-functional variants, suggesting application as a regulatory-variant prioritization tool.
 

@@ -18,7 +18,7 @@ topics: ["[[single-cell-lineage-tracing]]", "[[computational-methods]]"]
 
 # Seidel 2026 — SciPhy
 
-> Prime-editing recorders write edits **in order** — each insertion deactivates the current site and activates the next — so the barcode records not just *which* edits happened but *when relative to each other*. Every existing analysis of such data used **UPGMA with custom distance metrics**, which discards the ordering entirely. SciPhy models sequential insertion mechanistically in BEAST 2 and jointly estimates time-scaled phylogenies and population dynamics.
+> Prime-editing recorders write edits **in order** — each insertion deactivates the current site and activates the next — so the barcode records not just *which* edits happened but *when relative to each other*. Existing analyses used **UPGMA with custom (order-aware) distance metrics**, which encode ordering only through pairwise distances and ignore higher-order information and editing-process properties. SciPhy models sequential insertion mechanistically in BEAST 2 and jointly estimates time-scaled phylogenies and population dynamics.
 
 ## Key claims
 
@@ -56,7 +56,7 @@ Weight: the monoclonal culture is the right benchmark substrate (known, homogene
 
 - Direct predecessor, same authors and framework: [[seidel-2022-tidetree]].
 - Contemporary maximum-likelihood alternative for a different recorder generation: [[chu-2025-laml]].
-- Non-probabilistic methods it outperforms: [[gong-2022-dclear]], [[jones-2020-cassiopeia]], [[sashittal-2023-startle]].
+- Benchmarked against order-aware UPGMA, order-unaware UPGMA and [[seidel-2022-tidetree]] (not against DCLEAR, Cassiopeia or Startle).
 - Recorder lineage: [[mckenna-2016-science]] (GESTALT).
 - Review context: [[rodriguez-fraticelli-2026-lineage-tracing-review]], [[wang-2026-multimodal-lineage-computational]].
 

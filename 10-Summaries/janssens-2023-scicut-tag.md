@@ -33,7 +33,7 @@ topics:
 
 - **Workflow**: lightly cross-link nuclei → bind to WGA-magnetic beads → bulk primary+secondary antibody → array in 96-well plate → barcoded pA-Tn5 tagmentation per well → pool → ICELL8 dispense at 12–24 cells/nanowell → SDS release → PCR with second-round barcode → SPRI cleanup → sequence. ~1.5 days end-to-end by a research technician.
 - **Per-cell yield**: median 2,116 reads/cell for H3K27me3 in human PBMCs (vs ~1,110 for original scCUT&Tag, comparable to linear-amplification methods that bolster reads/cell).
-- **Throughput**: ~40,000 cells/chip with 12–24 cells/nanowell loading; **collision rate 16–17%** at this density (acceptable when SNP-based collision removal is used).
+- **Throughput**: ~40,000 cells/chip with 12–24 cells/nanowell loading; **collision rates ~7% (H3K27me3, max 8.5%) and ~13% (H3K4me1-2-3, max 17.2%)** across dispense targets (acceptable when SNP-based collision removal is used).
 - **SNP-based collision removal**: dispense two donors' cells together; reads carrying inconsistent SNPs across the same barcode flag collisions. Built-in quality control.
 - **PBMC application**: H3K27me3 and H3K4me1-2-3 in PBMCs from two healthy donors. Single-cell profiles of either mark are sufficient for high-resolution clustering and de novo cell-type identification (T cells, B cells, monocytes, NK cells).
 - **MulTI-Tag extension**: sciCUT&Tag is the underlying single-cell partitioning for **MulTI-Tag** (multi-target identification by tagmentation) — multiplexes several chromatin epitopes within the same cell via different antibody-barcoded Tn5 complexes.

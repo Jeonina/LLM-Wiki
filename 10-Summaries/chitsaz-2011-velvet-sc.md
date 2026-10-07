@@ -24,11 +24,11 @@ topics: ["[[whole-genome-amplification]]", "[[computational-methods]]", "[[scdna
 
 - **A single coverage cutoff is fatal for MDA data, and the numbers show why.** In multicell *E. coli*, most positions sit at 450–800× and only 0.1% fall below 450×, so a threshold prunes errors cleanly. In single-cell *E. coli*, **5% of positions have <10× and 11% have <30×** — and 30× is roughly the minimum most assemblers need for gap-free assembly. Any threshold high enough to remove errors also deletes a tenth of the genome.
 - **The progressive cutoff is the algorithm.** Velvet-SC raises the coverage threshold gradually rather than applying one value, assembling high-coverage regions under strict pruning and low-coverage regions under permissive pruning.
-- **E+V-SC couples error correction to the assembler.** Velvet-SC is combined with EULER's error correction, because standard correction tools (Quake and similar) implicitly assume near-uniform coverage and perform poorly on single-cell data.
+- **E+V-SC couples error correction to the assembler.** Velvet-SC is combined with EULER-SR's error correction; existing assemblers implicitly assume near-uniform coverage.
 - **>91% of genes captured within contigs** from single *E. coli* and *Staphylococcus aureus* cells, against 95% from a multicell *E. coli* assembly — the gap between one cell and many cells narrows to four percentage points, without gap closing or repeat resolution.
 - **A real uncultivated genome, not just a benchmark.** Assembly of a single cell from the **SAR324 clade of Deltaproteobacteria** — a cosmopolitan marine lineage — with metabolic reconstruction suggesting it is aerobic, motile and chemotaxic. This is genome-*centric* information that metagenomics structurally cannot provide, because metagenomic data cannot say which genes co-occur in one organism.
 - **Two MDA artifacts, named separately.** Amplification bias gives orders-of-magnitude coverage differences and outright absent regions; **chimera formation** arises during φ29's branching amplification and joins non-contiguous sequences. Greater coverage alleviates chimeras but does not remove them.
-- **The motivation is scale**: over 99% of microbes cannot be cultivated, so single-cell sequencing plus metagenomics is the only route to their genomes.
+- **The motivation is scale**: most microbes cannot be cultured, so single-cell sequencing plus metagenomics is the only route to their genomes.
 
 ## Methods / evidence
 
@@ -64,7 +64,7 @@ Weight: the *E. coli*/*S. aureus* controls are the right design — assembly cla
 ## Open questions
 
 - **The progressive cutoff has no principled stopping rule** in this source; the schedule is heuristic.
-- Chimera rate is described qualitatively but not quantified, and no chimera-detection step is part of the pipeline (SPAdes adds one).
+- Chimera rate is quantified (2% of E. coli and 0.5% of S. aureus read pairs; ~1 per 10–30 kbp), and no chimera-detection step is part of the pipeline (SPAdes adds one).
 - Whether the SAR324 metabolic reconstruction is complete enough to support the aerobic/motile/chemotaxic conclusions depends on assembly completeness that cannot be checked without a reference.
 
 ## Related

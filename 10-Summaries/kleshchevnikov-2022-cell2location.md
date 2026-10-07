@@ -56,7 +56,7 @@ Weight: the three-tissue design is the strength. As with all deconvolution metho
 - Alignment-based counterpart, published three months earlier: [[biancalani-2021-tangram]].
 - Used as a baseline (via the RCTD family of deconvolution approaches) by [[debnath-2026-ison]].
 - Probabilistic-modelling relatives: [[argelaguet-2020-mofa-plus]], [[gayoso-2021-totalvi]], [[ashuach-2023-multivi]].
-- Spatial assay landscape: [[zhao-2022-nature]] (slide-DNA-seq), [[cardilla-2025-spatial-methylome]], [[andrewc-2020-science]] (in-situ genome sequencing), [[vandereyken-2023-spatial-multiomics]].
+- Spatial assay landscape: [[zhao-2022-nature]] (slide-DNA-seq), [[cardilla-2025-spatial-methylome]], [[andrewc-2020-science]] (in-situ genome sequencing), [[vandereyken-2023-scmultiomics-review]].
 - Reference-dependent methods sharing its structural limitation: [[kang-2021-symphony]], [[song-2021-scgcn]].
 - Best practices: [[heumos-2023-best-practices]].
 

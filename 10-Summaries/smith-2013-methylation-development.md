@@ -19,7 +19,7 @@ concepts:
 topics:
 ---
 
-**Citation:** Smith et al. (2013) — *DNA methylation: roles in mammalian development* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/nrg3354)
+**Citation:** Smith & Meissner (2013) — *DNA methylation: roles in mammalian development* — *Nature Reviews Genetics*. [DOI](https://doi.org/10.1038/nrg3354)
 
 # Smith & Meissner 2013 — DNA methylation: roles in mammalian development
 
@@ -28,12 +28,12 @@ topics:
 ## Key claims
 
 - **Global methylation landscape**: 60–80% of the ~28 million CpGs in the human genome are methylated. <10% of CpGs occur in CpG islands, most of which are at TSSs of housekeeping/developmental genes and are constitutively *unmethylated*.
-- **DNMT enzymes**: DNMT1 maintains symmetric methylation through S phase by recognizing hemimethylated substrates (via UHRF1); DNMT3A/3B perform de novo methylation. Loss of any is embryonic-lethal.
-- **TET enzymes** (TET1/2/3) oxidize 5mC to 5hmC, an intermediate for full demethylation; TET1 binds CpG island promoters and may function as a general "epigenetic proofreader."
+- **DNMT enzymes**: DNMT1 maintains symmetric methylation through S phase by recognizing hemimethylated substrates (via UHRF1); DNMT3A/3B perform de novo methylation. Loss of any is lethal (early gestational or postnatal, depending on the enzyme).
+- **TET enzymes** (TET1/2/3) oxidize 5mC to 5hmC, an intermediate for full demethylation; TET dioxygenases, along with deaminases and BER enzymes, act as proofreading enzymes coupled to promoter/enhancer complexes that may prevent aberrant hypermethylation.
 - **Targets of methylation regulation**:
   - Promoter CpG islands (mostly unmethylated, actively excluded from methylation by H3K4 methyltransferases and TF binding).
   - Repetitive elements / transposons (mostly methylated to silence them).
-  - Imprinted loci (parent-of-origin-specific methylation marks established in PGCs).
+  - Imprinted loci (parent-of-origin-specific methylation marks erased in PGCs and re-established during gametogenesis).
 - **Two developmental windows of global demethylation**:
   - **Pre-implantation embryo**: paternal genome rapidly demethylated at fertilization; both genomes globally depleted over early embryonic progression.
   - **PGC specification**: near-complete erasure to enable re-establishment of imprints.
@@ -45,7 +45,7 @@ Synthesizing review across mouse and human studies, with extensive ESC focus. Me
 
 ## Surprising or load-bearing bits
 
-- **DNMT1 fidelity is structurally dependent on hemimethylated substrate** — it cannot methylate fully unmethylated DNA on its own, which prevents spurious genome-wide methylation gains. UHRF1 enforces the targeting.
+- **DNMT1 fidelity is structurally dependent on hemimethylated substrate** — its low affinity and catalytic activity at unmethylated DNA limit its de novo activity, which prevents spurious genome-wide methylation gains. UHRF1 enforces the targeting.
 - **CpG islands hypermethylate during tumorigenesis** — a key cancer-epigenetics observation that motivates therapeutic strategies (DNMT inhibitors) and biomarkers.
 - **TET-mediated demethylation pathway** is the breakthrough that explains how locus-specific demethylation can be actively achieved (rather than passively via replication without DNMT1).
 

@@ -57,7 +57,7 @@ Weight: breadth across platforms is the strongest evidence that the method is no
 - Later method that infers spatial *chromatin accessibility* without a paired spatial assay: [[debnath-2026-ison]], which uses Tangram as a baseline.
 - Multimodal input used here: [[ma-2020-cell]] (SHARE-seq).
 - Spatial DNA/genomic assays: [[zhao-2022-nature]] (slide-DNA-seq), [[andrewc-2020-science]] (in-situ genome sequencing), [[cardilla-2025-spatial-methylome]], [[mo-2023-stam-seq]].
-- Spatial review context: [[vandereyken-2023-spatial-multiomics]].
+- Spatial review context: [[vandereyken-2023-scmultiomics-review]].
 - Integration taxonomy: [[argelaguet-2021-integration-principles]].
 - Reference-mapping cousins that also infer unmeasured modalities: [[kang-2021-symphony]], [[lakkis-2022-scipenn]].
 

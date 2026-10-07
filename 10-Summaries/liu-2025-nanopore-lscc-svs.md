@@ -34,12 +34,12 @@ topics:
 - **SomaGauss-SV workflow**: somatic-SV detection from paired tumor-vs-normal nanopore long-read data. Balanced high precision and recall across five paired tumor cell-line datasets (benchmark).
 - **15 paired LSCC samples**: comprehensive SV landscape including deletions, insertions, duplications, inversions, translocations.
 - **Smoking-dose × somatic-deletion correlation**: significant positive correlation between somatic deletion burden and smoking intensity. Quantitative confirmation of a long-suspected etiologic link.
-- **Simple-repeat-expansion hotspot**: a high-frequency somatic simple-repeat expansion observed in 20/27 (74.1%) of LSCC patients (extending the original 15-patient cohort). The expansion upregulates *TP53BP2* and *FBXO28* through **spatial proximity** (3D-genome contact) — i.e., the expanded repeat brings nearby genes into a more accessible chromatin neighborhood.
+- **Simple-repeat-expansion hotspot**: a high-frequency somatic simple-repeat expansion observed in 20/27 (74.1%) of LSCC patients (extending the original 15-patient cohort). The expansion upregulates *TP53BP2* and *FBXO28* through **spatial proximity** (3D-genome contact) — i.e., the expanded repeat brings nearby genes into a more accessible chromatin neighborhood *(not found in source clipping — unverified)*.
 - Positions long-read sequencing + SomaGauss-SV as a tool for **biomarker discovery** in head-and-neck cancers.
 
 ## Methods / evidence
 
-Nanopore long-read sequencing of 15 paired tumor-blood LSCC samples. Five paired tumor cell-line datasets for SomaGauss-SV benchmark vs alternative SV callers. RNA-seq for downstream gene-expression correlation. Hi-C or similar contact data used to validate spatial-proximity-mediated regulation of *TP53BP2*/*FBXO28*.
+Nanopore long-read sequencing of 15 paired tumor-blood LSCC samples. Five paired tumor cell-line datasets for SomaGauss-SV benchmark vs alternative SV callers. RNA-seq for downstream gene-expression correlation. Hi-C or similar contact data used to validate spatial-proximity-mediated regulation of *TP53BP2*/*FBXO28*. *(not found in source clipping — unverified)*
 
 ## Surprising or load-bearing bits
 

@@ -18,9 +18,9 @@ Coined informally in the somatic-mutation-and-aging literature, "genosenium" den
 ## Evidence
 
 - Somatic mutation rate scales with lifespan across mammals ([[10-Summaries/cagan-2022-nature]]).
-- Aged human cells accumulate ~50–200 SNVs/year tissue-dependent ([[10-Summaries/vijg-2020-cell]]; [[10-Summaries/lodato-2017-aging-neurons]]).
+- Aged human cells accumulate somatic SNVs at tissue-dependent rates, e.g. ~15–20 SNVs/year in postmitotic neurons ([[10-Summaries/lodato-2017-aging-neurons]]; [[10-Summaries/bizzotto-2022-brain-mosaicism-review]]).
 - Cell-type-specific clonal expansion in aged hematopoiesis ([[10-Summaries/kapadia-2024-stem-cell-aging]]).
-- ~6% of aged brains carry >100 detectable somatic SNVs, possibly precursor states for glioma ([[10-Summaries/taejeong-2022-science]]).
+- ~6% of brains are hypermutable (>101 somatic SNVs), rising to 16% of brains over 60, possibly precursor states for glioma ([[10-Summaries/taejeong-2022-science]]).
 
 ## Open question
 

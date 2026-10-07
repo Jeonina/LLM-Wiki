@@ -30,7 +30,7 @@ topics: ["[[single-cell-lineage-tracing]]", "[[cancer-clonal-evolution]]", "[[co
 
 ## Methods / evidence
 
-Simulated lineage tracing data for accuracy benchmarking; real data from a mouse metastatic lung adenocarcinoma (KP-tracer lineage). The clipping captures highlights, summary and the opening of the introduction; detailed results are not included.
+Simulated lineage tracing data for accuracy benchmarking; real data from a mouse metastatic lung adenocarcinoma (KP-tracer lineage). The clipping includes the full text (results, discussion and STAR Methods); this summary was written from the front matter and can be expanded.
 
 ## Surprising or load-bearing bits
 

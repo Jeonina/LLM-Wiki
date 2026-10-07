@@ -35,7 +35,7 @@ The most consequential extension: if the reference measured something the query 
 - **RNA → spatial position** by alignment ([[10-Summaries/biancalani-2021-tangram]]) or deconvolution ([[10-Summaries/kleshchevnikov-2022-cell2location]]).
 - **RNA → spatial chromatin accessibility**, either propagated through a paired assay ([[10-Summaries/biancalani-2021-tangram]] on SHARE-seq data) or learned from a joint embedding ([[10-Summaries/debnath-2026-ison]]).
 
-The shared premise is that a reference substitutes for an experiment. The shared risk is that the prediction reproduces the reference's structure rather than the query's biology — and only [[10-Summaries/lakkis-2022-scipenn|sciPENN]] returns an uncertainty estimate, so in every other case an imputed value is indistinguishable from a measured one in the output matrix. (synthesis)
+The shared premise is that a reference substitutes for an experiment. The shared risk is that the prediction reproduces the reference's structure rather than the query's biology — and only [[10-Summaries/lakkis-2022-scipenn|sciPENN]] is reported to return a well-calibrated uncertainty estimate (Seurat 4 provides none; totalVI's prediction intervals are badly under-covered), so otherwise an imputed value is easily mistaken for a measured one in the output matrix. (synthesis)
 
 ## The shared structural limitation
 

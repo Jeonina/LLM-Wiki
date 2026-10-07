@@ -19,7 +19,7 @@ updated: 2026-05-19
 
 ## Callers
 
-- [[10-Summaries/zafar-2016-monovar]] (Monovar) · [[10-Summaries/dong-2017-sccaller]] (SCcaller) · [[10-Summaries/sarah-2019-cell]] (ProSolo)
+- [[10-Summaries/zafar-2016-monovar]] (Monovar) · [[10-Summaries/dong-2017-sccaller]] (SCcaller)
 - [[10-Summaries/huang-2017-mosaichunter]] (MosaicHunter) · [[10-Summaries/dou-2020-mosaicforecast]] (MosaicForecast) · [[10-Summaries/yang-2023-deepmosaic]] (DeepMosaic)
 - [[10-Summaries/dou-2023-monopogen]] (Monopogen) · [[10-Summaries/tu-2021-scout-genotyper]] (SCOUT)
 
@@ -49,7 +49,7 @@ updated: 2026-05-19
 
 ## Added 2026-08-13
 
-SCAN2 ([[10-Summaries/luquette-2021-scan2]]) is the PTA-native caller and the first to report a genome-wide single-neuron **indel** rate (≥2/year). Its more consequential result is a correction to a published biological constant: the neuronal SNV accumulation rate falls to **15 SNVs/year**, with the revision attributed to artifacts in older amplification chemistries.
+SCAN2 ([[10-Summaries/luquette-2021-scan2]]) is the PTA-native caller and reports a genome-wide single-neuron **indel** rate (≥2/year). Its more consequential result is a correction to a published biological constant: the neuronal SNV accumulation rate falls to **15 SNVs/year**, with the revision attributed to artifacts in older amplification chemistries.
 
 That is the sharpest case in the corpus of chemistry determining a biological number — and it sits alongside the validation result from a decade earlier that only **19.4–27.0% of single-cell-only mutation calls survive orthogonal duplex confirmation** ([[10-Summaries/wang-2014-nuc-seq]]). Both point the same way: single-cell-only calls need an independent arbiter. (synthesis)
 

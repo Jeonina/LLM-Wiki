@@ -30,7 +30,6 @@ Dey et al. 2015 ([[10-Summaries/dey-2015-dr-seq]]). Cell lysed with poly-T prime
 ## Contested points
 
 - Coding-region masking limits SNV detection from coding regions of the DNA half.
-- RNA reads are 3′-biased (CEL-seq lineage), unlike G&T-seq's full-length Smart-seq2 coverage.
 - Quasilinear amplification GC bias slightly higher than MALBAC alone.
 
 ## Related

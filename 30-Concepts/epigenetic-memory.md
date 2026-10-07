@@ -19,7 +19,7 @@ Memory is enforced by **maintenance machinery**: DNMT1+UHRF1 at the replication 
 
 - **iPSCs retain methylation signatures** of donor cells and preferentially differentiate back toward original lineage ([[10-Summaries/kim-2017-methylation-memory-review]]).
 - **Cancer cells retain methylation** of their tissue of origin even at metastatic sites — enables [[30-Concepts/cancer-of-unknown-primary]] tissue classification by methylation pattern (EPICUP).
-- **MSCs** show donor-source-specific methylation persisting through culture, a quality-control biomarker.
+- **MSCs** show methylation patterns that reflect their cell type of origin and remain stable through long-term culture, a quality-control marker ([[10-Summaries/kim-2017-methylation-memory-review]]).
 
 ## Related
 

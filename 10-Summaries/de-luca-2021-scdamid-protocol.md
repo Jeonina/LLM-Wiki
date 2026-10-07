@@ -21,7 +21,7 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
-**Citation:** de Luca et al. (2021) — *Single-cell DamID protocol for nuclear-lamina contacts in mammalian cells* — *Methods in Molecular Biology vol. 2157*. [DOI](https://doi.org/10.1007/978-1-0716-0664-3_9)
+**Citation:** de Luca & Kind (2021) — *Single-cell DamID protocol for nuclear-lamina contacts in mammalian cells* — *Methods in Molecular Biology vol. 2157*. [DOI](https://doi.org/10.1007/978-1-0716-0664-3_9)
 
 # de Luca & Kind 2021 — scDamID protocol (MMB 2157)
 
@@ -33,12 +33,12 @@ topics:
 - **MboI-qPCR is the gating QC**. MboI cuts only *unmethylated* GATC, so percentage methylation = 1/2^(Ct_digested − Ct_undigested) × 100%. Acceptance: Dam-LMNB1 clones with LAD methylation >40% and LAD/iLAD ratio >3; Dam-only controls with LAD <20% and ratio <1. Out of ~200 seeded clones, 10–60% pass.
 - **Throughput scaffold**: FACS-sort single cells into 96-well plates with 3 μL lysis buffer (Tris/Mg/K-acetate + Tween/IGEPAL + Proteinase K fresh). All subsequent steps are additive — no purification between digest, ligation, PCR — minimizing material loss.
 - **PCR uses cell-specific barcoded primers** hybridizing to a universal T7-promoter-containing adapter. Multiplex hundreds of cells into one Illumina library. Recommended depth: ~500K raw reads per single-cell sample for Dam-LMNB1 in mammals.
-- **Cell-cycle gating matters**: Dam methylation accumulates in G1/G2; DNA replication erases hemimethylated marks. Collect cells at G1/S or G2/M transitions via Hoechst staining or FUCCI reporter.
+- **Cell-cycle gating matters**: Dam methylation accumulates in G1/G2; DNA replication dilutes the mark to hemimethylation. Collect cells at G1/S or G2/M transitions via Hoechst staining or FUCCI reporter.
 
 ## Methods / evidence
 
 - **Chemistry chain**: cells → Proteinase-K lysis (42°C 4h, 80°C 20min inactivate) → DpnI digest of m6A-GATC (37°C 8h) → T4 ligation of double-stranded adapter (16°C 12–16h) → PCR with cell-specific barcoded primer; 20-cycle starter, titrate by gel.
-- **Adapter**: T7-promoter-containing fork structure; bottom strand 5'-TCCTCGGCCGCG-3' with 5' phosphate; top strand carries T7+Illumina+barcode+CA. Annealed slow-cool from 94°C.
+- **Adapter**: T7-promoter-containing fork structure; bottom strand 5'-TCCTCGGCCGCG-3' with 5' phosphate; top strand carries the T7 promoter plus the primer-binding sequence; cell barcodes are on the PCR primers. Annealed slow-cool from 94°C.
 - **No MboI digest in scDamID** (unlike bulk DamID) — single-cell input is too low; relying on adapter-primer specificity for methylated-fragment enrichment.
 - **Comparator coverage**: ChIP-seq, ATAC-seq, 3C/4C/5C/Hi-C, ChIA-PET all discussed; scDamID is positioned as the easy-implementation, single-cell, high-coverage (~10 kb resolution) entry into nuclear-organization assays.
 
@@ -71,7 +71,7 @@ topics:
 
 - Throughput ceiling: even with 384-well robotics, scDamID tops out at hundreds-to-thousands of cells per run. Combinatorial-indexing adaptations (cf. sciATAC) are an obvious extension that the chapter does not address.
 - Methylation cumulativity time window: 12-h induction is convenient but blurs short-lived contacts. Inducible-degron variants offer finer time resolution but require additional clone engineering.
-- Cross-species portability: documented for KBM7 (human) and mESCs (mouse) — performance in primary tissue, organoids, or other non-cycling cells (neurons, hepatocytes) is unaddressed.
+- Cross-species portability: documented for KBM7 (human) and mESCs (mouse) *(not found in source clipping — unverified)* — performance in primary tissue, organoids, or other non-cycling cells (neurons, hepatocytes) is unaddressed.
 
 ---
 **Source:** [DOI](https://doi.org/10.1007/978-1-0716-0664-3_9) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/32820403/)

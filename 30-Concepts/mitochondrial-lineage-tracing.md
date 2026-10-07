@@ -22,7 +22,7 @@ Provides a non-invasive, retrospective lineage system for human tissues where ge
 ## Examples
 
 - Walker et al. 2020 NEJM used mtDNA mutations to track T-cell purifying selection.
-- mtscATAC-seq used in clonal hematopoiesis studies; implemented in [[10-Summaries/ludwig-2020-mtscatac-seq]] and MAESTER ([[10-Summaries/miller-2022-maester]]); variant calling refined by scMitoMut ([[10-Summaries/sun-2025-scmitomut]]).
+- mtDNA lineage tracing used in clonal hematopoiesis studies; implemented via mtscATAC-seq ([[10-Summaries/ludwig-2020-mtscatac-seq]]) and the scRNA-seq-based MAESTER ([[10-Summaries/miller-2022-maester]]); variant calling refined by scMitoMut ([[10-Summaries/sun-2025-scmitomut]]).
 
 ## Caveats
 

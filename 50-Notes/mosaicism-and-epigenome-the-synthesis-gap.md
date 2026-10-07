@@ -49,20 +49,20 @@ This is the workflow that has produced cell-type-specific somatic-mutation burde
 - Not applied to neuronal or developmental mosaicism.
 - 10-Mb CNV resolution is too coarse for focal somatic variants.
 
-### 2. GoT-ChA (Franco 2024) — targeted SNV + accessibility
+### 2. GoT-ChA (Izzo 2024) — targeted SNV + accessibility
 
 [[10-Summaries/izzo-2024-got-cha]] · [[got-cha]]
 
 **Method**: 10x scATAC-seq workflow modified to co-capture genomic DNA fragments containing a targeted mutation locus, then assigns genotypes via the cell barcode shared with the accessibility profile.
 
-**Key finding**: in JAK2V617F-driven myeloproliferative neoplasms, mutant HSCs show **cell-intrinsic chromatin priming toward myeloid lineages before any transcriptional change is detectable**. The mutation acts at the chromatin level upstream of expression.
+**Key finding**: in JAK2V617F-driven myeloproliferative neoplasms, mutant HSCs show **cell-intrinsic pro-inflammatory chromatin priming before overt disease**: canonical JAK2/STAT targets already have increased accessibility at the clonal-hematopoiesis stage, while the NF-κB/TGF-β program appears only in MF, and MkPs acquire a profibrotic chromatin landscape in myelofibrosis.
 
 **Coverage gaps**:
 - Targeted (one or a few loci per assay) — does not give genome-wide mutation calls.
 - Designed for known mutations, not de novo mosaic discovery.
 - Accessibility only; no methylation arm.
 
-### 3. DAF-seq / scDAF-seq (Elliott 2025) — single-fiber DNA+chromatin
+### 3. DAF-seq / scDAF-seq (Swanson 2025) — single-fiber DNA+chromatin
 
 [[10-Summaries/swanson-2025-daf-seq]] · [[daf-seq]]
 
@@ -71,8 +71,8 @@ This is the workflow that has produced cell-type-specific somatic-mutation burde
 **Key finding**: a 1.5% VAF mosaic CC→TT variant in COLO829 BL/T mixture **ablates the local CTCF footprint on the same single fibers that carry the variant**. This is the prototype demonstration of a mosaic mutation directly perturbing its own local chromatin state in a single cell.
 
 **Coverage gaps**:
-- ≤12 cells deeply benchmarked (4 with full analysis); throughput not yet established for cohort-scale studies.
-- ~91–133 Gb of PacBio HiFi per cell — economics not yet established.
+- 12 single cells sequenced (eight at median 12 Gb, two at ~22 Gb, one at 91 Gb, one at 133 Gb); throughput not yet established for cohort-scale studies.
+- ~91–133 Gb of PacBio HiFi per deeply sequenced cell — economics not yet established.
 - Single cell line (GM24385 lymphoblastoid) for the scDAF-seq demonstration; primary tissue not yet tested.
 - Methylation not directly measured; chromatin state only.
 
@@ -82,7 +82,7 @@ This is the workflow that has produced cell-type-specific somatic-mutation burde
 
 **Method**: applies the scTrio-seq trick (RRBS read distribution → CNV signal) to the **snmC-seq3 / snm3C-seq BICCN mouse brain atlas (415,103 single-cell methylomes)**. Bisulfite-converted reads are uniformly distributed across the genome under bisulfite chemistry, so their density in genomic bins reports relative copy number.
 
-**Key finding**: ~0.175–0.349% of brain cells carry whole-chromosome aneuploidy. **Trisomy of chromosome 16 (syntenic with human chr21) is 13-fold enriched** vs other autosomes (P < 10⁻³⁰⁰). Aneuploidy is **cell-type-specifically enriched** in oligodendrocyte precursor cells (OPCs), Pons neurons, pericytes, dentate gyrus granule cells, claustrum.
+**Key finding**: ~0.175–0.349% of brain cells carry whole-chromosome aneuploidy. **Trisomy of chromosome 16 (syntenic with human chr21) is 13-fold enriched** vs other autosomes (P < 0.001, binomial test). Aneuploidy is **cell-type-specifically enriched** in oligodendrocyte precursor cells (OPCs), Pons neurons, pericytes, dentate gyrus granule cells, claustrum.
 
 **Why this expands the precedent base for the synthesis claim**:
 - This is the **scTrio-seq logic at 1,000× the cell number**. Where scTrio-seq used scRRBS on 25 HCC cells, Mukamel uses snmC-seq on 415K mouse brain cells.
@@ -90,7 +90,7 @@ This is the workflow that has produced cell-type-specific somatic-mutation burde
 - The mosaicism field can no longer be characterized as "bulk-epigenome annotated only" — methylation atlases generate single-cell paired (aneuploidy, methylome) at scale.
 
 **Coverage gaps that remain**:
-- snmC-seq reads cover ~5–15% of the genome per cell → CNV resolution limited to ≥5 Mb. **Cannot call sub-chromosomal CNVs and cannot call point mutations** because bisulfite destroys C→T sequence information.
+- CNVs ≥~5 Mb are reliably detected (>97.5% sensitivity/specificity); smaller events are less reliable. **Cannot call sub-chromosomal CNVs and cannot call point mutations** because bisulfite destroys C→T sequence information.
 - Aneuploidy alone is a narrow subset of mosaicism — the CNV+SNV+SV landscape is not jointly measured.
 - Mouse, single age (P56–63), male only.
 
@@ -98,9 +98,9 @@ This is the workflow that has produced cell-type-specific somatic-mutation burde
 
 [[10-Summaries/kriz-2025-duplex-multiome]]
 
-**Method**: integrates **duplex consensus sequencing into the 10X Multiome snATAC arm** by strand-tagging during library prep. Duplex consensus collapses sequencing error >10,000-fold, enabling accurate somatic SNV calls per nucleus. Same nucleus also yields snATAC chromatin profile + snRNA-seq transcriptome.
+**Method**: integrates **duplex consensus sequencing into the 10X Multiome snATAC arm** by strand-tagging during library prep. Duplex consensus requires both strands to agree on each base call, enabling accurate somatic SNV calls per nucleus. Same nucleus also yields snATAC chromatin profile + snRNA-seq transcriptome.
 
-**Key finding**: applied to 51,400 nuclei from postmortem human brain. Cell-type-specific mutation rates and signatures distinguishable across all major brain cell types (including those previously inaccessible to scWGS — glia, rare neuron subtypes). Clonal sSNVs correlate with nearby gene-expression changes in both neurotypical and ASD brains — **first single-nucleus same-cell demonstration of mosaic mutation → expression causality** for genome-wide point mutations. 2% sensitivity at 92% precision on cell-line mixing benchmark.
+**Key finding**: applied to 51,400 nuclei from postmortem human brain. Cell-type-specific mutation rates and signatures distinguishable across all major brain cell types (including those previously inaccessible to scWGS — glia, rare neuron subtypes). Clonal sSNVs correlate with nearby gene-expression changes in both neurotypical and ASD brains — **first single-nucleus same-cell demonstration of mosaic mutation → expression causality** for genome-wide point mutations.
 
 **Why this closes the gap**:
 - All four prior-gap criteria satisfied: (1) point mutations ✓, (2) genome-wide ✓, (3) paired chromatin (snATAC) + RNA ✓, (4) scaled beyond 10 cells (51,400) ✓.
@@ -110,7 +110,7 @@ This is the workflow that has produced cell-type-specific somatic-mutation burde
 **What remains open after Duplex-Multiome**:
 - bioRxiv preprint as of 2026-05-13, not peer reviewed — replication and scale-up to be confirmed.
 - Methylation arm not included (chromatin accessibility only). Adding bisulfite would re-introduce the C→T sequence-destruction problem.
-- 2% VAF sensitivity is a real floor — sub-2% mosaic variants (which dominate in adult human brain) remain partially out of reach.
+- The low-VAF sensitivity floor is not established in the source (the 2%-VAF / 92%-precision figure is unverified), so very-low-VAF mosaic variants (which dominate in adult human brain) may remain partially out of reach.
 - Conceptual question — **what does it mean** when a mosaic SNV correlates with nearby expression in one cell? — is not answered by the method itself. This is where the planned review's locus-state framing contributes.
 
 ### 6. scNMT-seq (Clark 2018) — methylation + accessibility + RNA (no DNA mutation)
@@ -129,7 +129,7 @@ Putting the six together, the gap is **methodologically closed for the SNV + acc
 
 - Point mutations + **methylation** (not accessibility) genome-wide same-cell at scale → no current assay; bisulfite chemistry inherently destroys the C→T signal that SNV calling needs.
 - Point mutations + chromatin + methylation + RNA *together* in one nucleus at scale → no current assay.
-- Sub-1% VAF mosaic SNVs + epigenome same-cell → below Duplex-Multiome's 2% sensitivity floor.
+- Sub-1% VAF mosaic SNVs + epigenome same-cell → likely below current joint-assay sensitivity; Duplex-Multiome's low-VAF floor is not established in the source. (synthesis)
 
 The remaining gaps are narrower than the original framing, and the field has demonstrated convincingly that the *conceptual* leap (treating each genomic locus as carrying a joint state across mutation, methylation, chromatin, and transcription layers) is justified by what these assays now reveal. The planned review's contribution shifts from "name an unsolved methodological frontier" to **"articulate the DNA-centric locus-state framework that interprets the joint measurements these new assays produce"**.
 
@@ -146,7 +146,7 @@ The review's stated novelty is "**DNA-centric, locus-as-unit, mutation + epigeno
 
 | Direction | Anchor | What it has | What it lacks |
 |---|---|---|---|
-| **🟢 SNV + chromatin + RNA** (brain, genome-wide) | **Duplex-Multiome** (Kriz 2025) | **All four criteria met — closes the original gap.** 51,400 nuclei, human brain, 2% VAF sensitivity at 92% precision | No methylation arm; preprint status; sub-2% VAF still hard |
+| **🟢 SNV + chromatin + RNA** (brain, genome-wide) | **Duplex-Multiome** (Kriz 2025) | **All four criteria met — closes the original gap.** 51,400 nuclei, human brain | No methylation arm; preprint status; low-VAF sensitivity not established |
 | **CNV + epi + RNA** (tumor) | scTrio-seq | All three layers in one cell | Tumor-only, 25 cells; CNV not SNV |
 | **🟢 Aneuploidy + epi** (brain, atlas-scale) | Mukamel 2025 | 415K cells; CNV-from-methylation in mouse brain atlas | Aneuploidy only (≥5 Mb); not SNV |
 | **Targeted SNV + chromatin** | GoT-ChA | Direct SNV → chromatin link in single cells | Few loci, no methylation |

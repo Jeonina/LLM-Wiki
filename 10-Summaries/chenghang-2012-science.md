@@ -17,7 +17,7 @@ sources: ["00-Sources/papers/Chenghang_2012_Science.pdf"]
 
 ## Thesis
 
-**MALBAC (Multiple Annealing and Looping-Based Amplification Cycles)** is a new single-cell WGA method that uses quasilinear preamplification with looping protection of full-length amplicons followed by exponential PCR. Achieves **93% genome coverage at ≥1× from a single human SW480 cancer cell at 25× depth** — far better uniformity than MDA. The first method to enable reliable CNV calls and SNV-from-kindred-cells discovery at single-cell resolution.
+**MALBAC (Multiple Annealing and Looping-Based Amplification Cycles)** is a new single-cell WGA method that uses quasilinear preamplification with looping protection of full-length amplicons followed by exponential PCR. Achieves **93% genome coverage at ≥1× from a single human SW480 cancer cell at 25× depth** — far better uniformity than MDA. Enables digitized CNV calls and kindred-cell SNV discovery at single-cell resolution.
 
 ## Mechanism
 
@@ -32,12 +32,11 @@ sources: ["00-Sources/papers/Chenghang_2012_Science.pdf"]
 - **93% coverage at ≥1× / 25× depth** vs MDA's 72% on the same cells. **76% SNV detection efficiency** for MALBAC vs 41% for MDA.
 - Lorenz curve of MALBAC sits close to bulk; power spectrum shows minimal large-scale bias (unlike MDA which has high low-frequency amplitudes = megabase-scale over/underamplification).
 - CNV calls from three single SW480 cells at 0.8× depth match bulk; **single-cell CNV differences within the bulk are resolvable** (region in dashed box of Fig. 3).
-- **SNV detection from kindred-cell comparison**: 148 newly acquired SNVs from 2 kindred cells (~100 false positives from C→T deamination); 35 from 3 kindred cells. **Purine-pyrimidine exchanges occurred unusually frequently** among newly acquired SNVs — first observation of mutation-spectrum bias from single-cell scWGA.
+- **SNV detection from kindred-cell comparison**: 148 newly acquired SNVs from 2 kindred cells (~100 false positives from correlated sequencing/amplification errors); 35 from 3 kindred cells. **Purine-pyrimidine exchanges occurred unusually frequently** among newly acquired SNVs — a low transition/transversion ratio (0.30) among newly acquired SNVs in the SW480 line, confirmed in bulk as not an amplification artefact.
 
 ## Surprising / load-bearing for the review
 
 - **The foundational paper for §3.1 (Genotype-Centric DNA Profiling) scWGA section.** MALBAC, MDA, DOP-PCR are the three chemistries the review's §3.1 WGA-chemistry comparison table needs to anchor. Subsequent methods ([[chen-2017-lianti|LIANTI]] 2017, [[pta]] 2021) explicitly benchmark against MALBAC.
-- The "purine-pyrimidine SNV bias" finding is the prior art for the C→T deamination artifact problem that [[chen-2017-lianti|LIANTI]] later attributed to cytosine deamination after cell lysis and that [[pta]] later quantified.
 
 ## Entities / concepts touched
 

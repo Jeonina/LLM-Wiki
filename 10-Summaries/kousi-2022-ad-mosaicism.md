@@ -31,13 +31,13 @@ topics:
 
 ## Key claims
 
-- Single-cell mosaicism analysis across brain cell types from ROSMAP AD vs control donors detects **cell-type-specific differential somatic mutation burdens**. Different cell types (neurons, glia, microglia) carry different burdens, with AD-status-correlated differences.
+- Single-cell mosaicism analysis across brain cell types from ROSMAP AD vs control donors detects **cell-type-specific differential somatic mutation burdens**. Different cell types (neurons, glia, microglia) carry different burdens, with AD-status-correlated differences. *(not found in source clipping — unverified)*
 - The framing positions somatic mosaicism as an additional **non-Mendelian contribution to AD risk**, complementing inherited variation captured in GWAS (CLU, PICALM, APOE, etc.) and the rare familial APP/PSEN mutations.
 - ROSMAP multi-omic data (DNA, RNA, ATAC, methylation across the same donors) is the substrate. Earlier Mathys 2019 *Nature* and Miller 2022 *Nature* single-cell studies of AD brain established the cell-type framework this paper extends.
 
 ## Methods / evidence
 
-Pre-print on bioRxiv; the clipping captures the abstract and reference list. Analysis combines ROSMAP single-cell DNA mosaicism with single-cell transcriptomics of the same cohort. Cell types inferred from transcriptomic markers; somatic variants called per cell type; burden compared by AD case-control status.
+Pre-print on bioRxiv; the clipping captures only the reference list (no abstract or body). Analysis combines ROSMAP single-cell DNA mosaicism with single-cell transcriptomics of the same cohort. *(not found in source clipping — unverified)* Cell types inferred from transcriptomic markers; somatic variants called per cell type; burden compared by AD case-control status.
 
 ## Surprising or load-bearing bits
 
@@ -48,7 +48,7 @@ Pre-print on bioRxiv; the clipping captures the abstract and reference list. Ana
 
 - Sits at the intersection of [[10-Summaries/bizzotto-2022-brain-mosaicism-review]] (mosaicism in brain) and the broader scDNA-seq methods landscape in [[10-Summaries/shao-2025-scDNA-mosaicism-review]].
 - Extends Lodato et al. 2018 *Science* findings of age- and disease-associated neuronal mutation accumulation.
-- Methodological dependence on PTA-class scWGA places it in the post-2019 generation of single-cell genomics, alongside [[10-Summaries/luquette-2025-pta-duplex-mosaicism]].
+- Methodological dependence on PTA-class scWGA places it in the post-2019 generation of single-cell genomics *(not found in source clipping — unverified)*, alongside [[10-Summaries/luquette-2025-pta-duplex-mosaicism]].
 
 ## Open questions
 

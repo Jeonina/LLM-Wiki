@@ -50,7 +50,7 @@ Myeloid leukemias show distinct methylation patterns by genetic subtype (DNMT3A 
 - IDH1/2 mutations produce 2-hydroxyglutarate, inhibiting TET enzymes → hypermethylation ([[10-Summaries/kim-2017-methylation-memory-review]]).
 - MLL-fusion-mediated transformation produces a distinct enhancer-methylation pattern.
 
-Single-cell methylation in AML has progressed via scTEM-seq ([[10-Summaries/hunt-2022-sctem-seq]]) and SpliCOOL-seq ([[10-Summaries/shen-2026-splicool-seq]]). These methods reveal that **decitabine vs azacitidine produce divergent demethylation patterns in AML** ([[10-Summaries/shen-2026-splicool-seq]]) — clinically important because the two hypomethylating agents are usually treated as interchangeable.
+Single-cell methylation under hypomethylating agents has progressed via scTEM-seq in decitabine-treated AML cell lines ([[10-Summaries/hunt-2022-sctem-seq]]) and SpliCOOL-seq ([[10-Summaries/shen-2026-splicool-seq]]). SpliCOOL-seq reveals that **decitabine vs 5-azacytidine produce divergent demethylation patterns** ([[10-Summaries/shen-2026-splicool-seq]]) — clinically important because the two hypomethylating agents are usually treated as interchangeable.
 
 ## Why methylation succeeds where other epigenetic marks struggle
 
@@ -68,8 +68,8 @@ The implication: **methylation classifiers have a 5-10-year head start on chroma
 Bulk methylation classifiers (EPICUP, MNP) work on tumor bulk. Single-cell methylation methods open complementary diagnostic possibilities:
 
 - **Intratumor heterogeneity of methylation classifiers** — does a tumor contain multiple methylation-defined subclones, possibly with different tissue-of-origin signatures? ([[10-Summaries/shen-2026-splicool-seq]]).
-- **Per-cell response to hypomethylating agents** — the divergent decitabine vs azacitidine demethylation patterns in single AML cells suggest classifier signatures themselves are perturbed by treatment ([[10-Summaries/hunt-2022-sctem-seq]]).
-- **Spatial methylation classifiers** — Cardilla 2025 spatial methylome + transcriptome ([[10-Summaries/cardilla-2025-spatial-methylome]]) shows methylation classification can be done with spatial resolution, identifying tissue-of-origin signatures that vary across regions of the same tumor.
+- **Per-cell response to hypomethylating agents** — decitabine-treated AML cells demethylate heterogeneously (29–69%) ([[10-Summaries/hunt-2022-sctem-seq]]), and decitabine vs 5-azacytidine produce divergent demethylation patterns ([[10-Summaries/shen-2026-splicool-seq]]), suggesting classifier signatures themselves are perturbed by treatment.
+- **Spatial methylation classifiers** — Lee 2025 spatial methylome + transcriptome ([[10-Summaries/cardilla-2025-spatial-methylome]]) shows methylation can be profiled jointly with the transcriptome at near-single-cell spatial resolution (mouse embryo and postnatal brain); spatial tissue-of-origin classification in tumors has not yet been demonstrated.
 
 These extensions remain pre-clinical but are the natural successors to bulk classifiers.
 

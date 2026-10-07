@@ -34,11 +34,11 @@ topics:
   - **ONT**: electrolytic current through the nanopore changes with modification state; calling uses HMMs / CNNs / Transformers from raw signal.
 - **No base conversion** → standard reference alignment → mappable in repeats, SVs, and tandem repeats that bisulfite methods cannot resolve.
 - **Modifications detectable**: 5mC, 5hmC, 6mA, 4mC, with varying accuracy across platforms.
-- **Computational tool landscape** is rapidly evolving — each major chemistry generation requires new callers (Megalodon, DeepMod, Remora for ONT; primrose for PacBio).
+- **Computational tool landscape** is rapidly evolving — each major chemistry generation requires new callers (e.g., Nanopolish, DeepSignal, DeepMod2, Rockfish and Dorado for ONT; Jasmine and ccsmeth for PacBio).
 
 ## Methods / evidence
 
-Computational-methods-focused review. Authors are at major long-read centers (Baylor, Johns Hopkins). Disclosed industry ties to PacBio and ONT.
+Computational-methods-focused review. Authors are at major long-read centers (Baylor, Johns Hopkins). *(not found in source clipping — unverified)* Disclosed industry ties to PacBio and ONT.
 
 ## Surprising or load-bearing bits
 
@@ -65,8 +65,8 @@ Computational-methods-focused review. Authors are at major long-read centers (Ba
 ## Open questions
 
 - Methylation calling accuracy benchmarking across platforms and tools — no community-accepted gold-standard benchmark yet.
-- 5hmC and 6mA detection sensitivity — lags 5mC for both platforms.
-- Single-cell long-read methylation — technically possible but limited by per-cell yield; an intersection of [[40-Topics/scdna-seq]] and long-read methylation that remains open.
+- 5hmC detection is ONT-only (PacBio currently cannot detect it) and hard to benchmark because of its low abundance; PacBio callers appear more accurate than ONT for 6mA.
+- Single-cell long-read methylation — the review notes that single-cell protocols usually require amplification, which makes native long-read methylation detection impossible without chemical treatment; an intersection of [[40-Topics/scdna-seq]] and long-read methylation that remains open.
 
 ---
 **Source:** [DOI](https://doi.org/10.1038/s41576-025-00822-5)

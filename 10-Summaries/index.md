@@ -74,7 +74,7 @@ Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/kapadia-2024-stem-cell-aging]] — Kapadia & Goodell 2024, review of tissue mosaicism from stem-cell aging.
 - [[10-Summaries/kousi-2022-ad-mosaicism]] — Kousi 2022, cell-type-specific somatic mutation burden in Alzheimer's.
 - [[10-Summaries/lodato-2015-science]] — Lodato 2015, single-neuron somatic mutations track developmental history.
-- [[10-Summaries/lodato-2017-aging-neurons]] — Lodato 2017, aging and neurodegeneration raise neuronal somatic mutations.
+- [[10-Summaries/lodato-2017-aging-neurons]] — Lodato 2018, aging and neurodegeneration raise neuronal somatic mutations.
 - [[10-Summaries/mcconnell-2017-science]] — McConnell 2017, Brain Somatic Mosaicism Network and neuropsychiatric disease.
 - [[10-Summaries/miller-2022-nature]] — Miller 2022, somatic genomic changes in single Alzheimer's neurons.
 - [[10-Summaries/mukamel-2025-aneuploidy-brain]] — Mukamel 2025, cell-type-specific somatic aneuploidy in mammalian brain.
@@ -96,7 +96,7 @@ Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/chen-2025-methyltree]] — Chen 2025, MethylTree lineage tracing from methylation epimutations.
 - [[10-Summaries/scherer-2025-nature]] — Scherer 2025, EPI-Clone clonal tracing of blood ageing via epimutations.
 - [[10-Summaries/gaiti-2019-cll-epigenetic]] — Gaiti 2019, epigenetic evolution and lineage histories of CLL.
-- [[10-Summaries/ludwig-2020-mtscatac-seq]] — Ludwig 2020, mtscATAC-seq mtDNA genotyping plus chromatin profiling.
+- [[10-Summaries/ludwig-2020-mtscatac-seq]] — Lareau & Ludwig 2021, mtscATAC-seq mtDNA genotyping plus chromatin profiling.
 - [[10-Summaries/miller-2022-maester]] — Miller 2022, MAESTER mtDNA variant enrichment from scRNA-seq.
 - [[10-Summaries/sun-2025-scmitomut]] — Sun 2025, scMitoMut calls mitochondrial lineage mutations in single cells.
 - [[10-Summaries/hsieh-2026-scmtmpm-scwmss]] — Hsieh 2026, multi-omic mitochondrial mutational mosaicism and dynamics.
@@ -157,9 +157,9 @@ Catalog of ~300 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/geisenberger-2025-scepi2-seq]] — Geisenberger 2025, scEpi²-seq joint single-cell histone marks and 5mC.
 - [[10-Summaries/tavares-2026-6-base-cut-tag]] — Tavares 2026, 6-base-CUT&Tag joint histone marks with 5mC/5hmC.
 - [[10-Summaries/shen-2026-splicool-seq]] — Shen 2026, SpliCOOL-seq scalable joint methylation and accessibility.
-- [[10-Summaries/cardilla-2025-spatial-methylome]] — Cardilla 2025, spatial joint methylome and transcriptome profiling.
+- [[10-Summaries/cardilla-2025-spatial-methylome]] — Lee 2025, spatial joint methylome and transcriptome profiling.
 - [[10-Summaries/zhu-2020-multimodal-power-of-many]] — Zhu, Preissl & Ren 2020, the depth-vs-throughput taxonomy of joint assays and its three stated gaps.
-- [[10-Summaries/vandereyken-2023-spatial-multiomics]] — Vandereyken 2023, coupling-principle taxonomy (when analytes are uncoupled) plus spatial multi-omics.
+- [[10-Summaries/vandereyken-2023-scmultiomics-review]] — Vandereyken 2023, coupling-principle taxonomy (when analytes are uncoupled) plus spatial multi-omics.
 - [[10-Summaries/lim-2024-single-cell-omics-review]] — Lim 2024, layer-by-layer protocol catalog including single-cell proteome methods.
 
 ## Multi-omics integration & foundation models

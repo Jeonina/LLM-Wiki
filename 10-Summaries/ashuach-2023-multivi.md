@@ -12,7 +12,7 @@ updated: 2026-05-13
 
 Ashuach, Gabitto, Koodli, Saldi, Jordan and Yosef (UC Berkeley, Allen Institute, Weizmann) developed **MultiVI**, a probabilistic deep generative model for the joint analysis of multimodal single-cell data — primarily scRNA-seq + scATAC-seq, extensible to surface protein abundance. MultiVI builds modality-specific variational autoencoders (scVI for expression, PeakVI for accessibility, totalVI for protein), then aligns their latent representations into a single joint space via an adversarial penalty that prevents modality-specific separation.
 
-Critical capability: MultiVI handles **paired and unpaired** data jointly. Cells with only one modality (single-modality datasets) can be embedded into the same joint space as paired multiome cells; the missing modality can be probabilistically imputed with calibrated uncertainty. Benchmarked on 10x PBMC multiome data: library-size correlation 0.97 (RNA) / 0.91 (ATAC) against observed UMI counts; imputation accuracy exceeds Seurat-WNN and Cobolt baselines.
+Critical capability: MultiVI handles **paired and unpaired** data jointly. Cells with only one modality (single-modality datasets) can be embedded into the same joint space as paired multiome cells; the missing modality can be probabilistically imputed with calibrated uncertainty. Benchmarked on 10x PBMC multiome data: library-size correlation 0.97 (RNA) / 0.91 (ATAC) against observed UMI counts; MultiVI and Cobolt both outperform gene-scoring and WNN on latent-space mixing; imputation reaches Spearman 0.57 (RNA) and AUPRC 0.41 (ATAC).
 
 ## Why this matters
 

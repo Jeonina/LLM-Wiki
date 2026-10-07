@@ -29,19 +29,19 @@ topics:
 
 # Shen et al. 2026 — SpliCOOL-seq
 
-> Thesis: Existing single-cell joint methylation + chromatin-accessibility methods (scCOOL-seq, scNOMe-seq, scNMT-seq, iscCOOL-seq, snmCAT-seq, scNOMeRe-seq) are stuck at the cell-lysate scale of hundreds of cells per experiment. sciMETv3 hit the next step but used cell-indexed Tn5 with fragmentation variability between cells. SpliCOOL-seq combines (a) in-situ GpC methylation as the accessibility readout, (b) **universal (unindexed) Tn5 tagmentation** for uniform fragmentation across cells, and (c) split-pool ligation-based combinatorial barcoding — yielding thousands of cells per experiment with both whole-genome WCG (endogenous) methylation and GCH (nucleosome-depletion region, NDR) accessibility.
+> Thesis: Existing single-cell joint methylation + chromatin-accessibility methods (scCOOL-seq, scNOMe-seq, scNMT-seq, iscCOOL-seq, snmCAT-seq, scNOMeRe-seq) are limited in throughput and sensitivity. sciMETv3 hit the next step but used cell-indexed Tn5 with fragmentation variability between cells. SpliCOOL-seq combines (a) in-situ GpC methylation as the accessibility readout, (b) **universal (unindexed) Tn5 tagmentation** for uniform fragmentation across cells, and (c) split-pool ligation-based combinatorial barcoding — yielding thousands of cells per experiment with both whole-genome WCG (endogenous) methylation and GCH (nucleosome-depletion region, NDR) accessibility.
 
 ## Key claims
 
 - **Two-round split-pool barcoding** via T4 ligase after universal Tn5 tagmentation. Bisulfite conversion follows barcoding. Yields cells × WCG/GCH matrix.
-- Distinguishes lung-cancer cell types (GM12878, NIH/3T3, A549, NCI-H460, SK-MES) by integrated WCG + GCH + NDR signal.
+- Distinguishes three lung cancer cell lines (A549, NCI-H460, SK-MES; 1,310 cells); GM12878 and NIH/3T3 were also profiled by integrated WCG + GCH + NDR signal.
 - **Decitabine vs 5-azacytidine** both cause large-scale demethylation, but in **divergent patterns** detectable only with this scale of single-cell joint readout. This contradicts the assumption that HMAs are interchangeable.
-- Applied to primary LUAD tissue: identifies tumor subclones within a single lesion, discovers methylation biomarkers (FAM124B, SFN, OR7E47P) associated with patient survival. Functional follow-up: CRISPR knockout of SFN reduces A549/H460 proliferation and increases apoptosis.
+- Applied to primary LUAD tissue: identifies tumor subclones within a single lesion, discovers methylation biomarkers (FAM124B, SFN, OR7E47P) associated with patient survival. Functional follow-up: CRISPR knockout of SFN in A549/H460 inhibits proliferation and migration but has no significant effect on apoptosis.
 - Tumor subclones show **accelerated epigenetic aging** and elevated mitotic activity — links epigenetic aging clocks to cancer progression.
 
 ## Methods / evidence
 
-In-situ GpC methyltransferase (M.CviPI) marks accessible regions. Formaldehyde fixation. Nucleosome depletion by mild SDS. Universal-adapter Tn5 tagmentation. T4 DNA ligase two-round barcoding (~20k nuclei per first-round well; ~12 cells/well in second round). Bisulfite conversion + Klenow random priming. Library prep on SURFSeq 5000. Companion scATAC-seq on 10X for cross-comparison. scAge framework + 450k TCGA-LUAD reference for epigenetic-aging analysis. MethSCAn for DMRs.
+In-situ GpC methyltransferase (M.CviPI) marks accessible regions. Formaldehyde fixation. Nucleosome depletion by mild SDS. Universal-adapter Tn5 tagmentation. T4 DNA ligase two-round barcoding (20,000 nuclei per Tn5 tagmentation tube; two rounds of ligation barcoding in Barcode Plates 01 and 02). Bisulfite conversion + Klenow random priming. Library prep on SURFSeq 5000. Companion scATAC-seq on 10X for cross-comparison. scAge framework + 450k TCGA-LUAD reference for epigenetic-aging analysis. MethSCAn for DMRs.
 
 ## Surprising or load-bearing bits
 
@@ -59,7 +59,7 @@ In-situ GpC methyltransferase (M.CviPI) marks accessible regions. Formaldehyde f
 ## Open questions
 
 - The two-HMA divergence: what is the mechanistic basis? Authors propose chromatin-context differences but don't define them.
-- Generalization beyond LUAD; primary samples are tumor-only — no matched paired normal.
+- Generalization beyond LUAD; the primary data come from a single LUAD specimen (primary tumour plus adjacent tissue containing adjacent-normal cells); there is no independent patient cohort.
 
 ---
 **Source:** [DOI](https://doi.org/10.1002/ctm2.70584)

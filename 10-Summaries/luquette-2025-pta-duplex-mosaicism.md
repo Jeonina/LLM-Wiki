@@ -30,6 +30,8 @@ topics:
 
 **Citation:** Luquette et al. (2025) — *PTA + duplex validation across 102 nuclei from lung and colon* — *bioRxiv (preprint)*. [DOI](https://doi.org/10.1101/2025.10.31.685648)
 
+> **Verification note 2026-10-07:** the source clipping holds only the author list, a bioRxiv banner and the reference list. None of the specifics below (102 nuclei, lung and colon of a 74-year-old male, APOBEC/tobacco signatures, TCR, lineage results) can be checked against it — treat them as unverified until the full text is clipped.
+
 # Luquette et al. 2025 — PTA + duplex validation across 102 nuclei from lung and colon
 
 > Thesis: A scalable single-cell pipeline (PTA scWGA → deep sequencing → duplex-sequencing validation of bulk DNA) can deliver a **comprehensive view of somatic mosaicism** — SNVs, indels, CNVs, aneuploidies, structural rearrangements, embryonic lineage — from a single individual. Applied to 102 nuclei from postmortem lung and colon of a 74-year-old male, the approach exposes organ- and cell-type-specific mutation burdens, APOBEC and tobacco signatures, T-cell receptor rearrangements (reading immune lineage straight from genomic DNA), and reconstructible cellular ancestries traced from the zygote.

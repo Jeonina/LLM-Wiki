@@ -22,23 +22,23 @@ topics:
   - "[[40-Topics/chromatin-architecture]]"
 ---
 
-**Citation:** Gur et al. (2025) — *scATAC-seq pseudobulk vs bulk ATAC-seq: same signal, better data quality* — *Scientific Reports*. [DOI](https://doi.org/10.1038/s41598-025-87351-7)
+**Citation:** Gur & Hughes (2025) — *scATAC-seq pseudobulk vs bulk ATAC-seq: same signal, better data quality* — *Scientific Reports*. [DOI](https://doi.org/10.1038/s41598-025-87351-7)
 
 # Gur & Hughes 2025 — scATAC-seq vs bulk ATAC-seq
 
-> Thesis: Researchers using bulk ATAC-seq commonly assume that single-cell data with comparable cell counts is methodologically equivalent. This comparison study, on aliquots of the same erythroblast and NK-cell populations from the same donor, shows that scATAC-seq with pseudo-bulk aggregation gives the **same chromatin architecture signal but higher data quality, sensitivity to weak functional peaks, and the ability to detect heterogeneity within nominally homogeneous populations** — at comparable cost when heterogeneity matters.
+> Thesis: Researchers using bulk ATAC-seq commonly assume that single-cell data with comparable cell counts is methodologically equivalent. This comparison study, on aliquots of the same erythroblast population (bulk vs scATAC from one donor), with bulk NK-cell ATAC compared against public 10x PBMC scATAC-seq, shows that scATAC-seq with pseudo-bulk aggregation gives the **same chromatin architecture signal but higher data quality, sensitivity to weak functional peaks, and the ability to detect heterogeneity within nominally homogeneous populations** — at comparable cost when heterogeneity matters.
 
 ## Key claims
 
 - Chromatin-architecture signal between bulk and scATAC-seq is concordant when aliquots of the same cell population are compared (late erythroblasts differentiated from CD34+ cells, NK cells).
 - scATAC-seq provides **substantially higher data quality**: improved sensitivity for weak but functionally important peaks (e.g., distal enhancers identifiable by H3K4me1 vs H3K4me3 sorting).
 - **Heterogeneity detection**: scATAC-seq on a "homogeneous" CD34-derived erythroblast population (cisTopic-clustered) reveals **two distinct clusters**, falsifying the assumption of homogeneity. GO enrichment shows the clusters reflect different functional states.
-- **Minimum-cell guidance**: scATAC-seq requires ~hundreds of cells to generate robust pseudo-bulk profiles and ~thousands to identify biologically meaningful sub-clusters. Below this threshold, scATAC-seq quality degrades.
+- **Minimum-cell guidance**: scATAC-seq requires ~hundreds of cells to generate robust pseudo-bulk profiles and ~40 cells to form a distinct, identifiable cluster (~200 cells for bulk-equivalent pseudo-bulk sensitivity). Below this threshold, scATAC-seq quality degrades.
 - Practical guidance for the field: if you want to compare cell types, scATAC-seq with pseudo-bulk is at least as good as bulk ATAC-seq and is better at detecting unexpected within-population heterogeneity.
 
 ## Methods / evidence
 
-Comparison of (a) bulk ATAC-seq on FACS-isolated erythroblasts and NK cells from the same human donor; (b) 10X scATAC-seq on the same cell populations; (c) publicly available PBMC scATAC-seq integrated via Azimuth. Peak calling with LanceOtron. Downstream clustering via cisTopic and ArchR. Peak annotation by H3K4me1/me3, H3K27ac ChIP-seq cross-referencing.
+Comparison of (a) previously generated bulk ATAC-seq on erythroblasts and NK cells from the same human donor; (b) 10X scATAC-seq on the same erythroblast population; NK cells extracted from public 10X PBMC scATAC-seq; (c) publicly available PBMC scATAC-seq integrated via Azimuth. Peak calling with LanceOtron. Downstream clustering via cisTopic and ArchR. Peak annotation by H3K4me1/me3, H3K27ac ChIP-seq cross-referencing.
 
 ## Surprising or load-bearing bits
 

@@ -8,7 +8,7 @@ created: 2026-05-12
 updated: 2026-05-12
 ---
 
-**Citation:** Dey et al. (2015) — *DR-seq: Integrated genome and transcriptome sequencing of the same cell* — *?*. [DOI](https://doi.org/10.1038/nbt.3129)
+**Citation:** Dey et al. (2015) — *DR-seq: Integrated genome and transcriptome sequencing of the same cell* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/nbt.3129)
 
 # Dey et al. 2015 — DR-seq
 
@@ -37,7 +37,7 @@ DR-seq is the **one-pot** alternative to G&T-seq for joint single-cell DNA + RNA
 ## Limitations the paper acknowledges
 
 - Coding-region masking is necessary (small fraction of genome, but limits SNV detection in coding regions from gDNA half).
-- RNA reads are biased toward the 3′ end (CEL-seq-like), unlike G&T-seq's full-length Smart-seq2 coverage.
+- RNA reads are biased toward the 3′ end (CEL-seq-like), unlike G&T-seq's full-length Smart-seq2 coverage. *(not found in source clipping — unverified)*
 - Quasilinear amplification GC bias slightly higher than MALBAC alone.
 
 ## Surprising / load-bearing

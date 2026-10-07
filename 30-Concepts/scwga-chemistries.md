@@ -50,7 +50,7 @@ Two 2015 benchmarks, published three weeks apart from independent groups, conver
 | Mapping ratio | 89.31% | 98.36% | 97.68% ([[10-Summaries/hou-2015-wga-comparison]]) |
 | Concordance where detected | 82.05% | 97.10% | 96.74% ([[10-Summaries/hou-2015-wga-comparison]]) |
 
-**Kit identity matters as much as chemistry identity.** Three MDA kits diverged more on some metrics than the chemistries did: REPLI-g Single Cell gave the best coverage (8.84%), REPLI-g Mini had the *highest* read-distribution bias of all seven kits tested, and GenomiPhi V2 showed strong GC dependence ([[10-Summaries/hou-2015-wga-comparison]]). "We used MDA" is insufficient methods description. (synthesis)
+**Kit identity matters as much as chemistry identity.** Three MDA kits diverged more on some metrics than the chemistries did: REPLI-g Single Cell gave the best coverage (8.84%), REPLI-g Mini and GenomiPhi V2 had higher read-distribution bias than the other kits tested, and GenomiPhi V2 showed strong GC dependence ([[10-Summaries/hou-2015-wga-comparison]]). "We used MDA" is insufficient methods description. (synthesis)
 
 DOP-PCR is specifically depleted in Alu and L1 repeat regions, a direct consequence of degenerate-primer annealing ([[10-Summaries/hou-2015-wga-comparison]]).
 

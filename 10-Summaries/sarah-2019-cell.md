@@ -22,7 +22,7 @@ Modified the CUT&RUN protocol (Skene & Henikoff 2017) into **ultra-low-input uli
 
 ## Method
 
-1. CUT&RUN ([[cut-and-run]]) uses protein A-MNase fusion guided to chromatin by an antibody against the target protein; MNase cleaves nearby DNA, releasing fragments without crosslinking or sonication. The original protocol required ~100,000 cells minimum for ChIP-quality TF maps.
+1. CUT&RUN ([[cut-and-run]]) uses protein A-MNase fusion guided to chromatin by an antibody against the target protein; MNase cleaves nearby DNA, releasing fragments without crosslinking or sonication. ChIP-based TF mapping requires a minimum of ~10,000 cells (typically many more).
 2. **uliCUT&RUN modifications**: altered buffers, sample volumes, incubation times, spike-in DNA quantities, and library-prep + purification methods. Two biological replicates per condition.
 3. Validated across **a titration: 500,000 → 50,000 → 5,000 → 500 → 50 → 10 cells**, with IgG no-antibody controls at each cell number.
 4. Single-cell experiments: 120 individual mESCs profiled for CTCF, 26 each for SOX2 and NANOG, with 47 no-antibody control single cells.
@@ -31,7 +31,7 @@ Modified the CUT&RUN protocol (Skene & Henikoff 2017) into **ultra-low-input uli
 ## Key claims
 
 1. **uliCUT&RUN profiles CTCF binding from as few as 10 cells**: 10-cell CTCF maps identify 25–42% of established CTCF binding sites; 50-cell libraries identify 57–99%. H3K4me3 slightly less robust at very low cell numbers (23–35% at 10–50 cells; 42–94% at ≥500 cells).
-2. **Broad utility across chromatin protein classes**: OCT4, SOX2, NANOG, BRG1, H3K27ac, H3K27me3, SUZ12 all profile robustly from 50-cell samples. **79–96% of established SOX2/NANOG binding sites recovered from 50-cell libraries**; 54–74% for OCT4.
+2. **Broad utility across chromatin protein classes**: OCT4, SOX2, NANOG, BRG1, H3K27ac, H3K27me3, SUZ12 all profile robustly from 50-cell samples. **79–96% of established SOX2/NANOG sites recovered from 50,000-cell libraries and 60–80% from 50-cell libraries**; OCT4 54–74% and 25–52%, respectively.
 3. **Single-cell TF profiling is feasible**: averaged across 120 CTCF single cells or 26 SOX2/NANOG single cells, read density at established binding sites is significantly elevated vs no-antibody controls (Mann-Whitney P < 2.2×10⁻¹⁶). DNA-sequence motif enrichment (CTCF/CTCFL motif) is significant from as few as 5 combined single-cell maps.
 4. **Fractional TF occupancy is variable across single cells and predicts multi-cell ChIP-seq peak intensity**: SOX2 and NANOG binding sites in the top 20% of multi-cell ChIP-seq peak intensity (top quintile) are overrepresented in single-cell uliCUT&RUN reads. This is the **first direct test (and confirmation) of the assumption that multi-cell ChIP-seq peak intensity reflects fractional cell occupancy**.
 5. **NANOG binding in mouse blastocysts depends on BRG1 in vivo** (P = 1.67×10⁻⁵), in contrast to cultured mESCs where NANOG binding is largely BRG1-independent. Suggests that initial NANOG genome binding *requires* SWI/SNF-mediated chromatin opening at the late morula/early blastocyst stage, with subsequent maintenance becoming chromatin-remodeler-independent.

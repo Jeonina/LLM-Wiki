@@ -28,7 +28,7 @@ The separation-before-amplification design gives three advantages over the one-p
 - **First true single-cell joint DNA + RNA assay** — provided the proof that paired genome + transcriptome at single-cell scale is achievable.
 - **Modality independence**: each fraction can be processed by the best-of-class single-modality protocol — G&T-seq doesn't force a compromise on either RNA or DNA quality.
 - **Compatible with long-read sequencing** of the RNA fraction for isoform detection.
-- Demonstrated detection of a **trisomy-11 subclone in HCC38-BL lymphoblastoid cells** (10% frequency, confirmed by FISH) — first joint single-cell aneuploidy + dosage measurement.
+- Demonstrated detection of a **trisomy-11 subclone in HCC38-BL lymphoblastoid cells** (10% frequency, confirmed by FISH).
 - **Reversine-treated mouse 8-cell embryos**: reciprocal aneuploidies between sister blastomeres, with concordant chromosome-wide expression dosage in the *same* cells → expression dosing established within one division.
 - MTAP–PCDH7 fusion captured at DNA and RNA level in the same HCC38 cells, with PacBio long-read confirmation.
 

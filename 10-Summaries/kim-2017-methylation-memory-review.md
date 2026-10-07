@@ -24,7 +24,7 @@ concepts:
 topics:
 ---
 
-**Citation:** Kim et al. (2017) — *DNA methylation as an epigenetic mark of cellular memory* — *Exp Mol Med*. [DOI](https://doi.org/10.1038/emm.2017.10)
+**Citation:** Kim & Costello (2017) — *DNA methylation as an epigenetic mark of cellular memory* — *Exp Mol Med*. [DOI](https://doi.org/10.1038/emm.2017.10)
 
 # Kim & Costello 2017 — DNA methylation as cellular memory
 
@@ -34,9 +34,9 @@ topics:
 
 - **Maintenance machinery**: DNMT1 with PCNA + UHRF1 at the replication fork; UHRF1 reads hemimethylated CpGs via its SRA domain; H3K9me3 recruits UHRF1 and stabilizes DNMT1. LSD1/KDM1 demethylates DNMT1 and modulates its stability. The maintenance machinery is **chromatin-coupled** — it isn't a standalone enzymatic system but a chromatin-state-dependent module.
 - **Active demethylation**: TET1/2/3 oxidize 5mC → 5hmC → 5fC → 5caC; thymine-DNA glycosylase excises 5fC/5caC for base-excision repair. Passive demethylation occurs when DNMT1 fails during replication.
-- **De novo methylation**: DNMT3A/B + DNMT3L (catalytically inactive cofactor that reads H3K4me0). Recruited to repressive chromatin via H3K9 methyltransferases (G9A) and chromatin remodelers (LSH).
-- **Stem-cell memory**: iPSCs retain donor-cell methylation signatures and preferentially differentiate toward original lineage. ESCs uniquely tolerate non-CpG methylation (~25% of methylated Cs at CpA in human ESCs). MSCs methylation differences between donors predict differentiation propensity — a quality-control biomarker.
-- **Cancer memory**: hypermethylated cancer CpG islands are biased to PRC2/H3K27me3 targets in normal cells (cancer hijacks the embryonic-progenitor methylation program). IDH1/2 mutations sequester α-ketoglutarate, inhibiting TET and KDM enzymes — explaining glioma G-CIMP and AML hypermethylation. Intratumoral methylation heterogeneity reconstructs tumor evolution with histories consistent with mutation/CNV-based phylogenies.
+- **De novo methylation**: DNMT3A/B, dependent on DNMT3L. Recruited to repressive chromatin via H3K9 methyltransferases (G9A) and chromatin remodelers (LSH).
+- **Stem-cell memory**: iPSCs retain donor-cell methylation signatures and preferentially differentiate toward original lineage. ESCs uniquely tolerate non-CpG methylation (~25% of methylated Cs at CpA in human ESCs). MSC methylation patterns are stable through long-term culture, reflect the cell type of origin, and serve as a quality-control marker (senescence-associated changes occur at H3K9me3/H3K27me3/EZH2-target regions).
+- **Cancer memory**: hypermethylated cancer CpG islands are biased to PRC2/H3K27me3 targets in normal cells (cancer hijacks the embryonic-progenitor methylation program). IDH1/2 mutations cause accumulation of D-2-hydroxyglutarate, which competes with α-ketoglutarate needed by TET and KDM enzymes; IDH1 and TET2 mutations are mutually exclusive in AML. Intratumoral methylation heterogeneity reconstructs tumor evolution with histories consistent with mutation/CNV-based phylogenies.
 - **EPICUP** classifier: methylation signatures identify primary site in 87% of cancer of unknown primary cases, with 99.6% specificity and 97.7% sensitivity in validation.
 
 ## Methods / evidence

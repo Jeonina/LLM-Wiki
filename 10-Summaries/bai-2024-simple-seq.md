@@ -34,7 +34,7 @@ topics:
 
 - **Method**: bisulfite-free, sequential chemical labeling. A 5caC-pre-deposited primer records the 5hmC signal in a way that distinguishes it from 5mC signal in downstream amplicons.
 - C-to-T conversion efficiency 86.9% (5mC) and 85.6% (5hmC). Background conversion of unmodified C: 0.06% (5hmC channel), 0.57% (5mC channel).
-- Throughput: ~1,500 mESCs sequenced per experiment with ~313k 5mC reads and ~150k 5hmC reads per cell. Combinatorial indexing scales to 10⁴–10⁵ cells.
+- Throughput: ~1,500 mESCs sequenced per experiment with ~313k 5mC reads and ~150k 5hmC reads per cell. Combinatorial indexing allows thousands of single cells per experiment (~100,000 nuclei can be tagged after two rounds of ligation barcoding).
 - **mESC 2i→serum transition**: cells with disordered 5mC/5hmC relationships (high "modification entropy") sit at the trajectory's midpoint and may correspond to transient reprogramming events. Type-2 5hmCG sites (paired with 5mCG on the same molecule) mark dynamic methylation; type-1 sites mark stable epigenetic states.
 - **PBMC and mouse brain applications**: SIMPLE-seq resolves T cells, B cells, NK cells, monocytes by 5mCG; identifies 11 brain cell types (excitatory neurons, inhibitory neurons, astrocytes, oligodendrocytes, microglia, endothelial cells) using joint 5mC+5hmC.
 - Compared to scDARESOME, scDyad-seq (restriction-enzyme based, one site per fragment), and Joint-snhmC-seq, **SIMPLE-seq captures multiple modifications from the same fragment with higher mappable read fractions** (>90% vs ~60% for Joint-snhmC-seq).

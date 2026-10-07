@@ -13,7 +13,7 @@ updated: 2026-05-12
 
 ## Definition
 
-Combines TAPS chemistry (for 5mC → uracil conversion) with hmC-CATCH-style 5hmC labeling. A 5caC-pre-deposited primer encodes which conversion step each amplicon comes from, so 5mC and 5hmC signals are recoverable from a single library. Combinatorial-indexing tagmentation scales to 10⁴–10⁵ cells per experiment.
+Combines TAPS chemistry (for 5mC → uracil conversion) with hmC-CATCH-style 5hmC labeling. A 5caC-pre-deposited primer encodes which conversion step each amplicon comes from, so 5mC and 5hmC signals are recoverable from a single library. Combinatorial indexing allows thousands of single cells per experiment (~100,000 nuclei can be tagged after two rounds of ligation barcoding) ([[10-Summaries/bai-2024-simple-seq]]).
 
 ## Why it matters
 

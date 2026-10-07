@@ -19,7 +19,7 @@ updated: 2026-06-26
 
 **3. Phenotypic association** — the ability to link single-cell genotype to other single-cell phenotypic readouts (RNA expression, chromatin accessibility, surface protein, spatial location). Critical for the "what does this mutation do in this cell type?" class of questions.
 
-No method achieves all three at genome-wide scale. Method choice should be driven by which capabilities the question requires.
+Different scDNA-seq technologies possess different subsets of the three capabilities, although scDNA-seq as a class is distinguished by its potential to achieve all three on a genome-wide scale ([[10-Summaries/evrony-2021-scDNA-applications-review]]). Method choice should be driven by which capabilities the question requires.
 
 ## Why it matters
 

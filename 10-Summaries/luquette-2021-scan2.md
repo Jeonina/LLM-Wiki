@@ -26,7 +26,7 @@ topics: ["[[brain-somatic-mosaicism]]", "[[mosaic-variant-calling]]", "[[whole-g
 
 - **PTA + SCAN2 detects both clonal and non-clonal somatic SNVs and indels** in single neurons. "Non-clonal" here means present in a single neuron only — the hardest case, because there is no second cell to corroborate the call and every candidate must be separated from amplification artifact on its own merits.
 - **The age-related SNV accumulation rate is revised to 15 SNVs per year per neuron.** This is a *downward* revision of prior [[mda|MDA]]-era estimates, and the revision is attributed to artifacts in the older amplification chemistries — the authors state explicitly that they "identify artifacts in other amplification methods."
-- **Somatic indels also increase with age, at ≥2 indels per year per neuron.** This is the first genome-wide single-neuron indel rate.
+- **Somatic indels also increase with age, at ≥2 indels per year per neuron.** 
 - **Indels may have a larger functional impact than SNVs in human neurons.** Frameshift and splice consequences per event are far more disruptive than a random substitution, so a 2:15 indel:SNV ratio does not translate to a 2:15 impact ratio.
 - **Competing-interest disclosure is load-bearing:** two authors (Gawad, West) are cofounders/officers of BioSkryb, the manufacturer of the PTA kits used. This does not invalidate the results but is relevant when reading a paper whose central claim is that PTA is cleaner than the alternatives.
 

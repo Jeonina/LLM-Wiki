@@ -35,7 +35,7 @@ These are precisely the readouts that single-molecule footprinting recovers — 
 **Methyltransferase stenciling (m6A-based, amplification-erased, bulk-only)**:
 
 - **[[fiber-seq]]** ([[10-Summaries/andrewb-2020-science]]) — the field's first usable single-molecule chromatin readout; Hia5 m6A on accessible adenines + PacBio CCS.
-- **[[samosa]]** ([[10-Summaries/abdulhay-2020-samosa]]) — EcoGII m6A footprinting on isolated nuclei + nanopore long reads; demonstrates per-fiber nucleosome positioning.
+- **[[samosa]]** ([[10-Summaries/abdulhay-2020-samosa]]) — EcoGII m6A footprinting of oligonucleosome arrays + PacBio SMRT sequencing; demonstrates per-fiber nucleosome positioning.
 - **[[samosa-tag]]** — adapter-tagmented SAMOSA variant for targeted regions.
 - **[[stam-seq]]** ([[10-Summaries/mo-2023-stam-seq]]) — Fiber-seq-style m6A stenciling adapted to *Arabidopsis* centromeres / telomeres / rDNA; demonstrates the chemistry generalizes to non-mammalian chromatin.
 - **[[smrt-tag]]** ([[10-Summaries/nanda-2024-smrt-tag]]) — Tn5-tagmentation front end for SMRT footprinting; multimodal applications for adjacent assays.

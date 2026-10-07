@@ -25,7 +25,7 @@ topics: ["[[single-cell-multiomics]]", "[[computational-methods]]"]
 - **Five capabilities in one model**: CITE-seq + scRNA-seq integration; protein prediction for scRNA-seq; protein imputation for CITE-seq; **uncertainty quantification** on those predictions and imputations; and cell-type label transfer from CITE-seq to scRNA-seq.
 - **Partial panel overlap is the unsolved problem it targets.** Combining CITE-seq datasets is hard because protein panels differ. Seurat 4 cannot do it at all; totalVI "can do it in theory, [but] this problem has not been explored." The censored-loss approach handles proteins absent from a given dataset as censored rather than missing-at-random.
 - **Speed is the competitive claim.** Both [[gayoso-2021-totalvi|totalVI]] and especially [[hao-2021-seurat-wnn|Seurat 4]] are described as computationally expensive; sciPENN "performs markedly faster than its peers" while being more accurate.
-- **Uncertainty quantification distinguishes it** from the alternatives — a predicted protein value with no confidence estimate is hard to use downstream, and neither Seurat 4 nor totalVI provides one.
+- **Uncertainty quantification distinguishes it** from the alternatives — a predicted protein value with no confidence estimate is hard to use downstream, and Seurat 4 provides none and totalVI's prediction intervals are badly under-covered.
 - **The motivation is scale economics**: as multi-modality datasets grow, methods that are both accurate *and* efficient become the bottleneck for practical use.
 
 ## Methods / evidence

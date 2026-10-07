@@ -20,9 +20,9 @@ Long-read sequencing is the enabling platform layer beneath several recent break
 
 ### Platform variants and tooling
 
-- **PacBio Revio** — current high-throughput HiFi platform ([[10-Summaries/fu-2025-longread-methylation]]).
-- **ONT PromethION** — high-throughput nanopore platform; supports R10.4.1+ chemistry with higher accuracy ([[10-Summaries/fu-2025-longread-methylation]]).
-- **Methylation callers**: Remora, primrose (PacBio); Megalodon, DeepMod (ONT) ([[10-Summaries/fu-2025-longread-methylation]]).
+- **PacBio Revio** — current high-throughput HiFi platform (synthesis).
+- **ONT PromethION** — high-throughput nanopore platform; supports R10.4.1+ chemistry with higher accuracy (synthesis).
+- **Methylation callers**: Jasmine, ccsmeth (PacBio); Nanopolish, DeepSignal, DeepMod2, Rockfish, Dorado (ONT) ([[10-Summaries/fu-2025-longread-methylation]]).
 
 ## Why it matters
 

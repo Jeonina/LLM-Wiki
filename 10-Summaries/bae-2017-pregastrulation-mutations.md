@@ -45,7 +45,7 @@ Single neuronal progenitor cells from three human fetal brains (15–21 weeks po
 
 7. **Mutations correlate negatively with histone marks and accessibility in fetal brain** (10% depletion of SNVs in DNase-hypersensitive sites, larger when using fetal-brain DHS vs lymphoblastoid DHS). **No depletion in coding vs intronic regions** → not negative selection, but better DNA repair efficiency in open chromatin. Direct cell-type-specific epigenome-mutagenesis coupling.
 
-8. **~3% of SNVs may be functionally consequential** (coding or regulatory) → ~12 nonbenign mutations per progenitor at 20 weeks. Cancer-driving mutations *can* happen by chance during background mutagenesis (signature 18 best descriptor of fetal-brain mosaic spectrum is also seen in neuroblastoma, medulloblastoma — supports the Tomasetti-Vogelstein background-mutagenesis-in-cancer hypothesis).
+8. **~3% of SNVs may be functionally consequential** (coding or regulatory) → ~12 nonbenign mutations per progenitor at 20 weeks. Cancer-driving mutations *can* happen by chance during background mutagenesis (signature 18 (neuroblastoma) and signature 8 (medulloblastoma) best describe the fetal-brain mosaic spectrum — supports the Tomasetti-Vogelstein background-mutagenesis-in-cancer hypothesis).
 
 ## Surprising / load-bearing for the review
 

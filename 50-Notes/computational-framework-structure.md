@@ -4,7 +4,7 @@ title: "Computational framework — how to structure the review's main section"
 aliases: [computational framework structure, computation section outline, analysis framework scaffold]
 tags: [synthesis, computational, integration, review-paper-anchor, draft]
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-08-17
 sources: [
   "[[10-Summaries/lahnemann-2021-natcomm]]",
   "[[10-Summaries/heumos-2023-best-practices]]",
@@ -61,10 +61,10 @@ Only the genuinely *distinct* computational problem per layer; the matrix below 
 Organize by the integration **topology**, which is inherently cross-layer (so it cannot be repetitive) ([[30-Concepts/multimodal-integration-methods]]):
 
 - **Vertical (paired)** — modalities measured in the same cell; the problem is within-cell alignment ([[10-Summaries/bi-2024-multiomics-review]]).
-- **Horizontal (unpaired)** — same modality across cell populations, anchored on shared genomic features ([[10-Summaries/wang-2023-multimodal-review]]).
+- **Horizontal (unpaired)** — same modality across cell populations, anchored on shared genomic features ([[10-Summaries/bi-2024-multiomics-review]]).
 - **Diagonal (unpaired)** — different modalities *and* different cells, no anchor — the hardest case, where batch correction risks erasing biology ([[10-Summaries/bi-2024-multiomics-review]]).
 
-Cross these with the three method families ([[10-Summaries/wang-2023-multimodal-review]]): matrix factorization (MOFA+ — [[10-Summaries/argelaguet-2020-mofa-plus]]), manifold/anchor (Seurat WNN — [[10-Summaries/stuart-2021-natmethods]]), and deep generative models (MultiVI, GLUE, Cobolt — [[10-Summaries/ashuach-2023-multivi]]; [[10-Summaries/cao-2022-glue]]; [[10-Summaries/gong-2021-cobolt]]). Anchor the comparison on an integration benchmark ([[10-Summaries/xiao-2024-multiomics-benchmark]]).
+Cross these with the three method families ([[10-Summaries/wang-2023-multimodal-review]]): matrix factorization (MOFA+ — [[10-Summaries/argelaguet-2020-mofa-plus]]), manifold/anchor (Seurat WNN — [[10-Summaries/hao-2021-seurat-wnn]]), and deep generative models (MultiVI, GLUE, Cobolt — [[10-Summaries/ashuach-2023-multivi]]; [[10-Summaries/cao-2022-glue]]; [[10-Summaries/gong-2021-cobolt]]). Anchor the comparison on an integration benchmark ([[10-Summaries/xiao-2024-multiomics-benchmark]]).
 
 ### 4. The frontier (forward-looking close)
 
@@ -101,3 +101,11 @@ The bottom row is the point: integration is *not* per-layer — it is the one ro
 - [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]] — the locus-state framework gap this section builds toward
 - [[30-Concepts/multimodal-integration-methods]] — the integration taxonomy used in §3
 - [[30-Concepts/single-cell-variant-calling]] · [[30-Concepts/scatac-imputation]] · [[30-Concepts/phylogenetic-inference]]
+
+## Correction 2026-08-17 — mis-citation of Lähnemann
+
+Three claims on this page cite `[[10-Summaries/lahnemann-2021-natcomm]]` for cross-layer statements — sparsity/dropout as the dominant challenge, preprocessing steps recurring across layers, and ground-truth scarcity as the binding benchmarking constraint. **That citation is wrong.** `lahnemann-2021-natcomm` is *Lähnemann 2021, Nature Communications* — **ProSolo**, a bulk-paired variant caller for single-cell DNA. It makes none of those cross-layer claims.
+
+The intended source is almost certainly **Lähnemann et al. 2020, "Eleven grand challenges in single-cell data science", *Genome Biology* 21:31** — a different paper that is **not in this corpus**. It should be ingested; until it is, the three claims above are uncited.
+
+This page is also stale on structure: it was written against an earlier six-section plan that has since been revised. See the 2026-08-17 classification on the user's Desktop for the current section scheme. (synthesis)

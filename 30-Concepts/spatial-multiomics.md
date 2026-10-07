@@ -24,7 +24,7 @@ Two families ([[10-Summaries/baysoy-2023-multiomics-landscape]], [[10-Summaries/
 **NGS-based**:
 - **Visium (10x)** — tissue mounted on a slide patterned with positional barcodes; lysed mRNA captured at its location of origin.
 - **Slide-seq / Slide-seqV2** — randomly placed barcoded beads with known positions.
-- **Stereo-seq, DBiT-seq** — higher-resolution variants.
+- **Stereo-seq, DBiT-seq** — higher-resolution variants (synthesis; not covered in the cited reviews).
 - Pros: unbiased (full transcriptome), straightforward workflow.
 - Cons: typically ~10–100 μm resolution (multiple cells per spot until recent advances).
 

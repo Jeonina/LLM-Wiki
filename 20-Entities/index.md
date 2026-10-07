@@ -30,6 +30,7 @@ People, labs, and consortia that appear repeatedly in the corpus. Grouped by the
 - [[20-Entities/zheng-hu]] — CAS; cancer evolution, PhyloVelo, computational lineage tracing.
 - [[20-Entities/jan-p-dumanski]] — Uppsala; somatic mosaicism, LOY, post-zygotic SVs.
 - [[20-Entities/sangita-choudhury]] — Boston Children's; cardiac somatic mosaicism, duplex sequencing.
+- [[20-Entities/pavel-pevzner]] — UCSD; de Bruijn graph assembly, single-cell genome assembly.
 
 ## Duplex sequencing
 
@@ -76,6 +77,7 @@ People, labs, and consortia that appear repeatedly in the corpus. Grouped by the
 - [[20-Entities/jay-a-a-west]] — BioSkryb; ResolveOME, PTA whole-genome+transcriptome.
 - [[20-Entities/wolf-reik]] — Babraham/Altos; scNMT-seq, developmental epigenetics.
 - [[20-Entities/xiaocheng-weng]] — Wuhan U; chemical-biology single-cell multiomics review.
+- [[20-Entities/zhana-duren]] — Clemson; gene regulatory networks from multi-omics integration.
 
 ## Methylation chemistry
 
@@ -90,6 +92,9 @@ People, labs, and consortia that appear repeatedly in the corpus. Grouped by the
 - [[20-Entities/shankar-balasubramanian]] — Cambridge / biomodal; 6-base sequencing.
 - [[20-Entities/biomodal]] — biotech; evoC kit for 6-base sequencing.
 - [[20-Entities/joseph-ecker]] — Salk; snmC-seq2, BICCN brain methylome atlas.
+- [[20-Entities/andrew-adey]] — OHSU; combinatorial indexing, sci-MET.
+- [[20-Entities/chongyuan-luo]] — UCLA; snmC-seq single-cell methylomes.
+- [[20-Entities/chang-lu]] — Virginia Tech; microfluidic and droplet methylation profiling.
 
 ## Single-cell chromatin (ATAC + histone)
 
@@ -130,6 +135,10 @@ People, labs, and consortia that appear repeatedly in the corpus. Grouped by the
 - [[20-Entities/alexey-onufriev]] — Virginia Tech; polymer-physics chromatin 3D modeling, C.H. metric.
 - [[20-Entities/bin-zhang]] — MIT; Hi-C-parameterized polymer models of chromatin.
 - [[20-Entities/michael-rosen]] — UTSW/HHMI; chromatin LLPS / condensate principles.
+- [[20-Entities/ferhat-ay]] — La Jolla Institute; Hi-C statistics, Fit-Hi-C, compartments.
+- [[20-Entities/ming-hu]] — Cleveland Clinic; Hi-C statistics, single-cell loop calling.
+- [[20-Entities/sunduz-keles]] — UW–Madison; statistical genomics, multi-way chromatin interactions.
+- [[20-Entities/yijun-ruan]] — ChIA-PET; paired-end-tag chromatin interaction mapping.
 
 ## Other
 

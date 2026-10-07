@@ -17,8 +17,8 @@ updated: 2026-05-19
 
 ## Key sources
 
-- [[10-Summaries/lodato-2017-aging-neurons]] — Lodato 2018: aging neurons show 1000+ SNVs.
-- [[10-Summaries/bae-2017-pregastrulation-mutations]] — Bae 2017: pre-gastrulation vs neurogenesis mutation rates.
+- [[10-Summaries/lodato-2017-aging-neurons]] — Lodato 2018: neurons accumulate somatic SNVs with age, faster with DNA-repair defects.
+- [[10-Summaries/bae-2017-pregastrulation-mutations]] — Bae 2018: pre-gastrulation vs neurogenesis mutation rates.
 - [[10-Summaries/bae-2017-pregastrulation-mutations]] — Bae 2018: fetal brain progenitor SNVs.
 - [[10-Summaries/taejeong-2022-science]] — Bae 2022: hypermutable brains as glioma precursors.
 - [[10-Summaries/kousi-2022-ad-mosaicism]] — Kousi 2022: cell-type-specific AD mosaicism.
@@ -47,7 +47,7 @@ updated: 2026-05-19
 
 Two additions from the 2026-08-13 ingest.
 
-[[10-Summaries/luquette-2021-scan2]] revises the neuronal somatic SNV accumulation rate to **15 SNVs/year** across 76 PTA-amplified single neurons, and reports the first genome-wide single-neuron **indel** rate (≥2/year) — with the note that indels may matter more for gene function than SNVs.
+[[10-Summaries/luquette-2021-scan2]] revises the neuronal somatic SNV accumulation rate to **15 SNVs/year** across 76 PTA-amplified single neurons, and reports a genome-wide single-neuron **indel** rate (≥2/year) — with the note that indels may matter more for gene function than SNVs.
 
 [[10-Summaries/liu-2024-hidef-seq]] profiles cortical neurons among 134 samples and measures ssDNA call burdens ~13-fold lower than Meta-CS single-cell duplex sequencing, again indicating that amplification-based single-strand estimates are inflated.
 

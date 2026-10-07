@@ -36,7 +36,7 @@ topics: ["[[3d-genome]]", "[[computational-methods]]", "[[single-cell-multiomics
 
 ## Methods / evidence
 
-Five datasets spanning three data types: GM12878 scHi-C (500 kb), WTC11 iPSC scHi-C with matched scRNA-seq residual-variance, IMR90 MERFISH imaging with co-assayed nascent transcription (chr21, 100 kb), human PFC scHi-C with methylation-derived labels, Dip-C developing mouse brain (haplotype-resolved), and HiRES mouse embryos (RNA + Hi-C co-assay). Validation against bulk subcompartments (Rao, SNIPER), histone marks, replication timing, imprinted-gene annotation, and co-assayed transcription.
+Six datasets spanning three data types: GM12878 scHi-C (500 kb), WTC11 iPSC scHi-C with matched scRNA-seq residual-variance, IMR90 MERFISH imaging with co-assayed nascent transcription (chr21, 100 kb), human PFC scHi-C with methylation-derived labels, Dip-C developing mouse brain (haplotype-resolved), and HiRES mouse embryos (RNA + Hi-C co-assay). Validation against bulk subcompartments (Rao, SNIPER), histone marks, replication timing, imprinted-gene annotation, and co-assayed transcription.
 
 Weight: the imaging and HiRES applications are the strongest evidence, because both provide *same-cell* transcription measurements — the subcompartment/transcription link is not inferred across assays. The dependence on Higashi imputation is a real coupling: scGHOST inherits whatever Higashi gets wrong.
 

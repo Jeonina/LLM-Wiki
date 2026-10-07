@@ -9,7 +9,7 @@ updated: 2026-05-12
 
 # IGS (In Situ Genome Sequencing)
 
-> Sequences DNA **directly inside fixed cells**, then matches each in-situ read to a high-quality ex-situ paired-end read of the same amplicon — yielding thousands of genomic paired-end reads with (x, y, z) spatial coordinates per cell. Spatial-3D-DNA analog of what Hi-C / scHi-C measure as contact frequency.
+> Sequences DNA **directly inside fixed cells**, then matches each in-situ read to a high-quality ex-situ paired-end read of the same amplicon — yielding hundreds to thousands of genomic paired-end reads with (x, y, z) spatial coordinates per cell. Spatial-3D-DNA analog of what Hi-C / scHi-C measure as contact frequency.
 
 ## Definition
 
@@ -22,7 +22,7 @@ Payne et al. 2021 ([[10-Summaries/andrewc-2020-science]]). Three phases:
 ## Why it matters
 
 - **Genome-wide DNA sequence + (x, y, z) position in the same nucleus** — neither Hi-C nor DNA FISH nor scHi-C can do this. Hi-C gives contact frequency, FISH gives spatial position at a handful of loci, scHi-C gives single-cell contacts but no absolute position.
-- Applied to 106 PGP1 human fibroblasts + 113 mouse embryo cells (PN4 zygote, late 2-cell, early 4-cell) — 66% of resolvable amplicons confidently matched in-situ ↔ ex-situ, giving thousands of spatially-located paired-end reads per cell.
+- Applied to 106 PGP1 human fibroblasts + 113 mouse embryo cells (PN4 zygote, late 2-cell, early 4-cell) — 66% of resolvable amplicons confidently matched in-situ ↔ ex-situ, giving hundreds (fibroblasts, median 328) to thousands (embryos, medians 1,074–3,909) of spatially-located reads per nucleus.
 - **Parent-of-origin chromosome territories** in mouse zygote distinguished via SNPs — direct imaging of maternal vs paternal pronuclei mixing during early development.
 - **Epigenetic memory of chromosome positioning**: clonal daughter cells retain similar chromosome-territory arrangements.
 

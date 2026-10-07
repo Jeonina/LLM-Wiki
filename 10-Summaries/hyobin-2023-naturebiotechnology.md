@@ -21,13 +21,13 @@ updated: 2026-05-12
 ## Mechanism
 
 1. **Strand-seq** library prep: BrdU labeling during one cell division → daughter cells inherit one labeled (Watson) and one unlabeled (Crick) strand per chromosome → MNase digestion of nuclear DNA → strand-specific single-cell libraries that resolve haplotypes.
-2. **NO (nucleosome occupancy)** measured from read-density patterns: linker DNA between nucleosomes is digested, nucleosome-protected DNA survives → read counts in 80-bp bins around CTCF binding sites and gene bodies report nucleosome positioning.
+2. **NO (nucleosome occupancy)** measured from read-density patterns: linker DNA between nucleosomes is digested, nucleosome-protected DNA survives → read density around bound CTCF sites and gene-body read counts report nucleosome positioning.
 3. **Haplotype-aware NO**: phased Strand-seq reads (~50% of NA12878 fragments) allow per-haplotype nucleosome occupancy → detects allele-specific SV effects.
 4. **scNOVA framework** combines deep CNN + negative binomial GLM to predict gene-activity changes from NO in gene bodies across cells with different SVs.
 
 ## Key claims
 
-- **NO at gene bodies inversely correlates with gene expression** (Spearman r = –0.24), comparable to scRNA-seq prediction power (AUC up to 0.93 in cell-type classification across LCL/RPE lines).
+- **NO at gene bodies inversely correlates with gene expression** (Spearman r = –0.24), cell types classified from NO alone (AUC = 1 for LCL vs RPE; 0.96 among three RPE lines), and differential gene activity predicted with AUC 0.93 against RNA-seq ground truth.
 - **Haplotype-resolved gene-expression inference**: validates known X-chromosome inactivation in NA12878 (genes on Xi have higher NO).
 - **CLL subclone with distinct Wnt-signaling dysregulation** identified via SV → NO → predicted expression cascade. Validated by RNA-seq.
 - **T-ALL chromothripsis subclone with c-Myb activation** identified; targeting validated with Notch inhibitor in cell culture → demonstrates therapeutic implications of SV functional characterization.

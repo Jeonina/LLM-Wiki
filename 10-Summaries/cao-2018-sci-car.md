@@ -8,7 +8,7 @@ created: 2026-05-12
 updated: 2026-05-12
 ---
 
-**Citation:** Cao et al. (2018) — *sci-CAR: Joint profiling of chromatin accessibility and gene expression in thousands of single cells* — *?*. [DOI](https://doi.org/10.1126/science.aau0730)
+**Citation:** Cao et al. (2018) — *sci-CAR: Joint profiling of chromatin accessibility and gene expression in thousands of single cells* — *Science*. [DOI](https://doi.org/10.1126/science.aau0730)
 
 # Cao et al. 2018 — sci-CAR
 
@@ -32,7 +32,7 @@ Before sci-CAR, joint single-cell profiling of chromatin accessibility + transcr
 
 1. **4,825 joint cells from a dexamethasone time course on A549 lung adenocarcinoma cells** (0 / 1 / 3 hr DEX) — captured glucocorticoid-receptor activation dynamics at both layers.
 2. **11,296 joint cells from adult mouse kidney**, defining 14 cell-type clusters with distinct chromatin accessibility programs.
-3. **Pseudotime alignment**: ATAC and RNA can be co-ordered along a single trajectory. Of 2,613 DE genes in the DEX series, 11 showed concordant promoter-accessibility + expression dynamics; many more showed accessibility changes with no detectable expression change at the depth tested.
+3. **Pseudotime alignment**: ATAC and RNA can be co-ordered along a single trajectory. Of 2,613 DE genes in the DEX series, 175 also had differentially accessible promoters, and 130/175 (74%) changed in concordant directions; many more showed accessibility changes with no detectable expression change at the depth tested.
 4. **Cis-regulatory linking by covariance**: across 222 pseudocells in kidney, 1,260 distal peaks linked to 321 genes (median 3 peaks per gene). Permutation controls confirmed the links are not artifacts of regularized regression. Including linked distal sites improved expression prediction from accessibility by **fourfold** over promoter-only.
 5. **Species-mixing validation**: 99% of HEK293T+NIH/3T3 mixed-well cells received concordant species labels from sci-RNA and sci-ATAC reads, confirming barcode pairing.
 

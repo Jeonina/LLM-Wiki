@@ -40,7 +40,7 @@ topics:
 
 ## Methods / evidence
 
-R/Bioconductor package (github.com/aertslab/cistopic). Input: binary cell × region matrix. Tuning: 500 burn-in + 500 recording iterations; topic-number selection by log-likelihood + perplexity stabilization. Validated against ChIP-seq, scRNA-seq integration (SCENIC), and motif enrichment.
+R/Bioconductor package (github.com/aertslab/cistopic). Input: binary cell × region matrix. Tuning: 500 burn-in + 500 recording iterations; topic-number selection by highest log-likelihood (simplest model once log-likelihood stabilizes). Validated against ChIP-seq, scRNA-seq integration (SCENIC), and motif enrichment.
 
 ## Surprising or load-bearing bits
 

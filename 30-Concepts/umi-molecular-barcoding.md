@@ -19,13 +19,12 @@ A 6–24-nt degenerate oligo, often paired between adapter ends so each duplex D
 
 UMIs make NGS quantitative (counts reflect input molecules, not PCR duplicates) and dramatically reduce false-positive variant calls. Foundational to duplex sequencing and to scRNA-seq where droplet-barcoded UMIs distinguish per-cell expression.
 
-**Caveat — UMI saturation is sublinear.** [[10-Summaries/svensson-2017-power-analysis|Svensson 2017]] showed across 15 scRNA-seq protocols that the best-fit relationship between input mRNA molecules and counted UMIs has an exponent of ~0.8, not 1.0 — i.e. UMI counts undercount at high expression. Causes: collision (UMI re-use when complexity is low — 4-nt UMI ⇒ only 256 codes), and template-switching artifacts. Longer UMIs (10 nt → ~1M codes) mitigate but do not eliminate this. For quantitative claims at high expression, the residual amplification bias matters.
+**Caveat — UMI saturation is sublinear.** [[10-Summaries/svensson-2017-power-analysis|Svensson 2017]] showed across 15 scRNA-seq protocols that the best-fit relationship between input mRNA molecules and counted UMIs has an exponent of ~0.8, not 1.0 — i.e. UMI counts undercount at high expression. Plausible causes include collision (UMI re-use when complexity is low — 4-nt UMI ⇒ only 256 codes) and template-switching artifacts; longer UMIs (10 nt → ~1M codes) mitigate but do not eliminate this (synthesis). For quantitative claims at high expression, the residual amplification bias matters.
 
 ## Examples
 
 - 12-nt random tag in Kennedy 2014 ([[10-Summaries/kennedy-2014-duplex-protocol]])
 - Combinatorial split-pool barcoding in [[10-Summaries/bai-2024-simple-seq]] and [[10-Summaries/shen-2026-splicool-seq]]
-- 8-nt SMRT-Tag barcode in [[10-Summaries/abdulhay-2020-samosa]]
 - 8-nt random UMI on every Drop-seq bead primer for PCR-duplicate collapse in droplet scRNA-seq ([[10-Summaries/macosko-2015-drop-seq]])
 
 ## Related

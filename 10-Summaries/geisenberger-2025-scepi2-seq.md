@@ -37,7 +37,7 @@ topics:
 - **Quality**: ~95% C→T conversion of CpG-methylated spike-ins. Fraction Reads in Peaks 0.72–0.88. >50,000 CpGs per cell on average. Pearson > 0.9 vs bulk WGBS at 10-kb bins; > 0.8 at single-CpG.
 - **Chromatin-context-dependent methylation**: H3K36me3 regions are highly methylated (~50%); H3K27me3 and H3K9me3 regions are hypomethylated (8–10%) — consistent with the relative gene-body vs facultative-/constitutive-heterochromatin distinction.
 - **Cell-cycle dynamics (RPE-1 FUCCI)**: methylation transiently drops during S-phase for each histone mark, with H3K9me3-marked late-replicating regions taking longest to recover (maintenance methylation extends into G1). **Nucleosome-covered DNA loses up to 12% methylation through S-phase, vs 4% at linker DNA** — nucleosomes block DNMT1 access.
-- **Mouse intestine (H3K27me3 + 5mC)**: identifies absorptive, secretory (enteroendocrine + goblet), and immune (B/T/myeloid) cells; immune cells have lower H3K27me3 but higher 5mC than epithelial cells, suggesting **DNA methylation provides an additional repressive layer within facultative heterochromatin** that operates independently of PRC2.
+- **Mouse intestine (H3K27me3 + 5mC)**: identifies absorptive, secretory (enteroendocrine + goblet), and immune (B/T/myeloid) cells; within the immune compartment, B cells have the lowest H3K27me3 but the highest 5mC, and goblet cells show higher 5mC than EECs at similar H3K27me3, suggesting **DNA methylation provides an additional repressive layer within facultative heterochromatin** that operates independently of PRC2.
 
 ## Methods / evidence
 
@@ -59,7 +59,7 @@ K562 and RPE-1 hTERT FUCCI cell lines + mouse small intestine (proximal/middle/d
 ## Open questions
 
 - TAPS doesn't distinguish 5mC from 5hmC, though 5hmC is ~30× less abundant. For tissues like brain where 5hmC matters, this conflation is a real limit.
-- Throughput per experiment is plate-based (384-well); ~600–1,700 cells passing QC. Lower than Tn5-based methods.
+- Throughput per experiment is plate-based (384-well); ~2,000–3,100 cells passing QC per experiment (K562 1,981; mouse intestine 3,123). Lower than Tn5-based methods.
 
 ---
 **Source:** [DOI](https://doi.org/10.1038/s41592-025-02847-4)

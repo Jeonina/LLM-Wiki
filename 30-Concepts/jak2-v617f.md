@@ -22,7 +22,7 @@ JAK2V617F is found in:
 - ~50% of essential thrombocythemia (ET) and primary myelofibrosis (MF) patients,
 - A substantial fraction of clonal-hematopoiesis-of-indeterminate-potential (CHIP) cases.
 
-[[10-Summaries/izzo-2024-got-cha]] reframes JAK2V617F's effect on HSCs from "downstream cytokine inflammation" to **cell-intrinsic chromatin priming**: at the clonal-hematopoiesis stage, mutant HSCs already have:
+[[10-Summaries/izzo-2024-got-cha]] reframes JAK2V617F's effect on HSCs from "downstream cytokine inflammation" to **cell-intrinsic chromatin priming**: mutant HSCs (in MF) show:
 
 - Increased gene accessibility for **NF-κB target genes** (TRAPPC9),
 - Increased accessibility for **TGF-β superfamily** components (BMPR1B receptor, GDF10 ligand),
@@ -30,7 +30,7 @@ JAK2V617F is found in:
 - Decreased accessibility for stem/quiescence genes (FRY, HLF, PBX1),
 - Increased **STAT1/5 motif accessibility** that is reversed by ruxolitinib.
 
-These changes are visible *before* overt MPN — JAK2V617F primes the chromatin landscape ahead of the disease phenotype.
+Only the canonical JAK2/STAT-target (STAT1/5) accessibility gain is already visible at the clonal-hematopoiesis stage, *before* overt MPN; the NF-κB/TGF-β program appears only in MF, not in the CH sample ([[10-Summaries/izzo-2024-got-cha]]).
 
 ## Variants and refinements
 

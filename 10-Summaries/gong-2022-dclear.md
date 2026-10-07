@@ -31,7 +31,7 @@ topics: ["[[single-cell-lineage-tracing]]", "[[computational-methods]]"]
 
 DREAM Challenge submissions evaluated by the organisers against known ground-truth trees, at three scales. The competition setting is the strongest form of benchmark available in this literature: blinded, organiser-scored, common data.
 
-Weight: the DREAM framing makes the comparison unusually credible. The clipping does not contain the specific distance-metric definitions or the numeric results.
+Weight: the DREAM framing makes the comparison unusually credible. The clipping defines the two metrics, weighted Hamming distance (WHD) and k-mer replacement distance (KRD), and compares them against other DREAM entries.
 
 ## Surprising or load-bearing bits
 
@@ -56,7 +56,6 @@ Weight: the DREAM framing makes the comparison unusually credible. The clipping 
 
 ## Open questions
 
-- **The two distance metrics are not described in the ingested clipping** — the substance of the contribution needs a full-text re-ingest.
 - Whether the DREAM ranking transfers to modern high-information recorders (prime-editing, sequential insertion) is untested; those systems change the distance geometry substantially.
 - No branch-length or timing output, by construction.
 

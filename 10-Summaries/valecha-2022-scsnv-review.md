@@ -1,18 +1,18 @@
 ---
 type: summary
 title: "Valecha 2022 — Somatic variant calling from single-cell DNA sequencing data"
-source: "[[00-Sources/papers/Somatic variant calling from single-cell DNA sequencing data]]"
+source: "[[00-Sources/papers/Somatic variant calling from single-cell DNA sequencing data _ Computational and Structural Biotechnology Journal]]"
 aliases: ["Valecha 2022", "Posada scDNA review", "scSNV caller review"]
 tags: [review, scDNA-SNV-calling, allelic-dropout, amplification-error, Posada-lab, CSBJ]
 created: 2026-05-13
 updated: 2026-05-13
 ---
 
-**Citation:** Valecha et al. (2022) — *Somatic variant calling from single-cell DNA sequencing data* — *ComputationalStructuralBiotechnologyJournal*. [DOI](https://doi.org/10.1016/j.csbj.2022.06.013)
+**Citation:** Valecha & Posada (2022) — *Somatic variant calling from single-cell DNA sequencing data* — *Computational and Structural Biotechnology Journal*. [DOI](https://doi.org/10.1016/j.csbj.2022.06.013)
 
-Valecha and Posada (Universidade de Vigo) reviewed computational approaches for **somatic single-nucleotide variant (SNV) calling from scDNA-seq data**. The review categorizes the technical biases scWGA introduces — allele dropout (ADO), allelic imbalance (AI), locus dropout (LDO), amplification errors — and surveys the eight major SNV-caller families designed to handle them: Monovar (multi-cell pooled likelihood), SCcaller (local-bias correction), SCAN-SNV (sequencing-context-aware), ProSolo (combined bulk+single-cell), LiRA (linkage-disequilibrium phasing), SCIΦ (joint inference with tree), SecedoTree, Conbase.
+Valecha and Posada (Universidade de Vigo) reviewed computational approaches for **somatic single-nucleotide variant (SNV) calling from scDNA-seq data**. The review categorizes the technical biases scWGA introduces — allele dropout (ADO), allelic imbalance (AI), locus dropout (LDO), amplification errors — and surveys the eight major SNV-caller families designed to handle them: Monovar (multi-cell pooled likelihood), SCcaller (local-bias correction), SCAN-SNV (sequencing-context-aware), ProSolo (combined bulk+single-cell), LiRA (read-backed phasing with linked germline hSNPs), SCIΦ (joint inference with tree), Conbase, scVILP, SCIΦN, Phylovar.
 
-Performance comparison via three axes: statistical performance (sensitivity, FDR, FP rate), speed benchmark, and modeling philosophy (genotype-likelihood vs phylogeny-aware). Conclusion: no single caller is universally best; choice depends on (a) scWGA chemistry (MDA vs MALBAC vs PTA), (b) coverage depth, (c) whether bulk control is available, (d) whether tree inference is needed simultaneously.
+Performance comparison via three axes: statistical performance (sensitivity, FDR, FP rate), speed benchmark, and modeling philosophy (genotype-likelihood vs phylogeny-aware). Conclusion: no single caller is universally best; choice depends on (a) scWGA chemistry (e.g., ProSolo's MDA-specific bias model), (b) coverage depth, (c) whether bulk control is available, (d) whether tree inference is needed simultaneously.
 
 ## Why this matters
 

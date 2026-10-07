@@ -9,18 +9,18 @@ updated: 2026-05-11
 
 # DNMT (DNA methyltransferases)
 
-> The enzyme family that catalyzes addition of methyl groups to the C5 of cytosine. Three members in mammals: **DNMT1** (maintenance — propagates methylation through S phase), **DNMT3A** and **DNMT3B** (de novo — establish new methylation patterns during development). Loss of any is embryonic-lethal.
+> The enzyme family that catalyzes addition of methyl groups to the C5 of cytosine. Three members in mammals: **DNMT1** (maintenance — propagates methylation through S phase), **DNMT3A** and **DNMT3B** (de novo — establish new methylation patterns during development). Loss of any is lethal (early gestational or postnatal, depending on the enzyme) ([[10-Summaries/smith-2013-methylation-development]]).
 
 ## Definition
 
-**DNMT1** is constitutively expressed in dividing cells and recruited to replication forks by PCNA and UHRF1. UHRF1 binds hemimethylated DNA via its SRA domain, orienting DNMT1 to methylate the nascent strand opposite a previously methylated cytosine. DNMT1 is **structurally dependent on a hemimethylated substrate** — it cannot methylate unmethylated DNA, preventing spurious gain of methylation ([[10-Summaries/smith-2013-methylation-development]]).
+**DNMT1** is constitutively expressed in dividing cells and recruited to replication forks by PCNA and UHRF1. UHRF1 binds hemimethylated DNA via its SRA domain, orienting DNMT1 to methylate the nascent strand opposite a previously methylated cytosine. DNMT1 is **structurally dependent on a hemimethylated substrate** — its low affinity and catalytic activity at unmethylated DNA limit its de novo activity, preventing spurious gain of methylation ([[10-Summaries/smith-2013-methylation-development]]).
 
 **DNMT3A and DNMT3B** perform de novo methylation; required for establishing methylation patterns during embryogenesis and germ cell development.
 
 ## Why it matters
 
 - Maintenance fidelity is essential — without DNMT1, methylation patterns are diluted at each cell division.
-- Loss of any DNMT is embryonic-lethal in mice.
+- Loss of any DNMT is lethal in mice — early gestational or postnatal, depending on the enzyme ([[10-Summaries/smith-2013-methylation-development]]).
 - DNMT3A loss-of-function mutations are recurrent drivers of [[40-Topics/clonal-hematopoiesis]] and AML.
 - DNMT inhibitors (5-azacytidine, decitabine) are approved for MDS and AML.
 

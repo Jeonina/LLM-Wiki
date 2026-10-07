@@ -33,10 +33,10 @@ topics:
 
 ## Key claims
 
-- **Throughput**: 5,184 nano-wells per chip; ~35% (~1,800) wells contain a single live cell under Poisson loading. Hoechst/PI dual staining + microscopy identifies live single cells before reagent deposition.
+- **Throughput**: 5,184 nano-wells per chip; ~35% of targeted wells (1,616 cells across two chips) contained a single live cell under Poisson loading. Hoechst/PI dual staining + microscopy identifies live single cells before reagent deposition.
 - **Library quality**: 14,300 fragments per human cell, 8,100 per mouse cell — **higher than Fluidigm C1** (5,800 fragments / GM12878) and combinatorial indexing (2,500 fragments / GM12878).
 - **Reagent fidelity**: barnyard human/mouse cell mixing shows <0.2% double-species wells. Polymerase choice (e2Tak vs Q5) gives 97.9% concordance — robust to thermocycling chemistry.
-- **PBMC application**: 2,333 single PBMCs from three donors. **De novo clustering** of isolated B/T/CD4+/CD8+/monocyte cells co-clusters precisely with bulk PBMCs (PU.1, C/EBPα, RUNX1 motifs differentially accessible across types).
+- **PBMC application**: 2,333 single PBMCs from three donors. **De novo clustering** of isolated B/T/CD4+/CD8+/monocyte cells co-clusters precisely with single-cell PBMC subpopulations (PU.1, C/EBPα, RUNX1 motifs differentially accessible across types).
 - **Live-cell compatibility**: nano-well isolation preserves whole cells for downstream multi-omic assays (vs combinatorial-indexing which lyses cells). Foundation for multi-omics on the same platform.
 
 ## Methods / evidence
@@ -46,13 +46,13 @@ ICELL8 platform (Takara Bio USA) with Hoechst/propidium-iodide live/dead imaging
 ## Surprising or load-bearing bits
 
 - The **fluorescence-imaging + addressable reagent deposition** combination is the methodological insight: prior nano-well scATAC could not do quality control on live single cells before sequencing; µATAC can.
-- Cost-per-cell of $0.81 in 2018 was the lowest on the market; combinatorial indexing was cheaper per fragment but couldn't preserve cell-imaging metadata.
+- Cost-per-cell of ~$0.81 was nearly 20-fold lower than prior microfluidic (C1) implementations; combinatorial indexing was cheaper per fragment but couldn't preserve cell-imaging metadata.
 - The Klemm authorship link is notable — Klemm/Greenleaf 2019 NRG chromatin-accessibility review ([[10-Summaries/klemm-2019-chromatin-accessibility-review]]) was written in part on the basis of this platform.
 
 ## Connections to other sources
 
 - Bridges Fluidigm-C1-era scATAC ([[10-Summaries/schep-2017-chromvar]] used C1 data) and combinatorial-indexing scATAC (used in [[10-Summaries/fang-2021-snapatac]] for atlas-scale work).
-- Same ICELL8 platform used by [[10-Summaries/janssens-2023-scicut-tag]] (sciCUT&Tag) and by SpliCOOL-seq–style approaches. Demonstrates the platform's extensibility beyond ATAC.
+- Same ICELL8 platform used by [[10-Summaries/janssens-2023-scicut-tag]] (sciCUT&Tag). Demonstrates the platform's extensibility beyond ATAC.
 - Complements [[10-Summaries/klemm-2019-chromatin-accessibility-review]] (Klemm/Greenleaf chromatin-accessibility review).
 
 ## Open questions

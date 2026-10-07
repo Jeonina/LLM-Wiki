@@ -42,7 +42,7 @@ That caveat matters: scChromHMM's per-cell states are per-*cell-state* states re
 
 - **Regulatory priming is the finding to carry.** Cell-type-specific repressive chromatin at genes that are silent everywhere means chromatin encodes *potential*, not just current output — a layer of identity invisible to any transcriptome method, bulk or single-cell. It is the strongest argument in this corpus for why epigenome measurement is not redundant with RNA.
 - The granularity-dependence of ChromHMM generalizes: **any bulk tool applied to pseudobulk inherits the analyst's choice of cluster resolution as a hidden parameter.** Reported as a concrete 16.4% discordance.
-- Protein as the integration currency is a deliberate alternative to RNA. Paired-Tag and CoTECH use transcriptome; this uses immunophenotype, which is denser per cell and better defined for immune systems — the authors say so explicitly. Both are "megaomic" strategies for the same gap.
+- Protein as the integration currency is a deliberate alternative to RNA. Paired-Tag and CoTECH use transcriptome; this uses immunophenotype, which the authors say is particularly valuable for immune cell types well defined by their surface protein landscape. Both are "megaomic" strategies for the same gap.
 - Whole cells rather than nuclei is what makes surface-protein capture possible — inherited from ASAP-seq's fixation/permeabilization optimizations.
 - Six marks in one cell is stated as **not currently feasible experimentally**, especially for marks with overlapping localization. This paper is a computational workaround, and it says so.
 

@@ -14,7 +14,7 @@ Sun, van Ginneken and Perié (Institut Curie, Sorbonne) developed **scMitoMut**,
 
 Three-step framework: (1) define wild-type allele per locus without a reference genome (highest-median-allele-frequency across cells); (2) define WT reference-cell set via binomial-mixture-model classifier, fit beta-binomial parameters to those cells; (3) call mutations using the beta-binomial *q-value*, accounting for sequencing depth and WT read count via FDR-controlled multi-test correction.
 
-Validated on: (i) single-cell DNA sequencing of mixed cell lines (high sensitivity for small clones); (ii) human colorectal cancer scATAC-seq (more mutations detected than state-of-the-art); (iii) 10x Genomics multiome datasets (effective lineage-distance measurement between blood and brain tissue cells).
+Validated on: (i) single-cell DNA sequencing of mixed cell lines (high sensitivity for small clones); (ii) human colorectal cancer scATAC-seq (more mutations detected than state-of-the-art); (iii) 10x Genomics multiome datasets (effective lineage-distance measurement within cells from blood or brain tissue datasets).
 
 ## Why this matters
 

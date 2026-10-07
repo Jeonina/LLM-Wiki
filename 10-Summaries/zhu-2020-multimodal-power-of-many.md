@@ -18,7 +18,7 @@ topics: ["[[single-cell-multiomics]]"]
 
 # Zhu 2020 — the power of many
 
-> The Comment that accompanied Nature Methods' Method-of-the-Year designation for single-cell multimodal omics, and the paper that fixed the field's organizing axis: joint assays split into **one-cell-at-a-time, deep** methods versus **droplet/combinatorial-indexing, scalable** methods, and every design choice trades between them.
+> The Comment that accompanied Nature Methods' Method-of-the-Year designation for single-cell multimodal omics *(not found in source clipping — unverified)*, and the paper that fixed the field's organizing axis: joint assays split into **one-cell-at-a-time, deep** methods versus **droplet/combinatorial-indexing, scalable** methods, and every design choice trades between them.
 
 ## Key claims
 

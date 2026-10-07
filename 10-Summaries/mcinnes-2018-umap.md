@@ -18,7 +18,7 @@ topics: ["[[single-cell-multiomics]]"]
 
 # McInnes 2018 — UMAP
 
-> A manifold-learning dimension-reduction method derived from Riemannian geometry and algebraic topology (fuzzy simplicial set approximation of the data manifold, then cross-entropy optimization of a low-dimensional analogue), competitive with t-SNE on visualization quality while preserving more global structure, running faster, and — unlike t-SNE — imposing no ceiling on embedding dimension.
+> A manifold-learning dimension-reduction method derived from Riemannian geometry and algebraic topology (fuzzy simplicial set approximation of the data manifold, then cross-entropy optimization of a low-dimensional analogue) *(not found in source clipping — unverified)*, competitive with t-SNE on visualization quality while preserving more global structure, running faster, and — unlike t-SNE — imposing no ceiling on embedding dimension.
 
 > ⚠️ **Source caveat.** The bookmarked clipping is the arXiv abstract page. Claims below are from the abstract; the mathematical construction is not in the clipping.
 
@@ -31,7 +31,7 @@ topics: ["[[single-cell-multiomics]]"]
 
 ## Methods / evidence
 
-The abstract asserts these properties; the arXiv paper supplies the derivation and benchmarks. Notably this work was **never published in a peer-reviewed journal** — it is cited by essentially every single-cell paper in this wiki as a preprint. That is worth stating plainly in a methods chronology.
+The abstract asserts these properties; the arXiv paper supplies the derivation and benchmarks. Notably this work was **never published in a peer-reviewed journal** *(not found in source clipping — unverified)* — it is cited by essentially every single-cell paper in this wiki as a preprint. That is worth stating plainly in a methods chronology.
 
 ## Surprising or load-bearing bits
 

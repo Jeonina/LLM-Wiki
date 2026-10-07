@@ -26,7 +26,7 @@ Annotation quality is uneven: mesenchymal and connective-tissue clusters — the
 ## Cross-modal and cross-atlas identity
 
 - Joint definition of cortical cell types from RNA and epigenome profiles ([[welch-2019-liger]]), with the general framing that each modality is a different glimpse into cellular identity ([[welch-2019-liger]]).
-- Cross-atlas matching linked 96 adult-atlas cell types to 58 developmental subtypes, each atlas informing the other's anatomy or embryonic origin ([[cao-2019-moca]]).
+- Cross-atlas matching linked 96 fetal (E14.5) cell types of the Mouse Cell Atlas to 58 MOCA developmental subtypes, each atlas informing the other's anatomy or embryonic origin ([[cao-2019-moca]]).
 - Integration must preserve type distinctions while mixing datasets, which is what cell-type LISI measures ([[korsunsky-2019-harmony]]).
 
 ## The standing caveat

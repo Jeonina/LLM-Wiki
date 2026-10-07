@@ -30,8 +30,8 @@ updated: 2026-05-12
 
 - **97% genome coverage, 17% allele dropout**, lowest CV across all bin sizes (1 bp – 100 Mb). Power spectrum and Lorenz curves all favor LIANTI over MALBAC/MDA/DOP-PCR.
 - **Micro-CNV detection at ~10 kb resolution** by digital counting of inferred fragment numbers (mapping reads to same start/end coordinates groups them as one original fragment). Detected a 57-kb 2-to-1 micro-CNV in a single BJ cell that bulk sequencing also showed but MALBAC/MDA/DOP-PCR could not resolve.
-- **Genome-wide replication-origin firing in 11 single BJ cells synchronized in early S phase**: copy-number gains 2→3 and 3→4 detected at kilobase resolution. Replicon copy numbers correlate well with Repli-Seq (r ~0.5+) and DNase-Seq (r ~0.5+) but **off-diagonal signal between cells reveals stochastic origin firing** — different replicons fire in different cells.
-- **C→T false-positive rate 5.4×10⁻⁶** for single-BJ-cell SNV detection — confirmed via UDG treatment that this is from **post-lysis cytosine deamination**, not amplification fidelity. Same artifact in MALBAC. **G→T is the second most frequent false positive**, likely from guanine oxidation to 8-hydroxyguanine.
+- **Genome-wide replication-origin firing in 11 single BJ cells synchronized in early S phase**: copy-number gains 2→3 and 3→4 detected at kilobase resolution. Replicon copy numbers correlate well with Repli-Seq and DNase-Seq but **off-diagonal signal between cells reveals stochastic origin firing** — different replicons fire in different cells.
+- **Overall SNV false-positive rate 5.4×10⁻⁶** for single-BJ-cell SNV detection, dominated by C→T — confirmed via UDG treatment that this is from **post-lysis cytosine deamination**, not amplification fidelity. Same artifact in MDA. **A→G (adenine deamination) is the second most frequent false positive; G→T is another common class**, likely from guanine oxidation to 8-hydroxyguanine.
 
 ## Surprising / load-bearing for the review
 

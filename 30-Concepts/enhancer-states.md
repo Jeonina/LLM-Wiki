@@ -17,7 +17,7 @@ updated: 2026-08-10
 
 ## Foundational source
 
-The active-vs-inactive split was established by [[10-Summaries/creyghton-2010-h3k27ac-enhancers]] in mESC, NPC, proB, and liver. The paper showed only ~30% of H3K4me1+ enhancers carry H3K27ac, and only those drive proximal gene expression and emit eRNAs — meaning the active enhancer pool is much smaller than H3K4me1 alone suggests ([[10-Summaries/creyghton-2010-h3k27ac-enhancers]]).
+The active-vs-inactive split was established by [[10-Summaries/creyghton-2010-h3k27ac-enhancers]] in mESC, NPC, proB, and liver. The paper showed only a subset of H3K4me1+ enhancers carry H3K27ac, and only those drive proximal gene expression and emit eRNAs — meaning the active enhancer pool is much smaller than H3K4me1 alone suggests ([[10-Summaries/creyghton-2010-h3k27ac-enhancers]]).
 
 ## Terminology drift (historical note)
 
@@ -34,7 +34,7 @@ Enhancer rewiring is also part of pluripotency reprogramming: fibroblast→iPS c
 - **Bivalent (poised) promoters.** ES cells carry large H3K27me3 domains containing smaller H3K4me3 sites, 93% of them at developmental TF genes; sequential ChIP shows both marks on the same chromatin, and the domains resolve to one mark or the other on differentiation according to whether the gene is induced ([[10-Summaries/bernstein-2006-bivalent-chromatin]]).
 - **Refinement**: the two marks are not on the same H3 tail but on **adjacent histones within one nucleosome**, consistent with PRC2 being unable to methylate H3K27 when H3K4me3 is present in *cis* ([[10-Summaries/rothbart-2014-histone-dna-language]]).
 - **Primed enhancers.** Collaborative binding of small sets of lineage-determining TFs at closely spaced motifs displaces nucleosomes and induces H3K4me1; only ~15% of PU.1 sites drove constitutive reporter activity, while 10/11 LXR-co-bound regions were ligand-dependent — primed ≠ active ([[10-Summaries/heinz-2010-homer]]).
-- **Population scale.** Enhancer/promoter signatures cover ~5% of each of 127 reference epigenomes and are ~2-fold enriched for conserved non-exonic elements; H3K4me1-associated states are the most tissue-specific, and **repressive marks carry no GWAS enrichment at all** ([[10-Summaries/roadmap-2015-111-epigenomes]]).
+- **Population scale.** Enhancer/promoter signatures cover ~5% of each of 127 reference epigenomes and are enriched for evolutionarily conserved non-exonic regions; H3K4me1-associated states are the most tissue-specific, and **repressive marks carry no GWAS enrichment at all** ([[10-Summaries/roadmap-2015-111-epigenomes]]).
 - **Regulatory priming persists into repressive chromatin.** Of 1,597 monocyte-specific repressive-state TSS shifts, only 16.1% have a matching transcriptional shift; the rest are silent in every cell type yet cell-type-specifically marked ([[10-Summaries/zhang-2022-sccut-tag-pro]]).
 
 ## Related

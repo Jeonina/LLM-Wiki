@@ -35,13 +35,13 @@ topics:
 ## Key claims
 
 - Six methods benchmarked: **CODEC**, **CompDuplex-seq** (CompDup), **HiDEF-seq**, **NanoSeq**, **ppmSeq**, **VISTA-seq**. Each shows a distinct profile across (a) genomic footprint, (b) sensitivity per Gb sequenced, and (c) cost per duplex base.
-- Despite chemistry differences, **mutation-rate estimates and 96-channel SBS signatures are highly concordant** across methods on the same samples.
-- Combined with ultra-deep WGS, duplex methods detect mutations beyond the clonally-expanded fraction that WGS variant callers can see — capturing the true mosaicism distribution, including singleton variants that exist in one cell.
+- Despite chemistry differences, **mutation-rate estimates and mutational signatures are highly concordant** across methods on the same samples.
+- Combined with ultra-deep WGS, duplex methods detect mutations beyond the clonally-expanded fraction that WGS variant callers can see — capturing the true mosaicism distribution, including singleton variants that exist in one cell *(not found in source clipping — unverified)*.
 - Provides a foundation for **interpreting cross-platform data in SMaHT** and beyond. Implicit guidance: pick the method by experimental constraint (input DNA, target region, cost), not by accuracy alone, since accuracy converges.
 
 ## Methods / evidence
 
-Cross-platform comparison on three reference sample types using each lab's published protocol. Common bioinformatics through duplex-call consensus. The benchmark relies on each method being run by the lab that developed it — minimizing implementation variance.
+Cross-platform comparison on three reference sample types using each lab's published protocol. Common bioinformatics through duplex-call consensus. The benchmark relies on each method being run by the lab that developed it — minimizing implementation variance. *(not found in source clipping — unverified)*
 
 ## Surprising or load-bearing bits
 

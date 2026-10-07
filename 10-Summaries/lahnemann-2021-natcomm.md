@@ -12,7 +12,7 @@ updated: 2026-05-13
 
 Lähnemann, Köster and colleagues developed ProSolo, a single-cell SNV caller that probabilistically models a single MDA-amplified cell jointly with a bulk-tissue sample from the same population. ProSolo addresses the two principal failure modes of MDA: differential amplification of the two parental alleles (locally variable, captured by a mechanistically motivated empirical model) and amplification errors introduced by $\phi$29 polymerase at rates orders of magnitude above the somatic mutation rate.
 
-The bulk sample serves as an unamplified background: it samples from the same cell population without WGA artifacts and provides a reference allele-frequency distribution at each locus. ProSolo combines per-locus bulk allele frequencies with single-cell MDA likelihoods to control false discovery rate flexibly. Benchmarking shows higher precision and recall than MonoVar, SCcaller, and SCAN-SNV across simulated and real datasets, with explicit FDR control that the existing tools lack.
+The bulk sample serves as an unamplified background: it samples from the same cell population without WGA artifacts and provides a reference allele-frequency distribution at each locus. ProSolo combines per-locus bulk allele frequencies with single-cell MDA likelihoods to control false discovery rate flexibly. Benchmarking on real single-cell datasets shows higher recall at matched high precision than MonoVar, SCIPhI and SCcaller (SCAN-SNV, which targets somatic variants, had near-zero recall), with explicit FDR control that the existing tools lack.
 
 ## Why this matters
 

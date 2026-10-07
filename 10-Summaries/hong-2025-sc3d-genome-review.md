@@ -31,20 +31,20 @@ topics:
 
 ## Key claims
 
-- **Three classes of single-cell 3D-genome methods**: (1) bulk-Hi-C-adapted per-cell methods (scHi-C, snHi-C), (2) cell-barcode-based high-throughput (sciHi-C, scHi-C⁺, snHi-C⁺), (3) multi-omics combinations (sn-m3C, HiRES, scMethyl that pair Hi-C with methylation/expression).
-- **Notable platforms**: scSPRITE (sonication-based, captures higher-order multi-way contacts), scNanoHi-C (long-read Hi-C, first of its kind), Droplet Hi-C and Paired Hi-C (microfluidic-based scale).
-- **Computational challenges**: high dimensionality, extreme sparsity (most cells get <100k contacts), noise. Algorithms for QC, normalization, imputation, structural reconstruction, A/B compartment calling, TAD/loop identification under single-cell sparsity.
+- **Single-cell 3D-genome methods tabulated**: scHi-C, snHi-C, sci-Hi-C, Methyl-3C, Methyl-HiC, Dip-C, HiRES, GAGE-seq, LiMCA, Droplet Hi-C, dscHi-C, scMicro-C.
+- **Notable platforms**: droplet-based Droplet Hi-C and dscHi-C (microfluidic scale), scMicro-C, and multimodal HiRES, GAGE-seq, LiMCA.
+- **Computational challenges**: high dimensionality, extreme sparsity, noise. Algorithms for QC, normalization, imputation, structural reconstruction, A/B compartment calling, TAD/loop identification under single-cell sparsity.
 - **Mechanistic insights**: TAD boundaries fluctuate between cells; compartmentalization varies through the cell cycle; loop dynamics reflect transcriptional state. Cancer, brain disorders, aging, and stem-cell fate all show distinctive 3D-genome heterogeneity patterns.
 - **Future directions**: integration with chromatin marks / methylation / transcription at the same cell; topology-guided therapeutic strategies; deep-learning models for structure inference.
 
 ## Methods / evidence
 
-Authoritative narrative review with tables comparing >15 sc3DG-seq technologies on year, resolution, throughput, and cost. Cites mechanistic findings from cancer (intra-tumor heterogeneity), brain (neuropsychiatric structural variation), and developmental biology (cell-fate transitions).
+Authoritative narrative review with tables comparing 12 single-cell (plus bulk) 3D-genome technologies on year, resolution, cost and depth. Cites mechanistic findings from cancer (intra-tumor heterogeneity), brain (neurodegeneration and brain aging), and developmental biology (cell-fate transitions).
 
 ## Surprising or load-bearing bits
 
 - The framing that **3D genome architecture is a regulatory layer that varies cell-to-cell**, not just a structural scaffold, is the conceptual through-line. Bulk Hi-C produced a misleading picture of stable architecture.
-- scNanoHi-C as the first long-read single-cell Hi-C is noteworthy — the long-read advantage is **detecting higher-order interactions** (multi-way contacts) that ligation-based short-read methods can't see.
+- scNanoHi-C as the first long-read single-cell Hi-C is noteworthy *(not found in source clipping — unverified)* — the long-read advantage is **detecting higher-order interactions** (multi-way contacts) that ligation-based short-read methods can't see.
 - Multi-omics integration is the field's active frontier: simultaneous 3D contacts + methylation (sn-m3C-seq) or + expression (HiRES) reveals causal-relationship questions inaccessible to single-modality work.
 
 ## Connections to other sources

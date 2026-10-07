@@ -13,7 +13,7 @@ updated: 2026-05-12
 
 ## Definition
 
-HiDEF-seq leverages duplex chemistry with optimized library conversion for sensitive somatic mutation detection. Specific implementation details in Park et al. (Evrony lab).
+HiDEF-seq leverages duplex chemistry with optimized library conversion for sensitive somatic mutation detection. Specific implementation details in Liu et al. 2024 (Evrony lab) ([[10-Summaries/liu-2024-hidef-seq]]).
 
 ## Why it matters
 

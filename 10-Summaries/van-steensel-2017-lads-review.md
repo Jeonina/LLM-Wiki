@@ -22,7 +22,7 @@ topics: ["[[40-Topics/3d-genome]]", "[[40-Topics/chromatin-architecture]]"]
 
 ## Key claims
 
-- **LADs cover >35% of the mammalian genome.** Mouse/human cells have ~1,000–1,500 LADs, sized 10 kb – 10 Mb (median ~0.5 Mb), distributed across all chromosomes.
+- **LADs cover more than one-third of the mouse and human genome in individual cell types.** Mouse/human cells have ~1,000–1,500 LADs, sized 10 kb – 10 Mb (median ~0.5 Mb), distributed across all chromosomes.
 - **LADs are heterochromatic.** Late-replicating, gene-poor, H3K9me2/H3K9me3-enriched; some boundaries enriched for H3K27me3. **Not** enriched for cytosine methylation — in colorectal cancer, large hypomethylated regions overlap LADs.
 - **Two classes: constitutive (cLAD) and facultative (fLAD).** cLADs are cell-type invariant, AT-rich, LINE-rich, gene-poor; positions (not sequences) conserved between mouse and human → likely structural "backbone" for chromosome folding. fLADs are >50% of all LADs, more gene-dense, cell-type-specific; detachment correlates with gene activation during differentiation.
 - **Single-cell DamID reveals stochasticity.** Each LAD has a characteristic NL contact frequency. cLADs contact NL in nearly every cell; many fLADs do so in only a subset. ~15% of genome (mostly cLADs with <1 gene/Mb) acts as robust anchors. LAD nuclear position is partially randomized after each mitosis.

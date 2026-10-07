@@ -21,7 +21,7 @@ Chromatin accessibility ([[chromatin-accessibility]]) tells you a region is *ope
 
 ## Variants and refinements
 
-- **Bulk D&D-seq** ([[10-Summaries/chi-2026-dd-seq]]) — CTCF/GATA1/GATA2/SP1/p300 targets in K562; validated against ENCODE ChIP-seq.
+- **Bulk D&D-seq** ([[10-Summaries/chi-2026-dd-seq]]) — CTCF/GATA1/GATA2 targets (plus the remodeler p300) in K562; validated against ENCODE ChIP-seq.
 - **D&D-seq + WGS (PTA)** ([[10-Summaries/chi-2026-dd-seq]]) — genome-wide binding including non-accessible chromatin.
 - **scD&D-seq** ([[10-Summaries/chi-2026-dd-seq]]) — integrated into 10x scATAC-seq; per-cell binding (pseudobulk/metacell aggregation, ≥250 cells for robust footprints).
 - **D&D-GoT-ChA** ([[10-Summaries/chi-2026-dd-seq]]) — composed with [[got-cha]] genotyping for same-cell **genotype + TF binding**; applied to an IDH2^R140Q CHIP patient, showing mutant T cells have disrupted CTCF binding.

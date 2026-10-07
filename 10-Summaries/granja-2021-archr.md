@@ -28,7 +28,7 @@ updated: 2026-05-12
 ## Key claims
 
 - **Runtime**: 70,000-cell dataset in <1 hour with 32 GB RAM + 8 cores (SnapATAC exceeded 128 GB; Signac exceeded 32 GB).
-- **Doublet detection**: ROC AUC 0.918 by fragment count + nearest-neighbor; outperforms Scrublet for scATAC-seq.
+- **Doublet detection**: ROC AUC 0.918 by synthetic-doublet projection + nearest-neighbor (vs 0.641 for fragment count alone); outperforms Scrublet for scATAC-seq.
 - **Dimensionality reduction**: outperforms LSI + diffusion maps for batch robustness across hematopoietic samples.
 - Scales to **1.2M cells in 8h** on standard laptop.
 

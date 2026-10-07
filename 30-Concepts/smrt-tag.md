@@ -13,7 +13,7 @@ updated: 2026-05-12
 
 ## Definition
 
-Tn5 with hairpin-loaded adapters tagments native DNA at low concentrations to generate ≥1 kb fragments. Gap repair (Phusion + Taq ligase) seals the 9-nt Tn5 gaps; exonuclease digestion enriches circularized molecules for PacBio sequencing.
+Tn5 with hairpin-loaded adapters tagments native DNA at low concentrations to generate ≥1 kb fragments. Gap repair (Phusion + Taq ligase or T4 + Ampligase) seals the 9-nt Tn5 gaps; exonuclease digestion enriches circularized molecules for PacBio sequencing.
 
 ## Why it matters
 
@@ -23,7 +23,7 @@ Tn5 with hairpin-loaded adapters tagments native DNA at low concentrations to ge
 
 ## Examples
 
-- HG002 trio variant calling; CpG methylation against bisulfite reference ([[10-Summaries/abdulhay-2020-samosa]]).
+- HG002 trio variant calling; CpG methylation against bisulfite reference ([[10-Summaries/nanda-2024-smrt-tag]]).
 
 ## Related
 

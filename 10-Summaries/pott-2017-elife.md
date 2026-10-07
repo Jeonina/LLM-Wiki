@@ -8,7 +8,7 @@ created: 2026-05-13
 updated: 2026-05-13
 ---
 
-**Citation:** Pott et al. (2017) — *Simultaneous measurement of chromatin accessibility, DNA methylation and nucleosome phasing in single cells (scNOMe-seq)* — *eLife*. [DOI](https://doi.org/10.7554/eLife.23203)
+**Citation:** Pott (2017) — *Simultaneous measurement of chromatin accessibility, DNA methylation and nucleosome phasing in single cells (scNOMe-seq)* — *eLife*. [DOI](https://doi.org/10.7554/eLife.23203)
 
 Pott adapted the bulk Nucleosome Occupancy and Methylome (NOMe)-seq method to single cells, demonstrating that a single bisulfite-sequencing experiment can read three layers of chromatin state from individual cells: chromatin accessibility (via exogenous GpC methylation footprinting), endogenous CpG methylation, and nucleosome phasing.
 

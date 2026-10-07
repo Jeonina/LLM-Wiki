@@ -8,7 +8,7 @@ created: 2026-05-13
 updated: 2026-05-13
 ---
 
-**Citation:** Zaccaria et al. (2021) — *Characterizing allele- and haplotype-specific copy numbers in single cells with CHISEL* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-020-0661-6)
+**Citation:** Zaccaria & Raphael (2021) — *Characterizing allele- and haplotype-specific copy numbers in single cells with CHISEL* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-020-0661-6)
 
 Zaccaria and Raphael (Princeton) developed **CHISEL** (Copy-number Haplotypes Inferred in Single cells using Evolutionary Links), a computational method that infers **allele-specific** and **haplotype-specific** copy numbers in single cells from low-coverage (<0.05× per cell) scDNA-seq data — for instance, 10x Genomics Chromium single-cell CNV Solution datasets of ~2,000 cells.
 

@@ -29,10 +29,10 @@ topics:
 
 - **Mosaicism vs chimerism**: mosaicism = multiple genotypes from one zygote; chimerism = multiple genotypes from multiple fertilization events.
 - **Timing geometry of mutation distribution** (Fig 1):
-  - First mitosis → ~50% of cells affected (e.g., CHILD syndrome with midline-demarcated phenotype).
+  - First mitosis → ~50% of cells affected (e.g., possibly identical twins discordant for a new dominant mutation); CHILD syndrome's midline demarcation illustrates pre/post left–right determination timing.
   - Before left-right determination → both sides, possibly both gonads.
   - After left-right determination → confined to one side (one gonad at most).
-  - After primordial germ cell (PGC) differentiation → soma-only or gonad-only, never both (gonosomal exclusion).
+  - After primordial germ cell (PGC) differentiation → soma-only or gonad-only, never both.
 - **PGCs migrate out by day 24 post-fertilization**, after ~15 mitotic divisions. Mutations before this can be present in both somatic and germ tissues.
 - **Up to 70% of human embryos show CNV or aneuploidy** in at least one blastomere during the first week — early development is unusually genome-unstable.
 - **Placental mosaicism is found in 1–2% of chorionic villus samplings**, possibly reflecting either high early-embryonic mutation rates or selective segregation of mutant cells away from the embryo proper.

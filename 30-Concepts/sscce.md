@@ -9,7 +9,7 @@ updated: 2026-05-12
 
 # Spatial Structure Capture Efficiency (SSCE)
 
-> A single-cell 3D-genome quality-control metric introduced in [[10-Summaries/jiang-2026-stark-scnucleome]] that integrates TAD recovery, compartment recovery, and loop signal into a unified score.
+> A single-cell 3D-genome quality-control metric introduced in [[10-Summaries/jiang-2026-stark-scnucleome]] that integrates TAD-boundary counts and A/B-compartment switches (normalized against inter-chromosomal and unattributable contacts) into a unified score.
 
 ## Definition
 

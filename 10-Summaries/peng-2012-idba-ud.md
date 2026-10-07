@@ -31,9 +31,9 @@ topics: ["[[whole-genome-amplification]]", "[[computational-methods]]"]
 
 ## Methods / evidence
 
-Comparison against four assemblers on single-cell and metagenomic datasets. The source clipping covers the problem formulation and algorithm design in detail; the specific benchmark numbers are in sections not captured here.
+Comparison against four assemblers on single-cell and metagenomic datasets. The source clipping covers the problem formulation and algorithm design in detail; benchmarks include single-cell E. coli (contig N50 82,007 vs 34,454 Velvet-SC, 7,679 Velvet, 6,428 SOAPdenovo) and S. aureus, plus simulated and real metagenomes.
 
-Weight: the problem decomposition — three named issues, three targeted fixes — is the reusable content and is unusually clear. The benchmark evidence is not recoverable from this source.
+Weight: the problem decomposition — three named issues, three targeted fixes — is the reusable content and is unusually clear. 
 
 ## Surprising or load-bearing bits
 
@@ -56,7 +56,6 @@ Weight: the problem decomposition — three named issues, three targeted fixes �
 
 ## Open questions
 
-- Benchmark specifics (which datasets, what N50, what misassembly rate) are not recoverable from the ingested clipping.
 - How k_min and k_max are chosen is not covered in the captured text.
 - The paper does not address chimeric reads, which [[chitsaz-2011-velvet-sc]] and [[bankevich-2012-spades]] both treat as a first-class MDA artifact.
 

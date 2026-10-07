@@ -8,7 +8,7 @@ created: 2026-05-13
 updated: 2026-05-13
 ---
 
-**Citation:** Schübeler et al. (2015) — *Function and information content of DNA methylation* — *Nature*. [DOI](https://doi.org/10.1038/nature14192)
+**Citation:** Schübeler (2015) — *Function and information content of DNA methylation* — *Nature*. [DOI](https://doi.org/10.1038/nature14192)
 
 Schübeler's Nature review consolidated the state of DNA methylation biology circa 2015: methylation as a covalent base modification carrying inheritable, propagatable information, with sequence symmetry of CpG dinucleotides enabling maintenance through cell division. The review reframes the canonical "methylation silences genes" model with nuance: CpG-island promoters resist methylation actively (transcription-factor binding shields them); CpG-poor regulatory regions show variable methylation that closely reflects gene-regulatory state; methylation changes at distal regulatory elements often follow rather than instruct transcription-factor binding.
 

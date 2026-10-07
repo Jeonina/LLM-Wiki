@@ -65,9 +65,9 @@ topics:
 ## Methods / evidence (from text)
 
 - Reconstituted nucleosomal arrays from purified *X. laevis* histone octamers
-- Physiological salt droplet assays; FRAP for liquid character; in vitro biochemistry by Gibson + Doolittle
+- Physiological salt droplet assays; FRAP for liquid character *(not found in source clipping — unverified)*; in vitro biochemistry by Gibson + Doolittle
 - **Nuclear microinjection of fluorescently labeled chromatin** (performed by Schneider/Gerlich) — in-vivo confirmation
-- BRD4 penta-bromodomain (synthetic) for re-phase-separation experiments
+- multi-bromodomain proteins (BRD4 and a penta-bromodomain protein) for re-phase-separation experiments
 
 ## Open questions
 

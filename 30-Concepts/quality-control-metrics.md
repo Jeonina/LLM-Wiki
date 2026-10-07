@@ -14,7 +14,7 @@ updated: 2026-08-10
 ## Common metrics
 
 - **Spikiness** — bin-to-bin variation in read count, separating a genuinely segmented genome from a noisy library; combined with model log-likelihood, segment count and the Bhattacharyya distance between fitted distributions, then clustered to retain ~89% of libraries ([[bakker-2016-aneufinder]]).
-- **MAD on a diploid chromosome** — the same diagnostic reached independently, used with a MAD < 0.15 filter ([[zahn-2017-dlp]]).
+- **MAD on a diploid chromosome** — the same diagnostic reached independently ([[zahn-2017-dlp]]).
 - **Pre- versus post-filter profiles** on one page, so the effect of preprocessing is directly visible ([[chen-2018-fastp]]).
 - **Species-mixing collision rate** — 0.006–0.008% for sciHi-C ([[ramani-2017-scihi-c]]), 3% for sci-RNA-seq3 ([[cao-2019-moca]]).
 - **cis:trans ratio** as a per-cell Hi-C quality measure, ~4.4 in sciHi-C ([[ramani-2017-scihi-c]]).

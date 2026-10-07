@@ -17,7 +17,7 @@ sources: ["00-Sources/papers/AndrewC_2020_Science.pdf"]
 
 ## Thesis
 
-IGS sequences DNA **directly inside intact, fixed cells**, then matches each in-situ read to a high-quality paired-end ex-situ read of the same amplicon — producing thousands of genomic paired-end reads with **(x, y, z) spatial coordinates inside the nucleus** for each cell. Unlike Hi-C (which reads contact frequency in bulk) or DNA FISH (which reads spatial position at a handful of loci), IGS gives genome-wide spatial DNA at base-pair resolution in single cells.
+IGS sequences DNA **directly inside intact, fixed cells**, then matches each in-situ read to a high-quality paired-end ex-situ read of the same amplicon — producing hundreds to thousands of genomic paired-end reads with **(x, y, z) spatial coordinates inside the nucleus** for each cell. Unlike Hi-C (which reads contact frequency in bulk) or DNA FISH (which reads spatial position at a handful of loci), IGS gives genome-wide spatial DNA at base-pair resolution in single cells.
 
 ## Mechanism
 
@@ -31,7 +31,7 @@ IGS sequences DNA **directly inside intact, fixed cells**, then matches each in-
 ## Key claims
 
 - **Applied to 106 PGP1 human fibroblasts + 113 mouse embryo cells** across PN4 zygote, late 2-cell, and early 4-cell stages.
-- 66.35% of clearly resolvable amplicons (87.6% in PGP1f, 61.0% in mouse embryos) confidently matched between in-situ and ex-situ reads → thousands of paired-end gDNA reads per cell with 3D coordinates.
+- 66.35% of clearly resolvable amplicons (87.6% in PGP1f, 61.0% in mouse embryos) confidently matched between in-situ and ex-situ reads → hundreds (fibroblasts, median 328) to thousands (embryos, medians 1,074–3,909) of spatially localized reads per nucleus.
 - **Parent-of-origin chromosome assignment via SNPs**: in the mouse zygote, maternal and paternal pronuclei are spatially separated, and IGS distinguishes them at single-base resolution using parental SNPs — directly imaging genome mixing as zygotic development proceeds.
 - **Single-cell chromatin domains in zygotes**: paternal zygotic pronuclei show lamina-distal boundary structures and lamina-proximal interior domains; maternal pronuclei differ.
 - **Epigenetic memory of chromosome positioning**: clonal cells (daughters from one division) retain similar chromosome-territory arrangements — demonstrated by intercellular comparison of genome structure within intact embryos.

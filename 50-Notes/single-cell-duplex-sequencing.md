@@ -30,7 +30,7 @@ sources: [
 
 **scWGA chemistries** (MDA, MALBAC, PicoPLEX, PTA) amplify femtogram-scale single-cell DNA into nanogram quantities through random-priming or transposon-based mechanisms that produce daughter strands without preserved parent-strand identity ([[10-Summaries/gawad-2016-scgenome-review]]; [[10-Summaries/shao-2025-scDNA-mosaicism-review]]). Once the original duplex is destroyed by amplification, no downstream protocol can recover it.
 
-The collision is fundamental: detecting a true variant at low VAF requires both strands of the *original* molecule to agree ([[10-Summaries/schmitt-2012-pnas]]); single-cell genome coverage requires amplification ([[10-Summaries/gawad-2016-scgenome-review]]). For ~13 years this meant somatic-mosaicism inference combined bulk-DNA duplex measurements (mutation rates, signatures) with single-cell genotype calls (clonality, lineage) as separate experimental modalities ([[10-Summaries/evrony-2021-scDNA-applications-review]]).
+The collision is fundamental: detecting a true variant at low VAF requires both strands of the *original* molecule to agree ([[10-Summaries/schmitt-2012-pnas]]); single-cell genome coverage requires amplification ([[10-Summaries/gawad-2016-scgenome-review]]). For ~13 years this meant somatic-mosaicism inference combined bulk-DNA duplex measurements (mutation rates, signatures) with single-cell genotype calls (clonality, lineage) as separate experimental modalities (synthesis).
 
 ## What duplex sequencing matured into (2012–2025)
 
@@ -43,7 +43,7 @@ Four implementation strategies emerged, each addressing a different limitation (
 | Quadruplex adaptor | CODEC ([[10-Summaries/bae-2023-codec]]) | Both strands in same read; no bottleneck dilution |
 | Circularized | HiDEF-seq, SMM-seq ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]) | PacBio/rolling-circle for ~10⁻¹⁶ error rate |
 
-Lower-input chemistries followed: UDSeq achieves ~2.5×10⁻⁹/bp from 100 pg ([[10-Summaries/nandi-2025-udseq]]). The **SMaHT consortium duplex benchmark** ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]) cross-compared six methods (CODEC, CompDuplex-seq, HiDEF-seq, NanoSeq, ppmSeq, VISTA-seq) on shared cell-line and tissue samples — methods produced concordant mutation rates and signatures, but disagree on absolute mutation spectra at extreme low VAF ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).
+Lower-input chemistries followed: UDSeq achieves ~2.5×10⁻⁹/bp from 100 pg ([[10-Summaries/nandi-2025-udseq]]). The **SMaHT consortium duplex benchmark** ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]) cross-compared six methods (CODEC, CompDuplex-seq, HiDEF-seq, NanoSeq, ppmSeq, VISTA-seq) on shared cell-line and tissue samples — methods differed in genomic footprint, sensitivity and cost but produced highly concordant mutation rates and signatures ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).
 
 All of these remained **bulk** duplex methods. The strand-identity prerequisite made per-cell duplex resolution impractical: even META-CS, the lone single-cell-compatible variant, requires extensive plate-based preparation that doesn't scale.
 
@@ -63,11 +63,11 @@ PTA is the substrate for the most ambitious recent single-cell mosaicism studies
 
 [[10-Summaries/kriz-2025-duplex-multiome|Kriz 2025 (Duplex-Multiome)]] solves the incompatibility differently: by integrating duplex consensus barcoding **into the 10x Multiome snATAC arm itself**, both strands of each DNA molecule get independently sequenced before any amplification destroys identity. Three layers emerge from a single library prep per nucleus:
 
-1. **Somatic SNVs at duplex-grade accuracy** — >10,000-fold sequencing error reduction.
+1. **Somatic SNVs at duplex-grade accuracy**.
 2. **Single-nucleus ATAC-seq** — chromatin accessibility per cell.
 3. **Single-nucleus RNA-seq** — transcriptome per cell.
 
-Cell-line mixing validation: at 98%/2% mixture, the assay identifies sSNVs present in 2% of cells with **92% precision** ([[10-Summaries/kriz-2025-duplex-multiome]]). Applied to >51,400 nuclei from postmortem human brain, the platform recovers cell-type-specific somatic mutation rates and signatures across major brain cell types ([[10-Summaries/kriz-2025-duplex-multiome]]).
+Cell-line mixing validation (98%/2% mixture) recovers known sSNV mutational spectra ([[10-Summaries/kriz-2025-duplex-multiome]]). Applied to >51,400 nuclei from postmortem human brain, the platform recovers cell-type-specific somatic mutation rates and signatures across major brain cell types ([[10-Summaries/kriz-2025-duplex-multiome]]).
 
 **This is the assay that the [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap|wiki's central synthesis note]] previously claimed did not yet exist.** As of June 2025 (bioRxiv preprint), it does.
 
@@ -98,7 +98,7 @@ PTA + duplex is the **high-depth, low-throughput, single-modality** corner; Dupl
 
 - **Duplex-Multiome generalization beyond brain** — Kriz 2025 only applies it to one tissue ([[10-Summaries/kriz-2025-duplex-multiome]]). Will the chemistry work on FFPE, frozen blood, sorted populations?
 - **Cross-method benchmarking** — the SMaHT duplex benchmark covered six bulk methods ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]); a single-cell duplex benchmark across Duplex-Multiome, PTA+duplex, and META-CS is overdue.
-- **Mutation spectra at extreme low VAF** — even bulk duplex methods disagree below ~0.1% VAF ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]). Per-cell duplex sensitivity at clonal frequencies <1% needs characterization.
+- **Mutation spectra at extreme low VAF** — bulk duplex methods are concordant on mutation rates and signatures ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]), but low-VAF behaviour per cell is uncharacterized. Per-cell duplex sensitivity at clonal frequencies <1% needs characterization.
 - **The methylation layer is still missing from single-cell duplex** — Duplex-Multiome reads accessibility + RNA + mutations. Methylation would close the [[50-Notes/regulatory-layers-overview|four-layer]] regulatory picture.
 - **Cost** — Duplex-Multiome library prep is more expensive than 10x Multiome alone; production-scale economics not yet established.
 

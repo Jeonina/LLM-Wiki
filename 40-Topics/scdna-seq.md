@@ -104,9 +104,9 @@ _None yet — natural promotion targets: (a) droplet-scale vs single-molecule sc
 ## Open questions
 
 - Where does scDAF-seq (single-cell, single-molecule, ~99% genome) win over GoT–ChA (10⁵ cells, single chromatin modality)? ([[10-Summaries/swanson-2025-daf-seq]] vs [[10-Summaries/izzo-2024-got-cha]])
-- Throughput vs depth: PTA peaks at ~384 cells at ~95% coverage while DLP+ scales to >10,000 cells at very low per-cell coverage; the right operating point for a given biological question is rarely benchmarked ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
+- Throughput vs depth: PTA reaches ~95% genome coverage per cell while DLP+ scales to >10,000 cells at very low per-cell coverage; the right operating point for a given biological question is rarely benchmarked ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 - The "fidelity vs co-presence vs phenotypic association" tradeoff means no single method is universally best ([[10-Summaries/evrony-2021-scDNA-applications-review]]).
-- Cost: duplex sequencing and PTA are both ~$5–20/cell, keeping cohort-scale studies expensive — can single-cell duplex sequencing be made cost-competitive? ([[10-Summaries/shao-2025-scDNA-mosaicism-review]])
+- Cost: can single-cell duplex sequencing be made cost-competitive for cohort-scale studies? (synthesis)
 - How well does imputation-based multi-omic integration (e.g., GoT–ChA + DOGMA via mt-variant bridges) generalize beyond MPN?
 - Is there a "single-molecule, per-fiber" extension of GoT / GoT–ChA waiting to be built — the analog to what DAF-seq is to Fiber-seq?
 

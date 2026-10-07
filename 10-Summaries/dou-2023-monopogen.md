@@ -14,7 +14,7 @@ Dou, Tan, Kock, Wang, Cheng, Tan, Han, Hon, Park, Shin, Jin, Wang, Chen, Ding, P
 
 Two-tier strategy: (i) **germline SNV calling**: refine genotype likelihoods via LD from the population reference, yielding 100K–3M germline SNVs at ~95% accuracy per sample; (ii) **putative somatic SNV calling**: detect somatic variants by identifying alleles that *cosegregate* with germline haplotypes at the cell-population level (i.e., LD pattern matches genome-wide population except for a subpopulation of cells that gained the somatic allele). The somatic SNVs feed into clonal-lineage tracing via Monovar.
 
-Applied to retina snRNA-seq, colon sci-ATAC-seq, and TNBC scDNA-seq with matched-WGS validation. Recall: 21% for retina snRNA at 95%+ accuracy, beating Samtools/GATK/FreeBayes/Strelka2 (11–20% recall, <73% accuracy). Detected ~100 new SNVs not in 1KG3 panel with 35% overall accuracy (86% for clusters with ≥90% concordance).
+Applied to retina snRNA-seq, colon sci-ATAC-seq, and TNBC scDNA-seq with matched-WGS validation. Recall: 21% for retina snRNA at 95%+ accuracy, beating Samtools/GATK/FreeBayes (11–20% recall, <73% accuracy) and Strelka2 (~25% recall but <25% accuracy). Detected ~100 K new SNVs not in 1KG3 panel with 35% overall accuracy (86% for clusters with ≥90% concordance).
 
 ## Why this matters
 

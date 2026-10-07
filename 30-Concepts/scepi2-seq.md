@@ -19,7 +19,7 @@ Workflow: FACS-sort cells → bind to antibody-recruited pA-MNase → MNase dige
 
 - Bisulfite can't be combined with histone-modification adaptor-ligation workflows because it fragments DNA. TAPS preserves them.
 - Joint per-cell readout of histone + methylation reveals mechanisms of methylation maintenance: nucleosome occupancy blocks DNMT1 (12% methylation drop at nucleosome midpoint vs 4% at linker DNA through S-phase).
-- DMRs within H3K27me3 domains distinguish epithelial from immune cell lineages — methylation is an **additive** regulatory layer over PRC2-marked facultative heterochromatin.
+- Within H3K27me3 domains, 5mC differs between lineages at similar H3K27me3 (B cells: lowest H3K27me3 but highest 5mC among immune cells; goblet cells: higher 5mC than enteroendocrine cells) ([[10-Summaries/geisenberger-2025-scepi2-seq]]) — methylation is an **additive** regulatory layer over PRC2-marked facultative heterochromatin.
 
 ## Examples
 

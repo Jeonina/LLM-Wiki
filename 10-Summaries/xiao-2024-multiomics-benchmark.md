@@ -12,9 +12,9 @@ updated: 2026-05-13
 
 Xiao, Chen, Meng, Wei and Zhang (Tsinghua) benchmarked 12 multi-omics integration methods across scRNA-seq and scATAC-seq datasets, organized into three categories: **paired** (scMVP, MOFA+), **paired-guided** (MultiVI, Cobolt), and **unpaired** (scDART, UnionCom, MMD-MA, scJoint, Harmony, Seurat v3, LIGER, GLUE).
 
-Three datasets used for the benchmark: (i) P0 mouse cerebral cortex SNARE-seq (paired, 5,081 cells); (ii) human uterus paired dataset (paired-guided with trajectory, 1,469 cells); (iii) unpaired scRNA-seq (8,237 cells) + scATAC-seq (8,314 cells) human-tissue datasets. Four evaluation axes: omics-mixing, cell-type conservation, single-cell-level alignment accuracy (FOSCTTM), and trajectory preservation.
+Three datasets used for the benchmark: (i) P0 mouse cerebral cortex SNARE-seq (paired, 5,081 cells); (ii) a 1,469-cell trajectory subset extracted from the same mouse SNARE-seq dataset (Dataset-T); (iii) unpaired human uterus scRNA-seq (8,237 cells) + scATAC-seq (8,314 cells) (Dataset-U). Four evaluation axes: omics-mixing, cell-type conservation, single-cell-level alignment accuracy (FOSCTTM), and trajectory preservation.
 
-Key practical guidelines: **MultiVI** is best for paired-guided integration when the goal is using paired data to assist unpaired analysis. **GLUE** is best for unpaired integration when prior knowledge (regulatory graph) is available. **MOFA+** is best for paired integration when interpretability of latent factors matters. The benchmark also assessed scalability and ease-of-use.
+Key practical guidelines: **MultiVI** is second only to GLUE for paired tasks and, with GLUE, best for trajectory conservation. **GLUE** is recommended for unpaired integration and is generally the best choice for paired tasks as well. **MOFA+** (with scMVP) is worth considering for cell-type conservation, and (with Seurat, LIGER) for scalability. The benchmark also assessed scalability and ease-of-use.
 
 ## Why this matters
 

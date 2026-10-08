@@ -2,6 +2,7 @@
 type: note
 title: "Mosaicism × epigenome at single-cell resolution — the synthesis gap"
 aliases: [mosaicism-epigenome gap, the synthesis gap, dna-anchored joint-mosaicism]
+description: "The central conceptual note — why no DNA-centric framework yet reads mutation and epigenome together in one cell, and how Duplex-Multiome narrowed the method gap."
 tags: [synthesis, somatic-mosaicism, single-cell-multiomics, review-paper-anchor]
 created: 2026-05-12
 updated: 2026-10-07
@@ -15,6 +16,7 @@ sources: [
   "[[10-Summaries/chi-2026-dd-seq]]",
   "[[10-Summaries/marks-2023-resolveome]]"
 ]
+paper_section: ["2"]
 ---
 
 # Mosaicism × epigenome at single-cell resolution — the synthesis gap

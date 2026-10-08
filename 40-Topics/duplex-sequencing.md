@@ -5,6 +5,7 @@ aliases: [DS, duplex-seq, duplex consensus sequencing, single-molecule duplex se
 tags: [sequencing, error-correction, somatic-mutation, mutational-signatures, single-molecule, low-VAF, method]
 created: 2026-05-12
 updated: 2026-10-07
+paper_section: ["3.1"]
 ---
 
 # Duplex sequencing

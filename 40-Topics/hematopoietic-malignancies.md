@@ -5,6 +5,7 @@ aliases: [blood cancers, myeloid malignancies]
 tags: [hematology, cancer, clonal-evolution]
 created: 2026-05-07
 updated: 2026-10-07
+paper_section: ["5.1"]
 ---
 
 # Hematopoietic malignancies

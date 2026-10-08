@@ -5,6 +5,7 @@ aliases: [PacBio, Oxford Nanopore, ONT, HiFi, long-read]
 tags: [sequencing, long-read, third-generation]
 created: 2026-05-11
 updated: 2026-10-07
+paper_section: ["3.2.1"]
 ---
 
 # Long-read sequencing

@@ -5,6 +5,7 @@ aliases: [multi-omics integration, multimodal integration, cross-modality integr
 tags: [computational, integration, multiomics, machine-learning]
 created: 2026-05-19
 updated: 2026-10-07
+paper_section: ["4.3"]
 ---
 
 # Multimodal integration methods

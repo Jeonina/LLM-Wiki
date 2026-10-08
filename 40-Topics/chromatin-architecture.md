@@ -5,6 +5,7 @@ aliases: [chromatin biology, chromatin organization]
 tags: [chromatin, regulation, single-molecule]
 created: 2026-05-07
 updated: 2026-10-07
+paper_section: ["3.5"]
 ---
 
 # Chromatin architecture

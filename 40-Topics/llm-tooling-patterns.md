@@ -5,6 +5,7 @@ aliases: [agentic patterns, llm patterns]
 tags: [llm, patterns]
 created: 2026-05-07
 updated: 2026-08-10
+paper_section: ["A"]
 ---
 
 # LLM tooling patterns

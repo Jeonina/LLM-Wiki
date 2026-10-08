@@ -5,6 +5,7 @@ aliases: [CH, CHIP, clonal hematopoiesis of indeterminate potential, MPN]
 tags: [clonal-hematopoiesis, MPN, JAK2, DNMT3A, TET2, CALR, hematology, mosaicism, mutation, aging]
 created: 2026-05-19
 updated: 2026-10-07
+paper_section: ["5.3"]
 ---
 
 # Clonal hematopoiesis

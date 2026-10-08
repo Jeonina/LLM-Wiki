@@ -20,6 +20,7 @@ sources: [
   "[[10-Summaries/schep-2017-chromvar]]",
   "[[10-Summaries/angermueller-2017-genomebiol]]"
 ]
+paper_section: ["4.5"]
 ---
 
 # Computational framework — how to structure the review's main section

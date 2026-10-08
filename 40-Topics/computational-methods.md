@@ -5,6 +5,7 @@ aliases: [bioinformatics tooling, analysis pipelines, computational infrastructu
 tags: [pipelines, algorithms, tools, infrastructure]
 created: 2026-08-10
 updated: 2026-10-07
+paper_section: ["4.2"]
 ---
 
 # Computational Methods

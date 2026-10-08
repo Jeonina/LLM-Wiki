@@ -5,6 +5,7 @@ aliases: [single-cell multiomics, sc-multiomics, multimodal omics]
 tags: [single-cell, methods, multiomics, multi-omics]
 created: 2026-05-07
 updated: 2026-10-07
+paper_section: ["4.3"]
 ---
 
 # Single-cell multi-omics

@@ -15,6 +15,7 @@ sources: [
   "[[10-Summaries/lee-2019-natmethods]]",
   "[[10-Summaries/kriz-2025-duplex-multiome]]"
 ]
+paper_section: ["2"]
 ---
 
 # Joint single-cell assays, organized by layer-pair

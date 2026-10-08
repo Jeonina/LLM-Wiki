@@ -5,6 +5,7 @@ aliases: [single-cell DNA sequencing, scDNA-seq, scDNAseq]
 tags: [single-cell, scDNA-seq, methods]
 created: 2026-05-11
 updated: 2026-06-29
+paper_section: ["3.1"]
 ---
 
 # Single-cell DNA sequencing (scDNA-seq)

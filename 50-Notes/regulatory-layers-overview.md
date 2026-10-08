@@ -14,6 +14,7 @@ sources: [
   "[[10-Summaries/baysoy-2023-multiomics-landscape]]",
   "[[10-Summaries/vandereyken-2023-scmultiomics-review]]"
 ]
+paper_section: ["2"]
 ---
 
 # Regulatory layers — the five (or six) axes of epigenome interpretation

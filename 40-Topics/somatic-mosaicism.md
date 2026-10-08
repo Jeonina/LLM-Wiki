@@ -5,6 +5,7 @@ aliases: [somatic mosaicism, mosaicism, post-zygotic mosaicism]
 tags: [mosaicism, genetics, development, aging, post-zygotic]
 created: 2026-05-11
 updated: 2026-10-07
+paper_section: ["5.2"]
 ---
 
 # Somatic mosaicism

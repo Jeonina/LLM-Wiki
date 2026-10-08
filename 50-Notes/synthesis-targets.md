@@ -6,6 +6,7 @@ description: Candidate syntheses that would pull together 3+ sources into a dura
 tags: [meta, synthesis-candidates]
 created: 2026-05-13
 updated: 2026-06-29
+paper_section: ["7"]
 ---
 
 # Synthesis Targets

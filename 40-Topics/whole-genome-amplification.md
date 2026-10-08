@@ -5,6 +5,7 @@ aliases: [scWGA topic, WGA topic, whole-genome amplification methods]
 tags: [scWGA, methods, amplification]
 created: 2026-05-11
 updated: 2026-10-07
+paper_section: ["3.1"]
 ---
 
 # Whole-genome amplification (scWGA)

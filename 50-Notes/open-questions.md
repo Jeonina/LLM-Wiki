@@ -6,6 +6,7 @@ description: Tensions and gaps surfaced during ingest or lint. Resolve, then mov
 tags: [meta, open-questions]
 created: 2026-05-13
 updated: 2026-10-07
+paper_section: ["6"]
 ---
 
 # Open Questions

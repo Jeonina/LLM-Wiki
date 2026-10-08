@@ -5,6 +5,7 @@ aliases: [scATAC-seq, single-cell chromatin accessibility]
 tags: [scATAC, chromatin-accessibility, cis-regulatory, software, transcription-factors]
 created: 2026-05-12
 updated: 2026-10-07
+paper_section: ["3.2"]
 ---
 
 # Single-cell ATAC-seq

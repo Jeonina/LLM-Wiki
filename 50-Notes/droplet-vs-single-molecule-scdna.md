@@ -22,6 +22,7 @@ sources: [
   "[[10-Summaries/gawad-2016-scgenome-review]]",
   "[[10-Summaries/baysoy-2023-multiomics-landscape]]"
 ]
+paper_section: ["3.2.1"]
 ---
 
 # Droplet-scale vs single-molecule scDNA-seq — the breadth/depth tradeoff

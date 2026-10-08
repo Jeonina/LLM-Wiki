@@ -5,6 +5,7 @@ aliases: [5mC, cytosine methylation, methylation]
 tags: [methylation, epigenetics, regulation]
 created: 2026-05-11
 updated: 2026-10-07
+paper_section: ["3.3"]
 ---
 
 # DNA methylation

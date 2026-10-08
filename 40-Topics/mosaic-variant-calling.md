@@ -5,6 +5,7 @@ aliases: [mosaic SNV calling, low-VAF variant calling, mosaicism callers]
 tags: [mosaicism, variant-calling, SNV, low-VAF, benchmarking]
 created: 2026-05-19
 updated: 2026-10-07
+paper_section: ["4.1"]
 ---
 
 # Mosaic variant calling

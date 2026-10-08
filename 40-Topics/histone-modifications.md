@@ -5,6 +5,7 @@ aliases: [chromatin marks, post-translational modifications, PTMs, single-cell c
 tags: [chromatin, epigenetics, H3K27me3, H3K4me3, CUT&Tag, ChIC, MNase, enhancers, promoters]
 created: 2026-05-12
 updated: 2026-10-07
+paper_section: ["3.4"]
 ---
 
 # Histone modifications

@@ -5,6 +5,7 @@ aliases: [neuronal mosaicism, brain mosaicism, BSMN]
 tags: [brain, mosaicism, neurons, Walsh-lab, BSMN, Alzheimers, autism]
 created: 2026-05-19
 updated: 2026-10-07
+paper_section: ["5.2"]
 ---
 
 # Brain somatic mosaicism

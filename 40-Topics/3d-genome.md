@@ -5,6 +5,7 @@ aliases: [chromatin conformation, Hi-C, nuclear architecture, 3D chromatin organ
 tags: [Hi-C, TAD, compartments, loops, single-cell, chromatin-structure, chromatin]
 created: 2026-05-12
 updated: 2026-10-07
+paper_section: ["3.5"]
 ---
 
 # 3D genome

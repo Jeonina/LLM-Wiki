@@ -5,6 +5,7 @@ aliases: [cancer scDNA-seq, single-cell oncology, tumor scDNA]
 tags: [cancer, scDNA-seq, clonal-evolution, intratumor-heterogeneity]
 created: 2026-05-19
 updated: 2026-10-07
+paper_section: ["5.1"]
 ---
 
 # scDNA-seq in cancer applications

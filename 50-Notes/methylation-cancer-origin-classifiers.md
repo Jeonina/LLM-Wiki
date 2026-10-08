@@ -13,6 +13,7 @@ sources: [
   "[[10-Summaries/shen-2026-splicool-seq]]",
   "[[10-Summaries/cardilla-2025-spatial-methylome]]"
 ]
+paper_section: ["3.3"]
 ---
 
 # Methylation-based cancer-of-origin classifiers — clinical-grade epigenetic memory

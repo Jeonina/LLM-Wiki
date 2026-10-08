@@ -5,6 +5,7 @@ aliases: [tumor clonal evolution, cancer phylogeny, tumor evolution]
 tags: [cancer, clonal-evolution, phylogeny, intratumor-heterogeneity]
 created: 2026-05-19
 updated: 2026-10-07
+paper_section: ["5.1"]
 ---
 
 # Cancer clonal evolution

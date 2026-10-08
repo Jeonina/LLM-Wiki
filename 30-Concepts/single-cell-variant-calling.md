@@ -5,6 +5,7 @@ aliases: [scSNV calling, single-cell SNV detection, scDNA variant calling]
 tags: [scDNA-seq, variant-calling, SNV, computational]
 created: 2026-05-19
 updated: 2026-10-07
+paper_section: ["4.1"]
 ---
 
 # Single-cell variant calling

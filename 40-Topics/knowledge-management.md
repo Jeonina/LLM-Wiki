@@ -5,6 +5,7 @@ aliases: [km, personal knowledge management, pkm]
 tags: [knowledge, wiki]
 created: 2026-05-07
 updated: 2026-08-10
+paper_section: ["A"]
 ---
 
 # Knowledge management

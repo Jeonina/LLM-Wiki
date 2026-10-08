@@ -5,6 +5,7 @@ aliases: [lineage tracing, clonal tracing, cell phylogeny, fate mapping]
 tags: [lineage-tracing, clonal-analysis, phylogenetics, development, cancer-evolution]
 created: 2026-06-02
 updated: 2026-10-07
+paper_section: ["5.4"]
 ---
 
 # Single-cell lineage tracing

@@ -103,6 +103,8 @@ Report a punch list. Fix the mechanical items (orphans, missing links, index dri
 
 **`index.md`** is the catalog. Organized by category (Summaries, Entities, Concepts, Topics, Notes). Each entry is one line: `- [[page-slug]] — one-line description`. You update this on every ingest and every lint pass. It exists so you can navigate the wiki by reading one file, without having to grep blindly.
 
+**Tracks (landing block in `index.md`).** The block between `<!-- landing:start -->` and `<!-- landing:end -->` groups hub/synthesis pages into tracks that follow the EMM review's outline (§2 locus state · §3 five layers: genotype, chromatin accessibility [Fiber-seq as a sub-group], DNA methylation, histone modification, 3D genome · §4 computation · §5 applications · §6–7 limitations/future). A page joins a track with `paper_section: ["3.1", ...]` in its frontmatter (codes are defined in `TRACKS` in `tools/build-landing.py`); an optional `description:` overrides the card text. Never hand-edit the block. After adding or changing `paper_section`, run `tools/build-landing.py` (and `--check` during lint).
+
 **`log.md`** is append-only. Newest entries at the top. Each entry has a date heading and a short body. Treat it like a session changelog — future-you (in another conversation) reads this to catch up on what's happened.
 
 ## Operating principles

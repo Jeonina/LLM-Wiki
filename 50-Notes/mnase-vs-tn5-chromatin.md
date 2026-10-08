@@ -16,6 +16,7 @@ sources: [
   "[[10-Summaries/tavares-2026-6-base-cut-tag]]",
   "[[10-Summaries/klemm-2019-chromatin-accessibility-review]]"
 ]
+paper_section: ["3.4"]
 ---
 
 # MNase vs Tn5 — two chemistries for single-cell histone profiling

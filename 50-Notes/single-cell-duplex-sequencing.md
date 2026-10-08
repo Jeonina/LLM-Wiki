@@ -18,6 +18,7 @@ sources: [
   "[[10-Summaries/gonzalez-pena-2021-pnas]]",
   "[[10-Summaries/evrony-2021-scDNA-applications-review]]"
 ]
+paper_section: ["3.1"]
 ---
 
 # Single-cell duplex sequencing — the methodological frontier closes

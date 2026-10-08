@@ -21,6 +21,7 @@ sources: [
   "[[10-Summaries/kriz-2025-duplex-multiome]]",
   "[[10-Summaries/shao-2025-scDNA-mosaicism-review]]"
 ]
+paper_section: ["3.1"]
 ---
 
 # The PTA inflection point — when scDNA-seq became trustworthy

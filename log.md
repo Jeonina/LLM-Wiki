@@ -4,6 +4,19 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+# 2026-10-08 — Maintenance: paper-outline track landing on index.md
+
+Inspired by the joonan-lab Autodidact site (tracks → cards → hubs), the landing page now groups pages by the EMM review's outline. The §3 layers follow the user's frame: genotype, chromatin accessibility (Fiber-seq & single-molecule as a sub-group), DNA methylation, histone modification, 3D genome.
+
+- **Schema:** new frontmatter field `paper_section` (list of track codes) and optional `description`; documented in CLAUDE.md › Special files.
+- **Tagged 36 pages** (21 topics, 11 notes, 4 concepts) — no folders moved, no links changed.
+- **New tool:** `tools/build-landing.py` regenerates the marker block in `index.md` (`--check` for lint). Cards show page type and the number of linked summaries.
+- **Quartz:** `[!cards]` callouts styled as a grid in `.quartz/quartz/styles/custom.scss`.
+- **Gap surfaced:** §4.4 sequence-based prediction & foundation models has no hub page (shown as an "in progress" card).
+- The hand-curated "Core Topics" section stays below the tracks, unchanged.
+
+---
+
 # 2026-10-07 — Re-ingest: 15 abstract-only summaries rewritten from re-clipped full texts
 
 The user re-clipped the 15 abstract-only papers not excluded in the paper list. `pending-sources.sh` caught 12 as `CHANGED`. The other 3 were renamed files, and their `source:` links were repointed: [[10-Summaries/schmitt-2012-pnas]], [[10-Summaries/malikic-2019-phiscs]], [[10-Summaries/pott-2017-elife]]. Eight parallel agents rewrote the summaries; graph edits were applied in the main session. All 15 are now `source_quality: full`, with new hashes and a `## Limitations` section. Twelve `source:` links gained the missing `.pdf` extension.

@@ -97,8 +97,9 @@ const config: QuartzConfig = {
       Plugin.FolderPage(),
       Plugin.TagPage(),
       Plugin.ContentIndex({
-        enableSiteMap: true,
-        enableRSS: true,
+        // Unpublished review material: don't advertise pages to crawlers or feed readers
+        enableSiteMap: false,
+        enableRSS: false,
       }),
       Plugin.Assets(),
       Plugin.Static(),

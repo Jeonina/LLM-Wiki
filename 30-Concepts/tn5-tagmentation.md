@@ -4,7 +4,7 @@ title: Tn5 tagmentation
 aliases: [Tn5 transposition, tagmentation, Tn5]
 tags: [transposase, library-prep, ATAC-seq]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # Tn5 tagmentation
@@ -40,6 +40,10 @@ META-CS loads Tn5 with an equimolar mix of 16 transposon sequences, so each frag
 Tn5 tagmentation of nuclei yields fragments from ~35 bp to several kbp. Standard bead clean-ups, PCR and Illumina sequencing keep only the short ones, which is why ATAC libraries look enriched for open chromatin ([[10-Summaries/pancikova-2025-splongget]]). SPLONGGET retains all fragment sizes, giving DNA libraries of 200 bp to >10 kb that supply whole-genome coverage alongside the ATAC signal. Only reads under 1 kb are used for the accessibility analysis ([[10-Summaries/pancikova-2025-splongget]]).
 
 Two Tn5 loadings with different adapter sets can split one nucleus's genome by chromatin state: in wellDA-seq, Tn5-1 tagments open chromatin in intact permeabilised nuclei, and Tn5-2 tagments the remaining DNA after in-well protease removal of chromatin, with modality-specific PCR separating the ATAC and DNA libraries ([[10-Summaries/wang-2024-wellda-seq]]).
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- ChromBPNet showed that Tn5 sequence preference distorts ATAC-seq profile shape but not total counts in peaks, that +4/−4 read shifts align strand-specific Tn5 bias best, and that experiment-matched chromatin-background bias models correct it better than naked-DNA models, TOBIAS or HINT-ATAC ([[10-Summaries/pampari-2024-chrombpnet]])
 
 ## Related
 

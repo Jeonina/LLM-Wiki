@@ -4,7 +4,7 @@ title: Sequencing Depth and Coverage
 aliases: [coverage breadth, depth vs breadth, shallow sequencing]
 tags: [coverage, depth, breadth, economics, study-design]
 created: 2026-08-10
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # Sequencing Depth and Coverage
@@ -39,6 +39,10 @@ MuTect makes sensitivity an explicit function of depth and allele fraction: 95.6
 
 In sciMET-cap, the useful cost metric was unique CpGs per raw read, not percent on target. A higher wash temperature raised the on-target fraction but cut library complexity, leaving less information per cell ([[10-Summaries/acharya-2024-scimet-cap]]). The recommended depth is 200–275 thousand raw reads per cell for 5,000–10,000-cell datasets. That compares with about 2 million for non-capture single-cell methylation, 50–100 thousand for scRNA-seq and 75–125 thousand for scATAC-seq ([[10-Summaries/acharya-2024-scimet-cap]]).
 
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- STRAND handles 1-180x read redundancy in exome BAMs by filtering reads eightfold and re-weighting rare positions in the loss, recovering reference next-token accuracy (56.04 -> 58.89%) ([[10-Summaries/ayanian-2025-strand]]).
 
 ## Related
 

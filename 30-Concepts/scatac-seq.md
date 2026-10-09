@@ -4,7 +4,7 @@ title: scATAC-seq
 aliases: [single-cell ATAC-seq, single-cell ATAC]
 tags: [chromatin-accessibility, single-cell, ATAC, Tn5]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # scATAC-seq
@@ -77,6 +77,11 @@ Analysis models for scATAC-seq now span peak-free k-mer factorisation ([[10-Summ
 **Sequence-informed embedding.** CellSpace co-embeds DNA k-mers and cells (StarSpace with N-grams and negative sampling) instead of reducing the cell-by-peak matrix, giving covariate-free batch mitigation and post hoc per-cell TF motif scores; it can integrate datasets processed against different peak atlases ([[10-Summaries/tayyebi-2024-cellspace]]).
 
 Same-cell ground truth from wellDA-seq shows that copy number inferred from scATAC reads (10-Mb sliding windows, Satpathy-style method) correlated with directly measured CNAs at only median Pearson R = 0.47 in MDA-MB-231, with many false-positive events, and resolved none of the DNA-defined subclonal structure in three breast tumours ([[10-Summaries/wang-2024-wellda-seq]]). In the same data, ATAC clustering recovered DNA superclones but not finer subclones ([[10-Summaries/wang-2024-wellda-seq]]).
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Atacformer produces cell embeddings straight from fragment files, skipping peak calling and count matrices, and its tokenise-plus-embed steps were about 2.5× faster than EpiAgent's ([[10-Summaries/leroy-2025-atacformer]]).
+- A general-purpose DNA language model (OmniReg-GPT), frozen except for one classification layer over 1,344-bp peak sequences, predicted per-cell accessibility at AUROC 0.717 on Buenrostro 2018 and gave cell embeddings that clustered better than scBasset, SnapATAC, ArchR and chromVAR ([[10-Summaries/wang-2025-omnireg-gpt]]).
 
 ## Related
 

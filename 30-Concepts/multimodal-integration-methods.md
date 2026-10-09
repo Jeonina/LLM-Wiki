@@ -4,7 +4,7 @@ title: Multimodal integration methods
 aliases: [multi-omics integration, multimodal integration, cross-modality integration]
 tags: [computational, integration, multiomics, machine-learning]
 created: 2026-05-19
-updated: 2026-10-07
+updated: 2026-10-08
 paper_section: ["4.3"]
 ---
 
@@ -44,6 +44,12 @@ MOFA on matched RNA, H3K4me1 and H3K27me3 from OneCell CUT&Tag separated a multi
 For scCUT&Tag, WNN integration with matched scRNA-seq is the dominant route to cell-type annotation (sn-m6A-CT, NTT-seq, nano-CT, scCUT&Tag-pro), but it may obscure native chromatin variation, and ChromHMM/scChromHMM are described as the only promising approaches for combining multiple marks within one dataset ([[10-Summaries/wu-2026-sccut-tag-review]]).
 
 MOFA's own benchmarks set it against earlier multi-omics latent-variable models: in simulations GFA and iCluster tended to infer redundant factors and recovered shared-factor activity less accurately, and on the 200-patient CLL data MOFA trained in 25 min versus 34 h for GFA and 5–6 days for iCluster ([[10-Summaries/argelaguet-2018-mofa]]). On scM&T-seq data, MOFA's continuous factors recovered a naive → primed → differentiated trajectory that the clustering methods SNF and iCluster could not, as they only separated subpopulations ([[10-Summaries/argelaguet-2018-mofa]]).
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Foundation-model approaches now compete on RNA–ATAC integration: SCARF, pretrained on 2.7 M paired 10x Multiome cells with a contrastive alignment loss, reported the lowest FOSCTTM on 10x PBMC against GLUE, Seurat, Harmony, LIGER, uniPort and scVI ([[10-Summaries/liu-2025-scarf]])
+- After fine-tuning on 3,233 human brain multiome cells, scMomer's RNA→ATAC translation gave pseudo-bulk accessibility PCC 0.981, against 0.333 for scButterfly ([[10-Summaries/liu-2025-scmomer]])
+- CLM-X, a multiway-Transformer foundation model, reached an overall fusion score of 0.730 on seven multiome datasets under the Hu et al. 2024 benchmark protocol, narrowly ahead of MultiVI (ARI 0.658 vs 0.622) ([[10-Summaries/li-2026-clm-x]])
 
 ## Related
 

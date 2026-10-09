@@ -4,6 +4,31 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+# 2026-10-09 — Ingest: 10 papers that test the foundation-model gaps
+
+After the 2026-10-08 ingest, three gaps were flagged: no single-cell genotype foundation model, no histone foundation model, and almost no somatic evaluation of sequence models. A verified literature search (three read-only agents; Europe PMC, PubMed, arXiv; every DOI resolved via Crossref) checked whether these were search gaps. All three held for single-cell data. The user added the evidence papers to the paper-list workbook (Challenges sheet, rows 85–95) and clipped them; ChromBERT (Yu 2026, Cell Genomics) is pending a clipping.
+
+- **Genotype gap (3):** [[10-Summaries/sidhom-2026-tessera]] (bulk TCGA SNV+CNA FM), [[10-Summaries/kong-2026-mutationprojector]] (bulk panel genotype FM), [[10-Summaries/liu-2024-cot]] (per-dataset scDNA transformer).
+- **Histone gap (2):** [[10-Summaries/foroozandeh-2025-candi]] (self-supervised bulk ENCODE imputation), [[10-Summaries/morenogonzalez-2025-schistone-imputation]] (single-cell histone imputation benchmark; only borrowed scRNA/scATAC tools exist).
+- **Somatic gap (5):** [[10-Summaries/zeng-2025-somatic-driver-lm]] (71-mutation driver test), [[10-Summaries/gjoni-2026-pediatric-tumor-3d]] (Akita on ~300k tumour SVs, unbenchmarked), [[10-Summaries/weinstock-2025-ch-noncoding-drivers]] (CH noncoding drivers; AlphaGenome used only for target-gene assignment), [[10-Summaries/fischbach-2026-alphagenome-aging]] (normal colon crypts; unvalidated null), [[10-Summaries/terekhanova-2026-tal1-enhancer]] (AlphaGenome under-ranks confirmed T-ALL enhancer variants).
+- **Pages updated (25):** 36 cited bullets under "Added 2026-10-09" on 16 concept and 7 topic pages; a new "Evidence for the three gaps" section and a gap-evidence source list on [[40-Topics/sequence-models-and-foundation-models]]; summary catalog (441 entries).
+- **Correction:** the search report and the workbook said Weinstock 2025 used no sequence model; the full text shows AlphaGenome was used for cis-gene assignment (not discovery, not validated). Fixed in the workbook (C95).
+
+---
+
+# 2026-10-08 — Ingest: 64 sequence-model and foundation-model papers (§4.4)
+
+The user clipped the review's foundation-model list (the Future rows of the paper-list workbook after filtering out spatial, protein, RNA-only and no-DNA models). Eleven parallel agents wrote one summary each from the full text (PDFs pre-extracted to text); the main session applied graph edits, built the new pages and indexes. All 64 sources are `full`. [[10-Summaries/zhang-2025-deepgene]] was first written from a partial web clipping, then re-ingested the same day from the published IEEE TCBB PDF (Tables I–IV read from page renders); this corrected its index line (118M, not the smallest model, has GUE 67.79; 47 individuals, not haplotypes) and the structural-variants bullet (the paper never evaluates variants), and exposed a text–table conflict on top-2 counts.
+
+- **Source fix:** the clipping saved as "DNT- Diploid Genomic Foundation Model.md" actually contained the Evo 2 paper. The user renamed it to the Evo 2 title and kept the DNT PDF; [[10-Summaries/leib-2026-dnt]] uses the PDF only and [[10-Summaries/brixi-2026-evo2]] the renamed clipping.
+- **Summaries (64):** 16 supervised sequence-to-function (DeepSEA → AlphaGenome, ChromBPNet, SUCCEED, EPInformer, EpiGePT, NTv3), 3 sequence-to-single-cell (scooby, Decima, CREsted), 31 DNA language models (DNABERT → Evo 2, incl. variant/diploid-aware and tokenization papers), 9 epigenome FMs (CpGPT, MethylGPT, scDNAm-GPT, Atacformer, CLM-access, EpiFoundation, EpiZoo, GET, HiCFoundation), 5 multimodal (SCARF, scMomer, CLM-X, scDynOmics, OmniReg-GPT) plus Evo2HiC.
+- **New pages (6):** [[30-Concepts/dna-language-model]], [[30-Concepts/sequence-to-function-model]], [[30-Concepts/single-cell-foundation-model]], [[30-Concepts/genomic-tokenization]], [[30-Concepts/variant-effect-prediction]], and the hub [[40-Topics/sequence-models-and-foundation-models]] (`paper_section: ["4.4"]`, replacing the "in progress" card on the landing page).
+- **Pages updated (45):** 112 cited bullets under "Added 2026-10-08" sections on 36 concept and 5 topic pages (largest: cis-regulatory-element +15, transcription-factor-motif +12, single-cell-atac-seq +7); indexes for summaries, concepts and topics; computational-methods links the new hub.
+- **Notable findings:** (1) no model in the set is pretrained on single-cell genotypes or histone-modification profiles; (2) self-supervised DNA LMs often fail to beat supervised or simple baselines (SUCCEED, CREsted, GROVER's TF-IDF baseline, SpliceAI); (3) BPE helps under masked LM but fails under next-token prediction (DNABERT-2 vs GENERator); (4) zero-shot variant scoring ranges from chance (Gene42, GenART) to state of the art (Evo 2, GPN-MSA), and conservation/CADD still lead on pathogenicity; (5) variant benchmarks are almost entirely germline.
+- **Agent-flagged source issues** are recorded in each summary (e.g. internal number inconsistencies in NTv3, STRAND, scMomer, Genos; copied baselines in Gene42, GENA-LM, DNAChunker).
+
+---
+
 # 2026-10-08 — Maintenance: paper-outline track landing on index.md
 
 Inspired by the joonan-lab Autodidact site (tracks → cards → hubs), the landing page now groups pages by the EMM review's outline. The §3 layers follow the user's frame: genotype, chromatin accessibility (Fiber-seq & single-molecule as a sub-group), DNA methylation, histone modification, 3D genome.

@@ -4,7 +4,7 @@ title: Chromatin accessibility
 aliases: [open chromatin, chromatin openness, accessibility]
 tags: [chromatin, regulation]
 created: 2026-05-07
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # Chromatin accessibility
@@ -47,6 +47,14 @@ Differential accessibility in scATAC-seq is statistically fragile: in a replicat
 
 
 Before interferon stimulation, ISREs are accessible and carry narrow IRF9 footprints with no expression, so accessibility can be decoupled from transcriptional activity ([[10-Summaries/doughty-2024-smf-tf]]). At the DM1 SIX5 promoter, accessibility falls on expanded haplotypes while CpG methylation does not change ([[10-Summaries/bohaczuk-2024-targeted-fiberseq]]).
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Basset showed that DNA sequence alone predicts cell-type DHS status across 164 ENCODE/Roadmap cell types (mean AUC 0.895), although cell-specific sites are harder (AUC 0.858) ([[10-Summaries/kelley-2016-basset]])
+- NTv3 reaches Pearson r 0.753 (HepG2) and 0.755 (IMR-90) on shared DNase experiments against 0.704 and 0.717 for ChromBPNet, predicting accessibility at base resolution from up to 1 Mb of context ([[10-Summaries/boshar-2025-ntv3]]).
+- On the BEND benchmark with frozen embeddings, a 7B Transformer–Mamba2 hybrid reached AUROC 0.84 for chromatin accessibility, 0.79 for histone modification and 0.93 for CpG methylation ([[10-Summaries/ma-2025-hybridna]]).
+- On DeepSEA, a 192-kb-context dense-attention DNA language model matched or slightly beat earlier models on DNase-hypersensitivity prediction (median AUC 0.934) but fell behind on histone marks (0.839 vs 0.863 for HyenaDNA) ([[10-Summaries/vishniakov-2025-gene42]]).
+- On ChromBPNet's caQTL, dsQTL and SPI1 bQTL benchmarks across ancestries, the multimodal AlphaGenome beat the accessibility-specialist ChromBPNet (e.g. Pearson r = 0.74 with African-ancestry caQTL effect sizes) ([[10-Summaries/avsec-2026-alphagenome]])
 
 ## Related
 

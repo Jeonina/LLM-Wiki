@@ -4,7 +4,7 @@ title: Copy Number Variation
 aliases: [CNV, CNA, copy number alteration, copy number profiling, copy number]
 tags: [CNV, aneuploidy, cancer, single-cell, segmentation]
 created: 2026-08-10
-updated: 2026-10-07
+updated: 2026-10-09
 ---
 
 # Copy Number Variation
@@ -48,6 +48,12 @@ SCICoNE calls single-cell copy numbers jointly with a CNA event tree, so shared 
 In an AML tumour/normal genome, 46.4% of BreakDancer deletion calls overlapped known inherited CNVs in DGV, and 37 of 116 array-detected inherited CNVs (31.9%) were recovered ([[10-Summaries/chen-2009-breakdancer]]). Single-cell genome plus chromatin-accessibility co-profiling (wellDA-seq) found rare aneuploid cells in two normal breasts (10/1,339 = 0.75% and 5/1,115 = 0.45%), all with LumSec chromatin identity and all carrying a chr1q gain; in 9 ER+ breast tumours, 80.88% of 225 aneuploid non-epithelial cells had chrX loss, mainly T cells (4.30% of 2,838) and pericytes (5.50%, 49/891) ([[10-Summaries/wang-2024-wellda-seq]]).
 
 Genome reads from a Multiome-type assay allow direct per-cell CNA calling. With DNA libraries at ~20% saturation, SPLONGGET derived 3,800 single-cell copy-number profiles (ASCAT.sc, 500 kb bins) across four B-ALL time points, and InferCNVpy on the matching transcriptomes supported the calls ([[10-Summaries/pancikova-2025-splongget]]). In the same cells, a chr7p loss and 7q gain lowered 7p expression and accessibility and raised 7q, measured against a DNA-based CN call rather than inferred from RNA ([[10-Summaries/pancikova-2025-splongget]]).
+
+## Added 2026-10-09 — foundation-model gap evidence
+
+- CoT clusters cells from transformer embeddings and then fits a clone-specific HMM (states up to 10 copies), reaching copy-number F-measure 0.81–0.84 against CHISEL calls on three 10x breast tumour sections, compared with 0.73–0.78 for rcCAE ([[10-Summaries/liu-2024-cot]])
+- MutationProjector represents copy number as binary per-gene amplification and deletion states over 468 panel genes, and its masked-gene pretraining recovers dependencies such as CCND1–CDKN2A co-occurrence in head and neck cancer ([[10-Summaries/kong-2026-mutationprojector]])
+- In TESSERA's CNA encoder, one block of attention between segments raised masked segment-mean prediction from Pearson r 0.222 to 0.779 and LOH AUC from 0.683 to 0.943, and transfer to MSK-IMPACT panels reached r 0.727–0.746 after quantile normalisation ([[10-Summaries/sidhom-2026-tessera]])
 
 ## Related
 

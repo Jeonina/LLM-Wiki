@@ -4,7 +4,7 @@ title: 3D genome
 aliases: [chromatin conformation, Hi-C, nuclear architecture, 3D chromatin organization]
 tags: [Hi-C, TAD, compartments, loops, single-cell, chromatin-structure, chromatin]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-09
 paper_section: ["3.5"]
 ---
 
@@ -132,6 +132,15 @@ Infrastructure is catalogued under *Pipelines, storage, visualization* above. Tw
 - [[10-Summaries/rao-2014-in-situ-hic]] — In situ Hi-C at kilobase resolution: ~10,000 convergent-CTCF loops, 185 kb contact domains, six subcompartments, diploid and inactive-X maps.
 - [[10-Summaries/dautle-2025-schic-review]] — review: 13 scHi-C protocols scored on contacts and cis/trans; tool catalogue across QC, imputation, compartments, TADs, loops, 3D reconstruction and differential analysis.
 
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Evo2HiC distils the Evo 2 DNA language model into a small CNN guided by 138 human ENCODE/4DN Hi-C maps, improving sequence-to-contact prediction over Orca by 10.9% Spearman and enabling Hi-C-conditioned, cell-type-specific motif attribution ([[10-Summaries/fang-2025-evo2hic]])
+- Applied to low-coverage Hi-C from HSPCs and neutrophils, HiCFoundation found a genome-wide loss and weakening of short-range loops in neutrophils and after lamin B1 knockdown, while loops at neutrophil genes such as CEBPA and CEBPE were kept and rewired ([[10-Summaries/wang-2026-hicfoundation]]).
+
+## Added 2026-10-09 — foundation-model gap evidence
+
+- Sequence-predicted 3D disruption from somatic SVs flags five recurrently disrupted 1 Mb regions across paediatric tumours, with ABC-weighted scoring prioritising SVs near PDGFRA, ID2 and ATRT candidates NASP/MSH6/FOXJ2 ([[10-Summaries/gjoni-2026-pediatric-tumor-3d]])
 
 ## Related
 

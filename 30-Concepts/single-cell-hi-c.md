@@ -4,7 +4,7 @@ title: Single-cell Hi-C
 aliases: [scHi-C, sciHi-C, sc3DG-seq]
 tags: [3D-genome, Hi-C, chromatin-contacts, single-cell]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # Single-cell Hi-C
@@ -55,6 +55,12 @@ The bulk reference for scHi-C is the in situ Hi-C map of GM12878. It needed 4.9 
 
 A 2025 review counts 13 scHi-C protocols: eight that capture contacts only and five multi-omic ones (sn-m3C-seq, scMethyl Hi-C, HiRES, MUSIC, s3-GCC) ([[10-Summaries/dautle-2025-schic-review]]). The review re-scored public datasets on contacts per cell and cis/trans ratio. Among contact-only protocols, Nagano 2017 and scNanoHi-C did best. sci-Hi-C and scSPRITE gave few contacts with good cis/trans, and Dip-C gave average contacts with some of the lowest cis/trans ratios ([[10-Summaries/dautle-2025-schic-review]]). Multi-omic protocols did not differ significantly from contact-only ones on either metric (Wilcoxon–Mann–Whitney, P cutoff 0.05) ([[10-Summaries/dautle-2025-schic-review]]). This comparison was not matched for sequencing depth (synthesis).
 
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Sequence priors from a distilled DNA language model improved resolution enhancement of 1/16-downsampled bulk Hi-C across 177 species (Evo2HiC), a possible but untested route for sparse scHi-C imputation ([[10-Summaries/fang-2025-evo2hic]])
+- SUCCEED plus pseudobulk scATAC from ≤200 cells predicted K562 Hi-C contact maps with only modest loss in insulation-score agreement, a sequence-based alternative to sparse single-cell Hi-C that was evaluated only against bulk Hi-C ([[10-Summaries/sun-2026-succeed]])
+- Fine-tuned from bulk Hi-C pretraining, HiCFoundation enhanced scHi-C better than Higashi, scHiCluster and scVI-3D, and when applied to human WTC11 cells without retraining it beat scHiCluster by 35.9% in Pearson correlation ([[10-Summaries/wang-2026-hicfoundation]]).
 
 ## Related
 

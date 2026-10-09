@@ -4,7 +4,7 @@ title: scATAC-seq imputation and denoising
 aliases: [scATAC imputation, chromatin accessibility imputation, dropout recovery scATAC]
 tags: [scATAC-seq, imputation, denoising, dropout, benchmarking]
 created: 2026-06-02
-updated: 2026-10-07
+updated: 2026-10-09
 ---
 
 # scATAC-seq imputation and denoising
@@ -42,6 +42,15 @@ EpiAgent imputes by decoding all cCREs from a transformer cell embedding, improv
 Over-smoothing can be quantified rather than just flagged as a risk. scCASE defines over-, under- and smoothing scores and reports over-smoothing when the NMF rank K < 7 and added noise when K > 20, while results stay stable for λ between 10⁵ and 10⁸ ([[10-Summaries/tang-2024-sccase]]). Enhancement can also reduce the sequencing-depth confound: PC1–depth correlation fell by 45.6% in a bone-marrow dataset and by 19.6% in a mouse lung dataset ([[10-Summaries/tang-2024-sccase]]).
 
 - **GFETM** imputes accessibility at unseen peaks by jointly training an embedded topic model with a genome foundation model over peak sequences ([[10-Summaries/fan-2026-gfetm]]). In leave-one-chromosome-out tests on Buenrostro 2018, its top-K precision beat scBasset by about 10% (K = 5), 6% (K = 10) and 3% (K = 20); CellSpace, SIMBA and PeakVI cannot do this task ([[10-Summaries/fan-2026-gfetm]]). Its denoised matrix raised marker-gene enrichment of differential peaks over raw counts, with gains mostly >10 kb from the TSS, while scBasset was better within 1 kb ([[10-Summaries/fan-2026-gfetm]]).
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Fine-tuned EpiZoo recovered 50%-masked scATAC signal with the highest clustering NMI and a median cell-type-level PCC of 0.874, ahead of EpiAgent, scOpen and scCASE ([[10-Summaries/li-2026-epizoo]]).
+- With a SUCCEED sequence prior, ATAC denoising beat AtacWorks at all depths down to 0.2 M reads (peak-calling AUPRC 0.38 vs 0.17 without the prior on held-out erythroid cells) and reconstructed scATAC profiles from single-cell input comparable to ~300 cells ([[10-Summaries/sun-2026-succeed]])
+
+## Added 2026-10-09 — foundation-model gap evidence
+
+- scATAC-derived imputers beat scRNA-derived ones on narrow-peak histone marks (H3K4me3, H3K4me1; Wilcoxon P < 0.05) but not on broad H3K9me3, which the authors attribute to broad domains giving dense, correlated bin matrices ([[10-Summaries/morenogonzalez-2025-schistone-imputation]])
 
 ## Related
 

@@ -4,7 +4,7 @@ title: ATAC-seq
 aliases: [Assay for Transposase-Accessible Chromatin sequencing, scATAC-seq]
 tags: [chromatin, accessibility, Tn5, single-cell, method]
 created: 2026-05-11
-updated: 2026-05-19
+updated: 2026-10-08
 ---
 
 # ATAC-seq
@@ -44,6 +44,10 @@ ATAC-seq produces accessibility profiles similar to DNase-seq, though it can dif
 - The [[got-cha]] platform builds on 10x scATAC-seq ([[10-Summaries/izzo-2024-got-cha]]).
 - scATAC-seq reveals principles of regulatory variation (trans-factor and cis-element drivers of cell-to-cell accessibility variance) across GM12878, K562, H1-ESC and other cell lines ([[10-Summaries/buenrostro-2015-nature]]).
 - Chromatin potential — accessibility precedes transcription in differentiating keratinocytes ([[10-Summaries/ma-2020-share-seq]]).
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- In EPInformer, ATAC-seq alone as the enhancer-activity input predicted CAGE expression nearly as well as DNase + H3K27ac (r = 0.843 vs 0.867 in K562), so ATAC-only cell types can be modelled ([[10-Summaries/lin-2026-epinformer]])
 
 ## Related
 

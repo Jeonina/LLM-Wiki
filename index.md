@@ -36,13 +36,13 @@ How each layer is read from a single cell's one copy of DNA.
 
 > [!cards] Genotype
 > - `hub · 18 papers` [[40-Topics/duplex-sequencing|Duplex sequencing]] — Duplex sequencing (DS) is a single-molecule NGS strategy that tags both the Watson and Crick strands of each input dsDNA molecule with complementary UMIs, se…
-> - `hub · 20 papers` [[40-Topics/scdna-seq|Single-cell DNA sequencing (scDNA-seq)]] — Umbrella term for technologies that interrogate the DNA of single cells — either by amplifying single-cell genomes  or by reading single DNA molecules with s…
+> - `hub · 21 papers` [[40-Topics/scdna-seq|Single-cell DNA sequencing (scDNA-seq)]] — Umbrella term for technologies that interrogate the DNA of single cells — either by amplifying single-cell genomes  or by reading single DNA molecules with s…
 > - `hub · 15 papers` [[40-Topics/whole-genome-amplification|Whole-genome amplification (scWGA)]] — The set of biochemical methods that bridge the ~6 pg of DNA in a single diploid cell to the input requirement of any sequencing platform.
 > - `synthesis · 12 papers` [[50-Notes/single-cell-duplex-sequencing|Single-cell duplex sequencing — the methodological frontier closes]] — For ~13 years (2012-2025), single-cell DNA sequencing and duplex sequencing were incompatible — duplex requires strand identity preserved through library pre…
 > - `synthesis · 17 papers` [[50-Notes/pta-inflection-point|The PTA inflection point — when scDNA-seq became trustworthy]] — Around 2020-2021, single-cell DNA sequencing crossed a methodological threshold: Primary Template-Directed Amplification (PTA) displaced multiple displacemen…
 
 > [!cards] Chromatin accessibility
-> - `hub · 27 papers` [[40-Topics/single-cell-atac-seq|Single-cell ATAC-seq]] — scATAC-seq measures genome-wide chromatin accessibility in individual cells via Tn5 transposase preferential cutting at open chromatin.
+> - `hub · 34 papers` [[40-Topics/single-cell-atac-seq|Single-cell ATAC-seq]] — scATAC-seq measures genome-wide chromatin accessibility in individual cells via Tn5 transposase preferential cutting at open chromatin.
 
 > [!cards] Chromatin accessibility › Fiber-seq & single-molecule
 > - `hub · 17 papers` [[40-Topics/long-read-sequencing|Long-read sequencing]] — Third-generation sequencing technologies that read DNA molecules of kilobases to hundreds of kilobases in single contiguous reads — the two dominant platform…
@@ -51,15 +51,15 @@ How each layer is read from a single cell's one copy of DNA.
 > - `concept · 9 papers` [[30-Concepts/single-molecule-footprinting|Single-molecule chromatin footprinting]] — A class of chromatin assays that mark accessible DNA on individual nuclear fibers (rather than across an ensemble) and read those marks with long-read sequen…
 
 > [!cards] DNA methylation
-> - `hub · 45 papers` [[40-Topics/dna-methylation|DNA methylation]] — Covalent modification of the fifth carbon of cytosine to produce 5-methylcytosine (5mC), predominantly at symmetric CpG dinucleotides in mammals.
+> - `hub · 48 papers` [[40-Topics/dna-methylation|DNA methylation]] — Covalent modification of the fifth carbon of cytosine to produce 5-methylcytosine (5mC), predominantly at symmetric CpG dinucleotides in mammals.
 > - `synthesis · 6 papers` [[50-Notes/methylation-cancer-origin-classifiers|Methylation-based cancer-of-origin classifiers — clinical-grade epigenetic memory]] — DNA methylation patterns are heritable across cell divisions and act as a record of cell-type identity.
 
 > [!cards] Histone modification
-> - `hub · 33 papers` [[40-Topics/histone-modifications|Histone modifications]] — Post-translational modifications of histone tails — methylation, acetylation, ubiquitylation, phosphorylation — that demarcate functional chromatin states.
+> - `hub · 36 papers` [[40-Topics/histone-modifications|Histone modifications]] — Post-translational modifications of histone tails — methylation, acetylation, ubiquitylation, phosphorylation — that demarcate functional chromatin states.
 > - `synthesis · 9 papers` [[50-Notes/mnase-vs-tn5-chromatin|MNase vs Tn5 — two chemistries for single-cell histone profiling]] — Single-cell histone-modification profiling splits cleanly into two chemistry lineages.
 
 > [!cards] 3D genome
-> - `hub · 40 papers` [[40-Topics/3d-genome|3D genome]] — The three-dimensional organization of DNA within the nucleus — chromosome territories, A/B compartments (active vs inactive), topologically associating domai…
+> - `hub · 43 papers` [[40-Topics/3d-genome|3D genome]] — The three-dimensional organization of DNA within the nucleus — chromosome territories, A/B compartments (active vs inactive), topologically associating domai…
 > - `hub · 36 papers` [[40-Topics/chromatin-architecture|Chromatin architecture]] — How DNA is packaged with proteins (nucleosomes, TFs, cohesin/CTCF, polycomb, …) along chromosomes, and how that packaging is heterogeneous across fibers, hap…
 
 ### §4 Computational framework
@@ -75,10 +75,10 @@ From per-layer inference to cross-layer integration.
 
 > [!cards] Multimodal integration
 > - `hub · 58 papers` [[40-Topics/single-cell-multiomics|Single-cell multi-omics]] — Methods that measure two or more molecular modalities (DNA sequence, RNA, chromatin accessibility, surface protein, methylation, …) in the same single cell,…
-> - `concept · 23 papers` [[30-Concepts/multimodal-integration-methods|Multimodal integration methods]] — Computational methods for combining multiple single-cell omics modalities — paired (measured on the same cells) or unpaired (separate cell populations) — int…
+> - `concept · 26 papers` [[30-Concepts/multimodal-integration-methods|Multimodal integration methods]] — Computational methods for combining multiple single-cell omics modalities — paired (measured on the same cells) or unpaired (separate cell populations) — int…
 
 > [!cards] Sequence-based prediction & foundation models
-> - `in progress` No hub page yet — candidate for a new topic page.
+> - `hub · 78 papers` [[40-Topics/sequence-models-and-foundation-models|Sequence models and foundation models]] — Hub for §4.4: supervised sequence-to-function models, DNA language models, single-cell epigenome and multimodal foundation models (64 papers, 2026-10-08), plus evidence for the genotype, histone and somatic-variant gaps (10 papers, 2026-10-09).
 
 > [!cards] Locus-state inference
 > - `synthesis · 35 papers` [[50-Notes/computational-framework-structure|Computational framework — how to structure the review's main section]] — Draft scaffold (not prose) for the manuscript's main section.
@@ -88,16 +88,16 @@ From per-layer inference to cross-layer integration.
 Where single-cell DNA layers answer biological questions.
 
 > [!cards] Cancer clonal architecture
-> - `hub · 36 papers` [[40-Topics/cancer-clonal-evolution|Cancer clonal evolution]] — The accumulation of somatic mutations and clonal selection that shapes tumor heterogeneity, treatment response, and metastasis.
-> - `hub · 11 papers` [[40-Topics/hematopoietic-malignancies|Hematopoietic malignancies]] — Cancers and pre-cancerous clonal expansions arising from hematopoietic stem and progenitor cells.
+> - `hub · 38 papers` [[40-Topics/cancer-clonal-evolution|Cancer clonal evolution]] — The accumulation of somatic mutations and clonal selection that shapes tumor heterogeneity, treatment response, and metastasis.
+> - `hub · 13 papers` [[40-Topics/hematopoietic-malignancies|Hematopoietic malignancies]] — Cancers and pre-cancerous clonal expansions arising from hematopoietic stem and progenitor cells.
 > - `hub · 18 papers` [[40-Topics/scdna-cancer-applications|scDNA-seq in cancer applications]] — Single-cell DNA sequencing in cancer research and clinical applications — intratumor heterogeneity, chemoresistance evolution, metastatic clonal lineage, cop…
 
 > [!cards] Brain somatic mosaicism
 > - `hub · 18 papers` [[40-Topics/brain-somatic-mosaicism|Brain somatic mosaicism]] — Somatic mutations accumulating in human neurons and other brain cells throughout life.
-> - `hub · 44 papers` [[40-Topics/somatic-mosaicism|Somatic mosaicism]] — The presence of genetically distinct lineages of cells within a single organism, all derived from one zygote.
+> - `hub · 45 papers` [[40-Topics/somatic-mosaicism|Somatic mosaicism]] — The presence of genetically distinct lineages of cells within a single organism, all derived from one zygote.
 
 > [!cards] Clonal hematopoiesis & aging
-> - `hub · 9 papers` [[40-Topics/clonal-hematopoiesis|Clonal hematopoiesis]] — Age-related mosaic expansion of a hematopoietic stem cell (HSC) clone carrying a recurrent somatic driver mutation (DNMT3A, TET2, JAK2 V617F, CALR, ASXL1), d…
+> - `hub · 10 papers` [[40-Topics/clonal-hematopoiesis|Clonal hematopoiesis]] — Age-related mosaic expansion of a hematopoietic stem cell (HSC) clone carrying a recurrent somatic driver mutation (DNMT3A, TET2, JAK2 V617F, CALR, ASXL1), d…
 
 > [!cards] Development & lineage tracing
 > - `hub · 30 papers` [[40-Topics/single-cell-lineage-tracing|Single-cell lineage tracing]] — Methods and algorithms that reconstruct the ancestry of individual cells — which cell came from which — to study development, ageing, regeneration, and cance…

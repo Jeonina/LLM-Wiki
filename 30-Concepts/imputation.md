@@ -4,7 +4,7 @@ title: Imputation
 aliases: [data smoothing, missing-value imputation, contact map imputation]
 tags: [sparsity, single-cell, smoothing, scHi-C, denoising]
 created: 2026-08-10
-updated: 2026-10-07
+updated: 2026-10-09
 ---
 
 # Imputation
@@ -44,6 +44,16 @@ For scHi-C, Fast-Higashi computes a partial random walk with restart batch-wise 
 For scHi-C, imputation methods fall into five families: random walk, Gaussian convolution, Bayesian hierarchical, deep learning and LDA topics ([[10-Summaries/dautle-2025-schic-review]]). Each has a stated failure mode. Random walks are biased toward neighbouring observations, and Gaussian smoothing can over-smooth high-frequency regions such as heterochromatin ([[10-Summaries/dautle-2025-schic-review]]). The authors warn that neighbour-based imputation dilutes high-frequency contacts and raises false positives. They propose clustering cells first and then imputing within clusters, iteratively ([[10-Summaries/dautle-2025-schic-review]]).
 
 Model-based imputation of whole missing assays: MOFA imputes masked values from its shared factors (Y = ZWᵀ), and on CLL data it beat feature-wise mean, SoftImpute and kNN imputation and was more robust than GFA, both for scattered missing values and for entirely missing drug-response assays ([[10-Summaries/argelaguet-2018-mofa]]).
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- CpGPT imputed array probes held out of pretraining at MAE 0.081 (unseen input and target) and rebuilt 450k profiles from MSA-overlapping probes at MAE 0.031 zero-shot, against about 0.33–0.37 for sample-mean baselines ([[10-Summaries/delimacamillo-2024-cpgpt]]).
+- MethylGPT predicted masked CpG values on held-out samples with Pearson R 0.929 and MAE 0.074, but only within its fixed 49,156-CpG vocabulary ([[10-Summaries/ying-2024-methylgpt]]).
+
+## Added 2026-10-09 — foundation-model gap evidence
+
+- Bulk epigenome imputation can be pretrained self-supervised by masking whole assays and recovering full-depth tracks from downsampled ones; CANDI does this over 35 ENCODE assays and returns calibrated per-bin uncertainty ([[10-Summaries/foroozandeh-2025-candi]])
+- On scHPTM data, imputation helps mostly at mid depth (about 1,000 reads per cell) and can lower fidelity on high-quality data; scImpute is best for signal enrichment and scOpen/SCALEX for clustering, and no method does both ([[10-Summaries/morenogonzalez-2025-schistone-imputation]])
 
 ## Related
 

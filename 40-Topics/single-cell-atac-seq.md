@@ -4,7 +4,7 @@ title: Single-cell ATAC-seq
 aliases: [scATAC-seq, single-cell chromatin accessibility]
 tags: [scATAC, chromatin-accessibility, cis-regulatory, software, transcription-factors]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-08
 paper_section: ["3.2"]
 ---
 
@@ -81,6 +81,16 @@ None yet. A natural note: "How to choose a scATAC-seq analysis tool" — chromVA
 - [[10-Summaries/tang-2024-sccase]] — scCASE/scCASER: similarity-learning NMF enhancement of scCAS data with optional reference data.
 - [[10-Summaries/wu-2026-sccut-tag-review]] — where scATAC tooling (Signac/ArchR/SnapATAC) does and does not transfer to scCUT&Tag.
 
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- GET uses pseudobulk scATAC-seq of 213 cell types as pretraining data for a foundation model of transcription, which predicts gene expression in cell types it never saw from the accessible peaks and their motif content ([[10-Summaries/fu-2025-get]]).
+- scooby predicts scATAC insertion profiles and scRNA coverage together from 524 kb of sequence for each cell in a 10x Multiome dataset, and its TF activity scores beat chromVAR and scBasset ([[10-Summaries/hingerl-2025-scooby]]).
+- Atacformer is a scATAC foundation model that tokenises cells into a fixed vocabulary of 890k consensus regions, embeds raw fragment files directly, and also reads bulk BED files (cell-line prediction accuracy 86% across more than 275 lines) ([[10-Summaries/leroy-2025-atacformer]]).
+- CLM-access pretrains a scATAC foundation model on 2.8M cells using patch tokens over a 1.15M-cCRE reference, and finds that binarising peaks and predicting each masked peak are both required for training to work ([[10-Summaries/liu-2025-clm-access]]).
+- EpiFoundation uses paired RNA as the pretraining target for an ATAC-only encoder; fine-tuned, it predicts gene expression with per-gene Pearson 0.38–0.48 against about 0.16–0.20 for Signac Gene Activity ([[10-Summaries/wu-2025-epifoundation]]).
+- CREsted turns scATAC atlases into sequence-to-accessibility models for reading enhancer codes and designing synthetic enhancers, and argues that comparing contribution scores rather than raw accessibility is robust to CNVs in tumour scATAC ([[10-Summaries/kempynck-2026-crested]]).
+- EpiZoo, a sequence-aware scATAC foundation model, labels human cortex cells from macaque references with 0.91 accuracy and places human- and macaque-specific cCREs on a conservation gradient in embedding space ([[10-Summaries/li-2026-epizoo]]).
 
 ## Related
 

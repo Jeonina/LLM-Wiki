@@ -4,7 +4,7 @@ title: Batch Effect
 aliases: [batch correction, dataset integration, technical variation]
 tags: [integration, batch, LISI, Harmony, meta-analysis]
 created: 2026-08-10
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # Batch Effect
@@ -43,6 +43,11 @@ For band-normalized scHi-C (Lee2019, 5 libraries), Harmony removed batch effects
 An optional extension of scCASE corrects protocol batch effects in scATAC data. On a mouse-brain dataset mixing 10X and snATAC, it improved kBET and batch ASW and merged L2/3 IT cells from both batches into one cluster ([[10-Summaries/tang-2024-sccase]]).
 
 On Buenrostro 2018, GFETM without any batch term had the highest ARI and second-highest kBET, and adding a linear batch term gave the best kBET at slightly lower ARI ([[10-Summaries/fan-2026-gfetm]]). GFETM attributes its scalability on large scATAC datasets to batch-agnostic embeddings, and notes that cross-tissue and cross-species scATAC integration is hard because, unlike genes in scRNA-seq, scATAC lacks a common feature set ([[10-Summaries/fan-2026-gfetm]]). Representing peaks by sequence embeddings rather than coordinates is a plausible way around that (synthesis).
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Embeddings from fine-tuned EpiFoundation had the best NMI, cASW, bASW and graph connectivity against PCA, Harmony, LIGER and scANVI on kidney, BMMC and PBMC, but not the best isolated-label score in kidney or PBMC ([[10-Summaries/wu-2025-epifoundation]]).
+- Fine-tuned CLM-X improved the NMI/bASW overall batch-correction score by 5.9–35.0% over MultiVI, Multigrate, MIRA and scMoMaT across 2-, 4- and 13-batch multiome benchmarks ([[10-Summaries/li-2026-clm-x]])
 
 ## Related
 

@@ -4,7 +4,7 @@ title: Read Alignment
 aliases: [read mapping, sequence alignment, BWT alignment]
 tags: [alignment, BWA, SAM, BAM, infrastructure]
 created: 2026-08-10
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # Read Alignment
@@ -37,6 +37,10 @@ Ligation-junction multimapping is an aligner-induced artifact in chromatin-confo
 
 Variant-call accuracy depends on the upstream aligner. VarScan accepted BLAT, Newbler, cross_match, Bowtie and Novoalign output and shipped recommended parameters for each, because, in the authors' words, sensitivity and specificity depend on alignment accuracy ([[10-Summaries/koboldt-2009-varscan]]).
 
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- STRAND takes aligned reads (BAM) rather than called variants as language-model input, arguing this avoids variant-calling bias ([[10-Summaries/ayanian-2025-strand]]).
 
 ## Related
 

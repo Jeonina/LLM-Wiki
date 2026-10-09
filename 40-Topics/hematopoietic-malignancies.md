@@ -4,7 +4,7 @@ title: Hematopoietic malignancies
 aliases: [blood cancers, myeloid malignancies]
 tags: [hematology, cancer, clonal-evolution]
 created: 2026-05-07
-updated: 2026-10-07
+updated: 2026-10-09
 paper_section: ["5.1"]
 ---
 
@@ -61,6 +61,14 @@ _None yet._
 - [[10-Summaries/pancikova-2025-splongget]] — SPLONGGET long-read multiome of one high-hyperdiploid paediatric B-ALL across diagnosis and three relapses; CD19-negative relapse after CAR-T explained by 8 Mb chr16 deletion plus four phased splice-site SNVs (preprint).
 
 In one AML patient, bulk VAFs predicted a 23.6% DNMT3A single-mutant founder population, but single-cell genotyping found 1.7% and pointed to TP53 as the founder ([[10-Summaries/pellegrino-2018-tapestri]]).
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- AlphaGenome predicted that oncogenic TAL1 neo-enhancer insertions in T-ALL create a MYB motif and raise H3K27ac, accessibility and TAL1 expression, using CD34+ CMP tracks as the closest available proxy for the T-ALL cell of origin ([[10-Summaries/avsec-2026-alphagenome]])
+
+## Added 2026-10-09 — foundation-model gap evidence
+
+- In pediatric T-ALL, somatic indels and internal tandem duplications in TAL1 downstream enhancer I (25 of 391 TAL1 cases) drive mono-allelic expression of the short TAL1 isoform from an exon-4 promoter by reactivating a progenitor enhancer, and AlphaGenome did not predict this effect ([[10-Summaries/terekhanova-2026-tal1-enhancer]])
 
 ## Related
 

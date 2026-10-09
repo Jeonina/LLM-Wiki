@@ -4,7 +4,7 @@ title: CpG island
 aliases: [CpG islands, CGI]
 tags: [epigenetics, regulation, methylation]
 created: 2026-05-11
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # CpG island
@@ -42,6 +42,11 @@ Mammalian genomes are globally CpG-depleted (~21% of expected CpG counts), an ar
 
 CpG density is strongly tied to A compartments, which is why CpG-guided single-cell compartment scores (scA/B) collapse toward CpG density at low contact numbers; scDIAGRAM uses CpG density only post hoc to orient A/B labels ([[10-Summaries/peng-2026-scdiagram]]).
 
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Unsupervised GenART token boundaries recover UCSC CpG-island boundaries with recall 0.534 (±1 bp), lower than CDS (0.662) or exon (0.640) boundaries ([[10-Summaries/chen-2026-genart]]).
+- Probing OmniNA layer by layer shows CpG content is best separated at layer 20, while conservation separates at layer 2 and non-B DNA structures at layer 23 — different biology lives at different depths ([[10-Summaries/shen-2026-omnina]]).
 
 ## Related
 

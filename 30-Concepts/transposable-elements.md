@@ -4,7 +4,7 @@ title: Transposable elements
 aliases: [TEs, retrotransposons, LINE-1, SINE Alu, ERVs]
 tags: [genome, repeats, retrotransposition, methylation]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # Transposable elements (TEs)
@@ -31,6 +31,12 @@ Long-read scATAC resolves accessibility of individual repeat copies: 157 of 16,8
 
 Long-read single-cell CUT&Tag resolves histone marks on individual transposable-element copies: 96.5% mappability/discernibility for 320 full-length L1Hs elements with >99% pairwise identity, and K562 cells treated with 5-azacytidine gained H3K27ac on 201 individual repeats, all of the 102 checked having lost DNA methylation ([[10-Summaries/li-2024-scnanoseq-cut-tag]]). H3K4me3-marked L1Md elements peaked at the Sperm1 stage of mouse spermatogenesis ([[10-Summaries/li-2024-scnanoseq-cut-tag]]).
 
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- A human-trained Akita model mispredicts mouse folding where B2 SINEs carry CTCF sites, while a mouse-trained model learns they have little effect, consistent with ChAHP blocking CTCF binding in B2 SINEs ([[10-Summaries/fudenberg-2020-akita]])
+- The DNA language model GROVER learns repeat structure from sequence alone: some BPE tokens localise almost exclusively to repeats, and embeddings of ~2 kb windows separate LINEs, SINEs/Alus, LTRs and satellites by class and orientation ([[10-Summaries/sanabria-2024-grover]])
+- A learned DNA tokenizer (DNAChunker) assigns longer chunks to young, low-divergence SINE copies than to old ones (about 32 vs 17 bp median), so chunk length tracks repeat redundancy ([[10-Summaries/kim-2026-dnachunker]]).
 
 ## Related
 

@@ -4,7 +4,7 @@ title: Pseudo-bulk
 aliases: [aggregation, in-silico bulk]
 tags: [single-cell, aggregation, cluster, analysis]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # Pseudo-bulk
@@ -38,6 +38,13 @@ In sciMET-cap, about 70% of reads fall off target. Aggregated per cluster, they 
 Because scCUT&Tag is so sparse, peak calling and global correlation analyses (e.g. against ENCODE ChIP-seq) are run on pseudobulk profiles, and ChromHMM chromatin states are learned from multi-mark pseudobulk tracks; a dedicated method for matching cells across marks or modalities is still lacking, beyond pseudobulk or metacell aggregation ([[10-Summaries/wu-2026-sccut-tag-review]]).
 
 Cell-type labels can build a matched normal from the same sample. SPLONGGET pools reads from non-tumour cells across time points into a normal pseudobulk and runs tumour–normal ASCAT, Severus and ClairS-TO calling against tumour pseudobulks ([[10-Summaries/pancikova-2025-splongget]]). The authors argue this avoids extra sampling or sorting when no germline control is taken, for example in tumour biopsies ([[10-Summaries/pancikova-2025-splongget]]).
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- ChromBPNet trained on GM12878 pseudobulk scATAC from 11,000 down to ~100 cells imputed profiles and motifs with the same depth trends as bulk subsampling, though rare-motif recall and variant classification drop below ~25 M reads ([[10-Summaries/pampari-2024-chrombpnet]])
+- Single-cell profiles predicted by scooby correlated with observed profiles better than the cell's own pseudobulk did (RNA 0.15 vs 0.09, ATAC 0.11 vs 0.08), but remained far below the 100-nearest-neighbour average used as the upper bound ([[10-Summaries/hingerl-2025-scooby]]).
+- Borzoi's training targets include pseudobulk scATAC tracks from CATlas, and ablations showed that adding DNase/ATAC data to RNA-seq improved test accuracy, eQTL concordance and enhancer–gene linking ([[10-Summaries/linder-2025-borzoi]])
+- Decima trains on pseudobulked sc/snRNA-seq instead of single cells, which lets it scale to more than 22 million cells across 201 cell types and 82 diseases at the cost of collapsing continuous states and donors ([[10-Summaries/lal-2026-decima]]).
 
 ## Related
 

@@ -4,7 +4,7 @@ title: Topologically associating domain (TAD)
 aliases: [TAD, TAD boundary]
 tags: [3D-genome, chromatin, Hi-C]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-09
 ---
 
 # Topologically associating domain (TAD)
@@ -49,6 +49,16 @@ At kilobase resolution, contact domains (called with Arrowhead) range from 40 kb
 
 In a 2025 survey, four tools call TADs from single-cell Hi-C: Higashi, scHiCEmbed, HiCS and DeDoc2. Higashi and scHiCEmbed also do clustering, and Higashi does compartment calling as well ([[10-Summaries/dautle-2025-schic-review]]).
 
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Akita, a sequence-only CNN, finds CTCF the dominant motif for TAD-scale folding (CTCFL second) yet 19.9% of high-impact single-nucleotide changes fall outside CTCF, promoter and enhancer annotations ([[10-Summaries/fudenberg-2020-akita]])
+- A sequence-only model (Enformer) learned to pay less attention across TAD boundaries, a pattern that matches insulation, though this shows correlation rather than causal use ([[10-Summaries/avsec-2021-enformer]])
+- Predicting 4 kb Micro-C from sequence, Evo2HiC beat Orca on distance-stratified Spearman correlation (+10.9%) and insulation-score correlation in H1ESC and HFF, with larger gains at long range ([[10-Summaries/fang-2025-evo2hic]])
+
+## Added 2026-10-09 — foundation-model gap evidence
+
+- Five 1 Mb recurrently disrupted regions with predicted TAD-boundary or loop loss were found across paediatric tumours; only three were also mutation hotspots, so predicted 3D disruption flagged regions that recurrence counting missed ([[10-Summaries/gjoni-2026-pediatric-tumor-3d]])
 
 ## Related
 

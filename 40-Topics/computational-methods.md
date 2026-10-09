@@ -4,7 +4,7 @@ title: Computational Methods
 aliases: [bioinformatics tooling, analysis pipelines, computational infrastructure]
 tags: [pipelines, algorithms, tools, infrastructure]
 created: 2026-08-10
-updated: 2026-10-07
+updated: 2026-10-08
 paper_section: ["4.2"]
 ---
 
@@ -63,6 +63,10 @@ Method choice is not neutral. Seven TAD callers disagree on the same contact mat
 
 - [[10-Summaries/argelaguet-2018-mofa]] — MOFA: sparse Bayesian group factor analysis for multi-omics integration with native handling of missing assays and non-Gaussian data; the origin of the MOFA/MOFA+ family.
 - [[10-Summaries/fan-2026-gfetm]] — GFETM: embedded topic model jointly trained with a genome foundation model for transferable, sequence-informed scATAC-seq modeling; parity with scBasset on clustering, gains on unseen cells/peaks and transfer (bioRxiv v3 full text).
+
+## Added 2026-10-08
+
+- Sequence models and foundation models now have their own hub, [[40-Topics/sequence-models-and-foundation-models]], covering 64 sequence-to-function models, DNA language models and single-cell epigenome/multimodal foundation models; GFETM above is one of the first to put a DNA language model inside a scATAC model ([[10-Summaries/fan-2026-gfetm]]).
 
 ## Related
 

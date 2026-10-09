@@ -4,7 +4,7 @@ title: Chromatin compartments
 aliases: [A/B compartments]
 tags: [3D-genome, Hi-C, chromatin]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # Chromatin compartments
@@ -40,6 +40,10 @@ Aggregated single-cell A/B values over marker-gene bodies were used to annotate 
 
 At 25 kb resolution, A/B compartments split into at least six subcompartments (A1, A2, B1–B4), defined by interchromosomal contact patterns alone ([[10-Summaries/rao-2014-in-situ-hic]]). Each has a distinct epigenomic profile: B1 tracks H3K27me3, B2 holds 62% of pericentromeric heterochromatin and is NAD-enriched, B3 is lamina-enriched but NAD-depleted, and B4 is a chr19 KRAB-ZNF cluster ([[10-Summaries/rao-2014-in-situ-hic]]).
 
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Orca, trained only on contact maps, learned to recognise active TSS sequences as compartment-A drivers and treats B as the default for extended AT-rich sequence, a hypothesis yet to be tested experimentally ([[10-Summaries/zhou-2022-orca]])
 
 ## Related
 

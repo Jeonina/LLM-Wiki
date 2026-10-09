@@ -1,7 +1,7 @@
 ---
 title: Concepts
 description: Definitions, methods, and theoretical ideas referenced across the wiki.
-updated: 2026-08-10
+updated: 2026-10-08
 ---
 
 # Concepts
@@ -232,3 +232,11 @@ Each entry links to its definition page. Grouped by domain.
 - [[30-Concepts/micro-c]] — Micro-C is a Hi-C variant that fragments crosslinked chromatin into mononucleosomes with micrococcal nuclease before…
 - [[30-Concepts/non-cg-methylation]] — Cytosine methylation outside CpG context (CA, CT, CC; mostly CAC in mammals), abundant in brain and used as a…
 - [[30-Concepts/whole-genome-doubling]] — Whole-genome doubling (WGD) is the duplication of an entire chromosome complement in a cell lineage, found in more than 30%…
+
+## Sequence models & foundation models (added 2026-10-08)
+
+- [[30-Concepts/sequence-to-function-model]] — supervised prediction of chromatin, expression and contact tracks from DNA sequence (DeepSEA → AlphaGenome).
+- [[30-Concepts/dna-language-model]] — self-supervised models pretrained on DNA sequence alone (DNABERT → Evo 2).
+- [[30-Concepts/single-cell-foundation-model]] — pretrained models of single-cell accessibility, methylation, Hi-C and RNA+ATAC.
+- [[30-Concepts/genomic-tokenization]] — k-mers, BPE, single nucleotides, learned chunks, variant and region tokens.
+- [[30-Concepts/variant-effect-prediction]] — scoring variants from predicted tracks, likelihoods or embeddings.

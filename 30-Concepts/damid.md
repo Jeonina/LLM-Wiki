@@ -4,7 +4,7 @@ title: DamID
 aliases: [DNA adenine methyltransferase identification, scDamID]
 tags: [protein-DNA-contact, m6A, GATC, DpnI, lamina, single-cell]
 created: 2026-05-15
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # DamID (DNA adenine methyltransferase identification)
@@ -50,6 +50,10 @@ updated: 2026-10-07
 
 Later tethered-enzyme methods position themselves against DamID's GATC-limited resolution: CUT&RUN uses antibody-tethered MNase with near base-pair footprints ([[10-Summaries/skene-2017-cut-and-run]]), and DeChIC-seq uses an antibody-tethered deaminase whose TC-context edits survive WGA for single-cell use ([[10-Summaries/shi-2026-dechic-seq]]).
 
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- In a TRIP reporter test, Borzoi's sequence-based DNase predictions at insertion sites correlated with reporter expression (Spearman R = 0.58 for ARHGEF9) better than LMNB1 DamID, which the authors treat as a strong position-effect baseline ([[10-Summaries/linder-2025-borzoi]])
 
 ## Related
 

@@ -4,7 +4,7 @@ title: Clonal hematopoiesis
 aliases: [CH, CHIP, clonal hematopoiesis of indeterminate potential, MPN]
 tags: [clonal-hematopoiesis, MPN, JAK2, DNMT3A, TET2, CALR, hematology, mosaicism, mutation, aging]
 created: 2026-05-19
-updated: 2026-10-07
+updated: 2026-10-09
 paper_section: ["5.3"]
 ---
 
@@ -73,6 +73,10 @@ Most common drivers ([[10-Summaries/forsberg-2017-mosaicism-review]]):
 ## Added 2026-10-07
 
 mtDNA tracing of 7,474 bone-marrow HSPCs and 8,591 blood cells from one healthy 47-year-old donor resolved 257 clones, 92% holding <1% of cells, with no detectable lineage bias ([[10-Summaries/ludwig-2020-mtscatac-seq]]).
+
+## Added 2026-10-09 — foundation-model gap evidence
+
+- An age-association scan of ~490K UK Biobank blood genomes found 35 novel putative CH drivers, 32 of them noncoding, including a TERT promoter mutation with fitness similar to splicing-factor CH; non-canonical mutations carried on average 47% of CH's liability-scale disease variance ([[10-Summaries/weinstock-2025-ch-noncoding-drivers]])
 
 ## Related
 

@@ -4,7 +4,7 @@ title: Replication timing
 aliases: [DNA replication timing, RT]
 tags: [replication, S-phase, chromatin, scEdU-seq]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # Replication timing
@@ -22,6 +22,10 @@ Late-replicating regions show more hemi-methylation in early-passage fibroblasts
 
 Somatic SNVs in single postmitotic PFC neurons were depleted from late-replicating domains and enriched in transcribed regions. Single PBMCs showed the opposite pattern (late-replication enrichment, transcribed-region depletion), which points to HSPC origin for blood-cell mutations and transcription-associated damage for neuronal ones ([[10-Summaries/xing-2021-meta-cs]]).
 
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- GROVER's window embeddings, trained only on hg19 sequence, assign distinct territories to K562 replication timing and recover the anticorrelation between LINE orientation and replication direction ([[10-Summaries/sanabria-2024-grover]])
 
 ## Related
 

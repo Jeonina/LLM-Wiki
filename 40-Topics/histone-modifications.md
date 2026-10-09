@@ -4,7 +4,7 @@ title: Histone modifications
 aliases: [chromatin marks, post-translational modifications, PTMs, single-cell chromatin, histone marks]
 tags: [chromatin, epigenetics, H3K27me3, H3K4me3, CUT&Tag, ChIC, MNase, enhancers, promoters]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-09
 paper_section: ["3.4"]
 ---
 
@@ -120,6 +120,15 @@ Histone marks are not independent of other regulatory axes:
 In P19 mouse oligodendrocyte differentiation, H3K27me3 is deposited in two waves: first at neuronal genes, then at neuronal and OPC genes such as *Sox5*, *Sox6* and *Ptprz1* ([[10-Summaries/bartosovic-2022-nano-cut-tag]]).
 
 Single-cell H3K4me3 shows promoter breadth increasing along OPC → mature oligodendrocyte differentiation ([[10-Summaries/bartosovic-2021-sccut-tag]]).
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- EpiGePT predicts H3K27ac, H3K4me1, H3K4me3, H3K36me3, H3K27me3 and H3K9me3 tracks from sequence plus a TF-expression context vector, including in cell types it never saw during training ([[10-Summaries/gao-2024-epigept]]).
+
+## Added 2026-10-09 — foundation-model gap evidence
+
+- CANDI (2025 preprint) is a self-supervised transformer that imputes and denoises bulk histone ChIP-seq and accessibility tracks from ENCODE, but it is trained and tested only on bulk data, with no single-cell input ([[10-Summaries/foroozandeh-2025-candi]])
+- A 2025 benchmark (SCIBED) of 10 scRNA/scATAC imputers on sortChIC and scCUT&Tag mouse data found no method that improves both signal and clustering of single-cell histone data, and found no scHPTM-specific or pretrained model to test ([[10-Summaries/morenogonzalez-2025-schistone-imputation]])
 
 ## Related
 

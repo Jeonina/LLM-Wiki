@@ -4,7 +4,7 @@ title: Structural variants
 aliases: [SVs, large genomic rearrangements]
 tags: [genome, SV, CNV, inversion, translocation, cancer]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-09
 ---
 
 # Structural variants (SVs)
@@ -55,6 +55,16 @@ BreakDancer calls SVs from short-insert paired-end reads in two complementary wa
 Long reads from a single-cell Multiome library can resolve transgene integration. SPLONGGET assembled the ~5 kb tisagenlecleucel (CTL019) CAR vector de novo with Flye from LTR-containing reads, then used supplementary alignments to place integration sites across nearly all chromosomes, consistent with a polyclonal CAR-T population ([[10-Summaries/pancikova-2025-splongget]]). Severus called 1,362 somatic SVs from pseudobulks of the same B-ALL samples ([[10-Summaries/pancikova-2025-splongget]]).
 
 Current duplex methods cannot detect CNVs or SVs because chimeric-read background exceeds the true somatic SV rate, and only Illumina-based duplex methods support indel calling ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Orca predicts multiscale 3D effects of SVs by comparing reference and variant chromosome sequences up to 256 Mb, reproducing TAD fusion, enhancer hijacking and new-boundary insulation at PAX3/WNT6/IHH and KCNJ2–SOX9 ([[10-Summaries/zhou-2022-orca]])
+- DeepGene's authors motivate pangenome-graph pretraining by the pan-genome's capture of SNPs, insertions, deletions and structural variants across individuals, but every downstream task is fine-tuned on linear sequences and the paper reports no variant-level evaluation showing the model uses that information ([[10-Summaries/zhang-2025-deepgene]]).
+- DNAChunker's learned tokenization stays more stable than BPE under GIAB HG002 Tier1 SVs across all size bins from <50 bp to >5 kbp, though similarity falls to about 0.3 for SVs >5 kbp ([[10-Summaries/kim-2026-dnachunker]]).
+
+## Added 2026-10-09 — foundation-model gap evidence
+
+- Akita-based in-silico mutagenesis (SuPreMo) has been run on about 300,000 somatic SVs from paediatric brain tumours, including translocations, but the predicted contact disruptions were not validated against tumour Hi-C ([[10-Summaries/gjoni-2026-pediatric-tumor-3d]])
 
 ## Related
 

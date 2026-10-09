@@ -4,7 +4,7 @@ title: Allele dropout
 aliases: [ADO, allelic dropout]
 tags: [single-cell, scWGA, amplification-bias]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # Allele dropout (ADO)
@@ -39,6 +39,10 @@ The G&T-seq developers state that physically separating mRNA from gDNA "may cont
 Droplet targeted scDNA-seq measured allele dropout in each run from a ~1% Raji spike-in, at 8.7% ± 1.1% across nine heterozygous variants in six runs ([[10-Summaries/pellegrino-2018-tapestri]]). LIANTI amplifies the genome evenly yet shows MDA-like allelic skew, whereas PTA greatly reduces dropout and skew ([[10-Summaries/gonzalez-pena-2021-pnas]]).
 
 Because NOMe-seq recovers DNA whether or not it is accessible, scNOMe-seq can tell closed chromatin from read loss, which count-based scATAC-seq cannot ([[10-Summaries/pott-2017-elife]]).
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Diploid DNA language models such as DNT encode each heterozygous site as one allele-pair token, so single-cell allele dropout would enter such a model as a false homozygous token; this interaction is untested (synthesis) ([[10-Summaries/leib-2026-dnt]]).
 
 ## Related
 

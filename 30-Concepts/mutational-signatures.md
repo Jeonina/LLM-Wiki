@@ -4,7 +4,7 @@ title: Mutational signatures
 aliases: [SBS signatures, COSMIC signatures]
 tags: [somatic-mutation, mutational-process, cancer, aging]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-09
 ---
 
 # Mutational signatures
@@ -51,6 +51,10 @@ With low-false-positive single-cell calls, NMF found three signatures in 53 PBMC
 
 
 A clocklike signature resembling cancer Signature 5 rises with age in postmitotic neurons (P = 1×10⁻¹¹), so this clocklike process does not require DNA replication ([[10-Summaries/lodato-2017-aging-neurons]]).
+
+## Added 2026-10-09 — foundation-model gap evidence
+
+- MutationProjector feeds seven dominant mutational signatures (MESiCA for panels, SigProfiler for WES/WGS) as covariate nodes connected to all genes, and APOBEC signature emerged as a metastasis-predictive feature ([[10-Summaries/kong-2026-mutationprojector]])
 
 ## Related
 

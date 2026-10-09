@@ -1,7 +1,7 @@
 ---
 title: Topics
 description: Broad themes that gather concepts and entities across the wiki.
-updated: 2026-08-10
+updated: 2026-10-08
 ---
 
 # Topics
@@ -32,3 +32,7 @@ Themes broader than a single concept. Each topic page gathers the concepts, enti
 ## Added 2026-08-10
 
 - [[40-Topics/computational-methods]] — the tool layer: aligners, formats, callers, imputers, integrators, network inference, and the cross-cutting tensions between them.
+
+## Added 2026-10-08
+
+- [[40-Topics/sequence-models-and-foundation-models]] — §4.4 hub: sequence-to-function models, DNA language models, single-cell epigenome and multimodal foundation models (64 papers).

@@ -4,7 +4,7 @@ title: Trajectory Inference
 aliases: [pseudotime, pseudotemporal ordering, lineage trajectory, RNA velocity]
 tags: [trajectory, pseudotime, PAGA, Monocle, development]
 created: 2026-08-10
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # Trajectory Inference
@@ -47,6 +47,10 @@ In transplanted mammary basal cells at day 4.5, H3K4me1-based diffusion pseudoti
 
 Bootstrap-supported Slingshot trajectories on archival FFPE scATAC gene-activity embeddings (branches recovered in 83–97.5% of 1000 bootstraps) were used to propose two epithelial paths from tumor center to invasive edge and two normal-B-to-tumor paths in follicular lymphoma relapse ([[10-Summaries/yadav-2025-scffpe-atac]]).
 
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Diffusion pseudotime on layer-aggregated scDNAm-GPT embeddings ordered human (280 cells) and mouse (240 cells) oocyte-to-blastocyst stages better than raw methylation ratios, even though the model was fine-tuned only on cell-type labels ([[10-Summaries/liang-2025-scdnam-gpt]]).
 
 ## Related
 

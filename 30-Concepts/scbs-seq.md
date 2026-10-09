@@ -4,7 +4,7 @@ title: scBS-seq
 aliases: [single-cell bisulfite sequencing, single-cell whole-genome bisulfite sequencing]
 tags: [methylation, single-cell, bisulfite, genome-wide]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # scBS-seq
@@ -34,6 +34,10 @@ scDEEP-mC is a PBAT descendant that sorts cells directly into bisulfite reagent 
 
 **Statistical consequences of sparsity.** Regional per-cell methylation rates concentrate at exactly 0 or 1 (over 0.9 combined in an embryo scBS-seq dataset), which scDMV models with a zero–one inflated beta for DMR testing ([[10-Summaries/zhou-2024-scdmv]]); in its simulations the bulk caller methylpy flagged 999 of 1,000 null regions at P ≤ 0.01 without an effect-size cutoff ([[10-Summaries/zhou-2024-scdmv]]). Imputation is the other response: MambaCpG reports AUC 91.42–94.20 on scBS-seq and snmC-seq datasets of 20–780 cells ([[10-Summaries/zhao-2025-mambacpg]]).
 
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- scDNAm-GPT models scWGBS data at single-CpG resolution instead of 100-kb or 5-kb bins and reports 80.5–87.1% cell-type accuracy on four datasets unseen in pretraining ([[10-Summaries/liang-2025-scdnam-gpt]]).
 
 ## Related
 

@@ -4,7 +4,7 @@ title: Single-cell DNA sequencing (scDNA-seq)
 aliases: [single-cell DNA sequencing, scDNA-seq, scDNAseq]
 tags: [single-cell, scDNA-seq, methods]
 created: 2026-05-11
-updated: 2026-06-29
+updated: 2026-10-09
 paper_section: ["3.1"]
 ---
 
@@ -110,6 +110,10 @@ _None yet — natural promotion targets: (a) droplet-scale vs single-molecule sc
 - Cost: can single-cell duplex sequencing be made cost-competitive for cohort-scale studies? (synthesis)
 - How well does imputation-based multi-omic integration (e.g., GoT–ChA + DOGMA via mt-variant bridges) generalize beyond MPN?
 - Is there a "single-molecule, per-fiber" extension of GoT / GoT–ChA waiting to be built — the analog to what DAF-seq is to Fiber-seq?
+
+## Added 2026-10-09 — foundation-model gap evidence
+
+- CoT reshapes per-cell bin counts into chunked tokens for a six-layer transformer autoencoder, and on simulated tetraploid data with 19 clones it reached mean ARI 0.99 against 0.97 for the convolutional rcCAE ([[10-Summaries/liu-2024-cot]])
 
 ## Related
 

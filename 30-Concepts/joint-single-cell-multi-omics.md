@@ -4,7 +4,7 @@ title: Joint single-cell multi-omics
 aliases: [joint multi-omics, paired multi-omics, same-cell multi-modal]
 tags: [single-cell, multiomics, paired-measurement]
 created: 2026-05-19
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # Joint single-cell multi-omics
@@ -43,6 +43,12 @@ sciMET+ATAC obtains chromatin accessibility and genome-wide methylation from the
 Re-analysis of public scHi-C datasets found that multi-omic scHi-C protocols, such as sn-m3C-seq and HiRES, capture as many contacts per cell, with similar cis/trans ratios, as protocols that measure contacts only (no significant difference) ([[10-Summaries/dautle-2025-schic-review]]).
 
 An early factor-model analysis of same-cell transcriptome + methylome data (scM&T-seq, 87 mESCs) found one factor shared across RNA and methylation at promoters, enhancers and CpG islands, explaining 7% of RNA variance but 53–72% of methylation variance and tracking the naive → primed pluripotency transition ([[10-Summaries/argelaguet-2018-mofa]]).
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Borzoi's authors found that accessibility data improved RNA-seq predictions and proposed single-cell multiome (ATAC + RNA) data as valuable joint training data for sequence-to-function models ([[10-Summaries/linder-2025-borzoi]])
+- Because truly paired RNA+ATAC data are scarce, scMomer pretrains its fusion stage on scCLIP's pseudo-paired fetal atlas (RNA and ATAC cells matched only by cell-type label) and then distils ATAC knowledge into an RNA-only path ([[10-Summaries/liu-2025-scmomer]])
+- scDynOmics pretrains on 752,155 public mouse joint RNA+ATAC cells (SHARE-seq, SNARE-seq, sci-CAR, Paired-seq, ISSAAC-seq, 10x Multiome), treating promoter accessibility as analogous to unspliced pre-mRNA in an RNA-velocity view ([[10-Summaries/yu-2026-scdynomics]])
 
 ## Related
 

@@ -4,7 +4,7 @@ title: Chromatin loop
 aliases: [chromatin loops, enhancer-promoter loop, loop calling, HiCCUPS]
 tags: [3D-genome, chromatin-loop, loop-extrusion, CTCF, enhancer-promoter]
 created: 2026-08-13
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # Chromatin loop
@@ -54,6 +54,11 @@ A 2025 survey names SnapHiC2 as the only pipeline built to call loops from singl
 
 
 In budding yeast, Micro-C found contacts spread through gene bodies rather than preferential promoter–terminator contacts. Compaction also fell with transcription, the opposite of reported gene loops, so the authors favour "gene crumples" (globules); the gene-looping factor mutant *ssu72-2* only modestly reduced global compaction ([[10-Summaries/hsieh-2015-micro-c]]).
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Training EpiGePT with a cosine loss that aligns attention maps with HiChIP loops raised enhancer–promoter auPRC on Gasperini CRISPRi pairs at 24–40 kb from 0.652 to 0.695 ([[10-Summaries/gao-2024-epigept]]).
+- Fine-tuned for loop calling, HiCFoundation reached mean F1 81.6% on deep maps and 75.1% on 1/16-downsampled maps against consensus HiCCUPS loops, with 90.4% and 81.8% of its calls CTCF-supported at both anchors ([[10-Summaries/wang-2026-hicfoundation]]).
 
 ## Related
 

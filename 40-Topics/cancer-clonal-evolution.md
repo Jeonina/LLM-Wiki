@@ -4,7 +4,7 @@ title: Cancer clonal evolution
 aliases: [tumor clonal evolution, cancer phylogeny, tumor evolution]
 tags: [cancer, clonal-evolution, phylogeny, intratumor-heterogeneity]
 created: 2026-05-19
-updated: 2026-10-07
+updated: 2026-10-09
 paper_section: ["5.1"]
 ---
 
@@ -53,6 +53,11 @@ paper_section: ["5.1"]
 - [[10-Summaries/pancikova-2025-splongget]] — longitudinal single-cell CNAs, pseudobulk SVs/SNVs and parallel evolution of CD19 immune-escape alleles in B-ALL under CAR-T selection (preprint).
 
 Over a 3-year remission, an IDH2/NRAS/ASXL1 triple-mutant AML clone expanded from 7% to 64% ([[10-Summaries/pellegrino-2018-tapestri]]). In colorectal patient CRC2, allowing elimination of one ISA-violating mutation (*ATP7B*) changed the inferred number of metastatic seeding events from two to one ([[10-Summaries/malikic-2019-phiscs]]).
+
+## Added 2026-10-09 — foundation-model gap evidence
+
+- DNA language-model features have been used to classify somatic cancer point mutations as driver or passenger: GenomeBert + XGBoost reached AUROC 84.64% on a 71-mutation in vivo xenograft oncogenicity set ([[10-Summaries/zeng-2025-somatic-driver-lm]])
+- Bulk cancer-genome foundation models such as TESSERA learn from purity-adjusted, sample-level copy-number segments and so encode no subclonal or cell-level structure, which leaves clone-resolved genotype modelling to single-cell methods ([[10-Summaries/sidhom-2026-tessera]])
 
 ## Related
 

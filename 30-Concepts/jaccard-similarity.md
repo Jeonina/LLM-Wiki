@@ -4,7 +4,7 @@ title: Jaccard similarity
 aliases: [Jaccard index]
 tags: [similarity-metric, set-theory, clustering]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # Jaccard similarity
@@ -20,6 +20,10 @@ updated: 2026-10-07
 
 scCASE initialises its learned cell-to-cell similarity matrix from the cell–cell Jaccard similarity of the scCAS matrix ([[10-Summaries/tang-2024-sccase]]). The authors report that random initialisation of Z still converges but enhances the data less well ([[10-Summaries/tang-2024-sccase]]).
 
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- SegmentNT reports per-nucleotide Jaccard similarity alongside MCC, auPRC and F1 when scoring multilabel genome segmentation ([[10-Summaries/dealmeida-2025-segmentnt]]).
 
 ## Related
 

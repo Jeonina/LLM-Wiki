@@ -4,7 +4,7 @@ title: Gene Regulatory Network
 aliases: [GRN, eGRN, regulon, eRegulon, network inference]
 tags: [GRN, transcription-factors, enhancers, network-inference, perturbation]
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-08
 ---
 
 # Gene Regulatory Network
@@ -35,6 +35,11 @@ The strongest argument for network reasoning: *Gata1*'s mild phenotype in early 
 - Binding is not regulation — predicted enhancer-gene links are validated against TF-binding ChIP-seq, not against functional perturbation of the enhancer ([[bravo-2023-scenicplus]]).
 - Motif-based assignment cannot distinguish family members sharing a motif ([[bravo-2023-scenicplus]]).
 - A substantial minority of inferred edges are wrong at reported AUROCs, and how that error propagates through iterative signal propagation is uncharacterized ([[kamimoto-2023-celloracle]]).
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Running LiNGAM causal discovery on GET's gene-by-motif importance matrix gave 25.2% precision for its top 1% of TF–TF pairs against STRING (random 5.6%), and led to a PAX5–NR2C2 interaction that was confirmed by BioID and strengthened by the B-ALL risk variant G183S ([[10-Summaries/fu-2025-get]]).
+- scDynOmics sizes its low-rank attention space by TF regulon count (no cell expressed more than 700 TFs) and uses Integrated-Gradients attribution to prioritise Pou5f1, Jdp2 and Mbd3 in a 48 h vs 52 h mESC transition, genes that DE analysis missed ([[10-Summaries/yu-2026-scdynomics]])
 
 ## Related
 

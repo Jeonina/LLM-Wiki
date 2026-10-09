@@ -4,7 +4,7 @@ title: "Micro-C"
 aliases: []
 tags: []
 created: 2026-10-07
-updated: 2026-10-07
+updated: 2026-10-08
 sources: ["[[10-Summaries/hsieh-2015-micro-c]]"]
 ---
 
@@ -27,6 +27,10 @@ The original protocol uses MNase digestion to >95% mononucleosomes, biotin end-l
 - CID boundaries fall mostly at +1 nucleosomes of promoters (~40% of boundary nucleosomes vs ~7% genome-wide), enriched for H3K18ac, H3K4me3, histone turnover, RSC and the cohesin loader Scc2 ([[10-Summaries/hsieh-2015-micro-c]]).
 - Gene compaction is anticorrelated with transcription (r = −0.56), but transcription explains only 31% of its variance ([[10-Summaries/hsieh-2015-micro-c]]). Mediator (*med1Δ*), Rtt109 and Rpd3 loss decompact genes independently of mRNA changes, while RSC and Scc2 inactivation compact them ([[10-Summaries/hsieh-2015-micro-c]]).
 - Contact decay has no 30-nm periodicity, but N/N+1 and N/N+2 contacts are similarly abundant, consistent with a sparse tri-/tetranucleosome motif; the H4 N-terminal tail is needed for folding signal ([[10-Summaries/hsieh-2015-micro-c]]).
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- AlphaGenome's contact-map head, trained on Hi-C/Micro-C, beat Orca by 6.3% in contact-map Pearson r and 42.3% on cell-type-specific differences ([[10-Summaries/avsec-2026-alphagenome]])
 
 ## Related
 

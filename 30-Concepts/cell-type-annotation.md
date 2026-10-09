@@ -4,7 +4,7 @@ title: Cell Type Annotation
 aliases: [cell typing, marker genes, label transfer, cell identity]
 tags: [annotation, markers, atlases, cell-identity]
 created: 2026-08-10
-updated: 2026-10-07
+updated: 2026-10-08
 ---
 
 # Cell Type Annotation
@@ -41,6 +41,14 @@ An early regulome approach labelled single cells by similarity of aggregated scA
 
 For scATAC-seq, PeakVI supports both scArches-style reference mapping and de novo annotation via cluster-marker differential accessibility plus gene-signature enrichment ([[10-Summaries/ashuach-2022-peakvi]]). EpiAgent's zero-shot annotators reach accuracy above 0.88 (brain) and 0.95 (non-brain) on held-out datasets ([[10-Summaries/chen-2025-epiagent]]).
 
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Fine-tuned CLM-access reached macro-F1 0.544 and 0.674 on two ~70k-cell scATAC datasets, against 0.361/0.547 for scATAnno and 0.343/0.396 for Cellcano ([[10-Summaries/liu-2025-clm-access]]).
+- A logistic-regression probe on frozen SCARF embeddings trained on 10% of BMMC cells reached >0.75 accuracy, macro F1, recall and precision on the other 90%, beating scFoundation ([[10-Summaries/liu-2025-scarf]])
+- With an MLP head on mostly frozen embeddings, scMomer reached 0.808 accuracy and 0.703 F1 on Zheng68K, against 0.768 and 0.647 for its scBERT backbone ([[10-Summaries/liu-2025-scmomer]])
+- A gated RNA/ATAC fusion head on CLM-X reached macro F1 88.24% on four 10x PBMC multiome sets, against 85.44% for Seurat WNN and 67.45% for CLM-X ATAC-only ([[10-Summaries/li-2026-clm-x]])
+- On mouse gastrulation, multiome-pretrained scDynOmics fine-tuned on spliced/unspliced RNA reached 0.82 median 10-fold accuracy, against 0.78 without pretraining and 0.82 for a tuned scANVI ([[10-Summaries/yu-2026-scdynomics]])
 
 ## Related
 

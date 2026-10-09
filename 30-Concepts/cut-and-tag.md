@@ -4,7 +4,7 @@ title: CUT&Tag
 aliases: [Cleavage Under Targets and Tagmentation]
 tags: [histone-modifications, Tn5, Henikoff-lab, in-situ]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-09
 ---
 
 # CUT&Tag
@@ -54,6 +54,10 @@ A 2026 review catalogues 21 public scCUT&Tag-family datasets (2019–2025) spann
 Droplet scCUT&Tag runs bulk CUT&Tag with 1% BSA against nuclear clumping, then loads tagmented nuclei into the 10x scATAC kit with its transposition step skipped, giving a median 98–453 unique fragments per cell across four histone marks in 47,340 mouse brain cells ([[10-Summaries/bartosovic-2021-sccut-tag]]).
 
 nano-CUT&Tag tagments first with P5-only adapters and linearly amplifies before a second P7 tagmentation, so single-insertion fragments become library molecules; H3K27me3 fragments per cell rose 15.8-fold over scCUT&Tag while FrIP fell from 69% to 39% ([[10-Summaries/bartosovic-2022-nano-cut-tag]]).
+
+## Added 2026-10-09 — foundation-model gap evidence
+
+- On Bartosovic 2021 mouse-brain scCUT&Tag downsampled to about 1,000 reads per cell, only scImpute raised H3K4me3 signal at neuronal ChIP-seq peaks, while scOpen and SCALEX improved clustering but spread Mbp signal into other clusters ([[10-Summaries/morenogonzalez-2025-schistone-imputation]])
 
 ## Related
 

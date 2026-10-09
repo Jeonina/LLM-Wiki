@@ -4,7 +4,7 @@ title: DNA methylation
 aliases: [5mC, cytosine methylation, methylation]
 tags: [methylation, epigenetics, regulation]
 created: 2026-05-11
-updated: 2026-10-07
+updated: 2026-10-08
 paper_section: ["3.3"]
 ---
 
@@ -161,6 +161,12 @@ scBS-seq, scRRBS, snmC-seq2, and sciMETv2 are sparse but compatible with multi-o
 - [[10-Summaries/zhou-2024-scdmv]] — scDMV: zero-one inflated beta model for single-cell DMR detection.
 - [[10-Summaries/acharya-2024-scimet-cap]] — sciMET-cap: targeted capture cuts single-cell methylome sequencing to ~200–275k reads per cell; cluster on targets, call DMRs genome-wide from pooled off-target reads.
 
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Bulk-methylation foundation models arrived in 2024: CpGPT, trained on 155k Illumina-array samples, imputes unmeasured CpGs across array platforms and species by keying each locus with a DNA-language-model embedding ([[10-Summaries/delimacamillo-2024-cpgpt]]).
+- MethylGPT, a concurrent bulk methylation foundation model trained on 49,156 EWAS-selected array CpGs, predicts age and 10-year risk of 60 diseases (test AUC 0.72 in Generation Scotland) ([[10-Summaries/ying-2024-methylgpt]]).
+- scDNAm-GPT is the first foundation model pretrained on single-cell methylomes: a Mamba backbone reads every covered CpG of a cell (up to about 20M tokens) without genomic binning ([[10-Summaries/liang-2025-scdnam-gpt]]).
 
 ## Related
 

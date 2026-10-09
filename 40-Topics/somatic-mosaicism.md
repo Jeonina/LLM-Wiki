@@ -4,7 +4,7 @@ title: Somatic mosaicism
 aliases: [somatic mosaicism, mosaicism, post-zygotic mosaicism]
 tags: [mosaicism, genetics, development, aging, post-zygotic]
 created: 2026-05-11
-updated: 2026-10-07
+updated: 2026-10-09
 paper_section: ["5.2"]
 ---
 
@@ -200,6 +200,10 @@ _None yet._
 - [[10-Summaries/wang-2024-wellda-seq]] — wellDA-seq: same-cell CNA + chromatin accessibility; in two normal breasts, 0.75% and 0.45% of cells were aneuploid, all LumSec, all with chr1q gain; in ER+ tumours, chrX-loss T cells and pericytes. A genome-wide CNA (not SNV) instance of the mosaicism × epigenome pairing.
 
 Haplotype-phased targeted Fiber-seq showed that a somatically unstable DMPK CTG expansion of >1000 repeats ablates a putative SIX5 enhancer and halves CTCF occupancy (52% to 24% of fibers), while a ~60-repeat allele shows no change ([[10-Summaries/bohaczuk-2024-targeted-fiberseq]]).
+
+## Added 2026-10-09 — foundation-model gap evidence
+
+- One preprint applied AlphaGenome to the Cagan 2022 normal colonic-crypt mutation catalogue and found predicted transcriptional effects far below the aging program, along with a CDS-depletion signature of purifying selection (12× for mouse indels), though the predictions were never checked against measured effects ([[10-Summaries/fischbach-2026-alphagenome-aging]])
 
 ## Related
 

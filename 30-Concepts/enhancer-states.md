@@ -4,7 +4,7 @@ title: Enhancer states
 aliases: [active enhancer, primed enhancer, poised enhancer]
 tags: [enhancers, histone-modifications, regulatory-elements]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-09
 ---
 
 # Enhancer states
@@ -47,6 +47,16 @@ An earlier T-cell atlas reported all three H3K4 methylation states, H2A.Z and H3
 
 ChromHMM applied to pseudobulk scCUT&Tag tracks of six histone marks in human PBMC recovers promoter, enhancer, repressive and heterochromatin states, with cell-type-specific differences such as broader repressive-domain coverage in monocytes ([[10-Summaries/wu-2026-sccut-tag-review]]).
 
+
+## Added 2026-10-08 — sequence models & foundation models
+
+- Basenji gradient saliency on 128 bp bins recovered ENCODE GM12878 enhancers (KS P = 2e-183) and gave signed scores, showing that promoters often contain repressive segments ([[10-Summaries/kelley-2018-basenji]])
+- Sei finds enhancer sequence classes under bidirectional selection (both gains and losses of activity are depleted among common variants), unlike CTCF classes where only losses are strongly constrained ([[10-Summaries/chen-2022-sei]])
+- CREsted designed cardiac and somatic-muscle enhancers by in silico evolution with an L2 target-vector cost, and all of them were specifically active in zebrafish embryos; only one of three endothelial designs was both strong and specific ([[10-Summaries/kempynck-2026-crested]]).
+
+## Added 2026-10-09 — foundation-model gap evidence
+
+- In T-ALL xenografts, somatic indels or ITDs reactivate a TAL1 enhancer that is open in HSCs and progenitors but closed in mature T cells, with H3K27ac on the mutant haplotype and H3K27me3 on the wild-type haplotype at the exon-4 promoter ([[10-Summaries/terekhanova-2026-tal1-enhancer]])
 
 ## Related
 

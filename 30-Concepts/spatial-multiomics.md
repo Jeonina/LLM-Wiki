@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Spatial multi-omics는 조직을 해리하지 않고 위치 정보를 유지한 채 발현·염색질·단백질을 측정하는 방법이며, imaging 기반과 NGS 기반 두 계열이 해상도와 측정 폭을 서로 맞바꾼다 ([[10-Summaries/vandereyken-2023-scmultiomics-review|Vandereyken 2023]]). Spatial epigenome assay가 아직 드물어서, 위치가 없는 single-cell 데이터를 공간에 붙이는 계산 방법이 그 빈자리를 메우고 있다 ([[10-Summaries/biancalani-2021-tangram|Tangram]]; [[10-Summaries/debnath-2026-ison|ISON]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 multi-omics](../60-Explainers/single-cell-multiomics.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Spatial multi-omics methods fall into two families ([[10-Summaries/baysoy-2023-multiomics-landscape|Baysoy 2023]]; [[10-Summaries/vandereyken-2023-scmultiomics-review|Vandereyken 2023]]):

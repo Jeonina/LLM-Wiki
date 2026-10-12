@@ -14,6 +14,17 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > 단일세포 계통 추론은 CRISPR 편집이나 체세포 변이 같은 유전되는 표지로부터 세포 분열 tree를 복원하는 일이며, 대부분의 기준에서 NP-hard라 휴리스틱 탐색에 기대야 한다 ([[10-Summaries/wang-2026-multimodal-lineage-computational|Wang 2026]]; [[10-Summaries/lahnemann-2020-grand-challenges|Lähnemann 2020]]). 방법들은 어떤 진화 모델을 가정하는지와 어떻게 탐색하는지로 나뉘고, 모델 선택은 돌연변이 과정에 대한 주장이다 ([[10-Summaries/foroughmand-2022-scelestial|Scelestial]]; [[10-Summaries/el-kebir-2018-sphyr|SPhyR]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [종양 계통수 시뮬레이터](../60-Explainers/cancer-clonal-evolution.html)
+>
+> [분석 도구 교재](../60-Explainers/computational-methods.html)
+>
+> [암 연구의 scDNA-seq 교재](../60-Explainers/scdna-cancer-applications.html)
+>
+> [단일세포 계통 추적](../60-Explainers/single-cell-lineage-tracing.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Given a character matrix (e.g. CRISPR indels) or variant calls per cell, phylogenetic inference searches for the tree topology that best explains the data under a distance-based or character-based (parsimony/likelihood) criterion ([[10-Summaries/wang-2026-multimodal-lineage-computational|Wang 2026]]). The problem is NP-hard and the number of topologies grows super-exponentially with cell number, so exact search is infeasible at scale ([[10-Summaries/wang-2026-multimodal-lineage-computational|Wang 2026]]). Phylogenetic inference is NP-hard under most scoring criteria, and exhaustive search is infeasible beyond roughly 20 single cells ([[10-Summaries/lahnemann-2020-grand-challenges|Lähnemann 2020]]).

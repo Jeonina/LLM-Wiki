@@ -1,6 +1,7 @@
 ---
 type: topic
 title: Brain somatic mosaicism
+explainer: brain-somatic-mosaicism
 aliases: [neuronal mosaicism, brain mosaicism, BSMN]
 tags: [brain, mosaicism, neurons, Walsh-lab, BSMN, Alzheimers, autism]
 created: 2026-05-19
@@ -14,6 +15,11 @@ paper_section: ["5.2"]
 
 > [!abstract] 한눈에
 > 뉴런은 발생기에 생긴 SNV 위에 나이에 따라 체세포 변이를 계속 쌓으며, 축적 속도 추정치는 증폭 화학이 좋아질수록 낮아져 PTA와 duplex 계열에서 연 16개 안팎으로 모였다 ([[10-Summaries/lodato-2017-aging-neurons|Lodato 2018]]; [[10-Summaries/luquette-2022-neuron-scan2-indels|Luquette 2022]]). 속도와 클론 구조는 세포 유형마다 달라 oligodendrocyte가 excitatory neuron보다 빠르게 변이를 쌓는다 ([[10-Summaries/kriz-2025-duplex-multiome|Kriz 2025]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [뇌 체세포 모자이크 교재](../60-Explainers/brain-somatic-mosaicism.html)
+<!-- /explainer-links -->
 
 ## Key points
 

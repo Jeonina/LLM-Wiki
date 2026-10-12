@@ -30,6 +30,9 @@ const getOpts = ({ target }: Event): { url: URL; scroll?: boolean } | undefined 
   const a = target.closest("a")
   if (!a) return
   if ("routerIgnore" in a.dataset) return
+  // Hand-built explainer pages (60-Explainers/*.html) are standalone HTML, not Quartz pages:
+  // let the browser load them normally instead of swapping them into the SPA shell.
+  if (/\/60-Explainers\/(?!index)[^/]+$/.test(a.pathname)) return
   const { href } = a
   if (!isLocalUrl(href)) return
   return { url: new URL(href), scroll: "routerNoscroll" in a.dataset ? false : undefined }

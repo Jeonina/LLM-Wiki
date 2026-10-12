@@ -14,6 +14,13 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > scATAC-seq는 Tn5가 열린 chromatin에 adapter를 끼워 넣는 성질을 이용해 세포 하나하나의 accessibility를 읽는 방법이다 ([[10-Summaries/buenrostro-2015-nature|Buenrostro 2015]]). diploid 유전체에서는 한 locus의 read가 최대 2개라 행렬이 극도로 희소하고, 이 희소성을 어떻게 다룰지가 platform 선택과 분석 도구 설계를 좌우한다 ([[10-Summaries/derop-2024-natbiotech|De Rop 2024]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [염색질 구조 교재](../60-Explainers/chromatin-architecture.html)
+>
+> [scATAC-seq 희소성 시뮬레이터](../60-Explainers/single-cell-atac-seq.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 The workflow is: lyse cells or isolate nuclei, tagment with Tn5, build a barcoded library, and sequence ([[10-Summaries/buenrostro-2015-nature|Buenrostro 2015]]). Each cell yields ~1k–20k unique accessibility fragments (synthesis). A diploid genome caps per-locus reads at 2, which makes scATAC-seq matrices extremely sparse — a structural property that drives downstream tool design ([[10-Summaries/derop-2024-natbiotech|De Rop 2024]]). Peak-by-cell matrices are cited as about 3% non-zero, versus over 10% for scRNA-seq gene matrices ([[10-Summaries/zhao-2024-scada|scaDA]]).

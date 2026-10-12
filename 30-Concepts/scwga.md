@@ -14,6 +14,13 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > scWGA는 한 세포에 든 약 6 pg의 DNA를 시퀀싱할 수 있을 만큼 증폭하는 방법들이며, PCR 기반, isothermal, Tn5 기반의 세 갈래로 나뉜다 ([[10-Summaries/gawad-2016-scgenome-review|Gawad 2016]]; [[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]). 어떤 방법을 고르느냐가 coverage, 균일도, allelic balance를 좌우하므로 CNV와 SNV 중 무엇을 볼지에 따라 답이 달라진다 ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 DNA 시퀀싱 입문](../60-Explainers/scdna-seq.html)
+>
+> [단일세포 WGA 시뮬레이터](../60-Explainers/wga-simulator.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 A diploid human cell contains ~6 pg of DNA — far below the input requirement of any sequencing platform; scWGA bridges that gap (synthesis). There are three method categories ([[10-Summaries/gawad-2016-scgenome-review|Gawad 2016]]; [[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]):

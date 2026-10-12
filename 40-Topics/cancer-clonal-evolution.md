@@ -1,6 +1,7 @@
 ---
 type: topic
 title: Cancer clonal evolution
+explainer: cancer-clonal-evolution
 aliases: [tumor clonal evolution, cancer phylogeny, tumor evolution]
 tags: [cancer, clonal-evolution, phylogeny, intratumor-heterogeneity]
 created: 2026-05-19
@@ -14,6 +15,11 @@ paper_section: ["5.1"]
 
 > [!abstract] 한눈에
 > 종양 세포는 체세포 변이와 클론 선택을 거치며 여러 계통으로 갈라지고, single-cell DNA로 그 계통수를 재구성하면 driver 변이의 순서와 약물 내성 계통을 읽을 수 있다 ([[10-Summaries/navin-2011-sns-tumor-evolution|Navin 2011]]; [[10-Summaries/kim-2018-tnbc-chemoresistance|Kim 2018]]). 분석 도구는 SNV만 쓰던 계통수에서 copy number와 WGD까지 함께 다루는 모델로 넘어가 수만 개 세포 규모로 확장되고 있다 ([[10-Summaries/sollier-2023-compass|COMPASS]]; [[10-Summaries/zhang-2025-scistree2|ScisTree2]]; [[10-Summaries/mcpherson-2025-ongoing-wgd|McPherson 2025]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [종양 계통수 시뮬레이터](../60-Explainers/cancer-clonal-evolution.html)
+<!-- /explainer-links -->
 
 ## Key points
 

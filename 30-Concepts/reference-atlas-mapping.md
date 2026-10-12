@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Reference atlas mapping은 이미 annotation된 reference를 고정해 두고 새 query 세포를 그 안에 놓아 label이나 측정하지 않은 modality를 옮겨 오는 작업이다 ([[10-Summaries/kang-2021-symphony|Symphony]]). reference에 없는 세포 상태는 올바르게 놓일 자리가 없다는 한계를 모든 방법이 공유한다 ([[10-Summaries/haghverdi-2018-mnn|MNN]]; [[10-Summaries/song-2021-scgcn|scGCN]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [분석 도구 교재](../60-Explainers/computational-methods.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Integration builds a shared space from datasets treated symmetrically. Reference mapping is asymmetric: the reference is **frozen** and the query is placed into it ([[10-Summaries/kang-2021-symphony|Symphony]]). The operation is explicitly analogous to read alignment: an expensive, rare reference-building step, then a cheap, constant-time mapping step ([[10-Summaries/kang-2021-symphony|Symphony]]).

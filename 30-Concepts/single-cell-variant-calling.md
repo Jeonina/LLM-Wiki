@@ -15,6 +15,11 @@ paper_section: ["4.1"]
 > [!abstract] 한눈에
 > Single-cell variant calling은 증폭 artifact, allele dropout, 고르지 않은 coverage가 섞인 single-cell DNA 데이터에서 체세포 SNV와 indel을 찾는 알고리즘이다 ([[10-Summaries/valecha-2022-scsnv-review|Valecha 2022]]). 도구들은 bulk caller의 diploid·균일 coverage 가정을 버리고 allele balance, 세포 계통수, 상보 가닥 같은 다른 단서를 쓰지만, single-cell에서만 보이는 변이는 여전히 대부분 검증되지 않는다 ([[10-Summaries/mckenna-2010-gatk|GATK]]; [[10-Summaries/wang-2014-nuc-seq|Wang 2014]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [모자이크 변이 검출력 시뮬레이터](../60-Explainers/mosaic-variant-calling.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Single-cell variant calling detects somatic single-nucleotide variants and indels from single-cell DNA sequencing data ([[10-Summaries/valecha-2022-scsnv-review|Valecha 2022]]). A 2020 community review classifies scDNA WGA failures into imbalanced allele proportions, allele dropout and complete site dropout ([[10-Summaries/lahnemann-2020-grand-challenges|Lähnemann 2020]]); conventional bulk callers (GATK, MuTect2) handle these poorly ([[10-Summaries/valecha-2022-scsnv-review|Valecha 2022]]; [[10-Summaries/lahnemann-2021-natcomm|ProSolo]]).

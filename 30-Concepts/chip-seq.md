@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > ChIP-seq는 항체로 표적 단백질에 결합한 DNA를 면역침강해 시퀀싱하는 bulk 방법으로, 2007년에 이름이 붙은 뒤 Cistrome 같은 대규모 자료의 바탕이 되었다 ([[10-Summaries/barski-2007-histone-methylation-chip-seq|Barski 2007]]; [[10-Summaries/yu-2026-chrombert|ChromBERT]]). 다만 많은 세포가 필요하고, 농축 과정 때문에 정량 범위가 좁아진다 ([[10-Summaries/shi-2026-dechic-seq|DeChIC-seq]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 히스톤 변형](../60-Explainers/histone-modifications.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Workflow: formaldehyde crosslinking → chromatin shearing (sonication) → antibody pulldown → reverse crosslink → DNA purification → sequencing. Requires ~10⁶ cells per assay.

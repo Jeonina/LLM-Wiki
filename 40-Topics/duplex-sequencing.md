@@ -1,6 +1,7 @@
 ---
 type: topic
 title: Duplex sequencing
+explainer: duplex-sequencing
 aliases: [DS, duplex-seq, duplex consensus sequencing, single-molecule duplex sequencing, ultra-accurate sequencing]
 tags: [sequencing, error-correction, somatic-mutation, mutational-signatures, single-molecule, low-VAF, method]
 created: 2026-05-12
@@ -14,6 +15,11 @@ paper_section: ["3.1"]
 
 > [!abstract] 한눈에
 > Duplex sequencing은 한 분자의 두 가닥 모두에서 같은 변이가 보일 때만 염기를 호출해 오류율을 크게 낮추고, 덕분에 정상 조직의 희귀 체세포 변이와 mutational signature를 bulk DNA에서 읽을 수 있다 ([[10-Summaries/schmitt-2012-pnas|Schmitt 2012]]; [[10-Summaries/abascal-2021-nanoseq|NanoSeq]]). 다만 대부분의 방법은 변이를 특정 세포에 배정하지 못하며, 단일 세포 수준의 duplex는 META-CS와 Duplex-Multiome 정도에 머물러 있다 ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]; [[10-Summaries/kriz-2025-duplex-multiome|Duplex-Multiome]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [Duplex sequencing 시뮬레이터](../60-Explainers/duplex-sequencing.html)
+<!-- /explainer-links -->
 
 ## Key points
 
@@ -92,12 +98,12 @@ HiDEF-seq marks the boundary of what duplex sequencing can do ([[10-Summaries/li
 - [[10-Summaries/evrony-2021-scDNA-applications-review|Evrony 2021]] — mosaicism and accuracy review.
 - [[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]] — NRG review; classifies the four duplex implementation strategies.
 - [[10-Summaries/hilal-2026-cardiac-somatic-review|Hilal 2026]] — cardiac somatic-mosaicism review; cardiovascular-tissue duplex toolbox catalog (TwinStrand, NanoSeq, BotSeqS, CODEC, Pro-Seq, META-CS).
-- [[10-Summaries/liu-2025-long-read-epigenome-review|Liu & Conesa 2025]] — long-read review; raises the long-read-vs-duplex displacement question.
+- [[10-Summaries/liu-2025-long-read-epigenome-review|Liu & Conesa 2025]] — long-read epigenome review; background for long-read single-molecule methods.
 
 ## Open questions
 
-- **Cost trade-off.** Duplex sequencing requires roughly twice the read depth per molecule plus complex library prep, so cost per variant detected is high ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]).
-- **Long-read displacement.** Will single-molecule long-read direct sequencing (PacBio HiFi without amplification, ONT) displace duplex sequencing as long-read accuracy improves ([[10-Summaries/liu-2025-long-read-epigenome-review|Liu & Conesa 2025]])?
+- **Cost trade-off.** About 40 raw reads are needed per duplex consensus, so DS suits targeted regions under 1 Mb or needs deep sequencing budgets ([[10-Summaries/kennedy-2014-duplex-protocol|Kennedy 2014]]); whole-genome methods still differ widely in cost per interrogated base, from ≈$15 to ≈$220 per billion bp ([[10-Summaries/zhang-2025-smaht-duplex-benchmark|Zhang 2025]]).
+- **Long-read displacement.** Will unamplified single-molecule long-read sequencing displace short-read duplex as accuracy improves (synthesis)? HiDEF-seq already reaches <1 error per 10¹⁴ bp on PacBio ([[10-Summaries/liu-2024-hidef-seq|HiDEF-seq]]).
 - **Benchmarking heterogeneity.** Duplex protocols differ substantially in genomic footprint, sensitivity and cost, although their mutation-rate estimates and signatures are highly concordant ([[10-Summaries/zhang-2025-smaht-duplex-benchmark|Zhang 2025]]).
 - **Single-cell duplex** is not yet broadly practical: DS needs both strands of one molecule, but scWGA loses strand identity ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]). [[meta-cs]] is the only single-cell-compatible variant so far; Duplex-Multiome solves it for nuclear sSNV calling within Tn5-accessible regions via the 10x Multiome library ([[10-Summaries/kriz-2025-duplex-multiome|Duplex-Multiome]]).
 - The SMaHT benchmark already included two brain homogenates (22 y and 73 y) with concordant burdens, but cord-blood estimates still split ~2.6-fold between method groups and ppmSeq diverged; does site-level concordance on private mutations hold ([[10-Summaries/zhang-2025-smaht-duplex-benchmark|Zhang 2025]])?

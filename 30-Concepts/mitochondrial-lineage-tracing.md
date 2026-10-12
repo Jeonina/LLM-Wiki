@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > 체세포 mtDNA 변이는 세포당 copy 수가 많고 변이율이 높아서, 사람 조직에서 계통을 거꾸로 추적하는 값싼 내재 barcode로 쓰인다 ([[10-Summaries/kwok-2022-mquad|MQuad]]). 다만 병목은 변이 검출이 아니라 정보가 있는 변이를 고르는 일이고, allele frequency 약 1% 아래에서는 모든 도구가 실패한다 ([[10-Summaries/kwok-2022-mquad|MQuad]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 계통 추적](../60-Explainers/single-cell-lineage-tracing.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 mtDNA's high mutation rate and high copy number make it easier to detect somatic mutations from limited sequencing per cell ([[10-Summaries/kwok-2022-mquad|MQuad]]). Methods include **mtscATAC-seq** (single-cell ATAC-seq with mtDNA recovery) and **EMBLEM** (epigenome and mitochondrial barcode of lineage from endogenous mutations).

@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Chromatin compartment는 Hi-C contact matrix의 PCA로 정의되는 Mb 단위 영역으로, 활성 영역인 A와 억제 영역인 B가 3차원 공간에서 각자끼리 모인다 ([[10-Summaries/lieberman-aiden-2009-hic|Lieberman-Aiden 2009]]). 이제는 단일 세포에서도 측정되며, A/B 이분법은 subcompartment와 같은 compartment 안의 변화를 담기에 너무 거칠다는 근거가 쌓이고 있다 ([[10-Summaries/chakraborty-2022-dchic|dcHiC]]; [[10-Summaries/xiong-2024-scghost|scGHOST]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [3D 유전체 교재](../60-Explainers/3d-genome.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Compartments are identified by principal-component analysis on Hi-C contact matrices: A and B correspond to the two directions of the leading contact-matrix eigenvector ([[10-Summaries/lieberman-aiden-2009-hic|Lieberman-Aiden 2009]]). In the founding Hi-C paper, normalizing by distance-expected contact reveals a plaid pattern, correlating interaction profiles sharpens it, and PCA on the correlation matrix partitions each chromosome into two compartments with labels consistent genome-wide ([[10-Summaries/lieberman-aiden-2009-hic|Lieberman-Aiden 2009]]). Compartments can be further subdivided into subcompartments A1, A2 and B1–B4 ([[10-Summaries/rao-2014-in-situ-hic|Rao 2014]]).

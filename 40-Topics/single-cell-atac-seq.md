@@ -1,6 +1,7 @@
 ---
 type: topic
 title: Single-cell ATAC-seq
+explainer: single-cell-atac-seq
 aliases: [scATAC-seq, single-cell chromatin accessibility]
 tags: [scATAC, chromatin-accessibility, cis-regulatory, software, transcription-factors]
 created: 2026-05-12
@@ -14,6 +15,11 @@ paper_section: ["3.2"]
 
 > [!abstract] 한눈에
 > scATAC-seq는 Tn5가 열린 크로마틴을 잘라내는 위치로 세포마다 접근성을 읽지만, 한 locus에서 얻을 수 있는 read가 0–2개뿐이라 motif, window, topic 단위로 신호를 모아 분석한다 ([[10-Summaries/schep-2017-chromvar|chromVAR]]; [[10-Summaries/fang-2021-snapatac|SnapATAC]]). 최근에는 수백만 세포 규모의 scATAC atlas가 foundation model의 사전학습 데이터로 쓰이고 있다 ([[10-Summaries/leroy-2025-atacformer|Atacformer]]; [[10-Summaries/liu-2025-clm-access|CLM-access]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [scATAC-seq 희소성 시뮬레이터](../60-Explainers/single-cell-atac-seq.html)
+<!-- /explainer-links -->
 
 ## Key points
 

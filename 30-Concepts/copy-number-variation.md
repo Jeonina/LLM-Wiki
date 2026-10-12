@@ -14,6 +14,13 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > CNV는 유전체 구간의 copy 수가 늘거나 줄어든 변화이고, 읽기 깊이보다 유전체 전체를 고르게 덮는 것이 중요해서 얕은 single-cell WGS로도 잘 잡힌다 ([[10-Summaries/zahn-2017-dlp|Zahn 2017]]). 최근 caller는 sub-Mb 해상도, 절대 ploidy 추정, 진화 모델과의 결합으로 나아가고 있지만, 한 세포의 profile이 diploid인지 tetraploid인지 가리는 문제는 여전히 핵심 쟁점이다 ([[10-Summaries/kolbeinsdottir-2025-ascent|ASCENT]]; [[10-Summaries/schneider-2024-scabsolute|scAbsolute]]; [[10-Summaries/ivanovic-2025-cnrein|CNRein]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [종양 계통수 시뮬레이터](../60-Explainers/cancer-clonal-evolution.html)
+>
+> [암 연구의 scDNA-seq 교재](../60-Explainers/scdna-cancer-applications.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Copy number variation covers gains and losses of genomic segments, from focal events to whole chromosomes ([[10-Summaries/zahn-2017-dlp|Zahn 2017]]). In single cells it is usually called from read counts in genomic bins that are GC-corrected and then segmented into integer copy states ([[10-Summaries/bakker-2016-aneufinder|AneuFinder]]; [[10-Summaries/garvin-2015-natmethods|Ginkgo]]). Recurrent aneuploidy is evidence about **selection**, not about stability ([[10-Summaries/bakker-2016-aneufinder|AneuFinder]]) — see [[chromosomal-instability]].

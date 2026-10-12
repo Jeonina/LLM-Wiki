@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > G&T-seq는 한 세포에서 poly(A) mRNA를 oligo-dT bead로 떼어 내고 남은 genomic DNA를 따로 증폭해, DNA와 RNA를 각각 최적의 protocol로 읽는 plate 기반 방법이다 ([[10-Summaries/macaulay-2015-gt-seq|Macaulay 2015]]). 분리 덕분에 어떤 WGA chemistry든 쓸 수 있지만, plate 기반이라 처리량이 낮고 bead 세척 과정에서 DNA 손실이 생긴다 ([[10-Summaries/macaulay-2016-gt-seq-protocol|Macaulay 2016]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 multi-omics](../60-Explainers/single-cell-multiomics.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Macaulay et al. 2015 ([[10-Summaries/macaulay-2015-gt-seq|Macaulay 2015]]). In G&T-seq:

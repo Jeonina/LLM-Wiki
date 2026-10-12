@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>뇌 체세포 모자이크 교재</title>
+<link rel="stylesheet" href="explainer.css">
+</head>
+<body>
+<main>
+<div class="crumb"><a href="../">scDNA wiki</a> · <a href="./">교재</a> · 뇌 체세포 모자이크</div>
+<h1>분열하지 않는 뉴런도 돌연변이를 쌓을까: 뇌 체세포 모자이크</h1>
+<p class="lede">뇌의 세포들은 같은 수정란에서 왔지만 유전체가 모두 같지는 않다. 발생기에 생긴 변이 위에 평생 새 변이가 쌓이고, 그 속도와 양상은 세포 유형마다 다르다. 다만 이 숫자는 무엇으로 쟀느냐에 따라 크게 달라졌다. 이 페이지는 뇌 모자이크의 시간축과 측정법의 영향을 함께 읽는 법을 다룬다.</p>
+
+<div class="callouts">
+  <div class="callout"><b>변이는 수정 직후부터 쌓인다</b>태아 뇌의 신경 전구세포는 이미 세포당 200–400개의 mosaic SNV를 지닌다. 언제 생겼느냐에 따라 그 변이를 공유하는 세포의 범위가 달라진다.</div>
+  <div class="callout"><b>분열 없이도 시계처럼 쌓인다</b>뉴런은 DNA를 복제하지 않는데도 나이에 따라 SNV가 거의 선형으로 늘고, 그 주된 signature는 복제와 무관한 clocklike 과정이다.</div>
+  <div class="callout"><b>속도는 측정법을 따라 내려갔다</b>MDA 시대의 연 23–40개는 PTA, META-CS, duplex 계열에서 연 16개 안팎으로 모였다. 차이의 상당 부분은 증폭 artifact였다.</div>
+</div>
+
+<h2>그림으로 보기</h2>
+<figure class="fig">
+  <svg id="fig-rates" viewBox="0 0 760 520" role="img" aria-label="측정법별 뇌 세포의 연간 체세포 SNV 축적 속도"></svg>
+  <figcaption>그림 1. 뇌 세포 하나가 1년에 얻는 체세포 SNV 수를 측정법과 함께 나란히 놓았다. <span style="color:var(--warn)">주황</span>은 MDA 증폭 데이터다. 같은 MDA 뉴런 데이터를 SCAN2로 다시 부르면 연 31개, artifact signature B를 빼면 22개, outlier를 빼면 19개로 내려갔고(화살표), 같은 연구의 PTA 뉴런은 16.5개였다 (<a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a>). MDA·LiRA 원 추정은 PFC 약 23개, DG 약 40개다 (<a href="../10-Summaries/lodato-2017-aging-neurons">Lodato 2018</a>). META-CS는 약 16개 (<a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a>), NanoSeq은 17.1개다 (<a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a>의 인용). <span style="color:var(--a2)">갈색</span>은 glia로, Duplex-Multiome에서 oligodendrocyte는 32.34 ± 2.39개, excitatory neuron은 15.05 ± 3.15개였다 (<a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>). 속이 빈 점은 여러 세포 유형이 섞인 뇌 homogenate의 bulk duplex 평균 18.6개다 (<a href="../10-Summaries/zhang-2025-smaht-duplex-benchmark">Zhang 2025</a>). 회색 띠는 리뷰가 정리한 뉴런 범위 15–20개다 (<a href="../10-Summaries/bizzotto-2022-brain-mosaicism-review">Bizzotto 2022</a>). 세포, 뇌 부위, 공여자 수가 연구마다 달라 순위표로 읽으면 안 된다.</figcaption>
+</figure>
+
+<figure class="fig">
+  <svg id="fig-timeline" viewBox="0 0 760 470" role="img" aria-label="뇌 발생과 노화에 따른 mosaic 변이의 생성 시기와 세포당 누적 SNV 수"></svg>
+  <figcaption>그림 2. 뇌의 mosaic 변이가 언제 생기는가. 위쪽 띠는 시기별 돌연변이율과 주된 spectrum이다. Gastrulation 이전은 분열당 1.3개, 신경발생기는 전구세포당 하루 5.1개(분열당 약 8.6개)이며, spectrum은 CpG 탈아미노화 중심에서 산화 손상(C&gt;A) 중심으로 바뀐다 (<a href="../10-Summaries/bae-2017-pregastrulation-mutations">Bae 2018</a>). 첫 두 분열은 2.4–3.4개, 8세포기부터는 1–2개로 정리되고, 노화 뉴런에서는 clocklike SBS5가 우세하다 (<a href="../10-Summaries/bizzotto-2022-brain-mosaicism-review">Bizzotto 2022</a>; <a href="../10-Summaries/lodato-2017-aging-neurons">Lodato 2018</a>). 아래쪽은 보고된 세포당 누적 SNV 수다. 태아 전구세포 200–400개 (<a href="../10-Summaries/bae-2017-pregastrulation-mutations">Bae 2018</a>), 생후 1년 안의 뉴런 약 300–900개 (<a href="../10-Summaries/lodato-2017-aging-neurons">Lodato 2018</a>, MDA), META-CS로 잰 19·49·76세 뉴런 (<a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a>), 22·73세 뇌 homogenate의 bulk duplex 값 (속이 빈 점, <a href="../10-Summaries/zhang-2025-smaht-duplex-benchmark">Zhang 2025</a>), 80세 뉴런 2,500–4,000개 (<a href="../10-Summaries/bizzotto-2022-brain-mosaicism-review">Bizzotto 2022</a>)를 표시했다. 출생 전 구간은 시간 비례가 아니고, 출생 후는 나이에 비례한다.</figcaption>
+</figure>
+
+<h2>핵심 내용</h2>
+<ol class="steps">
+  <li><b>뇌 모자이크는 발생에서 시작한다.</b> 태아 뇌(15–21주)의 신경 전구세포를 clone으로 키워 WGA 없이 시퀀싱하자 세포당 200–400개의 mosaic SNV가 나왔다. 돌연변이율은 gastrulation 이전 분열당 1.3개에서 신경발생기 하루 5.1개로 크게 뛰었고, spectrum도 CpG C&gt;T 중심에서 산화 손상에 따른 C&gt;A 중심으로 바뀌었다. 조직에서 genotype한 SNV의 약 60%는 gastrulation 이전에 생겨 비장에서도 보였다 (<a href="../10-Summaries/bae-2017-pregastrulation-mutations">Bae 2018</a>). 초기 변이일수록 더 넓은 범위의 세포가 공유하므로, 이 변이들은 인간 뇌의 계통을 거꾸로 추적하는 자연 바코드가 된다 (<a href="../10-Summaries/bizzotto-2022-brain-mosaicism-review">Bizzotto 2022</a>; <a href="../30-Concepts/developmental-mutation-timing">Developmental mutation timing</a>).</li>
+  <li><b>뉴런은 분열 없이도 변이를 쌓는다.</b> MDA로 증폭한 단일 뉴런 159개에서 체세포 SNV는 나이에 따라 거의 선형으로 늘었다. 나이와 함께 오른 signature는 복제와 무관한 clocklike Signature A(SBS5와 유사) 하나였고, Cockayne 증후군과 XP 같은 DNA 복구 결함에서는 속도가 2.3–2.5배 빨랐다. 저자들은 이 현상을 genosenium이라 불렀다 (<a href="../10-Summaries/lodato-2017-aging-neurons">Lodato 2018</a>). 증폭 없이 duplex sequencing으로 잰 NanoSeq도 post-mitotic 뉴런이 평생 일정한 속도로 변이를 쌓는다고 보였다 (<a href="../10-Summaries/abascal-2021-nanoseq">Abascal 2021</a>).</li>
+  <li><b>속도의 절댓값은 증폭 화학이 정했다.</b> MDA는 한 가닥만 증폭되는 single-strand dropout 때문에 VAF 필터로 걸러지지 않는 가짜 변이를 만든다. 같은 사람의 X 염색체로 비교하면 MDA genome 하나에 이런 artifact가 SNV 약 550개, indel 136개였다. 영아 뉴런에서 MDA는 PTA보다 sSNV를 약 10배 많이 불렀다(282 대 26). PTA와 SCAN2로 다시 잰 PFC 뉴런의 속도는 연 16.5개였다 (<a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a>). 두 가닥이 모두 일치할 때만 변이를 부르는 META-CS도 연 약 16개를 얻었다 (<a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a>).</li>
+  <li><b>indel은 수는 적지만 기능에 더 가깝다.</b> 같은 PTA 뉴런에서 indel은 연 약 3개 이상 쌓였고(민감도를 고려한 하한), 뉴런 특이 enhancer와 promoter, 보존 서열에 SNV보다 강하게 몰렸다. sSNV가 indel보다 8배 많았지만 유전자 안의 고영향 변이는 indel이 2배 넘게 많았다 (<a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a>).</li>
+  <li><b>세포 유형이 다르면 속도와 클론 구조가 다르다.</b> 10x Multiome의 ATAC 조각에 strand barcode를 붙인 Duplex-Multiome은 같은 핵에서 변이와 chromatin, RNA를 함께 읽는다. 5만 개 넘는 뇌 핵에서 oligodendrocyte는 연 32.34개, excitatory neuron은 15.05개를 쌓았고, VAF 0.01 미만의 늦은 clonal sSNV는 glia에 더 많았다 (<a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>). Copy number도 세포 유형을 따른다. PTA 뇌 세포 65개에서 뉴런은 주로 세포마다 다른 loss를, oligodendrocyte는 clonal gain을 지녔고, aneuploid 세포는 3.1%였다 (<a href="../10-Summaries/zhao-2025-hiscanner">Zhao 2025</a>).</li>
+  <li><b>질환과의 연결은 이제 세포 유형 단위로 묻는다.</b> 뇌 131개를 200× 이상 bulk WGS로 본 연구에서 약 6%가 과돌연변이 상태였고, 그 비율은 나이와 함께 올랐으며 암 관련 유전자의 손상 변이와 클론 확장을 동반했다 (<a href="../10-Summaries/taejeong-2022-science">Bae 2022</a>). 알츠하이머병 뉴런은 정상 노화로 설명되지 않는 수백 개의 sSNV를 더 지녔고, 그 초과분은 산화 손상을 시사하는 Signature C를 보였다 (<a href="../10-Summaries/miller-2022-nature">Miller 2022</a>). 노화 뇌 glia의 clonal 변이가 혈액 클론이 아니라 glia 자체에서 생겼다는 결론은 Duplex-Multiome에서 나왔다 (<a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>).</li>
+</ol>
+
+<h2>보고된 값</h2>
+<p class="desc">연구마다 세포 유형, 뇌 부위, 공여자 수, 측정법이 다르다. 엇갈리는 값은 고르지 않고 나란히 적었다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>항목</th><th>보고된 값</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>뉴런 SNV 축적 속도</td><td>MDA·LiRA: PFC 약 23/년, DG 약 40/년 · PTA·SCAN2: 16.5/년 (같은 데이터 LiRA 17) · 같은 MDA 뉴런을 SCAN2로: 31 → artifact 보정 후 약 19/년 · META-CS: 약 16/년 (공여자 3명) · NanoSeq: 17.1/년</td><td><a href="../10-Summaries/lodato-2017-aging-neurons">Lodato 2018</a> · <a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a> · <a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a></td></tr>
+<tr><td>세포 유형별 속도</td><td>excitatory neuron 15.05 ± 3.15/년, oligodendrocyte 32.34 ± 2.39/년 · 열린 chromatin 안에서 astrocyte &gt; microglia, 상층 &gt; 심층 excitatory neuron</td><td><a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a></td></tr>
+<tr><td>뇌 조직 평균 (bulk duplex)</td><td>22세 1,309개, 73세 2,259개, 여러 방법 평균 세포당 18.6/년 · 세포 유형이 섞인 homogenate</td><td><a href="../10-Summaries/zhang-2025-smaht-duplex-benchmark">Zhang 2025</a></td></tr>
+<tr><td>뉴런 indel 속도</td><td>PTA 약 3/년 이상(하한) · MDA 6.0/년 (artifact로 부풀려짐)</td><td><a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a></td></tr>
+<tr><td>발생기 부담</td><td>태아 전구세포 200–400개 (15–21주) · 생후 1년 안의 뉴런 약 300–900개 (MDA) · 80세 뉴런 2,500–4,000개 (리뷰 종합)</td><td><a href="../10-Summaries/bae-2017-pregastrulation-mutations">Bae 2018</a> · <a href="../10-Summaries/lodato-2017-aging-neurons">Lodato 2018</a> · <a href="../10-Summaries/bizzotto-2022-brain-mosaicism-review">Bizzotto 2022</a></td></tr>
+<tr><td>발생기 돌연변이율</td><td>gastrulation 이전 1.3 ± 0.15/분열 · 신경발생기 5.1/일 (95% CI 1.5–9), 약 8.6/분열 · 첫 두 분열 2.4–3.4, 8세포기부터 1–2/분열</td><td><a href="../10-Summaries/bae-2017-pregastrulation-mutations">Bae 2018</a> · <a href="../10-Summaries/bizzotto-2022-brain-mosaicism-review">Bizzotto 2022</a></td></tr>
+<tr><td>MDA artifact 크기</td><td>영아 뉴런 sSNV MDA 282 대 PTA 26 · MDA genome당 single-strand dropout artifact SNV 약 550, indel 136</td><td><a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a></td></tr>
+<tr><td>단일 가닥 손상 call</td><td>META-CS: 76세 뇌에서 G&gt;T 위주로 증가 · HiDEF-seq: 피질 뉴런에서 META-CS보다 약 13배 낮음 · Duplex-Multiome: 나이와 상관없어 사후·처리 손상으로 해석</td><td><a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a> · <a href="../10-Summaries/liu-2024-hidef-seq">Liu 2024</a> · <a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a></td></tr>
+<tr><td>뇌 세포 aneuploidy</td><td>사람 PTA 세포 65개 중 3.1% (같은 논문이 인용한 다른 PTA 연구 33.8%, 이전 추정 2.2%) · 5 Mb 넘는 CNA는 PTA 뉴런 52개 중 2개 · 생쥐 뇌 snmC-seq 41만 세포에서 0.175–0.349%, 과거 FISH 추정 10–60%보다 두 자릿수 낮음</td><td><a href="../10-Summaries/zhao-2025-hiscanner">Zhao 2025</a> · <a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a> · <a href="../10-Summaries/mukamel-2025-aneuploidy-brain">Mukamel 2025</a></td></tr>
+<tr><td>bulk에서 보이는 mosaic SNV</td><td>뇌 하나당 20–60개 · 과돌연변이(&gt;101개) 약 6%, 60세 초과 16% 대 40세 미만 2%</td><td><a href="../10-Summaries/taejeong-2022-science">Bae 2022</a></td></tr>
+</tbody></table></div>
+
+<h2>목적별로 고르기</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>알고 싶은 것</th><th>우선 고려</th><th>확인할 위험</th></tr></thead>
+<tbody>
+<tr><td>뉴런 하나의 genome-wide SNV·indel 부담</td><td>PTA + SCAN2 (<a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a>)</td><td>MDA는 single-strand dropout artifact로 속도를 부풀림. signature rescue에는 변이 500–1,000개가 필요하고 indel 속도는 하한값. PTA kit 회사와의 이해관계가 공개됨 (<a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a>)</td></tr>
+<tr><td>적은 read로 정확한 SNV</td><td>META-CS (<a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a>)</td><td>가닥별 검출 효율이 약 16%라 부담은 큰 보정값에 기댐. 단일 가닥 손상 call은 HiDEF-seq보다 약 13배 높음 (<a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a>; <a href="../10-Summaries/liu-2024-hidef-seq">Liu 2024</a>)</td></tr>
+<tr><td>세포 유형별 노화 속도, 변이와 chromatin·RNA의 연결</td><td>Duplex-Multiome (<a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>)</td><td>열린 chromatin의 변이만 보임. EN·OL 외 세포 유형의 genome-wide 속도는 scWGS로 확인되지 않았고, 닫힌 locus의 변이는 보유 세포에서도 안 보일 수 있음 (<a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>)</td></tr>
+<tr><td>조직 평균 부담</td><td>bulk duplex (NanoSeq 등) (<a href="../10-Summaries/zhang-2025-smaht-duplex-benchmark">Zhang 2025</a>)</td><td>homogenate는 세포 유형을 섞음. NanoSeq은 유전체의 약 29%만 덮음 (<a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a>)</td></tr>
+<tr><td>발생기 계통, 초기 변이의 시점</td><td>전구세포 clone 확장 후 WGS (<a href="../10-Summaries/bae-2017-pregastrulation-mutations">Bae 2018</a>), 200× 이상 bulk WGS (<a href="../10-Summaries/taejeong-2022-science">Bae 2022</a>)</td><td>clone 방식은 분열하지 않는 뉴런을 볼 수 없음 (<a href="../10-Summaries/bae-2017-pregastrulation-mutations">Bae 2018</a>). ultra-deep WGS의 검출 하한은 VAF 약 0.02 (<a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>)</td></tr>
+<tr><td>뇌 세포의 CNA, cnLOH</td><td>PTA + HiScanner, 100 kb bin (<a href="../10-Summaries/zhao-2025-hiscanner">Zhao 2025</a>)</td><td>allelic dropout이 loss처럼 보임. 같은 세포에서 Ginkgo는 private loss를 약 10배 더 불렀고, HiScanner 추정 FDR도 26.3% (<a href="../10-Summaries/zhao-2025-hiscanner">Zhao 2025</a>)</td></tr>
+</tbody></table></div>
+
+<h2>읽는 순서</h2>
+<ol class="path">
+  <li><a href="../40-Topics/brain-somatic-mosaicism">Brain somatic mosaicism (hub)</a> — 측정법별 속도, CNA, 질환 연결, consortium을 한 장에 정리한 출발점이다.</li>
+  <li><a href="../30-Concepts/developmental-mutation-timing">Developmental mutation timing</a> — 변이가 생긴 시점이 그 변이를 가진 세포의 범위를 어떻게 정하는지 본다.</li>
+  <li><a href="../30-Concepts/pta">PTA</a> — 뉴런 속도를 하향 조정한 증폭 화학과 그 한계를 다룬다.</li>
+  <li><a href="../30-Concepts/mutational-signatures">Mutational signatures</a> — clocklike, 산화 손상, artifact signature를 구분하는 기준이다.</li>
+  <li><a href="../10-Summaries/bae-2017-pregastrulation-mutations">Bae 2018</a> — 태아 뇌 전구세포의 변이 부담과 시기별 돌연변이율을 처음 잰 논문이다.</li>
+  <li><a href="../10-Summaries/lodato-2017-aging-neurons">Lodato 2018</a> — 같은 호에 실린 짝 논문으로, 노화 뉴런의 축적을 처음 직접 쟀다. 절댓값은 이후 수정됐다.</li>
+  <li><a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a> — 같은 뇌에서 MDA와 PTA를 비교해 artifact 크기를 수치로 보여준다.</li>
+  <li><a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a> — 세포 유형별 속도와 glia 클론을 같은 핵의 chromatin과 함께 읽은 최신 방법이다.</li>
+</ol>
+
+<h2>아직 열린 질문</h2>
+<ul>
+  <li><b>속도 차이의 원인.</b> PFC 뉴런의 SNV 속도는 MDA, META-CS, PTA, duplex 계열을 거치며 연 약 16–23개에 걸쳐 있고 bulk duplex는 세포당 18.6개를 준다. 이 폭 가운데 얼마가 화학의 차이이고 얼마가 세포 유형 구성의 차이인지는 풀리지 않았다 (<a href="../10-Summaries/lodato-2017-aging-neurons">Lodato 2018</a>; <a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a>; <a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a>; <a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>; <a href="../10-Summaries/zhang-2025-smaht-duplex-benchmark">Zhang 2025</a>, synthesis).</li>
+  <li><b>단일 가닥 손상은 실재하는가.</b> META-CS의 단일 가닥 call은 가장 나이 든 뇌에서 늘었지만, HiDEF-seq는 같은 종류의 부담을 약 13배 낮게 쟀다. 어느 쪽이 생체 내 손상을 반영하는지는 측정법에 따라 답이 갈린다 (<a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a>; <a href="../10-Summaries/liu-2024-hidef-seq">Liu 2024</a>, synthesis).</li>
+</ul>
+
+<footer>scDNA wiki 교재 · 수치와 해석은 링크된 위키 요약을 기준으로 한다.</footer>
+</main>
+
+<script>
+(function(){
+  var NS = "http://www.w3.org/2000/svg";
+  function el(svg, tag, attrs, text){
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    svg.appendChild(e); return e;
+  }
+  var COL = {mda: "var(--warn)", neu: "var(--accent)", glia: "var(--a2)", mix: "var(--muted)"};
+
+  // Figure 1. sSNVs per cell per year by assay.
+  // Lodato 2018 (MDA, LiRA); Luquette 2022 (PTA+SCAN2; SCAN2 on MDA 31 -> 22 -> 19; NanoSeq 17.1 as cited);
+  // Xing 2021 (META-CS); Kriz 2025 (Duplex-Multiome EN/OL); Zhang 2025 (bulk duplex homogenate);
+  // Bizzotto 2022 (review range 15-20 for neurons).
+  var RATES = [
+    {label: "MDA · LiRA, PFC 뉴런", sub: "Lodato 2018", v: 23, kind: "mda", note: "약 23"},
+    {label: "MDA · LiRA, DG 뉴런", sub: "Lodato 2018", v: 40, kind: "mda", note: "약 40"},
+    {label: "MDA 재분석 · SCAN2", sub: "Luquette 2022", v: 19, from: 31, kind: "mda", note: "31 → 보정 후 19"},
+    {label: "PTA · SCAN2, PFC 뉴런", sub: "Luquette 2022", v: 16.5, kind: "neu", note: "16.5"},
+    {label: "META-CS, PFC 뉴런", sub: "Xing 2021", v: 16, kind: "neu", note: "약 16"},
+    {label: "NanoSeq (bulk duplex)", sub: "Luquette 2022 인용", v: 17.1, kind: "neu", note: "17.1"},
+    {label: "Duplex-Multiome, EN", sub: "Kriz 2025", v: 15.05, err: 3.15, kind: "neu", note: "15.05 ± 3.15"},
+    {label: "Duplex-Multiome, OL", sub: "Kriz 2025", v: 32.34, err: 2.39, kind: "glia", note: "32.34 ± 2.39"},
+    {label: "뇌 homogenate, bulk duplex", sub: "Zhang 2025", v: 18.6, kind: "mix", hollow: true, note: "18.6 (세포 유형 혼합)"}
+  ];
+  (function(){
+    var svg = document.getElementById("fig-rates"); if (!svg) return;
+    var W = 760, L = 210, R = 24, T = 40, rowH = 50, max = 45;
+    var H = T + rowH * RATES.length;
+    function x(v){ return L + (W - L - R) * v / max; }
+    el(svg, "rect", {x: x(15), y: T - 8, width: x(20) - x(15), height: H - T + 8, style: "fill:var(--line);opacity:.6"});
+    el(svg, "text", {x: (x(15) + x(20)) / 2, y: T - 16, "text-anchor": "middle", "font-size": 12, style: "fill:var(--muted)"}, "리뷰 종합 15–20");
+    for (var t = 0; t <= max; t += 5){
+      el(svg, "line", {x1: x(t), x2: x(t), y1: T - 8, y2: H, style: "stroke:var(--line)"});
+      el(svg, "text", {x: x(t), y: H + 18, "text-anchor": "middle", "font-size": 13, style: "fill:var(--muted)"}, String(t));
+    }
+    el(svg, "text", {x: (L + W - R) / 2, y: H + 40, "text-anchor": "middle", "font-size": 13, style: "fill:var(--muted)"}, "세포당 연간 체세포 SNV 수");
+    RATES.forEach(function(r, i){
+      var y = T + rowH * i + rowH / 2, c = COL[r.kind];
+      el(svg, "text", {x: 0, y: y - 2, "font-size": 14, "font-weight": 600, style: "fill:var(--ink)"}, r.label);
+      el(svg, "text", {x: 0, y: y + 15, "font-size": 12, style: "fill:var(--muted)"}, r.sub);
+      if (r.from){
+        el(svg, "line", {x1: x(r.from), x2: x(r.v) + 9, y1: y, y2: y, "stroke-width": 2, style: "stroke:" + c});
+        el(svg, "path", {d: "M" + (x(r.v) + 8) + " " + (y - 6) + " L" + (x(r.v) + 1) + " " + y + " L" + (x(r.v) + 8) + " " + (y + 6) + " Z", style: "fill:" + c});
+        el(svg, "circle", {cx: x(r.from), cy: y, r: 5, style: "fill:var(--panel);stroke-width:2;stroke:" + c});
+      }
+      if (r.err){
+        el(svg, "line", {x1: x(r.v - r.err), x2: x(r.v + r.err), y1: y, y2: y, "stroke-width": 2, style: "stroke:" + c});
+        [r.v - r.err, r.v + r.err].forEach(function(e){
+          el(svg, "line", {x1: x(e), x2: x(e), y1: y - 6, y2: y + 6, "stroke-width": 2, style: "stroke:" + c});
+        });
+      }
+      el(svg, "circle", {cx: x(r.v), cy: y, r: 7, style: r.hollow ? "fill:var(--panel);stroke-width:2.5;stroke:" + c : "fill:" + c});
+      var right = Math.max(x(r.v + (r.err || 0)), r.from ? x(r.from) : 0) + 12;
+      var anchor = "start";
+      if (right > W - 120){ right = x(r.v - (r.err || 0)) - 12; anchor = "end"; }
+      el(svg, "text", {x: right, y: y + 4, "text-anchor": anchor, "font-size": 12, style: "fill:var(--ink)"}, r.note);
+    });
+  })();
+
+  // Figure 2. Developmental timeline (top) and cumulative SNVs per cell (bottom).
+  // Bae 2018: 1.3/division pregastrulation, 5.1/day neurogenesis, 200-400 per progenitor at 15-21 wk.
+  // Bizzotto 2022: 2.4-3.4 first two divisions, 1-2 from 8-cell; 2,500-4,000 at 80 y.
+  // Lodato 2018: ~300-900 within first year (MDA); Signature A (SBS5-like) rises with age.
+  // Xing 2021: 379+-66 (19 y), 871+-123 (49 y), 1304+-202 (76 y). Zhang 2025: 1309.2 (22 y), 2258.5 (73 y).
+  (function(){
+    var svg = document.getElementById("fig-timeline"); if (!svg) return;
+    var L = 64, P0 = 64, PM = 184, P1 = 304, Q0 = 322, Q1 = 740, AGE = 85;
+    var yTop = 26, bandH = 120, y0 = 430, y1 = 190, YMAX = 4200;
+    function xa(age){ return Q0 + (Q1 - Q0) * age / AGE; }
+    function y(v){ return y0 - (y0 - y1) * v / YMAX; }
+    var stages = [
+      {x0: P0, x1: PM, c: "var(--a2)", t: "Pregastrulation", l: ["1.3 SNV/분열", "첫 두 분열 2.4–3.4", "CpG C>T (SBS1)"]},
+      {x0: PM, x1: P1, c: "var(--accent)", t: "신경발생기", l: ["5.1 SNV/일", "약 8.6/분열", "C>A 산화 손상"]},
+      {x0: Q0, x1: Q1, c: "var(--ok)", t: "출생 후 · 분열 없는 뉴런", l: ["뉴런 연 약 15–20 SNV, 나이에 따라 거의 선형", "clocklike Signature A (SBS5 유사)가 나이와 함께 증가"]}
+    ];
+    stages.forEach(function(s){
+      el(svg, "rect", {x: s.x0 + 2, y: yTop, width: s.x1 - s.x0 - 4, height: bandH, rx: 8, style: "fill:" + s.c + ";opacity:.13;stroke:" + s.c});
+      el(svg, "text", {x: s.x0 + 10, y: yTop + 22, "font-size": 14, "font-weight": 600, style: "fill:var(--ink)"}, s.t);
+      s.l.forEach(function(line, k){
+        el(svg, "text", {x: s.x0 + 10, y: yTop + 46 + 22 * k, "font-size": 12, style: "fill:var(--ink)"}, line);
+      });
+    });
+    // axes
+    el(svg, "line", {x1: P0, x2: Q1, y1: y0, y2: y0, style: "stroke:var(--muted)"});
+    el(svg, "line", {x1: L, x2: L, y1: y1 - 8, y2: y0, style: "stroke:var(--muted)"});
+    for (var v = 0; v <= 4000; v += 1000){
+      el(svg, "line", {x1: L, x2: Q1, y1: y(v), y2: y(v), style: "stroke:var(--line)"});
+      el(svg, "text", {x: L - 6, y: y(v) + 4, "text-anchor": "end", "font-size": 12, style: "fill:var(--muted)"}, v.toLocaleString("en-US"));
+    }
+    el(svg, "text", {x: L, y: y1 - 16, "font-size": 12, style: "fill:var(--muted)"}, "세포당 누적 SNV");
+    [0, 20, 40, 60, 80].forEach(function(a){
+      el(svg, "text", {x: xa(a), y: y0 + 18, "text-anchor": "middle", "font-size": 12, style: "fill:var(--muted)"}, a + "세");
+    });
+    el(svg, "text", {x: (P0 + P1) / 2, y: y0 + 18, "text-anchor": "middle", "font-size": 12, style: "fill:var(--muted)"}, "출생 전 (비례 아님)");
+    el(svg, "line", {x1: Q0 - 9, x2: Q0 - 9, y1: y1 - 8, y2: y0 + 4, "stroke-dasharray": "4 4", style: "stroke:var(--muted)"});
+    el(svg, "text", {x: Q0 - 5, y: y1 - 16, "font-size": 12, style: "fill:var(--muted)"}, "출생");
+    function bar(xx, lo, hi, c, label, side){
+      el(svg, "rect", {x: xx - 5, y: y(hi), width: 10, height: y(lo) - y(hi), rx: 4, style: "fill:" + c + ";opacity:.8"});
+      el(svg, "text", {x: side === "left" ? xx - 10 : xx + 10, y: y(hi) - 4 + (side === "left" ? 0 : 0), "text-anchor": side === "left" ? "end" : "start", "font-size": 12, style: "fill:var(--ink)"}, label);
+    }
+    function dot(xx, v, err, c, hollow, label, dy){
+      if (err){
+        el(svg, "line", {x1: xx, x2: xx, y1: y(v - err), y2: y(v + err), "stroke-width": 2, style: "stroke:" + c});
+      }
+      el(svg, "circle", {cx: xx, cy: y(v), r: 6, style: hollow ? "fill:var(--panel);stroke-width:2.5;stroke:" + c : "fill:" + c});
+      if (label) el(svg, "text", {x: xx + 10, y: y(v) + 4 + (dy || 0), "font-size": 12, style: "fill:var(--ink)"}, label);
+    }
+    bar(P1 - 14, 200, 400, "var(--accent)", "전구세포 200–400 (Bae 2018)", "left");
+    bar(xa(0.5), 300, 900, "var(--warn)", "생후 1년 300–900 (MDA)", "right");
+    dot(xa(19), 379, 66, "var(--accent)", false, "META-CS", 0);
+    dot(xa(49), 871, 123, "var(--accent)", false, "META-CS", 0);
+    dot(xa(76), 1304, 202, "var(--accent)", false, "META-CS", 14);
+    dot(xa(22), 1309.2, 0, "var(--muted)", true, "bulk duplex", 0);
+    dot(xa(73), 2258.5, 0, "var(--muted)", true, "bulk duplex", 0);
+    bar(xa(80), 2500, 4000, "var(--ok)", "80세 2,500–4,000", "left");
+  })();
+})();
+</script>
+</body>
+</html>

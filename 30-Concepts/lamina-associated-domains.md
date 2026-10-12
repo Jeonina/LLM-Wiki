@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > LAD는 핵막 안쪽 lamina에 붙어 있는 큰 유전체 구간으로, 유전자가 적고 전사가 억제되어 있으며 한 세포 유형에서 유전체의 3분의 1 이상을 차지한다 ([[10-Summaries/van-steensel-2017-lads-review|van Steensel 2017]]). Single-cell DamID로 보면 lamina 접촉은 세포마다 달라지고, 전사와의 음의 관계는 접촉 빈도가 낮은 fLAD에 몰려 있다 ([[10-Summaries/rooijers-2019-scdamt-seq|Rooijers 2019]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [3D 유전체 교재](../60-Explainers/3d-genome.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 LADs cover more than one-third of the mouse and human genome in individual cell types ([[10-Summaries/van-steensel-2017-lads-review|van Steensel 2017]]). Across an isogenic ESC → NPC → astrocyte lineage plus fibroblasts, a cell type has ~1,100–1,400 LADs of 40 kb to 15 Mb, covering ~40% of the genome and containing 13–18% of all genes at 5–10× lower median expression ([[10-Summaries/peric-hupkes-2010-lad-differentiation|Peric-Hupkes 2010]]). They were mapped originally by bulk DamID and resolved at the single-cell level by scDamID ([[10-Summaries/de-luca-2021-scdamid-protocol|de Luca 2021]]) and scDam&T-seq ([[10-Summaries/rooijers-2019-scdamt-seq|Rooijers 2019]]). The canonical review is van Steensel & Belmont 2017 ([[10-Summaries/van-steensel-2017-lads-review|van Steensel 2017]]).

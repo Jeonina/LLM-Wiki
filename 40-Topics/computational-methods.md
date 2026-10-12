@@ -1,6 +1,7 @@
 ---
 type: topic
 title: Computational Methods
+explainer: computational-methods
 aliases: [bioinformatics tooling, analysis pipelines, computational infrastructure]
 tags: [pipelines, algorithms, tools, infrastructure]
 created: 2026-08-10
@@ -14,6 +15,11 @@ paper_section: ["4.2"]
 
 > [!abstract] 한눈에
 > 같은 데이터라도 어떤 도구를 쓰느냐에 따라 결론이 달라진다. Hi-C pipeline 두 개는 같은 입력에서 0.83의 상관만 보이고, CUT&RUN에 ChIP-seq peak caller를 쓰면 발현되지 않는 인자에서도 peak가 수백 개 나온다 ([[10-Summaries/servant-2015-hicpro|HiC-Pro]]; [[10-Summaries/meers-2019-seacr|SEACR]]). single-cell 데이터에서는 sparsity, coverage bias, imputation이 측정하려는 변이를 지우는 문제, 계산 비용이 도구 선택을 좌우한다 ([[10-Summaries/zhou-2019-schicluster|scHiCluster]]; [[10-Summaries/bravo-2023-scenicplus|SCENIC+]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [분석 도구 교재](../60-Explainers/computational-methods.html)
+<!-- /explainer-links -->
 
 ## Key points
 

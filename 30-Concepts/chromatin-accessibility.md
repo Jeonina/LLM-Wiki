@@ -14,6 +14,13 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Chromatin accessibility는 DNA 구간이 nucleosome에서 벗어나 TF와 전사 기구가 닿을 수 있는 상태인지를 나타내며, 세포 유형과 상태에 따라 달라지고 같은 세포 안에서도 fiber마다 다르다 ([[10-Summaries/buenrostro-2015-nature|Buenrostro 2015]]; [[10-Summaries/swanson-2025-daf-seq|DAF-seq]]). 측정 방법이 bulk peak에서 단일 세포, 단일 분자 footprint로 내려갈수록 정의도 세밀해지지만, scATAC-seq의 differential accessibility 검정은 통계적으로 취약하다 ([[10-Summaries/ashuach-2022-peakvi|PeakVI]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [염색질 구조 교재](../60-Explainers/chromatin-architecture.html)
+>
+> [scATAC-seq 희소성 시뮬레이터](../60-Explainers/single-cell-atac-seq.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 The operational definition depends on the assay. ATAC-seq and DNase-seq measure accessibility as susceptibility to Tn5 transposase or DNase I cleavage in *bulk*, producing peaks where many cells have open chromatin at that locus ([[10-Summaries/buenrostro-2015-nature|Buenrostro 2015]]). Single-cell ATAC-seq (scATAC-seq) generalizes this to a per-cell binary or count matrix per peak ([[10-Summaries/buenrostro-2015-nature|Buenrostro 2015]]; [[10-Summaries/cusanovich-2015-sciatac|Cusanovich 2015]]). Single-molecule footprinting refines it further to a per-fiber occupancy pattern, distinguishing nucleosome-protected from TF-protected from fully accessible bases ([[10-Summaries/andrewb-2020-science|Fiber-seq]]; [[10-Summaries/swanson-2025-daf-seq|DAF-seq]]).

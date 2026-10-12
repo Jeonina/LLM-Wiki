@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>scATAC-seq 희소성 시뮬레이터</title>
+<link rel="stylesheet" href="explainer.css">
+</head>
+<body>
+<main>
+<div class="crumb"><a href="../">scDNA wiki</a> · <a href="./">교재</a> · 단일세포 ATAC-seq</div>
+<h1>세포 하나의 열린 크로마틴은 왜 대부분 비어 보일까: scATAC-seq 희소성 시뮬레이터</h1>
+<p class="lede">scATAC-seq는 Tn5가 열린 크로마틴에 adapter를 끼워 넣는 성질로 세포 하나하나의 접근성을 읽는다. 하지만 diploid 세포에는 한 영역의 사본이 두 개뿐이라, 한 locus에서 얻을 수 있는 read는 0, 1, 2개뿐이다 (<a href="../10-Summaries/schep-2017-chromvar">Schep 2017</a>). 이 희소성이 분석 도구의 설계를 거의 전부 결정한다. 아래 시뮬레이터에서 세포당 fragment 수와 세포를 묶는 방식을 바꿔 가며 직접 확인해 보자.</p>
+
+<div class="callouts">
+  <div class="callout"><b>한 locus에 read는 최대 두 개</b>사본이 둘뿐이고 그마저 대부분 library 단계에서 잃는다. 그래서 peak × cell 행렬에서 0이 아닌 칸은 몇 %에 그친다.</div>
+  <div class="callout"><b>0은 "닫힘"이 아니다</b>read가 없는 칸 대부분은 열려 있었지만 잡히지 않은 자리다. 세포 하나에서 peak 하나를 놓고 열림·닫힘을 판정하면 안 된다.</div>
+  <div class="callout"><b>신호는 모아서 읽는다</b>같은 motif를 가진 peak를 합치거나(chromVAR), 넓은 window로 묶거나(SnapATAC), 같은 cluster의 세포를 합쳐(pseudobulk) 잡음 위로 신호를 끌어올린다.</div>
+</div>
+
+<h2>시뮬레이터</h2>
+<div class="lab" id="lab">
+  <div class="controls">
+    <div class="methods" role="group" aria-label="세포당 fragment 수 예시" id="presets"></div>
+  </div>
+  <div class="controls">
+    <label class="slider">세포당 unique fragment <input type="range" id="frag" min="0" max="100" value="50"> <span id="fragv"></span></label>
+    <label class="slider">합치는 세포 수 (pseudobulk) <input type="range" id="ncell" min="0" max="100" value="0"> <span id="ncellv"></span></label>
+    <label class="slider">motif를 공유하는 peak 수 <input type="range" id="npeak" min="0" max="100" value="82"> <span id="npeakv"></span></label>
+    <button class="btn" id="reseed">다른 세포들로 다시 뽑기</button>
+  </div>
+  <p class="desc" id="pdesc"></p>
+
+  <p class="plotlabel">① 세포에서 열려 있는 peak 중 read가 하나 이상 잡힌 비율. <span style="color:var(--a1)">━</span> 세포 하나 · <span style="color:var(--a2)">━</span> 세포 n개를 합친 pseudobulk · 점선: scOpen이 예로 든 가정(사본의 25%만 시퀀싱)에서의 값 · 세로선: 현재 설정</p>
+  <canvas class="plot" id="det" height="200"></canvas>
+  <p class="plotlabel">② motif peak를 합산한 세포별 점수(chromVAR식 deviation, (관측 − 기대)/기대). <span style="color:var(--a1)">■</span> 세포형 A (motif peak의 60%가 열림) · <span style="color:var(--a2)">■</span> 세포형 B (30%가 열림), 각 300개 세포</p>
+  <canvas class="plot" id="dev" height="170"></canvas>
+
+  <div class="metrics">
+    <div class="metric"><div class="k">세포 하나: 열린 peak 중 검출</div><div class="v" id="m-det">–</div></div>
+    <div class="metric"><div class="k">검출된 peak 중 read 2개</div><div class="v" id="m-two">–</div></div>
+    <div class="metric"><div class="k">pseudobulk: 열린 peak 중 검출</div><div class="v" id="m-pool">–</div></div>
+    <div class="metric"><div class="k">peak 하나로 A/B 구분 (AUC)</div><div class="v" id="m-auc1">–</div></div>
+    <div class="metric"><div class="k">motif peak 합산으로 A/B 구분 (AUC)</div><div class="v" id="m-aucm">–</div></div>
+  </div>
+  <div class="verdict" id="verdict"></div>
+</div>
+
+<div class="note"><b>이 시뮬레이터는 장난감 모델이다.</b> 세포 하나에 열린 peak가 5만 개 있고, 모든 열린 peak는 두 사본이 모두 열려 있으며, fragment의 42%가 peak에 떨어진다고 가정했다. 각 사본은 같은 확률로 잡히고, 그 확률은 (fragment 수 × 0.42) / (2 × 50,000)이다. FRiP 42%는 신선한 mouse spleen 값(<a href="../10-Summaries/yadav-2025-scffpe-atac">Yadav 2025</a>)을, 프리셋의 fragment 수는 <a href="../10-Summaries/mezger-2018-microfluidic-atac">Mezger 2018</a>과 <a href="../10-Summaries/schep-2017-chromvar">Schep 2017</a>의 보고값을, 점선은 <a href="../10-Summaries/li-2021-scopen">scOpen</a>의 binomial dropout 예시(사본의 25% 시퀀싱 → 열린 자리의 약 56%가 0)를 따랐다. peak 수 5만, 세포형 A/B의 열린 비율(60%/30%), 세포 300개는 경향을 보이기 위해 고른 예시 값이다. 데이터는 모두 합성이므로 화면의 숫자를 논문 수치로 인용하면 안 된다. 실제 값은 아래 표를 보자.</div>
+
+<h2>무엇이 보이나</h2>
+<ol class="steps">
+  <li><b>접근성 신호 자체가 작은 표적에 있다.</b> 유전체의 2–3%만 열려 있지만 TF 결합의 90% 이상이 그 안에 있고, 열린 영역의 80% 넘게가 promoter가 아닌 원위 enhancer다 (<a href="../10-Summaries/klemm-2019-chromatin-accessibility-review">Klemm 2019</a>). 그래서 ATAC은 조절 상태를 가장 잘 보여 주는 단일 지표가 됐고, Fluidigm C1에서 첫 scATAC-seq가 나왔다 (<a href="../10-Summaries/buenrostro-2015-nature">Buenrostro 2015</a>). 같은 해 combinatorial indexing 방식인 sci-ATAC-seq도 15,000개 넘는 세포를 프로파일링했다 (<a href="../10-Summaries/cusanovich-2015-sciatac">Cusanovich 2015</a>).</li>
+  <li><b>세포 하나는 거의 비어 있다.</b> ①의 파란 곡선을 보자. fragment를 1만 개로 올려도 열린 peak 대부분은 read를 하나도 받지 못하고, read 2개를 받은 peak는 더 드물다. 실제 peak × cell 행렬도 0이 아닌 칸이 약 3%라고 보고된다 (<a href="../10-Summaries/zhao-2024-scada">Zhao 2024</a>; <a href="../10-Summaries/li-2021-scopen">Li 2021</a>). 사본이 둘뿐이라는 상한 때문에 per-locus 분석은 잡음이 지배한다 (<a href="../10-Summaries/schep-2017-chromvar">Schep 2017</a>).</li>
+  <li><b>motif로 묶으면 세포 하나도 읽힌다.</b> ②에서 peak 하나로 두 세포형을 가르는 AUC는 0.5 근처에 머물지만, 같은 motif를 가진 peak 수백 개를 합치면 두 분포가 갈라진다. chromVAR는 이 합산에 GC 함량과 평균 접근성을 맞춘 background를 빼서 bias를 보정하고, 세포당 10,000 fragment 수준에서 조혈 계통을 재구성했다 (<a href="../10-Summaries/schep-2017-chromvar">Schep 2017</a>). peak를 아예 쓰지 않고 5 kb window의 Jaccard 유사도로 세포를 묶는 SnapATAC은 전체의 0.1% 미만인 희귀 아형까지 찾았다 (<a href="../10-Summaries/fang-2021-snapatac">Fang 2021</a>).</li>
+  <li><b>세포를 합치면 bulk가 된다.</b> 합치는 세포 수를 40, 200으로 올려 ①의 주황 곡선을 보자. 같은 cluster 세포를 모은 pseudobulk는 bulk ATAC-seq와 같은 신호를 주면서 bulk에서는 보이지 않던 집단 내 이질성까지 드러냈다. 독립된 cluster로 보이려면 약 40개, bulk 수준 민감도에는 약 200개 세포가 필요했다 (<a href="../10-Summaries/gur-2025-scatac-vs-bulk">Gur 2025</a>).</li>
+  <li><b>빈칸을 메우는 쪽으로 발전하고 있다.</b> scOpen, SCALE 같은 imputation은 dropout을 메워 clustering과 cis-regulatory 예측을 돕지만, 복원된 신호가 진짜인지 지어낸 것인지 가릴 기준은 아직 없다 (<a href="../10-Summaries/li-2021-scopen">Li 2021</a>). 최근에는 수백만 세포 규모의 scATAC atlas로 foundation model을 사전학습한다. CLM-access는 280만 세포, 115만 cCRE reference로 학습했다 (<a href="../10-Summaries/liu-2025-clm-access">Liu 2025</a>).</li>
+</ol>
+
+<h2>실제 측정값</h2>
+<p class="desc">플랫폼, 세포, 기준이 연구마다 달라 같은 지표라도 값이 다르다. 엇갈리는 값은 그대로 함께 적었다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>항목</th><th>보고된 값</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>접근 가능한 유전체 비율</td><td>유전체의 약 2–3%, 그 안에 TF 결합의 90% 이상 · 열린 영역의 80% 넘게가 원위 enhancer</td><td><a href="../10-Summaries/klemm-2019-chromatin-accessibility-review">Klemm 2019</a></td></tr>
+<tr><td>한 locus의 최대 read</td><td>diploid 세포에서 0, 1, 2개</td><td><a href="../10-Summaries/schep-2017-chromvar">Schep 2017</a></td></tr>
+<tr><td>세포당 fragment</td><td>chromVAR가 견고하게 작동한 수준 약 10,000 · µATAC-seq 14,300(사람)/8,100(마우스) · Fluidigm C1 5,800 · combinatorial indexing 2,500 (GM12878)</td><td><a href="../10-Summaries/schep-2017-chromvar">Schep 2017</a> · <a href="../10-Summaries/mezger-2018-microfluidic-atac">Mezger 2018</a></td></tr>
+<tr><td>peak × cell 행렬의 0 아닌 칸</td><td>약 3% (scRNA-seq gene 행렬은 10% 이상) · 3–7%</td><td><a href="../10-Summaries/zhao-2024-scada">Zhao 2024</a> · <a href="../10-Summaries/li-2021-scopen">Li 2021</a></td></tr>
+<tr><td>binomial dropout 예시</td><td>열린 DNA의 25%만 시퀀싱된다고 가정하면 열린 자리의 약 56%가 cut site 0개</td><td><a href="../10-Summaries/li-2021-scopen">Li 2021</a></td></tr>
+<tr><td>FRiP</td><td>신선 조직 42% · scFFPE-ATAC 21% · 기존 FFPE scATAC 약 29–30%</td><td><a href="../10-Summaries/yadav-2025-scffpe-atac">Yadav 2025</a></td></tr>
+<tr><td>pseudobulk에 필요한 세포 수</td><td>독립 cluster 약 40개 · bulk 수준 민감도 약 200개 · 견고한 profile에는 수백 개</td><td><a href="../10-Summaries/gur-2025-scatac-vs-bulk">Gur 2025</a></td></tr>
+<tr><td>규모</td><td>첫 C1 scATAC 254개 GM12878 세포 · sci-ATAC-seq 15,000개 이상 · SnapATAC 55,592개 핵에서 약 37만 cCRE · PUMATAC 8개 protocol, 169,000개 PBMC</td><td><a href="../10-Summaries/buenrostro-2015-nature">Buenrostro 2015</a> · <a href="../10-Summaries/cusanovich-2015-sciatac">Cusanovich 2015</a> · <a href="../10-Summaries/fang-2021-snapatac">Fang 2021</a> · <a href="../10-Summaries/derop-2024-natbiotech">De Rop 2024</a></td></tr>
+</tbody></table></div>
+
+<h2>목적별로 고르기</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>알고 싶은 것</th><th>우선 고려</th><th>확인할 위험</th></tr></thead>
+<tbody>
+<tr><td>세포별 TF 활성</td><td>motif 합산 점수 (<a href="../10-Summaries/schep-2017-chromvar">chromVAR</a>)</td><td>motif를 공유하는 paralog TF(예: GATA1 대 GATA2)를 구분하지 못함. 발현과 함께 모델링해야 갈림 (<a href="../10-Summaries/debnath-2026-ison">Debnath 2026</a>; <a href="../10-Summaries/yuan-2024-linger">Yuan 2024</a>)</td></tr>
+<tr><td>희귀 세포형을 포함한 clustering</td><td>peak-free window 방식 (<a href="../10-Summaries/fang-2021-snapatac">SnapATAC</a>)</td><td>합산 신호로 정한 peak는 많은 세포형 쪽으로 치우쳐 희귀 집단을 놓침</td></tr>
+<tr><td>영역 하나의 differential accessibility</td><td>pseudobulk 비교, 또는 보정된 생성 모델 (<a href="../10-Summaries/ashuach-2022-peakvi">PeakVI</a>)</td><td>반복 실험끼리 비교한 음성 대조에서 Wilcoxon 검정은 6,761개, GLM은 910개 영역을 잘못 검출함</td></tr>
+<tr><td>세포형별 bulk 수준 profile</td><td>cluster별 pseudobulk (<a href="../10-Summaries/gur-2025-scatac-vs-bulk">Gur 2025</a>)</td><td>세포 수가 수백 개보다 적으면 품질이 떨어지고, 너무 넓게 묶으면 집단 내 이질성이 가려짐</td></tr>
+<tr><td>dropout 복원</td><td>imputation (<a href="../30-Concepts/scatac-imputation">scOpen, SCALE, scCASE 등</a>)</td><td>없는 신호를 지어낼 수 있고, 진짜인지 가릴 기준이 아직 없음 (<a href="../10-Summaries/li-2021-scopen">Li 2021</a>)</td></tr>
+<tr><td>scATAC read depth로 copy number</td><td>epiAneufinder 등 (<a href="../10-Summaries/ramakrishnan-2023-epianeufinder">Ramakrishnan 2023</a>)</td><td>같은 세포의 DNA와 비교한 검증에서 상관이 중앙값 R = 0.47에 그치고 종양 subclone을 풀지 못함 (<a href="../10-Summaries/wang-2024-wellda-seq">Wang 2024</a>)</td></tr>
+</tbody></table></div>
+
+<h2>읽는 순서</h2>
+<ol class="path">
+  <li><a href="../40-Topics/single-cell-atac-seq">Single-cell ATAC-seq (hub)</a> — assay, 분석 도구, foundation model까지 한 장에 정리한 지도다.</li>
+  <li><a href="../30-Concepts/scatac-seq">scATAC-seq</a> — 플랫폼 계보와 QC 지표(TSS enrichment, FRiP)를 익힌다.</li>
+  <li><a href="../30-Concepts/chromvar">chromVAR</a> — motif 합산 점수가 어떻게 계산되고 어디서 비판받는지 본다.</li>
+  <li><a href="../30-Concepts/scatac-imputation">scATAC imputation</a> — 빈칸을 메우는 방법들과 hallucination 문제를 비교한다.</li>
+  <li><a href="../10-Summaries/schep-2017-chromvar">Schep 2017</a> — 희소성을 왜 합산으로 풀어야 하는지 가장 분명하게 설명한 논문이다.</li>
+  <li><a href="../10-Summaries/gur-2025-scatac-vs-bulk">Gur 2025</a> — pseudobulk가 bulk와 같아지는 세포 수를 실측했다.</li>
+  <li><a href="../10-Summaries/fang-2021-snapatac">Fang 2021</a> — peak를 버리면 무엇을 얻는지, 희귀 세포형 사례로 보여 준다.</li>
+</ol>
+
+<h2>아직 열린 질문</h2>
+<ul>
+  <li>대부분의 scATAC 도구는 합산 신호에서 정한 peak 좌표 위에 서 있어 많은 세포형 쪽으로 치우친다. SnapATAC의 peak-free 방식은 부분적인 해법일 뿐, 분야는 여전히 peak 중심이다 (<a href="../10-Summaries/fang-2021-snapatac">Fang 2021</a>).</li>
+  <li>motif 수준 TF 활성은 paralog TF를 뒤섞는다. 지금까지 chromVAR로 해석한 TF 결과 중 얼마가 발현과 접근성을 함께 보는 모델에서 바뀔지는 모른다 (<a href="../10-Summaries/debnath-2026-ison">Debnath 2026</a>; <a href="../10-Summaries/yuan-2024-linger">Yuan 2024</a>).</li>
+  <li>단일세포에서 ATAC과 Hi-C를 함께 재는 것은 가능해졌지만, 이를 분석할 도구는 아직 따라오지 못했다.</li>
+</ul>
+
+<footer>scDNA wiki 교재 · 시뮬레이터의 데이터는 모두 합성 데이터다. 실제 수치와 해석은 링크된 위키 요약과 원 논문을 기준으로 한다.</footer>
+</main>
+
+<script>
+(function(){
+  // Toy model of scATAC sparsity. A diploid cell has P open peaks, each with two open copies.
+  // Each copy is captured independently with probability q = F*FRIP/(2P), so a peak yields
+  // Binomial(2, q) reads (0, 1 or 2). FRIP = 0.42 follows the fresh-tissue value in Yadav 2025;
+  // preset fragment counts follow Mezger 2018 and Schep 2017; the dashed line is scOpen's
+  // binomial-dropout example (25% of copies sequenced). P, the open fractions of motif peaks
+  // in cell types A/B and the cell count are illustrative values, not fitted ones.
+  var P = 50000, FRIP = 0.42, OA = 0.6, OB = 0.3, NC = 300;
+  var PRESETS = [
+    {name:"combinatorial indexing 2,500", F:2500, text:"Mezger 2018이 비교한 combinatorial indexing의 GM12878 세포당 fragment 수다. 세포 하나에서 열린 peak는 거의 잡히지 않는다."},
+    {name:"Fluidigm C1 5,800", F:5800, text:"Mezger 2018이 비교한 Fluidigm C1의 GM12878 세포당 fragment 수다."},
+    {name:"chromVAR 10,000", F:10000, text:"Schep 2017이 chromVAR가 견고하게 작동한다고 보고한 세포당 fragment 수준이다."},
+    {name:"µATAC-seq 14,300", F:14300, text:"Mezger 2018의 µATAC-seq에서 사람 세포당 fragment 수다."}
+  ];
+  var state = {Fidx:null, nidx:0, midx:82, seed:7};
+
+  function rng(seed){ var s = seed>>>0 || 1; return function(){ s ^= s<<13; s>>>=0; s ^= s>>>17; s ^= s<<5; s>>>=0; return s/4294967296; }; }
+  function gauss(r){ var u=0,v=0; while(u===0)u=r(); while(v===0)v=r(); return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v); }
+  function binom(r,n,p){
+    if(n*p>30 && n*(1-p)>30){ var x=Math.round(n*p+Math.sqrt(n*p*(1-p))*gauss(r)); return Math.max(0,Math.min(n,x)); }
+    var k=0; for(var i=0;i<n;i++) if(r()<p) k++; return k;
+  }
+  function auc(a,b){
+    var all=a.map(function(v){return [v,1];}).concat(b.map(function(v){return [v,0];})).sort(function(x,y){return x[0]-y[0];});
+    var rs=0,i=0,n=all.length;
+    while(i<n){ var j=i; while(j<n&&all[j][0]===all[i][0]) j++; var rk=(i+1+j)/2; for(var k=i;k<j;k++) if(all[k][1]) rs+=rk; i=j; }
+    return (rs - a.length*(a.length+1)/2)/(a.length*b.length);
+  }
+  function capture(F){ return Math.min(1, F*FRIP/(2*P)); }
+  function detect(F,n){ return 1-Math.pow(1-capture(F), 2*n); }
+  // pure computation: everything the page shows for one setting
+  function model(F,n,M,seed){
+    var q=capture(F), d=1-Math.pow(1-q,2), r=rng(seed), A=[], B=[];
+    for(var c=0;c<NC;c++){ A.push(binom(r,M,OA*d)); B.push(binom(r,M,OB*d)); }
+    var mean=(A.reduce(function(s,x){return s+x;},0)+B.reduce(function(s,x){return s+x;},0))/(2*NC)||1;
+    A=A.map(function(x){return (x-mean)/mean;}); B=B.map(function(x){return (x-mean)/mean;});
+    return {q:q, det:d, twoShare: d>0 ? q*q/d : 0, pool:detect(F,n), aucPeak:0.5+0.5*(OA-OB)*d, aucMotif:auc(A,B), A:A, B:B};
+  }
+
+  // sliders: log scales
+  var FMIN=1000, FMAX=100000;
+  function Ffrom(i){ return Math.round(Math.exp(Math.log(FMIN)+(Math.log(FMAX)-Math.log(FMIN))*i/100)/100)*100; }
+  function idxF(F){ return Math.round(100*(Math.log(F)-Math.log(FMIN))/(Math.log(FMAX)-Math.log(FMIN))); }
+  function Nfrom(i){ return Math.max(1, Math.round(Math.exp(Math.log(1000)*i/100))); }
+  function Mfrom(i){ return Math.max(1, Math.round(Math.exp(Math.log(2000)*i/100))); }
+
+  function css(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+  function setup(c){
+    var dpr = window.devicePixelRatio||1, w = c.clientWidth, h = parseInt(c.getAttribute("height"),10);
+    c.width = w*dpr; c.height = h*dpr; c.style.height = h+"px";
+    var ctx = c.getContext("2d"); ctx.setTransform(dpr,0,0,dpr,0,0); return {ctx:ctx,w:w,h:h};
+  }
+  function fmtN(x){ return x.toLocaleString("en-US"); }
+
+  function drawDet(F,n){
+    var o=setup(document.getElementById("det")), ctx=o.ctx, pad={l:40,r:10,t:10,b:22};
+    var W=o.w-pad.l-pad.r, H=o.h-pad.t-pad.b;
+    function X(f){ return pad.l+W*(Math.log(f)-Math.log(FMIN))/(Math.log(FMAX)-Math.log(FMIN)); }
+    function Y(v){ return pad.t+H*(1-v); }
+    ctx.clearRect(0,0,o.w,o.h); ctx.lineWidth=1; ctx.font="11px sans-serif";
+    ctx.strokeStyle=css("--line"); ctx.fillStyle=css("--muted");
+    [0,0.25,0.5,0.75,1].forEach(function(t){ ctx.beginPath(); ctx.moveTo(pad.l,Y(t)); ctx.lineTo(o.w-pad.r,Y(t)); ctx.stroke(); ctx.fillText(Math.round(t*100)+"%",4,Y(t)+4); });
+    [1000,10000,100000].forEach(function(f){ var x=X(f); ctx.fillText(fmtN(f), Math.min(x-10,o.w-pad.r-44), o.h-6); });
+    PRESETS.forEach(function(p){ var x=X(p.F); ctx.beginPath(); ctx.moveTo(x,Y(0)); ctx.lineTo(x,Y(0)-6); ctx.stroke(); });
+    // scOpen example: 1-(0.75)^2
+    ctx.setLineDash([5,4]); ctx.strokeStyle=css("--muted"); ctx.beginPath(); ctx.moveTo(pad.l,Y(1-0.5625)); ctx.lineTo(o.w-pad.r,Y(1-0.5625)); ctx.stroke(); ctx.setLineDash([]);
+    function curve(nc,col){
+      ctx.strokeStyle=col; ctx.lineWidth=2.2; ctx.beginPath();
+      for(var i=0;i<=200;i++){ var f=Math.exp(Math.log(FMIN)+(Math.log(FMAX)-Math.log(FMIN))*i/200), x=X(f), y=Y(detect(f,nc)); if(i)ctx.lineTo(x,y); else ctx.moveTo(x,y); }
+      ctx.stroke(); ctx.lineWidth=1;
+    }
+    if(n>1) curve(n, css("--a2"));
+    curve(1, css("--a1"));
+    ctx.strokeStyle=css("--ink"); ctx.beginPath(); ctx.moveTo(X(F),Y(0)); ctx.lineTo(X(F),Y(1)); ctx.stroke();
+    ctx.fillStyle=css("--a1"); ctx.beginPath(); ctx.arc(X(F),Y(detect(F,1)),4,0,2*Math.PI); ctx.fill();
+    if(n>1){ ctx.fillStyle=css("--a2"); ctx.beginPath(); ctx.arc(X(F),Y(detect(F,n)),4,0,2*Math.PI); ctx.fill(); }
+  }
+  function drawDev(res){
+    var o=setup(document.getElementById("dev")), ctx=o.ctx, pad={l:40,r:10,t:8,b:22};
+    var W=o.w-pad.l-pad.r, H=o.h-pad.t-pad.b, all=res.A.concat(res.B);
+    var lo=Math.min.apply(null,all), hi=Math.max.apply(null,all); if(hi-lo<1e-9){ lo-=0.5; hi+=0.5; }
+    var NB=40, bw=(hi-lo)/NB;
+    function hist(arr){ var h=new Array(NB).fill(0); arr.forEach(function(v){ var k=Math.min(NB-1,Math.floor((v-lo)/bw)); h[k]++; }); return h; }
+    var hA=hist(res.A), hB=hist(res.B), ymax=Math.max(Math.max.apply(null,hA),Math.max.apply(null,hB),1);
+    ctx.clearRect(0,0,o.w,o.h); ctx.font="11px sans-serif"; ctx.strokeStyle=css("--line"); ctx.fillStyle=css("--muted"); ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(pad.l,pad.t+H); ctx.lineTo(o.w-pad.r,pad.t+H); ctx.stroke();
+    ctx.fillText("세포 수",2,pad.t+10);
+    ctx.fillText(lo.toFixed(1),pad.l,o.h-6); ctx.fillText(hi.toFixed(1),o.w-pad.r-24,o.h-6);
+    var zx=pad.l+W*(0-lo)/(hi-lo); if(zx>pad.l+20&&zx<o.w-pad.r-20) ctx.fillText("0",zx-3,o.h-6);
+    var cw=W/NB;
+    [[hA,"--a1"],[hB,"--a2"]].forEach(function(t){
+      ctx.fillStyle=css(t[1]); ctx.globalAlpha=0.6;
+      t[0].forEach(function(c,i){ var h=H*c/ymax; ctx.fillRect(pad.l+i*cw, pad.t+H-h, Math.max(cw-0.8,0.6), h); });
+    });
+    ctx.globalAlpha=1;
+  }
+  function pct(x){ return (100*x).toFixed(x<0.1?1:0)+"%"; }
+  function render(){
+    var F=Ffrom(state.Fidx), n=Nfrom(state.nidx), M=Mfrom(state.midx), res=model(F,n,M,state.seed);
+    document.getElementById("fragv").textContent=fmtN(F);
+    document.getElementById("ncellv").textContent=fmtN(n)+"개";
+    document.getElementById("npeakv").textContent=fmtN(M)+"개";
+    var pre=PRESETS.filter(function(p){ return p.F===F; })[0];
+    document.getElementById("pdesc").textContent = pre ? pre.text : "세포당 unique fragment "+fmtN(F)+"개. 프리셋 버튼은 위키 요약에 보고된 값이다.";
+    Array.prototype.forEach.call(document.querySelectorAll("#presets button"), function(b){ b.setAttribute("aria-pressed", (+b.dataset.f)===F?"true":"false"); });
+    drawDet(F,n); drawDev(res);
+    document.getElementById("m-det").textContent=pct(res.det);
+    document.getElementById("m-two").textContent=pct(res.twoShare);
+    document.getElementById("m-pool").textContent= n>1 ? pct(res.pool)+" ("+fmtN(n)+"개)" : "세포 1개";
+    document.getElementById("m-auc1").textContent=res.aucPeak.toFixed(2);
+    document.getElementById("m-aucm").textContent=res.aucMotif.toFixed(2);
+    var v=document.getElementById("verdict"); v.innerHTML="";
+    var cellOk=res.det>=0.5, motifOk=res.aucMotif>=0.9, poolOk=n>1&&res.pool>=0.9;
+    [[cellOk,"세포 하나·peak 하나: "+(cellOk?"열린 peak의 절반 이상이 잡힘":"0인 칸 대부분이 실은 열린 자리")],
+     [motifOk,"motif 합산: "+(motifOk?"두 세포형이 갈림":"아직 분포가 겹침")],
+     [poolOk,"pseudobulk: "+(poolOk?"열린 peak 대부분이 잡힘":(n>1?"세포를 더 모아야 함":"세포를 합치지 않음"))]]
+     .forEach(function(t){ var s=document.createElement("span"); s.className="tag "+(t[0]?"good":"bad"); s.textContent=t[1]; v.appendChild(s); });
+  }
+  var box=document.getElementById("presets");
+  PRESETS.forEach(function(p){ var b=document.createElement("button"); b.type="button"; b.textContent=p.name; b.dataset.f=p.F; b.addEventListener("click",function(){ state.Fidx=idxF(p.F); document.getElementById("frag").value=state.Fidx; render(); }); box.appendChild(b); });
+  // log slider positions do not land exactly on preset values; snap when the slider sits on a preset index
+  var Fsel=function(i){ var hit=PRESETS.filter(function(p){ return idxF(p.F)===i; })[0]; return hit ? hit.F : null; };
+  var baseFrom=Ffrom; Ffrom=function(i){ var f=Fsel(i); return f!==null ? f : baseFrom(i); };
+  document.getElementById("frag").addEventListener("input",function(e){ state.Fidx=+e.target.value; render(); });
+  document.getElementById("ncell").addEventListener("input",function(e){ state.nidx=+e.target.value; render(); });
+  document.getElementById("npeak").addEventListener("input",function(e){ state.midx=+e.target.value; render(); });
+  document.getElementById("reseed").addEventListener("click",function(){ state.seed=Math.floor(Math.random()*1e6); render(); });
+  window.addEventListener("resize", function(){ clearTimeout(window.__rt); window.__rt=setTimeout(render,120); });
+  if(window.matchMedia) window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", render);
+  state.Fidx=idxF(10000); document.getElementById("frag").value=state.Fidx;
+  document.getElementById("ncell").value=state.nidx; document.getElementById("npeak").value=state.midx;
+  render();
+})();
+</script>
+</body>
+</html>

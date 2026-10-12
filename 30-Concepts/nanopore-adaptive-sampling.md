@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Adaptive sampling은 nanopore가 읽는 중인 read의 앞부분을 표적 서열과 비교해 필요 없는 분자를 즉시 내보내는 기능으로, capture나 PCR 없이 원하는 영역만 농축한다. Capture probe를 설계하기 어려운 반복 영역에 특히 유용해서, STAM-seq는 이를 식물의 반복 영역(HRR) 연구에 썼다 ([[10-Summaries/mo-2023-stam-seq|STAM-seq]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [Long-read 시퀀싱 교재](../60-Explainers/long-read-sequencing.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Implemented via tools like ReadFish, ReadUntil, and ONT's native Dorado. Targeted regions are typically specified as a BED file or list of contigs.

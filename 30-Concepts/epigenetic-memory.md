@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Epigenetic memory는 DNA methylation과 chromatin 상태로 세포가 과거의 발생 이력과 기원 조직을 분열 후에도 기억하는 현상이다 ([[10-Summaries/kim-2017-methylation-memory-review|Kim 2017]]). Lineage barcode를 정답으로 쓴 mouse HSC 실험에서는 같은 clone끼리 유전자 발현보다 CpG methylation이 훨씬 더 비슷했다 ([[10-Summaries/li-2023-darlin|DARLIN]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 DNA methylation](../60-Explainers/dna-methylation.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Memory is enforced by **maintenance machinery**: DNMT1+UHRF1 at the replication fork, polycomb (H3K27me3) and trithorax (H3K4me3) systems, heterochromatin self-templating. Stable but not absolute: extended reprogramming or cancer-associated remodeling can erase memory partially.

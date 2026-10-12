@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>혈액암 교재</title>
+<link rel="stylesheet" href="explainer.css">
+</head>
+<body>
+<main>
+<div class="crumb"><a href="../">scDNA wiki</a> · <a href="./">교재</a> · 혈액암</div>
+<h1>같은 골수 안에서 변이 세포와 정상 세포를 어떻게 가려낼까</h1>
+<p class="lede">혈액암은 조혈모세포와 전구세포에서 시작한다. 그런데 변이 세포와 정상 세포가 같은 표면 marker를 공유하기 때문에 sorting으로는 둘을 나눌 수 없다. 그래서 이 분야에서는 genotype을 세포 하나하나에서 읽고, 가능하면 같은 세포의 전사체나 chromatin 상태까지 함께 읽는다. 이 페이지는 MPN, AML, ALL, CLL 연구를 따라가며 무엇을 어떤 assay로 읽었고 어디에서 오류가 생기는지 정리한다.</p>
+
+<div class="callouts">
+  <div class="callout"><b>같은 환자 안에 대조군이 있다</b>변이 세포와 정상 세포가 한 골수에 섞여 있으므로, 세포마다 genotype을 붙이면 유전 배경과 미세환경이 같은 비교군이 생긴다. GoT 계열 방법의 설계 핵심이다.</div>
+  <div class="callout"><b>bulk VAF는 클론 구조를 틀리게 그릴 수 있다</b>VAF가 비슷한 두 클론은 bulk에서 구분되지 않고, founder 순서가 뒤집히기도 한다. 세포 단위 genotype이 이를 바로잡는다.</div>
+  <div class="callout"><b>작은 클론은 allelic dropout과 구분해야 한다</b>세포당 dropout이 수 % 이상이면 몇 % 크기의 가짜 single·double mutant 클론이 생긴다. MRD와 희귀 subclone 주장이 정확히 이 구간에 있다.</div>
+</div>
+
+<h2>질환이 생기는 자리와 읽은 assay</h2>
+<figure class="fig">
+  <svg viewBox="0 0 760 476" role="img" aria-label="조혈 분화 계층 위에 표시한 혈액암 연구와 사용한 단일세포 assay">
+    <g style="stroke:var(--muted);stroke-width:1.6;fill:none">
+      <path d="M62 236 L148 146"/><path d="M62 236 L148 326"/>
+      <path d="M172 146 L258 86"/><path d="M172 146 L258 206"/><path d="M172 326 L258 346"/><path d="M172 326 L258 206"/>
+      <path d="M282 86 L360 46"/><path d="M282 86 L360 116"/><path d="M282 206 L360 206"/>
+      <path d="M282 346 L360 300"/><path d="M282 346 L360 396"/><path d="M384 300 L420 300"/>
+    </g>
+    <g style="fill:var(--accent)">
+      <circle cx="50" cy="236" r="14"/><circle cx="160" cy="146" r="12"/><circle cx="160" cy="326" r="12"/>
+      <circle cx="270" cy="86" r="11"/><circle cx="270" cy="206" r="11"/><circle cx="270" cy="346" r="11"/>
+      <circle cx="372" cy="46" r="10"/><circle cx="372" cy="116" r="10"/><circle cx="372" cy="206" r="10"/>
+      <circle cx="372" cy="300" r="10"/><circle cx="372" cy="396" r="10"/><circle cx="430" cy="300" r="10"/>
+    </g>
+    <g font-size="13" font-weight="600" style="fill:var(--ink)">
+      <text x="28" y="268">HSC</text><text x="140" y="124">CMP</text><text x="136" y="358">LMPP</text>
+      <text x="252" y="66">MEP</text><text x="250" y="232">GMP</text><text x="252" y="376">CLP</text>
+      <text x="356" y="26">MkP</text><text x="362" y="142">EP</text><text x="334" y="232">Mono/Gran</text>
+      <text x="340" y="326">Pre-B</text><text x="366" y="424">T</text><text x="416" y="326">B</text>
+    </g>
+    <!-- connectors: solid = single-cell assay, dashed = bulk / PDX -->
+    <g style="stroke:var(--warn);stroke-width:1.3;fill:none">
+      <path d="M382 46 L476 44"/><path d="M64 230 Q250 10 476 52"/>
+      <path d="M64 240 Q280 120 476 120"/>
+      <path d="M382 206 L476 196"/>
+      <path d="M378 291 Q410 258 476 262"/>
+      <path d="M382 396 L476 372" stroke-dasharray="5 4"/>
+      <path d="M440 306 L476 440" stroke-dasharray="5 4"/>
+    </g>
+    <g style="fill:var(--panel);stroke:var(--line)">
+      <rect x="478" y="14" width="278" height="66" rx="6"/>
+      <rect x="478" y="90" width="278" height="64" rx="6"/>
+      <rect x="478" y="164" width="278" height="66" rx="6"/>
+      <rect x="478" y="240" width="278" height="98" rx="6"/>
+      <rect x="478" y="348" width="278" height="48" rx="6"/>
+      <rect x="478" y="406" width="278" height="64" rx="6"/>
+    </g>
+    <g font-size="12" style="fill:var(--muted)">
+      <text x="488" y="32"><tspan font-weight="600" style="fill:var(--ink)">MPN · CALR</tspan> — GoT (scRNA)</text>
+      <text x="488" y="50">ET: 변이 비율이 MkP 쪽으로 갈수록 증가</text>
+      <text x="488" y="68">HSPC는 NF-κB, MkP는 UPR · Nam 2019</text>
+      <text x="488" y="108"><tspan font-weight="600" style="fill:var(--ink)">MPN · JAK2V617F</tspan> — GoT–ChA (scATAC)</text>
+      <text x="488" y="126">HSC의 STAT motif 접근성 증가,</text>
+      <text x="488" y="144">CH 단계부터 보임 · Izzo 2024</text>
+      <text x="488" y="182"><tspan font-weight="600" style="fill:var(--ink)">AML</tspan> — Tapestri 표적 scDNA</text>
+      <text x="488" y="200">founder 재지정 · Pellegrino 2018</text>
+      <text x="488" y="218">SNV + CNA/CNLOH 계통수 · COMPASS</text>
+      <text x="488" y="258"><tspan font-weight="600" style="fill:var(--ink)">B-ALL</tspan> — scDNA 세 세대</text>
+      <text x="488" y="276">MDA + 표적: codominant clone,</text>
+      <text x="488" y="292">클론마다 다른 B 단계에서 정지 · Gawad 2014</text>
+      <text x="488" y="310">DNTR-seq: bulk가 놓친 3% subclone · ASCENT</text>
+      <text x="488" y="328">long-read: CD19 음성 재발 · SPLONGGET</text>
+      <text x="488" y="366"><tspan font-weight="600" style="fill:var(--ink)">T-ALL</tspan> — PDX bulk ChIP/ATAC/Hi-C</text>
+      <text x="488" y="384">TAL1 enhancer 재활성화 · Terekhanova 2026</text>
+      <text x="488" y="424"><tspan font-weight="600" style="fill:var(--ink)">CLL · 림프종</tspan> — bulk가 주력</text>
+      <text x="488" y="442">bulk: EVOFLUx (methylation), MOFA</text>
+      <text x="488" y="460">단일세포: FFPE 여포성 림프종 · scFFPE-ATAC</text>
+    </g>
+  </svg>
+  <figcaption>그림 1. 조혈 분화 계층(<a href="../30-Concepts/hematopoietic-differentiation">Hematopoietic differentiation</a>의 CD34⁺ cluster 체계를 단순화)과 각 연구가 다룬 세포 집단. 실선은 단일세포 assay, 점선은 bulk 또는 PDX 측정이다. 질환의 위치는 연구가 분석한 세포 집단을 가리키는 도식이며 세포 기원을 주장하지 않는다. 출처: <a href="../10-Summaries/nam-2019-got">Nam 2019</a>, <a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>, <a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>, <a href="../10-Summaries/sollier-2023-compass">Sollier 2023</a>, <a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a>, <a href="../10-Summaries/kolbeinsdottir-2025-ascent">Kolbeinsdottir 2025</a>, <a href="../10-Summaries/pancikova-2025-splongget">Pančíková 2025 (preprint)</a>, <a href="../10-Summaries/terekhanova-2026-tal1-enhancer">Terekhanova 2026 (preprint)</a>, <a href="../10-Summaries/gabbutt-2025-evoflux">Gabbutt 2025</a>, <a href="../10-Summaries/argelaguet-2018-mofa">Argelaguet 2018</a>, <a href="../10-Summaries/yadav-2025-scffpe-atac">Yadav 2025</a>.</figcaption>
+</figure>
+
+<figure class="fig">
+  <svg id="fig-rates" viewBox="0 0 760 420" role="img" aria-label="방법별 genotype 판정률과 allelic dropout 비율"></svg>
+  <figcaption>그림 2. 위: 세포 중 genotype이 정해진 비율. CALR은 발현이 높고 변이가 전사체 끝에서 약 1.5 kb 안에 있어 cDNA 기반 GoT에 유리하다 (<a href="../10-Summaries/nam-2019-got">Nam 2019</a>; <a href="../30-Concepts/got">GoT</a>). JAK2는 발현이 낮아 RNA 기반 판정이 7–10%에 그치고, gDNA를 읽는 GoT–ChA가 환자 시료 평균 38.1%로 올렸다 (<a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>). SPLONGGET은 변이마다 0–75.1%로 편차가 크다 (<a href="../10-Summaries/pancikova-2025-splongget">Pančíková 2025</a>). 아래: allelic dropout. Tapestri는 spike-in Raji 세포로 run마다 쟀고 (<a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>), Gawad는 MDA 산물에서 네 방법으로 쟀다 (<a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a>). 막대는 범위, 점은 단일 값이다. 유전자, 시료, 분모가 서로 달라 순위표로 읽으면 안 된다.</figcaption>
+</figure>
+
+<h2>핵심 내용</h2>
+<ol class="steps">
+  <li><b>왜 혈액암이 단일세포 genotyping의 시험장인가.</b> MPN은 재현성 있는 driver가 잘 알려져 있고, CD34⁺ 골수 시료를 임상에서 얻을 수 있으며, 변이 세포와 정상 세포가 한 환자 안에 공존한다. 표면 marker로는 둘을 나눌 수 없으니 같은 세포에서 genotype과 표현형을 함께 읽어야 한다 (<a href="../10-Summaries/nam-2019-got">Nam 2019</a>; <a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>). CALR 변이 세포는 HSPC 분화 계층 전체에 퍼져 있어서 scRNA-seq만으로는 별도 cluster를 이루지 않았다 (<a href="../10-Summaries/nam-2019-got">Nam 2019</a>).</li>
+  <li><b>같은 변이도 세포 유형마다 다르게 작동한다.</b> GoT는 10x scRNA-seq의 cDNA에서 변이 부위를 따로 증폭해 CD34⁺ MPN 세포의 약 88%에 genotype을 붙였다(기본 10x read로는 약 1.4%). ET 환자 5명의 세포 38,290개에서 CALR 변이 비율은 분화가 진행될수록, 특히 MkP에서 높았다. 변이 MkP는 UPR을, 변이 HSPC는 NF-κB 경로를 켰다. MF에서는 변이 세포가 이미 HSPC에 많았고 MkP가 TGFB1을 올렸다 (<a href="../10-Summaries/nam-2019-got">Nam 2019</a>).</li>
+  <li><b>RNA 대신 DNA를 읽으면 발현이 낮은 driver도 잡힌다.</b> JAK2V617F는 발현이 낮아 cDNA 기반 판정률이 7–10%였다. GoT–ChA는 scATAC-seq의 barcoding PCR에서 gDNA locus를 직접 증폭해 환자 19명, 시료 21개, 세포 150,643개에서 평균 38.1%를 판정했다. 변이 HSC는 STAT motif 접근성이 높았고 이 차이는 clonal hematopoiesis 단계에서 이미 보였다. 반면 NF-κB·TGF-β 프로그램은 MF에서만 나타났다. Ruxolitinib은 motif 차이를 없앴지만 클론은 없애지 못했다 (<a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>).</li>
+  <li><b>세포 단위 genotype은 클론의 순서를 바꾼다.</b> 소아 ALL 세포 1,479개를 MDA로 증폭해 표적 재시퀀싱하자, 환자 6명 중 5명에게 세포의 25% 이상을 차지하는 클론이 둘 이상 있었다. 큰 결실은 점돌연변이보다 먼저 생겼고, 한 환자 안에서도 클론마다 다른 B세포 단계에서 분화가 멈춰 있었다 (<a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a>). AML에서 Tapestri는 bulk VAF가 23.6%로 예측한 DNMT3A 단독 변이 집단을 1.7%로 다시 쟀고, founder가 TP53일 가능성을 제시했다 (<a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>). COMPASS는 같은 유형의 데이터에서 SNV와 copy number를 함께 계통수에 올려 FLT3 CNLOH와 EZH2 결실을 찾았다 (<a href="../10-Summaries/sollier-2023-compass">Sollier 2023</a>).</li>
+  <li><b>작은 클론을 보려면 세포 수와 dropout을 함께 계산한다.</b> Gawad의 시뮬레이션에서 1% 클론을 잡으려면 세포 200개, 2% 클론은 75개가 필요했다. 대략 클론당 2–3개 세포가 잡혀야 한다는 뜻이다 (<a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a>). Tapestri의 run별 dropout 2.1–10.3%는 몇 % 크기의 가짜 클론을 만들기에 충분하고, 저자들도 일부 소수 클론을 dropout 산물로 봤다 (<a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>). 저깊이 whole-genome 방식인 ASCENT는 B-ALL 세포 324개에서 bulk WGS가 놓친 3% subclone을 찾았고, 클론 최소 크기를 세포 5개로 제시했다 (<a href="../10-Summaries/kolbeinsdottir-2025-ascent">Kolbeinsdottir 2025</a>).</li>
+  <li><b>최전선은 여러 층을 한 세포에서, 그리고 긴 read로 읽는 것이다.</b> SPLONGGET은 long-read multiome으로 CAR-T 이후 CD19 음성 재발을 8 Mb chr16 결실과 phasing된 splice-site SNV 네 개로 설명했다 (<a href="../10-Summaries/pancikova-2025-splongget">Pančíková 2025, preprint</a>). 림프계 암에서는 bulk methylation barcode가 1,976개 시료의 성장 속도와 발병 시점을 추정했고, CLL에서 진화 이력이 독립적인 예후 인자였다 (<a href="../10-Summaries/gabbutt-2025-evoflux">Gabbutt 2025</a>). 반면 서열 모델은 아직 불안정하다. AlphaGenome은 T-ALL의 TAL1 neo-enhancer 효과는 맞혔지만 enhancer I의 indel·ITD 효과는 예측하지 못했다 (<a href="../10-Summaries/avsec-2026-alphagenome">Avsec 2026</a>; <a href="../10-Summaries/terekhanova-2026-tal1-enhancer">Terekhanova 2026</a>).</li>
+</ol>
+
+<h2>연구별로 보기</h2>
+<p class="desc">질환, driver, assay, 핵심 결과를 나란히 놓았다. bulk와 단일세포 값이 엇갈리는 경우는 둘 다 적었다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>질환</th><th>driver · 변이</th><th>assay · 규모</th><th>보고된 결과</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>MPN (ET, MF)</td><td>CALR (다중 GoT로 NFE2, SF3B1도)</td><td>GoT · ET 5명 세포 38,290개, MF 4명 11,093개</td><td>판정률 약 88% (기본 10x 약 1.4%) · 변이 비율은 ET에서 MkP 쪽으로 증가, MF에서는 HSPC부터 높음 · MkP UPR, HSPC NF-κB</td><td><a href="../10-Summaries/nam-2019-got">Nam 2019</a></td></tr>
+<tr><td>MPN (MF, PV→MF), CH</td><td>JAK2V617F</td><td>GoT–ChA · 시료 21개, 세포 150,643개</td><td>판정률 38.1% (RNA 기반 7–10%) · HSC STAT1/5 motif 접근성 증가, CH 단계부터 · ruxolitinib 후 motif 차이 소실, 클론은 유지</td><td><a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a></td></tr>
+<tr><td>AML</td><td>TP53, DNMT3A, FLT3-ITD / IDH2, NRAS, ASXL1</td><td>Tapestri 62-amplicon · 환자 2명, 16,000개 넘는 세포</td><td>DNMT3A 단독 집단: bulk 예측 23.6% 대 단일세포 1.7% · 관해기 세포 약 4,000개 중 변이 세포 3개까지 검출 · 삼중 변이 클론 7%→64% (재발)</td><td><a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a></td></tr>
+<tr><td>AML, MPN</td><td>FLT3, EZH2, TP53, JAK2</td><td>Tapestri 재분석 + COMPASS · AML 123명</td><td>FLT3 CNLOH 12개 시료(9.8%), EZH2 결실 8개(6.5%) · JAK2V617F 시료 모두 CNLOH 동반, 흔히 아주 작은 subclone · bulk에 안 보인 약 5% TP53 손실</td><td><a href="../10-Summaries/sollier-2023-compass">Sollier 2023</a></td></tr>
+<tr><td>소아 ALL</td><td>ETV6-RUNX1 (6명 중 5명), KRAS</td><td>Microfluidic MDA + 표적 재시퀀싱 · 세포 1,479개</td><td>6명 중 5명이 codominant clone · 결실이 SNV보다 먼저 · KRAS는 늦게, 한 클론에만 · ADO 중앙값 23–24% (재시퀀싱 33%)</td><td><a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a></td></tr>
+<tr><td>소아 B-ALL (진단)</td><td>copy number, LOH</td><td>DNTR-seq + ASCENT · 세포 324개</td><td>subclone 4개, 그중 세포 8개(3%) 클론의 breakpoint는 bulk WGS에 없음 · 5 Mb 미만 chr12 copy-neutral LOH, bulk WGS로 확인</td><td><a href="../10-Summaries/kolbeinsdottir-2025-ascent">Kolbeinsdottir 2025</a></td></tr>
+<tr><td>고배수성 B-ALL (진단 + 재발 3회)</td><td>CD19</td><td>SPLONGGET long-read multiome (preprint)</td><td>8 Mb chr16 결실 + splice-site SNV 4개로 CAR-T 후 CD19 음성 재발 설명 · 표적 모드 판정률 평균 18.4%</td><td><a href="../10-Summaries/pancikova-2025-splongget">Pančíková 2025</a></td></tr>
+<tr><td>소아 T-ALL</td><td>TAL1 enhancer I indel·ITD</td><td>PDX bulk ChIP, ATAC, Hi-C, Iso-Seq (preprint)</td><td>TAL1 T-ALL 391건 중 25건 · progenitor enhancer 재활성화로 짧은 TAL1 isoform 발현 · AlphaGenome은 이 효과를 예측하지 못함</td><td><a href="../10-Summaries/terekhanova-2026-tal1-enhancer">Terekhanova 2026</a></td></tr>
+<tr><td>림프계 암, CLL</td><td>(유전자 무관)</td><td>bulk methylation (fCpG) · 시료 1,976개</td><td>성장 속도·발병 시점·epimutation 속도가 질환마다 자릿수로 다름 · CLL 두 코호트에서 독립 예후 인자 · Richter 클론의 씨앗은 수십 년 전부터 존재</td><td><a href="../10-Summaries/gabbutt-2025-evoflux">Gabbutt 2025</a></td></tr>
+<tr><td>CLL</td><td>IGHV, trisomy 12</td><td>MOFA, bulk 4개 층 · 환자 200명</td><td>상위 두 factor가 IGHV 상태와 trisomy 12 · 다음 치료까지의 시간을 예측하는 factor</td><td><a href="../10-Summaries/argelaguet-2018-mofa">Argelaguet 2018</a></td></tr>
+</tbody></table></div>
+
+<h2>목적별로 고르기</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>알고 싶은 것</th><th>우선 고려</th><th>확인할 위험</th></tr></thead>
+<tbody>
+<tr><td>변이 세포와 정상 세포의 전사 차이</td><td>GoT (<a href="../10-Summaries/nam-2019-got">Nam 2019</a>)</td><td>발현이 낮거나 전사체 끝에서 먼 변이는 판정률이 급락함. JAK2는 7–10% (<a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>). 먼 locus는 circularization GoT가 필요 (<a href="../10-Summaries/nam-2019-got">Nam 2019</a>)</td></tr>
+<tr><td>변이 세포의 chromatin 상태</td><td>GoT–ChA, 필요하면 DOGMA-seq와 통합 (<a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>)</td><td>기본은 세포당 변이 하나. multiplex는 locus당 효율이 낮아짐. DOGMA 통합은 mtDNA 변이와 표면 단백질에 의존한 imputation (<a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>)</td></tr>
+<tr><td>클론 구조와 founder 순서</td><td>Tapestri 같은 droplet 표적 scDNA + COMPASS (<a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>; <a href="../10-Summaries/sollier-2023-compass">Sollier 2023</a>)</td><td>run별 dropout 2.1–10.3%가 가짜 소수 클론을 만듦 (<a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>). SNV나 LOH로 뒷받침되지 않는 subclonal CNA는 대부분 놓침 (<a href="../10-Summaries/sollier-2023-compass">Sollier 2023</a>)</td></tr>
+<tr><td>1–2% 크기의 소수 클론 존재</td><td>세포 수를 먼저 계산: 1% 클론에 약 200개 (<a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a>)</td><td>ADO가 0.3을 넘거나 시료당 변이가 10개 미만이면 클론 수를 과소추정 (<a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a>)</td></tr>
+<tr><td>저깊이 CNV와 LOH로 본 subclone</td><td>DNTR-seq + ASCENT (<a href="../10-Summaries/kolbeinsdottir-2025-ascent">Kolbeinsdottir 2025</a>)</td><td>클론이 세포 5개보다 작으면 정확도 하락. 세포당 약 7 CPU분 (<a href="../10-Summaries/kolbeinsdottir-2025-ascent">Kolbeinsdottir 2025</a>)</td></tr>
+<tr><td>재발 기전 (SV, splice, phasing)</td><td>SPLONGGET (<a href="../10-Summaries/pancikova-2025-splongget">Pančíková 2025</a>)</td><td>peer review 전 preprint. 비표적 모드 판정률은 0.01%여서 변이 판정에는 표적 모드가 필요 (<a href="../10-Summaries/pancikova-2025-splongget">Pančíková 2025</a>)</td></tr>
+<tr><td>많은 환자의 진화 속도와 예후</td><td>EVOFLUx (bulk methylation) (<a href="../10-Summaries/gabbutt-2025-evoflux">Gabbutt 2025</a>)</td><td>단일세포가 아니라 bulk 추론. 시료 안의 subclonal selection은 드물게만 측정됨 (<a href="../10-Summaries/gabbutt-2025-evoflux">Gabbutt 2025</a>)</td></tr>
+</tbody></table></div>
+
+<h2>읽는 순서</h2>
+<ol class="path">
+  <li><a href="../40-Topics/hematopoietic-malignancies">Hematopoietic malignancies (hub)</a> — MPN, 백혈병, 림프계 암의 단일세포 연구를 한 장에 모은 출발점이다.</li>
+  <li><a href="../30-Concepts/myeloproliferative-neoplasm">Myeloproliferative neoplasm</a> — ET, PV, MF와 내부 대조군 설계가 왜 MPN에서 잘 작동하는지 본다.</li>
+  <li><a href="../30-Concepts/got">GoT</a> — cDNA 기반 genotyping의 구조와 88%라는 수치가 유리한 locus에서 나온 이유를 다룬다.</li>
+  <li><a href="../30-Concepts/allele-dropout">Allele dropout</a> — 소수 클론 주장을 읽기 전에 dropout이 어떻게 가짜 genotype을 만드는지 익힌다.</li>
+  <li><a href="../10-Summaries/nam-2019-got">Nam 2019</a> — "같은 변이, 다른 세포, 다른 결과"를 처음 보인 GoT 원 논문이다.</li>
+  <li><a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a> — gDNA로 옮겨 판정률을 높이고 chromatin priming을 보인 후속 논문이다.</li>
+  <li><a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a> — bulk VAF와 단일세포 클론 구조가 어떻게 엇갈리는지 구체적 수치로 보여준다.</li>
+  <li><a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a> — 세포 수와 dropout으로 실험 규모를 정하는 법의 고전이다.</li>
+</ol>
+
+<h2>아직 열린 질문</h2>
+<ul>
+  <li><b>CALR의 이점은 왜 질환 단계마다 다른가.</b> ET에서는 분화가 진행된 뒤에야 커지는 변이 세포의 이점이 MF에서는 HSPC에서부터 강하다. GoT는 이 차이를 관찰했지만 전환을 설명하지 못했다 (<a href="../10-Summaries/nam-2019-got">Nam 2019</a>).</li>
+  <li><b>원인인가 결과인가.</b> JAK2V617F HSC의 세포 내재적 NF-κB chromatin 프로그램이 클론 확장을 일으키는지, 확장의 결과인지 아직 모른다 (<a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>).</li>
+  <li><b>클론을 없애려면.</b> Ruxolitinib은 chromatin TF motif 표현형을 되돌리지만 클론은 남긴다. 세포 내재적 chromatin 프로그램을 겨냥한 병용 치료가 클론을 제거할지는 검증되지 않았다 (<a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>).</li>
+  <li><b>서열 모델을 믿을 수 있는가.</b> AlphaGenome은 TAL1 neo-enhancer 효과는 재현했지만 enhancer I의 indel·ITD 효과는 놓쳤다. 혈액암 조절 변이에 대한 예측은 아직 신뢰하기 어렵다 (<a href="../10-Summaries/avsec-2026-alphagenome">Avsec 2026</a>; <a href="../10-Summaries/terekhanova-2026-tal1-enhancer">Terekhanova 2026</a>).</li>
+</ul>
+
+<footer>scDNA wiki 교재 · 수치와 해석은 링크된 위키 요약을 기준으로 한다.</footer>
+</main>
+
+<script>
+(function(){
+  var NS = "http://www.w3.org/2000/svg";
+  function el(svg, tag, attrs, text){
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    svg.appendChild(e); return e;
+  }
+  // Linear 0-100% range chart in two panels. Row: {label, sub, lo, hi, v, warn, note}
+  // Values: Nam 2019 (GoT 88%, default 10x 1.4%), Izzo 2024 (GoT-ChA 38.1%, RNA 7-10%, cell line JAK2 63.2%),
+  // Pancikova 2025 (targeted 18.4%, range 0-75.1%; untargeted 0.01%),
+  // Pellegrino 2018 (ADO per run 2.1-10.3%, 8.7% across nine Raji variants),
+  // Gawad 2014 (ADO median 23-24%, resequencing 33%, LCL control 15.6%).
+  var panels = [
+    {title: "genotype 판정률 (세포 중 %)", rows: [
+      {label: "GoT, CALR", sub: "CD34⁺ MPN · Nam 2019", v: 88, note: "약 88%"},
+      {label: "기본 10x read, CALR", sub: "Nam 2019", v: 1.4, warn: true, note: "약 1.4%"},
+      {label: "GoT–ChA, JAK2V617F", sub: "환자 시료 · Izzo 2024", v: 38.1, note: "평균 38.1%"},
+      {label: "RNA 기반, JAK2V617F", sub: "Izzo 2024", lo: 7, hi: 10, warn: true, note: "7–10%"},
+      {label: "GoT–ChA, JAK2 V617", sub: "세포주 · Izzo 2024", v: 63.2, note: "63.2%"},
+      {label: "SPLONGGET 표적", sub: "B-ALL · Pančíková 2025", lo: 0, hi: 75.1, v: 18.4, note: "평균 18.4%, 범위 0–75.1%"},
+      {label: "SPLONGGET 비표적", sub: "Pančíková 2025", v: 0.01, warn: true, note: "0.01%"}
+    ]},
+    {title: "allelic dropout (%)", rows: [
+      {label: "Tapestri, Raji spike-in", sub: "AML · Pellegrino 2018", lo: 2.1, hi: 10.3, v: 8.7, note: "run별 2.1–10.3%, 9개 변이 8.7%"},
+      {label: "MDA, 소아 ALL", sub: "Gawad 2014", lo: 23, hi: 33, v: 23.5, warn: true, note: "중앙값 23–24%, 재시퀀싱 33%"},
+      {label: "MDA, LCL 대조", sub: "Gawad 2014", v: 15.6, warn: true, note: "15.6%"}
+    ]}
+  ];
+  var svg = document.getElementById("fig-rates"); if (!svg) return;
+  var W = 760, L = 190, R = 20, rowH = 34, y0 = 26;
+  function x(p){ return L + (W - L - R) * p / 100; }
+  panels.forEach(function(pn){
+    el(svg, "text", {x: 0, y: y0, "font-size": 13, "font-weight": 600, style: "fill:var(--ink)"}, pn.title);
+    var top = y0 + 10, bottom = top + rowH * pn.rows.length;
+    [0, 25, 50, 75, 100].forEach(function(t){
+      el(svg, "line", {x1: x(t), x2: x(t), y1: top, y2: bottom, style: "stroke:var(--line)"});
+      el(svg, "text", {x: x(t), y: bottom + 14, "text-anchor": "middle", "font-size": 11, style: "fill:var(--muted)"}, t + "%");
+    });
+    pn.rows.forEach(function(r, i){
+      var y = top + rowH * i + rowH / 2, col = r.warn ? "var(--warn)" : "var(--accent)";
+      el(svg, "text", {x: 0, y: y - 1, "font-size": 13, "font-weight": 600, style: "fill:var(--ink)"}, r.label);
+      el(svg, "text", {x: 0, y: y + 13, "font-size": 11, style: "fill:var(--muted)"}, r.sub);
+      var end = r.v != null ? r.v : r.hi;
+      if (r.hi != null){
+        el(svg, "rect", {x: x(r.lo), y: y - 6, width: Math.max(x(r.hi) - x(r.lo), 3), height: 12, rx: 4,
+          style: "fill:" + col + ";opacity:" + (r.v != null ? .3 : .8)});
+        end = Math.max(r.hi, end);
+      }
+      if (r.v != null){
+        if (r.hi == null) el(svg, "rect", {x: x(0), y: y - 6, width: Math.max(x(r.v) - x(0), 2), height: 12, rx: 3, style: "fill:" + col + ";opacity:.8"});
+        el(svg, "circle", {cx: x(r.v), cy: y, r: 5, style: "fill:" + col});
+      }
+      var nx = x(end) + 10, anchor = "start";
+      if (nx + r.note.length * 7 > W){ nx = x(end) - 10; anchor = "end"; }
+      el(svg, "text", {x: nx, y: y + 4, "text-anchor": anchor, "font-size": 12, style: "fill:var(--muted)"}, r.note);
+    });
+    y0 = bottom + 44;
+  });
+  svg.setAttribute("viewBox", "0 0 760 " + (y0 - 20));
+})();
+</script>
+</body>
+</html>

@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > 5hmC는 TET 효소가 5mC를 산화해 만드는 염기로, 탈메틸화의 중간체이면서 그 자체로 조절 표지 역할도 한다 ([[10-Summaries/tahiliani-2009-tet1-5hmc|Tahiliani 2009]]). bisulfite sequencing은 5hmC를 5mC와 똑같이 C로 읽기 때문에, 둘을 나누려면 효소·화학 변환이나 SMRT kinetics 같은 별도 방법이 필요하다 ([[10-Summaries/huang-2010-5hmc-bisulfite|Huang 2010]]; [[10-Summaries/chen-2025-sctaps-sccaps-plus|Chen 2025]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 DNA methylation](../60-Explainers/dna-methylation.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 TET (1/2/3) enzymes oxidize 5mC → 5hmC → 5fC → 5caC. 5fC and 5caC are excised by thymine-DNA glycosylase for base-excision repair, completing demethylation. 5hmC itself, however, is stable enough to act as a regulatory mark in differentiated tissues.

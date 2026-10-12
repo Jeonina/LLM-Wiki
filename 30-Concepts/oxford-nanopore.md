@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > ONT는 native DNA·RNA 분자를 nanopore에 통과시키며 이온 전류 변화로 서열을 읽는 long-read 플랫폼이라, 증폭 없이 5mC·6mA 같은 변형을 직접 검출한다 ([[10-Summaries/liu-2025-long-read-epigenome-review|Liu 2025]]). 단편 길이와 무관하게 긴 read를 읽을 수 있어 single-cell에서도 allele-specific accessibility, multi-way 3D 접촉, 전장 전사체를 한 라이브러리에서 얻는 데 쓰인다 ([[10-Summaries/li-2025-scnanoatac-seq2|scNanoATAC-seq2]]; [[10-Summaries/li-2023-scnanohi-c|scNanoHi-C]]; [[10-Summaries/pancikova-2025-splongget|SPLONGGET]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [Long-read 시퀀싱 교재](../60-Explainers/long-read-sequencing.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 ONT instruments range from portable MinION/Flongle to PromethION. Read lengths routinely 10–100 kb; ultra-long reads reach >1 Mb. Accuracy improved from ~85% (R7) to >99% (R10.4.1). Adaptive sampling enables real-time read selection ([[30-Concepts/nanopore-adaptive-sampling|adaptive sampling]]).

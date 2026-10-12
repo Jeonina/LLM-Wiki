@@ -1,6 +1,7 @@
 ---
 type: topic
 title: Long-read sequencing
+explainer: long-read-sequencing
 aliases: [PacBio, Oxford Nanopore, ONT, HiFi, long-read]
 tags: [sequencing, long-read, third-generation]
 created: 2026-05-11
@@ -14,6 +15,11 @@ paper_section: ["3.2.1"]
 
 > [!abstract] 한눈에
 > Long-read 시퀀싱은 bisulfite 변환 없이 native DNA에서 5mC·5hmC·6mA·4mC를 직접 읽고, short read로는 닿지 않는 centromere·telomere·rDNA까지 읽어 낸다 ([[10-Summaries/fu-2025-longread-methylation|Fu 2025]]; [[10-Summaries/liu-2025-long-read-epigenome-review|Liu & Conesa 2025]]). 단일 세포에서는 Fiber-seq·DAF-seq 같은 단일 분자 크로마틴 footprinting과 단일 세포 long-read WGS의 기반 플랫폼이 되었다 ([[10-Summaries/swanson-2025-daf-seq|Swanson 2025]]; [[10-Summaries/hard-2023-long-read-scwgs|Hård 2023]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [Long-read 시퀀싱 교재](../60-Explainers/long-read-sequencing.html)
+<!-- /explainer-links -->
 
 ## Key points
 

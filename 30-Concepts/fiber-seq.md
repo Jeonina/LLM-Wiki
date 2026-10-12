@@ -15,6 +15,13 @@ paper_section: ["3.2.1"]
 > [!abstract] 한눈에
 > Fiber-seq는 핵 안에서 m6A methyltransferase로 열린 DNA에 표지를 남기고 long-read sequencing으로 읽어, 수 kb 길이의 한 fiber 위에서 nucleosome과 TF 점유를 동시에 보여 주는 방법이다 ([[10-Summaries/andrewb-2020-science|Stergachis 2020]]). m6A 표지는 증폭 과정에서 지워지기 때문에 bulk에서만 쓸 수 있고, 이 한계를 deamination 기반의 DAF-seq가 풀었다 ([[10-Summaries/swanson-2025-daf-seq|DAF-seq]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [염색질 구조 교재](../60-Explainers/chromatin-architecture.html)
+>
+> [Long-read 시퀀싱 교재](../60-Explainers/long-read-sequencing.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 In nuclei, a non-specific m6A methyltransferase modifies adenines in accessible (TF/nucleosome-free) DNA ([[10-Summaries/andrewb-2020-science|Stergachis 2020]]). Long-read PacBio CCS sequencing reads m6A directly via DNA-polymerase kinetics, so the m6A pattern along an individual fiber is a chromatin footprint at near-nucleotide resolution along multikilobase fragments ([[10-Summaries/andrewb-2020-science|Stergachis 2020]]). Foundational paper: Stergachis et al., *Science* 368, 1449, 2020 ([[10-Summaries/andrewb-2020-science|Stergachis 2020]]).

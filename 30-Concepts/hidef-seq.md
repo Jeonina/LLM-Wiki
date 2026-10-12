@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > HiDEF-seq는 증폭하지 않은 단일 DNA 분자를 PacBio로 여러 번 읽어 한쪽 가닥에만 있는 mismatch와 손상까지 구분해 내는 duplex 방법이다 ([[10-Summaries/liu-2024-hidef-seq|Liu 2024]]). 정확도와 duplex 효율은 가장 높지만 비용도 가장 높고, 아직 단일 세포가 아니라 bulk DNA가 필요하다 ([[10-Summaries/zhang-2025-smaht-duplex-benchmark|Zhang 2025]]; [[10-Summaries/liu-2024-hidef-seq|Liu 2024]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [Duplex sequencing 시뮬레이터](../60-Explainers/duplex-sequencing.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 HiDEF-seq leverages duplex chemistry with optimized library conversion for sensitive somatic mutation detection; implementation details are in Liu et al. 2024 from the Evrony lab ([[10-Summaries/liu-2024-hidef-seq|Liu 2024]]). It sequences unamplified single molecules, so it reads the **precursor** events: single-strand mismatches and cytosine-deamination damage ([[10-Summaries/liu-2024-hidef-seq|Liu 2024]]).

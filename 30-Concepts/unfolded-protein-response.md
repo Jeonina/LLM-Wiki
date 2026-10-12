@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > UPR은 ER에 잘못 접힌 단백질이 쌓일 때 PERK, IRE1, ATF6 세 센서를 통해 켜지는 스트레스 반응이며, 어느 가지가 켜지느냐에 따라 세포는 살아남거나 apoptosis로 간다. CALR 돌연변이 세포는 progenitor 종류에 따라 다른 가지를 쓰고, MkP에서는 생존 쪽인 IRE1-XBP1과 ATF6가 우세하다 ([[10-Summaries/nam-2019-got|Nam 2019]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [혈액암 교재](../60-Explainers/hematopoietic-malignancies.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 When unfolded/misfolded proteins accumulate in the ER lumen, BiP (HSPA5) releases the three sensors, which signal through:

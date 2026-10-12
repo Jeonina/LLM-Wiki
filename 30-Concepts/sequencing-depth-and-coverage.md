@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > depth는 한 염기를 몇 번 읽었는지, breadth는 유전체의 몇 퍼센트를 한 번이라도 읽었는지를 뜻하고, single-cell 연구 설계는 정해진 시퀀싱 예산을 세포당 depth와 세포 수 사이에 나누는 문제다 ([[10-Summaries/zahn-2017-dlp|Zahn 2017]]). copy number에는 얕게 많은 세포가, 세포별 SNV에는 깊게 적은 세포가 유리하며, Hi-C처럼 2차원 신호에서는 필요한 read가 해상도의 제곱으로 늘어난다 ([[10-Summaries/zahn-2017-dlp|Zahn 2017]]; [[10-Summaries/lieberman-aiden-2009-hic|Lieberman-Aiden 2009]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 WGA 시뮬레이터](../60-Explainers/wga-simulator.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Depth counts how many reads cover a base; breadth is the fraction of the genome covered at all (synthesis). With a fixed budget, adding cells costs depth per cell and the reverse ([[10-Summaries/zahn-2017-dlp|Zahn 2017]]).

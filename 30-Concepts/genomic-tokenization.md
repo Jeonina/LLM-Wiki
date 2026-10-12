@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > DNA에는 단어 경계가 없어서 모든 DNA language model은 k-mer, BPE, 단일 염기, 학습된 chunk 가운데 하나를 골라야 하고, 이 선택이 context 길이와 염기 단위 해상도 사이의 균형을 정한다 ([[10-Summaries/fishman-2025-gena-lm|GENA-LM]]; [[10-Summaries/nguyen-2023-hyenadna|HyenaDNA]]). 어느 방식이 나은지는 학습 목표에 따라 달라서, BPE는 masked 학습에서는 6-mer보다 낫지만 next-token 예측에서는 무작위 수준에 머문다 ([[10-Summaries/zhou-2023-dnabert-2|DNABERT-2]]; [[10-Summaries/li-2026-generator|GENERator]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [서열 모델과 foundation model 교재](../60-Explainers/sequence-models-and-foundation-models.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 DNA has no word boundaries, so every [[dna-language-model]] must choose one. The choice sets the trade-off between context length and resolution: single-nucleotide tokens keep base-level detail but cost the most per base, while BPE packs more sequence into the same number of tokens ([[10-Summaries/fishman-2025-gena-lm|GENA-LM]]; [[10-Summaries/nguyen-2023-hyenadna|HyenaDNA]]). For single-cell epigenome models the "token" is a region, a patch of regions or a CpG context instead ([[10-Summaries/leroy-2025-atacformer|Atacformer]]; [[10-Summaries/liu-2025-clm-access|CLM-access]]; [[10-Summaries/liang-2025-scdnam-gpt|scDNAm-GPT]]).

@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>염색질 구조 교재</title>
+<link rel="stylesheet" href="explainer.css">
+</head>
+<body>
+<main>
+<div class="crumb"><a href="../">scDNA wiki</a> · <a href="./">교재</a> · 염색질 구조</div>
+<h1>DNA 한 가닥 위에서 nucleosome과 TF는 어떻게 놓여 있고, 그 배치는 분자마다 얼마나 다를까</h1>
+<p class="lede">ATAC-seq peak 하나는 수많은 DNA 분자를 평균한 값이다. 같은 자리라도 어떤 분자에서는 열려 있고 어떤 분자에서는 nucleosome에 덮여 있으며, 열려 있어도 TF가 앉아 있지 않을 수 있다. 이 페이지는 한 분자(fiber) 위의 배치를 읽는 single-molecule footprinting과, 그보다 큰 규모의 핵막(lamina) 접촉을 다룬다. Loop, TAD, compartment 같은 3차원 접힘은 <a href="./3d-genome.html">3D 유전체 교재</a>에서 따로 설명한다.</p>
+
+<div class="callouts">
+  <div class="callout"><b>열림은 분자마다 켜지거나 꺼진다</b>조절 요소 하나를 덮는 fiber들을 보면 열린 것과 닫힌 것이 섞여 있다. bulk accessibility는 신호의 세기라기보다 "열린 fiber의 비율"에 가깝다.</div>
+  <div class="callout"><b>열려 있다고 결합한 것은 아니다</b>Accessibility(nucleosome이 없음)와 occupancy(TF가 실제로 앉음)는 다른 양이다. 한 분자 위에서 footprint를 직접 봐야 둘을 가를 수 있다.</div>
+  <div class="callout"><b>표지 화학이 단일세포 가능 여부를 정한다</b>m6A 표지는 증폭하면 지워져 bulk에 머문다. Deaminase가 남기는 C→T는 서열 변화라서 증폭 뒤에도 남고, 그래서 세포 하나까지 내려간다.</div>
+</div>
+
+<h2>구조의 크기와 한 번에 읽는 창</h2>
+<figure class="fig">
+  <svg id="fig-scale" viewBox="0 0 760 560" role="img" aria-label="염색질 구조의 크기와 assay가 한 분자에서 읽는 길이, 로그 축"></svg>
+  <figcaption>그림 1. 염색질 구조의 크기(<span style="color:var(--accent)">파랑</span>)와 assay가 분자 하나에서 읽는 길이(<span style="color:var(--a2)">주황</span>), 로그 축. 점은 단일 보고값, 막대는 보고된 범위다. Fiber-seq의 열린 구간(MAD)은 linker 쪽 약 67 bp와 DHS 쪽 약 272 bp 두 무리로 나뉘고, fiber 평균 길이는 10.9 kb, 최대 약 30 kb다 (<a href="../10-Summaries/andrewb-2020-science">Stergachis 2020</a>). Nucleosome은 약 147 bp를 덮고 그 사이 약 50 bp가 열린다 (<a href="../10-Summaries/doughty-2024-smf-tf">Doughty 2024</a>). 분자 하나의 nucleosome 반복 길이(NRL)는 약 172 bp에서 200 bp 넘게까지 무리를 이룬다 (<a href="../10-Summaries/abdulhay-2020-samosa">Abdulhay 2020</a>; 세포 하나에서 187–200 bp, <a href="../10-Summaries/pott-2017-elife">Pott 2017</a>). 짧은 read 방식은 cooperativity를 Tn5 조각 하나(약 500 bp 이하) 안에서만 본다 (<a href="../10-Summaries/he-2024-foodie">He 2024</a>, 요약의 reviewer note). scDAF-seq consensus read는 N50 최대 34.5 kb이고 100 kb 넘는 read도 있으며, 같은 fiber 위 co-actuation은 약 100 kb domain을 이룬다 (<a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>). Targeted Fiber-seq는 100–250 kb locus를 잘라 읽는다 (<a href="../10-Summaries/bohaczuk-2024-targeted-fiberseq">Bohaczuk 2024</a>). Loop 범위는 5 kb 호출, 98%가 2 Mb 미만 (<a href="../10-Summaries/rao-2014-in-situ-hic">Rao 2014</a>), TAD 중앙값 880 kb (<a href="../10-Summaries/dixon-2012-tads">Dixon 2012</a>), LAD는 40 kb–15 Mb (<a href="../10-Summaries/peric-hupkes-2010-lad-differentiation">Peric-Hupkes 2010</a>)다. 주황 막대가 길수록 한 분자 위에서 동시에 볼 수 있는 조절 요소가 많아진다.</figcaption>
+</figure>
+
+<h2>방법의 계보</h2>
+<figure class="fig">
+  <svg id="fig-timeline" viewBox="0 0 760 440" role="img" aria-label="염색질 footprinting 방법의 연도별 계보, 표지 화학별로 묶음"></svg>
+  <figcaption>그림 2. 표지 화학별로 묶은 방법의 등장 연도. <span style="color:var(--a2)">●</span> 채운 점은 세포 하나 단위의 측정(scFOODIE는 세포를 유형별로 합친 뒤 footprint를 냄), ○ 빈 점은 bulk다. Tn5 줄: ATAC-seq (<a href="../10-Summaries/klemm-2019-chromatin-accessibility-review">Klemm 2019</a>에서 2013년으로 인용), scATAC-seq (<a href="../10-Summaries/buenrostro-2015-nature">Buenrostro 2015</a>; <a href="../10-Summaries/cusanovich-2015-sciatac">Cusanovich 2015</a>), GoT–ChA (<a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>). GpC 줄: scNOMe-seq (<a href="../10-Summaries/pott-2017-elife">Pott 2017</a>), nanoNOMe (<a href="../10-Summaries/lee-2020-nanonome">Lee 2020</a>), amplicon SMF (<a href="../10-Summaries/doughty-2024-smf-tf">Doughty 2024</a>). m6A 줄: SMAC-seq (<a href="../10-Summaries/shipony-2020-smac">Shipony 2020</a>), Fiber-seq (<a href="../10-Summaries/andrewb-2020-science">Stergachis 2020</a>), SAMOSA (<a href="../10-Summaries/abdulhay-2020-samosa">Abdulhay 2020</a>), DiMeLo-seq (<a href="../10-Summaries/altemose-2022-dimelo-seq">Altemose 2022</a>), targeted Fiber-seq (<a href="../10-Summaries/bohaczuk-2024-targeted-fiberseq">Bohaczuk 2024</a>), 뇌 Fiber-seq (<a href="../10-Summaries/peter-2024-brain-fiberseq">Peter 2024</a>). Deaminase 줄: FOODIE (<a href="../10-Summaries/he-2024-foodie">He 2024</a>), DAF-seq (<a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>). Dam 줄: lamin B1 DamID (<a href="../10-Summaries/peric-hupkes-2010-lad-differentiation">Peric-Hupkes 2010</a>), scDam&amp;T-seq (<a href="../10-Summaries/rooijers-2019-scdamt-seq">Rooijers 2019</a>), scDamID protocol (<a href="../10-Summaries/de-luca-2021-scdamid-protocol">de Luca 2021</a>). m6A 줄이 모두 빈 점인 이유는 native m6A가 증폭에서 지워지기 때문이다 (<a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>). GpC 표지는 bisulfite로 읽으면 증폭을 견뎌 세포 하나에서도 쓰인다 (<a href="../30-Concepts/single-molecule-footprinting">Single-molecule footprinting</a>).</figcaption>
+</figure>
+
+<h2>핵심 내용</h2>
+<ol class="steps">
+  <li><b>Accessibility는 TF와 nucleosome의 경쟁이 만든 평형이다.</b> 유전체에서 열린 구간은 2–3%뿐이지만 TF 결합의 90% 이상이 그 안에 있고, 열린 구간의 80% 넘게가 promoter가 아닌 원거리 enhancer다. ATAC-seq는 약 500개 세포로 이 지형을 읽게 해 줬고, 이것이 단일세포 accessibility의 출발점이 됐다 (<a href="../10-Summaries/klemm-2019-chromatin-accessibility-review">Klemm 2019</a>).</li>
+  <li><b>Peak는 "몇 분자가 열렸나"의 비율이다.</b> Fiber-seq로 DHS 하나를 덮는 fiber를 보면 약 81%만 열려 있고 나머지는 닫혀 있었다. 열린 fiber에서만 DHS 주변 nucleosome이 규칙적으로 줄을 섰다. 즉 nucleosome 배치를 정하는 것은 서열이 아니라 조절 요소의 작동(actuation) 여부다 (<a href="../10-Summaries/andrewb-2020-science">Stergachis 2020</a>). 세포 하나에서 GpC 표지로 보면 덮인 DHS 가운데 약 3분의 1만 열려 있었다 (<a href="../10-Summaries/pott-2017-elife">Pott 2017</a>). 한 fiber 위에서 조절 요소가 열려 있고 TF까지 앉은 상태를 <a href="../30-Concepts/chromatin-actuation">chromatin actuation</a>이라 부른다 (<a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>).</li>
+  <li><b>열림과 결합은 다르다.</b> K562에서 CTCF 결합 요소를 덮는 열린 fiber의 대부분에는 CTCF footprint가 없었다 (<a href="../10-Summaries/andrewb-2020-science">Stergachis 2020</a>). 합성 reporter에서는 TF가 붙은 분자가 73%였지만 promoter가 켜진 분자는 22%였고, interferon 자극 전의 ISRE는 열려 있고 footprint도 있었지만 발현은 없었다 (<a href="../10-Summaries/doughty-2024-smf-tf">Doughty 2024</a>). 같은 연구는 TF끼리 협력하는 것처럼 보이는 현상이 nucleosome을 매개로 생긴다고 보고했다. Nucleosome이 없는 분자에서는 TF들이 서로 독립적으로 결합했다.</li>
+  <li><b>증폭을 견디는 표지가 단일세포를 열었다.</b> m6A 표지는 long read로 바로 읽어야 하고 증폭하면 지워진다. 그래서 m6A 기반 방법은 bulk에 머물렀다 (<a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>). FOODIE는 ATAC-seq에 DddB deaminase 단계를 더해 짧은 read로 footprint마다 결합 비율과 cooperativity를 재지만, 세포 하나에는 allele이 둘뿐이라 같은 유형의 세포를 합쳐야 한다 (<a href="../10-Summaries/he-2024-foodie">He 2024</a>). scDAF-seq는 SsDddA로 탈아미노화한 세포를 PTA로 불리고 PacBio로 읽어, 세포 하나에서 mappable genome의 최대 99%를 fiber 단위로 덮었다. 열린 promoter의 탈아미노화율은 73–82%, 보호된 footprint는 2.3–2.6%였다 (<a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>).</li>
+  <li><b>세포 하나 안에서도 두 haplotype은 다르게 움직인다.</b> scDAF-seq에서 두 세포는 조절 요소 actuation 상태의 약 63%가 달랐고, 같은 세포의 두 haplotype도 약 61%가 달랐다. 아주 잘 열리는 요소는 9–16%만 달랐다. 같은 fiber 위 요소들은 함께 켜지는 경향이 있었고, 그 범위가 약 100 kb로 cohesin loop와 닮았다 (<a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>). 한 분자 위에서 genotype과 염색질을 같이 읽으므로, 체세포 변이가 있는 haplotype에서만 CTCF 자리가 사라지는 것도 보였다.</li>
+  <li><b>더 큰 규모에서는 핵막 접촉이 확률로 움직인다.</b> Lamin B1 DamID로 보면 세포 유형마다 LAD 1,100–1,400개가 유전체의 약 40%를 덮고, 세포 유형 사이 LAD 겹침은 73–87%다. 분화하며 핵막에서 떨어지는 단위는 대개 유전자 하나 크기였고, 침묵 상태로 떨어진 유전자는 다음 단계에서 켜질 가능성이 높았다. 저자들은 LAD/inter-LAD 이분법이 locus별 접촉 확률을 지나치게 단순화한다고 경고했다 (<a href="../10-Summaries/peric-hupkes-2010-lad-differentiation">Peric-Hupkes 2010</a>). 세포 하나에서 lamina 접촉과 전사를 함께 재면, 둘의 음의 관계는 접촉 빈도가 낮은 fLAD에 몰려 있었다 (<a href="../10-Summaries/rooijers-2019-scdamt-seq">Rooijers 2019</a>). Loop와 TAD는 <a href="./3d-genome.html">3D 유전체 교재</a>를 보자.</li>
+</ol>
+
+<h2>보고된 값</h2>
+<p class="desc">측정 단위(분자, 세포, 세포 집단)와 표지 화학이 연구마다 다르다. 엇갈리는 값은 고르지 않고 나란히 적었다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>항목</th><th>보고된 값</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>열린 유전체 비율</td><td>유전체의 2–3%, TF 결합의 90% 이상 포함, 80% 넘게 원거리</td><td><a href="../10-Summaries/klemm-2019-chromatin-accessibility-review">Klemm 2019</a></td></tr>
+<tr><td>요소 하나에서 열린 비율</td><td>DHS를 덮는 fiber의 약 81%가 열림 (bulk, 분자 단위) · 세포 하나에서 덮인 DHS의 약 3분의 1만 열림 (세포 단위)</td><td><a href="../10-Summaries/andrewb-2020-science">Stergachis 2020</a> · <a href="../10-Summaries/pott-2017-elife">Pott 2017</a></td></tr>
+<tr><td>Nucleosome 간격</td><td>약 147 bp 보호 + 약 50 bp 열림 · 분자별 NRL 무리 약 172 bp–200 bp 이상 · 세포별 phasing 187–200 bp</td><td><a href="../10-Summaries/doughty-2024-smf-tf">Doughty 2024</a> · <a href="../10-Summaries/abdulhay-2020-samosa">Abdulhay 2020</a> · <a href="../10-Summaries/pott-2017-elife">Pott 2017</a></td></tr>
+<tr><td>열린 자리의 CTCF 점유</td><td>열린 fiber 대부분에 CTCF footprint 없음 · 반대로 열린 구간 안 CTCF motif의 3분의 2가 보호됨(GpC 표지 없음) · FOODIE와 ChIP-seq CTCF 자리 8,031개 공유, FOODIE만 1,486, ChIP만 1,165</td><td><a href="../10-Summaries/andrewb-2020-science">Stergachis 2020</a> · <a href="../10-Summaries/pott-2017-elife">Pott 2017</a> · <a href="../10-Summaries/he-2024-foodie">He 2024</a></td></tr>
+<tr><td>TF cooperativity</td><td>NAPA promoter 요소 1·2 사이 상호작용 180,000배 · GM12878에서 양의 cooperativity 쌍 3,722개, 음 55개 · 겉보기 cooperativity는 nucleosome 매개이고 nucleosome 없는 분자에서는 독립 결합</td><td><a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a> · <a href="../10-Summaries/he-2024-foodie">He 2024</a> · <a href="../10-Summaries/doughty-2024-smf-tf">Doughty 2024</a></td></tr>
+<tr><td>세포 하나에서 덮는 비율</td><td>scDAF-seq 최대 99% (mappable genome), haplotype phasing 27–80% · 이전 방법은 약 0.001%라고 적은 곳과 약 0.01%라고 적은 곳이 같은 요약 안에 함께 있음</td><td><a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a></td></tr>
+<tr><td>Actuation 차이</td><td>세포 사이 약 63%, 같은 세포 두 haplotype 사이 약 61%, 잘 열리는 요소는 9–16%</td><td><a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a></td></tr>
+<tr><td>scDAF-seq 비용</td><td>세포 12개, 8개는 중앙값 12 Gb, 가장 깊은 두 세포 91 Gb와 133 Gb</td><td><a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a></td></tr>
+<tr><td>LAD 수와 크기</td><td>세포 유형당 1,100–1,400개, 40 kb–15 Mb, 유전체 약 40% · 10 kb–10 Mb, 중앙값 약 0.5 Mb, 유전체의 3분의 1 이상 · 유전체 약 15%는 거의 모든 세포에서 핵막에 붙는 anchor</td><td><a href="../10-Summaries/peric-hupkes-2010-lad-differentiation">Peric-Hupkes 2010</a> · <a href="../10-Summaries/van-steensel-2017-lads-review">van Steensel 2017</a></td></tr>
+<tr><td>scDam&amp;T-seq 깊이</td><td>세포당 unique DamID read 중앙값 42k, 검출 유전자 약 2,300개</td><td><a href="../10-Summaries/rooijers-2019-scdamt-seq">Rooijers 2019</a></td></tr>
+</tbody></table></div>
+
+<h2>목적별로 고르기</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>알고 싶은 것</th><th>우선 고려</th><th>확인할 위험</th></tr></thead>
+<tbody>
+<tr><td>세포 유형별 열린 영역, TF motif 활성</td><td>scATAC-seq + chromVAR, SnapATAC 같은 도구 (<a href="../10-Summaries/schep-2017-chromvar">Schep 2017</a>; <a href="../10-Summaries/fang-2021-snapatac">Fang 2021</a>)</td><td>peak를 이분화하면 분자 수준의 양적 차이가 사라짐 (<a href="../30-Concepts/chromatin-accessibility">Chromatin accessibility</a>). 복제 간 null에서 Wilcoxon 검정이 6,761개 영역을 부름 (<a href="../10-Summaries/ashuach-2022-peakvi">Ashuach 2022</a>)</td></tr>
+<tr><td>TF가 실제로 앉은 비율, 이웃 TF 간 협력</td><td>FOODIE, amplicon SMF (<a href="../10-Summaries/he-2024-foodie">He 2024</a>; <a href="../10-Summaries/doughty-2024-smf-tf">Doughty 2024</a>)</td><td>footprint의 TF 배정이 병목(79개 TF만 배정). 짧은 read라 약 500 bp 안의 쌍만 봄 (<a href="../10-Summaries/he-2024-foodie">He 2024</a>)</td></tr>
+<tr><td>한 분자 위 여러 요소의 동시 상태, haplotype별 염색질</td><td>Fiber-seq, targeted Fiber-seq (<a href="../10-Summaries/andrewb-2020-science">Stergachis 2020</a>; <a href="../10-Summaries/bohaczuk-2024-targeted-fiberseq">Bohaczuk 2024</a>)</td><td>bulk 전용. nucleosome 자리는 m6A가 "없음"으로 추정함 (<a href="../30-Concepts/fiber-seq">Fiber-seq</a>)</td></tr>
+<tr><td>세포 하나의 haplotype별 염색질 + genotype</td><td>scDAF-seq (<a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>)</td><td>세포 12개, 깊은 세포 하나에 91–133 Gb. lymphoblastoid 세포에서만 보임 (<a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>)</td></tr>
+<tr><td>Nucleosome 배열의 규칙성</td><td>SAMOSA (<a href="../10-Summaries/abdulhay-2020-samosa">Abdulhay 2020</a>)</td><td>MNase와 용해 단계가 어떤 fiber가 나오는지를 고름. TF footprint는 안 보임 (<a href="../10-Summaries/abdulhay-2020-samosa">Abdulhay 2020</a>)</td></tr>
+<tr><td>특정 단백질 결합, 반복 서열(centromere)</td><td>DiMeLo-seq (<a href="../10-Summaries/altemose-2022-dimelo-seq">Altemose 2022</a>)</td><td>표적 단백질에 맞는 항체가 필요하고 bulk임 (<a href="../10-Summaries/altemose-2022-dimelo-seq">Altemose 2022</a>)</td></tr>
+<tr><td>핵막 접촉과 전사의 관계</td><td>scDamID, scDam&amp;T-seq (<a href="../10-Summaries/de-luca-2021-scdamid-protocol">de Luca 2021</a>; <a href="../10-Summaries/rooijers-2019-scdamt-seq">Rooijers 2019</a>)</td><td>연관일 뿐 시간 순서와 인과는 안 보임. cLAD와 fLAD를 섞으면 신호가 묽어짐 (<a href="../10-Summaries/rooijers-2019-scdamt-seq">Rooijers 2019</a>)</td></tr>
+<tr><td>Loop, TAD, compartment</td><td><a href="./3d-genome.html">3D 유전체 교재</a> 참고</td><td>세포 하나의 contact 지도는 매우 성김 (<a href="../40-Topics/3d-genome">3D genome hub</a>)</td></tr>
+</tbody></table></div>
+
+<h2>읽는 순서</h2>
+<ol class="path">
+  <li><a href="../40-Topics/chromatin-architecture">Chromatin architecture (hub)</a> — footprinting, 단일세포 accessibility, lamina, 상분리까지 한 장에 모은 출발점이다.</li>
+  <li><a href="../30-Concepts/single-molecule-footprinting">Single-molecule footprinting</a> — 표지 화학별 방법 표와, 어떤 표지가 증폭을 견디는지 정리돼 있다.</li>
+  <li><a href="../30-Concepts/chromatin-actuation">Chromatin actuation</a> — accessibility를 fiber 단위로 쪼갠 개념과 측정 수준을 본다.</li>
+  <li><a href="../30-Concepts/lamina-associated-domains">Lamina-associated domains</a> — cLAD와 fLAD의 차이, 측정 방법, 고정 기전을 다룬다.</li>
+  <li><a href="../10-Summaries/andrewb-2020-science">Stergachis 2020</a> — Fiber-seq로 bulk에서 안 보이던 네 가지 원리를 보여 준 논문이다.</li>
+  <li><a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a> — 증폭을 견디는 표지로 세포 하나, haplotype 하나까지 내려간 DAF-seq다.</li>
+  <li><a href="../10-Summaries/he-2024-foodie">He 2024</a> — 짧은 read로 결합 비율과 cooperativity를 정량하는 다른 길을 보여 준다.</li>
+  <li><a href="../10-Summaries/peric-hupkes-2010-lad-differentiation">Peric-Hupkes 2010</a> — 분화하며 핵막 접촉이 유전자 단위로 바뀌는 과정을 보여 준다.</li>
+</ol>
+
+<h2>아직 열린 질문</h2>
+<ul>
+  <li><b>세포 안 차이와 세포 간 차이가 왜 비슷한가.</b> 두 haplotype 사이 약 61%와 두 세포 사이 약 63%가 거의 같다. 조절 요소의 작동이 세포의 정해진 상태라기보다 fiber마다의 확률적 사건에 가깝다는 뜻일 수 있지만, 논문은 기전을 설명하지 않았다 (<a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>).</li>
+  <li><b>Cohesin loop가 co-actuation을 일으키는가.</b> 약 100 kb co-actuation domain이 cohesin loop와 닮았지만 인과는 직접 시험되지 않았다 (<a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>).</li>
+  <li><b>분자 단위와 droplet 단위 측정은 맞아떨어지는가.</b> 같은 세포를 scATAC-seq로 읽으면 scDAF-seq의 63% 차이가 어떻게 보일지는 비교된 적이 없다 (<a href="../40-Topics/chromatin-architecture">hub</a>, synthesis; <a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>).</li>
+  <li><b>일반화.</b> scDAF-seq 세포는 모두 lymphoblastoid였다. 1차 조직과 질환 시료에서도 같은 결과가 나올지는 열려 있다 (<a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>).</li>
+</ul>
+
+<footer>scDNA wiki 교재 · 수치와 해석은 링크된 위키 요약을 기준으로 한다.</footer>
+</main>
+
+<script>
+(function(){
+  var NS = "http://www.w3.org/2000/svg";
+  function el(svg, tag, attrs, text){
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    svg.appendChild(e); return e;
+  }
+  function bp(v){ return v >= 1e6 ? v / 1e6 + " Mb" : v >= 1e3 ? v / 1e3 + " kb" : v + " bp"; }
+
+  // Figure 1: log-scale ladder. win=true marks a read window (what one molecule spans), else a structure size.
+  // Values: Stergachis 2020 (MAD 67/272 bp, fiber 10.9 kb mean, ~30 kb max), Doughty 2024 (147 bp protection),
+  // Abdulhay 2020 (NRL ~172 to >200 bp), He 2024 (Tn5 fragment <= ~500 bp, reviewer note),
+  // Swanson 2025 (consensus N50 34.5 kb, reads >100 kb, ~100 kb co-actuation), Bohaczuk 2024 (100-250 kb loci),
+  // Rao 2014 (loops 5 kb, 98% < 2 Mb), Dixon 2012 (TAD median 880 kb), Peric-Hupkes 2010 (LAD 40 kb-15 Mb).
+  var ROWS = [
+    {label: "Linker 쪽 열린 구간", sub: "Stergachis 2020", mid: 67, note: "약 67 bp"},
+    {label: "Nucleosome 보호", sub: "Doughty 2024", mid: 147, note: "약 147 bp (+ 약 50 bp 열림)"},
+    {label: "Nucleosome 반복 길이", sub: "Abdulhay 2020", lo: 172, hi: 200, arrow: true, note: "약 172 bp–200 bp 이상"},
+    {label: "DHS 열린 구간", sub: "Stergachis 2020", mid: 272, note: "약 272 bp"},
+    {label: "짧은 read 조각", sub: "He 2024 (FOODIE)", lo: 150, hi: 500, win: true, note: "Tn5 조각 하나, 약 500 bp 이하"},
+    {label: "Fiber-seq fiber", sub: "Stergachis 2020", lo: 10900, hi: 30000, win: true, note: "평균 10.9 kb, 최대 약 30 kb"},
+    {label: "scDAF-seq read", sub: "Swanson 2025", lo: 34500, hi: 100000, arrow: true, win: true, note: "N50 최대 34.5 kb, 100 kb 넘는 read"},
+    {label: "Targeted Fiber-seq", sub: "Bohaczuk 2024", lo: 100000, hi: 250000, win: true, note: "잘라낸 locus 100–250 kb"},
+    {label: "Co-actuation domain", sub: "Swanson 2025", mid: 100000, note: "약 100 kb"},
+    {label: "Chromatin loop", sub: "Rao 2014", lo: 5000, hi: 2e6, note: "5 kb로 호출, 98% < 2 Mb"},
+    {label: "TAD", sub: "Dixon 2012", mid: 880000, note: "중앙값 880 kb"},
+    {label: "LAD", sub: "Peric-Hupkes 2010", lo: 40000, hi: 1.5e7, note: "40 kb–15 Mb"}
+  ];
+
+  function ladder(id){
+    var svg = document.getElementById(id); if (!svg) return;
+    var W = 760, L = 178, R = 16, T = 20, rowH = 42;
+    var lmin = 1, lmax = 8;
+    function x(v){ return L + (W - L - R) * (Math.log10(v) - lmin) / (lmax - lmin); }
+    var H = T + rowH * ROWS.length;
+    for (var d = lmin; d <= lmax; d++){
+      var xx = x(Math.pow(10, d));
+      el(svg, "line", {x1: xx, x2: xx, y1: T - 6, y2: H, style: "stroke:var(--line)"});
+      el(svg, "text", {x: xx, y: H + 18, "text-anchor": "middle", "font-size": 13, style: "fill:var(--muted)"}, bp(Math.pow(10, d)));
+    }
+    ROWS.forEach(function(r, i){
+      var y = T + rowH * i + rowH / 2, col = r.win ? "var(--a2)" : "var(--accent)";
+      el(svg, "text", {x: 0, y: y - 2, "font-size": 14, "font-weight": 600, style: "fill:var(--ink)"}, r.label);
+      el(svg, "text", {x: 0, y: y + 14, "font-size": 12, style: "fill:var(--muted)"}, r.sub);
+      var right;
+      if (r.hi){
+        el(svg, "rect", {x: x(r.lo), y: y - 7, width: Math.max(x(r.hi) - x(r.lo), 3), height: 14, rx: 4,
+          style: "fill:" + col + ";opacity:" + (r.arrow ? .45 : .8)});
+        if (r.arrow) el(svg, "path", {d: "M" + (x(r.hi) - 2) + " " + (y - 11) + " L" + (x(r.hi) + 10) + " " + y + " L" + (x(r.hi) - 2) + " " + (y + 11) + " Z", style: "fill:" + col});
+        right = x(r.hi) + (r.arrow ? 16 : 10);
+      } else {
+        el(svg, "circle", {cx: x(r.mid), cy: y, r: 7, style: "fill:" + col});
+        right = x(r.mid) + 12;
+      }
+      var anchor = "start", nx = right;
+      if (nx > W - 170){ nx = (r.hi ? x(r.lo) : x(r.mid)) - 12; anchor = "end"; }
+      el(svg, "text", {x: nx, y: y + 4, "text-anchor": anchor, "font-size": 12, style: "fill:var(--muted)"}, r.note);
+    });
+  }
+
+  // Figure 2: lanes by labelling chemistry; sc=true filled (single-cell readout), false hollow (bulk).
+  var LANES = [
+    {name: "Tn5 / 절단", sub: "accessibility", items: [
+      {y: 2013, t: "ATAC-seq", r: 0}, {y: 2015, t: "scATAC-seq", r: 1, sc: true}, {y: 2024, t: "GoT–ChA", r: 0, sc: true}]},
+    {name: "GpC 메틸화", sub: "bisulfite · nanopore", items: [
+      {y: 2017, t: "scNOMe-seq", r: 0, sc: true}, {y: 2020, t: "nanoNOMe", r: 1}, {y: 2024, t: "amplicon SMF", r: 2}]},
+    {name: "m6A 메틸화", sub: "native long read", items: [
+      {y: 2020, t: "SMAC-seq", r: 0}, {y: 2020, t: "Fiber-seq", r: 1}, {y: 2020, t: "SAMOSA", r: 2},
+      {y: 2022, t: "DiMeLo-seq", r: 3}, {y: 2024, t: "targeted Fiber-seq", r: 4}, {y: 2024, t: "뇌 Fiber-seq", r: 5}]},
+    {name: "Deaminase C→T", sub: "증폭을 견딤", items: [
+      {y: 2024, t: "FOODIE / scFOODIE", r: 0, sc: true}, {y: 2025, t: "DAF-seq / scDAF-seq", r: 1, sc: true}]},
+    {name: "Dam 융합", sub: "lamina 접촉", items: [
+      {y: 2010, t: "lamin B1 DamID", r: 0}, {y: 2019, t: "scDam&T-seq", r: 1, sc: true}, {y: 2021, t: "scDamID protocol", r: 0, sc: true}]}
+  ];
+
+  function timeline(id){
+    var svg = document.getElementById(id); if (!svg) return;
+    var W = 760, L = 150, R = 24, T = 36, sub = 22, gap = 10;
+    var y0 = 2009, y1 = 2026;
+    function x(yr){ return L + (W - L - R) * (yr - y0) / (y1 - y0); }
+    var lanes = LANES.map(function(l){ var n = 0; l.items.forEach(function(it){ n = Math.max(n, it.r + 1); }); return n; });
+    var H = T; lanes.forEach(function(n){ H += n * sub + gap; });
+    // legend
+    el(svg, "circle", {cx: L, cy: 12, r: 6, style: "fill:var(--a2)"});
+    el(svg, "text", {x: L + 12, y: 16, "font-size": 12, style: "fill:var(--muted)"}, "세포 하나 단위");
+    el(svg, "circle", {cx: L + 120, cy: 12, r: 6, style: "fill:var(--panel);stroke:var(--accent);stroke-width:2"});
+    el(svg, "text", {x: L + 132, y: 16, "font-size": 12, style: "fill:var(--muted)"}, "bulk");
+    for (var yr = 2010; yr <= 2026; yr += 2){
+      var xx = x(yr);
+      el(svg, "line", {x1: xx, x2: xx, y1: T - 6, y2: H, style: "stroke:var(--line)"});
+      el(svg, "text", {x: xx, y: H + 18, "text-anchor": "middle", "font-size": 13, style: "fill:var(--muted)"}, "" + yr);
+    }
+    var top = T;
+    LANES.forEach(function(l, li){
+      var h = lanes[li] * sub;
+      if (li > 0) el(svg, "line", {x1: 0, x2: W, y1: top - gap / 2, y2: top - gap / 2, style: "stroke:var(--line)"});
+      el(svg, "text", {x: 0, y: top + 14, "font-size": 14, "font-weight": 600, style: "fill:var(--ink)"}, l.name);
+      el(svg, "text", {x: 0, y: top + 30, "font-size": 12, style: "fill:var(--muted)"}, l.sub);
+      l.items.forEach(function(it){
+        var cx = x(it.y), cy = top + it.r * sub + sub / 2;
+        el(svg, "circle", {cx: cx, cy: cy, r: 6, style: it.sc ? "fill:var(--a2)" : "fill:var(--panel);stroke:var(--accent);stroke-width:2"});
+        var left = cx > W - 190;
+        el(svg, "text", {x: cx + (left ? -10 : 10), y: cy + 4, "text-anchor": left ? "end" : "start", "font-size": 12.5, style: "fill:var(--ink)"}, it.t + " (" + it.y + ")");
+      });
+      top += h + gap;
+    });
+  }
+
+  ladder("fig-scale");
+  timeline("fig-timeline");
+})();
+</script>
+</body>
+</html>

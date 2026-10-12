@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>단일세포 DNA methylation</title>
+<link rel="stylesheet" href="explainer.css">
+</head>
+<body>
+<main>
+<div class="crumb"><a href="../">scDNA wiki</a> · <a href="./">교재</a> · DNA 메틸화</div>
+<h1>세포 하나의 메틸화는 무엇으로, 얼마나 읽을 수 있나</h1>
+<p class="lede">DNA methylation은 세포 분열을 거쳐 유지되는 가장 안정적인 후성유전 표지라서, 세포가 어떤 유형인지와 어떤 이력을 거쳤는지를 함께 담는다 (<a href="../10-Summaries/kim-2017-methylation-memory-review">Kim 2017</a>). 그런데 이 표지를 읽는 화학마다 무엇을 C로, 무엇을 T로 읽는지가 다르고, 세포 하나에서는 그 차이가 데이터의 해석을 바꾼다. 이 페이지는 화학의 원리부터 단일세포 방법의 선택까지를 한 번에 정리한다.</p>
+
+<div class="callouts">
+  <div class="callout"><b>메틸화의 뜻은 위치가 정한다</b>TSS 근처의 5mC는 전사 개시를 막지만 gene body의 5mC는 막지 않고 오히려 elongation을 돕기도 한다. 같은 표지라도 어디에 있느냐로 해석이 갈린다.</div>
+  <div class="callout"><b>"메틸화"는 대개 5mC+5hmC다</b>bisulfite와 EM-seq는 5mC와 5hmC를 모두 C로 읽는다. 5hmC가 많은 뉴런에서 이 혼합은 무시할 크기가 아니다.</div>
+  <div class="callout"><b>coverage와 세포 수는 맞바꾼다</b>세포당 CpG의 절반을 읽는 방법은 수십 개 세포에 그치고, 수천 개 세포를 읽는 방법은 세포당 CpG의 1% 안팎만 읽는다.</div>
+</div>
+
+<h2>화학마다 무엇을 C로 읽나</h2>
+<figure class="fig">
+<svg viewBox="0 0 780 360" role="img" aria-label="메틸화 측정 화학별로 비메틸 C, 5mC, 5hmC가 시퀀싱에서 어떤 염기로 읽히는지 보여주는 표" style="color:var(--ink)" font-family="inherit">
+  <g font-size="14" fill="var(--muted)" font-weight="600">
+    <text x="8" y="26">화학</text>
+    <text x="265" y="26" text-anchor="middle">비메틸 C</text>
+    <text x="375" y="26" text-anchor="middle">5mC</text>
+    <text x="485" y="26" text-anchor="middle">5hmC</text>
+    <text x="560" y="26">5mC와 5hmC 구분</text>
+  </g>
+  <line x1="0" y1="38" x2="780" y2="38" stroke="var(--line)"/>
+  <defs>
+    <g id="bC"><rect x="-38" y="-15" width="76" height="30" rx="6" fill="var(--accent-soft)" stroke="var(--accent)"/><text y="5" text-anchor="middle" font-size="15" font-weight="700" fill="currentColor">C</text></g>
+    <g id="bT"><rect x="-38" y="-15" width="76" height="30" rx="6" fill="var(--warn-soft)" stroke="var(--warn)"/><text y="5" text-anchor="middle" font-size="15" font-weight="700" fill="currentColor">T</text></g>
+    <g id="bS"><rect x="-38" y="-15" width="76" height="30" rx="6" fill="none" stroke="var(--muted)" stroke-dasharray="4 3"/><text y="5" text-anchor="middle" font-size="13" fill="currentColor">C + 신호</text></g>
+  </defs>
+  <!-- rows: y centers 62, 112, 162, 212, 262, 312 -->
+  <g font-size="14" fill="currentColor">
+    <text x="8" y="60" font-weight="700">Bisulfite</text><text x="8" y="77" font-size="12" fill="var(--muted)">비메틸 C를 화학적으로 탈아미노화</text>
+    <use href="#bT" x="265" y="64"/><use href="#bC" x="375" y="64"/><use href="#bC" x="485" y="64"/>
+    <text x="560" y="69" fill="var(--warn)">구분 못함</text>
+    <line x1="0" y1="90" x2="780" y2="90" stroke="var(--line)"/>
+
+    <text x="8" y="110" font-weight="700">EM-seq</text><text x="8" y="127" font-size="12" fill="var(--muted)">TET2·T4-BGT 보호 + APOBEC3A</text>
+    <use href="#bT" x="265" y="114"/><use href="#bC" x="375" y="114"/><use href="#bC" x="485" y="114"/>
+    <text x="560" y="119" fill="var(--warn)">구분 못함</text>
+    <line x1="0" y1="140" x2="780" y2="140" stroke="var(--line)"/>
+
+    <text x="8" y="160" font-weight="700">TAPS (scTAPS)</text><text x="8" y="177" font-size="12" fill="var(--muted)">수식된 C를 T로 바꿈</text>
+    <use href="#bC" x="265" y="164"/><use href="#bT" x="375" y="164"/><use href="#bT" x="485" y="164"/>
+    <text x="560" y="169" fill="var(--warn)">단독으로는 못함</text>
+    <line x1="0" y1="190" x2="780" y2="190" stroke="var(--line)"/>
+
+    <text x="8" y="210" font-weight="700">CAPS+ (scCAPS+)</text><text x="8" y="227" font-size="12" fill="var(--muted)">5hmC만 T로 바꿈</text>
+    <use href="#bC" x="265" y="214"/><use href="#bC" x="375" y="214"/><use href="#bT" x="485" y="214"/>
+    <text x="560" y="210" fill="var(--accent)">TAPS와 짝지으면</text><text x="560" y="227" fill="var(--accent)">구분 가능</text>
+    <line x1="0" y1="240" x2="780" y2="240" stroke="var(--line)"/>
+
+    <text x="8" y="260" font-weight="700">SIMPLE-seq</text><text x="8" y="277" font-size="12" fill="var(--muted)">두 가지 표지를 한 분자에</text>
+    <use href="#bC" x="265" y="264"/><use href="#bT" x="375" y="264"/><use href="#bT" x="485" y="264"/>
+    <text x="560" y="260" fill="var(--accent)">가능 — 두 T 신호를</text><text x="560" y="277" fill="var(--accent)">서로 다르게 기록</text>
+    <line x1="0" y1="290" x2="780" y2="290" stroke="var(--line)"/>
+
+    <text x="8" y="310" font-weight="700">Long read (PacBio·ONT)</text><text x="8" y="327" font-size="12" fill="var(--muted)">변환 없이 kinetics·전류로 호출</text>
+    <use href="#bC" x="265" y="314"/><use href="#bS" x="375" y="314"/><use href="#bS" x="485" y="314"/>
+    <text x="560" y="310" fill="var(--accent)">가능 — 정확도는</text><text x="560" y="327" fill="var(--accent)">플랫폼·caller마다 다름</text>
+  </g>
+</svg>
+<figcaption>각 칸은 시퀀싱 read에서 그 염기가 어떻게 보이는지다. bisulfite와 EM-seq는 <i>비메틸 C</i>를 T로 바꾸고, TAPS 계열은 <i>수식된 C</i>를 T로 바꾼다. long read는 염기를 바꾸지 않고 신호로 수식을 따로 부른다. 근거: <a href="../10-Summaries/huang-2010-5hmc-bisulfite">Huang 2010</a> · <a href="../10-Summaries/vaisvila-2021-em-seq">Vaisvila 2021</a> · <a href="../10-Summaries/chen-2025-sctaps-sccaps-plus">Chen 2025</a> · <a href="../10-Summaries/bai-2024-simple-seq">Bai 2024</a> · <a href="../10-Summaries/fu-2025-longread-methylation">Fu 2025</a>. 변환은 완전하지 않다. scTAPS의 변환율은 5mCG 96.6%, 5hmCG 85.0%이고, SIMPLE-seq는 약 87%다.</figcaption>
+</figure>
+
+<h2>단일세포 방법은 어디까지 커졌나</h2>
+<figure class="fig">
+<svg id="timeline" viewBox="0 0 780 380" role="img" aria-label="단일세포 메틸화 방법의 발표 연도와 논문이 보고한 세포 수를 로그 축에 표시한 그림" style="color:var(--ink)"></svg>
+<figcaption>가로축은 발표 연도, 세로축은 각 논문이 한 실험(또는 한 데이터셋)에서 보고한 세포 수(로그 축)다. <span style="color:var(--accent)">●</span> bisulfite 기반, <span style="color:var(--a2)">●</span> bisulfite-free. 세포 수는 실험 설계가 달라 엄밀한 비교값이 아니며, 세포당 coverage는 아래 표에 원래 단위 그대로 적었다. 2017년 이후 세포 수가 크게 늘었지만, 2025년에도 세포당 깊이를 택한 방법(scTAPS, scDEEP-mC)은 수백 개 수준에 머문다.</figcaption>
+</figure>
+
+<h2>무엇을 알아야 하나</h2>
+<ol class="steps">
+  <li><b>5mC는 어디에 있나.</b> 사람 유전체의 CpG 약 2,800만 개 중 60–80%가 메틸화돼 있다. 반대로 CpG의 10% 미만이 모인 CpG island는 housekeeping·발생 유전자 promoter에 있으면서 늘 메틸화되지 않는다 (<a href="../10-Summaries/smith-2013-methylation-development">Smith 2013</a>). 메틸화는 대개 이미 꺼진 유전자를 잠그는 쪽이다. de novo methylation에는 nucleosome이 필요한데 활성 TSS에는 nucleosome이 없기 때문이다 (<a href="../10-Summaries/jones-2012-dna-methylation-functions">Jones 2012</a>).</li>
+  <li><b>bisulfite는 표준이지만 대가가 있다.</b> 비메틸 C를 U를 거쳐 T로 바꾸므로 read가 사실상 세 염기로 줄고, 반복 서열과 구조 변이에서 정렬이 나빠진다 (<a href="../10-Summaries/fu-2025-longread-methylation">Fu 2025</a>). 변환 자체가 C가 많은 비메틸 DNA를 더 많이 잃게 해서, 증폭을 거친 protocol은 mESC의 전체 5mC를 LC-MS 값의 최대 약 두 배로 과대평가했다. 증폭 없는 PBAT만 LC-MS와 맞았다 (<a href="../10-Summaries/olova-2018-wgbs-library-bias">Olova 2018</a>). 또 bisulfite는 5hmC의 99.7%를 CMS로 바꾸는데 CMS도 C로 읽혀 5mC와 구별되지 않는다 (<a href="../10-Summaries/huang-2010-5hmc-bisulfite">Huang 2010</a>).</li>
+  <li><b>세포 하나에서는 분자가 두 개뿐이다.</b> 정제 단계마다 잃은 분자는 되돌릴 수 없다. 그래서 scRRBS는 bisulfite 전 단계를 한 tube에 몰아 세포당 약 100만 CpG, CpG island의 약 70%를 얻었다 (<a href="../10-Summaries/guo-2015-scrrbs-protocol">Guo 2015</a>). scBS-seq는 세포당 CpG의 최대 약 50%를 읽지만 어느 CpG가 읽히는지는 세포마다 무작위다 (<a href="../10-Summaries/clark-2017-scbs-seq-protocol">Clark 2017</a>; <a href="../10-Summaries/guo-2015-scrrbs-protocol">Guo 2015</a>). "얼마나 많이"와 "같은 자리를"은 서로 다른 축이다.</li>
+  <li><b>희소한 데이터로 세포 유형을 나누는 법.</b> snmC-seq는 뉴런의 non-CG methylation(mCH)이 큰 domain 단위로 변한다는 점을 이용했다. 세포당 유전체의 4.7–5.7%만 읽어도 100 kb bin의 mCH는 정확했고, 이것으로 마우스 16개, 사람 21개 피질 뉴런 군집을 나눴다 (<a href="../10-Summaries/luo-2017-snmc-seq">Luo 2017</a>). 이후 sci-MET는 combinatorial indexing으로 alignment rate를 25 ± 20%에서 68 ± 8%로 올렸고 (<a href="../10-Summaries/mulqueen-2018-sci-met">Mulqueen 2018</a>), sciMETv3는 한 번의 준비로 14만 개 넘는 세포를 얻었다 (<a href="../10-Summaries/nichols-2025-scimetv3">Nichols 2025</a>). 다만 고처리량 방법들은 군집을 snmC-seq의 기준 DMR에 맞춰 이름 붙인다. 자기 데이터만으로 세포 유형을 새로 정의하지는 못한다 (<a href="../10-Summaries/zhang-2023-drop-bs">Zhang 2023</a>).</li>
+  <li><b>5mC와 5hmC를 나누는 화학.</b> EM-seq는 효소로 bisulfite를 대신해 DNA 손상을 줄였지만 출력은 bisulfite와 같아서 여전히 5mC+5hmC를 함께 읽는다 (<a href="../10-Summaries/vaisvila-2021-em-seq">Vaisvila 2021</a>). TAPS 계열은 수식된 염기 쪽을 T로 바꿔 서열 복잡도를 지키고, scTAPS 93.0%, scCAPS+ 89.4%의 mapping을 보였다. 해마 뉴런의 5hmC는 22.04%로 비뉴런(9.29%)보다 훨씬 높았고, 5hmC만으로도 세포 유형이 나뉘었다 (<a href="../10-Summaries/chen-2025-sctaps-sccaps-plus">Chen 2025</a>). SIMPLE-seq는 두 수식을 한 분자에서 서로 다른 C→T 신호로 기록해 수천 개 세포로 넓혔다 (<a href="../10-Summaries/bai-2024-simple-seq">Bai 2024</a>).</li>
+  <li><b>남은 전선은 long read와 계산이다.</b> PacBio와 ONT는 변환 없이 신호에서 5mC와 5hmC를 불러 반복 서열에서도 메틸화를 본다. 하지만 chemistry가 바뀔 때마다 caller를 새로 만들어야 하고, 플랫폼 간 공통 benchmark가 없다 (<a href="../10-Summaries/fu-2025-longread-methylation">Fu 2025</a>; <a href="../10-Summaries/liu-2025-long-read-epigenome-review">Liu &amp; Conesa 2025</a>). 단일세포 쪽에서는 희소한 CpG를 채우는 imputation과 foundation model이 나왔다. 첫 체계적 benchmark는 정확도를 좌우하는 요인으로 entropy와 sparsity를 꼽았다 (<a href="../10-Summaries/liang-2026-scmeth-imputation-benchmark">Liang 2026</a>; <a href="../10-Summaries/liang-2025-scdnam-gpt">scDNAm-GPT</a>).</li>
+</ol>
+
+<h2>실제 측정값</h2>
+<p class="desc">세포 수와 coverage는 논문마다 단위가 다르다(CpG 비율, CpG 개수, 유전체 비율, cytosine 개수). 바꿔 계산하지 않고 보고된 단위 그대로 적었다. 같은 방법에 값이 둘 이상 보고된 경우도 함께 적었다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>방법</th><th>화학 · 설계</th><th>세포 수</th><th>세포당 coverage · 기타</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>scBS-seq</td><td>bisulfite, PBAT, tube</td><td>44 (oocyte·mESC)</td><td>최대 48.4%, 평균 약 370만 CpG (중간 깊이에서 17.7%) · protocol 논문은 "최대 약 50%"</td><td><a href="../10-Summaries/smallwood-2014-natmethods">Smallwood 2014</a> · <a href="../10-Summaries/clark-2017-scbs-seq-protocol">Clark 2017</a></td></tr>
+<tr><td>scRRBS</td><td>bisulfite, MspI reduced representation</td><td>—</td><td>약 100만 CpG, CpG island 약 70%, 세포마다 같은 CpG · 세포 5개에서 포화</td><td><a href="../10-Summaries/guo-2015-scrrbs-protocol">Guo 2015</a></td></tr>
+<tr><td>scWGBS</td><td>bisulfite, 전증폭 없음</td><td>82 (단일세포)</td><td>사람 중앙값 140만 CpG (one-cell)</td><td><a href="../10-Summaries/farlik-2015-scwgbs">Farlik 2015</a></td></tr>
+<tr><td>snmC-seq</td><td>bisulfite, plate</td><td>3,377 (마우스) + 2,784 (사람)</td><td>유전체의 4.7–5.7%</td><td><a href="../10-Summaries/luo-2017-snmc-seq">Luo 2017</a></td></tr>
+<tr><td>sci-MET</td><td>bisulfite, combinatorial indexing</td><td>3,282 library</td><td>CpG 평균 1.1 ± 0.9% · alignment 68 ± 8%</td><td><a href="../10-Summaries/mulqueen-2018-sci-met">Mulqueen 2018</a></td></tr>
+<tr><td>Drop-BS</td><td>bisulfite, droplet</td><td>2,813 (사람 PFC) · 최대 1만 개/2일</td><td>마우스 PFC 13,492 CpG · droplet 안 변환이 bulk보다 library 9배</td><td><a href="../10-Summaries/zhang-2023-drop-bs">Zhang 2023</a></td></tr>
+<tr><td>sciMET-cap</td><td>bisulfite + hybrid capture</td><td>6,123 (flowcell 1장)</td><td>capture 농축 7–8배 (bulk는 12–18배) · 사람 피질 군집에 약 3.5억 read (capture 없이는 약 70억)</td><td><a href="../10-Summaries/acharya-2024-scimet-cap">Acharya 2024</a></td></tr>
+<tr><td>SIMPLE-seq</td><td>bisulfite-free, 5mC + 5hmC</td><td>4,767 (마우스 피질)</td><td>변환 86.9% (5mC), 85.6% (5hmC) · coverage 1.96% (5mC), 0.79% (5hmC)는 Chen 2025의 비교값</td><td><a href="../10-Summaries/bai-2024-simple-seq">Bai 2024</a> · <a href="../10-Summaries/chen-2025-sctaps-sccaps-plus">Chen 2025</a></td></tr>
+<tr><td>scTAPS / scCAPS+</td><td>bisulfite-free, plate, 96세포 pool</td><td>96 / run</td><td>CpG 8.08–10.88% (200만–230만 CpG) · mapping 93.0% / 89.4%</td><td><a href="../10-Summaries/chen-2025-sctaps-sccaps-plus">Chen 2025</a></td></tr>
+<tr><td>scDEEP-mC</td><td>bisulfite, PBAT, plate</td><td>175 + 292</td><td>20 M read에서 CpG 약 30% · allele 해상 CpG 약 100만</td><td><a href="../10-Summaries/spix-2025-scdeep-mc">Spix 2025</a></td></tr>
+<tr><td>sciMETv3</td><td>bisulfite 또는 EM-seq, 3단 indexing</td><td>준비 1회에 14만 개 이상</td><td>세포당 cytosine 중앙값 258만 (Ultima) · EM-seq insert 163 bp 대 bisulfite 78 bp</td><td><a href="../10-Summaries/nichols-2025-scimetv3">Nichols 2025</a></td></tr>
+<tr><td>효소 변환, 단일세포</td><td>EM-seq 계열</td><td>—</td><td>sciMETv3: bisulfite와 비슷한 프로필 · Cabernet: read의 43–49%에서 CpY 변환 불완전</td><td><a href="../10-Summaries/nichols-2025-scimetv3">Nichols 2025</a> · <a href="../10-Summaries/spix-2025-scdeep-mc">Spix 2025</a></td></tr>
+</tbody></table></div>
+
+<h2>목적별로 고르기</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>알고 싶은 것</th><th>우선 고려</th><th>확인할 위험</th></tr></thead>
+<tbody>
+<tr><td>조직의 세포 유형 지도</td><td>combinatorial indexing (sciMETv2·v3), droplet (Drop-BS), snmC-seq2</td><td>세포당 CpG가 1% 안팎이라 군집 이름을 외부 기준 DMR에 의존함. 세포당 read 수의 편차가 해상도를 깎음</td></tr>
+<tr><td>세포 간 같은 CpG 비교, CpG island</td><td>scRRBS</td><td>CpG가 드문 영역은 놓침. 세포 5개에서 coverage가 포화</td></tr>
+<tr><td>한 세포 안의 allele·strand 수준 메틸화</td><td>scDEEP-mC 같은 고깊이 PBAT</td><td>세포당 30–35 M read 필요. S·G2기 세포의 일시적 중간 메틸화가 이질성처럼 보일 수 있음</td></tr>
+<tr><td>5mC와 5hmC를 따로 (특히 뇌)</td><td>깊이는 scTAPS/scCAPS+, 세포 수는 SIMPLE-seq</td><td>scTAPS는 run당 96개. SIMPLE-seq는 변환 약 87%라 standard curve로 보정해야 함</td></tr>
+<tr><td>시퀀싱 비용을 줄인 대규모 연구</td><td>sciMET-cap (capture 후 off-target read로 군집별 DMR)</td><td>단일세포 capture 효율이 bulk의 절반. on-target 비율보다 raw read당 고유 CpG를 봐야 함</td></tr>
+<tr><td>반복 서열·구조 변이 주변 메틸화</td><td>long-read 직접 검출</td><td>플랫폼 간 표준 benchmark 없음. chemistry가 바뀔 때마다 caller 재학습</td></tr>
+</tbody></table></div>
+<p class="desc">근거: <a href="../10-Summaries/zhang-2023-drop-bs">Zhang 2023</a> · <a href="../10-Summaries/guo-2015-scrrbs-protocol">Guo 2015</a> · <a href="../10-Summaries/spix-2025-scdeep-mc">Spix 2025</a> · <a href="../10-Summaries/chen-2025-sctaps-sccaps-plus">Chen 2025</a> · <a href="../10-Summaries/acharya-2024-scimet-cap">Acharya 2024</a> · <a href="../10-Summaries/fu-2025-longread-methylation">Fu 2025</a></p>
+
+<h2>읽는 순서</h2>
+<ol class="path">
+  <li><a href="../40-Topics/dna-methylation">DNA methylation (hub)</a> — 생물학, 측정 화학, 단일세포 방법, 도구가 한 페이지에 정리돼 있다.</li>
+  <li><a href="../30-Concepts/bisulfite-sequencing">Bisulfite sequencing</a> — 표준 화학의 편향과 단일세포 처리량 전략 비교표를 본다.</li>
+  <li><a href="../30-Concepts/5hmc">5hmC</a> — bisulfite 데이터의 "메틸화"에 무엇이 섞여 있는지 이해한다.</li>
+  <li><a href="../30-Concepts/taps">TAPS</a> — 수식된 염기를 바꾸는 화학이 왜 단일세포에 유리한지 본다.</li>
+  <li><a href="../10-Summaries/guo-2015-scrrbs-protocol">Guo 2015</a> — 분자 두 개라는 계수 논리와 "같은 CpG를 읽는다"는 축을 가장 분명히 설명한다.</li>
+  <li><a href="../10-Summaries/luo-2017-snmc-seq">Luo 2017</a> — 희소한 메틸롬으로 세포 유형을 나누는 방법의 출발점이다.</li>
+  <li><a href="../10-Summaries/chen-2025-sctaps-sccaps-plus">Chen 2025</a> — 단일세포에서 5mC와 5hmC를 처음으로 정량적으로 나눈 사례다.</li>
+  <li><a href="../10-Summaries/fu-2025-longread-methylation">Fu 2025</a> — long read가 bisulfite의 구조적 한계를 어떻게 피하는지 정리한 리뷰다.</li>
+</ol>
+
+<h2>아직 열린 질문</h2>
+<ul>
+  <li>PacBio와 ONT의 메틸화 호출 정확도를 비교할 공동체 표준 benchmark가 없다 (<a href="../10-Summaries/fu-2025-longread-methylation">Fu 2025</a>).</li>
+  <li>5hmC는 기능을 가진 표지인가, 탈메틸화 중간체일 뿐인가. 아직 결론이 없다 (<a href="../10-Summaries/bai-2024-simple-seq">Bai 2024</a>; <a href="../10-Summaries/fu-2025-longread-methylation">Fu 2025</a>).</li>
+  <li>단일세포 메틸화는 아직 희소하고, scDNA-seq과 같은 세포에서 함께 읽는 방법은 열린 과제다 (<a href="../10-Summaries/iqbal-2023-methylome-review">Iqbal 2023</a>).</li>
+  <li>성체 조직, 특히 뇌에서 non-CpG methylation(mCpH)이 어떤 기능을 하는지 모른다 (<a href="../10-Summaries/fu-2025-longread-methylation">Fu 2025</a>).</li>
+</ul>
+
+<footer>scDNA wiki 교재 · 수치와 해석은 링크된 위키 요약을 기준으로 한다.</footer>
+</main>
+
+<script>
+(function(){
+  // Year x reported cell count for single-cell methylation methods (values from linked summaries).
+  var PTS = [
+    {n:"scBS-seq", y:2014, c:44, bf:false, dx:10, a:"start"},
+    {n:"scWGBS", y:2015, c:82, bf:false, dx:10, a:"start"},
+    {n:"snmC-seq", y:2017, c:6161, bf:false, dx:10, a:"start"},
+    {n:"sci-MET", y:2018, c:3282, bf:false, dx:10, a:"start"},
+    {n:"Drop-BS", y:2023, c:2813, bf:false, dx:-10, a:"end"},
+    {n:"SIMPLE-seq", y:2023.8, c:4767, bf:true, dx:-10, a:"end", dy:-8},
+    {n:"sciMET-cap", y:2024.2, c:6123, bf:false, dx:-10, a:"end", dy:-18},
+    {n:"scTAPS/scCAPS+", y:2025, c:96, bf:true, dx:-10, a:"end"},
+    {n:"scDEEP-mC", y:2025, c:467, bf:false, dx:-10, a:"end"},
+    {n:"sciMETv3", y:2025, c:140000, bf:false, dx:-10, a:"end", lab:">140,000"}
+  ];
+  var W=780, H=380, P={l:64, r:24, t:20, b:40}, X0=2013.5, X1=2025.6, Y0=1, Y1=6; // log10 cells 10..10^6
+  function sx(y){ return P.l + (W-P.l-P.r)*(y-X0)/(X1-X0); }
+  function sy(c){ return P.t + (H-P.t-P.b)*(1-(Math.log10(c)-Y0)/(Y1-Y0)); }
+  var NS="http://www.w3.org/2000/svg", svg=document.getElementById("timeline");
+  function el(tag, attrs, text){ var e=document.createElementNS(NS,tag); for(var k in attrs) e.setAttribute(k, attrs[k]); if(text!=null) e.textContent=text; svg.appendChild(e); return e; }
+  for(var p=Y0;p<=Y1;p++){
+    var yy=sy(Math.pow(10,p));
+    el("line",{x1:P.l,y1:yy,x2:W-P.r,y2:yy,stroke:"var(--line)"});
+    el("text",{x:P.l-8,y:yy+4,"text-anchor":"end","font-size":12,fill:"var(--muted)"}, Math.pow(10,p).toLocaleString("en-US"));
+  }
+  [2014,2016,2018,2020,2022,2024].forEach(function(yr){
+    el("text",{x:sx(yr),y:H-P.b+20,"text-anchor":"middle","font-size":12,fill:"var(--muted)"}, String(yr));
+  });
+  el("text",{x:14,y:P.t+(H-P.t-P.b)/2,"font-size":12,fill:"var(--muted)",transform:"rotate(-90 14 "+(P.t+(H-P.t-P.b)/2)+")","text-anchor":"middle"},"보고된 세포 수 (로그)");
+  PTS.forEach(function(d){
+    var x=sx(d.y), y=sy(d.c), col=d.bf?"var(--a2)":"var(--accent)";
+    el("circle",{cx:x,cy:y,r:6,fill:col,stroke:"var(--panel)","stroke-width":1.5});
+    el("text",{x:x+d.dx,y:y+4+(d.dy||0),"text-anchor":d.a,"font-size":13,fill:"currentColor"}, d.n+" · "+(d.lab||d.c.toLocaleString("en-US")));
+  });
+})();
+</script>
+</body>
+</html>

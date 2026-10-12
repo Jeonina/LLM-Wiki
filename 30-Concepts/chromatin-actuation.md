@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > chromatin actuation은 한 가닥의 chromatin fiber 위에서 조절 요소가 nucleosome 없이 열려 있으면서 TF가 결합한 상태를 뜻하며, 여러 fiber를 합산한 accessibility를 fiber 단위로 쪼갠 개념이다. scDAF-seq로 측정하면 두 세포 사이 차이(~63%)와 한 세포 안 두 haplotype 사이 차이(~61%)가 거의 같다 ([[10-Summaries/swanson-2025-daf-seq|DAF-seq]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [염색질 구조 교재](../60-Explainers/chromatin-architecture.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 In bulk and single-cell ATAC-seq, "accessible" is a count over many fibers. In single-molecule footprinting ([[daf-seq]], [[fiber-seq]]; see [[single-molecule-footprinting]]), each individual fiber either *is* or *is not* in a state where (a) the element is nucleosome-free and (b) the predicted TFs are bound. The latter state is **actuation** ([[10-Summaries/swanson-2025-daf-seq|DAF-seq]] terminology).

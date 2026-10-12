@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > PacBio는 ZMW 안에서 polymerase가 형광 nucleotide를 붙이는 과정을 실시간으로 관찰하는 long-read 플랫폼이고, 같은 분자를 여러 번 읽어 정확도를 높이며 kinetic 신호로 5mC·6mA를 별도 처리 없이 검출한다 ([[10-Summaries/liu-2025-long-read-epigenome-review|Liu 2025]]). 증폭한 단일 세포에도 적용되어, Illumina 데이터의 32% 양으로 germline SNV를 더 정밀하게 잡았다 ([[10-Summaries/hard-2023-long-read-scwgs|Hård 2023]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [Long-read 시퀀싱 교재](../60-Explainers/long-read-sequencing.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 PacBio Sequel II/IIe/Revio instruments. **HiFi reads**: ≥5 CCS passes yields >99% per-read accuracy. Read length 5–20 kb. Kinetic signatures (interpulse distance, pulse width) detect 5mC and 6mA without separate library prep ([[10-Summaries/liu-2025-long-read-epigenome-review|Liu 2025]]).

@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Single-cell foundation model은 대량의 single-cell(또는 bulk epigenome) profile로 사전학습해 새 데이터셋과 과제에 옮겨 쓸 수 있는 cell·region embedding을 만드는 모델이며, DNA 층에서는 accessibility, methylation, 3D contact 모델이 나와 있다 ([[10-Summaries/leroy-2025-atacformer|Atacformer]]; [[10-Summaries/liang-2025-scdnam-gpt|scDNAm-GPT]]; [[10-Summaries/wang-2026-hicfoundation|HiCFoundation]]). 반면 single-cell histone과 genotype(CNV/SNV) 층에는 아직 사전학습 모델이 없다 ([[10-Summaries/morenogonzalez-2025-schistone-imputation|Moreno-González 2025]]; [[10-Summaries/liu-2024-cot|CoT]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [서열 모델과 foundation model 교재](../60-Explainers/sequence-models-and-foundation-models.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Transcriptome models such as scGPT set the pattern: tokenise each cell, pretrain with a masked or contrastive objective, then fine-tune ([[10-Summaries/cui-2024-natmethods|scGPT]]). The DNA-layer versions differ mainly in what a token is — a consensus region (Atacformer), a patch of cCREs (CLM-access), a non-zero peak (EpiFoundation), a CpG-centred 6-mer (scDNAm-GPT), a Hi-C image patch (HiCFoundation) or a region plus its DNA-LM sequence embedding (EpiZoo) ([[10-Summaries/leroy-2025-atacformer|Atacformer]]; [[10-Summaries/liu-2025-clm-access|CLM-access]]; [[10-Summaries/wu-2025-epifoundation|EpiFoundation]]; [[10-Summaries/liang-2025-scdnam-gpt|scDNAm-GPT]]; [[10-Summaries/wang-2026-hicfoundation|HiCFoundation]]; [[10-Summaries/li-2026-epizoo|EpiZoo]]). See [[genomic-tokenization]].

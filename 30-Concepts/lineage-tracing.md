@@ -14,6 +14,15 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Lineage tracing은 어떤 세포가 어떤 전구세포에서 나왔고 언제 갈라졌는지를 재구성하는 일이다. 사람에서는 세포 분열마다 쌓이는 체세포 변이나 mtDNA 변이를 자연 barcode로 쓰고, 모델 생물에서는 CRISPR recorder 같은 인공 barcode를 쓴다 ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]; [[10-Summaries/ludwig-2019-mtdna-lineage-tracing|Ludwig 2019]]; [[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review|Rodriguez-Fraticelli 2026]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [종양 계통수 시뮬레이터](../60-Explainers/cancer-clonal-evolution.html)
+>
+> [단일세포 계통 추적](../60-Explainers/single-cell-lineage-tracing.html)
+>
+> [체세포 모자이크](../60-Explainers/somatic-mosaicism.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 There are two strategies:

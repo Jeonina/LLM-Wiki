@@ -1,6 +1,7 @@
 ---
 type: topic
 title: Somatic mosaicism
+explainer: somatic-mosaicism
 aliases: [somatic mosaicism, mosaicism, post-zygotic mosaicism]
 tags: [mosaicism, genetics, development, aging, post-zygotic]
 created: 2026-05-11
@@ -14,6 +15,11 @@ paper_section: ["5.2"]
 
 > [!abstract] 한눈에
 > 한 수정란에서 나온 세포라도 분열할 때마다 2–4개의 변이가 쌓여 모든 사람의 몸은 모자이크가 되며, 변이가 언제 어느 계통에서 생겼는지에 따라 영향이 달라진다 ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]; [[10-Summaries/campbell-2015-mosaicism-review|Campbell 2015]]). 변이 검출은 PTA와 duplex 계열 방법으로 정확해졌지만, 같은 세포에서 체세포 변이와 chromatin·methylation 상태를 genome-wide로 함께 재는 방법은 아직 드물다 ([[10-Summaries/luquette-2022-neuron-scan2-indels|Luquette 2022]]; [[10-Summaries/kriz-2025-duplex-multiome|Duplex-Multiome]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [체세포 모자이크](../60-Explainers/somatic-mosaicism.html)
+<!-- /explainer-links -->
 
 ## Key points
 

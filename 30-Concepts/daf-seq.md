@@ -14,6 +14,17 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > DAF-seq는 deaminase로 열린 DNA의 C를 T로 바꿔 단백질이 앉은 자리를 서열 변화로 기록하는 single-molecule footprinting이며, 이 표지는 증폭 뒤에도 남기 때문에 한 세포 유전체의 최대 99%를 읽을 수 있다 ([[10-Summaries/swanson-2025-daf-seq|Swanson 2025]]). 아직 lymphoblastoid 세포 12개에서만 보였고, 세포 수와 비용을 늘릴 수 있는지는 열린 문제다 ([[10-Summaries/swanson-2025-daf-seq|Swanson 2025]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [염색질 구조 교재](../60-Explainers/chromatin-architecture.html)
+>
+> [Long-read 시퀀싱 교재](../60-Explainers/long-read-sequencing.html)
+>
+> [단일세포 multi-omics](../60-Explainers/single-cell-multiomics.html)
+>
+> [체세포 모자이크](../60-Explainers/somatic-mosaicism.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 SsDddA (a *Simiaoa sunii* DddA variant, expressed in *E. coli*) deaminates accessible cytidines in nuclei to uridine; subsequent PCR or whole-genome amplification converts these to thymidine, producing C→T changes on the top strand and G→A changes on the bottom strand of accessible DNA ([[10-Summaries/swanson-2025-daf-seq|Swanson 2025]]). Nucleosome- and TF-protected DNA escapes deamination, so the deamination pattern along a fiber is a **near-nucleotide-resolution footprint of protein occupancy** ([[10-Summaries/swanson-2025-daf-seq|Swanson 2025]]).

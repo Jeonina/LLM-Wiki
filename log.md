@@ -4,6 +4,41 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+# 2026-10-12 — Teaching layer: 20 explainers, one per research hub; hub citation fixes
+
+User decision: one Korean teaching page per research hub (meta hubs knowledge-management and llm-tooling-patterns excluded), common skeleton, simulators only for five topics.
+
+- **New pages (19, plus the existing WGA simulator):**
+  - Simulators: duplex-sequencing (raw → SSCS → DCS error ladder anchored to Schmitt 2012), mosaic-variant-calling (bulk power vs VAF/depth; single-cell capture vs ADO), single-cell-atac-seq (peak detection vs fragments per cell, pooling, motif AUC), cancer-clonal-evolution (ADO/FP → three-gamete violations and clone misassignment). Each was sanity-checked with node.
+  - Static figures: scdna-seq, somatic-mosaicism, brain-somatic-mosaicism, clonal-hematopoiesis, hematopoietic-malignancies, scdna-cancer-applications, single-cell-lineage-tracing, single-cell-multiomics, chromatin-architecture, 3d-genome, dna-methylation, histone-modifications, long-read-sequencing, computational-methods, sequence-models-and-foundation-models.
+  - Brief: `.scratch/explainer-brief.md`; shared stylesheet `60-Explainers/explainer.css`.
+- **Linking:** each hub has `explainer: <stem>` in frontmatter. `tools/explainer-links.py` puts a `[!tip] 📘 교재` block on the hub and on its Start-here concepts (90 files) and regenerates the card list in `60-Explainers/index.md`. The SPA router in `.quartz/.../spa.inline.ts` skips explainer links (fixed the "stuck loading" bug).
+- **Hub citation fixes found while building:**
+  - [[40-Topics/clonal-hematopoiesis]]: 11 claims cited to [[10-Summaries/forsberg-2017-mosaicism-review]] that it does not contain. Re-cited to [[10-Summaries/kapadia-2024-stem-cell-aging]] (CHIP ≥4% VAF, ~10× malignancy risk, DNMT3A early-expansion dynamics) and [[10-Summaries/hilal-2026-cardiac-somatic-review]] (sub-2% clones, inflammatory CVD risk). CCUS and the pre-leukemic timing are now marked (synthesis); the ≥2% VAF definition and "R882H expands over decades" were dropped as unsupported.
+  - [[40-Topics/duplex-sequencing]]: the cost question is re-cited to Kennedy 2014 and Zhang 2025; the long-read displacement question is marked (synthesis).
+  - [[40-Topics/histone-modifications]]: 6-base-CUT&Tag marked bulk-only; Drop-ChIP (Rotem 2015) added as the start of single-cell histone profiling.
+  - [[40-Topics/sequence-models-and-foundation-models]]: SegmentNT random-encoder MCC 0.16 now paired with 0.37 at 3 kb, not 0.45 at 30 kb.
+- **Open, reported to user:**
+  - CALR/JAK2 and ONT figures on concept pages are uncited.
+  - Value conflicts:
+    - HiDEF-seq error rate: Liu 2024 vs Shao 2025.
+    - MALBAC/LIANTI coverage: review vs original papers.
+    - CHISEL and scAbsolute: rated differently across benchmarks.
+  - DAF-seq summary gives prior single-cell coverage as 0.001% and 0.01%.
+  - Gaps: no CTC/liquid-biopsy summary; no MDS coverage.
+
+---
+
+# 2026-10-12 — New: teaching layer (60-Explainers) and the WGA simulator
+
+After comparing the wiki with joonan-lab's autodidact site (hand-built Korean HTML explainers with interactive simulators, sitting on top of a separate LLM wiki), started a teaching layer for lab onboarding.
+
+- **New folder `60-Explainers/`:** `index.md` (entry page) and `wga-simulator.html`, a self-contained Korean page: a toy simulator (MDA, MALBAC, PTA, LIANTI, DOP-PCR, amplification-free) showing 50-kb coverage and het-SNP VAF with breadth, CV, observed SNPs, ADO and allele-balance metrics; a table of measured values with links to the summaries; three "numbers that changed results" cases; a purpose-to-method decision table.
+- **Calibration:** amplified fraction follows the coverage column of [[10-Summaries/shao-2025-scDNA-mosaicism-review]] (MDA 72%, MALBAC 58%, LIANTI 82%, PTA 95%, DOP-PCR 22%); dropout block length follows [[10-Summaries/zhao-2025-hiscanner]] (MDA ~10⁵ bp vs PTA ~10³ bp); other parameters are illustrative and labelled as such on the page. Conflicting reported values (MALBAC 55–60% vs 93%; LIANTI 80–85% vs 97%) are shown side by side.
+- **Deploy fix:** Quartz copies `.html` assets but strips the extension, so `tools/publish-explainers.sh` restores `.html` after the build; added as a step in `.github/workflows/deploy.yml`. Linked from the WGA hub's Start-here cards; `CLAUDE.md` folder layout updated.
+
+---
+
 # 2026-10-12 — Maintenance: Korean "한눈에" summaries on all summaries and notes
 
 At the user's request ("한글 요약이 없는 페이지들이 대부분인데 … 전체 다 해야 하는 거 아니야?"), added a `> [!abstract] 한눈에` callout with 1–2 Korean sentences to all 448 summaries and 11 notes (entities excluded by the user's choice). Body text untouched.

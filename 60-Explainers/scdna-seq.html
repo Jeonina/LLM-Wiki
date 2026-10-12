@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>단일세포 DNA 시퀀싱 입문</title>
+<link rel="stylesheet" href="explainer.css">
+</head>
+<body>
+<main>
+<div class="crumb"><a href="../">scDNA wiki</a> · <a href="./">교재</a> · 단일세포 DNA 시퀀싱</div>
+<h1>세포 하나의 유전체를 읽는다는 것: scDNA-seq 지도</h1>
+<p class="lede">몸속 세포들은 서로 조금씩 다른 유전체를 지닌다. bulk 시퀀싱은 이 차이를 평균 속에 묻어 버리고, 단일세포 DNA 시퀀싱(scDNA-seq)은 그 차이를 세포 단위로 꺼내려 한다. 이 분야의 방법은 대부분 하나의 질문, 곧 세포를 깊게 읽을지 많이 읽을지에 대한 각자의 답이다. 이 페이지는 그 지형을 먼저 한 장에 펼쳐 놓는다.</p>
+
+<div class="callouts">
+  <div class="callout"><b>두 갈래가 있다</b>세포 하나의 DNA를 불려서 읽는 scWGA + scWGS는 변이를 특정 세포에 붙인다. 두 가닥을 짝지어 읽는 duplex sequencing은 오류가 극히 적지만 대개 변이가 어느 세포에서 왔는지 모른다.</div>
+  <div class="callout"><b>깊이와 세포 수는 맞바꾼다</b>세포당 유전체를 거의 다 읽는 방법은 세포를 수십 개만 다루고, 세포를 수만 개 다루는 방법은 세포당 아주 얕게 읽는다. 질문이 어느 쪽을 요구하는지가 방법을 정한다.</div>
+  <div class="callout"><b>가장 큰 적은 위양성이다</b>세포 하나에서만 보인 변이는 증폭 오류나 DNA 손상일 가능성이 크다. 단일세포 변이 call은 다른 방법으로 확인하기 전까지 가설로 다룬다.</div>
+</div>
+
+<h2>한 장으로 보는 지형</h2>
+<figure class="fig">
+  <svg id="map" viewBox="0 0 760 470" role="img" aria-label="세포당 깊이와 실험당 세포 수로 배치한 scDNA-seq 플랫폼"></svg>
+  <figcaption>세포당 시퀀싱 깊이(세로, 로그)와 한 연구에서 다룬 세포 수(가로, 로그). 막대는 보고된 범위다. 속이 빈 점은 세포당 깊이를 ×로 보고하지 않은 경우로, 세로 위치는 대략이다. 맨 아래 띠는 정해진 locus만 읽는 표적 방식이라 전장 유전체 깊이를 비교할 수 없다. 점선은 Zahn 2017이 제시한 같은 비용 선으로, WGA 세포 10개를 30×로 읽는 비용이면 DLP 세포 6,000개를 0.05×로 읽을 수 있다. 출처: <a href="../10-Summaries/gonzalez-pena-2021-pnas">Gonzalez-Pena 2021</a> · <a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a> · <a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a> · <a href="../10-Summaries/zahn-2017-dlp">Zahn 2017</a> · <a href="../10-Summaries/laks-2019-dlp-plus">Laks 2019</a> · <a href="../10-Summaries/navin-2011-sns-tumor-evolution">Navin 2011</a> · <a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a> · <a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a> · <a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a> · <a href="../10-Summaries/nam-2019-got">Nam 2019</a> · <a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>.</figcaption>
+</figure>
+
+<figure class="fig">
+  <svg id="timeline" viewBox="0 0 760 390" role="img" aria-label="scDNA-seq 핵심 기술의 연대표"></svg>
+  <figcaption>핵심 기술의 첫 보고 연도를 네 갈래로 나눴다. DOP-PCR의 1992년 원 논문은 염색체 매핑용이었고 단일세포 연구가 아니다 (<a href="../10-Summaries/telenius-1992-dop-pcr">Telenius 1992</a>). Shao 2025는 단일세포 low-coverage DOP-PCR을 2008년으로 적는다 (<a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a>). 그 밖의 출처: <a href="../10-Summaries/dean-2002-mda">Dean 2002</a> · <a href="../10-Summaries/chenghang-2012-science">Zong 2012</a> · <a href="../10-Summaries/chen-2017-lianti">Chen 2017</a> · <a href="../10-Summaries/gonzalez-pena-2021-pnas">Gonzalez-Pena 2021</a> · <a href="../10-Summaries/navin-2011-sns-tumor-evolution">Navin 2011</a> · <a href="../10-Summaries/wang-2014-nuc-seq">Wang 2014</a> · <a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a> · <a href="../10-Summaries/zahn-2017-dlp">Zahn 2017</a> · <a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a> · <a href="../10-Summaries/laks-2019-dlp-plus">Laks 2019</a> · <a href="../10-Summaries/falconer-2012-natmethods">Falconer 2012</a> · <a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a> · <a href="../10-Summaries/abascal-2021-nanoseq">Abascal 2021</a> · <a href="../10-Summaries/liu-2024-hidef-seq">Liu 2024</a> · <a href="../10-Summaries/nam-2019-got">Nam 2019</a> · <a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a> · <a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>.</figcaption>
+</figure>
+
+<h2>기초에서 최전선까지</h2>
+<ol class="steps">
+  <li><b>왜 DNA가 가장 어려운가.</b> 사람 유전체는 전사되거나 열려 있는 부분보다 20–50배 크고, 세포 하나에는 locus마다 분자가 두 개뿐이다. 그래서 불리거나(증폭 오류를 감수) 분자 하나하나를 읽어야(세포 정보를 포기) 한다. scRNA-seq와 scATAC-seq가 몇 년 먼저 자리 잡은 것도 이 때문이다 (<a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a>).</li>
+  <li><b>증폭 화학의 흐름.</b> MDA는 φ29 polymerase로 긴 산물을 만들어 PCR 기반 WGA보다 고르게 불렸다 (<a href="../10-Summaries/dean-2002-mda">Dean 2002</a>). MALBAC과 LIANTI는 재증폭을 막거나 선형으로만 불려 균일도를 높였다 (<a href="../10-Summaries/chenghang-2012-science">Zong 2012</a>; <a href="../10-Summaries/chen-2017-lianti">Chen 2017</a>). PTA는 φ29에 terminator를 넣어 원래 주형에서 주로 복사하게 했고, 7개 방법 비교에서 coverage, 균일도, SNV 정확도가 가장 좋았다 (<a href="../10-Summaries/gonzalez-pena-2021-pnas">Gonzalez-Pena 2021</a>). 증폭 방식마다 남는 흔적은 <a href="wga-simulator.html">WGA 시뮬레이터</a>에서 직접 볼 수 있다.</li>
+  <li><b>오류의 종류.</b> 한쪽 allele이 불리지 않는 allelic dropout, 한 가닥의 손상이 변이처럼 보이는 single-strand dropout, polymerase 오류가 있다. 이 가운데 위양성이 가장 큰 문제다. 증폭된 오류가 진짜 신호를 압도하기 때문이다 (<a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a>). 고품질 MDA 라이브러리에서도 세포 하나에서만 보인 변이는 duplex 검증에서 19–27%만 확인됐다 (<a href="../10-Summaries/wang-2014-nuc-seq">Wang 2014</a>).</li>
+  <li><b>깊이냐 세포 수냐.</b> Gawad 2014는 이 분야를 세포당 데이터 양과 실제로 분석할 수 있는 세포 수 사이의 균형으로 정리했다. 그들의 시뮬레이션에서 1% clone을 보려면 세포 200개, 4% clone은 50개가 필요했다. 대략 clone마다 세포 2–3개가 잡혀야 한다는 뜻이다 (<a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a>). 증폭 없는 DLP는 세포당 0.07–0.12×로 얕게 읽고 세포를 많이 모아 CNV와 클론 구조를 풀었다 (<a href="../10-Summaries/zahn-2017-dlp">Zahn 2017</a>). DLP+는 이를 51,926개 세포로 키우고, clone별로 합친 pseudo-bulk에서 SNV와 allele-specific copy number를 불렀다 (<a href="../10-Summaries/laks-2019-dlp-plus">Laks 2019</a>).</li>
+  <li><b>정확도의 교차 검증.</b> duplex sequencing은 두 가닥이 일치할 때만 염기를 부른다. NanoSeq은 분자 하나에서 10억 bp당 5개 미만의 오류를 보였다 (<a href="../10-Summaries/abascal-2021-nanoseq">Abascal 2021</a>). META-CS는 이 원리를 단일세포에 옮긴 유일한 방법이다 (<a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a>). 뉴런의 SNV 축적 속도는 PTA + SCAN2, META-CS, NanoSeq이 모두 연 16–17개 안팎으로 수렴했다. 서로 다른 세 기술이 같은 값을 낸 드문 사례다 (<a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a>; <a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a>).</li>
+  <li><b>유전형과 표현형을 같은 세포에서.</b> GoT는 10x scRNA-seq에, GoT–ChA는 10x scATAC-seq에 변이 locus 증폭을 더해 수만~십수만 세포에서 유전형과 전사체 또는 염색질 상태를 함께 읽는다 (<a href="../10-Summaries/nam-2019-got">Nam 2019</a>; <a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>). DAF-seq는 반대쪽 끝에서 세포 12개를 PTA로 불려 유전체 최대 99%의 염색질 fiber와 서열을 함께 읽었다 (<a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>). Evrony 2021은 이 선택지를 fidelity, co-presence, phenotypic association 세 능력으로 정리하고, 셋을 한꺼번에 최대로 얻는 방법은 없다고 봤다 (<a href="../10-Summaries/evrony-2021-scDNA-applications-review">Evrony 2021</a>).</li>
+</ol>
+
+<h2>보고된 값</h2>
+<p class="desc">연구마다 세포, 깊이, 기준이 달라 같은 방법도 값이 크게 다르다. 리뷰 표의 값과 원 논문의 값이 엇갈리면 둘 다 적었다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>방법</th><th>세포당 범위·깊이</th><th>세포 수</th><th>오류·dropout</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>DOP-PCR</td><td>coverage 20–25% (리뷰 표) · 30× raw가 mapped 약 3×, coverage 23% (kit 비교)</td><td>–</td><td>genotype 검출 효율 약 6%, CNV에는 가장 고름</td><td><a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a> · <a href="../10-Summaries/hou-2015-wga-comparison">Hou 2015</a></td></tr>
+<tr><td>MDA</td><td>coverage 70–75% (리뷰 표) · 같은 SW480 세포에서 72% · G2/M 핵 입력 시 breadth 91%</td><td>microfluidic MDA로 1,479개 (표적 재시퀀싱)</td><td>ADO 9.7% (G2/M 핵) · ADO 중앙값 23–24%, 재시퀀싱 기준 33% (ALL 세포)</td><td><a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a> · <a href="../10-Summaries/chenghang-2012-science">Zong 2012</a> · <a href="../10-Summaries/wang-2014-nuc-seq">Wang 2014</a> · <a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a></td></tr>
+<tr><td>MALBAC</td><td>coverage 55–60% (리뷰 표) · 25×에서 93% (원 논문)</td><td>–</td><td>SNV 검출 효율 76% (MDA 41%)</td><td><a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a> · <a href="../10-Summaries/chenghang-2012-science">Zong 2012</a></td></tr>
+<tr><td>LIANTI</td><td>coverage 80–85% (리뷰 표) · 30×에서 97% (원 논문)</td><td>–</td><td>ADO 17% · SNV 위양성률 5.4×10⁻⁶, 주로 lysis 후 C→T 탈아미노화</td><td><a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a> · <a href="../10-Summaries/chen-2017-lianti">Chen 2017</a></td></tr>
+<tr><td>PTA</td><td>coverage 약 95% · 벤치마크는 세포당 약 600 M read (약 30×) · 뉴런 30–60×</td><td>벤치마크 10개 · 뉴런 52개</td><td>SNV 민감도 90% 이상 (LIANTI 65–70%) · germline precision 99.9%에서도 세포당 위양성 약 2,785개</td><td><a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a> · <a href="../10-Summaries/gonzalez-pena-2021-pnas">Gonzalez-Pena 2021</a> · <a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a></td></tr>
+<tr><td>DLP / DLP+ (증폭 없음)</td><td>세포당 0.07–0.12× · 세포 64개를 합치면 breadth 94.5–96.8%</td><td>DLP 782개 · DLP+ 51,926개 (리뷰 표: 1만 개 이상)</td><td>증폭 편향 없음 · 살아 있는 세포의 65%가 QC 통과 · 세포당 약 0.5달러</td><td><a href="../10-Summaries/zahn-2017-dlp">Zahn 2017</a> · <a href="../10-Summaries/laks-2019-dlp-plus">Laks 2019</a> · <a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a></td></tr>
+<tr><td>Droplet 표적 (Tapestri 바탕)</td><td>62-amplicon AML panel</td><td>시료당 4,236–4,748개 genotyping, 전체 1만 6천 개 이상</td><td>run별 ADO 2.1–10.3%</td><td><a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a></td></tr>
+<tr><td>META-CS</td><td>세포당 3–8×</td><td>133개</td><td>위양성률 상한 약 2.4×10⁻⁸ · 가닥별 검출 효율 약 16%</td><td><a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a></td></tr>
+<tr><td>Duplex (bulk DNA)</td><td>분자 단위, 세포 배정 없음</td><td>–</td><td>NanoSeq 10억 bp당 5개 미만 · HiDEF-seq 10¹⁴ bp당 1개 미만 (원 논문) 대 약 7×10⁻¹⁶ (리뷰)</td><td><a href="../10-Summaries/abascal-2021-nanoseq">Abascal 2021</a> · <a href="../10-Summaries/liu-2024-hidef-seq">Liu 2024</a> · <a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a></td></tr>
+<tr><td>GoT / GoT–ChA</td><td>변이 locus 1–4개 + RNA 또는 염색질</td><td>GoT 38,290 + 11,093개 · GoT–ChA 150,643개</td><td>genotyping 비율: GoT 약 88% (CD34+, CALR) 대 GoT–ChA 평균 38.1% (JAK2, RNA 기반은 7–10%)</td><td><a href="../10-Summaries/nam-2019-got">Nam 2019</a> · <a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a></td></tr>
+<tr><td>DAF-seq (단일세포)</td><td>세포당 12–133 Gb, 유전체 최대 99%</td><td>12개</td><td>haplotype switch error 2.4–3.3%</td><td><a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a></td></tr>
+</tbody></table></div>
+
+<h2>목적별로 고르기</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>알고 싶은 것</th><th>우선 고려</th><th>확인할 위험</th></tr></thead>
+<tbody>
+<tr><td>종양의 클론 구조, 큰 CNV</td><td>증폭 없는 DLP/DLP+로 세포를 많이, 얕게 (<a href="../10-Summaries/zahn-2017-dlp">Zahn 2017</a>)</td><td>SNV는 clone 단위로 합쳐야 부를 수 있다. 세포주의 염색체 오분리율(약 5%)은 조직(0.6–1.2%)보다 훨씬 높다 (<a href="../10-Summaries/laks-2019-dlp-plus">Laks 2019</a>)</td></tr>
+<tr><td>혈액암 driver의 획득 순서, 잔존 질환</td><td>droplet 표적 panel (<a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>)</td><td>2–10% ADO만으로도 몇 % 수준의 가짜 단일·이중 변이 clone이 생긴다 (<a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>)</td></tr>
+<tr><td>정상 조직의 체세포 SNV·indel</td><td>PTA + 전용 caller(SCAN2) (<a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a>)</td><td>99.9% precision에서도 세포당 위양성이 수천 개 남는다 (<a href="../10-Summaries/gonzalez-pena-2021-pnas">Gonzalez-Pena 2021</a>). 가능하면 duplex로 교차 검증</td></tr>
+<tr><td>극저빈도 변이의 양, 분열하지 않는 세포</td><td>bulk duplex (NanoSeq), 세포 단위가 필요하면 META-CS (<a href="../10-Summaries/abascal-2021-nanoseq">Abascal 2021</a>; <a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a>)</td><td>duplex는 변이를 세포에 붙이지 못한다 (<a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a>). META-CS는 검출 효율이 약 16%라 큰 보정에 기댄다 (<a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a>)</td></tr>
+<tr><td>변이가 세포 상태를 어떻게 바꾸나</td><td>GoT(RNA), GoT–ChA(염색질) (<a href="../10-Summaries/nam-2019-got">Nam 2019</a>; <a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>)</td><td>발현이 낮은 유전자는 RNA로 genotyping이 잘 안 된다(7–10%). gDNA로 옮겨도 평균 38% 수준이다 (<a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>)</td></tr>
+<tr><td>구조 변이, inversion</td><td>Strand-seq (<a href="../10-Summaries/falconer-2012-natmethods">Falconer 2012</a>)</td><td>세포 분열이 한 번 필요해 분열을 마친 세포에는 쓸 수 없다 (<a href="../10-Summaries/falconer-2012-natmethods">Falconer 2012</a>)</td></tr>
+</tbody></table></div>
+
+<h2>읽는 순서</h2>
+<ol class="path">
+  <li><a href="../40-Topics/scdna-seq">Single-cell DNA sequencing (hub)</a> — 두 갈래, 깊이 대 세포 수, multi-omic 확장까지 이 분야의 목차다.</li>
+  <li><a href="../30-Concepts/scwga">scWGA</a> — 세포 하나의 DNA 6 pg을 시퀀싱 가능한 양으로 불리는 문제와 화학별 차이를 정리한다.</li>
+  <li><a href="../30-Concepts/scdna-capabilities-framework">scDNA capabilities framework</a> — 방법 이름 대신 연구 질문이 요구하는 능력으로 방법을 고르는 틀이다.</li>
+  <li><a href="../30-Concepts/dlp-plus">DLP+</a> — 증폭 없이 세포 수를 극단으로 늘린 쪽의 대표 사례다.</li>
+  <li><a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a> — 현재 분야 전체를 한 번에 훑는 핵심 리뷰다. WGA 비교표와 깊이 대 세포 수 그림이 있다.</li>
+  <li><a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a> — clone마다 세포 2–3개라는, 실험 규모를 정하는 숫자를 준다.</li>
+  <li><a href="../10-Summaries/zahn-2017-dlp">Zahn 2017</a> — 같은 비용으로 얕게 많이 읽는 편이 CNV에 유리하다는 계산을 보여 준다.</li>
+  <li><a href="../10-Summaries/gonzalez-pena-2021-pnas">Gonzalez-Pena 2021</a> — PTA의 원리와 벤치마크, 그리고 PTA로도 남는 위양성을 함께 읽는다.</li>
+</ol>
+<p class="desc">함께 볼 교재: <a href="wga-simulator.html">단일세포 WGA 시뮬레이터</a> — 증폭 방식이 coverage와 allele 균형에 남기는 흔적을 직접 바꿔 본다.</p>
+
+<h2>아직 열린 질문</h2>
+<ul>
+  <li>PTA는 세포당 유전체의 약 95%를 읽고 DLP+는 1만 개 이상의 세포로 넓힌다. 주어진 질문에 맞는 지점이 어디인지는 거의 벤치마크된 적이 없다 (<a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a>).</li>
+  <li>세포당 유전체의 약 99%를 단일분자로 읽는 scDAF-seq와, 10⁵ 규모 세포에서 염색질 한 층만 읽는 GoT–ChA는 각각 어떤 질문에서 이기는가 (<a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>; <a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>)?</li>
+  <li>fidelity, co-presence, phenotypic association은 서로 맞바뀌어서 모든 경우에 가장 좋은 방법은 없다 (<a href="../10-Summaries/evrony-2021-scDNA-applications-review">Evrony 2021</a>).</li>
+  <li>단일세포 duplex sequencing을 코호트 규모에서 감당할 만한 비용으로 만들 수 있는가 (synthesis)?</li>
+</ul>
+
+<footer>scDNA wiki 교재 · 수치와 해석은 링크된 위키 요약을 기준으로 한다.</footer>
+</main>
+
+<script>
+(function(){
+  var NS = "http://www.w3.org/2000/svg";
+  function el(parent, tag, attrs, text){
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    parent.appendChild(e); return e;
+  }
+  function log10(v){ return Math.log(v) / Math.LN10; }
+
+  /* ---------- Figure 1: depth per cell vs cells per study ---------- */
+  // kind: "range" (lo-hi depth), "point" (single depth), "hollow" (depth not reported in x; y approximate), "targeted" (bottom strip)
+  var PLATFORMS = [
+    {name:"PTA 벤치마크", cells:10, lo:30, hi:30, kind:"point", c:"--a1", dx:-9, dy:-10, anchor:"end"},
+    {name:"PTA + SCAN2 뉴런", cells:52, lo:30, hi:60, kind:"range", c:"--a1", dx:8, dy:4},
+    {name:"META-CS", cells:133, lo:3, hi:8, kind:"range", c:"--a2", dx:8, dy:4},
+    {name:"DLP", cells:782, lo:0.07, hi:0.12, kind:"range", c:"--ok", dx:8, dy:-8},
+    {name:"DLP+ (깊이 수치 없음)", cells:51926, lo:0.08, hi:0.08, kind:"hollow", c:"--ok", dx:0, dy:-14, anchor:"middle"},
+    {name:"SNS (깊이 수치 없음)", cells:200, lo:0.3, hi:0.3, kind:"hollow", c:"--muted", dx:8, dy:4},
+    {name:"DAF-seq", sub:"세포당 12–133 Gb", cells:12, lo:8, hi:8, kind:"hollow", c:"--a2", dx:-10, dy:0, anchor:"end"},
+    {name:"Gawad 2014", cells:1479, kind:"targeted", c:"--muted"},
+    {name:"Tapestri 바탕", cells:16000, kind:"targeted", c:"--muted"},
+    {name:"GoT", cells:49383, kind:"targeted", c:"--a2"},
+    {name:"GoT–ChA", cells:150643, kind:"targeted", c:"--a2"}
+  ];
+  var map = document.getElementById("map");
+  var L=78, R=740, T=24, B=330, SY=392;            // plot box; targeted strip centre
+  var X0=0, X1=6, Y0=-2, Y1=2;                     // log10 ranges: 1..1e6 cells, 0.01..100 x
+  function px(c){ return L + (R-L) * (log10(c)-X0)/(X1-X0); }
+  function py(d){ return B - (B-T) * (log10(d)-Y0)/(Y1-Y0); }
+  var g = el(map, "g", {"font-size":"12", "font-family":"inherit"});
+  // grid + ticks
+  for (var i=X0;i<=X1;i++){
+    var x=px(Math.pow(10,i));
+    el(g,"line",{x1:x,y1:T,x2:x,y2:SY+22,style:"stroke:var(--line)"});
+    el(g,"text",{x:x,y:SY+38,"text-anchor":"middle",style:"fill:var(--muted)"}, i===0?"1":(i<4?String(Math.pow(10,i)):"10"+["⁴","⁵","⁶"][i-4]));
+  }
+  [0.01,0.1,1,10,100].forEach(function(d){
+    var y=py(d);
+    el(g,"line",{x1:L,y1:y,x2:R,y2:y,style:"stroke:var(--line)"});
+    el(g,"text",{x:L-8,y:y+4,"text-anchor":"end",style:"fill:var(--muted)"}, d+"×");
+  });
+  el(g,"text",{x:(L+R)/2,y:SY+56,"text-anchor":"middle",style:"fill:var(--ink)"},"한 연구에서 다룬 세포 수 (로그)");
+  el(g,"text",{x:16,y:(T+B)/2,"text-anchor":"middle",transform:"rotate(-90 16 "+((T+B)/2)+")",style:"fill:var(--ink)"},"세포당 깊이 (로그)");
+  // targeted strip
+  el(g,"rect",{x:L,y:SY-18,width:R-L,height:36,rx:6,style:"fill:var(--accent-soft);stroke:var(--line)"});
+  el(g,"text",{x:L+8,y:SY-24,style:"fill:var(--muted)"},"표적 locus만 읽음 (전장 깊이 비교 불가)");
+  // iso-cost line: cells x depth = 300 (Zahn 2017: 10 cells at 30x ~ 6,000 cells at 0.05x)
+  var c1=3, c2=30000;
+  el(g,"line",{x1:px(c1),y1:py(300/c1),x2:px(c2),y2:py(300/c2),style:"stroke:var(--warn);stroke-dasharray:6 5;stroke-width:1.5"});
+  el(g,"text",{x:px(330),y:py(1)-19,"text-anchor":"start",style:"fill:var(--warn)"},"같은 비용 선");
+  el(g,"text",{x:px(330),y:py(1)-5,"text-anchor":"start",style:"fill:var(--warn);font-size:11px"},"WGA 10세포×30× ≈ DLP 6,000세포×0.05× (Zahn 2017)");
+  // Gawad clone-detection marker
+  var xg=px(200);
+  el(g,"line",{x1:xg,y1:T,x2:xg,y2:B,style:"stroke:var(--muted);stroke-dasharray:2 4"});
+  el(g,"text",{x:xg+4,y:T+12,style:"fill:var(--muted);font-size:11px"},"200세포 ≈ 1% clone 검출 (Gawad 2014)");
+  // platforms
+  var stripIdx=0;
+  PLATFORMS.forEach(function(p){
+    var col="var("+p.c+")", x=px(p.cells);
+    if (p.kind==="targeted"){
+      el(g,"circle",{cx:x,cy:SY,r:5,style:"fill:"+col});
+      el(g,"text",{x:x,y:SY+(stripIdx%2? 14:-8),"text-anchor":"middle",style:"fill:var(--ink);font-size:11px"},p.name);
+      stripIdx++; return;
+    }
+    var yl=py(p.lo), yh=py(p.hi);
+    if (p.kind==="range" && p.hi>p.lo){
+      el(g,"line",{x1:x,y1:yl,x2:x,y2:yh,style:"stroke:"+col+";stroke-width:7;stroke-linecap:round"});
+    } else if (p.kind==="hollow"){
+      el(g,"circle",{cx:x,cy:yl,r:6,style:"fill:var(--panel);stroke:"+col+";stroke-width:2"});
+    } else {
+      el(g,"circle",{cx:x,cy:yl,r:6,style:"fill:"+col});
+    }
+    el(g,"text",{x:x+p.dx,y:(yl+yh)/2+p.dy,"text-anchor":p.anchor||"start",style:"fill:var(--ink)"},p.name);
+    if (p.sub) el(g,"text",{x:x+p.dx,y:(yl+yh)/2+p.dy+14,"text-anchor":p.anchor||"start",style:"fill:var(--muted);font-size:11px"},p.sub);
+  });
+
+  /* ---------- Figure 2: timeline ---------- */
+  var LANES = ["증폭 화학","세포 규모·설계","가닥·단일분자 정확도","다른 층과 짝짓기"];
+  var EVENTS = [
+    [0,1992,"DOP-PCR*","a"],[0,2002,"MDA","b"],[0,2012,"MALBAC","a"],[0,2017,"LIANTI","b"],[0,2021,"PTA","a"],
+    [1,2011,"SNS","a"],[1,2014,"nuc-seq","b"],[1,2014,"Gawad 1,479세포","b2"],[1,2017,"DLP","a2"],[1,2018,"droplet 표적","a"],[1,2019,"DLP+","b"],
+    [2,2012,"Strand-seq","a"],[2,2021,"META-CS","a"],[2,2021,"NanoSeq","b"],[2,2024,"HiDEF-seq","b2"],
+    [3,2019,"GoT","a"],[3,2024,"GoT–ChA","a2"],[3,2025,"DAF-seq","b"]
+  ];
+  var LCOL = ["--a1","--ok","--warn","--a2"];
+  var tl = document.getElementById("timeline");
+  var tL=150, tR=740, YA=1990, YB=2026, laneH=82, top=40;
+  function tx(y){ return tL + (tR-tL)*(y-YA)/(YB-YA); }
+  var tg = el(tl,"g",{"font-size":"12","font-family":"inherit"});
+  [1990,2000,2010,2020].forEach(function(y){
+    el(tg,"line",{x1:tx(y),y1:top-10,x2:tx(y),y2:top+laneH*4-10,style:"stroke:var(--line)"});
+    el(tg,"text",{x:tx(y),y:top+laneH*4+8,"text-anchor":"middle",style:"fill:var(--muted)"},String(y));
+  });
+  LANES.forEach(function(name,i){
+    var y=top+laneH*i+laneH/2-10;
+    el(tg,"line",{x1:tL,y1:y,x2:tR,y2:y,style:"stroke:var("+LCOL[i]+");stroke-width:2;opacity:.45"});
+    el(tg,"text",{x:8,y:y+4,style:"fill:var(--ink);font-weight:600"},name);
+  });
+  var OFF = {a:-10, a2:-23, b:19, b2:32};
+  EVENTS.forEach(function(e){
+    var lane=e[0], yr=e[1], label=e[2], y=top+laneH*lane+laneH/2-10, x=tx(yr);
+    el(tg,"circle",{cx:x,cy:y,r:5,style:"fill:var("+LCOL[lane]+")"});
+    var anchor = x>tR-40 ? "end" : "middle";
+    el(tg,"text",{x:x,y:y+OFF[e[3]],"text-anchor":anchor,style:"fill:var(--ink);font-size:11px"},label+" ’"+String(yr).slice(2));
+  });
+  el(tg,"text",{x:tL,y:top+laneH*4+26,style:"fill:var(--muted);font-size:11px"},"* DOP-PCR 1992 원 논문은 단일세포 연구가 아니다");
+})();
+</script>
+</body>
+</html>

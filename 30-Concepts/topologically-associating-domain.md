@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > TAD는 Hi-C에서 내부 접촉이 잦고 경계에서 접촉이 뚝 떨어지는 유전체 구역이며, 경계가 무너지면 enhancer가 엉뚱한 유전자와 만나 질환을 일으킬 수 있다 ([[10-Summaries/dixon-2012-tads|Dixon 2012]]; [[10-Summaries/lupianez-2015-tad-disruption|Lupiáñez 2015]]). 다만 TAD 크기와 경계는 해상도와 caller에 따라 달라지고, single cell에서는 같은 TAD가 세포마다 있다가 없다가 하는 분포로 나타난다 ([[10-Summaries/kerpedjiev-2018-higlass|HiGlass]]; [[10-Summaries/zhang-2022-higashi|Higashi]]; [[10-Summaries/li-2023-scnanohi-c|scNanoHi-C]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [3D 유전체 교재](../60-Explainers/3d-genome.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 TADs are insulated regulatory neighbourhoods; loss of a TAD boundary can rewire enhancer–promoter contacts and dysregulate gene expression, a mechanism implicated in cancer and developmental disorders ([[10-Summaries/lupianez-2015-tad-disruption|Lupiáñez 2015]]; [[10-Summaries/spielmann-2018-sv-3d-genome|Spielmann 2018]]).

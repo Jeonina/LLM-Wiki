@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > CUP는 전이 병소로 진단되지만 원발 부위를 찾지 못한 암이다. 암세포가 전이 후에도 기원 조직의 DNA 메틸화 패턴을 유지하기 때문에, EPICUP 같은 메틸화 분류기로 원발 부위를 추정할 수 있다 ([[10-Summaries/kim-2017-methylation-memory-review|Kim 2017]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [암 연구의 scDNA-seq 교재](../60-Explainers/scdna-cancer-applications.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 CUP cases are heterogeneous: metastases of carcinomas, neuroendocrine tumors, lymphomas. Imaging, immunohistochemistry, and molecular profiling are used to identify the tissue of origin.

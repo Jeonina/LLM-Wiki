@@ -6,6 +6,7 @@ tags: [scWGA, methods, amplification]
 created: 2026-05-11
 updated: 2026-10-12
 paper_section: ["3.1"]
+explainer: wga-simulator
 ---
 
 # Whole-genome amplification (scWGA)
@@ -14,6 +15,11 @@ paper_section: ["3.1"]
 
 > [!abstract] 한눈에
 > 단일 세포 DNA를 시퀀싱하려면 증폭이 필요하고, 증폭 방식(PCR, Φ29 등온, Tn5)마다 coverage, 균일도, 대립유전자 균형, 오류율을 서로 다르게 맞바꾼다 ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]). 여러 벤치마크는 최선의 방법이 하나로 정해지지 않고 찾으려는 변이 종류에 따라 달라진다고 결론짓는다 ([[10-Summaries/hou-2015-wga-comparison|Hou 2015]]; [[10-Summaries/huang-2015-scwga-review|Huang 2015]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 WGA 시뮬레이터](../60-Explainers/wga-simulator.html)
+<!-- /explainer-links -->
 
 ## Key points
 

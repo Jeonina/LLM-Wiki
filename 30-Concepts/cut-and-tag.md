@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > CUT&Tag는 항체로 pA-Tn5를 표적 chromatin에 붙인 뒤 그 자리에서 tagmentation을 일으키는 방법이며, fragment가 핵 안에 남기 때문에 single-cell로 확장된다 ([[10-Summaries/kaya-okur-2019-cut-and-tag|Kaya-Okur 2019]]). 다만 Tn5 때문에 열린 chromatin 쪽으로 신호가 치우치는 편향이 모든 데이터에 남는다 ([[10-Summaries/hu-2026-patty|PATTY]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 히스톤 변형](../60-Explainers/histone-modifications.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 The standard reference is Kaya-Okur et al. 2019, *Nat Commun* ([[10-Summaries/kaya-okur-2019-cut-and-tag|Kaya-Okur 2019]]). The workflow is: light formaldehyde fixation → nuclei isolation → primary antibody → secondary antibody → pA-Tn5 binding → Mg²⁺-triggered tagmentation → SDS release → PCR with indexed primers → sequencing; the founding paper itself describes unfixed cells (see Contested points) ([[10-Summaries/kaya-okur-2019-cut-and-tag|Kaya-Okur 2019]]).

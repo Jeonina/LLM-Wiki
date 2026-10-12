@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>단일세포 계통 추적</title>
+<link rel="stylesheet" href="explainer.css">
+</head>
+<body>
+<main>
+<div class="crumb"><a href="../">scDNA wiki</a> · <a href="./">교재</a> · 세포 계통 추적</div>
+<h1>이 세포는 어느 세포에서 나왔나: 단일세포 계통 추적</h1>
+<p class="lede">세포는 분열할 때마다 작은 흔적을 남기고, 그 흔적은 딸세포에게 그대로 물려진다. 세포 여러 개가 같은 흔적을 공유한다면 그 세포들은 같은 조상에서 나온 것이다. 계통 추적(lineage tracing)은 이 논리로 발생, 노화, 암의 진화를 클론과 계통수 수준에서 읽는 일이다 (<a href="../10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review">Rodriguez-Fraticelli 2026</a>). 이 페이지는 어떤 흔적을 쓸 수 있는지, 그 흔적에서 나무를 어떻게 세우는지, 사람 조직에서는 무엇이 막히는지를 정리한다.</p>
+
+<div class="callouts">
+  <div class="callout"><b>공유된 표지가 가지를 만든다</b>세포 일부만 가진 변이가 그 세포들을 한 가지로 묶는다. 세포 하나에만 있는 변이는 묶을 정보를 주지 않는다.</div>
+  <div class="callout"><b>사람에게는 심을 수 없다</b>CRISPR recorder처럼 인위적으로 심는 barcode는 정보량이 많지만 모델 생물에서만 쓴다. 사람 조직에서는 체세포 SNV, mtDNA, 메틸화처럼 저절로 쌓인 표지에 기대야 한다.</div>
+  <div class="callout"><b>계통 정보와 세포 상태는 맞바꾼다</b>핵 SNV는 가장 좋은 나무를 주지만 세포 상태는 거의 못 읽는다. mtDNA와 메틸화는 나무의 깊이를 덜 주는 대신 처리량과 상태 정보가 많다.</div>
+</div>
+
+<h2>어떤 흔적을 쓸 수 있나</h2>
+<figure class="fig">
+<svg id="markers" viewBox="0 0 780 470" role="img" aria-label="여섯 가지 계통 표지를 사람 조직 사용 가능성, 분열 순서 복원, 같은 세포의 상태 측정, 보고된 기록 속도로 비교한 표" style="color:var(--ink)"></svg>
+<figcaption><span style="color:var(--accent)">●</span> 된다 · <span style="color:var(--a2)">◐</span> 조건부·부분적 · <span style="color:var(--muted)">○</span> 안 된다. 위 세 줄은 저절로 쌓이는 표지(후향적, retrospective)이고, 아래 두 줄은 인위적으로 심는 표지(전향적, prospective)다. 정적 barcode는 클론마다 표지 하나를 한 번 붙이고, CRISPR recorder는 표지가 계속 변해 분열 순서를 기록한다. 점수는 링크된 요약의 정성적 서술을 옮긴 것이다(synthesis). 오른쪽 칸의 수치는 단위가 서로 달라 직접 비교할 수 없다. 근거: <a href="../10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review">Rodriguez-Fraticelli 2026</a> · <a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a> · <a href="../10-Summaries/coorens-2021-nature">Coorens 2021</a> · <a href="../10-Summaries/wang-2021-medalt">Wang 2021</a> · <a href="../10-Summaries/ludwig-2019-mtdna-lineage-tracing">Ludwig 2019</a> · <a href="../10-Summaries/chen-2025-methyltree">Chen 2025</a> · <a href="../10-Summaries/scherer-2025-nature">Scherer 2025</a> · <a href="../10-Summaries/weinreb-2020-larry">Weinreb 2020</a> · <a href="../10-Summaries/li-2023-darlin">Li 2023</a>.</figcaption>
+</figure>
+
+<h2>공유된 변이가 가지가 되는 방식</h2>
+<figure class="fig">
+<svg viewBox="0 0 780 360" role="img" aria-label="세포 여섯 개의 계통수와 그에 해당하는 세포 곱하기 변이 행렬. 공유된 변이가 가지를 정의하고, 독립적으로 두 번 생긴 변이와 결측이 오류를 만드는 모습" style="color:var(--ink)" font-family="inherit">
+  <defs>
+    <g id="mk"><rect x="-13" y="-11" width="26" height="22" rx="5" fill="var(--accent-soft)" stroke="var(--accent)"/></g>
+    <g id="mkw"><rect x="-13" y="-11" width="26" height="22" rx="5" fill="var(--warn-soft)" stroke="var(--warn)"/></g>
+  </defs>
+  <text x="10" y="22" font-size="14" font-weight="600" fill="var(--muted)">① 실제 분열 이력</text>
+  <!-- tree edges -->
+  <g stroke="currentColor" stroke-width="2" fill="none">
+    <line x1="200" y1="45" x2="110" y2="120"/><line x1="200" y1="45" x2="290" y2="120"/>
+    <line x1="110" y1="120" x2="70" y2="200"/><line x1="110" y1="120" x2="160" y2="280"/>
+    <line x1="290" y1="120" x2="240" y2="280"/><line x1="290" y1="120" x2="330" y2="200"/>
+    <line x1="70" y1="200" x2="40" y2="280"/><line x1="70" y1="200" x2="100" y2="280"/>
+    <line x1="330" y1="200" x2="300" y2="280"/><line x1="330" y1="200" x2="360" y2="280"/>
+  </g>
+  <circle cx="200" cy="45" r="9" fill="var(--panel)" stroke="currentColor" stroke-width="2"/>
+  <text x="214" y="40" font-size="12" fill="var(--muted)">수정란(변이 없음)</text>
+  <!-- mutation marks on branches -->
+  <g font-size="13" font-weight="700" text-anchor="middle" fill="currentColor">
+    <use href="#mk" x="155" y="82"/><text x="155" y="87">A</text>
+    <use href="#mk" x="245" y="82"/><text x="245" y="87">C</text>
+    <use href="#mk" x="90" y="160"/><text x="90" y="165">B</text>
+    <use href="#mk" x="135" y="200"/><text x="135" y="205">E</text>
+    <use href="#mk" x="310" y="160"/><text x="310" y="165">D</text>
+    <use href="#mkw" x="85" y="240"/><text x="85" y="245">X</text>
+    <use href="#mkw" x="315" y="240"/><text x="315" y="245">X</text>
+  </g>
+  <!-- leaves -->
+  <g font-size="13" font-weight="700" text-anchor="middle">
+    <circle cx="40" cy="290" r="13" fill="var(--accent)"/><text x="40" y="295" fill="#fff">1</text>
+    <circle cx="100" cy="290" r="13" fill="var(--accent)"/><text x="100" y="295" fill="#fff">2</text>
+    <circle cx="160" cy="290" r="13" fill="var(--accent)"/><text x="160" y="295" fill="#fff">3</text>
+    <circle cx="240" cy="290" r="13" fill="var(--a2)"/><text x="240" y="295" fill="#fff">4</text>
+    <circle cx="300" cy="290" r="13" fill="var(--a2)"/><text x="300" y="295" fill="#fff">5</text>
+    <circle cx="360" cy="290" r="13" fill="var(--a2)"/><text x="360" y="295" fill="#fff">6</text>
+  </g>
+  <text x="200" y="330" font-size="12" text-anchor="middle" fill="var(--muted)">지금 채취한 세포 1–6. 변이는 생긴 가지 아래 모든 세포에 물려진다.</text>
+
+  <!-- matrix -->
+  <text x="440" y="22" font-size="14" font-weight="600" fill="var(--muted)">② 시퀀싱으로 보는 것 (세포 × 변이)</text>
+  <g font-size="13" font-weight="700" text-anchor="middle" fill="currentColor">
+    <text x="520" y="55">A</text><text x="562" y="55">B</text><text x="604" y="55">C</text><text x="646" y="55">D</text><text x="688" y="55">E</text><text x="730" y="55" fill="var(--warn)">X</text>
+  </g>
+  <g font-size="13" text-anchor="end" fill="currentColor">
+    <text x="490" y="89">세포 1</text><text x="490" y="125">세포 2</text><text x="490" y="161">세포 3</text>
+    <text x="490" y="197">세포 4</text><text x="490" y="233">세포 5</text><text x="490" y="269">세포 6</text>
+  </g>
+  <line x1="440" y1="64" x2="760" y2="64" stroke="var(--line)"/>
+  <line x1="440" y1="174" x2="760" y2="174" stroke="var(--line)" stroke-dasharray="4 3"/>
+  <g id="cells"></g>
+  <g font-size="12" fill="var(--muted)">
+    <text x="440" y="306">A, B → 1·2·3, 1·2를 묶음 · C, D → 4·5·6, 5·6을 묶음</text>
+    <text x="440" y="324">E → 세포 3에만 있어 묶을 정보가 없음</text>
+    <text x="440" y="342" fill="var(--warn)">X → 2와 5에서 따로 생김(homoplasy) · ? → 결측</text>
+  </g>
+</svg>
+<figcaption>나무를 세우는 알고리즘은 ②의 행렬만 보고 ①을 거꾸로 추정한다. A와 B처럼 세포 일부가 공유한 변이가 가지를 정의한다. 문제는 두 가지다. 같은 변이가 서로 다른 가지에서 독립적으로 생기면(X, homoplasy) 세포 2와 5가 가까워 보이고, 어떤 알고리즘도 이것을 공유 조상과 구별하지 못한다. 그래서 해결책은 표지 하나가 가질 수 있는 상태를 늘리는 assay 설계다 (<a href="../10-Summaries/jones-2020-cassiopeia">Jones 2020</a>). 또 세포 4의 C 자리가 비어 있을 때(?), 그것이 기술적 dropout인지 실제로 물려받은 결측인지는 데이터에서 똑같이 보인다 (<a href="../10-Summaries/chu-2025-laml">Chu 2025</a>). 그림은 개념을 보이기 위한 가상의 예다.</figcaption>
+</figure>
+
+<h2>핵심 내용</h2>
+<ol class="steps">
+  <li><b>두 개의 축으로 나눈다.</b> 표지를 인위적으로 심는가(전향적), 저절로 쌓인 것을 읽는가(후향적). 그리고 표지가 한 번 붙고 끝나는가(정적), 계속 변하며 분열 순서를 기록하는가(진화형). 이 두 축이 현재 분야를 정리하는 가장 깔끔한 틀이다 (<a href="../10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review">Rodriguez-Fraticelli 2026</a>). LARRY 같은 정적 barcode는 클론을 표시하고 같은 세포의 전사체를 함께 읽지만, 한 번만 붙기 때문에 계층 구조는 없다 (<a href="../10-Summaries/weinreb-2020-larry">Weinreb 2020</a>).</li>
+  <li><b>CRISPR recorder는 분열 순서를 직접 쓴다.</b> Cas9가 reporter의 표적 자리를 반복해서 자르고, 수선 과정에서 생긴 indel이 쌓이며 계통수가 기록된다 (<a href="../10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review">Rodriguez-Fraticelli 2026</a>). 기록의 질은 다양성과 검출률이 정한다. Cas9에 TdT를 붙이고 표적 배열을 셋으로 늘린 DARLIN은 rare allele을 가진 세포 비율을 약 10%에서 약 60%로 올렸고, CARLIN 수준으로 데이터를 줄이자 초기 megakaryocyte 편향 신호가 사라졌다 (<a href="../10-Summaries/li-2023-darlin">Li 2023</a>).</li>
+  <li><b>나무를 세우는 일은 그 자체로 어렵다.</b> 대부분의 기준에서 NP-hard이고 가능한 나무의 수는 세포 수에 따라 초지수적으로 늘어난다 (<a href="../10-Summaries/wang-2026-multimodal-lineage-computational">Wang 2026</a>). Cassiopeia는 "편집된 자리는 다시 잘리지 않고 시조 세포는 편집되지 않았다"는 recorder의 성질을 알고리즘에 넣어 문제를 풀 수 있는 형태로 바꿨고, 5만 개 세포까지 확장했다 (<a href="../10-Summaries/jones-2020-cassiopeia">Jones 2020</a>). 다만 parsimony나 distance 방법은 topology만 준다. LAML은 시간 단위 branch length를 함께 추정해 마우스 폐선암의 전이가 세 시기로 나뉘고 약 2개월 무렵 폭발적으로 일어났다고 보였다 (<a href="../10-Summaries/chu-2025-laml">Chu 2025</a>).</li>
+  <li><b>사람에서는 핵 체세포 변이가 기준이다.</b> 세포 분열마다 약 2–4개의 변이가 쌓이므로 이것을 자연 barcode로 쓸 수 있다 (<a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a>). 세포 하나를 colony로 키워 WGS하면 증폭 오류를 피할 수 있다. Lee-Six는 이렇게 조혈모·전구세포 140개를 분석해 성인의 활동 HSC가 5만–20만 개라고 추정했고 (<a href="../10-Summaries/lee-six-2018-hsc-dynamics">Lee-Six 2018</a>), Coorens는 microdissection 511개로 수정란의 두 딸세포가 몸에 비대칭적으로 기여함을 보였다 (<a href="../10-Summaries/coorens-2021-nature">Coorens 2021</a>). 단일세포를 직접 읽을 때는 SNV용(CellPhy, SIEVE, ScisTree2)과 CNA용(MEDALT) 도구가 따로 있다. 반복해서 바뀌는 CNA는 "한 자리는 한 번만 변한다"는 infinite-sites 가정을 깬다 (<a href="../10-Summaries/wang-2021-medalt">Wang 2021</a>; <a href="../10-Summaries/kozlov-2022-cellphy">Kozlov 2022</a>).</li>
+  <li><b>mtDNA는 이미 데이터 안에 있다.</b> mtDNA는 16.6 kb로 짧고 세포당 수백–수천 copy가 있으며 변이율이 핵 DNA의 10–100배다. 그래서 변이가 높은 heteroplasmy로 떠올라 얕은 깊이에서도 보인다. scATAC-seq와 scRNA-seq가 부산물로 이미 읽고 있었다는 점이 핵심이다 (<a href="../10-Summaries/ludwig-2019-mtdna-lineage-tracing">Ludwig 2019</a>). 병목은 검출이 아니라 정보가 있는 변이를 고르는 일이고, allele frequency 약 1% 아래에서는 모든 도구가 실패한다 (<a href="../10-Summaries/kwok-2022-mquad">Kwok 2022</a>).</li>
+  <li><b>메틸화가 새로운 시계로 떠올랐다.</b> CpG 메틸화의 epimutation은 분열당 CpG 하나에 약 0.001의 빈도로 생겨 체세포 SNV보다 빠른 시계지만 noise가 크다 (<a href="../10-Summaries/chen-2025-methyltree">Chen 2025</a>). EPI-Clone은 안정적인 CpG로 클론을, 변하는 CpG로 분화 상태를 한 assay에서 함께 읽는다 (<a href="../10-Summaries/scherer-2025-nature">Scherer 2025</a>). 실제 barcode를 정답으로 놓고 비교하면 메틸화가 발현이나 accessibility보다 클론 기억을 더 강하게 담는다 (<a href="../10-Summaries/li-2023-darlin">Li 2023</a>; <a href="../10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review">Rodriguez-Fraticelli 2026</a>).</li>
+</ol>
+
+<h2>실제 측정값</h2>
+<p class="desc">연구마다 계에 따라 정답의 정의(구성한 계통수, 외부 barcode, 시뮬레이션)가 다르다. 같은 양에 대해 다른 값이 보고된 경우는 나란히 적었다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>표지 · 방법</th><th>무엇을 쟀나</th><th>보고된 값</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>핵 체세포 변이</td><td>세포 분열당 새 변이 수</td><td>약 2–4개 (리뷰) · 첫 두 분열 약 2.4개, 이후 약 0.7개 (발생 계통수)</td><td><a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a> · <a href="../10-Summaries/coorens-2021-nature">Coorens 2021</a></td></tr>
+<tr><td>핵 변이, colony WGS</td><td>사람 HSC 집단 크기</td><td>세포 140개, colony당 약 15×, 변이 129,582개 · 활동 HSC 5만–20만 개</td><td><a href="../10-Summaries/lee-six-2018-hsc-dynamics">Lee-Six 2018</a></td></tr>
+<tr><td>핵 변이, microdissection WGS</td><td>수정란 두 딸세포의 기여 비율</td><td>성인 3명, 시료 511개 · 60:40에서 93:7까지</td><td><a href="../10-Summaries/coorens-2021-nature">Coorens 2021</a></td></tr>
+<tr><td>mtDNA</td><td>변이율 (핵 DNA 대비)</td><td>10–100배 (Ludwig) · 10배 초과 (MQuad)</td><td><a href="../10-Summaries/ludwig-2019-mtdna-lineage-tracing">Ludwig 2019</a> · <a href="../10-Summaries/kwok-2022-mquad">Kwok 2022</a></td></tr>
+<tr><td>mtDNA (ATAC)</td><td>구성한 계통수 대비 정확도</td><td>1세대 클론 사이 96%, sub-clone 안 79% · lentiviral barcode 대비 AUROC 0.96, AUPRC 0.84 · scRNA로 추정한 CNV보다 클론 판별이 나음</td><td><a href="../10-Summaries/ludwig-2019-mtdna-lineage-tracing">Ludwig 2019</a></td></tr>
+<tr><td>mtDNA 변이 선택 (MQuad)</td><td>시뮬레이션 AUPRC</td><td>MQuad 0.976, mgatk 0.800, Monovar 0.147 · allele frequency 1% 이하에서 모두 실패 (평균 기술 noise 0.44%)</td><td><a href="../10-Summaries/kwok-2022-mquad">Kwok 2022</a></td></tr>
+<tr><td>mtscATAC-seq</td><td>droplet 간 mtDNA 오염</td><td>고정 없이 약 8.7% · formaldehyde 고정과 doublet 제거 뒤 0.19%</td><td><a href="../10-Summaries/ludwig-2020-mtscatac-seq">Lareau 2021</a></td></tr>
+<tr><td>메틸화 (MethylTree)</td><td>epimutation 빈도 · 정확도</td><td>CpG당 분열당 약 0.001 · 유전체 5% coverage에서 계통 순서 거의 100%</td><td><a href="../10-Summaries/chen-2025-methyltree">Chen 2025</a></td></tr>
+<tr><td>메틸화 (EPI-Clone)</td><td>LARRY barcode 대비 정확도</td><td>CpG 약 453개 · AUC 0.79 · 세포 230,358개</td><td><a href="../10-Summaries/scherer-2025-nature">Scherer 2025</a></td></tr>
+<tr><td>Camellia-seq (DARLIN)</td><td>같은 클론 안 유사도 유의성</td><td>메틸화 p = 1.2 × 10⁻¹⁰ · 발현 p = 0.049 · accessibility p = 0.34</td><td><a href="../10-Summaries/li-2023-darlin">Li 2023</a></td></tr>
+<tr><td>CRISPR recorder (DARLIN)</td><td>rare allele을 가진 세포 비율</td><td>약 60% (Cas9/CARLIN 약 10%) · 이론 barcode 약 10¹⁸개</td><td><a href="../10-Summaries/li-2023-darlin">Li 2023</a></td></tr>
+<tr><td>발현 barcode (LARRY)</td><td>자매 세포의 운명 일치</td><td>다른 well의 자매가 같은 운명 조합 70% (우연 22%) · 발현으로 운명 예측 최고 60% (in vitro), 51% (in vivo)</td><td><a href="../10-Summaries/weinreb-2020-larry">Weinreb 2020</a></td></tr>
+<tr><td>계통수 추론 (Cassiopeia)</td><td>참조 데이터 · 규모</td><td>15세대 추적한 세포 34,557개 · Greedy·Hybrid가 5만 세포까지</td><td><a href="../10-Summaries/jones-2020-cassiopeia">Jones 2020</a></td></tr>
+</tbody></table></div>
+
+<h2>목적별로 고르기</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>알고 싶은 것</th><th>우선 고려</th><th>확인할 위험</th></tr></thead>
+<tbody>
+<tr><td>사람 조직의 발생 계통, 분열 순서</td><td>핵 체세포 SNV (colony WGS, microdissection, PTA 기반 scWGS)</td><td>세포당 변이가 적고 증폭 오류가 변이처럼 보임. 세포 수를 늘리기 어려움 (<a href="../10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review">Rodriguez-Fraticelli 2026</a>)</td></tr>
+<tr><td>사람 조직의 클론과 세포 상태를 함께</td><td>mtDNA (mtscATAC-seq, MAESTER) + MQuad 같은 변이 선택</td><td>약 1% 아래 heteroplasmy는 못 읽음. scRNA에서는 RNA editing이 변이처럼 보임. 클론이 중첩되면 공유 변이가 많아 구분이 어려움 (<a href="../10-Summaries/kwok-2022-mquad">Kwok 2022</a>; <a href="../10-Summaries/ludwig-2019-mtdna-lineage-tracing">Ludwig 2019</a>)</td></tr>
+<tr><td>조혈 노화처럼 클론 동태와 분화 상태를 한 번에</td><td>메틸화 epimutation (EPI-Clone, MethylTree)</td><td>noise가 크고, 사람에서 epimutation이 중립적이라는 가정은 검증되지 않음 (<a href="../10-Summaries/chen-2025-methyltree">Chen 2025</a>; <a href="../10-Summaries/shahryary-2020-alphabeta">Shahryary 2020</a>)</td></tr>
+<tr><td>암세포의 클론 구조</td><td>CNA 기반 계통 (MEDALT 등), SNV와 결합</td><td>CNA는 infinite-sites 가정을 깨므로 Hamming 같은 일반 거리는 부적절 (<a href="../10-Summaries/wang-2021-medalt">Wang 2021</a>)</td></tr>
+<tr><td>모델 생물에서 전구 상태와 이후 운명의 연결</td><td>발현 barcode (LARRY)</td><td>한 번만 붙어 계층 구조가 없음 (<a href="../10-Summaries/weinreb-2020-larry">Weinreb 2020</a>)</td></tr>
+<tr><td>모델 생물에서 시간까지 붙은 계통수</td><td>CRISPR recorder + recorder에 맞는 모델 (Cassiopeia, LAML 등)</td><td>homoplasy, 결측 두 종류 구분, 재구성 방법에 따라 나무가 달라짐 (<a href="../10-Summaries/jones-2020-cassiopeia">Jones 2020</a>; <a href="../10-Summaries/chu-2025-laml">Chu 2025</a>; <a href="../10-Summaries/seidel-2026-sciphy">Seidel 2026</a>)</td></tr>
+</tbody></table></div>
+
+<h2>읽는 순서</h2>
+<ol class="path">
+  <li><a href="../40-Topics/single-cell-lineage-tracing">Single-cell lineage tracing (hub)</a> — 표지와 알고리즘, 도구 표가 한 페이지에 모여 있다.</li>
+  <li><a href="../30-Concepts/lineage-tracing">Lineage tracing</a> — 전향적·후향적 접근과 사람에서의 작업 흐름을 먼저 잡는다.</li>
+  <li><a href="../30-Concepts/phylogenetic-inference">Phylogenetic inference</a> — infinite sites, finite sites 같은 진화 모델이 왜 표지마다 달라야 하는지 본다.</li>
+  <li><a href="../30-Concepts/mitochondrial-lineage-tracing">Mitochondrial lineage tracing</a> — 사람 조직에서 가장 넓게 쓰이는 내재 표지의 장단점을 본다.</li>
+  <li><a href="../10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review">Rodriguez-Fraticelli 2026</a> — 두 축으로 분야 전체를 정리한 기술 리뷰다.</li>
+  <li><a href="../10-Summaries/ludwig-2019-mtdna-lineage-tracing">Ludwig 2019</a> — 버려지던 read에서 사람의 계통 표지를 찾은 출발점이다.</li>
+  <li><a href="../10-Summaries/jones-2020-cassiopeia">Jones 2020</a> — homoplasy와 두 종류의 결측이 무엇인지 가장 분명하게 설명한다.</li>
+  <li><a href="../10-Summaries/coorens-2021-nature">Coorens 2021</a> — 체세포 변이로 사람 발생 계통수를 몸 전체 규모에서 세운 사례다.</li>
+</ol>
+
+<h2>아직 열린 질문</h2>
+<ul>
+  <li>클론성 상실은 노화의 지표일 뿐인가, 노화를 일으키는 원인인가 (<a href="../10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review">Rodriguez-Fraticelli 2026</a>).</li>
+  <li>driver 변이 없이 커진 클론은 양성 선택의 결과인가, 중립적 drift인가 (<a href="../10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review">Rodriguez-Fraticelli 2026</a>).</li>
+  <li>메틸화가 ATAC과 RNA보다 클론 추론에 낫다는 결과는 얼마나 일반적인가 (<a href="../10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review">Rodriguez-Fraticelli 2026</a>).</li>
+  <li>시간 추정, phylodynamics, 불확실성 처리는 recorder 쪽에서만 발전했다. 사람의 내재 표지로 이 간극을 얼마나 메울 수 있나 (synthesis).</li>
+</ul>
+
+<footer>scDNA wiki 교재 · 수치와 해석은 링크된 위키 요약을 기준으로 한다.</footer>
+</main>
+
+<script>
+(function(){
+  // Marker comparison matrix. Ratings: 2 = yes, 1 = conditional/partial, 0 = no.
+  // Ratings paraphrase qualitative statements in the linked summaries; numbers are quoted from them.
+  var ROWS = [
+    {n:"핵 체세포 SNV", s:"scWGS · colony · microdissection", h:2, t:2, c:0,
+      v:["분열당 약 2–4개 (Shao 2025)", "첫 두 분열 약 2.4 → 이후 약 0.7 (Coorens 2021)"]},
+    {n:"CNV · SV", s:"주로 암세포", h:2, t:1, c:1,
+      v:["반복 변화로 infinite-sites 가정이 깨짐", "(MEDALT, Wang 2021)"]},
+    {n:"mtDNA 변이", s:"scATAC · scRNA의 부산물", h:2, t:1, c:2,
+      v:["변이율 핵 DNA의 10–100배 (Ludwig 2019)", "16.6 kb, 세포당 수백–수천 copy"]},
+    {n:"메틸화 epimutation", s:"scBS-seq · scTAM-seq", h:2, t:1, c:2,
+      v:["CpG당 분열당 약 0.001 (MethylTree)", "EPI-Clone은 CpG 약 453개만 읽음"]},
+    {n:"정적 합성 barcode", s:"LARRY 등 lentiviral", h:0, t:0, c:2,
+      v:["barcode 약 0.5 × 10⁶종", "한 번만 붙어 계층 구조 없음 (Weinreb 2020)"]},
+    {n:"CRISPR recorder", s:"Cas9 · base · prime editing", h:0, t:2, c:1,
+      v:["DARLIN 이론 barcode 약 10¹⁸개", "rare allele 세포 약 60% (CARLIN 약 10%)"]}
+  ];
+  var COLS = [{k:"h", t:"사람 조직", x:300}, {k:"t", t:"분열 순서", x:380}, {k:"c", t:"같은 세포 상태", x:470}];
+  var NS="http://www.w3.org/2000/svg", svg=document.getElementById("markers");
+  function el(tag, a, txt, parent){ var e=document.createElementNS(NS,tag); for(var k in a) e.setAttribute(k,a[k]); if(txt!=null) e.textContent=txt; (parent||svg).appendChild(e); return e; }
+  var top=44, rh=64;
+  el("text",{x:8,y:26,"font-size":13,"font-weight":600,fill:"var(--muted)"},"표지");
+  COLS.forEach(function(c){ el("text",{x:c.x,y:26,"font-size":13,"font-weight":600,fill:"var(--muted)","text-anchor":"middle"},c.t); });
+  el("text",{x:530,y:26,"font-size":13,"font-weight":600,fill:"var(--muted)"},"보고된 기록 속도 · 정보량");
+  el("line",{x1:0,y1:36,x2:780,y2:36,stroke:"var(--line)"});
+  ROWS.forEach(function(r,i){
+    var y=top+i*rh+rh/2;
+    if(i===4) el("line",{x1:0,y1:top+i*rh,x2:780,y2:top+i*rh,stroke:"var(--muted)","stroke-dasharray":"5 4"});
+    else if(i>0) el("line",{x1:0,y1:top+i*rh,x2:780,y2:top+i*rh,stroke:"var(--line)"});
+    el("text",{x:8,y:y-3,"font-size":15,"font-weight":700,fill:"currentColor"},r.n);
+    el("text",{x:8,y:y+15,"font-size":12,fill:"var(--muted)"},r.s);
+    COLS.forEach(function(c){
+      var v=r[c.k];
+      if(v===2) el("circle",{cx:c.x,cy:y,r:10,fill:"var(--accent)"});
+      else if(v===1){ el("circle",{cx:c.x,cy:y,r:10,fill:"none",stroke:"var(--a2)","stroke-width":2});
+        el("path",{d:"M"+c.x+" "+(y-10)+" A10 10 0 0 0 "+c.x+" "+(y+10)+" Z",fill:"var(--a2)"}); }
+      else el("circle",{cx:c.x,cy:y,r:9,fill:"none",stroke:"var(--muted)","stroke-width":1.5});
+    });
+    el("text",{x:530,y:y-3,"font-size":12.5,fill:"currentColor"},r.v[0]);
+    el("text",{x:530,y:y+15,"font-size":12.5,fill:"var(--muted)"},r.v[1]);
+  });
+  el("text",{x:8,y:top+4*rh-6,"font-size":11,fill:"var(--muted)"},"↑ 후향적: 저절로 쌓인 표지");
+  el("text",{x:8,y:top+6*rh+16,"font-size":11,fill:"var(--muted)"},"↑ 전향적: 인위적으로 심는 표지 (모델 생물만)");
+
+  // Cell x mutation matrix for figure 2.
+  var M = [ // A B C D E X ; 1 present, 0 absent, 9 missing
+    [1,1,0,0,0,0],[1,1,0,0,0,1],[1,0,0,0,1,0],[0,0,9,0,0,0],[0,0,1,1,0,1],[0,0,1,1,0,0]
+  ];
+  var g=document.getElementById("cells");
+  M.forEach(function(row,i){
+    row.forEach(function(v,j){
+      var x=520+j*42, y=84+i*36, warn=(j===5);
+      if(v===1) el("circle",{cx:x,cy:y,r:10,fill:warn?"var(--warn)":(i<3?"var(--accent)":"var(--a2)")},null,g);
+      else if(v===9){ el("circle",{cx:x,cy:y,r:10,fill:"none",stroke:"var(--warn)","stroke-dasharray":"3 2"},null,g);
+        el("text",{x:x,y:y+5,"text-anchor":"middle","font-size":13,"font-weight":700,fill:"var(--warn)"},"?",g); }
+      else el("circle",{cx:x,cy:y,r:4,fill:"var(--line)"},null,g);
+    });
+  });
+})();
+</script>
+</body>
+</html>

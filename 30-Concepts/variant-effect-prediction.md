@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Variant effect prediction은 reference와 alternative allele에 대한 모델 출력을 비교해 변이의 기능적 영향을 추정하는 작업이고, track 차이·likelihood ratio·embedding 거리·지도학습 classifier의 네 가지 방식이 쓰인다 ([[10-Summaries/zhou-2015-deepsea|DeepSEA]]; [[10-Summaries/benegas-2025-gpn-msa|GPN-MSA]]). 벤치마크는 거의 모두 germline 변이이며, somatic 변이에 대한 검증은 아직 드물고 결과도 엇갈린다 ([[10-Summaries/avsec-2026-alphagenome|AlphaGenome]]; [[10-Summaries/fischbach-2026-alphagenome-aging|Fischbach 2026]]; [[10-Summaries/terekhanova-2026-tal1-enhancer|Terekhanova 2026]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [서열 모델과 foundation model 교재](../60-Explainers/sequence-models-and-foundation-models.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 A variant's effect is estimated by comparing a model's outputs for the reference and alternative alleles ([[10-Summaries/zhou-2015-deepsea|DeepSEA]]; [[10-Summaries/benegas-2025-gpn-msa|GPN-MSA]]). Four scoring modes appear in this wiki (synthesis):

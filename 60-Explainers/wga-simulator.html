@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>단일세포 WGA 시뮬레이터</title>
+<link rel="stylesheet" href="explainer.css">
+</head>
+<body>
+<main>
+<div class="crumb"><a href="../">scDNA wiki</a> · <a href="./">교재</a> · 증폭 방식</div>
+<h1>세포 하나의 DNA를 어떻게 불릴까: 단일세포 WGA 시뮬레이터</h1>
+<p class="lede">세포 하나에는 DNA가 약 6 pg, 같은 locus에 분자가 두 개뿐이다. 시퀀싱하려면 먼저 불려야 하는데, 불리는 방식마다 남기는 흔적이 다르다. 아래 시뮬레이터에서 방법을 바꿔 가며 그 흔적이 데이터에 어떻게 나타나는지 직접 보자.</p>
+
+<div class="callouts">
+  <div class="callout"><b>균일하게 불리지 않는다</b>어떤 구간은 많이, 어떤 구간은 적게 불려 coverage가 출렁인다. 출렁임이 넓은 구간에 걸치면 가짜 CNV처럼 보인다.</div>
+  <div class="callout"><b>한쪽 allele이 사라진다</b>두 allele 중 하나만 불리면 이형접합 변이가 동형접합처럼 보이거나 아예 안 보인다(allelic dropout, ADO).</div>
+  <div class="callout"><b>없던 변이가 생긴다</b>증폭 오류와 DNA 손상이 체세포 변이처럼 보인다. 그래서 세포 수준 변이율이 부풀려질 수 있다.</div>
+</div>
+
+<h2>시뮬레이터</h2>
+<div class="lab" id="lab">
+  <div class="controls">
+    <div class="methods" role="group" aria-label="증폭 방식" id="methods"></div>
+  </div>
+  <div class="controls">
+    <label class="slider">시퀀싱 깊이 <input type="range" id="depth" min="0" max="100" value="60"> <span id="depthv"></span></label>
+    <button class="btn" id="reseed">다른 세포로 다시 뽑기</button>
+  </div>
+  <p class="desc" id="mdesc"></p>
+
+  <p class="plotlabel">① 2 Mb 구간의 coverage (50 kb bin, 평균을 copy number 2로 맞춤). 점선이 진짜 copy number 2다.</p>
+  <canvas class="plot" id="cov" height="190"></canvas>
+  <p class="plotlabel">② 이형접합 SNP의 allele 비율(VAF). 진짜 값은 모두 0.5다. <span style="color:var(--warn)">●</span> 한쪽 allele read가 0인 자리(ADO로 보이는 자리)</p>
+  <canvas class="plot" id="vaf" height="170"></canvas>
+
+  <div class="metrics">
+    <div class="metric"><div class="k">coverage breadth (≥1 read)</div><div class="v" id="m-breadth">–</div></div>
+    <div class="metric"><div class="k">bin 간 변동계수 (CV)</div><div class="v" id="m-cv">–</div></div>
+    <div class="metric"><div class="k">관측된 SNP (read ≥4)</div><div class="v" id="m-obs">–</div></div>
+    <div class="metric"><div class="k">관측된 ADO (read ≥4인 SNP)</div><div class="v" id="m-ado">–</div></div>
+    <div class="metric"><div class="k">VAF가 0.3–0.7 안인 SNP</div><div class="v" id="m-bal">–</div></div>
+  </div>
+  <div class="verdict" id="verdict"></div>
+</div>
+
+<div class="note"><b>이 시뮬레이터는 장난감 모델이다.</b> 증폭 편향을 allele마다 독립적인 무작위 변동으로 흉내 내고, 방법마다 변동의 크기와 구간 길이를 다르게 줬다. 증폭되는 구간의 비율은 아래 표의 리뷰 coverage 값(Shao 2025)을 따랐고, 나머지 매개변수는 실제 측정값이 보여주는 <i>경향</i>(예: dropout 구간이 MDA는 약 10⁵ bp, PTA는 약 10³ bp)을 재현하도록 고른 예시 값이다. 그래도 화면의 숫자를 논문 수치로 인용하면 안 된다. 실제 값은 표를 보자.</div>
+
+<h2>무엇이 보이나</h2>
+<ol class="steps">
+  <li><b>MDA</b>는 φ29 polymerase가 긴 가닥을 밀어내며 지수적으로 불린다. 그래서 편향이 넓은 구간에 걸쳐 함께 움직이고(①의 큰 물결), dropout도 수십~수백 kb 단위로 생긴다. read depth만 보는 CNV caller에게는 이 물결이 가짜 gain·loss로 보인다.</li>
+  <li><b>PTA</b>는 같은 φ29에 chain terminator를 섞어 짧은 산물만 만들고, 새 복사가 대부분 원래 주형에서 나오게 한다. 편향이 짧은 구간에서 서로 상쇄되어 ①이 평평하고 ②의 VAF가 0.5 근처에 모인다.</li>
+  <li><b>DOP-PCR</b>은 메가베이스 규모에서는 고르지만 유전체의 일부만 불린다. ①은 평평한데 SNP 대부분이 아예 관측되지 않는다. CNV에는 쓸 만하고 SNV에는 맞지 않는 이유다.</li>
+  <li><b>증폭 없는 방식(DLP+ 계열)</b>은 증폭 편향이 없지만 세포당 read가 적어(기본 0.1×) SNP가 거의 안 잡힌다. 세포를 많이 모아 클론 단위로 합치는 설계와 짝을 이룬다.</li>
+  <li>깊이를 올리면 breadth는 늘지만, 증폭 단계에서 이미 사라진 allele은 돌아오지 않는다. ADO는 시퀀싱이 아니라 증폭의 문제다.</li>
+</ol>
+
+<h2>실제 측정값</h2>
+<p class="desc">같은 방법이라도 연구마다 세포, 깊이, 기준이 달라 수치가 크게 다르다. 범위가 엇갈리는 경우는 그대로 함께 적었다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>방법</th><th>원리</th><th>보고된 값</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>DOP-PCR</td><td>degenerate primer PCR</td><td>coverage 20–25%, 균일도 높음 · 상용 kit 비교에서 genotype 검출 효율 약 6%, CNV에는 가장 고름</td><td><a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a> · <a href="../10-Summaries/hou-2015-wga-comparison">Hou 2015</a></td></tr>
+<tr><td>MDA</td><td>φ29 등온 strand displacement</td><td>coverage 70–75%, allelic balance 낮음 · genotype 검출 효율 약 84% · φ29 오류율 약 10⁻⁶/base · dropout 구간 평균 약 10⁵ bp</td><td><a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a> · <a href="../10-Summaries/hou-2015-wga-comparison">Hou 2015</a> · <a href="../10-Summaries/dean-2002-mda">Dean 2002</a> · <a href="../10-Summaries/zhao-2025-hiscanner">Zhao 2025</a></td></tr>
+<tr><td>MDA (G2/M 핵)</td><td>DNA가 이미 두 배인 핵을 입력</td><td>breadth 91%, ADO 9.7%</td><td><a href="../10-Summaries/wang-2014-nuc-seq">Wang 2014</a></td></tr>
+<tr><td>MALBAC</td><td>looping으로 재증폭을 막는 quasilinear 전증폭</td><td>coverage 55–60% (리뷰 표) · 단일 암세포 25×에서 93% (원 논문) · genotype 검출 효율 약 52%</td><td><a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a> · <a href="../10-Summaries/chenghang-2012-science">Zong 2012</a> · <a href="../10-Summaries/hou-2015-wga-comparison">Hou 2015</a></td></tr>
+<tr><td>LIANTI</td><td>Tn5 + T7 전사로 선형 증폭</td><td>coverage 80–85% (리뷰 표) · 30×에서 97%, ADO 17% (원 논문) · 주된 위양성 C→T는 증폭이 아니라 lysis 후 탈아미노화</td><td><a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a> · <a href="../10-Summaries/chen-2017-lianti">Chen 2017</a></td></tr>
+<tr><td>PTA</td><td>φ29 + terminator, 원 주형 위주 복사</td><td>coverage 약 95%, 균일도·allelic balance 높음 · 7개 방법 중 breadth·균일도·SNV 정확도 최고 · dropout 구간 평균 약 10³ bp</td><td><a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a> · <a href="../10-Summaries/gonzalez-pena-2021-pnas">Gonzalez-Pena 2021</a> · <a href="../10-Summaries/zhao-2025-hiscanner">Zhao 2025</a></td></tr>
+<tr><td>증폭 없음 (DLP/DLP+)</td><td>단일세포 DNA를 바로 tagmentation</td><td>세포당 0.07–0.12× · DLP 세포 64개를 합치면 breadth 94.5–96.8% · DLP+는 1만 개 이상 세포</td><td><a href="../10-Summaries/zahn-2017-dlp">Zahn 2017</a> · <a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a></td></tr>
+</tbody></table></div>
+
+<h3>숫자가 결과를 바꾼 사례</h3>
+<ul>
+  <li><b>뉴런 돌연변이율 하향 조정.</b> 영아 뉴런에서 MDA는 PTA보다 sSNV를 약 10배 많이 불렀고(282 대 26), 그 초과분은 artifact signature와 일치했다. PTA와 SCAN2로 다시 잰 성인 뉴런 SNV 축적 속도는 연 16개 안팎이다 (<a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a>).</li>
+  <li><b>CNV 해상도는 증폭 방식이 정한다.</b> HiScanner는 dropout 구간 크기로 최소 bin을 정한다. PTA에서는 100 kb bin이 가능했고, 그 덕에 sub-megabase CNA를 뉴런에서 찾았다 (<a href="../10-Summaries/zhao-2025-hiscanner">Zhao 2025</a>).</li>
+  <li><b>chimera는 SV를 망가뜨린다.</b> MDA 산물을 long read로 읽자 세포당 SV 5,473개를 찾았지만, 분자 내 chimera 때문에 inversion과 duplication call은 사실상 모두 가짜였다 (<a href="../10-Summaries/hard-2023-long-read-scwgs">Hård 2023</a>; <a href="../10-Summaries/huang-2015-scwga-review">Huang 2015</a>).</li>
+</ul>
+
+<h2>목적별로 고르기</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>알고 싶은 것</th><th>우선 고려</th><th>확인할 위험</th></tr></thead>
+<tbody>
+<tr><td>클론 구조, 큰 CNV</td><td>증폭 없는 방식(DLP+), DOP-PCR 계열</td><td>세포당 깊이가 낮아 SNV는 클론 단위로 합쳐야 함</td></tr>
+<tr><td>정상 조직의 체세포 SNV·indel</td><td>PTA + 전용 caller (SCAN2 등)</td><td>MDA는 artifact가 변이율을 부풀림. 가능하면 duplex로 교차 검증</td></tr>
+<tr><td>allele-specific CNA, cnLOH</td><td>PTA처럼 dropout 구간이 짧은 방식</td><td>dropout이 LOH와 같은 신호를 냄. bin을 dropout 크기보다 크게</td></tr>
+<tr><td>구조 변이</td><td>Strand-seq, 증폭 없는 long read</td><td>WGA chimera가 가짜 inversion·duplication을 만듦</td></tr>
+<tr><td>극저빈도 변이의 정확한 양</td><td>단일세포 대신 duplex sequencing</td><td>WGA는 가닥 정보를 잃어 duplex 수준 정확도에 못 미침</td></tr>
+</tbody></table></div>
+
+<h2>더 읽을 위키 페이지</h2>
+<ul>
+  <li><a href="../40-Topics/whole-genome-amplification">Whole-genome amplification (hub)</a> · <a href="../30-Concepts/scwga-chemistries">scWGA chemistries</a> · <a href="../30-Concepts/allele-dropout">Allele dropout</a> · <a href="../30-Concepts/pta">PTA</a> · <a href="../30-Concepts/mda">MDA</a></li>
+  <li><a href="../50-Notes/pta-inflection-point">The PTA inflection point</a> · <a href="../50-Notes/single-cell-duplex-sequencing">Single-cell duplex sequencing</a></li>
+</ul>
+
+<footer>scDNA wiki 교재 · 시뮬레이터의 데이터는 모두 합성 데이터다. 실제 수치와 해석은 링크된 위키 요약과 원 논문을 기준으로 한다.</footer>
+</main>
+
+<script>
+(function(){
+  // Toy model: per-allele multiplicative amplification bias = exp(sigma*G - sigma^2/2),
+  // G a smooth AR(1) field with correlation length L (kb); an allele "drops out" where
+  // its bias falls below a threshold; a further fraction (1-frac) of the region is never
+  // amplified, in blocks of length maskL (DOP-PCR: finely interspersed, "fine"). frac follows the coverage column of Shao 2025
+  // Table 1. Other parameters are illustrative, chosen to reproduce
+  // qualitative patterns reported in the linked summaries, not fitted values.
+  var METHODS = {
+    "MDA":      {sigma:1.10, L:100, thr:0.12, frac:0.72, maskL:100, depth:20,
+      text:"φ29 polymerase로 등온 지수 증폭. 편향이 넓은 구간에 걸쳐 함께 움직이고 dropout이 수십~수백 kb 단위로 생긴다."},
+    "MALBAC":   {sigma:0.60, L:20,  thr:0.35, frac:0.58, maskL:20, depth:20,
+      text:"looping으로 재증폭을 막는 quasilinear 전증폭 뒤 PCR. MDA보다 고르지만 편향이 남는다."},
+    "PTA":      {sigma:0.35, L:1,   thr:0.45, frac:0.95, maskL:1, depth:20,
+      text:"φ29에 chain terminator를 섞어 짧은 산물만 만든다. 편향이 짧은 구간에서 상쇄되어 고르고, allele 균형이 좋다."},
+    "LIANTI":   {sigma:0.40, L:3,   thr:0.55, frac:0.82, maskL:3, depth:20,
+      text:"Tn5 삽입 뒤 T7 전사로 선형 증폭. 매우 고르지만 원 논문에서 ADO가 17%로 보고됐다."},
+    "DOP-PCR":  {sigma:0.15, L:300, thr:0.00, frac:0.22, maskL:1, fine:true, depth:20,
+      text:"degenerate primer PCR. 큰 규모에서는 고르지만 유전체의 일부만 불린다."},
+    "증폭 없음 (DLP+)": {sigma:0.04, L:1, thr:0.00, frac:1.00, maskL:1, depth:0.1,
+      text:"단일세포 DNA를 증폭 없이 바로 tagmentation. 편향은 없지만 세포당 read가 적다(기본 0.1×)."}
+  };
+  var NAMES = Object.keys(METHODS);
+  var REGION = 2000;           // 1-kb units -> 2 Mb
+  var BIN = 50;                // 50-kb bins
+  var NSNP = 400;
+  var state = {m:"MDA", seed: 7, depthIdx: null};
+
+  function rng(seed){ var s = seed>>>0 || 1; return function(){ s ^= s<<13; s>>>=0; s ^= s>>>17; s ^= s<<5; s>>>=0; return s/4294967296; }; }
+  function gauss(r){ var u=0,v=0; while(u===0)u=r(); while(v===0)v=r(); return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v); }
+  function poisson(r, lam){
+    if(lam<=0) return 0;
+    if(lam>40){ var x=Math.round(lam+Math.sqrt(lam)*gauss(r)); return x<0?0:x; }
+    var L=Math.exp(-lam),k=0,p=1; do{ k++; p*=r(); }while(p>L); return k-1;
+  }
+  function field(r, L, n){
+    var rho = Math.exp(-1/Math.max(L,0.0001)), s=Math.sqrt(1-rho*rho), g=new Float64Array(n);
+    g[0]=gauss(r); for(var i=1;i<n;i++) g[i]=rho*g[i-1]+s*gauss(r); return g;
+  }
+
+  // depth slider: log scale 0.05x .. 40x
+  function depthFromIdx(i){ return Math.round(Math.exp(Math.log(0.05)+ (Math.log(40)-Math.log(0.05))*i/100)*100)/100; }
+  function idxFromDepth(d){ return Math.round(100*(Math.log(d)-Math.log(0.05))/(Math.log(40)-Math.log(0.05))); }
+
+  function simulate(){
+    var p = METHODS[state.m], r = rng(state.seed*7919 + NAMES.indexOf(state.m)*104729);
+    var D = depthFromIdx(state.depthIdx);
+    var gA = field(r,p.L,REGION), gB = field(r,p.L,REGION), gM = field(r,p.maskL,REGION);
+    var bA = new Float64Array(REGION), bB = new Float64Array(REGION), mask = new Uint8Array(REGION);
+    var cut = (p.frac>=1 || p.fine) ? -Infinity : quantile(gM, 1-p.frac);
+    var sum=0;
+    for(var i=0;i<REGION;i++){
+      var a = Math.exp(p.sigma*gA[i]-p.sigma*p.sigma/2), b = Math.exp(p.sigma*gB[i]-p.sigma*p.sigma/2);
+      if(a<p.thr) a=0; if(b<p.thr) b=0;
+      mask[i] = gM[i]>=cut ? 1 : 0;
+      if(!mask[i]){ a=0; b=0; }
+      bA[i]=a; bB[i]=b; sum+=a+b;
+    }
+    var norm = sum/(2*REGION) || 1;
+    // coverage per 50-kb bin and breadth per 1-kb unit (expected fraction of bases with >=1 read)
+    var bins=[], breadth=0;
+    for(var j=0;j<REGION/BIN;j++){
+      var lam=0; for(var k=0;k<BIN;k++){ var ii=j*BIN+k, l=D*(bA[ii]+bB[ii])/(2*norm); lam+=l; breadth+= p.fine ? p.frac*(1-Math.exp(-l/p.frac)) : 1-Math.exp(-l); }
+      var reads = poisson(r, lam*10);           // 1 kb units * 10 reads-per-x scale
+      bins.push(reads/(D*BIN*10) * 2);           // scale so the mean sits at copy number 2
+    }
+    breadth/=REGION;
+    var mean = bins.reduce(function(s,x){return s+x;},0)/bins.length, sd=0;
+    bins.forEach(function(x){ sd+=(x-mean)*(x-mean); }); sd=Math.sqrt(sd/bins.length);
+    // het SNPs
+    var snps=[], obs=0, ado=0, bal=0;
+    for(var s=0;s<NSNP;s++){
+      var pos = Math.floor(r()*REGION);
+      if(p.fine && r()>p.frac) continue;          // SNP falls in the unamplified fraction
+      var lamA = D*bA[pos]/(2*norm)*6, lamB = D*bB[pos]/(2*norm)*6;  // ~6 reads per x per allele at 1x scale
+      var ra = poisson(r,lamA), rb = poisson(r,lamB), t=ra+rb;
+      if(t>=4){ obs++; var v=rb/t; var drop=(ra===0||rb===0); if(drop) ado++; if(v>=0.3&&v<=0.7) bal++; snps.push({x:pos,v:v,drop:drop}); }
+    }
+    return {bins:bins, breadth:breadth, cv: mean>0? sd/mean : 0, obs:obs, ado: obs? ado/obs : NaN, bal: obs? bal/obs : NaN, snps:snps, D:D};
+  }
+  function quantile(arr,q){ var a=Array.prototype.slice.call(arr).sort(function(x,y){return x-y;}); return a[Math.floor(q*(a.length-1))]; }
+
+  function css(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+  function setup(c){
+    var dpr = window.devicePixelRatio||1, w = c.clientWidth, h = parseInt(c.getAttribute("height"),10);
+    c.width = w*dpr; c.height = h*dpr; c.style.height = h+"px";
+    var ctx = c.getContext("2d"); ctx.setTransform(dpr,0,0,dpr,0,0); return {ctx:ctx,w:w,h:h};
+  }
+  function axes(o, ymax, ticks, fmt){
+    var ctx=o.ctx, pad={l:36,r:8,t:8,b:20}; ctx.clearRect(0,0,o.w,o.h);
+    ctx.strokeStyle=css("--line"); ctx.fillStyle=css("--muted"); ctx.font="11px sans-serif"; ctx.lineWidth=1;
+    ticks.forEach(function(t){ var y=pad.t+(o.h-pad.t-pad.b)*(1-t/ymax); ctx.beginPath(); ctx.moveTo(pad.l,y); ctx.lineTo(o.w-pad.r,y); ctx.stroke(); ctx.fillText(fmt(t),4,y+4); });
+    ctx.fillText("0 Mb",pad.l,o.h-5); ctx.fillText("2 Mb",o.w-pad.r-26,o.h-5);
+    return pad;
+  }
+  function drawCov(res){
+    var o=setup(document.getElementById("cov")), ymax=6, pad=axes(o,ymax,[0,2,4,6],function(t){return t+"";}), ctx=o.ctx;
+    var W=o.w-pad.l-pad.r, H=o.h-pad.t-pad.b, n=res.bins.length, bw=W/n;
+    ctx.fillStyle=css("--a1");
+    res.bins.forEach(function(v,i){ var vv=Math.min(v,ymax), y=pad.t+H*(1-vv/ymax); ctx.fillRect(pad.l+i*bw, y, Math.max(bw-0.6,0.6), pad.t+H-y); });
+    ctx.setLineDash([5,4]); ctx.strokeStyle=css("--ink"); ctx.beginPath(); var y2=pad.t+H*(1-2/ymax); ctx.moveTo(pad.l,y2); ctx.lineTo(o.w-pad.r,y2); ctx.stroke(); ctx.setLineDash([]);
+  }
+  function drawVaf(res){
+    var o=setup(document.getElementById("vaf")), pad=axes(o,1,[0,0.5,1],function(t){return t.toFixed(1);}), ctx=o.ctx;
+    var W=o.w-pad.l-pad.r, H=o.h-pad.t-pad.b;
+    res.snps.forEach(function(s){
+      ctx.fillStyle = s.drop ? css("--warn") : css("--a1");
+      ctx.globalAlpha = 0.75; ctx.beginPath(); ctx.arc(pad.l+W*s.x/REGION, pad.t+H*(1-s.v), 2.6, 0, 2*Math.PI); ctx.fill();
+    });
+    ctx.globalAlpha=1;
+    if(!res.snps.length){ ctx.fillStyle=css("--muted"); ctx.font="13px sans-serif"; ctx.fillText("read가 4개 이상인 SNP가 없다 — 깊이가 너무 얕거나 증폭된 구간 밖이다", pad.l+10, pad.t+H/2); }
+  }
+  function pct(x){ return isNaN(x) ? "–" : (100*x).toFixed(x<0.1?1:0)+"%"; }
+  function render(){
+    var res = simulate();
+    document.getElementById("depthv").textContent = res.D+"×";
+    document.getElementById("mdesc").textContent = METHODS[state.m].text;
+    drawCov(res); drawVaf(res);
+    document.getElementById("m-breadth").textContent = pct(res.breadth);
+    document.getElementById("m-cv").textContent = res.cv.toFixed(2);
+    document.getElementById("m-obs").textContent = pct(res.obs/NSNP);
+    document.getElementById("m-ado").textContent = pct(res.ado);
+    document.getElementById("m-bal").textContent = pct(res.bal);
+    var v=document.getElementById("verdict"); v.innerHTML="";
+    var seen = res.obs/NSNP, cnvGood = res.cv < 0.35, snvGood = seen>=0.6 && res.ado < 0.08 && res.bal > 0.6;
+    [[cnvGood,"CNV 판독: "+(cnvGood?"bin이 고름":"bin 변동이 커서 가짜 CNV 위험")],
+     [snvGood,"SNV 판독: "+(snvGood?"allele 균형이 좋음":(seen<0.6?"SNP 대부분이 관측되지 않음":"ADO·불균형이 커서 위음성·위양성 위험"))]]
+     .forEach(function(t){ var s=document.createElement("span"); s.className="tag "+(t[0]?"good":"bad"); s.textContent=t[1]; v.appendChild(s); });
+  }
+  function selectMethod(name){
+    state.m=name; state.depthIdx = idxFromDepth(METHODS[name].depth);
+    document.getElementById("depth").value = state.depthIdx;
+    Array.prototype.forEach.call(document.querySelectorAll("#methods button"), function(b){ b.setAttribute("aria-pressed", b.dataset.m===name?"true":"false"); });
+    render();
+  }
+  var box=document.getElementById("methods");
+  NAMES.forEach(function(n){ var b=document.createElement("button"); b.type="button"; b.textContent=n; b.dataset.m=n; b.addEventListener("click",function(){selectMethod(n);}); box.appendChild(b); });
+  document.getElementById("depth").addEventListener("input",function(e){ state.depthIdx=+e.target.value; render(); });
+  document.getElementById("reseed").addEventListener("click",function(){ state.seed=Math.floor(Math.random()*1e6); render(); });
+  window.addEventListener("resize", function(){ clearTimeout(window.__rt); window.__rt=setTimeout(render,120); });
+  if(window.matchMedia) window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", render);
+  selectMethod("MDA");
+})();
+</script>
+</body>
+</html>

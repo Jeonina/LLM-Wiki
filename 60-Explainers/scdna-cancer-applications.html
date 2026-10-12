@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>암 연구의 scDNA-seq 교재</title>
+<link rel="stylesheet" href="explainer.css">
+</head>
+<body>
+<main>
+<div class="crumb"><a href="../">scDNA wiki</a> · <a href="./">교재</a> · 암 연구와 scDNA-seq</div>
+<h1>종양을 세포 하나씩 읽으면 무엇이 새로 보일까</h1>
+<p class="lede">bulk 시퀀싱은 수많은 세포의 평균을 낸다. 평균만으로는 클론이 몇 개인지, 어느 변이가 먼저 생겼는지, 내성 클론이 치료 전부터 있었는지를 가리기 어렵다. 이 페이지는 암 연구의 질문마다 어떤 단일세포 DNA 판독이 쓰였고, 그 판독이 어디까지 믿을 만한지를 정리한다.</p>
+
+<div class="callouts">
+  <div class="callout"><b>클론은 평균 속에 숨는다</b>비슷한 빈도의 두 클론은 bulk VAF로 구분되지 않고, bulk 추론이 founder 변이를 거꾸로 짚기도 한다. 세포 단위 유전형이 이 문제를 직접 푼다.</div>
+  <div class="callout"><b>무엇을 읽을지가 답할 수 있는 질문을 정한다</b>얕은 전장 시퀀싱은 CNV와 WGD를, 표적 panel은 드라이버 SNV 순서와 소수 클론을, 다층 판독은 유전형과 표현형의 연결을 본다. 세포당 깊이와 세포 수는 맞바꾸는 관계다.</div>
+  <div class="callout"><b>소수 세포로 한 주장은 먼저 의심한다</b>allele dropout과 doublet은 몇 % 수준의 가짜 클론을 만든다. 잔존 질환과 희귀 클론에 대한 주장이 정확히 그 범위에 놓인다.</div>
+</div>
+
+<h2>질문과 판독의 지도</h2>
+<figure class="fig">
+  <svg id="fig-matrix" viewBox="0 0 900 600" role="img" aria-label="암 연구 질문(행)과 단일세포 DNA 판독 종류(열)의 행렬, 각 칸에 대표 연구"></svg>
+  <figcaption>그림 1. 암 연구의 질문(행) × 단일세포 DNA 판독(열). 칸 안의 이름은 이 위키에서 그 조합을 다룬 대표 연구이고, 누르면 요약으로 간다. 빈 칸은 연구가 없다는 뜻이 아니라 이 위키에 아직 요약이 없다는 뜻이다. Kim 2018과 McPherson 2025의 scRNA는 같은 세포가 아니라 같은 환자에서 따로 잰 값이다 (<a href="../10-Summaries/kim-2018-tnbc-chemoresistance">Kim 2018</a>; <a href="../10-Summaries/mcpherson-2025-ongoing-wgd">McPherson 2025</a>). 마지막 행의 CTC·액체생검은 리뷰가 떠오르는 임상 응용으로 꼽았을 뿐, 1차 연구 요약이 없다 (<a href="../10-Summaries/lim-2020-cancercell">Lim 2020</a>).</figcaption>
+</figure>
+
+<h2>연구 규모와 세포 단위 수율</h2>
+<figure class="fig">
+  <svg id="fig-cells" viewBox="0 0 760 640" role="img" aria-label="주요 암 scDNA 연구의 분석 세포 수, 로그 축"></svg>
+  <figcaption>그림 2. 주요 암 scDNA 연구에서 분석한 세포 수(로그 축). 점은 단일 값, 막대는 시퀀싱한 세포에서 QC 후 남은 세포까지의 범위다. 2011년 200개 (<a href="../10-Summaries/navin-2011-sns-tumor-evolution">Navin 2011</a>)에서 2025년 10만 개 시퀀싱 (<a href="../10-Summaries/mcpherson-2025-ongoing-wgd">McPherson 2025</a>)까지 늘었다. <span style="color:var(--warn)">주황</span>은 세는 단위가 다른 값이다. Laks 2019는 연구 하나가 아니라 여러 시료의 라이브러리 자원이고 (<a href="../10-Summaries/laks-2019-dlp-plus">Laks 2019</a>), CHISEL은 데이터셋 10개 각각 약 2,000개다 (<a href="../10-Summaries/zaccaria-2021-chisel">Zaccaria 2021</a>). 세포 수가 늘어난 대신 세포당 깊이는 0.06× 수준으로 내려갔다 (<a href="../10-Summaries/mcpherson-2025-ongoing-wgd">McPherson 2025</a>).</figcaption>
+</figure>
+
+<figure class="fig">
+  <svg id="fig-ado" viewBox="0 0 760 210" role="img" aria-label="세 연구의 allele dropout 보고값, 선형 축"></svg>
+  <svg id="fig-yield" viewBox="0 0 760 300" role="img" aria-label="세포 단위로 쓸 수 있는 데이터를 얻은 비율, 로그 축"></svg>
+  <figcaption>그림 3. 위: 보고된 allele dropout(ADO, 낮을수록 좋음). nuc-seq는 SK-BR-3 세포주 검증값 (<a href="../10-Summaries/wang-2014-nuc-seq">Wang 2014</a>), Gawad 2014는 측정 경로에 따라 중앙값 23–24%와 33%가 함께 보고됐고 (<a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a>), Tapestri는 Raji spike-in으로 run마다 잰 2.1–10.3%, 평균 8.7%다 (<a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>). 아래: 세포 단위로 쓸 수 있는 데이터를 얻은 비율(로그 축). 정의가 서로 다르므로 순위로 읽으면 안 된다. SPLONGGET의 두 값은 변이 하나당 유전형을 얻은 세포 비율이고, 표적 재증폭으로 0.01%가 평균 18.4%(0–75.1%)가 됐다 (<a href="../10-Summaries/pancikova-2025-splongget">Pančíková 2025</a>). DLP+는 살아 있는 세포 중 고품질 라이브러리 비율 (<a href="../10-Summaries/laks-2019-dlp-plus">Laks 2019</a>), wellDA-seq는 두 modality를 모두 얻은 세포 비율 (<a href="../10-Summaries/wang-2024-wellda-seq">Wang 2024</a>), ASCENT는 ALL40 시료의 QC 통과 세포 324/384다 (<a href="../10-Summaries/kolbeinsdottir-2025-ascent">Kolbeinsdottir 2025</a>).</figcaption>
+</figure>
+
+<h2>핵심 내용</h2>
+<ol class="steps">
+  <li><b>첫 질문은 "종양 안에 클론이 몇 개인가"였다.</b> Single-nucleus sequencing은 유방암 두 건에서 핵 100개씩의 copy-number profile을 얻었다. 한 종양에서 세 개의 하위 집단을, 원발암–간 전이 쌍에서는 한 번의 클론 확장이 전이를 일으켰음을 보였다 (<a href="../10-Summaries/navin-2011-sns-tumor-evolution">Navin 2011</a>). 이어 nuc-seq는 같은 종양에서 CNA는 초기에 생긴 뒤 고정되고 SNV는 점진적으로 쌓인다는 "두 개의 시계"를 보였다. TNBC의 돌연변이율은 13.3배 높았다. 다만 단일세포에서만 보인 <i>de novo</i> 변이 중 duplex로 확인된 것은 19–27%뿐이었다 (<a href="../10-Summaries/wang-2014-nuc-seq">Wang 2014</a>).</li>
+  <li><b>깊이를 포기하고 세포 수를 산 설계가 소수 클론을 열었다.</b> Gawad 등은 소아 ALL 세포 1,479개에서 bulk가 이질적이라고 짚은 locus만 읽었다. 환자 6명 중 5명에게서 codominant clone을 찾았고, 큰 결실이 SNV보다 먼저 생겼음을 보였다. 시뮬레이션으로 정리한 "클론 하나당 세포 2–3개"라는 기준(200개면 1% 클론)은 지금도 실험 규모를 정하는 데 쓰인다 (<a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a>). Droplet 기반 표적 panel은 AML에서 1만 6천 개 넘는 세포를 genotyping했다. bulk VAF가 23.6%로 예측한 <i>DNMT3A</i> 단독 변이 집단은 실제로 1.7%였다 (<a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>). COMPASS는 AML 123명의 panel 데이터에서 bulk로는 안 보이는 subclonal CNLOH와 결실을 찾았다 (<a href="../10-Summaries/sollier-2023-compass">Sollier 2023</a>).</li>
+  <li><b>치료 전후를 세포 단위로 비교하면 내성의 기원이 갈린다.</b> TNBC 선행 항암치료 연구에서 내성 유전형은 치료 전부터 있던 클론이 선택된 결과였고, 전사 상태의 내성은 치료 뒤 새로 획득됐다 (<a href="../10-Summaries/kim-2018-tnbc-chemoresistance">Kim 2018</a>). AML 재발에서는 진단 때 7%였던 삼중 변이 클론이 64%로 커진 사례가 있었다 (<a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>). 교모세포종 모델에서는 erlotinib 처리 뒤 ecEGFR이 거의 사라지고 ecMDM2가 내성 세포에만 나타났다 (<a href="../10-Summaries/chang-2025-droplet-hi-c">Chang 2025</a>). CAR-T 뒤 CD19 음성 재발은 chr16 결실과 서로 다른 copy에 놓인 splice-site SNV 네 개로 설명됐다 (<a href="../10-Summaries/pancikova-2025-splongget">Pančíková 2025</a>).</li>
+  <li><b>증폭 없는 대규모 CNV 판독은 WGD를 "진행 중인 과정"으로 바꿨다.</b> DLP+로 HGSOC 환자 41명의 종양 세포 30,260개를 읽자, 40명에서 WGD 횟수가 다른 세포들이 함께 있었다. WGD를 겪은 세포에서 염색체 소실·획득 속도는 2.3–2.6배, micronucleus는 3.3배 높았다. 그런데도 WGD 우세 종양은 <i>STING1</i>이 억제된 면역억제 환경을 보였다 (<a href="../10-Summaries/mcpherson-2025-ongoing-wgd">McPherson 2025</a>). 이런 결과를 받치는 도구도 함께 발전했다. CHISEL은 haplotype 특이 copy number로 mirrored-subclonal CNA를 찾았다 (<a href="../10-Summaries/zaccaria-2021-chisel">Zaccaria 2021</a>). Songbird와 ASCENT는 read-depth 비율로는 안 보이는 절대 ploidy를 잡는다 (<a href="../10-Summaries/wesley-2026-songbird">Wesley 2026</a>; <a href="../10-Summaries/kolbeinsdottir-2025-ascent">Kolbeinsdottir 2025</a>).</li>
+  <li><b>최근의 질문은 "그 CNA가 세포를 어떻게 바꾸는가"다.</b> 같은 세포에서 copy number와 chromatin accessibility를 함께 잰 wellDA-seq는 ER+ 유방암 subclone 사이 chromatin hub 변화의 약 82%가 subclonal CNA 구간에 놓인다고 보고했다. 반대로 ATAC만으로 추정한 CNA는 실측과 중앙값 R = 0.47로 맞지 않았다 (<a href="../10-Summaries/wang-2024-wellda-seq">Wang 2024</a>). slide-DNA-seq는 CNV로 정의한 subclone이 조직 안에서 서로 다른 영역을 차지함을 보였다 (<a href="../10-Summaries/zhao-2022-nature">Zhao 2022</a>).</li>
+  <li><b>임상까지는 아직 거리가 있다.</b> 리뷰는 scDNA-seq를 규모 면에서 단일세포 기술 중 가장 덜 성숙한 분야로 보고, 비용·재현성·처리량을 걸림돌로 꼽았다. CTC와 잔존 질환(MRD) 검출은 떠오르는 응용으로 언급됐다 (<a href="../10-Summaries/lim-2020-cancercell">Lim 2020</a>). 표적 panel은 관해기 시료 약 4,000개 세포에서 변이 세포 3개를 찾았다 (<a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>). 하지만 같은 플랫폼의 run별 ADO 2–10%가 바로 그 수준의 가짜 클론을 만들 수 있다 (<a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>, reviewer note).</li>
+</ol>
+
+<h2>보고된 값</h2>
+<p class="desc">연구마다 암종, 판독, QC 기준이 다르다. 엇갈리는 값은 고르지 않고 나란히 적었다. 대부분 환자 수가 적다는 점도 함께 본다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>연구</th><th>시스템 · 판독</th><th>보고된 값</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>SNS</td><td>유방암 2건 · 저심도 CNV</td><td>핵 100개 × 2 · 다배체 종양에서 하위 집단 3개 · 전이는 한 번의 클론 확장에서 유래</td><td><a href="../10-Summaries/navin-2011-sns-tumor-evolution">Navin 2011</a></td></tr>
+<tr><td>nuc-seq</td><td>ER+·TNBC 각 1건 · G2/M 핵 MDA</td><td>breadth 91%, ADO 9.7% · TNBC 돌연변이율 13.3배 · <i>de novo</i> 변이 duplex 확인률 19.4%(ER+)와 27.0%(TNBC)</td><td><a href="../10-Summaries/wang-2014-nuc-seq">Wang 2014</a></td></tr>
+<tr><td>ALL 클론 구조</td><td>소아 ALL 6명 · microfluidic MDA + 표적</td><td>세포 1,479개 · 5/6명 codominant · ADO 중앙값 23–24%(TaqMan, 야생형 소실) 대 33%(재시퀀싱), 30% 필터 뒤 20%</td><td><a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a></td></tr>
+<tr><td>TNBC 내성</td><td>TNBC 20명 · scDNA + scRNA</td><td>scDNA 900개, scRNA 6,862개(8명) · bulk에서 클론 소멸 10명, 지속 10명 · 유전형 내성은 기존 클론 선택, 전사 내성은 획득</td><td><a href="../10-Summaries/kim-2018-tnbc-chemoresistance">Kim 2018</a></td></tr>
+<tr><td>Tapestri 원형</td><td>AML 2명 · 62-amplicon droplet panel</td><td>세포 1만 6천 개 이상 · ADO 8.7% ± 1.1% (run별 2.1–10.3%) · 관해기 약 4,000개 중 변이 세포 3개 · 1% spike-in이 평균 2.4%로 검출</td><td><a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a></td></tr>
+<tr><td>HGSOC WGD</td><td>41명 · DLP+</td><td>시퀀싱 100,054개 → 종양 30,260개 · 세포당 깊이 0.060 · 40/41명에서 WGD 횟수 혼재 · 완전히 두 배가 된 세포는 설계상 걸러지거나 절반 ploidy로 읽혀 2×WGD 빈도가 과소평가됐을 수 있음</td><td><a href="../10-Summaries/mcpherson-2025-ongoing-wgd">McPherson 2025</a></td></tr>
+<tr><td>Copy-number caller 비교</td><td>시뮬레이션 · ploidy ladder</td><td>allele-specific 정확도 CNRein 0.956, SIGNALS 0.882, CHISEL 0.857 · SIGNALS와 CHISEL은 거의 모든 세포에 고유 profile을 줘 이질성을 과대평가 · 2× hTERT를 맞게 부른 도구는 Songbird와 ASCENT뿐</td><td><a href="../10-Summaries/ivanovic-2025-cnrein">Ivanovic 2025</a> · <a href="../10-Summaries/wesley-2026-songbird">Wesley 2026</a></td></tr>
+<tr><td>소수 클론</td><td>소아 B-ALL · 직접 tagmentation scWGS</td><td>세포 8개(종양의 3%)짜리 클론, private breakpoint를 bulk WGS가 하나도 못 찾음</td><td><a href="../10-Summaries/kolbeinsdottir-2025-ascent">Kolbeinsdottir 2025</a></td></tr>
+<tr><td>wellDA-seq</td><td>정상 유방 2명, ER+ 9건 · 같은 세포 DNA + ATAC (preprint)</td><td>전체 22,123개 · CNA 보유 세포 51.11% · 변화의 82.27%가 <i>cis</i> · ATAC 추정 CNA R = 0.47 · 정상 유방 이수성 세포 0.45–0.75%</td><td><a href="../10-Summaries/wang-2024-wellda-seq">Wang 2024</a></td></tr>
+<tr><td>ecDNA 판별</td><td>세포주 · GBM · AML · Droplet Hi-C</td><td>CNN caller 민감도 0.80, 특이도 0.99 · bulk 수준 지표로는 ecDNA와 HSR을 못 가름 · GBM39 erlotinib 시계열 9,204개</td><td><a href="../10-Summaries/chang-2025-droplet-hi-c">Chang 2025</a></td></tr>
+<tr><td>SPLONGGET</td><td>B-ALL 1명, 4시점 · long-read Multiome (preprint)</td><td>CN profile 3,800개 · 변이당 genotype 세포 0.01% → 표적 후 18.4% · Tapestri와 VAF 상관 0.92</td><td><a href="../10-Summaries/pancikova-2025-splongget">Pančíková 2025</a></td></tr>
+</tbody></table></div>
+
+<h2>목적별로 고르기</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>알고 싶은 것</th><th>우선 고려</th><th>확인할 위험</th></tr></thead>
+<tbody>
+<tr><td>고형암의 클론 구조, CNA 계통수</td><td>증폭 없는 저심도 scWGS(DLP+ 계열) + CHISEL, MEDICC2, SCICoNE (<a href="../10-Summaries/zaccaria-2021-chisel">Zaccaria 2021</a>; <a href="../10-Summaries/kaufmann-2022-medicc2">Kaufmann 2022</a>; <a href="../10-Summaries/kuipers-2025-scicone">Kuipers 2025</a>)</td><td>세포별 독립 호출은 잡음을 클론으로 부풀림 (<a href="../10-Summaries/ivanovic-2025-cnrein">Ivanovic 2025</a>). SNV는 클론 pseudobulk로 합쳐야 보임 (<a href="../10-Summaries/laks-2019-dlp-plus">Laks 2019</a>)</td></tr>
+<tr><td>WGD, 염색체 불안정성</td><td>DLP+ + 절대 ploidy caller (Songbird, ASCENT) (<a href="../10-Summaries/wesley-2026-songbird">Wesley 2026</a>)</td><td>read-depth 비율만 보면 WGD가 안 보임. 살아 있는 세포만 읽는 설계는 비생존 이수성 세포를 놓칠 수 있음 (<a href="../10-Summaries/mcpherson-2025-ongoing-wgd">McPherson 2025</a>)</td></tr>
+<tr><td>혈액암 드라이버의 순서, 소수 클론</td><td>표적 droplet panel(Tapestri) + COMPASS (<a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>; <a href="../10-Summaries/sollier-2023-compass">Sollier 2023</a>)</td><td>panel 밖은 안 보임. SNV로 표지되지 않은 CNA 단독 subclone은 대부분 놓침 (<a href="../10-Summaries/sollier-2023-compass">Sollier 2023</a>)</td></tr>
+<tr><td>잔존 질환(MRD), 희귀 클론</td><td>표적 panel + enrichment 기반 순위화(SCARCE, 0.06% spike-in 클론 분리) (<a href="../10-Summaries/gillman-2026-scarce">Gillman 2026</a>)</td><td>ADO와 doublet이 몇 % 수준의 가짜 단일·이중 변이 클론을 만듦 (<a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>)</td></tr>
+<tr><td>내성이 원래 있었나, 새로 생겼나</td><td>치료 전후 시계열 scDNA + scRNA (<a href="../10-Summaries/kim-2018-tnbc-chemoresistance">Kim 2018</a>)</td><td>두 판독이 같은 세포가 아니면 연결은 환자 수준 연관에 그침. 환자 수가 적음</td></tr>
+<tr><td>CNA가 chromatin·발현에 미치는 영향</td><td>같은 세포 다층 판독(wellDA-seq, SPLONGGET) (<a href="../10-Summaries/wang-2024-wellda-seq">Wang 2024</a>; <a href="../10-Summaries/pancikova-2025-splongget">Pančíková 2025</a>)</td><td>ATAC에서 추정한 CNA로 대신하면 안 됨(R = 0.47). 둘 다 preprint이고 시료 수가 적음 (<a href="../10-Summaries/wang-2024-wellda-seq">Wang 2024</a>)</td></tr>
+<tr><td>ecDNA와 복잡 SV</td><td>Droplet Hi-C, scNanoHi-C, 세포 간 bin 비율 분석 (<a href="../10-Summaries/chang-2025-droplet-hi-c">Chang 2025</a>; <a href="../10-Summaries/li-2023-scnanohi-c">Li 2023</a>; <a href="../10-Summaries/wesley-2026-songbird">Wesley 2026</a>)</td><td>ecDNA classifier는 상태가 알려진 세포주 쌍 두 개로 학습·검증됨. 다른 locus·종양으로의 일반화는 미검증 (<a href="../10-Summaries/chang-2025-droplet-hi-c">Chang 2025</a>)</td></tr>
+</tbody></table></div>
+
+<h2>읽는 순서</h2>
+<ol class="path">
+  <li><a href="../40-Topics/scdna-cancer-applications">scDNA-seq in cancer applications (hub)</a> — 종양 연구, copy-number 도구, 다층 판독, 임상 응용을 한 장에 모은 출발점이다.</li>
+  <li><a href="../30-Concepts/intratumor-heterogeneity">Intratumor heterogeneity</a> — 이 분야의 모든 질문이 출발하는 개념이다.</li>
+  <li><a href="../30-Concepts/copy-number-variation">Copy-number variation</a> — 단일세포에서 가장 다루기 쉬운 판독이 왜 CNV인지 본다.</li>
+  <li><a href="../30-Concepts/whole-genome-doubling">Whole-genome doubling</a> — ploidy를 잘못 부르면 계통수 전체가 틀어지는 이유를 다룬다.</li>
+  <li><a href="../10-Summaries/navin-2011-sns-tumor-evolution">Navin 2011</a> — 종양 scDNA-seq의 출발점이다.</li>
+  <li><a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a> — 깊이 대 세포 수의 선택과 실험 규모 계산법을 배운다.</li>
+  <li><a href="../10-Summaries/mcpherson-2025-ongoing-wgd">McPherson 2025</a> — 대규모 증폭 없는 판독이 어떤 생물학을 새로 여는지 보여준다.</li>
+  <li><a href="../10-Summaries/lim-2020-cancercell">Lim 2020</a> — 응용 범주와 임상 적용의 걸림돌을 정리한 리뷰다.</li>
+</ol>
+
+<h2>아직 열린 질문</h2>
+<ul>
+  <li><b>임상용 workflow.</b> 비용과 재현성이 여전히 장벽이다. 연구용 수치를 임상 검사 수준으로 끌어올리는 표준 절차는 아직 없다 (<a href="../10-Summaries/lim-2020-cancercell">Lim 2020</a>).</li>
+  <li><b>임상 시퀀싱과의 통합.</b> bulk panel과 scDNA-seq를 어떻게 나눠 쓸지, 어떤 질문에서 단일세포의 추가 비용이 정당화되는지는 정리되지 않았다 (<a href="../40-Topics/scdna-cancer-applications">hub</a>, synthesis).</li>
+  <li><b>단일세포 해상도의 액체생검.</b> CTC 분석은 응용 후보로 꼽히지만, 이 위키에는 아직 이를 다룬 1차 연구 요약이 없다 (<a href="../10-Summaries/lim-2020-cancercell">Lim 2020</a>).</li>
+  <li><b>MRD 감도의 실제 한계.</b> dropout과 doublet을 원시 세포 수로 세지 않고 모델링했을 때 droplet 표적 genotyping이 임상에 쓸 만한 감도에 이르는지는 열려 있다 (<a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>).</li>
+</ul>
+
+<footer>scDNA wiki 교재 · 수치와 해석은 링크된 위키 요약을 기준으로 한다.</footer>
+</main>
+
+<script>
+(function(){
+  var NS = "http://www.w3.org/2000/svg";
+  function el(parent, tag, attrs, text){
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    parent.appendChild(e); return e;
+  }
+  var S = "../10-Summaries/";
+
+  // ---- Figure 1: question x readout matrix (studies from the hub and its cited summaries)
+  var COLS = [["CNV 전장", "저심도 scWGS"], ["표적 SNV", "amplicon panel"], ["SNV 전장", "고심도 WGA"],
+              ["DNA + 다른 층", "RNA·ATAC·long read"], ["3D contact", "단일세포 Hi-C"]];
+  var NS2014 = ["Wang 2014", "wang-2014-nuc-seq"], GAW = ["Gawad 2014", "gawad-2014-all-clonal-origins"],
+      PEL = ["Pellegrino 2018", "pellegrino-2018-tapestri"], MCP = ["McPherson 2025", "mcpherson-2025-ongoing-wgd"],
+      WDA = ["wellDA-seq 2024", "wang-2024-wellda-seq"], SPL = ["SPLONGGET 2025", "pancikova-2025-splongget"],
+      DHC = ["Droplet Hi-C 2025", "chang-2025-droplet-hi-c"], SBD = ["Songbird 2026", "wesley-2026-songbird"];
+  var ROWS = [
+    {q: "클론 구조", s: "종양 내 이질성", c: [[["Navin 2011", "navin-2011-sns-tumor-evolution"]], [GAW], [NS2014], [WDA], []]},
+    {q: "변이 순서", s: "무엇이 먼저 생겼나", c: [[NS2014], [GAW, ["COMPASS 2023", "sollier-2023-compass"]], [NS2014], [], []]},
+    {q: "WGD · CIN", s: "ploidy와 염색체 불안정", c: [[MCP, ["CHISEL 2021", "zaccaria-2021-chisel"], SBD], [], [], [], []]},
+    {q: "치료 내성", s: "기존 클론 선택 vs 획득", c: [[["Kim 2018 + RNA", "kim-2018-tnbc-chemoresistance"]], [PEL], [], [SPL], [DHC]]},
+    {q: "소수 클론 · MRD", s: "희귀 세포 검출", c: [[["ASCENT 2025", "kolbeinsdottir-2025-ascent"]], [PEL, ["SCARCE 2026", "gillman-2026-scarce"]], [], [], []]},
+    {q: "ecDNA · 복잡 SV", s: "염색체 밖 증폭", c: [[SBD], [], [], [], [DHC, ["scNanoHi-C 2023", "li-2023-scnanohi-c"]]]},
+    {q: "유전형 → 표현형", s: "CNA가 세포를 바꾸나", c: [[["McPherson 2025 + RNA", "mcpherson-2025-ongoing-wgd"]], [], [], [WDA, SPL], []]},
+    {q: "공간 배치", s: "조직 속 클론 위치", c: [[["slide-DNA-seq 2022", "zhao-2022-nature"]], [], [], [], []]},
+    {q: "CTC · 액체생검", s: "임상 응용 후보", gap: "이 위키에 1차 연구 요약 없음 — 리뷰의 전망만 (Lim 2020)", gapRef: "lim-2020-cancercell", c: [[], [], [], [], []]}
+  ];
+  (function(){
+    var svg = document.getElementById("fig-matrix"); if (!svg) return;
+    var W = 900, L = 170, T = 50, rowH = 60, cw = (W - L) / COLS.length;
+    svg.setAttribute("viewBox", "0 0 " + W + " " + (T + rowH * ROWS.length + 4));
+    COLS.forEach(function(c, j){
+      var cx = L + cw * j + cw / 2;
+      el(svg, "text", {x: cx, y: 18, "text-anchor": "middle", "font-size": 14, "font-weight": 600, style: "fill:var(--ink)"}, c[0]);
+      el(svg, "text", {x: cx, y: 36, "text-anchor": "middle", "font-size": 12, style: "fill:var(--muted)"}, c[1]);
+    });
+    ROWS.forEach(function(r, i){
+      var y0 = T + rowH * i;
+      el(svg, "line", {x1: 0, x2: W, y1: y0, y2: y0, style: "stroke:var(--line)"});
+      el(svg, "text", {x: 0, y: y0 + 26, "font-size": 14, "font-weight": 600, style: "fill:" + (r.gap ? "var(--warn)" : "var(--ink)")}, r.q);
+      el(svg, "text", {x: 0, y: y0 + 44, "font-size": 12, style: "fill:var(--muted)"}, r.s);
+      if (r.gap){
+        el(svg, "rect", {x: L + 4, y: y0 + 6, width: W - L - 8, height: rowH - 12, rx: 6, "stroke-dasharray": "5 4", style: "fill:none;stroke:var(--warn)"});
+        var a = el(svg, "a", {href: S + r.gapRef});
+        el(a, "text", {x: L + (W - L) / 2, y: y0 + rowH / 2 + 5, "text-anchor": "middle", "font-size": 13, style: "fill:var(--warn)"}, r.gap);
+        return;
+      }
+      r.c.forEach(function(list, j){
+        var x0 = L + cw * j;
+        if (!list.length){
+          el(svg, "circle", {cx: x0 + cw / 2, cy: y0 + rowH / 2, r: 2, style: "fill:var(--line)"});
+          return;
+        }
+        el(svg, "rect", {x: x0 + 4, y: y0 + 5, width: cw - 8, height: rowH - 10, rx: 6, style: "fill:var(--accent);opacity:.13"});
+        var n = list.length, gap = 17, ys = y0 + rowH / 2 - (n - 1) * gap / 2 + 4;
+        list.forEach(function(s, k){
+          var a = el(svg, "a", {href: S + s[1]});
+          el(a, "text", {x: x0 + cw / 2, y: ys + k * gap, "text-anchor": "middle", "font-size": 12.5, style: "fill:var(--accent)"}, s[0]);
+        });
+      });
+    });
+    el(svg, "line", {x1: 0, x2: W, y1: T + rowH * ROWS.length, y2: T + rowH * ROWS.length, style: "stroke:var(--line)"});
+  })();
+
+  // ---- Range chart (log or linear). rows: {label, sub, lo, hi, mid, warn, note, href}
+  function chart(id, o){
+    var svg = document.getElementById(id); if (!svg) return;
+    var W = 760, L = 180, R = 20, T = o.title ? 40 : 18, rowH = o.rowH;
+    var H = T + rowH * o.rows.length;
+    svg.setAttribute("viewBox", "0 0 " + W + " " + (H + 28));
+    var f = o.log ? Math.log10 : function(v){ return v; };
+    var a = f(o.min), b = f(o.max);
+    function x(v){ return L + (W - L - R) * (f(v) - a) / (b - a); }
+    if (o.title) el(svg, "text", {x: 0, y: 16, "font-size": 14, "font-weight": 600, style: "fill:var(--ink)"}, o.title);
+    o.ticks.forEach(function(v){
+      var xx = x(v);
+      el(svg, "line", {x1: xx, x2: xx, y1: T - 6, y2: H, style: "stroke:var(--line)"});
+      el(svg, "text", {x: xx, y: H + 18, "text-anchor": "middle", "font-size": 13, style: "fill:var(--muted)"}, o.fmt(v));
+    });
+    o.rows.forEach(function(r, i){
+      var y = T + rowH * i + rowH / 2, col = r.warn ? "var(--warn)" : "var(--accent)";
+      var lab = r.href ? el(svg, "a", {href: S + r.href}) : svg;
+      el(lab, "text", {x: 0, y: y - 2, "font-size": 14.5, "font-weight": 600, style: "fill:" + (r.href ? "var(--accent)" : "var(--ink)")}, r.label);
+      if (r.sub) el(svg, "text", {x: 0, y: y + 14, "font-size": 12, style: "fill:var(--muted)"}, r.sub);
+      if (r.hi > r.lo){
+        el(svg, "rect", {x: x(r.lo), y: y - 7, width: Math.max(x(r.hi) - x(r.lo), 3), height: 14, rx: 4, style: "fill:" + col + ";opacity:.75"});
+        if (r.mid != null) el(svg, "rect", {x: x(r.mid) - 2, y: y - 12, width: 4, height: 24, style: "fill:var(--ink)"});
+      } else {
+        el(svg, "circle", {cx: x(r.mid), cy: y, r: 7, style: "fill:" + col});
+      }
+      if (r.note){
+        var right = r.hi > r.lo ? r.hi : r.mid, left = r.hi > r.lo ? r.lo : r.mid;
+        var nx = x(right) + 12, anchor = "start";
+        if (nx > W - 170){ nx = x(left) - 12; anchor = "end"; }
+        el(svg, "text", {x: nx, y: y + 4, "text-anchor": anchor, "font-size": 12, style: "fill:var(--muted)"}, r.note);
+      }
+    });
+  }
+  function cnt(v){ return v >= 1e3 ? (v / 1e3) + "k" : "" + v; }
+  function pc(v){ return v + "%"; }
+
+  // Figure 2: cells analysed per study (values from the linked summaries)
+  chart("fig-cells", {log: true, min: 50, max: 2e5, rowH: 50, ticks: [100, 1e3, 1e4, 1e5], fmt: cnt, rows: [
+    {label: "SNS", sub: "Navin 2011 · 유방암", mid: 200, lo: 0, hi: 0, href: "navin-2011-sns-tumor-evolution", note: "핵 100개 × 종양 2개"},
+    {label: "nuc-seq", sub: "Wang 2014 · 유방암", mid: 100, lo: 0, hi: 0, href: "wang-2014-nuc-seq", note: "CNA 핵 50개 × 2 (+ exome 47–59개씩)"},
+    {label: "ALL 클론", sub: "Gawad 2014 · 소아 ALL", mid: 1479, lo: 0, hi: 0, href: "gawad-2014-all-clonal-origins", note: "1,479개, 환자 6명"},
+    {label: "TNBC 내성", sub: "Kim 2018", mid: 900, lo: 0, hi: 0, href: "kim-2018-tnbc-chemoresistance", note: "scDNA 900개 (+ scRNA 6,862개)"},
+    {label: "Tapestri 원형", sub: "Pellegrino 2018 · AML", mid: 16000, lo: 0, hi: 0, href: "pellegrino-2018-tapestri", note: "16,000개 이상, 환자 2명"},
+    {label: "DLP+ 자원", sub: "Laks 2019", mid: 51926, lo: 0, hi: 0, warn: true, href: "laks-2019-dlp-plus", note: "라이브러리 51,926개"},
+    {label: "CHISEL", sub: "Zaccaria 2021 · 유방암", mid: 2000, lo: 0, hi: 0, warn: true, href: "zaccaria-2021-chisel", note: "데이터셋당 약 2,000 × 10"},
+    {label: "wellDA-seq", sub: "Wang 2024 · 유방 (preprint)", lo: 19669, hi: 22123, href: "wang-2024-wellda-seq", note: "전체 22,123 (종양 19,669)"},
+    {label: "HGSOC WGD", sub: "McPherson 2025", lo: 30260, hi: 100054, href: "mcpherson-2025-ongoing-wgd", note: "100,054 → 종양 30,260"},
+    {label: "ASCENT", sub: "Kolbeinsdottir 2025 · B-ALL", lo: 324, hi: 384, href: "kolbeinsdottir-2025-ascent", note: "384개 중 324개 QC 통과"},
+    {label: "SPLONGGET", sub: "Pančíková 2025 (preprint)", mid: 3800, lo: 0, hi: 0, href: "pancikova-2025-splongget", note: "CN profile 3,800 (RNA 10,106)"},
+    {label: "Droplet Hi-C", sub: "Chang 2025 · GBM39", mid: 9204, lo: 0, hi: 0, href: "chang-2025-droplet-hi-c", note: "erlotinib 시계열 9,204개"}
+  ]});
+
+  // Figure 3a: allele dropout (linear)
+  chart("fig-ado", {title: "Allele dropout (낮을수록 좋음)", log: false, min: 0, max: 40, rowH: 46, ticks: [0, 10, 20, 30, 40], fmt: pc, rows: [
+    {label: "nuc-seq", sub: "Wang 2014", mid: 9.73, lo: 0, hi: 0, href: "wang-2014-nuc-seq", note: "SK-BR-3 9.7%"},
+    {label: "MDA + 표적", sub: "Gawad 2014", lo: 23, hi: 33, href: "gawad-2014-all-clonal-origins", note: "23–24% 대 33% (측정 경로별)"},
+    {label: "Tapestri", sub: "Pellegrino 2018", lo: 2.1, hi: 10.3, mid: 8.7, href: "pellegrino-2018-tapestri", note: "run별 2.1–10.3%, 평균 8.7%"}
+  ]});
+
+  // Figure 3b: fraction of cells with usable per-cell data (log); definitions differ
+  chart("fig-yield", {title: "세포 단위 데이터를 얻은 비율 (정의가 다름)", log: true, min: 0.005, max: 100, rowH: 46, ticks: [0.01, 0.1, 1, 10, 100], fmt: pc, rows: [
+    {label: "SPLONGGET 비표적", sub: "Pančíková 2025", mid: 0.01, lo: 0, hi: 0, warn: true, href: "pancikova-2025-splongget", note: "변이당 genotype 세포 0.01%"},
+    {label: "SPLONGGET 표적", sub: "Pančíková 2025", mid: 18.4, lo: 0, hi: 0, warn: true, href: "pancikova-2025-splongget", note: "평균 18.4% (범위 0–75.1%)"},
+    {label: "DLP+", sub: "Laks 2019", mid: 65.0, lo: 0, hi: 0, href: "laks-2019-dlp-plus", note: "살아 있는 세포 중 고품질 65.0%"},
+    {label: "wellDA-seq", sub: "Wang 2024", lo: 74.88, hi: 78.71, href: "wang-2024-wellda-seq", note: "두 modality 모두 74.88–78.71%"},
+    {label: "ASCENT", sub: "Kolbeinsdottir 2025", mid: 84.4, lo: 0, hi: 0, href: "kolbeinsdottir-2025-ascent", note: "QC 통과 324/384"}
+  ]});
+})();
+</script>
+</body>
+</html>

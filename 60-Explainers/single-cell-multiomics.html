@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>단일세포 multi-omics</title>
+<link rel="stylesheet" href="explainer.css">
+</head>
+<body>
+<main>
+<div class="crumb"><a href="../">scDNA wiki</a> · <a href="./">교재</a> · 단일세포 multi-omics</div>
+<h1>한 세포에서 여러 층을 함께 읽으면 무엇이 달라질까</h1>
+<p class="lede">세포의 상태는 DNA 서열, chromatin, methylation, 전사체, 단백질이 맞물려 정해진다. 층을 따로 재서 나중에 붙이면 &ldquo;이 변이가 이 세포의 chromatin을 바꿨는가&rdquo;라는 질문에 답할 수 없다. 같은 세포에서 두 층 이상을 읽는 joint assay는 그 질문을 실험으로 바꾸는 도구이고, 어떤 층 조합이 아직 비어 있는지가 이 분야의 지도를 그린다.</p>
+
+<div class="callouts">
+  <div class="callout"><b>같은 세포여야 인과를 묻는다</b>층 사이의 관계는 같은 세포에서 함께 잴 때만 직접 검증된다. 따로 잰 데이터를 합치면 관계를 가정하게 된다.</div>
+  <div class="callout"><b>분자를 언제 나누는지가 규모를 정한다</b>DNA와 RNA를 물리적으로 나누는 방식은 plate 기반에 머물고, barcode로 나누는 방식만 수만 세포로 커진다.</div>
+  <div class="callout"><b>유전형 × epigenome 칸이 가장 비어 있다</b>변이와 접근성을 함께 읽는 assay는 생겼지만, point mutation과 methylation·histone을 한 세포에서 함께 읽는 방법은 아직 없다.</div>
+</div>
+
+<h2>어떤 층 조합이 측정되었나</h2>
+<figure class="fig">
+  <svg id="matrix" viewBox="0 0 640 500" role="img" aria-label="일곱 층 사이의 같은 세포 joint assay 존재 여부를 나타낸 삼각 행렬"></svg>
+  <figcaption>층 × 층 행렬. 대각선이 각 층이고, 그 아래 칸은 두 층을 같은 세포에서 읽는 assay가 위키에 있는지를 보여준다. 진한 칸은 직접 측정, 옅은 칸은 유전형 쪽이 copy number나 구조 변이로만 읽히는 경우, 점선 칸은 위키에서 해당 assay를 찾지 못한 조합이다. 빈칸은 &ldquo;세상에 없다&rdquo;가 아니라 &ldquo;위키에 근거가 없다&rdquo;는 뜻이다. 근거: <a href="../50-Notes/joint-assays-by-layer-pair">Joint assays by layer pair</a>, <a href="../10-Summaries/vandereyken-2023-scmultiomics-review">Vandereyken 2023</a>, <a href="../10-Summaries/baysoy-2023-multiomics-landscape">Baysoy 2023</a>, <a href="../10-Summaries/chang-2025-droplet-hi-c">Chang 2025</a>, <a href="../10-Summaries/bartosovic-2022-nano-cut-tag">Bartosovic 2022</a>, <a href="../10-Summaries/gillman-2026-scarce">Gillman 2026</a>, <a href="../10-Summaries/zhang-2022-sccut-tag-pro">Zhang 2022</a>.</figcaption>
+</figure>
+
+<figure class="fig">
+  <svg id="scale" viewBox="0 0 640 330" role="img" aria-label="유전형을 함께 읽는 assay의 보고된 세포 수를 로그 축에 나타낸 그림"></svg>
+  <figcaption>유전형을 함께 읽는 assay가 논문에서 보고한 세포 수(로그 축). 파란 점은 point mutation 수준, 주황 점은 copy number 수준의 유전형이다. 숫자는 한 번의 실행이 아니라 논문 전체에서 분석한 세포 수이고, SDR-seq는 시료당 범위다. 출처: <a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>, <a href="../10-Summaries/hou-2016-sctrio-seq">Hou 2016</a>, <a href="../10-Summaries/lindenhofer-2025-sdr-seq">Lindenhofer 2025</a>, <a href="../10-Summaries/wang-2024-wellda-seq">Wang 2024</a>, <a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>, <a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>, <a href="../10-Summaries/mukamel-2025-aneuploidy-brain">Mukamel 2025</a>.</figcaption>
+</figure>
+
+<h2>핵심 내용</h2>
+<ol class="steps">
+  <li><b>왜 같은 세포인가.</b> 층이 서로 독립적이지 않다는 가정은 같은 세포에서 두 층 이상을 잴 때만 검증된다 (<a href="../50-Notes/joint-assays-by-layer-pair">Joint assays by layer pair</a>). 실제로 DNTR-seq는 copy number가 크게 바뀐 <i>MYC</i>와 <i>TCF7L2</i>의 발현이 거의 변하지 않음을 보였고, CNV에서 발현을 추론하는 습관이 바로 중요한 유전자에서 틀릴 수 있음을 드러냈다. G&amp;T-seq은 <i>OCT4</i>를 편집한 인간 배아 세포의 약 16%에서 의도치 않은 편집을 찾았다 (<a href="../10-Summaries/vandereyken-2023-scmultiomics-review">Vandereyken 2023</a>).</li>
+  <li><b>분자를 나누는 시점이 처리량을 정한다.</b> joint assay는 분석물을 언제 분리하느냐로 나뉜다. 물리적 분리, 전증폭 후 분할, 서로 다른 barcode로 나누는 seq-split, combinatorial indexing의 네 원리 가운데 뒤의 두 가지만 대규모로 커진다. genome + transcriptome이 epigenome + transcriptome보다 세포 수에서 뒤처지는 이유가 여기 있다 (<a href="../10-Summaries/vandereyken-2023-scmultiomics-review">Vandereyken 2023</a>).</li>
+  <li><b>폭과 깊이는 맞바꾼다.</b> droplet 기반 GoT–ChA는 15만 개가 넘는 세포를 읽지만 Tn5 접근성 한 층을 거친 해상도로 본다. scDAF-seq는 세포당 유전체의 약 99%를 단일 분자 수준으로 읽지만 약 12개 세포에 그쳤다 (<a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>; <a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>).</li>
+  <li><b>유전형을 붙이는 기술이 발전했다.</b> GoT는 cDNA에서 변이를 읽어 발현이 낮은 유전자에서 약했고, GoT–ChA는 세포당 한 copy인 gDNA를 직접 잡아 genotyping 비율을 7–10%에서 약 38%로 올렸다 (<a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>). DAF-seq와 D&amp;D-seq처럼 chromatin 정보를 deamination으로 DNA 서열에 새기는 방식은 genotyping과 충돌하지 않고 결합된다 (<a href="../50-Notes/joint-assays-by-layer-pair">Joint assays by layer pair</a>). Duplex-Multiome은 10x Multiome의 ATAC 조각에 strand barcode를 달아 51,400개가 넘는 뇌 핵에서 체세포 SNV, 접근성, 전사체를 함께 읽었다 (<a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>).</li>
+  <li><b>methylation과 point mutation은 아직 한 세포에서 만나지 못했다.</b> bisulfite 변환은 C→T 서열 정보를 지워 변이 판독과 부딪힌다 (<a href="../50-Notes/mosaicism-and-epigenome-the-synthesis-gap">Synthesis gap</a>). 그래서 methylation 쪽에서는 read 분포를 copy number 신호로 재활용하는 우회로만 있다. scTrio-seq는 25개 HCC 세포에서 10 Mb 해상도의 CNV를, snmC-seq 재분석은 생쥐 뇌 메틸롬 415,103개에서 5 Mb 이상의 aneuploidy를 읽었다 (<a href="../10-Summaries/hou-2016-sctrio-seq">Hou 2016</a>; <a href="../10-Summaries/mukamel-2025-aneuploidy-brain">Mukamel 2025</a>). Hi-C 계열도 contact에서 CNV·SV와 ecDNA를 읽어내지만 point mutation은 아니다 (<a href="../10-Summaries/chang-2025-droplet-hi-c">Chang 2025</a>; <a href="../10-Summaries/li-2023-scnanohi-c">Li 2023</a>).</li>
+  <li><b>측정하지 못한 층은 계산으로 잇는다.</b> 서로 다른 세포에서 다른 층을 잰 데이터를 잇는 diagonal integration은 벤치마크가 어렵다 (<a href="../10-Summaries/wang-2023-multimodal-review">Wang 2023</a>). bridge integration은 multiome 데이터를 사전처럼 써서 접근성이 발현을 예측한다는 가정을 학습으로 바꿨다 (<a href="../10-Summaries/hao-2024-seurat-v5">Hao 2024</a>). RNA에서 단백질이나 공간 정보를 예측하는 도구는 여럿이지만, 예측의 불확실성을 함께 내는 것은 sciPENN 정도다 (<a href="../10-Summaries/lakkis-2022-scipenn">Lakkis 2022</a>).</li>
+</ol>
+
+<h2>실제 측정값</h2>
+<p class="desc">assay마다 세포, 조직, 기준이 달라 수치를 직접 비교하면 안 된다. 같은 지표를 다른 방식과 견준 값은 함께 적었다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Assay</th><th>같은 세포에서 읽는 층</th><th>보고된 값</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>GoT–ChA</td><td>표적 유전형 + 접근성</td><td>시료 21개, 150,643개 세포에서 평균 38.1% genotyping · RNA 기반 GoT 계열은 7–10% · 세포주 표적(TP53 R248, JAK2 V617)에서 정확도 99.7%, 96.2%</td><td><a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a></td></tr>
+<tr><td>scDAF-seq</td><td>단일 분자 서열 + chromatin</td><td>세포당 mappable genome 최대 99% (이전 단일세포 단일분자 assay 약 0.01%) · 12개 세포, 세포당 중앙값 12 Gb에서 최대 133 Gb</td><td><a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a></td></tr>
+<tr><td>SDR-seq</td><td>표적 DNA + RNA (최대 480 표적)</td><td>allele 검출 약 90%, ADO 10% 미만 · 기존 droplet DNA+RNA co-assay는 ADO 96% 초과 · 시료당 3,600–8,400개 세포</td><td><a href="../10-Summaries/lindenhofer-2025-sdr-seq">Lindenhofer 2025</a></td></tr>
+<tr><td>Duplex-Multiome</td><td>체세포 SNV + 접근성 + 전사체</td><td>51,400개 이상 뇌 핵 · duplex consensus로 오류 1만 배 이상 감소 · SNV는 열린 chromatin에서만, 핵당 드물게 잡혀 세포형 단위로 합산 · preprint</td><td><a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a></td></tr>
+<tr><td>wellDA-seq</td><td>전장 copy number + 접근성</td><td>두 층을 모두 얻은 세포 78.7%, 74.9% · subclone 간 chromatin hub 차이의 약 82%가 subclonal CNA bin에 위치 · ATAC만으로는 7개 subclone을 3개로만 구분 · preprint</td><td><a href="../10-Summaries/wang-2024-wellda-seq">Wang 2024</a></td></tr>
+<tr><td>scTrio-seq</td><td>CNV + methylome + 전사체</td><td>CNV↔발현 r ≈ 0.68–0.73 · CNV↔methylation r ≈ 0.05 · CNV 해상도 10 Mb · HCC 세포 25개</td><td><a href="../10-Summaries/hou-2016-sctrio-seq">Hou 2016</a></td></tr>
+<tr><td>snmC-seq 재분석</td><td>aneuploidy + methylome</td><td>생쥐 뇌 메틸롬 415,103개 · 5 Mb 이상 aneuploidy 민감도·특이도 약 97.5% · 세포의 0.175–0.349%가 aneuploid</td><td><a href="../10-Summaries/mukamel-2025-aneuploidy-brain">Mukamel 2025</a></td></tr>
+<tr><td>scNanoHi-C / Droplet Hi-C</td><td>3D 구조 + CNV·SV</td><td>CNV가 보이는 세포 비율 35% (scNanoHi-C) 대 38% (MALBAC scWGS) · Droplet Hi-C는 한 번에 4만 개 이상 세포, ecDNA 분류 정확도 0.89–0.93</td><td><a href="../10-Summaries/li-2023-scnanohi-c">Li 2023</a> · <a href="../10-Summaries/chang-2025-droplet-hi-c">Chang 2025</a></td></tr>
+</tbody></table></div>
+
+<h3>함께 읽어서 결과가 달라진 사례</h3>
+<ul>
+  <li><b>CNV는 발현을 바꾸지만 methylation은 바꾸지 않는다.</b> scTrio-seq에서 copy number는 발현과 r ≈ 0.7로 움직였지만 같은 구간의 methylation과는 상관이 없었다 (<a href="../10-Summaries/hou-2016-sctrio-seq">Hou 2016</a>). 반면 wellDA-seq는 subclonal CNA가 cis로 접근성을 바꾼다고 보고했다 (<a href="../10-Summaries/wang-2024-wellda-seq">Wang 2024</a>). 서로 다른 층에 대한 결과라 모순은 아니다.</li>
+  <li><b>질환 이전의 chromatin 변화.</b> JAK2<sup>V617F</sup> HSC는 clonal hematopoiesis 단계에서 이미 STAT 표적의 접근성이 높았다. 같은 환자의 wild-type 세포와 비교해서 얻은 결과다 (<a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>).</li>
+  <li><b>변이가 바로 그 분자의 footprint를 지운다.</b> VAF 1.5%의 모자이크 CC→TT 변이를 지닌 fiber에서만 CTCF footprint가 사라졌다 (<a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>).</li>
+</ul>
+
+<h2>목적별로 고르기</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>알고 싶은 것</th><th>우선 고려</th><th>확인할 위험</th></tr></thead>
+<tbody>
+<tr><td>알려진 driver 변이가 세포 상태를 어떻게 바꾸나</td><td>GoT (발현), GoT–ChA (접근성)</td><td>cDNA 기반은 발현이 낮은 유전자에서 genotyping이 7–10%로 떨어짐. 미리 정한 locus만 읽음</td></tr>
+<tr><td>noncoding 변이의 zygosity와 발현</td><td>SDR-seq</td><td>표적 수 최대 480개. 새 변이를 찾는 용도가 아님</td></tr>
+<tr><td>전장 유전체 SNV·CNV와 전사체</td><td>ResolveOME (PTA), G&amp;T-seq</td><td>물리적 분리 방식이라 plate 규모에 머묾. ResolveOME는 preprint 단계 근거</td></tr>
+<tr><td>CNV 클론과 chromatin 상태</td><td>wellDA-seq</td><td>ATAC만으로는 subclone이 섞임. DNA 층을 따로 확보해야 함</td></tr>
+<tr><td>체세포 SNV의 세포형별 양과 주변 발현</td><td>Duplex-Multiome</td><td>열린 chromatin의 변이만 보임. 핵 단위가 아니라 세포형 단위 추정. preprint</td></tr>
+<tr><td>변이 한 분자 위의 chromatin 구조</td><td>scDAF-seq</td><td>세포 수 약 12개, 세포당 수십~백 Gb 이상의 long read</td></tr>
+<tr><td>변이와 methylation의 관계</td><td>현재는 CNV 수준만 (scTrio-seq, snmC-seq 재분석)</td><td>bisulfite가 C→T 정보를 지워 point mutation을 함께 읽을 수 없음. 5 Mb 미만 CNV는 불확실</td></tr>
+</tbody></table></div>
+<p class="desc">근거: <a href="../10-Summaries/nam-2019-got">Nam 2019</a>, <a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>, <a href="../10-Summaries/lindenhofer-2025-sdr-seq">Lindenhofer 2025</a>, <a href="../10-Summaries/marks-2023-resolveome">Marks 2023</a>, <a href="../10-Summaries/vandereyken-2023-scmultiomics-review">Vandereyken 2023</a>, <a href="../10-Summaries/wang-2024-wellda-seq">Wang 2024</a>, <a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>, <a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>, <a href="../10-Summaries/mukamel-2025-aneuploidy-brain">Mukamel 2025</a>.</p>
+
+<h2>읽는 순서</h2>
+<ol class="path">
+  <li><a href="../40-Topics/single-cell-multiomics">Single-cell multi-omics (hub)</a> — 층 조합별 assay 표와 통합 도구 계보를 한 번에 본다.</li>
+  <li><a href="../50-Notes/joint-assays-by-layer-pair">Joint assays by layer pair</a> — 유전형을 기준으로 assay를 층 쌍별로 정리한 노트로, 위 행렬의 바탕이다.</li>
+  <li><a href="../50-Notes/mosaicism-and-epigenome-the-synthesis-gap">Mosaicism × epigenome: the synthesis gap</a> — 왜 유전형 × epigenome 칸이 핵심 공백인지 설명한다.</li>
+  <li><a href="../30-Concepts/got-cha">GoT–ChA</a> — gDNA 캡처로 유전형과 접근성을 droplet 규모에서 묶는 원리를 익힌다.</li>
+  <li><a href="../30-Concepts/daf-seq">DAF-seq</a> — chromatin을 서열에 새겨 genotyping과 결합하는 단일 분자 방식을 익힌다.</li>
+  <li><a href="../10-Summaries/vandereyken-2023-scmultiomics-review">Vandereyken 2023</a> — coupling 원리 네 가지로 방법 전체를 분류하는 리뷰다.</li>
+  <li><a href="../10-Summaries/hou-2016-sctrio-seq">Hou 2016</a> — 세 층을 한 세포에서 읽어 CNV와 methylation이 분리되어 있음을 보인 고전이다.</li>
+  <li><a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a> — 체세포 SNV, 접근성, 전사체를 수만 개 핵에서 함께 읽은 현재의 최전선이다.</li>
+</ol>
+
+<h2>아직 열린 질문</h2>
+<ul>
+  <li>multi-omic 방법은 같은 세포 수에서 단일 층 assay보다 훨씬 비싸다. 세포당 비용을 어떻게 낮출 것인가 (<a href="../10-Summaries/baysoy-2023-multiomics-landscape">Baysoy 2023</a>).</li>
+  <li>서로 다른 세포의 서로 다른 층을 잇는 diagonal integration의 정확도를 어떻게 벤치마크할 것인가 (<a href="../10-Summaries/wang-2023-multimodal-review">Wang 2023</a>).</li>
+  <li>세포당 유전체 약 99%를 약 10개 세포에서 읽는 scDAF-seq와, 약 38% genotyping을 10<sup>5</sup>개 세포에서 얻는 GoT–ChA 사이에서 어떤 질문이 어느 쪽에 속하는가 (<a href="../10-Summaries/swanson-2025-daf-seq">Swanson 2025</a>; <a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>).</li>
+  <li>측정하지 않은 층을 예측하는 도구 대부분이 불확실성을 내지 않는다. 예측값을 측정값과 어떻게 견줄 것인가 (<a href="../10-Summaries/lakkis-2022-scipenn">Lakkis 2022</a>).</li>
+</ul>
+
+<footer>scDNA wiki 교재 · 수치와 해석은 링크된 위키 요약을 기준으로 한다.</footer>
+</main>
+
+<script>
+(function(){
+  var NS = "http://www.w3.org/2000/svg";
+  function el(parent, tag, attrs, text){
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    parent.appendChild(e); return e;
+  }
+
+  // Figure 1: layer x layer matrix (lower triangle). status: 2 = direct joint assay,
+  // 1 = genotype only as CNV/SV, 0 = no joint assay found in the wiki.
+  var LAYERS = ["유전형", "접근성", "메틸화", "히스톤", "3D 구조", "RNA", "단백질"];
+  var CELLS = {
+    "1,0": [2, "GoT–ChA", "Duplex-Multiome"],
+    "2,0": [1, "CNV만", "scTrio-seq"],
+    "2,1": [2, "scNMT-seq", "sciMET+ATAC"],
+    "3,0": [0, "없음"],
+    "3,1": [2, "nano-CT"],
+    "3,2": [2, "scEpi²-seq"],
+    "4,0": [1, "CNV·SV만", "Droplet Hi-C"],
+    "4,1": [0, "없음"],
+    "4,2": [2, "sn-m3C-seq"],
+    "4,3": [0, "없음"],
+    "5,0": [2, "G&T-seq", "ResolveOME"],
+    "5,1": [2, "SHARE-seq", "10x Multiome"],
+    "5,2": [2, "scM&T-seq", "scNMT-seq"],
+    "5,3": [2, "Paired-Tag", "OneCell C&T"],
+    "5,4": [2, "Paired Hi-C"],
+    "6,0": [2, "SCARCE"],
+    "6,1": [2, "DOGMA-seq"],
+    "6,2": [0, "없음"],
+    "6,3": [2, "scCUT&Tag-pro"],
+    "6,4": [0, "없음"],
+    "6,5": [2, "CITE-seq"]
+  };
+  var m = document.getElementById("matrix");
+  var X0 = 14, Y0 = 10, W = 87, H = 66, G = 3;
+  // highlight the genotype column
+  el(m, "rect", {x: X0 - 4, y: Y0 + H + G - 4, width: W + 8, height: 6 * (H + G) + 5, rx: 10,
+    style: "fill:none;stroke:var(--warn);stroke-width:2"});
+  for (var r = 0; r < 7; r++){
+    for (var c = 0; c <= r; c++){
+      var x = X0 + c * (W + G), y = Y0 + r * (H + G);
+      if (r === c){
+        el(m, "rect", {x: x, y: y, width: W, height: H, rx: 6, style: "fill:var(--ink)"});
+        el(m, "text", {x: x + W / 2, y: y + H / 2 + 6, "text-anchor": "middle",
+          style: "fill:var(--bg);font-size:16px;font-weight:600"}, LAYERS[r]);
+        continue;
+      }
+      var d = CELLS[r + "," + c], s = d[0];
+      var fill = s === 2 ? "var(--accent-soft)" : s === 1 ? "var(--warn-soft)" : "none";
+      var stroke = s === 2 ? "var(--accent)" : s === 1 ? "var(--a2)" : "var(--muted)";
+      el(m, "rect", {x: x + 0.5, y: y + 0.5, width: W - 1, height: H - 1, rx: 6,
+        style: "fill:" + fill + ";stroke:" + stroke + ";stroke-width:1.2" + (s === 0 ? ";stroke-dasharray:4 3" : "")});
+      var lines = d.slice(1);
+      lines.forEach(function(t, i){
+        var yy = y + H / 2 + 5 + (i - (lines.length - 1) / 2) * 17;
+        var first = (s === 1 && i === 0) || s === 0;
+        el(m, "text", {x: x + W / 2, y: yy, "text-anchor": "middle",
+          style: "fill:" + (s === 0 ? "var(--muted)" : first ? "var(--a2)" : "var(--ink)") +
+                 ";font-size:" + (t.length > 12 ? 10.5 : 12.5) + "px" + (first ? ";font-weight:600" : "")}, t);
+      });
+    }
+  }
+  // legend (upper-right empty triangle)
+  var lx = 360, ly = 40;
+  [[2, "같은 세포 joint assay가 있음"], [1, "유전형이 CNV·SV로만 읽힘"], [0, "위키에서 찾지 못함"]].forEach(function(L, i){
+    var s = L[0], yy = ly + i * 28;
+    el(m, "rect", {x: lx, y: yy, width: 22, height: 18, rx: 4,
+      style: "fill:" + (s === 2 ? "var(--accent-soft)" : s === 1 ? "var(--warn-soft)" : "none") +
+             ";stroke:" + (s === 2 ? "var(--accent)" : s === 1 ? "var(--a2)" : "var(--muted)") +
+             (s === 0 ? ";stroke-dasharray:4 3" : "")});
+    el(m, "text", {x: lx + 30, y: yy + 14, style: "fill:var(--ink);font-size:13px"}, L[1]);
+  });
+  el(m, "line", {x1: lx, y1: ly + 92, x2: lx + 22, y2: ly + 92, style: "stroke:var(--warn);stroke-width:2"});
+  el(m, "text", {x: lx + 30, y: ly + 96, style: "fill:var(--ink);font-size:13px"}, "주황 테두리: 유전형 열");
+  el(m, "text", {x: lx, y: ly + 128, style: "fill:var(--muted);font-size:12px"}, "point mutation × methylation · histone ·");
+  el(m, "text", {x: lx, y: ly + 145, style: "fill:var(--muted);font-size:12px"}, "3D를 한 세포에서 읽는 assay는 없다.");
+
+  // Figure 2: reported cell numbers of genotype-anchored assays (log10 axis).
+  // kind: "pt" = point-mutation genotype, "cn" = copy-number genotype.
+  var ASSAYS = [
+    {name: "scDAF-seq", reads: "서열 + 단일분자 chromatin", lo: 12, hi: 12, kind: "pt"},
+    {name: "scTrio-seq", reads: "CNV + methylome + RNA", lo: 25, hi: 25, kind: "cn"},
+    {name: "SDR-seq", reads: "표적 DNA + RNA (시료당)", lo: 3600, hi: 8400, kind: "pt"},
+    {name: "wellDA-seq", reads: "CNV + 접근성", lo: 22123, hi: 22123, kind: "cn"},
+    {name: "Duplex-Multiome", reads: "SNV + 접근성 + RNA", lo: 51400, hi: 51400, kind: "pt"},
+    {name: "GoT–ChA", reads: "표적 유전형 + 접근성", lo: 150643, hi: 150643, kind: "pt"},
+    {name: "snmC-seq 재분석", reads: "aneuploidy + methylome", lo: 415103, hi: 415103, kind: "cn"}
+  ];
+  var sc = document.getElementById("scale");
+  var PL = 200, PR = 620, PT = 14, RH = 38;
+  function xp(v){ return PL + (PR - PL) * (Math.log10(v) - 1) / 5; }
+  var axisY = PT + ASSAYS.length * RH + 4;
+  [10, 100, 1000, 1e4, 1e5, 1e6].forEach(function(v, i){
+    var x = xp(v);
+    el(sc, "line", {x1: x, y1: PT, x2: x, y2: axisY, style: "stroke:var(--line);stroke-width:1"});
+    el(sc, "text", {x: x, y: axisY + 18, "text-anchor": "middle", style: "fill:var(--muted);font-size:12px"},
+      ["10", "100", "1천", "1만", "10만", "100만"][i]);
+  });
+  el(sc, "text", {x: (PL + PR) / 2, y: axisY + 38, "text-anchor": "middle", style: "fill:var(--muted);font-size:12px"}, "보고된 세포 수");
+  ASSAYS.forEach(function(a, i){
+    var y = PT + i * RH + RH / 2, col = a.kind === "pt" ? "var(--accent)" : "var(--a2)";
+    el(sc, "text", {x: 6, y: y - 2, style: "fill:var(--ink);font-size:13px;font-weight:600"}, a.name);
+    el(sc, "text", {x: 6, y: y + 13, style: "fill:var(--muted);font-size:11px"}, a.reads);
+    if (a.hi > a.lo) el(sc, "line", {x1: xp(a.lo), y1: y, x2: xp(a.hi), y2: y, style: "stroke:" + col + ";stroke-width:6;stroke-linecap:round"});
+    el(sc, "circle", {cx: xp(a.hi), cy: y, r: 6, style: "fill:" + col});
+    var label = a.hi > a.lo ? a.lo.toLocaleString("en-US") + "–" + a.hi.toLocaleString("en-US") : a.hi.toLocaleString("en-US");
+    var lx2 = xp(a.hi) > 520 ? xp(a.lo) - 10 : xp(a.hi) + 10;
+    el(sc, "text", {x: lx2, y: y + 4, "text-anchor": xp(a.hi) > 520 ? "end" : "start", style: "fill:var(--ink);font-size:12px"}, label);
+  });
+})();
+</script>
+</body>
+</html>

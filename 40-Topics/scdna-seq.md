@@ -1,6 +1,7 @@
 ---
 type: topic
 title: Single-cell DNA sequencing (scDNA-seq)
+explainer: scdna-seq
 aliases: [single-cell DNA sequencing, scDNA-seq, scDNAseq]
 tags: [single-cell, scDNA-seq, methods]
 created: 2026-05-11
@@ -14,6 +15,11 @@ paper_section: ["3.1"]
 
 > [!abstract] 한눈에
 > scDNA-seq는 단일 세포 게놈을 증폭해 읽는 scWGA + scWGS와, 두 가닥을 짝지어 오류를 걸러내는 단일 분자 duplex sequencing이라는 두 갈래로 나뉜다 ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]). 어떤 방법도 fidelity, co-presence, phenotypic association을 한꺼번에 최대로 얻지 못하며, 세포당 데이터 양과 세포 수 사이에서 균형을 잡아야 한다 ([[10-Summaries/evrony-2021-scDNA-applications-review|Evrony 2021]]; [[10-Summaries/gawad-2014-all-clonal-origins|Gawad 2014]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 DNA 시퀀싱 입문](../60-Explainers/scdna-seq.html)
+<!-- /explainer-links -->
 
 ## Key points
 

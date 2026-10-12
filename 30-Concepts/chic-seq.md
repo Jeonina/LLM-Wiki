@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > ChIC-seq는 항체에 MNase를 붙여 표적 chromatin 부위만 자르는 2004년 방법으로, CUT&RUN·CUT&Tag·sortChIC·scChIC-seq로 이어지는 antibody-tethered nuclease 계열의 출발점이다. MNase 기반 scChIC-seq는 Tn5 기반 방법보다 accessibility bias를 덜 받는다 ([[10-Summaries/ludwig-2019-sc-chromatin-modifications-review|Ludwig 2019]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 히스톤 변형](../60-Explainers/histone-modifications.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Antibody tethered to MNase (via protein A or covalent linkage) recruits the nuclease to target sites, where local cleavage produces small fragments enriched at the antibody's epitope.

@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > MDA는 Φ29 polymerase와 random hexamer로 단일 세포 유전체를 일정한 온도에서 strand-displacement 방식으로 증폭하는 scWGA 방법이며, PTA가 나오기 전까지 15년 넘게 주류였다 ([[10-Summaries/dean-2002-mda|Dean 2002]]; [[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]). 지수적 증폭 때문에 allelic imbalance, dropout, chimera, 증폭 artifact가 생기는 것이 핵심 한계다 ([[10-Summaries/luquette-2022-neuron-scan2-indels|Luquette 2022]]; [[10-Summaries/hard-2023-long-read-scwgs|Hård 2023]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 WGA 시뮬레이터](../60-Explainers/wga-simulator.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Φ29 polymerase has high processivity (>70 kb), low error rate (10⁻⁷–10⁻⁸ errors/base), and strand-displacement activity. Random hexamers prime the genome at thousands of sites; Φ29 extends from each primer, displacing downstream strands which become templates for further priming, producing exponential amplification at constant temperature (~30 °C). The chemistry was introduced by Dean et al. 2002, who demonstrated <3-fold locus-to-locus bias vs. 4–6 orders of magnitude for PCR-based WGA ([[10-Summaries/dean-2002-mda|Dean 2002]]) — establishing MDA as the dominant scWGA approach for the subsequent 15+ years ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]; [[10-Summaries/gawad-2016-scgenome-review|Gawad 2016]]).

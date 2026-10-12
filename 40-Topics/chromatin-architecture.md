@@ -1,6 +1,7 @@
 ---
 type: topic
 title: Chromatin architecture
+explainer: chromatin-architecture
 aliases: [chromatin biology, chromatin organization]
 tags: [chromatin, regulation, single-molecule]
 created: 2026-05-07
@@ -14,6 +15,11 @@ paper_section: ["3.5"]
 
 > [!abstract] 한눈에
 > scDAF-seq로 한 세포의 염색체 전장을 단일 분자 수준에서 읽어 보니, 같은 세포 안 두 haplotype 사이의 regulatory element actuation 차이(~61%)가 세포 간 차이(~63%)와 거의 같았다 ([[10-Summaries/swanson-2025-daf-seq|Swanson 2025]]). 핵 구조 쪽에서는 LAD가 켜고 끄는 이분법이 아니라 위치마다 lamina 접촉 확률을 갖는 상태로 보이고, TAD 경계는 heterochromatin 확산이 멈출 자리를 미리 표시한다 ([[10-Summaries/peric-hupkes-2010-lad-differentiation|Peric-Hupkes 2010]]; [[10-Summaries/dixon-2012-tads|Dixon 2012]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [염색질 구조 교재](../60-Explainers/chromatin-architecture.html)
+<!-- /explainer-links -->
 
 ## Key points
 

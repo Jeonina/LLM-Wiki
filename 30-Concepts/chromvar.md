@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > chromVAR는 같은 TF motif를 가진 peak들의 접근성을 세포마다 합쳐 GC와 평균 접근성을 보정한 z-score로 바꾸고, 이렇게 해서 희소한 scATAC-seq 데이터를 motif × cell 행렬로 읽을 수 있게 한다 ([[10-Summaries/schep-2017-chromvar|chromVAR]]). 지금도 표준 TF 해석 도구로 쓰이지만, 미리 정한 peak와 7-mer에 의존한다는 점과 cell type 분리 성능은 다른 방법들과 비교해 비판을 받는다 ([[10-Summaries/de-boer-2018-brockman|BROCKMAN]]; [[10-Summaries/ashuach-2022-peakvi|PeakVI]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [scATAC-seq 희소성 시뮬레이터](../60-Explainers/single-cell-atac-seq.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 chromVAR is a TF-motif accessibility tool from the Greenleaf lab ([[william-greenleaf]]) for sparse [[30-Concepts/scatac-seq]] data ([[10-Summaries/schep-2017-chromvar|chromVAR]]). For each motif it counts fragments in motif-containing peaks per cell, subtracts the expected count based on the cell average, then subtracts the mean deviation from GC- and accessibility-matched background peak sets and divides by the background SD ([[10-Summaries/schep-2017-chromvar|chromVAR]]). The result is a z-score per motif per cell, robust at ~10,000 fragments per cell, a typical scATAC yield ([[10-Summaries/schep-2017-chromvar|chromVAR]]).

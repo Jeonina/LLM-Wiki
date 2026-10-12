@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > scWGA chemistry는 단일 세포의 극미량 DNA를 sequencing이 가능한 양으로 불리는 방법들이고, coverage 균일성, allelic dropout, error rate를 한꺼번에 모두 잡는 방법은 없다 ([[10-Summaries/gawad-2016-scgenome-review|Gawad 2016]]). 그래서 최선의 WGA는 따로 없고 variant 종류마다 맞는 방법이 다르다는 것이 2015년 두 benchmark의 공통 결론이다 ([[10-Summaries/hou-2015-wga-comparison|Hou 2015]]; [[10-Summaries/huang-2015-scwga-review|Huang 2015]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 WGA 시뮬레이터](../60-Explainers/wga-simulator.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 scWGA chemistries amplify femtogram quantities of single-cell DNA into nanogram-scale sequencing input ([[10-Summaries/gawad-2016-scgenome-review|Gawad 2016]]). The shared artifact list — locus and allelic dropout, uneven amplification, chimeric molecules and base-copy errors — is catalogued in [[10-Summaries/lim-2024-single-cell-omics-review|Lim 2024]]. See also [[30-Concepts/scwga]].

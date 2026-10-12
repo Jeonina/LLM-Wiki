@@ -35,6 +35,9 @@ jobs:
         working-directory: .quartz
         run: npx quartz build -d ..
 
+      - name: Publish explainer pages with .html extension
+        run: bash tools/publish-explainers.sh
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

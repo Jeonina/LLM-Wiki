@@ -1,6 +1,7 @@
 ---
 type: topic
 title: Sequence models and foundation models
+explainer: sequence-models-and-foundation-models
 aliases: [genomic foundation models, sequence-based prediction, scFM, foundation models, sequence models]
 tags: [foundation-model, dna-language-model, sequence-to-function, single-cell-foundation-model, deep-learning]
 created: 2026-10-08
@@ -15,6 +16,11 @@ description: "Hub for §4.4: supervised sequence-to-function models, DNA languag
 
 > [!abstract] 한눈에
 > DNA 서열이나 대규모 epigenome 데이터로 사전학습한 모델은 accessibility, methylation, 3D 구조 층에는 이미 있지만, single-cell genotype(CNV/SNV)과 single-cell histone 데이터로 사전학습한 모델은 아직 없다 ([[10-Summaries/sidhom-2026-tessera|TESSERA]]; [[10-Summaries/yu-2026-chrombert|ChromBERT]]). 변이 점수화도 germline 벤치마크 중심이어서, somatic 변이에 대한 예측은 대부분 검증 없이 쓰이고 있다 ([[10-Summaries/fischbach-2026-alphagenome-aging|Fischbach 2026]]; [[10-Summaries/terekhanova-2026-tal1-enhancer|Terekhanova 2026]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [서열 모델과 foundation model 교재](../60-Explainers/sequence-models-and-foundation-models.html)
+<!-- /explainer-links -->
 
 ## Key points
 
@@ -93,7 +99,7 @@ Pretrained on sequence alone; see [[dna-language-model]] and [[genomic-tokenizat
 | [[10-Summaries/ding-2025-nucel\|NucEL]] | 2025 | Single nucleotides, human only | 93M ModernBERT, ELECTRA replaced-token detection | Best GUE (75.16), GB and revised-NT averages ([[10-Summaries/ding-2025-nucel\|NucEL]]) |
 | [[10-Summaries/dallatorre-2025-nucleotide-transformer\|Nucleotide Transformer]] | 2025 | 6-mer; 1000G / 850 species | 50M–2.5B BERT | Fine-tuned NT matches/beats BPNet on 18/18 tasks; NT-v2 250M best (MCC 0.769) ([[10-Summaries/dallatorre-2025-nucleotide-transformer\|Nucleotide Transformer]]) |
 | [[10-Summaries/ayanian-2025-strand\|STRAND]] | 2025 | Raw aligned exome reads + reference | ~1B decoder (Mayo/Cerebras) | Claims SOTA on NT and new ClinVar/RA/IBD tasks ([[10-Summaries/ayanian-2025-strand\|STRAND]]) |
-| [[10-Summaries/dealmeida-2025-segmentnt\|SegmentNT]] | 2025 | 30 kb | Nucleotide Transformer fine-tuned with a 1D U-Net head; 14 element classes at base resolution | Avg MCC 0.45 at 30 kb, 0.16 with a random encoder ([[10-Summaries/dealmeida-2025-segmentnt\|SegmentNT]]) |
+| [[10-Summaries/dealmeida-2025-segmentnt\|SegmentNT]] | 2025 | 30 kb | Nucleotide Transformer fine-tuned with a 1D U-Net head; 14 element classes at base resolution | Avg MCC 0.45 at 30 kb; at 3 kb, 0.37 vs 0.16 with a randomly initialised encoder ([[10-Summaries/dealmeida-2025-segmentnt\|SegmentNT]]) |
 | [[10-Summaries/kim-2026-dnachunker\|DNAChunker]] | 2026 | Human only; learned two-stage dynamic chunking | 172M masked LM (BiMamba router + Transformer) | Best NT-benchmark average (MCC 0.772) ([[10-Summaries/kim-2026-dnachunker\|DNAChunker]]) |
 | [[10-Summaries/leib-2026-dnt\|DNT]] | 2026 | Single-stream diploid tokens (zygosity, indels, optional phase) | On NTv3 + contrastive phase loss | Cis/trans compound-het AUROC 0.649 vs ~0.5 ([[10-Summaries/leib-2026-dnt\|DNT]]) |
 | [[10-Summaries/brixi-2026-evo2\|Evo 2]] | 2026 | 1 Mb context, all domains of life | Autoregressive, 7B/40B | Zero-shot variant effects from likelihood change; genome-scale generation ([[10-Summaries/brixi-2026-evo2\|Evo 2]]) |

@@ -14,6 +14,17 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > GoT–ChA는 10x scATAC-seq droplet 안에서 mutation locus를 genomic DNA로부터 직접 증폭해, 같은 핵에서 somatic genotype과 chromatin accessibility를 함께 읽는 방법이다 ([[10-Summaries/izzo-2024-got-cha|Izzo 2024]]). Genotype 출처를 cDNA에서 gDNA로 바꾼 덕분에 JAK2처럼 발현이 낮은 driver의 genotyping rate가 약 4배 올랐다 ([[10-Summaries/izzo-2024-got-cha|Izzo 2024]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [클론성 조혈 교재](../60-Explainers/clonal-hematopoiesis.html)
+>
+> [단일세포 DNA 시퀀싱 입문](../60-Explainers/scdna-seq.html)
+>
+> [단일세포 multi-omics](../60-Explainers/single-cell-multiomics.html)
+>
+> [체세포 모자이크](../60-Explainers/somatic-mosaicism.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 GoT–ChA modifies 10x Genomics scATAC-seq by adding two custom **GoT–ChA primers** to the cell-barcoding PCR mixture before droplet generation ([[10-Summaries/izzo-2024-got-cha|Izzo 2024]]). Inside each droplet, the primers anneal to the mutation-containing genomic locus. A linear amplification step is followed by exponential amplification, producing barcoded amplicons that carry both the cell barcode (CBC) and the genotype-encoding sequence. The amplicon library is processed alongside the scATAC-seq library; an R package handles GoT–ChA → scATAC integration end-to-end ([[10-Summaries/izzo-2024-got-cha|Izzo 2024]]).

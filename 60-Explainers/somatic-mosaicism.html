@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>체세포 모자이크</title>
+<link rel="stylesheet" href="explainer.css">
+</head>
+<body>
+<main>
+<div class="crumb"><a href="../">scDNA wiki</a> · <a href="./">교재</a> · 체세포 모자이크</div>
+<h1>내 몸의 세포는 모두 같은 유전체를 가졌을까: 체세포 모자이크</h1>
+<p class="lede">수정란 하나에서 출발한 세포도 분열하고 나이 들면서 저마다 다른 변이를 얻는다. 그래서 사람의 몸은 유전적으로 조금씩 다른 세포 계통이 섞인 모자이크다. 단일세포 DNA 시퀀싱이 풀려는 생물학적 질문의 대부분이 여기서 나온다. 변이가 언제 생겼고, 몸의 어디까지 퍼졌고, 실제로 몇 개인지가 핵심이다.</p>
+
+<div class="callouts">
+  <div class="callout"><b>모든 세포는 수정란과 다르다</b>세포는 분열할 때마다 변이를 얻고, 분열하지 않는 뉴런과 심근세포도 나이에 따라 변이가 쌓인다. 한 사람 안에서도 세포마다 유전체가 다르다.</div>
+  <div class="callout"><b>언제 생겼는지가 어디에 있는지를 정한다</b>발생 초기의 변이는 몸의 넓은 범위에, 늦게 생긴 변이는 한 조직이나 세포 하나에 남는다. 이 시점이 표현형과 자손 재발 위험을 가른다.</div>
+  <div class="callout"><b>변이 수는 측정법에 따라 달라진다</b>증폭 오류와 DNA 손상이 진짜 변이처럼 보인다. 같은 뉴런의 연간 변이율도 오류를 어떻게 걸렀느냐에 따라 거의 두 배 차이가 났다.</div>
+</div>
+
+<h2>그림으로 보기</h2>
+<figure class="fig">
+<svg viewBox="0 0 680 462" role="img" aria-label="발생 시점별로 변이가 퍼지는 범위와 분열당 SNV 수">
+  <g font-size="13" style="fill:var(--muted)">
+    <text x="0" y="18" font-weight="600">발생 시점</text>
+    <text x="240" y="18" font-weight="600">변이가 퍼지는 범위 (개념도)</text>
+    <text x="440" y="18" font-weight="600">분열당 SNV (세포당)</text>
+  </g>
+  <!-- rate axis, 0..10 per division, 23 px per unit -->
+  <rect x="486" y="46" width="46" height="324" style="fill:var(--accent-soft)"/>
+  <g font-size="11" style="fill:var(--muted)" text-anchor="middle">
+    <text x="440" y="38">0</text><text x="486" y="38">2</text><text x="532" y="38">4</text><text x="578" y="38">6</text><text x="624" y="38">8</text><text x="670" y="38">10</text>
+  </g>
+  <line x1="440" y1="44" x2="670" y2="44" style="stroke:var(--line)"/>
+  <g style="stroke:var(--line)">
+    <line x1="0" y1="130" x2="680" y2="130"/><line x1="0" y1="210" x2="680" y2="210"/>
+    <line x1="0" y1="290" x2="680" y2="290"/><line x1="0" y1="370" x2="680" y2="370"/>
+  </g>
+
+  <!-- row 1: first two divisions -->
+  <text x="0" y="74" font-size="15" font-weight="600" fill="currentColor">첫 두 번의 분열</text>
+  <text x="0" y="94" font-size="12" style="fill:var(--muted)">첫 분열의 변이는 세포의 약 50%로</text>
+  <text x="0" y="110" font-size="12" style="fill:var(--muted)">(Campbell 2015)</text>
+  <rect x="240" y="72" width="170" height="20" rx="3" style="fill:var(--accent);opacity:.75"/>
+  <text x="325" y="87" font-size="12" text-anchor="middle" fill="#fff">~50%</text>
+  <circle cx="495.2" cy="70" r="5" style="fill:var(--a2)"/>
+  <text x="504" y="74" font-size="11" fill="currentColor">Coorens 2.4</text>
+  <line x1="495.2" y1="96" x2="518.2" y2="96" style="stroke:var(--a1);stroke-width:4"/>
+  <text x="524" y="100" font-size="11" fill="currentColor">Bizzotto 2.4–3.4</text>
+
+  <!-- row 2: early cleavage, pre-gastrulation -->
+  <text x="0" y="154" font-size="15" font-weight="600" fill="currentColor">초기 난할 (gastrulation 전)</text>
+  <text x="0" y="174" font-size="12" style="fill:var(--muted)">좌우 결정 전이면 몸 양쪽, 후면 한쪽</text>
+  <text x="0" y="190" font-size="12" style="fill:var(--muted)">(Campbell 2015)</text>
+  <rect x="240" y="152" width="136" height="20" rx="3" style="fill:var(--accent);opacity:.6"/>
+  <circle cx="456.1" cy="146" r="5" style="fill:var(--a2)"/>
+  <text x="500" y="150" font-size="11" fill="currentColor">Coorens 0.7</text>
+  <line x1="463" y1="170" x2="486" y2="170" style="stroke:var(--a1);stroke-width:4"/>
+  <text x="494" y="174" font-size="11" fill="currentColor">Bizzotto 1–2</text>
+  <circle cx="469.9" cy="194" r="5" style="fill:var(--ink)"/>
+  <text x="480" y="198" font-size="11" fill="currentColor">Bae 1.3</text>
+
+  <!-- row 3: PGC -->
+  <text x="0" y="234" font-size="15" font-weight="600" fill="currentColor">PGC 분리 (~24일, ~15회 분열)</text>
+  <text x="0" y="254" font-size="12" style="fill:var(--muted)">이전 변이: 체세포·생식세포 모두</text>
+  <text x="0" y="270" font-size="12" style="fill:var(--muted)">이후 변이: 둘 중 한쪽만 (Campbell 2015)</text>
+  <rect x="240" y="232" width="102" height="20" rx="3" style="fill:var(--accent);opacity:.5"/>
+  <text x="538" y="246" font-size="11" style="fill:var(--muted)">← Shao 2025 리뷰의 일반값 2–4</text>
+
+  <!-- row 4: neurogenesis -->
+  <text x="0" y="314" font-size="15" font-weight="600" fill="currentColor">신경발생 (임신 15–21주)</text>
+  <text x="0" y="334" font-size="12" style="fill:var(--muted)">이른 변이는 피질 전체, 늦은 변이는</text>
+  <text x="0" y="350" font-size="12" style="fill:var(--muted)">한 엽에 남는다 (Bizzotto 2022)</text>
+  <rect x="240" y="312" width="51" height="20" rx="3" style="fill:var(--accent);opacity:.4"/>
+  <line x1="476.8" y1="330" x2="666" y2="330" style="stroke:var(--ink);stroke-width:1.5"/>
+  <path d="M666 325 L674 330 L666 335 Z" style="fill:var(--ink)"/>
+  <circle cx="637.8" cy="330" r="5" style="fill:var(--ink)"/>
+  <text x="476" y="318" font-size="11" fill="currentColor">Bae 8.6 (95% CI 1.6–20)</text>
+
+  <!-- row 5: postnatal -->
+  <text x="0" y="398" font-size="15" font-weight="600" fill="currentColor">출생 후</text>
+  <text x="0" y="418" font-size="12" style="fill:var(--muted)">세포 하나 또는 작은 클론에만</text>
+  <text x="0" y="434" font-size="12" style="fill:var(--muted)">(사적 변이)</text>
+  <rect x="240" y="396" width="10" height="20" rx="2" style="fill:var(--accent);opacity:.35"/>
+  <text x="440" y="404" font-size="12" fill="currentColor">분열 없이도 쌓인다</text>
+  <text x="440" y="422" font-size="12" style="fill:var(--muted)">PFC 뉴런 연 16.5개 (PTA, Luquette 2022)</text>
+
+  <g font-size="11" style="fill:var(--muted)">
+    <circle cx="246" cy="452" r="4" style="fill:var(--a2)"/><text x="254" y="456">Coorens 2021</text>
+    <rect x="340" y="450" width="16" height="4" style="fill:var(--a1)"/><text x="360" y="456">Bizzotto 2022 (리뷰)</text>
+    <circle cx="496" cy="452" r="4" style="fill:var(--ink)"/><text x="504" y="456">Bae 2018</text>
+  </g>
+</svg>
+<figcaption>그림 1. 발생 시점과 변이의 분포. 가운데 막대는 변이를 가진 세포가 몸에서 차지하는 범위를 개념적으로 나타낸다. 정량값은 첫 분열의 약 50%뿐이다 (<a href="../10-Summaries/campbell-2015-mosaicism-review">Campbell 2015</a>). 오른쪽은 연구별로 보고된 분열당 SNV 수다 (<a href="../10-Summaries/coorens-2021-nature">Coorens 2021</a>; <a href="../10-Summaries/bizzotto-2022-brain-mosaicism-review">Bizzotto 2022</a>; <a href="../10-Summaries/bae-2017-pregastrulation-mutations">Bae 2018</a>). 옅은 띠는 리뷰가 제시한 일반값 2–4다 (<a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a>). 신경발생기 값의 신뢰구간은 축 밖(20)까지 이어진다.</figcaption>
+</figure>
+
+<figure class="fig">
+<svg id="ratefig" viewBox="0 0 680 420" role="img" aria-label="세포형과 측정법별 연간 체세포 SNV 축적 속도"></svg>
+<figcaption>그림 2. 세포 하나가 1년에 얻는 체세포 SNV 수를 측정법과 함께 나란히 놓았다. MDA 시대의 값(<a href="../10-Summaries/lodato-2017-aging-neurons">Lodato 2018</a>)은 같은 뉴런을 PTA와 duplex 계열로 다시 쟀을 때 내려갔다 (<a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a>). 빗금 막대는 MDA 데이터를 SCAN2로 재분석한 값 31이고, 굵은 표시는 artifact 신호를 뺀 19다. META-CS와 NanoSeq 값은 Luquette 2022가 인용한 수치다. Duplex-Multiome 값은 open chromatin 보정 뒤의 genome-wide 추정이다 (<a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>). 줄기세포 값은 <a href="../10-Summaries/bae-2017-pregastrulation-mutations">Bae 2018</a>이 비교용으로 인용한 것이며, 측정법은 위키에 기록되어 있지 않다.</figcaption>
+</figure>
+
+<h2>핵심 내용</h2>
+<ol class="steps">
+  <li><b>모든 사람은 모자이크다.</b> 평생 10¹⁶개 넘는 세포가 만들어지므로, 모든 세포는 수정란에 비해 얼마간의 변이를 가진다 (<a href="../10-Summaries/forsberg-2017-mosaicism-review">Forsberg 2017</a>). 분열당 변이는 2–4개 정도로 본다 (<a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a>). 한 수정란에서 나온 서로 다른 계통이 모자이크이고, 다른 개체의 세포가 섞인 키메라와는 구분한다 (<a href="../10-Summaries/campbell-2015-mosaicism-review">Campbell 2015</a>).</li>
+  <li><b>시점이 범위를 정한다.</b> 첫 분열에서 생긴 변이는 세포의 약 50%에 있다. 좌우 결정 이후의 변이는 몸 한쪽에만 남는다. primordial germ cell은 수정 후 약 24일, 약 15회 분열 뒤에 갈라지는데, 그 전에 생긴 변이만 체세포와 생식세포 양쪽에 있을 수 있다. 그래서 형제 재발 위험은 변이가 PGC 분리보다 앞섰는지에 달렸다 (<a href="../10-Summaries/campbell-2015-mosaicism-review">Campbell 2015</a>). 거꾸로 표현형의 분포를 보면 변이 시점을 추정할 수 있다 (<a href="../30-Concepts/developmental-mutation-timing">developmental mutation timing</a>).</li>
+  <li><b>변이율은 발생 중에도 바뀐다.</b> 수정란의 첫 두 분열에서는 세포당 세대마다 약 2.4개였다가 그 뒤 약 0.7개로 떨어진다 (<a href="../10-Summaries/coorens-2021-nature">Coorens 2021</a>). 태아 뇌 전구세포를 clone으로 키워 시퀀싱한 연구는 gastrulation 이전 분열당 1.3개, 신경발생기 분열당 약 8.6개를 보고했다. 스펙트럼도 CpG 탈아미노화 중심에서 산화 손상 중심으로 바뀌었다 (<a href="../10-Summaries/bae-2017-pregastrulation-mutations">Bae 2018</a>). 같은 연구에서 뇌 조직에 VAF 2% 넘게 있던 SNV의 92%는 비장에서도 보였다. 많은 모자이크 변이가 배엽이 나뉘기 전에 생긴다는 뜻이다 (<a href="../10-Summaries/bae-2017-pregastrulation-mutations">Bae 2018</a>).</li>
+  <li><b>분열하지 않아도 쌓인다.</b> 분열하지 않는 뉴런에서도 SNV가 나이에 따라 거의 선형으로 늘고, 복제와 무관한 clocklike signature가 그 증가를 이끈다 (<a href="../10-Summaries/lodato-2017-aging-neurons">Lodato 2018</a>; <a href="../10-Summaries/abascal-2021-nanoseq">Abascal 2021</a>). 심근세포에는 세포당 4,000–30,000개가 쌓인다는 리뷰가 있다 (<a href="../10-Summaries/hilal-2026-cardiac-somatic-review">Hilal 2026</a>). 16종 포유류의 장 crypt에서 연간 변이율은 수명에 반비례했다. 수명이 30배 차이 나도 수명 끝의 총 변이량은 약 3배 차이에 그쳤다 (<a href="../10-Summaries/cagan-2022-nature">Cagan 2022</a>). 뇌의 약 6%는 hypermutable이며, 그 비율은 60세 넘은 뇌에서 16%로 높다 (<a href="../10-Summaries/taejeong-2022-science">Bae 2022</a>).</li>
+  <li><b>숫자는 오류를 어떻게 걸렀느냐에 달렸다.</b> MDA는 single-strand dropout 때문에 유전체마다 약 550개의 가짜 SNV를 만들었다. MDA 뉴런 데이터를 다시 분석하면 연 31개였고, artifact 신호를 빼자 약 19개로 내려갔다. PTA로는 16.5개였다. PTA, META-CS, NanoSeq 세 방법이 연 16–17개로 모인 것은 드문 합의다 (<a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a>). 단일가닥 수준에서는 duplex 계열의 부담 추정도 약 18배 부풀려졌다 (<a href="../10-Summaries/liu-2024-hidef-seq">Liu 2024</a>). 이 문제는 <a href="../30-Concepts/compounding-artifact">compounding artifact</a> 페이지에 정리되어 있다.</li>
+  <li><b>최전선은 같은 세포에서 변이와 상태를 함께 재는 것이다.</b> Duplex-Multiome은 10x Multiome 핵에서 duplex consensus로 SNV를 불러, 흥분성 뉴런 연 15개, oligodendrocyte 연 32개처럼 세포형별 속도를 냈다. 다만 accessible chromatin 안에서만, 핵마다 드문드문 잡힌다 (<a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>). GoT–ChA는 JAK2V617F를 가진 HSC가 clonal hematopoiesis 단계에서 이미 JAK2/STAT 표적의 접근성을 높인다는 것을 보였지만 표적 유전자만 본다 (<a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>).</li>
+</ol>
+
+<h2>보고된 값</h2>
+<p class="desc">단위가 서로 다르다. 세포당 개수, 1년당 개수, 분열당 개수, 염기당 빈도를 섞어 비교하면 안 된다. 같은 대상을 두고 값이 엇갈리는 경우는 함께 적었다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>대상</th><th>측정법</th><th>보고된 값</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>분열당 SNV, 수정란 직후</td><td>LCM 조직 low-input WGS · 리뷰</td><td>첫 두 분열 약 2.4 → 이후 약 0.7 · 첫 두 분열 2.4–3.4 → 8세포기부터 1–2</td><td><a href="../10-Summaries/coorens-2021-nature">Coorens 2021</a> · <a href="../10-Summaries/bizzotto-2022-brain-mosaicism-review">Bizzotto 2022</a></td></tr>
+<tr><td>분열당 SNV, gastrulation 전과 신경발생기</td><td>단일 전구세포 clone 확장 후 WGS</td><td>1.3 ± 0.15 → 약 8.6 (95% CI 1.6–20), 하루 약 5.1</td><td><a href="../10-Summaries/bae-2017-pregastrulation-mutations">Bae 2018</a></td></tr>
+<tr><td>태아 뇌 전구세포 (임신 약 20주)</td><td>clone WGS · 리뷰</td><td>세포당 200–400 · 세포당 200–300</td><td><a href="../10-Summaries/bae-2017-pregastrulation-mutations">Bae 2018</a> · <a href="../10-Summaries/bizzotto-2022-brain-mosaicism-review">Bizzotto 2022</a></td></tr>
+<tr><td>영아 뉴런</td><td>MDA + LiRA (모델 외삽) · MDA 대 PTA 직접 비교</td><td>출생 1년 안에 세포당 약 300–900 · 세포당 호출 수 282 (MDA) 대 26 (PTA)</td><td><a href="../10-Summaries/lodato-2017-aging-neurons">Lodato 2018</a> · <a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a></td></tr>
+<tr><td>성인 PFC 뉴런, 연간</td><td>MDA + LiRA · MDA 재분석 · PTA + SCAN2</td><td>약 23 · 31 → 보정 후 약 19 · 16.5 (indel 연 약 3, 하한)</td><td><a href="../10-Summaries/lodato-2017-aging-neurons">Lodato 2018</a> · <a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a></td></tr>
+<tr><td>80세 뉴런</td><td>리뷰 종합</td><td>유전체당 2,500–4,000</td><td><a href="../10-Summaries/bizzotto-2022-brain-mosaicism-review">Bizzotto 2022</a></td></tr>
+<tr><td>뇌 세포형별, 연간</td><td>Duplex-Multiome (open chromatin 보정)</td><td>흥분성 뉴런 15.05 ± 3.15 · oligodendrocyte 32.34 ± 2.39</td><td><a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a></td></tr>
+<tr><td>뇌 조직 bulk</td><td>bulk WGS ≥200×</td><td>뇌당 검출 가능한 모자이크 SNV 20–60 · 약 6%는 101개 초과</td><td><a href="../10-Summaries/taejeong-2022-science">Bae 2022</a></td></tr>
+<tr><td>심근세포</td><td>리뷰 (scWGS 문헌 종합)</td><td>세포당 4,000–30,000, 나이에 따라 증가</td><td><a href="../10-Summaries/hilal-2026-cardiac-somatic-review">Hilal 2026</a></td></tr>
+<tr><td>간세포</td><td>SMM-seq (bulk 단일분자)</td><td>젊은 공여자 0.34 대 고령 공여자 0.96 SNV/Mbp</td><td><a href="../10-Summaries/maslov-2022-smm-seq">Maslov 2022</a></td></tr>
+<tr><td>정상 조직 핵 DNA</td><td>BotSeqS (bulk duplex)</td><td>약 5.2 × 10⁻⁷/bp. 평생 대장 6.1배, 신장 6.5배, 전두엽 피질 5.7배 증가</td><td><a href="../10-Summaries/hoang-2016-botseqs">Hoang 2016</a></td></tr>
+<tr><td>Y 염색체 소실 (LOY)</td><td>UK Biobank 코호트</td><td>40–70세 남성의 2.5–43.6%</td><td><a href="../10-Summaries/vijg-2020-cell">Vijg 2020</a></td></tr>
+</tbody></table></div>
+
+<h2>목적별로 고르기</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>알고 싶은 것</th><th>우선 고려</th><th>확인할 위험</th></tr></thead>
+<tbody>
+<tr><td>발생 초기 계통과 변이 시점</td><td>단일세포 유래 clone이나 LCM 조직의 WGS, 여러 조직의 VAF 비교</td><td>분열하지 않는 세포는 clone으로 키울 수 없다 (<a href="../10-Summaries/bae-2017-pregastrulation-mutations">Bae 2018</a>). 배양 중에 생긴 변이가 실제로 관찰된 예가 있다 (lymphoblast 세포주, <a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>)</td></tr>
+<tr><td>분열하지 않는 세포의 노화 변이율</td><td>PTA + SCAN2, NanoSeq</td><td>MDA는 변이율을 부풀린다. NanoSeq은 유전체의 약 29%만 본다 (<a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a>)</td></tr>
+<tr><td>세포형별 변이율을 많은 세포에서</td><td>Duplex-Multiome</td><td>accessible chromatin만 본다. genome-wide 환산에 필요한 보정값은 흥분성 뉴런과 oligodendrocyte에만 있다 (<a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>)</td></tr>
+<tr><td>조직 안의 극저빈도 변이의 양</td><td>bulk duplex (NanoSeq, BotSeqS, SMM-seq)</td><td>세포 계통 정보가 없다. BotSeqS는 라이브러리당 유전체의 약 0.4%만 본다 (<a href="../10-Summaries/hoang-2016-botseqs">Hoang 2016</a>). 단일가닥 호출은 부풀려진다 (<a href="../10-Summaries/liu-2024-hidef-seq">Liu 2024</a>)</td></tr>
+<tr><td>클론을 키운 driver와 그 세포의 상태</td><td>GoT, GoT–ChA</td><td>이미 아는 유전자 자리만 본다 (<a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>)</td></tr>
+<tr><td>환자의 모자이크 변이 진단</td><td>여러 조직 채취</td><td>한 조직의 bulk DNA는 다른 조직에 있는 변이를 놓친다 (<a href="../10-Summaries/forsberg-2017-mosaicism-review">Forsberg 2017</a>)</td></tr>
+</tbody></table></div>
+
+<h2>읽는 순서</h2>
+<ol class="path">
+  <li><a href="../40-Topics/somatic-mosaicism">Somatic mosaicism (hub)</a> — 분류, 뇌·노화·혈액 연구 표, 열린 질문까지 한 장에 모은 지도다.</li>
+  <li><a href="../30-Concepts/developmental-mutation-timing">Developmental mutation timing</a> — 시점과 분포의 대응을 표 하나로 정리했다. 그림 1의 바탕이다.</li>
+  <li><a href="../30-Concepts/post-zygotic-variation">Post-zygotic variation</a> — 체세포 변이와 생식세포 모자이크를 묶는 상위 개념이다.</li>
+  <li><a href="../30-Concepts/compounding-artifact">Compounding artifact</a> — 증폭 artifact가 생물학적 수치를 어떻게 부풀리는지 본다.</li>
+  <li><a href="../10-Summaries/bae-2017-pregastrulation-mutations">Bae 2018</a> — 발생 단계마다 변이율과 스펙트럼이 다르다는 것을 보인 기초 논문이다.</li>
+  <li><a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a> — MDA와 PTA를 같은 뇌에서 비교해 뉴런 변이율을 바로잡았다.</li>
+  <li><a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a> — 변이와 chromatin을 같은 핵에서 잰 최신 사례이자 그 한계를 보여준다.</li>
+</ol>
+
+<h2>아직 열린 질문</h2>
+<ul>
+  <li>genome-wide 단일세포 duplex sequencing이 가능한가. Duplex-Multiome은 accessible chromatin 안에서만 이 간극을 메우기 시작했다 (<a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>; <a href="../50-Notes/single-cell-duplex-sequencing">single-cell duplex sequencing</a>).</li>
+  <li>나이에 따른 모자이크 변이 축적이 노화 관련 질환의 원인인가, 단지 지표인가 (<a href="../10-Summaries/vijg-2020-cell">Vijg 2020</a>; <a href="../10-Summaries/cagan-2022-nature">Cagan 2022</a>).</li>
+  <li>모자이크 변이가 진단상 의미를 갖는 VAF와 유전자 기준은 아직 경험적으로 정한다 (<a href="../10-Summaries/forsberg-2017-mosaicism-review">Forsberg 2017</a>).</li>
+  <li>피부와 장 밖의 많은 조직에서 조직별 변이율은 아직 불확실하다 (<a href="../40-Topics/somatic-mosaicism">hub</a>).</li>
+</ul>
+
+<footer>scDNA wiki 교재 · 수치와 해석은 링크된 위키 요약을 기준으로 한다.</footer>
+</main>
+
+<script>
+(function(){
+  // Annual somatic SNV accumulation per cell; every value is quoted from a linked summary.
+  var DATA = [
+    {cell:"PFC 뉴런", assay:"MDA + LiRA", v:23, cls:"mda", src:"Lodato 2018"},
+    {cell:"DG 뉴런", assay:"MDA + LiRA", v:40, cls:"mda", src:"Lodato 2018"},
+    {cell:"PFC 뉴런", assay:"MDA 재분석 (SCAN2)", v:31, adj:19, cls:"mda", src:"Luquette 2022"},
+    {cell:"PFC 뉴런", assay:"PTA + SCAN2", v:16.5, cls:"pta", src:"Luquette 2022"},
+    {cell:"뉴런", assay:"META-CS (단일세포 duplex)", v:16, cls:"dup", src:"Luquette 2022 인용"},
+    {cell:"뉴런", assay:"NanoSeq (bulk duplex)", v:17.1, cls:"dup", src:"Luquette 2022 인용"},
+    {cell:"흥분성 뉴런", assay:"Duplex-Multiome", v:15.05, err:3.15, cls:"dup", src:"Kriz 2025"},
+    {cell:"Oligodendrocyte", assay:"Duplex-Multiome", v:32.34, err:2.39, cls:"dup", src:"Kriz 2025"},
+    {cell:"장·대장·간 줄기세포", assay:"측정법 미기재", v:36, cls:"oth", src:"Bae 2018 인용"}
+  ];
+  var COLOR = {mda:"var(--warn)", pta:"var(--a1)", dup:"var(--a2)", oth:"var(--muted)"};
+  var LEGEND = [["mda","MDA"],["pta","PTA"],["dup","duplex 계열"],["oth","기타"]];
+  var NS = "http://www.w3.org/2000/svg", svg = document.getElementById("ratefig");
+  var X0 = 250, X1 = 600, MAX = 45, TOP = 34, ROW = 40;
+  function sx(v){ return X0 + (X1 - X0) * v / MAX; }
+  function el(tag, attrs, text){
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    svg.appendChild(e); return e;
+  }
+  var H = TOP + ROW * DATA.length + 44;
+  svg.setAttribute("viewBox", "0 0 680 " + H);
+  el("defs", {}).innerHTML = '<pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" style="fill:var(--warn-soft)"/><line x1="0" y1="0" x2="0" y2="6" style="stroke:var(--warn);stroke-width:2"/></pattern>';
+  el("text", {x:0, y:16, "font-size":13, "font-weight":600, style:"fill:var(--muted)"}, "세포 · 측정법");
+  el("text", {x:X0, y:16, "font-size":13, "font-weight":600, style:"fill:var(--muted)"}, "체세포 SNV / 세포 / 년");
+  [0,10,20,30,40].forEach(function(t){
+    el("line", {x1:sx(t), y1:TOP-6, x2:sx(t), y2:TOP + ROW*DATA.length, style:"stroke:var(--line)"});
+    el("text", {x:sx(t), y:TOP + ROW*DATA.length + 14, "font-size":11, "text-anchor":"middle", style:"fill:var(--muted)"}, String(t));
+  });
+  DATA.forEach(function(d, i){
+    var y = TOP + ROW * i, cy = y + ROW/2;
+    el("text", {x:0, y:cy-3, "font-size":13, "font-weight":600, fill:"currentColor"}, d.cell);
+    el("text", {x:0, y:cy+13, "font-size":11, style:"fill:var(--muted)"}, d.assay);
+    var bar = el("rect", {x:X0, y:cy-9, width:sx(d.v)-X0, height:18, rx:2,
+      style: d.adj != null ? "fill:url(#hatch)" : "fill:" + COLOR[d.cls]});
+    if (d.adj != null) el("rect", {x:sx(d.adj)-2, y:cy-13, width:4, height:26, style:"fill:var(--ink)"});
+    if (d.err) el("line", {x1:sx(d.v-d.err), y1:cy, x2:sx(d.v+d.err), y2:cy, style:"stroke:var(--ink);stroke-width:1.5"});
+    var lbl = (d.adj != null ? d.v + " → " + d.adj : (d.err ? d.v + " ± " + d.err : String(d.v)));
+    var lx = sx(d.err ? d.v + d.err : d.v) + 6;
+    el("text", {x:lx, y:cy+4, "font-size":12, fill:"currentColor"}, lbl);
+    el("text", {x:lx, y:cy+17, "font-size":10, style:"fill:var(--muted)"}, d.src);
+  });
+  var ly = H - 8, lx = X0;
+  LEGEND.forEach(function(l){
+    el("rect", {x:lx, y:ly-9, width:12, height:10, style:"fill:" + COLOR[l[0]]});
+    el("text", {x:lx+16, y:ly, "font-size":11, style:"fill:var(--muted)"}, l[1]);
+    lx += 30 + l[1].length * 9;
+  });
+})();
+</script>
+</body>
+</html>

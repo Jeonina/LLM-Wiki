@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > CODEC은 DNA 이중가닥의 두 가닥을 하나의 read로 이어 붙여 한 read pair만으로 가닥 간 consensus를 만드는 duplex sequencing 화학이다. SMaHT 벤치마크에서 비교된 여섯 방법 중 하나로, end-repair 방식에 따라 breadth가 크게 달랐다 ([[10-Summaries/zhang-2025-smaht-duplex-benchmark|Zhang 2025]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [Duplex sequencing 시뮬레이터](../60-Explainers/duplex-sequencing.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 CODEC fuses the two strands of a duplex into a contiguous sequenced fragment, enabling strand-consensus calling from a single read pair. One of the methods evaluated by the SMaHT duplex benchmark ([[10-Summaries/zhang-2025-smaht-duplex-benchmark|Zhang 2025]]).

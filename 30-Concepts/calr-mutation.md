@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > CALR 돌연변이는 MPN의 세 가지 대표 driver 중 하나로, 변이 단백질이 MPL에 결합해 thrombopoietin 없이도 신호를 켠다. GoT로 같은 환자 안의 변이 세포와 정상 세포를 비교하면, 같은 변이가 HSPC에서는 NF-κB 경로를, MkP에서는 UPR을 켜는 식으로 세포 정체성에 따라 다르게 작동한다 ([[10-Summaries/nam-2019-got|GoT]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [혈액암 교재](../60-Explainers/hematopoietic-malignancies.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 CALR is normally an ER-resident chaperone and Ca²⁺-binding protein. The pathogenic mutations are frameshifts in exon 9 (most commonly type 1, a 52-bp deletion; type 2, a 5-bp insertion) that generate a novel positively-charged C-terminus. The mutant protein traffics to the cell surface and binds the thrombopoietin receptor MPL, activating it constitutively in a thrombopoietin-independent manner ([[10-Summaries/nam-2019-got|GoT]]).

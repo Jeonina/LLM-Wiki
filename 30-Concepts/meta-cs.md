@@ -14,6 +14,13 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > META-CS는 Tn5로 단일 세포 DNA를 tagmentation한 뒤 두 상보 가닥을 따로 표지해, 두 가닥이 일치하는 변이만 부르는 single-cell duplex 방법이다 ([[10-Summaries/xing-2021-meta-cs|Xing 2021]]). 위양성률 상한은 2.4 × 10⁻⁸이고 대부분의 세포를 3–8×만 시퀀싱해도 SNV를 부를 수 있다 ([[10-Summaries/xing-2021-meta-cs|Xing 2021]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [Duplex sequencing 시뮬레이터](../60-Explainers/duplex-sequencing.html)
+>
+> [단일세포 DNA 시퀀싱 입문](../60-Explainers/scdna-seq.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 META-CS performs Tn5-based tagmentation of single-cell DNA (or single nuclei), followed by melting and two sequential primer-extension rounds that **label the two complementary strands** ([[10-Summaries/xing-2021-meta-cs|Xing 2021]]; [[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]). The earlier review description in terms of insertion orientation is superseded by the primary paper ([[10-Summaries/xing-2021-meta-cs|Xing 2021]]). After amplification and sequencing, reads from each strand can be separated by adapter orientation, and variant calls require consensus between strands.

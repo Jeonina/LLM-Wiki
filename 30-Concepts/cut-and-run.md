@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > CUT&RUN은 항체로 pA-MNase를 표적 chromatin에 붙인 뒤 잘라낸 조각만 용액으로 흘려 보내 읽는 방법으로, ChIP보다 sequencing depth가 약 1/10이면 되고 background가 낮다 ([[10-Summaries/skene-2017-cut-and-run|Skene & Henikoff 2017]]). 다만 원 논문은 600,000–1,000만 개 K562 세포를 썼고, peak 상당수는 직접 결합이 아니라 3D contact 상대일 수 있다 ([[10-Summaries/skene-2017-cut-and-run|Skene & Henikoff 2017]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 히스톤 변형](../60-Explainers/histone-modifications.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 CUT&RUN inherits the antibody-MNase tethering principle from Schmid et al.'s ChIC ([[30-Concepts/chic-seq|ChIC-seq]]), adds in-situ release of soluble target DNA, and enables lower-input chromatin profiling than ChIP (the founding paper used 600,000–10 million K562 cells and did not test ~100-cell input; [[10-Summaries/skene-2017-cut-and-run|Skene & Henikoff 2017]]).

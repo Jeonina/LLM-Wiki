@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Sequence-to-function model은 DNA 서열만 보고 chromatin profile, accessibility, 발현, 3D contact 같은 실측 신호를 예측하도록 지도학습한 모델이며, reference와 alternative 서열의 예측 차이로 변이를 평가한다 ([[10-Summaries/zhou-2015-deepsea|DeepSEA]]; [[10-Summaries/avsec-2021-enformer|Enformer]]). 입력 길이와 출력 해상도는 1 kb peak에서 1 Mb·1-bp track으로 커졌지만, 먼 enhancer의 효과를 여전히 과소평가한다는 점이 남은 쟁점이다 ([[10-Summaries/avsec-2026-alphagenome|AlphaGenome]]; [[10-Summaries/lal-2026-decima|Decima]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [서열 모델과 foundation model 교재](../60-Explainers/sequence-models-and-foundation-models.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 The template was set by DeepSEA in 2015: a multitask CNN reads 1 kb of reference sequence and predicts 919 TF, DNase and histone peak profiles ([[10-Summaries/zhou-2015-deepsea|DeepSEA]]). Later models changed four things — input length, output resolution, output type and architecture — while keeping the training signal: consortium tracks such as ENCODE and Roadmap ([[10-Summaries/kelley-2018-basenji|Basenji]]; [[10-Summaries/avsec-2026-alphagenome|AlphaGenome]]). Unlike a [[dna-language-model]], the model never learns from unlabelled sequence alone ([[10-Summaries/zhou-2015-deepsea|DeepSEA]]; [[10-Summaries/avsec-2021-enformer|Enformer]]).

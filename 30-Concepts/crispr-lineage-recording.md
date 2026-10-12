@@ -14,6 +14,13 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > CRISPR lineage recording은 Cas9 계열 효소가 transgenic reporter에 유전되는 편집을 계속 쌓게 해서, 그 편집 기록으로 세포 분열 계통수를 복원하는 합성 lineage tracing 방식이다 ([[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review|Rodriguez-Fraticelli 2026]]). 기록 화학은 빠르게 발전하고 있지만, 어떤 recorder가 만든 데이터인지에 따라 맞는 재구성 모델이 다르고 재구성 방법에 따라 결과도 달라진다 ([[10-Summaries/seidel-2026-sciphy|SciPhy]]; [[10-Summaries/chu-2025-laml|LAML]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [분석 도구 교재](../60-Explainers/computational-methods.html)
+>
+> [단일세포 계통 추적](../60-Explainers/single-cell-lineage-tracing.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Inducible Cas9 plus single-guide RNAs generate double-strand breaks in a multi-target reporter cassette; error-prone repair (typically non-homologous end joining) writes a different sequence in each cell ([[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review|Rodriguez-Fraticelli 2026]]). Repeated cutting makes the barcode *evolvable*: it accumulates new mutations over time and diversifies the record ([[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review|Rodriguez-Fraticelli 2026]]). Slightly mismatched guides tune the editing rate for temporal resolution ([[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review|Rodriguez-Fraticelli 2026]]).

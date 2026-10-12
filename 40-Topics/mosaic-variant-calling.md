@@ -1,6 +1,7 @@
 ---
 type: topic
 title: Mosaic variant calling
+explainer: mosaic-variant-calling
 aliases: [mosaic SNV calling, low-VAF variant calling, mosaicism callers]
 tags: [mosaicism, variant-calling, SNV, low-VAF, benchmarking]
 created: 2026-05-19
@@ -14,6 +15,11 @@ paper_section: ["4.1"]
 
 > [!abstract] 한눈에
 > mosaic 변이는 VAF가 50%보다 훨씬 낮아 germline caller의 가정이 맞지 않으므로, bulk·single-cell·scRNA/scATAC 데이터마다 전용 caller가 따로 발전했다 ([[10-Summaries/ha-2023-natmethods|Ha 2023]]; [[10-Summaries/muyas-2024-scomatic|SComatic]]). single-cell에서만 나온 call은 duplex 같은 독립 검증을 거쳐야 하며, 증폭 화학이 바뀌자 뉴런의 SNV 축적 속도 추정치 자체가 수정되었다 ([[10-Summaries/wang-2014-nuc-seq|Wang 2014]]; [[10-Summaries/luquette-2022-neuron-scan2-indels|SCAN2]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [모자이크 변이 검출력 시뮬레이터](../60-Explainers/mosaic-variant-calling.html)
+<!-- /explainer-links -->
 
 ## Key points
 

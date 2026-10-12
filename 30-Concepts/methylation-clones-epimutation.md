@@ -14,6 +14,13 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > CpG 메틸화 상태의 변화(epimutation)는 세포 분열을 거쳐 물려지므로, 유전자 조작 없이 사람 조직에서 클론 계보를 추적하는 자연 barcode로 쓸 수 있다 ([[10-Summaries/chen-2025-methyltree|MethylTree]]). 메틸화는 noise가 크지만 다른 modality보다 클론 신호가 강하며, 이 clock이 얼마나 먼 과거까지 읽히는지는 아직 정해지지 않았다 ([[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review|Rodriguez-Fraticelli 2026]]; [[10-Summaries/li-2023-darlin|Li 2023]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 DNA methylation](../60-Explainers/dna-methylation.html)
+>
+> [단일세포 계통 추적](../60-Explainers/single-cell-lineage-tracing.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Methylation is maintained by DNMT1 with PCNA and UHRF1 at the replication fork, and passive demethylation occurs when DNMT1 fails during replication; methylation thus acts as both a memory and a clock ([[10-Summaries/kim-2017-methylation-memory-review|Kim 2017]]). A lineage clock built on it needs three properties, first established in plants: epimutations accumulate **neutrally** genome-wide, they originate **mainly during somatic development** rather than in the germline — which is what makes them mark *cell lineages within an individual* — and they can **age-date trees** ([[10-Summaries/shahryary-2020-alphabeta|AlphaBeta]]). Gains and losses are separate stochastic processes, with forward and backward rates α and β ([[10-Summaries/shahryary-2020-alphabeta|AlphaBeta]]).

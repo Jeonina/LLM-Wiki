@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Single-cell Hi-C는 세포 하나하나에서 유전체 전체의 chromatin contact를 재는 방법들로, bulk Hi-C가 평균으로 지워 버린 TAD·compartment·loop의 세포 간 차이를 보여 준다 ([[10-Summaries/hong-2025-sc3d-genome-review|Hong 2025]]). 다만 한 세포에서 얻는 contact가 가능한 contact의 1%도 안 될 만큼 희소해서, imputation을 할지, 세포를 replicate로 묶을지가 분석의 핵심 쟁점이다 ([[10-Summaries/zhou-2019-schicluster|scHiCluster]]; [[10-Summaries/peng-2026-scdiagram|scDIAGRAM]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [3D 유전체 교재](../60-Explainers/3d-genome.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 - Most methods inherit the 3C/Hi-C ligation strategy (crosslink → restrict → ligate proximity-tagged fragments → sequence) and add per-cell partitioning (microfluidic, FACS plate-based, or combinatorial indexing) (synthesis).

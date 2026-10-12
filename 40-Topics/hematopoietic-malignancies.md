@@ -1,6 +1,7 @@
 ---
 type: topic
 title: Hematopoietic malignancies
+explainer: hematopoietic-malignancies
 aliases: [blood cancers, myeloid malignancies]
 tags: [hematology, cancer, clonal-evolution]
 created: 2026-05-07
@@ -14,6 +15,11 @@ paper_section: ["5.1"]
 
 > [!abstract] 한눈에
 > 혈액암은 같은 표면 marker를 공유하는 변이 세포와 정상 세포를 한 환자 안에서 구분해야 하는 문제이며, GoT 계열 방법은 MPN에서 genotype과 전사체·chromatin 상태를 한 세포에서 함께 읽어 이를 해결한다 ([[10-Summaries/nam-2019-got|Nam 2019]]; [[10-Summaries/izzo-2024-got-cha|Izzo 2024]]). 백혈병에서는 single-cell genotyping이 bulk VAF로 추정한 founder 클론을 뒤집거나 bulk가 놓친 소수 subclone을 찾아낸다 ([[10-Summaries/pellegrino-2018-tapestri|Pellegrino 2018]]; [[10-Summaries/kolbeinsdottir-2025-ascent|ASCENT]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [혈액암 교재](../60-Explainers/hematopoietic-malignancies.html)
+<!-- /explainer-links -->
 
 ## Key points
 

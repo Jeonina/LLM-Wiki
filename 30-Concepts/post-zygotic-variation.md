@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Post-zygotic variation은 수정 이후 한 개인의 일부 세포에서 생긴 DNA 변화로, 체세포·생식세포 mosaic 변이를 모두 묶는 용어다 ([[10-Summaries/forsberg-2017-mosaicism-review|Forsberg 2017]]). 언제 어느 계통에서 생겼는지가 자손 전달 여부와 bulk 조직에서 보이는지를 결정하며, neuron은 태어난 지 1년 안에 이미 수백 개의 sSNV를 지닌다 ([[10-Summaries/lodato-2017-aging-neurons|Lodato 2018]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [체세포 모자이크](../60-Explainers/somatic-mosaicism.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Any DNA change — SNV, indel, CNV, structural variant, aneuploidy — that arises in a cell of an individual after fertilization. The mutation may be present in some subset of cells (somatic mosaicism) or in some subset of germ cells (gonadal mosaicism), or both (gonosomal mosaicism) ([[10-Summaries/forsberg-2017-mosaicism-review|Forsberg 2017]]).

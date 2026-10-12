@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Gonadal mosaicism은 mosaic mutation이 정자나 난자 계열에 있어서, 겉보기에 정상인 부모가 여러 자녀에게 같은 변이를 물려줄 수 있는 상태다. 원시 생식세포가 분화하기 전에 생긴 post-zygotic mutation이 생식선까지 퍼지면서 생긴다 ([[10-Summaries/campbell-2015-mosaicism-review|Campbell 2015]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [체세포 모자이크](../60-Explainers/somatic-mosaicism.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 A post-zygotic mutation that arises before primordial germ cell (PGC) differentiation (within the first ~15 mitotic divisions, by day 24 post-fertilization) can populate the gonad with mutated germ cells alongside (or instead of) somatic cells ([[10-Summaries/campbell-2015-mosaicism-review|Campbell 2015]]).

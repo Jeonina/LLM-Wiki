@@ -1,6 +1,7 @@
 ---
 type: topic
 title: DNA methylation
+explainer: dna-methylation
 aliases: [5mC, cytosine methylation, methylation]
 tags: [methylation, epigenetics, regulation]
 created: 2026-05-11
@@ -14,6 +15,11 @@ paper_section: ["3.3"]
 
 > [!abstract] 한눈에
 > DNA methylation은 세포 분열을 거쳐 유지되는 가장 안정적인 후성유전 표지이지만, 같은 5mC라도 TSS에 있느냐 gene body에 있느냐에 따라 하는 일이 다르다 ([[10-Summaries/kim-2017-methylation-memory-review|Kim 2017]]; [[10-Summaries/jones-2012-dna-methylation-functions|Jones 2012]]). single-cell 방법은 커버리지와 처리량 중 어느 쪽을 택하느냐로 갈리고, 최근에는 bisulfite 없이 5mC와 5hmC를 단일 염기 수준에서 구분하는 화학도 나왔다 ([[10-Summaries/chen-2025-sctaps-sccaps-plus|Chen 2025]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 DNA methylation](../60-Explainers/dna-methylation.html)
+<!-- /explainer-links -->
 
 ## Key points
 

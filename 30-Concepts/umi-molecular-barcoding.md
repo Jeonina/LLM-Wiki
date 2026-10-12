@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > UMI는 증폭 전 각 분자에 붙이는 짧은 무작위 서열로, 같은 분자에서 나온 read를 묶어 consensus를 내고 PCR 중복을 걸러 낸다. 단일 가닥 consensus만으로는 첫 PCR 단계의 손상 염기 오류가 남기 때문에 duplex sequencing은 두 가닥에 상보적인 tag를 붙이며 ([[10-Summaries/schmitt-2012-pnas|Schmitt 2012]]), scRNA-seq에서 UMI 수는 입력 분자 수에 선형으로 늘지 않는다 ([[10-Summaries/svensson-2017-power-analysis|Svensson 2017]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [Duplex sequencing 시뮬레이터](../60-Explainers/duplex-sequencing.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 A 6–24-nt degenerate oligo, often paired between adapter ends so each duplex DNA fragment gets a complementary pair of tags. After PCR, reads sharing the same UMI pair come from the same original molecule and can be collapsed to a consensus sequence (or, for [[40-Topics/duplex-sequencing]], compared between strands to call mutations only when both strands agree).

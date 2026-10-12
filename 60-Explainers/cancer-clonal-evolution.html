@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>종양 계통수 시뮬레이터</title>
+<link rel="stylesheet" href="explainer.css">
+</head>
+<body>
+<main>
+<div class="crumb"><a href="../">scDNA wiki</a> · <a href="./">교재</a> · 암의 클론 진화</div>
+<h1>종양은 어떤 순서로 갈라졌을까: 노이즈 낀 단일세포 자료로 계통수 읽기</h1>
+<p class="lede">종양 세포는 체세포 변이를 쌓으며 여러 클론으로 갈라지고, 그 계통수를 알면 driver 변이의 순서와 약물 내성 계통을 읽을 수 있다 (<a href="../10-Summaries/navin-2011-sns-tumor-evolution">Navin 2011</a>; <a href="../10-Summaries/kim-2018-tnbc-chemoresistance">Kim 2018</a>). 문제는 단일세포 genotype이 allelic dropout과 위양성으로 얼룩져 있다는 점이다. 아래 시뮬레이터에서 오류율을 바꿔 가며 진짜 계통수가 관측 자료에서 어떻게 무너지는지, 오류를 모델에 넣으면 무엇이 달라지는지 보자.</p>
+
+<div class="callouts">
+  <div class="callout"><b>bulk로는 클론이 안 갈린다</b>비슷한 빈도의 두 클론은 bulk VAF에서 같은 값으로 섞인다. 세포 하나하나를 봐야 공존하는 클론과 그 순서가 보인다.</div>
+  <div class="callout"><b>관측 행렬은 거짓말을 한다</b>ADO는 있는 변이를 지우고(위음성), 증폭·시퀀싱 오류는 없는 변이를 만든다(위양성). 진짜 계통수와 맞지 않는 패턴이 노이즈만으로도 쏟아진다.</div>
+  <div class="callout"><b>계통수와 오류는 함께 추론한다</b>SCITE 이후의 방법들은 위양성·위음성 비율을 계통수와 같이 추정한다. 어떤 진화 모델(infinite sites, finite sites, CNA)을 가정하느냐가 결론까지 바꾼다.</div>
+</div>
+
+<h2>시뮬레이터</h2>
+<div class="lab" id="lab">
+  <svg viewBox="0 0 640 120" role="img" aria-label="진짜 종양 계통수: 정상에서 줄기 변이 4개로 클론 A, A에서 B와 C가 갈라지고 B에서 D가 갈라진다" style="width:100%;height:auto;display:block;margin-bottom:6px">
+    <g font-size="13" fill="currentColor">
+      <line x1="40" y1="60" x2="170" y2="60" stroke="var(--muted)" stroke-width="2"/>
+      <line x1="170" y1="60" x2="320" y2="30" stroke="var(--muted)" stroke-width="2"/>
+      <line x1="170" y1="60" x2="320" y2="95" stroke="var(--muted)" stroke-width="2"/>
+      <line x1="320" y1="30" x2="470" y2="30" stroke="var(--muted)" stroke-width="2"/>
+      <circle cx="40" cy="60" r="7" fill="var(--bg)" stroke="var(--muted)" stroke-width="2"/>
+      <text x="22" y="88">정상</text>
+      <circle cx="170" cy="60" r="10" style="fill:var(--muted)"/>
+      <text x="150" y="88">A 15%</text>
+      <text x="80" y="52" fill="var(--muted)">줄기 m1–m4</text>
+      <circle cx="320" cy="30" r="10" style="fill:var(--a1)"/>
+      <text x="338" y="22">B 30%</text>
+      <text x="215" y="30" fill="var(--muted)">m5–m8</text>
+      <circle cx="320" cy="95" r="10" style="fill:var(--a2)"/>
+      <text x="338" y="100">C 35%</text>
+      <text x="215" y="104" fill="var(--muted)">m9–m12</text>
+      <circle cx="470" cy="30" r="10" style="fill:var(--ok)"/>
+      <text x="488" y="35">D 20%</text>
+      <text x="370" y="22" fill="var(--muted)">m13–m16</text>
+    </g>
+  </svg>
+  <p class="desc">진짜 계통수. 클론 4개, 변이 16개(모두 이형접합). 퍼센트는 종양 안의 세포 비율이다. D는 B의 변이를 모두 물려받고 m13–m16을 더 얻었다.</p>
+  <div class="controls">
+    <div class="methods" role="group" aria-label="ADO 예시 값" id="presets"></div>
+  </div>
+  <div class="controls">
+    <label class="slider">ADO <input type="range" id="ado" min="0" max="60" value="23"> <span id="adov"></span></label>
+    <label class="slider">칸당 위양성 <input type="range" id="fp" min="0" max="6" value="2"> <span id="fpv"></span></label>
+    <label class="slider">세포 수 <input type="range" id="ncell" min="10" max="300" step="5" value="60"> <span id="ncellv"></span></label>
+    <button class="btn" id="reseed">다른 세포로 다시 뽑기</button>
+  </div>
+  <p class="desc" id="pdesc"></p>
+
+  <p class="plotlabel">① 세포 × 변이 genotype 행렬. 왼쪽이 진짜, 오른쪽이 관측이다. 행은 세포(진짜 클론 순으로 정렬), 열은 m1–m16. 맨 왼쪽 띠는 진짜 클론, 관측 행렬 오른쪽 띠는 오류 모델이 배정한 클론이다. <span style="color:var(--warn)">□</span> 사라진 변이(위음성) <span style="color:var(--warn)">■</span> 없던 변이(위양성)</p>
+  <canvas class="plot" id="mat" height="280"></canvas>
+  <p class="plotlabel">② ADO에 따른 클론 오배정 비율(현재 세포 수·위양성, 반복 20회 평균). <span style="color:var(--warn)">━</span> 단순 Hamming 거리 <span style="color:var(--a1)">━</span> 위양성·위음성 비율을 아는 likelihood. 점선은 현재 ADO.</p>
+  <canvas class="plot" id="sweep" height="170"></canvas>
+
+  <div class="metrics">
+    <div class="metric"><div class="k">관측에서 사라진 변이 (위음성)</div><div class="v" id="m-fn">–</div></div>
+    <div class="metric"><div class="k">관측에서 생긴 변이 (위양성)</div><div class="v" id="m-fp">–</div></div>
+    <div class="metric"><div class="k">three-gamete 규칙 위반 변이 쌍 (진짜 0/120)</div><div class="v" id="m-viol">–</div></div>
+    <div class="metric"><div class="k">클론 오배정: Hamming 거리</div><div class="v" id="m-ham">–</div></div>
+    <div class="metric"><div class="k">클론 오배정: 오류 모델</div><div class="v" id="m-lik">–</div></div>
+  </div>
+  <div class="verdict" id="verdict"></div>
+</div>
+
+<div class="note"><b>이 시뮬레이터는 장난감 모델이다.</b> 진짜 계통수와 클론 비율은 임의로 정했고 데이터는 모두 합성이다. ADO가 일어나면 두 allele 중 하나가 무작위로 사라지므로, 변이가 있는 칸이 0으로 보일 확률은 ADO의 절반이다 (<a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a>의 "50% 위음성"). ADO 예시 값은 아래 표의 실측·보고 값(<a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>, <a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a>, <a href="../10-Summaries/ross-2016-onconem">Ross 2016</a>, <a href="../10-Summaries/zhang-2025-scistree2">Zhang 2025</a>)에서 가져왔다. 위양성 0.0001은 PhISCS 시뮬레이션 설정, 0.01은 ScisTree2 시뮬레이션의 기본 오류율이며, 0.02 이상은 변이 16개짜리 행렬에서 효과를 눈으로 보이게 하려고 일부러 키운 값이다. 클론 배정은 진짜 클론 genotype을 안다고 가정하고 오류 모델의 효과만 떼어 본 것이다. 실제 방법은 계통수와 오류율까지 함께 추론해야 하므로 훨씬 어렵다. 화면의 숫자를 논문 수치로 인용하면 안 된다.</div>
+
+<h2>계통수 방법의 흐름</h2>
+<figure class="fig">
+  <svg id="timeline" viewBox="0 0 820 300" role="img" aria-label="입력 종류별 단일세포 종양 계통수 방법 연표, 2016–2025"></svg>
+  <figcaption>단일세포 종양 계통수 방법을 입력 자료별로 나눈 연표(허브 페이지의 표 기준). SNV만 쓰던 방법에서 CNA 전용, 그리고 SNV와 CNA를 함께 쓰는 방법으로 넓어졌다. 이름을 누르면 위키 요약으로 간다.</figcaption>
+</figure>
+
+<h2>핵심 내용</h2>
+<ol class="steps">
+  <li><b>클론은 나뭇가지처럼 갈라진다.</b> single-nucleus CNV 프로파일로 처음 본 유방암의 진화는 점진적이 아니라 단속적이었다 (<a href="../10-Summaries/navin-2011-sns-tumor-evolution">Navin 2011</a>). 같은 유방암에서 aneuploid 재배열은 일찍 생겨 굳어 있었고 점돌연변이는 서서히 쌓였다. copy number와 점돌연변이는 서로 다른 시계로 움직인다 (<a href="../10-Summaries/wang-2014-nuc-seq">Wang 2014</a>).</li>
+  <li><b>세포 하나씩 봐야 클론이 갈린다.</b> 소아 ALL 환자 6명 중 5명은 세포의 25% 이상을 차지하는 클론이 둘 이상 공존했는데, bulk VAF만으로는 이 구조를 풀 수 없었다 (<a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a>). 같은 연구의 시뮬레이션에서 1% 클론을 잡으려면 세포 200개, 2% 클론은 75개가 필요했고, 대략 클론당 세포 2–3개가 잡혀야 클론으로 부를 수 있었다 (<a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a>). 소아 B-ALL에서 bulk WGS가 놓친 세포 8개(3%)짜리 subclone도 단일세포로 찾았다 (<a href="../10-Summaries/kolbeinsdottir-2025-ascent">Kolbeinsdottir 2025</a>).</li>
+  <li><b>오류율은 계통수와 함께 추정한다.</b> SCITE는 MCMC로 mutation tree를 찾으면서 위양성·위음성·ADO 비율을 같이 추정했고, 이 방식이 표준이 됐다 (<a href="../10-Summaries/jahn-2016-scite">Jahn 2016</a>). OncoNEM도 위양성률 α와 위음성률 β만 받아 클론과 계통수를 함께 낸다 (<a href="../10-Summaries/ross-2016-onconem">Ross 2016</a>). PhISCS의 목적함수에서는 흔한 위음성을 뒤집는 비용이 드문 위양성을 뒤집는 비용보다 훨씬 작다 (<a href="../10-Summaries/malikic-2019-phiscs">Malikic 2019</a>). 시뮬레이터 ②에서 오류 모델 배정이 Hamming 거리보다 나은 이유가 바로 이 비대칭이다. SCIΦ는 한발 더 나가 계통수를 genotype의 prior로 써서 변이 read가 없는 세포에도 변이를 부른다 (<a href="../10-Summaries/singer-2018-sciphi">Singer 2018</a>). 계통수가 맞으면 강력하지만, 틀리면 서로 연관된 위양성을 만든다 (<a href="../30-Concepts/phylogenetic-inference">Phylogenetic inference</a>).</li>
+  <li><b>infinite sites 가정은 암에서 자주 깨진다.</b> CNA가 SNV를 담은 구간을 지우므로 한 번 생긴 변이가 사라질 수 있다. SPhyR는 변이 손실을 k번까지 허용하는 k-Dollo 모델을, SiFit은 finite-sites 모델을 택했다 (<a href="../10-Summaries/el-kebir-2018-sphyr">El-Kebir 2018</a>; <a href="../10-Summaries/zafar-2017-sifit">Zafar 2017</a>). targeted CRC 자료 두 개에서는 SNV 쌍의 104/120, 347/630이 four-gamete test를 어겼는데, 이 중 상당 부분은 오류만으로도 생길 수 있다 (<a href="../10-Summaries/zafar-2019-siclonefit">Zafar 2019</a>). 가정 하나가 결론을 바꾸기도 한다. 대장암 CRC2에서 ISA를 어기는 변이 하나(<i>ATP7B</i>)를 빼자 전이 seeding 횟수가 2회에서 1회로 줄었다 (<a href="../10-Summaries/malikic-2019-phiscs">Malikic 2019</a>).</li>
+  <li><b>copy number로도, 둘을 함께로도 계통수를 그린다.</b> 재배열이 겹치고 반복되는 CNA에는 최소 사건 거리가 맞는 척도이고, MEDALT와 MEDICC2가 이를 쓴다 (<a href="../10-Summaries/wang-2021-medalt">Wang 2021</a>; <a href="../10-Summaries/kaufmann-2022-medicc2">Kaufmann 2022</a>). SCARLET은 copy number로 SNV 손실을 제한하고, COMPASS는 amplicon 자료에서 SNV와 CNA·CNLOH를 함께 다룬다 (<a href="../10-Summaries/satas-2020-scarlet">Satas 2020</a>; <a href="../10-Summaries/sollier-2023-compass">Sollier 2023</a>). SCICoNE은 10x TNBC 자료에서 whole-genome duplication을 첫 종양 사건으로 추론했고, HGSOC 30,260개 종양 유전체에서는 WGD가 한 번에 끝나지 않고 계속 일어나는 과정으로 보였다 (<a href="../10-Summaries/kuipers-2025-scicone">Kuipers 2025</a>; <a href="../10-Summaries/mcpherson-2025-ongoing-wgd">McPherson 2025</a>).</li>
+  <li><b>이제는 규모가 문제다.</b> 2016년 세대 방법은 세포가 100개 미만이라는 전제에서 설계됐다 (<a href="../10-Summaries/ross-2016-onconem">Ross 2016</a>). 계통 추론은 대부분의 기준에서 NP-hard라 세포 20개 정도만 넘어도 전수 탐색이 불가능하다 (<a href="../10-Summaries/lahnemann-2020-grand-challenges">Lähnemann 2020</a>). ScisTree2는 모델을 단순한 infinite sites로 두고 탐색 알고리즘에 힘을 써 수만 개 세포까지 늘렸다 (<a href="../10-Summaries/zhang-2025-scistree2">Zhang 2025</a>). 다만 coverage가 1× 미만이거나 site가 적으면 어떤 방법도 정확한 topology를 얻지 못했다 (<a href="../10-Summaries/zhang-2025-scistree2">Zhang 2025</a>).</li>
+</ol>
+
+<h2>보고된 오류율과 수치</h2>
+<p class="desc">ADO와 위양성률은 화학, 플랫폼, 추정 방법에 따라 크게 다르다. 같은 항목의 값이 엇갈려도 하나만 고르지 않고 함께 적었다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>항목</th><th>보고된 값</th><th>맥락</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>ADO (직접 측정)</td><td>중앙값 23–24% (TaqMan, 야생형 allele 손실) · 33% (재시퀀싱) · 30% 필터 후 20% · LCL 대조군 15.6%</td><td>microfluidic MDA, 소아 ALL 세포 1,479개, 네 가지 방법으로 측정</td><td><a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a></td></tr>
+<tr><td>ADO (직접 측정)</td><td>9.73 ± 2.19% · 기존 MDA 연구 7–46%</td><td>G2/M 핵을 입력해 주형 copy를 4개로</td><td><a href="../10-Summaries/wang-2014-nuc-seq">Wang 2014</a></td></tr>
+<tr><td>ADO (직접 측정)</td><td>8.7 ± 1.1%</td><td>droplet targeted scDNA-seq, run마다 spike-in 세포로 측정</td><td><a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a></td></tr>
+<tr><td>ADO (문헌 인용·서술)</td><td>0.16–0.43 · MDA 약 10–20% · 현재 자료에서 50% 이상</td><td>방법 논문이 배경으로 인용하거나 서술한 값</td><td><a href="../10-Summaries/ross-2016-onconem">Ross 2016</a> · <a href="../10-Summaries/singer-2018-sciphi">Singer 2018</a> · <a href="../10-Summaries/zhang-2025-scistree2">Zhang 2025</a></td></tr>
+<tr><td>ADO (모델 추정)</td><td>0.20 (CRC28) · 0.05 (TNBC16) · 0.10 (CRC48)</td><td>SIEVE가 실제 자료에서 추정. 모델 추정 ADO는 낮게 나오는 경향이 있다</td><td><a href="../10-Summaries/kang-2022-sieve">Kang 2022</a> · <a href="../10-Summaries/kozlov-2022-cellphy">Kozlov 2022</a></td></tr>
+<tr><td>위음성률 (모델 추정)</td><td>0.18</td><td>Gawad ALL 환자 2의 행렬(변이 16 × 세포 102)</td><td><a href="../10-Summaries/malikic-2019-phiscs">Malikic 2019</a></td></tr>
+<tr><td>위양성 (문헌 인용)</td><td>false discovery rate 2.67 × 10⁻⁵ – 6.7 × 10⁻⁵</td><td>위양성이 진짜 체세포 변이보다 많을 수 있는 수준</td><td><a href="../10-Summaries/ross-2016-onconem">Ross 2016</a></td></tr>
+<tr><td>증폭·시퀀싱 오류 ε</td><td>약 10⁻³ – 10⁻⁵</td><td>CellPhy 오류 모델의 전제</td><td><a href="../10-Summaries/kozlov-2022-cellphy">Kozlov 2022</a></td></tr>
+<tr><td>시뮬레이션 설정</td><td>FP 0.0001 · FN 0.05–0.25 (PhISCS) · ADO 0.2, 오류 0.01 기본, ADO 0.1–0.4 시험 (ScisTree2)</td><td>방법 비교용 합성 자료</td><td><a href="../10-Summaries/malikic-2019-phiscs">Malikic 2019</a> · <a href="../10-Summaries/zhang-2025-scistree2">Zhang 2025</a></td></tr>
+<tr><td>클론 검출 한계</td><td>ADO 0.3 초과 또는 표본당 변이 10개 미만이면 클론 수 과소추정 · 1% 클론에 세포 200개</td><td>시뮬레이션</td><td><a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a></td></tr>
+<tr><td>ISA 위반 쌍</td><td>104/120 · 347/630 SNV 쌍이 four-gamete test 위반</td><td>targeted CRC 자료 두 개. 오류만으로도 상당 부분 생길 수 있음</td><td><a href="../10-Summaries/zafar-2019-siclonefit">Zafar 2019</a></td></tr>
+</tbody></table></div>
+
+<h3>모델 선택이 결론을 바꾼 사례</h3>
+<ul>
+  <li><b>전이 seeding 횟수.</b> CRC2 환자(세포 86개)에서 PhISCS가 <i>ATP7B</i>를 빼자 seeding이 2회에서 1회가 됐다 (<a href="../10-Summaries/malikic-2019-phiscs">Malikic 2019</a>). 같은 환자를 CellPhy로 다시 분석하자 전이 세포가 모두 한 clade로 묶여 단일 seeding을 지지했고, SCITE와 SiCloneFit의 다중 seeding 해석 대신 SCARLET 쪽에 섰다 (<a href="../10-Summaries/kozlov-2022-cellphy">Kozlov 2022</a>).</li>
+  <li><b>클론 수 부풀리기.</b> CNRein은 CHISEL이 거의 모든 세포에 고유한 copy number 프로파일을 부른다고 보고했다. per-cell caller의 클론 라벨을 정답처럼 쓰면 이질성을 과장할 수 있다 (<a href="../10-Summaries/ivanovic-2025-cnrein">Ivanovic 2025</a>).</li>
+</ul>
+
+<h2>목적별로 고르기</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>알고 싶은 것</th><th>우선 고려</th><th>확인할 위험</th></tr></thead>
+<tbody>
+<tr><td>targeted 패널, 수천 개 세포의 클론 계통</td><td>COMPASS (SNV + CNA, 변이별 dropout), SiCloneFit (doublet 모델)</td><td>ADO를 run마다 실측할 것. COMPASS는 SNV나 LOH로 표시되지 않은 subclone의 CNA를 놓친다 (<a href="../10-Summaries/sollier-2023-compass">Sollier 2023</a>)</td></tr>
+<tr><td>scWGS SNV로 cell tree와 branch 지지도</td><td>CellPhy (genotype likelihood, bootstrap), SIEVE (branch length 보정)</td><td>성장하는 집단의 계통은 내부 가지가 짧아 SNV가 수백~수만 개 필요하다 (<a href="../10-Summaries/kozlov-2022-cellphy">Kozlov 2022</a>)</td></tr>
+<tr><td>수만 개 세포의 SNV 계통수</td><td>ScisTree2</td><td>infinite sites 가정. 1× 미만이나 site가 적으면 topology가 부정확하다 (<a href="../10-Summaries/zhang-2025-scistree2">Zhang 2025</a>)</td></tr>
+<tr><td>얕은 scWGS의 CNA 클론 계통, WGD</td><td>MEDALT, MEDICC2 (WGD 인식), SCICoNE</td><td>per-cell CN caller의 노이즈가 가짜 클론을 만든다 (<a href="../10-Summaries/ivanovic-2025-cnrein">Ivanovic 2025</a>)</td></tr>
+<tr><td>CNA가 SNV를 지운 종양</td><td>SPhyR (k-Dollo), SCARLET (CN 제약 SNV 손실)</td><td>infinite-sites 방법은 손실을 오류로 흡수하거나 계통을 틀리게 놓는다 (<a href="../10-Summaries/el-kebir-2018-sphyr">El-Kebir 2018</a>)</td></tr>
+<tr><td>전이 seeding 횟수</td><td>가정이 다른 방법 여러 개를 함께 비교</td><td>ISA 위반 처리 방식에 따라 횟수가 달라진다 (<a href="../10-Summaries/malikic-2019-phiscs">Malikic 2019</a>)</td></tr>
+</tbody></table></div>
+
+<h2>읽는 순서</h2>
+<ol class="path">
+  <li><a href="../40-Topics/cancer-clonal-evolution">Cancer clonal evolution (hub)</a> — 기초 연구, 방법 표, 추적 연구가 한 페이지에 모여 있다.</li>
+  <li><a href="../30-Concepts/intratumor-heterogeneity">Intratumor heterogeneity</a> — 종양 안 이질성과 클론 검출 설계 규칙을 정리한다.</li>
+  <li><a href="../30-Concepts/phylogenetic-inference">Phylogenetic inference</a> — 진화 모델 × 탐색 전략으로 방법을 나누는 틀을 준다.</li>
+  <li><a href="../30-Concepts/allele-dropout">Allele dropout</a> — 시뮬레이터의 ADO 값들이 어디서 왔고 모델이 어떻게 다루는지 본다.</li>
+  <li><a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a> — ADO를 네 가지로 재고 필요한 세포 수를 계산한, 설계의 교과서다.</li>
+  <li><a href="../10-Summaries/jahn-2016-scite">Jahn 2016 (SCITE)</a> — 계통수와 오류율을 함께 추정하는 표준 틀의 출발점이다.</li>
+  <li><a href="../10-Summaries/malikic-2019-phiscs">Malikic 2019 (PhISCS)</a> — 위양성·위음성 비대칭과 ISA 위반 처리가 결론을 어떻게 바꾸는지 보여준다.</li>
+  <li><a href="../10-Summaries/sollier-2023-compass">Sollier 2023 (COMPASS)</a> — SNV와 CNA를 함께 다루는 최근 방향을 대표한다.</li>
+</ol>
+
+<h2>아직 열린 질문</h2>
+<ul>
+  <li>세포 100개 미만을 전제로 만든 2016–2019년 방법들이 droplet 규모 자료에서도 유효한지, 다시 벤치마크해야 하는지 (<a href="../10-Summaries/ross-2016-onconem">Ross 2016</a>; <a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>).</li>
+  <li>전이 seeding 횟수가 계통수 모델에 따라 바뀌므로(CRC2에서 2회 대 1회), seeding 주장은 ISA 위반을 어떻게 처리했는지에 달려 있다 (<a href="../10-Summaries/malikic-2019-phiscs">Malikic 2019</a>; <a href="../10-Summaries/kozlov-2022-cellphy">Kozlov 2022</a>).</li>
+  <li>per-cell caller가 낸 클론 라벨을 정답으로 쓰면 이질성을 과장할 수 있다 (<a href="../10-Summaries/ivanovic-2025-cnrein">Ivanovic 2025</a>).</li>
+</ul>
+
+<footer>scDNA wiki 교재 · 시뮬레이터의 데이터는 모두 합성 데이터다. 실제 수치와 해석은 링크된 위키 요약과 원 논문을 기준으로 한다.</footer>
+</main>
+
+<script>
+(function(){
+  // --- model ---
+  // Toy model: fixed true tree A -> {B, C}, B -> D; 16 heterozygous mutations in four
+  // blocks of 4 (trunk, B, C, D). Each observed 1 is lost with prob ADO/2 (one of two
+  // alleles drops, the mutant one half the time); each true 0 becomes 1 with prob FP.
+  // Cells are assigned to clones (true clone genotypes known) by Hamming distance or by
+  // likelihood under the FN/FP rates. Violations: mutation pairs showing (1,1),(1,0),(0,1).
+  var CLONES = [
+    {name:"A", freq:0.15, muts:[0,1,2,3], col:"--muted"},
+    {name:"B", freq:0.30, muts:[0,1,2,3,4,5,6,7], col:"--a1"},
+    {name:"C", freq:0.35, muts:[0,1,2,3,8,9,10,11], col:"--a2"},
+    {name:"D", freq:0.20, muts:[0,1,2,3,4,5,6,7,12,13,14,15], col:"--ok"}
+  ];
+  var M = 16;
+  var GENO = CLONES.map(function(c){ var g=new Uint8Array(M); c.muts.forEach(function(j){g[j]=1;}); return g; });
+  function rng(seed){ var s = seed>>>0 || 1; return function(){ s ^= s<<13; s>>>=0; s ^= s>>>17; s ^= s<<5; s>>>=0; return s/4294967296; }; }
+  function pickClone(r){ var u=r(), acc=0; for(var k=0;k<CLONES.length;k++){ acc+=CLONES[k].freq; if(u<acc) return k; } return CLONES.length-1; }
+  function argbest(scores, r, better){
+    var best=[0]; for(var k=1;k<scores.length;k++){ if(better(scores[k],scores[best[0]])) best=[k]; else if(Math.abs(scores[k]-scores[best[0]])<1e-12) best.push(k); }
+    return best[Math.floor(r()*best.length)];
+  }
+  function simulate(ado, fp, n, seed){
+    var r = rng(seed), fn = ado/2, cells=[];
+    for(var i=0;i<n;i++) cells.push(pickClone(r));
+    cells.sort(function(a,b){return a-b;});
+    var obs=[], nFN=0, nFP=0, nOnes=0, nZeros=0, ham=0, lik=0, assigned=[];
+    var eFN = Math.max(fn,1e-6), eFP = Math.max(fp,1e-6);
+    var w11=Math.log(1-eFN), w10=Math.log(eFN), w01=Math.log(eFP), w00=Math.log(1-eFP);
+    for(i=0;i<n;i++){
+      var g=GENO[cells[i]], o=new Uint8Array(M);
+      for(var j=0;j<M;j++){
+        if(g[j]){ nOnes++; o[j] = r()<fn ? 0 : 1; if(!o[j]) nFN++; }
+        else { nZeros++; o[j] = r()<fp ? 1 : 0; if(o[j]) nFP++; }
+      }
+      obs.push(o);
+      var hs=[], ls=[];
+      for(var k=0;k<CLONES.length;k++){
+        var h=0, l=0, gk=GENO[k];
+        for(j=0;j<M;j++){ if(gk[j]!==o[j]) h++; l += gk[j] ? (o[j]?w11:w10) : (o[j]?w01:w00); }
+        hs.push(h); ls.push(l);
+      }
+      var kh = argbest(hs, r, function(a,b){return a<b;}), kl = argbest(ls, r, function(a,b){return a>b;});
+      if(kh!==cells[i]) ham++; if(kl!==cells[i]) lik++;
+      assigned.push(kl);
+    }
+    var viol=0;
+    for(var a=0;a<M;a++) for(var b=a+1;b<M;b++){
+      var s11=false,s10=false,s01=false;
+      for(i=0;i<n;i++){ var x=obs[i][a], y=obs[i][b]; if(x&&y) s11=true; else if(x) s10=true; else if(y) s01=true; }
+      if(s11&&s10&&s01) viol++;
+    }
+    var sizes=[0,0,0,0]; cells.forEach(function(c){sizes[c]++;});
+    return {cells:cells, obs:obs, assigned:assigned, fnFrac:nOnes?nFN/nOnes:0, fpFrac:nZeros?nFP/nZeros:0,
+            nFN:nFN, nFP:nFP, viol:viol, ham:ham/n, lik:lik/n, minClone:Math.min.apply(null,sizes)};
+  }
+  function sweep(fp, n, seed, reps){
+    var out=[]; for(var a=0;a<=60;a+=5){ var h=0,l=0; for(var t=0;t<reps;t++){ var s=simulate(a/100, fp, n, seed*31+t*977+a); h+=s.ham; l+=s.lik; } out.push({ado:a/100, ham:h/reps, lik:l/reps}); }
+    return out;
+  }
+  // --- end model ---
+  if(typeof document==="undefined"){ module.exports={simulate:simulate, sweep:sweep}; return; }
+
+  var FPS = [0, 0.0001, 0.001, 0.01, 0.02, 0.05, 0.1];
+  var PRESETS = [
+    {label:"Tapestri 실측 8.7%", ado:9, text:"droplet targeted scDNA-seq에서 run마다 spike-in으로 잰 ADO 8.7 ± 1.1% (Pellegrino 2018)."},
+    {label:"Gawad 중앙값 23%", ado:23, text:"microfluidic MDA, 소아 ALL에서 TaqMan·야생형 allele 손실로 잰 중앙값 23–24% (Gawad 2014)."},
+    {label:"문헌 상한 43%", ado:43, text:"OncoNEM 논문이 인용한 ADO 범위 0.16–0.43의 상한 (Ross 2016)."},
+    {label:"ScisTree2 서술 50%", ado:50, text:"ScisTree2 저자들은 현재 자료의 ADO가 50% 이상일 수 있다고 썼다. 직접 측정값보다 높다 (Zhang 2025)."}
+  ];
+  var state = {ado:23, fpIdx:2, n:60, seed:11};
+
+  function css(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+  function setup(c){
+    var dpr = window.devicePixelRatio||1, w = c.clientWidth, h = parseInt(c.getAttribute("height"),10);
+    c.width = w*dpr; c.height = h*dpr; c.style.height = h+"px";
+    var ctx = c.getContext("2d"); ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,w,h); return {ctx:ctx,w:w,h:h};
+  }
+  function drawMatrix(res, truth){
+    var o=setup(document.getElementById("mat")), ctx=o.ctx, n=res.cells.length;
+    var top=18, bot=4, strip=10, gap=18, H=o.h-top-bot, rh=H/n;
+    var mw=(o.w - strip*3 - gap - 8)/2, cw=mw/M;
+    var x0=strip+2, x1=x0+mw+gap, xs=x1+mw+2;
+    ctx.font="12px sans-serif"; ctx.fillStyle=css("--muted");
+    ctx.fillText("진짜", x0, 12); ctx.fillText("관측", x1, 12);
+    var one=css("--accent"), zero=css("--bg"), warn=css("--warn"), line=css("--line");
+    for(var i=0;i<n;i++){
+      var y=top+i*rh, g=GENO[res.cells[i]], ob=res.obs[i];
+      ctx.fillStyle=css(CLONES[res.cells[i]].col); ctx.fillRect(0,y,strip,Math.max(rh,0.6));
+      ctx.fillStyle=css(CLONES[res.assigned[i]].col); ctx.fillRect(xs,y,strip,Math.max(rh,0.6));
+      for(var j=0;j<M;j++){
+        ctx.fillStyle = g[j]?one:zero; ctx.fillRect(x0+j*cw, y, cw, Math.max(rh,0.6));
+        var x=x1+j*cw;
+        if(g[j] && !ob[j]){ ctx.fillStyle=zero; ctx.fillRect(x,y,cw,Math.max(rh,0.6)); ctx.strokeStyle=warn; ctx.lineWidth=Math.min(1.5,rh/3+0.3); ctx.strokeRect(x+0.75,y+0.4,cw-1.5,Math.max(rh-0.8,0.4)); }
+        else if(!g[j] && ob[j]){ ctx.fillStyle=warn; ctx.fillRect(x,y,cw,Math.max(rh,0.6)); }
+        else { ctx.fillStyle = ob[j]?one:zero; ctx.fillRect(x,y,cw,Math.max(rh,0.6)); }
+      }
+    }
+    ctx.strokeStyle=line; ctx.lineWidth=1;
+    [x0,x1].forEach(function(xx){ ctx.strokeRect(xx,top,mw,H); for(var b=4;b<M;b+=4){ ctx.beginPath(); ctx.moveTo(xx+b*cw,top); ctx.lineTo(xx+b*cw,top+H); ctx.stroke(); } });
+  }
+  function drawSweep(pts){
+    var o=setup(document.getElementById("sweep")), ctx=o.ctx, pad={l:40,r:10,t:8,b:22};
+    var W=o.w-pad.l-pad.r, H=o.h-pad.t-pad.b;
+    var ymax=Math.max(0.1, Math.ceil(Math.max.apply(null, pts.map(function(p){return p.ham;}))*10)/10);
+    ctx.strokeStyle=css("--line"); ctx.fillStyle=css("--muted"); ctx.font="11px sans-serif"; ctx.lineWidth=1;
+    for(var t=0;t<=4;t++){ var v=ymax*t/4, y=pad.t+H*(1-v/ymax); ctx.beginPath(); ctx.moveTo(pad.l,y); ctx.lineTo(o.w-pad.r,y); ctx.stroke(); ctx.fillText(Math.round(v*100)+"%",4,y+4); }
+    [0,0.2,0.4,0.6].forEach(function(a){ ctx.fillText("ADO "+Math.round(a*100)+"%", pad.l+W*a/0.6-(a>0.5?44:0), o.h-6); });
+    function line(key, col){ ctx.strokeStyle=css(col); ctx.lineWidth=2; ctx.beginPath(); pts.forEach(function(p,i){ var x=pad.l+W*p.ado/0.6, y=pad.t+H*(1-p[key]/ymax); if(i) ctx.lineTo(x,y); else ctx.moveTo(x,y); }); ctx.stroke(); }
+    line("ham","--warn"); line("lik","--a1");
+    var xc=pad.l+W*Math.min(state.ado/100,0.6)/0.6; ctx.setLineDash([5,4]); ctx.strokeStyle=css("--ink"); ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(xc,pad.t); ctx.lineTo(xc,pad.t+H); ctx.stroke(); ctx.setLineDash([]);
+  }
+  function pct(x){ return (100*x).toFixed(x<0.1?1:0)+"%"; }
+  function render(){
+    var fp=FPS[state.fpIdx], res=simulate(state.ado/100, fp, state.n, state.seed);
+    document.getElementById("adov").textContent = state.ado+"%";
+    document.getElementById("fpv").textContent = fp===0 ? "0" : String(fp);
+    document.getElementById("ncellv").textContent = state.n+"개";
+    var p=PRESETS.filter(function(q){return q.ado===state.ado;})[0];
+    document.getElementById("pdesc").textContent = p ? p.text : "ADO "+state.ado+"%이면 변이가 있는 칸의 약 "+(state.ado/2).toFixed(1)+"%가 0으로 보인다.";
+    Array.prototype.forEach.call(document.querySelectorAll("#presets button"), function(b){ b.setAttribute("aria-pressed", +b.dataset.ado===state.ado?"true":"false"); });
+    drawMatrix(res); drawSweep(sweep(fp, state.n, state.seed, 20));
+    document.getElementById("m-fn").textContent = res.nFN+"칸 ("+pct(res.fnFrac)+")";
+    document.getElementById("m-fp").textContent = res.nFP+"칸 ("+pct(res.fpFrac)+")";
+    document.getElementById("m-viol").textContent = res.viol+" / 120";
+    document.getElementById("m-ham").textContent = pct(res.ham);
+    document.getElementById("m-lik").textContent = pct(res.lik);
+    var v=document.getElementById("verdict"); v.innerHTML="";
+    [[res.viol===0, res.viol===0 ? "관측 행렬이 아직 완전한 계통수와 맞음" : "위반 쌍 "+res.viol+"개: 규칙을 그대로 적용하면 계통수가 없다"],
+     [res.lik<=res.ham, res.lik<res.ham ? "오류 모델이 오배정을 줄임" : (res.lik===res.ham ? "두 배정이 같음" : "이번 표본에서는 Hamming이 나음")],
+     [state.ado<=30, state.ado<=30 ? "ADO 30% 이하" : "ADO 30% 초과: 클론 수 과소추정 구간 (Gawad 2014)"],
+     [res.minClone>=3, "가장 작은 클론의 세포 "+res.minClone+"개"+(res.minClone>=3?"":": 2–3개 미만이면 클론으로 부르기 어렵다")]]
+     .forEach(function(t){ var s=document.createElement("span"); s.className="tag "+(t[0]?"good":"bad"); s.textContent=t[1]; v.appendChild(s); });
+  }
+  var box=document.getElementById("presets");
+  PRESETS.forEach(function(q){ var b=document.createElement("button"); b.type="button"; b.textContent=q.label; b.dataset.ado=q.ado; b.addEventListener("click",function(){ state.ado=q.ado; document.getElementById("ado").value=q.ado; render(); }); box.appendChild(b); });
+  document.getElementById("ado").addEventListener("input",function(e){ state.ado=+e.target.value; render(); });
+  document.getElementById("fp").addEventListener("input",function(e){ state.fpIdx=+e.target.value; render(); });
+  document.getElementById("ncell").addEventListener("input",function(e){ state.n=+e.target.value; render(); });
+  document.getElementById("reseed").addEventListener("click",function(){ state.seed=Math.floor(Math.random()*1e6); render(); });
+  window.addEventListener("resize", function(){ clearTimeout(window.__rt); window.__rt=setTimeout(render,120); });
+  if(window.matchMedia) window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", render);
+  render();
+})();
+</script>
+<script>
+(function(){
+  // Timeline of single-cell tumour-phylogeny methods by input, from the hub's method table.
+  var S="../10-Summaries/";
+  var DATA = [
+    ["SCITE",2016,"snv","jahn-2016-scite",0],["OncoNEM",2016,"snv","ross-2016-onconem",1],
+    ["SiFit",2017,"snv","zafar-2017-sifit",2],
+    ["SPhyR",2018,"snv","el-kebir-2018-sphyr",0],["SCIΦ",2018,"snv","singer-2018-sciphi",1],
+    ["PhISCS",2019,"snv","malikic-2019-phiscs",2],["SiCloneFit",2019,"snv","zafar-2019-siclonefit",0],
+    ["Scelestial",2022,"snv","foroughmand-2022-scelestial",0],["CellPhy",2022,"snv","kozlov-2022-cellphy",1],["SIEVE",2022,"snv","kang-2022-sieve",2],
+    ["ScisTree2",2025,"snv","zhang-2025-scistree2",0],
+    ["MEDALT",2021,"cna","wang-2021-medalt",0],["MEDICC2",2022,"cna","kaufmann-2022-medicc2",1],["SCICoNE",2025,"cna","kuipers-2025-scicone",0],
+    ["SCARLET",2020,"joint","satas-2020-scarlet",0],["COMPASS",2023,"joint","sollier-2023-compass",0]
+  ];
+  var LANES = {snv:{y:20,h:120,label:"SNV",col:"var(--a1)"}, cna:{y:150,h:60,label:"CNA",col:"var(--a2)"}, joint:{y:220,h:50,label:"SNV + CNA",col:"var(--ok)"}};
+  var x0=110, x1=720, y0=2016, y1=2025, NS="http://www.w3.org/2000/svg", svg=document.getElementById("timeline");
+  function X(y){ return x0+(x1-x0)*(y-y0)/(y1-y0); }
+  function el(t,a,txt){ var e=document.createElementNS(NS,t); for(var k in a) e.setAttribute(k,a[k]); if(txt) e.textContent=txt; svg.appendChild(e); return e; }
+  Object.keys(LANES).forEach(function(k){ var L=LANES[k];
+    el("rect",{x:x0-10,y:L.y,width:x1-x0+20,height:L.h,rx:6,fill:"none",stroke:"var(--line)"});
+    el("text",{x:8,y:L.y+L.h/2+5,"font-size":"14","font-weight":"600",fill:L.col},L.label); });
+  for(var y=y0;y<=y1;y++){ el("line",{x1:X(y),x2:X(y),y1:14,y2:274,stroke:"var(--line)","stroke-dasharray":"2 4"}); el("text",{x:X(y),y:292,"font-size":"12","text-anchor":"middle",fill:"var(--muted)"},String(y)); }
+  DATA.forEach(function(d){
+    var L=LANES[d[2]], i=d[4];
+    var cy=L.y+16+i*30, cx=X(d[1]);
+    var a=document.createElementNS(NS,"a"); a.setAttribute("href",S+d[3]); svg.appendChild(a);
+    var c=document.createElementNS(NS,"circle"); c.setAttribute("cx",cx); c.setAttribute("cy",cy); c.setAttribute("r",5); c.setAttribute("fill",L.col); a.appendChild(c);
+    var t=document.createElementNS(NS,"text"); t.setAttribute("x",cx+8); t.setAttribute("y",cy+4); t.setAttribute("font-size","12"); t.setAttribute("fill","currentColor"); t.textContent=d[0]; a.appendChild(t);
+  });
+})();
+</script>
+</body>
+</html>

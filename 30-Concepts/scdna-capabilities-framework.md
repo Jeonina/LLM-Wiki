@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > 이 framework는 scDNA-seq 응용을 fidelity, co-presence, phenotypic association이라는 세 가지 능력으로 나누고, 연구 질문이 어떤 능력을 요구하는지에 따라 방법을 고르게 한다 ([[10-Summaries/evrony-2021-scDNA-applications-review|Evrony 2021]]). 다만 정성적인 틀이어서 능력을 수치로 매기는 기준은 아직 없다 (synthesis).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 DNA 시퀀싱 입문](../60-Explainers/scdna-seq.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 The framework names three capabilities ([[10-Summaries/evrony-2021-scDNA-applications-review|Evrony 2021]]):

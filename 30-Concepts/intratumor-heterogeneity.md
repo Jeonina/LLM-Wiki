@@ -14,6 +14,15 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Intratumor heterogeneity는 한 종양 안의 세포들이 유전적·표현형적으로 서로 다른 정도이고, 측정되는 크기는 몇 개의 세포를 시퀀싱했는지에 크게 좌우된다 ([[10-Summaries/zahn-2017-dlp|Zahn 2017]]; [[10-Summaries/gawad-2014-all-clonal-origins|Gawad 2014]]). bulk 데이터는 비슷한 빈도의 clone을 구분하지 못하므로, 공존하는 여러 clone의 구조는 single-cell 데이터로만 드러난다 ([[10-Summaries/gawad-2014-all-clonal-origins|Gawad 2014]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [종양 계통수 시뮬레이터](../60-Explainers/cancer-clonal-evolution.html)
+>
+> [혈액암 교재](../60-Explainers/hematopoietic-malignancies.html)
+>
+> [암 연구의 scDNA-seq 교재](../60-Explainers/scdna-cancer-applications.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Intratumor heterogeneity is genetic and phenotypic variation between cells within one tumour (synthesis). It appears at the karyotype level: 56% of cells in a chromosomally unstable lymphoma carried a unique karyotype, invisible to array CGH on the same tumour ([[10-Summaries/bakker-2016-aneufinder|AneuFinder]]); see [[chromosomal-instability]]. It also appears at the point-mutation level: in breast cancer, aneuploid rearrangements arise early and remain highly stable through clonal expansion, while point mutations accumulate gradually — **two clocks running at different speeds in the same tumour** ([[10-Summaries/wang-2014-nuc-seq|Wang 2014]]). Clonality survives at the copy-number level and fails at the point-mutation level in the same cells; no two single tumour cells are genetically identical ([[10-Summaries/wang-2014-nuc-seq|Wang 2014]]).

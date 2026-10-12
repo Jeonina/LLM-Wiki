@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > DNA language model은 label 없이 DNA 서열만으로 masked-token 또는 next-token 예측을 학습한 모델이며, 그 표현을 고정해서 쓰거나 fine-tuning하거나 likelihood로 zero-shot 변이 점수를 매긴다 ([[10-Summaries/ji-2021-dnabert|DNABERT]]; [[10-Summaries/brixi-2026-evo2|Evo 2]]). 다만 supervised 모델이나 단순한 baseline을 실제로 넘어서는지는 아직 논쟁 중이고 ([[10-Summaries/sun-2026-succeed|SUCCEED]]; [[10-Summaries/sanabria-2024-grover|GROVER]]), single-cell genotype으로 학습한 모델은 아직 없다 (synthesis).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [서열 모델과 foundation model 교재](../60-Explainers/sequence-models-and-foundation-models.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 A DNA language model (DNA LM, also called a genome foundation model) learns from unlabelled sequence ([[10-Summaries/ji-2021-dnabert|DNABERT]]). Encoder models such as DNABERT mask tokens and predict them from both sides ([[10-Summaries/ji-2021-dnabert|DNABERT]]); decoder models such as HyenaDNA, GENERator and Evo 2 predict the next nucleotide or token ([[10-Summaries/nguyen-2023-hyenadna|HyenaDNA]]; [[10-Summaries/li-2026-generator|GENERator]]; [[10-Summaries/brixi-2026-evo2|Evo 2]]). Downstream use takes three forms: a small head on frozen embeddings, full or parameter-efficient fine-tuning, and zero-shot scoring from the model's own likelihoods ([[10-Summaries/dallatorre-2025-nucleotide-transformer|Nucleotide Transformer]]; [[10-Summaries/benegas-2025-gpn-msa|GPN-MSA]]).

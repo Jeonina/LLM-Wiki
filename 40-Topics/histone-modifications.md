@@ -1,6 +1,7 @@
 ---
 type: topic
 title: Histone modifications
+explainer: histone-modifications
 aliases: [chromatin marks, post-translational modifications, PTMs, single-cell chromatin, histone marks]
 tags: [chromatin, epigenetics, H3K27me3, H3K4me3, CUT&Tag, ChIC, MNase, enhancers, promoters]
 created: 2026-05-12
@@ -13,12 +14,17 @@ paper_section: ["3.4"]
 > Post-translational modifications of histone tails — methylation, acetylation, ubiquitylation, phosphorylation — that demarcate functional chromatin states ([[10-Summaries/klemm-2019-chromatin-accessibility-review|Klemm 2019]]).
 
 > [!abstract] 한눈에
-> 히스톤 꼬리의 변형은 promoter, enhancer, heterochromatin 같은 chromatin 상태를 표시하며, 이를 single cell에서 읽는 기술은 2019년 scChIC-seq와 CUT&Tag로 시작해 한 세포에서 여러 mark와 5mC를 함께 읽는 단계까지 왔다 ([[10-Summaries/klemm-2019-chromatin-accessibility-review|Klemm 2019]]; [[10-Summaries/ku-2019-scchic-seq|Ku 2019]]; [[10-Summaries/geisenberger-2025-scepi2-seq|scEpi²-seq]]). 그래도 세포당 감도는 여전히 낮고, 지금의 foundation model은 bulk 데이터로만 학습되어 single-cell histone 데이터를 입력으로 쓰지 않는다 ([[10-Summaries/bartosovic-2021-sccut-tag|Bartosovic 2021]]; [[10-Summaries/yu-2026-chrombert|ChromBERT]]).
+> 히스톤 꼬리의 변형은 promoter, enhancer, heterochromatin 같은 chromatin 상태를 표시하며, 이를 single cell에서 읽는 기술은 2015년 Drop-ChIP을 거쳐 2019년 scChIC-seq와 CUT&Tag로 실용화되었고, 지금은 한 세포에서 여러 mark와 5mC를 함께 읽는 단계까지 왔다 ([[10-Summaries/klemm-2019-chromatin-accessibility-review|Klemm 2019]]; [[10-Summaries/rotem-2015-drop-chip|Rotem 2015]]; [[10-Summaries/ku-2019-scchic-seq|Ku 2019]]; [[10-Summaries/geisenberger-2025-scepi2-seq|scEpi²-seq]]). 그래도 세포당 감도는 여전히 낮고, 지금의 foundation model은 bulk 데이터로만 학습되어 single-cell histone 데이터를 입력으로 쓰지 않는다 ([[10-Summaries/bartosovic-2021-sccut-tag|Bartosovic 2021]]; [[10-Summaries/yu-2026-chrombert|ChromBERT]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 히스톤 변형](../60-Explainers/histone-modifications.html)
+<!-- /explainer-links -->
 
 ## Key points
 
 - **Each mark reports a chromatin state.** H3K4me3 marks active promoters, H3K27ac separates active from poised enhancers, and H3K27me3 and H3K9me3 mark facultative and constitutive heterochromatin ([[10-Summaries/klemm-2019-chromatin-accessibility-review|Klemm 2019]]; [[10-Summaries/creyghton-2010-h3k27ac-enhancers|Creyghton 2010]]).
-- **Single-cell profiling moved from one mark to several marks and modalities per cell.** It began in 2019 with scChIC-seq and scCUT&Tag, reached droplet-scale tissue profiling in 2021, and now reads two marks, marks plus 5mC, or marks plus RNA and surface protein in the same cell ([[10-Summaries/ku-2019-scchic-seq|Ku 2019]]; [[10-Summaries/kaya-okur-2019-cut-and-tag|Kaya-Okur 2019]]; [[10-Summaries/bartosovic-2021-sccut-tag|Bartosovic 2021]]; [[10-Summaries/yeung-2023-scchix-seq|scChIX-seq]]; [[10-Summaries/geisenberger-2025-scepi2-seq|scEpi²-seq]]; [[10-Summaries/schwager-2026-onecell-cut-tag|OneCell CUT&Tag]]).
+- **Single-cell profiling moved from one mark to several marks and modalities per cell.** It began with Drop-ChIP in 2015 ([[10-Summaries/rotem-2015-drop-chip|Rotem 2015]]), became practical in 2019 with scChIC-seq and scCUT&Tag, reached droplet-scale tissue profiling in 2021, and now reads two marks, marks plus 5mC, or marks plus RNA and surface protein in the same cell ([[10-Summaries/ku-2019-scchic-seq|Ku 2019]]; [[10-Summaries/kaya-okur-2019-cut-and-tag|Kaya-Okur 2019]]; [[10-Summaries/bartosovic-2021-sccut-tag|Bartosovic 2021]]; [[10-Summaries/yeung-2023-scchix-seq|scChIX-seq]]; [[10-Summaries/geisenberger-2025-scepi2-seq|scEpi²-seq]]; [[10-Summaries/schwager-2026-onecell-cut-tag|OneCell CUT&Tag]]).
 - **Per-cell sensitivity is the recurring constraint.** Single-cell histone profiling has lagged scRNA-seq and scATAC-seq in sensitivity and throughput ([[10-Summaries/bartosovic-2021-sccut-tag|Bartosovic 2021]]), and even bulk CUT&Tag recovers only ~54% of ENCODE ChIP-seq peaks ([[10-Summaries/abbasova-2025-cut-tag-encode-benchmark|Abbasova 2025]]).
 - **Analysis choices matter more than method novelty.** In scHPTM pipelines bin size dominates, TF-IDF/LSI wins and feature selection hurts ([[10-Summaries/raimundo-2023-schptm-benchmark|Raimundo 2023]]); no tested imputer improves both signal and clustering ([[10-Summaries/morenogonzalez-2025-schistone-imputation|Moreno-González 2025]]).
 - **Sequence and foundation models are trained on bulk histone data only.** CANDI and ChromBERT take no single-cell histone input ([[10-Summaries/foroozandeh-2025-candi|CANDI]]; [[10-Summaries/yu-2026-chrombert|ChromBERT]]), and no scHPTM-specific or pretrained model was available to benchmark ([[10-Summaries/morenogonzalez-2025-schistone-imputation|Moreno-González 2025]]).
@@ -75,10 +81,11 @@ Histone marks are not independent of other regulatory axes:
 
 ## Single-cell profiling methods
 
-Single-cell profiling of histone marks emerged around 2019 with scChIC-seq and iCell8 scCUT&Tag, was scaled to droplet-based tissue profiling in 2021, and has expanded into multi-mark and multimodal readouts ([[10-Summaries/ku-2019-scchic-seq|Ku 2019]]; [[10-Summaries/kaya-okur-2019-cut-and-tag|Kaya-Okur 2019]]; [[10-Summaries/bartosovic-2021-sccut-tag|Bartosovic 2021]]; [[10-Summaries/yeung-2023-scchix-seq|scChIX-seq]]; [[10-Summaries/geisenberger-2025-scepi2-seq|scEpi²-seq]]; [[10-Summaries/janssens-2023-scicut-tag|Janssens 2023]]; [[10-Summaries/tavares-2026-6-base-cut-tag|Tavares 2026]]). Methods split into an MNase branch ([[30-Concepts/chic-seq|ChIC]], [[30-Concepts/sortchic|sortChIC]] — FACS-integrated single-cell ChIC) and a Tn5 branch ([[30-Concepts/cut-and-tag|CUT&Tag]]) (synthesis).
+Single-cell profiling of histone marks began with droplet-based Drop-ChIP in 2015 ([[10-Summaries/rotem-2015-drop-chip|Rotem 2015]]), became practical in 2019 with scChIC-seq and iCell8 scCUT&Tag, was scaled to droplet-based tissue profiling in 2021, and has expanded into multi-mark and multimodal readouts ([[10-Summaries/ku-2019-scchic-seq|Ku 2019]]; [[10-Summaries/kaya-okur-2019-cut-and-tag|Kaya-Okur 2019]]; [[10-Summaries/bartosovic-2021-sccut-tag|Bartosovic 2021]]; [[10-Summaries/yeung-2023-scchix-seq|scChIX-seq]]; [[10-Summaries/geisenberger-2025-scepi2-seq|scEpi²-seq]]; [[10-Summaries/janssens-2023-scicut-tag|Janssens 2023]]; [[10-Summaries/tavares-2026-6-base-cut-tag|Tavares 2026]]). Methods split into an MNase branch ([[30-Concepts/chic-seq|ChIC]], [[30-Concepts/sortchic|sortChIC]] — FACS-integrated single-cell ChIC) and a Tn5 branch ([[30-Concepts/cut-and-tag|CUT&Tag]]) (synthesis).
 
 | Method | Year | Enzyme | Readout | Note |
 |---|---|---|---|---|
+| [[10-Summaries/rotem-2015-drop-chip\|Drop-ChIP]] | 2015 | MNase | One mark | Droplet barcoding of MNase-digested chromatin before ChIP; ~1,000 sites per cell ([[10-Summaries/rotem-2015-drop-chip\|Rotem 2015]]) |
 | [[30-Concepts/scchic-seq\|scChIC-seq]] ([[10-Summaries/ku-2019-scchic-seq\|Ku 2019]]) | 2019 | MNase | One mark | First single-cell ChIC ([[10-Summaries/ku-2019-scchic-seq\|Ku 2019]]) |
 | [[10-Summaries/wang-2019-cobatch\|CoBATCH]] | 2019 | PA-Tn5 | Histone marks, chromatin-binding proteins | In situ ChIP + combinatorial indexing; H3K27ac across endothelial cells from 10 embryonic organs ([[10-Summaries/wang-2019-cobatch\|CoBATCH]]) |
 | [[10-Summaries/rooijers-2019-scdamt-seq\|scDam&T-seq]] | 2019 | — | Lamina contact, accessibility or Polycomb (RING1B) occupancy + transcriptome | Measured in single mESCs; allelic RING1B enrichment marks the inactive X ([[10-Summaries/rooijers-2019-scdamt-seq\|scDam&T-seq]]) |
@@ -91,7 +98,7 @@ Single-cell profiling of histone marks emerged around 2019 with scChIC-seq and i
 | [[30-Concepts/scicut-tag\|sciCUT&Tag]] / [[30-Concepts/multi-tag\|MulTI-Tag]] ([[10-Summaries/janssens-2023-scicut-tag\|Janssens 2023]]) | 2023 | Tn5 | One or several epitopes | Combinatorial indexing at 40k cells/chip; MulTI-Tag for multi-epitope ([[10-Summaries/janssens-2023-scicut-tag\|Janssens 2023]]) |
 | [[10-Summaries/li-2024-scnanoseq-cut-tag\|scNanoSeq-CUT&Tag]] | 2024 | Tn5 | Histone marks, TFs, long reads | Profiles repeats, blacklist regions and allele-specific peaks ([[10-Summaries/li-2024-scnanoseq-cut-tag\|Li 2024]]) |
 | [[30-Concepts/scepi2-seq\|scEpi²-seq]] ([[10-Summaries/geisenberger-2025-scepi2-seq\|Geisenberger 2025]]) | 2025 | MNase | Mark + 5mC | sortChIC + TAPS ([[10-Summaries/geisenberger-2025-scepi2-seq\|Geisenberger 2025]]) |
-| [[30-Concepts/6-base-cut-and-tag\|6-base-CUT&Tag]] ([[10-Summaries/tavares-2026-6-base-cut-tag\|Tavares 2026]]) | 2026 | Tn5 | 5mC + 5hmC + mark per fragment | ([[10-Summaries/tavares-2026-6-base-cut-tag\|Tavares 2026]]) |
+| [[30-Concepts/6-base-cut-and-tag\|6-base-CUT&Tag]] ([[10-Summaries/tavares-2026-6-base-cut-tag\|Tavares 2026]]) | 2026 | Tn5 | 5mC + 5hmC + mark per fragment | Bulk so far; single-cell extension not yet demonstrated ([[10-Summaries/tavares-2026-6-base-cut-tag\|Tavares 2026]]) |
 | [[10-Summaries/schwager-2026-onecell-cut-tag\|OneCell CUT&Tag]] | 2026 | Tn5 | Chromatin + RNA + surface markers | Plate-based, starts from single cells; benchmarked against sortChIC, scChIP-seq and 10x scCUT&Tag ([[10-Summaries/schwager-2026-onecell-cut-tag\|Schwager 2026]]) |
 | [[10-Summaries/shi-2026-dechic-seq\|DeChIC-seq]] | 2026 | Deaminase | Histone marks + TF binding | Single-blastomere resolution ([[10-Summaries/shi-2026-dechic-seq\|Shi 2026]]) |
 
@@ -152,7 +159,7 @@ Reviews:
 
 ## All sources on this page
 
-> [!info]- 37 summaries cited here
+> [!info]- 38 summaries cited here
 > - [[10-Summaries/abbasova-2025-cut-tag-encode-benchmark|Abbasova 2025]]
 > - [[10-Summaries/ahn-2021-llps-cancer-looping|Ahn 2021]]
 > - [[10-Summaries/andrew-2011-cellresearch|Bannister & Kouzarides 2011]]
@@ -177,6 +184,7 @@ Reviews:
 > - [[10-Summaries/raimundo-2023-schptm-benchmark|Raimundo 2023]]
 > - [[10-Summaries/roadmap-2015-111-epigenomes|Roadmap Epigenomics 2015]]
 > - [[10-Summaries/rooijers-2019-scdamt-seq|Rooijers 2019]]
+> - [[10-Summaries/rotem-2015-drop-chip|Rotem 2015]]
 > - [[10-Summaries/rothbart-2014-histone-dna-language|Rothbart & Strahl 2014]]
 > - [[10-Summaries/schwager-2026-onecell-cut-tag|Schwager 2026]]
 > - [[10-Summaries/shi-2026-dechic-seq|Shi 2026]]

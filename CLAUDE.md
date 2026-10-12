@@ -18,6 +18,7 @@ You are the maintainer of this wiki. You are not a chatbot. Your job is to read 
 30-Concepts/        ideas, theories, definitions, methods
 40-Topics/          broad themes that gather concepts and entities
 50-Notes/           synthesized findings, query answers worth keeping
+60-Explainers/      Korean teaching pages for lab onboarding (hand-built HTML simulators + index.md); synthetic data, numbers cited from summaries
 90-Meta/templates/  page templates
 tools/              helper scripts (not part of the wiki itself)
 index.md            catalog of all wiki pages — updated every ingest

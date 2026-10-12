@@ -14,6 +14,13 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > JAK2 V617F는 cytokine 없이도 JAK2–STAT 신호를 켜는 점돌연변이로, MPN의 가장 흔한 driver다 ([[10-Summaries/izzo-2024-got-cha|GoT–ChA]]). GoT–ChA는 돌연변이 HSC가 염증성 chromatin priming을 세포 내재적으로 갖는다는 것을 보였고, 이것이 clonal expansion의 원인인지 결과인지는 아직 열려 있다 ([[10-Summaries/izzo-2024-got-cha|GoT–ChA]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [클론성 조혈 교재](../60-Explainers/clonal-hematopoiesis.html)
+>
+> [혈액암 교재](../60-Explainers/hematopoietic-malignancies.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 JAK2 normally requires cytokine receptor engagement (EPO, TPO, G-CSF, etc.) to signal. The V617F mutation in the JH2 pseudokinase domain releases the kinase's auto-inhibition, producing constitutive activation and downstream phosphorylation of STAT3, STAT5, and STAT1 ([[10-Summaries/izzo-2024-got-cha|GoT–ChA]]).

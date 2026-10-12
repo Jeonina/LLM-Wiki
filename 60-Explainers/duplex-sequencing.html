@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Duplex sequencing 시뮬레이터</title>
+<link rel="stylesheet" href="explainer.css">
+</head>
+<body>
+<main>
+<div class="crumb"><a href="../">scDNA wiki</a> · <a href="./">교재</a> · Duplex sequencing</div>
+<h1>두 가닥이 모두 동의할 때만 믿는다: duplex sequencing은 왜 오류를 지우는가</h1>
+<p class="lede">정상 조직의 체세포 변이는 대부분 세포 하나에만 있어서, bulk DNA에서 보면 빈도가 시퀀싱 오류보다 훨씬 낮다. Duplex sequencing은 한 분자의 두 가닥을 따로 읽고 둘이 같은 변이를 가질 때만 받아들여, 이 희귀 변이를 오류와 구분한다. 아래 시뮬레이터에서 오류의 원천을 바꿔 가며 어느 단계가 무엇을 걸러내는지 직접 보자.</p>
+
+<div class="callouts">
+  <div class="callout"><b>오류는 한 가닥에, 변이는 두 가닥에</b>polymerase 오류와 시퀀싱 오류는 한 가닥에만 생기지만, 진짜 변이는 Watson·Crick 두 가닥에 모두 있다. 두 가닥의 일치를 요구하면 한 가닥짜리 오류가 빠진다.</div>
+  <div class="callout"><b>한 가닥 consensus로는 손상을 못 거른다</b>같은 UMI를 가진 read를 모아 만든 single-strand consensus(SSCS)는 시퀀싱 오류를 대부분 지우지만, 손상된 염기를 첫 PCR cycle에서 잘못 복사한 오류는 family 전체에 퍼져 그대로 남는다.</div>
+  <div class="callout"><b>정확도에는 대가가 있다</b>분자 하나를 부르는 데 read가 많이 들고, 대부분의 방법은 bulk DNA를 읽어 변이를 특정 세포에 배정하지 못한다. 한 가닥에만 있는 손상 자체도 보지 못한다.</div>
+</div>
+
+<h2>시뮬레이터</h2>
+<div class="lab" id="lab">
+  <p class="desc">비교할 실제 변이 빈도 (점선)</p>
+  <div class="controls">
+    <div class="methods" role="group" aria-label="비교할 실제 변이 빈도" id="targets"></div>
+  </div>
+  <p class="desc">DCS에 더할 체계적 오류 바닥 (end repair·mapping 등 두 가닥 독립 가정이 깨지는 오류)</p>
+  <div class="controls">
+    <div class="methods" role="group" aria-label="체계적 오류 바닥" id="floors"></div>
+  </div>
+  <div class="controls">
+    <label class="slider">PCR 오류율 (복사 1회·염기당) <input type="range" id="eps" min="0" max="100" value="50"> <span id="epsv"></span></label>
+    <label class="slider">단일가닥 손상률 (염기당) <input type="range" id="dmg" min="0" max="100" value="63"> <span id="dmgv"></span></label>
+    <label class="slider">가닥당 family 크기 <input type="range" id="fam" min="1" max="12" step="1" value="6"> <span id="famv"></span></label>
+  </div>
+  <p class="desc" id="mdesc"></p>
+
+  <p class="plotlabel">① 단계별 위양성 빈도 (염기당, log 눈금). 점선은 선택한 실제 변이 빈도다. DCS 막대 안의 짧은 선은 체계적 오류를 빼고 계산한 이론값이다.</p>
+  <canvas class="plot" id="bars" height="220"></canvas>
+  <p class="plotlabel">② family 크기에 따른 위양성 빈도. <span style="color:var(--a1)">■</span> SSCS · <span style="color:var(--a2)">■</span> DCS · 세로선이 현재 설정이다.</p>
+  <canvas class="plot" id="curve" height="190"></canvas>
+
+  <div class="metrics">
+    <div class="metric"><div class="k">raw read 위양성 (/Mb)</div><div class="v" id="m-raw">–</div></div>
+    <div class="metric"><div class="k">SSCS 위양성 (/Mb)</div><div class="v" id="m-sscs">–</div></div>
+    <div class="metric"><div class="k">DCS 위양성 (/Mb)</div><div class="v" id="m-dcs">–</div></div>
+    <div class="metric"><div class="k">DCS 위양성 ÷ 실제 변이</div><div class="v" id="m-ratio">–</div></div>
+    <div class="metric"><div class="k">duplex 하나의 최소 read 수</div><div class="v" id="m-reads">–</div></div>
+  </div>
+  <div class="verdict" id="verdict"></div>
+</div>
+
+<div class="note"><b>이 시뮬레이터는 장난감 모델이다.</b> raw read의 오류는 시퀀싱 오류, PCR 오류, 단일가닥 손상의 합으로 두었다. SSCS는 family의 90% 이상이 같은 염기일 때만 호출하고(Schmitt 2012의 규칙), cycle k의 PCR 오류는 family의 2<sup>−k</sup>를 차지한다고 보며, 손상은 첫 복사에서 family 전체로 고정된다고 가정했다. DCS의 이론값은 두 SSCS 오류율의 곱 × 1/3이다. PCR cycle 수(18)와 SSCS 규칙은 Schmitt 2012에서, 기본 family 크기 6은 Kennedy 2014의 최적 peak family size에서 가져왔다. 시퀀싱 오류와 기본 손상률은 Schmitt 2012의 M13 결과(raw 3.8×10⁻³, SSCS 3.4×10⁻⁵, DCS 이론 바닥 3.8×10⁻¹⁰)가 재현되도록 맞췄다. 체계적 오류 바닥은 UDSeq 표(Nandi 2025)의 원조 방법 약 2×10⁻⁷과 NanoSeq의 10⁹ bp당 5개 미만(Abascal 2021)을 썼다. PCR 오류율 기본값은 예시 값이다. 화면의 숫자를 논문 수치로 인용하면 안 된다. 실제 값은 아래 표를 보자.</div>
+
+<h2>핵심 내용</h2>
+<ol class="steps">
+  <li><b>한 가닥 read에는 세 종류의 오류가 섞인다.</b> 시퀀싱 오류, PCR polymerase 오류, 그리고 손상된 염기를 잘못 복사해 생긴 오류다. 표준 분석에서는 이것들이 진짜 변이와 구분되지 않는다 (<a href="../10-Summaries/schmitt-2012-pnas">Schmitt 2012</a>). 세포 하나는 하루에 약 70,000개의 단일가닥 손상을 입는다 (<a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a>).</li>
+  <li><b>UMI로 분자를 묶으면 시퀀싱 오류가 빠진다.</b> 같은 tag를 가진 read를 모아 SSCS를 만들면 시퀀싱 오류의 약 99%가 교정된다. 하지만 M13 DNA에서 SSCS의 변이 빈도는 3.4×10⁻⁵로 기준값보다 약 10배 높았고, 남은 변이는 8-oxo-G에 의한 G→T와 cytosine 탈아미노화에 의한 C→T가 지배했다 (<a href="../10-Summaries/schmitt-2012-pnas">Schmitt 2012</a>). 시뮬레이터에서 family 크기를 키워도 SSCS가 손상률 아래로 내려가지 않는 이유다.</li>
+  <li><b>두 가닥의 일치를 요구하면 손상도 빠진다.</b> 상보적인 이중가닥 tag로 두 가닥을 따로 추적해 둘이 맞는 염기만 남긴 것이 duplex consensus(DCS)다. M13에서 DCS는 2.5×10⁻⁶으로 유전학적 기준값 3.0×10⁻⁶과 거의 같았다. 이론적 바닥은 (3.4×10⁻⁵)²×1/3 ≈ 3.8×10⁻¹⁰이지만 측정값이 아니라 계산값이다 (<a href="../10-Summaries/schmitt-2012-pnas">Schmitt 2012</a>). 나중의 경험적 추정은 원조 방법을 약 2×10⁻⁷으로 본다 (<a href="../10-Summaries/nandi-2025-udseq">Nandi 2025</a>).</li>
+  <li><b>이론과 실측의 틈은 두 가닥이 독립이라는 가정에서 생긴다.</b> End repair처럼 한 가닥을 다른 가닥에 복사하는 단계와 mapping 오류는 두 가닥에 같은 오류를 만든다. NanoSeq은 end repair를 피해 10⁹ bp당 5개 미만의 오류율을 보였다 (<a href="../10-Summaries/abascal-2021-nanoseq">Abascal 2021</a>). 시뮬레이터의 "체계적 오류 바닥" 버튼이 이 틈을 나타낸다.</li>
+  <li><b>남은 과제는 효율이다.</b> 원조 프로토콜은 DCS 하나에 raw read 약 40개가 들어 1 Mb 미만의 표적에 적합했다 (<a href="../10-Summaries/kennedy-2014-duplex-protocol">Kennedy 2014</a>). BotSeqS는 PCR 전에 library를 희석해 genome 전체에서 두 가닥을 함께 읽게 했고 (<a href="../10-Summaries/hoang-2016-botseqs">Hoang 2016</a>), CODEC은 두 가닥을 한 분자로 이어 read 한 쌍으로 consensus를 만들어 read를 최대 100배 줄였다 (<a href="../10-Summaries/bae-2023-codec">Bae 2023</a>). UDSeq은 100 pg 입력까지 내려갔다 (<a href="../10-Summaries/nandi-2025-udseq">Nandi 2025</a>).</li>
+  <li><b>경계: 단일가닥 사건과 세포 정보.</b> Duplex 방법은 읽기 전에 증폭하므로 단일가닥 병변을 이중가닥 변이로 바꾸거나 가짜를 만든다. 증폭 없이 PacBio로 가닥마다 여러 번 읽는 HiDEF-seq는 NanoSeq의 ssDNA call 부담이 약 18배 높고 대부분 artifact임을 보였다 (<a href="../10-Summaries/liu-2024-hidef-seq">Liu 2024</a>). 대부분의 duplex는 bulk DNA를 읽는다. META-CS는 단일세포에서 두 가닥 일치로 SNV를 부르고 (<a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a>), Duplex-Multiome은 같은 핵에서 sSNV, 염색질 접근성, RNA를 함께 읽는다 (<a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>).</li>
+</ol>
+
+<h2>방법의 계보</h2>
+<figure class="fig">
+<svg viewBox="0 0 900 300" role="img" aria-label="duplex sequencing 방법의 연도별 계보. 전략별 네 줄에 2012년부터 2025년까지의 방법을 배치했다.">
+  <g font-size="14" fill="currentColor" font-family="inherit">
+    <!-- lane labels -->
+    <text x="8" y="64" fill="var(--muted)">Y-adaptor·bottleneck</text>
+    <text x="8" y="124" fill="var(--muted)">Tn5 가닥 표지</text>
+    <text x="8" y="184" fill="var(--muted)">quadruplex adaptor</text>
+    <text x="8" y="244" fill="var(--muted)">circularized</text>
+    <!-- lane rules -->
+    <g stroke="var(--line)" stroke-width="1">
+      <line x1="170" y1="60" x2="890" y2="60"/><line x1="170" y1="120" x2="890" y2="120"/>
+      <line x1="170" y1="180" x2="890" y2="180"/><line x1="170" y1="240" x2="890" y2="240"/>
+    </g>
+    <!-- year axis -->
+    <g fill="var(--muted)" font-size="12" text-anchor="middle">
+      <text x="208" y="290">2012</text><text x="304" y="290">2014</text><text x="400" y="290">2016</text>
+      <text x="496" y="290">2018</text><text x="592" y="290">2020</text><text x="688" y="290">2022</text><text x="784" y="290">2024</text>
+    </g>
+    <line x1="170" y1="272" x2="890" y2="272" stroke="var(--muted)" stroke-width="1"/>
+    <!-- benchmark marker -->
+    <line x1="872" y1="30" x2="872" y2="262" stroke="var(--muted)" stroke-dasharray="4 4"/>
+    <text x="866" y="24" font-size="12" fill="var(--muted)" text-anchor="end">SMaHT 6개 방법 비교 (2025)</text>
+    <!-- lineage arrows lane 1 -->
+    <g stroke="var(--accent)" stroke-width="1.5" fill="none">
+      <line x1="208" y1="60" x2="832" y2="60"/>
+    </g>
+    <!-- bulk methods: accent; single-cell: warn -->
+    <g fill="var(--accent)">
+      <circle cx="208" cy="60" r="7"/><circle cx="304" cy="60" r="5"/><circle cx="400" cy="60" r="7"/>
+      <circle cx="640" cy="60" r="7"/><circle cx="832" cy="60" r="7"/>
+      <circle cx="736" cy="180" r="7"/>
+      <circle cx="688" cy="240" r="7"/><circle cx="784" cy="240" r="7"/>
+    </g>
+    <g fill="var(--warn)">
+      <circle cx="640" cy="120" r="7"/><circle cx="832" cy="120" r="7"/>
+    </g>
+    <g text-anchor="middle" font-weight="600">
+      <text x="208" y="46">Duplex Seq</text><text x="304" y="46" font-weight="400">protocol</text><text x="400" y="46">BotSeqS</text>
+      <text x="640" y="46">NanoSeq</text><text x="832" y="46">UDSeq</text>
+      <text x="640" y="106">META-CS</text><text x="822" y="106">Duplex-Multiome</text>
+      <text x="736" y="166">CODEC</text>
+      <text x="688" y="226">SMM-seq</text><text x="784" y="226">HiDEF-seq</text>
+    </g>
+    <g text-anchor="middle" font-size="12" fill="var(--muted)">
+      <text x="208" y="80">상보 tag</text><text x="400" y="80">희석, 끝 좌표 family</text>
+      <text x="640" y="80">end repair 회피</text><text x="832" y="80">100 pg, 무작위 절단</text>
+      <text x="640" y="140">단일세포 scWGA</text><text x="822" y="140">단일 핵, 10x ATAC</text>
+      <text x="736" y="200">두 가닥을 한 read 쌍에</text>
+      <text x="688" y="260">pulse-RCA, Illumina</text><text x="784" y="260">PacBio, 증폭 없음</text>
+    </g>
+  </g>
+</svg>
+<figcaption>Duplex 방법을 Shao 2025의 네 가지 구현 전략으로 나눠 발표 연도에 놓았다. 파란 점은 bulk DNA를 읽는 방법, 주황 점은 세포 또는 핵 단위로 변이를 부르는 방법이다. UDSeq은 NanoSeq·BotSeqS의 bottleneck 접근에서 출발한 library prep이라 첫 줄에 두었다. 출처: <a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a>, <a href="../10-Summaries/schmitt-2012-pnas">Schmitt 2012</a>, <a href="../10-Summaries/kennedy-2014-duplex-protocol">Kennedy 2014</a>, <a href="../10-Summaries/hoang-2016-botseqs">Hoang 2016</a>, <a href="../10-Summaries/abascal-2021-nanoseq">Abascal 2021</a>, <a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a>, <a href="../10-Summaries/maslov-2022-smm-seq">Maslov 2022</a>, <a href="../10-Summaries/bae-2023-codec">Bae 2023</a>, <a href="../10-Summaries/liu-2024-hidef-seq">Liu 2024</a>, <a href="../10-Summaries/nandi-2025-udseq">Nandi 2025</a>, <a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>, <a href="../10-Summaries/zhang-2025-smaht-duplex-benchmark">Zhang 2025</a>.</figcaption>
+</figure>
+
+<h2>실제 측정값</h2>
+<p class="desc">오류율은 계산값(이론 바닥), 내부 대조로 잰 값, 정자의 de novo 변이율에 맞춰 추정한 값이 섞여 있어 직접 비교하면 안 된다. 같은 방법에 대해 엇갈리는 값은 함께 적었다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>방법</th><th>보고된 값</th><th>성격</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>Duplex Sequencing (원조)</td><td>M13: raw 3.8×10⁻³ → SSCS 3.4×10⁻⁵ → DCS 2.5×10⁻⁶ (기준 3.0×10⁻⁶) · 이론 바닥 3.8×10⁻¹⁰ · 원조 방법 약 2×10⁻⁷ (UDSeq 표)</td><td>측정 · 계산 · 경험적 재평가</td><td><a href="../10-Summaries/schmitt-2012-pnas">Schmitt 2012</a> · <a href="../10-Summaries/nandi-2025-udseq">Nandi 2025</a></td></tr>
+<tr><td>DS 프로토콜</td><td>인간 핵 DNA에서 5×10⁻⁸까지 · DCS 하나에 raw read 약 40개 · peak family size 6이 최적</td><td>측정</td><td><a href="../10-Summaries/kennedy-2014-duplex-protocol">Kennedy 2014</a></td></tr>
+<tr><td>BotSeqS</td><td>위양성률 2.6×10⁻¹²/bp (가닥 불일치 germline call로 추정) · 약 2×10⁻⁷ (UDSeq 표) · 두 가닥 조건 없이는 핵 변이 빈도가 약 10배 높음</td><td>내부 대조 · 경험적 재평가</td><td><a href="../10-Summaries/hoang-2016-botseqs">Hoang 2016</a> · <a href="../10-Summaries/nandi-2025-udseq">Nandi 2025</a></td></tr>
+<tr><td>NanoSeq</td><td>10⁹ bp당 오류 5개 미만 · 같은 정자 기준으로 약 4.8×10⁻⁹ · 제한효소판은 genome의 30–40%만 덮음</td><td>측정 · 재평가</td><td><a href="../10-Summaries/abascal-2021-nanoseq">Abascal 2021</a> · <a href="../10-Summaries/nandi-2025-udseq">Nandi 2025</a> · <a href="../10-Summaries/zhang-2025-smaht-duplex-benchmark">Zhang 2025</a></td></tr>
+<tr><td>META-CS</td><td>위양성률 상한 약 2.4×10⁻⁸ · 가닥 표지 전환율 2.3×10⁻⁵ · 가닥별 검출 효율 약 16%</td><td>측정 (상한)</td><td><a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a></td></tr>
+<tr><td>SMM-seq</td><td>절대 오류율 측정 없음 · 가닥당 family 7 read에서 겉보기 변이 빈도가 평탄해짐</td><td>경험적 기준</td><td><a href="../10-Summaries/maslov-2022-smm-seq">Maslov 2022</a></td></tr>
+<tr><td>CODEC</td><td>NGS보다 약 1,000배 정확, read 최대 100배 절감 · 39세 정자 변이 빈도 2.72×10⁻⁸ · UDSeq 표: 1×10⁻⁷ (CODEC), 3×10⁻⁸ (HpyCH4V판)</td><td>측정 · 재평가</td><td><a href="../10-Summaries/bae-2023-codec">Bae 2023</a> · <a href="../10-Summaries/nandi-2025-udseq">Nandi 2025</a></td></tr>
+<tr><td>HiDEF-seq</td><td>가닥당 ≥5 pass에서 3×10¹³ bp당 1개 미만, ≥20 pass에서 1×10¹⁴ bp당 1개 미만 · 리뷰 표기 약 7×10⁻¹⁶ · 정자 기준 재평가 4.3×10⁻⁹</td><td>추정 · 리뷰 · 재평가</td><td><a href="../10-Summaries/liu-2024-hidef-seq">Liu 2024</a> · <a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a> · <a href="../10-Summaries/nandi-2025-udseq">Nandi 2025</a></td></tr>
+<tr><td>UDSeq</td><td>약 2.5×10⁻⁹/bp (정자 회귀 절편으로 추정) · 최소 입력 100 pg</td><td>경험적 추정</td><td><a href="../10-Summaries/nandi-2025-udseq">Nandi 2025</a></td></tr>
+<tr><td>Duplex-Multiome</td><td>duplex consensus로 오류 10,000배 이상 감소 · duplex 없이는 엄격한 기준으로도 10⁻⁵에 머묾</td><td>측정</td><td><a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a></td></tr>
+<tr><td>방법 간 비교 (제대혈)</td><td>NanoSeq·CompDuplex-seq·HiDEF-seq 약 1×10⁻⁸ 대 VISTA-seq·CODEC·ppmSeq 약 2.6×10⁻⁸</td><td>같은 시료 비교</td><td><a href="../10-Summaries/zhang-2025-smaht-duplex-benchmark">Zhang 2025</a></td></tr>
+</tbody></table></div>
+
+<h2>목적별로 고르기</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>알고 싶은 것</th><th>우선 고려</th><th>확인할 위험</th></tr></thead>
+<tbody>
+<tr><td>정상 조직의 체세포 SNV 부담과 signature</td><td>NanoSeq, UDSeq 등 bulk duplex</td><td>변이를 세포에 배정하지 못함. 제한효소 절단판은 genome의 30–40%만 봄 (<a href="../10-Summaries/zhang-2025-smaht-duplex-benchmark">Zhang 2025</a>)</td></tr>
+<tr><td>적은 read로 넓은 영역, cfDNA</td><td>CODEC</td><td>productive duplex recovery 약 25–36% (<a href="../10-Summaries/zhang-2025-smaht-duplex-benchmark">Zhang 2025</a>)</td></tr>
+<tr><td>극소량 시료</td><td>UDSeq (100 pg)</td><td>오류율이 정자 회귀 절편의 외삽에 기댐 (<a href="../10-Summaries/nandi-2025-udseq">Nandi 2025</a>)</td></tr>
+<tr><td>단일가닥 손상, mismatch 전구체</td><td>HiDEF-seq</td><td>다른 duplex의 ssDNA call은 artifact가 많음 (<a href="../10-Summaries/liu-2024-hidef-seq">Liu 2024</a>). 입력이 500 ng–1.5 µg (<a href="../10-Summaries/nandi-2025-udseq">Nandi 2025</a>)</td></tr>
+<tr><td>세포별 변이</td><td>META-CS, Duplex-Multiome</td><td>가닥별 검출 효율 약 16%라 부담은 큰 보정값에 기댐 (<a href="../10-Summaries/xing-2021-meta-cs">Xing 2021</a>). 열린 염색질에서만 부르므로 세포 유형 단위로 추정 (<a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>)</td></tr>
+<tr><td>단일세포 변이 call 검증</td><td>표적 duplex sequencing</td><td>nuc-seq에서 단일세포에만 있던 call은 19.4–27.0%만 검증됨 (<a href="../10-Summaries/wang-2014-nuc-seq">Wang 2014</a>; <a href="../10-Summaries/luquette-2025-pta-duplex-mosaicism">Luquette 2025</a>)</td></tr>
+<tr><td>구조 변이, CNV</td><td>duplex가 아닌 다른 방법</td><td>chimeric read가 진짜 체세포 SV보다 많음 (<a href="../10-Summaries/zhang-2025-smaht-duplex-benchmark">Zhang 2025</a>)</td></tr>
+</tbody></table></div>
+
+<h2>읽는 순서</h2>
+<ol class="path">
+  <li><a href="../40-Topics/duplex-sequencing">Duplex sequencing (hub)</a> — 방법 표와 benchmark, 한계를 한 장에 모은 출발점이다.</li>
+  <li><a href="../30-Concepts/umi-molecular-barcoding">UMI molecular barcoding</a> — read를 원래 분자로 묶는 원리를 먼저 잡는다.</li>
+  <li><a href="../30-Concepts/nanoseq">NanoSeq</a> — 이론 바닥과 실측 사이의 틈을 어떻게 메웠는지 본다.</li>
+  <li><a href="../30-Concepts/hidef-seq">HiDEF-seq</a> — duplex가 보지 못하는 단일가닥 사건을 이해한다.</li>
+  <li><a href="../10-Summaries/schmitt-2012-pnas">Schmitt 2012</a> — raw, SSCS, DCS의 오류 사다리와 손상 신호를 원 논문 수준에서 읽는다.</li>
+  <li><a href="../10-Summaries/abascal-2021-nanoseq">Abascal 2021</a> — 분열하지 않는 세포의 체세포 변이를 잰 대표 응용이다.</li>
+  <li><a href="../10-Summaries/zhang-2025-smaht-duplex-benchmark">Zhang 2025</a> — 여섯 방법을 같은 시료로 비교해 무엇이 같고 다른지 본다.</li>
+  <li><a href="../10-Summaries/liu-2024-hidef-seq">Liu 2024</a> — 증폭이 전구 병변을 가린다는 논증과 그 근거를 읽는다.</li>
+</ol>
+
+<h2>아직 열린 질문</h2>
+<ul>
+  <li><b>오류율 수치를 어떻게 비교할까.</b> 원조 방법의 바닥은 계산값(10⁻⁹ 미만)인데 UDSeq 표는 원조 방법과 BotSeqS를 모두 약 2×10⁻⁷으로 적고, BotSeqS 원 논문은 2.6×10⁻¹²을 보고했다. 이론값과 경험값은 직접 비교할 수 없다 (<a href="../10-Summaries/schmitt-2012-pnas">Schmitt 2012</a>; <a href="../10-Summaries/nandi-2025-udseq">Nandi 2025</a>; <a href="../10-Summaries/hoang-2016-botseqs">Hoang 2016</a>).</li>
+  <li><b>비용.</b> 원조 프로토콜은 DCS 하나에 raw read 약 40개가 들었다 (<a href="../10-Summaries/kennedy-2014-duplex-protocol">Kennedy 2014</a>). SMaHT 비교에서도 genome 범위, 감도, 비용이 방법마다 크게 달랐다 (<a href="../10-Summaries/zhang-2025-smaht-duplex-benchmark">Zhang 2025</a>).</li>
+  <li><b>단일세포 duplex.</b> Duplex는 한 분자의 두 가닥이 모두 필요한데 scWGA는 가닥 정보를 잃는다. 단일세포 변형은 META-CS와 Duplex-Multiome 정도다 (<a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a>; <a href="../10-Summaries/kriz-2025-duplex-multiome">Kriz 2025</a>).</li>
+  <li><b>long read가 대체할까.</b> 증폭 없는 단일분자 long-read 시퀀싱의 정확도가 오르면 duplex를 대체할 수 있는지는 아직 열려 있다 (<a href="../40-Topics/duplex-sequencing">hub</a>). HiDEF-seq는 이미 증폭 없는 PacBio read로 단일가닥 사건까지 읽는다 (<a href="../10-Summaries/liu-2024-hidef-seq">Liu 2024</a>).</li>
+</ul>
+
+<footer>scDNA wiki 교재 · 시뮬레이터의 데이터는 모두 합성 데이터다. 실제 수치와 해석은 링크된 위키 요약과 원 논문을 기준으로 한다.</footer>
+</main>
+
+<script>
+(function(){
+  // MODEL START
+  // Toy model of false-positive (FP) frequency per base at three stages.
+  // raw  = s + d + C*eps/2  (sequencing error + single-strand damage + PCR errors carried by one read)
+  // SSCS = d + sum_k 2^(k-1)*eps * P(>=90% of n reads descend from the cycle-k error lineage, share 2^-k)
+  //        + 3 * P(>=90% of n reads carry the same wrong base from sequencing, s/3 each)
+  //        Damage is assumed fixed into the whole family at the first copy (Schmitt 2012).
+  // DCS  = SSCS^2 / 3 (complementary error on both strands; Schmitt 2012) + systematic floor.
+  // C = 18 PCR cycles and the >=90% rule follow Schmitt 2012; s and default d are tuned so the
+  // defaults reproduce Schmitt 2012's M13 ladder (raw 3.8e-3, SSCS 3.4e-5). eps is illustrative.
+  var C = 18, S_ERR = 3.7e-3;
+  function choose(n,k){ var r=1; for(var i=1;i<=k;i++) r=r*(n-k+i)/i; return r; }
+  function tail(n,p,m){ var t=0; for(var k=m;k<=n;k++) t+=choose(n,k)*Math.pow(p,k)*Math.pow(1-p,n-k); return t; }
+  function model(eps, d, n, floor){
+    var m = Math.ceil(0.9*n - 1e-9);
+    var raw = S_ERR + d + C*eps/2;
+    var pcr = 0;
+    for(var k=1;k<=C;k++) pcr += Math.pow(2,k-1)*eps*tail(n, Math.pow(2,-k), m);
+    var seq = 3*tail(n, S_ERR/3, m);
+    var sscs = Math.min(d + pcr + seq, 1);
+    var dcsT = sscs*sscs/3;
+    return {raw:raw, sscs:sscs, dcsT:dcsT, dcs:dcsT + floor};
+  }
+  // MODEL END
+
+  var TARGETS = [
+    {name:"M13 기준 3.0×10⁻⁶", v:3.0e-6, text:"M13mp2 DNA의 유전학적 기준 변이 빈도 (Schmitt 2012)."},
+    {name:"70세 뇌 피질 ~3.2×10⁻⁷", v:3.23e-7, text:"70세 기증자의 대뇌 피질 bulk duplex 측정값 (Nandi 2025)."},
+    {name:"제대혈 ~1×10⁻⁸", v:1e-8, text:"변이가 거의 없는 제대혈 대조 시료의 방법 간 추정 (Zhang 2025)."}
+  ];
+  var FLOORS = [
+    {name:"없음 (이론)", v:0, text:"두 가닥의 오류가 완전히 독립이라는 이론적 가정."},
+    {name:"원조 DS 실측 ~2×10⁻⁷", v:2e-7, text:"UDSeq 표가 원조 Duplex Sequencing에 매긴 경험적 오류율 (Nandi 2025)."},
+    {name:"NanoSeq ~5×10⁻⁹", v:5e-9, text:"end repair 오류를 피한 NanoSeq의 오류율, 10⁹ bp당 5개 미만 (Abascal 2021)."}
+  ];
+  var state = {t:0, f:0};
+  function logSlider(i, lo, hi){ return Math.pow(10, lo + (hi-lo)*i/100); }
+  function sci(x){
+    if(x===0) return "0";
+    var e=Math.floor(Math.log10(x)), m=x/Math.pow(10,e);
+    if(m>=9.95){ m=1; e+=1; }
+    var sup={"-":"⁻","0":"⁰","1":"¹","2":"²","3":"³","4":"⁴","5":"⁵","6":"⁶","7":"⁷","8":"⁸","9":"⁹"};
+    return m.toFixed(1)+"×10"+String(e).split("").map(function(c){return sup[c];}).join("");
+  }
+  function perMb(x){ var v=x*1e6; return v>=100 ? Math.round(v).toLocaleString() : (v>=0.01 ? v.toPrecision(2) : sci(v)); }
+
+  function css(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+  function setup(c){
+    var dpr = window.devicePixelRatio||1, w = c.clientWidth, h = parseInt(c.getAttribute("height"),10);
+    c.width = w*dpr; c.height = h*dpr; c.style.height = h+"px";
+    var ctx = c.getContext("2d"); ctx.setTransform(dpr,0,0,dpr,0,0); return {ctx:ctx,w:w,h:h};
+  }
+  var YMIN=-14, YMAX=-1;
+  function yOf(v, pad, H){ var l=Math.log10(Math.max(v,1e-13)); l=Math.max(YMIN,Math.min(YMAX,l)); return pad.t + H*(YMAX-l)/(YMAX-YMIN); }
+  function logAxes(o){
+    var ctx=o.ctx, pad={l:46,r:8,t:8,b:22}; ctx.clearRect(0,0,o.w,o.h);
+    ctx.strokeStyle=css("--line"); ctx.fillStyle=css("--muted"); ctx.font="11px sans-serif"; ctx.lineWidth=1;
+    var H=o.h-pad.t-pad.b;
+    for(var e=YMIN;e<=YMAX;e+=2){ var y=yOf(Math.pow(10,e),pad,H); ctx.beginPath(); ctx.moveTo(pad.l,y); ctx.lineTo(o.w-pad.r,y); ctx.stroke(); ctx.fillText("10"+String(e).replace("-","⁻").replace(/\d/g,function(c){return "⁰¹²³⁴⁵⁶⁷⁸⁹"[+c];}),4,y+4); }
+    return pad;
+  }
+  function targetLine(o,pad,H){
+    var ctx=o.ctx, y=yOf(TARGETS[state.t].v,pad,H);
+    ctx.setLineDash([5,4]); ctx.strokeStyle=css("--warn"); ctx.lineWidth=1.5; ctx.beginPath(); ctx.moveTo(pad.l,y); ctx.lineTo(o.w-pad.r,y); ctx.stroke(); ctx.setLineDash([]); ctx.lineWidth=1;
+  }
+  function drawBars(res){
+    var o=setup(document.getElementById("bars")), pad=logAxes(o), ctx=o.ctx;
+    var W=o.w-pad.l-pad.r, H=o.h-pad.t-pad.b, base=pad.t+H;
+    var items=[["raw read",res.raw,css("--muted")],["SSCS",res.sscs,css("--a1")],["DCS",res.dcs,css("--a2")]];
+    var slot=W/items.length, bw=Math.min(90, slot*0.5);
+    items.forEach(function(it,i){
+      var x=pad.l+slot*i+(slot-bw)/2, y=yOf(it[1],pad,H);
+      ctx.fillStyle=it[2]; ctx.fillRect(x,y,bw,base-y);
+      ctx.fillStyle=css("--ink"); ctx.font="12px sans-serif"; ctx.textAlign="center";
+      ctx.fillText(it[0], x+bw/2, o.h-6); ctx.fillText(sci(it[1]), x+bw/2, Math.max(y-4, pad.t+10));
+      ctx.textAlign="left";
+      if(i===2 && FLOORS[state.f].v>0){
+        var yt=yOf(res.dcsT,pad,H); ctx.strokeStyle=css("--ink"); ctx.lineWidth=2; ctx.beginPath(); ctx.moveTo(x-6,yt); ctx.lineTo(x+bw+6,yt); ctx.stroke(); ctx.lineWidth=1;
+      }
+    });
+    targetLine(o,pad,H);
+  }
+  function drawCurve(p){
+    var o=setup(document.getElementById("curve")), pad=logAxes(o), ctx=o.ctx;
+    var W=o.w-pad.l-pad.r, H=o.h-pad.t-pad.b, N=12;
+    function xOf(n){ return pad.l + W*(n-1)/(N-1); }
+    [["sscs",css("--a1")],["dcs",css("--a2")]].forEach(function(s){
+      ctx.strokeStyle=s[1]; ctx.lineWidth=2; ctx.beginPath();
+      for(var n=1;n<=N;n++){ var r=model(p.eps,p.d,n,FLOORS[state.f].v), x=xOf(n), y=yOf(r[s[0]],pad,H); if(n===1) ctx.moveTo(x,y); else ctx.lineTo(x,y); }
+      ctx.stroke(); ctx.lineWidth=1;
+    });
+    ctx.fillStyle=css("--muted"); ctx.font="11px sans-serif";
+    for(var n=1;n<=N;n++){ if(n===1||n%2===0){ ctx.textAlign="center"; ctx.fillText(String(n), xOf(n), o.h-6); } }
+    ctx.textAlign="left";
+    ctx.strokeStyle=css("--ink"); ctx.beginPath(); ctx.moveTo(xOf(p.n),pad.t); ctx.lineTo(xOf(p.n),pad.t+H); ctx.stroke();
+    targetLine(o,pad,H);
+  }
+  function params(){
+    return {eps:logSlider(+document.getElementById("eps").value,-7,-3),
+            d:logSlider(+document.getElementById("dmg").value,-7,-3),
+            n:+document.getElementById("fam").value};
+  }
+  function render(){
+    var p=params(), res=model(p.eps,p.d,p.n,FLOORS[state.f].v), tgt=TARGETS[state.t].v;
+    document.getElementById("epsv").textContent=sci(p.eps);
+    document.getElementById("dmgv").textContent=sci(p.d);
+    document.getElementById("famv").textContent=p.n+" read";
+    document.getElementById("mdesc").textContent=TARGETS[state.t].text+" "+FLOORS[state.f].text;
+    drawBars(res); drawCurve(p);
+    document.getElementById("m-raw").textContent=perMb(res.raw);
+    document.getElementById("m-sscs").textContent=perMb(res.sscs);
+    document.getElementById("m-dcs").textContent=perMb(res.dcs);
+    var ratio=res.dcs/tgt;
+    document.getElementById("m-ratio").textContent= ratio>=10 ? Math.round(ratio)+"배" : (ratio>=0.01 ? ratio.toFixed(2) : sci(ratio));
+    document.getElementById("m-reads").textContent=(2*p.n)+"개";
+    var v=document.getElementById("verdict"); v.innerHTML="";
+    [["raw",res.raw],["SSCS",res.sscs],["DCS",res.dcs]].forEach(function(t){
+      var good = t[1] <= tgt/10, s=document.createElement("span");
+      s.className="tag "+(good?"good":"bad");
+      s.textContent = t[0]+": "+(good ? "위양성이 실제 변이의 1/10 이하" : "위양성이 실제 변이의 "+(t[1]/tgt>=10?Math.round(t[1]/tgt)+"배":(t[1]/tgt).toFixed(1)+"배")+" — 진짜 신호와 구분 어려움");
+      v.appendChild(s);
+    });
+    if(p.n<3){ var s2=document.createElement("span"); s2.className="tag bad"; s2.textContent="family 3 read 미만: Schmitt 2012는 SSCS에 최소 3 read를 요구했다"; v.appendChild(s2); }
+  }
+  function group(id, list, key){
+    var box=document.getElementById(id);
+    list.forEach(function(it,i){
+      var b=document.createElement("button"); b.type="button"; b.textContent=it.name;
+      b.addEventListener("click",function(){ state[key]=i; sync(id,key); render(); });
+      box.appendChild(b);
+    });
+    sync(id,key);
+  }
+  function sync(id,key){ Array.prototype.forEach.call(document.querySelectorAll("#"+id+" button"), function(b,i){ b.setAttribute("aria-pressed", i===state[key]?"true":"false"); }); }
+  group("targets", TARGETS, "t"); group("floors", FLOORS, "f");
+  ["eps","dmg","fam"].forEach(function(id){ document.getElementById(id).addEventListener("input", render); });
+  window.addEventListener("resize", function(){ clearTimeout(window.__rt); window.__rt=setTimeout(render,120); });
+  if(window.matchMedia) window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", render);
+  render();
+})();
+</script>
+</body>
+</html>

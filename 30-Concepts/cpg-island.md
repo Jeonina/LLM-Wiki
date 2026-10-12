@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > CpG island는 CpG 밀도가 유난히 높고 대개 promoter에 놓이며 평소에는 methylation되지 않는 짧은 구간이고, 암에서는 이곳의 hypermethylation이 tumor suppressor를 끈다 ([[10-Summaries/smith-2013-methylation-development|Smith & Meissner 2013]]). scRRBS는 CGI를 겨냥해 세포마다 같은 CpG를 읽는 대신 CCGG 근처 밖의 CpG는 보지 못한다 ([[10-Summaries/guo-2015-scrrbs-protocol|Guo 2015]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 DNA methylation](../60-Explainers/dna-methylation.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Mammalian genomes are globally CpG-depleted (~21% of expected CpG counts), an artifact of the elevated mutation rate of methylated CpG → TpG. CpG islands escape this depletion because they are unmethylated and therefore not exposed to deamination-driven mutation. Functional definition: GC content >50%, observed/expected CpG ratio >0.6, length >200 bp.

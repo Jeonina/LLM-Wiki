@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>단일세포 히스톤 변형</title>
+<link rel="stylesheet" href="explainer.css">
+</head>
+<body>
+<main>
+<div class="crumb"><a href="../">scDNA wiki</a> · <a href="./">교재</a> · 히스톤 변형</div>
+<h1>세포 하나에서 히스톤 표지를 어떻게 읽을까</h1>
+<p class="lede">히스톤 꼬리에 붙은 화학적 표지는 어느 구간이 켜져 있고, 대기 중이고, 꺼져 있는지를 알려 준다. 이것을 세포 하나 단위로 읽으면 유전자 발현만으로는 보이지 않는 세포 상태를 볼 수 있다. 다만 세포당 신호가 매우 적어서, 어떤 화학을 고르고 어떻게 분석하느냐가 결과를 크게 바꾼다.</p>
+
+<div class="callouts">
+  <div class="callout"><b>표지 하나가 상태 하나를 가리킨다</b>H3K4me3는 활성 promoter, H3K27ac는 활성 enhancer, H3K27me3와 H3K9me3는 억제된 heterochromatin을 표시한다. 그래서 어떤 mark를 고르느냐가 곧 무엇을 묻느냐다.</div>
+  <div class="callout"><b>항체가 효소를 끌고 간다</b>현재 방법 대부분은 항체에 MNase나 Tn5를 붙여 표지된 자리만 자르거나 adapter를 꽂는다. MNase 계열은 nucleosome 경계를 잘 보존하고, Tn5 계열은 처리량이 높지만 열린 chromatin 쪽으로 신호가 치우친다.</div>
+  <div class="callout"><b>세포당 신호는 수백~수천 조각뿐이다</b>scCUT&amp;Tag 계열은 세포당 fragment가 대개 10³개 미만으로, scATAC-seq의 10⁴개 이상보다 한 자릿수 적다. bin 크기 같은 분석 선택이 방법 선택만큼 중요하다.</div>
+</div>
+
+<h2>방법의 계보</h2>
+<div class="fig">
+  <div class="tablewrap"><svg id="tree" viewBox="0 0 1000 450" style="min-width:760px" role="img" aria-label="ChIP, MNase, Tn5, deaminase 계열 히스톤 프로파일링 방법의 연도별 계보"></svg></div>
+  <figcaption>그림 1. 히스톤 mark 프로파일링 방법의 계보. 가로축은 발표 연도이며 간격은 균등하지 않다. 빈 원은 bulk 방법, 채운 원은 단일세포 방법, 주황 테두리는 한 세포(또는 한 fragment)에서 둘 이상의 mark나 modality를 읽는 방법이다. ChIC(2004)는 <a href="../30-Concepts/chic-seq">ChIC-seq 개념 페이지</a>, CUT&amp;RUN에서 CUT&amp;Tag로의 효소 교체는 <a href="../30-Concepts/cut-and-run">CUT&amp;RUN 개념 페이지</a>, 나머지 연도와 분류는 <a href="../40-Topics/histone-modifications">hub</a>의 방법 표와 <a href="../10-Summaries/rotem-2015-drop-chip">Rotem 2015</a>를 따랐다. sortChIC은 위키에 발표 연도가 없어 플랫폼 막대로만 표시했다. 6-base-CUT&amp;Tag는 아직 단일세포로 확장되지 않았다 (<a href="../10-Summaries/tavares-2026-6-base-cut-tag">Tavares 2026</a>).</figcaption>
+</div>
+
+<h2>표지가 가리키는 chromatin 상태</h2>
+<div class="fig">
+  <div class="tablewrap"><svg viewBox="0 0 1000 250" style="min-width:720px" role="img" aria-label="한 구간 위의 히스톤 mark 배치 모식도">
+    <g font-size="13" fill="currentColor">
+      <!-- DNA line -->
+      <line x1="20" y1="140" x2="980" y2="140" style="stroke:var(--muted)" stroke-width="2"/>
+      <!-- constitutive heterochromatin: dense nucleosomes -->
+      <g style="fill:var(--muted)" opacity="0.55">
+        <circle cx="45" cy="140" r="11"/><circle cx="70" cy="140" r="11"/><circle cx="95" cy="140" r="11"/><circle cx="120" cy="140" r="11"/><circle cx="145" cy="140" r="11"/><circle cx="170" cy="140" r="11"/>
+      </g>
+      <rect x="32" y="96" width="150" height="14" rx="3" style="fill:var(--warn)" opacity="0.85"/>
+      <text x="107" y="88" text-anchor="middle" font-weight="600">H3K9me3</text>
+      <text x="107" y="180" text-anchor="middle">constitutive</text>
+      <text x="107" y="197" text-anchor="middle">heterochromatin</text>
+      <!-- Polycomb domain -->
+      <g style="fill:var(--muted)" opacity="0.45">
+        <circle cx="230" cy="140" r="11"/><circle cx="262" cy="140" r="11"/><circle cx="294" cy="140" r="11"/><circle cx="326" cy="140" r="11"/><circle cx="358" cy="140" r="11"/><circle cx="390" cy="140" r="11"/>
+      </g>
+      <rect x="215" y="96" width="190" height="14" rx="3" style="fill:var(--warn)" opacity="0.55"/>
+      <text x="310" y="88" text-anchor="middle" font-weight="600">H3K27me3 (넓은 domain)</text>
+      <text x="310" y="180" text-anchor="middle">facultative heterochromatin</text>
+      <text x="310" y="197" text-anchor="middle">(Polycomb 억제)</text>
+      <!-- enhancer -->
+      <circle cx="470" cy="140" r="11" style="fill:var(--muted)" opacity="0.45"/><circle cx="520" cy="140" r="11" style="fill:var(--muted)" opacity="0.45"/>
+      <rect x="452" y="104" width="86" height="10" rx="3" style="fill:var(--a2)"/>
+      <rect x="452" y="90" width="86" height="10" rx="3" style="fill:var(--accent)" opacity="0.5"/>
+      <text x="495" y="70" text-anchor="middle" font-weight="600">H3K4me1 ± H3K27ac</text>
+      <text x="495" y="180" text-anchor="middle">enhancer</text>
+      <text x="495" y="197" text-anchor="middle" style="fill:var(--muted)" font-size="12">단독 primed · +K27ac active</text>
+      <text x="495" y="213" text-anchor="middle" style="fill:var(--muted)" font-size="12">+K27me3 poised</text>
+      <!-- promoter -->
+      <circle cx="620" cy="140" r="11" style="fill:var(--muted)" opacity="0.45"/><circle cx="660" cy="140" r="11" style="fill:var(--muted)" opacity="0.45"/>
+      <rect x="605" y="104" width="70" height="10" rx="3" style="fill:var(--accent)"/>
+      <rect x="605" y="90" width="70" height="10" rx="3" style="fill:var(--accent)" opacity="0.5"/>
+      <text x="640" y="70" text-anchor="middle" font-weight="600">H3K4me3 + H3K27ac</text>
+      <text x="640" y="180" text-anchor="middle">활성 promoter</text>
+      <path d="M680 140 V122 H705" fill="none" style="stroke:var(--ink)" stroke-width="2"/>
+      <path d="M700 117 L708 122 L700 127 Z" style="fill:var(--ink)"/>
+      <!-- gene body -->
+      <rect x="690" y="134" width="270" height="12" rx="3" style="fill:var(--accent)" opacity="0.18"/>
+      <circle cx="730" cy="140" r="11" style="fill:var(--muted)" opacity="0.45"/><circle cx="790" cy="140" r="11" style="fill:var(--muted)" opacity="0.45"/><circle cx="850" cy="140" r="11" style="fill:var(--muted)" opacity="0.45"/><circle cx="910" cy="140" r="11" style="fill:var(--muted)" opacity="0.45"/>
+      <rect x="715" y="104" width="250" height="10" rx="3" style="fill:var(--ok)" opacity="0.8"/>
+      <text x="840" y="92" text-anchor="middle" font-weight="600">H3K36me3</text>
+      <text x="840" y="180" text-anchor="middle">전사 중인 gene body</text>
+      <!-- legend -->
+      <rect x="20" y="230" width="14" height="10" style="fill:var(--warn)" opacity="0.8"/><text x="40" y="240" font-size="12">억제 mark</text>
+      <rect x="120" y="230" width="14" height="10" style="fill:var(--accent)"/><text x="140" y="240" font-size="12">활성 mark</text>
+      <rect x="220" y="230" width="14" height="10" style="fill:var(--a2)"/><text x="240" y="240" font-size="12">enhancer mark</text>
+      <rect x="340" y="230" width="14" height="10" style="fill:var(--ok)" opacity="0.8"/><text x="360" y="240" font-size="12">전사 신장 mark</text>
+      <circle cx="477" cy="235" r="6" style="fill:var(--muted)" opacity="0.5"/><text x="490" y="240" font-size="12">nucleosome (막대 길이는 mark가 덮는 범위의 대략적 비교)</text>
+    </g>
+  </svg></div>
+  <figcaption>그림 2. 대표 mark와 상태의 대응 (<a href="../10-Summaries/klemm-2019-chromatin-accessibility-review">Klemm 2019</a>; enhancer 구분은 <a href="../10-Summaries/creyghton-2010-h3k27ac-enhancers">Creyghton 2010</a>). 실제 구간 길이에 비례하지 않는 모식도다. 좁은 활성 mark와 넓은 H3K27me3 domain의 대비(H3K4me2 feature는 nucleosome 약 5개, H3K27me3 domain은 수백 개)만 막대 길이로 반영했다 (<a href="../10-Summaries/kaya-okur-2019-cut-and-tag">Kaya-Okur 2019</a>).</figcaption>
+</div>
+
+<div class="tablewrap"><table>
+<thead><tr><th>Mark</th><th>상태</th><th>덧붙일 점</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>H3K4me3</td><td>활성 promoter</td><td>ES 세포에서 CpG 밀도와 강하게 겹친다 (r_phi = 0.73)</td><td><a href="../10-Summaries/klemm-2019-chromatin-accessibility-review">Klemm 2019</a> · <a href="../10-Summaries/bernstein-2006-bivalent-chromatin">Bernstein 2006</a></td></tr>
+<tr><td>H3K4me1</td><td>enhancer (단독 primed, +H3K27ac active, +H3K27me3 poised)</td><td>primed enhancer의 H3K4me1 구간이 enhancer 상태 중 5mC(약 13%)와 5hmC(약 4%)가 가장 높다</td><td><a href="../10-Summaries/klemm-2019-chromatin-accessibility-review">Klemm 2019</a> · <a href="../10-Summaries/tavares-2026-6-base-cut-tag">Tavares 2026</a></td></tr>
+<tr><td>H3K27ac</td><td>활성 promoter·enhancer</td><td>활성과 비활성 enhancer를 가르는 mark. eRNA는 H3K27ac⁺ 구간에서만 나온다</td><td><a href="../10-Summaries/creyghton-2010-h3k27ac-enhancers">Creyghton 2010</a></td></tr>
+<tr><td>H3K36me3</td><td>전사 중인 gene body</td><td>이 구간의 CpG 메틸화는 약 50%로 높다</td><td><a href="../10-Summaries/klemm-2019-chromatin-accessibility-review">Klemm 2019</a> · <a href="../10-Summaries/geisenberger-2025-scepi2-seq">Geisenberger 2025</a></td></tr>
+<tr><td>H3K27me3</td><td>facultative heterochromatin (Polycomb)</td><td>일부 세포형에서 LAD 경계에 모인다. 이 구간의 CpG 메틸화는 8–10%로 낮다</td><td><a href="../10-Summaries/van-steensel-2017-lads-review">van Steensel 2017</a> · <a href="../10-Summaries/geisenberger-2025-scepi2-seq">Geisenberger 2025</a></td></tr>
+<tr><td>H3K9me3</td><td>constitutive heterochromatin</td><td>LAD를 핵막에 붙드는 mark. GWAS 조직 신호는 enhancer mark에 몰리고 H3K27me3·H3K9me3에는 거의 없다</td><td><a href="../10-Summaries/van-steensel-2017-lads-review">van Steensel 2017</a> · <a href="../10-Summaries/roadmap-2015-111-epigenomes">Roadmap 2015</a></td></tr>
+</tbody></table></div>
+
+<h2>기초에서 최전선까지</h2>
+<ol class="steps">
+  <li><b>mark는 기능 상태의 표지다.</b> 변형은 주로 H3와 H4의 lysine·arginine에 생기고, 어떤 mark가 어디 있는지 보면 그 구간이 활성인지, 대기 중인지, 억제되어 있는지 알 수 있다 (<a href="../10-Summaries/klemm-2019-chromatin-accessibility-review">Klemm 2019</a>). 실제로는 한 구간에 mark가 하나만 있는 것은 아니다. ES 세포의 bivalent domain은 H3K4me3와 H3K27me3를 함께 가진다 (<a href="../10-Summaries/bernstein-2006-bivalent-chromatin">Bernstein 2006</a>). 또 H3.2와 H4의 N-말단 변형 조합만 200가지가 넘는다 (<a href="../10-Summaries/rothbart-2014-histone-dna-language">Rothbart 2014</a>).</li>
+  <li><b>ChIP에서 항체-효소 결합으로.</b> ChIP-seq는 chromatin을 잘게 부순 뒤 항체로 끌어내는 bulk 방법으로, 2007년에 인간 CD4⁺ T 세포의 histone methylation 20종을 지도화했다 (<a href="../10-Summaries/barski-2007-histone-methylation-chip-seq">Barski 2007</a>). CUT&amp;RUN은 항체에 pA-MNase를 붙여 표적 자리만 잘라 용액으로 내보낸다. ChIP의 약 1/10 깊이면 충분하지만, 원 논문은 60만~1,000만 개 세포를 썼고 peak 일부는 직접 결합이 아니라 3D 접촉 상대일 수 있다 (<a href="../10-Summaries/skene-2017-cut-and-run">Skene 2017</a>).</li>
+  <li><b>Tn5로 바꾸자 단일세포가 열렸다.</b> CUT&amp;Tag는 MNase 대신 pA-Tn5를 붙여 표적 자리에 adapter를 바로 꽂는다. fragment가 핵 안에 남기 때문에 세포를 나누기 전에 bulk로 반응시킬 수 있고, 그래서 단일세포로 확장된다 (<a href="../10-Summaries/kaya-okur-2019-cut-and-tag">Kaya-Okur 2019</a>). 대가도 있다. Tn5는 열린 DNA에도 붙어서, K562 H3K27me3 CUT&amp;Tag peak의 평균 18%가 ChIP-seq에는 없고 ATAC 열린 구간에 놓인다 (<a href="../10-Summaries/hu-2026-patty">Hu 2026</a>).</li>
+  <li><b>단일세포 방법은 두 가지로 갈라졌다.</b> 최초의 단일세포 ChIP인 Drop-ChIP은 세포당 약 1,000개 부위만 잡았다 (<a href="../10-Summaries/rotem-2015-drop-chip">Rotem 2015</a>). 2019년 scChIC-seq은 MNase 계열을 단일세포로 옮겼고 세포당 peak 민감도는 약 10%였다 (<a href="../10-Summaries/ku-2019-scchic-seq">Ku 2019</a>). Tn5 계열은 2021년 droplet scCUT&amp;Tag로 생쥐 뇌 세포 47,340개를 프로파일했다 (<a href="../10-Summaries/bartosovic-2021-sccut-tag">Bartosovic 2021</a>). 이 희소한 데이터에서는 억제 mark가 오히려 유리하다. H3K27me3 domain이 넓어서 세포당 300–1,100 fragment만으로도 세포 유형을 구분한다 (<a href="../10-Summaries/wu-2021-sccut-tag">Wu 2021</a>).</li>
+  <li><b>한 세포에서 둘 이상을 읽는다.</b> scChIX-seq은 두 항체를 한꺼번에 넣고 섞인 신호를 계산으로 분리한다 (<a href="../10-Summaries/yeung-2023-scchix-seq">Yeung 2023</a>). nano-CUT&amp;Tag는 nanobody-Tn5로 ATAC과 mark 두 개를 함께 읽는다 (<a href="../10-Summaries/bartosovic-2022-nano-cut-tag">Bartosovic 2022</a>). scEpi²-seq은 mark와 5mC를 같은 세포에서 읽어, H3K27me3 구간 안에서도 메틸화가 세포 유형마다 다르다는 것을 보였다 (<a href="../10-Summaries/geisenberger-2025-scepi2-seq">Geisenberger 2025</a>).</li>
+  <li><b>최전선은 분석 쪽에 있다.</b> scHPTM 분석에서는 bin 크기가 가장 큰 변수이고, TF-IDF/LSI가 이기며, feature selection은 오히려 성능을 떨어뜨린다 (<a href="../10-Summaries/raimundo-2023-schptm-benchmark">Raimundo 2023</a>). scRNA·scATAC용 imputation 방법은 신호와 clustering을 동시에 개선하지 못했다 (<a href="../10-Summaries/morenogonzalez-2025-schistone-imputation">Moreno-González 2025</a>). CANDI와 ChromBERT 같은 pretrained model은 bulk histone 데이터로만 학습되어 단일세포 histone 데이터를 입력으로 쓰지 않는다 (<a href="../10-Summaries/foroozandeh-2025-candi">Foroozandeh 2025</a>; <a href="../10-Summaries/yu-2026-chrombert">Yu 2026</a>).</li>
+</ol>
+
+<h2>실제 측정값</h2>
+<p class="desc">세포 수, 깊이, mark, 기준이 연구마다 달라 같은 방법도 수치가 크게 엇갈린다. 엇갈리는 값은 고르지 않고 나란히 적었다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>방법</th><th>효소</th><th>보고된 값</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>ChIP-seq · CUT&amp;RUN · CUT&amp;Tag (bulk)</td><td>— · MNase · Tn5</td><td>같은 품질에 필요한 read 약 20M · 8M · 2M · CUT&amp;Tag만 FRiP 0.6에 도달 · CUT&amp;RUN은 ChIP의 약 1/10 깊이</td><td><a href="../10-Summaries/kaya-okur-2019-cut-and-tag">Kaya-Okur 2019</a> · <a href="../10-Summaries/skene-2017-cut-and-run">Skene 2017</a></td></tr>
+<tr><td>CUT&amp;Tag vs ENCODE ChIP-seq</td><td>Tn5</td><td>ENCODE peak 회수율 평균 약 54% (최대 63%), 주로 강하고 열린 peak · H3K27ac에서는 ChIP 대비 signal-to-noise 이점이 나타나지 않음</td><td><a href="../10-Summaries/abbasova-2025-cut-tag-encode-benchmark">Abbasova 2025</a></td></tr>
+<tr><td>접근성 편향</td><td>MNase vs Tn5</td><td>H3K27me3 bulk 상관: MNase 기반 scChIC r = 0.67, Tn5 기반 ChIL r = 0.26–0.31 · K562 H3K27me3 CUT&amp;Tag peak 평균 18%가 ChIP에 없고 ATAC 열린 구간에 위치</td><td><a href="../10-Summaries/ludwig-2019-sc-chromatin-modifications-review">Ludwig 2019</a> · <a href="../10-Summaries/hu-2026-patty">Hu 2026</a></td></tr>
+<tr><td>Drop-ChIP</td><td>MNase + ChIP</td><td>세포당 표지된 promoter·enhancer 약 1,000개</td><td><a href="../10-Summaries/rotem-2015-drop-chip">Rotem 2015</a></td></tr>
+<tr><td>scChIC-seq</td><td>MNase</td><td>H3K4me3 세포당 약 100,000 unique read, 세포당 민감도 약 10% (상위 10% 세포는 18%)</td><td><a href="../10-Summaries/ku-2019-scchic-seq">Ku 2019</a></td></tr>
+<tr><td>droplet scCUT&amp;Tag</td><td>Tn5</td><td>세포주 H3K27me3 세포당 568–597 unique fragment · 뇌 4개 mark 중앙값 98–453 · 원 scCUT&amp;Tag 약 1,110 read (sciCUT&amp;Tag 논문의 비교치) · 깊이를 맞춘 비교에서 5,156</td><td><a href="../10-Summaries/bartosovic-2021-sccut-tag">Bartosovic 2021</a> · <a href="../10-Summaries/janssens-2023-scicut-tag">Janssens 2023</a> · <a href="../10-Summaries/schwager-2026-onecell-cut-tag">Schwager 2026</a></td></tr>
+<tr><td>sciCUT&amp;Tag</td><td>Tn5</td><td>chip당 약 40,000 세포 · H3K27me3 세포당 중앙값 2,116 read · barcode 충돌률 약 7% (H3K27me3)~13% (H3K4me1-2-3)</td><td><a href="../10-Summaries/janssens-2023-scicut-tag">Janssens 2023</a></td></tr>
+<tr><td>nano-CUT&amp;Tag</td><td>nanobody-Tn5</td><td>H3K27me3 fragment가 scCUT&amp;Tag 대비 15.8배 · 대신 FrIP 69% → 39%</td><td><a href="../10-Summaries/bartosovic-2022-nano-cut-tag">Bartosovic 2022</a></td></tr>
+<tr><td>깊이를 맞춘 비교 (MDA-MB-468 H3K27me3, 세포당 38,716 read)</td><td>여러 방법</td><td>세포당 unique read 중앙값: OneCell CUT&amp;Tag 26,008 (FrIP 0.77) · sortChIC 20,581 (FrIP 0.79) · scChIP-seq 5,722 · 10x scCUT&amp;Tag 5,156 · sortChIC은 input 세포 10,000개 이상 필요</td><td><a href="../10-Summaries/schwager-2026-onecell-cut-tag">Schwager 2026</a></td></tr>
+<tr><td>scNanoSeq-CUT&amp;Tag</td><td>pG-Tn5 + nanopore</td><td>세포당 최대 13,373 unique read · 17,211 세포 · repeat와 blacklist 구간까지 읽음</td><td><a href="../10-Summaries/li-2024-scnanoseq-cut-tag">Li 2024</a></td></tr>
+<tr><td>scEpi²-seq</td><td>MNase + TAPS</td><td>FRiP 0.72–0.88 · 세포당 CpG 평균 50,000개 이상</td><td><a href="../10-Summaries/geisenberger-2025-scepi2-seq">Geisenberger 2025</a></td></tr>
+<tr><td>scDeChIC-seq</td><td>deaminase</td><td>H3K4me3 세포당 약 10,000 peak, 세포 8–12개를 합치면 bulk 수준 · 억제 mark는 약함</td><td><a href="../10-Summaries/shi-2026-dechic-seq">Shi 2026</a></td></tr>
+<tr><td>scCUT&amp;Tag 계열 전체 (공개 데이터 21개)</td><td>Tn5</td><td>세포당 fragment 대개 10³개 미만 (scATAC-seq은 10⁴개 이상)</td><td><a href="../10-Summaries/wu-2026-sccut-tag-review">Wu 2026</a></td></tr>
+</tbody></table></div>
+
+<h2>목적별로 고르기</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>알고 싶은 것</th><th>우선 고려</th><th>확인할 위험</th></tr></thead>
+<tbody>
+<tr><td>조직의 세포 유형 구성 (세포 수만 개)</td><td>droplet scCUT&amp;Tag, sciCUT&amp;Tag. 희소할 때는 H3K27me3 같은 넓은 억제 mark</td><td>세포당 fragment가 적어 하위 세포형은 scRNA-seq 통합 없이 안 보일 수 있음 (<a href="../10-Summaries/bartosovic-2021-sccut-tag">Bartosovic 2021</a>). Tn5 열린 chromatin 편향 보정 필요 (<a href="../10-Summaries/hu-2026-patty">Hu 2026</a>)</td></tr>
+<tr><td>nucleosome 위치, 한 세포의 두 mark 관계</td><td>MNase 계열: sortChIC, scChIX-seq</td><td>처리량이 Tn5 계열보다 낮음 (<a href="../50-Notes/mnase-vs-tn5-chromatin">MNase vs Tn5 노트</a>). sortChIC은 input 세포 10,000개 이상 (<a href="../10-Summaries/schwager-2026-onecell-cut-tag">Schwager 2026</a>)</td></tr>
+<tr><td>mark와 DNA 메틸화를 함께</td><td>scEpi²-seq (단일세포), 6-base-CUT&amp;Tag (fragment 수준, bulk)</td><td>scEpi²-seq은 세 mark에서만 시연 (<a href="../10-Summaries/geisenberger-2025-scepi2-seq">Geisenberger 2025</a>). 6-base-CUT&amp;Tag는 단일세포 미시연 (<a href="../10-Summaries/tavares-2026-6-base-cut-tag">Tavares 2026</a>)</td></tr>
+<tr><td>mark와 accessibility를 한 세포에서</td><td>nano-CUT&amp;Tag</td><td>fragment는 늘지만 FrIP가 떨어짐 (<a href="../10-Summaries/bartosovic-2022-nano-cut-tag">Bartosovic 2022</a>)</td></tr>
+<tr><td>repeat, allele-specific peak</td><td>scNanoSeq-CUT&amp;Tag</td><td>짧은 fragment가 빠져 H3K27ac TSS 신호가 낮게 나옴 (<a href="../10-Summaries/li-2024-scnanoseq-cut-tag">Li 2024</a>)</td></tr>
+<tr><td>데이터를 받은 뒤 cell embedding</td><td>H3K27me3는 50–1,000 kbp, H3K4me1은 10–200 kbp bin. TF-IDF/LSI, feature selection 없이</td><td>원 논문들이 쓴 1–5 kbp bin은 대개 너무 작음. scATAC 관행을 그대로 옮기지 말 것 (<a href="../10-Summaries/raimundo-2023-schptm-benchmark">Raimundo 2023</a>). imputation은 신호와 clustering 중 하나만 개선 (<a href="../10-Summaries/morenogonzalez-2025-schistone-imputation">Moreno-González 2025</a>)</td></tr>
+</tbody></table></div>
+
+<h2>읽는 순서</h2>
+<ol class="path">
+  <li><a href="../40-Topics/histone-modifications">Histone modifications (hub)</a> — mark 표, bulk·단일세포 방법 표, 벤치마크가 한곳에 모여 있다.</li>
+  <li><a href="../30-Concepts/cut-and-tag">CUT&amp;Tag</a> — 변형 방법 표와 ATAC 배경 신호 논쟁까지, 현재 가장 많이 쓰는 화학을 정리했다.</li>
+  <li><a href="../30-Concepts/chic-seq">ChIC-seq</a> — MNase 계열의 출발점이고, Tn5보다 접근성 편향이 적다는 근거가 있다.</li>
+  <li><a href="../50-Notes/mnase-vs-tn5-chromatin">MNase vs Tn5</a> — 두 계열을 해상도, 처리량, 다중화 기준으로 나란히 비교한 노트다.</li>
+  <li><a href="../10-Summaries/kaya-okur-2019-cut-and-tag">Kaya-Okur 2019</a> — CUT&amp;Tag 원 논문. 왜 Tn5가 단일세포를 가능하게 했는지 설명한다.</li>
+  <li><a href="../10-Summaries/bartosovic-2021-sccut-tag">Bartosovic 2021</a> — droplet scCUT&amp;Tag로 조직을 프로파일하는 표준 설계를 보여 준다.</li>
+  <li><a href="../10-Summaries/raimundo-2023-schptm-benchmark">Raimundo 2023</a> — 데이터를 받았을 때 bin 크기와 정규화를 어떻게 정할지 알려 준다.</li>
+  <li><a href="../10-Summaries/hu-2026-patty">Hu 2026 (PATTY)</a> — CUT&amp;Tag 열린 chromatin 편향이 얼마나 넓게 퍼져 있는지 보여 준다.</li>
+</ol>
+
+<h2>아직 열린 질문</h2>
+<ul>
+  <li>세포당 민감도는 계속 걸림돌이다. 단일세포 histone 프로파일링은 민감도와 처리량에서 scRNA-seq과 scATAC-seq에 뒤처져 있고, 선형 증폭이나 library 최적화로 얼마나 따라잡을 수 있는지는 아직 모른다 (<a href="../10-Summaries/bartosovic-2021-sccut-tag">Bartosovic 2021</a>).</li>
+  <li>bulk에서는 활성 mark와 억제 mark가 깔끔하게 나뉘지만, scChIX-seq은 개별 locus에서 H3K27me3/H3K9me3 전환을 보였다. <i>Bcl2</i>에서는 세포 유형과 무관했고 <i>Crim1</i>에서는 세포 유형에 따라 달랐다. bulk 평균이 무엇을 가리는지는 더 봐야 한다 (<a href="../10-Summaries/yeung-2023-scchix-seq">Yeung 2023</a>).</li>
+  <li>MNase 계열과 Tn5 계열은 nucleosome 위치 정확도와 처리량을 어떻게 맞바꾸는가 (<a href="../50-Notes/mnase-vs-tn5-chromatin">MNase vs Tn5 노트</a>, synthesis).</li>
+  <li>pretrained model이 단일세포 histone 데이터를 쓸 수 있을까. 현재 모델은 bulk 전용이고, scRNA·scATAC에서 빌려 온 imputer는 신호와 clustering을 함께 개선하지 못한다 (<a href="../10-Summaries/foroozandeh-2025-candi">Foroozandeh 2025</a>; <a href="../10-Summaries/yu-2026-chrombert">Yu 2026</a>; <a href="../10-Summaries/morenogonzalez-2025-schistone-imputation">Moreno-González 2025</a>).</li>
+</ul>
+
+<footer>scDNA wiki 교재 · 수치와 해석은 링크된 위키 요약을 기준으로 한다.</footer>
+</main>
+
+<script>
+(function(){
+  // Method lineage drawn from a data array. Years and enzyme families follow the
+  // histone-modifications hub tables, the chic-seq / cut-and-run concept pages and Rotem 2015.
+  var YEARS = [2004, 2007, 2015, 2017, 2019, 2021, 2022, 2023, 2024, 2025, 2026];
+  var X0 = 175, STEP = 79;
+  function xOf(y){ return X0 + STEP*YEARS.indexOf(y); }
+  var LANES = [
+    {name:"ChIP", sub:"면역침강", y0:18, y1:82, trunk:45},
+    {name:"MNase", sub:"항체-MNase 절단", y0:90, y1:168, trunk:112},
+    {name:"Tn5", sub:"항체-Tn5 삽입", y0:176, y1:352, trunk:200},
+    {name:"기타", sub:"deaminase", y0:360, y1:410, trunk:382}
+  ];
+  // k: b = bulk, s = single-cell; m = multi-mark or multimodal; dy = offset below trunk; ind = independent design (no trunk link)
+  var NODES = [
+    {id:"chip", lane:0, yr:2007, lab:["ChIP-seq"], k:"b"},
+    {id:"drop", lane:0, yr:2015, lab:["Drop-ChIP"], k:"s"},
+    {id:"chic", lane:1, yr:2004, lab:["ChIC"], k:"b"},
+    {id:"run",  lane:1, yr:2017, lab:["CUT&RUN"], k:"b"},
+    {id:"scchic", lane:1, yr:2019, lab:["scChIC-seq"], k:"s"},
+    {id:"scchix", lane:1, yr:2023, lab:["scChIX-seq"], k:"s", m:1},
+    {id:"epi2", lane:1, yr:2025, lab:["scEpi²-seq"], k:"s", m:1},
+    {id:"tag",  lane:2, yr:2019, lab:["CUT&Tag","(+iCell8 sc)"], k:"b"},
+    {id:"cob",  lane:2, yr:2019, lab:["CoBATCH"], k:"s", dy:80, ind:1},
+    {id:"sctag", lane:2, yr:2021, lab:["scCUT&Tag","(droplet)"], k:"s"},
+    {id:"pro",  lane:2, yr:2022, lab:["scCUT&Tag","-pro"], k:"s", m:1},
+    {id:"nano", lane:2, yr:2022, lab:["nano-","CUT&Tag"], k:"s", m:1, dy:55},
+    {id:"multi", lane:2, yr:2022, lab:["Multi-","CUT&Tag"], k:"s", m:1, dy:110},
+    {id:"sci",  lane:2, yr:2023, lab:["sciCUT&Tag","MulTI-Tag"], k:"s", m:1},
+    {id:"nanop", lane:2, yr:2024, lab:["scNanoSeq-","CUT&Tag"], k:"s"},
+    {id:"six",  lane:2, yr:2026, lab:["6-base-","CUT&Tag"], k:"b", m:1},
+    {id:"one",  lane:2, yr:2026, lab:["OneCell","CUT&Tag"], k:"s", m:1, dy:65},
+    {id:"dechic", lane:3, yr:2026, lab:["DeChIC-seq"], k:"s"}
+  ];
+  var NS = "http://www.w3.org/2000/svg", svg = document.getElementById("tree");
+  function el(tag, attrs, style, text){
+    var e = document.createElementNS(NS, tag);
+    for (var a in attrs) e.setAttribute(a, attrs[a]);
+    if (style) e.setAttribute("style", style);
+    if (text != null) e.textContent = text;
+    svg.appendChild(e); return e;
+  }
+  svg.setAttribute("font-size", "12");
+  svg.setAttribute("fill", "currentColor");
+  // lane bands and labels
+  LANES.forEach(function(L){
+    el("rect", {x:4, y:L.y0, width:992, height:L.y1-L.y0, rx:8}, "fill:var(--line);opacity:.35");
+    el("text", {x:14, y:L.y0+22, "font-weight":"600", "font-size":"14"}, null, L.name);
+    el("text", {x:14, y:L.y0+38, "font-size":"11"}, "fill:var(--muted)", L.sub);
+  });
+  // year axis
+  el("line", {x1:X0-20, y1:428, x2:X0+STEP*(YEARS.length-1)+20, y2:428}, "stroke:var(--muted)");
+  YEARS.forEach(function(y){
+    el("line", {x1:xOf(y), y1:424, x2:xOf(y), y2:432}, "stroke:var(--muted)");
+    el("text", {x:xOf(y), y:446, "text-anchor":"middle", "font-size":"11"}, "fill:var(--muted)", String(y));
+  });
+  // trunks: from first node to last node of each lane
+  LANES.forEach(function(L, i){
+    var xs = NODES.filter(function(n){ return n.lane===i && !n.ind; }).map(function(n){ return xOf(n.yr); });
+    if (xs.length > 1) el("line", {x1:Math.min.apply(null,xs), y1:L.trunk, x2:Math.max.apply(null,xs), y2:L.trunk}, "stroke:var(--accent);stroke-width:2;opacity:.6");
+  });
+  // sortChIC platform bar under the MNase trunk (no year in the wiki)
+  el("rect", {x:xOf(2022), y:150, width:xOf(2025)-xOf(2022)+12, height:10, rx:3}, "fill:var(--accent);opacity:.25");
+  el("text", {x:xOf(2022)-6, y:159, "text-anchor":"end", "font-size":"11"}, "fill:var(--muted)", "sortChIC 플랫폼 (FACS + pA-MNase)");
+  [2023, 2025].forEach(function(y){ el("line", {x1:xOf(y), y1:139, x2:xOf(y), y2:150}, "stroke:var(--accent);stroke-dasharray:2 3;opacity:.7"); });
+  // cross-lane edge: CUT&RUN -> CUT&Tag (enzyme swap)
+  el("path", {d:"M"+xOf(2017)+" "+(LANES[1].trunk+8)+" C "+xOf(2017)+" 175, "+(xOf(2019)-40)+" 185, "+(xOf(2019)-8)+" "+(LANES[2].trunk-4), fill:"none"}, "stroke:var(--a2);stroke-width:2;stroke-dasharray:5 4");
+  el("text", {x:xOf(2017)+4, y:190, "text-anchor":"middle", "font-size":"11"}, "fill:var(--a2)", "MNase → Tn5");
+  // nodes
+  NODES.forEach(function(n){
+    var L = LANES[n.lane], x = xOf(n.yr), y = L.trunk + (n.dy||0);
+    if (n.dy && !n.ind) el("line", {x1:x, y1:L.trunk, x2:x, y2:y}, "stroke:var(--accent);stroke-width:1.5;opacity:.6");
+    var fill = n.k === "s" ? "var(--accent)" : "var(--panel)";
+    var stroke = n.m ? "var(--a2)" : "var(--accent)";
+    el("circle", {cx:x, cy:y, r:7}, "fill:"+fill+";stroke:"+stroke+";stroke-width:"+(n.m?3:2)+(n.ind?";stroke-dasharray:3 2":""));
+    n.lab.forEach(function(t, i){
+      el("text", {x:x, y:y+22+13*i, "text-anchor":"middle", "font-size": i ? "11" : "12"}, i ? "fill:var(--muted)" : null, t);
+    });
+  });
+  // legend
+  var lx = 600, ly = 38;
+  el("circle", {cx:lx, cy:ly, r:6}, "fill:var(--panel);stroke:var(--accent);stroke-width:2");
+  el("text", {x:lx+12, y:ly+4, "font-size":"11"}, null, "bulk");
+  el("circle", {cx:lx+70, cy:ly, r:6}, "fill:var(--accent);stroke:var(--accent);stroke-width:2");
+  el("text", {x:lx+82, y:ly+4, "font-size":"11"}, null, "단일세포");
+  el("circle", {cx:lx+160, cy:ly, r:6}, "fill:var(--accent);stroke:var(--a2);stroke-width:3");
+  el("text", {x:lx+172, y:ly+4, "font-size":"11"}, null, "여러 mark·modality");
+  el("circle", {cx:lx+300, cy:ly, r:6}, "fill:var(--accent);stroke:var(--accent);stroke-width:2;stroke-dasharray:3 2");
+  el("text", {x:lx+312, y:ly+4, "font-size":"11"}, null, "독립 설계");
+})();
+</script>
+</body>
+</html>

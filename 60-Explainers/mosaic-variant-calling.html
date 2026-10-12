@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>모자이크 변이 검출력 시뮬레이터</title>
+<link rel="stylesheet" href="explainer.css">
+</head>
+<body>
+<main>
+<div class="crumb"><a href="../">scDNA wiki</a> · <a href="./">교재</a> · 모자이크 변이 검출</div>
+<h1>드물게 있는 변이를 얼마나 잡을 수 있을까: 모자이크 변이 검출력 시뮬레이터</h1>
+<p class="lede">모자이크 변이는 몸의 일부 세포에만 있어서 VAF가 50%보다 훨씬 낮다. germline caller는 이 경우를 가정하지 않으므로 bulk, single-cell, scRNA/scATAC마다 전용 caller가 따로 발전했다 (<a href="../10-Summaries/ha-2023-natmethods">Ha 2023</a>). 어떤 caller를 쓰든 검출력의 한계는 먼저 통계가 정한다. 아래 시뮬레이터에서 깊이, 오류율, 세포 수, dropout을 바꿔 가며 그 한계를 직접 보자.</p>
+
+<div class="callouts">
+  <div class="callout"><b>bulk에서는 read 수 싸움이다</b>VAF가 낮으면 변이 read가 몇 개뿐이고, 시퀀싱 오류도 같은 수준의 read를 만든다. 깊이는 신호를 늘리지만 오류율이 정하는 바닥 아래로는 내려가지 못한다.</div>
+  <div class="callout"><b>single cell에서는 세포를 잡는 싸움이다</b>먼저 변이를 가진 세포를 뽑아야 하고, 뽑은 뒤에도 allelic dropout이나 coverage 공백 때문에 그 세포에서 변이가 안 보일 수 있다.</div>
+  <div class="callout"><b>한 세포에서만 보인 변이는 아직 가설이다</b>duplex로 확인하자 single-cell에서만 나온 call은 19.4–27.0%만 살아남았다 (<a href="../10-Summaries/wang-2014-nuc-seq">Wang 2014</a>). 독립된 방법으로 검증해야 한다.</div>
+</div>
+
+<h2>시뮬레이터 ① bulk: VAF와 깊이</h2>
+<div class="lab" id="labA">
+  <div class="controls">
+    <div class="methods" role="group" aria-label="bulk 예시 설정" id="presetsA"></div>
+  </div>
+  <div class="controls">
+    <label class="slider">VAF <input type="range" id="vaf" min="0" max="100"> <span id="vafv"></span></label>
+    <label class="slider">깊이 <input type="range" id="depth" min="0" max="100"> <span id="depthv"></span></label>
+    <label class="slider">시퀀싱 오류율 <input type="range" id="err" min="0" max="100"> <span id="errv"></span></label>
+  </div>
+  <p class="desc" id="descA"></p>
+
+  <p class="plotlabel">① VAF에 따른 검출력 (현재 깊이). 실선은 현재 오류율, 점선은 오류가 전혀 없을 때다. 세로 점선이 오류율과 같은 VAF, ● 이 현재 설정이다.</p>
+  <canvas class="plot" id="powerVaf" height="190"></canvas>
+  <p class="plotlabel">② 깊이에 따른 최소 검출 VAF (검출력 80%). 가로 점선은 오류율, 그 아래 옅은 선은 오류가 서로 독립일 때만 성립하는 이론 하한(오류율 ÷ 3)이다. 이 모델은 오류를 독립으로 보므로 곡선이 오류율 아래까지 내려간다. 실제 데이터에서는 그렇게 되지 않는다(아래 설명 2). 세로 표시는 30×, 150× (<a href="../10-Summaries/cibulskis-2013-mutect">Cibulskis 2013</a>)와 약 250× (<a href="../10-Summaries/dou-2020-mosaicforecast">Dou 2020</a>).</p>
+  <canvas class="plot" id="floorDepth" height="190"></canvas>
+
+  <div class="metrics">
+    <div class="metric"><div class="k">필요한 변이 read 수 (k)</div><div class="v" id="a-k">–</div></div>
+    <div class="metric"><div class="k">기대 변이 read 수</div><div class="v" id="a-exp">–</div></div>
+    <div class="metric"><div class="k">검출력 P(변이 read ≥ k)</div><div class="v" id="a-pow">–</div></div>
+    <div class="metric"><div class="k">80% 검출 최소 VAF</div><div class="v" id="a-min">–</div></div>
+    <div class="metric"><div class="k">오류만으로 k를 넘을 확률 (자리당)</div><div class="v" id="a-fp">–</div></div>
+  </div>
+  <div class="verdict" id="verdictA"></div>
+</div>
+
+<h2>시뮬레이터 ② single cell: clone 크기와 세포 수</h2>
+<div class="lab" id="labB">
+  <div class="controls">
+    <div class="methods" role="group" aria-label="single-cell 예시 설정" id="presetsB"></div>
+  </div>
+  <div class="controls">
+    <label class="slider">clone 비율 <input type="range" id="frac" min="0" max="100"> <span id="fracv"></span></label>
+    <label class="slider">시퀀싱한 세포 수 <input type="range" id="ncell" min="0" max="100"> <span id="ncellv"></span></label>
+  </div>
+  <div class="controls">
+    <label class="slider">ADO 비율 <input type="range" id="ado" min="0" max="60"> <span id="adov"></span></label>
+    <label class="slider">그 자리의 coverage 확률 <input type="range" id="breadth" min="30" max="100"> <span id="breadthv"></span></label>
+    <label class="slider">요구하는 변이 세포 수 (m) <input type="range" id="mreq" min="1" max="5" step="1"> <span id="mreqv"></span></label>
+  </div>
+  <p class="desc" id="descB"></p>
+
+  <p class="plotlabel">③ 세포 수에 따른 확률 (현재 clone 비율). 점선은 변이 세포를 m개 이상 <i>뽑을</i> 확률, 실선은 ADO와 coverage 공백을 거치고도 m개 이상 세포에서 <i>보일</i> 확률이다.</p>
+  <canvas class="plot" id="probCells" height="190"></canvas>
+  <p class="plotlabel">④ clone 비율에 따른 확률 (현재 세포 수). 선의 뜻은 ③과 같다.</p>
+  <canvas class="plot" id="probFrac" height="190"></canvas>
+
+  <div class="metrics">
+    <div class="metric"><div class="k">변이 세포 1개에서 보일 확률</div><div class="v" id="b-d">–</div></div>
+    <div class="metric"><div class="k">뽑힌 변이 세포 기대값</div><div class="v" id="b-nm">–</div></div>
+    <div class="metric"><div class="k">변이가 보인 세포 기대값</div><div class="v" id="b-nd">–</div></div>
+    <div class="metric"><div class="k">P(변이 세포 ≥ m개 포획)</div><div class="v" id="b-cap">–</div></div>
+    <div class="metric"><div class="k">P(≥ m개 세포에서 검출)</div><div class="v" id="b-det">–</div></div>
+  </div>
+  <div class="verdict" id="verdictB"></div>
+</div>
+
+<div class="note"><b>이 시뮬레이터는 장난감 모델이다.</b> ① bulk는 변이 read 수를 이항분포로 보고, 오류 read만으로 기준 k를 넘을 확률이 자리당 10⁻⁶ 미만이 되는 가장 작은 k를 검출 기준으로 삼는다. 오류는 특정 염기로 바뀔 확률을 오류율 ÷ 3으로 두고 자리와 read마다 독립이라고 가정한다. 기본 오류율 10⁻³은 표준 NGS 오류 "100–1,000 base에 1개"(<a href="../10-Summaries/kennedy-2014-duplex-protocol">Kennedy 2014</a>)에서 골랐고, 이 설정에서 30×·VAF 0.2, 30×·VAF 0.1, 150×·VAF 0.03의 검출력은 MuTect가 보고한 95.6%, 58.9%, 66.4% (<a href="../10-Summaries/cibulskis-2013-mutect">Cibulskis 2013</a>)와 비슷하게 나온다. ② single cell은 세포를 독립적으로 뽑는다고 보고, 변이 세포 하나에서 변이가 보일 확률을 (1 − ADO/2) × coverage 확률로 둔다. ADO가 생기면 두 allele 중 하나가 사라지므로 변이 allele이 사라질 확률은 절반이다 (<a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a>). 예시 값은 아래 표의 ADO, breadth, 세포 수 (<a href="../10-Summaries/wang-2014-nuc-seq">Wang 2014</a>; <a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a>; <a href="../10-Summaries/gillman-2026-scarce">Gillman 2026</a>; <a href="../10-Summaries/zhang-2025-scistree2">Zhang 2025</a>)를 따랐다. 실제 caller는 체계적 오류, 증폭 artifact, 정렬 오류, 위양성 필터를 함께 다루므로 화면의 숫자를 논문 수치로 인용하면 안 된다. 실제 값은 표를 보자.</div>
+
+<h2>핵심 내용</h2>
+<ol class="steps">
+  <li><b>왜 전용 caller가 필요한가.</b> germline caller는 이형접합 변이의 VAF를 50% 근처로 가정한다. 모자이크 변이는 VAF가 그보다 훨씬 낮아 이 가정이 깨진다 (<a href="../10-Summaries/ha-2023-natmethods">Ha 2023</a>). MuTect는 allele fraction을 자유 변수로 둔 Bayesian 검정으로 이 문제를 풀었고, 고정 50%를 가정한 도구보다 민감도가 높았다 (<a href="../10-Summaries/cibulskis-2013-mutect">Cibulskis 2013</a>).</li>
+  <li><b>깊이만으로는 부족하다.</b> MuTect의 필터 전 위양성은 5×에서 Mb당 6.7개, 30×에서 20.1개로 깊이와 함께 늘었다. 깊을수록 저빈도 오류까지 부를 힘이 생기기 때문이다. 여섯 가지 필터와 panel of normals를 거치면 30×에서 Mb당 0.51개로 줄었다 (<a href="../10-Summaries/cibulskis-2013-mutect">Cibulskis 2013</a>). MuTect의 검출 기준(LOD)은 오류가 서로 독립이고 read 위치가 정확하다고 가정하기 때문에 위양성을 과소추정하며, 그래서 필터가 필요하다 (<a href="../10-Summaries/cibulskis-2013-mutect">Cibulskis 2013</a>). 실제로 오류 보정 없는 표준 NGS는 VAF 약 1% 아래의 변이를 보지 못한다 (<a href="../10-Summaries/kennedy-2014-duplex-protocol">Kennedy 2014</a>). 그림 ②의 곡선이 깊이만 올리면 계속 내려가는 것은 독립 오류 가정 덕분이고, 실제 바닥은 그보다 높다.</li>
+  <li><b>matched control이 없는 bulk.</b> MosaicHunter는 Bayesian genotyper로 대조 조직 없이 접합 후 변이를 찾는다 (<a href="../10-Summaries/huang-2017-mosaichunter">Huang 2017</a>). MosaicForecast는 후보 변이를 주변 germline 이형접합 변이와 read로 phasing해 학습 데이터를 만들고 random forest로 분류한다. 약 250× 뇌 WGS에서 SNV 검증률은 80–90%였다 (<a href="../10-Summaries/dou-2020-mosaicforecast">Dou 2020</a>). DeepMosaic은 pileup 이미지를 CNN으로 분류한다 (<a href="../10-Summaries/yang-2023-deepmosaic">Yang 2023</a>). 11가지 전략을 비교한 benchmark에서는 VAF 4–25%의 단일 시료 SNV에 MosaicForecast와 Mutect2 tumor-only가 가장 좋았고, caller 결과를 단순 교집합하면 정확도가 오히려 떨어졌다 (<a href="../10-Summaries/ha-2023-natmethods">Ha 2023</a>).</li>
+  <li><b>single cell에서는 증폭이 오류를 만든다.</b> MDA 뉴런 후보 중 phasing이 가능한 것의 92%가 LiRA에서 artifact로 걸러졌다 (<a href="../10-Summaries/bohrson-2019-lira">Bohrson 2019</a>). PTA에 맞춘 SCAN2는 allele-balance 모델에 mutation signature 기반 구제 단계를 더해, 합성 이배체 X 염색체에서 sSNV 민감도를 25%에서 46%로 올리면서 FDR을 비슷하게 유지했다 (<a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a>). SCIΦ는 세포 계통수를 prior로 써서 변이 read가 하나도 없는 세포에도 변이를 배정할 수 있다 (<a href="../10-Summaries/singer-2018-sciphi">Singer 2018</a>).</li>
+  <li><b>화학이 생물학적 수치를 바꾼다.</b> 영아 뉴런에서 MDA는 뉴런당 sSNV를 PTA보다 약 10배 많이 불렀다 (282 대 26). PTA와 SCAN2로 다시 잰 뉴런의 SNV 축적 속도는 연 16.5개이고, MDA 뉴런에 SCAN2를 적용하면 연 31개, artifact signature를 빼면 연 22개였다 (<a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a>).</li>
+  <li><b>scDNA 밖으로, 그리고 희귀 clone으로.</b> SComatic은 matched DNA 없이 scRNA/scATAC read를 세포 유형별로 모아 체세포 SNV를 찾는다. precision은 0.67–0.87로 차순위 Strelka2의 0.06–0.24보다 크게 높았지만 민감도는 0.33–0.56으로 더 낮았다 (<a href="../10-Summaries/muyas-2024-scomatic">Muyas 2024</a>). SCARCE는 세포 집단 사이 enrichment 검정으로 16,316개 세포 가운데 10개짜리 KG-1 clone을 분리했다 (<a href="../10-Summaries/gillman-2026-scarce">Gillman 2026</a>). 시뮬레이터 ③에서 clone 비율이 0.06%일 때 세포 수가 얼마나 필요한지 확인해 보자.</li>
+</ol>
+
+<h2>보고된 수치</h2>
+<p class="desc">조건이 다른 수치는 직접 비교할 수 없다. 같은 양을 다르게 잰 경우(ADO 등)는 엇갈리는 값을 함께 적었다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>측정</th><th>보고된 값</th><th>조건</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>bulk 검출 민감도 (MuTect)</td><td>AF 0.2: 95.6% · AF 0.1: 58.9% · AF 0.03: 66.4%</td><td>앞 둘은 종양 30×, 마지막은 150× (exome)</td><td><a href="../10-Summaries/cibulskis-2013-mutect">Cibulskis 2013</a></td></tr>
+<tr><td>bulk 위양성 (MuTect)</td><td>필터 전 Mb당 6.7개(5×) → 20.1개(30×) · 필터 후 1.00개 · panel of normals 추가 시 0.51개</td><td>virtual tumor, 30×</td><td><a href="../10-Summaries/cibulskis-2013-mutect">Cibulskis 2013</a></td></tr>
+<tr><td>표준 NGS 오류율</td><td>100–1,000 base에 약 1개, VAF 약 1% 아래는 보지 못함 · Q30 분석 3.8 × 10⁻³</td><td>오류 보정 없는 Illumina read</td><td><a href="../10-Summaries/kennedy-2014-duplex-protocol">Kennedy 2014</a> · <a href="../10-Summaries/schmitt-2012-pnas">Schmitt 2012</a></td></tr>
+<tr><td>control 없는 bulk 검증률</td><td>MosaicForecast SNV 80–90%, indel 60–80% · DeepMosaic 비암 WES 0.43 (기존 0.18)</td><td>약 250× 뇌 WGS · 비암 WES</td><td><a href="../10-Summaries/dou-2020-mosaicforecast">Dou 2020</a> · <a href="../10-Summaries/yang-2023-deepmosaic">Yang 2023</a></td></tr>
+<tr><td>benchmark 범위</td><td>11개 전략, VAF 0.5–56%의 39개 혼합 · MosaicForecast, Mutect2 tumor-only가 VAF 4–25%에서 최선</td><td>세포주 6종 혼합 reference standard</td><td><a href="../10-Summaries/ha-2023-natmethods">Ha 2023</a></td></tr>
+<tr><td>single-cell call 민감도·FDR</td><td>SCAN2 sSNV 46% (SCAN-SNV 25%), FDR 8.6% · indel 33.6%, FDR &lt;2%</td><td>합성 이배체 X 염색체, PTA</td><td><a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a></td></tr>
+<tr><td>single-cell call의 artifact 비율</td><td>phasing 가능한 후보의 92%가 artifact (germline 쌍은 2%)</td><td>MDA 뉴런 약 45×</td><td><a href="../10-Summaries/bohrson-2019-lira">Bohrson 2019</a></td></tr>
+<tr><td>single-cell-only call의 duplex 검증률</td><td>19.4% / 27.0% (clonal 94.4% / 99.7%)</td><td>G2/M 핵 MDA, 유방암 2건</td><td><a href="../10-Summaries/wang-2014-nuc-seq">Wang 2014</a></td></tr>
+<tr><td>allelic dropout</td><td>9.73 ± 2.19% · 8.7 ± 1.1% · 중앙값 23–24% (재시퀀싱으로는 33%) · "50% 이상"</td><td>G2/M 핵 MDA · droplet targeted · ALL 단일세포 · ScisTree2 저자의 서술</td><td><a href="../10-Summaries/wang-2014-nuc-seq">Wang 2014</a> · <a href="../10-Summaries/pellegrino-2018-tapestri">Pellegrino 2018</a> · <a href="../10-Summaries/gawad-2014-all-clonal-origins">Gawad 2014</a> · <a href="../10-Summaries/zhang-2025-scistree2">Zhang 2025</a></td></tr>
+<tr><td>증폭 오류 (위양성률/base)</td><td>nuc-seq 1.24 × 10⁻⁶ · MDA 2.52 × 10⁻⁵ · MALBAC 4 × 10⁻⁵</td><td>SK-BR-3 단일 클론 세포주</td><td><a href="../10-Summaries/wang-2014-nuc-seq">Wang 2014</a></td></tr>
+<tr><td>scRNA/scATAC 체세포 SNV</td><td>precision 0.67–0.87 (Strelka2 0.06–0.24) · 민감도 0.33–0.56 (Strelka2보다 낮음)</td><td>종양 30건, DNA로 확인된 변이 416개</td><td><a href="../10-Summaries/muyas-2024-scomatic">Muyas 2024</a></td></tr>
+<tr><td>희귀 clone 분리</td><td>16,316개 세포 중 10개 clone · 같은 TP53 변이가 다른 세포 15,734개 중 30개(0.2%)에도 보임</td><td>Tapestri myeloid panel, PBMC + KG-1</td><td><a href="../10-Summaries/gillman-2026-scarce">Gillman 2026</a></td></tr>
+<tr><td>뉴런 SNV 축적 속도</td><td>PTA + SCAN2 연 16.5개 · MDA + SCAN2 연 31개 → signature B 제거 후 22개</td><td>신경전형인 전전두엽 뉴런</td><td><a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a></td></tr>
+</tbody></table></div>
+
+<h2>목적별로 고르기</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>알고 싶은 것</th><th>우선 고려</th><th>확인할 위험</th></tr></thead>
+<tbody>
+<tr><td>대조 조직 없는 bulk에서 VAF 수 % 이상의 모자이크 SNV</td><td>깊은 WGS + MosaicForecast 또는 Mutect2 tumor-only (<a href="../10-Summaries/ha-2023-natmethods">Ha 2023</a>; <a href="../10-Summaries/dou-2020-mosaicforecast">Dou 2020</a>)</td><td>caller끼리 결과가 크게 다르고, 단순 교집합은 정확도를 떨어뜨림 (<a href="../10-Summaries/ha-2023-natmethods">Ha 2023</a>)</td></tr>
+<tr><td>VAF 5% 미만의 아주 낮은 모자이크 변이</td><td>MosaicHunter (<a href="../10-Summaries/huang-2017-mosaichunter">Huang 2017</a>)</td><td>오류율이 정하는 바닥. 그 아래는 duplex 같은 오류 보정 방식이 필요 (<a href="../10-Summaries/kennedy-2014-duplex-protocol">Kennedy 2014</a>)</td></tr>
+<tr><td>종양–정상 쌍에서 subclonal SNV</td><td>MuTect 계열 + panel of normals (<a href="../10-Summaries/cibulskis-2013-mutect">Cibulskis 2013</a>)</td><td>2% 교차 오염만으로 Mb당 166개 위양성 (<a href="../10-Summaries/cibulskis-2013-mutect">Cibulskis 2013</a>)</td></tr>
+<tr><td>세포 하나에만 있는 SNV·indel</td><td>PTA + SCAN2, phasing 기반 LiRA (<a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a>; <a href="../10-Summaries/bohrson-2019-lira">Bohrson 2019</a>)</td><td>single-cell-only call은 대부분 검증되지 않음. duplex로 교차 확인 (<a href="../10-Summaries/wang-2014-nuc-seq">Wang 2014</a>)</td></tr>
+<tr><td>수천 개 세포 속 희귀 clone</td><td>세포 수를 늘리고 enrichment로 순위화 (SCARCE) (<a href="../10-Summaries/gillman-2026-scarce">Gillman 2026</a>)</td><td>새 후보 변이는 독립 검증 없이 보고됨 (<a href="../10-Summaries/gillman-2026-scarce">Gillman 2026</a>)</td></tr>
+<tr><td>scRNA/scATAC만 있는 데이터의 체세포 SNV</td><td>SComatic (<a href="../10-Summaries/muyas-2024-scomatic">Muyas 2024</a>)</td><td>민감도가 낮고, 여러 세포 유형에 걸친 초기 변이는 germline처럼 보여 버려짐 (<a href="../10-Summaries/muyas-2024-scomatic">Muyas 2024</a>)</td></tr>
+<tr><td>dropout으로 잃은 변이까지 회복</td><td>계통수를 prior로 쓰는 SCIΦ (<a href="../10-Summaries/singer-2018-sciphi">Singer 2018</a>)</td><td>계통수가 틀리면 상관된 위양성이 생길 수 있음 (<a href="../40-Topics/mosaic-variant-calling">hub</a>)</td></tr>
+</tbody></table></div>
+
+<h2>읽는 순서</h2>
+<ol class="path">
+  <li><a href="../40-Topics/mosaic-variant-calling">Mosaic variant calling (hub)</a> — bulk, single-cell, scRNA/scATAC caller를 한 표에서 본다.</li>
+  <li><a href="../30-Concepts/single-cell-variant-calling">Single-cell variant calling</a> — bulk caller의 어떤 가정을 single-cell 도구가 버리는지 정리한다.</li>
+  <li><a href="../30-Concepts/allele-dropout">Allele dropout</a> — ADO를 어떻게 재고, 왜 측정값이 5%에서 50%까지 갈리는지 본다.</li>
+  <li><a href="../10-Summaries/cibulskis-2013-mutect">Cibulskis 2013 (MuTect)</a> — 깊이와 allele fraction에 따른 민감도 곡선, 위양성이 깊이와 함께 느는 이유.</li>
+  <li><a href="../10-Summaries/ha-2023-natmethods">Ha 2023</a> — 모자이크 caller 11가지를 같은 reference standard에서 비교한 benchmark.</li>
+  <li><a href="../10-Summaries/dou-2020-mosaicforecast">Dou 2020 (MosaicForecast)</a> — phasing으로 학습 데이터를 만드는 control-free 방법.</li>
+  <li><a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022 (SCAN2)</a> — 증폭 화학과 caller가 뉴런 돌연변이율을 어떻게 바꿨는지.</li>
+  <li><a href="../10-Summaries/wang-2014-nuc-seq">Wang 2014</a> — single-cell-only call을 duplex로 검증한 첫 사례.</li>
+</ol>
+
+<h2>아직 열린 질문</h2>
+<ul>
+  <li>VAF 1% 미만에서 세포 단위 call의 민감도는 아직 도구마다 다르다 (<a href="../40-Topics/mosaic-variant-calling">hub</a>).</li>
+  <li>caller마다 mutation spectrum에 다른 편향이 있다 (<a href="../40-Topics/mosaic-variant-calling">hub</a>).</li>
+  <li>대부분의 caller는 copy-number 상태를 무시한다. CNV 맥락과 통합하는 문제는 열려 있다 (<a href="../40-Topics/mosaic-variant-calling">hub</a>).</li>
+  <li>계통수를 prior로 쓰는 방식은 계통수가 틀릴 때 상관된 위양성을 만들 수 있는데, 이 위험은 아직 다뤄지지 않았다 (<a href="../10-Summaries/singer-2018-sciphi">Singer 2018</a>).</li>
+</ul>
+
+<footer>scDNA wiki 교재 · 시뮬레이터의 데이터는 모두 합성 데이터다. 실제 수치와 해석은 링크된 위키 요약과 원 논문을 기준으로 한다.</footer>
+</main>
+
+<script>
+(function(){
+  // ---------- pure computation (no DOM) ----------
+  var LC = [0.99999999999980993, 676.5203681218851, -1259.1392167224028, 771.32342877765313, -176.61502916214059, 12.507343278686905, -0.13857109526572012, 9.9843695780195716e-6, 1.5056327351493116e-7];
+  function lgam(x){ x -= 1; var a = LC[0], t = x + 7.5; for(var i = 1; i < 9; i++) a += LC[i]/(x+i); return 0.5*Math.log(2*Math.PI) + (x+0.5)*Math.log(t) - t + Math.log(a); }
+  function logPmf(n, k, p){ return lgam(n+1) - lgam(k+1) - lgam(n-k+1) + k*Math.log(p) + (n-k)*Math.log1p(-p); }
+  // Binomial upper tail P(X >= k), X ~ Bin(n, p): sums the smaller side outward from k until terms vanish.
+  function tailGE(n, p, k){
+    if(k <= 0) return 1; if(k > n) return 0; if(p <= 0) return 0; if(p >= 1) return 1;
+    var lr = Math.log(p) - Math.log1p(-p), s = 0, lp, j, v;
+    if(k > n*p){
+      lp = logPmf(n, k, p);
+      for(j = k; j <= n; j++){ v = Math.exp(lp); s += v; if(v <= s*1e-15) break; lp += Math.log((n-j)/(j+1)) + lr; }
+      return Math.min(1, s);
+    }
+    lp = logPmf(n, k-1, p);
+    for(j = k-1; j >= 0; j--){ v = Math.exp(lp); s += v; if(v <= s*1e-15 || j === 0) break; lp += Math.log(j/(n-j+1)) - lr; }
+    return Math.max(0, 1 - s);
+  }
+  var ALPHA = 1e-6;   // per-site chance that errors alone reach k
+  // Smallest k with P(error reads >= k) < ALPHA; an error yields the specific alt base with prob e/3.
+  function threshold(D, e){
+    var p0 = e/3; if(p0 <= 0) return 1;
+    for(var k = Math.max(1, Math.floor(D*p0)); k <= D; k++){ if(tailGE(D, p0, k) < ALPHA) return k; }
+    return D + 1;
+  }
+  function bulk(D, vaf, e){
+    var k = threshold(D, e), p1 = vaf*(1-e) + (1-vaf)*e/3;
+    return {k:k, power: tailGE(D, p1, k), expAlt: D*p1, fp: tailGE(D, e/3, k)};
+  }
+  function powerAt(D, vaf, e, k){ return tailGE(D, vaf*(1-e) + (1-vaf)*e/3, k); }
+  // Smallest VAF with power >= target (bisection on log VAF).
+  function minVaf(D, e, target){
+    var k = threshold(D, e);
+    if(powerAt(D, 0.5, e, k) < target) return NaN;
+    var lo = Math.log(1e-6), hi = Math.log(0.5);
+    for(var i = 0; i < 30; i++){ var mid = (lo+hi)/2; if(powerAt(D, Math.exp(mid), e, k) >= target) hi = mid; else lo = mid; }
+    return Math.exp(hi);
+  }
+  // Single cell: per-mutant-cell visibility d = (1 - ADO/2) * coverage; cells drawn independently.
+  function sc(f, N, ado, cov, m){
+    var d = (1 - ado/2)*cov;
+    return {d:d, nMut: N*f, nDet: N*f*d, capture: tailGE(N, f, m), detect: tailGE(N, f*d, m)};
+  }
+  // ---------- end pure computation ----------
+
+  // ---------- sliders (log scale) ----------
+  function logMap(lo, hi){ return {
+    v: function(i){ return Math.exp(Math.log(lo) + (Math.log(hi)-Math.log(lo))*i/100); },
+    i: function(v){ return Math.round(100*(Math.log(v)-Math.log(lo))/(Math.log(hi)-Math.log(lo))); } }; }
+  var VAF = logMap(0.001, 0.5), DEP = logMap(5, 10000), ERR = logMap(1e-6, 1e-2), FRAC = logMap(1e-4, 0.5), NC = logMap(10, 20000);
+
+  var PRESETS_A = {
+    "30× · VAF 10%": {D:30, vaf:0.1, e:1e-3, text:"MuTect 논문이 보고한 조건(종양 30×, AF 0.1)이다. 이 장난감 모델에서도 변이 read 3개가 기준이 되고, 검출력은 60% 안팎이다."},
+    "150× · VAF 3%": {D:150, vaf:0.03, e:1e-3, text:"MuTect가 exome 150×에서 AF 0.03의 민감도를 보고한 조건이다. 깊이가 다섯 배가 되어도 VAF가 낮으면 검출력은 3분의 2 수준이다."},
+    "250× · VAF 4%": {D:250, vaf:0.04, e:1e-3, text:"MosaicForecast가 쓴 약 250× 뇌 WGS 깊이와, Ha 2023 benchmark에서 MosaicForecast가 강했던 VAF 구간(4–25%)의 아래쪽 끝이다."},
+    "Q30 오류 · VAF 1%": {D:250, vaf:0.01, e:3.8e-3, text:"오류율을 표준 Q30 분석 값 3.8 × 10⁻³ (Schmitt 2012)으로 올렸다. VAF가 오류율과 비슷해지면 검출 기준 k가 올라가 검출력이 크게 떨어진다. 이 모델에서는 깊이를 더 올리면 회복되지만, 실제 오류는 독립이 아니어서 그만큼 회복되지 않는다."}
+  };
+  var PRESETS_B = {
+    "핵 50개 · subclone 5%": {f:0.05, N:50, ado:0.097, cov:0.91, m:2, text:"Wang 2014의 G2/M 핵 MDA 조건이다(ADO 9.7%, breadth 91%, 종양당 핵 47–59개, subclonal 변이 빈도 약 0.05). 세포 50개면 5% clone에서 변이 세포를 몇 개 뽑을 수 있다."},
+    "희귀 clone 10/16,316": {f:10/16316, N:16316, ado:0.087, cov:0.9, m:3, text:"SCARCE가 Tapestri 데이터에서 분리한 10개짜리 KG-1 clone(약 0.06%)이다. ADO는 droplet targeted scDNA-seq 측정값 8.7% (Pellegrino 2018), coverage 확률 0.9는 예시 값이다."},
+    "ADO 50%": {f:0.05, N:50, ado:0.5, cov:0.91, m:2, text:"ScisTree2 저자들이 현재 단일세포 데이터의 ADO를 '50% 이상'으로 본 값이다. 같은 5% clone이라도 보이는 세포 수가 줄어든다."}
+  };
+  var A = {D:30, vaf:0.1, e:1e-3, p:null}, B = {f:0.05, N:50, ado:0.097, cov:0.91, m:2, p:null};
+
+  // ---------- drawing ----------
+  function css(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+  function setup(c){
+    var dpr = window.devicePixelRatio||1, w = c.clientWidth, h = parseInt(c.getAttribute("height"),10);
+    c.width = w*dpr; c.height = h*dpr; c.style.height = h+"px";
+    var ctx = c.getContext("2d"); ctx.setTransform(dpr,0,0,dpr,0,0); return {ctx:ctx, w:w, h:h};
+  }
+  // o: {xmin,xmax,ylog,ymin,ymax,xticks:[[v,label]],yticks:[[v,label]],series:[{pts,color,dash,width}],vlines:[{x,label}],hlines:[{y,label,alpha}],marker:{x,y}}
+  function plot(id, o){
+    var s = setup(document.getElementById(id)), ctx = s.ctx, pad = {l:44, r:10, t:10, b:22};
+    var W = s.w-pad.l-pad.r, H = s.h-pad.t-pad.b;
+    function X(x){ return pad.l + W*(Math.log(x)-Math.log(o.xmin))/(Math.log(o.xmax)-Math.log(o.xmin)); }
+    function Y(y){ var t = o.ylog ? (Math.log(y)-Math.log(o.ymin))/(Math.log(o.ymax)-Math.log(o.ymin)) : (y-o.ymin)/(o.ymax-o.ymin); t = Math.max(0, Math.min(1, t)); return pad.t + H*(1-t); }
+    ctx.clearRect(0,0,s.w,s.h); ctx.lineWidth = 1; ctx.font = "11px sans-serif";
+    ctx.strokeStyle = css("--line"); ctx.fillStyle = css("--muted");
+    o.yticks.forEach(function(t){ var y = Y(t[0]); ctx.beginPath(); ctx.moveTo(pad.l,y); ctx.lineTo(s.w-pad.r,y); ctx.stroke(); ctx.fillText(t[1], 2, y+4); });
+    o.xticks.forEach(function(t){ var x = X(t[0]); ctx.fillText(t[1], Math.min(x-8, s.w-pad.r-30), s.h-6); });
+    (o.hlines||[]).forEach(function(h){ if(h.y < o.ymin || h.y > o.ymax) return; var y = Y(h.y); ctx.save(); ctx.globalAlpha = h.alpha||1; ctx.setLineDash([5,4]); ctx.strokeStyle = css("--warn"); ctx.beginPath(); ctx.moveTo(pad.l,y); ctx.lineTo(s.w-pad.r,y); ctx.stroke(); ctx.setLineDash([]); ctx.fillStyle = css("--warn"); ctx.fillText(h.label, s.w-pad.r-ctx.measureText(h.label).width-2, y-4); ctx.restore(); });
+    (o.vlines||[]).forEach(function(v){ if(v.x < o.xmin || v.x > o.xmax) return; var x = X(v.x); ctx.save(); ctx.setLineDash([2,4]); ctx.strokeStyle = css(v.color||"--muted"); ctx.beginPath(); ctx.moveTo(x,pad.t); ctx.lineTo(x,pad.t+H); ctx.stroke(); ctx.setLineDash([]); ctx.fillStyle = css(v.color||"--muted"); ctx.fillText(v.label, x+3, pad.t+10); ctx.restore(); });
+    o.series.forEach(function(sr){
+      ctx.save(); ctx.strokeStyle = css(sr.color); ctx.lineWidth = sr.width||2; if(sr.dash) ctx.setLineDash(sr.dash);
+      ctx.beginPath(); var started = false;
+      sr.pts.forEach(function(p){ if(!isFinite(p[1]) || (o.ylog && p[1] <= 0)){ started = false; return; } var x = X(p[0]), y = Y(p[1]); if(!started){ ctx.moveTo(x,y); started = true; } else ctx.lineTo(x,y); });
+      ctx.stroke(); ctx.restore();
+    });
+    if(o.marker && isFinite(o.marker.y)){ ctx.fillStyle = css("--a2"); ctx.beginPath(); ctx.arc(X(o.marker.x), Y(o.marker.y), 4.5, 0, 2*Math.PI); ctx.fill(); }
+  }
+  function grid(lo, hi, n){ var a = []; for(var i = 0; i <= n; i++) a.push(Math.exp(Math.log(lo) + (Math.log(hi)-Math.log(lo))*i/n)); return a; }
+  function pct(x){ if(!isFinite(x)) return "–"; if(x < 0.001) return (100*x).toPrecision(2)+"%"; return (100*x).toFixed(x < 0.1 ? 1 : 0)+"%"; }
+  function sci(x){ if(!isFinite(x)) return "–"; if(x === 0) return "0"; var e = Math.floor(Math.log10(x)), m = x/Math.pow(10,e); return m.toFixed(1)+"×10"+String(e).replace(/-/,"⁻").replace(/[0-9]/g,function(d){return "⁰¹²³⁴⁵⁶⁷⁸⁹"[d];}); }
+  function tag(box, ok, text){ var s = document.createElement("span"); s.className = "tag "+(ok?"good":"bad"); s.textContent = text; box.appendChild(s); }
+  var PROB_TICKS = [[0,"0"],[0.5,"0.5"],[1,"1"]];
+
+  function renderA(){
+    var r = bulk(A.D, A.vaf, A.e), mv = minVaf(A.D, A.e, 0.8);
+    document.getElementById("vafv").textContent = pct(A.vaf);
+    document.getElementById("depthv").textContent = Math.round(A.D)+"×";
+    document.getElementById("errv").textContent = sci(A.e);
+    var k0 = threshold(A.D, 0);
+    plot("powerVaf", {xmin:0.001, xmax:0.5, ymin:0, ymax:1, yticks:PROB_TICKS,
+      xticks:[[0.001,"0.1%"],[0.01,"1%"],[0.1,"10%"],[0.5,"50%"]],
+      series:[{pts:grid(0.001,0.5,160).map(function(v){ return [v, powerAt(A.D, v, 0, k0)]; }), color:"--muted", dash:[5,4], width:1.5},
+              {pts:grid(0.001,0.5,160).map(function(v){ return [v, powerAt(A.D, v, A.e, r.k)]; }), color:"--a1"}],
+      vlines:[{x:A.e, label:"오류율", color:"--warn"}], marker:{x:A.vaf, y:r.power}});
+    plot("floorDepth", {xmin:5, xmax:10000, ylog:true, ymin:1e-4, ymax:1,
+      yticks:[[1e-4,"0.01%"],[1e-3,"0.1%"],[1e-2,"1%"],[1e-1,"10%"],[1,"100%"]],
+      xticks:[[5,"5×"],[50,"50×"],[500,"500×"],[5000,"5,000×"]],
+      series:[{pts:grid(5,10000,90).map(function(D){ return [D, minVaf(Math.round(D), A.e, 0.8)]; }), color:"--a1"}],
+      hlines:[{y:A.e, label:"오류율"},{y:A.e/3, label:"독립 오류 하한", alpha:0.5}],
+      vlines:[{x:30, label:"30×"},{x:150, label:"150×"},{x:250, label:"250×"}], marker:{x:A.D, y:mv}});
+    document.getElementById("a-k").textContent = r.k;
+    document.getElementById("a-exp").textContent = r.expAlt.toFixed(1);
+    document.getElementById("a-pow").textContent = pct(r.power);
+    document.getElementById("a-min").textContent = pct(mv);
+    document.getElementById("a-fp").textContent = sci(r.fp);
+    document.getElementById("descA").textContent = A.p ? PRESETS_A[A.p].text : "직접 고른 설정이다.";
+    var v = document.getElementById("verdictA"); v.innerHTML = "";
+    tag(v, r.power >= 0.8, "검출력: "+(r.power >= 0.8 ? "80% 이상" : "80% 미만, 이 깊이에서는 자주 놓침"));
+    tag(v, A.vaf >= 10*A.e, "오류 대비: "+(A.vaf >= 10*A.e ? "VAF가 오류율보다 10배 이상 큼" : "VAF가 오류율과 가까움, 체계적 오류에 취약"));
+  }
+  function renderB(){
+    var r = sc(B.f, B.N, B.ado, B.cov, B.m);
+    document.getElementById("fracv").textContent = pct(B.f);
+    document.getElementById("ncellv").textContent = Math.round(B.N).toLocaleString();
+    document.getElementById("adov").textContent = pct(B.ado);
+    document.getElementById("breadthv").textContent = pct(B.cov);
+    document.getElementById("mreqv").textContent = B.m;
+    plot("probCells", {xmin:10, xmax:20000, ymin:0, ymax:1, yticks:PROB_TICKS,
+      xticks:[[10,"10"],[100,"100"],[1000,"1,000"],[10000,"10,000"]],
+      series:[{pts:grid(10,20000,140).map(function(n){ return [n, sc(B.f, Math.round(n), B.ado, B.cov, B.m).capture]; }), color:"--muted", dash:[5,4], width:1.5},
+              {pts:grid(10,20000,140).map(function(n){ return [n, sc(B.f, Math.round(n), B.ado, B.cov, B.m).detect]; }), color:"--a1"}],
+      marker:{x:B.N, y:r.detect}});
+    plot("probFrac", {xmin:1e-4, xmax:0.5, ymin:0, ymax:1, yticks:PROB_TICKS,
+      xticks:[[1e-4,"0.01%"],[1e-3,"0.1%"],[1e-2,"1%"],[0.1,"10%"],[0.5,"50%"]],
+      series:[{pts:grid(1e-4,0.5,140).map(function(f){ return [f, sc(f, Math.round(B.N), B.ado, B.cov, B.m).capture]; }), color:"--muted", dash:[5,4], width:1.5},
+              {pts:grid(1e-4,0.5,140).map(function(f){ return [f, sc(f, Math.round(B.N), B.ado, B.cov, B.m).detect]; }), color:"--a1"}],
+      marker:{x:B.f, y:r.detect}});
+    document.getElementById("b-d").textContent = pct(r.d);
+    document.getElementById("b-nm").textContent = r.nMut < 10 ? r.nMut.toFixed(1) : Math.round(r.nMut);
+    document.getElementById("b-nd").textContent = r.nDet < 10 ? r.nDet.toFixed(1) : Math.round(r.nDet);
+    document.getElementById("b-cap").textContent = pct(r.capture);
+    document.getElementById("b-det").textContent = pct(r.detect);
+    document.getElementById("descB").textContent = B.p ? PRESETS_B[B.p].text : "직접 고른 설정이다.";
+    var v = document.getElementById("verdictB"); v.innerHTML = "";
+    tag(v, r.detect >= 0.8, "검출: "+(r.detect >= 0.8 ? "m개 이상 세포에서 볼 확률 80% 이상" : (r.capture < 0.8 ? "세포 수가 부족해 변이 세포를 충분히 뽑지 못함" : "뽑아도 ADO·coverage 공백으로 놓침")));
+    tag(v, B.m >= 2, B.m >= 2 ? "여러 세포에서 반복 확인하는 기준" : "세포 1개만 요구: single-cell-only call은 독립 검증이 필요");
+  }
+
+  function presetButtons(boxId, presets, onPick){
+    var box = document.getElementById(boxId);
+    Object.keys(presets).forEach(function(n){ var b = document.createElement("button"); b.type = "button"; b.textContent = n; b.dataset.p = n; b.addEventListener("click", function(){ onPick(n); }); box.appendChild(b); });
+    return function(name){ Array.prototype.forEach.call(box.querySelectorAll("button"), function(b){ b.setAttribute("aria-pressed", b.dataset.p === name ? "true" : "false"); }); };
+  }
+  var markA = presetButtons("presetsA", PRESETS_A, pickA), markB = presetButtons("presetsB", PRESETS_B, pickB);
+  function syncA(){ document.getElementById("vaf").value = VAF.i(A.vaf); document.getElementById("depth").value = DEP.i(A.D); document.getElementById("err").value = ERR.i(A.e); }
+  function syncB(){ document.getElementById("frac").value = FRAC.i(B.f); document.getElementById("ncell").value = NC.i(B.N); document.getElementById("ado").value = Math.round(B.ado*100); document.getElementById("breadth").value = Math.round(B.cov*100); document.getElementById("mreq").value = B.m; }
+  function pickA(n){ var p = PRESETS_A[n]; A.D = p.D; A.vaf = p.vaf; A.e = p.e; A.p = n; markA(n); syncA(); renderA(); }
+  function pickB(n){ var p = PRESETS_B[n]; B.f = p.f; B.N = p.N; B.ado = p.ado; B.cov = p.cov; B.m = p.m; B.p = n; markB(n); syncB(); renderB(); }
+  function onA(){ A.vaf = VAF.v(+document.getElementById("vaf").value); A.D = Math.round(DEP.v(+document.getElementById("depth").value)); A.e = ERR.v(+document.getElementById("err").value); A.p = null; markA(null); renderA(); }
+  function onB(){ B.f = FRAC.v(+document.getElementById("frac").value); B.N = Math.round(NC.v(+document.getElementById("ncell").value)); B.ado = +document.getElementById("ado").value/100; B.cov = +document.getElementById("breadth").value/100; B.m = +document.getElementById("mreq").value; B.p = null; markB(null); renderB(); }
+  ["vaf","depth","err"].forEach(function(id){ document.getElementById(id).addEventListener("input", onA); });
+  ["frac","ncell","ado","breadth","mreq"].forEach(function(id){ document.getElementById(id).addEventListener("input", onB); });
+  function renderAll(){ renderA(); renderB(); }
+  window.addEventListener("resize", function(){ clearTimeout(window.__rt); window.__rt = setTimeout(renderAll, 120); });
+  if(window.matchMedia) window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", renderAll);
+  pickA("30× · VAF 10%"); pickB("핵 50개 · subclone 5%");
+})();
+</script>
+</body>
+</html>

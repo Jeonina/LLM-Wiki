@@ -14,6 +14,17 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > PTA는 Φ29 polymerase에 exonuclease 내성 terminator를 더해 증폭 산물을 짧게 끊고, 복사본이 아니라 원래 template에서 주로 복제가 일어나게 하는 scWGA 방법이다 ([[10-Summaries/gonzalez-pena-2021-pnas|Gonzalez-Pena 2021]]). MDA보다 coverage, 균일도, allelic balance가 모두 좋아 고심도 scDNA-seq의 표준이 되었지만, 그래도 세포마다 수천 개의 위양성이 남아 PTA 전용 caller가 필요하다 ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]; [[10-Summaries/gonzalez-pena-2021-pnas|Gonzalez-Pena 2021]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [뇌 체세포 모자이크 교재](../60-Explainers/brain-somatic-mosaicism.html)
+>
+> [모자이크 변이 검출력 시뮬레이터](../60-Explainers/mosaic-variant-calling.html)
+>
+> [단일세포 DNA 시퀀싱 입문](../60-Explainers/scdna-seq.html)
+>
+> [단일세포 WGA 시뮬레이터](../60-Explainers/wga-simulator.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Standard MDA permits Φ29 polymerase to extend exponentially from amplified products, which compounds amplification bias (synthesis). PTA introduces **exonuclease-resistant terminators** (chain-terminator-modified bases) that cap extension at short length ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]). The terminators are alpha-thio ddNTPs whose exonuclease-resistant bond stops the polymerase removing them ([[10-Summaries/gonzalez-pena-2021-pnas|Gonzalez-Pena 2021]]). Since Φ29 prefers longer amplicon products, this biases priming toward the **native (primary) template** rather than amplified copies ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]; [[10-Summaries/gonzalez-pena-2021-pnas|Gonzalez-Pena 2021]]).

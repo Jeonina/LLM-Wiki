@@ -1,6 +1,7 @@
 ---
 type: topic
 title: scDNA-seq in cancer applications
+explainer: scdna-cancer-applications
 aliases: [cancer scDNA-seq, single-cell oncology, tumor scDNA]
 tags: [cancer, scDNA-seq, clonal-evolution, intratumor-heterogeneity]
 created: 2026-05-19
@@ -14,6 +15,11 @@ paper_section: ["5.1"]
 
 > [!abstract] 한눈에
 > 종양을 세포 단위로 읽으면 클론 구성과 진화 순서, 항암제 내성이 원래 있던 것인지 새로 생긴 것인지를 가를 수 있다 ([[10-Summaries/navin-2011-sns-tumor-evolution|Navin 2011]]; [[10-Summaries/kim-2018-tnbc-chemoresistance|Kim 2018]]). 최근 copy-number 도구는 절대값과 allele·haplotype 단위, WGD까지 다루게 됐지만 ([[10-Summaries/wesley-2026-songbird|Songbird]]; [[10-Summaries/ivanovic-2025-cnrein|CNRein]]), 임상 적용은 아직 비용과 재현성에 막혀 있다 ([[10-Summaries/lim-2020-cancercell|Lim 2020]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [암 연구의 scDNA-seq 교재](../60-Explainers/scdna-cancer-applications.html)
+<!-- /explainer-links -->
 
 ## Key points
 

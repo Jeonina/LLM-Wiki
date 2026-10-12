@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > CIN은 염색체를 잘못 분리하는 속도이고, aneuploidy는 그 결과로 남은 상태다. bulk 핵형이 clonal해 보여도 single-cell로 보면 세포 절반 이상이 고유한 핵형을 가질 수 있어서, CIN은 single-cell 핵형 분석으로만 잴 수 있다 ([[10-Summaries/bakker-2016-aneufinder|AneuFinder]]; [[10-Summaries/mcpherson-2025-ongoing-wgd|McPherson 2025]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [종양 계통수 시뮬레이터](../60-Explainers/cancer-clonal-evolution.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Chromosomal instability is the rate at which cells mis-segregate chromosomes; aneuploidy is the resulting state ([[10-Summaries/bakker-2016-aneufinder|AneuFinder]]). The two are easily confused because a tumour can look karyotypically clonal in bulk while individual cells keep changing ([[10-Summaries/bakker-2016-aneufinder|AneuFinder]]).

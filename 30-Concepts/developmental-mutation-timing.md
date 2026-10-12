@@ -14,6 +14,13 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > 수정 후 생긴 돌연변이는 발생의 어느 시점에 생겼는지에 따라 몸에서 퍼진 범위가 정해진다. 그래서 모자이크 질환의 표현형 분포를 보면 돌연변이 시점을 거꾸로 추정할 수 있고, 그 시점이 primordial germ cell 분화보다 앞서는지가 재발 위험을 가른다 ([[10-Summaries/campbell-2015-mosaicism-review|Campbell 2015]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [뇌 체세포 모자이크 교재](../60-Explainers/brain-somatic-mosaicism.html)
+>
+> [체세포 모자이크](../60-Explainers/somatic-mosaicism.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 The geometry of mutation distribution as a function of embryonic timing, a form of [[30-Concepts/post-zygotic-variation|post-zygotic variation]] ([[10-Summaries/campbell-2015-mosaicism-review|Campbell 2015]] Fig 1).

@@ -15,6 +15,11 @@ paper_section: ["3.2.1"]
 > [!abstract] 한눈에
 > Single-molecule footprinting은 한 DNA 분자 위에 열린 염기를 표지하고 분자 하나하나를 읽어, 그 분자에 단백질이 어떤 배치로 붙어 있었는지를 복원하는 방법군이다. m6A 표지는 증폭되면 지워져 bulk에 머물지만, deaminase가 남기는 C→T 표지는 서열 변화라 증폭을 견디고 single cell로 확장된다 ([[10-Summaries/swanson-2025-daf-seq|Swanson 2025]]; [[10-Summaries/he-2024-foodie|He 2024]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [염색질 구조 교재](../60-Explainers/chromatin-architecture.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Population/ensemble assays — DNase-seq, ATAC-seq, ChIP-seq — average chromatin states across many cells and many fibers, smearing out cooperativity and per-fiber heterogeneity ([[10-Summaries/swanson-2025-daf-seq|Swanson 2025]]). Single-molecule footprinting marks each fiber's accessible bases and sequences each fiber individually, so the *pattern* of marks along one DNA molecule reports the *configuration* of bound proteins on that molecule ([[10-Summaries/swanson-2025-daf-seq|Swanson 2025]] introduction).

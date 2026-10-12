@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Bisulfite sequencing은 메틸화되지 않은 C를 T로 바꿔 읽어 CpG 메틸화를 염기 단위로 재는 표준 방법이지만, 변환 자체가 DNA를 손상시키고 비메틸화 C-rich 서열을 더 많이 잃게 해 측정에 편향을 남긴다 ([[10-Summaries/fu-2025-longread-methylation|Fu 2025]]; [[10-Summaries/olova-2018-wgbs-library-bias|Olova 2018]]). single-cell에서는 PBAT, combinatorial indexing, droplet 방식이 세포당 CpG coverage와 처리량을 서로 맞바꾸고, EM-seq 같은 효소 변환이 대안으로 시험되고 있다 ([[10-Summaries/clark-2017-scbs-seq-protocol|Clark 2017]]; [[10-Summaries/mulqueen-2018-sci-met|sci-MET]]; [[10-Summaries/nichols-2025-scimetv3|sciMETv3]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 DNA methylation](../60-Explainers/dna-methylation.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Sodium bisulfite treatment deaminates unmethylated cytosines to uracils, which become thymidines after PCR amplification; 5-methylcytosine resists bisulfite conversion ([[10-Summaries/fu-2025-longread-methylation|Fu 2025]]). Sequenced reads are aligned to a reference where all cytosines are converted to thymidines (and vice versa for the reverse strand) — the **"three-base alignment problem"** ([[10-Summaries/fu-2025-longread-methylation|Fu 2025]]).

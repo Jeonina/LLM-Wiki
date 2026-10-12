@@ -1,6 +1,7 @@
 ---
 type: topic
 title: Single-cell lineage tracing
+explainer: single-cell-lineage-tracing
 aliases: [lineage tracing, clonal tracing, cell phylogeny, fate mapping]
 tags: [lineage-tracing, clonal-analysis, phylogenetics, development, cancer-evolution]
 created: 2026-06-02
@@ -14,6 +15,11 @@ paper_section: ["5.4"]
 
 > [!abstract] 한눈에
 > 세포 계통 추적은 인위적으로 심은 barcode를 쓰는 전향적 방식과 자연히 쌓인 체세포 변이를 쓰는 후향적 방식으로 나뉘며, 계통수 정보량과 세포 상태 측정은 서로 맞바꾸는 관계에 있다 ([[10-Summaries/rodriguez-fraticelli-2026-lineage-tracing-review|Rodriguez-Fraticelli 2026]]). CRISPR recorder는 정보량이 많지만 사람에게는 쓸 수 없고, 사람 조직에서는 mtDNA나 메틸화 epimutation 같은 내재 marker에 기대야 한다 ([[10-Summaries/ludwig-2019-mtdna-lineage-tracing|Ludwig 2019]]; [[10-Summaries/chen-2025-methyltree|MethylTree]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 계통 추적](../60-Explainers/single-cell-lineage-tracing.html)
+<!-- /explainer-links -->
 
 ## Key points
 

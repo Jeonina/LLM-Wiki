@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>클론성 조혈 교재</title>
+<link rel="stylesheet" href="explainer.css">
+</head>
+<body>
+<main>
+<div class="crumb"><a href="../">scDNA wiki</a> · <a href="./">교재</a> · 클론성 조혈</div>
+<h1>나이가 들면 혈액은 왜 몇몇 줄기세포의 자손으로 채워질까</h1>
+<p class="lede">혈액은 조혈모세포(HSC) 수만 개가 함께 만든다. 그런데 나이가 들면 DNMT3A, TET2, JAK2 같은 driver 변이를 가진 HSC 하나의 자손이 혈액에서 눈에 띄는 비율을 차지하게 된다. 이것이 클론성 조혈(clonal hematopoiesis, CH)이고, 혈액암과 심혈관 질환의 위험을 함께 높인다 (<a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a>; <a href="../10-Summaries/hilal-2026-cardiac-somatic-review">Hilal 2026</a>). 혈액은 clone이 몸을 돌아다녀 표본을 얻기 쉬우므로 체세포 모자이시즘을 정량하기 가장 좋은 조직이다 (<a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a>). 단일세포 genomics에서도 가장 다루기 쉬운 모자이시즘 질환 모델이다 (<a href="../40-Topics/clonal-hematopoiesis">CH hub</a>).</p>
+
+<div class="callouts">
+  <div class="callout"><b>변이는 누구에게나 쌓인다</b>HSC 하나에는 해마다 체세포 변이가 14–17개씩 쌓인다. 대부분은 중립이고, 문제는 그중 적합도를 높이는 소수의 driver다 (<a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a>).</div>
+  <div class="callout"><b>"CH가 있다"는 검출 기준의 문제다</b>CHIP은 VAF 기준선으로 정의된다. Kapadia 2024는 4%를 쓰지만, VAF 2% 미만 clone도 관상동맥질환 위험을 높인다 (<a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a>; <a href="../10-Summaries/hilal-2026-cardiac-somatic-review">Hilal 2026</a>). duplex sequencing으로 보면 50세 넘은 성인 대부분에서 작은 clone이 보인다 (<a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a>).</div>
+  <div class="callout"><b>같은 환자 안에서 변이 세포와 정상 세포를 비교한다</b>변이 세포는 정상 세포와 같은 분화 단계에 섞여 있어 bulk로는 구분되지 않는다. GoT 계열 방법은 세포마다 genotype을 붙여 같은 환자의 wild-type 세포를 대조군으로 쓴다 (<a href="../10-Summaries/nam-2019-got">Nam 2019</a>).</div>
+</div>
+
+<h2>평생에 걸친 HSC 클론의 동태</h2>
+<figure class="fig">
+  <svg id="fig-life" viewBox="0 0 760 500" role="img" aria-label="나이에 따른 HSC 풀 크기, HSC당 누적 변이, 클론성 조혈 관찰 시점"></svg>
+  <figcaption>그림 1. 나이 축 위에 놓은 HSC 클론의 동태. ① HSC 풀은 청소년기까지 커진 뒤 활동 세포 5만–20만 개에서 안정된다 (<a href="../10-Summaries/lee-six-2018-hsc-dynamics">Lee-Six 2018</a>). 청소년기 전의 곡선 모양은 도식이다. ② HSC 하나의 누적 체세포 변이는 연 14–17개 비율(<a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a>)에 나이를 곱한 값이다(synthesis). ③ 막대는 관찰이 이루어진 나이대다. 50세 넘은 성인의 95% 이상이 targeted duplex sequencing으로 검출되는 작은 CH clone을 가진다 (<a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a>). 중국 중년 코호트의 CHIP 유병률은 18%였다 (<a href="../10-Summaries/hilal-2026-cardiac-somatic-review">Hilal 2026</a>). DNMT3A clone은 이른 나이에 가장 빨리 커지고 중년 이후 적합도 이점이 줄어든다 (<a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a>). 중년 막대와 DNMT3A 막대의 경계 나이는 도식이다. 세로 점선은 단일 공여자 연구 두 편의 공여자 나이다 (<a href="../10-Summaries/ludwig-2020-mtscatac-seq">Lareau 2021</a>; <a href="../10-Summaries/lee-six-2018-hsc-dynamics">Lee-Six 2018</a>).</figcaption>
+</figure>
+
+<figure class="fig">
+  <svg id="fig-size" viewBox="0 0 760 300" role="img" aria-label="클론 크기와 검출 한계, 로그 축"></svg>
+  <figcaption>그림 2. 클론 크기와 검출 한계(로그 축, VAF 또는 세포 비율). 점선은 Kapadia 2024의 CHIP 기준선 4%(<a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a>)와, Hilal 2026이 위험 증가를 보고한 VAF 2% 경계(<a href="../10-Summaries/hilal-2026-cardiac-somatic-review">Hilal 2026</a>)다. 일반 bulk WGS/WES는 VAF 2–5% 위의 clone만 잡고, targeted duplex는 약 10⁻⁴까지 내려간다 (<a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a>). VAF 2% 아래의 clone도 관상동맥질환 위험을 약 1.3배 높였다 (<a href="../10-Summaries/hilal-2026-cardiac-somatic-review">Hilal 2026</a>). <span style="color:var(--warn)">주황</span>은 VAF가 아니라 세포 비율이다. 건강한 공여자 한 명의 mtDNA clone 257개 가운데 92%가 세포의 1% 미만이었다 (<a href="../10-Summaries/ludwig-2020-mtscatac-seq">Lareau 2021</a>). 이형접합 변이라면 VAF는 세포 비율의 약 절반이다(synthesis). 왼쪽 화살표는 하한이 정해져 있지 않다는 뜻이다.</figcaption>
+</figure>
+
+<h2>핵심 내용</h2>
+<ol class="steps">
+  <li><b>정상 조혈은 다클론이다.</b> 59세 남성 한 명에서 HSPC 140개를 colony로 키워 WGS하자 체세포 변이 129,582개가 나왔다. 이 변이를 계통 바코드로 써서, 혈액 전체가 낭배 형성 이전의 공통 조상에서 왔고 HSC 풀이 청소년기에 5만–20만 개로 안정된다는 것을 추정했다 (<a href="../10-Summaries/lee-six-2018-hsc-dynamics">Lee-Six 2018</a>). 47세 건강인 한 명의 mtDNA 변이로 세포를 묶어도 clone 257개가 나왔고, 92%는 세포의 1% 미만이었으며 계통 편향은 보이지 않았다 (<a href="../10-Summaries/ludwig-2020-mtscatac-seq">Lareau 2021</a>).</li>
+  <li><b>나이가 들면 소수 clone이 커진다.</b> HSC의 변이 축적 속도(연 14–17개)는 조직 가운데 낮은 편이지만, 풀 전체로 보면 평생 5천만–2억 개의 변이가 생긴다. 가장 흔한 driver는 DNA methylation 효소인 DNMT3A와 TET2이고 ASXL1, JAK2 V617F, SF3B1, TP53, PPM1D가 뒤를 잇는다 (<a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a>). Kapadia와 Goodell은 이를 adaptive oncogenesis로 설명한다. driver의 적합도는 고정된 값이 아니라 환경에 따라 달라지고, 항암치료 같은 세포독성 스트레스는 TP53, PPM1D를 선택한다 (<a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a>).</li>
+  <li><b>CH는 암과 심혈관 질환의 공통 위험 인자다.</b> CH는 혈액암 위험을 약 10배 높인다 (<a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a>). 심혈관 쪽에서는 죽상경화에 더해 HFpEF와 허혈성 뇌졸중까지 연관이 넓어졌고, TET2 CHIP은 HFpEF 위험을 두 배로 높였다 (<a href="../10-Summaries/hilal-2026-cardiac-somatic-review">Hilal 2026</a>).</li>
+  <li><b>bulk로는 변이 세포의 표현형을 볼 수 없다.</b> CALR 변이 세포는 HSPC 분화 계층 전체에 퍼져 있고 따로 군집을 이루지 않는다. GoT는 10x scRNA-seq의 cDNA에서 변이 locus를 따로 증폭해 세포마다 genotype을 붙였고, 같은 CALR 변이가 MkP에서는 UPR을, HSPC에서는 NF-κB를 켠다는 것을 보였다 (<a href="../10-Summaries/nam-2019-got">Nam 2019</a>). 같은 계열의 방법이 DNMT3A R882의 methylation(<a href="../10-Summaries/nam-2022-natgenet">Nam 2022</a>), SF3B1의 splicing(<a href="../10-Summaries/cortes-lopez-2023-cellstemcell">Cortés-López 2023</a>)으로 확장됐다.</li>
+  <li><b>RNA 대신 DNA에서 genotype을 읽으면 질환 이전 단계가 보인다.</b> JAK2처럼 발현이 낮은 유전자는 RNA로 세포의 7–10%만 genotype이 붙는다. GoT-ChA는 scATAC-seq 안에서 gDNA locus를 증폭해 이 비율을 평균 38.1%로 올렸다. 그 결과 JAK2 V617F 변이 HSC의 STAT motif 접근성 증가가 MPN이 드러나기 전인 CH 표본에서도 보였다 (<a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>). SF3B1의 cryptic 3′ splice site 사용도 CH 단계부터 나타났다 (<a href="../10-Summaries/cortes-lopez-2023-cellstemcell">Cortés-López 2023</a>).</li>
+  <li><b>driver 목록 자체가 다시 쓰이고 있다.</b> UK Biobank 약 49만 명의 혈액 WGS에서 채혈 나이와 연관된 체세포 변이를 유전자 목록 없이 찾자, 새 후보 driver 35개가 나왔고 그중 32개가 noncoding이었다. TERT promoter 변이의 적합도는 splicing factor CH와 비슷했다. 아직 동료 심사 전인 preprint다 (<a href="../10-Summaries/weinstock-2025-ch-noncoding-drivers">Weinstock 2025</a>).</li>
+</ol>
+
+<h2>driver별로 단일세포에서 보인 것</h2>
+<p class="desc">같은 환자의 wild-type 세포와 비교한 결과다. 단일세포 근거가 위키에 없는 driver는 그렇게 적었다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Driver</th><th>변이 세포의 상태 변화</th><th>보여준 방법</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>DNMT3A R882</td><td>거핵·적혈구 계열로 치우치고 림프 계열 산출이 줄며, 미성숙 골수 전구세포가 늘어난다. PRC2 표적과 조혈 전사인자 motif에서 선택적으로 저메틸화된다</td><td>GoT + 단일세포 methylation·전사체(plate 기반)</td><td><a href="../10-Summaries/nam-2022-natgenet">Nam 2022</a></td></tr>
+<tr><td>CALR</td><td>MkP에서 UPR, HSPC에서 NF-κB와 항세포사멸 유전자. ET에서는 골수 분화가 진행될수록 변이 세포 비율이 높아진다</td><td>GoT</td><td><a href="../10-Summaries/nam-2019-got">Nam 2019</a></td></tr>
+<tr><td>JAK2 V617F</td><td>HSC에서 STAT1/5 motif 접근성 증가(CH 단계부터), MF에서는 NF-κB·TGF-β 표적 접근성 증가. Ruxolitinib은 motif 차이를 없애지만 clone은 남긴다</td><td>GoT-ChA</td><td><a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a></td></tr>
+<tr><td>SF3B1 K700E</td><td>MEP 계열에 몰리고, 세포 유형마다 다른 cryptic 3′ splice site를 쓴다(CH 단계부터). 변이 특이적 BAX isoform이 생긴다</td><td>GoT-Splice (long-read + 표면 단백질)</td><td><a href="../10-Summaries/cortes-lopez-2023-cellstemcell">Cortés-López 2023</a></td></tr>
+<tr><td>TET2</td><td>두 번째로 흔한 driver. HFpEF 위험 두 배. 단일세포 표현형 근거는 위키에 아직 없다</td><td>—</td><td><a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a> · <a href="../10-Summaries/hilal-2026-cardiac-somatic-review">Hilal 2026</a></td></tr>
+<tr><td>TERT promoter 등 noncoding</td><td>적합도가 splicing factor CH와 비슷하다. 세포 수준 표현형은 모른다</td><td>집단 WGS의 나이 연관 분석</td><td><a href="../10-Summaries/weinstock-2025-ch-noncoding-drivers">Weinstock 2025</a></td></tr>
+</tbody></table></div>
+
+<h2>보고된 값</h2>
+<p class="desc">연구마다 코호트, 검출 방식, 기준이 다르다. 엇갈리는 값은 고르지 않고 나란히 적었다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>항목</th><th>보고된 값</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>HSC 풀 크기</td><td>활동 HSC 5만–20만 개, 청소년기에 안정(공여자 1명)</td><td><a href="../10-Summaries/lee-six-2018-hsc-dynamics">Lee-Six 2018</a> · <a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a></td></tr>
+<tr><td>HSC 변이 축적</td><td>HSC당 연 14–17개 · 평생 coding 변이는 HSC당 7–10개</td><td><a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a></td></tr>
+<tr><td>CHIP 기준선</td><td>VAF ≥4%</td><td><a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a></td></tr>
+<tr><td>유병률</td><td>중국 중년 코호트 CHIP 18% · 50세 넘은 성인의 95% 이상이 duplex로 검출되는 작은 clone 보유</td><td><a href="../10-Summaries/hilal-2026-cardiac-somatic-review">Hilal 2026</a> · <a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a></td></tr>
+<tr><td>질환 위험</td><td>혈액암 약 10배 · CHIP 전체 HR 약 1.4, VAF 2% 미만 clone도 관상동맥질환 약 1.3배 · TET2 CHIP에서 HFpEF 두 배</td><td><a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a> · <a href="../10-Summaries/hilal-2026-cardiac-somatic-review">Hilal 2026</a></td></tr>
+<tr><td>정상인의 clone 구조</td><td>47세 공여자 1명, HSPC 7,474개 + 혈액 세포 8,591개에서 clone 257개, 92%가 세포 1% 미만, 계통 편향 없음</td><td><a href="../10-Summaries/ludwig-2020-mtscatac-seq">Lareau 2021</a></td></tr>
+<tr><td>세포당 genotype 판정률</td><td>GoT, CD34⁺ MPN 약 88%(기본 10x read로는 약 1.4%) · RNA 기반 JAK2 7–10% 대 GoT-ChA 평균 38.1% · GoT-Splice 64.4% · DNMT3A GoT 23.5%(27,324개 중 6,430개)</td><td><a href="../10-Summaries/nam-2019-got">Nam 2019</a> · <a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a> · <a href="../10-Summaries/cortes-lopez-2023-cellstemcell">Cortés-López 2023</a> · <a href="../10-Summaries/nam-2022-natgenet">Nam 2022</a></td></tr>
+<tr><td>Noncoding driver</td><td>새 후보 35개 중 32개 noncoding · 비정형 변이가 CH의 체세포 유전율에 평균 47% 기여 (preprint)</td><td><a href="../10-Summaries/weinstock-2025-ch-noncoding-drivers">Weinstock 2025</a></td></tr>
+</tbody></table></div>
+
+<h2>목적별로 고르기</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>알고 싶은 것</th><th>우선 고려</th><th>확인할 위험</th></tr></thead>
+<tbody>
+<tr><td>변이 세포와 정상 세포의 전사체 차이</td><td>GoT (<a href="../10-Summaries/nam-2019-got">Nam 2019</a>)</td><td>판정률이 유전자 발현량과 transcript 끝에서의 거리에 달려 있다. 먼 locus는 circularization GoT가 필요하다 (<a href="../10-Summaries/nam-2019-got">Nam 2019</a>)</td></tr>
+<tr><td>발현이 낮은 driver(JAK2 등)의 chromatin 상태</td><td>GoT-ChA (<a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>)</td><td>기본은 세포당 변이 하나다. 여러 locus를 함께 잡으면 locus당 효율이 떨어진다 (<a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>)</td></tr>
+<tr><td>Methylation 기전</td><td>GoT + 단일세포 methylation (<a href="../10-Summaries/nam-2022-natgenet">Nam 2022</a>)</td><td>세 층을 다 잰 세포는 두 사람의 528개뿐이다 (<a href="../10-Summaries/nam-2022-natgenet">Nam 2022</a>)</td></tr>
+<tr><td>Splicing factor 변이의 isoform 영향</td><td>GoT-Splice (<a href="../10-Summaries/cortes-lopez-2023-cellstemcell">Cortés-López 2023</a>)</td><td>long-read와 단백질 측정을 함께 돌려야 하는 4중 assay다 (<a href="../10-Summaries/cortes-lopez-2023-cellstemcell">Cortés-López 2023</a>)</td></tr>
+<tr><td>driver를 모를 때 clone 구조</td><td>mtscATAC-seq의 mtDNA 변이 (<a href="../10-Summaries/ludwig-2020-mtscatac-seq">Lareau 2021</a>)</td><td>생물학 결과는 대부분 공여자 1명이고, clone 정의는 군집화 선택에 달려 있다. 계통 편향이 없다는 결과는 검정력 한계일 수 있다 (<a href="../10-Summaries/ludwig-2020-mtscatac-seq">Lareau 2021</a>)</td></tr>
+<tr><td>HSC 집단 크기와 계통수</td><td>단일세포 유래 colony의 WGS (<a href="../10-Summaries/lee-six-2018-hsc-dynamics">Lee-Six 2018</a>)</td><td>공여자 1명이고 colony를 체외에서 키워야 한다 (<a href="../10-Summaries/lee-six-2018-hsc-dynamics">Lee-Six 2018</a>)</td></tr>
+<tr><td>아주 작은 clone 검출</td><td>Targeted duplex sequencing, 약 10⁻⁴ (<a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a>)</td><td>정해진 locus만 본다. 새 driver는 찾지 못한다 (<a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a>)</td></tr>
+<tr><td>새 driver(noncoding 포함)</td><td>집단 WGS의 나이 연관 분석 (<a href="../10-Summaries/weinstock-2025-ch-noncoding-drivers">Weinstock 2025</a>)</td><td>Preprint다. centromere 변이는 copy number 변화를 반영할 수 있고, IGH 변이는 흔한 mCA에 얹혀 있을 수 있다 (<a href="../10-Summaries/weinstock-2025-ch-noncoding-drivers">Weinstock 2025</a>)</td></tr>
+</tbody></table></div>
+
+<h2>읽는 순서</h2>
+<ol class="path">
+  <li><a href="../40-Topics/clonal-hematopoiesis">Clonal hematopoiesis (hub)</a> — 정의, driver, 위험, 단일세포 방법을 한 장에 정리한 출발점이다.</li>
+  <li><a href="../30-Concepts/hematopoietic-differentiation">Hematopoietic differentiation</a> — 변이 세포의 분포를 그릴 때 쓰는 HSPC 분화 지도와 군집 이름을 익힌다.</li>
+  <li><a href="../30-Concepts/got">GoT</a> — genotype을 단일세포 전사체에 붙이는 원리와 한계를 본다.</li>
+  <li><a href="../30-Concepts/got-cha">GoT-ChA</a> — gDNA에서 genotype을 읽으면 무엇이 달라지는지 본다.</li>
+  <li><a href="../10-Summaries/lee-six-2018-hsc-dynamics">Lee-Six 2018</a> — 정상 HSC 풀의 크기를 체세포 변이로 처음 직접 추정한 논문이다.</li>
+  <li><a href="../10-Summaries/kapadia-2024-stem-cell-aging">Kapadia 2024</a> — 변이 속도, 유병률, 검출 기술, adaptive oncogenesis를 한데 묶은 리뷰다.</li>
+  <li><a href="../10-Summaries/nam-2019-got">Nam 2019</a> — 같은 변이가 세포 상태에 따라 다른 결과를 낸다는 것을 보인 GoT 원 논문이다.</li>
+  <li><a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a> — 질환 이전 CH 단계의 chromatin priming을 보인 논문이다.</li>
+</ol>
+
+<h2>아직 열린 질문</h2>
+<ul>
+  <li><b>임상 기준선.</b> 어느 VAF와 어느 유전자 집합에서 임상적으로 개입해야 하는지 정해지지 않았다. 기준선 아래 clone도 위험을 높인다는 보고가 있다 (<a href="../40-Topics/clonal-hematopoiesis">CH hub</a>; <a href="../10-Summaries/hilal-2026-cardiac-somatic-review">Hilal 2026</a>).</li>
+  <li><b>심혈관 위험은 인과인가.</b> CHIP과 심혈관 질환의 연관이 인과인지, 공통 위험 인자를 거친 것인지 아직 확립되지 않았다 (<a href="../40-Topics/clonal-hematopoiesis">CH hub</a>; <a href="../10-Summaries/hilal-2026-cardiac-somatic-review">Hilal 2026</a>).</li>
+  <li><b>Chromatin priming의 방향.</b> JAK2 V617F HSC의 chromatin priming이 clone 확장의 원인인지 결과인지 모른다 (<a href="../10-Summaries/izzo-2024-got-cha">Izzo 2024</a>).</li>
+  <li><b>Coding 유전자 목록의 한계.</b> 후보 driver 대부분이 noncoding이라면, coding 유전자 목록으로 정의한 CHIP은 많은 clone을 놓칠 수 있다 (<a href="../10-Summaries/weinstock-2025-ch-noncoding-drivers">Weinstock 2025</a>, synthesis).</li>
+</ul>
+
+<footer>scDNA wiki 교재 · 수치와 해석은 링크된 위키 요약을 기준으로 한다.</footer>
+</main>
+
+<script>
+(function(){
+  var NS = "http://www.w3.org/2000/svg";
+  function el(svg, tag, attrs, text){
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    svg.appendChild(e); return e;
+  }
+
+  // Figure 1: lifespan view. Pool: Lee-Six 2018. Rate: Kapadia 2024. Bars: Kapadia 2024, Hilal 2026.
+  (function(){
+    var svg = document.getElementById("fig-life"); if (!svg) return;
+    var W = 760, L = 170, R = 24, AMAX = 90;
+    function x(a){ return L + (W - L - R) * a / AMAX; }
+    function label(y, t, s){
+      el(svg, "text", {x: 0, y: y, "font-size": 15, "font-weight": 600, style: "fill:var(--ink)"}, t);
+      if (s) el(svg, "text", {x: 0, y: y + 17, "font-size": 12, style: "fill:var(--muted)"}, s);
+    }
+    // Panel 1: HSC pool (linear, 0-250k)
+    var p1t = 24, p1b = 124;
+    function y1(v){ return p1b - (p1b - p1t) * v / 250000; }
+    label(56, "① HSC 풀", "Lee-Six 2018");
+    [0, 100000, 200000].forEach(function(v){
+      el(svg, "line", {x1: L, x2: W - R, y1: y1(v), y2: y1(v), style: "stroke:var(--line)"});
+      el(svg, "text", {x: L - 6, y: y1(v) + 4, "text-anchor": "end", "font-size": 12, style: "fill:var(--muted)"}, v === 0 ? "0" : (v / 10000) + "만");
+    });
+    el(svg, "rect", {x: x(15), y: y1(200000), width: x(AMAX) - x(15), height: y1(50000) - y1(200000), style: "fill:var(--accent);opacity:.25"});
+    el(svg, "path", {d: "M" + x(0) + " " + y1(8000) + " C" + x(5) + " " + y1(30000) + " " + x(10) + " " + y1(110000) + " " + x(15) + " " + y1(125000),
+      "stroke-dasharray": "5 4", style: "fill:none;stroke:var(--accent);stroke-width:2"});
+    el(svg, "line", {x1: x(15), x2: x(AMAX), y1: y1(125000), y2: y1(125000), style: "stroke:var(--accent);stroke-width:2"});
+    el(svg, "text", {x: x(52), y: y1(200000) - 6, "text-anchor": "middle", "font-size": 12, style: "fill:var(--ink)"}, "청소년기 이후 활동 HSC 5만–20만 개에서 안정");
+    el(svg, "text", {x: x(1), y: y1(150000), "font-size": 12, style: "fill:var(--muted)"}, "증가(도식)");
+
+    // Panel 2: cumulative mutations per HSC (14-17 / year)
+    var p2t = 160, p2b = 290, MMAX = 1600;
+    function y2(v){ return p2b - (p2b - p2t) * v / MMAX; }
+    label(222, "② HSC당 누적 변이", "Kapadia 2024");
+    [0, 500, 1000, 1500].forEach(function(v){
+      el(svg, "line", {x1: L, x2: W - R, y1: y2(v), y2: y2(v), style: "stroke:var(--line)"});
+      el(svg, "text", {x: L - 6, y: y2(v) + 4, "text-anchor": "end", "font-size": 12, style: "fill:var(--muted)"}, String(v));
+    });
+    el(svg, "path", {d: "M" + x(0) + " " + y2(0) + " L" + x(AMAX) + " " + y2(17 * AMAX) + " L" + x(AMAX) + " " + y2(14 * AMAX) + " Z", style: "fill:var(--a2);opacity:.45"});
+    el(svg, "line", {x1: x(0), y1: y2(0), x2: x(AMAX), y2: y2(15.5 * AMAX), style: "stroke:var(--a2);stroke-width:2"});
+    el(svg, "text", {x: x(70), y: y2(15.5 * 70) - 14, "text-anchor": "end", "font-size": 12, style: "fill:var(--ink)"}, "나이 × 연 14–17개 (synthesis)");
+
+    // Panel 3: observation bars
+    var rows = [
+      {t: "CH clone 검출", s: "Kapadia 2024", segs: [{a: 50, b: 90, o: .8}], note: "50세 넘은 성인의 95% 이상(duplex)", nx: 50, end: false},
+      {t: "CHIP 유병률", s: "Hilal 2026", segs: [{a: 40, b: 65, o: .8}], note: "중국 중년 코호트 18%", nx: 65, end: false},
+      {t: "DNMT3A 적합도", s: "Kapadia 2024", segs: [{a: 0, b: 45, o: .8}, {a: 45, b: 90, o: .25}], note: "초기 확장이 가장 빠르고 중년 이후 이점 감소", nx: 47, end: false}
+    ];
+    var p3t = 322, rowH = 40;
+    rows.forEach(function(r, i){
+      var y = p3t + rowH * i + rowH / 2;
+      el(svg, "text", {x: 0, y: y - 1, "font-size": 14, "font-weight": 600, style: "fill:var(--ink)"}, r.t);
+      el(svg, "text", {x: 0, y: y + 14, "font-size": 11, style: "fill:var(--muted)"}, r.s);
+      r.segs.forEach(function(g){
+        el(svg, "rect", {x: x(g.a), y: y - 7, width: x(g.b) - x(g.a), height: 14, rx: 4, style: "fill:var(--accent);opacity:" + g.o});
+      });
+      el(svg, "text", {x: x(r.nx) + 6, y: y - 11, "font-size": 12, style: "fill:var(--muted)"}, r.note);
+    });
+
+    // donor lines
+    var bottom = p3t + rowH * rows.length;
+    [{a: 47, t: "Lareau 2021 공여자 47세", anchor: "end", dx: -4}, {a: 59, t: "Lee-Six 2018 공여자 59세", anchor: "start", dx: 4}].forEach(function(d){
+      el(svg, "line", {x1: x(d.a), x2: x(d.a), y1: p1t - 6, y2: bottom, "stroke-dasharray": "3 4", style: "stroke:var(--ink);opacity:.6"});
+      el(svg, "text", {x: x(d.a) + d.dx, y: p1t - 10, "text-anchor": d.anchor, "font-size": 12, style: "fill:var(--ink)"}, d.t);
+    });
+
+    // age axis
+    for (var a = 0; a <= AMAX; a += 10){
+      el(svg, "line", {x1: x(a), x2: x(a), y1: bottom, y2: bottom + 5, style: "stroke:var(--muted)"});
+      el(svg, "text", {x: x(a), y: bottom + 20, "text-anchor": "middle", "font-size": 13, style: "fill:var(--muted)"}, String(a));
+    }
+    el(svg, "line", {x1: L, x2: W - R, y1: bottom, y2: bottom, style: "stroke:var(--muted)"});
+    el(svg, "text", {x: W - R, y: bottom + 38, "text-anchor": "end", "font-size": 13, style: "fill:var(--muted)"}, "나이(세)");
+  })();
+
+  // Figure 2: clone size vs detection limits (log axis). Kapadia 2024, Hilal 2026, Lareau 2021 (ludwig-2020-mtscatac-seq).
+  (function(){
+    var svg = document.getElementById("fig-size"); if (!svg) return;
+    var W = 760, L = 170, R = 20, T = 40, rowH = 52, lmin = -5, lmax = 0;
+    function x(v){ return L + (W - L - R) * (Math.log10(v) - lmin) / (lmax - lmin); }
+    var rows = [
+      {label: "Targeted duplex", sub: "Kapadia 2024", mid: 1e-4, note: "약 10⁻⁴ (세포 1만 개 중 1개)"},
+      {label: "Bulk WGS/WES", sub: "Kapadia 2024", lo: 0.02, hi: 0.05, arrowR: true, note: "VAF 2–5% 이상", left: true},
+      {label: "기준선 아래 clone", sub: "Hilal 2026", lo: 2e-3, hi: 0.02, arrowL: true, note: "VAF <2%에서도 관상동맥질환 약 1.3배", left: true},
+      {label: "정상인 mtDNA clone", sub: "Lareau 2021", lo: 2e-4, hi: 0.01, arrowL: true, warn: true, note: "257개 중 92%가 세포 <1%", noteRight: true}
+    ];
+    var H = T + rowH * rows.length;
+    for (var d = lmin; d <= lmax; d++){
+      var xx = x(Math.pow(10, d));
+      el(svg, "line", {x1: xx, x2: xx, y1: T - 6, y2: H, style: "stroke:var(--line)"});
+      el(svg, "text", {x: xx, y: H + 18, "text-anchor": "middle", "font-size": 13, style: "fill:var(--muted)"}, ["0.001%", "0.01%", "0.1%", "1%", "10%", "100%"][d - lmin]);
+    }
+    el(svg, "text", {x: W - R, y: H + 38, "text-anchor": "end", "font-size": 13, style: "fill:var(--muted)"}, "VAF 또는 세포 비율(로그)");
+    [{v: 0.02, t: "VAF 2% (Hilal)", anchor: "end", dx: -4}, {v: 0.04, t: "CHIP 4% (Kapadia)", anchor: "start", dx: 4}].forEach(function(r){
+      var xx = x(r.v);
+      el(svg, "line", {x1: xx, x2: xx, y1: T - 6, y2: H, "stroke-dasharray": "5 4", style: "stroke:var(--ink);opacity:.7"});
+      el(svg, "text", {x: xx + r.dx, y: T - 14, "text-anchor": r.anchor, "font-size": 12, style: "fill:var(--ink)"}, r.t);
+    });
+    rows.forEach(function(r, i){
+      var y = T + rowH * i + rowH / 2, col = r.warn ? "var(--warn)" : "var(--accent)";
+      el(svg, "text", {x: 0, y: y - 2, "font-size": 15, "font-weight": 600, style: "fill:var(--ink)"}, r.label);
+      el(svg, "text", {x: 0, y: y + 15, "font-size": 12, style: "fill:var(--muted)"}, r.sub);
+      if (r.mid){
+        el(svg, "circle", {cx: x(r.mid), cy: y, r: 7, style: "fill:" + col});
+        el(svg, "text", {x: x(r.mid) + 12, y: y + 4, "font-size": 12, style: "fill:var(--muted)"}, r.note);
+        return;
+      }
+      el(svg, "rect", {x: x(r.lo), y: y - 7, width: x(r.hi) - x(r.lo), height: 14, rx: 4, style: "fill:" + col + ";opacity:.75"});
+      if (r.arrowL) el(svg, "path", {d: "M" + (x(r.lo) + 2) + " " + (y - 11) + " L" + (x(r.lo) - 10) + " " + y + " L" + (x(r.lo) + 2) + " " + (y + 11) + " Z", style: "fill:" + col});
+      if (r.arrowR) el(svg, "path", {d: "M" + (x(r.hi) - 2) + " " + (y - 11) + " L" + (x(r.hi) + 10) + " " + y + " L" + (x(r.hi) - 2) + " " + (y + 11) + " Z", style: "fill:" + col});
+      var nx = r.arrowR ? x(r.hi) + 16 : x(r.hi) + 10;
+      var endA = r.arrowL && !r.noteRight;
+      if (endA) nx = x(r.lo) - 16;
+      el(svg, "text", {x: nx, y: y + 4, "text-anchor": endA ? "end" : "start", "font-size": 12, style: "fill:var(--muted)"}, r.note);
+    });
+  })();
+})();
+</script>
+</body>
+</html>

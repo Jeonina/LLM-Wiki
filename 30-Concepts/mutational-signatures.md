@@ -14,6 +14,13 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Mutational signature는 염기 치환을 앞뒤 염기 문맥까지 96가지로 나눈 뒤 NMF로 분해해 얻은 반복 패턴이며, 노화·자외선·흡연 같은 돌연변이 원인을 서열만으로 거꾸로 읽게 해 준다 ([[10-Summaries/alexandrov-2013-mutational-signatures|Alexandrov 2013]]). 이제는 single-cell과 duplex 데이터로 클론 확장 없이도 정상 조직의 signature를 읽지만, 증폭 artefact가 실제 signature를 흉내 낼 수 있다는 점이 계속 문제가 된다 ([[10-Summaries/nandi-2025-udseq|UDSeq]]; [[10-Summaries/luquette-2022-neuron-scan2-indels|Luquette 2022]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [뇌 체세포 모자이크 교재](../60-Explainers/brain-somatic-mosaicism.html)
+>
+> [Duplex sequencing 시뮬레이터](../60-Explainers/duplex-sequencing.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Mutations are classified by central substitution × 5′/3′ flanking base into 96 categories, six pyrimidine-referenced base changes × 16 trinucleotide contexts ([[10-Summaries/alexandrov-2013-mutational-signatures|Alexandrov 2013]]). Non-negative matrix factorization across many tumor genomes yields recurring patterns ("signatures") associated with mutagenic processes ([[10-Summaries/alexandrov-2013-mutational-signatures|Alexandrov 2013]]). The Catalogue of Somatic Mutations in Cancer (COSMIC) curates the reference signature set, which originates in the founding study from the lab of [[20-Entities/ludmil-alexandrov|Ludmil Alexandrov]] ([[10-Summaries/alexandrov-2013-mutational-signatures|Alexandrov 2013]]).

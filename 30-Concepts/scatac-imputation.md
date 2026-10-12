@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > scATAC-seq 행렬은 0이 아닌 값이 3–7%뿐이라, imputation은 각 세포에서 각 영역이 실제로 열려 있는지를 추정해 dropout을 메우는 작업이다 ([[10-Summaries/li-2021-scopen|scOpen]]). 행렬 분해와 VAE에서 시작해 DNA 서열을 쓰는 foundation model로 넘어가고 있지만, 복원된 신호가 진짜인지 지어낸 것인지 가릴 기준은 아직 없다 ([[10-Summaries/tang-2024-sccase|scCASE]]; [[10-Summaries/fan-2026-gfetm|GFETM]]; [[10-Summaries/li-2021-scopen|scOpen]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [scATAC-seq 희소성 시뮬레이터](../60-Explainers/single-cell-atac-seq.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Imputation/denoising methods estimate the true accessibility status of each region in each cell from the observed sparse matrix, mitigating dropout before downstream clustering, visualization, motif analysis, and *cis*-regulatory prediction ([[10-Summaries/li-2021-scopen|scOpen]]). Assuming only ~25% of accessible DNA is sequenced, ~56% of accessible sites get zero cut sites under a binomial model — the dropout problem these methods address ([[10-Summaries/li-2021-scopen|scOpen]]).

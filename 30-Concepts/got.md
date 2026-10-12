@@ -14,6 +14,13 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > GoT는 10x scRNA-seq cDNA에서 mutation이 있는 transcript를 표적 증폭하고 cell barcode로 genotype을 각 세포의 transcriptome에 연결하는 방법이다 ([[10-Summaries/nam-2019-got|Nam 2019]]). 발현이 높고 transcript 끝 가까이에 있는 locus에서는 잘 되지만, 발현이 낮거나 먼 locus에서는 효율이 크게 떨어져 이후 gDNA 기반 GoT–ChA로 이어졌다 ([[10-Summaries/izzo-2024-got-cha|Izzo 2024]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [클론성 조혈 교재](../60-Explainers/clonal-hematopoiesis.html)
+>
+> [단일세포 multi-omics](../60-Explainers/single-cell-multiomics.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 GoT modifies the standard 10x Genomics 3′/5′ scRNA-seq workflow by reserving ~10% of the cDNA after reverse transcription for **targeted amplification of the transcript that carries the mutation of interest** ([[10-Summaries/nam-2019-got|Nam 2019]]). After two PCR steps with a gene-specific primer and an Illumina P5/RPI-x primer pair, the targeted amplicon library is spiked back into the standard 10x library and sequenced together. Mutational status is read from the amplicon, and assigned to single-cell expression profiles via the shared 10x cell barcode (CBC) and UMI ([[10-Summaries/nam-2019-got|Nam 2019]]).

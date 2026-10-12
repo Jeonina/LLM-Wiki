@@ -14,6 +14,13 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > MPN은 JAK2·CALR·MPL 체세포 변이로 생기는 클론성 골수 질환(ET, PV, MF)이고, 같은 환자 안에 변이 세포와 정상 세포가 섞여 있어 single-cell genotyping으로 한 변이의 효과를 내부 대조군과 비교하기 좋은 모델이다 ([[10-Summaries/nam-2019-got|Nam 2019]]). 같은 변이라도 progenitor 유형에 따라 전사 결과가 다르고, 질환이 드러나기 전부터 chromatin priming이 나타난다 ([[10-Summaries/izzo-2024-got-cha|Izzo 2024]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [클론성 조혈 교재](../60-Explainers/clonal-hematopoiesis.html)
+>
+> [혈액암 교재](../60-Explainers/hematopoietic-malignancies.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 MPNs originate in [[hematopoietic-differentiation|hematopoietic stem cells]] and are diagnosed by lineage-specific cytoses (platelets in ET, red cells in PV, fibrosis with cytopenia in MF) plus a driver mutation. The three canonical drivers ([[jak2-v617f]], [[calr-mutation]], MPL W515) are largely mutually exclusive and converge on JAK-STAT activation.

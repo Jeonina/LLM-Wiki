@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > DLP+는 Tn5로 단일 세포 DNA를 바로 tagmentation하는 microfluidic 방법으로, 세포당 coverage는 매우 낮지만 한 번에 10,000개가 넘는 세포를 읽어 CNV와 염색체 수준 계통 분석에 쓰인다 ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]). 깊이 대신 세포 수를 늘리는 이 전략의 근거는 원조 DLP 논문에 정리되어 있다 ([[10-Summaries/zahn-2017-dlp|Zahn 2017]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 DNA 시퀀싱 입문](../60-Explainers/scdna-seq.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 DLP+ uses Tn5 transposase to tagment nuclear DNA, inserting Illumina-compatible adapters directly into the genome of single cells in microfluidic compartments; the tagmented fragments are then PCR-amplified ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]). Imaging-based microscopy QC provides real-time ploidy and quality checks (synthesis). The output is very low per-cell coverage across thousands of cells ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]).

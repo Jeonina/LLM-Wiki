@@ -15,6 +15,11 @@ paper_section: ["4.3"]
 > [!abstract] 한눈에
 > Multimodal integration은 여러 single-cell 데이터를 하나의 저차원 공간으로 합치는 계산 방법이며, 무엇을 anchor로 삼는지(feature, cell, 또는 없음)가 방법의 가정과 실패 양상을 정한다 ([[10-Summaries/argelaguet-2021-integration-principles|Argelaguet 2021]]). Matrix factorization, anchor 기반 방법, deep generative model에 이어 최근에는 foundation model까지 RNA–ATAC 통합에서 경쟁하고 있다 ([[10-Summaries/wang-2023-multimodal-review|Wang 2023]]; [[10-Summaries/liu-2025-scarf|SCARF]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [분석 도구 교재](../60-Explainers/computational-methods.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Integration takes datasets that differ in modality, in cells, or in both, and places them in a shared space ([[10-Summaries/wang-2023-multimodal-review|Wang 2023]]). Under the Argelaguet taxonomy the **anchor determines the assumptions**: *horizontal* integration anchors on features (batch correction), *vertical* on cells (matched multimodal), *diagonal* applies when no anchor exists in high-dimensional space, and *mosaic* when different modalities are measured on different cells from the same sample, leaving entire matrices missing ([[10-Summaries/argelaguet-2021-integration-principles|Argelaguet 2021]]; [[10-Summaries/bi-2024-multiomics-review|Bi & Weng 2024]]). For same-cell assays see [[30-Concepts/joint-single-cell-multi-omics|joint single-cell multi-omics]].

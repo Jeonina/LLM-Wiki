@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Allele dropout은 single-cell 증폭 과정에서 heterozygous 위치의 두 allele 중 하나가 증폭되지 않아 변이가 homozygous처럼 보이는 현상이고, 실측 비율은 수 %에서 30% 안팎까지 넓게 퍼져 있다 ([[10-Summaries/gawad-2014-all-clonal-origins|Gawad 2014]]; [[10-Summaries/pellegrino-2018-tapestri|Pellegrino 2018]]). 증폭 화학(MDA보다 PTA)과 입력 copy 수로 줄일 수 있고, 남은 dropout은 caller와 계통 추론 모델이 명시적 변수로 다룬다 ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]; [[10-Summaries/kang-2022-sieve|SIEVE]]; [[10-Summaries/kozlov-2022-cellphy|CellPhy]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [모자이크 변이 검출력 시뮬레이터](../60-Explainers/mosaic-variant-calling.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 ADO arises during the earliest rounds of amplification, when one strand or one parental molecule fails to template polymerase extension; once the bias is established, it propagates through all subsequent cycles. A dropped allele gives a heterozygous site a 50% chance of a false-negative call ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]).

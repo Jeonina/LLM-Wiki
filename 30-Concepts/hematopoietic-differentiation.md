@@ -14,6 +14,13 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > 조혈 분화 계층은 HSC에서 다능성 전구세포와 계통 특이 전구세포를 거쳐 성숙 혈액세포로 갈라지는 구조이고, GoT와 GoT–ChA는 genotype을 이 분화 지도 위에 투영해 mutant 세포가 어디에 쌓이는지 보여 준다 ([[10-Summaries/nam-2019-got|Nam 2019]]; [[10-Summaries/izzo-2024-got-cha|Izzo 2024]]). Lineage barcode 연구는 이 계층을 뚜렷한 단계보다 연속적인 priming으로 본다 ([[10-Summaries/weinreb-2020-larry|LARRY]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [클론성 조혈 교재](../60-Explainers/clonal-hematopoiesis.html)
+>
+> [혈액암 교재](../60-Explainers/hematopoietic-malignancies.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 In CD34⁺ progenitor analyses (the cohort type used in both [[10-Summaries/nam-2019-got|Nam 2019]] and [[10-Summaries/izzo-2024-got-cha|Izzo 2024]]), the canonical clusters are:

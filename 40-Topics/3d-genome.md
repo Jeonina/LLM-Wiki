@@ -1,6 +1,7 @@
 ---
 type: topic
 title: 3D genome
+explainer: 3d-genome
 aliases: [chromatin conformation, Hi-C, nuclear architecture, 3D chromatin organization]
 tags: [Hi-C, TAD, compartments, loops, single-cell, chromatin-structure, chromatin]
 created: 2026-05-12
@@ -14,6 +15,11 @@ paper_section: ["3.5"]
 
 > [!abstract] 한눈에
 > 유전체는 염색체, compartment, TAD, loop로 이어지는 계층 구조로 접혀 있고, single-cell Hi-C로 보면 TAD 경계와 compartment가 세포마다 다르다 ([[10-Summaries/hong-2025-sc3d-genome-review|Hong 2025]]; [[10-Summaries/nagano-2013-nature|Nagano 2013]]). TAD 경계가 깨지면 질환이 생기지만, TAD 호출 결과는 어떤 caller와 pipeline을 쓰느냐에 따라 달라진다 ([[10-Summaries/lupianez-2015-tad-disruption|Lupiáñez 2015]]; [[10-Summaries/kerpedjiev-2018-higlass|HiGlass]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [3D 유전체 교재](../60-Explainers/3d-genome.html)
+<!-- /explainer-links -->
 
 ## Key points
 

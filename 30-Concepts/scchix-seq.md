@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > scChIX-seq는 sortChIC에서 두 histone mark antibody를 한 세포에 함께 쓰고, 단일 antibody reference와 LDA topic model로 겹친 신호를 mark별로 풀어내는 방법이다 ([[10-Summaries/yeung-2023-scchix-seq|Yeung 2023]]). 덕분에 한 세포 안에서 mark 사이의 배타성·공존·전환과 chromatin velocity를 볼 수 있다 ([[10-Summaries/yeung-2023-scchix-seq|Yeung 2023]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 히스톤 변형](../60-Explainers/histone-modifications.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Three datasets per experiment: single-incubated dataset A (mark 1 only), single-incubated dataset B (mark 2 only), double-incubated dataset C (both marks). LDA learns topic models on A and B; for each cell in C, select the most-likely (topic-A, topic-B) pair and probabilistically assign each fragment to mark 1 or mark 2.

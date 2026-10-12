@@ -15,6 +15,13 @@ sources: ["[[10-Summaries/kaufmann-2022-medicc2]]", "[[10-Summaries/mcpherson-20
 > [!abstract] 한눈에
 > WGD는 한 세포 계통에서 염색체 한 벌 전체가 복제되는 사건이고, single-cell WGS로 보면 한 종양 안에서도 계속 일어나는 과정이다 ([[10-Summaries/mcpherson-2025-ongoing-wgd|McPherson 2025]]). 다만 두 배가 된 세포는 read-depth 비율이 그대로라서 copy-number profile만으로는 잡기 어렵고, fragment overlap이나 read density로 절대 ploidy를 추정하는 방법들이 서로 다른 성능을 보고한다 ([[10-Summaries/wesley-2026-songbird|Songbird]]; [[10-Summaries/kolbeinsdottir-2025-ascent|ASCENT]]; [[10-Summaries/schneider-2024-scabsolute|scAbsolute]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [종양 계통수 시뮬레이터](../60-Explainers/cancer-clonal-evolution.html)
+>
+> [암 연구의 scDNA-seq 교재](../60-Explainers/scdna-cancer-applications.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 In single-cell WGS, WGD can be called per cell from allele-specific copy number: a cell with more than half its genome at two or more copies of the major allele (FM2 > 0.5) has undergone at least one WGD, and FM3 > 0.5 marks at least two ([[10-Summaries/mcpherson-2025-ongoing-wgd|McPherson 2025]]).

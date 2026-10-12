@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>서열 모델과 foundation model 교재</title>
+<link rel="stylesheet" href="explainer.css">
+</head>
+<body>
+<main>
+<div class="crumb"><a href="../">scDNA wiki</a> · <a href="./">교재</a> · 서열 모델과 foundation model</div>
+<h1>DNA 서열과 대규모 데이터로 미리 학습한 모델은 무엇을 할 수 있고, 단일세포 DNA에서는 어디가 비어 있을까</h1>
+<p class="lede">DNA 서열만 보고 chromatin 신호나 발현을 맞히는 모델, 서열 자체를 언어처럼 학습한 모델, 수백만 세포의 epigenome으로 미리 학습한 모델이 몇 년 사이에 쏟아져 나왔다. 이 모델들은 변이 해석, 세포 유형 분류, 희소한 단일세포 데이터 보정에 이미 쓰인다. 하지만 층마다 갖춰진 정도가 다르고, 단일세포 genotype처럼 아직 모델이 없는 층도 있다. 이 페이지는 모델 지형을 한눈에 보고 어디까지 믿을 수 있는지를 가늠하는 법을 다룬다.</p>
+
+<div class="callouts">
+  <div class="callout"><b>세 갈래가 있다</b>측정된 track을 정답으로 학습하는 sequence-to-function 모델, 서열만으로 자기지도 학습하는 DNA language model, 세포×영역 데이터를 사전학습하는 단일세포 foundation model은 입력도 목적도 다르다.</div>
+  <div class="callout"><b>크고 길다고 더 낫지는 않다</b>단순한 k-mer 빈도 기준선이나 작은 CNN이 DNA language model에 맞먹는 경우가 많다. 사전학습이 비용만큼 값을 하는지는 과제마다 따로 확인해야 한다.</div>
+  <div class="callout"><b>단일세포 DNA에는 빈칸이 있다</b>accessibility와 methylation에는 단일세포 사전학습 모델이 있지만, 단일세포 genotype(CNV/SNV)과 단일세포 histone 모델은 없다. somatic 변이 점수도 검증보다 사용이 앞서 있다.</div>
+</div>
+
+<h2>모델 지형</h2>
+<figure class="fig">
+  <svg id="fig-context" viewBox="0 0 820 540" role="img" aria-label="서열 모델의 입력 길이(로그 축)와 발표 연도, 모델 계열별 색"></svg>
+  <figcaption>그림 1. 서열을 입력으로 받는 모델의 입력 길이(bp, 로그 축)와 발표 연도. 2021년 이후는 가로 간격을 넓혔고, 같은 해에 겹치는 점은 좌우로 조금 벌려 그렸다. Supervised 모델은 DeepSEA 1 kb (<a href="../10-Summaries/zhou-2015-deepsea">Zhou 2015</a>)와 Basset 600 bp (<a href="../10-Summaries/kelley-2016-basset">Kelley 2016</a>)에서 Basenji 131 kb (<a href="../10-Summaries/kelley-2018-basenji">Kelley 2018</a>), Enformer 196 kb (<a href="../10-Summaries/avsec-2021-enformer">Avsec 2021</a>), Borzoi 524 kb (<a href="../10-Summaries/linder-2025-borzoi">Linder 2025</a>), AlphaGenome 1 Mb (<a href="../10-Summaries/avsec-2026-alphagenome">Avsec 2026</a>)로 길어졌다. 3D 모델 Akita는 약 1 Mb (<a href="../10-Summaries/fudenberg-2020-akita">Fudenberg 2020</a>), Orca는 1 Mb에서 256 Mb까지 (<a href="../10-Summaries/zhou-2022-orca">Zhou 2022</a>)를 본다. DNA language model은 DNABERT의 512 token (<a href="../10-Summaries/ji-2021-dnabert">Ji 2021</a>)에서 HyenaDNA 1M (<a href="../10-Summaries/nguyen-2023-hyenadna">Nguyen 2023</a>), Evo 2 1M token (<a href="../10-Summaries/brixi-2026-evo2">Brixi 2026</a>), Genos 1 Mb (<a href="../10-Summaries/lin-2025-genos">Lin 2026</a>)까지 늘었지만, GPN-MSA는 128 bp 정렬 창으로도 큰 모델을 이겼다 (<a href="../10-Summaries/benegas-2025-gpn-msa">Benegas 2025</a>). 초록 점은 Borzoi를 단일세포 출력으로 바꾼 모델이다 (<a href="../10-Summaries/hingerl-2025-scooby">Hingerl 2025</a>; <a href="../10-Summaries/lal-2026-decima">Lal 2026</a>). 단일세포 epigenome foundation model은 bp 창이 아니라 세포×영역 token을 입력으로 받아 이 그림에 넣지 않았다. 입력 길이는 명목값이며, 실제로 쓰이는 문맥은 더 짧을 수 있다 (<a href="../10-Summaries/li-2026-generator">Li 2026</a>).</figcaption>
+</figure>
+
+<figure class="fig">
+  <svg id="fig-matrix" viewBox="0 0 760 500" role="img" aria-label="DNA locus 상태의 층별로 서열 모델과 foundation model이 있는지 보여주는 행렬"></svg>
+  <figcaption>그림 2. 층 × 모델 종류 행렬. <span style="color:var(--accent)">파랑</span>은 모델이 있음, 옅은 파랑은 일부만 있음, <span style="color:var(--warn)">주황</span>은 빈칸이다. Genotype 층의 가장 가까운 단일세포 모델 CoT는 데이터셋마다 처음부터 학습하는 transformer autoencoder라 foundation model이 아니다 (<a href="../10-Summaries/liu-2024-cot">Liu 2024</a>). TESSERA와 MutationProjector는 bulk 종양 데이터로 학습했다 (<a href="../10-Summaries/sidhom-2026-tessera">Sidhom 2026</a>; <a href="../10-Summaries/kong-2026-mutationprojector">Kong 2026</a>). Histone은 ChromBERT가 bulk Cistrome의 76개 histone mark를 포함해 사전학습했을 뿐 (<a href="../10-Summaries/yu-2026-chrombert">Yu 2026</a>), 단일세포 histone 데이터에는 imputation 전용 방법조차 없다 (<a href="../10-Summaries/morenogonzalez-2025-schistone-imputation">Moreno-González 2025</a>). 3D 칸이 "일부"인 것은 HiCFoundation이 bulk Hi-C로 사전학습한 뒤 scHi-C에 fine-tune했기 때문이다 (<a href="../10-Summaries/wang-2026-hicfoundation">Wang 2026</a>; synthesis). 맨 아래 줄은 층과 무관한 세 번째 빈칸이다 (<a href="../40-Topics/sequence-models-and-foundation-models">hub</a>).</figcaption>
+</figure>
+
+<h2>핵심 내용</h2>
+<ol class="steps">
+  <li><b>출발점은 "서열로 신호를 맞히고, allele을 바꿔 차이를 본다"이다.</b> DeepSEA는 1,000 bp 서열에서 TF 결합, DNase, histone mark 등 919개 chromatin feature를 예측했다. 참조 allele과 대체 allele을 각각 넣어 예측값의 차이로 변이 효과를 매기는 방식은 이후 모델이 그대로 따르는 기본 틀이 됐다 (<a href="../10-Summaries/zhou-2015-deepsea">Zhou 2015</a>). Sei는 21,907개 profile을 예측하고 이를 40개 sequence class로 묶어 "간 enhancer 활성을 낮춘다" 같은 방향성 있는 해석을 붙였다 (<a href="../10-Summaries/chen-2022-sei">Chen 2022</a>).</li>
+  <li><b>입력 창이 길어지며 먼 enhancer까지 보게 됐다.</b> Enformer는 196 kb 서열에 transformer를 얹어 각 bin이 약 100 kb 떨어진 요소까지 참조하게 했고, 유전자 CAGE 상관을 Basenji2의 0.81에서 0.85로 올렸다 (<a href="../10-Summaries/avsec-2021-enformer">Avsec 2021</a>). AlphaGenome은 1 Mb를 받아 splice junction과 contact map을 포함한 11개 modality를 1 bp 해상도로 내고, 변이 효과 벤치마크 26개 중 25개에서 전문 모델과 같거나 앞섰다 (<a href="../10-Summaries/avsec-2026-alphagenome">Avsec 2026</a>). 3D 접촉도 서열에서 예측한다. Akita는 CTCF 방향 문법을 학습했고 (<a href="../10-Summaries/fudenberg-2020-akita">Fudenberg 2020</a>), Orca는 구조 변이의 효과를 예측했다 (<a href="../10-Summaries/zhou-2022-orca">Zhou 2022</a>).</li>
+  <li><b>DNA language model은 정답 track 없이 서열만 학습한다.</b> DNABERT는 겹치는 k-mer를 BERT로 masked 학습했고 (<a href="../10-Summaries/ji-2021-dnabert">Ji 2021</a>), 이후 BPE, 단일 염기, 학습된 chunk, 변이 token 등 서열을 자르는 방식이 다양해졌다 (<a href="../30-Concepts/genomic-tokenization">Genomic tokenization</a>). Evo 2는 1M token 문맥에서 likelihood 변화로 변이 효과를 zero-shot으로 매긴다 (<a href="../10-Summaries/brixi-2026-evo2">Brixi 2026</a>). 그러나 TF-IDF 빈도 기준선이 표준 벤치마크의 상당 부분을 설명했고 (<a href="../10-Summaries/sanabria-2024-grover">Sanabria 2024</a>), 작은 CNN이 fine-tune한 HyenaDNA와 Nucleotide Transformer보다 나았으며 (<a href="../10-Summaries/kempynck-2026-crested">Kempynck 2026</a>), 250M 모델이 2.5B 모델을 이겼다 (<a href="../10-Summaries/dallatorre-2025-nucleotide-transformer">Dalla-Torre 2025</a>).</li>
+  <li><b>단일세포 foundation model은 서열 대신 세포를 token으로 읽는다.</b> Atacformer는 scATAC 세포를 89만 개 region token의 집합으로 읽고 (<a href="../10-Summaries/leroy-2025-atacformer">LeRoy 2025</a>), scDNAm-GPT는 scWGBS 세포 약 100만 개로 사전학습해 처음 보는 데이터셋 네 개에서 평균 83.7%의 세포 유형 정확도를 냈다. 사전학습을 빼면 60.7%였다 (<a href="../10-Summaries/liang-2025-scdnam-gpt">Liang 2025</a>). HiCFoundation은 Hi-C 지도를 이미지처럼 사전학습했고 DNA 서열은 쓰지 않는다 (<a href="../10-Summaries/wang-2026-hicfoundation">Wang 2026</a>). 두 흐름은 섞이고 있다. EpiZoo는 DNABERT-2로 만든 cCRE token을 쓰고 (<a href="../10-Summaries/li-2026-epizoo">Li 2026</a>), CpGPT는 NTv2 서열 embedding으로 CpG 위치를 표현한다 (<a href="../10-Summaries/delimacamillo-2024-cpgpt">de Lima Camillo 2024</a>).</li>
+  <li><b>단일세포 genotype과 histone은 아직 빈칸이다.</b> scDNA copy number에 쓰인 transformer CoT는 사전학습이나 전이 없이 데이터셋마다 새로 학습한다 (<a href="../10-Summaries/liu-2024-cot">Liu 2024</a>). TESSERA는 TCGA 종양 약 1만 개의 SNV와 CNA segment로 사전학습했지만 세포나 클론 단위 입력은 없다 (<a href="../10-Summaries/sidhom-2026-tessera">Sidhom 2026</a>). 단일세포 genotype에 쓰려면 allelic dropout, 누락 유전자, 클론 구조를 다룰 방법이 필요하다 (<a href="../10-Summaries/kong-2026-mutationprojector">Kong 2026</a>). Histone 쪽에서는 빌려 온 imputer 10개 중 신호와 군집을 함께 개선한 것이 없었다 (<a href="../10-Summaries/morenogonzalez-2025-schistone-imputation">Moreno-González 2025</a>).</li>
+  <li><b>somatic 변이는 검증보다 사용이 앞서 있다.</b> 변이 점수 벤치마크는 대부분 eQTL, caQTL, ClinVar 같은 germline 기준이다 (<a href="../30-Concepts/variant-effect-prediction">Variant effect prediction</a>). 대장 crypt의 somatic 변이에 AlphaGenome을 돌린 연구는 예측 효과가 노화 전사 변화보다 중앙값 기준 수천 배 작다고 보고했지만 변이 효과를 직접 재지는 않았다 (<a href="../10-Summaries/fischbach-2026-alphagenome-aging">Fischbach 2026</a>). 실측과 대조한 T-ALL 사례에서는 AlphaGenome이 TAL1 enhancer의 somatic 변이 효과를 과소 예측했다 (<a href="../10-Summaries/terekhanova-2026-tal1-enhancer">Terekhanova 2026</a>).</li>
+</ol>
+
+<h2>보고된 값</h2>
+<p class="desc">벤치마크, 기준선, 데이터 분할이 논문마다 다르고, 이전 논문의 숫자를 다시 돌리지 않고 옮겨 쓰는 경우도 많다 (<a href="../30-Concepts/dna-language-model">DNA language model</a>). 서로 "최고"라고 주장하는 값은 고르지 않고 나란히 적었다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>항목</th><th>보고된 값</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>장거리 supervised 모델의 성능</td><td>Enformer 유전자 CAGE r 0.81 → 0.85 (Basenji2 대비) · Borzoi eQTL AUROC 0.794 대 0.747 · AlphaGenome 변이 효과 벤치마크 25/26에서 전문 모델과 같거나 우세</td><td><a href="../10-Summaries/avsec-2021-enformer">Avsec 2021</a> · <a href="../10-Summaries/linder-2025-borzoi">Linder 2025</a> · <a href="../10-Summaries/avsec-2026-alphagenome">Avsec 2026</a></td></tr>
+<tr><td>GUE 벤치마크 평균 "최고"</td><td>DNABERT-2 66.80 대 NT-2500M-multi 66.93 · DeepGene 67.79 · AIDO.DNA 73.3 · NucEL 75.16 · GenART도 최고 평균 주장</td><td><a href="../10-Summaries/zhou-2023-dnabert-2">Zhou 2023</a> · <a href="../10-Summaries/zhang-2025-deepgene">Zhang 2025</a> · <a href="../10-Summaries/ellington-2024-aido-dna">Ellington 2024</a> · <a href="../10-Summaries/ding-2025-nucel">Ding 2025</a> · <a href="../10-Summaries/chen-2026-genart">Chen 2026</a></td></tr>
+<tr><td>NT 벤치마크 "최고"</td><td>NT-v2 250M MCC 0.769 · DNAChunker 평균 MCC 0.772 · HyenaDNA 18개 중 12개 SOTA · JanusDNA 18개 중 12개 선두 · GENA-LM 18개 과제 평균 1위</td><td><a href="../10-Summaries/dallatorre-2025-nucleotide-transformer">Dalla-Torre 2025</a> · <a href="../10-Summaries/kim-2026-dnachunker">Kim 2026</a> · <a href="../10-Summaries/nguyen-2023-hyenadna">Nguyen 2023</a> · <a href="../10-Summaries/duan-2025-janusdna">Duan 2025</a> · <a href="../10-Summaries/fishman-2025-gena-lm">Fishman 2025</a></td></tr>
+<tr><td>사전학습의 이득</td><td>SegmentNT 3 kb에서 MCC 0.37 대 무작위 encoder 0.16 (30 kb에서는 0.45) · 반대로 GFETM에서는 고정한 DNA LM embedding이 무작위 초기화보다 유의하게 낫지 않음 · scDNAm-GPT 처음 보는 데이터 평균 정확도 83.7% 대 사전학습 없이 60.7%</td><td><a href="../10-Summaries/dealmeida-2025-segmentnt">de Almeida 2025</a> · <a href="../10-Summaries/fan-2026-gfetm">Fan 2026</a> · <a href="../10-Summaries/liang-2025-scdnam-gpt">Liang 2025</a></td></tr>
+<tr><td>모델 크기</td><td>NT-v2 250M이 2.5B보다 우세 · AIDO.DNA 300M이 7B보다 ClinVar 점수 우세 · GPN-MSA 86M이 NT 2.5B와 HyenaDNA를 대부분의 변이 효과 벤치마크에서 앞섬</td><td><a href="../10-Summaries/dallatorre-2025-nucleotide-transformer">Dalla-Torre 2025</a> · <a href="../10-Summaries/ellington-2024-aido-dna">Ellington 2024</a> · <a href="../10-Summaries/benegas-2025-gpn-msa">Benegas 2025</a></td></tr>
+<tr><td>somatic driver 예측에서 무엇이 중요한가</td><td>GenomeBert + XGBoost xenograft AUROC 84.6% · feature를 HyenaDNA나 DeepSEA로 바꾸면 1점 미만 변화 · classifier를 logistic regression으로 바꾸면 약 16점 하락</td><td><a href="../10-Summaries/zeng-2025-somatic-driver-lm">Zeng 2025</a></td></tr>
+<tr><td>AlphaGenome의 somatic 변이 점수</td><td>정상 대장 crypt 변이: 예측 효과가 노화 전사 변화보다 중앙값 기준 약 10³–10⁴배 작음, 실측 없음 · T-ALL TAL1 enhancer I 변이: 예측값은 다른 변이보다 유의하게 낮음(P = 3.32 × 10⁻⁷), 실측 TAL1 RNA는 차이 없음(P = 0.35)</td><td><a href="../10-Summaries/fischbach-2026-alphagenome-aging">Fischbach 2026</a> · <a href="../10-Summaries/terekhanova-2026-tal1-enhancer">Terekhanova 2026</a></td></tr>
+<tr><td>단일세포 Hi-C 보정</td><td>HiCFoundation이 재학습 없이 WTC11 세포에서 scHiCluster 대비 Pearson 35.9% 향상 · 단, 평가 세포는 cis contact 10만 개 초과로 거른 것</td><td><a href="../10-Summaries/wang-2026-hicfoundation">Wang 2026</a></td></tr>
+<tr><td>단일세포 출력 모델</td><td>scooby가 seq2cells보다 우세(0.77 → 0.87) · Decima가 sc-eQTL에서 21개 세포 유형 중 19개에서 Borzoi보다 우세</td><td><a href="../10-Summaries/hingerl-2025-scooby">Hingerl 2025</a> · <a href="../10-Summaries/lal-2026-decima">Lal 2026</a></td></tr>
+</tbody></table></div>
+
+<h2>목적별로 고르기</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>알고 싶은 것</th><th>우선 고려</th><th>확인할 위험</th></tr></thead>
+<tbody>
+<tr><td>비암호 변이가 조절 신호나 발현을 바꾸는지</td><td>AlphaGenome, Borzoi, Enformer, Sei (<a href="../10-Summaries/avsec-2026-alphagenome">Avsec 2026</a>; <a href="../10-Summaries/linder-2025-borzoi">Linder 2025</a>; <a href="../10-Summaries/chen-2022-sei">Chen 2022</a>)</td><td>벤치마크가 germline 중심. somatic 변이에서는 과소 예측 사례가 있음 (<a href="../10-Summaries/terekhanova-2026-tal1-enhancer">Terekhanova 2026</a>)</td></tr>
+<tr><td>구조 변이가 3D 접촉을 깨는지</td><td>Akita, Orca (<a href="../10-Summaries/fudenberg-2020-akita">Fudenberg 2020</a>; <a href="../10-Summaries/zhou-2022-orca">Zhou 2022</a>)</td><td>Akita 테스트 Pearson 0.61. 종양 SV 화면은 실제 contact map과 대조하지 않았음 (<a href="../10-Summaries/gjoni-2026-pediatric-tumor-3d">Gjoni 2026</a>)</td></tr>
+<tr><td>서열 분류 과제(promoter, splice site 등)</td><td>DNA language model을 쓰더라도 작은 CNN, 빈도 기준선과 먼저 비교 (<a href="../10-Summaries/sanabria-2024-grover">Sanabria 2024</a>; <a href="../10-Summaries/kempynck-2026-crested">Kempynck 2026</a>)</td><td>splice site에서는 SpliceAI가 여전히 최고 transformer보다 나았음 (<a href="../10-Summaries/fishman-2025-gena-lm">Fishman 2025</a>)</td></tr>
+<tr><td>scATAC 세포 annotation과 통합</td><td>Atacformer, CLM-access, EpiFoundation, EpiZoo (<a href="../10-Summaries/leroy-2025-atacformer">LeRoy 2025</a>; <a href="../10-Summaries/liu-2025-clm-access">Liu 2025</a>; <a href="../10-Summaries/wu-2025-epifoundation">Wu 2025</a>; <a href="../10-Summaries/li-2026-epizoo">Li 2026</a>)</td><td>DNA LM embedding을 고정해 쓰면 무작위보다 낫지 않을 수 있음. 함께 fine-tune해야 이득 (<a href="../10-Summaries/fan-2026-gfetm">Fan 2026</a>)</td></tr>
+<tr><td>단일세포 methylation 결측 보완, 세포 분류</td><td>DeepCpG, scDNAm-GPT (<a href="../10-Summaries/angermueller-2017-genomebiol">Angermueller 2017</a>; <a href="../10-Summaries/liang-2025-scdnam-gpt">Liang 2025</a>)</td><td>세포당 CpG coverage가 scBS-seq 20–40%, scRRBS 1–10%. scDNAm-GPT 평가는 소규모이고 약한 기준선과 비교한 것이 많음 (<a href="../10-Summaries/angermueller-2017-genomebiol">Angermueller 2017</a>; <a href="../10-Summaries/liang-2025-scdnam-gpt">Liang 2025</a>)</td></tr>
+<tr><td>scHi-C 지도 보정</td><td>HiCFoundation (<a href="../10-Summaries/wang-2026-hicfoundation">Wang 2026</a>)</td><td>bulk Hi-C로 사전학습했고 서열 입력이 없음. 평가한 세포는 cis contact 10만 개 초과로 거른 것 (<a href="../10-Summaries/wang-2026-hicfoundation">Wang 2026</a>)</td></tr>
+<tr><td>RNA + ATAC 통합</td><td>SCARF(실제 짝 데이터), scMomer·CLM-X(유사 짝 데이터) (<a href="../10-Summaries/liu-2025-scarf">Liu 2025</a>; <a href="../10-Summaries/liu-2025-scmomer">Liu 2025</a>; <a href="../10-Summaries/li-2026-clm-x">Li 2026</a>)</td><td>유사 짝 데이터로 사전학습한 모델이 실제 짝 데이터 모델만큼 전이되는지 검증 안 됨</td></tr>
+<tr><td>단일세포 CNV/SNV</td><td>사전학습 모델 없음. CoT 같은 데이터셋별 모델 (<a href="../10-Summaries/liu-2024-cot">Liu 2024</a>)</td><td>bulk 종양 모델은 세포·클론 입력과 dropout 처리가 없음 (<a href="../10-Summaries/sidhom-2026-tessera">Sidhom 2026</a>; <a href="../10-Summaries/kong-2026-mutationprojector">Kong 2026</a>)</td></tr>
+</tbody></table></div>
+
+<h2>읽는 순서</h2>
+<ol class="path">
+  <li><a href="../40-Topics/sequence-models-and-foundation-models">Sequence models and foundation models (hub)</a> — 모델 계열별 표와 세 빈칸의 근거가 한곳에 모인 출발점이다.</li>
+  <li><a href="../30-Concepts/sequence-to-function-model">Sequence-to-function model</a> — DeepSEA에서 AlphaGenome까지 supervised 계보를 정리한다.</li>
+  <li><a href="../30-Concepts/dna-language-model">DNA language model</a> — 자기지도 모델과 "기준선을 정말 이기는가" 논쟁을 함께 본다.</li>
+  <li><a href="../30-Concepts/single-cell-foundation-model">Single-cell foundation model</a> — accessibility, methylation, Hi-C, RNA+ATAC 모델을 비교한다.</li>
+  <li><a href="../10-Summaries/zhou-2015-deepsea">Zhou 2015</a> — allele을 바꿔 넣어 변이 효과를 매기는 기본 틀을 세운 논문이다.</li>
+  <li><a href="../10-Summaries/avsec-2026-alphagenome">Avsec 2026</a> — 1 Mb 입력, 1 bp 출력에 이른 현재의 supervised 기준점이다.</li>
+  <li><a href="../10-Summaries/sanabria-2024-grover">Sanabria 2024</a> — 단순한 빈도 기준선이 벤치마크를 얼마나 설명하는지 보여준다.</li>
+  <li><a href="../10-Summaries/terekhanova-2026-tal1-enhancer">Terekhanova 2026</a> — germline으로 학습한 점수를 somatic 변이에 쓸 때 무엇이 어긋나는지 실측으로 보여준다.</li>
+</ol>
+
+<h2>아직 열린 질문</h2>
+<ul>
+  <li><b>단일세포 genotype 모델.</b> allelic dropout과 증폭 오류가 섞인 단일세포 genotype으로 학습한 DNA 모델이 somatic 변이 검출을 도울 수 있을까. 아직 그런 모델은 없다 (<a href="../40-Topics/sequence-models-and-foundation-models">hub</a>, synthesis).</li>
+  <li><b>사전학습은 언제 값을 하는가.</b> 자기지도 DNA language model은 supervised 모델이나 단순 기준선을 자주 넘지 못한다. 비용을 들일 만한 과제가 무엇인지는 정리되지 않았다 (<a href="../10-Summaries/sanabria-2024-grover">Sanabria 2024</a>; <a href="../30-Concepts/dna-language-model">DNA language model</a>).</li>
+  <li><b>somatic 변이 보정.</b> AlphaGenome의 점수는 정상 조직에서 검증된 적이 없고 T-ALL enhancer 변이를 과소 예측했다. germline으로 학습한 점수를 somatic 변이에 어디까지 믿을 수 있는지 열려 있다 (<a href="../10-Summaries/fischbach-2026-alphagenome-aging">Fischbach 2026</a>; <a href="../10-Summaries/terekhanova-2026-tal1-enhancer">Terekhanova 2026</a>).</li>
+  <li><b>유사 짝 데이터.</b> scMomer와 CLM-X처럼 짝지어지지 않은 RNA와 ATAC를 엮은 사전학습이 SCARF의 실제 짝 데이터만큼 전이되는지는 검증되지 않았다 (<a href="../10-Summaries/liu-2025-scmomer">Liu 2025</a>; <a href="../10-Summaries/li-2026-clm-x">Li 2026</a>; <a href="../10-Summaries/liu-2025-scarf">Liu 2025</a>).</li>
+</ul>
+
+<footer>scDNA wiki 교재 · 수치와 해석은 링크된 위키 요약을 기준으로 한다.</footer>
+</main>
+
+<script>
+(function(){
+  var NS = "http://www.w3.org/2000/svg";
+  function el(svg, tag, attrs, text){
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    svg.appendChild(e); return e;
+  }
+
+  // ---- Figure 1: input length (bp, log) x year ----
+  // f: s = supervised sequence-to-function, c = sequence-to-single-cell, l = DNA language model
+  // Values from the hub tables and summaries cited in the caption.
+  var FAM = {
+    s: {label: "Sequence-to-function (supervised)", color: "var(--accent)"},
+    c: {label: "Sequence-to-single-cell", color: "var(--ok)"},
+    l: {label: "DNA language model", color: "var(--a2)"}
+  };
+  var MODELS = [
+    {n: "DeepSEA", y: 2015, bp: 1000, f: "s"},
+    {n: "Basset", y: 2016, bp: 600, f: "s"},
+    {n: "Basenji", y: 2018, bp: 131072, f: "s", a: "end"},
+    {n: "ExPecto", y: 2018, bp: 40000, f: "s"},
+    {n: "Akita", y: 2020, bp: 1048576, f: "s", a: "end"},
+    {n: "Enformer", y: 2021, bp: 196608, f: "s"},
+    {n: "DNABERT", y: 2021, bp: 512, f: "l"},
+    {n: "Sei", y: 2022, bp: 4000, f: "s"},
+    {n: "Orca", y: 2022, bp: 1e6, f: "s", hi: 2.56e8, a: "end"},
+    {n: "DNABERT-2", y: 2023, bp: 700, f: "l"},
+    {n: "HyenaDNA", y: 2023, bp: 1e6, f: "l"},
+    {n: "AIDO.DNA", y: 2024, bp: 4000, f: "l", a: "end"},
+    {n: "Caduceus", y: 2024, bp: 131072, f: "l", dx: -0.1, a: "end"},
+    {n: "GPN-MSA", y: 2025, bp: 128, f: "l"},
+    {n: "NucEL", y: 2025, bp: 1024, f: "l"},
+    {n: "NT-v2", y: 2025, bp: 12000, f: "l", dx: -0.3, a: "end"},
+    {n: "SegmentNT", y: 2025, bp: 30000, f: "l", dx: -0.3, a: "end"},
+    {n: "GENA-LM", y: 2025, bp: 36000, f: "l", dx: 0.3},
+    {n: "HybriDNA", y: 2025, bp: 131072, f: "l", dx: -0.3, a: "middle", dy: 16},
+    {n: "Gene42", y: 2025, bp: 192000, f: "l", dx: 0.3},
+    {n: "Borzoi", y: 2025, bp: 524288, f: "s", dx: -0.3, a: "end"},
+    {n: "scooby", y: 2025, bp: 524288, f: "c", dx: 0.25},
+    {n: "NTv3", y: 2025, bp: 1e6, f: "s", dx: -0.3, a: "end"},
+    {n: "GENERator", y: 2026, bp: 98000, f: "l"},
+    {n: "Decima", y: 2026, bp: 524288, f: "c", dx: 0.15},
+    {n: "", y: 2026, bp: 1e6, f: "s", dx: -0.25},
+    {n: "", y: 2026, bp: 1e6, f: "l", dx: 0},
+    {n: "", y: 2026, bp: 1e6, f: "l", dx: 0.25}
+  ];
+  (function(){
+    var svg = document.getElementById("fig-context"); if (!svg) return;
+    var W = 820, L = 62, R = 24, T = 48, B = 468;
+    var lmin = 2, lmax = 9, EARLY = 34, LATE = 78;
+    // piecewise year axis: 2014.5-2020.5 compressed, 2020.5-2027.2 widened
+    function X(yr){ return yr <= 2020.5 ? L + 8 + (yr - 2014.5) * EARLY : L + 8 + 6 * EARLY + (yr - 2020.5) * LATE; }
+    function Y(bp){ return B - (B - T) * (Math.log10(bp) - lmin) / (lmax - lmin); }
+    function bp(v){ return v >= 1e6 ? v / 1e6 + " Mb" : v >= 1e3 ? v / 1e3 + " kb" : v + " bp"; }
+    // legend
+    var lx = L;
+    ["s", "c", "l"].forEach(function(k){
+      el(svg, "circle", {cx: lx + 6, cy: 16, r: 6, style: "fill:" + FAM[k].color});
+      var t = el(svg, "text", {x: lx + 16, y: 21, "font-size": 13, style: "fill:var(--ink)"}, FAM[k].label);
+      lx += 16 + FAM[k].label.length * 7.2 + 22;
+    });
+    // grid
+    for (var d = lmin; d <= lmax; d++){
+      el(svg, "line", {x1: L, x2: W - R, y1: Y(Math.pow(10, d)), y2: Y(Math.pow(10, d)), style: "stroke:var(--line)"});
+      el(svg, "text", {x: L - 8, y: Y(Math.pow(10, d)) + 4, "text-anchor": "end", "font-size": 12, style: "fill:var(--muted)"}, bp(Math.pow(10, d)));
+    }
+    for (var yr = 2015; yr <= 2026; yr++){
+      el(svg, "line", {x1: X(yr), x2: X(yr), y1: T, y2: B, style: "stroke:var(--line);opacity:.5"});
+      if (yr % 1 === 0) el(svg, "text", {x: X(yr), y: B + 18, "text-anchor": "middle", "font-size": 12, style: "fill:var(--muted)"}, String(yr));
+    }
+    el(svg, "text", {x: (L + W - R) / 2, y: B + 40, "text-anchor": "middle", "font-size": 12, style: "fill:var(--muted)"}, "발표 연도 (위키 요약 기준)");
+    el(svg, "text", {x: 14, y: (T + B) / 2, "text-anchor": "middle", "font-size": 12, transform: "rotate(-90 14 " + (T + B) / 2 + ")", style: "fill:var(--muted)"}, "입력 길이 (로그 축)");
+    MODELS.forEach(function(m){
+      var cx = X(m.y + (m.dx || 0)), cy = Y(m.bp), col = FAM[m.f].color;
+      if (m.hi){
+        el(svg, "line", {x1: cx, x2: cx, y1: cy, y2: Y(m.hi) + 8, style: "stroke:" + col + ";stroke-width:3;opacity:.6"});
+        el(svg, "path", {d: "M" + (cx - 6) + " " + (Y(m.hi) + 10) + " L" + cx + " " + (Y(m.hi) - 2) + " L" + (cx + 6) + " " + (Y(m.hi) + 10) + " Z", style: "fill:" + col});
+        el(svg, "text", {x: cx + 8, y: Y(m.hi) + 8, "font-size": 11, style: "fill:var(--muted)"}, "256 Mb까지 (trans 포함)");
+      }
+      el(svg, "circle", {cx: cx, cy: cy, r: 5.5, style: "fill:" + col + ";stroke:var(--panel);stroke-width:1.2"});
+      if (m.n){
+        var anchor = m.a || "start", tx = cx + (anchor === "end" ? -8 : anchor === "middle" ? 0 : 8);
+        el(svg, "text", {x: tx, y: cy + 4 + (m.dy || 0), "text-anchor": anchor, "font-size": 12, style: "fill:var(--ink)"}, m.n);
+      }
+    });
+    // 1 Mb cluster label for 2026
+    el(svg, "text", {x: X(2026), y: Y(1e6) - 14, "text-anchor": "middle", "font-size": 12, style: "fill:var(--ink)"}, "AlphaGenome · Evo 2 · Genos");
+  })();
+
+  // ---- Figure 2: layer x model-type coverage matrix ----
+  // state: 2 = present, 1 = partial, 0 = gap
+  var COLS = ["서열 기반 모델 (supervised · DNA LM)", "bulk 데이터 사전학습 FM", "단일세포 데이터 사전학습 FM"];
+  var ROWS = [
+    {k: "Genotype", s: "CNV · SNV", c: [
+      [1, ["변이 효과 점수화의 입력으로만", "벤치마크는 germline 중심"]],
+      [2, ["TESSERA, MutationProjector", "(bulk 종양)"]],
+      [0, ["없음 — CoT는 데이터셋마다", "새로 학습하는 transformer"]]]},
+    {k: "Accessibility", s: "ATAC · DNase", c: [
+      [2, ["DeepSEA, Basset, ChromBPNet", "단일세포: scBasset, CREsted"]],
+      [2, ["ChromBERT", "(DNase/ATAC 포함)"]],
+      [2, ["Atacformer, CLM-access,", "EpiFoundation, EpiZoo"]]]},
+    {k: "Methylation", s: "5mC", c: [
+      [2, ["DeepCpG", "(서열 + 이웃 CpG, 단일세포)"]],
+      [2, ["CpGPT, MethylGPT", "(bulk array)"]],
+      [2, ["scDNAm-GPT", "(scWGBS 약 100만 세포)"]]]},
+    {k: "Histone", s: "ChIP · CUT&Tag", c: [
+      [2, ["DeepSEA, Sei, Enformer", "(histone track 예측)"]],
+      [2, ["ChromBERT (76 mark),", "CANDI (FM이라 부르지 않음)"]],
+      [0, ["없음 — 단일세포 histone용", "imputation 방법도 없음"]]]},
+    {k: "3D genome", s: "Hi-C · Micro-C", c: [
+      [2, ["Akita, Orca, Evo2HiC"]],
+      [2, ["HiCFoundation", "(bulk Hi-C, 서열 입력 없음)"]],
+      [1, ["HiCFoundation을", "scHi-C에 fine-tune"]]]}
+  ];
+  (function(){
+    var svg = document.getElementById("fig-matrix"); if (!svg) return;
+    var W = 760, L = 130, T = 44, rh = 62, gap = 6, cw = (W - L - 2 * gap) / 3;
+    var FILL = ["var(--warn-soft)", "var(--accent-soft)", "var(--accent-soft)"];
+    var EDGE = ["var(--warn)", "var(--accent)", "var(--accent)"];
+    COLS.forEach(function(c, j){
+      el(svg, "text", {x: L + j * (cw + gap) + cw / 2, y: T - 14, "text-anchor": "middle", "font-size": 12.5, "font-weight": 600, style: "fill:var(--muted)"}, c);
+    });
+    ROWS.forEach(function(r, i){
+      var y = T + i * (rh + gap);
+      el(svg, "text", {x: 0, y: y + rh / 2 - 2, "font-size": 15, "font-weight": 600, style: "fill:var(--ink)"}, r.k);
+      el(svg, "text", {x: 0, y: y + rh / 2 + 15, "font-size": 12, style: "fill:var(--muted)"}, r.s);
+      r.c.forEach(function(cell, j){
+        var x = L + j * (cw + gap), st = cell[0];
+        el(svg, "rect", {x: x, y: y, width: cw, height: rh, rx: 8,
+          style: "fill:" + FILL[st] + ";stroke:" + EDGE[st] + ";stroke-width:" + (st === 2 ? 2 : 1.2) + (st === 1 ? ";stroke-dasharray:5 4" : "")});
+        var lines = cell[1], y0 = y + rh / 2 - (lines.length - 1) * 8 + 4;
+        lines.forEach(function(t, k){
+          el(svg, "text", {x: x + cw / 2, y: y0 + k * 16, "text-anchor": "middle", "font-size": 12,
+            "font-weight": k === 0 && st === 0 ? 600 : 400, style: "fill:" + (st === 0 ? "var(--warn)" : "var(--ink)")}, t);
+        });
+      });
+    });
+    // third gap: somatic variants, across all layers
+    var y = T + ROWS.length * (rh + gap) + 10;
+    el(svg, "text", {x: 0, y: y + rh / 2 - 2, "font-size": 15, "font-weight": 600, style: "fill:var(--ink)"}, "Somatic 변이");
+    el(svg, "text", {x: 0, y: y + rh / 2 + 15, "font-size": 12, style: "fill:var(--muted)"}, "층 공통");
+    el(svg, "rect", {x: L, y: y, width: W - L, height: rh, rx: 8, style: "fill:var(--warn-soft);stroke:var(--warn);stroke-width:1.2"});
+    el(svg, "text", {x: L + (W - L) / 2, y: y + rh / 2 - 4, "text-anchor": "middle", "font-size": 12, "font-weight": 600, style: "fill:var(--warn)"}, "쓰이기는 하지만 검증은 드묾 — AlphaGenome, Akita로 somatic SNV·indel·SV를 점수화");
+    el(svg, "text", {x: L + (W - L) / 2, y: y + rh / 2 + 13, "text-anchor": "middle", "font-size": 12, style: "fill:var(--ink)"}, "실측과 대조한 한 사례(T-ALL TAL1 enhancer)에서는 과소 예측");
+    // legend
+    var ly = y + rh + 28, items = [[2, "있음"], [1, "일부"], [0, "빈칸"]], lx = L;
+    items.forEach(function(it){
+      var st = it[0];
+      el(svg, "rect", {x: lx, y: ly - 12, width: 22, height: 14, rx: 3,
+        style: "fill:" + FILL[st] + ";stroke:" + EDGE[st] + ";stroke-width:1.5" + (st === 1 ? ";stroke-dasharray:4 3" : "")});
+      el(svg, "text", {x: lx + 30, y: ly, "font-size": 12, style: "fill:var(--muted)"}, it[1]);
+      lx += 90;
+    });
+  })();
+})();
+</script>
+</body>
+</html>

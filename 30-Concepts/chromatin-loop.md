@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Chromatin loop는 contact matrix에서 주변 배경보다 강하게 나타나는 두 locus 사이의 점 모양 접촉이며, 대부분 convergent CTCF 자리에서 멈춘 loop extrusion으로 설명된다 ([[10-Summaries/rao-2014-in-situ-hic|Rao 2014]]). 단일 세포 데이터에서는 SnapHiC 계열이 세포 간 변이를 통계적 검정력으로 바꿔 소수의 세포로도 loop를 부르지만, 결과는 세포 하나가 아니라 세포 유형 수준의 loop 목록이다 ([[10-Summaries/yu-2021-snaphic|SnapHiC]]; [[10-Summaries/li-2022-snaphic2|SnapHiC2]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [3D 유전체 교재](../60-Explainers/3d-genome.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Loops sit at the finest scale of the 3D hierarchy, below [[topologically-associating-domain|TADs]] and [[chromatin-compartments|compartments]] (synthesis). Most are attributed to loop extrusion halted at convergently oriented CTCF sites, which is why **CTCF motif orientation doubles as a precision metric**: among loops with CTCF at both anchors, 63.6–78.7% are convergent ([[10-Summaries/yu-2021-snaphic|SnapHiC]]). Loops are called against the local neighbourhood rather than the genome-wide average; the authors of the founding kilobase-resolution catalogue argue that global-background calls implying more than 100,000 loops mostly capture same-domain pairs ([[10-Summaries/rao-2014-in-situ-hic|Rao 2014]]).

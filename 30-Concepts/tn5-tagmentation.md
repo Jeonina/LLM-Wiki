@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Tn5 tagmentation은 adapter를 실은 Tn5 transposase가 DNA를 자르면서 동시에 adapter를 붙이는 반응이고, ATAC-seq, CUT&Tag, 증폭 없는 scWGS 같은 single-cell 방법 대부분이 이 반응 위에 서 있다 ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]). Tn5에는 염기서열 선호와 열린 염색질 선호라는 서로 다른 두 편향이 있어서, 항체로 표적을 정하는 assay에서도 accessibility 신호가 섞여 들어온다 ([[10-Summaries/hu-2026-patty|PATTY]]; [[10-Summaries/abbasova-2025-cut-tag-encode-benchmark|Abbasova 2025]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [scATAC-seq 희소성 시뮬레이터](../60-Explainers/single-cell-atac-seq.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Tn5 is an *Escherichia coli* transposase. Each transposition introduces a 9-nt gap into the target DNA and inserts the loaded adapter at both ends of the resulting fragment. Library prep that takes hours of fragmentation plus ligation in conventional workflows takes ~30 minutes with Tn5.

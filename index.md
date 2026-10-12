@@ -55,7 +55,7 @@ How each layer is read from a single cell's one copy of DNA.
 > - `synthesis · 6 papers` [[50-Notes/methylation-cancer-origin-classifiers|Methylation-based cancer-of-origin classifiers — clinical-grade epigenetic memory]] — DNA methylation patterns are heritable across cell divisions and act as a record of cell-type identity.
 
 > [!cards] Histone modification
-> - `hub · 37 papers` [[40-Topics/histone-modifications|Histone modifications]] — Post-translational modifications of histone tails — methylation, acetylation, ubiquitylation, phosphorylation — that demarcate functional chromatin states.
+> - `hub · 38 papers` [[40-Topics/histone-modifications|Histone modifications]] — Post-translational modifications of histone tails — methylation, acetylation, ubiquitylation, phosphorylation — that demarcate functional chromatin states.
 > - `synthesis · 9 papers` [[50-Notes/mnase-vs-tn5-chromatin|MNase vs Tn5 — two chemistries for single-cell histone profiling]] — Single-cell histone-modification profiling splits cleanly into two chemistry lineages.
 
 > [!cards] 3D genome

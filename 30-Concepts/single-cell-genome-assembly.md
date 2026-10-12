@@ -14,6 +14,13 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > Single-cell genome assembly는 증폭된 세포 하나의 read만으로 reference 없이 유전체를 다시 짜 맞추는 작업이다. MDA가 만드는 극단적으로 고르지 않은 coverage와 chimera 때문에 기존 de Bruijn assembler가 통하지 않았고, Velvet-SC·IDBA-UD·SPAdes가 이를 알고리즘 차원에서 풀었다 ([[10-Summaries/chitsaz-2011-velvet-sc|Chitsaz 2011]]; [[10-Summaries/peng-2012-idba-ud|IDBA-UD]]; [[10-Summaries/bankevich-2012-spades|SPAdes]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [분석 도구 교재](../60-Explainers/computational-methods.html)
+>
+> [단일세포 WGA 시뮬레이터](../60-Explainers/wga-simulator.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 Single-cell genome assembly is de novo reconstruction of a genome from the reads of one amplified cell ([[10-Summaries/chitsaz-2011-velvet-sc|Chitsaz 2011]]). Unlike every other analysis in this wiki, it has **no reference genome**, so the amplification artifacts of [[mda|MDA]] cannot be corrected against one and must be handled inside the assembler (synthesis).

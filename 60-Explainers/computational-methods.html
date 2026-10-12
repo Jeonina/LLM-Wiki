@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>분석 도구 교재</title>
+<link rel="stylesheet" href="explainer.css">
+</head>
+<body>
+<main>
+<div class="crumb"><a href="../">scDNA wiki</a> · <a href="./">교재</a> · 분석 도구</div>
+<h1>read에서 결론까지: 단일세포 데이터는 어떤 도구를 거쳐 해석되나</h1>
+<p class="lede">시퀀서가 내놓는 것은 read 파일이고, 논문에 실리는 것은 copy number, 변이, 계통수, 세포 유형이다. 그 사이를 잇는 도구들이 결과의 상당 부분을 정한다. 같은 입력에 다른 도구를 쓰면 다른 결론이 나오기도 한다. 이 페이지는 scDNA 분석의 흐름과 층별 도구 지형을 한 번에 보여주고, 도구를 고를 때 무엇을 의심해야 하는지 정리한다.</p>
+
+<div class="callouts">
+  <div class="callout"><b>도구 선택은 중립이 아니다</b>같은 raw data를 두 Hi-C pipeline에 넣으면 지도의 상관이 1이 아니라 0.83이다. 단일세포 CNV에서도 caller에 따라 ploidy와 이벤트 수가 크게 달라진다.</div>
+  <div class="callout"><b>세포 하나는 성기고 치우쳐 있다</b>깊이는 낮고 증폭 편향과 dropout이 섞인다. 최근 도구는 세포를 따로 보지 않고, 세포끼리 정보를 빌리거나 진화 모델로 잡음을 누른다.</div>
+  <div class="callout"><b>도구 논문은 대개 스스로를 평가한다</b>독립 benchmark는 드물고, 같은 도구가 benchmark마다 다른 순위를 받는다. 숫자는 누가 어떤 데이터로 쟀는지와 함께 읽어야 한다.</div>
+</div>
+
+<h2>scDNA 분석의 흐름</h2>
+<figure class="fig">
+  <svg id="fig-pipe" viewBox="0 0 760 640" role="img" aria-label="단일세포 DNA 분석 pipeline: read에서 QC, 정렬, 변이 호출, 계통수, 다른 층과의 통합까지 단계별 대표 도구"></svg>
+  <figcaption>그림 1. scDNA 분석의 단계와 각 단계의 대표 도구. 왼쪽 상자가 단계, 오른쪽이 이 위키에 요약이 있는 도구다. 점선 화살표는 호출과 계통수 추론을 한 번에 하는 방법(SCICoNE, CNRein, SCIΦ)을 뜻한다 (<a href="../10-Summaries/kuipers-2025-scicone">Kuipers 2025</a>; <a href="../10-Summaries/ivanovic-2025-cnrein">Ivanovic 2025</a>; <a href="../10-Summaries/singer-2018-sciphi">Singer 2018</a>). SNV·indel 호출과 계통수는 각각 <a href="./mosaic-variant-calling.html">모자이크 변이 교재</a>와 <a href="./cancer-clonal-evolution.html">클론 진화 교재</a>에서 자세히 다룬다.</figcaption>
+</figure>
+
+<h2>층 × 과제 지도</h2>
+<figure class="fig">
+  <svg id="fig-matrix" viewBox="0 0 760 520" role="img" aria-label="데이터 층별, 분석 과제별 대표 도구 행렬"></svg>
+  <figcaption>그림 2. 데이터 층(행)과 분석 과제(열)별로 이 위키가 요약한 도구. 칸이 진할수록 도구가 많다. 점선 칸은 이 위키에 해당 도구 요약이 없다는 뜻이지 그 분야에 도구가 없다는 뜻은 아니다. 행 이름 아래는 그 층의 독립 benchmark다. 도구 목록은 <a href="../40-Topics/computational-methods">Computational methods hub</a>를 따랐다.</figcaption>
+</figure>
+
+<h2>핵심 내용</h2>
+<ol class="steps">
+  <li><b>같은 데이터, 다른 결론.</b> TAD caller 7개를 같은 contact 행렬에 돌리면 domain이 거의 일치하지 않는다 (<a href="../10-Summaries/kerpedjiev-2018-higlass">Kerpedjiev 2018</a>). CUT&amp;RUN 데이터에 ChIP-seq용 MACS2와 HOMER를 쓰면, 인자가 발현되지 않는 세포에서도 peak가 최대 약 900개 나온다. 전용 caller인 SEACR는 1–2개였다 (<a href="../10-Summaries/meers-2019-seacr">Meers 2019</a>). 그래서 결과를 볼 때는 어떤 도구로 얻었는지부터 확인해야 한다.</li>
+  <li><b>앞단 처리도 데이터 화학을 따른다.</b> fastp는 QC, adapter·polyG trimming, UMI 처리를 한 번에 한다 (<a href="../10-Summaries/chen-2018-fastp">Chen 2018</a>). 정렬 결과는 SAM/BAM 형식으로 넘어가고, SAMtools가 정렬·색인·중복 제거를 맡는다 (<a href="../10-Summaries/li-2009-samtools">Li 2009</a>). 다만 좌표 기반 중복 제거는 증폭 전에 DNA를 조각낸 경우에만 맞다. WGA는 긴 산물을 나중에 자르기 때문에 같은 원본에서 나온 read가 서로 다른 좌표를 가진다 (<a href="../10-Summaries/zahn-2017-dlp">Zahn 2017</a>). Library QC도 별도 단계다. AneuFinder 데이터에서는 library의 약 11%가 품질 미달이었다 (<a href="../10-Summaries/bakker-2016-aneufinder">Bakker 2016</a>).</li>
+  <li><b>CNV 호출의 기본형은 bin, 보정, 분할이다.</b> Ginkgo가 read binning, GC 보정, 정수 분할로 이어지는 흐름을 정착시켰다 (<a href="../10-Summaries/garvin-2015-natmethods">Garvin 2015</a>). AneuFinder는 mappability에 맞춘 가변 bin(평균 1 Mb)에 HMM을 쓰고 (<a href="../10-Summaries/bakker-2016-aneufinder">Bakker 2016</a>), SCOPE는 정상 diploid 세포로 편향을 추정한다 (<a href="../10-Summaries/wang-2020-scope">Wang 2020</a>). 고심도 PTA에서는 bin 크기가 증폭 방식에 따라 달라진다. HiScanner는 ADO 구간 크기로 최소 bin을 정해 100 kb bin을 썼다 (<a href="../10-Summaries/zhao-2025-hiscanner">Zhao 2025</a>).</li>
+  <li><b>절대 ploidy는 profile만으로 정해지지 않는다.</b> 같은 profile에 diploid와 tetraploid가 똑같이 잘 맞는다. scAbsolute는 겹치는 read의 밀도로 (<a href="../10-Summaries/schneider-2024-scabsolute">Schneider 2024</a>), ASCENT는 fragment overlap으로 이 문제를 푼다 (<a href="../10-Summaries/kolbeinsdottir-2025-ascent">Kolbeinsdottir 2025</a>). 두 방법 모두 증폭 없이 만든 tagmentation 데이터가 필요하다. 복제 중인 S기 세포는 gain처럼 보이므로 계통수 전에 걸러야 한다 (<a href="../10-Summaries/kuipers-2025-scicone">Kuipers 2025</a>).</li>
+  <li><b>세포를 따로 보지 않는다.</b> 세포마다 따로 부르면 잡음이 세포 고유의 CNA로 바뀐다. 시뮬레이션에서 SIGNALS와 CHISEL은 세포 1,000개 모두에 고유 profile을 줬지만 실제 고유 profile은 490개였다. CNRein은 진화 모델을 정규화에 써서 565개를 냈다 (<a href="../10-Summaries/ivanovic-2025-cnrein">Ivanovic 2025</a>). SCICoNE은 세포 간 breakpoint를 공유하고 CNA tree를 함께 추론한다 (<a href="../10-Summaries/kuipers-2025-scicone">Kuipers 2025</a>). SNV에서도 계통수 추론과 오류 보정을 한 문제로 푸는 방법이 2018년에 따로따로 나왔다 (<a href="../10-Summaries/singer-2018-sciphi">Singer 2018</a>; <a href="../10-Summaries/el-kebir-2018-sphyr">El-Kebir 2018</a>). 자세한 내용은 <a href="./cancer-clonal-evolution.html">클론 진화 교재</a>에 있다.</li>
+  <li><b>다른 층과 이을 때는 희소성과 비용이 문제다.</b> CNV는 RNA(CopyKAT, inferCNV)나 ATAC(epiAneufinder)에서도 추정하지만, 해상도와 정확도가 DNA보다 낮다 (<a href="../10-Summaries/gao-2021-copykat">Gao 2021</a>; <a href="../10-Summaries/ramakrishnan-2023-epianeufinder">Ramakrishnan 2023</a>). 단일세포 Hi-C에서는 선형 coverage 5–10%가 가능한 contact의 0.25–1%로 줄어, imputation 없이는 군집조차 어렵다 (<a href="../10-Summaries/zhou-2019-schicluster">Zhou 2019</a>). 여러 층을 합치는 방법은 2018년 MNN과 Seurat CCA에서 시작됐고 (<a href="../10-Summaries/haghverdi-2018-mnn">Haghverdi 2018</a>; <a href="../10-Summaries/butler-2018-seurat-cca">Butler 2018</a>), 메모리 요구량은 Harmony의 7.2 GB(세포 50만 개)부터 SCENIC+의 461 GB까지 벌어진다 (<a href="../10-Summaries/korsunsky-2019-harmony">Korsunsky 2019</a>; <a href="../10-Summaries/bravo-2023-scenicplus">Bravo 2023</a>).</li>
+</ol>
+
+<h2>보고된 비교 값</h2>
+<p class="desc">대부분 도구 논문 자신의 benchmark다. 같은 도구가 benchmark마다 다른 평가를 받는 경우는 고르지 않고 나란히 적었다.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>비교</th><th>보고된 값</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>절대 ploidy 오류 (얕은 scWGS)</td><td>ACT 데이터에서 잘못된 ploidy 비율 평균: scAbsolute 5%, CHISEL 11%, HMMCopy 16%, Ginkgo 27% · 반면 다른 연구에서 scAbsolute는 G2M 세포 tetraploid를 89% 놓침</td><td><a href="../10-Summaries/schneider-2024-scabsolute">Schneider 2024</a> · <a href="../10-Summaries/kolbeinsdottir-2025-ascent">Kolbeinsdottir 2025</a></td></tr>
+<tr><td>CHISEL의 평가</td><td>ploidy 오류 11%로 비교 도구 중 두 번째 · cnLOH는 1 Mb 이상에서 HiScanner보다 나음 · 저심도 B-ALL 한 시료의 bulk 일치도는 0.01 미만(이형접합 SNP 부족) · 시뮬레이션에서 세포마다 고유 profile을 부여</td><td><a href="../10-Summaries/schneider-2024-scabsolute">Schneider 2024</a> · <a href="../10-Summaries/zhao-2025-hiscanner">Zhao 2025</a> · <a href="../10-Summaries/kolbeinsdottir-2025-ascent">Kolbeinsdottir 2025</a> · <a href="../10-Summaries/ivanovic-2025-cnrein">Ivanovic 2025</a></td></tr>
+<tr><td>allele-specific CN 정확도</td><td>시뮬레이션 중앙값: CNRein 0.956, SIGNALS 0.882, CHISEL 0.857 · bulk WGS 대비: ASCENT 0.999, scAbsolute 0.996(total CN), Alleloscope 0.85</td><td><a href="../10-Summaries/ivanovic-2025-cnrein">Ivanovic 2025</a> · <a href="../10-Summaries/kolbeinsdottir-2025-ascent">Kolbeinsdottir 2025</a></td></tr>
+<tr><td>sub-Mb CNA (고심도 PTA)</td><td>≥1 Mb 단일 copy 손실 민감도: HiScanner 약 0.90, Ginkgo 0.85, CHISEL 0.80(precision 0.51) · 500 kb 미만은 모든 도구가 어려움 · 뇌 PTA 세포에서 Ginkgo call의 66–97%가 BAF와 불일치</td><td><a href="../10-Summaries/zhao-2025-hiscanner">Zhao 2025</a></td></tr>
+<tr><td>AneuFinder 대 Ginkgo</td><td>call은 대체로 일치. AneuFinder는 작은 CNV에 더 민감하고 Ginkgo는 잡음에 더 강함</td><td><a href="../10-Summaries/bakker-2016-aneufinder">Bakker 2016</a></td></tr>
+<tr><td>단일세포 sSNV 호출</td><td>SCcaller somatic FDR 0.31–0.39, MuTect·VarScan·Monovar 0.75–0.86 · SCAN-SNV는 FDR을 3배 넘게 낮춤 · SCAN2 민감도 46%(SCAN-SNV 25%), FDR 8.6% 대 9.5%</td><td><a href="../10-Summaries/dong-2017-sccaller">Dong 2017</a> · <a href="../10-Summaries/luquette-2019-natcomm">Luquette 2019</a> · <a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a></td></tr>
+<tr><td>DNA 밖에서 추정한 CNV</td><td>CopyKAT 대 bulk DNA r = 0.82, inferCNV 0.79 · CopyKAT CNA 검출 1 Mb 19%, 5 Mb 56%, 20 Mb 88% · scATAC 기반 epiAneufinder 대 scWGS r = 0.86, Copy-scAT 0.74, inferCNV 0.61</td><td><a href="../10-Summaries/gao-2021-copykat">Gao 2021</a> · <a href="../10-Summaries/ramakrishnan-2023-epianeufinder">Ramakrishnan 2023</a></td></tr>
+<tr><td>계산 비용</td><td>scAbsolute 세포당 3–10분 · ASCENT 세포당 약 7 CPU분 · CpG imputation은 500세포 넘는 전장 데이터에서 72시간 안에 끝난 방법이 없음 · Harmony 50만 세포 7.2 GB, SCENIC+ 최대 461 GB</td><td><a href="../10-Summaries/schneider-2024-scabsolute">Schneider 2024</a> · <a href="../10-Summaries/kolbeinsdottir-2025-ascent">Kolbeinsdottir 2025</a> · <a href="../10-Summaries/liang-2026-scmeth-imputation-benchmark">Liang 2026</a> · <a href="../10-Summaries/korsunsky-2019-harmony">Korsunsky 2019</a> · <a href="../10-Summaries/bravo-2023-scenicplus">Bravo 2023</a></td></tr>
+</tbody></table></div>
+
+<h2>목적별로 고르기</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>알고 싶은 것</th><th>우선 고려</th><th>확인할 위험</th></tr></thead>
+<tbody>
+<tr><td>얕은 scWGS의 클론 CNV 구조</td><td>Ginkgo, AneuFinder, SCOPE로 세포별 호출 후 SCICoNE, CNRein처럼 세포 간 정보를 쓰는 방법 (<a href="../10-Summaries/garvin-2015-natmethods">Garvin 2015</a>; <a href="../10-Summaries/kuipers-2025-scicone">Kuipers 2025</a>; <a href="../10-Summaries/ivanovic-2025-cnrein">Ivanovic 2025</a>)</td><td>세포별 호출은 이질성을 부풀림. 반대로 tree의 복잡도 벌점은 소수 세포의 작은 이벤트를 지움 (<a href="../10-Summaries/kuipers-2025-scicone">Kuipers 2025</a>)</td></tr>
+<tr><td>절대 ploidy, WGD, S기 세포</td><td>scAbsolute, ASCENT (<a href="../10-Summaries/schneider-2024-scabsolute">Schneider 2024</a>; <a href="../10-Summaries/kolbeinsdottir-2025-ascent">Kolbeinsdottir 2025</a>)</td><td>증폭 없는 tagmentation 데이터가 필요. scAbsolute의 read density는 paired-end여야 함</td></tr>
+<tr><td>고심도 PTA의 sub-Mb, allele-specific CNA</td><td>HiScanner (<a href="../10-Summaries/zhao-2025-hiscanner">Zhao 2025</a>)</td><td>ADO가 copy 손실처럼 보임. bin을 ADO 구간보다 크게, Ginkgo call은 BAF로 걸러야 함. 뇌 데이터 추정 FDR 26.3%</td></tr>
+<tr><td>정상 세포의 체세포 SNV·indel</td><td>SCAN2 등 allelic imbalance를 모델링하는 caller (<a href="../10-Summaries/luquette-2022-neuron-scan2-indels">Luquette 2022</a>)</td><td>bulk caller는 증폭 artifact를 변이로 부름. 자세히는 <a href="./mosaic-variant-calling.html">모자이크 변이 교재</a></td></tr>
+<tr><td>RNA나 ATAC 데이터에서 CNV 단서</td><td>CopyKAT, inferCNV, epiAneufinder (<a href="../10-Summaries/gao-2021-copykat">Gao 2021</a>; <a href="../10-Summaries/ramakrishnan-2023-epianeufinder">Ramakrishnan 2023</a>)</td><td>상대값만 나오고 해상도는 Mb 단위. epiAneufinder는 WGD를 못 봄. RNA 신호는 DNA 근거 없이 나타나기도 함 (<a href="../10-Summaries/kuipers-2025-scicone">Kuipers 2025</a>)</td></tr>
+<tr><td>scRNA와 scATAC 통합</td><td>독립 benchmark에서 GLUE가 대체로 최상, paired 과제에서는 MultiVI가 다음 (<a href="../10-Summaries/xiao-2024-multiomics-benchmark">Xiao 2024</a>)</td><td>세포는 서로 독립이 아니어서 유효 표본 수가 세포 수보다 훨씬 적음 (<a href="../10-Summaries/yuan-2024-linger">Yuan 2024</a>)</td></tr>
+<tr><td>단일세포 histone mark 군집</td><td>100–200 kbp 고정 bin, TF-IDF + SVD 또는 NMF (<a href="../10-Summaries/raimundo-2023-schptm-benchmark">Raimundo 2023</a>)</td><td>scATAC 관행을 그대로 옮기면 안 됨. bin 크기가 embedding 방법보다 성능을 더 좌우함</td></tr>
+</tbody></table></div>
+
+<h2>읽는 순서</h2>
+<ol class="path">
+  <li><a href="../40-Topics/computational-methods">Computational methods (hub)</a> — 층별 도구 표와 도구 사이의 긴장을 한 장에 모은 출발점이다.</li>
+  <li><a href="../30-Concepts/copy-number-variation">Copy-number variation</a> — 단일세포 CNV 호출의 원리와 caller 계보를 본다.</li>
+  <li><a href="../30-Concepts/single-cell-variant-calling">Single-cell variant calling</a> — 증폭 편향 아래에서 SNV를 부르는 방법들을 정리한다.</li>
+  <li><a href="../30-Concepts/multimodal-integration-methods">Multimodal integration methods</a> — 여러 층을 한 표현으로 합치는 방법의 분류다.</li>
+  <li><a href="../10-Summaries/garvin-2015-natmethods">Garvin 2015</a> — 오늘날 scDNA CNV pipeline의 기본형을 세운 Ginkgo 논문이다.</li>
+  <li><a href="../10-Summaries/zhao-2025-hiscanner">Zhao 2025</a> — 증폭 방식이 bin 크기를 정하고, caller마다 같은 세포에서 다른 결론이 나오는 사례다.</li>
+  <li><a href="../10-Summaries/ivanovic-2025-cnrein">Ivanovic 2025</a> — 세포별 호출이 이질성을 얼마나 부풀리는지 수치로 보여준다.</li>
+  <li><a href="../10-Summaries/lahnemann-2020-grand-challenges">Lähnemann 2020</a> — 단일세포 데이터 과학의 열린 문제 11개를 정리한 공동체 의제다.</li>
+</ol>
+
+<h2>아직 열린 질문</h2>
+<ul>
+  <li><b>Imputation은 무엇을 지우나.</b> scHi-C imputation은 군집을 가능하게 하지만, 측정하려는 세포 간 변이도 함께 줄인다. 얼마나 줄이는지는 재지 않았다 (<a href="../10-Summaries/zhou-2019-schicluster">Zhou 2019</a>; <a href="../10-Summaries/zhang-2022-higashi">Zhang 2022</a>).</li>
+  <li><b>세포를 독립 반복으로 다뤄도 되나.</b> 유효 표본 수는 세포 수보다 훨씬 적다. 세포를 반복 측정처럼 쓰는 SnapHiC, MINTsC 같은 caller가 유의성을 과대평가하는지는 확인되지 않았다 (<a href="../10-Summaries/yuan-2024-linger">Yuan 2024</a>; <a href="../10-Summaries/yu-2021-snaphic">Yu 2021</a>; <a href="../10-Summaries/park-2026-mintsc">Park 2026</a>; synthesis).</li>
+  <li><b>독립 검증에서 살아남는 도구는.</b> 대부분의 도구 논문은 스스로를 benchmark한다. DREAM Challenge나 독립 비교처럼 외부 평가를 거친 경우는 아직 적다 (<a href="../10-Summaries/gong-2022-dclear">Gong 2022</a>; <a href="../10-Summaries/ha-2023-natmethods">Ha 2023</a>; <a href="../10-Summaries/xiao-2024-multiomics-benchmark">Xiao 2024</a>; synthesis).</li>
+  <li><b>도구를 바꿔도 남는 결론은.</b> TAD caller끼리 일치하지 않고 Hi-C pipeline끼리 상관이 0.83이라면, 어떤 하위 결론이 도구 교체에도 유지되는지 체계적으로 검증해야 한다 (<a href="../10-Summaries/kerpedjiev-2018-higlass">Kerpedjiev 2018</a>; <a href="../10-Summaries/servant-2015-hicpro">Servant 2015</a>; synthesis).</li>
+</ul>
+
+<footer>scDNA wiki 교재 · 수치와 해석은 링크된 위키 요약을 기준으로 한다.</footer>
+</main>
+
+<script>
+(function(){
+  var NS = "http://www.w3.org/2000/svg";
+  function el(parent, tag, attrs, text){
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    parent.appendChild(e); return e;
+  }
+  function lines(parent, x, y, arr, size, style, lh){
+    arr.forEach(function(t, i){ el(parent, "text", {x: x, y: y + i * (lh || size + 5), "font-size": size, style: style}, t); });
+  }
+  function arrow(svg, x1, y1, x2, y2, dashed){
+    el(svg, "line", {x1: x1, y1: y1, x2: x2, y2: y2 - 7, "stroke-width": 1.6, "stroke-dasharray": dashed ? "5 4" : "none", style: "stroke:var(--muted)"});
+    el(svg, "path", {d: "M" + (x2 - 5) + " " + (y2 - 8) + " L" + x2 + " " + y2 + " L" + (x2 + 5) + " " + (y2 - 8) + " Z", style: "fill:var(--muted)"});
+  }
+
+  // Figure 1: pipeline. Tools and notes from the computational-methods hub and the summaries cited in the caption.
+  var pipe = document.getElementById("fig-pipe");
+  if (pipe){
+    var STAGE_W = 150, TX = 165, TW = 595;
+    var rows = [
+      {y: 0,   h: 64, stage: "① 원시 read", sub: "FASTQ",
+       tools: ["fastp — QC, adapter·polyG trimming, UMI 처리를 한 번에"], note: "Chen 2018"},
+      {y: 90,  h: 64, stage: "② 정렬·형식", sub: "BAM",
+       tools: ["BWA (정렬) · SAMtools (SAM/BAM, 정렬·색인·중복 제거)"], note: "좌표 기반 중복 제거는 증폭 전에 조각낸 library에서만 유효 (Zahn 2017)"},
+      {y: 180, h: 64, stage: "③ Library QC", sub: "세포 거르기",
+       tools: ["AneuFinder spikiness · MosaiCatcher v2 ashleys-qc · scAbsolute S기 판별"], note: "AneuFinder 데이터에서 library 약 11%가 품질 미달 (Bakker 2016)"},
+      {y: 270, h: 128, stage: "④ 변이 호출", sub: "세포별 genotype", branch: true},
+      {y: 424, h: 82, stage: "⑤ 클론·계통", sub: "tree",
+       tools: ["CNA: SCICoNE · MEDALT · MEDICC2 (ASCENT 안에서)", "SNV: SCIΦ · SPhyR · CellPhy · SIEVE"], link: {t: "→ 클론 진화 교재", href: "./cancer-clonal-evolution.html"}},
+      {y: 532, h: 100, stage: "⑥ 다른 층과 연결", sub: "RNA · ATAC · 통합",
+       tools: ["CNV를 다른 층에서: inferCNV · CopyKAT (RNA) · epiAneufinder (ATAC)", "층 통합: MNN · Seurat · Harmony · LIGER · MOFA · GLUE", "GRN: Cicero · SCENIC+ · LINGER"]}
+    ];
+    rows.forEach(function(r, i){
+      el(pipe, "rect", {x: 1, y: r.y + 1, width: STAGE_W, height: r.h - 2, rx: 8, style: "fill:var(--accent-soft);stroke:var(--accent)"});
+      el(pipe, "text", {x: 12, y: r.y + 26, "font-size": 15, "font-weight": 600, style: "fill:var(--ink)"}, r.stage);
+      el(pipe, "text", {x: 12, y: r.y + 46, "font-size": 12, style: "fill:var(--muted)"}, r.sub);
+      if (i < rows.length - 1) arrow(pipe, 76, r.y + r.h, 76, rows[i + 1].y);
+      el(pipe, "line", {x1: STAGE_W + 1, y1: r.y + r.h / 2, x2: TX, y2: r.y + r.h / 2, style: "stroke:var(--line)"});
+      if (r.branch){
+        var subs = [
+          {t: "CNV", l: ["Ginkgo · AneuFinder · SCOPE", "HiScanner (고심도 PTA)", "scAbsolute · ASCENT", "CNRein · SCICoNE"]},
+          {t: "SNV · indel", l: ["SCcaller · SCAN-SNV", "SCAN2 (indel 포함)", "allelic imbalance 모델링"], link: {t: "→ 모자이크 변이 교재", href: "./mosaic-variant-calling.html"}},
+          {t: "SV", l: ["MosaiCatcher v2", "(Strand-seq, haplotype별", "단일세포 SV)"]}
+        ];
+        var bw = (TW - 16) / 3;
+        subs.forEach(function(s, j){
+          var bx = TX + j * (bw + 8);
+          el(pipe, "rect", {x: bx, y: r.y + 1, width: bw, height: r.h - 2, rx: 8, style: "fill:var(--panel);stroke:var(--line)"});
+          el(pipe, "text", {x: bx + 10, y: r.y + 22, "font-size": 14, "font-weight": 600, style: "fill:var(--accent)"}, s.t);
+          lines(pipe, bx + 10, r.y + 43, s.l, 12, "fill:var(--ink)", 18);
+          if (s.link){
+            var a = el(pipe, "a", {href: s.link.href});
+            el(a, "text", {x: bx + 10, y: r.y + r.h - 12, "font-size": 12, style: "fill:var(--accent);text-decoration:underline"}, s.link.t);
+          }
+        });
+      } else {
+        el(pipe, "rect", {x: TX, y: r.y + 1, width: TW - 1, height: r.h - 2, rx: 8, style: "fill:var(--panel);stroke:var(--line)"});
+        lines(pipe, TX + 12, r.y + 25, r.tools, 13, "fill:var(--ink)", 21);
+        if (r.note) el(pipe, "text", {x: TX + 12, y: r.y + r.h - 13, "font-size": 12, style: "fill:var(--muted)"}, r.note);
+        if (r.link){
+          var a2 = el(pipe, "a", {href: r.link.href});
+          el(a2, "text", {x: TX + TW - 14, y: r.y + r.h - 13, "text-anchor": "end", "font-size": 12, style: "fill:var(--accent);text-decoration:underline"}, r.link.t);
+        }
+      }
+    });
+    // joint inference: tree step feeds back into calling
+    var jx = TX + TW - 20;
+    el(pipe, "path", {d: "M" + jx + " 424 C " + (jx + 14) + " 412, " + (jx + 14) + " 408, " + jx + " 398", fill: "none", "stroke-width": 1.6, "stroke-dasharray": "5 4", style: "stroke:var(--a2)"});
+    el(pipe, "path", {d: "M" + (jx - 5) + " 405 L" + jx + " 397 L" + (jx + 5) + " 405 Z", style: "fill:var(--a2)"});
+    el(pipe, "text", {x: jx - 8, y: 416, "text-anchor": "end", "font-size": 12, style: "fill:var(--a2)"}, "호출과 tree를 함께 추론: SCICoNE · CNRein · SCIΦ");
+  }
+
+  // Figure 2: layer x task matrix. Tool lists from the computational-methods hub tables.
+  var mx = document.getElementById("fig-matrix");
+  if (mx){
+    var COLS = ["전처리·정렬", "신호 호출", "보정·imputation", "군집·통합·GRN", "계통·lineage"];
+    var ROWS = [
+      {name: "Genotype", sub: "독립 비교 드묾", cells: [
+        ["fastp", "BWA", "SAMtools"], ["Ginkgo · AneuFinder", "HiScanner · SCAN2", "MosaiCatcher v2"], ["SCICoNE", "CNRein"], ["ASCENT 클론 군집"], ["SCIΦ · SPhyR", "CellPhy · SIEVE", "MEDALT"]]},
+      {name: "Accessibility", sub: "Xiao 2024", cells: [
+        ["Chromap"], ["MACS", "epiAneufinder (CNA)"], ["scCASE"], ["Cicero", "SCENIC+", "GFETM"], []]},
+      {name: "Methylation", sub: "Liang 2026", cells: [
+        [], ["MethSCAn", "scDMV"], ["Farlik 2015 집계", "CpG imputation 5종"], [], []]},
+      {name: "Histone", sub: "Raimundo 2023", cells: [
+        [], ["SEACR", "PATTY (Tn5 편향)"], [], ["TF-IDF + SVD/NMF"], []]},
+      {name: "3D genome", sub: "Zheng 2022", cells: [
+        ["HiC-Pro · Juicer", "cooler"], ["SnapHiC · scGHOST", "scDIAGRAM · MINTsC", "dcHiC"], ["scHiCluster", "Higashi", "BandNorm / scVI-3D"], [], []]},
+      {name: "층 통합", sub: "Xiao 2024", cells: [
+        [], [], [], ["MNN · Seurat", "Harmony · LIGER", "MOFA", "LINGER · CellOracle"], []]}
+    ];
+    var LW = 120, HY = 40, RH = 78, CW = (760 - LW) / COLS.length;
+    COLS.forEach(function(c, j){
+      el(mx, "text", {x: LW + CW * j + CW / 2, y: 24, "text-anchor": "middle", "font-size": 13, "font-weight": 600, style: "fill:var(--muted)"}, c);
+    });
+    ROWS.forEach(function(r, i){
+      var y = HY + RH * i;
+      el(mx, "text", {x: 0, y: y + 32, "font-size": 14, "font-weight": 600, style: "fill:var(--ink)"}, r.name);
+      el(mx, "text", {x: 0, y: y + 50, "font-size": 11, style: "fill:var(--muted)"}, r.sub);
+      r.cells.forEach(function(tools, j){
+        var x = LW + CW * j, n = tools.join(" · ").split(" · ").length;
+        if (!tools.length){
+          el(mx, "rect", {x: x + 3, y: y + 3, width: CW - 6, height: RH - 6, rx: 6, "stroke-dasharray": "4 4", style: "fill:none;stroke:var(--line)"});
+          el(mx, "text", {x: x + CW / 2, y: y + RH / 2 + 4, "text-anchor": "middle", "font-size": 11, style: "fill:var(--muted)"}, "위키에 없음");
+          return;
+        }
+        var op = Math.min(0.15 + 0.12 * n, 0.85);
+        el(mx, "rect", {x: x + 3, y: y + 3, width: CW - 6, height: RH - 6, rx: 6, style: "fill:var(--accent);opacity:" + op.toFixed(2)});
+        var y0 = y + RH / 2 - (tools.length - 1) * 8 + 4;
+        tools.forEach(function(t, k){
+          el(mx, "text", {x: x + CW / 2, y: y0 + k * 16, "text-anchor": "middle", "font-size": 12, style: "fill:var(--ink);paint-order:stroke;stroke:var(--panel);stroke-width:3px"}, t);
+        });
+      });
+    });
+  }
+})();
+</script>
+</body>
+</html>

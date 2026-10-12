@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > SnapATAC은 peak를 부르지 않고 5-kb bin 단위로 세포 간 Jaccard 유사도를 계산해 scATAC-seq 세포를 군집화하는 pipeline이고, Nyström 근사로 100만 세포까지 확장된다. peak 밖의 read도 세포 유형 신호를 담고 있어서 0.1% 미만의 희귀 세포 유형까지 찾아낸다 ([[10-Summaries/fang-2021-snapatac|Fang 2021]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [scATAC-seq 희소성 시뮬레이터](../60-Explainers/single-cell-atac-seq.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 [[bing-ren|Ren-lab]] pipeline that represents each cell as a binary vector over 5-kb genomic bins and clusters cells from their pairwise [[jaccard-similarity|Jaccard similarity]], with no peak-calling step before clustering ([[10-Summaries/fang-2021-snapatac|Fang 2021]]).

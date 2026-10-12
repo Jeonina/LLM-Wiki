@@ -1,6 +1,7 @@
 ---
 type: topic
 title: Single-cell multi-omics
+explainer: single-cell-multiomics
 aliases: [single-cell multiomics, sc-multiomics, multimodal omics]
 tags: [single-cell, methods, multiomics, multi-omics]
 created: 2026-05-07
@@ -14,6 +15,11 @@ paper_section: ["4.3"]
 
 > [!abstract] 한눈에
 > 한 세포에서 DNA, RNA, chromatin, methylation, 단백질 가운데 두 층 이상을 함께 읽는 방법은 이제 대부분의 조합이 가능하고, 남은 병목은 데이터 통합이다 ([[10-Summaries/baysoy-2023-multiomics-landscape|Baysoy 2023]]; [[10-Summaries/vandereyken-2023-scmultiomics-review|Vandereyken 2023]]). droplet 플랫폼은 세포 수를, single-molecule·plate 기반 플랫폼은 세포당 깊이를 얻는 대신 다른 쪽을 내준다 ([[10-Summaries/izzo-2024-got-cha|GoT–ChA]]; [[10-Summaries/swanson-2025-daf-seq|DAF-seq]]).
+
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [단일세포 multi-omics](../60-Explainers/single-cell-multiomics.html)
+<!-- /explainer-links -->
 
 ## Key points
 

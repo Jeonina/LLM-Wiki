@@ -14,6 +14,11 @@ updated: 2026-10-12
 > [!abstract] 한눈에
 > NanoSeq는 bottleneck library와 양 가닥 consensus로 오류율을 크게 낮춘 duplex sequencing 방법이고, 정상 조직의 체세포 변이 축적 속도를 재는 표준 도구로 쓰여 왔다 ([[10-Summaries/abascal-2021-nanoseq|Abascal 2021]]; [[10-Summaries/zhang-2025-smaht-duplex-benchmark|Zhang 2025]]). 양 가닥(dsDNA) 변이 측정은 HiDEF-seq와 일치하지만, 단일 가닥(ssDNA) 호출은 대부분 artifact로 보인다 ([[10-Summaries/liu-2024-hidef-seq|HiDEF-seq]]).
 
+<!-- explainer-links -->
+> [!tip] 📘 교재
+> [Duplex sequencing 시뮬레이터](../60-Explainers/duplex-sequencing.html)
+<!-- /explainer-links -->
+
 ## Definition
 
 NanoSeq uses HpyCH4V restriction digestion (or other bottlenecks) followed by duplex-sequencing library preparation, restricting analysis to high-confidence dual-strand consensus calls. It builds on bottleneck-style duplex sequencing (synthesis; see [[10-Summaries/abascal-2021-nanoseq|Abascal 2021]]), introduced by BotSeqS ([[10-Summaries/hoang-2016-botseqs|BotSeqS]]).

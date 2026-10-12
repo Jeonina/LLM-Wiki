@@ -25,7 +25,7 @@ CALR is normally an ER-resident chaperone and Ca²⁺-binding protein. The patho
 
 ## Why it matters
 
-CALR mutations account for ~25–30% of MPN cases (essential thrombocythemia and primary myelofibrosis). Before [[got]], the transcriptional consequences of CALR mutation in primary HSPCs were inferred indirectly because mutant and wild-type cells in the same patient cannot be sorted by surface markers ([[10-Summaries/nam-2019-got|GoT]]).
+CALR mutations account for ~25–30% of MPN cases (essential thrombocythemia and primary myelofibrosis) *(no source in the wiki — unverified)*. Before [[got]], the transcriptional consequences of CALR mutation in primary HSPCs were inferred indirectly because mutant and wild-type cells in the same patient cannot be sorted by surface markers ([[10-Summaries/nam-2019-got|GoT]]).
 
 This is the canonical example used throughout the wiki of "same mutation, different cell, different transcriptional output" ([[10-Summaries/nam-2019-got|GoT]]).
 

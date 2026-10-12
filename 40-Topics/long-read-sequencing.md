@@ -86,7 +86,7 @@ Related concepts: [[30-Concepts/samosa]], [[30-Concepts/samosa-tag]], [[30-Conce
 
 ## Somatic mutations and structural variants
 
-- **Duplex consensus from passes.** HiDEF-seq uses PacBio long reads not for length but for passes: ~32 independent passes per strand on median 1.7 kb molecules build a per-strand consensus good enough to call substitutions on unamplified single molecules ([[10-Summaries/liu-2024-hidef-seq|HiDEF-seq]]). It reaches an error rate of ~7 × 10⁻¹⁶ via PacBio circular-consensus duplex sequencing ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]).
+- **Duplex consensus from passes.** HiDEF-seq uses PacBio long reads not for length but for passes: ~32 independent passes per strand on median 1.7 kb molecules build a per-strand consensus good enough to call substitutions on unamplified single molecules ([[10-Summaries/liu-2024-hidef-seq|HiDEF-seq]]). Its estimated fidelity is <1 error per 3 × 10¹³ bp at ≥5 passes and <1 per 1 × 10¹⁴ bp at ≥20 passes ([[10-Summaries/liu-2024-hidef-seq|Liu 2024]]); Shao 2025 quotes <7 × 10⁻¹⁶ ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]).
 - **PacBio fidelity is better than assumed.** Concordant dsDNA burdens were obtained at ≥5 passes rather than ≥20 ([[10-Summaries/liu-2024-hidef-seq|HiDEF-seq]]).
 - **The pass–length tradeoff.** ssDNA analysis needs ≥20 passes, which forces shorter fragments (1.7 kb rather than 4.2 kb) and roughly 4× the sequencing per molecule ([[10-Summaries/liu-2024-hidef-seq|HiDEF-seq]]).
 - **Not all duplex methods are long-read.** HiDEF-seq is a long-read (PacBio) duplex variant, whereas SMM-seq is sequenced on Illumina ([[10-Summaries/maslov-2022-smm-seq|Maslov 2022]]); see [[40-Topics/duplex-sequencing]].

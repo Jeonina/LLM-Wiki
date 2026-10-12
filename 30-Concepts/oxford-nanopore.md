@@ -21,7 +21,7 @@ updated: 2026-10-12
 
 ## Definition
 
-ONT instruments range from portable MinION/Flongle to PromethION. Read lengths routinely 10–100 kb; ultra-long reads reach >1 Mb. Accuracy improved from ~85% (R7) to >99% (R10.4.1). Adaptive sampling enables real-time read selection ([[30-Concepts/nanopore-adaptive-sampling|adaptive sampling]]).
+ONT instruments range from portable MinION/Flongle to PromethION. Read lengths routinely 10–100 kb; ultra-long reads reach >1 Mb *(no source in the wiki — unverified)*. Per-read accuracy has improved with pore chemistry; for R10.4.1 (1D) reads a recent review gives a typical error of ~2–5%, depending on DNA quality and flow cell, against <0.1% for PacBio HiFi ([[10-Summaries/hilal-2026-cardiac-somatic-review|Hilal 2026]]). The often-quoted >99% figure for R10.4.1 has no source in the wiki. Adaptive sampling enables real-time read selection ([[30-Concepts/nanopore-adaptive-sampling|adaptive sampling]]).
 
 ## Why it matters
 

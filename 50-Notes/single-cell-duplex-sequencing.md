@@ -45,7 +45,7 @@ Four implementation strategies emerged, each addressing a different limitation (
 | Y-adaptor based | NanoSeq ([[10-Summaries/abascal-2021-nanoseq]]) | Library complexity, scalable to nuclear genome |
 | Tn5-based | META-CS ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]) | Only single-cell-compatible variant; preserves strand orientation via Tn5 insertion |
 | Quadruplex adaptor | CODEC ([[10-Summaries/bae-2023-codec]]) | Both strands in same read; no bottleneck dilution |
-| Circularized | HiDEF-seq, SMM-seq ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]) | PacBio/rolling-circle for ~10⁻¹⁶ error rate |
+| Circularized | HiDEF-seq, SMM-seq ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]) | PacBio/rolling-circle; HiDEF-seq <1 error per 10¹⁴ bp at ≥20 passes ([[10-Summaries/liu-2024-hidef-seq]]) |
 
 Lower-input chemistries followed: UDSeq makes duplex libraries from 100 pg with an estimated ~2.5×10⁻⁹/bp error ([[10-Summaries/nandi-2025-udseq]]). The **SMaHT consortium duplex benchmark** ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]) cross-compared six methods (CODEC, CompDuplex-seq, HiDEF-seq, NanoSeq, ppmSeq, VISTA-seq) on shared cell-line and tissue samples — methods differed in genomic footprint, sensitivity and cost but produced highly concordant mutation rates and signatures ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).
 

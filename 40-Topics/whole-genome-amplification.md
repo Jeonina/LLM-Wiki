@@ -47,10 +47,10 @@ The umbrella concept is [[30-Concepts/scwga]], with three chemistry categories (
 |---|---|---|---|
 | PCR-based | [[30-Concepts/dop-pcr\|DOP-PCR]] | 20–25% | High uniformity, low cost ([[10-Summaries/shao-2025-scDNA-mosaicism-review\|Shao 2025]]) |
 | PCR-based | PicoPLEX | 35–45% | Looped products ([[10-Summaries/shao-2025-scDNA-mosaicism-review\|Shao 2025]]) |
-| PCR-based (hybrid) | [[30-Concepts/malbac\|MALBAC]] | 55–60% | Looped products ([[10-Summaries/shao-2025-scDNA-mosaicism-review\|Shao 2025]]) |
+| PCR-based (hybrid) | [[30-Concepts/malbac\|MALBAC]] | 55–60% (review); 93% at 25× in the original paper ([[10-Summaries/chenghang-2012-science\|Zong 2012]]) | Looped products ([[10-Summaries/shao-2025-scDNA-mosaicism-review\|Shao 2025]]) |
 | Isothermal (Φ29) | [[30-Concepts/mda\|MDA]] | 70–75% | Low allelic balance ([[10-Summaries/shao-2025-scDNA-mosaicism-review\|Shao 2025]]) |
 | Isothermal (Φ29) | [[30-Concepts/pta\|PTA]] | ~95% | Chain terminators give short amplicons primed from the native template; high allelic balance ([[10-Summaries/shao-2025-scDNA-mosaicism-review\|Shao 2025]]) |
-| Tn5 transposon | LIANTI | 80–85% | Not commercially available, complex protocol ([[10-Summaries/shao-2025-scDNA-mosaicism-review\|Shao 2025]]) |
+| Tn5 transposon | LIANTI | 80–85% (review); 97% in the original paper ([[10-Summaries/chen-2017-lianti\|Chen 2017]]) | Not commercially available, complex protocol ([[10-Summaries/shao-2025-scDNA-mosaicism-review\|Shao 2025]]) |
 | Tn5 transposon | [[30-Concepts/dlp-plus\|DLP+]] | Very low per cell | >10,000 cells per run ([[10-Summaries/shao-2025-scDNA-mosaicism-review\|Shao 2025]]) |
 | Tn5 transposon | [[30-Concepts/meta-cs\|META-CS]] | — | Strand-labeling WGA; FPR upper bound ~2.4×10⁻⁸ validated on kindred eHAP cells and sperm ([[10-Summaries/xing-2021-meta-cs\|META-CS]]) |
 | Isothermal (Φ29), droplet | Droplet MDA (Xdrop) | — | Better coverage uniformity than tube MDA; keeps long fragments for long-read sequencing ([[10-Summaries/hard-2023-long-read-scwgs\|Hård 2023]]) |
@@ -110,6 +110,7 @@ No synthesized note exists yet; a natural target is "Choosing a scWGA method: tr
 ## Open questions
 
 - Whether MDA retains a niche given PTA's cost approaching MDA's. (synthesis)
+- **Coverage figures differ by source.** The review's coverage column is much lower than the original papers for MALBAC (55–60% vs 93% at 25×) and LIANTI (80–85% vs 97%) ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]; [[10-Summaries/chenghang-2012-science|Zong 2012]]; [[10-Summaries/chen-2017-lianti|Chen 2017]]). Depth, coverage threshold and cell type differ, so neither set is a like-for-like benchmark (synthesis).
 - When to use scWGA-free approaches (DNTR-seq, duplex sequencing) — application-dependent, no consensus heuristic ([[10-Summaries/vandereyken-2023-scmultiomics-review|Vandereyken 2023]]).
 - Standardization of QC metrics and definitions (especially ADO) across methods — flagged by [[10-Summaries/gawad-2016-scgenome-review|Gawad 2016]], still partly unresolved.
 - Coverage vs cell-throughput operating points — DLP+ scales to >10⁴ cells at very low coverage; PTA reaches ~95% coverage at much lower cell throughput; how to choose for a given biology ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]).
@@ -122,8 +123,10 @@ No synthesized note exists yet; a natural target is "Choosing a scWGA method: tr
 
 ## All sources on this page
 
-> [!info]- 15 summaries cited here
+> [!info]- 17 summaries cited here
 > - [[10-Summaries/bankevich-2012-spades|Bankevich 2012]]
+> - [[10-Summaries/chen-2017-lianti|Chen 2017]]
+> - [[10-Summaries/chenghang-2012-science|Zong 2012]]
 > - [[10-Summaries/chitsaz-2011-velvet-sc|Chitsaz 2011]]
 > - [[10-Summaries/debourcy-2014-plosone|de Bourcy 2014]]
 > - [[10-Summaries/gawad-2016-scgenome-review|Gawad 2016]]

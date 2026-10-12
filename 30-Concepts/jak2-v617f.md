@@ -29,9 +29,9 @@ JAK2 normally requires cytokine receptor engagement (EPO, TPO, G-CSF, etc.) to s
 
 JAK2V617F is found in:
 
-- ~95% of polycythemia vera (PV) patients,
-- ~50% of essential thrombocythemia (ET) and primary myelofibrosis (MF) patients,
-- A substantial fraction of clonal-hematopoiesis-of-indeterminate-potential (CHIP) cases.
+- ~95% of polycythemia vera (PV) patients *(no source in the wiki — unverified)*,
+- ~50% of essential thrombocythemia (ET) and primary myelofibrosis (MF) patients *(no source in the wiki — unverified)*,
+- clonal hematopoiesis, where it is one of the common drivers ([[10-Summaries/kapadia-2024-stem-cell-aging|Kapadia 2024]]).
 
 GoT–ChA reframes JAK2V617F's effect on HSCs from "downstream cytokine inflammation" to **cell-intrinsic chromatin priming** ([[10-Summaries/izzo-2024-got-cha|GoT–ChA]]).
 

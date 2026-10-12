@@ -36,7 +36,7 @@ topics: ["[[40-Topics/somatic-mosaicism]]", "[[40-Topics/clonal-hematopoiesis]]"
 
 ## Methods / evidence
 
-Review of ~110 sources. Tabulates 9 sequencing/error-correction technologies (Table 1). Highlights SMaHT Network (NIH) and SOMATICART (EU) as reference-atlas initiatives. Cites the cardiomyocyte single-cell genomics literature (Choudhury et al., Nat Aging 2022; Hilal et al. 2025 preprint on ischemic cardiomyocytes).
+Review of ~110 sources. Tabulates 9 sequencing/error-correction technologies (Table 1). On long reads it notes higher base-calling error: ONT R10.4.1 (1D) reads typically ~2–5% error depending on DNA quality and flow cell, versus <0.1% for PacBio HiFi. Highlights SMaHT Network (NIH) and SOMATICART (EU) as reference-atlas initiatives. Cites the cardiomyocyte single-cell genomics literature (Choudhury et al., Nat Aging 2022; Hilal et al. 2025 preprint on ischemic cardiomyocytes).
 
 ## Surprising or load-bearing bits
 

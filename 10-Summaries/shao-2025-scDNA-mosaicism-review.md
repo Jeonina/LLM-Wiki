@@ -50,7 +50,7 @@ topics:
   - **PTA**: Isothermal Φ29 + chain terminators producing short amplicons that favor priming from the native template, **high coverage (~95%)**, high uniformity, high allelic balance — current gold standard.
   - **LIANTI**: Tn5-based linear amplification via transposon insertion, high coverage (80–85%), not commercially available, complex protocol.
   - **DLP+**: Tn5-based microfluidic, **>10,000 cells throughput** at very low coverage per cell.
-- **Duplex sequencing variants**: Y-adaptor (BotSeqS), Tn5-based (META-CS — the only one applicable to single cells), quadruplex adaptor (CODEC), circularized (HiDEF-seq on PacBio, SMM-seq on Illumina). Error rates as low as ~7 × 10⁻¹⁶ for HiDEF-seq.
+- **Duplex sequencing variants**: Y-adaptor (BotSeqS), Tn5-based (META-CS — the only one applicable to single cells), quadruplex adaptor (CODEC), circularized (HiDEF-seq on PacBio, SMM-seq on Illumina). Error rates as low as <7 × 10⁻¹⁶ for HiDEF-seq (the review's figure; the primary paper's main text gives <1 error per 3 × 10¹³–1 × 10¹⁴ bp, see [[10-Summaries/liu-2024-hidef-seq]]).
 - **Errors in scWGA**: allelic dropout (50% chance false-negative), allelic imbalance, single-strand dropout (25% chance false-positive *(not found in source clipping — unverified)* — from ~70,000 daily ssDNA lesions per cell), polymerase errors. **False positives are the dominant problem** because overamplified errors overwhelm true biological signal.
 - **CNV callers** (Table 2): Ginkgo, SCOPE, deepCNA (read-depth-only); CHISEL, Alleloscope, HiScanner (read-depth + B-allele frequency for allele-specific copy number).
 - **SNV callers**: SCcaller (MDA), SCAN2 (PTA), duplex-specific callers.

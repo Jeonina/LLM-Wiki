@@ -137,7 +137,7 @@
 <thead><tr><th>대상</th><th>플랫폼 · 설계</th><th>보고된 값</th><th>출처</th></tr></thead>
 <tbody>
 <tr><td>PacBio HiFi (사양)</td><td>CCS, kinetics로 수식 검출</td><td>read 5–20 kb · ≥5 pass에서 per-read 정확도 &gt;99% (개념 페이지) · &gt;99.9% (리뷰)</td><td><a href="../30-Concepts/pacbio">PacBio</a> · <a href="../10-Summaries/liu-2025-long-read-epigenome-review">Liu &amp; Conesa 2025</a> · <a href="../10-Summaries/fu-2025-longread-methylation">Fu 2025</a></td></tr>
-<tr><td>ONT (사양)</td><td>nanopore 전류</td><td>read 10–100 kb, ultra-long &gt;1 Mb · 정확도 약 85% (R7) → &gt;99% (R10.4.1)</td><td><a href="../30-Concepts/oxford-nanopore">Oxford Nanopore</a></td></tr>
+<tr><td>ONT (사양)</td><td>nanopore 전류</td><td>read 10–100 kb, ultra-long &gt;1 Mb (위키 안에 출처 없음) · R10.4.1 read 오류 약 2–5% (PacBio HiFi &lt;0.1%)</td><td><a href="../30-Concepts/oxford-nanopore">Oxford Nanopore</a> · <a href="../10-Summaries/hilal-2026-cardiac-somatic-review">Hilal 2026</a></td></tr>
 <tr><td>Fiber-seq</td><td>PacBio, m6A 표지, bulk</td><td>평균 섬유 10.9 kb, 최대 약 30 kb · DHS에서 섬유의 81%만 열림</td><td><a href="../10-Summaries/andrewb-2020-science">Stergachis 2020</a></td></tr>
 <tr><td>SMRT-Tag / SAMOSA-Tag</td><td>PacBio, hairpin Tn5</td><td>입력 40 ng (약 7,000개 세포; 기존 1–5 µg) · CpG 메틸화 bisulfite 대비 r = 0.84 · 저깊이 SV F1 0.225 대 ligation 0.389 (read가 짧아서)</td><td><a href="../10-Summaries/nanda-2024-smrt-tag">Nanda 2024</a></td></tr>
 <tr><td>HiDEF-seq</td><td>PacBio, 증폭 없음, duplex</td><td>가닥당 약 32 pass, 중앙값 1.7 kb · 오류 &lt;1/3×10¹³ bp (≥5 pass), &lt;1/10¹⁴ bp (≥20 pass) · 리뷰는 오류율 약 7×10⁻¹⁶로 인용</td><td><a href="../10-Summaries/liu-2024-hidef-seq">Liu 2024</a> · <a href="../10-Summaries/shao-2025-scDNA-mosaicism-review">Shao 2025</a></td></tr>
@@ -198,7 +198,7 @@
   var COLS=[{k:"acc",t:"per-read 정확도",x:300},{k:"m5mC",t:"5mC",x:470},{k:"m5hmC",t:"5hmC",x:550},{k:"m6mA",t:"6mA",x:630},{k:"m4mC",t:"4mC",x:710}];
   var ROWS=[
     {n:"PacBio HiFi", s:"polymerase kinetics · CCS", c:"var(--accent)", acc:[">99% (≥5 pass)", ">99.9% (리뷰)"], m5mC:"y", m5hmC:"n", m6mA:"y+", m4mC:"?"},
-    {n:"Oxford Nanopore", s:"nanopore 이온 전류", c:"var(--a2)", acc:["~85% (R7)", "→ >99% (R10.4.1)"], m5mC:"y", m5hmC:"y", m6mA:"y", m4mC:"y"}
+    {n:"Oxford Nanopore", s:"nanopore 이온 전류", c:"var(--a2)", acc:["~95–98% (R10.4.1)", "오류 2–5% (리뷰)"], m5mC:"y", m5hmC:"y", m6mA:"y", m4mC:"y"}
   ];
   COLS.forEach(function(c){ el("text",{x:c.x,y:22,"text-anchor":"middle","font-size":13,"font-weight":600,fill:"var(--muted)"},c.t); });
   el("text",{x:8,y:22,"font-size":13,"font-weight":600,fill:"var(--muted)"},"플랫폼");

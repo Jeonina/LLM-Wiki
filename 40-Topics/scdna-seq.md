@@ -23,7 +23,7 @@ paper_section: ["3.1"]
 
 ## Key points
 
-- **Two branches with opposite strengths.** scWGA + scWGS assigns variants to specific cells but carries amplification errors (allelic dropout, single-strand dropout, polymerase error); duplex sequencing reaches error rates as low as ~10⁻¹⁶ but mostly cannot assign variants to cells ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]).
+- **Two branches with opposite strengths.** scWGA + scWGS assigns variants to specific cells but carries amplification errors (allelic dropout, single-strand dropout, polymerase error); duplex sequencing reaches error rates below 1 per 10¹⁴ bp ([[10-Summaries/liu-2024-hidef-seq|Liu 2024]]) but mostly cannot assign variants to cells ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]).
 - **DNA is the hardest single-cell layer.** The genome is 20–50× larger than the transcribed or accessible genome and each locus has only two molecules per cell, which is why scRNA-seq and scATAC-seq matured years earlier ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]).
 - **Capabilities, not chemistries, organise the design space.** Fidelity, co-presence and phenotypic association trade off, so no single method is universally best ([[10-Summaries/evrony-2021-scDNA-applications-review|Evrony 2021]]).
 - **Depth per cell versus cells per experiment is the field's central trade-off.** PTA reaches ~95% genome coverage per cell while DLP+ scales to >10,000 cells at very low per-cell coverage ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]; [[10-Summaries/gawad-2014-all-clonal-origins|Gawad 2014]]).
@@ -141,7 +141,7 @@ Worked examples:
 
 ## All sources on this page
 
-> [!info]- 23 summaries cited here
+> [!info]- 24 summaries cited here
 > - [[10-Summaries/bankevich-2012-spades|Bankevich 2012]]
 > - [[10-Summaries/baysoy-2023-multiomics-landscape|Baysoy 2023]]
 > - [[10-Summaries/campbell-2015-mosaicism-review|Campbell 2015]]
@@ -156,6 +156,7 @@ Worked examples:
 > - [[10-Summaries/huang-2015-scwga-review|Huang & Xie 2015]]
 > - [[10-Summaries/izzo-2024-got-cha|Izzo 2024]]
 > - [[10-Summaries/liu-2024-cot|Liu 2024 (Brief Bioinform)]]
+> - [[10-Summaries/liu-2024-hidef-seq|Liu 2024]]
 > - [[10-Summaries/nam-2019-got|Nam 2019]]
 > - [[10-Summaries/peng-2012-idba-ud|Peng 2012]]
 > - [[10-Summaries/sanders-2020-sctrip|Sanders 2020]]

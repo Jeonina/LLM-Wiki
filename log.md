@@ -4,6 +4,30 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+# 2026-10-12 — Maintenance: open items from the explainer build
+
+At the user's request, resolved the items the explainer agents had flagged.
+
+- **DAF-seq baselines** ([[10-Summaries/swanson-2025-daf-seq]]):
+  - The paper uses both figures, for two different comparisons:
+    - ~0.01% for Tn5 single-cell assays (scattered ~100 bp fibers).
+    - ~0.001% for single-molecule fiber methods applied to one cell.
+  - The summary and two explainers now say so.
+- **HiDEF-seq error rate:**
+  - The primary paper gives <1 error per 3 × 10¹³ bp (≥5 passes) and per 1 × 10¹⁴ bp (≥20 passes) ([[10-Summaries/liu-2024-hidef-seq]]).
+  - Shao 2025's <7 × 10⁻¹⁶ is not in the primary paper's main text. It is now labelled as the review's figure.
+  - Primary values are now used on the duplex, scdna-seq and long-read hubs and in the single-cell-duplex note. The disagreement is recorded under Contested points on [[30-Concepts/hidef-seq]].
+- **Uncited concept figures:**
+  - CALR ~25–30% of MPN and JAK2 ~95% PV / ~50% ET/MF are marked *(no source in the wiki — unverified)*. The CH bullet is now cited to Kapadia 2024.
+  - ONT read lengths are marked unverified.
+  - ONT accuracy: ">99% (R10.4.1)" is replaced by Hilal 2026's ~2–5% R10.4.1 error vs <0.1% for HiFi. That figure was added to the Hilal summary from its source, and the long-read explainer was updated.
+- **MALBAC/LIANTI coverage:** the WGA hub table shows the review values next to the original-paper values (93%, 97%), with an open question.
+- **CHISEL benchmarks:** added a Contested point on [[30-Concepts/copy-number-variation]]. CHISEL's rank differs by benchmark, and the benchmarks are mostly run by competing tools' authors. The scAbsolute G2/WGD conflict was already flagged on [[30-Concepts/whole-genome-doubling]].
+- **3D layer:** the sequence-model hub now says the 3D models (HiCFoundation, Evo2HiC) pretrain on bulk Hi-C, so single-cell 3D is only partly covered.
+- **Still open, needs new sources:** no CTC/liquid-biopsy primary study; no MDS coverage.
+
+---
+
 # 2026-10-12 — Teaching layer: 20 explainers, one per research hub; hub citation fixes
 
 User decision: one Korean teaching page per research hub (meta hubs knowledge-management and llm-tooling-patterns excluded), common skeleton, simulators only for five topics.

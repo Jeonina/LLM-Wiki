@@ -52,6 +52,7 @@ HiDEF-seq leverages duplex chemistry with optimized library conversion for sensi
 
 ## Contested points
 
+- **Which error rate to quote.** The primary paper estimates <1 error per 3 × 10¹³ bp (≥5 passes) and <1 per 1 × 10¹⁴ bp (≥20 passes) ([[10-Summaries/liu-2024-hidef-seq|Liu 2024]]); Shao 2025 quotes <7 × 10⁻¹⁶, which is not in the primary paper's main text ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]). Cite the primary-paper values.
 - **NanoSeq's single-strand calls look inflated.** NanoSeq's ssDNA calls are ~18-fold inflated relative to HiDEF-seq ([[10-Summaries/liu-2024-hidef-seq|Liu 2024]]).
 - **Bulk input only.** HiDEF-seq needs bulk DNA input, not single cells ([[10-Summaries/liu-2024-hidef-seq|Liu 2024]]).
 - **Partial genome capture.** Restriction fragmentation captures ~40% of the genome ([[10-Summaries/liu-2024-hidef-seq|Liu 2024]]); the SMaHT benchmark's v3 uses random fragmentation for whole-genome coverage ([[10-Summaries/zhang-2025-smaht-duplex-benchmark|Zhang 2025]]).

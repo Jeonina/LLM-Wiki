@@ -4,7 +4,7 @@ title: DLP+ (DNA Transposition Single-cell Library Preparation)
 aliases: [DLP+, DLP-plus]
 tags: [scWGA, Tn5, microfluidics, high-throughput, method]
 created: 2026-05-11
-updated: 2026-10-07
+updated: 2026-10-12
 ---
 
 # DLP+ (DNA Transposition Single-cell Library Preparation)
@@ -32,6 +32,7 @@ Tn5-based tagmentation has a useful side-effect: **specific overlap patterns of 
 
 - Per-cell coverage so low that SNV detection is unreliable — DLP+ is essentially a CNV-only platform.
 - Tn5 tagmentation biases (preferred insertion sites) can affect uniformity at fine scale, though the high cell throughput averages this out for population-level conclusions.
+- DLP+ libraries contain artifactual fragment pairs that share a start or end coordinate but differ in length. They survive standard deduplication, outnumber opposite-orientation pairs nearly 10:1, make up under 1% of fragments, and inflate overlap counts. Songbird and ASCENT both remove them ([[10-Summaries/wesley-2026-songbird]]). Because adapters pair at random, the maximum possible coverage is half the cell's ploidy ([[10-Summaries/wesley-2026-songbird]]).
 
 ## Examples
 
@@ -46,6 +47,8 @@ Tn5-based tagmentation has a useful side-effect: **specific overlap patterns of 
 ## Added 2026-10-07
 
 At cohort scale, DLP+ produced 100,054 single-cell genomes (median depth 0.060 per cell) from 70 HGSOC samples, retaining 30,260 tumour genomes after QC that included two-rater review of nozzle images for doublets and optical cell-size readouts used to validate per-cell WGD calls ([[10-Summaries/mcpherson-2025-ongoing-wgd]]). The earlier DLP+ HGSOC cell-line data (891 cells) also serve as a real-data benchmark for SNV lineage-tree inference ([[10-Summaries/zhang-2025-scistree2]]).
+
+The same OV2295 DLP+ cell lines (890 cells, 0.1–0.4×) are a benchmark for haplotype-specific copy-number calling, where CNRein, SIGNALS, CHISEL and Alleloscope disagreed most on WGD status ([[10-Summaries/ivanovic-2025-cnrein]]).
 
 
 ## Related

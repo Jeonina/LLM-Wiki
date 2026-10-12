@@ -4,7 +4,7 @@ title: Strand-seq
 aliases: [strand sequencing, BrdU-strand-seq]
 tags: [scDNA-seq, structural-variants, haplotype, sister-chromatid]
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-10-12
 ---
 
 # Strand-seq
@@ -20,6 +20,7 @@ Cells are grown for one division in BrdU-containing medium, then BrdU-labeled st
 - Detection of inversions, translocations, and sister-chromatid exchanges at single-cell resolution ([[10-Summaries/sanders-2020-sctrip]]).
 - Haplotype-resolved genome assembly.
 - Genome stability assays.
+- Standard processing workflow: MosaiCatcher v2 runs from raw Strand-seq FASTQ to haplotype-phased single-cell SV calls in one run, with automatic library QC, SV genotyping (ArbiGent) and nucleosome-occupancy functional analysis (scNOVA) ([[10-Summaries/weber-2023-mosaicatcher-v2]]).
 
 ## Related
 

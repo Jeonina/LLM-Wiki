@@ -4,7 +4,7 @@ title: Replication timing
 aliases: [DNA replication timing, RT]
 tags: [replication, S-phase, chromatin, scEdU-seq]
 created: 2026-05-12
-updated: 2026-10-08
+updated: 2026-10-12
 ---
 
 # Replication timing
@@ -26,6 +26,11 @@ Somatic SNVs in single postmitotic PFC neurons were depleted from late-replicati
 ## Added 2026-10-08 — sequence models & foundation models
 
 - GROVER's window embeddings, trained only on hg19 sequence, assign distinct territories to K562 replication timing and recover the anticorrelation between LINE orientation and replication direction ([[10-Summaries/sanabria-2024-grover]])
+
+## Added 2026-10-12
+
+- scAbsolute flags S-phase cells in shallow scWGS with a 'cycling activity' statistic: the length-weighted median of per-segment partial Spearman trends of read counts against ENCODE Repli-chip replication time, controlling for GC and mappability ([[10-Summaries/schneider-2024-scabsolute]])
+- The unsupervised version reached 86% accuracy on DLP+ data and 89% on FUCCI-sorted PEO1 G1/S cells, against 71% for an early PERT release. A four-feature random forest reached 92% against 90% for the original Laks et al. classifier ([[10-Summaries/schneider-2024-scabsolute]])
 
 ## Related
 

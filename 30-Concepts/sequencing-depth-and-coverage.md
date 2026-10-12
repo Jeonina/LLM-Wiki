@@ -4,7 +4,7 @@ title: Sequencing Depth and Coverage
 aliases: [coverage breadth, depth vs breadth, shallow sequencing]
 tags: [coverage, depth, breadth, economics, study-design]
 created: 2026-08-10
-updated: 2026-10-08
+updated: 2026-10-12
 ---
 
 # Sequencing Depth and Coverage
@@ -24,6 +24,8 @@ Typical operating points in this corpus: 0.07–0.12× per cell for amplificatio
 ## Coverage saturation is chemistry-dependent
 
 DOP-PCR coverage breadth **saturates** with deeper sequencing, so extra reads buy nothing and the chemistry is unsuitable for SNVs ([[zahn-2017-dlp]]). Amplification-free libraries do not saturate, because every retained read is a unique template representation ([[zahn-2017-dlp]]); see [[duplicate-marking]].
+
+A later DLP+ analysis qualifies the unique-template assumption: a small set (under 1%) of artifactual same-start fragments remains after standard deduplication, and these must be removed before using fragment overlaps to estimate ploidy ([[10-Summaries/wesley-2026-songbird]]).
 
 ## In two dimensions the arithmetic is harsher
 

@@ -7,7 +7,7 @@ source_sha256: "8e89112f5f633c33024fc41637c876a96bee549a7e265712d906efb98943f811
 aliases: ["Strand-seq founding paper", "Falconer 2012"]
 tags: [Strand-seq, scDNA-seq, SCE, structural-variant, single-cell, Lansdorp-lab]
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-10-12
 ---
 
 **Citation:** Falconer et al. (2012) — *DNA template strand sequencing of single-cells maps genomic rearrangements at high resolution (Strand-seq)* — *Nature Methods*. [DOI](https://doi.org/10.1038/nmeth.2206)
@@ -31,3 +31,4 @@ Founding paper of the Strand-seq family. Anchors §3.1 (genotype-centric, struct
 - [[30-Concepts/scwga-chemistries]]
 - peter lansdorp
 - [[10-Summaries/hyobin-2023-naturebiotechnology]]
+- [[10-Summaries/weber-2023-mosaicatcher-v2]] — MosaiCatcher v2, the standard computational workflow for Strand-seq data (2023).

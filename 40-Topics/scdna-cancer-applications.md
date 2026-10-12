@@ -4,7 +4,7 @@ title: scDNA-seq in cancer applications
 aliases: [cancer scDNA-seq, single-cell oncology, tumor scDNA]
 tags: [cancer, scDNA-seq, clonal-evolution, intratumor-heterogeneity]
 created: 2026-05-19
-updated: 2026-10-07
+updated: 2026-10-12
 paper_section: ["5.1"]
 ---
 
@@ -43,6 +43,9 @@ paper_section: ["5.1"]
 
 - [[10-Summaries/mcpherson-2025-ongoing-wgd]] — DLP+ scWGS of 41 HGSOC patients: ongoing WGD, divergent cells, micronuclei and immune phenotypes.
 - [[10-Summaries/kuipers-2025-scicone]] — copy-number calling and CNA history for DLP and 10x single-cell CNV breast cancer data.
+- [[10-Summaries/wesley-2026-songbird]] — Songbird: absolute, WGD-sensitive copy number for DLP+ and other Tn5 scWGS; tested on an hTERT/HEK ploidy ladder and the CAM277 esophageal adenocarcinoma organoid.
+- [[10-Summaries/kolbeinsdottir-2025-ascent]] — absolute and allele-specific CN calling for direct-tagmentation scWGS. Applied to a paediatric B-ALL, an ACT breast cancer (single-end reads) and an FFPE DCIS prepared with ARC-well.
+- [[10-Summaries/ivanovic-2025-cnrein]] — haplotype-specific CN calling on DLP+ ovarian (OV2295), 10x breast (S0) and matched 10x/ACT breast (TN3) data.
 - [[10-Summaries/wang-2024-wellda-seq]] — wellDA-seq (bioRxiv preprint): same-cell scDNA + scATAC in 2 normal breasts and 9 ER+ tumours; LumHR-derived ancestral clones, ~82% of subclonal chromatin-hub changes in cis with CNAs, ATAC-inferred CNAs unreliable (median R = 0.47).
 
 - [[10-Summaries/pancikova-2025-splongget]] — genome-inclusive 10x Multiome on Nanopore: 3,800 single-cell CN profiles plus targeted per-cell genotyping in paediatric B-ALL (preprint).

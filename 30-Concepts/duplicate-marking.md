@@ -4,7 +4,7 @@ title: Duplicate Marking
 aliases: [PCR duplicate removal, deduplication]
 tags: [alignment, amplification, QC, library-complexity]
 created: 2026-08-10
-updated: 2026-10-07
+updated: 2026-10-12
 ---
 
 # Duplicate Marking
@@ -19,6 +19,7 @@ Consequences observed in practice:
 
 - C-DOP-L libraries carry high duplicate rates and need roughly twice the total reads for equivalent usable yield ([[zahn-2017-dlp]]).
 - DOP-PCR coverage breadth **saturates** with deeper sequencing, making it unsuitable for SNV calling ([[zahn-2017-dlp]]).
+- Coordinate deduplication is incomplete even in amplification-free Tn5 libraries: fragment pairs with the same start or end and orientation but different lengths survive it. Songbird keeps only the longer fragment of each pair, and ASCENT drops any read within 1 nt of another ([[10-Summaries/wesley-2026-songbird]]).
 - Peak callers remove redundant tags beyond what sequencing depth warrants (binomial *p* < 10⁻⁵) as an amplification-artefact control ([[zhang-2008-macs]]).
 - **UMIs** provide the alternative solution — molecular identity carried in sequence rather than inferred from coordinates ([[chen-2018-fastp]]); see [[umi-molecular-barcoding]].
 

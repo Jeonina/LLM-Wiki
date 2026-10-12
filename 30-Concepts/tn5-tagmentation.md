@@ -4,7 +4,7 @@ title: Tn5 tagmentation
 aliases: [Tn5 transposition, tagmentation, Tn5]
 tags: [transposase, library-prep, ATAC-seq]
 created: 2026-05-12
-updated: 2026-10-08
+updated: 2026-10-12
 ---
 
 # Tn5 tagmentation
@@ -40,6 +40,10 @@ META-CS loads Tn5 with an equimolar mix of 16 transposon sequences, so each frag
 Tn5 tagmentation of nuclei yields fragments from ~35 bp to several kbp. Standard bead clean-ups, PCR and Illumina sequencing keep only the short ones, which is why ATAC libraries look enriched for open chromatin ([[10-Summaries/pancikova-2025-splongget]]). SPLONGGET retains all fragment sizes, giving DNA libraries of 200 bp to >10 kb that supply whole-genome coverage alongside the ATAC signal. Only reads under 1 kb are used for the accessibility analysis ([[10-Summaries/pancikova-2025-splongget]]).
 
 Two Tn5 loadings with different adapter sets can split one nucleus's genome by chromatin state: in wellDA-seq, Tn5-1 tagments open chromatin in intact permeabilised nuclei, and Tn5-2 tagments the remaining DNA after in-well protease removal of chromatin, with modality-specific PCR separating the ATAC and DNA libraries ([[10-Summaries/wang-2024-wellda-seq]]).
+
+In DLP+ scWGS, same-start, different-length fragment pairs are amplified 1:1 or 1:2, which places their origin before or within the first PCR cycle. The authors suspect incomplete Tn5 insertion (one inactive dimer member, or tagmentation interrupted by neutralisation), but have not tested this biochemically ([[10-Summaries/wesley-2026-songbird]]). Fragment-overlap ploidy estimation transfers to DnTR-Seq. For LIANTI and SmoothSeq it needed protocol-specific deduplication windows of 10 and 100 nt ([[10-Summaries/wesley-2026-songbird]]).
+
+Without preamplification, Tn5 tagmentation destroys the template, so two overlapping fragments must come from different copies. In a haploid region every overlap is an artefact, and overlap becomes more common at higher ploidy in a predictable way. ASCENT uses this to call absolute copy number in single cells, and the authors warn the method does not apply to random-priming data ([[10-Summaries/kolbeinsdottir-2025-ascent]]). Overlap at copy state 1 was higher on patterned flow cells (NovaSeq), which the authors attribute to index hopping ([[10-Summaries/kolbeinsdottir-2025-ascent]]).
 
 ## Added 2026-10-08 — sequence models & foundation models
 

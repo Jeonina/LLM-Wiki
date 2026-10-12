@@ -4,7 +4,7 @@ title: Hematopoietic malignancies
 aliases: [blood cancers, myeloid malignancies]
 tags: [hematology, cancer, clonal-evolution]
 created: 2026-05-07
-updated: 2026-10-09
+updated: 2026-10-12
 paper_section: ["5.1"]
 ---
 
@@ -59,6 +59,7 @@ _None yet._
 
 - [[10-Summaries/argelaguet-2018-mofa]] — MOFA on 200 CLL patients (mutations, RNA, methylation, ex vivo drug response): factors for IGHV status and trisomy 12, an oxidative-stress axis, and factors predicting time to next treatment.
 - [[10-Summaries/pancikova-2025-splongget]] — SPLONGGET long-read multiome of one high-hyperdiploid paediatric B-ALL across diagnosis and three relapses; CD19-negative relapse after CAR-T explained by 8 Mb chr16 deletion plus four phased splice-site SNVs (preprint).
+- [[10-Summaries/kolbeinsdottir-2025-ascent]] — DNTR-seq + ASCENT on a diagnostic paediatric B-ALL (324 cells): four subclones, including a 3% minor clone with breakpoints not seen in bulk WGS, and a small chr12 copy-neutral LOH confirmed by bulk WGS.
 
 In one AML patient, bulk VAFs predicted a 23.6% DNMT3A single-mutant founder population, but single-cell genotyping found 1.7% and pointed to TP53 as the founder ([[10-Summaries/pellegrino-2018-tapestri]]).
 

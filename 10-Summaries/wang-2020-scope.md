@@ -7,7 +7,7 @@ source_sha256: "4a0ac34c6f75aee0ca98991617d4ccaf6838cde95cd6373fe4a46057f554e2f1
 aliases: ["Wang Jiang 2020 SCOPE", "SCOPE"]
 tags: [SCOPE, scDNA-seq, CNV-calling, normalization, EM-algorithm, ploidy-estimation, Jiang-lab, UNC]
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-10-12
 ---
 
 **Citation:** Wang et al. (2020) — *SCOPE: normalization and copy-number estimation for scDNA-seq* — *Cell Systems*. [DOI](https://doi.org/10.1016/j.cels.2020.03.005)
@@ -30,4 +30,5 @@ A §4 computational-tools anchor in the scDNA-seq CNV-calling family alongside G
 - [[10-Summaries/kaufmann-2022-medicc2]]
 - [[10-Summaries/lu-2024-cnaphylogeny-review]]
 - [[10-Summaries/mallory-2020-cna-review]]
+- [[10-Summaries/wesley-2026-songbird]] — on a DLP+ ploidy ladder, SCOPE called 2× and 3× hTERT wells as copy number 2.
 - scDNA CNV calling

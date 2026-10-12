@@ -4,7 +4,7 @@ title: Single-cell phylogenetic inference
 aliases: [phylogenetic reconstruction, cell phylogeny, lineage tree inference]
 tags: [lineage-tracing, phylogenetics, computational, fate-mapping]
 created: 2026-06-02
-updated: 2026-10-07
+updated: 2026-10-12
 ---
 
 # Single-cell phylogenetic inference
@@ -50,6 +50,8 @@ COMPASS infers joint trees of SNVs and CNAs (gains, losses, copy-neutral LOH) fr
 ScisTree2 scales infinite-sites maximum-posterior tree search to tens of thousands of cells via an SPR local search that evaluates the full O(n²) neighbourhood in O(n²m) time plus branch-and-bound pruning, calling genotypes as a by-product of mutation placement ([[10-Summaries/zhang-2025-scistree2]]). In simulations it remained more accurate than SiFit and CellPhy even with up to 75% finite-sites sites, but no method recovered accurate topologies below 1× coverage or with few sites ([[10-Summaries/zhang-2025-scistree2]]). For copy-number data, WGD-aware MEDICC2 trees plus SNV-based doubleTime timing were used to separate truncal, parallel and subclonal WGD histories ([[10-Summaries/mcpherson-2025-ongoing-wgd]]).
 
 CNA trees differ from SNV mutation trees because overlapping, nested and recurrent CNAs break the infinite-sites assumption. SCICoNE allows arbitrary violations at the bin level, forbids regaining a segment after CN 0, and forbids duplicate genotypes ([[10-Summaries/kuipers-2025-scicone]]). It reuses SCITE's prune-and-reattach and label-swap MCMC moves and adds event, node and genotype-preserving moves ([[10-Summaries/kuipers-2025-scicone]]).
+
+Tree parsimony can also serve as a check on copy-number calls. Using Lazac trees with the ZCNT distance, CNRein's simulated calls had a median parsimony score of 1012 against 248,891 for SIGNALS and 52,370 for CHISEL, with a ground-truth median of 736 ([[10-Summaries/ivanovic-2025-cnrein]]). The authors read high scores as homoplasy produced by spurious, unstructured cell-specific CNAs ([[10-Summaries/ivanovic-2025-cnrein]]).
 
 **Acquisition bias and branch lengths.** Using only variant sites overestimates branch lengths; SIEVE corrects this with the count of invariant background sites, reporting branch lengths as expected somatic mutations per site, and outperformed CellPhy and SiFit on branch-score distance in all simulated scenarios ([[10-Summaries/kang-2022-sieve]]). Models under the finite-sites assumption performed as well as ISA models when ISA held, while SCIPhI degraded at 100 cells when ISA was violated ([[10-Summaries/kang-2022-sieve]]).
 

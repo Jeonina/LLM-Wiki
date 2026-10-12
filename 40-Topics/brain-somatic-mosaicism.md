@@ -4,7 +4,7 @@ title: Brain somatic mosaicism
 aliases: [neuronal mosaicism, brain mosaicism, BSMN]
 tags: [brain, mosaicism, neurons, Walsh-lab, BSMN, Alzheimers, autism]
 created: 2026-05-19
-updated: 2026-10-07
+updated: 2026-10-12
 paper_section: ["5.2"]
 ---
 
@@ -39,6 +39,7 @@ paper_section: ["5.2"]
 
 - [[10-Summaries/luquette-2022-neuron-scan2-indels]] — Published SCAN2/PTA neuron study: 16 sSNVs/yr, ≥3 indels/yr, enrichment in neuronal enhancers and promoters.
 - [[10-Summaries/xing-2021-meta-cs]] — META-CS in 32 PFC neurons from 3 donors (19/49/76 y): ~16 SNVs/year, lower than earlier estimates; ssDNA G>T damage calls rise in the oldest brain.
+- [[10-Summaries/zhao-2025-hiscanner]] — HiScanner on 65 PTA cells from 11 brains: 3.1% aneuploid, 614 mostly sub-3 Mb CNAs; neurons carry mostly private losses (5% clonal), oligodendrocytes carry clonal gains; cnLOH only in neurons; no clear age trend.
 
 
 Duplex-Multiome estimates 15.05 ± 3.15 sSNVs/year in excitatory neurons and 32.34 ± 2.39 in oligodendrocytes, with astrocytes faster than microglia and upper-layer faster than deep-layer neurons; low-VAF clonal sSNVs are more frequent in glia than neurons (P = 0.036) ([[10-Summaries/kriz-2025-duplex-multiome]]). Bulk duplex sequencing of brain homogenates gave ~18.6 somatic SNVs per cell per year averaged across methods ([[10-Summaries/zhang-2025-smaht-duplex-benchmark]]).

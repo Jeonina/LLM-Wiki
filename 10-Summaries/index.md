@@ -6,7 +6,7 @@ updated: 2026-10-12
 
 # Papers
 
-Catalog of ~440 paper summaries, the distillation layer of the wiki. Each entry links to a single-source summary, grouped by theme.
+Catalog of ~450 paper summaries, the distillation layer of the wiki. Each entry links to a single-source summary, grouped by theme.
 
 ## scDNA-seq methods & WGA
 
@@ -45,6 +45,13 @@ Catalog of ~440 paper summaries, the distillation layer of the wiki. Each entry 
 - [[10-Summaries/wang-2020-scope]] — Wang 2020, SCOPE normalization and copy-number estimation for scDNA-seq.
 - [[10-Summaries/yang-2023-deepmosaic]] — Yang 2023, DeepMosaic control-independent mosaic SNV detection via CNN.
 - [[10-Summaries/zaccaria-2021-chisel]] — Zaccaria 2021, CHISEL allele- and haplotype-specific copy numbers in single cells.
+- [[10-Summaries/schneider-2024-scabsolute]] — Schneider 2024, scAbsolute: per-cell ploidy from shallow scDNA-seq (constrained DPGMM plus read-density check that separates G1 from G2/WGD in amplification-free paired-end data) and S-phase detection from replication timing.
+- [[10-Summaries/zhao-2025-hiscanner]] — Zhao 2025, HiScanner: allele-specific CNA caller for high-coverage scWGS; bin size set from allelic-dropout size; sub-megabase CNAs in 65 PTA brain cells (private losses in neurons, clonal gains in oligodendrocytes) and a meningioma pair.
+- [[10-Summaries/ivanovic-2025-cnrein]] — Ivanovic & El-Kebir 2025, CNRein: haplotype-specific CN calling regularised by a per-tumour CNA evolution model learned with deep reinforcement learning; far fewer spurious cell-specific CNAs than SIGNALS/CHISEL/Alleloscope.
+- [[10-Summaries/kolbeinsdottir-2025-ascent]] — Kolbeinsdottir 2025, ASCENT: absolute, allele-specific CN for ultra-low-coverage direct-tagmentation scWGS (10–40 kb segmentation, ploidy from fragment overlap, no matched normal); paediatric B-ALL subclones missed by bulk WGS.
+- [[10-Summaries/wesley-2026-songbird]] — Wesley 2026, Songbird: WGD-aware CN caller for DLP+/Tn5 scWGS; ploidy from fragment-overlap geometry, unbalanced-Haar segmentation; finds same-start Tn5 artefact fragments; separates ecDNA from BFB in an EAC organoid.
+- [[10-Summaries/weber-2023-mosaicatcher-v2]] — Weber 2023, MosaiCatcher v2: Snakemake workflow from Strand-seq FASTQ to haplotype-phased single-cell SV calls, with library QC, ArbiGent genotyping and scNOVA modules.
+- [[10-Summaries/gillman-2026-scarce]] — Gillman 2026, SCARCE: ranks somatic variants by enrichment in surface-marker- or variant-defined scDNA subpopulations; isolates a 10-of-16,316-cell clone in Tapestri data and recovers known refractory coeliac disease drivers.
 - [[10-Summaries/zafar-2016-monovar]] — Zafar 2016, Monovar multi-cell-pooled single-cell SNV detection.
 - [[10-Summaries/mallory-2020-cna-review]] — Mallory 2020, review of copy-number aberration detection from scDNA-seq.
 - [[10-Summaries/valecha-2022-scsnv-review]] — Valecha 2022, review of somatic variant calling from single-cell DNA.

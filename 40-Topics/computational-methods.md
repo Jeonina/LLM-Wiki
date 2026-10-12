@@ -4,7 +4,7 @@ title: Computational Methods
 aliases: [bioinformatics tooling, analysis pipelines, computational infrastructure]
 tags: [pipelines, algorithms, tools, infrastructure]
 created: 2026-08-10
-updated: 2026-10-08
+updated: 2026-10-12
 paper_section: ["4.2"]
 ---
 
@@ -21,6 +21,8 @@ Method choice is not neutral. Seven TAD callers disagree on the same contact mat
 **Preprocessing and alignment.** QC, adapter and polyG trimming, UMI handling in a single pass ([[chen-2018-fastp]]); BWT-based read alignment ([[li-2009-bwa]]); the SAM/BAM format and toolkit that decoupled alignment from every downstream analysis ([[li-2009-samtools]]); chromatin-optimized fast alignment ([[zhang-2021-chromap]]).
 
 **Variant and copy-number calling.** Germline/somatic SNV calling infrastructure ([[mckenna-2010-gatk]]); single-cell CNV by HMM over mappability-variable bins ([[bakker-2016-aneufinder]]), by circular binary segmentation ([[garvin-2015-natmethods]]) and by Poisson-latent-factor modelling ([[wang-2020-scope]]); CNV inferred from transcriptomes ([[tickle-2019-infercnv]], [[gao-2021-copykat]]); mutational-process decomposition ([[alexandrov-2013-mutational-signatures]]).
+
+**Strand-seq SV workflow.** Snakemake pipeline that runs from FASTQ to haplotype-phased single-cell SV calls. It uses data-dependent checkpoints, ML-based library QC, and normalization by library size, GC correction and VST. It packages conda environments in a versioned Docker container and is tested by CI ([[10-Summaries/weber-2023-mosaicatcher-v2]]).
 
 **Chromatin and peak calling.** Empirical fragment-shift modelling with dynamic local background ([[zhang-2008-macs]]); model-free thresholding for low-background in-situ assays ([[meers-2019-seacr]]); motif and peak toolkit ([[heinz-2010-homer]]); region-to-gene functional annotation ([[mclean-2010-great]]); single-cell methylation segmentation ([[kremer-2024-methscan]]).
 
@@ -48,6 +50,10 @@ Method choice is not neutral. Seven TAD callers disagree on the same contact mat
 - [[10-Summaries/koboldt-2009-varscan]] — VarScan: aligner-independent heuristic SNP/indel caller (Perl/C).
 - [[10-Summaries/farlik-2015-scwgbs]] — region-set residual aggregation for sparse single-cell methylomes.
 - [[10-Summaries/kuipers-2025-scicone]] — SCICoNE: Dirichlet-multinomial MCMC over CNA trees with cross-cell breakpoint detection for shallow scWGS.
+- [[10-Summaries/zhao-2025-hiscanner]] — HiScanner: allele-specific single-cell CNA caller for high-coverage scWGS; bin size set from allelic-dropout size, multi-cell BIC segmentation (BICseq2), KS-test LOH-aware BAF; ViScanner browser.
+- [[10-Summaries/schneider-2024-scabsolute]] — scAbsolute: constrained DPGMM ploidy fitting plus read-density correction, and replication-time cycling activity for S-phase detection.
+- [[10-Summaries/kolbeinsdottir-2025-ascent]] — ASCENT: Snakemake pipeline for 0.01×–0.1× tagmentation scWGS. It uses high-resolution mpcf/LLR segmentation, absolute ploidy from fragment overlap, and per-clone haplotyping with no reference sample, then MEDICC2. It scored above scAbsolute, Alleloscope and CHISEL on one B-ALL.
+- [[10-Summaries/ivanovic-2025-cnrein]] — CNRein: CNN generative model of CNA trajectories trained by policy-gradient RL to regularize haplotype-specific copy-number calls (PyTorch, CPU-only).
 - [[10-Summaries/chen-2009-breakdancer]] — BreakDancer: Poisson/Fisher-pooled read-pair SV detection plus a KS-test small-indel module.
 - [[10-Summaries/liang-2026-scmeth-imputation-benchmark]] — scDNAm imputation benchmark showing random-split leakage and entropy-limited accuracy.
 - [[10-Summaries/cibulskis-2013-mutect]] — MuTect (bulk somatic SNV caller) and its virtual-tumor benchmarking approach.

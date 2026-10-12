@@ -16,7 +16,7 @@ entities: []
 concepts: ["[[allele-dropout]]", "[[intratumor-heterogeneity]]", "[[single-cell-variant-calling]]", "[[drop-seq]]", "[[doublet-detection]]", "[[umi-molecular-barcoding]]"]
 topics: ["[[hematopoietic-malignancies]]", "[[cancer-clonal-evolution]]", "[[scdna-cancer-applications]]", "[[scdna-seq]]"]
 created: 2026-05-13
-updated: 2026-10-07
+updated: 2026-10-12
 ---
 
 **Citation:** Pellegrino et al. (2018) — *High-throughput single-cell DNA sequencing of acute myeloid leukemia tumors with droplet microfluidics* — *Genome Research* 28:1345–1352. [DOI](https://doi.org/10.1101/gr.232272.117) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/30087104/)
@@ -74,6 +74,7 @@ Weight: a convincing technology demonstration with a built-in dropout control (R
 - Droplet barcoding precedent from RNA: [[macosko-2015-drop-seq]]; droplet ChIP precedent: [[rotem-2015-drop-chip]].
 - Well-based targeted single-cell genotyping it scales up: [[gawad-2014-all-clonal-origins]].
 - Downstream methods built for this data type: [[sollier-2023-compass]] (Tapestri-based trees with CNV), [[singer-2018-sciphi]] (panel data caveats), [[ross-2016-onconem]] and [[jahn-2016-scite]] (small-*n* era methods). Derived platforms and uses: [[lindenhofer-2025-sdr-seq]], [[pancikova-2025-splongget]]; droplet DNA methylation analogue [[zhang-2023-drop-bs]].
+- Enrichment-based somatic variant prioritisation on Tapestri DNA + ADT data, isolating a 0.06% spike-in clone: [[gillman-2026-scarce]].
 - Contrast with genome-wide low-coverage CNV platforms: [[laks-2019-dlp-plus]]; well-based tumour single-cell DNA: [[kim-2018-tnbc-chemoresistance]]. (synthesis)
 
 ## Open questions

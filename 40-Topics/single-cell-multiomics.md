@@ -4,7 +4,7 @@ title: Single-cell multi-omics
 aliases: [single-cell multiomics, sc-multiomics, multimodal omics]
 tags: [single-cell, methods, multiomics, multi-omics]
 created: 2026-05-07
-updated: 2026-10-07
+updated: 2026-10-12
 paper_section: ["4.3"]
 ---
 
@@ -213,6 +213,7 @@ Regulatory-network inference from joint accessibility and expression: [[10-Summa
 - [[10-Summaries/wang-2024-wellda-seq]] — wellDA-seq: single-cell whole genome + chromatin accessibility co-assay.
 - [[10-Summaries/pancikova-2025-splongget]] — SPLONGGET joint long-read genotype/accessibility/transcriptome; CD19 escape in B-ALL.
 - [[10-Summaries/nichols-2025-scimetv3]] — sciMET+ATAC: methylome plus chromatin accessibility from the same cells via sequential tagmentation.
+- [[10-Summaries/gillman-2026-scarce]] — SCARCE: joins Tapestri targeted DNA genotypes with ADT surface-protein cell types to find cell-type-specific somatic variants (e.g. *DDX3X* drivers in CD4−CD8− T cells in refractory coeliac disease).
 
 Contrast with scTrio-seq's finding that CNVs do not perturb local DNA methylation: wellDA-seq reports that subclonal CNAs do reshape chromatin accessibility in cis, with ~80% of differential chromatin-hub bins on subclonal CNA bins in breast tumours ([[10-Summaries/wang-2024-wellda-seq]]; [[10-Summaries/hou-2016-sctrio-seq]]). Different epigenetic layers, so not a contradiction (synthesis).
 

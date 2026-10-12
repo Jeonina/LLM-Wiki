@@ -4,7 +4,7 @@ title: Single-cell variant calling
 aliases: [scSNV calling, single-cell SNV detection, scDNA variant calling]
 tags: [scDNA-seq, variant-calling, SNV, computational]
 created: 2026-05-19
-updated: 2026-10-07
+updated: 2026-10-12
 paper_section: ["4.1"]
 ---
 
@@ -22,6 +22,8 @@ paper_section: ["4.1"]
 - **DeepMosaic** ([[10-Summaries/yang-2023-deepmosaic]]) — deep-learning mosaic caller.
 - **Monopogen** ([[10-Summaries/dou-2023-monopogen]]) — SNV calls from scRNA/scATAC.
 - **SCOUT** ([[10-Summaries/tu-2021-scout-genotyper]]) — leverages local genome territory for genotyping.
+- **MosaiCatcher v2** ([[10-Summaries/weber-2023-mosaicatcher-v2]]) — Strand-seq workflow for single-cell structural-variant calling and genotyping; normalizes read counts by library size, GC correction and VST.
+- **SCARCE** ([[10-Summaries/gillman-2026-scarce]]) — post-calling prioritisation: ranks variants by odds-ratio enrichment (Wald or Fisher test, Benjamini–Yekutieli FDR) in one cell group versus all others, with groups taken from ADT surface markers or variant clustering ([[10-Summaries/gillman-2026-scarce]]).
 
 ## Benchmarks
 

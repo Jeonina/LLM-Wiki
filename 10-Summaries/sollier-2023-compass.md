@@ -60,6 +60,7 @@ Weight: credible for amplicon data — the uneven-coverage model is the decisive
 - SNV-only tree methods it builds on and compares with: [[jahn-2016-scite]], [[singer-2018-sciphi]] (read-count input, like COMPASS), [[zafar-2017-sifit]], [[malikic-2019-phiscs]].
 - Joint/related CNA–SNV approaches: [[satas-2020-scarlet]] (CNA-constrained LOH), [[zaccaria-2021-chisel]] (SNVs in CNA-defined clones), [[kaufmann-2022-medicc2]] and [[wang-2021-medalt]] (CNA-only phylogenies).
 - Platform and data: [[pellegrino-2018-tapestri]] (targeted droplet scDNA-seq). Related Beerenwinkel-group methods: [[kang-2022-sieve]], [[kuipers-2025-scicone]].
+- Another Tapestri-downstream method, built for variant prioritisation in rare clones rather than trees, and without CNA modelling: [[gillman-2026-scarce]]. (synthesis)
 - Reviews: [[lu-2024-cnaphylogeny-review]], [[mallory-2020-cna-review]].
 
 ## Open questions

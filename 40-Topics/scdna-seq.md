@@ -4,7 +4,7 @@ title: Single-cell DNA sequencing (scDNA-seq)
 aliases: [single-cell DNA sequencing, scDNA-seq, scDNAseq]
 tags: [single-cell, scDNA-seq, methods]
 created: 2026-05-11
-updated: 2026-10-09
+updated: 2026-10-12
 paper_section: ["3.1"]
 ---
 
@@ -97,6 +97,11 @@ The human genome is 20–50× larger than the transcribed or chromatin-accessibl
 
 - [[10-Summaries/garvin-2015-natmethods]] — Garvin 2015 — Ginkgo: interactive analysis of single-cell CNVs.
 - [[10-Summaries/wang-2020-scope]] — Wang 2020 — SCOPE: normalization and copy-number estimation for scDNA-seq.
+
+### Strand-seq structural-variant tooling
+
+- [[10-Summaries/sanders-2020-sctrip]] — scTRIP / original MosaiCatcher.
+- [[10-Summaries/weber-2023-mosaicatcher-v2]] — Weber 2023 — MosaiCatcher v2: Strand-seq workflow from FASTQ to single-cell SV calls, with ArbiGent genotyping and scNOVA modules.
 
 ## Synthesized notes
 

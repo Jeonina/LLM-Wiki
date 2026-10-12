@@ -4,7 +4,7 @@ title: Somatic mosaicism
 aliases: [somatic mosaicism, mosaicism, post-zygotic mosaicism]
 tags: [mosaicism, genetics, development, aging, post-zygotic]
 created: 2026-05-11
-updated: 2026-10-09
+updated: 2026-10-12
 paper_section: ["5.2"]
 ---
 
@@ -225,3 +225,5 @@ Haplotype-phased targeted Fiber-seq showed that a somatically unstable DMPK CTG 
 HiDEF-seq ([[10-Summaries/liu-2024-hidef-seq]]) shifts the object of study one step upstream: from mutations to the **single-strand mismatches and damage that precede them**. Double-strand mutations are the endpoint of an interaction between lesion formation, DNA repair, and replication, so dsDNA signatures need not reflect the patterns of the originating events — and until 2024 no method could read those events, because every method amplified first.
 
 Practical consequences for the corpus: single-strand burden estimates from duplex-family methods are inflated ~18-fold ([[10-Summaries/liu-2024-hidef-seq]]); and neuronal somatic SNV rates from MDA-era data were overestimated, revised to 16.5/year with PTA ([[10-Summaries/luquette-2022-neuron-scan2-indels]]). (synthesis)
+
+Somatic mosaicism outside cancer is also a target for droplet scDNA: in a refractory coeliac disease sample of 4,858 lymphocytes, SCARCE recovered the four previously known T-cell drivers that passed filtering and placed them in specific T-cell subsets via surface markers ([[10-Summaries/gillman-2026-scarce]]).

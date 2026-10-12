@@ -7,7 +7,7 @@ source_sha256: "d770bafa9c8f6ca2f9453cbab5e2e10708cfce94502e8d10949151be2318bda0
 aliases: ["Sanders 2020 scTRIP", "scTRIP", "Strand-seq SV"]
 tags: [scTRIP, Strand-seq, structural-variants, complex-rearrangements, Korbel-lab, EMBL, leukemia, chromothripsis]
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-10-12
 ---
 
 **Citation:** Sanders et al. (2020) — *Single-cell analysis of structural variations and complex rearrangements with tri-channel processing (scTRIP)* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-019-0366-x)
@@ -32,3 +32,4 @@ scTRIP is the gold-standard SV-detection workflow for single-cell data, distinct
 - sanders 2017 natprotoc
 - jan korbel
 - [[30-Concepts/strand-seq]]
+- [[10-Summaries/weber-2023-mosaicatcher-v2]] — MosaiCatcher v2 (2023), which reprocesses this paper's four cell lines (RPE1-WT, RPE-BM510, RPE-C7, NA20509) in one automated run against T2T-CHM13.

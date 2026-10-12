@@ -4,7 +4,7 @@ title: Doublet Detection
 aliases: [doublets, collisions, multiplets]
 tags: [QC, artefacts, single-cell, barcoding]
 created: 2026-08-10
-updated: 2026-10-07
+updated: 2026-10-12
 ---
 
 # Doublet Detection
@@ -37,6 +37,8 @@ In SPLONGGET long-read Multiome data, Scrublet 'proved to be ineffective'. Doubl
 wellDA-seq combines physical and computational doublet control: nanowells are imaged to keep only single-cell wells, and non-diploid subclones whose consensus CNA profile correlates with an aneuploid subclone but with a smaller log2 ratio are removed as tumour-diploid doublets ([[10-Summaries/wang-2024-wellda-seq]]).
 
 PhISCS assumes doublets were removed beforehand and names this as its main limitation, unlike SiCloneFit, which models doublets directly ([[10-Summaries/malikic-2019-phiscs]]).
+
+scAbsolute's read-density measure separates G1 single cells from deliberately plated 2–5-cell multiplets (6N–12N) with 97% accuracy, even when the copy-number profiles look identical. The authors propose it for doublet detection in future droplet-based, amplification-free protocols ([[10-Summaries/schneider-2024-scabsolute]]).
 
 ## Related
 

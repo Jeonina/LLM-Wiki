@@ -61,6 +61,7 @@ Weight: a large, carefully QC'd multimodal dataset with orthogonal validation (i
 
 - Platform: [[laks-2019-dlp-plus]] (DLP+, also HGSOC) and [[zahn-2017-dlp]].
 - WGD-aware CN phylogenetics: [[kaufmann-2022-medicc2]]; review context [[lu-2024-cnaphylogeny-review]].
+- Fragment-geometry ploidy calling that targets the perfect-doubling blind spot of depth- and allele-based WGD calls: [[wesley-2026-songbird]].
 - Allele-specific single-cell CN precedent: [[zaccaria-2021-chisel]]; scRNA CNV inference used here: [[tickle-2019-infercnv]].
 - SNV-tree alternative tested on HGSOC DLP+ data: [[zhang-2025-scistree2]].
 - Earlier scDNA tumour-evolution work: [[navin-2011-sns-tumor-evolution]], [[wang-2014-nuc-seq]], [[kim-2018-tnbc-chemoresistance]]; karyotype heterogeneity [[bakker-2016-aneufinder]].

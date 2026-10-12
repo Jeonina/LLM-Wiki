@@ -56,6 +56,7 @@ Weight: the theory is the contribution and it is rigorous. The real-data evidenc
 - Loss-aware alternative that uses CNA data directly: [[satas-2020-scarlet]].
 - Bulk-integrating combinatorial contemporary from the same problem space: [[malikic-2019-phiscs]].
 - Benchmarked against by [[foroughmand-2022-scelestial]].
+- Later work from the same senior author on copy-number data: [[ivanovic-2025-cnrein]] (evolution-aware CN calling).
 - The CNA-driven-loss premise is documented in [[wang-2014-nuc-seq]] and [[navin-2011-sns-tumor-evolution]].
 
 ## Open questions

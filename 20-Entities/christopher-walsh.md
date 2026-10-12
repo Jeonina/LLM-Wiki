@@ -5,7 +5,7 @@ aliases: [Walsh CA, Walsh C]
 entity_kind: person
 tags: [neurology, mosaicism, brain-development, scDNA-seq]
 created: 2026-05-11
-updated: 2026-10-07
+updated: 2026-10-12
 ---
 
 # Christopher Walsh
@@ -27,6 +27,7 @@ Boston Children's Hospital, Harvard Medical School, Howard Hughes Medical Instit
 - **2026-05-12** — Co-author of [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] (Luquette/Walsh 2025): PTA + duplex on 102 nuclei from 74-yo lung and colon; SMaHT-network single-cell paper.
 - **2026-05-12** — Co-author of [[10-Summaries/zhang-2025-smaht-duplex-benchmark]] (SMaHT duplex-seq benchmark).
 - **2026-10-07** — Senior co-author on [[10-Summaries/luquette-2022-neuron-scan2-indels]] (neuronal somatic indel enrichment in regulatory elements) and [[10-Summaries/bohrson-2019-lira]] (LiRA).
+- **2026-10-12** — Co-author of [[10-Summaries/zhao-2025-hiscanner]]: HiScanner finds mostly private CNA losses in neurons and clonal gains in oligodendrocytes across 11 neurotypical brains.
 
 ## Positions and claims
 

@@ -4,7 +4,7 @@ title: Allele dropout
 aliases: [ADO, allelic dropout]
 tags: [single-cell, scWGA, amplification-bias]
 created: 2026-05-12
-updated: 2026-10-08
+updated: 2026-10-12
 ---
 
 # Allele dropout (ADO)
@@ -28,6 +28,8 @@ Read-backed phasing makes absence calls cheap: one read spanning a candidate sit
 ScisTree2 handles ADO implicitly by taking per-cell genotype posterior probabilities as input and was robust to assumed ADO rates on HGSOC DLP+ data; the authors note ADO rates in current single-cell data can be 50% or higher ([[10-Summaries/zhang-2025-scistree2]]).
 
 In long-read single-cell WGS, allelic dropout remains the limiting factor: sensitivity was 0.17 for SNVs and just above 0.20 for SVs, even though precision was high ([[10-Summaries/hard-2023-long-read-scwgs]]).
+
+For copy-number calling, ADO looks like a single-copy loss in read depth. HiScanner fits a two-state HMM to BAF at germline heterozygous SNPs to find dropout events, then uses the 95th percentile of their sizes as the minimum bin size. Mean dropout size was ~10³ bp in PTA versus ~10⁵ bp in MDA, so the usable CNA resolution depends on the amplification chemistry ([[10-Summaries/zhao-2025-hiscanner]]).
 
 SIEVE models ADO as a hidden number-of-sequenced-alleles variable identifiable only through coverage; ADO-calling F1 was 0.86–0.93 at medium/high simulated coverage quality but 0.10 at low quality, described as typical of current scDNA-seq ([[10-Summaries/kang-2022-sieve]]). Estimated ADO rates on real data were 0.20 (CRC28 scWGS), 0.05 (TNBC16) and 0.10 (CRC48) ([[10-Summaries/kang-2022-sieve]]).
 

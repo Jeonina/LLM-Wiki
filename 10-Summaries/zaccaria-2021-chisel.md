@@ -7,7 +7,7 @@ source_sha256: "7ad95dedf1b310aeffea621f3ce930c6274baf7aae901a1fbfb4dfd57c0e2518
 aliases: ["Zaccaria 2021", "CHISEL", "allele-specific CNV scDNA"]
 tags: [CHISEL, allele-specific-CNV, haplotype-phasing, scDNA-seq, breast-cancer, Raphael-lab, Princeton]
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-10-12
 ---
 
 **Citation:** Zaccaria & Raphael (2021) — *Characterizing allele- and haplotype-specific copy numbers in single cells with CHISEL* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-020-0661-6)
@@ -30,4 +30,8 @@ CHISEL filled a fundamental gap: ultra-low-coverage barcode-based scDNA platform
 - laks 2019 cell
 - [[10-Summaries/kim-2018-tnbc-chemoresistance]]
 - [[10-Summaries/kaufmann-2022-medicc2]]
+- [[10-Summaries/zhao-2025-hiscanner]] — reuses CHISEL's ploidy/allelic likelihood but swaps global clustering for adjacency-aware joint segmentation; CHISEL wins on cnLOH >1 Mb but over-segments a single high-coverage PTA neuron (10,322 breakpoints).
+- [[10-Summaries/kolbeinsdottir-2025-ascent]] — benchmark at ultra-low depth with no matched normal: CHISEL median accuracy <0.01 against bulk WGS, because there were too few heterozygous SNPs for its SNP-based segmentation. The ASCENT authors also note that CHISEL's SNP-aware segmentation can find sub-arm cnLOH that ASCENT misses.
+- [[10-Summaries/ivanovic-2025-cnrein]] — CNRein benchmarks against CHISEL and reports CHISEL calls a unique profile for nearly every cell, with much higher tree parsimony scores.
 - copy number variation
+- [[10-Summaries/schneider-2024-scabsolute]] — benchmarks CHISEL (nonormal mode) on ACT data: 11% wrong-ploidy vs 5% for scAbsolute; argues BAF-based methods cannot detect recent WGD

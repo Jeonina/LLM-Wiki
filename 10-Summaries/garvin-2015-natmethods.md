@@ -7,7 +7,7 @@ source_sha256: "8853f8f5cf7ec73f4b9c4fe4617166e4559453c1cfe68b4905d5a8096defb28c
 aliases: ["Ginkgo", "Garvin 2015"]
 tags: [computational, CNV, scDNA-seq, Ginkgo, web-tool, Wigler-lab, Schatz-lab]
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-10-12
 ---
 
 **Citation:** Garvin et al. (2015) — *Interactive analysis and assessment of single-cell copy-number variations (Ginkgo)* — *Nature Methods*. [DOI](https://doi.org/10.1038/nmeth.3578)
@@ -28,3 +28,5 @@ A widely-used early single-cell CNV pipeline that established the read-binning +
 - single cell cnv
 - [[10-Summaries/zafar-2016-monovar]]
 - [[10-Summaries/luquette-2019-natcomm]]
+- [[10-Summaries/zhao-2025-hiscanner]] — on PTA brain cells, Ginkgo called ~10× more private neuronal losses than HiScanner, and 97% (oligodendrocytes) / 66% (neurons) of its calls disagreed with local BAF.
+- [[10-Summaries/schneider-2024-scabsolute]] — Ginkgo had a 27% mean wrong-ploidy rate on ACT data (up to 69% per sample) in the scAbsolute benchmark

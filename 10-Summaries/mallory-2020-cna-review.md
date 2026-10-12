@@ -7,7 +7,7 @@ source_sha256: "31f1a93b00056820f79a526b9ddc291051543a805b5dec097a1ccb6f838d6192
 aliases: ["Mallory 2020 review", "scDNA CNA methods review", "Nakhleh CNA review"]
 tags: [review, CNA-detection, scDNA-seq, segmentation, tumor-evolution, Nakhleh-lab, Rice, Navin-lab]
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-10-12
 ---
 
 **Citation:** Mallory et al. (2020) — *Assessing the performance of methods for copy number aberration detection from single-cell DNA sequencing data* — *PLOS Computational Biology* 16(7):e1008012. [DOI](https://doi.org/10.1371/journal.pcbi.1008012)
@@ -33,3 +33,4 @@ The canonical review for the §4 CNA-detection tool family. Important supplement
 - laks 2019 cell
 - [[40-Topics/scdna-cancer-applications]]
 - [[20-Entities/nicholas-navin]]
+- [[10-Summaries/schneider-2024-scabsolute]] — cites this review for ploidy unidentifiability when no odd or intermediate copy-number states are present, and addresses it with read density

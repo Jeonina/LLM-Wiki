@@ -55,6 +55,7 @@ Proof-of-concept method paper (bioRxiv preprint, v2). Benchmarks against G&T-seq
 - Realizes the "scTrio-seq + WGA" hypothetical named in [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]] — genome-wide SNV + RNA same-cell, no methylation.
 - Complements [[10-Summaries/izzo-2024-got-cha]] (targeted genotype + chromatin) by giving genome-wide genotype + RNA instead.
 - Built on the PTA chemistry foundational to [[50-Notes/pta-inflection-point]] and [[10-Summaries/luquette-2025-pta-duplex-mosaicism]].
+- Named as a supported input for SCARCE's clone-level enrichment testing via multi-sample VCF: [[10-Summaries/gillman-2026-scarce]].
 
 ## Open questions
 

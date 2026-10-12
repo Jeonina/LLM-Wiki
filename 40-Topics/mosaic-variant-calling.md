@@ -4,7 +4,7 @@ title: Mosaic variant calling
 aliases: [mosaic SNV calling, low-VAF variant calling, mosaicism callers]
 tags: [mosaicism, variant-calling, SNV, low-VAF, benchmarking]
 created: 2026-05-19
-updated: 2026-10-07
+updated: 2026-10-12
 paper_section: ["4.1"]
 ---
 
@@ -47,6 +47,7 @@ paper_section: ["4.1"]
 - [[10-Summaries/chen-2009-breakdancer]] — early bulk read-pair SV caller; tumour-only putative somatic indels all validated as germline.
 - [[10-Summaries/cibulskis-2013-mutect]] — MuTect: low-AF somatic SNV calling, panel of normals, virtual-tumor benchmarking.
 - [[10-Summaries/maslov-2022-smm-seq]] — SMM-seq: RCA-based multi-copy consensus for ultra-rare SNVs in bulk DNA, calibrated against single-cell results from the same liver samples.
+- [[10-Summaries/gillman-2026-scarce]] — SCARCE: light filtering, then 1-vs-all enrichment testing to rank rare-clone somatic variants in Tapestri/VCF scDNA data; isolates a 10-cell KG-1 clone among 16,316 cells.
 
 
 ## Related

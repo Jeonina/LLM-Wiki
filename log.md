@@ -4,6 +4,20 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+# 2026-10-12 — Ingest: 7 single-cell genotype analysis tools (2023–2026)
+
+The user added recent genotype analysis tools to the Analytical Tools sheet after a PubMed search found that the sheet's CNV/SNV main entries all predated 2022, then clipped them. Seven parallel agents wrote one summary each from the full text (two PDFs pre-extracted to text); the main session checked 76 proposed graph edits (anchors and wikilinks, dry run) and applied them. All 7 sources are `full`.
+
+- **CNV / ploidy (5):** [[10-Summaries/zhao-2025-hiscanner]] (HiScanner, high-resolution allele-specific CNAs in PTA brain cells), [[10-Summaries/ivanovic-2025-cnrein]] (CNRein, evolution-aware haplotype-specific CN by deep RL), [[10-Summaries/schneider-2024-scabsolute]] (scAbsolute, ploidy and S-phase), [[10-Summaries/kolbeinsdottir-2025-ascent]] (ASCENT, absolute CN in tagmentation scWGS), [[10-Summaries/wesley-2026-songbird]] (Songbird, WGD-aware DLP+ calling).
+- **SV (1):** [[10-Summaries/weber-2023-mosaicatcher-v2]] (Strand-seq SV workflow). **Somatic SNV (1):** [[10-Summaries/gillman-2026-scarce]] (rare-clone variant prioritisation on Tapestri).
+- **Pages updated (45 + catalog):** 15 concept pages (copy-number-variation, whole-genome-doubling, tn5-tagmentation, dlp-plus, allele-dropout, pta, replication-timing, doublet-detection, duplicate-marking, sequencing-depth-and-coverage, chromosomal-instability, intratumor-heterogeneity, phylogenetic-inference, single-cell-variant-calling, strand-seq, structural-variants, cite-seq), 9 topic pages, 4 entity pages (Park, Walsh, Luquette, Shao), 15 related summaries; summary catalog now 449 entries.
+- **Contradiction flagged:** scAbsolute's G2/WGD detection — 97% in its own multiplet test vs 89% of G2M cells missed in the ASCENT benchmark and diploid calls on Songbird's ploidy ladder. Recorded under Open questions on [[30-Concepts/whole-genome-doubling]].
+- **Qualified claim:** amplification-free Tn5 libraries are not fully "one read = one template" — under 1% same-start artefact fragments survive deduplication (Songbird, ASCENT); added to duplicate-marking and sequencing-depth-and-coverage.
+- **Fix:** [[10-Summaries/angermueller-2017-genomebiol]] (DeepCpG) cited the erratum DOI (…1233-z) and its PubMed ID; corrected to the article (10.1186/s13059-017-1189-z, PMID 28395661). The clipping itself is the article.
+- **Gaps noted, not created:** no entity pages for Jan Korbel, Mohammed El-Kebir, Mission Bio/Tapestri; SIGNALS, Alleloscope, ACT, DNTR-seq have no summaries.
+
+---
+
 # 2026-10-12 — Ingest: ChromBERT (histone-gap evidence)
 
 [[10-Summaries/yu-2026-chrombert]] (Cell Genomics 2026, full PDF incl. supplementary figure legends). The paper confirms in its main text that the 6,391-cistrome pretraining corpus covers 991 transcription regulators, **76 histone modifications** and DNase/ATAC; the number of histone profiles is only in Table S1, which is not in the source. Several downstream analyses exclude histone and accessibility channels. ChromBERT takes no DNA sequence and reaches single cells only via scGPT prompts and pseudobulk fine-tuning.

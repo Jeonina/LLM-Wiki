@@ -5,7 +5,7 @@ aliases: [Park lab]
 entity_kind: person
 tags: [bioinformatics, cancer-genomics, Harvard-Medical-School]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-12
 ---
 
 # Peter J. Park
@@ -16,6 +16,7 @@ updated: 2026-10-07
 
 - **2026-05-12** — Senior author on [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] and co-author on SMaHT-network papers.
 - **2026-10-07** — Corresponding author of [[10-Summaries/luquette-2022-neuron-scan2-indels]] (SCAN2 + PTA, 52 neurons, 16.5 sSNVs/yr, ≥3 indels/yr) and [[10-Summaries/bohrson-2019-lira]] (LiRA read-backed phasing).
+- **2026-10-12** — Senior author of [[10-Summaries/zhao-2025-hiscanner]] (HiScanner, Nat Commun 2025). The method extends his lab's BIC-seq2 bulk CNA caller to joint, allele-specific single-cell segmentation.
 
 ## Related
 

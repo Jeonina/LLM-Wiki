@@ -4,7 +4,7 @@ title: CITE-seq
 aliases: [Cellular Indexing of Transcriptomes and Epitopes by Sequencing]
 tags: [multi-omics, scRNA-protein, antibody-derived-tags, method]
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-10-12
 ---
 
 # CITE-seq
@@ -62,3 +62,5 @@ Two 2021 methods and one 2022 successor define the computational side of CITE-se
 | [[10-Summaries/lakkis-2022-scipenn]] | deep learning | censored loss merges **partially overlapping antibody panels**; returns **uncertainty**; faster than both |
 
 **Predicting protein from RNA alone** — training on a CITE-seq reference and applying to cheaper scRNA-seq — is now a standard capability ([[10-Summaries/lakkis-2022-scipenn]]; also achievable by reference mapping, [[10-Summaries/kang-2021-symphony]]). Seurat 4 returns no confidence estimate and totalVI's prediction intervals are badly under-covered ([[10-Summaries/lakkis-2022-scipenn]]), so only sciPENN gives a usable confidence on an imputed protein value. (synthesis) See [[reference-atlas-mapping]].
+
+**ADT paired with DNA, not RNA.** On Tapestri, ADT surface-marker counts are captured alongside targeted DNA amplicons; SCARCE uses them (CLR normalisation, SCINA labels, manual cluster calls) to define cell types for somatic-variant enrichment tests ([[10-Summaries/gillman-2026-scarce]]).

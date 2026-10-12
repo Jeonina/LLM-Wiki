@@ -4,7 +4,7 @@ title: Cancer clonal evolution
 aliases: [tumor clonal evolution, cancer phylogeny, tumor evolution]
 tags: [cancer, clonal-evolution, phylogeny, intratumor-heterogeneity]
 created: 2026-05-19
-updated: 2026-10-09
+updated: 2026-10-12
 paper_section: ["5.1"]
 ---
 
@@ -46,11 +46,16 @@ paper_section: ["5.1"]
 - [[10-Summaries/zhang-2025-scistree2]] — ScisTree2: scalable infinite-sites lineage trees and genotype calling, tested on HGSOC DLP+ data.
 - [[10-Summaries/chang-2025-droplet-hi-c]] — single-cell Hi-C tracks ecDNA gain/loss and boundary changes under erlotinib (GBM39) and after azacitidine + venetoclax (AML).
 - [[10-Summaries/kuipers-2025-scicone]] — SCICoNE: jointly infers single-cell copy numbers and the CNA event tree; finds TNBC event histories and whole-genome duplication as the first tumour event.
+- [[10-Summaries/wesley-2026-songbird]] — Songbird: WGD-aware DLP+ copy-number caller (fragment-geometry ploidy, unbalanced Haar segmentation); in an esophageal adenocarcinoma organoid, ecDNA kept constant between-bin ratios across cells while a BFB did not.
+- [[10-Summaries/kolbeinsdottir-2025-ascent]] — ASCENT: absolute, allele-specific CN from ultra-low-coverage tagmentation scWGS with no matched normal. In a paediatric B-ALL it found an 8-cell (3%) subclone and a copy-neutral LOH that bulk WGS missed, then built a MEDICC2 tree.
+- [[10-Summaries/ivanovic-2025-cnrein]] — CNRein: evolution-aware haplotype-specific CN calling by deep reinforcement learning; larger shared clones and much more parsimonious trees than SIGNALS/CHISEL; consistent clones across 10x and ACT in one breast tumour.
 - [[10-Summaries/wang-2024-wellda-seq]] — genotype-to-epigenotype mapping across breast-cancer subclones (hardwiring vs plasticity).
 - [[10-Summaries/kang-2022-sieve]] — SIEVE: finite-sites joint phylogeny and SNV calling; double mutants rare in CRC, frequent in TNBC.
 - [[10-Summaries/kozlov-2022-cellphy]] — CellPhy reanalysis of metastatic CRC patient CRC2 (86 cells): all metastatic cells form one well-supported clade (monoclonal seeding), agreeing with SCARLET over SCITE/SiCloneFit.
 
 - [[10-Summaries/pancikova-2025-splongget]] — longitudinal single-cell CNAs, pseudobulk SVs/SNVs and parallel evolution of CD19 immune-escape alleles in B-ALL under CAR-T selection (preprint).
+- [[10-Summaries/zhao-2025-hiscanner]] — grade II → grade III meningioma pair (179 PTA cells, 0.5×): 1p/22q-loss clone, a descendant clone adding 6q/9p/11q losses that already contains one grade II cell, and a tetraploid subclone; CNA clusters agree with SECEDO SNV clusters (ARI 0.83).
+- [[10-Summaries/schneider-2024-scabsolute]] — scAbsolute: per-cell ploidy and S-phase status from shallow scDNA-seq; read density detects recent WGD in amplification-free data and offers an alternative to FACS ploidy sorting.
 
 Over a 3-year remission, an IDH2/NRAS/ASXL1 triple-mutant AML clone expanded from 7% to 64% ([[10-Summaries/pellegrino-2018-tapestri]]). In colorectal patient CRC2, allowing elimination of one ISA-violating mutation (*ATP7B*) changed the inferred number of metastatic seeding events from two to one ([[10-Summaries/malikic-2019-phiscs]]).
 

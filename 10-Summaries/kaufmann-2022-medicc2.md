@@ -7,7 +7,7 @@ source_sha256: "32e0587e36b99462a34fd3cdf41be3e7a7bf819e43877982e49635f35bdc7959
 aliases: ["Kaufmann 2022 MEDICC2", "MEDICC2", "WGD-aware phylogeny"]
 tags: [MEDICC2, copy-number-phylogeny, WGD, whole-genome-doubling, tumor-evolution, Schwarz-lab, BIH-Berlin]
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-10-12
 ---
 
 **Citation:** Kaufmann et al. (2022) — *MEDICC2: whole-genome doubling aware copy-number phylogenies for cancer evolution* — *Genome Biology*. [DOI](https://doi.org/10.1186/s13059-022-02794-9)
@@ -28,6 +28,7 @@ MEDICC2 is the gold-standard phylogenetic reconstruction tool for copy-number-dr
 ## Related
 
 - [[10-Summaries/zaccaria-2021-chisel]]
+- [[10-Summaries/kolbeinsdottir-2025-ascent]] — ASCENT runs MEDICC2 on per-clone allele-specific copy numbers as its final, haplotype-aware phylogeny step.
 - [[10-Summaries/kim-2018-tnbc-chemoresistance]]
 - laks 2019 cell
 - whole genome doubling

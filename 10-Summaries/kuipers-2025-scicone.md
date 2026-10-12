@@ -64,6 +64,9 @@ Weight: the accuracy claims rest on simulations generated under a model close to
 - Data sources: [[zahn-2017-dlp]], [[laks-2019-dlp-plus]], [[navin-2011-sns-tumor-evolution]].
 - Reviews: [[mallory-2020-cna-review]] (HMMcopy parameter recommendations followed here), [[lu-2024-cnaphylogeny-review]], [[wang-2026-multimodal-lineage-computational]].
 - Allele-specific CN and RNA-based CN inference: [[zaccaria-2021-chisel]], [[gao-2021-copykat]], [[tickle-2019-infercnv]]; chemoresistance CN evolution: [[kim-2018-tnbc-chemoresistance]].
+- The SCICoNE simulator was used to validate ploidy calls in [[schneider-2024-scabsolute]] (~2% error on tetraploid cells).
+- Another way to get absolute ploidy at shallow depth: [[kolbeinsdottir-2025-ascent]] (ASCENT) uses fragment overlap in tagmentation scWGS instead of tree-based ploidy comparison.
+- Same premise for haplotype-specific CN, with deep reinforcement learning in place of MCMC: [[ivanovic-2025-cnrein]] (cites SCICoNE-style MCMC on CNA trees as a possible post-processing step).
 
 ## Open questions
 

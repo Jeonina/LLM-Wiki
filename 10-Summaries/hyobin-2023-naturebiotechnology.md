@@ -7,7 +7,7 @@ source_sha256: "6ace081d4e4a4c89dea1e75f1cfc4c49cf3096ee7e22b29dada8e2764d610d21
 aliases: [Jeong 2023, scNOVA, Hyobin 2023, Strand-seq SV functional]
 tags: [Strand-seq, structural-variants, single-cell, nucleosome-occupancy, scNOVA, CLL, method]
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-10-12
 ---
 
 **Citation:** Jeong et al. (2023) — *Functional analysis of structural variants in single cells using Strand-seq (scNOVA)* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-022-01551-4)
@@ -48,6 +48,7 @@ updated: 2026-05-12
 
 - [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] — related single-cell-DNA-mosaicism literature.
 - [[10-Summaries/jiang-2026-stark-scnucleome]] — STARK 3D genome.
+- [[10-Summaries/weber-2023-mosaicatcher-v2]] — MosaiCatcher v2 builds scNOVA in as a downstream module launched with one command, and uses it to compare nucleosome occupancy between subclones.
 
 ---
 **Source:** [DOI](https://doi.org/10.1038/s41587-022-01551-4) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/36424487/)

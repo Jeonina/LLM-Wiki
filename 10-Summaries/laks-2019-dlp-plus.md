@@ -63,8 +63,11 @@ Flow-sorted cell-cycle fractions provide the ground truth for the replication-st
 - Direct successor to [[zahn-2017-dlp|Zahn 2017 (DLP)]], addressing its microfluidic scalability and cell-size limits.
 - Rejects the WGA chemistries of [[dean-2002-mda]], [[telenius-1992-dop-pcr]], [[zong-2017-malbac-protocol]]; contrast the opposite design philosophy in [[gonzalez-pena-2021-pnas|PTA]].
 - Copy-number calling context: [[garvin-2015-natmethods|Ginkgo]], [[bakker-2016-aneufinder|AneuFinder]], [[wang-2020-scope|SCOPE]]; allele-specific copy number in [[zaccaria-2021-chisel|CHISEL]]; LOH framing in [[smukowski-heil-2023-loh]].
+- WGD-aware DLP+ calling that reuses this paper's cell-cycle ploidy ladder: [[wesley-2026-songbird|Songbird]].
 - Phylogenetic downstream: [[kaufmann-2022-medicc2]], [[satas-2020-scarlet]], [[lu-2024-cnaphylogeny-review]].
+- OV2295 cell-line data and their reported SNVs reused as a haplotype-specific CN benchmark in [[ivanovic-2025-cnrein]].
 - Tumor-evolution lineage from [[navin-2011-sns-tumor-evolution]]; chemoresistance application in [[kim-2018-tnbc-chemoresistance]].
+- [[schneider-2024-scabsolute]] reuses DLP+ cell-cycle-sorted libraries: its four-feature S-phase classifier reaches 92% vs this paper's 90%, and it uses read density to resolve G1 vs G2/WGD ploidy in amplification-free data.
 
 ## Open questions
 

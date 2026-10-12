@@ -5,7 +5,7 @@ aliases: [Shao DD]
 entity_kind: person
 tags: [scDNA-seq, mosaicism, neurology, methods-review]
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-10-12
 ---
 
 # Diane D. Shao
@@ -19,6 +19,7 @@ Department of Neurology and Division of Genetics, Boston Children's Hospital and
 ## Mentions
 
 - **2026-05-11** — [[10-Summaries/shao-2025-scDNA-mosaicism-review]]: first author of the keystone scDNA-seq review used as the methodological backbone for this wiki cluster.
+- **2026-10-12** — Co-author of [[10-Summaries/zhao-2025-hiscanner]] (HiScanner), an example of the 'improved CNV callers' her review describes.
 
 ## Positions and claims
 

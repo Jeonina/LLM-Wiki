@@ -5,7 +5,7 @@ aliases: []
 entity_kind: person
 tags: [single-cell, somatic-mosaicism, bioinformatics]
 created: 2026-05-12
-updated: 2026-10-07
+updated: 2026-10-12
 ---
 
 # Lovelace J. Luquette
@@ -17,6 +17,7 @@ updated: 2026-10-07
 - **2026-05-12** — First author of [[10-Summaries/luquette-2025-pta-duplex-mosaicism]].
 - Also co-author on the SMaHT duplex-seq benchmark.
 - **2026-10-07** — First author of [[10-Summaries/luquette-2022-neuron-scan2-indels]] (published SCAN2 study) and co-author of [[10-Summaries/bohrson-2019-lira]] (LiRA).
+- **2026-10-12** — Co-author of [[10-Summaries/zhao-2025-hiscanner]], which reuses his synthetic-diploid-X simulation design and the PTA neuron data.
 
 ## Related
 

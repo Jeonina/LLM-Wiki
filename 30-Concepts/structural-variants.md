@@ -4,7 +4,7 @@ title: Structural variants
 aliases: [SVs, large genomic rearrangements]
 tags: [genome, SV, CNV, inversion, translocation, cancer]
 created: 2026-05-12
-updated: 2026-10-09
+updated: 2026-10-12
 ---
 
 # Structural variants (SVs)
@@ -32,6 +32,7 @@ SVs include:
 
 - [[10-Summaries/liu-2025-nanopore-lscc-svs]] uses nanopore for somatic SV detection in LSCC; finds smoking × deletion-burden correlation and a repeat-expansion regulating *TP53BP2*/*FBXO28*.
 - [[10-Summaries/luquette-2025-pta-duplex-mosaicism]] detects chromosomal rearrangements (including TCR loci) at single-cell scale.
+- [[10-Summaries/weber-2023-mosaicatcher-v2]] calls haplotype-phased SVs in single cells from Strand-seq, with breakpoint resolution limited to 100 kb by read binning. It genotypes inversions and any other SV that has at least 500 bp of uniquely mappable sequence. All 10 WGS-validated copy-number-imbalanced SVs were detected, with no false positives or false negatives ([[10-Summaries/weber-2023-mosaicatcher-v2]]).
 
 ## Definition, mechanisms and interpretation
 

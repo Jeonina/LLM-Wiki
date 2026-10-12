@@ -4,7 +4,7 @@ title: ChIP-seq
 aliases: [chromatin immunoprecipitation sequencing]
 tags: [chromatin, histone-modifications, transcription-factors, bulk]
 created: 2026-05-12
-updated: 2026-10-09
+updated: 2026-10-12
 ---
 
 # ChIP-seq
@@ -37,6 +37,10 @@ Workflow: formaldehyde crosslinking → chromatin shearing (sonication) → anti
 ## Added 2026-10-09 — foundation-model gap evidence
 
 - In CANDI's input-ablation analysis, H3K27me3 and H3K9me3 tracks carried little information for imputing active marks, while H3K27ac and H3K4me3 were imputed with Pearson r > 0.8 in many cell types ([[10-Summaries/foroozandeh-2025-candi]])
+
+## Added 2026-10-12
+
+- ChromBERT turns each Cistrome ChIP-seq profile into five binding-status tokens per 1-kb bin and learns regulator co-binding by masked reconstruction over 2,137,894 bins ([[10-Summaries/yu-2026-chrombert]]).
 
 ## Related
 

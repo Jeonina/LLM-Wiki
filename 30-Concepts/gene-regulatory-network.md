@@ -4,7 +4,7 @@ title: Gene Regulatory Network
 aliases: [GRN, eGRN, regulon, eRegulon, network inference]
 tags: [GRN, transcription-factors, enhancers, network-inference, perturbation]
 created: 2026-08-10
-updated: 2026-10-08
+updated: 2026-10-12
 ---
 
 # Gene Regulatory Network
@@ -40,6 +40,10 @@ The strongest argument for network reasoning: *Gata1*'s mild phenotype in early 
 
 - Running LiNGAM causal discovery on GET's gene-by-motif importance matrix gave 25.2% precision for its top 1% of TF–TF pairs against STRING (random 5.6%), and led to a PAX5–NR2C2 interaction that was confirmed by BioID and strengthened by the B-ALL risk variant G183S ([[10-Summaries/fu-2025-get]]).
 - scDynOmics sizes its low-rank attention space by TF regulon count (no cell expressed more than 700 TFs) and uses Integrated-Gradients attribution to prioritise Pou5f1, Jdp2 and Mbd3 in a 48 h vs 52 h mESC transition, genes that DE analysis missed ([[10-Summaries/yu-2026-scdynomics]])
+
+## Added 2026-10-12
+
+- ChromBERT ranks key regulators by how far their fine-tuned embeddings shift between region sets with different outcomes; on PBMC data, 37 of the 84 regulators it ranked highest were already reported for the matching cell type ([[10-Summaries/yu-2026-chrombert]]).
 
 ## Related
 

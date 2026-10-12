@@ -4,7 +4,7 @@ title: Histone modifications
 aliases: [chromatin marks, post-translational modifications, PTMs, single-cell chromatin, histone marks]
 tags: [chromatin, epigenetics, H3K27me3, H3K4me3, CUT&Tag, ChIC, MNase, enhancers, promoters]
 created: 2026-05-12
-updated: 2026-10-09
+updated: 2026-10-12
 paper_section: ["3.4"]
 ---
 
@@ -129,6 +129,10 @@ Single-cell H3K4me3 shows promoter breadth increasing along OPC → mature oligo
 
 - CANDI (2025 preprint) is a self-supervised transformer that imputes and denoises bulk histone ChIP-seq and accessibility tracks from ENCODE, but it is trained and tested only on bulk data, with no single-cell input ([[10-Summaries/foroozandeh-2025-candi]])
 - A 2025 benchmark (SCIBED) of 10 scRNA/scATAC imputers on sortChIC and scCUT&Tag mouse data found no method that improves both signal and clustering of single-cell histone data, and found no scHPTM-specific or pretrained model to test ([[10-Summaries/morenogonzalez-2025-schistone-imputation]])
+
+## Added 2026-10-12
+
+- ChromBERT (Cell Genomics 2026) is a BERT-style foundation model whose bulk pretraining corpus includes 76 histone modifications alongside 991 transcription regulators and DNase/ATAC, but it has no single-cell histone input and it excludes or ignores histone channels in several downstream tasks ([[10-Summaries/yu-2026-chrombert]]).
 
 ## Related
 

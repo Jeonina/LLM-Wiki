@@ -1,7 +1,7 @@
 ---
 title: Papers
 description: One summary page per source — the distillation layer of the wiki.
-updated: 2026-10-09
+updated: 2026-10-12
 ---
 
 # Papers
@@ -525,6 +525,7 @@ Hub: [[40-Topics/sequence-models-and-foundation-models]].
 
 ### Foundation-model gap evidence (added 2026-10-09)
 
+- [[10-Summaries/yu-2026-chrombert]] — (histone gap) Yu 2026 ChromBERT: BERT pretrained on 6,391 bulk Cistrome profiles (991 TRs, 76 histone marks, DNase/ATAC) in 1-kb bins; not single-cell
 - [[10-Summaries/liu-2024-cot]] — (genotype gap) Liu 2024 (Brief Bioinform): CoT, a transformer autoencoder on scDNA read counts trained per dataset; GMM clones + clone-level HMM CNA calls; beats rcCAE on 10x breast data
 - [[10-Summaries/kong-2026-mutationprojector]] — (genotype gap) Kong 2026 (Cancer Discov): MutationProjector, a graph-attention FM over 468 panel genes × 8 molecular networks, pretrained on 30,328 bulk tumours; predicts ICI/chemo response
 - [[10-Summaries/sidhom-2026-tessera]] — (genotype gap) Sidhom 2026 (bioRxiv): TESSERA, a cancer-genome FM pretrained on TCGA bulk WES SNVs + ABSOLUTE CNA segments; frozen embeddings reused for typing, prognosis, chemo selection

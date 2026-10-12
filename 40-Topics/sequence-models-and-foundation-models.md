@@ -4,9 +4,9 @@ title: Sequence models and foundation models
 aliases: [genomic foundation models, sequence-based prediction, scFM, foundation models, sequence models]
 tags: [foundation-model, dna-language-model, sequence-to-function, single-cell-foundation-model, deep-learning]
 created: 2026-10-08
-updated: 2026-10-09
+updated: 2026-10-12
 paper_section: ["4.4"]
-description: "Hub for §4.4: supervised sequence-to-function models, DNA language models, single-cell epigenome and multimodal foundation models (64 papers, 2026-10-08), plus evidence for the genotype, histone and somatic-variant gaps (10 papers, 2026-10-09)."
+description: "Hub for §4.4: supervised sequence-to-function models, DNA language models, single-cell epigenome and multimodal foundation models (64 papers, 2026-10-08), plus evidence for the genotype, histone and somatic-variant gaps (11 papers, 2026-10-09/12)."
 ---
 
 # Sequence models and foundation models
@@ -23,13 +23,13 @@ description: "Hub for §4.4: supervised sequence-to-function models, DNA languag
 
 ## Where this sits in the review (synthesis)
 
-- **Every DNA layer except genotype and histone has a pretrained model here.** Accessibility (Atacformer, CLM-access, EpiFoundation, EpiZoo, GET), methylation (scDNAm-GPT; bulk CpGPT and MethylGPT) and 3D (HiCFoundation, Evo2HiC) are covered; no model in this set is pretrained on histone-modification profiles or on single-cell genotypes (CNV/SNV).
+- **Every DNA layer except genotype has a pretrained model here, and histone only in bulk.** Accessibility (Atacformer, CLM-access, EpiFoundation, EpiZoo, GET), methylation (scDNAm-GPT; bulk CpGPT and MethylGPT) and 3D (HiCFoundation, Evo2HiC) are covered; ChromBERT pretrains on bulk Cistrome profiles that include 76 histone marks, but no model is pretrained on single-cell histone data or on single-cell genotypes (CNV/SNV).
 - **Sequence priors are entering single-cell epigenomics.** GFETM, EpiZoo, CpGPT and Evo2HiC all reuse DNA-LM embeddings ([[10-Summaries/fan-2026-gfetm]]; [[10-Summaries/li-2026-epizoo]]; [[10-Summaries/delimacamillo-2024-cpgpt]]; [[10-Summaries/fang-2025-evo2hic]]).
 - **Variant scoring is germline-centred.** Benchmarks are eQTL, caQTL and ClinVar; somatic and single-cell genotype inputs are largely untested (see [[variant-effect-prediction]]).
 
 ## Evidence for the three gaps (added 2026-10-09)
 
-Papers found by a verified literature search (Europe PMC, PubMed, arXiv; 2026-10-08) to test whether the gaps above were search gaps or real absences. All three held for single-cell data. ChromBERT (Yu 2026, Cell Genomics), a bulk ChIP-seq model with histone channels, is pending a clipping.
+Papers found by a verified literature search (Europe PMC, PubMed, arXiv; 2026-10-08) to test whether the gaps above were search gaps or real absences. All three held for single-cell data.
 
 ### Genotype layer — no single-cell genotype foundation model
 
@@ -39,6 +39,7 @@ Papers found by a verified literature search (Europe PMC, PubMed, arXiv; 2026-10
 
 ### Histone layer — no single-cell histone foundation model
 
+- ChromBERT shows that a bulk regulatory foundation model has been pretrained with 76 histone-modification ChIP-seq channels among 6,391 Cistrome profiles, so the gap holds only for foundation models pretrained on single-cell histone data or built mainly around histone marks ([[10-Summaries/yu-2026-chrombert]]).
 - CANDI is the nearest histone-inclusive pretrained epigenome model, but it is self-supervised on bulk ENCODE tracks (35 assays across 361 merged cell types), is never called a foundation model and has no single-cell input, so it does not close the single-cell histone gap ([[10-Summaries/foroozandeh-2025-candi]])
 - The first scHPTM imputation benchmark could test only borrowed, non-pretrained scRNA/scATAC tools, because no imputation or cross-modality method exists for single-cell histone data; none of them improved both signal and clustering, and the authors list neighbouring-bin, cell-type-prior and multi-mark models as missing ([[10-Summaries/morenogonzalez-2025-schistone-imputation]])
 
@@ -137,7 +138,7 @@ RNA + ATAC single-cell models, and sequence-conditioned multimodal models.
 - [[10-Summaries/li-2026-clm-x]] — **CLM-X** (2026): CLM-X: BEiT-3 multiway Transformer pretrained on 36M scRNA + 2.8M scATAC + 377k pseudo-paired cells; best RNA↔ATAC translation (lowest RMSE 7/7 datasets)
 - [[10-Summaries/yu-2026-scdynomics]] — **scDynOmics** (2026): scDynOmics: ~80M-param Linformer transformer with TF-guided attention, pretrained on 752k mouse multiome cells (promoter-ATAC per gene); LoRA adapters + IG attribution
 
-### Gap evidence (10, added 2026-10-09)
+### Gap evidence (11, added 2026-10-09 / 10-12)
 
 - [[10-Summaries/liu-2024-cot]] — (genotype gap) Liu 2024 (Brief Bioinform): CoT, a transformer autoencoder on scDNA read counts trained per dataset; GMM clones + clone-level HMM CNA calls; beats rcCAE on 10x breast data
 - [[10-Summaries/kong-2026-mutationprojector]] — (genotype gap) Kong 2026 (Cancer Discov): MutationProjector, a graph-attention FM over 468 panel genes × 8 molecular networks, pretrained on 30,328 bulk tumours; predicts ICI/chemo response
@@ -149,6 +150,7 @@ RNA + ATAC single-cell models, and sequence-conditioned multimodal models.
 - [[10-Summaries/fischbach-2026-alphagenome-aging]] — (somatic variants gap) Fischbach 2026 — AlphaGenome RNA-seq scores for Cagan 2022 colon-crypt somatic SNVs/indels sit 10^3–10^4× below the aging transcriptome; argues against mutation accumulation
 - [[10-Summaries/gjoni-2026-pediatric-tumor-3d]] — (somatic variants gap) SuPreMo-Akita scores ~300k somatic SVs from 1,843 CBTN paediatric tumours for predicted 3D-contact disruption; 5 recurrent hotspots, ABC enhancer weighting; no benchmark
 - [[10-Summaries/terekhanova-2026-tal1-enhancer]] — (somatic variants gap) Terekhanova 2026 — T-ALL somatic indels/ITDs reactivate a TAL1 progenitor enhancer (short isoform, exon-4 TSS); AlphaGenome under-predicts this held-out region
+- [[10-Summaries/yu-2026-chrombert]] — (histone gap) Yu 2026 ChromBERT: BERT pretrained on 6,391 bulk Cistrome profiles (991 TRs, 76 histone marks, DNase/ATAC) in 1-kb bins; not single-cell
 
 ### Earlier wiki sources on the same theme
 

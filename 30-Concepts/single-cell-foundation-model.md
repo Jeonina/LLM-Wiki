@@ -4,7 +4,7 @@ title: Single-cell foundation model
 aliases: [scFM, single-cell FM, epigenome foundation model, cell language model, scATAC foundation model, methylation foundation model]
 tags: [foundation-model, single-cell, scATAC-seq, DNA-methylation, multi-omics, transfer-learning]
 created: 2026-10-08
-updated: 2026-10-09
+updated: 2026-10-12
 ---
 
 # Single-cell foundation model
@@ -19,7 +19,7 @@ Transcriptome models such as scGPT set the pattern: tokenise each cell, pretrain
 
 - DNA-layer single-cell data are sparse (see [[scatac-imputation]]), and pretraining on millions of cells is one way to borrow strength across datasets: EpiZoo is pretrained on ~20.9M scATAC cells and scDNAm-GPT on ~1M single-cell methylomes ([[10-Summaries/li-2026-epizoo]]; [[10-Summaries/liang-2025-scdnam-gpt]]).
 - The multimodal models are the first to pretrain jointly on RNA and accessibility ([[10-Summaries/liu-2025-scarf]]; [[10-Summaries/li-2026-clm-x]]; [[10-Summaries/liu-2025-scmomer]]; [[10-Summaries/yu-2026-scdynomics]]), which bears on [[multimodal-integration-methods]].
-- **Layer coverage is uneven** (synthesis): this set has accessibility, methylation and 3D models but no histone-modification model and no genotype-layer (CNV/SNV) model.
+- **Layer coverage is uneven** (synthesis): this set has accessibility, methylation and 3D models; histone marks appear only as channels in bulk models such as ChromBERT ([[10-Summaries/yu-2026-chrombert]]), and there is no single-cell histone or genotype-layer (CNV/SNV) model.
 
 ## Variants and refinements
 
@@ -59,6 +59,10 @@ Transcriptome models such as scGPT set the pattern: tokenise each cell, pretrain
 - As of late 2025 no pretrained model existed for single-cell histone modification data: the first scHPTM imputation benchmark tested only scRNA/scATAC tools (SAVER, scImpute, MAGIC, scOpen, SCALE, cisTopic and others) ([[10-Summaries/morenogonzalez-2025-schistone-imputation]])
 - MutationProjector pretrains a graph-attention model by masked-gene reconstruction on 30,328 bulk GENIE and TCGA tumours and reuses the frozen embedding for immunotherapy, chemotherapy, metastasis and tissue-of-origin prediction, but it has no single-cell counterpart ([[10-Summaries/kong-2026-mutationprojector]])
 - TESSERA shows that a self-supervised genotype foundation model exists at bulk-tumour resolution: it pretrains on TCGA WES SNVs and ABSOLUTE copy-number segments and is reused frozen across tasks, but it embeds one bulk profile per tumour, not cells ([[10-Summaries/sidhom-2026-tessera]])
+
+## Added 2026-10-12
+
+- ChromBERT is pretrained only on bulk Cistrome profiles (6,391 ChIP-seq, DNase-seq and ATAC-seq cistromes in 1-kb bins, no DNA sequence) and reaches single cells only through scGPT transcriptome prompts and pseudobulk PBMC fine-tuning ([[10-Summaries/yu-2026-chrombert]]).
 
 ## Related
 

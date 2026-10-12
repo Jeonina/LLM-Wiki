@@ -4,6 +4,15 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+# 2026-10-12 — Ingest: ChromBERT (histone-gap evidence)
+
+[[10-Summaries/yu-2026-chrombert]] (Cell Genomics 2026, full PDF incl. supplementary figure legends). The paper confirms in its main text that the 6,391-cistrome pretraining corpus covers 991 transcription regulators, **76 histone modifications** and DNase/ATAC; the number of histone profiles is only in Table S1, which is not in the source. Several downstream analyses exclude histone and accessibility channels. ChromBERT takes no DNA sequence and reaches single cells only via scGPT prompts and pseudobulk fine-tuning.
+
+- **Effect on the histone gap:** a bulk foundation model with histone channels exists; the gap now reads "no foundation model pretrained on single-cell histone data or built mainly around histone marks". Updated the hub ([[40-Topics/sequence-models-and-foundation-models]]: "Where this sits", gap-evidence section and source list) and the layer-coverage sentence on [[30-Concepts/single-cell-foundation-model]].
+- **Pages updated (6):** single-cell-foundation-model, chip-seq, gene-regulatory-network, histone-modifications, the hub, and the summary catalog (442 entries). The workbook cell C88 ("histone 포함") was already correct and was left unchanged.
+
+---
+
 # 2026-10-09 — Ingest: 10 papers that test the foundation-model gaps
 
 After the 2026-10-08 ingest, three gaps were flagged: no single-cell genotype foundation model, no histone foundation model, and almost no somatic evaluation of sequence models. A verified literature search (three read-only agents; Europe PMC, PubMed, arXiv; every DOI resolved via Crossref) checked whether these were search gaps. All three held for single-cell data. The user added the evidence papers to the paper-list workbook (Challenges sheet, rows 85–95) and clipped them; ChromBERT (Yu 2026, Cell Genomics) is pending a clipping.

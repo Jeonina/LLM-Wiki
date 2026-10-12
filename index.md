@@ -55,7 +55,7 @@ How each layer is read from a single cell's one copy of DNA.
 > - `synthesis · 6 papers` [[50-Notes/methylation-cancer-origin-classifiers|Methylation-based cancer-of-origin classifiers — clinical-grade epigenetic memory]] — DNA methylation patterns are heritable across cell divisions and act as a record of cell-type identity.
 
 > [!cards] Histone modification
-> - `hub · 36 papers` [[40-Topics/histone-modifications|Histone modifications]] — Post-translational modifications of histone tails — methylation, acetylation, ubiquitylation, phosphorylation — that demarcate functional chromatin states.
+> - `hub · 37 papers` [[40-Topics/histone-modifications|Histone modifications]] — Post-translational modifications of histone tails — methylation, acetylation, ubiquitylation, phosphorylation — that demarcate functional chromatin states.
 > - `synthesis · 9 papers` [[50-Notes/mnase-vs-tn5-chromatin|MNase vs Tn5 — two chemistries for single-cell histone profiling]] — Single-cell histone-modification profiling splits cleanly into two chemistry lineages.
 
 > [!cards] 3D genome
@@ -78,7 +78,7 @@ From per-layer inference to cross-layer integration.
 > - `concept · 26 papers` [[30-Concepts/multimodal-integration-methods|Multimodal integration methods]] — Computational methods for combining multiple single-cell omics modalities — paired (measured on the same cells) or unpaired (separate cell populations) — int…
 
 > [!cards] Sequence-based prediction & foundation models
-> - `hub · 78 papers` [[40-Topics/sequence-models-and-foundation-models|Sequence models and foundation models]] — Hub for §4.4: supervised sequence-to-function models, DNA language models, single-cell epigenome and multimodal foundation models (64 papers, 2026-10-08), plus evidence for the genotype, histone and somatic-variant gaps (10 papers, 2026-10-09).
+> - `hub · 79 papers` [[40-Topics/sequence-models-and-foundation-models|Sequence models and foundation models]] — Hub for §4.4: supervised sequence-to-function models, DNA language models, single-cell epigenome and multimodal foundation models (64 papers, 2026-10-08), plus evidence for the genotype, histone and somatic-variant gaps (11 papers, 2026-10-09/12).
 
 > [!cards] Locus-state inference
 > - `synthesis · 35 papers` [[50-Notes/computational-framework-structure|Computational framework — how to structure the review's main section]] — Draft scaffold (not prose) for the manuscript's main section.

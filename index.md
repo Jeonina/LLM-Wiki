@@ -37,7 +37,7 @@ How each layer is read from a single cell's one copy of DNA.
 > [!cards] Genotype
 > - `hub · 18 papers` [[40-Topics/duplex-sequencing|Duplex sequencing]] — Duplex sequencing (DS) is a single-molecule NGS strategy that tags both the Watson and Crick strands of each input dsDNA molecule with complementary UMIs, se…
 > - `hub · 23 papers` [[40-Topics/scdna-seq|Single-cell DNA sequencing (scDNA-seq)]] — Umbrella term for technologies that interrogate the DNA of single cells — either by amplifying single-cell genomes  or by reading single DNA molecules with s…
-> - `hub · 15 papers` [[40-Topics/whole-genome-amplification|Whole-genome amplification (scWGA)]] — The set of biochemical methods that bridge the ~6 pg of DNA in a single diploid cell to the input requirement of any sequencing platform.
+> - `hub · 15 papers` [[40-Topics/whole-genome-amplification|Whole-genome amplification (scWGA)]] — The set of biochemical methods that bridge the ~6 pg of DNA in a single diploid cell  to the input requirement of any sequencing platform.
 > - `synthesis · 12 papers` [[50-Notes/single-cell-duplex-sequencing|Single-cell duplex sequencing — the methodological frontier closes]] — For ~13 years (2012-2025), single-cell DNA sequencing and duplex sequencing were incompatible — duplex requires strand identity preserved through library pre…
 > - `synthesis · 17 papers` [[50-Notes/pta-inflection-point|The PTA inflection point — when scDNA-seq became trustworthy]] — Around 2020-2021, single-cell DNA sequencing crossed a methodological threshold: Primary Template-Directed Amplification (PTA) displaced multiple displacemen…
 
@@ -59,8 +59,8 @@ How each layer is read from a single cell's one copy of DNA.
 > - `synthesis · 9 papers` [[50-Notes/mnase-vs-tn5-chromatin|MNase vs Tn5 — two chemistries for single-cell histone profiling]] — Single-cell histone-modification profiling splits cleanly into two chemistry lineages.
 
 > [!cards] 3D genome
-> - `hub · 43 papers` [[40-Topics/3d-genome|3D genome]] — The three-dimensional organization of DNA within the nucleus — chromosome territories, A/B compartments (active vs inactive), topologically associating domai…
-> - `hub · 36 papers` [[40-Topics/chromatin-architecture|Chromatin architecture]] — How DNA is packaged with proteins (nucleosomes, TFs, cohesin/CTCF, polycomb, …) along chromosomes, and how that packaging is heterogeneous across fibers, hap…
+> - `hub · 44 papers` [[40-Topics/3d-genome|3D genome]] — The three-dimensional organization of DNA within the nucleus — chromosome territories, A/B compartments (active vs inactive), topologically associating domai…
+> - `hub · 36 papers` [[40-Topics/chromatin-architecture|Chromatin architecture]] — How DNA is packaged with proteins (nucleosomes, TFs, cohesin/CTCF, polycomb, …) along chromosomes, and how that packaging varies across fibers, haplotypes an…
 
 ### §4 Computational framework
 
@@ -78,7 +78,7 @@ From per-layer inference to cross-layer integration.
 > - `concept · 26 papers` [[30-Concepts/multimodal-integration-methods|Multimodal integration methods]] — Computational methods for combining multiple single-cell omics modalities — paired (measured on the same cells) or unpaired (separate cell populations) — int…
 
 > [!cards] Sequence-based prediction & foundation models
-> - `hub · 79 papers` [[40-Topics/sequence-models-and-foundation-models|Sequence models and foundation models]] — Hub for §4.4: supervised sequence-to-function models, DNA language models, single-cell epigenome and multimodal foundation models (64 papers, 2026-10-08), plus evidence for the genotype, histone and somatic-variant gaps (11 papers, 2026-10-09/12).
+> - `hub · 79 papers` [[40-Topics/sequence-models-and-foundation-models|Sequence models and foundation models]] — Hub for §4.4: supervised sequence-to-function models, DNA language models, single-cell epigenome and multimodal foundation models, plus evidence for the genotype, histone and somatic-variant gaps.
 
 > [!cards] Locus-state inference
 > - `synthesis · 35 papers` [[50-Notes/computational-framework-structure|Computational framework — how to structure the review's main section]] — Draft scaffold (not prose) for the manuscript's main section.
@@ -88,7 +88,7 @@ From per-layer inference to cross-layer integration.
 Where single-cell DNA layers answer biological questions.
 
 > [!cards] Cancer clonal architecture
-> - `hub · 43 papers` [[40-Topics/cancer-clonal-evolution|Cancer clonal evolution]] — The accumulation of somatic mutations and clonal selection that shapes tumor heterogeneity, treatment response, and metastasis.
+> - `hub · 43 papers` [[40-Topics/cancer-clonal-evolution|Cancer clonal evolution]] — The accumulation of somatic mutations and clonal selection that shapes tumor heterogeneity, treatment response and metastasis.
 > - `hub · 14 papers` [[40-Topics/hematopoietic-malignancies|Hematopoietic malignancies]] — Cancers and pre-cancerous clonal expansions arising from hematopoietic stem and progenitor cells.
 > - `hub · 21 papers` [[40-Topics/scdna-cancer-applications|scDNA-seq in cancer applications]] — Single-cell DNA sequencing in cancer research and clinical applications — intratumor heterogeneity, chemoresistance evolution, metastatic clonal lineage, cop…
 
@@ -100,7 +100,7 @@ Where single-cell DNA layers answer biological questions.
 > - `hub · 10 papers` [[40-Topics/clonal-hematopoiesis|Clonal hematopoiesis]] — Age-related mosaic expansion of a hematopoietic stem cell (HSC) clone carrying a recurrent somatic driver mutation (DNMT3A, TET2, JAK2 V617F, CALR, ASXL1), d…
 
 > [!cards] Development & lineage tracing
-> - `hub · 30 papers` [[40-Topics/single-cell-lineage-tracing|Single-cell lineage tracing]] — Methods and algorithms that reconstruct the ancestry of individual cells — which cell came from which — to study development, ageing, regeneration, and cance…
+> - `hub · 30 papers` [[40-Topics/single-cell-lineage-tracing|Single-cell lineage tracing]] — Methods and algorithms that reconstruct the ancestry of individual cells — which cell came from which — to study development, ageing, regeneration and cancer…
 
 ### §6–7 Limitations & future
 

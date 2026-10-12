@@ -4,53 +4,89 @@ title: Long-read sequencing
 aliases: [PacBio, Oxford Nanopore, ONT, HiFi, long-read]
 tags: [sequencing, long-read, third-generation]
 created: 2026-05-11
-updated: 2026-10-07
+updated: 2026-10-12
 paper_section: ["3.2.1"]
 ---
 
 # Long-read sequencing
 
-> Third-generation sequencing technologies that read DNA molecules of kilobases to hundreds of kilobases in single contiguous reads — the two dominant platforms being **PacBio HiFi** (circular consensus, high accuracy) and **Oxford Nanopore (ONT)** — enabling direct detection of base modifications, phasing across long-range variants, and assembly across repeats that short-read sequencing cannot resolve.
+> Third-generation sequencing technologies that read DNA molecules of kilobases to hundreds of kilobases in single contiguous reads — the two dominant platforms being **PacBio HiFi** (circular consensus, high accuracy) and **Oxford Nanopore (ONT)** — enabling direct detection of base modifications, phasing across long-range variants, and assembly across repeats that short-read sequencing cannot resolve ([[10-Summaries/fu-2025-longread-methylation|Fu 2025]]; [[10-Summaries/liu-2025-long-read-epigenome-review|Liu & Conesa 2025]]).
 
-Long-read sequencing is the enabling platform layer beneath several recent breakthroughs in this vault: single-molecule chromatin footprinting ([[fiber-seq]] per [[10-Summaries/andrewb-2020-science]]; [[daf-seq]] per [[10-Summaries/swanson-2025-daf-seq]]), direct methylation detection without bisulfite conversion ([[10-Summaries/fu-2025-longread-methylation]]; [[10-Summaries/liu-2025-long-read-epigenome-review]]), scDAF-seq chromosome-length consensus reads ([[10-Summaries/swanson-2025-daf-seq]]), and duplex sequencing variants like HiDEF-seq ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
+> [!abstract] 한눈에
+> Long-read 시퀀싱은 bisulfite 변환 없이 native DNA에서 5mC·5hmC·6mA·4mC를 직접 읽고, short read로는 닿지 않는 centromere·telomere·rDNA까지 읽어 낸다 ([[10-Summaries/fu-2025-longread-methylation|Fu 2025]]; [[10-Summaries/liu-2025-long-read-epigenome-review|Liu & Conesa 2025]]). 단일 세포에서는 Fiber-seq·DAF-seq 같은 단일 분자 크로마틴 footprinting과 단일 세포 long-read WGS의 기반 플랫폼이 되었다 ([[10-Summaries/swanson-2025-daf-seq|Swanson 2025]]; [[10-Summaries/hard-2023-long-read-scwgs|Hård 2023]]).
+
+## Key points
+
+- **Methylation is read directly, without base conversion.** Native long reads detect 5mC, 5hmC, 6mA and 4mC and sidestep the three-base alignment problem of bisulfite sequencing ([[10-Summaries/fu-2025-longread-methylation|Fu 2025]]).
+- **Highly repetitive regions become resolvable.** Centromeres, telomeres and rDNAs are accessible only with long reads ([[10-Summaries/liu-2025-long-read-epigenome-review|Liu & Conesa 2025]]).
+- **Long reads carry single-molecule chromatin footprinting.** Fiber-seq (m6A, PacBio) and DAF-seq (deaminase, PacBio + PTA) depend on them, and scDAF-seq is currently the most successful single-cell long-read application ([[10-Summaries/andrewb-2020-science|Stergachis 2020]]; [[10-Summaries/swanson-2025-daf-seq|Swanson 2025]]).
+- **Single-cell long-read WGS works but has a chimera problem.** PacBio HiFi WGS of single human cells after droplet MDA is strong for SNVs, indel-type SVs and tandem repeats, but chimeras make inversion and duplication calls unusable ([[10-Summaries/hard-2023-long-read-scwgs|Hård 2023]]).
+- **PacBio passes, not length, power duplex mutation calling.** HiDEF-seq builds per-strand consensus from ~32 passes on median 1.7 kb molecules ([[10-Summaries/liu-2024-hidef-seq|HiDEF-seq]]).
+
+## Start here
+
+> [!cards]
+> - `concept` [[30-Concepts/pacbio|PacBio]] — SMRT sequencing; circular consensus gives high-accuracy (>99.9%) HiFi reads.
+> - `concept` [[30-Concepts/oxford-nanopore|Oxford Nanopore]] — DNA threads through a protein nanopore; current changes are decoded into bases, including modified bases.
+> - `concept` [[30-Concepts/fiber-seq|Fiber-seq]] — m6A-based single-molecule chromatin footprinting read on PacBio.
+> - `concept` [[30-Concepts/daf-seq|DAF-seq]] — Deaminase-based single-molecule chromatin footprinting read on PacBio.
+> - `concept` [[30-Concepts/nanopore-adaptive-sampling|Nanopore adaptive sampling]] — Real-time read selection for targeted sequencing.
+> - `note` [[50-Notes/regulatory-layers-overview|Regulatory layers overview]] — Long-read methods read accessibility, methylation and 3D contacts on the same fiber.
 
 ## Platforms and how they work
 
-- **PacBio HiFi (SMRT sequencing)**: a polymerase incorporates fluorescent nucleotides at the bottom of a zero-mode waveguide; pulse-width and inter-pulse duration during incorporation are altered by base modifications. Circular consensus sequencing (CCS) of the same molecule produces high-accuracy long reads (>99.9%) ([[10-Summaries/fu-2025-longread-methylation]]).
-- **Oxford Nanopore (ONT)**: DNA threads through a protein nanopore; electrolytic current changes are interpreted by HMMs / CNNs to call bases — including modified bases that produce distinct current signatures ([[10-Summaries/fu-2025-longread-methylation]]).
+| Platform | Principle | Note |
+|---|---|---|
+| PacBio HiFi (SMRT) | A polymerase incorporates fluorescent nucleotides at the bottom of a zero-mode waveguide; pulse width and inter-pulse duration shift at modified bases | Circular consensus sequencing of the same molecule gives >99.9% accurate long reads ([[10-Summaries/fu-2025-longread-methylation\|Fu 2025]]) |
+| Oxford Nanopore (ONT) | DNA threads through a protein nanopore; HMMs or CNNs decode the current changes | Modified bases produce distinct current signatures ([[10-Summaries/fu-2025-longread-methylation\|Fu 2025]]) |
+| PacBio Revio | — | Current high-throughput HiFi platform (synthesis) |
+| ONT PromethION | — | High-throughput nanopore platform; supports R10.4.1+ chemistry with higher accuracy (synthesis) |
 
-### Platform variants and tooling
-
-- **PacBio Revio** — current high-throughput HiFi platform (synthesis).
-- **ONT PromethION** — high-throughput nanopore platform; supports R10.4.1+ chemistry with higher accuracy (synthesis).
-- **Methylation callers**: Jasmine, ccsmeth (PacBio); Nanopolish, DeepSignal, DeepMod2, Rockfish, Dorado (ONT) ([[10-Summaries/fu-2025-longread-methylation]]).
+Methylation callers: Jasmine and ccsmeth (PacBio); Nanopolish, DeepSignal, DeepMod2, Rockfish and Dorado (ONT) ([[10-Summaries/fu-2025-longread-methylation|Fu 2025]]).
 
 ## Why it matters
 
-- **No base conversion required** for methylation detection — sidesteps the three-base alignment problem of [[bisulfite-sequencing]] ([[10-Summaries/fu-2025-longread-methylation]]; [[10-Summaries/liu-2025-long-read-epigenome-review]]).
-- **Direct detection of multiple modifications**: 5mC, 5hmC, 6mA, 4mC ([[10-Summaries/fu-2025-longread-methylation]]).
-- **Phasing across long distances**: structural variants, repeat expansions, and imprinted regions become tractable, enabling phased / allele-specific methylation ([[10-Summaries/fu-2025-longread-methylation]]).
-- **Single-molecule resolution** without amplification: native DNA is read directly, preserving any per-molecule information ([[10-Summaries/fu-2025-longread-methylation]]).
-- **Access to highly repetitive regions** — centromeres, telomeres, and rDNAs become resolvable only with long reads ([[10-Summaries/liu-2025-long-read-epigenome-review]]).
-- **Enabling platform for** [[fiber-seq]] (m6A footprinting via PacBio) and [[daf-seq]] (deaminase footprinting via PacBio + PTA) ([[10-Summaries/andrewb-2020-science]]; [[10-Summaries/swanson-2025-daf-seq]]).
+- **No base conversion** for methylation detection — sidesteps the three-base alignment problem of [[bisulfite-sequencing]] ([[10-Summaries/fu-2025-longread-methylation|Fu 2025]]; [[10-Summaries/liu-2025-long-read-epigenome-review|Liu & Conesa 2025]]). See [[30-Concepts/bisulfite-sequencing]], the short-read alternative long-read methods supplant, and [[40-Topics/dna-methylation]].
+- **Several modifications at once**: 5mC, 5hmC, 6mA, 4mC ([[10-Summaries/fu-2025-longread-methylation|Fu 2025]]).
+- **Long-range phasing**: structural variants, repeat expansions and imprinted regions become tractable, enabling phased, [[30-Concepts/allele-specific-methylation|allele-specific methylation]] ([[10-Summaries/fu-2025-longread-methylation|Fu 2025]]).
+- **Single-molecule resolution without amplification**: native DNA is read directly, preserving per-molecule information ([[10-Summaries/fu-2025-longread-methylation|Fu 2025]]).
+- **[[30-Concepts/highly-repetitive-regions|Highly repetitive regions]]** — centromeres, telomeres and rDNAs — become resolvable only with long reads ([[10-Summaries/liu-2025-long-read-epigenome-review|Liu & Conesa 2025]]).
+- **Platform for chromatin footprinting**: [[fiber-seq]] (m6A footprinting via PacBio) and [[daf-seq]] (deaminase footprinting via PacBio + PTA) ([[10-Summaries/andrewb-2020-science|Stergachis 2020]]; [[10-Summaries/swanson-2025-daf-seq|Swanson 2025]]).
 
-## Core methods and concepts
+Reviews: computational long-read methylation analysis ([[10-Summaries/fu-2025-longread-methylation|Fu 2025]]) and the broader long-read epigenome — methylation, accessibility, 3D and transcriptomic long-read sequencing ([[10-Summaries/liu-2025-long-read-epigenome-review|Liu & Conesa 2025]]).
 
-- [[30-Concepts/oxford-nanopore]] — ONT platform.
-- [[30-Concepts/pacbio]] — PacBio SMRT platform.
-- [[30-Concepts/fiber-seq]] — m6A-based single-molecule chromatin footprinting (PacBio).
-- [[30-Concepts/daf-seq]] — deaminase-based single-molecule chromatin footprinting (PacBio).
-- [[40-Topics/duplex-sequencing]] — HiDEF-seq is a long-read (PacBio) duplex variant; SMM-seq is sequenced on Illumina ([[10-Summaries/maslov-2022-smm-seq]]).
-- [[30-Concepts/bisulfite-sequencing]] — short-read alternative that long-read methods supplant for methylation.
-- [[40-Topics/dna-methylation]] — directly read without conversion via long-read base modification calling.
-- [[30-Concepts/samosa]], [[30-Concepts/samosa-tag]], [[30-Concepts/smrt-tag]] — PacBio chromatin-accessibility methods.
-- [[30-Concepts/stam-seq]] — plant nanopore chromatin + methylation method.
-- [[30-Concepts/nanopore-adaptive-sampling]] — real-time read selection for targeted sequencing.
-- [[30-Concepts/highly-repetitive-regions]] — centromeres, telomeres, rDNAs — accessible only with LRS.
-- [[30-Concepts/structural-variants]], [[30-Concepts/somagauss-sv]] — somatic SV detection.
-- [[30-Concepts/allele-specific-methylation]] — phased methylation via long reads.
+## Single-molecule chromatin on long reads
 
-## Key entities
+| Method | Year | Platform | Note |
+|---|---|---|---|
+| [[10-Summaries/andrewb-2020-science\|Fiber-seq]] | 2020 | PacBio | m6A methyltransferase stenciling of chromatin fibers ([[10-Summaries/andrewb-2020-science\|Stergachis 2020]]) |
+| [[10-Summaries/abdulhay-2020-samosa\|SAMOSA]] | 2020 | PacBio | Single-molecule oligonucleosome footprinting, Ramani lab ([[10-Summaries/abdulhay-2020-samosa\|SAMOSA]]) |
+| [[10-Summaries/mo-2023-stam-seq\|STAM-seq]] | 2023 | ONT, adaptive sampling | Accessibility + methylation in plant highly repetitive regions ([[10-Summaries/mo-2023-stam-seq\|STAM-seq]]) |
+| [[10-Summaries/nanda-2024-smrt-tag\|SMRT-Tag / SAMOSA-Tag]] | 2024 | PacBio | Tagmentation for PacBio at 40 ng input, Ramani lab ([[10-Summaries/nanda-2024-smrt-tag\|SMRT-Tag]]) |
+| [[10-Summaries/swanson-2025-daf-seq\|DAF-seq / scDAF-seq]] | 2025 | PacBio HiFi (+ PTA) | Reads deamination patterns at >25,000× depth on targeted loci; chromosome-length single-cell consensus reads ([[10-Summaries/swanson-2025-daf-seq\|Swanson 2025]]) |
+
+Related concepts: [[30-Concepts/samosa]], [[30-Concepts/samosa-tag]], [[30-Concepts/smrt-tag]] (PacBio chromatin-accessibility methods), [[30-Concepts/stam-seq]] (plant nanopore chromatin + methylation) and [[30-Concepts/nanopore-adaptive-sampling]].
+
+## Single-cell long-read genomics and multiomics
+
+| Study | Year | Platform | Design | Key finding |
+|---|---|---|---|---|
+| [[10-Summaries/nam-2019-got\|GoT]] | 2019 | ONT | Validation of distal loci | Oxford Nanopore used to validate Genotyping of Transcriptomes at distal loci ([[10-Summaries/nam-2019-got\|Nam 2019]]) |
+| [[10-Summaries/hard-2023-long-read-scwgs\|Hård 2023]] | 2023 | PacBio HiFi | Droplet MDA, genome-wide | First genome-wide long-read WGS of single human cells; strong for SNVs, indel-type SVs and TRs, but chimeras make inversion and duplication calls unusable ([[10-Summaries/hard-2023-long-read-scwgs\|Hård 2023]]) |
+| [[10-Summaries/li-2023-scnanohi-c\|scNanoHi-C]] | 2023 | Nanopore | Concatemer sequencing | Single-cell Hi-C read as long concatemers ([[10-Summaries/li-2023-scnanohi-c\|scNanoHi-C]]) |
+| [[10-Summaries/li-2024-scnanoseq-cut-tag\|scNanoSeq-CUT&Tag]] | 2024 | Nanopore | Single-cell CUT&Tag | Per-copy L1Hs chromatin states ([[10-Summaries/li-2024-scnanoseq-cut-tag\|scNanoSeq-CUT&Tag]]) |
+| [[10-Summaries/li-2025-scnanoatac-seq2\|scNanoATAC-seq2]] | 2025 | Nanopore | Single-cell ATAC | Allele- and repeat-copy-resolved accessibility ([[10-Summaries/li-2025-scnanoatac-seq2\|scNanoATAC-seq2]]) |
+| [[10-Summaries/pancikova-2025-splongget\|SPLONGGET]] | 2025 | ONT PromethION | 10x Multiome, targeted re-enrichment | Genome + accessibility + full-length transcriptome per cell; CD19 splice-site escape in B-ALL (preprint) ([[10-Summaries/pancikova-2025-splongget\|SPLONGGET]]) |
+
+## Somatic mutations and structural variants
+
+- **Duplex consensus from passes.** HiDEF-seq uses PacBio long reads not for length but for passes: ~32 independent passes per strand on median 1.7 kb molecules build a per-strand consensus good enough to call substitutions on unamplified single molecules ([[10-Summaries/liu-2024-hidef-seq|HiDEF-seq]]). It reaches an error rate of ~7 × 10⁻¹⁶ via PacBio circular-consensus duplex sequencing ([[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]).
+- **PacBio fidelity is better than assumed.** Concordant dsDNA burdens were obtained at ≥5 passes rather than ≥20 ([[10-Summaries/liu-2024-hidef-seq|HiDEF-seq]]).
+- **The pass–length tradeoff.** ssDNA analysis needs ≥20 passes, which forces shorter fragments (1.7 kb rather than 4.2 kb) and roughly 4× the sequencing per molecule ([[10-Summaries/liu-2024-hidef-seq|HiDEF-seq]]).
+- **Not all duplex methods are long-read.** HiDEF-seq is a long-read (PacBio) duplex variant, whereas SMM-seq is sequenced on Illumina ([[10-Summaries/maslov-2022-smm-seq|Maslov 2022]]); see [[40-Topics/duplex-sequencing]].
+- **Somatic SVs.** Nanopore SomaGauss-SV calling in laryngeal squamous cell carcinoma ([[10-Summaries/liu-2025-nanopore-lscc-svs|Liu 2025]]); see [[30-Concepts/structural-variants]] and [[30-Concepts/somagauss-sv]].
+
+## Key people
 
 - [[20-Entities/fritz-sedlazeck]] — long-read computational genomics.
 - [[20-Entities/winston-timp]] — nanopore methylation pioneer.
@@ -62,60 +98,36 @@ Long-read sequencing is the enabling platform layer beneath several recent break
 - [[20-Entities/jifeng-liu]] — nanopore somatic SV in head-and-neck cancer.
 - [[20-Entities/dan-xie]] — SCOUT + SomaGauss-SV.
 
-## Sources, by sub-theme
-
-### Long-read methylation analysis
-
-- [[10-Summaries/fu-2025-longread-methylation]] — Fu/Sedlazeck/Timp NRG computational long-read methylation analysis.
-- [[10-Summaries/liu-2025-long-read-epigenome-review]] — Liu/Conesa 2025 NRG broader epigenome review (methylation + accessibility + 3D + transcriptomic LRS).
-
-### Long-read single-molecule chromatin
-
-- [[10-Summaries/andrewb-2020-science]] — Fiber-seq (Stergachis 2020).
-- [[10-Summaries/swanson-2025-daf-seq]] — DAF-seq / scDAF-seq; uses PacBio HiFi to read DAF-seq deamination patterns at >25,000× depth on targeted loci.
-- [[10-Summaries/nanda-2024-smrt-tag]] — SMRT-Tag (Ramani lab).
-- [[10-Summaries/abdulhay-2020-samosa]] — SAMOSA (Ramani lab).
-- [[10-Summaries/mo-2023-stam-seq]] — STAM-seq, plant HRRs.
-
-### Long-read SV detection
-
-- [[10-Summaries/liu-2025-nanopore-lscc-svs]] — SomaGauss-SV in LSCC.
-
-### Long-read referenced in scDNA-seq context
-
-- [[10-Summaries/shao-2025-scDNA-mosaicism-review]] — HiDEF-seq and other long-read duplex methods; HiDEF-seq achieves ~7 × 10⁻¹⁶ error rate via PacBio circular consensus duplex sequencing.
-- [[10-Summaries/nam-2019-got]] — Oxford Nanopore validation of GoT for distal loci.
-
-## Synthesized notes
-
-- [[50-Notes/regulatory-layers-overview]] — long-read methods read accessibility + methylation + 3D simultaneously on the same fiber.
-
 ## Open questions
 
-- Cost per Gb at scale — still higher than short-read Illumina; gap closing but not closed (synthesis).
-- Per-platform methylation calling accuracy varies and benchmarking lags chemistry development ([[10-Summaries/fu-2025-longread-methylation]]).
-- Long-read single-cell methods — emerging but not yet routine; scDAF-seq is currently the most successful single-cell long-read application ([[10-Summaries/swanson-2025-daf-seq]]).
-
-## Added 2026-10-07
-
-- [[10-Summaries/li-2025-scnanoatac-seq2]] — nanopore-based scATAC (scNanoATAC-seq2) with allele- and repeat-copy-resolved accessibility.
-- [[10-Summaries/li-2024-scnanoseq-cut-tag]] — Nanopore single-cell CUT&Tag; per-copy L1Hs chromatin states.
-- [[10-Summaries/li-2023-scnanohi-c]] — Nanopore concatemer sequencing applied to single-cell Hi-C.
-- [[10-Summaries/hard-2023-long-read-scwgs]] — first genome-wide long-read (PacBio HiFi) WGS of single human cells, using droplet MDA; strong for SNVs, indel-type SVs and TRs, but chimeras make inversion and duplication calls unusable.
-- [[10-Summaries/pancikova-2025-splongget]] — SPLONGGET long-read single-cell genome + accessibility + full-length transcriptome from 10x Multiome on PromethION; targeted re-enrichment; CD19 splice-site escape in B-ALL (preprint).
-
+- Cost per Gb at scale is still higher than short-read Illumina; the gap is closing but not closed (synthesis).
+- Per-platform methylation calling accuracy varies, and benchmarking lags chemistry development ([[10-Summaries/fu-2025-longread-methylation|Fu 2025]]).
+- Long-read single-cell methods are emerging but not yet routine; scDAF-seq is currently the most successful single-cell long-read application ([[10-Summaries/swanson-2025-daf-seq|Swanson 2025]]).
+- Whole-genome amplification chimeras limit inversion and duplication calls in single-cell long-read WGS ([[10-Summaries/hard-2023-long-read-scwgs|Hård 2023]]); whether PTA- or amplification-free designs remove this is open. (synthesis)
 
 ## Related
 
-- [[bisulfite-sequencing]]
-- [[40-Topics/dna-methylation]]
-- [[40-Topics/duplex-sequencing]]
-- [[fiber-seq]]
-- [[daf-seq]]
-- [[50-Notes/regulatory-layers-overview]]
+> [!cards]
+> - `hub` [[40-Topics/dna-methylation|DNA methylation]] — 5-methylcytosine, read directly without conversion by long-read base-modification calling.
+> - `hub` [[40-Topics/duplex-sequencing|Duplex sequencing]] — Single-molecule strategy that calls a base only when both strands agree.
 
-## Added 2026-08-13
+## All sources on this page
 
-HiDEF-seq ([[10-Summaries/liu-2024-hidef-seq]]) uses PacBio long reads not for length but for **passes**: ~32 independent sequencing passes per strand on median 1.7 kb molecules build a per-strand consensus good enough to call substitutions on unamplified single molecules. An incidental finding is that PacBio's per-pass substitution fidelity is better than previously estimated — concordant dsDNA burdens were obtained at ≥5 passes rather than ≥20 ([[10-Summaries/liu-2024-hidef-seq]]).
-
-The design tradeoff: ssDNA analysis needs ≥20 passes, which forces shorter fragments (1.7 kb rather than 4.2 kb) and roughly 4× the sequencing per molecule ([[10-Summaries/liu-2024-hidef-seq]]).
+> [!info]- 17 summaries cited here
+> - [[10-Summaries/abdulhay-2020-samosa|Abdulhay 2020]]
+> - [[10-Summaries/andrewb-2020-science|Stergachis 2020]]
+> - [[10-Summaries/fu-2025-longread-methylation|Fu 2025]]
+> - [[10-Summaries/hard-2023-long-read-scwgs|Hård 2023]]
+> - [[10-Summaries/li-2023-scnanohi-c|Li 2023]]
+> - [[10-Summaries/li-2024-scnanoseq-cut-tag|Li 2024]]
+> - [[10-Summaries/li-2025-scnanoatac-seq2|Li 2025]]
+> - [[10-Summaries/liu-2024-hidef-seq|Liu 2024]]
+> - [[10-Summaries/liu-2025-long-read-epigenome-review|Liu & Conesa 2025]]
+> - [[10-Summaries/liu-2025-nanopore-lscc-svs|Liu 2025]]
+> - [[10-Summaries/maslov-2022-smm-seq|Maslov 2022]]
+> - [[10-Summaries/mo-2023-stam-seq|Mo 2023]]
+> - [[10-Summaries/nam-2019-got|Nam 2019]]
+> - [[10-Summaries/nanda-2024-smrt-tag|Nanda 2024]]
+> - [[10-Summaries/pancikova-2025-splongget|Pančíková 2025 (bioRxiv preprint)]]
+> - [[10-Summaries/shao-2025-scDNA-mosaicism-review|Shao 2025]]
+> - [[10-Summaries/swanson-2025-daf-seq|Swanson 2025]]

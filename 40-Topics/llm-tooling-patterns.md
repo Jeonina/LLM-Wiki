@@ -4,7 +4,7 @@ title: LLM tooling patterns
 aliases: [agentic patterns, llm patterns]
 tags: [llm, patterns]
 created: 2026-05-07
-updated: 2026-08-10
+updated: 2026-10-12
 paper_section: ["A"]
 ---
 
@@ -12,26 +12,29 @@ paper_section: ["A"]
 
 > Reusable design patterns for using LLMs as durable software components — not as one-shot responders, but as agents that maintain state, follow conventions, and produce artifacts that outlive a conversation.
 
-## Core concepts
+> [!abstract] 한눈에
+> LLM Wiki 패턴에서 LLM은 매번 원자료에서 답을 다시 만들지 않고, 소스·위키·스키마 세 층으로 나뉜 markdown 위키를 꾸준히 고쳐 나가는 관리자 역할을 맡는다 ([[10-Summaries/example-llm-wiki|Karpathy (paraphrase)]]). 사람은 저자가 아니라 큐레이터이자 질문자가 된다 ([[10-Summaries/example-llm-wiki|Karpathy (paraphrase)]]).
 
-- [[30-Concepts/llm-wiki]] — pattern for LLM-as-maintainer of a markdown knowledge base.
-- [[30-Concepts/three-layer-architecture]] — sources / wiki / schema separation that makes the LLM Wiki portable.
-- [[30-Concepts/ingest-workflow]] — the per-source procedure that drives compounding.
-- [[30-Concepts/maintenance-asymmetry]] — the asymmetry between human and LLM maintenance costs that makes these patterns viable.
+## Key points
 
-## Key entities
+- **The LLM builds a persistent wiki instead of re-deriving answers from raw sources.** It incrementally maintains structured markdown that compounds with each new source ([[10-Summaries/example-llm-wiki|Karpathy (paraphrase)]]).
+- **Three layers keep the pattern portable.** Immutable raw sources, the LLM-maintained wiki, and a configuration document (`CLAUDE.md` / `AGENTS.md`) that fixes conventions ([[10-Summaries/example-llm-wiki|Karpathy (paraphrase)]]).
+- **The per-source ingest procedure drives compounding.** Read → summarize → propagate → log ([[10-Summaries/example-llm-wiki|Karpathy (paraphrase)]]).
+- **The human's role shifts from author to curator.** ([[10-Summaries/example-llm-wiki|Karpathy (paraphrase)]]).
 
-- [[20-Entities/andrej-karpathy]] — proposed the LLM Wiki pattern.
+## Start here
 
-## Sources, by sub-theme
+> [!cards]
+> - `concept` [[30-Concepts/llm-wiki|LLM Wiki]] — Pattern for LLM-as-maintainer of a markdown knowledge base.
+> - `concept` [[30-Concepts/three-layer-architecture|Three-layer architecture]] — Sources / wiki / schema separation that makes the LLM Wiki portable.
+> - `concept` [[30-Concepts/ingest-workflow|Ingest workflow]] — The per-source procedure that drives compounding.
+> - `concept` [[30-Concepts/maintenance-asymmetry|Maintenance asymmetry]] — The asymmetry between human and LLM maintenance costs that makes these patterns viable.
 
-### LLM-as-maintainer
+## Sources and people
 
-- [[10-Summaries/example-llm-wiki]] — paraphrase of Karpathy's LLM Wiki proposal.
-
-## Synthesized notes
-
-_None yet — promote one once ≥3 sources connect across this topic._
+- [[20-Entities/andrej-karpathy]] — proposed the LLM Wiki pattern ([[10-Summaries/example-llm-wiki|Karpathy (paraphrase)]]).
+- **LLM-as-maintainer:** [[10-Summaries/example-llm-wiki|Karpathy (paraphrase)]] — paraphrase of Karpathy's LLM Wiki proposal.
+- No synthesized notes yet — promote one once ≥3 sources connect across this topic.
 
 ## Open questions
 
@@ -41,4 +44,10 @@ _None yet — promote one once ≥3 sources connect across this topic._
 
 ## Related
 
-- [[40-Topics/knowledge-management]] · [[30-Concepts/llm-wiki]] · [[30-Concepts/ingest-workflow]] · [[30-Concepts/three-layer-architecture]]
+> [!cards]
+> - `hub` [[40-Topics/knowledge-management|Knowledge management]] — How knowledge is captured, organized, refined, and re-used over time.
+
+## All sources on this page
+
+> [!info]- 1 summaries cited here
+> - [[10-Summaries/example-llm-wiki|example-llm-wiki]]

@@ -4,6 +4,17 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+# 2026-10-12 — Maintenance: hub pages restructured for reading
+
+All 22 hub pages in `40-Topics/` (the catalog `40-Topics/index.md` excluded) rewritten into one reader-facing shape, piloted on [[40-Topics/cancer-clonal-evolution]] and approved by the user: English lead → `[!abstract] 한눈에` Korean summary → Key points → "Start here" cards → sub-theme sections with tables → Open questions → Related cards → folded source list. All `## Added <date>` sections were folded into sub-themes. Citations on hubs now carry short aliases (`Navin 2011`).
+
+- **Method:** pristine backups in `.scratch/hub-before/`; 14 parallel agents (one shared brief, `.scratch/hub-rewrite-brief.md`), each verifying that no wikilink from the backup was dropped, none is broken, no Added sections remain and table pipes are escaped. The main session re-ran the checks on all 22 pages and a Quartz build (tables, cards, callouts render; 0 broken links).
+- **Schema:** `90-Meta/templates/topic.md` rewritten; `CLAUDE.md` gained a "Hub pages" paragraph. New tool `tools/hub-sources.py` regenerates the folded source list (`--check` for lint).
+- **Small fixes during the pass:** linked Hong 2025 / Jiang 2026 on [[40-Topics/3d-genome]] (were plain text); linked [[50-Notes/mnase-vs-tn5-chromatin]] from the histone open question; added cancer-clonal-evolution to lineage-tracing Related; removed ingest dates from the FM hub `description`; a stale hematopoietic-malignancies open question struck through (AML/CLL now covered, MDS still missing).
+- **Flagged for the user:** see the session report (single-cell duplex "gap" vs Duplex-Multiome on somatic-mosaicism; personal wording "PI Jeonina's review" on a public page; compounding-artifact link on mosaic-variant-calling; Related-card choice on single-cell-multiomics).
+
+---
+
 # 2026-10-12 — Ingest: 7 single-cell genotype analysis tools (2023–2026)
 
 The user added recent genotype analysis tools to the Analytical Tools sheet after a PubMed search found that the sheet's CNV/SNV main entries all predated 2022, then clipped them. Seven parallel agents wrote one summary each from the full text (two PDFs pre-extracted to text); the main session checked 76 proposed graph edits (anchors and wikilinks, dry run) and applied them. All 7 sources are `full`.

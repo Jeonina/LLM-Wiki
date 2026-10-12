@@ -22,6 +22,9 @@ topics: ["[[single-cell-atac-seq]]", "[[computational-methods]]"]
 
 > BROCKMAN (Brockman Representation Of Chromatin by *K*-mers in Mark-Associated Nucleotides) sidesteps both peak calling and prior motif knowledge: each cell becomes a vector of **gapped *k*-mer frequencies (k = 1–8) in the DNA around its Tn5 insertion sites**, and PCA on that k-mer × cell matrix exposes axes of variation that map onto (sets of) transcription factors. The rationale is mechanistic: if a TF that can open chromatin becomes more active, more of its cognate k-mers end up in accessible DNA. Applied to 1,440 scATAC-seq cells (C1 platform, GEO GSE65360), the representation separates cell types, drug treatments, replicate batches, a chip-position artifact and cycling cells; individual PCs correspond to co-varying TFs that are enriched for known physical interactions, and a simple occupancy model argues that cooperative binding is intrinsically more variable than non-cooperative binding.
 
+> [!abstract] 한눈에
+> BROCKMAN은 peak calling과 기존 motif 없이 Tn5 삽입 부위 주변의 gapped k-mer 빈도로 세포를 표현하고 PCA로 TF 활성 축을 찾는 scATAC-seq 방법이다. peak 밖 read가 세포 구분 정보를 더 많이 담는다는 결과를 냈지만, 1,440개 세포 데이터 하나에 기댄다.
+
 ## Key claims
 
 - **A peak-free, motif-free representation separates biology and artifacts.** On 1,440 human cells (K562 ± drug treatments, GM12878, H1ESC, BJ, TF-1, HL-60), t-SNE of the **131 significant PCs** partitions cell types and K562 treatments, and also exposes a K562-replicate-3 outlier cluster whose cells have **consecutive C1-chip indices** — interpreted as an experimental artifact.

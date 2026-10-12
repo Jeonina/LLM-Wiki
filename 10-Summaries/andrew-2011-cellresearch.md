@@ -16,6 +16,9 @@ updated: 2026-05-12
 
 > Andrew J. Bannister & Tony Kouzarides. *Cell Research* **21**, 381–395 (March 2011). DOI: 10.1038/cr.2011.22. (The "Andrew_2011" filename refers to Andrew J. Bannister — *not* Andrew B. Stergachis.)
 
+> [!abstract] 한눈에
+> Bannister와 Kouzarides의 리뷰는 acetylation, methylation, phosphorylation 등 histone 번역 후 변형과 이를 붙이고 떼는 효소, 그리고 각 변형이 염색질 조절에 미치는 영향을 정리했다. scCUT&Tag 같은 단일세포 histone 측정법이 겨냥하는 표지의 생물학을 이해하는 표준 참고문헌이다.
+
 ## Thesis
 
 Canonical foundational review of **histone post-translational modifications** (acetylation, methylation, phosphorylation, ubiquitination, sumoylation, ADP-ribosylation, deimination, proline isomerization), the enzymes that deposit and remove them, and the chromatin-regulatory consequences of each. Not a single-cell paper at all — included in this wiki because it is the standard reference for the chromatin-mark biology that scCUT&Tag, scChIC-seq, scCUT&RUN, fiber-seq, and DAF-seq all measure.

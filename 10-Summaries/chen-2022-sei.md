@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[histone-modif
 
 > Sei has two parts. The Sei model is a CNN that reads 4 kb of hg38 sequence and predicts 21,907 binary chromatin-profile peaks at the centre position (9,471 TF, 10,064 histone mark and 2,372 accessibility profiles; ~1,000 DNA-binding proteins, 77 histone marks, >1,300 cell lines and tissues, mostly from Cistrome). The "sequence classes" are then built by running the model over 30 million 4 kb windows tiling the genome, reducing the predictions by PCA and Louvain-clustering them into 40 classes that cover >97.4% of the genome: promoter (P), 12 enhancer classes (E1–E12, many cell-type-specific), CTCF, TF, Polycomb (PC), heterochromatin (HET), transcription (TN) and low-signal (L). Any sequence or variant can be scored against these classes by projection, giving a directional, interpretable variant effect such as "decreases liver/intestine enhancer activity". The paper uses the classes to explain tissue-specific expression and eQTL direction, show bidirectional selection on enhancer effects, partition UK Biobank heritability into non-overlapping categories, and propose mechanisms for 853 HGMD regulatory mutations, about 20% of which are predicted gain-of-function.
 
+> [!abstract] 한눈에
+> Sei는 4 kb 서열에서 21,907개 chromatin profile을 예측하는 CNN으로, 유전체를 40개 sequence class로 나눈 지도를 만들어 변이 효과를 방향성 있게 해석할 수 있게 한다. 이 class들로 eQTL의 효과 방향과 형질 유전율의 조직 특이적 분할을 설명했다.
+
 ## Key claims
 
 - **Broadest chromatin model.** Average AUROC 0.972 and AUPRC 0.409 over 21,907 profiles on held-out chr8 and chr9; predictions reproduce the profiles' correlation structure. On the 2,002 profiles shared with DeepSEA Beluga, Sei improves AUROC/(1 − AUROC) by 19% on average.

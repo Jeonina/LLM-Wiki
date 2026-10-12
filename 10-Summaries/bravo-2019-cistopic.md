@@ -31,6 +31,9 @@ topics:
 
 > Thesis: Existing scATAC-seq analysis methods either cluster cells first then call differential peaks (loses dynamic structure) or aggregate peaks into pre-defined cistromes (depends on annotations). **cisTopic** uses Latent Dirichlet Allocation (LDA) with Gibbs sampling to **co-optimize clustering of cells and clustering of regulatory regions** into "topics" — recovering cell types, developmental trajectories, and the regulatory programs that distinguish them in a single unsupervised pass.
 
+> [!abstract] 한눈에
+> cisTopic은 LDA topic modeling으로 scATAC-seq의 세포 군집과 조절 영역 군집을 동시에 최적화해, 세포형과 분화 궤적, 이를 구분하는 조절 프로그램을 한 번에 찾아낸다. 조혈 분화 데이터에서 chromVAR가 풀지 못한 HSC→MEP 궤적을 GATA topic으로 복원했다.
+
 ## Key claims
 
 - LDA derives two distributions: (1) cell-topic (how strongly each topic contributes to each cell) and (2) region-topic (how strongly each region belongs to each topic). Default Dirichlet hyperparameters α=50/T, β=0.1.

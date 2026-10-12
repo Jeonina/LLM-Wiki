@@ -22,6 +22,9 @@ topics: ["[[computational-methods]]", "[[single-cell-multiomics]]"]
 
 > Batch correction that works **in PCA space rather than on expression**, and iteratively: soft-cluster cells so that clusters are penalized for being dominated by one dataset, compute a per-cluster linear correction from each dataset's centroid, then correct each cell by a cluster-weighted average of those corrections. Because a cell belongs to several soft clusters, **each cell gets its own correction factor**.
 
+> [!abstract] 한눈에
+> Harmony는 PCA 공간에서 soft clustering과 클러스터별 선형 보정을 반복해, 세포마다 다른 batch 보정값을 적용한다. LISI 지표로 통합 정도와 세포 유형 보존 사이의 trade-off를 정량했고, 기술과 donor 같은 여러 covariate를 함께 보정하면서 50만 세포까지 처리했다.
+
 ## Key claims
 
 - **Four design goals**: scale to large datasets, resolve both broad populations and fine subpopulations, accommodate complex experimental designs, and integrate across modalities.

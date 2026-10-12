@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Buenrostro et al. (2015) — *Single-cell chromatin accessibility reveals principles of regulatory variation* — *Nature*. [DOI](https://doi.org/10.1038/nature14590)
 
+> [!abstract] 한눈에
+> Buenrostro 등은 Fluidigm C1 기반의 첫 scATAC-seq을 내놓고, 세포 간 접근성 변이가 특정 trans 인자와 cis 요소에 체계적으로 연결된다는 것을 보였다. 단일세포 접근성의 변이 자체가 잡음이 아니라 생물학적 신호라는 원리를 세웠다.
+
 Buenrostro, Wu, Litzenburger, Ruff, Gonzales, Snyder, Chang and Greenleaf (Stanford) reported the founding **single-cell ATAC-seq** method on a programmable microfluidics platform (Fluidigm C1). The protocol captures and tags individual cells on integrated fluidic circuits (IFCs), then performs Tn5 transposition and PCR with cell-identifying barcodes, producing scATAC-seq libraries from 254 individual GM12878 lymphoblastoid cells in total. Aggregate single-cell profiles reproduce ensemble DNase-seq and bulk ATAC-seq accessibility profiles.
 
 Beyond the method, the paper reveals **principles of regulatory variation** by analyzing accessibility variance across 1,632 IFC chambers on ENCODE Tier-1 lines (H1-ESC, K562, GM12878) + EML1, HL-60, BJ, V6.5. Key findings: (i) accessibility variance is systematically associated with specific *trans-* and *cis-*elements; (ii) GATA1, GATA2, JUN, STAT2, BRG1/SMARCA4, p300 act as high-variance trans-factors; CTCF, SUZ12, ZNF143 act as general suppressors of accessibility variance (when not co-bound with cohesin); (iii) trans-factor *combinations* synergize to induce or suppress cell-to-cell variability; (iv) cis-variance patterns recapitulate 3D chromosome-compartment organization de novo from single-cell data.

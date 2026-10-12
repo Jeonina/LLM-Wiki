@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/his
 
 > EpiGePT makes a sequence-to-function model **conditional on cellular context**, so it can predict epigenomic tracks in cell types it was not trained on. Context is a 711-dimensional TF vector: for each 128-bp bin, the HOMER motif score of each HOCOMOCO TF times that TF's expression (quantile-normalised log TPM from bulk RNA-seq) in the context. A five-block CNN compresses 128 kb of sequence into 1,000 bin tokens, each token is concatenated with its TF vector (968 dimensions total), and a transformer encoder (12–16 layers, 8 heads, 71.3 M parameters) predicts eight signals per bin: DNase, CTCF, H3K27ac, H3K4me3, H3K36me3, H3K27me3, H3K9me3 and H3K4me1. Each (region, context) pair is a training example, and a masked loss lets contexts with missing assays still contribute. An optional loss term aligns attention maps with HiChIP loops (EpiGePT-3D). The headline is cross-cell-type prediction (DNase PCC 0.787 in new cell types) and better-than-Enformer performance on held-out contexts, enhancer–promoter links from attention, and variant scoring.
 
+> [!abstract] 한눈에
+> EpiGePT는 TF motif 점수와 TF 발현을 곱한 세포 맥락 벡터를 sequence-to-function 모델에 더해, 학습에 없던 세포 유형의 epigenome track을 예측한다. DNase 예측에서 Enformer를 앞섰으나 새 세포 유형에도 bulk RNA-seq 데이터가 있어야 한다.
+
 ## Key claims
 
 - **Cross-cell-type DNase prediction.** On ENCODE DNase-seq from 129 contexts and 1,175,374 regions, EpiGePT beat BIRD, ChromDragoNN and DeepCAGE in cross-region, cross-cell-type and cross-both settings. Cross-cell-type PCC was 0.787, 6.9% above ChromDragoNN. Binary accessibility auPRC was 0.767 vs 0.623 (DeepCAGE) and 0.476 (ChromDragoNN). Against ChromHMM functional states it had 8.1% higher auROC than ChromDragoNN.

@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[computational
 
 > Basset is an open-source Torch7 package that trains a deep CNN to predict, from 600 bp of hg19 sequence, whether a site is a DNase I hypersensitive site in each of 164 cell types (125 ENCODE, 39 Roadmap). On held-out sites it reaches mean AUC 0.895 against 0.780 for gkm-SVM. The paper uses the trained model three ways: first-layer filters as learned motifs (45% match CIS-BP), in-silico saturation mutagenesis as per-nucleotide "loss" and "gain" scores that correlate with PhyloP conservation, and SNP accessibility difference (SAD) scores that are higher for likely causal autoimmune GWAS SNPs. It also shows that a model pretrained on public data can be adapted to a new cell type's DNase-seq in one training pass. This is the accessibility-only, cell-type-multitask design that scBasset later carried to single cells.
 
+> [!abstract] 한눈에
+> Basset은 600 bp 서열로 164개 세포 유형의 DNase I 과민 부위를 예측하는 CNN으로, 평균 AUC 0.895를 기록해 gkm-SVM을 앞섰다. 학습된 필터는 TF motif와 맞아떨어졌고, SAD score로 GWAS 변이를 해석할 수 있었다. 다만 site를 염색체 단위가 아닌 무작위로 나눠 성능이 부풀려졌을 수 있다.
+
 ## Key claims
 
 - **Accuracy over gkm-SVM.** Mean AUC 0.895 vs 0.780 for gkm-SVM; better for every cell type. Mean AUPRC 0.561 vs 0.322. At 10% false-positive rate Basset recovers 55–80% of true DHSs; at 20% FDR it recalls only 20–35%, so the authors say no tool is yet accurate enough to annotate genomes de novo.

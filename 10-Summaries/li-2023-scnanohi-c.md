@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[long-read-sequencing]]", "[[chromatin-architecture]
 
 > Short-read single-cell Hi-C sees each ligation junction as a pair; a Nanopore read sees the whole **concatemer** — every fragment ligated together in one proximity cluster. scNanoHi-C is plate-based single-cell Hi-C (FA + DSG crosslink, MboI, ligation, FACS into 96-well plates, 24 barcoded Tn5s, ~3-kb amplicons) read on PromethION, so that **about half of all concatemers are high-order (cardinality ≥3)**. Because it stays ligation-based, its multi-way contacts keep the ~200-nm contact radius of 3C methods — the authors position it against [[sc-sprite|scSPRITE]] as the tool for *direct* cis-regulatory hubs (enhancer–promoter cliques, ecDNA hubs) rather than large indirect nuclear-body clusters. Long monomers (610 bp mean) also double the phasable fraction relative to Dip-C, and the same data yield CNVs, SVs and assembly scaffolds.
 
+> [!abstract] 한눈에
+> scNanoHi-C는 단일세포 Hi-C를 Nanopore로 읽어 concatemer 전체를 관찰하며, concatemer의 약 절반이 조각 세 개 이상이 엮인 고차 접촉이다. 이를 통해 단일세포에서 enhancer–promoter 다중 접촉과 ecDNA hub를 직접 포착했고, 같은 데이터에서 CNV와 SV도 얻었다.
+
 ## Key claims
 
 - **Scalable by design**: 24 Tn5 barcodes × 96 PCR barcodes, so one PromethION run can hold a few cells to "several thousands of cells (up to 24 × 96)". Three GM12878 depth strategies — ~24, ~100 and ~500 cells per run — gave median **464,844 / 158,590 / 58,871 contacts per cell** from 4 / 0.8 / 0.2 Gb per cell. Duplicate-contact ratios were 70.5% / 55.6% / 30.3% (high / medium / low depth), so shallow sequencing of more cells yields more effective contacts per base.

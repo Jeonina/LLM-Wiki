@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]", "[[computational-methods]]"]
 
 > Two contributions in one Resource paper. **Wet lab**: a low-input whole-genome bisulfite protocol (μWGBS, scaled down to single cells as scWGBS) that bisulfite-treats lysed cells directly and does all post-bisulfite library steps in one tube, with **no pre-amplification**. **Dry lab**: since single-cell methylomes are sparse and binary, stop asking about individual CpGs and instead average methylation over **thousands of regions of one functional type** (2,768 region sets: DHS, histone marks, TF binding sites), regress out the trivial effects (starting methylation level, CpG content), and use the residuals to place cells on a two-axis "lineage plot". The bet is that the shallow-but-many design — many low-coverage one-cell / four-cell methylomes — is more informative than few deep ones.
 
+> [!abstract] 한눈에
+> Farlik 등은 사전 증폭 없이 단일 세포 methylome을 얻는 scWGBS를 개발했다. 희소한 데이터는 개별 CpG 대신 기능별 region set 수천 개의 평균 methylation으로 분석해 lineage plot에 세포를 배치했으며, 얕게 많이 읽는 설계가 더 효율적임을 보였다.
+
 ## Key claims
 
 - **Low input works**: an existing post-bisulfite-adaptor-ligation protocol optimized for 50 ng gave close to optimal data from **6 ng** (5.8% PCR duplicates vs 1.9% at 50 ng). Titrating 500, 50, 20, 10, 4 and 1 cell(s) with ≤18 PCR cycles, quality was "acceptable all the way down to single cells", with progressive loss of coverage; MDS grouped samples by cell type, not cell number, and one-cell samples clustered with 50-ng positive controls.

@@ -22,6 +22,9 @@ topics: ["[[40-Topics/histone-modifications]]", "[[40-Topics/chromatin-architect
 
 > CUT&RUN (Cleavage Under Targets and Release Using Nuclease) turns the long-unused ChIC idea — antibody plus protein A–MNase (pA-MN) — into a genome-wide sequencing assay. Unfixed nuclei are immobilised on concanavalin-A magnetic beads, incubated with antibody and pA-MN, and calcium is added **at 0 °C**; MNase cuts on both sides of the bound protein and the small protein–DNA complex **diffuses out of the nucleus into the supernatant**, while the bulk genome stays in the pellet. Because only targeted fragments are released, background is near zero and **~1/10th the sequencing depth of ChIP** suffices. The paper's pitch is replacement: "in all important respects CUT&RUN provides an attractive alternative to ChIP-based strategies."
 
+> [!abstract] 한눈에
+> CUT&RUN은 항체와 pA-MNase로 표적 부위만 잘라 핵 밖으로 빼내는 방식이라 배경 신호가 거의 없고, ChIP의 약 1/10 시퀀싱 깊이로 거의 염기 단위 해상도의 결합 지도를 얻는다. 다만 투입량은 60만 세포 아래로 시험하지 않았다.
+
 ## Key claims
 
 - **Limit digestion is fast and time-insensitive.** For yeast Abf1 and Reb1 (~2–3 million mapped paired-end reads per sample), fragment size distributions were "virtually superimposable" below ~150 bp from 4 s to 128 s — digestion time is not a critical parameter. TF fragments peak at ~100 bp; H2A (nucleosomal) at ~150 bp, so ≤120 bp and ≥150 bp classes are analysed separately.

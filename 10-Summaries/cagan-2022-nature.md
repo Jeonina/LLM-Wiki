@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Cagan et al. (2022) — *Somatic mutation rates scale with lifespan across mammals* — *Nature*. [DOI](https://doi.org/10.1038/s41586-022-04618-z)
 
+> [!abstract] 한눈에
+> Cagan 등은 16종 포유류의 장 crypt 208개를 WGS해, 연간 체세포 돌연변이율이 수명과 강하게 반비례한다는 것을 보였다. 수명이 30배 차이 나도 생애 말 돌연변이 부담은 약 3배 차이에 그쳤고, 체중은 수명을 고려하면 설명력이 없었다.
+
 Cagan, Baez-Ortega and colleagues (Sanger / Martincorena / Stratton) performed low-input WGS on 208 intestinal crypts (each a clonal stem-cell-derived unit) from 56 individuals spanning 16 mammalian species — colobus monkey, cat, cow, dog, ferret, giraffe, harbor porpoise, horse, human, lion, mouse, naked mole-rat, rabbit, rat, ring-tailed lemur, tiger — to test the relationship between somatic mutation rate and lifespan.
 
 Three findings. (1) Three mutational signatures (SBS1 = 5mC deamination, SBSB ≈ SBS5/SBS40 = clock-like endogenous damage/repair, SBSC ≈ SBS18 = oxidative C>A) dominate somatic mutagenesis in all 16 species, with proportions varying across species. (2) Somatic mutation rate per year is strongly inversely correlated with lifespan — across 30-fold variation in lifespan, end-of-life total mutation burden varies only $\sim$3-fold. (3) Body mass is only weakly associated with mutation rate (FVE 0.21) and explains no significant variance once lifespan is accounted for, addressing Peto's paradox (large bodies are not at proportionally elevated cancer risk because longer-lived species evolve correspondingly slower mutagenesis or stronger repair).

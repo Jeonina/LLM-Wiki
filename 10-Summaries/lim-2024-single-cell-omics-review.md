@@ -22,6 +22,9 @@ topics: ["[[single-cell-multiomics]]", "[[whole-genome-amplification]]"]
 
 > A broad, method-by-method survey organized by molecular layer — isolation and barcoding, then genome, transcriptome, proteome, methylome, accessibility, chromatin conformation, histone modifications — with the operational differences between protocol variants stated explicitly. Its value here is comprehensiveness of the methylome and chromatin sections and coverage of the proteome layer this wiki otherwise lacks.
 
+> [!abstract] 한눈에
+> 이 리뷰는 세포 분리와 바코딩부터 유전체, 전사체, 단백체, 메틸롬, 접근성, 3D 구조, 히스톤 변형까지 분자 층위별로 단일세포 기법을 정리하고 프로토콜 변형 간 작동 차이를 구체적으로 짚었다. 메틸롬 부분이 특히 자세하다.
+
 ## Key claims
 
 **Isolation and barcoding.** FACS enables multiparameter selection but needs sufficient cell density and the flow/fluorescence exposure can compromise viability. Microfluidic and nanowell devices shift reaction volumes to nanoliter/picoliter scale, which "can shift the main cost barrier from library preparation to sequencing." Barcoding timing matters structurally: plate methods add the cell barcode at final PCR, while microfluidic methods incorporate it early, allowing single-tube processing and **fewer handling steps and less sample loss**.

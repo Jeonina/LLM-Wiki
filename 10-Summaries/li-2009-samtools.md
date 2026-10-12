@@ -22,6 +22,9 @@ topics: ["[[computational-methods]]", "[[scdna-seq]]"]
 
 > A two-page paper that defined the interface every downstream genomics tool now depends on. Before SAM, each aligner emitted its own format and each analysis tool parsed a different one. SAM's contribution is **decoupling alignment from analysis**: one text format, one indexed binary equivalent, one toolkit.
 
+> [!abstract] 한눈에
+> SAM/BAM 형식과 SAMtools는 정렬과 분석을 분리해, 모든 aligner와 downstream 도구가 공유하는 텍스트 형식 하나와 색인 가능한 binary 형식 하나를 정의했다. 1000 Genomes Project의 배포 형식으로 채택되면서 사실상 표준이 되었다.
+
 ## Key claims
 
 - **SAM** is a TAB-delimited format with a `@`-prefixed header section and an alignment section of **11 mandatory fields** (QNAME, FLAG, RNAME, POS, MAPQ, CIGAR, MRNM, MPOS, ISIZE, SEQ, QUAL) plus arbitrary `TAG:TYPE:VALUE` optional fields.

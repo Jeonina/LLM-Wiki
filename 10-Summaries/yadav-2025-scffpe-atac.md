@@ -22,6 +22,9 @@ topics: ["[[single-cell-atac-seq]]", "[[scdna-cancer-applications]]", "[[hematop
 
 > Conventional scATAC-seq fails on FFPE nuclei not because cells are lost but because formalin/paraffin damage breaks DNA **between** the two Tn5 insertions a PCR-based library needs, so each cell's library collapses in complexity. scFFPE-ATAC sidesteps this by making amplification depend on a **single** insertion: an FFPE-Tn5 carrying 64 sample barcodes, three rounds of split-and-pool ligation barcoding (96 × 96 × 96; 56,623,104 combinations per run) ending in a **T7 promoter**, then reverse-crosslinking and **in vitro transcription** that copies every barcoded, accessible fragment regardless of downstream breaks. It recovers cell types and lineage TFs from mouse FFPE spleen, from human lymph nodes archived 8–12 years, from lung-cancer punch cores (tumor center vs invasive edge) and from paired primary/relapsed follicular lymphoma.
 
+> [!abstract] 한눈에
+> scFFPE-ATAC는 Tn5 삽입 하나만으로 T7 in vitro transcription 증폭이 되도록 설계해, DNA 손상 때문에 기존 scATAC-seq가 실패하던 FFPE 시료에서 세포 유형을 구분해 냈다. 8–12년 보관한 림프절에서도 작동했지만 FRiP와 TSS enrichment는 신선 조직보다 낮았다.
+
 ## Key claims
 
 - **Conventional scATAC-seq on FFPE nuclei cannot resolve cell types.** On mouse FFPE spleen, merged FFPE profiles correlated only r = 0.41–0.46 with fresh tissue (bulk and merged single-cell, ±reverse crosslinking); peaks dropped to 32,512 (−RV) / 47,809 (+RV) vs 89,328 in fresh. At ≥1500 fragments and TSS ≥4, only 30 (−RV) and 595 (+RV) cells passed vs 4843 fresh; the +RV clusters were not supported by spleen marker gene activity, and this held at relaxed thresholds (e.g. 8777 cells, seven clusters at ≥500 fragments) — no spleen cell-type genes were detected.

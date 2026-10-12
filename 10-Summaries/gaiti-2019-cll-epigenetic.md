@@ -16,6 +16,9 @@ updated: 2026-05-12
 
 > Federico Gaiti, Ronan Chaligne, Hongcang Gu, Ryan M. Brand, Steven Kothen-Hill, Rafael C. Schulman, Kirill Grigorev, Davide Risso, Kyu-Tae Kim, Alessandro Pastore, Kevin Y. Huang, Alicia Alonso, Caroline Sheridan, Nathaniel D. Omans, Evan Biederstedt, Kendell Clement, Lili Wang, Joshua A. Felsenfeld, Erica B. Bhavsar, Martin J. Aryee, John N. Allan, Richard Furman, Andreas Gnirke, Catherine J. Wu, Alexander Meissner\*, **Dan A. Landau\***. *Nature* **569**, 576–580 (23 May 2019). DOI: 10.1038/s41586-019-1198-z.
 
+> [!abstract] 한눈에
+> Gaiti 등은 단일 세포 DNA methylation의 epimutation을 분자 시계로 삼아 CLL의 계통수를 재구성했다. CLL은 정상 B 세포보다 epimutation이 많고 일찍 분기했으며, SF3B1 변이 서브클론이 갈라진 시점을 methylation만으로 추정했다.
+
 ## Thesis
 
 **Single-cell DNA methylation (epimutation) rate serves as a molecular clock** for reconstructing cell lineage histories at high resolution. Multiplexed scRRBS on 2,652 cells (831 normal B cells + 1,821 CLL cells from 12 patients) shows CLL has **consistently increased epimutation rate with low cell-to-cell variability** — indicating shared replicative history from a common malignant founder. The methylation-based lineage tree shape (earlier branching, faster drift) is consistent with rapid post-malignant-transformation expansion. **Joint scRRBS + scRNA-seq + genotype** integration shows that SF3B1-mutated subclones segregate into distinct methylation-defined clades.

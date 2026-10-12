@@ -22,6 +22,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[hematopoietic-malignancies]]", "[[scd
 
 > The opposite design choice from [[wang-2014-nuc-seq|nuc-seq]]: give up genome breadth, buy **cell count**. Microfluidic MDA on **1,479 single ALL cells** from six patients, then targeted resequencing of only the loci that bulk exome said were heterogeneous. The payoff is statistical power over clone structure — and the finding that **five of six patients have codominant clones**, which bulk allele frequencies structurally cannot resolve.
 
+> [!abstract] 한눈에
+> Gawad 등은 microfluidic MDA로 소아 ALL 세포 1,479개를 분석하고 bulk exome에서 이질적이었던 locus만 targeted resequencing해, 게놈 범위 대신 세포 수를 확보했다. 그 결과 환자 6명 중 5명에게서 bulk VAF로는 구분할 수 없는 codominant clone이 있음을 보였다.
+
 ## Key claims
 
 - **Bulk allele frequency cannot resolve codominant clones, by construction.** Two clones at similar frequency produce mutations at similar VAF; nothing in the bulk data separates them. The paper demonstrates this directly — it shows the six samples cannot be resolved into clones from bulk VAF alone.

@@ -33,6 +33,9 @@ topics:
 
 > Thesis: scATAC-seq matrices are catastrophically sparse (~3% non-zero entries; only 0–2 cut sites possible per peak per diploid cell, most lost during library prep). **scOpen** imputes and denoises the open-chromatin matrix via *regularized non-negative matrix factorization* (NMF) on a TF-IDF-transformed binary matrix, with automatic rank selection by knee detection. It improves clustering, visualization, *cis*-regulatory interaction prediction, and footprinting — and unlike SCALE or cisTopic, makes no distributional assumption and carries the lowest memory footprint.
 
+> [!abstract] 한눈에
+> scOpen은 TF-IDF로 변환한 이진 scATAC-seq 행렬에 정규화 NMF를 적용해, 극도로 희소한 open chromatin 행렬을 보정하고 잡음을 줄인다. 분포 가정이 없고 메모리 사용이 가장 적으며, clustering, cis-regulatory 상호작용 예측, footprinting 성능을 높였다.
+
 ## Key claims
 
 - scATAC-seq is far sparser than scRNA-seq (3–7% non-zeros vs >10%) because of higher dimensionality (>10^6 regions) and severe dropout; assuming 25% of accessible DNA is sequenced, ~56% of accessible sites get zero cut sites (binomial dropout).

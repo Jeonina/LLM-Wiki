@@ -22,6 +22,9 @@ topics: ["[[computational-methods]]", "[[single-cell-lineage-tracing]]"]
 
 > Clustering assumes discrete groups; trajectory inference assumes a connected manifold. PAGA refuses the choice: partition the kNN graph, then build a coarse graph whose **nodes are partitions and whose edge weights are a statistical measure of connectivity** between them. Weak edges are discarded as noise, so the result shows both which regions are connected *and* which are genuinely disconnected.
 
+> [!abstract] 한눈에
+> PAGA는 kNN 그래프를 분할한 뒤 분할 간 연결성을 통계적으로 측정한 coarse graph를 만들어 clustering과 trajectory inference를 하나로 묶었다. 약한 연결을 노이즈로 버리기 때문에 실제로 끊어진 영역도 드러나며, PAGA로 초기화한 UMAP은 전역 위상을 더 충실히 보존한다.
+
 ## Key claims
 
 - **The problem with tree-fitting.** Biological processes are usually **incompletely sampled**, so the data do not form a connected manifold and modelling them as a continuous tree "has little meaning." Clustering-based tree algorithms make the generally invalid assumption that clusters conform to a connected tree topology, and they rely on feature-space inter-cluster distances (e.g. Euclidean distance between cluster means) which quantify biological similarity only **locally** and break down for cluster-scale objects. Sampling-based fixes have had only limited success.

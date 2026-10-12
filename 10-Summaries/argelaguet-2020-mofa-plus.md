@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Argelaguet et al. (2020) — *MOFA+: statistical framework for comprehensive integration of multi-modal single-cell data* — *Genome Biology*. [DOI](https://doi.org/10.1186/s13059-020-02015-1)
 
+> [!abstract] 한눈에
+> MOFA+는 GPU 기반 stochastic variational inference와 sample group용 structured sparsity prior를 더해 MOFA를 수백만 세포 규모로 확장했다. 공통 feature가 아니라 공통 sample 공간을 기준으로 modality를 통합하는, 선형 Bayesian 계열의 대표 도구다.
+
 Argelaguet, Arnol, Bredikhin, Deloro, Velten, Marioni, Stegle (EBI + EMBL Heidelberg) developed **MOFA+**, a scalable extension of Multi-Omics Factor Analysis (MOFA). MOFA itself was a Bayesian Group Factor Analysis framework recovering latent factors that explain shared and modality-specific variation across views. MOFA+ adds: (i) **stochastic variational inference on GPUs** — enabling analysis of millions of cells, addressing MOFA's scalability ceiling; (ii) **structured sparsity priors** for multiple sample groups (batches, donors, conditions), enabling joint modeling across sample groups and data modalities. Inputs are multiple matrices grouped into views (modalities) and grouped along the sample axis. Outputs are interpretable latent factors with weights identifying modality-feature contributions. Contrasts with Seurat-v3/LIGER which align datasets via common features; MOFA+ instead integrates modalities via a common **sample** space.
 
 ## Why this matters

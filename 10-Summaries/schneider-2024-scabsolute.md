@@ -23,6 +23,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[computational-methods]]", "[[scdna-ca
 
 > Absolute copy number from a shallow single-cell genome is underdetermined: a diploid and a tetraploid fit of the same profile are equally good, so G1 vs G2 cells and cells just after whole-genome doubling (WGD) cannot be told apart from copy-number profiles alone. **scAbsolute** first fits the ploidy scaling factor ρ (average reads per copy per bin) with a constrained Dirichlet-process Gaussian mixture, then breaks the tie with **read density** — how many unique read pairs physically overlap. In amplification-free, tagmentation-based data (DLP+, ACT) overlapping reads are capped by the number of physical DNA copies, so read density at a given ρ reveals the true ploidy. A separate, unsupervised **cycling-activity** statistic flags S-phase cells from read-count trends against replication time. The tool is explicitly about ploidy and replication status, not about accurate copy-number calling.
 
+> [!abstract] 한눈에
+> scAbsolute는 copy-number profile만으로는 구분할 수 없는 G1·G2 세포와 WGD 직후 세포를 read density로 가려 절대 ploidy를 추정하고 복제 상태까지 판별한다. ploidy benchmark에서 잘못된 ploidy 비율이 5%로 CHISEL, HMMCopy, Ginkgo보다 낮았지만, read density를 쓰려면 WGA 없이 얻은 paired-end 데이터가 필요하다.
+
 ## Key claims
 
 - **Four-step algorithm.** (1) PELT change-point segmentation with a negative-binomial likelihood on 500 kb bins; (2) a constrained DPGMM on the marginal distribution of segmented counts, with Gaussian means forced onto a 1-D grid (μ_k = k·ξ), fitted by stochastic variational inference in TensorFlow; (3) choose the multiple of ρ with minimum RMSE inside a ploidy window (default 1.1–8.0); (4) flag wrong ploidy fits (G2, WGD, outliers) by deviation of observed from expected read density, and refit with a cell-specific ploidy window.

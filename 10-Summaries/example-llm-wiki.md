@@ -27,6 +27,9 @@ topics:
 
 > Thesis: an LLM should not re-derive answers from raw sources every time — it should incrementally build a persistent, structured wiki in markdown that compounds with each new source, with the human acting as curator and questioner rather than author and bookkeeper.
 
+> [!abstract] 한눈에
+> Karpathy의 LLM Wiki 아이디어를 풀어 쓴 글로, LLM이 원자료에서 매번 답을 다시 도출하지 말고 새 출처가 들어올 때마다 쌓여 가는 markdown 위키를 유지해야 한다고 주장한다. 사람이 위키를 버리는 이유는 글쓰기가 아니라 교차 참조 유지의 번거로움에 있다고 본다.
+
 ## Key claims
 
 - The system has **three layers**: immutable raw sources, the LLM-maintained wiki, and a configuration document (`CLAUDE.md` / `AGENTS.md`) that fixes conventions.

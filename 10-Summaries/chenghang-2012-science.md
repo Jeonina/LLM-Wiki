@@ -17,6 +17,9 @@ sources: ["00-Sources/papers/Chenghang_2012_Science.pdf"]
 
 > Chenghang Zong, Sijia Lu, Alec R. Chapman, X. Sunney Xie. *Science* **338**, 1622–1626 (21 Dec 2012). DOI: 10.1126/science.1229164. Harvard.
 
+> [!abstract] 한눈에
+> MALBAC은 looping으로 완성된 amplicon의 재증폭을 막는 quasilinear 전증폭 방식의 단일세포 WGA로, 단일 암세포에서 93% 커버리지를 얻어 MDA보다 훨씬 균일했다. 이 균일성 덕분에 단일세포 수준에서 CNV를 디지털로 판정하고 kindred-cell 비교로 SNV를 찾을 수 있었다.
+
 ## Thesis
 
 **MALBAC (Multiple Annealing and Looping-Based Amplification Cycles)** is a new single-cell WGA method that uses quasilinear preamplification with looping protection of full-length amplicons followed by exponential PCR. Achieves **93% genome coverage at ≥1× from a single human SW480 cancer cell at 25× depth** — far better uniformity than MDA. Enables digitized CNV calls and kindred-cell SNV discovery at single-cell resolution.

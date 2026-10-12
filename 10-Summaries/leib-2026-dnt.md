@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]"]
 
 > DNT writes **both homologues of an individual genome into one reference-aligned token stream**: homozygous positions keep A/C/G/T, heterozygous positions become one atomic allele-pair symbol, short indels are aligned within `{…}` spans with gap padding so inserted and deleted bases survive, and phase can be kept either as ordered symbols or as an unordered symbol plus a direction marker. Nucleotide Transformer v3 checkpoints (8 M and 100 M parameters) are vocabulary-adapted (11 → 55 tokens) and continually pretrained on phased high-coverage 1000 Genomes sequences, with an auxiliary **Contrastive Phase Loss (CPL)** that pushes phase-reversed views apart. On a synthetic compound-heterozygous benchmark (cis vs trans pairs of HGMD pathogenic variants in the same recessive gene), every phase-blind model is at chance (≈ 0.49–0.53 AUROC) while the best diploid model reaches 0.649 ± 0.005 fine-tuned. The authors present this as a method that makes diploid genotype readable to a DNA LM, not as a general accuracy gain.
 
+> [!abstract] 한눈에
+> DNT는 개인 유전체의 두 상동 염색체를 하나의 token stream으로 부호화하고 Contrastive Phase Loss로 phase 정보를 쓰게 만든 diploid DNA language model이다. compound heterozygous cis/trans 구분에서 phase를 모르는 모델은 우연 수준에 머물렀고, DNT도 최고 AUROC 0.649에 그쳤다.
+
 ## Key claims
 
 - **Phase-blind inputs cannot solve cis vs trans.** The vocabulary-adapted control, the haploid continual-pretraining control and the unphased diploid model give frozen-probe AUROC 0.491–0.512 and fine-tuned 0.506–0.533 at both scales (Table 1).

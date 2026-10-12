@@ -16,6 +16,9 @@ updated: 2026-05-12
 
 > Hongshan Guo, Ping Zhu, Xinglong Wu, Xianlong Li, Lu Wen, **Fuchou Tang**. *Genome Research* **23**, 2126–2135 (2013). DOI: 10.1101/gr.161679.113. Peking University + Peking-Tsinghua Center.
 
+> [!abstract] 한눈에
+> scRRBS는 MspI digestion과 single-tube bisulfite 처리를 결합한 최초의 단일세포 DNA methylome 방법이다. mESC 한 개에서 CpG site 0.5–1.5백만 개를 회수했으며, 이는 bulk RRBS coverage의 약 40%에 해당한다.
+
 ## Thesis
 
 **scRRBS (single-cell Reduced Representation Bisulfite Sequencing)** is the foundational single-cell DNA methylome method. Combines MspI digestion (cuts at CCGG → enriches for CpG-rich regions including CGIs) with single-tube cell lysis + bisulfite conversion + library construction. Recovers **0.5–1.5 million CpG sites per single mESC** (~40% of bulk RRBS coverage), with bisulfite conversion rates >99%. Demonstrated that **the male pronucleus demethylates faster than the female pronucleus** in mouse zygotes — consistent with prior immunostaining and locus-level bisulfite data; newly, genic regions demethylate faster than intergenic regions in both pronuclei.

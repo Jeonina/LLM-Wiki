@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]", "[[computational-methods]]"]
 
 > Single-cell CpG-level imputation methods have only ever been evaluated in their own papers, on favourable data. Benchmarking five of them (CaMelia, DeepCpG, CpG Transformer, GraphCpG, MambaCpG) across 13 public scDNAm datasets on seven dimensions shows **no universal winner**: performance is set mainly by the data — **sparsity and methylome heterogeneity (Shannon entropy)** matter more than cell number or coverage — and every method fails to finish on whole-genome datasets above ~500 cells within 72 h. The authors respond on two fronts: **BridgeCpG**, a LightGBM stacking ensemble over three deep models, and an **adaptive divide-and-conquer (D&C)** scheme that clusters cells (Ward linkage) into homogeneous 10–100-cell subsets and imputes each separately.
 
+> [!abstract] 한눈에
+> 다섯 가지 single-cell CpG imputation 방법을 13개 scDNAm 데이터셋에서 비교한 결과 늘 앞서는 방법은 없었고, 성능은 희소성과 메틸롬 이질성(Shannon entropy)에 크게 좌우됐다. 저자들은 대안으로 BridgeCpG 앙상블과 divide-and-conquer 전략을 제안했다.
+
 ## Key claims
 
 - **Ranking**: CaMelia and CpG Transformer had the highest aggregate scores across 10 metrics; CpG Transformer had consistently high medians with minimal variance; GraphCpG and MambaCpG were volatile; DeepCpG ran only in small, low-sparsity settings (e.g. ran on 20-cell hCLP, failed on 71-cell hMK). Aggregate rankings are not fully comparable because methods completed different dataset subsets.

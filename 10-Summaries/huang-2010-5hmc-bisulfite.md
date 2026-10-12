@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]"]
 
 > A short methods-caveat paper from the Rao lab, written right after the same group showed TET enzymes make 5hmC. It asks what bisulfite sequencing actually does to 5hmC and finds two problems. First, bisulfite converts 5hmC almost completely to **cytosine 5-methylenesulfonate (CMS)**, which, like 5mC, resists deamination and is read as C. **Bisulfite therefore cannot tell 5mC from 5hmC.** Second, CMS **stalls Taq polymerase**, especially where CMS residues sit next to each other or 1–2 nt apart. So densely hydroxymethylated DNA is not just mislabelled as "methylated"; it may also be **under-amplified**, and therefore under-represented, in quantitative bisulfite data.
 
+> [!abstract] 한눈에
+> Huang 등은 bisulfite가 5hmC를 거의 전부 CMS로 바꾸고 CMS는 C로 읽히므로 bisulfite sequencing으로는 5mC와 5hmC를 구별할 수 없음을 보였다. CMS는 Taq 중합효소를 멈춰 세워 5hmC가 밀집한 DNA가 덜 증폭될 수 있다는 점도 보였지만, 실험은 합성 올리고에 한정됐다.
+
 ## Key claims
 
 - **Near-complete conversion to CMS.** LC-MS of a nuclease-P1-digested 201-bp oligonucleotide after bisulfite treatment: 4.69 nM hmdCMP remained from 1.5 µM, a 5hmC→CMS conversion of **99.7%**.

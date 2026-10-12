@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Miller et al. (2022) — *Mitochondrial variant enrichment from high-throughput single-cell RNA sequencing resolves clonal populations (MAESTER)* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-022-01210-8)
 
+> [!abstract] 한눈에
+> MAESTER는 표준 3′ scRNA-seq 라이브러리에서 mtDNA 전사체를 농축해 mitochondrial coverage를 50–217배 높이고 maegatk로 heteroplasmic 변이를 호출한다. 이로써 mtDNA lineage tracing과 전사체 상태를 같은 세포에서 대규모로 읽을 수 있게 했다.
+
 Miller, Lareau, Verga, DePasquale, Liu, Szabo, Sandor, Yin, Ludwig, El Farran, Morgan, Satpathy, Griffin, Lane, Love, Bernstein, Sankaran and van Galen (Mass General, Broad, Dana-Farber) developed **MAESTER** (Mitochondrial Alteration Enrichment from Single-cell Transcriptomes to Establish Relatedness). The method targets mtDNA-derived transcripts using primer panels covering all 15 mtDNA-encoded mRNAs in standard 3′ scRNA-seq libraries (10x Genomics, Seq-Well), increasing mitochondrial coverage by 50–217-fold compared to unenriched scRNA-seq.
 
 Computational toolkit: **maegatk** uses UMIs to build consensus per starting mtRNA molecule and calls heteroplasmic variants at single-cell resolution. Applied to a chronic myelogenous leukemia (K562) + brain-tumor (BT142) mixing experiment, MAESTER recovered six homoplasmic distinguishing variants with 100% concordance to mRNA-based identity. Applied to a clonal-hematopoiesis bone marrow (ASXL1/TET2) from a patient with skin-only BPDCN (marrow uninvolved), MAESTER resolved 23 clones from 26 informative mtDNA variants, with paired TCR-seq (TREK-seq) validating clonality (ARI = 0.74 with mtDNA clones).

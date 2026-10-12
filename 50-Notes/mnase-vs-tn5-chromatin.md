@@ -23,6 +23,9 @@ paper_section: ["3.4"]
 
 > Single-cell histone-modification profiling splits cleanly into two chemistry lineages. **MNase-based methods** (Drop-ChIP, scChIC-seq, sortChIC, scChIX-seq, scEpi²-seq) use antibody-tethered micrococcal nuclease to cleave DNA at antibody-bound histone marks ([[10-Summaries/rotem-2015-drop-chip]]; [[10-Summaries/ku-2019-scchic-seq]]; [[10-Summaries/yeung-2023-scchix-seq]]). **Tn5-based methods** (scCUT&Tag, nano-CUT&Tag, sciCUT&Tag, MulTI-Tag, 6-base-CUT&Tag) tether hyperactive Tn5 transposase to antibodies and tagment in situ ([[10-Summaries/bartosovic-2021-sccut-tag]]; [[10-Summaries/bartosovic-2022-nano-cut-tag]]; [[10-Summaries/janssens-2023-scicut-tag]]; [[10-Summaries/tavares-2026-6-base-cut-tag]]). The two chemistries answer the same biological question — *which histone marks are present at which loci in which cells?* — but trade off **resolution, throughput, multiplexing, and modality compatibility** in different ways.
 
+> [!abstract] 한눈에
+> 단일세포 histone 프로파일링은 nucleosome 경계를 잘 보존하는 MNase 계열과 처리량이 높고 10x 생태계에 맞물리는 Tn5 계열로 나뉜다. 노트의 결론은 둘 중 어느 쪽을 쓸지가 함께 읽어야 할 두 번째 readout에 따라 정해진다는 것이다.
+
 ## The two chemistries
 
 ### MNase-tethered cleavage (Drop-ChIP → scChIC → sortChIC → scChIX → scEpi²)

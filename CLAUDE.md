@@ -63,6 +63,7 @@ Triggered when the user says "ingest", "ingest the new sources", drops a file in
 3. **Summarize.** For each source, write `10-Summaries/<source-slug>.md` from the `summary.md` template. The summary captures: thesis, key claims, methods/evidence, limitations, surprising bits, and a list of entities/concepts touched.
    - **Source quality.** Set `source_quality` to what the source file actually holds: `full` (full text), `partial` (some body sections missing, e.g. a paywalled page) or `abstract` (abstract or landing page only). Never present claims from a `partial`/`abstract` source as checked results.
    - **Limitations.** List the authors' own limitations first, in their terms. Then add at most three reviewer notes, each marked `(synthesis)`.
+   - **Korean summary.** Right after the thesis blockquote, add a `> [!abstract] 한눈에` callout with 1–2 Korean sentences (plain declarative -다; main contribution plus the key finding or limitation; based only on the summary). Every summary, concept, hub and note page carries one; entity pages do not.
    - **Provenance.** After saving, run `tools/source-hash.py <slug>` to record `source_sha256`. Run it again whenever a summary is rewritten from a changed source.
 4. **Touch the graph.** This is the part that makes a wiki a wiki. For each source you ingest, update or create **at least 5–15** other pages:
    - For every notable person/org/product/place mentioned: open or create their entity page; add a dated bullet under `## Mentions` describing what this source says about them.

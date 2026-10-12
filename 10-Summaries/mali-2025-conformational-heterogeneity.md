@@ -30,6 +30,9 @@ topics:
 
 > Thesis: cell-to-cell variability of 3D chromatin folding has been described qualitatively for a decade, but no compact, distribution-aware metric exists for it. The authors define **Conformational Heterogeneity (C.H.)** as the standard deviation, across single cells, of the *per-cell-averaged* Euclidean inter-loci distance ⟨R_s⟩ at genomic separation *s*. Applied to three independently constructed 3D models of the *Drosophila* X chromosome — two trained on bulk Hi-C + lamina-DamID, one on scHi-C — the metric exposes that **bulk-trained and scHi-C-trained models diverge in opposite directions** at 1–10 Mb separations. The metric is also sensitive enough to register **increased structural noise upon nuclear-lamin depletion**, supporting the prediction that transcription should be noisier in lamin-depleted nuclei.
 
+> [!abstract] 한눈에
+> Mali 등은 세포 간 3D 유전체 접힘의 변이를 재는 지표로 Conformational Heterogeneity를 정의했다. 초파리 X 염색체 모델에 적용하자 1–10 Mb 구간에서 bulk Hi-C 기반 모델과 scHi-C 기반 모델이 서로 반대 경향을 보였고, lamin이 결핍되면 이질성이 커졌다.
+
 ## Key claims
 
 - **C.H.(s) = stdev_cells(⟨R_s⟩)** (Eq 4). By averaging *within* each nucleus first and then taking dispersion *across* nuclei, the metric isolates inter-cell heterogeneity from intra-cell conformational dynamics. An ensemble of identical-but-internally-variable nuclei would yield C.H. = 0.

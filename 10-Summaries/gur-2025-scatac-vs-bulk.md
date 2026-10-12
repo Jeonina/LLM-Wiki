@@ -30,6 +30,9 @@ topics:
 
 > Thesis: Researchers using bulk ATAC-seq commonly assume that single-cell data with comparable cell counts is methodologically equivalent. This comparison study, on aliquots of the same erythroblast population (bulk vs scATAC from one donor), with bulk NK-cell ATAC compared against public 10x PBMC scATAC-seq, shows that scATAC-seq with pseudo-bulk aggregation gives the **same chromatin architecture signal but higher data quality, sensitivity to weak functional peaks, and the ability to detect heterogeneity within nominally homogeneous populations** — at comparable cost when heterogeneity matters.
 
+> [!abstract] 한눈에
+> Gur와 Hughes는 같은 세포 집단에서 bulk ATAC-seq와 scATAC-seq를 비교해, pseudo-bulk scATAC-seq가 같은 chromatin 신호를 더 높은 품질로 제공한다는 것을 보였다. 또한 균질하다고 여겨진 erythroblast 집단 안에서 두 개의 cluster를 찾아냈다.
+
 ## Key claims
 
 - Chromatin-architecture signal between bulk and scATAC-seq is concordant when aliquots of the same cell population are compared (late erythroblasts differentiated from CD34+ cells, NK cells).

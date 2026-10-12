@@ -25,6 +25,9 @@ updated: 2026-10-07
 
 > PTA keeps the phi29 polymerase of MDA (processive, strand-displacing, low error) but adds **exonuclease-resistant alpha-thio dideoxynucleotide terminators** to the reaction. Extension stops early, amplicons stay short, and most copies are made from the original template rather than from daughter amplicons, so MDA's exponential, error-propagating reaction becomes "a quasilinear process". On GM12878 cells against six other WGA methods, PTA gave the highest genome coverage breadth, the most uniform coverage (CV, Lorenz, Gini), the least allelic skew and the best SNV sensitivity and precision. The paper then uses PTA for two new assays: **DMEM** (direct measurement of environmental mutagenicity: genome-wide mutation maps of single human cells exposed to a mutagen) and single-cell detection of **CRISPR off-target indels and structural variants**. Senior author Charles Gawad is a co-founder of BioSkryb Genomics, which commercialises PTA.
 
+> [!abstract] 한눈에
+> PTA는 MDA 반응에 exonuclease 저항성 alpha-thio ddNTP terminator를 넣어 증폭을 quasilinear하게 바꾼 WGA 방법이다. GM12878에서 다른 6개 방법보다 coverage 범위와 균일도가 높았고, allelic skew가 가장 적었으며, SNV sensitivity와 precision도 가장 좋았다.
+
 ## Key claims
 
 - **Irreversible terminators are what make it work.** Standard ddNTPs shortened amplicons but gave poor products (reads mapped 15.0 ± 2.2%, mapping quality 0.8 ± 0.08), which the authors attribute to the polymerase removing the terminator and re-priming, producing chimeras. Switching to alpha-thio ddNTPs, which form an exonuclease-resistant phosphorothioate bond, raised mapping "from 15.0 ± 2% to 97.9 ± 0.62%" and mapping quality "from 0.8 ± 0.08 to 46.3 ± 3.18". No-template controls gave no detectable product, unlike MDA, where NTCs yield as much as single cells (Fig. 1B).

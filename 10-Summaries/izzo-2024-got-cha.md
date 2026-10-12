@@ -34,6 +34,9 @@ topics:
 
 > Thesis: somatic mutations rewire chromatin, but in human samples mutated and wild-type cells are admixed and bulk assays cannot resolve their distinct epigenomes. The authors invent **GoT–ChA**, the gDNA-genotyping analog of [[30-Concepts/got]] — link single-cell ATAC profiles to genotype by amplifying the mutation locus from genomic DNA inside droplets. Applied to JAK2V617F MPN, they show the mutation produces a **cell-intrinsic pro-inflammatory chromatin state in HSCs** before any overt blood phenotype, and a **profibrotic chromatin landscape in MkPs** during myelofibrosis.
 
+> [!abstract] 한눈에
+> GoT–ChA는 10x scATAC-seq 안에서 변이 locus를 gDNA로 직접 증폭해 같은 핵의 유전형과 염색질 접근성을 함께 읽는다. JAK2V617F MPN에서 유전형 판정률을 RNA 기반의 7–10%에서 약 38%로 높였고, 변이 HSC가 질환 발현 전부터 세포 내재적 염증성 염색질 상태를 띤다는 것을 보였다.
+
 ## Key claims
 
 - **GoT–ChA captures genotype + chromatin accessibility in the same single nucleus.** Two custom primers added to the 10x scATAC-seq cell-barcoding PCR amplify the mutation-containing genomic locus directly from gDNA — bypassing both expression-level dependence and the transcript-distance limitation that motivated [[30-Concepts/circularization-got]] in [[10-Summaries/nam-2019-got]].

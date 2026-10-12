@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Lee-Six et al. (2018) — *Population dynamics of normal human blood inferred from somatic mutations* — *Nature*. [DOI](https://doi.org/10.1038/s41586-018-0497-0)
 
+> [!abstract] 한눈에
+> 59세 남성 한 명의 조혈모·전구세포 140개를 clonal colony로 키워 WGS하고, 체세포 돌연변이를 계통 바코드로 써서 HSC 집단 동태를 재구성했다. HSC 풀은 청소년기까지 커진 뒤 활동 세포 5만~20만 개 수준에서 안정되며, 이는 인간에서 처음 나온 직접 추정치다.
+
 Lee-Six and colleagues (Campbell/Stratton labs, Sanger) reconstructed the population dynamics of human hematopoietic stem cells (HSCs) from a single 59-year-old male using somatic mutations as natural lineage barcodes. They isolated 140 single hematopoietic stem/progenitor cells, expanded each in vitro to clonal colonies, performed WGS at $\sim$15× per colony, and identified 129,582 spontaneous genome-wide somatic mutations. Population-genetic inference treated the cells as a capture-recapture experiment: shared mutations identify shared ancestors, and clonal abundances in bulk peripheral blood serve as a recapture readout.
 
 Three findings. (1) All blood derives from a common ancestor predating gastrulation, with the earliest phylogenetic branches reflecting embryonic cell divisions. (2) The HSC pool grows steadily in early life and reaches a stable plateau of 50,000–200,000 actively-contributing stem cells by adolescence — the first direct in-vivo HSC pool-size estimate in humans. (3) Adult HSC clones generate multilineage output including granulocytes and B lymphocytes, demonstrating that long-term hematopoiesis is driven by classical multipotent stem cells rather than restricted-lineage progenitors.

@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[computational
 
 > Enformer (enhancer + transformer) is a supervised [[sequence-to-function-model]] that takes 196,608 bp of one-hot DNA and predicts 5,313 human and 1,643 mouse genomic tracks (CAGE, DNase/ATAC, histone and TF ChIP-seq) at 128-bp resolution over the central 114,688 bp. It keeps the Basenji2 recipe (same targets, same splits, Poisson loss) but replaces the dilated-convolution tower with 11 transformer blocks, so each 128-bp bin can draw on elements up to ~100 kb away instead of ~20 kb. That raises mean CAGE-at-TSS correlation across genes from 0.81 to 0.85 and improves enhancer–gene prioritisation, eQTL concordance and MPRA variant-effect prediction, all from sequence alone.
 
+> [!abstract] 한눈에
+> Enformer는 dilated convolution 대신 transformer를 써서 약 100 kb 떨어진 원거리 서열까지 반영하고, 196 kb DNA로부터 수천 개의 genomic track을 예측한다. 유전자 발현 예측 정확도를 0.81에서 0.85로 높였지만, 학습 데이터에 없는 세포 유형이나 assay로는 일반화하지 못한다.
+
 ## Key claims
 
 - **Long receptive field matters.** Basenji2 and ExPecto see at most ~20 kb from the TSS. Enformer reaches ~100 kb, which the authors estimate raises the share of high-confidence enhancer–gene pairs within reach from 47% to 84%.

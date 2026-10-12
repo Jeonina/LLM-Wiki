@@ -22,6 +22,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[scdna-cancer-applications]]", "[[scdn
 
 > Bulk sequencing treats whole-genome doubling (WGD) as a once-per-tumour yes/no event. With DLP+ single-cell WGS of **30,260 high-quality tumour genomes from 70 samples of 41 treatment-naive high-grade serous ovarian cancer (HGSOC) patients**, this study shows WGD is an **ongoing mutational process**: 40 of 41 patients carry coexisting 0×, 1× and/or 2×WGD cells. WGD raises cell-to-cell copy-number diversity, missegregation rates and cGAS⁺ ruptured micronuclei; a new SNV-based timing method, **doubleTime**, distinguishes truncal, parallel, subclonal and unexpanded WGD histories. Paradoxically, despite more chromosomal instability (CIN), predominantly-WGD tumours show **repressed STING1, reduced interferon/inflammatory signalling and an immunosuppressive, pro-angiogenic microenvironment**, whereas the CIN → innate-immune link is preserved in predominantly diploid tumours.
 
+> [!abstract] 한눈에
+> DLP+로 HGSOC 환자 41명의 종양 세포 30,260개를 분석해 WGD가 일회성 사건이 아니라 진행 중인 돌연변이 과정임을 보였고, WGD가 copy-number 다양성과 missegregation을 높인다는 것을 확인했다. 역설적으로 WGD 우세 종양은 CIN이 더 많은데도 STING1이 억제되고 면역억제적 미세환경을 보였다.
+
 ## Key claims
 
 - **Cohort and data.** 100,054 single-cell genomes sequenced (median 1,720 per patient; median depth 0.060, breadth 0.057 per cell) → 30,260 tumour genomes after QC. Signatures: 18 HRD-Dup, 8 HRD-Del, 14 FBI, 1 tandem duplicator. Matched scRNA-seq (previously published; 123 sites, 32 patients), multiplexed immunofluorescence (102 slides, 37 patients), MSK-IMPACT and bulk WGS (33 patients).

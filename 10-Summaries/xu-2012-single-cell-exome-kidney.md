@@ -22,6 +22,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[scdna-cancer-applications]]"]
 
 > The first single-cell **SNV** landscape of a human tumour. [[navin-2011-sns-tumor-evolution|Navin 2011]] had shown single-cell sequencing could resolve copy number; this paper and its companion showed it could resolve point mutations — and immediately produced a negative result that mattered: **a clear cell renal carcinoma with no detectable clonal substructure**.
 
+> [!abstract] 한눈에
+> ccRCC 환자 한 명에게서 얻은 단일세포 exome 25개로 종양의 SNV 지형을 처음 그린 연구다. 암세포들은 서로 매우 달랐지만 뚜렷한 클론 하위집단은 없었고, 저자들은 이를 빠른 악성화와 passenger 변이 축적으로 해석했다.
+
 ## Key claims
 
 - Design: **25 single-cell exomes** from one 59-year-old male patient with stage IV clear cell renal cell carcinoma (ccRCC) — 20 cells from the tumour, 5 from adjacent normal tissue — plus bulk exomes of tumour and matched normal.

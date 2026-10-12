@@ -47,6 +47,9 @@ topics:
 
 > Droplet scATAC-seq works on nuclei, which strips out mitochondria, so only ~1% of reads map to mtDNA, too few for per-cell mutation calling. mtscATAC-seq runs the 10x scATAC-seq workflow on **whole cells**: it fixes them in formaldehyde, lyses them without digitonin or Tween-20, and assigns reads that map to both mtDNA and NUMTs to the mitochondrial genome. Mean mtDNA coverage per cell rises ~20-fold (9.6× to 191.0×) while the chromatin profile stays largely intact. A companion caller, **mgatk**, picks clonal heteroplasmic variants by pooling evidence across thousands of cells (variance–mean ratio plus strand concordance) rather than genotyping each cell alone. The authors use the pair to (i) measure the cell-to-cell spread of a pathogenic MERRF allele and the chromatin features that track it, (ii) find hidden subclones in CLL and colorectal cancer, and (iii) trace clones through hematopoiesis in vitro (where clones show fate bias) and in vivo (where thousands of small clones show no detectable bias).
 
+> [!abstract] 한눈에
+> mtscATAC-seq는 핵 대신 고정한 세포 전체로 10x scATAC-seq를 수행해 세포당 mtDNA coverage를 약 20배 높이면서도 염색질 프로파일은 대체로 유지했다. 함께 개발한 mgatk는 수천 개 세포의 증거를 모아 클론성 이형질 변이를 찾아낸다.
+
 ## Key claims
 
 - **Protocol optimisation (GM11906 + TF1 cell-line mix).** Dropping digitonin and Tween-20 from lysis and wash buffers ("Condition A") raised the median mtDNA fraction per cell from 1.9% to 21.5%. Private homoplasmic variants (43 of them) showed that ~8.7% of barcodes carried the other line's variants at 60–90% heteroplasmy, i.e. mtDNA was leaking between cells. Fixation with 0.1% or 1% formaldehyde cut this cross-contamination ~3× and raised mtDNA fragment complexity by 69%. After doublet removal the empirical contamination rate was **0.19%**, close to short-read error rates. Fixation added no mtDNA mutations. Before doublet removal, 1% formaldehyde gave lower contamination (1.14%) than 0.1% (1.54%), so 1% for 10 min became the standard.

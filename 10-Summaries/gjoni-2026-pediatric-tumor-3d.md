@@ -24,6 +24,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/3d-
 >
 > The authors run **Akita**, a CNN that predicts ~1 Mb contact maps from sequence, through their **SuPreMo-Akita** in-silico mutagenesis pipeline on **somatic [[structural-variants]]** (DEL, DUP, INV, INS, BND) called with Manta from tumour WGS of 1,843 Children's Brain Tumor Network (CBTN) patients across 61 tumour types. Each SV is inserted into the reference sequence, and the REF and ALT predicted maps are compared by MSE and 1 − correlation. Nearly 300,000 SVs were scored, and 107,614 remained after artifact filtering. The paper ranks tumour types by predicted disruption, finds five 1 Mb "recurrently disrupted regions" (RDRs), and adds an Activity-by-Contact (ABC) weighting from tumour-matched cell-line H3K27ac and ATAC data to prioritise SVs that disrupt contacts at enhancers. This is a pure **application** of a [[sequence-to-function-model]] to somatic SVs (coding and noncoding). There is no benchmark: Akita's predictions are never checked against tumour Hi-C. Support is indirect, mainly expression outliers for three BNDs in atypical teratoid rhabdoid tumour (ATRT) and SVs that land on known pHGG enhancer targets.
 
+> [!abstract] 한눈에
+> Gjoni 등은 소아 뇌종양 환자 1,843명의 somatic SV를 SuPreMo-Akita로 분석해, 3D contact map이 얼마나 교란되는지 예측하고 종양 유형별로 비교했다. 다만 Akita의 예측을 종양 Hi-C로 직접 검증하지 않았기 때문에 근거는 간접적이다.
+
 ## Key claims
 
 - **SV landscape.** Samples have a median of 35 SVs. Lymphomas and sarcomas have the most (median 71.5) and mesenchymal tumours the fewest (24). BNDs make up 48% of SVs and DELs 33%. Progressive tumours carry 1.2× the SV burden of initial tumours, and 56% of participants have more SVs in the progressive sample.

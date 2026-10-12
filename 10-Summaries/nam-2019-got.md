@@ -34,6 +34,9 @@ topics:
 
 > Thesis: malignant cells often share surface markers with non-neoplastic cells, so to study how somatic mutations corrupt human hematopoiesis you need to genotype and transcribe the *same* single cells. The authors invent **GoT** — a droplet-based amplicon trick on top of 10x Genomics scRNA-seq — apply it to CALR-mutated MPN, and find that CALR's transcriptional impact (UPR, NF-κB, fitness) depends on the progenitor's *native* identity, not on the mutation alone.
 
+> [!abstract] 한눈에
+> GoT는 10x scRNA-seq에 표적 amplicon 증폭을 더해 같은 단일 세포에서 genotype과 전사체를 함께 읽는 방법이다. CALR 돌연변이 MPN에 적용해 돌연변이의 전사적 영향이 MkP에서는 UPR, HSPC에서는 NF-κB처럼 전구세포 고유의 정체성에 따라 달라짐을 보였다.
+
 ## Key claims
 
 - **GoT links genotype to transcriptome in thousands of single cells.** Modify 10x Genomics: amplify the targeted transcript and locus of interest from the cDNA before short-read sequencing, then use shared cell barcodes to assign genotype to single-cell expression profiles. Genotyping rates ~88% in CD34+ MPN samples vs ~1.4% from default 10x reads.

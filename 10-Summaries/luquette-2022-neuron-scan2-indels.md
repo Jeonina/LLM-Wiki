@@ -26,6 +26,9 @@ topics: ["[[brain-somatic-mosaicism]]", "[[mosaic-variant-calling]]", "[[whole-g
 
 > Pairing **PTA** amplification with **SCAN2** — SCAN-SNV's allele-balance model plus a new **mutation-signature rescue** step and the first single-cell somatic **indel** caller — the authors catalogue 20,090 somatic SNVs and 2,714 somatic indels from 52 neurotypical human neurons. Three results matter: the neuronal SNV accumulation rate is revised to **~16 SNVs per year** (older MDA estimates were inflated by an artifact signature); somatic **indels accumulate at ≥3 per year per neuron**; and both mutation classes — indels most strongly — are **enriched in neuron-specific enhancers, promoters, highly expressed genes and conserved sequence**.
 
+> [!abstract] 한눈에
+> Luquette 등은 PTA와 SCAN2를 결합해 신경전형인의 뉴런 52개에서 체성 SNV와 indel을 찾았다. 뉴런의 SNV 축적 속도를 연 16개 안팎으로 낮춰 잡았고, indel도 연 3개 이상 쌓이며 두 변이 모두 뉴런 특이 enhancer와 promoter에 몰려 있음을 보였다.
+
 ## Key claims
 
 - **PTA beats MDA on the same brains.** 52 PTA neurons from the PFC of 12 neurotypical individuals (30–60×; including 15 neurons from 5 individuals from another study), compared with 75 MDA neurons previously amplified from 11 of the 17 individuals. PTA reduced coverage variability and allelic dropout. Large (>5 Mb) somatic copy-number changes appeared in only 2 of 52 PTA neurons, at odds with earlier reports of pervasive neuronal CNAs.

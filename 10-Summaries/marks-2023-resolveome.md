@@ -22,6 +22,9 @@ topics: ["[[40-Topics/single-cell-multiomics]]", "[[40-Topics/scdna-cancer-appli
 
 > ResolveOME is a single-cell assay that pairs **PTA-based whole-genome amplification** (for accurate, genome-wide SNV/CNV calling) with **full-transcript RNA-seq** from the same cell, so that a cell's complete genotype can be read alongside the transcriptomic readout of its identity and state. It is the DNA-first realization of the "scTrio-seq with a low-error WGA" combination — trading methylation for genome-wide point-mutation fidelity, and commercialized by BioSkryb as the ResolveOME kit.
 
+> [!abstract] 한눈에
+> ResolveOME는 PTA 기반 WGA와 전장 전사체 RNA-seq를 한 세포에서 결합해 유전체 전반의 SNV·CNV와 세포 상태를 함께 읽는다. quizartinib 내성 AML 세포에서 FLT3 변이와 AXL 신호 상향을 같은 세포 안에서 연결했으나, 세포주와 소수의 일차 시료로만 검증한 preprint다.
+
 ## Key claims
 
 - Combining PTA (Gonzalez-Pena 2021 chemistry) with full-transcript reverse transcription on the same cell yields accurate complete-genome SNV assessment **plus** a full-length transcriptome — neither modality is sacrificed to capture the other.

@@ -22,6 +22,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[scdna-cancer-applications]]", "[[whol
 
 > The amplification-free branch of single-cell genomics, scaled. DLP+ replaces custom microfluidics with off-the-shelf piezo dispensing into commodity nanowell arrays, adds **real-time imaging before reagent dispensing** so doublets and debris are excluded before library prep, and delivers a resource of **51,926 single-cell genomes**. No WGA means no amplification bias — and no amplification bias means integer copy number, clean allele ratios, and detectable replication state.
 
+> [!abstract] 한눈에
+> DLP+는 nanowell 분주와 실시간 이미징 QC를 결합한 증폭 없는 단일세포 유전체 플랫폼으로, 51,926개 단일세포 유전체 자원을 내놓았다. clone 단위 pseudo-bulk로 SNV·breakpoint·allele-specific copy number를 얻었고, 세포주의 염색체 오분리율이 조직보다 훨씬 높음을 보였다.
+
 ## Key claims
 
 - **Why amplification-free**: DOP-PCR, MDA and MALBAC all "introduce both coverage and polymerase bias into sequences, leading to lower fidelity representations of the genome and analytical scenarios where duplicate sequences cannot be easily resolved." SCI-seq raises throughput but suffers high duplication and low coverage breadth. Microfluidic DLP fixed the bias but was limited by device fabrication and by cell size (large cells clog, small cells pass through traps).

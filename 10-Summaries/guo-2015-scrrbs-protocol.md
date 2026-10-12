@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]", "[[scdna-seq]]"]
 
 > The protocol for [[guo-2013-scrrbs|scRRBS]], and the clearest statement of the counting argument that governs all single-cell methylation chemistry: **a diploid cell has two DNA molecules and every purification step loses some of them irreplaceably.** Standard RRBS has five purification points before PCR; scRRBS collapses all five into **one tube**, purifying only after bisulfite conversion. Result: ~1 million CpGs per diploid cell, including **~70% of CpG islands**.
 
+> [!abstract] 한눈에
+> scRRBS 프로토콜의 핵심은 bisulfite conversion 전까지 모든 단계를 한 tube에서 진행해 DNA 손실을 막는 것이다. 이렇게 diploid 세포당 약 100만 개 CpG를 얻지만, 세포 5개 수준에서 coverage가 포화되는 한계가 있다.
+
 ## Key claims
 
 - **The one-tube reaction is the entire innovation.** MspI digestion, end repair/dA tailing, adaptor ligation, and bisulfite conversion all proceed in a single tube — buffer system and reaction volumes were re-tuned (Tango buffer throughout) so each enzyme retains activity at its stage, with heat inactivation between steps. Even the gel-free RRBS protocols of the time still required three purifications; scRRBS requires zero before conversion.

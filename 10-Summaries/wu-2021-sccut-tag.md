@@ -22,6 +22,9 @@ topics: ["[[histone-modifications]]", "[[cancer-clonal-evolution]]"]
 
 > scCUT&Tag scaled to nanowell and droplet platforms, applied to a deliberately counterintuitive target: **H3K27me3**. What is silenced turns out to identify cell type as well as what is open — an orthogonal axis to accessibility, and one that works on frozen tissue and archival tumor material.
 
+> [!abstract] 한눈에
+> nanowell과 droplet 플랫폼으로 확장한 scCUT&Tag를 H3K27me3에 적용해, 침묵된 크로마틴이 열린 크로마틴만큼 세포 유형을 잘 구분한다는 점을 보였다. 세포당 약 300–1,100 fragment에서도 cell typing이 가능했고 동결 교모세포종 조직에도 적용됐다.
+
 ## Key claims
 
 - H3K27me3 signal binned at **5 kb** (matched to the >10 kb scale of PcG domains) → LSI → UMAP → Louvain in ArchR separates 100% of 804 hESCs from 908 K562 cells.

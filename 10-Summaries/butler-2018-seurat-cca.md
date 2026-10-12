@@ -22,6 +22,9 @@ topics: ["[[computational-methods]]", "[[single-cell-multiomics]]"]
 
 > The Seurat integration line begins here, and it begins with a borrowed idea: **manifold alignment from computer vision**. Find the gene–gene correlation structure that is *conserved* across datasets using canonical correlation analysis, embed cells in that shared space, then non-linearly warp to fix scale differences. The framing is not "remove the batch effect" but "find what the datasets have in common."
 
+> [!abstract] 한눈에
+> Seurat CCA alignment는 데이터셋 사이에 보존된 유전자 상관 구조를 canonical correlation analysis로 찾고 비선형 warping으로 정렬해, 조건·기술·종을 넘는 scRNA-seq 통합을 가능하게 했다. 배치 효과를 지우기보다 데이터셋의 공통점을 찾는다는 발상이 출발점이다.
+
 ## Key claims
 
 - **Four requirements are stated up front**, and they define what integration must do beyond bulk batch correction: (1) align subpopulations **even if each has a unique response** — the key challenge outside the scope of bulk methods, which assume confounders act uniformly on all cells; (2) allow **changes in cellular density** (subpopulation frequency shifts) between conditions; (3) be robust to **feature-scale changes** from global transcriptional shifts or differing normalisation; (4) require **no pre-established markers** or targeting to defined cell subsets.

@@ -22,6 +22,9 @@ topics: ["[[40-Topics/single-cell-multiomics]]"]
 
 > A practical inventory of single-cell multimodal sequencing methods organized by which modality pairs they read (genome+RNA, epigenome+RNA, 3D+epigenome, RNA+protein, spatial+omics), paired with a tour of computational integration tools (matrix factorization, manifold alignment, deep learning). Comprehensive but largely encyclopedic — value is in the table of methods + integration tool taxonomy, not novel synthesis.
 
+> [!abstract] 한눈에
+> single-cell multimodal sequencing 방법을 읽는 modality 조합별로 정리하고 matrix factorization, manifold alignment, deep generative model로 통합 도구를 분류한 백과사전식 리뷰다. RNA가 거의 모든 modality의 연결 중심이며 genome+RNA 동시 측정은 여전히 처리량이 낮다고 지적한다.
+
 ## Key claims
 
 - **Transcriptome is the linkage center.** Across all multimodal platforms, RNA is the most common pairing partner — every other modality (genome, epigenome, proteome, spatial) is most often joint-profiled *with* RNA. This reflects the central dogma framing and the maturity of scRNA-seq protocols.

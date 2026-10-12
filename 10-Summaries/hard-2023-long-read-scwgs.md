@@ -22,6 +22,9 @@ topics: ["[[long-read-sequencing]]", "[[whole-genome-amplification]]", "[[scdna-
 
 > Long-read sequencing needs micrograms of input; a human cell has ~6 pg. The bridge is **droplet MDA (dMDA)**: lyse one FACS-sorted cell, split its DNA into **~50,000 droplets** (Xdrop, <100 µm) so each droplet holds one or a few fragments, amplify with Φ29 inside the droplet, then sequence on **PacBio HiFi**. Partitioning caps over-amplification of any one fragment (better uniformity) and confines chimeras to *within* a molecule (no inter-molecular chimeras in single-fragment droplets). On clonally expanded CD8+ T cells, this gives up to 40% genome coverage per cell, phased SNVs, **5473 true SVs/cell (>16× the Illumina dMDA yield)**, tandem-repeat genotypes, and partial de novo assemblies — but intramolecular chimeras make every called **inversion and duplication essentially false**.
 
+> [!abstract] 한눈에
+> Hård 등은 단일세포 DNA를 약 50,000개 droplet으로 나눠 MDA한 뒤 PacBio HiFi로 sequencing해, 단일세포 long-read WGS를 구현했다. 세포당 SV 5,473개를 찾았지만, 분자 내 chimera 때문에 inversion과 duplication call은 사실상 모두 false였다.
+
 ## Key claims
 
 - **dMDA beats tube MDA on uniformity** (Illumina, 8 vs 8 cells, each downsampled to ~100 M read pairs): reads in ≥200× regions 68.9% (MDA) vs 16.0% (dMDA); bases covered ≥1 read 23.4% vs 33.8%; genome-wide coverage SD 2.46× higher for MDA. MDA's unevenness comes from a limited number of fragments amplified to extreme coverage. dMDA also gives better mtDNA coverage.

@@ -28,6 +28,9 @@ topics:
 
 > Thesis: chromatin accessibility — the physical access of macromolecules to chromatinized DNA — is a dynamic, regulated state that integrates nucleosome occupancy, TF binding, and architectural proteins. ~2–3% of the genome is accessible, but it captures >90% of TF binding. Accessibility is both an *output* of cell identity (reflecting TF-nucleosome competition) and an *input* to gene regulation, making it the most informative single epigenetic readout of regulatory state.
 
+> [!abstract] 한눈에
+> Klemm, Shipony, Greenleaf는 염색질 접근성을 TF와 nucleosome이 경쟁하며 이루는 동적 평형으로 본다. 접근 가능한 영역은 유전체의 2–3%에 불과하지만 TF 결합의 90% 이상이 이곳에 있어, 조절 상태를 가장 잘 보여 주는 단일 후성유전 지표라고 정리했다.
+
 ## Key claims
 
 - **Accessibility = TF–nucleosome competition.** Nucleosomes occlude DNA; TFs displace nucleosomes through binding. The accessibility landscape reflects the *dynamic equilibrium* of this competition, not a static structure.

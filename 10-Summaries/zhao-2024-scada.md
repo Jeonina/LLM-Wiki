@@ -22,6 +22,9 @@ topics: ["[[single-cell-atac-seq]]", "[[computational-methods]]"]
 
 > scaDA reframes scATAC-seq differential accessibility (DA) as a **differential-distribution** problem. Each peak's counts are modelled as **zero-inflated negative binomial (ZINB)** with mean μ, prevalence of excess zeros p and dispersion φ; a 3-d.f. likelihood-ratio test asks whether *any* of the three differs between two groups. What separates scaDA from a plain ZINB(μ, φ, p) LRT is estimation: an **empirical-Bayes log-normal prior shrinks φ** across peaks (posterior mode by Newton–Raphson), followed by iterative re-estimation of μ and p. The authors present it as, to their knowledge, the first method to test distribution (not just mean) differences in scATAC DA; it wins on power and FDR control in ZINB simulations and on a proxy "true discovery rate" in three multiome-type datasets, including Alzheimer's disease microglia.
 
+> [!abstract] 한눈에
+> scaDA는 scATAC-seq differential accessibility를 ZINB 분포의 평균, zero 비율, dispersion 차이를 함께 검정하는 문제로 재정의하고, empirical-Bayes로 dispersion을 shrink한다. simulation과 실제 데이터에서 power와 FDR 통제가 기존 방법보다 우수했다.
+
 ## Key claims
 
 - **Distributions differ in more than the mean.** In 10x "Human Brain 3K" (cerebellum multiome; 3,233 cells, 88,843 peaks; 8 cell types with >100 cells retained of 14 annotated), cell types differ in μ, p and φ in varied patterns — e.g., lower dispersion in cOPC than granule neurons with similar μ and p — motivating a composite test.

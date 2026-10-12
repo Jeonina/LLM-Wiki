@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/sin
 
 > EpiZoo is a 2.6-billion-parameter mixture-of-experts transformer **pretrained on single-cell ATAC-seq** from human and mouse: the "Omni-scATAC" corpus of about 20.9 million cells, 46 datasets, more than 30 tissues and cell lines. It builds on the same group's EpiAgent. Each cell becomes a "cell sentence" of up to 8,192 accessible cCREs ranked by TF-IDF. Each cCRE token's embedding is the sum of (1) a **DNA-sequence embedding** from SEAM, a DNABERT-2 encoder with a projection head that is calibrated to the learned embeddings and then frozen, (2) a learnable cCRE identity embedding and (3) a rank embedding. Pretraining has two tasks: cell–cCRE alignment (is this cCRE open in this cell?) and reconstruction of the whole accessibility profile through species-specific linear decoders. The sequence component is what lets the model move beyond species-specific coordinates. It can be post-trained on macaque, zebrafish, fly and maize, applied to a human–macaque primate comparison (EpiZoo-Evo), used to score noncoding somatic mutations (EpiZoo-Cancer), and used to predict cell-type-specific accessibility from sequence.
 
+> [!abstract] 한눈에
+> EpiZoo는 약 2,090만 개 인간·생쥐 scATAC-seq 세포로 사전학습한 mixture-of-experts 모델로, cCRE 토큰에 DNABERT-2 기반 서열 임베딩을 더했다. 이 서열 정보 덕분에 원숭이, 제브라피시, 초파리, 옥수수 같은 새로운 종에도 옮겨 적용할 수 있었다.
+
 ## Key claims
 
 - **Architecture.** Hidden size 512. The MoE has 4 experts with top-2 routing. Cell embedding = [CLS] output. Species-specific signal decoders are linear maps from the cell embedding to that species' cCRE vocabulary. The human vocabulary comes from the Human-scATAC-Corpus (also used by EpiAgent); the mouse vocabulary from a large mouse atlas (Lu 2025). The human part of the corpus is about 8.1M cells (EpiAgent's 4.8M plus 12 datasets); the mouse part is about 12.8M cells from 33 datasets.

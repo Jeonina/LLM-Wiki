@@ -22,6 +22,9 @@ topics: ["[[computational-methods]]", "[[single-cell-multiomics]]"]
 
 > Once an atlas exists, the operation you actually perform a hundred times is **mapping a new dataset onto it** — and the obvious approach, re-integrating reference and query from scratch, is wrong on three counts: intractable at millions of cells, requires shipping the raw reference around, and **corrupts the carefully annotated reference embedding**. Symphony compresses an integrated reference into a portable form and localises query cells within the **frozen** embedding in seconds.
 
+> [!abstract] 한눈에
+> Symphony는 Harmony로 통합한 reference를 압축하고 고정해 두고, 새 query 세포를 그 embedding 위에 몇 초 만에 매핑한다. 세포 유형, 발생 궤적 위치, 측정하지 않은 표면 단백질까지 옮겨 줄 수 있지만, reference에 없는 세포 상태는 표현하지 못한다.
+
 ## Key claims
 
 - **The reference must be frozen.** The "gold standard" of de novo joint integration is reasonable for small references and unacceptable for atlas-scale ones: it forces rebuilding for every analysis, requires "administratively cumbersome exchanges of large-scale datasets", and can corrupt an embedding that was painstakingly constructed and annotated.

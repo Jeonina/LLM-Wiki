@@ -16,6 +16,9 @@ updated: 2026-05-12
 
 > Iain C Macaulay, Wilfried Haerty, Parveen Kumar, Yang I Li, Tim Xiaoming Hu, Mabel J Teng, Mubeen Goolam, … Thierry Voet, Magdalena Zernicka-Goetz, Frederick J Livesey, Chris P Ponting. *Nature Methods* **12**, 519–522 (April 2015). DOI: 10.1038/nmeth.3370.
 
+> [!abstract] 한눈에
+> G&T-seq는 단일세포에서 polyA mRNA를 oligo-dT 비드로 gDNA와 물리적으로 분리하고 각각 따로 증폭해 같은 세포의 유전체와 전장 전사체를 함께 읽었다. 배아 할구에서는 이수성과 그에 따른 염색체 단위 발현 변화를 같은 세포에서 확인했다.
+
 ## Thesis
 
 G&T-seq physically **separates** polyadenylated mRNA from genomic DNA in a single cell using a biotinylated oligo-dT primer captured on streptavidin beads, then **amplifies each pool independently** (Smart-seq2 for RNA, MDA or PicoPlex for DNA). This separation-before-amplification strategy contrasts with the contemporaneous one-pot DR-seq method ([[10-Summaries/dey-2015-dr-seq|Dey 2015]]) and enables full-length transcripts + flexible WGA choice from the same single cell.

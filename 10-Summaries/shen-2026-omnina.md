@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]"]
 
 > OmniNA is a **LLaMA-style decoder-only language model pretrained on nucleotide sequences paired with their free-text NCBI annotations** (organism, taxonomy, gene and product names, function). The pretraining corpus is the NCBI nt database up to April 2023: 91.7 million sequences (200–3,000 bp after truncation), 1,076.2 billion bases and 197 million annotation words. A shared BPE tokenizer covers both DNA and English text. Three sizes (66M, 330M, 1.7B) are trained by next-token prediction, then fine-tuned in a **question-answering format** (instruction + sequence + question → text answer) on 23 tasks spanning human regulatory elements, splicing, chromatin, methylation, ClinVar variants, CRISPR off-target, virus and bacterial taxonomy, and a cfRNA cancer classifier. At inference only the sequence is given. The claim is that annotation-aware pretraining gives better representations and multitask transfer than sequence-only DNA LMs.
 
+> [!abstract] 한눈에
+> OmniNA는 NCBI nt 서열과 자유 텍스트 annotation을 함께 학습한 LLaMA 계열 decoder-only 모델로, 서열을 보고 annotation을 생성하며 다양한 fine-tuning 과제도 수행한다. 11개 representation 과제 모두에서 DNABERT-2, Nucleotide Transformer v2, HyenaDNA를 앞섰다.
+
 ## Key claims
 
 - **Generation quality scales with size.** On annotation generation, OmniNA-1.7B reaches F1 0.66 (genomic type), 0.24 (species, 172 classes) and 0.59 (enzyme, 104 classes); larger models also generate more diverse, more reproducible and more truncation-stable annotations.

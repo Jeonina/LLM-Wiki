@@ -22,6 +22,9 @@ topics: ["[[computational-methods]]", "[[cancer-clonal-evolution]]", "[[scdna-se
 
 > A community perspective by about fifty authors. It argues that single-cell sequencing has become a data-science field ("SCDS") and lists eleven open problems, each with motivation, status and open problems. Three recurring themes run through all of them: **choosing the right level of resolution**, **quantifying and propagating measurement uncertainty**, and **scaling to more cells and more features**. The challenges fall into transcriptomics (I–V), genomics (VI), phylogenomics (VII–IX) and two overarching ones (X integration, XI benchmarking). For this wiki, the scDNA half is the load-bearing part. It frames scDNA analysis as variant calling under WGA artefacts (VI), followed by phylogenetic (VII–VIII) and population-genetic (IX) inference that is constrained by the fact that **somatic evolution is asexual**.
 
+> [!abstract] 한눈에
+> 약 50명의 저자가 단일세포 데이터 과학의 열한 가지 난제를 정리한 관점 논문으로, 해상도 선택, 측정 불확실성 전파, 확장성을 공통 주제로 꼽는다. scDNA 분야에서는 WGA artefact 아래의 변이 검출과 무성 체세포 진화에 기반한 계통 추론을 핵심 과제로 제시했다.
+
 ## Key claims
 
 **Transcriptomics (I–V)**

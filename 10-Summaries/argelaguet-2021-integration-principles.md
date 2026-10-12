@@ -22,6 +22,9 @@ topics: ["[[single-cell-multiomics]]"]
 
 > "Data integration" had come to mean everything from batch correction to eQTL mapping. This review imposes one organizing question — **what is the anchor linking the datasets?** — and derives from it a taxonomy (horizontal / vertical / diagonal / mosaic) that determines which assumptions you are making and therefore which methods are legitimate.
 
+> [!abstract] 한눈에
+> Argelaguet 등의 리뷰는 데이터를 잇는 anchor가 무엇인지를 기준으로 단일세포 데이터 통합을 horizontal, vertical, diagonal, mosaic으로 분류했다. 서로 다른 세포에서 측정한 modality를 잇는 diagonal 통합이 가장 어렵고 검증하기도 힘들다고 지적했다.
+
 ## Key claims
 
 - **The anchor determines everything.** Three primary regimes:

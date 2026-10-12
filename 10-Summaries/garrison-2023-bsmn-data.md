@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Garrison et al. (2023) — *Genomic data resources of the Brain Somatic Mosaicism Network for neuropsychiatric diseases* — *Scientific Data*. [DOI](https://doi.org/10.1038/s41597-023-02645-7)
 
+> [!abstract] 한눈에
+> Garrison 등은 BSMN 컨소시엄이 신경정신질환 피험자 1,087명에게서 만든 400 TB 넘는 WGS, WES, 단일 세포 DNA, RNA-seq 데이터를 NDA에 공개한 과정을 기술했다. 신경 전형 참조 뇌의 SNV 표준 세트는 이후 mosaic 변이 caller 벤치마크의 사실상 기준이 됐다.
+
 Garrison and colleagues (BSMN consortium, NIMH-funded) describe the **Brain Somatic Mosaicism Network (BSMN)** genomic data resources for neuropsychiatric diseases — over 400 terabytes of data from 1,087 subjects, deposited at the NIMH Data Archive (NDA). The BSMN consortium spans nine disease-specific projects covering autism spectrum disorder (ASD), bipolar disorder (BP), focal cortical dysplasia (FCD), schizophrenia (SCZ), Tourette syndrome (TS), plus a tenth consortium-wide neurotypical reference brain (NRB; LIBD subject 5154) used to validate the somatic-SNV-calling best-practice workflow.
 
 The data resources include: whole-genome sequencing (WGS, both conventional and high-coverage), whole-exome sequencing (WES), single-cell DNA sequencing (NeuN+ MDA), RNA-seq, and SLAV-seq targeting somatic LINE-1 retrotransposition events. The NRB workflow validation paper (Wang 2021) developed the consensus mosaic-SNV calling pipeline now used field-wide; the SNV gold-standard set on the NRB is the de-facto benchmark for mosaic-caller comparison (used by Ha 2023 benchmark).

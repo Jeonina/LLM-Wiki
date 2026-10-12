@@ -27,6 +27,9 @@ topics:
 
 > Thesis: DNA methylation (5-methylcytosine, primarily at symmetric CpG dinucleotides) is mostly stable throughout life, propagated by DNMT1 at S phase, but it is dynamically erased and reset during two developmental windows — primordial germ cell specification and pre-implantation development — and serves as both a localized regulatory signal and a genome-wide silencing mechanism for repetitive elements and imprints.
 
+> [!abstract] 한눈에
+> Smith와 Meissner의 리뷰로, DNA 메틸화는 DNMT1이 S기에 유지하는 대체로 안정된 표지지만 원시생식세포 형성기와 착상 전 발생기라는 두 시기에 대규모로 지워지고 다시 세워진다고 정리한다. 이 표지는 국소 조절 신호이면서 반복서열과 각인 유전자를 잠그는 기제이기도 하다.
+
 ## Key claims
 
 - **Global methylation landscape**: 60–80% of the ~28 million CpGs in the human genome are methylated. <10% of CpGs occur in CpG islands, most of which are at TSSs of housekeeping/developmental genes and are constitutively *unmethylated*.

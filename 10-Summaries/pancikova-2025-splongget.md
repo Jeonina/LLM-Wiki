@@ -23,6 +23,9 @@ topics: ["[[long-read-sequencing]]", "[[single-cell-multiomics]]", "[[scdna-canc
 
 > SPLONGGET (Single-cell Profiling of LONG-read Genome, Epigenome, and Transcriptome) is a modified **10x Genomics Single Cell Multiome ATAC + Gene Expression** protocol read out on **Oxford Nanopore PromethION**. Tn5 tagmentation of nuclei produces fragments from ~35 bp to several kbp, but standard bead clean-ups, PCR and Illumina sequencing keep only the short ones, which is why ATAC data look like open-chromatin enrichment. SPLONGGET changes the clean-ups so **fragments of all sizes are retained**, switches to long-range PCR and omits cDNA fragmentation. The DNA library therefore carries sparse ATAC signal *plus* whole-genome coverage, and the cDNA library carries full-length transcripts, both under the same barcode pair. A biotinylated multiplex-PCR **target enrichment** step re-sequences chosen loci to saturation from the same libraries. Applied to four longitudinal bone-marrow samples from one paediatric high-hyperdiploid B-ALL (XG111: diagnosis plus three relapses, including after anti-CD19 CAR-T), it calls CNAs per cell and SNVs/SVs/allele-specific copy number from pseudobulks. It also detects the CAR vector and its integration sites, and finds **CD19-negative relapse driven by an 8 Mb chr16 deletion (LOH of *CD19*) plus four distinct splice-site SNVs** that long-read phasing places on distinct copies or subclones.
 
+> [!abstract] 한눈에
+> SPLONGGET은 10x Multiome 프로토콜을 Nanopore long-read로 읽어, 한 세포에서 유전체·전장 전사체·접근성을 함께 얻는다. 소아 B-ALL 재발 시료에 적용해 CD19 음성 재발이 chr16 결실과 서로 다른 splice-site SNV들로 일어났음을 밝혔다.
+
 ## Key claims
 
 - **Library design.** SPLONGGET libraries span 300–3,500 bp (cDNA) and 200 bp to >10 kb (DNA), versus the narrow ranges of standard libraries. The workflow was optimised on RPMI-8402 cells. Nanopore was chosen because it is "independent of fragment length".

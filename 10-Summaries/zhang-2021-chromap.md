@@ -22,6 +22,9 @@ topics: ["[[single-cell-atac-seq]]", "[[3d-genome]]"]
 
 > A minimizer-based aligner built on a single observation: chromatin assays need **read coordinates**, not base-level alignments. Dropping the variant-calling-grade alignment work and fusing alignment with adapter trimming, deduplication and barcode correction into one pass gives >10× speedups at equal downstream accuracy.
 
+> [!abstract] 한눈에
+> Chromap은 chromatin assay에 필요한 것은 read 좌표뿐이라는 점에 착안해 alignment, adapter trimming, deduplication, barcode correction을 한 번에 처리하는 minimizer 기반 aligner다. downstream 정확도는 그대로 두고 속도를 10배 넘게 높였다.
+
 ## Key claims
 
 - The bottleneck in ChIP-seq/ATAC-seq/Hi-C pipelines is **alignment and preprocessing**, not analysis: BWA-MEM/Bowtie2 + SAMtools + Picard take hours to days while MACS2 peak calling takes minutes. Repeated I/O across sequential tools compounds the cost.

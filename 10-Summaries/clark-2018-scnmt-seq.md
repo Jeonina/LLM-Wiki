@@ -16,6 +16,9 @@ updated: 2026-05-12
 
 > Stephen J. Clark, Ricard Argelaguet, Chantriolnt-Andreas Kapourani, Thomas M. Stubbs, Heather J. Lee, Celia Alda-Catalinas, Felix Krueger, Guido Sanguinetti, Gavin Kelsey, John C. Marioni, Oliver Stegle, Wolf Reik. *Nature Communications* **9**, 781 (Feb 2018). DOI: 10.1038/s41467-018-03149-4.
 
+> [!abstract] 한눈에
+> scNMT-seq은 NOMe-seq의 GpC 표지, scBS-seq, Smart-seq2를 결합해 한 세포에서 chromatin accessibility, DNA 메틸화, 전사체를 처음으로 함께 측정했다. 분화 과정에서 세 층 사이의 결합이 locus마다 이질적이며 동적으로 변한다는 것을 보였다.
+
 ## Thesis
 
 First single-cell method that simultaneously profiles **three molecular layers — chromatin accessibility, DNA methylation, and the transcriptome — from the same cell**. scNMT-seq combines NOMe-seq chemistry (GpC methyltransferase M.CviPI labels accessible DNA) with scBS-seq and Smart-seq2 RNA, after physical DNA/RNA separation via G&T-seq logic. Validated on mouse ESCs and embryoid bodies; reveals dynamic coupling between epigenetic layers along differentiation.

@@ -22,6 +22,9 @@ topics: ["[[histone-modifications]]", "[[chromatin-architecture]]"]
 
 > Two papers in one. Biologically: cell-type-specific enhancer repertoires are set by **small collaborative sets of lineage-determining TFs** binding at closely spaced motifs, which displace nucleosomes and induce H3K4me1 — creating "primed" elements that a second tier of signal-dependent factors (LXR, TLR4-responsive) can later use. Methodologically: HOMER, the motif-discovery and ChIP-seq analysis suite, was written to support this study and became the field's default.
 
+> [!abstract] 한눈에
+> Heinz 등은 세포 유형별 enhancer가 소수의 lineage-determining TF가 가까이 협력 결합하면서 정해진다는 것을 보였다. 예를 들어 PU.1 결합이 H3K4me1보다 먼저 일어나 그 표지를 유도했다. 이 연구를 위해 만든 motif 분석 도구 HOMER도 함께 발표했다.
+
 ## Key claims
 
 - PU.1 cistromes are largely cell-type-specific at distal sites (45,631 macrophage / 32,575 B-cell peaks; 17,130 shared) while >80% of promoter-proximal PU.1 sites are occupied equally in both — specificity lives in the distal compartment.

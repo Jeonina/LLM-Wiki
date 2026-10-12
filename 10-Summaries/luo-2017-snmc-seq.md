@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]", "[[brain-somatic-mosaicism]]", "[[single-cell-mu
 
 > The paper that made DNA methylation a **cell-typing modality** rather than a supplementary readout. The trick is **non-CG methylation (mCH)**: because neurons accumulate mCH over large domains during postnatal synaptogenesis, sparse single-cell coverage still estimates mCH accurately in **100-kb bins across >90% of the genome**. 6,000+ single neuronal methylomes → **16 mouse and 21 human** cortical neuron clusters, plus ~500,000 CG-DMRs per species (575,524 mouse, 498,432 human) marking cell-type-specific regulatory elements.
 
+> [!abstract] 한눈에
+> snmC-seq는 뉴런의 비-CG 메틸화(mCH)를 100-kb bin으로 묶어 단일세포 coverage가 희소한 문제를 넘어섰다. 단일 뉴런 메틸롬 6,000여 개에서 마우스 16개, 사람 21개 피질 뉴런 군집을 찾아 DNA 메틸화를 세포 분류 수단으로 자리 잡게 했다.
+
 ## Key claims
 
 - **mCH in coarse bins defeats sparsity.** Coverage is only 4.7% of the mouse genome and 5.7% of the human genome per cell (1.4M and 1.8M stringently filtered reads), yet 100-kb-bin mCH is accurate for >90% of the genome because mCH is modulated over large domains. Gene-body mCH is anticorrelated with expression and is *more* predictive of expression than mCG or chromatin accessibility.

@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Dong et al. (2017) — *Accurate identification of single-nucleotide variants in whole-genome-amplified single cells (SCcaller + SCMDA)* — *Nature Methods*. [DOI](https://doi.org/10.1038/nmeth.4227)
 
+> [!abstract] 한눈에
+> Dong 등은 cytosine deamination을 줄인 저온 용해법 SCMDA와, 이형접합 germline SNP로 국소 allelic amplification bias를 보정하는 SCcaller를 개발했다. 비증폭 클론 기준 검증에서 SCcaller는 MuTect, Monovar 등보다 somatic SNV FDR이 크게 낮았다.
+
 Dong, Zhang, Milholland, Lee, Maslov, Wang and Vijg (Albert Einstein College of Medicine) addressed two compounding sources of false-positive SNVs in scWGS data: (i) cytosine-deamination artefacts from cell lysis at elevated temperatures, and (ii) allelic-amplification bias in MDA. They developed **SCMDA** (single-cell MDA), a low-temperature alkaline-lysis protocol that suppresses cytosine deamination, and **SCcaller**, a general-purpose single-cell variant caller that estimates *local* allelic-amplification bias from heterozygous germline SNPs in a kernel-smoothing window and adjusts SNV likelihoods accordingly.
 
 Validation strategy: compare SCMDA-amplified single cells against unamplified kindred clones from the same population, treating clone variants as truth. SCcaller achieved 90.1% sensitivity at 0.12 FPs per Mb for germline SNP calls — substantially better than HaplotypeCaller (7× more FPs) and Monovar. For somatic SNV calls (variants absent from the clone), SCcaller's FDR (0.308–0.393) is much lower than MuTect, VarScan and Monovar (FDR 0.745–0.860). On MALBAC-amplified single cells, SCcaller's overlap consistency between cells is 2× higher than Monovar.

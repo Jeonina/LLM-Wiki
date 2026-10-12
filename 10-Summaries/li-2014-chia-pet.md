@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[chromatin-architecture]]"]
 
 > A protocol-and-applications review of the **protein-anchored** branch of the 3C family. The argument for ChIA-PET over Hi-C is a resolution-versus-scope trade: ChIA-PET restricts attention to interactions involving one protein of interest, and in exchange gets **higher resolution and a functional handle** — you know which factor the loop is about. Its lasting empirical contribution is the demonstration that **over 40% of enhancers do not regulate their nearest promoter**.
 
+> [!abstract] 한눈에
+> ChIA-PET의 프로토콜과 응용을 정리한 리뷰로, 특정 단백질이 매개하는 상호작용만 보는 대신 Hi-C보다 높은 해상도와 기능적 단서를 얻는 방법으로 ChIA-PET를 자리매김한다. enhancer의 40% 이상이 가장 가까운 promoter를 조절하지 않는다는 결과가 대표적이다.
+
 ## Key claims
 
 - **ChIP-based methods and 3C-based methods each have a blind spot that ChIA-PET closes.** ChIP-chip/ChIP-PET/ChIP-seq locate transcription-factor binding but cannot name the target gene of a distal site, nor say whether that site is functional. 3C is low-throughput; 4C and 5C cannot map interacting regions at high resolution genome-wide. ChIA-PET is unbiased, genome-wide, high-throughput, and de novo.

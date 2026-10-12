@@ -14,6 +14,9 @@ url: "https://doi.org/10.1038/s43587-024-00589-0"
 
 **Citation:** Kapadia & Goodell (2024) — *Tissue mosaicism following stem cell aging: blood as an exemplar* — *Nature Aging*. [DOI](https://doi.org/10.1038/s43587-024-00589-0)
 
+> [!abstract] 한눈에
+> Kapadia와 Goodell은 혈액을 대표 사례로 삼아, 노화한 줄기세포의 유전체·후성유전·대사 변화가 체세포 클론이 선택되는 배경을 만든다고 정리했다. DNMT3A나 TET2 같은 CH driver의 적합도가 환경에 따라 달라진다는 adaptive oncogenesis 관점과, duplex sequencing까지 아우르는 검출 기술을 함께 다룬다.
+
 Kapadia & Goodell (Baylor College of Medicine, Center for Cell and Gene Therapy) review **how stem cell aging and somatic mosaicism progress in lockstep**, using the hematopoietic system as the most quantitatively tractable exemplar ([DOI](https://doi.org/10.1038/s43587-024-00589-0); Nature Aging 4:295–308, 2024). They argue that aged tissue mosaicism is not an incidental byproduct of stem cell aging but the *backdrop* against which clonal selection unfolds — and that the cellular changes of aged stem cells (genomic instability, epigenetic drift, metabolic shift to oxidative phosphorylation, proteostasis loss) create the selective milieu that determines which somatic clones expand. The review systematically links these cell-intrinsic aging changes to detectable clonal outgrowths, catalogs the spectrum of pathologies modified by blood mosaicism (Table 1: cardiovascular disease, COPD, gout, osteoporosis, autoimmunity, kidney/liver disease, Alzheimer's, cancer), and surveys the technological landscape — from bulk WGS to targeted duplex consensus sequencing — used to detect mosaicism at clinically meaningful sensitivity.
 
 ## Why this matters

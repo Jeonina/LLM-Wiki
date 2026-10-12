@@ -36,6 +36,9 @@ topics:
 
 > Thesis: scDNA-seq has historically lagged behind scRNA-seq and scATAC because the human genome is 20–50× larger than the transcribed/accessible genomes and each locus is represented by only two molecules per cell — so single-cell whole-genome amplification (scWGA) is required and unavoidable. Recent advances (PTA, duplex sequencing, computational error correction) have finally made scDNA-seq tractable, enabling somatic mosaicism research, lineage tracing in human tissues, and pre-implantation genetic screening.
 
+> [!abstract] 한눈에
+> Shao 등은 유전체가 크고 locus마다 분자가 두 개뿐이어서 scWGA가 불가피했던 scDNA-seq가 PTA, duplex sequencing, 계산적 오류 보정에 힘입어 somatic mosaicism 연구에 쓸 만한 수준이 됐다고 정리했다. scWGA 방법들을 비교한 뒤 coverage와 allelic balance가 높은 PTA를 현재의 gold standard로 꼽았다.
+
 ## Key claims
 
 - **scDNA-seq is now an umbrella term** covering both (a) scWGA + scWGS and (b) single-molecule duplex sequencing of bulk DNA. Both give single-cell-level variation; the latter sacrifices the per-cell assignment in exchange for lower input requirements.

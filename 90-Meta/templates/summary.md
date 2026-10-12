@@ -22,6 +22,9 @@ topics: []     # [[40-Topics/...]] links
 
 > One-paragraph thesis: what is this source claiming or showing, in your own words?
 
+> [!abstract] 한눈에
+> 한국어 1–2문장: 이 논문의 핵심 기여와 가장 중요한 결과 또는 한계 (평서체 -다, 요약 페이지 내용만 근거로).
+
 ## Key claims
 
 - Claim 1, with the strongest supporting evidence in the source.

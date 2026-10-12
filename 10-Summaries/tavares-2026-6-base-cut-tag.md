@@ -32,6 +32,9 @@ topics:
 
 > Thesis: We have plenty of methods for measuring DNA methylation and chromatin features separately, but we lack a single-fragment readout that reveals **which DNA modifications co-occur with which histone modifications**. 6-base-CUT&Tag (6B-C&T) couples antibody-directed Tn5 tagmentation with biomodal's 6-base enzymatic conversion to deliver simultaneous G/A/T/C/5mC/5hmC sequencing of the DNA fragments tethered to a specific histone mark. In mESCs, this reveals that H3K4me1-marked nucleosomes preferentially retain both 5mC and 5hmC at primed enhancers — a signature missed by all prior bulk methylation methods.
 
+> [!abstract] 한눈에
+> 6-base-CUT&Tag은 CUT&Tag 태그먼테이션과 biomodal의 6-base 효소 전환을 결합해 특정 히스톤 표지에 붙은 DNA 조각의 5mC와 5hmC를 동시에 읽는다. mESC에서 primed enhancer의 H3K4me1이 5mC와 5hmC를 가장 많이 유지함을 보였으며, 단일세포 확장은 아직 이뤄지지 않았다.
+
 ## Key claims
 
 - **Method**: pA-Tn5 with a uracil-containing hairpin mosaic-end adapter (ME2U) → tagmentation in CUT&Tag style → USER-digestion → 6-base enzymatic conversion (biomodal evoC kit). Circular dumbbell-like fragments resist exonuclease cleanup; scar sequences in the read identify valid double-tagmented molecules.

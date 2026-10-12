@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Lodato et al. (2015) — *Somatic mutation in single human neurons tracks developmental and transcriptional history* — *Science*. [DOI](https://doi.org/10.1126/science.aab1785)
 
+> [!abstract] 한눈에
+> Lodato 등은 사후 전전두엽 피질의 신경세포 36개를 MDA로 증폭해 단일세포 WGS를 수행했고, 신경세포마다 약 1,700개의 체세포 SNV를 찾았다. 이 변이를 lineage marker로 삼아 한 뇌의 피질이 낭배 형성 이전 기원 세포에서 갈라진 여러 계통으로 나뉨을 보였다.
+
 Foundational scWGS study of human cortical neurons. Lodato and colleagues isolated NeuN+ nuclei from postmortem prefrontal cortex of three neurotypical individuals (ages 15, 17, 42), amplified by MDA, and sequenced 36 single neurons at ~40× coverage. Triple-caller intersection identified an average of ~1,685–1,793 somatic SNVs per neuron, dominated by C>T transitions, with significant enrichment in transcribed coding exons of brain-expressed genes and a strand bias consistent with transcription-associated DNA damage rather than replication errors. Single-neuron SNV rates were uniform within each individual, suggesting that postmitotic neurons accumulate damage-driven mutations over their lifespan.
 
 The study demonstrated that somatic SNVs serve as durable lineage markers. Nested phylogenies built from shared and private mutations divided the cortex of one brain into at least five clades tracing back to pregastrulation founder cells, with a cortical neuron sometimes sharing a more recent common ancestor with a cardiomyocyte (same marking SNV) than with ~75% of neighbouring cortical neurons. Several neurons carried protein-altering mutations in genes implicated in epilepsy (\textit{SCN1A}) and schizophrenia (\textit{SLC12A2}), establishing the principle that even neurotypical brains contain individual neurons with disruptive mutations.

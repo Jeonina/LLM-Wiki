@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[chromatin-architecture]]", "[[computational-methods
 
 > A review with a small empirical core. The authors re-download public datasets from **13 scHi-C protocols** (8 contact-only, 5 multi-omic) and score them on two simple metrics — total contacts per cell and *cis/trans* ratio — then catalogue the software for QC, normalization, imputation and seven downstream tasks (clustering, A/B compartments, TADs, loops, 3D reconstruction, differential interactions, simulation, plus pseudotime). Main verdicts: the Nagano 2017 protocol and scNanoHi-C lead among contact-only protocols; **multi-omic scHi-C protocols are not statistically worse** at capturing contacts; and **no single pipeline covers all tasks**, with many tasks served by exactly one tool. The forward-looking part argues for saturation modelling, data-driven bin-size selection, cell-type-aware imputation and parametric differential testing.
 
+> [!abstract] 한눈에
+> Dautle과 Chen은 13개 scHi-C 프로토콜의 공개 데이터를 세포당 contact 수와 cis/trans 비율로 비교하고 분석 도구를 정리해, multi-omic 프로토콜도 contact 포착에서 뒤지지 않음을 보였다. 다만 sequencing depth를 맞추지 않은 비교이고, loop 호출 등은 도구 하나에 의존한다.
+
 ## Key claims
 
 - **Protocol landscape.** Eight contact-only protocols (Nagano 2013/2017, Stevens 2017, Zhou 2019, snHi-C, sci-Hi-C, Dip-C, scSPRITE, scNanoHi-C) and five multi-omic ones (sn-m3C-seq and scMethyl Hi-C for methylation; HiRES and MUSIC for RNA, MUSIC also RNA–chromatin associations; s3-GCC for scDNA-seq). They differ mainly in step order, restriction enzyme (*MboI* sticky vs *AluI* blunt ends), barcoding and amplification (PCR, MDA, META). snHi-C is described as the only method that isolates nuclei before fixation.

@@ -16,6 +16,9 @@ updated: 2026-10-12
 
 > Hyobin Jeong, Karen Grimes, Kerstin K. Rauwolf, Peter-Martin Bruch, Tobias Rausch, Patrick Hasenfeld, Eva Benito, Tobias Roider, Radhakrishnan Sabarinathan, David Porubsky, Sophie A. Herbst, Büşra Erarslan-Uysal, Johann-Christoph Jann, Tobias Marschall, Daniel Nowak, Jean-Pierre Bourquin, Andreas E. Kulozik, Sascha Dietrich, Beat Bornhauser, Ashley D. Sanders, **Jan O. Korbel\***. *Nature Biotechnology* **41**, 832–844 (October 2023). DOI: 10.1038/s41587-022-01551-4. EMBL.
 
+> [!abstract] 한눈에
+> scNOVA는 MNase로 절단된 Strand-seq 데이터에서 SV를 찾는 동시에, 유전자 본체의 뉴클레오솜 점유로 같은 세포의 유전자 활성을 추정한다. scRNA-seq 없이 DNA read만으로 CLL의 Wnt 이상 subclone과 T-ALL의 c-Myb 활성 subclone을 찾아냈다.
+
 ## Thesis
 
 **scNOVA (single-cell nucleosome occupancy and genetic variation analysis)** uses [[strand-seq|Strand-seq]] data — which fragments DNA via MNase during library prep — to **simultaneously call structural variants AND infer gene expression activity from haplotype-aware nucleosome occupancy patterns in the same single cell**. Nucleosome occupancy in gene bodies is **inversely correlated with gene expression** (Spearman r up to –0.24), so MNase-fragmented Strand-seq read-density patterns serve as a "molecular phenotype" readout. Applied to CLL (Wnt-dysregulated subclones) and T-ALL (chromothripsis with c-Myb activation, Notch inhibitor targetable).

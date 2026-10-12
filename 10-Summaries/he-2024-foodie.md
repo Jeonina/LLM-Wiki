@@ -25,6 +25,9 @@ updated: 2026-10-07
 
 > FOODIE (FOOtprinting with DeamInasE) adds one step to ATAC-seq: after Tn5 tagments open chromatin in permeabilised nuclei, the double-stranded DNA cytosine deaminase **DddB** converts C→U wherever no protein sits on the DNA. After PCR and short-read sequencing, a TF footprint is a run of unconverted cytosines inside an otherwise converted open region. Because every read is one DNA molecule, FOODIE gives each footprint a **binding fraction** and each pair of adjacent footprints a **cooperativity** value γ = ad/bc from counts of co-bound, singly bound and unbound molecules. Because the marks are sequence changes, they survive amplification, and a plate-based **single-cell FOODIE (scFOODIE)** first types cells from their accessibility and then pools cells of one type to footprint them. The authors use GM12878 footprints of 79 ChIP-seq-assigned TFs to argue that genes in a correlated gene module (CGM) share TFs: at promoters for housekeeping and cell-cycle modules, at enhancers for tissue-specific modules.
 
+> [!abstract] 한눈에
+> FOODIE는 ATAC-seq에 DddB deaminase 처리를 더해, 단백질이 결합하지 않은 cytosine을 변환하고 TF footprint를 단일 분자 수준에서 읽는다. 이를 통해 footprint마다 binding fraction과 cooperativity를 정량하며, 단일세포 버전인 scFOODIE도 제시했다.
+
 ## Key claims
 
 - **Enzyme choice.** DddA acts "only on cytosine preceded by thymine (TC)", which makes it "incapable of footprinting the majority of TFs bound to the genome". DddB (also known as BadTF3) "converts cytosine to uracil largely independent of adjacent bases", with minor biases "restricted mainly to the two bases neighboring the cytosine (−2 to +2)", corrected by measuring deamination on naked human DNA as a positive control. A second enzyme, MGYPDa829, also footprinted CTCF, but it deaminates "in a processive manner", so neighbouring conversions are correlated, which would confound cooperativity. All experiments therefore used DddB.

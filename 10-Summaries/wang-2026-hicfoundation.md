@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/3d-
 
 > HiCFoundation treats Hi-C contact maps as images and pretrains a **masked autoencoder** on them. Inputs are 224 × 224 submatrices at 5-kb resolution (196 patches of 16 × 16), drawn from both *cis* and *trans* chromosome pairs, with 75% of patches masked. The encoder is a ViT-Large (304 M parameters), the decoder small (26 M). The loss is a **patchwise contrastive term** (InfoNCE-style: each reconstructed patch should match its own target and differ from all other patches in the submatrix) plus an SSIM term, because plain MSE collapsed to all-zero outputs on sparse maps. Pretraining used Hi-C from 81 training human biosamples (with 20 for validation) from ENCODE and 4DN, about two weeks on eight A100s. For each task the encoder is frozen and only a task decoder is fine-tuned (under ten hours): replicate-reproducibility scoring, loop calling at high and low coverage, resolution enhancement, prediction of six 1-D epigenomic tracks from Hi-C, and single-cell Hi-C enhancement. It is not a sequence model: there is no DNA input, and the authors list adding sequence as future work.
 
+> [!abstract] 한눈에
+> HiCFoundation은 Hi-C contact map을 이미지로 보고 patchwise contrastive loss로 masked autoencoder를 사전학습한 3D 게놈 foundation model이다. loop calling, 해상도 향상, Hi-C만으로 하는 epigenome 예측, scHi-C 향상에서 기존 도구를 앞섰지만 DNA 서열은 입력으로 쓰지 않는다.
+
 ## Key claims
 
 - **Loop calling.** Against consensus HiCCUPS loops from two deep replicates, mean loop F1 was 81.6% (high coverage) and 75.1% (1/16 downsampled), beating HiCCUPS, Chromosight and Mustache (sign test P < 0.001 vs the second best). 90.4% (high) and 81.8% (low) of called loops had CTCF ChIP-seq peaks at both anchors. Results held against CTCF ChIA-PET loops.

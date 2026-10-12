@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/3d-
 
 > Evo2HiC compresses the 7-billion-parameter DNA language model **Evo 2** into a **3.6 M-parameter CNN** that embeds DNA in 2 kb bins, and pairs it with a small CNN encoder for **bulk Hi-C** contact patches. Two SigLIP-style contrastive losses are trained jointly. The first pulls the CNN's embedding of each 2 kb bin toward the precomputed Evo 2 (layer 27) embedding of the same bin; this is sequence distillation. The second pulls the CNN's pairwise (row-bin + column-bin) DNA embedding toward the Hi-C-encoder embedding of the same 2 kb × 2 kb pixel; this is structure distillation. Evo 2 and Hi-C are never aligned directly, which keeps compute low. Pretraining uses human sequence only (hg38) and **138 human Hi-C/Micro-C maps from ENCODE and 4DN** (124 maps from 46 cell lines for training). The model has two modes: a sequence-only encoder, and a co-embedding that concatenates sequence and Hi-C embeddings. Task heads are a U-Net for contact maps and a transformer for epigenomic tracks. The paper reports better sequence-to-contact prediction than Orca, better epigenome prediction than Hi-C-only or Evo 2-only inputs, cell-type-specific motif attribution, and Hi-C resolution enhancement that transfers to 177 DNA Zoo species.
 
+> [!abstract] 한눈에
+> Evo2HiC는 7B 규모의 Evo 2를 3.6M 파라미터 CNN으로 증류해 bulk Hi-C 인코더와 대조 학습으로 묶었다. 서열에서 contact map 예측, Hi-C 해상도 향상, epigenome 예측 성능이 좋았지만 실제 single-cell Hi-C의 희소성은 검증하지 않았다.
+
 ## Key claims
 
 - **Distillation keeps Evo 2's geometry.** Pairwise similarities of 2 kb bins correlated r = 0.63 between Evo 2 and Evo2HiC on human chr10, against 0.13 for the same CNN trained without Evo 2. On mouse (never seen in training) the values were 0.47 and 0.14. Sequence-to-Hi-C-patch retrieval had higher recall and lower average rank with distillation, and the gain was larger in mouse.

@@ -33,6 +33,9 @@ topics:
 
 > Thesis: scATAC-seq on Fluidigm C1 captures only ~96 cells per run and costs are high; combinatorial indexing scales further but produces fewer fragments per cell and is incompatible with live-cell fluorescence imaging. **µATAC-seq** runs scATAC-seq on the Takara ICELL8 5,184-nanowell platform with fluorescence-imaging-guided reagent deposition, yielding up to ~1,800 cells per chip at ~$0.81/cell library cost and ~14k fragments per cell — a **~20-fold throughput improvement** without sacrificing per-cell quality.
 
+> [!abstract] 한눈에
+> µATAC-seq는 ICELL8 nanowell 플랫폼에서 형광 영상으로 살아 있는 단일 세포를 확인한 뒤 scATAC-seq를 수행해, Fluidigm C1보다 약 20배 많은 세포를 처리했다. 세포당 fragment 수도 C1이나 combinatorial indexing보다 많았다.
+
 ## Key claims
 
 - **Throughput**: 5,184 nano-wells per chip; ~35% of targeted wells (1,616 cells across two chips) contained a single live cell under Poisson loading. Hoechst/PI dual staining + microscopy identifies live single cells before reagent deposition.

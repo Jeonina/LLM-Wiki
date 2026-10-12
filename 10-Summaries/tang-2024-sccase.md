@@ -22,6 +22,9 @@ topics: ["[[single-cell-atac-seq]]", "[[computational-methods]]"]
 
 > scCAS imputation methods before this one (SCALE, scBFA, scOpen, scBasset) enhance the matrix **peak-wise**, ignoring the most obvious source of information about a dropout — the same peak in similar cells. scCASE makes cell-to-cell similarity a learned object: an NMF whose reconstruction target is the data **smoothed through an iteratively updated similarity matrix Z**, with Z itself tied to the cell embeddings. The final output is simply **XZ** — raw data re-weighted by learned neighbours. A variant, **scCASER**, pins part of the NMF basis to a factorization of external (bulk or pseudo-bulk) reference data.
 
+> [!abstract] 한눈에
+> scCASE는 세포 간 유사도 행렬을 반복적으로 학습하는 NMF로 scCAS 데이터를 보강하는데, 최종 출력은 학습된 이웃으로 재가중한 원자료이다. 8개 데이터셋에서 차선 방법 대비 ARI를 평균 13.89% 높였지만, 정답 라벨 자체가 대부분 scCAS 클러스터링에서 나왔다는 순환성 문제가 있다.
+
 ## Key claims
 
 - **Model.** Peaks accessible in <1% of cells are filtered, then TF-IDF transformed. The loss is ‖X(Z∘R) − WH‖²_F + λ‖Z − HᵀH‖²_F + γ₁‖W‖²_F + γ₂‖H‖²_F, where Z (n×n, columns sum to 1) is cell similarity, R is a binomially sampled 0/1 matrix, W the peak projection and H the cell embedding. The Hadamard mask R exists to stop similar cells from receiving **entirely identical** read counts, i.e. a built-in guard against collapsing heterogeneity.

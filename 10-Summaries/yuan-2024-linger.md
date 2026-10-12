@@ -22,6 +22,9 @@ topics: ["[[single-cell-multiomics]]", "[[computational-methods]]", "[[single-ce
 
 > GRN inference has a data problem disguised as a modelling problem: single-cell data supplies many *cells* but few **independent** data points, while the model has enormous numbers of parameters. LINGER's answer is **lifelong learning** — pre-load knowledge from atlas-scale external **bulk** data across diverse cellular contexts, then adapt to the single-cell multiome at hand. Reported gain: a **fourfold to sevenfold relative increase in accuracy**.
 
+> [!abstract] 한눈에
+> LINGER는 atlas 규모의 외부 bulk 데이터로 먼저 학습한 뒤 단일세포 multiome에 맞춰 적응하는 lifelong learning으로 GRN을 추론하며, 정확도를 상대적으로 4–7배 높였다. 다만 비교 기준이 무작위에 가까운 기존 방법이라 절대 정확도는 여전히 열린 문제다.
+
 ## Key claims
 
 - **The field's accuracy baseline was dismal.** The paper states plainly that inferred GRN accuracy assessed against experimental data had been "only marginally better than random prediction." That is the bar LINGER is measured against.

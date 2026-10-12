@@ -22,6 +22,9 @@ topics: ["[[40-Topics/cancer-clonal-evolution]]", "[[40-Topics/single-cell-linea
 
 > SIEVE (SIngle-cell EVolution Explorer) puts scDNA-seq tumour phylogenetics inside a proper **statistical phylogenetic model** (rate matrix + topology + branch lengths, BEAST 2 / MCMC) and makes **variant calling a by-product of the tree**. It reads raw counts of all four nucleotides at candidate sites, works under the **finite-sites assumption** with four genotypes (0/0, 0/1, 1/1, 1/1′), and — the authors' claimed first — **corrects branch lengths for acquisition bias** using the count of invariant background sites. Branch lengths come out in expected somatic mutations per site, and ADO is called explicitly through a coverage model.
 
+> [!abstract] 한눈에
+> SIEVE는 scDNA-seq 염기 count로 finite-sites 통계 계통수와 SNV를 함께 추론하고, invariant background site 수로 acquisition bias를 보정해 branch length를 바로잡았다. 시뮬레이션에서는 CellPhy와 SiFit보다 정확했지만, 저품질 데이터에서는 ADO 판정 F1이 0.10에 그쳤다.
+
 ## Key claims
 
 - **Joint inference beats pipelines.** Methods that first call variants with Monovar and then build trees (CellPhy, SiFit) inherit calling errors; methods that do both but under the ISA without branch lengths (SCIPhI) break when ISA is violated. SIEVE outperformed CellPhy and SiFit on branch-score distance in every simulated scenario, and was the most robust on normalised RF distance across cell number, mutation rate and coverage quality.

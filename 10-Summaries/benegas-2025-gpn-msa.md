@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]"]
 
 > GPN-MSA is a small masked DNA language model (~86 M parameters, RoFormer) whose input is not a single human sequence but a 128-bp window of the **100-vertebrate multiz whole-genome alignment**, with the ten primates closest to human removed. It predicts masked human-reference nucleotides from both neighbouring columns and aligned species, is trained mostly on the 5% most conserved windows, and scores a variant zero-shot as the log-likelihood ratio of alternate to reference allele. Trained in about 3.5 h on four A100 GPUs, it beats much larger single-sequence DNA language models (Nucleotide Transformer 2.5B, HyenaDNA 1 Mb) and standard predictors (CADD, phyloP, Enformer, SpliceAI) on most clinical, population and functional benchmarks, with the largest relative advantage on noncoding variants. The authors frame it as retrieval augmentation: explicit evolutionary context replaces scale.
 
+> [!abstract] 한눈에
+> GPN-MSA는 100종 척추동물 다중정렬을 입력으로 쓰는 약 86M 파라미터의 소형 masked DNA language model로, 대형 단일서열 모델과 CADD, phyloP 등을 대부분의 변이 효과 벤치마크에서 앞섰고 비암호화 변이에서 우위가 가장 컸다. 규모 대신 진화 정보를 명시적으로 넣은 것이 성능의 원천이다.
+
 ## Key claims
 
 - **Alignment beats scale.** Prior human DNA language models, including Nucleotide Transformer trained for 28 days on 128 GPUs, did worse than simple conservation scores for unsupervised variant effect prediction (VEP). GPN-MSA, trained in ~3.5 h, outperforms Nucleotide Transformer and HyenaDNA on ClinVar pathogenic vs gnomAD common missense variants.

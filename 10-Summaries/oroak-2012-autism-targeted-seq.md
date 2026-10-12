@@ -28,6 +28,9 @@ topics:
 
 > Exome studies of autism (ASD) had found hundreds of candidate genes from *de novo* mutations, but almost every gene was hit only once, and over 900 sequenced trios were not enough to make any single gene a definitive risk factor. O'Roak et al. built a modified **molecular inversion probe (MIP)** workflow costing **less than $1 per gene per sample** and used it to resequence **44 candidate genes in 2,446 Simons Simplex Collection (SSC) probands**. They found **27 *de novo* mutations in 16 genes** and, with a locus-specific mutation-rate model, showed significant *de novo* burden in six genes (*CHD8*, *DYRK1A*, *GRIN2B*, *TBR1*, *PTEN*, *TBL1XR1*). Together these six account for **~1% (24/2,573)** of sporadic ASD in the combined MIP and exome data. The paper also links *CHD8* to macrocephaly and *DYRK1A* to microcephaly, and finds that the mutations cluster in a β-catenin–chromatin-remodeling protein network. This is a germline (*de novo*, blood-DNA) study, not a mosaicism study.
 
+> [!abstract] 한눈에
+> O'Roak 등은 유전자당 1달러 미만인 MIP 방식으로 2,446명의 ASD proband에서 후보 유전자 44개를 재시퀀싱했다. 그 결과 CHD8, DYRK1A 등 6개 유전자에 de novo 변이가 유의하게 몰려 있음을 보였고, 이 연구는 체세포 모자이크가 아닌 germline 연구다.
+
 ## Key claims
 
 - **Assay performance.** The modified MIP method combines new probe-design algorithms, an automatable low-input workflow and heavy sample multiplexing. Validation across several probe sets gave **99% sensitivity and 98% positive predictive value** for SNVs at well-covered positions, which were **92 to 98% of targeted bases**. Reagent cost was **under $1 per gene per sample**.

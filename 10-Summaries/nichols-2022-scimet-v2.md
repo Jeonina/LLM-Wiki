@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Nichols et al. (2022) — *High-throughput robust scDNA methylation profiling with sciMETv2* — *Nature Communications*. [DOI](https://doi.org/10.1038/s41467-022-35374-3)
 
+> [!abstract] 한눈에
+> sciMETv2는 combinatorial indexing 기반 단일 세포 DNA 메틸화 방법으로, sci-MET v1보다 coverage를 약 15배 높이고 표준 시퀀싱 recipe를 쓸 수 있게 했다. 인간 피질에서 세포 유형을 구분했으며, CH 메틸화가 드문 비신경 조직에 중요한 CG 메틸화만으로도 세포 유형 판별이 가능함을 보였다.
+
 Nichols, O'Connell, Mulqueen et al. (Adey lab; OHSU) developed **sciMETv2**, a robust high-throughput single-cell DNA-methylation method based on combinatorial indexing. Two variants: sciMETv2.LA (Linear Amplification, high coverage) and sciMETv2.SL (Splint Ligation, rapid workflow). Improvements over sci-MET v1: ~15-fold higher coverage, standard sequencing recipes (no custom primers), minimal adapter contamination, multiple stopping points. Applied to primary human cortex, both versions identify distinct cell types using CH methylation patterns (neuron-specific), and the data integrate seamlessly with snmC-seq2 datasets. Demonstrates cell-type calling from **CG methylation alone**, important for non-neuronal tissues where CH is sparse.
 
 ## Why this matters

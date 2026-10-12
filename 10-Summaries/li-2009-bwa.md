@@ -22,6 +22,9 @@ topics: ["[[computational-methods]]", "[[scdna-seq]]"]
 
 > The aligner that made human-scale resequencing routine. Instead of hashing reads or hashing the genome, BWA searches a **Burrows–Wheeler transform** of the reference, which lets exact repeats collapse onto a single path — so a read matching a repeat is aligned once, not once per copy. **10–20× faster than MAQ** at comparable accuracy, with gapped alignment for single-end reads and SAM output.
 
+> [!abstract] 한눈에
+> BWA는 참조 유전체의 Burrows–Wheeler transform을 탐색해 반복 서열을 하나의 경로로 모아 정렬하는 short-read aligner다. MAQ와 비슷한 정확도로 10~20배 빨랐고, single-end read의 gapped alignment와 SAM 출력을 지원했다.
+
 ## Key claims
 
 - **The problem in 2009**: an Illumina run produced 50–200 million reads of 32–100 bp. Hash-based aligners either scanned the whole genome per batch (flexible memory, high overhead) or indexed the genome in RAM (parallelizable but memory-hungry and sensitive to error rate).

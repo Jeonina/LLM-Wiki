@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]"]
 
 > ATGC-Gen is a **machine-learning framework that asks whether ordinary transformer language models can model regulatory DNA conditioned on biological context**, as an alternative to the diffusion and flow-matching models that dominate this benchmark family. The conditioning signal — a cell-class label, a transcription-factor protein embedding, or a per-base transcription-initiation profile — is turned into vectors and either prepended as global "property tokens" or concatenated to each position's one-hot encoding. The same framework is instantiated as a decoder (next-token objective) and as an encoder (masked-recovery objective). The paper evaluates on two existing benchmarks (promoter profiles and cell-class enhancer sets) and a new ChIP-seq-derived benchmark, scoring outputs with the Sei chromatin-profile model, a perplexity-style fluency measure under HyenaDNA, and an n-gram diversity score. This is a modelling and benchmarking study; there is no experimental validation.
 
+> [!abstract] 한눈에
+> ATGC-Gen은 생물학적 조건을 입력으로 받는 일반 transformer 언어모델로 조절 DNA를 생성해 diffusion·flow matching 기반 모델보다 나은 성능을 보였고, decoder와 encoder 중 무엇이 유리한지는 조건 신호가 서열과 정렬되는 방식에 달려 있었다. 실험 검증은 없고 평가도 Sei 하나에 크게 의존한다.
+
 ## Key claims
 
 - **Which objective wins depends on how the condition aligns with the sequence.** On the promoter benchmark, where the conditioning profile is defined per base pair (feature-level integration), the encoder variant is best: MSE 0.0192 and KS statistic 0.043, against 0.0219/0.052 for D3, 0.0269/0.399 for Dirichlet flow matching, 0.0334 for DDSM, 0.0375 for D3PM-uniform and 0.0395 for Bit Diffusion. The decoder variant gets 0.0289 MSE but the best fluency (3.5231), because pooling the base-resolution signal into a prefix destroys per-token alignment.

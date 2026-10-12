@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[chromatin-architecture]]", "[[single-cell-multiomic
 
 > Single-cell Hi-C had been stuck between **microwell methods** (deep per cell, but slow, costly, low scale) and **combinatorial indexing** (scalable but lengthy and manual). Droplet Hi-C sidesteps both by doing in situ Hi-C (digest + ligate inside fixed nuclei), removing histones with SDS, and then running the ligated nuclei through the **unmodified commercial 10x Genomics scATAC kit** — Tn5 fragments and droplet barcodes the 3C products. The result is ~10 h from fixed cells to libraries, 8 samples in parallel, ≥40,000 cells per run. The paper's second half shows the payoff is not only cortex cell-type 3D maps but **cancer genomics**: per-cell CNV, SVs and — the headline — a single-cell **ecDNA vs HSR classifier**, used to track ecDNA evolution under drug treatment in glioblastoma and AML. A Multiome-kit variant, **Paired Hi-C**, adds the transcriptome from the same nucleus.
 
+> [!abstract] 한눈에
+> Droplet Hi-C는 핵 안에서 in situ Hi-C를 마친 뒤 시판 10x scATAC 키트로 droplet barcoding을 해 한 번에 4만 개 이상의 세포에서 3D 유전체를 읽는다. 세포 단위 contact로 ecDNA와 HSR을 구별해 약물 처리 중 ecDNA의 진화를 추적했다.
+
 ## Key claims
 
 - **Throughput and ease**: ~10 h protocol, 8 samples processed in parallel, profiling of "40,000 or more cells simultaneously"; throughput surpasses plate-based single-cell Hi-C "by an order of magnitude" with the shortest experimental and hands-on time to date (authors' Fig. 1b comparison).

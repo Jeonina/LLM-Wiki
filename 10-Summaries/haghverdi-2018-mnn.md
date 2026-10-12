@@ -22,6 +22,9 @@ topics: ["[[computational-methods]]", "[[single-cell-multiomics]]"]
 
 > Bulk batch-correction methods carry an assumption that is **false for single-cell data**: that population composition is identical across batches. When it is not — and it never is, because dissociation, culture and sorting all shift cell-type abundance — the estimated batch coefficient absorbs real biology, and "the results might potentially be worse than if no correction were performed." MNN replaces the assumption with a much weaker one: **only a subset of the population needs to be shared**.
 
+> [!abstract] 한눈에
+> Haghverdi 등은 batch 간 세포 구성이 같다는 bulk batch correction의 가정이 단일세포 데이터에서는 틀린다고 지적했다. 대신 batch를 넘나드는 mutual nearest neighbour 쌍으로 batch effect를 추정하는 MNN correction을 제시했다.
+
 ## Key claims
 
 - **The composition assumption is the flaw, stated precisely.** limma's `removeBatchEffect` and ComBat fit a linear model with a batch blocking term and zero out its coefficient; RUVseq and svaseq identify unknown factors and regress them out. All were designed for bulk, where composition is fixed. In scRNA-seq the abundance of each cell type varies between batches even when the same types are present, so "the estimated coefficients for the batch blocking factors are not purely technical but contain a nonzero biological component."

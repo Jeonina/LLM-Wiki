@@ -29,6 +29,9 @@ topics:
 
 > Thesis: this is the canonical step-by-step **bench protocol** for performing single-cell DamID (Dam-LMNB1 ↔ nuclear-lamina contacts + untethered-Dam accessibility control) in mammalian cells. Where Kind 2013/2015 established the chemistry and Rooijers 2019 added multi-omic + linear-amplification, this chapter documents the workflow as a community-facing recipe — plasmids, induction systems, FACS strategy, MboI-qPCR clone screen, DpnI/adapter ligation/PCR cycle counts, and pooling for Illumina libraries.
 
+> [!abstract] 한눈에
+> de Luca와 Kind는 Dam-LMNB1으로 nuclear lamina 접촉을 단일세포 수준에서 측정하는 scDamID의 실험 절차를 단계별로 정리했다. 클론 선별과 MboI-qPCR 품질 검사가 필수이며, 정제 없이 한 well에서 반응을 이어가는 것이 처리량의 핵심이다.
+
 ## Key claims
 
 - **scDamID requires clonal Dam-LMNB1 + untethered-Dam cell lines** with controllable expression (ProteoTuner Shield1 stabilization or auxin-inducible degron). Background methylation noise scales with constitutive expression — clone selection is mandatory, not optional. Plasmid backbones: pPTuner IRES2 (transfection) or pCCL.sin.cPPT.hPGK lentiviral.

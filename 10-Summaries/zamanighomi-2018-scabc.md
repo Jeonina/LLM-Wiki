@@ -32,6 +32,9 @@ topics:
 
 > Thesis: scATAC-seq sparsity makes peak-based clustering fragile, especially when subpopulation marker peaks are unknown. **scABC** is a fully unsupervised pipeline that (a) weights cells by total in-peak reads (high-coverage cells are more reliable), (b) does weighted k-medoids clustering on rank-transformed peak signals, (c) refines cluster assignment by Spearman correlation to landmark cells, and (d) identifies cluster-specific peaks via empirical-Bayes regression. Validated to 99.6% accuracy on 966-cell in silico mixtures of six cell lines.
 
+> [!abstract] 한눈에
+> scABC는 peak 내 read 수로 세포에 가중치를 둔 k-medoids clustering과 landmark 기반 재배정으로 scATAC-seq 세포를 비지도 분류하고, 군집 특이 peak도 찾아낸다. 6개 세포주를 섞은 in silico 데이터에서 99.6% 정확도를 보였다.
+
 ## Key claims
 
 - **Weighted k-medoids on ranked peak signals** avoids domination by highly accessible regions (which carry within-cell-type signal noise rather than between-type information).

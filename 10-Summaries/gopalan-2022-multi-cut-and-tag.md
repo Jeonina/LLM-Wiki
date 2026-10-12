@@ -22,6 +22,9 @@ topics: ["[[histone-modifications]]"]
 
 > The step-by-step protocol for the one modification that turns CUT&Tag from a one-target assay into a combinatorial one: **load pA-Tn5 with a different barcoded adapter for each antibody**, pre-conjugate antibody to its own barcoded transposome, then run them all in the same cells. Each read carries the identity of the epitope that placed it, so co-localization of different chromatin proteins at the same locus is read directly rather than inferred by overlaying separate experiments.
 
+> [!abstract] 한눈에
+> Multi-CUT&Tag 프로토콜은 항체마다 서로 다른 barcode adapter를 실은 pA-Tn5를 사용해, 같은 세포에서 여러 chromatin protein을 함께 mapping한다. 이렇게 하면 서로 다른 epitope가 같은 locus에 함께 있는지를 직접 검출할 수 있다.
+
 > ⚠️ **Source note.** This is the *STAR Protocols* companion to the primary paper — Gopalan, Wang, Harper, Garber & Fazzio, *Simultaneous profiling of multiple chromatin proteins in the same cells*, **Molecular Cell** 81, 4736–4746.e5 (2021). The primary paper carries the biological results and is **not currently bookmarked**; this clipping covers the front matter and the pA-Tn5 expression/purification and adapter-loading sections.
 
 ## Key claims

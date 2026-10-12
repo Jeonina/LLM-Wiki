@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]", "[[computational-methods]]"]
 
 > mist (methylation inference for single-cell along trajectory) fills a gap the authors state no prior method covered: **differential methylation along pseudotime** in single-cell DNA methylation (scDNAm) data. Per gene (or region), methylation level is modelled as **logit-normal** with a mean that is a **degree-4 polynomial in pseudotime** (horseshoe-shrunk coefficients) and a variance that differs across **four pseudotime stages**; parameters are fit by Gibbs sampling. Genes are ranked by the **minimised squared area between fitted trajectories** (vs a flat line for one group, or between two groups after an optimal vertical shift), so ranking reflects *shape of change*, not baseline level. In simulations mist beats GAM and polynomial regression; on scNMT-seq mouse gastrulation and snm3C-seq developing human brain it recovers plausible developmental regulators.
 
+> [!abstract] 한눈에
+> mist는 단일세포 DNA methylation을 pseudotime에 따른 logit-normal 계층 Bayesian 모델로 기술해 methylation 변화 양상이 다른 유전자를 찾는다. 시뮬레이션에서 GAM과 다항회귀를 앞섰으나 그 시뮬레이션은 mist 자체 모델에서 생성되었고, feature당 약 50 read 이상이 필요하다.
+
 ## Key claims
 
 - **No prior method models scDNAm along pseudotime**, per the authors; RNA tools (tradeSeq, PseudotimeDE) assume dense negative-binomial counts, whereas scDNAm is sparse and proportional.

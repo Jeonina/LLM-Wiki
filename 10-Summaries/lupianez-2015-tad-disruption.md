@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[chromatin-architecture]]"]
 
 > The paper that turned TADs from a descriptive Hi-C feature into a **causal, clinically interpretable** unit. Three human limb-malformation rearrangements at the *WNT6/IHH/EPHA4/PAX3* locus were re-engineered in mice by CRISPR; each disrupts a TAD boundary, each lets an *EPHA4* limb-enhancer cluster capture a gene it should never contact, and each phenocopies the human disease. Leaving the boundary intact abolishes both the misexpression and the phenotype.
 
+> [!abstract] 한눈에
+> Lupiáñez 등은 사지 기형 환자의 EPHA4 locus 재배열을 CRISPR로 마우스에 재현했다. TAD 경계가 무너지면 EPHA4 enhancer가 다른 유전자를 잘못 켜 질환이 생기고, 경계를 남기면 표현형이 사라졌다. 이로써 TAD 경계의 인과적 역할을 입증했다.
+
 ## Key claims
 
 - Three distinct human alleles, three distinct phenotypes, one shared mechanism:

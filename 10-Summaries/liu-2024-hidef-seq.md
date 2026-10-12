@@ -22,6 +22,9 @@ topics: ["[[duplex-sequencing]]", "[[somatic-mosaicism]]", "[[long-read-sequenci
 
 > Every mutation starts as a lesion on **one** strand. Every existing method — single-cell WGS, clonal expansion, microdissection, [[schmitt-2012-pnas|duplex sequencing]] — amplifies before reading, which either converts single-strand events into double-strand ones or manufactures fake ones. HiDEF-seq sequences **unamplified single molecules** on PacBio with enough passes per strand to call substitutions at single-molecule fidelity, and so reads the **precursor** lesions rather than the endpoint mutations. It then derives the first **single-strand mutational signatures** (named with an `ss` suffix) and shows they map onto known double-strand COSMIC signatures — resolving which chemical event initiated which mutation class.
 
+> [!abstract] 한눈에
+> HiDEF-seq는 증폭하지 않은 단일 분자를 PacBio로 가닥마다 여러 번 읽어, 한 가닥에만 있는 전구 병변까지 단일 분자 수준의 정확도로 검출한다. 이를 바탕으로 최초의 단일 가닥 돌연변이 signature를 도출했고, NanoSeq의 단일 가닥 call 상당수가 artifact임을 보였다.
+
 ## Key claims
 
 - **Three engineering moves produce the fidelity.** (1) ~32 sequencing passes per strand on median 1.7 kb molecules, building a high-quality consensus per *strand* rather than per molecule; (2) elimination of in vitro artifacts via single-strand nick ligation plus either the [[abascal-2021-nanoseq|NanoSeq]] A-tailing approach or a no-A-tailing protocol for degraded post-mortem DNA; (3) a pipeline analysing only single-base substitutions — orthogonal to PacBio's dominant indel error mode — and analysing each strand separately so double- and single-strand events are distinguishable.

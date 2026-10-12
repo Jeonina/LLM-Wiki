@@ -22,6 +22,9 @@ topics: ["[[single-cell-lineage-tracing]]", "[[computational-methods]]", "[[sing
 
 > **Two million cells from 61 mouse embryos in a single experiment**, spanning E9.5–E13.5, the four days in which nearly every major organ system forms. sci-RNA-seq3 makes the scale possible at under **$0.01 per cell**; Monocle 3 turns it into 38 major cell types, 655 subtypes and 56 trajectories.
 
+> [!abstract] 한눈에
+> MOCA는 sci-RNA-seq3로 E9.5–E13.5 생쥐 배아 61개에서 약 200만 개 세포를 한 번의 실험으로 프로파일링해, 38개 주요 세포형과 655개 하위형, 56개 궤적을 담은 기관 형성기 지도를 만들었다. 다만 투입 세포 가운데 실제로 프로파일링된 것은 약 7%뿐이다.
+
 ## Key claims
 
 - **sci-RNA-seq3**, the third-generation combinatorial indexing protocol, arrived from screening **>1,000 experimental conditions**. Four changes matter: nuclei extracted directly from fresh tissue without enzymatic treatment then fixed and stored; the third indexing level switched from **Tn5 tagmentation to hairpin ligation**; individual enzymatic reactions optimized; and FACS replaced by dilution with added sonication and filtration to break aggregates. One researcher, one week, no automation.

@@ -24,6 +24,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[histone-modif
 >
 > GenART is a [[dna-language-model]] whose tokenizer is a trainable layer inside the network. Single nucleotides go through Transformer "nucleotide encoder" layers, then an adaptive tokenizer (five parallel CNNs with kernels 2–6, an MLP boundary score, Gumbel-softmax merge/split decisions) mean-pools runs of bases into variable-length tokens, which a second Transformer stack encodes. A cross-attention decoder maps token states back to bases for the MLM loss. The tokenizer keeps training during fine-tuning, and an optional "refining" loss lets the user steer token density and boundary clustering per task. At 350 M and 1 B parameters it reports the best average on the NT benchmark (+3.41% over the best baseline) and on 15 GUE tasks (+1.22%), and its boundaries recover 62.9% of GENCODE feature boundaries without supervision.
 
+> [!abstract] 한눈에
+> GenART는 tokenizer를 학습 가능한 네트워크 층으로 넣어 염기들을 가변 길이 token으로 묶는 DNA language model로, NT와 GUE 벤치마크에서 평균 최고 성능을 냈다. 학습된 token 경계는 지도 없이도 GENCODE feature 경계의 62.9%를 복원했다.
+
 ## Key claims
 
 - **Benchmarks.** On the 18 NT tasks, GenART-1B was best on 15 and GenART-350M on 12. On three promoter tasks both scored 0.971 vs 0.974 for Evo2-7B. On 15 GUE tasks not in NT (TF binding in human and mouse, core promoters, COVID variant, splice sites), GenART was best on 8 and second on 6, trailing Evo2-7B or NT-multi-2.5B by 1.1–1.3%.

@@ -27,6 +27,9 @@ topics:
 
 > Thesis: single-cell multi-omics is now mature enough that nearly any pair (or triple) of modalities — transcriptome, genome, epigenome, proteome, metabolome, spatial — can be measured in the same cell. The reviewer's framework is **throughput / resolution / modality integration / uniqueness / accuracy** — five axes along which to compare any multi-omic method. Applications include lineage tracing, tissue/cell-type atlases, tumour immunology, and spatial mapping of cellular function.
 
+> [!abstract] 한눈에
+> Baysoy 등은 전사체, 유전체, 후성유전체, 단백체, 공간 정보를 아우르는 단일세포 multi-omics 기술을 throughput, 해상도, 통합 등 다섯 축으로 정리했다. 이제 병목은 실험 측정보다 계산적 통합에 있다는 것이 핵심 메시지다.
+
 ## Key claims
 
 - **Multi-omics catalog by modality combination**: scRNA + scATAC (10x Multiome, SHARE-seq); scRNA + protein (CITE-seq, REAP-seq); scDNA + scRNA (G&T-seq, DR-seq, SIDR-seq); scRNA + methylome (scM&T-seq); CRISPR-perturbed scRNA (Perturb-seq, CROP-seq); scRNA + spatial (Slide-seq, MERFISH, Visium).

@@ -22,6 +22,9 @@ topics: ["[[histone-modifications]]", "[[chromatin-architecture]]"]
 
 > ES cells carry large H3K27me3 domains that contain smaller H3K4me3 sites within them — "bivalent domains" — overwhelmingly at developmental transcription-factor genes. The genes are silent but poised: on differentiation the domains resolve to one mark or the other according to whether the gene is induced. Before this paper the two marks were believed non-overlapping.
 
+> [!abstract] 한눈에
+> Bernstein 등은 ES 세포의 큰 H3K27me3 도메인 안에 H3K4me3가 함께 자리한 bivalent domain이 주로 발생 전사인자 유전자에 존재하며, 분화 과정에서 유도 여부에 따라 한쪽 마크로 정리된다는 것을 보였다. 두 마크의 배치가 CpG 밀도와 transposon exclusion zone 같은 DNA 서열로 상당 부분 예측된다는 점도 주목할 만하다.
+
 ## Key claims
 
 - Across 61 tiled regions (60.3 Mb, ~2.5% of the genome; Hox clusters + 52 HCNE-rich + 5 controls): 343 H3K4me3 sites (median 3.4 kb, 63% at TSSs) and 192 H3K27me3 sites, the latter far larger (median 5 kb in controls, 10 kb in HCNE-rich, 18 kb in Hox).

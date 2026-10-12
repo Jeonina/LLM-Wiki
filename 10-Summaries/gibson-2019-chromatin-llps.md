@@ -28,6 +28,9 @@ topics:
 
 > Thesis: reconstituted chromatin undergoes **histone-tail-driven liquid-liquid phase separation (LLPS)** at physiologic salt — both in vitro and when microinjected into cell nuclei. Linker histone H1 and inter-nucleosome linker length tune droplet density. Histone acetylation by p300 dissolves the droplets; multi-bromodomain readers (BRD4) bind hyperacetylated chromatin to form a distinct, *immiscible* phase. The chromatin polymer's intrinsic capacity for LLPS provides a physical framework for understanding how distinct chromatin compartments are established and maintained.
 
+> [!abstract] 한눈에
+> Gibson 등은 재구성한 chromatin이 생리적 염 농도에서 histone tail 의존적인 liquid-liquid phase separation을 일으킨다는 것을 보였다. 이 droplet은 linker histone H1과 nucleosome 간격에 따라 조절되고, p300 acetylation에 의해 녹는다.
+
 ## Verbatim key claims (from source body)
 
 - **Definition of intrinsic chromatin LLPS** (Introduction, final paragraph):

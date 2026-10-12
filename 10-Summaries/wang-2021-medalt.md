@@ -22,6 +22,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[scdna-cancer-applications]]", "[[comp
 
 > Species-phylogenetics assumptions do not hold for aneuploid genomes. MEDALT replaces them: cells are related by **minimal event distance** — the fewest single-copy gains or losses converting one genome into another — and the lineage is a **directed minimum spanning tree** rooted at a normal diploid cell. A companion statistic, **lineage speciation analysis (LSA)**, then asks which alterations are associated with lineage expansion.
 
+> [!abstract] 한눈에
+> MEDALT는 CNA 진화가 infinite sites 가정을 위반한다는 점을 들어, 단일 copy 증감의 최소 횟수인 minimal event distance로 세포를 잇고 정상 diploid 세포를 뿌리로 하는 directed minimum spanning tree를 만든다. 함께 제시한 LSA는 계통 확장과 연관된 변이를 찾아 TNBC에서 생존을 예측했다.
+
 ## Key claims
 
 - **Why standard phylogenetics fails on CNAs.** Most methods assume sites evolve independently under the **infinite sites assumption**, but under aneuploidy a locus is repeatedly altered by successive CNAs — because of genome and chromatin structural constraints, replication/repair properties, and selection. Applying maximum parsimony forces over-segmentation of the genome into disjoint character intervals, which "ill-represents the properties of DNAs and distorts evolution propensity across copy number states." Euclidean, Hamming and correlation distances equally misrepresent the **segmental, non-linear** nature of CNA evolution, giving wrong topologies and branch lengths.

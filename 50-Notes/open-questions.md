@@ -13,6 +13,9 @@ paper_section: ["6"]
 
 Tensions and gaps surfaced during ingest or lint. When a question is resolved, remove it here and update the relevant concept/topic page with the resolution.
 
+> [!abstract] 한눈에
+> ingest와 lint 과정에서 드러난 긴장과 공백을 분야별로 모은 목록이다. 단일세포에서 ADO와 LOH를 구별하지 못하는 문제, bisulfite methylome에 5mC와 5hmC가 섞이는 문제, imputation·embedding benchmark 결과가 서로 어긋나는 문제 등을 짚는다.
+
 ## Duplex sequencing
 
 - ~~**Single-cell + duplex**~~ — Resolved 2025: closed from two directions ([[50-Notes/single-cell-duplex-sequencing]]). Remaining sub-questions: Duplex-Multiome generalization beyond brain ([[10-Summaries/kriz-2025-duplex-multiome]]); cross-method single-cell duplex benchmark needed.

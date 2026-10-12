@@ -29,6 +29,9 @@ topics:
 
 > Thesis: scATAC-seq data are near-binary and even sparser than scRNA-seq, so scRNA-seq tools underfit. **SCALE** combines a variational autoencoder (VAE) with a *Gaussian Mixture Model* (GMM) prior over the latent space, yielding latent features that simultaneously support visualization, clustering, and denoising/imputation — and, because the GMM disentangles the latent dimensions, exposes interpretable features that map onto cell types and even batch effects.
 
+> [!abstract] 한눈에
+> SCALE은 VAE에 Gaussian Mixture Model prior를 결합해 scATAC-seq에서 시각화, clustering, imputation을 함께 지원하는 잠재 특징을 학습한다. GMM이 잠재 차원을 분리해 주므로 세포 유형뿐 아니라 batch effect까지 해석 가능한 특징으로 드러난다.
+
 ## Key claims
 
 - The GMM prior is the key advance over a plain VAE: a single isotropic Gaussian (as in scVI) underfits sparse data; a mixture of Gaussians gives a tighter posterior and learns disentangled, interpretable latent dimensions. Ablating the GMM degrades SCALE to scVI-level performance.

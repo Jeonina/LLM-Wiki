@@ -22,6 +22,9 @@ topics: ["[[computational-methods]]", "[[single-cell-atac-seq]]", "[[single-cell
 
 > Existing label-transfer methods "extract shared information from individual cells but ignore higher-order relations between cells." scGCN's premise is that the **topology of the cell–cell graph** is itself transferable knowledge, and a graph convolutional network is the natural way to use it. Benchmarked across **30 datasets** spanning tissues, platforms, species, and **molecular layers** (RNA versus ATAC).
 
+> [!abstract] 한눈에
+> scGCN은 세포 간 그래프 구조 자체를 옮길 수 있는 지식으로 보고 graph convolutional network로 label transfer를 수행했으며, scRNA-seq에서 scATAC-seq로 넘어가는 어려운 경우를 포함한 30개 데이터셋에서 기존 방법보다 정확도가 높았다. 전달된 라벨의 불확실성은 정량화하지 않는다.
+
 ## Key claims
 
 - **Three obstacles to knowledge transfer are named**: single-cell technical issues (dropout, dispersion); batch effects from operators, protocols, and technical variation (mRNA quality, pre-amplification efficiency, instrument settings); and intrinsic biological variance across tissues, species, and molecular layers.

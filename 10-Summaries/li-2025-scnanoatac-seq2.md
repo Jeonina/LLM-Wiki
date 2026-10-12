@@ -22,6 +22,9 @@ topics: ["[[single-cell-atac-seq]]", "[[long-read-sequencing]]"]
 
 > scNanoATAC-seq2 is a **single-cell-input, single-tube** scATAC protocol: isolation, nuclear extraction, digitonin permeabilisation and Tn5 transposition all happen in one tube, followed by **Oxford Nanopore long-read sequencing**. It suits scarce samples down to one cell. Applied to 3,302 cells across **10 mouse preimplantation stages** (zygote to late blastocyst), with each cell's embryo of origin recorded, it maps ZGA reprogramming and EPI/PE/TE segregation. Long reads add what short-read ATAC cannot: **allele-resolved accessibility** for imprinting and X inactivation, and **copy-resolved accessibility of individual repeats (LINE1, MERVL) and paralog families (*Zscan4*, *Tcstv*, *Obox*)**.
 
+> [!abstract] 한눈에
+> scNanoATAC-seq2는 단일 튜브 반응과 Oxford Nanopore long-read 시퀀싱을 결합한 scATAC 기법으로, 생쥐 착상 전 배아 10단계의 3,302개 세포를 분석했다. 긴 read 덕분에 각인과 X 불활성화의 대립유전자별 접근성은 물론 LINE1·MERVL 같은 개별 반복서열의 접근성까지 구분했다.
+
 ## Key claims
 
 - **Data quality.** After QC, 3,302 cells with a median of 23,160 fragments and median fragment length 5,486 bp. Mitochondrial fragments were a median **0.65%** per cell, against >50% in short-read embryo ATAC even after mtDNA depletion. 240,494 peaks across 11 cell types (≈22,000–102,000 per type; promoter peaks 8–24%). Peak calling was similar to short-read methods in mappable regions and recalled more peaks in repeats. Cell-line tests showed minimal cross-contamination.

@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[computational
 
 > ModernGENA is the GENA-LM group's short paper arguing that a plain, modernized BERT encoder is still a strong [[dna-language-model]]. It swaps GENA-LM's original BERT blocks for **ModernBERT** (RoPE, alternating 128-token local and global attention, pre-norm, GeGLU, no biases, unpadding, FlashAttention) and keeps MLM with a 32k BPE vocabulary. Two sizes (135 M and 377 M) are pretrained on TSS-centred windows from 443 vertebrate RefSeq assemblies for about 1.3–1.5 T tokens. On the 18-task NT benchmark, ModernGENA-large has the best average rank among encoder-only models under 500 M parameters and is second overall behind the 1.2 B GENERator. With FlashAttention 2 it is several times faster at inference than DNABERT-2 and NTv2, and the gap grows with sequence length.
 
+> [!abstract] 한눈에
+> ModernGENA는 GENA-LM의 BERT 블록을 ModernBERT로 바꾼 DNA language model로, NT benchmark에서 500M 이하 encoder 가운데 평균 순위가 가장 높았고 추론도 몇 배 빨랐다. 다만 BPE tokenization 때문에 splice site 과제에서는 NTv2에 크게 뒤졌다.
+
 ## Key claims
 
 - **Benchmark rank.** Within the primary set (DNABERT-2, GENA base, NTv2-100M, NTv2-250M), ModernGENA-large has average rank 1.50 and base 2.39. In the full 13-model comparison, large ranks 3.61, behind GENERator (1.67) and ahead of NTv2-500M (4.89) and NT-multi-2.5B (8.06).

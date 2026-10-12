@@ -22,6 +22,9 @@ topics: ["[[histone-modifications]]", "[[dna-methylation]]"]
 
 > Strahl — co-author of the original 2000 "histone code" hypothesis — revisits it and argues it was too simple in three specific ways: PTMs occur far beyond the tails, they can be **asymmetric within a single nucleosome**, and they are read jointly with **DNA modifications** by multivalent effectors. The correct unit of analysis is not a mark but a nucleosome-plus-DNA signature.
 
+> [!abstract] 한눈에
+> Rothbart와 Strahl은 histone code 가설을 다시 검토해, PTM이 꼬리 바깥에서도 일어나고 한 nucleosome 안에서 비대칭일 수 있으며 multivalent effector가 DNA modification과 함께 읽는다는 점에서 원래 가설이 너무 단순했다고 지적했다. 그래서 분석 단위는 개별 mark가 아니라 nucleosome과 DNA를 함께 묶은 signature여야 한다고 주장한다.
+
 ## Key claims
 
 **Histone side**

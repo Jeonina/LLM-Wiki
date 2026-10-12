@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Rotem et al. (2015) — *Single-cell ChIP-seq reveals cell subpopulations defined by chromatin state (Drop-ChIP)* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/nbt.3383)
 
+> [!abstract] 한눈에
+> Drop-ChIP은 droplet microfluidics와 DNA barcoding을 결합한 최초의 단일세포 ChIP-seq 방법이다. 세포당 약 1,000개 부위만 잡히는 희소한 프로파일로도 mES 세포에서 분화 준비 정도가 다른 세 하위 집단을 구분했다.
+
 Rotem, Ram, Shoresh and colleagues (Bernstein / Weitz labs) introduced Drop-ChIP, the founding single-cell ChIP-seq method, combining drop-based microfluidics with DNA barcoding to acquire single-cell histone-modification profiles in mixed populations.
 
 The chemistry: single cells are encapsulated in $\sim$50-µm droplets with lysis buffer and micrococcal nuclease, which preferentially digests accessible linker DNA. A second microfluidic merge introduces one of $\sim$1,152 unique barcoded oligonucleotide adaptors per nucleosome-containing drop, ligating the barcode to chromatin fragments. Drops are then pooled, immunoprecipitated in bulk against H3K4me2 or H3K4me3 with carrier chromatin, and sequenced. The barcode partitions the reads back into per-cell profiles.

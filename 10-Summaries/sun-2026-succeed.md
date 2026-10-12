@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[single-cell-a
 
 > SUCCEED (Sequence-Functional Genome Foundation Model) is a lighter Enformer-style CNN + transformer, pretrained in a **supervised** multi-task way on 6,389 human ENCODE tracks (DNase, ATAC, TF and histone ChIP-seq), and then used as a frozen or fine-tuned sequence encoder for downstream tasks. The authors present it as a "foundation model" built from functional labels rather than self-supervised masked-token training. Paired with a small encoder for a cell type's own ATAC-seq signal, it predicts cell-type-specific histone and TF tracks (beating EPCOT), denoises sparse bulk and single-cell ATAC (beating AtacWorks), and predicts Hi-C contact maps without CTCF input (beating C.Origami). In shared-encoder comparisons it and Sei, both supervised, beat self-supervised DNA language models.
 
+> [!abstract] 한눈에
+> SUCCEED는 ENCODE 6,389개 트랙으로 지도 학습한 Enformer 계열 모델로, 세포유형별 ATAC 입력과 결합해 히스톤·TF 트랙 예측, ATAC 노이즈 제거, Hi-C 예측에서 기존 도구를 앞섰고, 자기지도 DNA 언어모델보다도 우수했다. 다만 세포유형 특이성은 주로 서열이 아니라 측정된 ATAC에서 나온다.
+
 ## Key claims
 
 - **Enformer-level accuracy with a smaller model.** Retrained on Enformer's Basenji2 data, SUCCEED reached test PCC 0.76 for CAGE (Enformer 0.703), 0.556 for TF ChIP (0.572), 0.698 for histone ChIP (0.692) and 0.813 for DNase/ATAC (0.847).

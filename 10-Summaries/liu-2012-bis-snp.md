@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]", "[[computational-methods]]"]
 
 > In bisulfite sequencing a C>T change at a cytosine is ambiguous — unmethylated C or real C>T SNP — and C>T is the most common human substitution (65% of dbSNP SNPs, usually in CpG context). Methylation callers that score every reference cytosine therefore mis-measure methylation at polymorphic sites. **Bis-SNP** resolves this by exploiting library **directionality**: reads from the strand opposite a cytosine (the "G-strand") are unaffected by conversion and reveal the true genotype. It adapts GATK's Bayesian genotyper with a strand-aware likelihood that includes methylation level (β), under-conversion (α) and over-conversion (γ), plus a bisulfite-aware base-quality recalibration, and outputs SNPs and methylation together.
 
+> [!abstract] 한눈에
+> Bis-SNP는 bisulfite 시퀀싱에서 비메틸화 C와 실제 C>T SNP를 구분하려고, 전환의 영향을 받지 않는 반대 가닥 read를 활용하는 strand-aware 유전형 분석기다. SNP와 메틸화를 함께 출력하며, 32× WGBS에서 동형접합 cytosine의 95% 이상을 낮은 위양성률로 찾아냈다.
+
 ## Key claims
 
 - **Better cytosine calling than reference-based callers**: on a 32× WGBS colon mucosa sample (75 bp single-end, Illumina GAIIx) against an Illumina 1M-Duo SNP array, Bis-SNP (locus-specific β + recalibration, default cutoff) recovered **95.22% of 435,120 homozygous cytosines** (414,327) with a false-positive rate of 0.37% (2,461). Bismark — which scores all reference cytosines — and the lab's earlier "Berman2012" method performed worse, as expected on array sites chosen for polymorphism.

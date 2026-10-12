@@ -12,6 +12,9 @@ updated: 2026-05-14
 
 **Citation:** Tang et al. (2009) — *mRNA-Seq whole-transcriptome analysis of a single cell* — *Nature Methods*. [DOI](https://doi.org/10.1038/nmeth.1315)
 
+> [!abstract] 한눈에
+> Tang 등은 생쥐 할구 하나에서 최초로 전사체 전체 mRNA-Seq를 수행해, 같은 세포의 마이크로어레이보다 75% 많은 유전자와 1,753개의 새로운 splice junction을 찾아냈다. 처리량이 낮고 UMI가 없다는 한계가 있다.
+
 Tang, Barbacioru, Wang et al. (Surani lab, Gurdon Institute, Cambridge) reported the **first whole-transcriptome mRNA-Seq from a single mammalian cell** ([DOI](https://doi.org/10.1038/nmeth.1315)). Using a single mouse blastomere as input, they reverse-transcribed poly(A) mRNA with an anchored oligo(dT) primer, poly(A)-tailed the first-strand cDNA with terminal transferase, and PCR-amplified it, then performed digital gene expression profiling on the SOLiD platform. The assay detected expression of **75% more genes (5,270 additional)** than parallel microarray analysis of the same cell, identified **1,753 previously unknown splice junctions** (≥5 reads), and revealed that **8–19% of multi-isoform genes expressed at least two isoforms simultaneously** in individual blastomeres or oocytes. Applied to *Dicer1⁻/⁻* and *Ago2⁻/⁻* oocytes, the method exposed 1,696 and 1,553 abnormally upregulated genes (619 shared), demonstrating that single-cell mRNA-Seq could resolve perturbation biology that bulk approaches miss for rare cell populations.
 
 ## Why this matters

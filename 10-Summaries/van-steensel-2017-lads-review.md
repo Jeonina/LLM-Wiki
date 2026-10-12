@@ -22,6 +22,9 @@ topics: ["[[40-Topics/3d-genome]]", "[[40-Topics/chromatin-architecture]]"]
 
 > The canonical review on Lamina-Associated Domains: what they are, how they're mapped, what molecular features define them, and how they fit into the broader heterochromatin / nuclear compartment landscape. Crucially, it articulates LADs as one component of a *competitive* sorting system across three repressive compartments (NL, nucleoli, pericentromeric heterochromatin) that collectively organize the B-compartment.
 
+> [!abstract] 한눈에
+> LAD에 대한 대표 리뷰로, LAD가 게놈의 3분의 1 이상을 덮는 이질염색질이며 불변의 cLAD와 세포 유형 특이적인 fLAD로 나뉜다고 정리했다. LAD를 핵막, 핵소체, pericentromeric 이질염색질이 경쟁하는 억제 구획 체계의 일부로 보고 compartment B와 거의 일치한다고 설명한다.
+
 ## Key claims
 
 - **LADs cover more than one-third of the mouse and human genome in individual cell types.** Mouse/human cells have ~1,000–1,500 LADs, sized 10 kb – 10 Mb (median ~0.5 Mb), distributed across all chromosomes.

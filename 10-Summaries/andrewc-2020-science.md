@@ -17,6 +17,9 @@ sources: ["00-Sources/papers/AndrewC_2020_Science.pdf"]
 
 > Andrew C. Payne, Zachary D. Chiang, Paul L. Reginato, Sarah M. Mangiameli, Evan M. Murray, Chun-Chen Yao, Styliani Markoulaki, Andrew S. Earl, Ajay S. Labade, Rudolf Jaenisch, George M. Church, Edward S. Boyden, Jason D. Buenrostro, Fei Chen. *Science* **371**, eaay3446 (26 Feb 2021). DOI: 10.1126/science.aay3446. (The "AndrewC_2020" filename is misleading — this is Payne 2021, not Stergachis.)
 
+> [!abstract] 한눈에
+> IGS는 고정된 세포 안에서 DNA를 직접 시퀀싱한 뒤 ex situ paired-end read와 짝지어, 핵 안의 3차원 좌표를 지닌 genomic read를 세포당 수백에서 수천 개 얻는다. 생쥐 zygote에서는 SNP로 부모 유래 염색체를 구분해 부계와 모계 pronucleus의 구조 차이를 보였다.
+
 ## Thesis
 
 IGS sequences DNA **directly inside intact, fixed cells**, then matches each in-situ read to a high-quality paired-end ex-situ read of the same amplicon — producing hundreds to thousands of genomic paired-end reads with **(x, y, z) spatial coordinates inside the nucleus** for each cell. Unlike Hi-C (which reads contact frequency in bulk) or DNA FISH (which reads spatial position at a handful of loci), IGS gives genome-wide spatial DNA at base-pair resolution in single cells.

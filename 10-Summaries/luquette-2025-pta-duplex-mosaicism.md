@@ -38,6 +38,9 @@ topics:
 
 > Thesis: A scalable single-cell pipeline (PTA scWGA → deep sequencing → duplex-sequencing validation of bulk DNA) can deliver a **comprehensive view of somatic mosaicism** — SNVs, indels, CNVs, aneuploidies, structural rearrangements, embryonic lineage — from a single individual. Applied to 102 nuclei from postmortem lung and colon of a 74-year-old male, the approach exposes organ- and cell-type-specific mutation burdens, APOBEC and tobacco signatures, T-cell receptor rearrangements (reading immune lineage straight from genomic DNA), and reconstructible cellular ancestries traced from the zygote.
 
+> [!abstract] 한눈에
+> Luquette 등은 PTA 단일세포 WGA에 bulk duplex sequencing 검증을 더해, 한 사람의 폐와 대장에서 얻은 핵 102개로 SNV부터 이수성, 배아 계통까지 체성 모자이크 현상을 폭넓게 보여 주려 했다. 다만 원문 클리핑에 본문이 없어 세부 결과는 아직 확인되지 않았다.
+
 ## Key claims
 
 - **Burden and spectrum heterogeneity** across organs and individual cells. Tobacco signatures appear in lung as expected. APOBEC activity detected in both organs at single-cell resolution.

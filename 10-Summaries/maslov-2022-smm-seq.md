@@ -22,6 +22,9 @@ topics: ["[[duplex-sequencing]]", "[[somatic-mosaicism]]", "[[mosaic-variant-cal
 
 > Somatic mutations in normal tissue are mostly unique to one cell, so in bulk DNA they are indistinguishable from sequencing errors. Duplex sequencing fixes that by requiring both strands to agree, but its error suppression is bounded by the **square** of the per-strand error probability. SMM-seq (single-molecule mutation sequencing) replaces "two strands" with "many independent copies of each strand": a hairpin adapter turns each fragment into a dumbbell, **linear rolling-circle amplification (pulse-RCA)** writes out many concatemerized, non-propagating copies of both strands, and only then is PCR used. Errors in any single RCA copy stay unique to that copy, so the theoretical error rate becomes P(E)^N rather than P(E)². The method recovers ENU-induced mutations in fibroblasts and reproduces, in bulk liver DNA, the age-related mutation increase the same lab had measured by single-cell sequencing.
 
+> [!abstract] 한눈에
+> SMM-seq는 hairpin adapter와 선형 rolling-circle 증폭으로 각 가닥의 독립 복사본을 여럿 만들어 bulk DNA에서 드문 체성 변이를 잡아낸다. 노화한 간 DNA에서는 앞서 단일세포 분석으로 측정했던 연령에 따른 변이 증가를 그대로 재현했다.
+
 ## Key claims
 
 - **Two-step library**: hairpin-like adapters (6-nt UMI in the stem, uracil in the loop) are ligated to both ends of AluI/MluCI-digested, end-repaired fragments, making a dumbbell; pulse-RCA with a thermostable strand-displacing polymerase then produces single-stranded concatemers of equally represented copies of both strands, separated by spacers that serve as PCR priming sites. The library is therefore **PCR duplicates of multiple independent RCA copies** of each original fragment.

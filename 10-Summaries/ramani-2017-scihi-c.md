@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[chromatin-architecture]]"]
 
 > Combinatorial indexing applied to chromosome conformation. Barcode intact nuclei twice — once by bridge-adaptor ligation before proximity ligation, once by Y-adaptor ligation after — and 96 × 96 barcode combinations tag far more nuclei than the ≤25-per-well dilution allows, so most cells get a unique index **without ever physically isolating a cell**. 10,696 single-cell contact maps in one workflow, two orders of magnitude beyond the prior state of the art.
 
+> [!abstract] 한눈에
+> sciHi-C는 combinatorial indexing을 Hi-C에 적용해, 세포를 물리적으로 분리하지 않고도 한 번에 1만 개가 넘는 단일세포 contact map을 만들었다. 접촉 구조만으로 세포주의 염색체 전좌와 세포주기 상태를 구분할 수 있음을 보였다.
+
 ## Key claims
 
 - **The protocol.** 5–10 M cells fixed, lysed to nuclei, DpnII-digested *in situ*; distributed to 96 wells for barcoded biotinylated bridge-adaptor ligation; **pooled and proximity-ligated together**; diluted to a second 96-well plate at **≤25 nuclei per well**; lysed and given a second barcode by Y-adaptor ligation. 2 × 250 bp reads recover genomic sequence plus both barcodes.

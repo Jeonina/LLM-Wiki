@@ -24,6 +24,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/dna
 >
 > scDNAm-GPT is a foundation model **pretrained on single-cell whole-genome bisulfite data**: about 1 million cells (≈400,000 mouse brain, ≈600,000 human cells from various tissues), about 1.2 trillion CpG tokens, about 1.2–1.3 million covered CpGs per cell on average. Each covered CpG becomes a CpG-centred 6-mer "XXC(M)GXX" token. Methylated and unmethylated versions are mixed by the CpG's methylation rate (a "fuzzy" embedding), so bulk data can be fed in too. A stack of 8 Mamba (selective state-space) blocks reads the whole cell's CpGs as one sequence, up to about 20 million tokens. Pretraining is causal "next fuzzy token" prediction. For downstream tasks, a cross-attention head lets the final [SEP] state attend to every CpG. The authors report cell-type classification on four unseen datasets (average accuracy 83.7%), prediction of gene expression from methylation in colorectal cancer, pseudotime in early embryos, and deconvolution of simulated bulk and cfDNA samples. Many evaluations are small, and several key comparisons are only against weak or ablated baselines.
 
+> [!abstract] 한눈에
+> scDNAm-GPT는 약 100만 개 세포의 scWGBS 데이터로 사전학습한 Mamba 기반 모델로, 한 세포의 CpG 전체를 하나의 서열로 읽는다. 세포 유형 분류, 메틸화 기반 발현 예측, cfDNA 분석 등을 보였지만 평가 규모가 작고 비교 대상이 약한 경우가 많다.
+
 ## Key claims
 
 - **Pretraining data.** Mouse brain atlases (Liu et al. 2021, 2023), human brain (Tian et al. 2023) and a human-body single-cell 3D genome / methylation atlas (Zhou et al. 2025 preprint), described as 35 tissues and cell types across human and mouse.

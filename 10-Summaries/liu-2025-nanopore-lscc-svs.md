@@ -31,6 +31,9 @@ topics:
 
 > Thesis: Laryngeal squamous cell carcinoma (LSCC) lacks reliable molecular biomarkers for early diagnosis and prognosis. Bulk short-read sequencing detects SNVs well but is poorly suited to large somatic structural variants (SVs) that are central to tumorigenesis. **SomaGauss-SV**, a new somatic-SV detection workflow on nanopore long-read sequencing data, achieves balanced precision and recall across five paired tumor-cell-line benchmarks. Applied to 15 paired LSCC tumor–blood samples, it reveals a comprehensive SV landscape, links smoking intensity to somatic deletion burden, and identifies a high-frequency simple-repeat expansion in 74% of patients that drives *TP53BP2* and *FBXO28* via spatial proximity.
 
+> [!abstract] 한눈에
+> SomaGauss-SV는 nanopore long-read 데이터에서 체세포 구조 변이를 찾는 워크플로로, 후두 편평세포암 15쌍 시료에 적용해 흡연량과 체세포 결실 부담 사이의 양의 상관을 보였다. 환자 74%에서 반복되는 단순 반복서열 확장도 찾아냈다.
+
 ## Key claims
 
 - **SomaGauss-SV workflow**: somatic-SV detection from paired tumor-vs-normal nanopore long-read data. Balanced high precision and recall across five paired tumor cell-line datasets (benchmark).

@@ -30,6 +30,9 @@ topics:
 
 > Thesis: The companion-piece to the technology review — a survey of the *algorithms* that turn lineage-resolved single-cell multi-omic data into biology. It frames four core computational challenges (large-scale phylogenetic inference, disparate multimodality, unobserved ancestral states, noise/dropout) and organizes the methods that address them: phylogenetic reconstruction, quantitative fate mapping, ancestral-state reconstruction, and lineage–transcriptome integrative learning.
 
+> [!abstract] 한눈에
+> multimodal lineage tracing 데이터를 다루는 알고리즘을 정리한 리뷰로, 대규모 계통 추론, 이산적 tree와 연속적 manifold의 불일치, 관측되지 않는 조상 상태, dropout을 핵심 과제로 꼽는다. 방법은 계통 재구성, 정량적 fate mapping, 조상 상태 재구성, lineage-transcriptome 통합 학습으로 나눠 다룬다.
+
 ## Key claims
 
 - **Four challenges**: (1) tree inference is NP-hard and tree count grows super-exponentially with cell number; (2) lineage data are discrete/low-dim/tree-structured while molecular data are continuous/high-dim/manifold — a structural, temporal, and statistical mismatch; (3) only leaf (present-day) states are observed, ancestral internal-node states are unseen; (4) pervasive allelic/barcode dropout and noise propagate into every downstream step.

@@ -22,6 +22,9 @@ topics: ["[[histone-modifications]]", "[[single-cell-atac-seq]]", "[[computation
 
 > This is a bioinformatics-focused review of scCUT&Tag and its variants. Its core argument: scCUT&Tag data are analysed almost entirely with scATAC-seq tooling (Signac, ArchR, SnapATAC), and that inheritance breaks down in specific, nameable places. The places it names are bins versus peaks, mark-specific QC thresholds, TSS enrichment for repressive marks, duplicate handling, cell-type annotation and multi-mark integration. The review catalogues **21 public datasets (Table 1)** found by a PRISMA 2020 search covering January 2019–December 2025. It lays out a seven-step workflow, demonstrates it on the scCUT&Tag-pro PBMC dataset (GSE195725, six marks), and ends with a list of integration gaps.
 
+> [!abstract] 한눈에
+> scCUT&Tag 분석이 대부분 scATAC-seq 도구를 그대로 빌려 쓰는 탓에 bin과 peak 선택, 마크별 QC 기준, 억제성 마크의 TSS enrichment, 중복 처리에서 한계가 드러난다고 짚은 리뷰다. 공개 데이터셋 21개를 정리하고 7단계 분석 workflow를 제시했다.
+
 ## Key claims
 
 - **Dataset landscape.** The 21 studies cover active marks (H3K4me1/2/3, H3K27ac, H3K36me3), repressive marks (H3K9me3, H3K27me3), H2A.Z, CTCF/RAD21, Pol II, TFs (NR2F1, OLIG2), m6A (sn-m6A-CT) and G-quadruplexes (scG4, snG4-CUT&Tag). Captured cells range from ~2000 to >100,000. Fragments per cell range from 500 to 20,000. FRiP ranges from 0.1 to 0.81. Analysis bin sizes range from 200 bp to 50 kb.

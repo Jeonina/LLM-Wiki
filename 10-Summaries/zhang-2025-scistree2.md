@@ -22,6 +22,9 @@ topics: ["[[single-cell-lineage-tracing]]", "[[cancer-clonal-evolution]]", "[[co
 
 > ScisTree2 scales model-based single-cell SNV phylogenetics to **tens of thousands of cells** by keeping the model deliberately simple — binary genotypes under the **infinite-sites (IS)** assumption, input as a per-cell, per-site posterior probability of wild type — and spending the algorithmic effort on search. Given a tree, the best placement of each mutation (and hence the genotype matrix) is found in O(nm) by dynamic programming; ScisTree2's contribution is an **SPR local search that evaluates the whole O(n²) SPR neighbourhood in O(n²m) rather than the naive O(n³m)**, plus a branch-and-bound pruning that makes ≥10,000-cell trees practical. The authors claim it is the first model-based lineage-tree and genotype-calling method able to handle data of that size.
 
+> [!abstract] 한눈에
+> ScisTree2는 infinite-sites 가정 아래 SPR local search를 효율화해 model 기반 single-cell SNV lineage tree 추론과 genotype calling을 수만 개 세포 규모로 확장했다. 0.1× coverage에서도 genotype 정확도가 85%를 넘었지만, 1× 미만에서는 어떤 방법도 tree를 정확히 복원하지 못했다.
+
 ## Key claims
 
 - **ScisTree (2020) stalls above ~1,000 cells**; its NNI search is O(Kn²m) and easily trapped in local optima. ScisTree2 switches to SPR (whose neighbourhood contains NNI's) and achieves the same O(Kn²m) per-iteration order — one order of magnitude faster than naive SPR, with a proven bound (contrasted with heuristic SPR speedups lacking guarantees).

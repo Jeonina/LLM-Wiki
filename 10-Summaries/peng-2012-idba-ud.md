@@ -22,6 +22,9 @@ topics: ["[[whole-genome-amplification]]", "[[computational-methods]]"]
 
 > The same problem as [[chitsaz-2011-velvet-sc|Velvet-SC]] — uneven coverage breaks the assumption that low-multiplicity *k*-mers are errors — attacked with three orthogonal fixes instead of one: **multiple depth-relative thresholds** rather than a single global cutoff, **iterative *k*** from k_min to k_max carrying contigs forward as reads, and **local assembly using paired-end information** to bridge low-depth short repeats. It also unifies the single-cell and metagenomic cases, which have the same coverage pathology from different causes.
 
+> [!abstract] 한눈에
+> IDBA-UD는 깊이에 따른 다중 임계값, 반복적인 k 증가, paired-end 기반 국소 조립을 묶어 단일세포 MDA와 메타유전체의 불균일한 depth 문제를 함께 다룬다. Velvet-SC, SOAPdenovo 등보다 더 긴 contig를 더 정확하게 조립했다.
+
 ## Key claims
 
 - **Single-cell and metagenomic data share one statistical problem.** Amplification bias in single-cell MDA and differing species abundance in a microbial community both produce highly uneven depth; both break assemblers written for a single genome at uniform coverage. Treating them as one problem is the paper's framing move.

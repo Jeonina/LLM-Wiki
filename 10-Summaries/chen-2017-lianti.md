@@ -16,6 +16,9 @@ updated: 2026-05-12
 
 > Chongyi Chen, Dong Xing, Longzhi Tan, Heng Li, Guangyu Zhou, Lei Huang, **X. Sunney Xie**. *Science* **356**, 189–194 (14 April 2017). DOI: 10.1126/science.aak9787. Harvard + Beijing.
 
+> [!abstract] 한눈에
+> LIANTI는 Tn5 transposition과 T7 in vitro transcription을 결합해 지수 증폭 없이 선형으로만 증폭하는 단일세포 WGA로, 97% 커버리지와 약 10 kb 해상도의 micro-CNV 검출을 보였다. 주된 SNV 위양성인 C→T는 증폭 오류가 아니라 lysis 이후의 시토신 탈아미노화에서 생긴다는 점도 밝혔다.
+
 ## Thesis
 
 **LIANTI** is a single-cell WGA method that combines **Tn5 transposition** with **T7 in-vitro transcription** for purely linear amplification (no exponential cycles). Achieves **97% genome coverage at 30× depth from a single BJ fibroblast** with **17% allele dropout** — outperforming MALBAC, MDA, DOP-PCR on uniformity (lowest CV across all bin sizes). Enables direct micro-CNV detection at ~10 kb resolution (vs ~1 Mb for prior methods) and reveals stochastic firing of DNA replication origins from cell to cell.

@@ -22,6 +22,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[computational-methods]]"]
 
 > The evolutionary model, not the noise model, is the thing to fix. Infinite-sites says a mutation is gained once and never lost — but in cancer, **SNVs are lost constantly** because copy-number aberrations delete the regions carrying them. SPhyR adopts the ***k*-Dollo** model — a character may be gained **once** but lost at most ***k*** times — and shows that solutions to this problem are **constrained integer matrix completions**, which makes an ILP formulation possible that solves realistic instances in seconds.
 
+> [!abstract] 한눈에
+> SPhyR는 변이가 한 번만 생기되 최대 k번 소실될 수 있다는 k-Dollo 모델을 단일세포 종양 계통 추정에 도입해, copy number 손실로 인한 SNV 소실을 반영했다. 제약 정수 행렬 완성으로 정식화한 ILP로 빠르게 풀며 시뮬레이션에서 기존 방법을 앞섰지만, 실데이터 검증은 대장암 하나뿐이다.
+
 ## Key claims
 
 - **Parallel evolution is rare in cancer; loss is ubiquitous.** This asymmetry is the paper's central biological premise and it selects the model: Dollo parsimony permits back-mutation/loss but forbids parallel gain, which matches how SNVs actually disappear (copy-number loss of the region), unlike the fully general finite-sites model of [[zafar-2017-sifit|SiFit]].

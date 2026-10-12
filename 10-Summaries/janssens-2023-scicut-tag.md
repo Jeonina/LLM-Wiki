@@ -31,6 +31,9 @@ topics:
 
 > Thesis: scCUT&Tag droplet-based platforms are expensive per cell and limited in chemistry control. **sciCUT&Tag** uses **two-round combinatorial indexing** (96-well plate first round of pA-Tn5 indexed tagmentation + 5,184-well ICELL8 second round of PCR indexing) to scale to ~40,000 cells per chip at ~$0.11/cell — a ~8× cost reduction vs droplets — while maintaining higher per-cell read counts (~2,100 reads/cell for H3K27me3 vs 1,110 for original scCUT&Tag).
 
+> [!abstract] 한눈에
+> sciCUT&Tag는 96-well 단계의 Tn5 인덱싱과 ICELL8 PCR 인덱싱을 결합해 칩 하나에서 약 4만 세포를 세포당 약 0.11달러에 프로파일링한다. 원래 scCUT&Tag보다 세포당 read가 많았고, 두 공여자 세포를 섞은 뒤 SNP로 collision을 걸러내는 품질 관리 방식을 갖췄다.
+
 ## Key claims
 
 - **Workflow**: lightly cross-link nuclei → bind to WGA-magnetic beads → bulk primary+secondary antibody → array in 96-well plate → barcoded pA-Tn5 tagmentation per well → pool → ICELL8 dispense at 12–24 cells/nanowell → SDS release → PCR with second-round barcode → SPRI cleanup → sequence. ~1.5 days end-to-end by a research technician.

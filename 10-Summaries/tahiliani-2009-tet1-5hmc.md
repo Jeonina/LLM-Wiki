@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]"]
 
 > A computational homology search for mammalian relatives of the trypanosome base-J enzymes JBP1/JBP2 identified the TET family; TET1 is a 2-oxoglutarate- and Fe(II)-dependent dioxygenase that oxidizes 5-methylcytosine to 5-hydroxymethylcytosine, both in vitro and in cells — establishing 5hmC as an enzymatically generated mammalian DNA base and opening the active-demethylation field.
 
+> [!abstract] 한눈에
+> Tahiliani 등은 TET1이 5mC를 5hmC로 산화하는 2OG·Fe(II) 의존 dioxygenase임을 시험관과 세포 양쪽에서 입증해, 5hmC가 효소로 만들어지는 포유류 DNA 염기임을 확립하고 능동적 탈메틸화 연구의 문을 열었다. 5hmC의 유전체 분포는 미해결로 남겼다.
+
 ## Key claims
 
 - TET1/2/3 are mammalian homologs of JBP1/JBP2, sharing the double-stranded β-helix (DSBH) fold of 2OG-Fe(II) oxygenases; TET1 and TET3 additionally carry a CXXC zinc-binding domain that in other proteins discriminates methylated from unmethylated DNA.

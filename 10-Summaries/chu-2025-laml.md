@@ -22,6 +22,9 @@ topics: ["[[single-cell-lineage-tracing]]", "[[cancer-clonal-evolution]]", "[[co
 
 > The paper that separates **two kinds of missing data that look identical** and shows one of them is informative. In dynamic lineage tracing, an entry can be missing because of a **heritable modification** (epigenetic silencing, or resection removing several target sites at once) or because of **dropout** (technical failure in scRNA-seq). Heritable missingness is inherited by descendants and therefore carries **phylogenetic signal**; dropout does not. No prior method distinguished them. LAML's Probabilistic Mixed-type Missing (PMM) model does, and delivers **time-resolved branch lengths** as a result.
 
+> [!abstract] 한눈에
+> LAML은 계통 추적 데이터의 결측을 유전되는 heritable missing과 기술적 dropout으로 구분하는 PMM 모델로, 계통수 topology와 시간 단위 branch length를 함께 추정한다. 마우스 폐선암에 적용해 전이가 세 시기로 나뉘며 약 2개월 무렵 폭발적으로 일어난다는 것을 보였다.
+
 ## Key claims
 
 - **Four features define a modern dynamic lineage tracing system**, and PMM models all four: (1) **non-modifiability** — an edited target site cannot be edited again; (2) **decay in mutation rate** over time, because the finite pool of target sites is consumed; (3) **mixed-type missing data** — heritable versus non-heritable; (4) **heterogeneous target sites** — each site has its own set of possible edits, which is "unconventional in statistical phylogenetics and has not been modeled in either species phylogenetics or single-cell lineage trees."

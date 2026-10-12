@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/sin
 
 > SCARF is a foundation model pretrained only on **paired** 10x Multiome (RNA + ATAC from the same nucleus) data. The authors built **X-Omics**: 2.7 million human cells from 454 public 10x Multiome profiles in GEO, 21 tissue types, all reprocessed from raw reads with Cell Ranger ARC on GRCh38 against a shared reference set of 1,743,872 peaks. Each modality has its own encoder trained with masked-token reconstruction. The two cell-level [CLS] embeddings are then aligned with a CLIP-style contrastive loss, using a queue of negatives. The backbone is described as a "modified Mamba". The paper evaluates zero-shot clustering, RNA–ATAC cell matching, a reference-lookup form of cross-omics translation, and few-shot cell-type annotation, almost entirely on 10x PBMC, human brain and BMMC multiome sets. The paper is short, and most results are shown as figures without numbers in the text.
 
+> [!abstract] 한눈에
+> SCARF는 10x Multiome 270만 개 세포로 꾸린 X-Omics로 사전학습하고, RNA와 ATAC 임베딩을 contrastive loss로 정렬한 foundation model이다. 군집화와 세포 매칭 성적은 좋았지만, 비교 대상이 대부분 단일 modality 모델이고 결과 상당수가 수치 없이 그림으로만 제시됐다.
+
 ## Key claims
 
 - **Pretraining corpus is paired-only.** X-Omics holds 2.7 M cells from 454 10x Multiome profiles across 21 tissues, with a GEO cutoff of 23 February 2024. The authors call it "the largest curated collection of uniformly processed single-cell Multiome data". Every pretraining cell has both RNA and ATAC, so the contrastive step depends on true pairs.

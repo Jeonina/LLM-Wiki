@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[computational
 
 > DNABERT-2 argues that k-mer tokenisation is the main obstacle to scaling DNA language models. Overlapping k-mers leak masked tokens through their neighbours and leave the sequence almost as long as the input; non-overlapping k-mers (Nucleotide Transformer) shorten the sequence but make a one-base shift produce a completely different token string. The authors replace both with Byte Pair Encoding (BPE, vocabulary 4,096) learned on a 135-species, 32.49B-base corpus, and update the BERT encoder with ALiBi positional biases (no fixed length limit), FlashAttention and GEGLU. They also release GUE, a 36-dataset benchmark across 9 tasks and 4 species groups (human, mouse, yeast, virus, plus fungi in GUE+), with datasets tuned to moderate difficulty. The 117M-parameter DNABERT-2 roughly matches the 2.5B-parameter NT-2500M-multi on GUE (66.80 vs 66.93 average) with 21× fewer parameters and about 92× less pre-training GPU time.
 
+> [!abstract] 한눈에
+> DNABERT-2는 k-mer tokenisation을 DNA language model 확장의 주된 걸림돌로 보고 이를 BPE로 대체했으며, multi-species benchmark인 GUE를 함께 제시했다. NT-2500M-multi와 비슷한 성능을 parameter는 약 1/21, FLOPs는 약 1/19만 써서 달성했다.
+
 ## Key claims
 
 - **k-mer tokenisation is inefficient in two different ways.** Overlapping k-mers make masked-token prediction partly trivial: with unmasked neighbours on both sides a masked token is "entirely leaked", which is why DNABERT had to mask k-token spans. Non-overlapping k-mers cut length by k but are sample-inefficient because near-identical inputs get very different token strings (Fig. 1 example).

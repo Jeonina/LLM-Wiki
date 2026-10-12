@@ -22,6 +22,9 @@ topics: ["[[histone-modifications]]", "[[dna-methylation]]", "[[single-cell-mult
 
 > A 2019 snapshot of how histone and DNA modifications are measured in single cells, organised around a five-metric yardstick — **complexity, accuracy, throughput, efficiency and portability** — and spanning sequencing (scChIP-seq, scCUT&Tag, scChIC-seq, scChIL-seq; scRRBS, scBS-seq, scMAB-seq, scAba-seq, scCGI-seq), single-nucleosome and mass-cytometry methods (Co-ChIP, single-molecule decoding, EpiTOF), and **live-cell reporters**. Its central judgement: genome-wide single-cell methods are good at **classifying cell types**, while single-locus live reporters give **mechanism**; nothing yet maps many modifications at many loci over time.
 
+> [!abstract] 한눈에
+> Ludwig와 Bintu는 단일세포 히스톤·DNA 변형 측정법을 복잡도, 정확도, 처리량, 효율, 이식성의 다섯 기준으로 정리했다. 유전체 전반을 보는 단일세포 방법은 세포 유형 분류에 강하고, 단일 locus 생세포 리포터는 기전 규명에 강하다고 평가했다.
+
 ## Key claims
 
 - **Why ChIP doesn't scale down**: crosslinking artefacts, sonication needing hundreds of thousands to millions of cells, MNase over-digestion reducing reads, and low-affinity, lot-variable antibodies. Engineered readers and mintbodies are proposed alternatives (only anti-H3K9ac and anti-H4K20me1 mintbodies existed).

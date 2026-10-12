@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/com
 
 > Decima fine-tunes all of **Borzoi** to predict a gene's expression across **8,856 pseudobulks** (cell type × tissue × disease × study) built from sc/snRNA-seq of **over 22 million cells**, covering 201 cell types, 271 tissues and 82 diseases. Each example is one gene: 524,288 bp of sequence starting 163,840 bp upstream of the TSS, plus a fifth input channel masking the gene body. Borzoi's output head is replaced by length-wise mean pooling and a linear layer to 8,856 log(CPM+1) values. The key change is the loss: Borzoi's Poisson + multinomial loss is applied **across pseudobulks for one gene**, not across positions, with the Poisson total down-weighted to 10⁻⁴, so the model is pushed to learn between-cell-type differences. Working at pseudobulk instead of single-cell resolution is what lets it train on atlas scale. Decima predicts held-out genes (mean Pearson 0.80 per pseudobulk, 0.58 per gene across pseudobulks), recovers lineage TF motifs through attributions, ranks single-cell eQTLs and their cell type above Borzoi, and is used in silico to design a Crohn's-fibroblast-biased promoter.
 
+> [!abstract] 한눈에
+> Decima는 Borzoi 전체를 미세조정해 2,200만 개가 넘는 세포로 만든 8,856개 pseudobulk에서 유전자 발현을 예측한다. 세포형 간 차이를 배우도록 손실을 바꿔 single-cell eQTL 순위에서 Borzoi를 앞섰지만, 원거리 enhancer 효과는 다른 서열 모델처럼 거리에 따라 줄었다.
+
 ## Key claims
 
 - **Held-out genes.** On 1,811 test genes (an ensemble of four models, one per Borzoi replicate), mean Pearson between measured and predicted expression was 0.80 across genes within a pseudobulk and 0.58 across pseudobulks within a gene. Classifying cell-type-specific genes (z ≥ 1) from predicted z scores gave mean AUROC 0.82.

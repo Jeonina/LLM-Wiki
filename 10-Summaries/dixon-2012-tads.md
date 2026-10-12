@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[chromatin-architecture]]"]
 
 > Push Hi-C resolution below 100 kb and a new feature appears: **highly self-interacting megabase blocks with abrupt boundaries** — visible as triangles on the contact map. Dixon named them topological domains, showed they are pervasive, cell-type-stable and conserved between mouse and human, and identified what marks their boundaries: CTCF, housekeeping genes, tRNAs and SINEs.
 
+> [!abstract] 한눈에
+> Dixon 등은 고해상도 Hi-C에서 경계가 뚜렷하고 내부 상호작용이 강한 메가베이스 규모의 topological domain을 찾아, 세포 유형 간 안정적이고 생쥐와 사람 사이에 보존됨을 보였다. 경계에는 CTCF, housekeeping 유전자, tRNA, SINE이 많지만 CTCF 결합 부위 중 경계에 있는 것은 15%뿐이다.
+
 ## Key claims
 
 - **>1.7 billion Hi-C read pairs** across mouse ES cells, human ES cells, human IMR90 fibroblasts and mouse cortex — the depth that made sub-megabase structure visible where [[lieberman-aiden-2009-hic|1 Mb binning]] could not resolve it.

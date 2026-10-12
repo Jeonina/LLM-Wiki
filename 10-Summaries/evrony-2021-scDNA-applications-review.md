@@ -27,6 +27,9 @@ topics:
 
 > Thesis: rather than reviewing scDNA-seq technologies, frame the field through three core *capabilities* that scDNA-seq uniquely enables across applications: **fidelity** (detecting low-mosaicism features below the noise floor of bulk sequencing), **co-presence** (determining which variants co-occur in the same cell), and **phenotypic association** (linking single-cell genotype to single-cell phenotype). Every scDNA-seq application is distinguished by which subset of these capabilities it depends on.
 
+> [!abstract] 한눈에
+> Evrony 등은 scDNA-seq 분야를 기술이 아닌 세 가지 핵심 역량, 곧 fidelity, co-presence, phenotypic association으로 재구성했다. 각 응용은 이 가운데 어떤 역량에 의존하느냐로 구분된다는 것이 이 리뷰의 핵심 틀이다.
+
 ## Key claims
 
 - **Fidelity capability**: bulk sequencing error is a constant fraction of coverage, so detection of rare variants is fundamentally floor-limited. scDNA-seq breaks the floor by reading single molecules / single cells where a somatic variant shows the same read-depth distribution as a germline heterozygous variant rather than appearing at 1/(2N) of the bulk read pool.

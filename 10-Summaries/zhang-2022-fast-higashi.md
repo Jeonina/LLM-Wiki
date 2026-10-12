@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[computational-methods]]"]
 
 > scHi-C embedding methods were either memory-bound (scHiCluster stores every imputed dense map), slow (3DVI trains a VAE per chromosome per genomic distance; Higashi iterates over individual contacts in a hypergraph network), and none were interpretable. **Fast-Higashi** (Ma lab) represents each chromosome's contact maps as a 3-way tensor (bin × bin-feature × cell) and jointly decomposes all chromosomes with a generalised **core-PARAFAC2** model sharing only the cell dimension. Outputs are cell embeddings plus **"meta-interactions"** — aggregated contact patterns analogous to metagenes, each tied to embedding dimensions. Sparsity is handled by a **partial random walk with restart (RWR)** computed batch-wise inside the optimisation. It is reported ~40× faster than 3DVI and ~9× faster than Higashi, with equal or better embeddings.
 
+> [!abstract] 한눈에
+> Fast-Higashi는 scHi-C contact map을 tensor로 놓고 core-PARAFAC2로 분해해 cell embedding과 해석 가능한 meta-interaction을 함께 얻는다. Higashi보다 약 9배 빠르면서 embedding 품질은 같거나 더 좋았고, chromatin conformation만으로 피질 층별 excitatory neuron을 구분했다.
+
 ## Key claims
 
 - **Embedding quality**: on three complex-tissue datasets at 500 kb (human prefrontal cortex sn-m3C-seq, "Lee et al."; mouse hippocampus sn-m3C-seq, "Liu et al."; developing mouse brain Dip-C, "Tan et al."), Fast-Higashi had the highest or second-best scores on all metrics (modularity, ARI, AMI, micro/macro-F1) vs **Higashi, scHiCluster (updated version) and 3DVI**.

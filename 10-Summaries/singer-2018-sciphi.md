@@ -22,6 +22,9 @@ topics: ["[[mosaic-variant-calling]]", "[[cancer-clonal-evolution]]", "[[computa
 
 > Stop treating variant calling and tree building as two steps. Cells are related by a phylogeny, mutations propagate along its branches, so **the tree is prior information about where mutations should be**. SCIΦ jointly calls mutations and estimates the tumour phylogeny by MCMC — and can therefore recover a mutation in a cell with **very low or even zero variant-read support**, because the tree says it should be there.
 
+> [!abstract] 한눈에
+> SCIΦ는 변이 호출과 종양 계통수 추정을 하나의 MCMC 문제로 묶어, 변이 read가 거의 없거나 전혀 없는 세포에서도 계통수를 근거로 변이를 찾아냈고 Monovar보다 F1이 높았다. 다만 계통수가 틀렸을 때 생기는 위양성은 평가하지 않았다.
+
 ## Key claims
 
 - **The circular dependency is the opportunity.** Every prior caller treats cells as independent (SCcaller) or pools them without structure ([[zafar-2016-monovar|Monovar]]). SCIΦ makes the dependency explicit: candidate loci are identified from the posterior probability of ≥1 mutated cell, those loci are used to learn a cell lineage tree by MCMC, and mutations are then assigned to cells by sampling from the posterior.

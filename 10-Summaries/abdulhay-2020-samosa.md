@@ -24,6 +24,9 @@ topics: ["[[40-Topics/long-read-sequencing]]", "[[40-Topics/chromatin-architectu
 
 > SAMOSA (single-molecule adenine methylated oligonucleosome sequencing assay) marks linker DNA on chromatin fibres with the nonspecific adenine methyltransferase **EcoGII** and reads the m6dA marks natively, from polymerase kinetics, on the **PacBio** single-molecule real-time platform. Applied in vivo, it starts from a light MNase digest of K562 nuclei. Oligonucleosomes are released into solution, methylated, and sequenced, so each read carries two signals: the MNase cut ends, which mark "barrier" protein-DNA contacts, and the m6dA footprint of nucleosomes along the molecule. The paper autocorrelates each molecule's methylation signal and clusters molecules with Leiden to sort fibres into seven "oligonucleosome patterns" by regularity and nucleosome repeat length (NRL). Its main biological claim is that every epigenomic domain is a heterogeneous mixture of regular and irregular fibres, and that domains differ only in the *relative usage* of these patterns. The most surprising case is constitutive heterochromatin, which is enriched for irregular fibres.
 
+> [!abstract] 한눈에
+> SAMOSA는 EcoGII로 염색질 섬유의 linker DNA에 m6dA를 표지한 뒤 PacBio로 직접 읽어 분자 단위로 nucleosome 배열을 측정한다. 모든 epigenomic domain에는 규칙적인 섬유와 불규칙한 섬유가 섞여 있고 domain마다 그 비율만 다르며, constitutive heterochromatin에는 불규칙한 섬유가 많았다.
+
 ## Key claims
 
 - **PacBio detects EcoGII m6dA on chromatin templates.** On in vitro arrays of nine Widom 601 repeats (~46 bp linkers), 33,594 molecules showed raised interpulse duration (IPD) only at accessible linker adenines. Called dyads matched expected 601 dyads with "median ±median absolute deviation [MAD] = 4 ± 2.97 bp". The NRL was 193 ± 7.40 bp from adjacent-dyad distances and 192 ± 1.30 bp per molecule, against an expected 193 bp. A small 10-mer sequence-context bias in IPD remained.

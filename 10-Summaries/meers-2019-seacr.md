@@ -22,6 +22,9 @@ topics: ["[[computational-methods]]", "[[histone-modifications]]"]
 
 > CUT&RUN's advantage — almost no background — breaks the peak callers built for ChIP-seq. Poisson and negative-binomial models are tuned to pull signal out of a noisy genome; on a genome that is mostly *empty*, any stray background read looks like local enrichment. SEACR's answer is to abandon the statistical model entirely and set an **empirical threshold from the global distribution of background signal**.
 
+> [!abstract] 한눈에
+> SEACR는 배경이 거의 없는 CUT&RUN 데이터에 맞춰 통계 모델 대신 전역 배경 신호 분포에서 경험적 임계값을 정하는 model-free peak caller다. 인자가 발현되지 않는 세포에서 MACS2·HOMER가 최대 약 900개의 peak를 낸 반면 SEACR는 1–2개만 호출해 높은 특이도를 보였다.
+
 ## Key claims
 
 - **The diagnosis.** ChIP-seq is deeply sequenced with high background, so its peak callers are optimized for **recall**. CUT&RUN has low read depth and sparse background, so what it needs is **precision**. The mismatch, not any bug, is why standard callers over-call on CUT&RUN.

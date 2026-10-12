@@ -22,6 +22,9 @@ topics: ["[[single-cell-atac-seq]]", "[[computational-methods]]"]
 
 > Standard scATAC pipelines treat accessible regions as anonymous columns of a sparse cell-by-peak matrix, discarding the DNA sequence that makes them regulatory. **CellSpace** (Leslie lab) instead co-embeds **DNA k-mers and cells** in one latent space using StarSpace (an NLP embedding method): sample a 150 bp sequence from an accessible event, represent it as a bag of 8-mers plus **N-grams** (pairs within 3 consecutive k-mers), and pull it toward a cell where the event is accessible and away from K randomly sampled cells where it is not. Peaks are never embedded directly — which the authors credit for its strong, covariate-free **batch mitigation** — and any TF motif can be scored per cell afterwards by embedding its consensus k-mers, with no motif choice at training time.
 
+> [!abstract] 한눈에
+> CellSpace는 DNA k-mer와 세포를 하나의 잠재 공간에 함께 임베딩해 서열 정보를 반영한 scATAC 임베딩을 만들고, 배치 공변량 없이도 공여자를 잘 섞으면서 세포별 TF 활성을 사후에 계산한다. 배치 혼합에서는 확실히 앞섰지만 생물학적 보존 지표에서는 결과가 엇갈렸다.
+
 ## Key claims
 
 - **Recovers hierarchies and mixes donors without a batch covariate.** On 2,154 CD34⁺ HSPCs (FACS ground truth; 50,000 variable 500 bp tiles), CellSpace reproduced the HSC/MPP → CMP→MEP and LMPP→CLP branches, with GMPs arising from both; Palantir from an HSC found six termini. Donors mixed, whereas ArchR iterative LSI split HSC/MPP by donor; scBasset had reported needing explicit batch modelling on this dataset.

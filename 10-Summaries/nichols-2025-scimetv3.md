@@ -22,6 +22,9 @@ topics: ["[[40-Topics/dna-methylation]]", "[[40-Topics/single-cell-multiomics]]"
 
 > sciMETv3 adds a **third tier of cell barcoding** — an *in situ* ligation of a well-specific, fully methylated adapter after indexed Tn5 tagmentation (a sci-ATAC-seq3-style step) — to the sciMETv2 workflow. Pre-indexing ×96 before conversion means each final well holds ~600–1,000 nuclei instead of 15–60, so atlas-scale libraries (one preparation produced >140,000 cells from human middle frontal gyrus; dilution capacity ~1 million) come from **seven 96-well plates and one column cleanup**, by one person in days, without FACS. The higher per-well input also makes **enzymatic (EM-seq) conversion** viable, and a double-tagmentation variant, **sciMET+ATAC**, adds chromatin accessibility from the same cells.
 
+> [!abstract] 한눈에
+> sciMETv3는 sciMETv2에 세 번째 바코딩 단계를 더해 FACS 없이 96-well plate 일곱 장으로 수십만 세포 규모의 단일세포 메틸롬을 만든다. EM-seq 변환과 sciMET+ATAC 동시 측정도 가능하지만, TET2가 메틸화 adapter를 과변환해 Illumina 시퀀싱 효율을 떨어뜨리는 문제가 있다.
+
 ## Key claims
 
 - **Throughput scales from ~1,000 to up to 10 million cells** in ~1,000-cell increments with the same molecular structure as sciMETv2 (so sciMET-cap capture still works). Prior atlas technologies needing one well per cell would require 1,302 (384-well) or 5,208 (96-well) plates for comparable ~500,000-cell scale.

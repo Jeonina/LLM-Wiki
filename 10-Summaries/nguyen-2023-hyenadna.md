@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[computational
 
 > HyenaDNA replaces attention with the Hyena operator (implicitly parameterised long convolutions evaluated by FFT in O(L log² L), with data-controlled gating) and trains a small decoder-only model by next-nucleotide prediction on the human reference genome, using single-nucleotide tokens and contexts up to 1 million bases. The paper's point is that genomic language models had to choose between long context (via k-mers, BPE, dilation or downsampling) and single-base resolution; HyenaDNA claims both, with training up to 160× faster than a FlashAttention Transformer at 1M tokens. Models are tiny (0.44M–6.6M parameters). Fine-tuned, they set new top scores on 7 of 8 GenomicBenchmarks datasets and 12 of 18 Nucleotide Transformer datasets, match DeepSEA and BigBird on 919 chromatin profiles with 5–30× fewer parameters, and solve a 5-species classification task at 450k–1M context where the Transformer cannot train. The paper also tries soft-prompt and few-shot "in-context learning" for genomics.
 
+> [!abstract] 한눈에
+> HyenaDNA는 attention을 Hyena 연산자로 대체해 단일 염기 해상도를 유지하면서 최대 1M 염기의 문맥을 학습한 작은 DNA 언어 모델이다. 1M token에서 Transformer보다 160배 빠르게 학습했고, GenomicBenchmarks 8개 중 7개에서 최고 성능을 냈다.
+
 ## Key claims
 
 - **Long context and single-base resolution at once.** HyenaDNA uses a 4-nucleotide vocabulary plus N and special tokens and trains at up to 1M tokens, which the authors describe as up to 500× longer than dense-attention genomic models (512–4k tokens). At 1M tokens a 2-layer HyenaDNA is 160× faster than a 2-layer Transformer (forward and backward pass, A100).

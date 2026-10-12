@@ -22,6 +22,9 @@ topics: ["[[40-Topics/somatic-mosaicism]]", "[[40-Topics/clonal-hematopoiesis]]"
 
 > Cardiovascular-focused review of single-cell genomics and somatic variation, written from the perspective of cardiomyocyte mosaicism (rather than the dominant CHIP-from-blood angle). Frames two complementary lines of evidence: (1) **CHIP** — DNMT3A/TET2/ASXL1/JAK2 clones in HSCs that elevate atherosclerosis, HFpEF, and stroke risk via amplified inflammation; (2) **cardiac-resident mosaicism** — cardiomyocytes accumulate 4,000–30,000 SNVs per cell with age-dependent burden, endothelial cells of smokers show elevated COSMIC SBS4/29/40/92 signatures. References Hilal's own scWGS work showing higher SNV load in ischemic vs healthy cardiomyocytes. Catalogs the duplex-sequencing toolbox (TwinStrand, NanoSeq, BotSeqS, CODEC, Pro-Seq, META-CS) and emphasizes the SMaHT Network and EU SOMATICART as the consortium-scale data infrastructure for the field.
 
+> [!abstract] 한눈에
+> Hilal 등은 CHIP 중심의 기존 시각 대신 심근세포 모자이시즘 관점에서 심혈관 체세포 변이를 정리한 리뷰를 냈다. 건강한 심근세포 하나에 SNV가 4,000–30,000개 쌓이고 나이가 들수록 늘어난다는 점이 핵심이며, scWGA 인공산물 문제는 거의 다루지 않는다.
+
 ## Key claims
 
 1. **Cardiomyocytes are not genetically uniform.** Healthy human cardiomyocytes carry 4,000–30,000 somatic SNVs per cell, increasing with age. Mutational signatures point to oxidative DNA damage as the dominant aging process; few SNVs are shared between cardiomyocytes (the review reads the shared ones as early somatic changes in the common cardiomyocyte lineage).

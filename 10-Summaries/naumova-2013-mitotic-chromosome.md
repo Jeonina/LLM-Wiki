@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[chromatin-architecture]]"]
 
 > 5C and Hi-C across the cell cycle reveal that the genome has exactly **two** three-dimensional states: a cell-type-specific, locus-specific interphase organization (compartments, TADs), and a **homogeneous, locus-independent, cell-type-invariant metaphase state**. Polymer simulation rejects hierarchical coiling models and identifies the metaphase chromosome as a linearly ordered, axially compressed array of consecutive ~80–120 kb chromatin loops.
 
+> [!abstract] 한눈에
+> 5C와 Hi-C로 세포 주기를 추적해 게놈이 세포 유형 특이적인 간기 구조와, compartment·TAD가 사라진 균일한 분열기 구조라는 두 상태를 가진다는 것을 보였다. 고분자 시뮬레이션 결과 분열기 염색체는 80–120 kb 크기의 연속된 loop가 축 방향으로 압축된 배열로 설명되었다.
+
 ## Key claims
 
 - Early-G₁, mid-G₁ and S-phase 5C interaction patterns on chromosome 21 are highly correlated with each other and with nonsynchronous cells (Spearman r > 0.67). **Mitotic patterns are not** (r < 0.27). Two states, not a continuum.

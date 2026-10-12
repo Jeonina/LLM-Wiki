@@ -12,6 +12,9 @@ updated: 2026-08-13
 
 **Citation:** Zhao et al. (2022) — *Spatial genomics enables multi-modal study of clonal heterogeneity in tissues (slide-DNA-seq)* — *Nature*. [DOI](https://doi.org/10.1038/s41586-021-04217-4)
 
+> [!abstract] 한눈에
+> slide-DNA-seq는 Slide-seq의 barcoded bead array를 DNA로 확장해, 조직 절편에서 공간 정보를 유지한 채 genome-wide DNA를 읽는 방법이다. 종양 조직에서 CNV로 정의한 subclone들이 서로 다른 공간 영역을 차지한다는 것을 보였다.
+
 Zhao, Chiang, Morriss and colleagues (Chen + Buenrostro labs, Broad Institute) introduced slide-DNA-seq, a spatially resolved (bead-level, near-cellular) DNA-sequencing method that captures genome-wide DNA from intact tissue sections with spatial registration. The chemistry extends Slide-seq's barcoded-bead arrays (originally developed for spatial transcriptomics) to DNA: a section of fresh-frozen tissue is laid onto a 3-mm array of $\sim$10-µm polystyrene beads, each carrying a unique spatial barcode; tissue DNA is Tn5-tagmented in situ, captured by bridge oligonucleotide hybridization onto the beads, ligated, photocleaved, and amplified into a sequencing library with bead-barcode-resolved spatial coordinates.
 
 Applied to a mouse cerebellum control and to a primary human cancer + mouse-model metastasis (Kras${}^{G12D/+}$;Trp53${}^{-/-}$), slide-DNA-seq spatially mapped CNV-defined tumor clones within tissue architecture. Distinct subclonal CNV patterns occupy distinct spatial neighborhoods, and integration with spatial transcriptomics on adjacent sections links clone-specific CNV alterations to clone-specific gene-expression and tumor-microenvironment patterns.

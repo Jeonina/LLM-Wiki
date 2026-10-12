@@ -28,6 +28,9 @@ paper_section: ["3.1"]
 
 > Around 2020-2021, single-cell DNA sequencing crossed a methodological threshold: **Primary Template-Directed Amplification (PTA)** displaced multiple displacement amplification (MDA) as the default chemistry for cohort-scale mosaicism studies ([[10-Summaries/gonzalez-pena-2021-pnas]]; [[10-Summaries/shao-2025-scDNA-mosaicism-review]]). The change was not incremental — it shifted what scDNA-seq could be trusted to measure. Pre-PTA cohort studies relied on heavy bioinformatic correction (LiRA, SCAN-SNV) to extract usable signal from MDA's amplification artifacts ([[10-Summaries/evrony-2021-scDNA-applications-review]]). The SMaHT flagship achieves per-cell PTA mutation calling validated against bulk duplex sequencing ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]), and Duplex-Multiome reaches per-nucleus mutation calls by a different, duplex-based route ([[10-Summaries/kriz-2025-duplex-multiome]]); the BSMN 131-brain cohort used bulk WGS, not PTA ([[10-Summaries/taejeong-2022-science]]).
 
+> [!abstract] 한눈에
+> 2020~2021년 무렵 PTA가 MDA를 대신하면서 증폭 오류가 누적되지 않고 세포당 약 95% coverage를 얻게 되었고, 세포 단위 체세포 변이 계수를 직접 신뢰할 수 있게 되었다고 본다. 다만 PTA도 strand identity를 보존하지 못해 duplex 수준의 정확도 문제는 따로 남았다.
+
 ## Before PTA: the MDA era (2002-2020)
 
 Multiple displacement amplification ([[10-Summaries/dean-2002-mda]]) used φ29 polymerase + random hexamers to amplify as few as 1–10 human genome copies into ~20–30 µg of >10-kb product ([[10-Summaries/dean-2002-mda]]). It became the dominant scWGA chemistry of the 2000s and 2010s, alongside DOP-PCR, MALBAC and PicoPLEX, each with different tradeoffs ([[10-Summaries/gawad-2016-scgenome-review]]).

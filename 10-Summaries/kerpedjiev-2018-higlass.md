@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[computational-methods]]"]
 
 > Continuous pan-and-zoom over Hi-C maps, road-map style, with **composable linked views**: each view is a set of 1D and 2D tracks on shared genomic axes, and views can be arranged, resized and linked by location, by zoom, or by both — then shared as a URL.
 
+> [!abstract] 한눈에
+> HiGlass는 Hi-C 지도를 지도 앱처럼 연속적으로 확대·이동하며 볼 수 있고, 위치와 zoom을 연결한 여러 view를 URL로 공유하는 웹 도구다. TAD caller 7개를 나란히 비교해 결과가 서로 크게 다르다는 점을 보였고, cohesin 손실로 TAD는 사라지는데 compartment는 유지된다는 점도 보여 주었다.
+
 ## Key claims
 
 - **The gap it fills.** Juicebox and Genome Contact Map Explorer allow synchronized exploration of multiple maps, but none provided an interface for **dynamically arranging views and customizing what is synchronized** (locus, zoom level, sample), and none offered continuous panning and zooming of the kind familiar from web geographic maps.

@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[computational
 
 > Gene42 (M42, Inception Institute of AI and Cerebras, Abu Dhabi) is a family of decoder-only, LLaMA-style DNA language models that keep **full dense self-attention** and single-nucleotide (character) tokens, and reach a **192,000-bp context** by continued pre-training. A 500M (Gene42-B) and a 1.1B (Gene42-L) model are first trained on 4,096-bp GRCh38 sequences on a Cerebras CS-2. Gene42-L is then extended stepwise (8k → 16k → 32k → 65k → 131k → 192k) by raising the RoPE base frequency. The paper argues that dense attention, not only state-space or convolutional operators, can handle genome-scale context, and reports top or near-top scores on Genomic Benchmarks, the NT benchmark, DeepSEA (TF and DHS), a ClinVar pathogenicity task and HyenaDNA's species classification.
 
+> [!abstract] 한눈에
+> Gene42는 dense self-attention과 단일 염기 토큰을 유지하면서 RoPE base frequency 조정으로 192 kb context에 도달한 decoder-only DNA language model이다. 여러 벤치마크에서 상위권을 기록했으나 가장 긴 모델은 짧은 과제에서 성능이 떨어졌고 zero-shot 병원성 예측은 우연 수준이었다.
+
 ## Key claims
 
 - **Long-context perplexity.** On 1% held-out GRCh38, models trained only at short context (4k–32k) show rising perplexity on long inputs. Gene42-L-65k and -192k reach a best perplexity of 1.61 (reconstruction accuracy 0.789) at 65 kb. The 192k model gives 1.78 (0.723) at 131 kb and 1.85 (0.70) at 192 kb. The authors compare this with HyenaDNA's reported 2.9–3 at 100 kb–1 Mb, and note that the 65-kb model is best at next-base prediction.

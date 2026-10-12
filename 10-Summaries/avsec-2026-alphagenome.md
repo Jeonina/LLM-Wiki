@@ -24,6 +24,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[computational
 >
 > AlphaGenome is a supervised [[sequence-to-function-model]] from Google DeepMind that removes two trade-offs of earlier models: context length vs output resolution, and generalist vs specialist. It reads **1 Mb** of DNA and predicts 5,930 human or 1,128 mouse tracks across 11 modalities — RNA-seq, CAGE, PRO-cap, splice sites, splice-site usage, splice junctions, DNase, ATAC, histone marks, TF binding and contact maps — at up to **1-bp** resolution. A U-net (convolutional encoder, transformer tower at 128 bp with a 2D pair representation, convolutional decoder back to 1 bp) is pretrained with 4-fold cross-validation, then distilled into one student model that scores a variant across all modalities in under 1 s on an H100. It matches or beats the best external model on 22 of 24 track tasks and 25 of 26 variant-effect tasks.
 
+> [!abstract] 한눈에
+> AlphaGenome은 1 Mb DNA로부터 RNA-seq, splicing, 접근성, histone, contact map 등 11개 modality를 최대 1 bp 해상도로 예측하며, variant effect 평가 26개 중 25개에서 기존 최고 모델과 같거나 앞섰다. 다만 100 kb 너머의 원거리 요소와 세포 유형 특이적 효과는 여전히 잘 잡지 못한다.
+
 ## Key claims
 
 - **Benchmark sweep.** Fold-specific models beat the strongest external model on 22/24 genome-track evaluations, and the distilled model matched or beat external models on 25/26 variant-effect evaluations. Examples: +14.7% relative on cell-type-specific gene-level expression log-fold change vs Borzoi; contact maps +6.3% Pearson r and +42.3% on cell-type-specific differences vs Orca; +15% total-count Pearson r vs ProCapNet; +1.6% (ATAC) and +9.5% (DNase profile JSD) vs ChromBPNet.

@@ -22,6 +22,9 @@ topics: ["[[single-cell-multiomics]]"]
 
 > Reference atlases are built from scRNA-seq, so epigenomic datasets cannot be mapped onto them without assuming that accessibility (or inverse methylation) predicts expression — an assumption that fails exactly where it matters. **Bridge integration** removes it: use a multiomic dataset as a dictionary whose individual *cells* are the atoms, reconstruct each unimodal dataset as a weighted combination of those atoms, and the relationship between modalities is **learned rather than assumed**.
 
+> [!abstract] 한눈에
+> Seurat v5의 bridge integration은 multiome 데이터의 세포 하나하나를 dictionary atom으로 삼아, gene activity score 같은 가정 없이 scATAC-seq 등을 scRNA-seq reference에 mapping한다. 이 방법으로 scATAC 데이터에서 처음으로 ILC와 ASDC를 찾아냈다.
+
 ## Key claims
 
 - The gene-activity-score workaround — summing ATAC signal over gene bodies, or inverting methylation — makes "strict biological assumptions (for example, that accessible chromatin is associated with active transcription) that may not always hold true, particularly when analyzing cellular transitions or developmental trajectories."

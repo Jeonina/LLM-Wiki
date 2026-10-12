@@ -15,6 +15,9 @@ sources: ["Roghayeh_2019_JournalOfAppliedBiologyAnd;Biotechnology.pdf"]
 
 **Citation:** Ghorbani et al. (2019) — *Computational-based approaches in epigenetic research* — *Journal of Applied Biology & Biotechnology* 7(1):89–98. [DOI](https://doi.org/10.7324/JABB.2019.70114)
 
+> [!abstract] 한눈에
+> Ghorbani와 Shokri-Gharelo의 짧은 리뷰로, epigenetic 데이터를 얻는 실험법, 관련 데이터베이스, CpG island 탐지와 HMM 기반 계산 방법을 개괄한다. 다만 더 최근의 전문 리뷰들에 대부분 대체되어 인용 우선순위가 낮다.
+
 Ghorbani and Shokri-Gharelo (University of Tabriz) authored a brief, general review of computational-based approaches to epigenetic data in the Journal of Applied Biology & Biotechnology. Covers: experimental methods feeding computational analysis (ChIP-seq, MeDIP, methyl-seq, bisulfite sequencing, MBD-seq); databases (MethDB, REBASE, MethPrimerDB, MethyLogiX); computational methods for CpG island identification (algorithms, ANN, SVM); HMM-based methylation prediction; general machine-learning applications to epigenetic markers.
 
 ## Why this matters

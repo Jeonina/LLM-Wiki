@@ -34,6 +34,9 @@ topics:
 
 > Thesis: A comprehensive modern map of single-cell lineage tracing, organized along two axes — **prospective (synthetic barcodes)** vs **retrospective (natural variants)**, and **static** vs **evolvable** labels. The review argues lineage tracing is now mature enough to overturn classical paradigms in development, ageing, and cancer, and that the frontier is multimodal (genome + epigenome + transcriptome + spatial) tracing and eventual clinical clonal diagnostics.
 
+> [!abstract] 한눈에
+> Rodriguez-Fraticelli와 Parreno의 리뷰는 단일세포 계통 추적을 합성 barcode 대 자연 변이, 정적 표지 대 진화하는 표지라는 두 축으로 정리한다. 다음 과제로는 유전체·후성유전체·전사체·공간 정보를 함께 쓰는 다중 modality 추적과 임상 clonal 진단을 꼽는다.
+
 ## Key claims
 
 - Two broad families: **prospective** methods engineer synthetic barcodes (flexible/programmable, but require genetic manipulation → model systems); **retrospective** methods read naturally accumulated somatic variants (ideal for human biology, no engineering).

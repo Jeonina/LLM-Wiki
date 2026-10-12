@@ -22,6 +22,9 @@ topics: ["[[single-cell-lineage-tracing]]", "[[cancer-clonal-evolution]]", "[[co
 
 > Instead of building yet another single-cell tree method from scratch, CellPhy **ports organismal statistical phylogenetics to somatic cells**: it extends the 4-state GTR nucleotide model to a **16-state diploid-genotype model (GT16)**, adds a two-parameter scWGA error model (**ADO rate δ** and **amplification/sequencing error ε**), and plugs it into **RAxML-NG**. The payoff is a finite-site maximum-likelihood method that inherits RAxML-NG's tree search, multithreading, **bootstrap branch support**, and ancestral-state reconstruction — and that can take **genotype likelihoods** (VCF PL field) instead of hard calls, which is what makes it win at low (5×) depth.
 
+> [!abstract] 한눈에
+> CellPhy는 16개 diploid 유전형 모델과 ADO·증폭 오류 모델을 RAxML-NG에 얹은 finite-site maximum likelihood 계통수 방법이다. 시뮬레이션에서 가장 정확했고 특히 5× 저심도에서 genotype likelihood의 이점이 컸으며, 다른 도구와 달리 bootstrap으로 branch 지지도를 제공한다.
+
 ## Key claims
 
 - **Genotype-level, not presence/absence, model.** Prior SNV tree methods (OncoNEM, SCITE, SiFit) use at most a ternary state space (0/1/2 mutant alleles); GT16 models all 16 phased genotypes, and handles unphased data (10 states) by treating the phase of heterozygotes as ambiguous. A cheaper unphased **GT10** model is ~2× faster and gave very similar accuracy despite a theoretically incorrect reversibility assumption.

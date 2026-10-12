@@ -30,6 +30,9 @@ topics:
 
 > Thesis: ChIP-seq is not single-cell-tractable because of cross-linking, sonication, and immunoprecipitation losses. Schmid et al.'s original ChIC method (chromatin immunocleavage) used antibody-tethered MNase to cut at target sites without ChIP. **scChIC-seq** adapts ChIC for single cells using a covalent antibody-MNase conjugate (or protein-A-MNase + antibody complex) plus selective PCR amplification of the small target fragments, profiling H3K4me3 and H3K27me3 in ~285 single human white blood cells per experiment and clustering them by chromatin state into the major immune lineages.
 
+> [!abstract] 한눈에
+> scChIC-seq는 항체-MNase 결합체로 히스톤 표지 위치를 자르고 작은 표적 조각을 선택적으로 증폭해 단일세포에서 H3K4me3와 H3K27me3를 측정한다. 인간 백혈구를 주요 면역 계통으로 구분했지만 세포당 민감도는 약 10%에 그쳤다.
+
 ## Key claims
 
 - **Method**: covalent antibody-MNase (or pA-MNase) recruited to histone-mark sites, MNase cleaves locally. **Both target and non-target fragments are recovered and ligated to adaptors**, then size-selective PCR preferentially amplifies the smaller target fragments. Compared to CUT&RUN, scChIC supports formaldehyde-fixed cells and either covalent or pA-MNase strategies.

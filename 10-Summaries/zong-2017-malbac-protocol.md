@@ -23,6 +23,9 @@ topics: ["[[whole-genome-amplification]]", "[[brain-somatic-mosaicism]]"]
 
 > A ten-page review chapter by MALBAC's first author, despite the series' protocol format. It contains **no bench protocol, no Materials or Methods section, and no new data**. It describes the MALBAC chemistry (five looping pre-amplification cycles, then PCR), restates the coverage, uniformity and CNV results of the 2012 *Science* paper, and points to two clinical uses: CNV profiling of circulating tumour cells (Ni et al. 2013) and aneuploidy screening of oocytes from polar bodies (Hou et al. 2013). Every figure is reprinted from those three papers. Although the chapter sits in a volume on neuronal mosaicism, it contains **no neuron data**. Its message is that MALBAC's low large-scale bias, unlike MDA's, makes single-cell CNV calling reliable enough for clinical genome screening.
 
+> [!abstract] 한눈에
+> MALBAC 제1저자가 쓴 이 chapter는 protocol 형식의 총서에 실렸지만 실제 bench protocol이나 새 데이터는 없는 review다. MALBAC chemistry를 설명하고, 2012년 논문의 coverage, uniformity, CNV 결과를 다시 정리한다.
+
 ## Key claims
 
 - **The problem with earlier chemistries.** First-generation PCR-based WGA leaves a "significant portion of genomes (over 50%)" uncovered because of priming inefficiency and early PCR bias. MDA solves priming with φ29 at 30 °C and "can robustly cover 80% of the genome" with alkaline lysis. But displaced strands re-hybridise into "nanoball" hyper-branched structures of varying size, giving "considerable regional bias", which "makes MDA unsuitable for reliable detection of copy number variations". MDA is "essentially a nonlinear amplification with the exponential dependence of DNA yield on the time of reaction, which makes it difficult to accurately detect single-nucleotide variations."

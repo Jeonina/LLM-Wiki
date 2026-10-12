@@ -22,6 +22,9 @@ topics: ["[[40-Topics/mosaic-variant-calling]]", "[[40-Topics/cancer-clonal-evol
 
 > MuTect is the Broad Institute's tumor–normal somatic SNV caller, designed for the subclonal and impure-tumor regime that callers assuming a pure diploid tumor (fixed 50% allele fraction) miss. Its core is a per-site **Bayesian likelihood-ratio test with a free allele fraction *f***, followed by six hand-tuned **artifact filters**, a **panel-of-normals** filter, and a second classifier that labels calls somatic vs germline using matched-normal depth and dbSNP priors. Equally important is the paper's **benchmarking method**: "virtual tumors" built by splitting and spiking real sequencing data, so sensitivity *and* specificity can be measured on real error profiles as a function of depth and allele fraction.
 
+> [!abstract] 한눈에
+> MuTect는 allele fraction을 자유 변수로 둔 Bayesian 검정에 artifact 필터와 panel-of-normals를 더해, 불순하고 이질적인 종양에서 저빈도 체세포 SNV를 찾는 tumor–normal caller다. 실제 데이터를 섞어 만든 virtual tumor로 민감도와 특이도를 함께 측정하는 벤치마크 방식도 제시했다.
+
 ## Key claims
 
 - **Free allele fraction is the sensitivity lever.** Modelling *f* explicitly, instead of a heterozygous diploid event, is what the authors credit for higher sensitivity than SomaticSniper and JointSNVMix (both assume fixed 50% AF). Strelka also models AF and matches MuTect in standard mode, but loses more sensitivity in its high-confidence mode.

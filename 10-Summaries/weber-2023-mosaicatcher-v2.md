@@ -24,6 +24,9 @@ topics: ["[[40-Topics/scdna-seq]]", "[[40-Topics/computational-methods]]"]
 
 > MosaiCatcher v2 is a Snakemake workflow from the Korbel lab (EMBL Heidelberg) that turns raw Strand-seq FASTQ files into haplotype-phased single-cell structural variant (SV) calls, genotypes and functional readouts in one run. The original MosaiCatcher (the computational side of scTRIP, [[10-Summaries/sanders-2020-sctrip]]) needed manual preprocessing and manual selection of good libraries. Version 2 adds automatic library QC (ashleys-qc), data-dependent checkpoints, a multistep read-count normalization, SV genotyping (ArbiGent), nucleosome-occupancy functional analysis (scNOVA, [[10-Summaries/hyobin-2023-naturebiotechnology]]), and shareable HTML reports. The paper is a software note: it presents features and a re-analysis of four previously published cell lines, not a new benchmark.
 
+> [!abstract] 한눈에
+> MosaiCatcher v2는 Strand-seq FASTQ에서 haplotype이 phasing된 single-cell SV call까지 한 번에 처리하는 Snakemake workflow로, 자동 라이브러리 QC, 정규화, ArbiGent genotyping, scNOVA를 통합했다. 다만 검증은 기존 세포주 네 개의 SV 10개에 그치고 다른 caller와의 비교는 없다.
+
 ## Key claims
 
 - **End-to-end processing.** The ML-based ashleys-qc tool is now built in and selects high-quality libraries automatically, so the pipeline runs from FASTQ to single-cell SV calls and plots. Manual library flagging by an expert in a Jupyter notebook remains as an option. The core can still run alone from aligned Strand-seq BAM files.

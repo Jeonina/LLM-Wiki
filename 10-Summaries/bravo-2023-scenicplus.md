@@ -22,6 +22,9 @@ topics: ["[[computational-methods]]", "[[single-cell-multiomics]]", "[[chromatin
 
 > The original SCENIC inferred regulons from coexpression plus motif enrichment, but could not say **which** *cis*-regulatory element a TF acts through, and used only a small fraction of a gene's regulatory space. SCENIC+ adds chromatin accessibility so that the unit of inference becomes the **eRegulon**: a transcription factor together with its target *enhancers* and, through them, its target genes.
 
+> [!abstract] 한눈에
+> SCENIC+는 chromatin accessibility를 더해 전사인자와 그 표적 enhancer, 표적 유전자를 묶은 eRegulon 단위로 enhancer 기반 GRN을 추론한다. 3만 개가 넘는 motif 컬렉션이 기반이 되며, 큰 데이터셋에서는 44시간과 461 GB가 들 만큼 계산 비용이 크다.
+
 ## Key claims
 
 - **Three-step workflow**: identify candidate enhancers → find enriched TF-binding motifs in them → link TFs to enhancers and to target genes. Output is a set of eRegulons forming an enhancer-driven GRN (eGRN).

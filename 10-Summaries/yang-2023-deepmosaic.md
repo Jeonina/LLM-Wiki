@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Yang et al. (2023) — *Control-independent mosaic single nucleotide variant detection with DeepMosaic* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-022-01559-w)
 
+> [!abstract] 한눈에
+> DeepMosaic은 후보 변이의 pileup을 이미지로 만들어 CNN으로 분류하는 방식으로, matched control 없이 mosaic SNV를 검출한다. 비암 WES에서 검증률을 MosaicForecast·MosaicHunter 대비 약 두 배(0.43 대 0.18)로 높였다.
+
 Yang, Xu, Breuss, Antaki, Ball, Chung, Shen, Li, George, Wang, Bae, Abyzov, Wei, Alexandrov, Sebat and Gleeson (UCSD, BSMN consortium) developed **DeepMosaic**, a convolutional-neural-network (CNN) framework for control-independent detection of mosaic single-nucleotide variants. The method comprises two modules: (1) DeepMosaic-VM, an image-based visualization that exports a GATK-pileup-processed RGB pileup snapshot per candidate variant; (2) DeepMosaic-CM, a CNN classifier (transfer learning from EfficientNet-b4) trained on 180,000 simulated and biologically-tested mosaic-variant images.
 
 Benchmarked on 619,740 simulated and 530 independent amplicon-validated mosaic variants from 16 genomes and 181 exomes. DeepMosaic achieves sensitivity 0.78, specificity 0.83, and PPV 0.96 on noncancer WGS, **doubling the validation rate** over previous best-practice methods (MosaicForecast, MosaicHunter) on noncancer WES (0.43 vs 0.18). The CNN-pileup combination captures features that traditional heuristic filters miss — particularly read-edge artefacts, base-quality patterns, and strand-orientation patterns visible in raw alignment images.

@@ -26,6 +26,9 @@ topics:
 
 > Thesis: live-cell **lattice light-sheet single-molecule imaging** of fluorescently tagged nucleosomes (HaloTag-H2B) simultaneously with the local chromatin environment shows that **nucleosomes diffuse and pack differently across chromatin densities, yet the viscoelastic properties and accessibility of the interchromatin space remain constant**. The differences in nucleosome behavior arise from **active processes** (transcription) that locally stabilize nucleosomes, with nuclear heterogeneity arising from both active and passive processes. This is the cleanest live-cell measurement of chromatin biophysics at the scale where LLPS theory operates.
 
+> [!abstract] 한눈에
+> Daugird 등은 lattice light-sheet 단일분자 영상으로 살아 있는 세포의 nucleosome 움직임과 국소 chromatin 밀도를 함께 측정했다. 밀도가 높을수록 nucleosome 확산은 느려지지만 interchromatin 공간의 점탄성은 일정했으며, 그 차이는 전사 같은 능동 과정에서 비롯된다고 보았다.
+
 ## Verbatim key claims (from source body)
 
 - **Method + central finding** (Abstract):

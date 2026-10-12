@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Jahn et al. (2016) — *Tree inference for single-cell data (SCITE)* — *Genome Biology*. [DOI](https://doi.org/10.1186/s13059-016-0936-x)
 
+> [!abstract] 한눈에
+> SCITE는 MCMC 탐색으로 단일세포 변이 프로파일에서 종양의 mutation tree를 추론하면서 위양성, 위음성, allelic dropout 오류율도 함께 추정한다. 오류율을 고정값으로 두지 않고 계통수와 동시에 추론하는 방식은 이후 단일세포 계통 추론의 표준이 됐다.
+
 Jahn, Kuipers and Beerenwinkel (ETH Zurich, SIB) developed **SCITE** (Single-Cell Inference of Tumor Evolution), a stochastic-search algorithm for identifying the evolutionary history of a tumor from noisy, incomplete mutation profiles of single cells. SCITE uses a flexible MCMC sampling scheme that computes the maximum-likelihood mutation history, samples from the posterior distribution, and **simultaneously estimates the error rates** (false-positive, false-negative, and allelic-dropout) of the underlying sequencing experiments.
 
 Key design choices: (i) accommodates the very high allelic-dropout rates of scWGS data (often ≥10% FN rate); (ii) models elevated FP rate inherent to scWGS variant calling; (iii) handles missing data (often 58%+ of sites in early single-nucleus datasets); (iv) reconstructs the **mutation tree** (not just the cell-genealogy tree), defining sub-clones by the mutation profiles inherited along the path from the root. Improved scalability and reconstruction accuracy compared to existing approaches (e.g., Kim & Simon's pairwise-ordering method).

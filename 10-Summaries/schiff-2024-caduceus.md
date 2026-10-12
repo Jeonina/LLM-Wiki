@@ -23,6 +23,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[computational
 
 > Caduceus is a small DNA language model built from Mamba selective state-space blocks, changed to fit two properties of DNA that earlier long-range models ignored: context matters on both sides of a base, and the two strands carry the same information in reverse complement (RC). The authors add BiMamba (forward and reversed passes that share projection weights, so depth is not halved) and MambaDNA (forward and RC passes with shared weights, giving RC equivariance by construction). Caduceus-PS is RC-equivariant end to end, including embeddings and the LM head; Caduceus-Ph is a BiMamba stack trained with RC augmentation and averaged over both strands at inference (post-hoc conjoining). Pre-trained by masked-token prediction on the human reference at single-nucleotide resolution and contexts up to 131k, the ~0.5–2M-parameter models beat HyenaDNA of similar size on most short tasks. On long-range eQTL variant-effect prediction, Caduceus-PS beats the 500M-parameter NT-v2, and beyond 100 kb from the TSS it also beats Enformer.
 
+> [!abstract] 한눈에
+> Caduceus는 Mamba 기반 DNA language model에 양방향성과 reverse-complement equivariance를 넣어, 염기 양쪽의 문맥과 두 가닥의 대칭성을 함께 반영했다. 훨씬 작은 모델로 GenomicBenchmarks 8개 과제 모두에서 최고 성능을 냈고, TSS에서 먼 eQTL의 효과 예측에서도 강점을 보였다.
+
 ## Key claims
 
 - **Mamba beats Hyena on next-token prediction** at comparable size and length on the human genome (Fig. 3a), and was more robust to high learning rates.

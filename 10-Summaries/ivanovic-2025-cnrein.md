@@ -23,6 +23,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[computational-methods]]", "[[scdna-ca
 
 > Haplotype-specific copy-number callers for low-pass scDNA-seq (CHISEL, SIGNALS, Alleloscope) fit each cell more or less on its own, so measurement noise turns into spurious cell-specific CNAs that no plausible evolutionary history would produce. **CNRein** instead learns, per tumour, a generative model of CNA evolution: a copy-number profile is built from the normal cell by a sequence of haplotype-specific segmental gains/losses (or a WGD), each step's probability given by a convolutional neural network. The network is trained by policy-gradient reinforcement learning to maximize the probability of all cells' read depth and BAF. Each cell then gets the profile that best balances its own data with the shared model. The premise is that one should infer cell-specific CNAs only on strong evidence and otherwise prefer shared clonal structure.
 
+> [!abstract] 한눈에
+> CNRein은 강화학습으로 종양별 CNA 진화 생성 모델을 학습해, 저심도 scDNA-seq에서 haplotype별 copy number를 세포 간 공유 구조로 정규화하며 호출한다. 시뮬레이션에서 SIGNALS와 CHISEL보다 정확했고, 두 도구가 사실상 모든 세포에 고유 프로파일을 부여해 이질성을 과대평가함을 보였다.
+
 ## Key claims
 
 - **Evolution as a regularizer.** Existing haplotype-specific callers do not use evolutionary constraints to estimate profiles jointly across cells. In CNRein the level of heterogeneity comes from training on the data, not from *post hoc* clustering of called profiles. The method is unsupervised and does not need normal cells, so FACS-sorted tumour-only data work.

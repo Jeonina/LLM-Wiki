@@ -31,6 +31,9 @@ topics:
 
 > Thesis: Bulk Hi-C and its derivatives revealed the principles of 3D genome organization (compartments, TADs, loops) but masked single-cell variability. Over the past decade, scHi-C and related single-cell methods have exposed how heterogeneous chromatin folding is between cells — variability that drives lineage decisions, disease phenotypes, and transcriptional plasticity. This review summarizes the experimental platforms, computational algorithms, and mechanistic insights of single-cell 3D genomics circa 2025.
 
+> [!abstract] 한눈에
+> Hong 등은 scHi-C를 비롯한 단일세포 3D 유전체 기법과 계산 알고리즘, 기전 연구를 정리하고, 3D 구조가 세포마다 달라지는 조절 층위라는 관점을 제시했다. TAD 경계와 compartment가 세포 간, 세포 주기에 따라 변한다는 점이 핵심이다.
+
 ## Key claims
 
 - **Single-cell 3D-genome methods tabulated**: scHi-C, snHi-C, sci-Hi-C, Methyl-3C, Methyl-HiC, Dip-C, HiRES, GAGE-seq, LiMCA, Droplet Hi-C, dscHi-C, scMicro-C.

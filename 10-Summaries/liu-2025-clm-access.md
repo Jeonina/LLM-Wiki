@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/sin
 
 > CLM-access is a BERT-style "cell language model" **pretrained on single-cell ATAC-seq**: about 2.8 million human cells mapped onto one reference of about 1.15 million cCREs. Using every cCRE as a token would be too large, so cCREs are sorted by genomic position and split into 2,000 fixed patches. Each patch is one token. Its embedding is the sum of a patch-ID embedding and a linear projection of the patch's binarised peak values. An 8-block transformer (256-d, 8 heads, about 12M parameters; about 20M in total) is trained to reconstruct masked peak values with peak-level binary cross-entropy. The model sees no DNA sequence. The paper's main contribution is a set of ablations on what makes scATAC pretraining work: binarisation, per-peak loss, and masking values only. Fine-tuned, the model beats a few baselines on cell-type annotation, RNA prediction and integration. The paper is short (NeurIPS-style), and dataset details, fine-tuning settings and the integration figures are in a supplement that is not part of the clipped text.
 
+> [!abstract] 한눈에
+> CLM-access는 약 280만 개 인간 scATAC-seq 세포로 사전학습한 BERT 방식 모델로, cCRE를 2,000개 patch로 묶어 토큰으로 쓴다. 핵심 기여는 binarisation, peak 단위 loss, 값만 가리는 masking이 scATAC 사전학습에 꼭 필요함을 보인 ablation이다.
+
 ## Key claims
 
 - **Naive scRNA-style training fails.** Using only accessible peaks as tokens, or only highly variable peaks, could not train the model.

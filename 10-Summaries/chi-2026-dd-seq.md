@@ -22,6 +22,9 @@ topics: ["[[40-Topics/single-cell-multiomics]]", "[[40-Topics/chromatin-architec
 
 > D&D-seq (docking and deamination followed by sequencing) is a single-cell immuno-tethering method that records where a chosen DNA-binding protein sits on the genome by fusing an antibody-binding nanobody to a cytosine deaminase (DddA), which stencils protein-bound sites as C→U (read as C→T) edits. Because the edit is written into the DNA sequence itself, D&D-seq slots into standard single-cell genome, accessibility, and multi-omic workflows — adding a **DNA–protein interaction / transcription-factor-binding axis** that scATAC (which only reports openness) cannot resolve, and uniquely capturing binding in *inactive/heterochromatic* compartments.
 
+> [!abstract] 한눈에
+> D&D-seq은 nanobody-DddA 융합 효소로 단백질이 결합한 자리에 C→T 편집을 남겨, DNA–단백질 결합을 서열 자체에 기록하는 단일세포 방법이다. ATAC으로는 보이지 않는 이질염색질 안의 CTCF 결합도 잡아냈고, IDH2 돌연변이 T세포에서 CTCF 결합이 교란된 것을 보였다.
+
 ## Key claims
 
 - A split nb-DddA enzyme (N-terminal nanobody fusion + separately supplied C-terminal peptide) is catalytically inactive until reconstituted, avoiding nonspecific deamination; it preferentially edits cytosines in TpC (and CpC) context at protein-bound sites.

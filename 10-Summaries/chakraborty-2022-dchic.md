@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[computational-methods]]", "[[chromatin-architecture
 
 > Compartment analysis had a scaling problem hiding in plain sight: PCA runs on **one contact map at a time**, so comparing many datasets means choosing the right PC and its sign for each, then reconciling scales. dcHiC fixes both ends — automated PC selection and quantile normalisation of compartment scores, then a **Mahalanobis distance** across ≥2 samples with χ² significance. Its most consequential finding is not a method benchmark but a category: **~26% of significant compartment changes involve no A↔B flip at all**, and those within-compartment changes carry real biology.
 
+> [!abstract] 한눈에
+> dcHiC는 PC 선택을 자동화하고 compartment 점수를 정규화한 뒤 Mahalanobis distance로 여러 Hi-C 데이터셋의 차등 compartment를 한 번에 검정한다. 유의한 변화의 약 26%는 A↔B 전환이 없는 compartment 내부 변화였고, 플립만 보는 방법은 이를 원천적으로 놓친다.
+
 ## Key claims
 
 - **Within-compartment changes are a quarter of the signal and are routinely discarded.** In the ESC→NPC transition, of 1,981 significant 100-kb bins (7.5% of genome), ~74% were flips (A→B 30%, B→A 44%) and **~26% were A→A or B→B** — "strong A in ESCs to weak A in NPCs" and similar. These matched-compartment changes show the same monotonic relationships with lamin B1 association, replication timing, and expression as flips do. Every method that only reports flips misses them by construction.

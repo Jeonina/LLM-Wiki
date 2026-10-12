@@ -22,6 +22,9 @@ topics: ["[[40-Topics/histone-modifications]]", "[[40-Topics/computational-metho
 
 > CUT&Tag inherits Tn5's preference for accessible chromatin, so even repressive-mark libraries pile reads onto **active promoters** — a false signal that ChIP-seq does not show. The authors document this across hundreds of public datasets (including high-salt protocols), then build **PATTY** (Propensity Analyzer for Tn5 Transposase Yielded bias): a **pre-trained, mark-specific logistic-regression model** that takes local CUT&Tag and ATAC-seq signal patterns and outputs a corrected per-200-bp score. ATAC-seq is used not as a background to subtract but as an empirical covariate for the open-chromatin component. Correction improves correlation with expression and with antagonistic marks in bulk, and improves cell-type clustering in single-cell CUT&Tag.
 
+> [!abstract] 한눈에
+> PATTY는 CUT&Tag가 Tn5 성질 때문에 억제 마크에서도 활성 프로모터에 신호를 쌓는 편향을 ATAC-seq 신호를 공변량으로 써서 보정하는 사전학습 logistic regression 모델이다. 고염 세척 프로토콜에서도 남은 편향을 제거했지만, 검증된 마크는 H3K27me3, H3K27ac, H3K9me3 세 가지뿐이다.
+
 ## Key claims
 
 - **The bias is widespread.** In K562, on average 18% of H3K27me3 CUT&Tag peaks are absent from ChIP-seq, and these CUT&Tag-unique peaks are enriched at active promoters and ATAC-seq open regions. In **277 human H3K27me3 CUT&Tag datasets published since 2024** (most using high-salt washes), signal at TSS ± 300 bp of 1,000 ubiquitously expressed genes exceeded the 300 bp–3 kb flanks, unlike 30 ENCODE ChIP-seq datasets.

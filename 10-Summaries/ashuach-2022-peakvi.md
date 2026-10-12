@@ -22,6 +22,9 @@ topics: ["[[single-cell-atac-seq]]", "[[computational-methods]]"]
 
 > PeakVI is the scATAC-seq member of scvi-tools: a variational autoencoder that treats each peak-by-cell observation as **Bernoulli**, factorised into three probabilities — the region is truly accessible in this cell state (decoder output), the region gets tagmented (a learned per-region factor capturing width/sequence bias), and the fragment gets captured (a per-cell factor from an auxiliary network, tracking library size). Conditioning on batch yields a batch-corrected latent space, and sampling from the variational posterior yields denoised accessibility estimates that support **single-region differential accessibility** with a Bayesian FDR — which, in the paper's tests, calls zero regions in a replicate-vs-replicate negative control where a Signac-style GLM calls 910 and a Wilcoxon test (ArchR-style) 6,761.
 
+> [!abstract] 한눈에
+> PeakVI는 scATAC-seq를 Bernoulli 관측으로 모델링하는 variational autoencoder로, batch를 보정한 latent space와 denoising된 접근성을 바탕으로 영역 단위 differential accessibility를 계산한다. 반복 실험끼리 비교한 음성 대조에서 Wilcoxon 검정은 6,761개 영역을 잘못 검출했지만 PeakVI는 하나도 검출하지 않았다.
+
 ## Key claims
 
 - **Learned nuisance factors track real confounders.** On 10x PBMC multiome data, the region factor sits around 0.5 for most regions, is higher for wider regions, and tops out near ~0.75 — read by the authors as an implicit global penalty reflecting the assay's false negatives. The cell factor tracks empirical library size but saturates, so cells with genuinely less accessible chromatin are not over-penalised.

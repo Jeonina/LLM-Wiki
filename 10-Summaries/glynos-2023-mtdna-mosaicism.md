@@ -29,6 +29,9 @@ topics:
 
 > Thesis: Cell-to-cell variance in mitochondrial DNA heteroplasmy levels emerges prenatally and increases monotonically throughout life — even in non-dividing tissues — driven by random genetic drift acting through mtDNA turnover (relaxed replication), not vegetative segregation alone. Two pathogenic mt-tRNA mutations (m.5024C>T, m.5019A>G) segregate at different intrinsic rates, providing a clean explanation for clinical variability in mitochondrial disease.
 
+> [!abstract] 한눈에
+> Glynos 등은 약 4,500개 단일세포를 분석해, mtDNA heteroplasmy의 세포 간 분산이 출생 전에 생겨 평생 증가한다는 것을 보였다. 분열하는 비장과 분열하지 않는 뇌에서 분산의 궤적이 같았는데, 이는 vegetative segregation보다 mtDNA turnover에 따른 random drift가 주요 원인임을 시사한다.
+
 ## Key claims
 
 - ~4,500 single cells genotyped via FACS + pyrosequencing from mouse models at E8.5, P0, P6, P100, and P365 across spleen (rapidly dividing) and brain (mostly post-mitotic).

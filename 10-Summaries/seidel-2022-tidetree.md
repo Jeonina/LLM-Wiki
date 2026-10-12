@@ -22,6 +22,9 @@ topics: ["[[single-cell-lineage-tracing]]", "[[computational-methods]]"]
 
 > Brings **phylodynamics** to CRISPR lineage tracing: don't just recover the tree topology, jointly estimate the **population-dynamic parameters** that generated it — birth rate, death rate, sampling proportion — under a birth–death-sampling process, with editing modelled explicitly. Development is described as "an elaborate balance between cell division, apoptosis and differentiation," and TiDeTree's premise is that this balance is estimable from the tree rather than merely reflected in it.
 
+> [!abstract] 한눈에
+> TiDeTree는 CRISPR lineage tracing 데이터에서 계통수와 함께 birth rate, death rate, sampling proportion 같은 population-dynamic 파라미터를 birth–death-sampling 모델로 동시에 추정하는 Bayesian framework다. 다만 수집된 원문은 simulation 검증 부록뿐이라 실제 데이터 적용 결과는 확인할 수 없다.
+
 > **Source caveat:** the ingested clipping is the appendices (in-silico validation and parameter-inference sections) plus the abstract in frontmatter — no main text, results, or real-data application. Claims below reflect the validation design, which is the part that was captured.
 
 ## Key claims

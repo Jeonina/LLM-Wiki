@@ -22,6 +22,9 @@ topics: ["[[histone-modifications]]", "[[chromatin-architecture]]"]
 
 > The paper that named **"ChIP-Seq"**: ChIP of MNase-generated native mononucleosomes, one-step adaptor ligation, 17 PCR cycles and direct sequencing on the Solexa 1G Genome Analyzer (>20 million tags of up to 36 bp per run), replacing ChIP-on-chip and the lab's SAGE-based GMAT. Applied to resting human CD4⁺ T cells for **20 histone lysine/arginine methylations, H2A.Z, Pol II and CTCF**, it produced a single-nucleosome-resolution atlas that assigned marks to promoters, gene bodies, enhancers and insulators — including several then-unexpected activation-associated monomethylations (H3K27me1, H3K9me1, H4K20me1, and a newly reported H2BK5me1).
 
+> [!abstract] 한눈에
+> Barski 등은 MNase 기반 native ChIP에 Solexa 직접 시퀀싱을 결합한 ChIP-Seq을 처음 내놓고, 인간 CD4+ T세포에서 20종의 히스톤 메틸화와 H2A.Z, Pol II, CTCF를 단일 뉴클레오솜 해상도로 지도화했다. H3K27me1 같은 monomethylation이 전사 활성과 연관된다는 예상 밖의 결과도 보고했다.
+
 ## Key claims
 
 - **Method validity**: replicate H3K4me3 ChIP-Seq experiments were highly correlated; ChIP-Seq reproduced GMAT patterns at much higher resolution and sensitivity (e.g. an H3K4me3 peak ~1.5 kb upstream of *IL2* where GMAT found a single tag; an *IL13* downstream enhancer peak missed by GMAT), attributed to native mononucleosomes and ~10-fold more tags. Tag counts are treated as directly proportional to a nucleosome's modification level.

@@ -22,6 +22,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[somatic-mosaicism]]"]
 
 > The paper that turned a cancer genome's passenger mutations from noise into a record. Classify every substitution into one of **96 categories** (6 base changes × 16 trinucleotide contexts), decompose the resulting matrix across thousands of tumours, and distinct **mutational processes** fall out as reproducible spectra. This is the origin of the COSMIC signature catalogue.
 
+> [!abstract] 한눈에
+> Alexandrov 등은 암 7,042건의 체세포 돌연변이를 96개 trinucleotide 맥락으로 나누고 행렬 분해해 mutational signature 21개를 도출했으며, 이것이 COSMIC 카탈로그의 출발점이 되었다. 가장 보편적인 signature 1은 5-methylcytosine 탈아미노화에서 생기지만, 대부분의 signature는 기전이 밝혀지지 않았다.
+
 ## Key claims
 
 - **Scale**: 4,938,362 somatic substitutions and indels from **7,042 primary cancers across 30 classes** (507 whole genomes, 6,535 exomes), each with matched normal DNA to establish somatic origin.

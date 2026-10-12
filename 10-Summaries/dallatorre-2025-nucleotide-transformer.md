@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[histone-modif
 
 > Nucleotide Transformer (NT) is a family of BERT-style encoder-only DNA language models from InstaDeep (with Nvidia co-authors), pre-trained by masked 6-mer prediction on 6 kb windows. The first set compares equal-sized models trained on different data: the human reference (Human ref 500M), 3,202 human genomes from 1000 Genomes (1000G 500M and 1000G 2.5B), and 850 species (Multispecies 2.5B). On an 18-task benchmark (histone marks, promoters, enhancers, splice sites) evaluated with tenfold cross-validation, fine-tuned NT models matched or beat a supervised BPNet baseline on all 18 tasks, and the Multispecies 2.5B model was the best of the first-generation models. It also beat DNABERT-2, HyenaDNA and an Enformer trunk overall. A second generation, NT-v2 (50M–500M, rotary embeddings, SwiGLU, 12 kb context, up to 1 trillion training tokens), reached better scores with ten times fewer parameters. The paper also shows that attention and embeddings pick out gene-structure and regulatory elements without labels, and that zero-shot embedding distances rank functional variants (AUC up to 0.80 for ClinVar).
 
+> [!abstract] 한눈에
+> Nucleotide Transformer는 6-mer masked language modeling으로 사전학습한 DNA language model 계열로, 850종 데이터로 학습한 모델이 18개 과제 모두에서 BPNet과 대등하거나 앞섰다. 후속 NT-v2는 10분의 1 크기로 더 나은 성능을 냈지만 문맥 길이는 12 kb에 머문다.
+
 ## Key claims
 
 - **Fine-tuning beats probing, and both are competitive with supervised CNNs.** Supervised BPNet averaged MCC 0.665 (original) and 0.683 (28M-parameter version) on the 18 tasks. Probing NT embeddings matched BPNet on 5 tasks and beat it on 8. Parameter-efficient fine-tuning (IA³, ~0.1% of weights) matched it on 6 and beat it on 12. The best probing layer was never the final layer, and layer choice changed performance by up to 38% on enhancer types.

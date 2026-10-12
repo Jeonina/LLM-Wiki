@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Luo et al. (2024) — *Benchmarking computational methods for single-cell chromatin data analysis* — *Genome Biology*. [DOI](https://doi.org/10.1186/s13059-024-03356-x)
 
+> [!abstract] 한눈에
+> Luo 등은 주요 scATAC-seq 분석법 다섯 가지에서 나온 파이프라인 8개를 지표 10개로 비교했다. 세포 유형 발견에서는 feature aggregation, SnapATAC, SnapATAC2가 LSI 계열보다 나았고, 대규모 데이터에서는 SnapATAC2와 ArchR의 확장성이 가장 좋았다.
+
 Luo, Germain, Robinson and von Meyenn (ETH Zurich, SIB) benchmarked eight feature-engineering pipelines derived from five major scATAC-seq analysis methods on their ability to discover and discriminate cell types. The benchmark spans 10 metrics across cell embedding, shared-nearest-neighbor graph, and partition levels.
 
 Methods tested: Signac (LSI) and ArchR (iterative LSI), SnapATAC (diffusion maps), SnapATAC2 (Laplacian eigenmaps), and a feature-aggregation approach (8 pipelines from 5 methods). cisTopic, BROCKMAN, SCRAT, Cicero, PeakVI, scBasset and CellSpace are only surveyed in the background.

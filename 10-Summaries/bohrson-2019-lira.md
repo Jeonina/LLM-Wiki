@@ -22,6 +22,9 @@ topics: ["[[mosaic-variant-calling]]", "[[brain-somatic-mosaicism]]", "[[whole-g
 
 > The hardest single-cell mutation to validate is a **singleton** — present in one cell only, so no other cell or bulk sample can confirm it. LiRA validates such calls **within the cell** using read-backed phasing: a true somatic SNV sits on one chromosome, so every read spanning it and a nearby heterozygous germline SNP (gHet) on that haplotype carries both (**concordant**); an amplification artifact or lysis-induced lesion arises on one strand, so some reads from the same haplotype carry the gHet without the variant (**discordant**). Any discordant read kills the call. A per-cell two-component model then sets an FDR-controlled support threshold and yields genome-wide mutation-rate estimates despite only seeing the genome near gHets.
 
+> [!abstract] 한눈에
+> LiRA는 체세포 SNV와 인접한 이형접합 germline SNP의 read-backed phasing으로 단일세포 변이를 세포 내부에서 검증하고, 세포별 FDR 기준을 정한다. 단일 뉴런 MDA 데이터에서 phasing 가능한 후보의 92%가 artifact로 걸러져, 표준 genotyper를 그대로 쓸 수 없음을 보였다.
+
 ## Key claims
 
 - **Most candidate calls are artifacts.** In single-neuron MDA data (~45×, Lodato et al. 2015; 36 neurons from 3 individuals), 27% of sSNV candidates (9–44% per cell) were close enough to a gHet for LiRA; of those, **92% were filtered as LiRA false positives** (87–96% per cell), versus only **2% of gHet–gHet pairs** (1–4%) — so the filter removes artifacts while losing little true variation, and standard genotypers cannot be used on single cells without heavy filtering.

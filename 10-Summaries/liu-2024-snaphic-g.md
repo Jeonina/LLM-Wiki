@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[chromatin-architecture]]", "[[computational-methods
 
 > SnapHiC finds scHi-C loops by combining global and local backgrounds. The local background favours sharp, CTCF-anchored **structural** loops and has low sensitivity for **enhancer–promoter (E–P)** contacts. SnapHiC-G drops the local background. It keeps SnapHiC's per-cell **random walk with restart (RWR)** imputation and distance-stratified z-scores, restricts candidate bin pairs to promoter–promoter ("AND") or promoter–enhancer ("XOR") pairs from TSS plus H3K4me3/H3K27ac/ATAC annotations, and runs a **one-sample t-test across cells** against zero. The result is far higher recall of reference E–P interactions (80% vs ≤16% in 742 mESCs) with comparable top-ranked precision, which makes cell-type-specific GWAS-to-gene mapping possible from sn-m3C-seq brain data.
 
+> [!abstract] 한눈에
+> SnapHiC-G는 SnapHiC의 local background를 빼고 promoter 관련 bin 쌍만 세포 간 t-test로 검정해, mESC에서 enhancer–promoter 상호작용 recall을 80%까지 높였다. 이로써 sn-m3C-seq 뇌 데이터에서 세포 유형별로 GWAS 변이와 유전자를 연결할 수 있게 됐다.
+
 ## Key claims
 
 - **Algorithm.** 10-kb bins; RWR (restart 0.05) in 2 Mb × 2 Mb sliding windows overlapping by 1 Mb; z-scores stratified by 1D distance. A bin pair is called if mean z > 0, >10% of cells have z > 1.96, FDR < 10% and t > 3. The range is 20 kb–1 Mb. Mappability >0.8 and the ENCODE blacklist are used as filters. Bin pairs <20 kb are excluded because short-range contacts can be random collisions.

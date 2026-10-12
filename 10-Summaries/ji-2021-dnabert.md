@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[computational
 
 > DNABERT transfers the BERT recipe to the human genome: a 12-layer, 768-hidden, 12-head Transformer encoder is pre-trained by masked-token prediction on unlabeled human reference sequence tokenised into overlapping k-mers (k = 3–6), then fine-tuned with small labelled sets for promoters, transcription-factor binding sites (TFBSs) and splice sites. The paper's argument is that CNNs see only local windows and RNNs compress long context poorly, while self-attention captures context across the whole input and pre-training makes the model usable when labels are scarce. It reports large gains over task-specific tools on each benchmark, attention-based motif discovery (DNABERT-viz), in-silico variant scoring, and transfer of the human-pre-trained model to 78 mouse ChIP-seq sets. It is the first widely used DNA language model and the template that later models (DNABERT-2, Nucleotide Transformer) revise.
 
+> [!abstract] 한눈에
+> DNABERT는 overlapping k-mer로 토큰화한 인간 유전체에 BERT 사전학습을 적용한 최초의 널리 쓰인 DNA 언어 모델이다. 프로모터, TFBS, splice site 예측에서 과제별 도구를 앞섰지만, 입력이 512 토큰으로 제한되고 사전학습 비용이 크다.
+
 ## Key claims
 
 - **One pre-trained model fine-tunes to several regulatory tasks.** The same pre-trained DNABERT (k = 6 reported; k = 3–6 gave "very similar performances") was fine-tuned for promoters, TFBSs and splice sites, and beat the task-specific baselines in each.

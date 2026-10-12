@@ -16,6 +16,9 @@ updated: 2026-05-12
 
 > Taejeong Bae, Livia Tomasini, Jessica Mariani, Bo Zhou, Tanmoy Roychowdhury, Daniel Franjic, Mihovil Pletikos, Reenal Pattni, Bo-Juen Chen, Elisa Venturini, Bridget Riley-Gillis, Nenad Sestan, Alexander E. Urban, **Alexej Abyzov**\*, **Flora M. Vaccarino**\*. *Science* **359**, 550–555 (2 Feb 2018). DOI: 10.1126/science.aan8690.
 
+> [!abstract] 한눈에
+> Bae 등은 태아 뇌의 신경 전구세포를 clone으로 키워 WGA 없이 시퀀싱하고, 세포당 200–400개의 mosaic SNV를 찾았다. 신경발생기의 돌연변이율은 gastrulation 이전보다 훨씬 높았고, 돌연변이 스펙트럼도 CpG 탈아미노화 중심에서 산화 손상 중심으로 바뀌었다.
+
 ## Thesis
 
 Single neuronal progenitor cells from three human fetal brains (15–21 weeks postconception) were expanded to **clonal cell populations** (a few thousand cells per clone) before bulk DNA sequencing. This sidesteps WGA artifacts that plague single-nucleus mosaicism methods. The clonal approach yields **200–400 mosaic SNVs per founder cell**, with strikingly different mutation rates and mutation spectra between the pre-gastrulation period (first ~5 postzygotic cleavages, ~1.3 mutations/division/cell) and active neurogenesis (~5.1 SNVs/day per progenitor, ~3 orders of magnitude higher than the adult germline rate).

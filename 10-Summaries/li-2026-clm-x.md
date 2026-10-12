@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/sin
 
 > CLM-X extends the same group's scATAC model CLM-Access into an RNA + ATAC foundation model. It uses a BEiT-3-style **multiway Transformer**: one shared self-attention module per block, with three modality-routed feed-forward experts (R-FFN, A-FFN, RA-FFN). Each modality becomes a fixed 2,000-token sequence. RNA is gene tokens plus within-cell rank bins (B = 50). ATAC is 1,998 genome-ordered patches of about 575 binarised cCREs each, from a 1,154,464-cCRE reference. Paired cells concatenate both into one 4,000-token context. Pretraining runs in stages: masked RNA reconstruction on **~36 M CELLxGENE scRNA-seq cells**, then masked ATAC reconstruction on **~2.8 M scATAC-seq cells** (CATlas + Descartes fetal atlas), then paired conditional reconstruction on **377,134 pseudo-paired fetal cells from scCLIP**. In the paired stage, ATAC is masked first and predicted from RNA, then the reverse. The pseudo-pairs are RNA and ATAC cells matched at random within the same annotated cell type, so **no truly paired multiome data are used in pretraining**. All five benchmarks fine-tune on 10 public datasets.
 
+> [!abstract] 한눈에
+> CLM-X는 multiway Transformer로 scRNA-seq와 scATAC-seq를 함께 다루는 foundation model로, 실제 paired multiome 없이 세포 유형 기준으로 짝지은 pseudo-paired 데이터로 사전학습했다. 다섯 벤치마크 가운데 cross-modal translation에서 가장 큰 향상을 보였다.
+
 ## Key claims
 
 - **Design argument against contrastive multimodal FMs.** The authors argue that scCLIP and SCARF depend on contrastive pair discrimination, which is tied to paired data and to one specific modality pair. CLM-X instead uses unimodal branches to exploit abundant single-modality data, and learns the cross-modal link by conditional masked completion.

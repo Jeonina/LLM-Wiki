@@ -27,6 +27,9 @@ paper_section: ["4.5"]
 
 > **Draft scaffold** (not prose) for the manuscript's main section. The argument: the 5-layer frame that organized the *measurement* sections is the wrong skeleton for the *computational* section, because computation's job is to **reassemble** the layers, not keep them apart. Organize by analysis logic that climaxes in integration. (synthesis)
 
+> [!abstract] 한눈에
+> 리뷰의 계산 섹션은 측정 섹션의 5개 층위 구조를 따르지 말고, 공통 전처리에서 층위별 추론을 거쳐 층위를 다시 묶는 통합으로 정점을 찍는 분석 논리 순서로 짜야 한다는 초안이다. 다섯 층위는 task × layer 표에 입력으로만 남긴다.
+
 The frame-switch is itself the argument — open the section by inverting the layer frame explicitly, then keep the 5 layers visible only as *inputs* (the matrix below), not as the section's spine. (synthesis)
 
 ---

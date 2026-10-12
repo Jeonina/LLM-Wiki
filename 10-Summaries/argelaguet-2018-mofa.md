@@ -23,6 +23,9 @@ topics: ["[[single-cell-multiomics]]", "[[computational-methods]]"]
 
 > MOFA is a Bayesian group factor analysis model — described by the authors as a "versatile and statistically rigorous generalization of PCA to multi-omics data" — that decomposes M data matrices measured on the same (or partially overlapping) samples into one shared factor matrix **Z** and one sparse weight matrix **W**ᵐ per modality (Yᵐ = ZWᵐᵀ + εᵐ). Its point is interpretability: each factor's variance explained per modality tells you whether an axis of heterogeneity is shared across omics layers or private to one, and sparse loadings point at the driving features. The authors show this on 200 chronic lymphocytic leukaemia (CLL) patients with four incomplete data types (mutations, RNA, DNA methylation, ex vivo drug response), where MOFA recovers IGHV status and trisomy 12 as the top two axes, surfaces an oxidative-stress axis, and produces factors that predict time to next treatment; and on 87 mouse ES cells profiled by single-cell methylation + transcriptome (scM&T-seq), where two continuous factors trace naive → primed → differentiated states with coordinated methylation changes.
 
+> [!abstract] 한눈에
+> MOFA는 여러 omics 행렬을 공유 factor와 modality별 sparse weight로 분해하는 Bayesian group factor analysis로, 각 factor가 어느 층의 분산을 설명하는지 바로 보여준다. CLL 환자 200명의 데이터에서 IGHV 상태와 trisomy 12를 주요 축으로 찾아냈고, 통째로 빠진 assay도 처리했다.
+
 ## Key claims
 
 - **Model.** Yᵐ = ZWᵐᵀ + εᵐ with a standard-normal prior on factors Z and two-level sparsity on weights: an Automatic Relevance Determination (ARD) prior for view- and factor-wise sparsity (which factor is active in which view) plus a spike-and-slab prior for feature-wise sparsity. Inference is mean-field variational Bayes (ELBO); non-Gaussian data use Poisson (counts) or Bernoulli (binary) likelihoods via variational lower bounds; missing values (including whole missing assays) are handled natively.

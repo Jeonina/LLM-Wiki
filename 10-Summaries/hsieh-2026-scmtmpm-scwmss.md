@@ -22,6 +22,9 @@ topics: ["[[40-Topics/somatic-mosaicism]]"]
 
 > Introduces two single-cell metrics — **scmtMPM** (mtDNA mutations per million bp, depth-normalized) and **scwMSS** (heteroplasmy-weighted mitochondrial local-constraint score) — for quantifying genome-wide mtDNA mutational burden in individual cells via mtscATAC-seq. Validates on POLG D274A hypermutator HEK293 lines (~15× more variants than POLG-wild-type control cells, far more than the hundreds previously found by bulk sequencing) and applies to PBMCs from healthy donors and MELAS patients. Key finding: **pathogenic and truncating mtDNA variants are systematically held at sub-threshold heteroplasmy** in hypermutator cells, indicative of strong negative selection acting well below the canonical 60–80% biochemical threshold.
 
+> [!abstract] 한눈에
+> Hsieh 등은 mtscATAC-seq로 세포별 mtDNA 변이 부담을 재는 지표 scmtMPM과 scwMSS를 제안했다. POLG 과돌연변이 세포에서 병원성·절단형 변이가 생화학적 역치보다 훨씬 낮은 heteroplasmy에 묶여 있어, 강한 음성 선택이 작동함을 보였다.
+
 ## Key claims
 
 1. **POLG D274A cells carry ~15× more mtDNA variants than control cells by mtscATAC-seq.** POLG D274A KI36/KIA2 lines yield ~9,600 and ~11,400 unique variants vs 620 in control. Most are low-VAF (<1%), missed by bulk approaches due to averaging across cells.

@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[computational-methods]]"]
 
 > Raw Hi-C reads to normalized contact maps in four modules — align, filter valid interactions, bin, normalize — with parallelization by read chunk and a fast sparse implementation of **iterative correction (ICE)**. Its distinguishing capability at publication was **allele-specific contact maps** from phased genotypes.
 
+> [!abstract] 한눈에
+> HiC-Pro는 Hi-C read를 alignment, valid interaction 필터링, binning, ICE normalization 네 모듈로 처리하는 병렬 파이프라인이다. hiclib보다 빠르면서도 결과는 대체로 일치했고, phased genotype으로 allele-specific contact map을 만들어 비활성 X의 두 mega-domain을 재현했다.
+
 ## Key claims
 
 - **Four-module architecture**: (i) read alignment, (ii) detection and filtering of valid ligation products, (iii) binning, (iv) contact map normalization — the steps on which the field had already converged but for which no stable, flexible, parallel implementation existed.

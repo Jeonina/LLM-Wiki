@@ -23,6 +23,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[computational-methods]]"]
 
 > PhISCS turns tumour phylogeny inference from single-cell SNV calls into an exact combinatorial optimisation. The input is a ternary cell × mutation matrix (0, 1, ?). PhISCS finds the **conflict-free** matrix (one satisfying the **three-gametes rule**, i.e. a perfect phylogeny) that maximises the likelihood of the observed calls under false-positive rate α and false-negative rate β. It may also **eliminate up to k_max mutations** that cannot fit a perfect phylogeny, such as infinite-sites (ISA) violations from LOH, deletions, convergent evolution or wrong copy-number estimates. When bulk data exist, VAFs from copy-number-neutral SNVs become **hard lineage constraints**: an ancestor's cellular prevalence must be at least its descendant's, and at least the sum of two sibling lineages. The same problem is written two ways: as an ILP solved with Gurobi (**PhISCS-I**), and, for the first time in tumour phylogenetics, as a **weighted Max-SAT** Boolean CSP solved with open-source solvers (**PhISCS-B**). Both return provably optimal solutions for the objective. The authors call PhISCS the first method to combine single-cell and bulk data while allowing ISA violations.
 
+> [!abstract] 한눈에
+> PhISCS는 거짓양성률과 거짓음성률을 반영한 우도를 최대화하는 conflict-free 행렬을 ILP 또는 weighted Max-SAT로 정확히 풀어 종양 계통을 추론한다. bulk VAF를 계통 제약으로 쓰고, 무한 자리 가정을 어기는 변이는 정해진 수까지 제외한다.
+
 ## Key claims
 
 - **Exact likelihood objective, not ad hoc weights.** The objective is log P(I|Y) summed over observed entries. Each 0→1 flip is weighted log(β/(1−α)) and each 1→0 flip log((1−β)/α), so false negatives, which are common, cost much less than false positives, which are rare. Missing entries are filled in at no cost. Pairwise binary variables B(p, q, a, b) enforce the three-gametes rule as linear constraints.

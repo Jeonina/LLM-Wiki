@@ -31,6 +31,9 @@ topics:
 
 > Thesis: existing single-molecule chromatin footprinting methods (Fiber-seq, methyltransferase stenciling) cannot survive DNA amplification — methylation marks are erased — so they are stuck as bulk assays covering ~0.001% of a single cell's genome. Replace methyl marks with **C→T deaminations**, which are sequence changes that *do* survive amplification. Result: **DAF-seq** maps single-molecule, near-nucleotide-resolution protein occupancy across nearly entire chromosomes from a single cell, with simultaneous DNA sequence and chromatin readout from the same fibers.
 
+> [!abstract] 한눈에
+> DAF-seq는 메틸 표지 대신 증폭 후에도 남는 C→T 탈아미노화로 단백질 점유를 기록해, 단일세포에서 거의 전 염색체 범위의 단일분자 염색질 구조와 유전형을 함께 읽었다. 같은 세포 안 두 haplotype 사이의 조절 요소 상태 차이(약 61%)가 세포 간 차이(약 63%)와 거의 같았다.
+
 ## Key claims
 
 - **SsDddA (a DddA variant from *Simiaoa sunii*) is a near-ideal chromatin stenciler**: dsDNA-active cytidine deaminase, 99.8% deamination of free dsDNA, minimal sequence bias, deaminates accessible cytidines in nuclei while sparing nucleosome- and CTCF-protected ones. Optimal: 4 μM, 10 min. Median deamination 73–82% in accessible promoters vs 2.3–2.6% in protected footprints.

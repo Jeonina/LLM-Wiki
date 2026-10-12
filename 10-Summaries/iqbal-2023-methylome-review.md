@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Iqbal & Zhou (2023) — *Computational Methods for Single-cell DNA Methylome Analysis* — *Genomics, Proteomics & Bioinformatics*. [DOI](https://doi.org/10.1016/j.gpb.2022.05.007)
 
+> [!abstract] 한눈에
+> Iqbal과 Zhou는 단일세포 DNA 메틸롬 분석 도구를 전처리, QC, imputation, 차원 축소, 클러스터링, 계통 재구성, 전사체 통합까지 단계별로 정리했다. bulk와 단일세포 분석의 차이, 고르지 않은 CpG 분포 문제, 메틸화 데이터로 CNV를 읽는 등의 비전통적 활용도 다룬다.
+
 Iqbal and Zhou (CHOP + UPenn) surveyed the current state of **computational tools for single-cell DNA methylome data analysis**. The review covers the full processing pipeline: data preprocessing (Bismark, BS-Seeker, BSMAP), quality control (Bismark-style mapping-efficiency metrics), imputation (Melissa, Epiclomal, DeepCpG), dimensionality reduction (PCA on methylation rates, NMF), cell clustering (BackSPIN, PDclust, Epiclomal, Melissa), supervised cell annotation, cell-lineage reconstruction, gene-activity scoring, and integration with transcriptome data.
 
 Key unique aspects discussed: (i) bulk-vs-single-cell methylome analysis differences (Table 1 with 8 comparison axes); (ii) the uneven CpG distribution problem (CpG islands vs sparse CpG, late-replicating vs early-replicating regions); (iii) non-traditional uses of methylation data — copy-number annotation, somatic-mutation identification, sex-chromosome epigenetic mosaicism; (iv) co-assay integration when methylation is jointly assayed with RNA, accessibility, or Hi-C.

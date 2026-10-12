@@ -16,6 +16,9 @@ updated: 2026-05-12
 
 > Federico Abascal, Luke M. R. Harvey, Emily Mitchell, Andrew R. J. Lawson, Stefanie V. Lensing, Peter Ellis, Andrew J. C. Russell, Raul E. Alcantara, Adrian Baez-Ortega, Yichen Wang, Eugene Jing Kwa, Henry Lee-Six, Alex Cagan, Tim H. H. Coorens, Michael Spencer Chapman, Sigurgeir Olafsson, Steven Leonard, David Jones, Heather E. Machado, Megan Davies, Nina F. Øbro, Krishnaa Mahubani, Kieren Allinson, Moritz Gerstung, Kourosh Saeb-Parsy, David G. Kent, Elisa Laurenti, Michael R. Stratton, Raheleh Rahbari, Peter J. Campbell, Robert J. Osborne\*, **Iñigo Martincorena\***. *Nature* **593**, 405–410 (2021). DOI: 10.1038/s41586-021-03477-4. Wellcome Sanger Institute.
 
+> [!abstract] 한눈에
+> NanoSeq은 end repair 단계의 오류를 피한 duplex sequencing으로 단일 DNA 분자에서 10억 bp당 5개 미만의 오류율을 달성했다. 그 덕분에 분열하지 않는 세포의 체세포 돌연변이를 측정할 수 있었고, post-mitotic neuron이 평생 일정한 속도로 돌연변이를 축적한다는 것을 보였다.
+
 ## Thesis
 
 **NanoSeq (nanorate sequencing)** is a duplex-sequencing protocol that **avoids end-repair-associated errors** to achieve **<5 errors per billion base pairs in single DNA molecules** — two orders of magnitude lower than typical somatic mutation loads. This enables **somatic-mutation studies in non-dividing cells** (post-mitotic neurons, polyclonal smooth muscle, differentiated cells), independently of clonality. Demonstrates **somatic mutations accumulate at constant rate in post-mitotic neurons throughout life** — proving cell division is not required for mutagenesis.

@@ -24,6 +24,9 @@ topics: ["[[40-Topics/histone-modifications]]", "[[40-Topics/sequence-models-and
 >
 > No imputation method has been built for single-cell histone PTM (scHPTM) data, so the authors ask whether scRNA-seq and scATAC-seq imputers transfer. They test 10 methods (SAVER, scImpute, kNN-smoothing, MAGIC, ALRA, scOpen, DCA, SCALE, SCALEX and cisTopic-impute) from five families: statistical models, smoothing, matrix factorisation, autoencoders and topic models. The data are **in silico datasets built from mouse bone-marrow sortChIC** (H3K4me1, H3K4me3, H3K9me3, H3K27me3) at 3 read depths × 10 noise levels, plus **real mouse-brain scCUT&Tag** (H3K4me3, H3K27ac, H3K27me3, H3K36me3). Methods are scored on three tasks: correlation to a pseudobulk ground truth, cell–cell similarity (a new metric, SIMIC) and signal in peaks (SiP). The answer is that **no method does all three**: scImpute is best for signal enrichment, scOpen and SCALEX for clustering, and scATAC-derived methods do best on narrow-peak marks. **No method in the benchmark is pretrained, uses DNA sequence, uses neighbouring bins or combines marks.** The authors list these as the missing pieces.
 
+> [!abstract] 한눈에
+> scRNA-seq·scATAC-seq용 imputation 방법 10개가 single-cell histone PTM 데이터에도 통하는지 처음으로 benchmark했고, 성능은 주로 read depth가 결정했다. 어떤 방법도 신호와 clustering을 동시에 개선하지 못했으며, imputation이 질 낮은 데이터를 살리지는 못했다.
+
 ## Key claims
 
 - **First imputation benchmark for scHPTM data.** The authors say imputation algorithms "are yet to be applied to scHPTM data" and that, to their knowledge, no cross-modality imputation method has been developed for it.

@@ -42,6 +42,9 @@ updated: 2026-10-07
 
 > Duplex-Multiome adds strand tagging to the 10x Single Cell Multiome ATAC + Gene Expression protocol. In each nucleus, both strands of every Tn5-tagmented ATAC fragment carry a strand barcode, so somatic SNVs (sSNVs) can be called by duplex consensus from the same nucleus that yields snATAC and snRNA profiles. Duplex consensus cuts error ">10,000-fold" and removes the SBS45 sequencing-artefact signature. sSNVs are seen only in accessible chromatin and only sparsely per nucleus. Burdens are therefore estimated **per cell type**, by pooling thousands of nuclei in a simulation-based likelihood model, and then corrected to genome-wide rates with open-chromatin enrichment factors learned from PTA scWGS. The paper benchmarks the method on the SMaHT COLO829-BLT50 mixture and then profiles >51,400 brain nuclei: nine neurotypical donors aged 0.2–82.7 years (>43,300 nuclei), a 21-week prenatal pilot and two ASD cases. It reports cell-type-specific ageing rates, including astrocytes and inhibitory neurons that scWGS had not assayed, and signature depletion in open chromatin. It finds an excess of low-VAF clonal sSNVs in glia of some aged brains, and two non-coding clonal variants whose presence tracks expression of nearby genes.
 
+> [!abstract] 한눈에
+> Duplex-Multiome은 10x Multiome의 ATAC 조각 양쪽 가닥에 strand barcode를 달아, 같은 핵에서 snATAC·snRNA와 함께 duplex consensus로 체세포 SNV를 검출한다. 51,400개가 넘는 뇌 핵에서 세포형별 노화 돌연변이율을 추정했고, 일부 고령 뇌의 glia에서 낮은 VAF의 clonal sSNV가 과잉으로 나타났다.
+
 ## Key claims
 
 - **Error suppression.** Without duplex consensus, raising calling stringency lowers the error rate only to 10⁻⁵, and the residual calls match COSMIC SBS45, a sequencing-artefact signature. Requiring even one read per strand removes SBS45 and matches the error rate of ten same-strand reads without duplex consensus. More reads per strand lower it further. Standard calls need "a6s3": ≥6 supporting reads, ≥3 per strand, base quality >30 and MapQ >20.

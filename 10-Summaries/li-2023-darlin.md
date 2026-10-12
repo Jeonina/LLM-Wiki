@@ -22,6 +22,9 @@ topics: ["[[single-cell-lineage-tracing]]", "[[single-cell-multiomics]]", "[[dna
 
 > An engineered-barcode lineage mouse is only as useful as the fraction of profiled cells that carry a barcode which is **detected, edited and rare**. Cas9/CARLIN managed ~10%; DARLIN reaches ~60% by fusing Cas9 to **terminal deoxynucleotidyl transferase (TdT)** — trading CRISPR's large deletions for random insertions — and by adding two more independent target arrays (*Tigre*, *Rosa26*). With that coverage the paper does three things: resolves early megakaryocyte bias in fetal-labelled HSCs, measures low-level native HSC migration between bones, and — via a new joint assay, **Camellia-seq** (lineage + RNA + CpG methylation + GpC accessibility per cell) — shows that **DNA methylation, not expression or accessibility, carries clonal memory** in self-renewing HSCs.
 
+> [!abstract] 한눈에
+> DARLIN은 Cas9에 TdT를 융합하고 표적 배열을 셋으로 늘려, 단일세포 lineage barcode 검출률을 Cas9/CARLIN의 약 10%에서 60%로 끌어올린 마우스 모델이다. 함께 개발한 Camellia-seq로는 자기재생 HSC의 clonal memory가 발현이나 accessibility가 아니라 DNA methylation에 담겨 있음을 보였다.
+
 ## Key claims
 
 - **Cas9 editing is deletion-dominated, which wastes barcode space.** In the published Cas9/CARLIN data there were on average 1.5 insertion and 2.5 deletion events per allele; an edited allele had a median of 163 bp deleted out of the 270-bp array (≈6 of 10 target sites) versus a median 2 bp inserted. Common alleles were enriched for deletion-only alleles, rare alleles for insertions.

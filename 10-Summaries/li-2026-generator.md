@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[computational
 
 > GENERator (Alibaba Cloud with CAAS Shenzhen, USTC, HKUST and Mila) is a LLaMA-style decoder-only DNA language model (1.2B and 3B parameters) with 6-mer tokens and a 16,384-token context (98,304 bp), pre-trained by next-token prediction on 386 billion nucleotides of gene-centric eukaryotic RefSeq sequence. Its contribution is as much a set of controlled design findings for *causal* DNA models — 6-mers beat single-nucleotide and BPE tokens at a fixed token budget, state-space models do not exploit their longer nominal context, and gene-centric training beats whole-genome training despite worse pre-training loss — as it is a model. It outperforms Evo2-1B on sequence recovery and zero-shot ClinVar at far lower inference cost, and its prompt-conditioned *Drosophila* enhancer designs were tested experimentally.
 
+> [!abstract] 한눈에
+> GENERator는 6-mer 토큰과 98 kb 문맥을 쓰는 decoder-only DNA 언어 모델로, causal 모델에서는 6-mer가 단일 염기·BPE 토큰보다 낫고 유전자 중심 학습이 전체 유전체 학습보다 낫다는 설계 결과를 제시했다. Evo2-1B보다 훨씬 적은 추론 비용으로 서열 복원과 zero-shot ClinVar에서 앞섰다.
+
 ## Key claims
 
 - **Tokenizer sweep (sequence recovery, 1,024 input tokens, 30-nt prediction).** Among 1- to 8-mers and BPE (vocabularies 512–8,192), the 6-mer tokenizer was best. All BPE variants stayed below 0.30 accuracy against a 0.25 random baseline. The authors argue BPE's nested vocabulary penalises valid prefixes (G, GC, GCC when the target is GCCT) under next-token prediction, so BPE's reported advantage in masked models does not carry over to causal ones.

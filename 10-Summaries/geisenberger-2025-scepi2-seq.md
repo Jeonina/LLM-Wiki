@@ -33,6 +33,9 @@ topics:
 
 > Thesis: Single-cell methods exist for either DNA methylation or histone modifications, but bisulfite chemistry destroys the small CUT&Tag/ChIC fragments and prevents joint readout. **scEpi²-seq** swaps bisulfite for TAPS (which converts 5mC → uracil non-destructively) and combines it with sortChIC (pA-MNase tethered to histone-modification antibodies, FACS-sorted single cells) to deliver simultaneous histone + 5mC + nucleosome-positioning measurements per cell. Using RPE-1 FUCCI cells, this resolves DNA-methylation maintenance kinetics across the cell cycle; using mouse intestine, it dissects lineage-specific methylation within H3K27me3 domains.
 
+> [!abstract] 한눈에
+> scEpi²-seq는 bisulfite 대신 TAPS를 sortChIC와 결합해, 한 세포에서 histone modification, 5mC, nucleosome positioning을 동시에 측정한다. 이를 통해 S-phase 동안 nucleosome에 덮인 DNA가 linker DNA보다 methylation을 더 많이 잃는다는 것을 보였다.
+
 ## Key claims
 
 - **Method**: pA-MNase + antibody (H3K9me3, H3K27me3, H3K36me3) → MNase digestion → in-plate barcoded adaptor ligation → TAPS conversion → IVT/RT/PCR. Yields chromatin cut-site map, nucleosome spacing (read-start distances), and CpG methylation calls — all from the same single cell.

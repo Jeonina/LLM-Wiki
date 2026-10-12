@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/his
 
 > AIDO.DNA is a **7-billion-parameter BERT-style encoder** (plus a 300M sibling) trained with masked language modelling on **single-nucleotide tokens** with a **short 4 kb context**, using essentially the same multi-species genome set as the Nucleotide Transformer (796 genomes, 10.6 billion training nucleotides). The paper argues that the bottleneck for DNA language models is **representation capacity, not context length or new data**: with the same data as NT and only modest architecture changes (SwiGLU, RoPE), scaling the encoder gives new best scores on the DNABERT-2 (GUE) and NT benchmark suites, better zero-shot pathogenic-variant detection, richer unsupervised nucleotide-dependency maps, and — with a small diffusion head — expression-conditioned promoter generation. It is a short workshop-style preprint from GenBio AI, framed as one module of an "AI-driven Digital Organism".
 
+> [!abstract] 한눈에
+> AIDO.DNA는 NT와 같은 데이터에 4 kb context만 쓰는 7B 규모의 단일 염기 토큰 BERT 인코더로, DNA language model의 병목이 context 길이가 아니라 모델 용량이라고 주장하며 GUE와 NT 벤치마크에서 최고 점수를 냈다. 다만 zero-shot 변이 효과 예측에서는 300M 모델이 7B보다 나았다.
+
 ## Key claims
 
 - **Scale beats context.** The authors place AIDO.DNA against a catalogue of 17 earlier sequence models (Table 1) and deliberately keep context at 4,000 nt, the longest that fit at 7B during pretraining. They state that "the main limitation of such models is their size", and that AIDO.DNA beats prior encoder-only models "without new data", which they read as a sign that new scaling laws are needed for compute-optimal DNA LMs.

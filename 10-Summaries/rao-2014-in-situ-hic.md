@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[chromatin-architecture]]"]
 
 > Moving the ligation step **inside intact nuclei** (in situ Hi-C) and sequencing ~5 Tb produced Hi-C maps dense enough to see individual loops. The headline is not the resolution but what it revealed: **~10,000 loops in GM12878, anchored overwhelmingly at CTCF/cohesin sites whose motifs point toward each other (>90% convergent vs 25% expected)**; contact domains far smaller (median 185 kb) than the ~1 Mb TADs; and at least six subcompartments beneath A/B. It also introduced the tooling (HiCCUPS, Arrowhead, APA, Juicebox) that became the default bulk Hi-C vocabulary.
 
+> [!abstract] 한눈에
+> Rao 등은 in situ Hi-C로 kilobase 해상도의 3D 유전체 지도를 만들어, GM12878에서 약 1만 개의 loop가 대부분 서로 마주 보는 convergent CTCF motif에 고정되어 있음을 밝혔다. TAD보다 작은 contact domain과 하위 compartment를 정의했고, HiCCUPS, Juicebox 같은 표준 도구를 내놓았다.
+
 ## Key claims
 
 - **In situ beats dilution at high resolution.** Ligation in nuclei lowers spurious (random-ligation) contacts — fewer mitochondrial–nuclear junctions — runs in 3 days instead of 7, and uses a 4-cutter (MboI). At coarse scales it agrees with dilution Hi-C (GM12878 R > 0.96, 0.90, 0.87 at 500, 50, 25 kb).

@@ -23,6 +23,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[scdna-cancer-applications]]", "[[hema
 
 > **ASCENT** (Absolute Single cell Copy number Evaluation and subcloNe Topology) is an end-to-end Snakemake pipeline built for ultra-low coverage (0.01×–0.1×) scWGS made by **direct tagmentation without preamplification**. It makes three changes to the usual workflow. (1) It segments at high resolution (10–40 kb bins), not the field's 200–500 kb, then refines breakpoints on clone pseudobulks. (2) It fixes ploidy errors (doubling or halving) with a statistic based on **fragment overlap**: Tn5 destroys the template, so overlapping fragments can only come from different copies, and the overlap rate rises with copy number in a predictable way. (3) It calls allele-specific copy number and copy-neutral LOH per clone, with no matched normal or bulk reference. On a paediatric B-ALL sample (ALL40) it found a minor clone (3% of tumour cells) and a small copy-neutral LOH that bulk WGS did not show, and it scored above scAbsolute, Alleloscope and CHISEL against bulk WGS.
 
+> [!abstract] 한눈에
+> ASCENT는 증폭 없이 직접 tagmentation한 초저심도 scWGS에서 10–40 kb 해상도로 CNV를 찾는 pipeline으로, fragment overlap 통계를 이용해 ploidy 오류를 바로잡는다. 소아 B-ALL에서 bulk WGS가 놓친 소수 클론과 copy-neutral LOH를 찾아냈으며, 무작위 priming 데이터에는 쓸 수 없다.
+
 ## Key claims
 
 - **Higher resolution segments better, even at low depth.** On ALL40 cells downsampled to 20,000–400,000 counts, joint segmentation (mpcf) beat hypothesis-free LLR segmentation in all conditions above 30,000 reads. With sensitivity parameters scaled to per-bin depth, every resolution lost no sensitivity down to 100,000 reads per cell, and all but 10 kb held down to 50,000. The best results came at 40 kb (LLR) and 10 kb (mpcf), not at 200–500 kb. The authors conclude that low-resolution joint segmentation brings no benefit.

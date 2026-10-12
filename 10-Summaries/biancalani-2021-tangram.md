@@ -22,6 +22,9 @@ topics: ["[[single-cell-multiomics]]", "[[computational-methods]]"]
 
 > Three spatial technologies, three complementary failures: sc/snRNA-seq profiles cells comprehensively but **loses position**; spatial transcriptomics keeps position but at **lower resolution and sensitivity**; targeted in-situ methods have both but are **limited in gene throughput**. Tangram's move is to **align sc/snRNA-seq onto whichever spatial measurement exists** — MERFISH, STARmap, smFISH, Visium, or even histological images — and let the dissociated data supply the genome-wide depth the spatial data lacks.
 
+> [!abstract] 한눈에
+> Tangram은 sc/snRNA-seq 데이터를 MERFISH, Visium, 조직학 이미지 등 어떤 공간 데이터에도 정렬하는 플랫폼 비종속 딥러닝 방법이다. SHARE-seq에 적용해 짝지어진 chromatin accessibility까지 공간에 옮김으로써 공간 염색질 패턴을 간접적으로 드러냈다.
+
 ## Key claims
 
 - **Platform-agnostic alignment** is the central design property. Tangram maps to five different spatial data types including histology, rather than being built for one.

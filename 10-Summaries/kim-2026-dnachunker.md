@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[computational
 
 > DNAChunker is a masked [[dna-language-model]] that learns its own segmentation instead of using k-mers or BPE. Single-nucleotide input passes through two encoder stages, each a 2-layer bidirectional Mamba followed by a router that places a chunk boundary wherever adjacent representations are dissimilar (cosine dissimilarity ≥ 0.5), compressing the sequence roughly 3× per stage. A 30-layer Transformer (147.5 M of 171.6 M parameters) models the compressed sequence, and a mirrored two-stage "dechunker" restores base-pair resolution for the MLM loss. It adapts H-Net-style dynamic chunking from autoregressive LMs to bidirectional MLM, with two fixes for [MASK] leakage. Trained only on GRCh38 for about 52 B bp, it reports the best average on the NT benchmark (MCC 0.772 vs 0.728 for the 1.2 B GENERator), the revised NT benchmark and BEND, and its learned chunks keep TF motifs intact and stay stable under variants.
 
+> [!abstract] 한눈에
+> DNAChunker는 k-mer나 BPE 대신 DNA 서열을 스스로 분절하도록 학습하는 masked DNA language model로, TF motif를 덜 쪼개면서 NT benchmark 평균에서 가장 높은 점수를 냈다. 그러나 zero-shot 질병 변이 판별 AUROC는 0.55로 우연 수준에 가까웠다.
+
 ## Key claims
 
 - **Learned chunks preserve motifs.** Across 29 JASPAR 2024 TF motifs plus CpG islands, TATA boxes and splice donors in 10,000 hg38 windows of 8,192 bp, DNAChunker splits a motif occurrence into 1.22 tokens on average, against 2.47 for BPE (GROVER's tokenizer) and 2.32 for fixed 6-mers. The authors say BPE is statistically indistinguishable from the sequence-blind k-mer baseline.

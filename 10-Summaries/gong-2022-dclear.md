@@ -22,6 +22,9 @@ topics: ["[[single-cell-lineage-tracing]]", "[[computational-methods]]"]
 
 > The DREAM Challenge winner, and its lesson is deflationary: for CRISPR-barcode lineage reconstruction, **the distance metric matters more than the tree algorithm**. DCLEAR splits the problem into two steps — estimate a distance matrix, then build a tree from it — and shows that two better distance metrics substantially outperform plain **Hamming distance**, which had been the default.
 
+> [!abstract] 한눈에
+> DCLEAR는 Cell Lineage Reconstruction DREAM Challenge의 대규모 sub-challenge 2와 3에서 우승한 방법이다. CRISPR barcode 기반 lineage 재구성에서는 tree algorithm보다 distance metric의 영향이 더 크며, 새 distance가 Hamming distance보다 성능이 크게 좋다는 것을 보였다.
+
 ## Key claims
 
 - **The problem was unbenchmarked until 2020.** CRISPR recorder technologies ([[mckenna-2016-science|GESTALT]], scGESTALT, and successors) had produced reconstruction algorithms with no comparative evaluation, so the Allen Institute created the **Cell Lineage Reconstruction DREAM Challenge** with three sub-challenges: (1) 76 in vitro trees of <100 cells, (2) an in silico tree of 1,000 cells, (3) an in silico tree of 10,000 cells.

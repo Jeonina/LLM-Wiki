@@ -22,6 +22,9 @@ topics: ["[[40-Topics/histone-modifications]]", "[[40-Topics/chromatin-architect
 
 > DeChIC-seq (DNA Deaminase-based Chromatin Immuno-Conversion sequencing) swaps *enrichment* for *recording*: an antibody tethers a **protein A–DddA_tox fusion (pA-DddA)** to a histone mark or chromatin-associated protein, and the deaminase writes C→U edits (read as C→T) into nearby DNA. Because nothing is immunoprecipitated or cut out, the whole genome is sequenced and the **background is retained**, so signal is a per-site *conversion rate* rather than a fragment count. Coupled to single-cell WGA ([[meta-cs|META-CS]] transposons, all-in-one-tube), scDeChIC-seq profiles H3K4me3, CTCF, RAD21 and TFs (NR5A2, TFAP2C, KLF5) from individual mouse preimplantation blastomeres — without pooling or combinatorial indexing.
 
+> [!abstract] 한눈에
+> DeChIC-seq는 항체로 유도한 pA-DddA deaminase가 주변 DNA에 C→T 편집을 남기도록 해, 면역침강 없이 histone modification과 TF 결합을 단일세포 수준에서 기록한다. 세포당 약 10,000개의 H3K4me3 peak를 얻었고, 초기 배아에서 H3K4me3와 CTCF 결합의 세포 간 이질성을 추적했다.
+
 ## Key claims
 
 - **Controllable deaminase**: pA-DddA keeps DddA's TC preference (conversion approaching 100% at TC sites in vitro), and its activity is **repressed in pH 8.0 Tris-HCl and reactivated in pH 6.4 MES buffer** — binding happens "off", deamination "on". Other dsDNA deaminases tested (Ddd_Ss, Ddd_Fa, SsdA_tox) were not fully repressible under the same conditions. A rigid linker (A(EAAAK)3A) outperformed a flexible one.

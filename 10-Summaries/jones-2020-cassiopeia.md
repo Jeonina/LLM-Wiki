@@ -22,6 +22,9 @@ topics: ["[[single-cell-lineage-tracing]]", "[[computational-methods]]"]
 
 > CRISPR lineage recorders produce character matrices — cells × target sites, values are Cas9-induced indels — at a scale and with a missing-data structure that classical phylogenetics was never built for. Cassiopeia supplies three maximum-parsimony algorithms tuned to the actual mutational process, a simulation engine for benchmarking, and **34,557 human cells traced over 15 generations** as a reference dataset.
 
+> [!abstract] 한눈에
+> Cassiopeia는 CRISPR 계통 추적 데이터에 맞춘 세 가지 최대 절약 알고리즘(ILP, Greedy, Hybrid)과 시뮬레이션 엔진, 34,557개 세포 참조 데이터를 제공한다. 변이가 비가역적이고 시조 세포가 편집되지 않았다는 조건 덕분에 5만 세포까지 확장되지만, Greedy는 homoplasy에 취약하다.
+
 ## Key claims
 
 - **Three reasons classical algorithms fail here.** Neighbour joining and Camin-Sokal were built for few samples, so **scalability** is limiting; they handle poorly the **missing data** typical of lineage tracing, which is either *heritable* (large Cas9 resections removing target sites, or transcriptional silencing) or *stochastic* (incomplete target-site capture); and they ignore the **design principles of the recorder** — that mutations are irreversible and the founder cell is unedited.

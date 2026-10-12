@@ -16,6 +16,9 @@ updated: 2026-05-12
 
 > Sarah J. Hainer, Ana Bošković, Kurtis N. McCannell, Oliver J. Rando, **Thomas G. Fazzio\***. *Cell* **177**, 1319–1329 (16 May 2019). DOI: 10.1016/j.cell.2019.03.014. UMass + Pittsburgh.
 
+> [!abstract] 한눈에
+> uliCUT&RUN은 CUT&RUN을 개량해 10개 세포, 단일 세포, 착상 전 배아 하나에서도 TF 결합과 histone modification을 측정할 수 있게 했다. 이를 이용해 blastocyst에서는 NANOG의 표적 결합이 BRG1에 의존한다는 것을 보였는데, 배양 세포에서는 이런 의존성이 대체로 나타나지 않는다.
+
 > **Not a neuro-mosaicism paper despite filename collision in this batch.** This is a chromatin / TF mapping method paper. Included in this ingest because it was in the neuro-batch by filename but represents a key methodological neighbor for the scCUT&Tag family already in the wiki.
 
 ## Thesis

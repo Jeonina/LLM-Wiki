@@ -12,6 +12,9 @@ updated: 2026-05-19
 
 **Citation:** Lim et al. (2020) — *Advancing cancer research and medicine with single-cell genomics* — *Cancer Cell*. [DOI](https://doi.org/10.1016/j.ccell.2020.03.008)
 
+> [!abstract] 한눈에
+> Navin 연구실의 이 리뷰는 단일세포 시퀀싱이 종양 내 이질성, 미세환경, 전이와 치료 저항 연구에 끼친 영향을 정리했다. scDNA-seq는 allelic dropout과 위양성이 높아 아직 가장 덜 성숙한 분야이며, 비용·재현성·처리량이 임상 적용의 걸림돌로 남아 있다고 짚었다.
+
 Lim, Lin and Navin's 2020 Cancer Cell review surveys the impact of single-cell sequencing (SCS) on cancer research and the challenges that remain before SCS becomes clinically routine. Three principal themes.
 
 (1) Technology landscape: SCS has progressed from high-throughput nanowell, microdroplet and microfluidic platforms that cut costs to <US$1 per cell to high-throughput droplet platforms (10x Genomics, Drop-seq) profiling 10,000+ cells per experiment, plus combinatorial-indexing methods (sci-RNA-seq, sciATAC-seq) at million-cell scale. scDNA-seq remains the least mature scale-wise, with high allelic-dropout and false-positive rates limiting unbiased mutation profiling — though targeted amplicon panels (Mission Bio Tapestri) achieve high-confidence variant calls.

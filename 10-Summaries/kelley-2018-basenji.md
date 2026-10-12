@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[histone-modif
 
 > Basenji changes the Basset recipe in two ways: it reads 131 kb of sequence instead of ~600 bp, and it predicts quantitative read coverage in 128 bp bins instead of a binary peak call. Standard convolution and pooling compress the sequence to 128 bp bins, seven densely connected dilated convolution layers spread information over a ~32 kb receptive field, and a width-one convolution predicts 4,229 coverage tracks (ENCODE and Roadmap DNase-seq and histone ChIP-seq, FANTOM5 CAGE) with a Poisson loss. The authors reprocessed all raw reads to keep multimapping reads and correct GC bias. Basenji predicts CAGE expression at held-out gene TSSs with mean Pearson r 0.85 (0.77 for nonzero genes), its predictions often correlate with experiments better than replicates do, and its SNP expression difference (SED) scores enrich for GTEx eQTLs 3.2–5.8× in the top quantile. It is the first of the long-context, coverage-predicting models that lead to Enformer and Borzoi.
 
+> [!abstract] 한눈에
+> Basenji는 131 kb 서열을 입력으로 받고 dilated convolution을 써서 128 bp bin 단위로 DNase, ChIP-seq, CAGE coverage를 정량 예측한다. held-out 유전자의 CAGE 발현을 평균 r 0.85로 예측했으며, SED score는 GTEx eQTL 농축으로 검증했다.
+
 ## Key claims
 
 - **Quantitative tracks are predictable from sequence, unevenly.** Variance explained is highest for DNase-seq and ChIP-seq of active marks and lowest for broad domains such as H3K79me2 and H3K9me3. Predictions are shrunk: overestimated at low coverage, underestimated at high.

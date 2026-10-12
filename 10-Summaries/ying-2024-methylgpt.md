@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/dna
 
 > MethylGPT is an scGPT-style transformer trained on **bulk human methylation array data**: 154,063 samples (from 226,555 collected out of 5,281 datasets via EWAS Data Hub and ClockBase) over a **fixed vocabulary of 49,156 CpG sites**. Each CpG is a token with a learned ID embedding plus a value embedding. The model masks 30% of the values and predicts them, and it also rebuilds the whole profile from the CLS token. Masked-value prediction reaches Pearson R 0.929 (MAE 0.074). Fine-tuned with a ResNet1D head, it predicts multi-tissue age (median absolute error 4.45 years on the validation set) and stays stable with up to 70% of CpGs missing. It also predicts 10-year risk for 60 diseases in Generation Scotland (AUC 0.72 on the test set). Attention analysis separates young and old samples. The model sees no DNA sequence and no single-cell data. The authors list single-cell methylation as future work.
 
+> [!abstract] 한눈에
+> MethylGPT는 bulk 메틸화 array 15만여 샘플의 CpG 49,156개로 사전학습한 transformer로, 나이와 질병 위험 예측에 쓰였고 CpG가 70%까지 빠져도 성능이 유지됐다. 다만 DNA 서열도 단일세포 데이터도 다루지 않는다.
+
 ## Key claims
 
 - **Training corpus and vocabulary.** The 49,156 CpGs are those linked to more than 5 traits in the EWAS Catalog or present in more than 95% of pretraining samples. They come from Illumina 27k, 450k and EPIC arrays across about 20 tissue types, giving 7.6 billion training tokens. Samples with more than 40% missing CpGs were dropped.

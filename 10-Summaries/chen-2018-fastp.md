@@ -22,6 +22,9 @@ topics: ["[[computational-methods]]", "[[scdna-seq]]"]
 
 > The conventional FASTQ preprocessing stack — FASTQC for QC, Cutadapt for adapters, Trimmomatic for pruning — reads and writes the data three times, in three languages, mostly single-threaded. fastp collapses all of it into **one C++ multi-threaded pass** over the file, and runs **2–5× faster than any one of the tools it replaces** while doing more.
 
+> [!abstract] 한눈에
+> fastp는 QC, adapter trimming, 품질 필터링, paired-end overlap 기반 염기 교정을 C++ 멀티스레드로 한 번에 처리해, 기존 도구 각각보다 2–5배 빠르다. two-colour chemistry에서 생기는 polyG tail 같은 플랫폼 artefact도 함께 제거한다.
+
 ## Key claims
 
 - **Single-scan, all-in-one**: quality profiling, adapter trimming, quality filtering, per-read quality pruning, base correction, and report generation from one pass over the FASTQ.

@@ -27,6 +27,9 @@ topics:
 
 > Thesis: Standard NGS has an inherent error rate of ~1 per 100–1,000 bases that blinds it to subclonal mutations below ~1% VAF. Duplex Sequencing (DS) tags both strands of every input dsDNA molecule with a random-yet-complementary 12 nt UMI, sequences PCR-amplified families of each strand into Single-Strand Consensus Sequences (SSCS), then **only calls a mutation when it is present in both strands** as a Duplex Consensus Sequence (DCS). This drives error rates below 5×10⁻⁸ per base — a >10,000-fold improvement.
 
+> [!abstract] 한눈에
+> Duplex Sequencing 프로토콜은 이중가닥 분자의 두 가닥에 모두 UMI를 붙이고, 양쪽 가닥에서 함께 나타난 변이만 인정해 오류율을 5×10⁻⁸ 아래로 낮췄다. 다만 consensus 하나를 얻는 데 read가 많이 들고, 두 가닥을 모두 보존해야 하므로 단일세포에는 쓸 수 없다.
+
 ## Key claims
 
 - DS adapter design: ligate adapters carrying random 12-nt single-stranded tags to dsDNA; PCR-amplify both labeled strands; group reads into tag families; compare the two complementary SSCS to form a DCS. Damage- and polymerase-error events appear in only one strand and are dropped.

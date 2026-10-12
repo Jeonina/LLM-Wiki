@@ -22,6 +22,9 @@ topics: ["[[single-cell-multiomics]]", "[[computational-methods]]"]
 
 > Spot-based spatial transcriptomics measures **mixtures**, not cells. cell2location is the Bayesian deconvolution answer: estimate the abundance of each reference cell type at each location, **accounting for technical variation** and **borrowing statistical strength across locations** — the second of which is what lets it resolve *fine-grained* subtypes that per-spot methods cannot.
 
+> [!abstract] 한눈에
+> cell2location은 spot 기반 공간전사체를 Bayesian 모델로 분해해 위치마다 reference 세포 유형의 양을 추정한다. 여러 위치의 정보를 함께 활용해 영역별 astrocyte 아형이나 드문 B 세포 집단까지 구분했지만, reference에 없는 세포 유형은 찾아낼 수 없다.
+
 ## Key claims
 
 - **Borrowing strength across locations is the mechanism.** A single spot has too few counts to distinguish closely related subtypes; a model that shares information across the tissue can, because subtypes have spatially coherent distributions.

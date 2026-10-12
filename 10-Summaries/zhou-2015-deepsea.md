@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[histone-modif
 
 > DeepSEA is a multitask deep convolutional network that reads 1,000 bp of human reference sequence and predicts the presence of 919 chromatin features in the central 200 bp: 690 TF-binding profiles (160 TFs), 125 DNase I hypersensitivity profiles and 104 histone-mark profiles from ENCODE and Roadmap Epigenomics. Because it predicts from sequence alone, the effect of any variant can be scored by predicting the reference and alternative alleles and taking the difference. The paper shows this works at single-nucleotide resolution (allelic imbalance in DNase-seq, histone QTLs) and that the predicted chromatin effects, plus four conservation scores, prioritise HGMD regulatory mutations, eQTLs and GWAS SNPs better than CADD, GWAVA and FunSeq2. It is the paper that established the "train on the reference genome, score variants by in-silico allele swaps" recipe that later sequence-to-function models follow.
 
+> [!abstract] 한눈에
+> DeepSEA는 1,000 bp reference sequence에서 919개 chromatin feature를 예측하는 multitask CNN으로, 변이 데이터로 학습하지 않고도 noncoding variant의 효과를 단일 염기 수준에서 예측했다. variant 우선순위 결정에서도 CADD, GWAVA, FunSeq2보다 성능이 좋았다.
+
 ## Key claims
 
 - **Chromatin features are predictable from sequence.** On held-out chromosomes 8 and 9, median AUC was 0.958 for TF binding, 0.923 for DHSs and 0.856 for histone marks. For TF binding this beat gkm-SVM (median AUC 0.896) for nearly all TFs.

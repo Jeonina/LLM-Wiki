@@ -16,6 +16,9 @@ updated: 2026-05-12
 
 > Junyue Cao, Darren A. Cusanovich, Vijay Ramani, Delasa Aghamirzaie, Hannah A. Pliner, Andrew J. Hill, Riza M. Daza, Jose L. McFaline-Figueroa, Jonathan S. Packer, Lena Christiansen, … Jay Shendure, Cole Trapnell. *Science* **361**, 1380–1385 (Aug 2018). DOI: 10.1126/science.aau0730.
 
+> [!abstract] 한눈에
+> sci-CAR는 sci-ATAC-seq과 sci-RNA-seq을 하나의 split-pool 워크플로로 합쳐 수천 개 세포에서 chromatin accessibility와 유전자 발현을 함께 측정했다. 원거리 peak와 유전자를 공변동으로 연결해 promoter만 쓸 때보다 발현 예측력을 네 배 높였다.
+
 ## Thesis
 
 Before sci-CAR, joint single-cell profiling of chromatin accessibility + transcription required physical isolation of each cell, limiting throughput to a handful per experiment. **sci-CAR** combines single-cell combinatorial indexing for ATAC (sci-ATAC-seq) and RNA (sci-RNA-seq) into one pooled, split-pool workflow that scales to thousands of jointly profiled cells per run.

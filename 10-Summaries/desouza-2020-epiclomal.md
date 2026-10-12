@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** de Souza et al. (2020) — *Epiclomal: Probabilistic clustering of sparse single-cell DNA methylation data* — *PLOS Computational Biology*. [DOI](https://doi.org/10.1371/journal.pcbi.1008270)
 
+> [!abstract] 한눈에
+> Epiclomal은 CpG의 80–95%가 결측인 scBS-seq 데이터를 계층적 혼합 모델로 군집화하면서 결측값을 함께 채우는 확률적 방법이다. 유방암 xenograft에서 copy number 클론과 일치하기도 하고 이를 가로지르기도 하는 methylation 하위 클론(epiclone)을 찾아냈다.
+
 de Souza, Andronescu, Masud, Kabeer, Biele, Laks, Ye, Brimhall, Wang, Su, Hui, Cao, Wong, Moksa, Moore, Hirst, Aparicio and Shah (Western/BC Cancer/Memorial Sloan Kettering) developed **Epiclomal**, a probabilistic hierarchical-mixture-model framework that simultaneously clusters sparse single-cell DNA methylation data (scBS-seq) and imputes missing values. The model borrows statistical strength across cells and neighboring CpGs to handle the dominant feature of scBS-seq data: 80–95% missing CpGs per cell.
 
 Validated on synthetic and published scBS-seq datasets, Epiclomal outperforms non-probabilistic methods (EuclideanClust, HammingClust, PearsonClust, DensityCut). Applied to newly-generated single-cell 5mCpG sequencing of breast-cancer xenograft samples (SA501 series), Epiclomal discovered sub-clonal methylation patterns ("epiclones") in aneuploid tumor genomes — epiclones can either match copy-number-defined clonal lineages *or* transcend them, revealing methylation-only sub-population structure invisible to CNV analysis.

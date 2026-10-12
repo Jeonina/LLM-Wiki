@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/sin
 
 > scMomer is a three-stage framework for using RNA-only data while keeping some ATAC-derived knowledge. It is assembled from existing parts rather than trained from scratch. **Stage I** is unimodal masked pretraining: a pretrained **scBERT** (Performer, gene2vec gene embeddings, binned expression) for RNA, and an scCLIP-style ViT encoder over genome-ordered peak "patches" for ATAC, trained on independent scRNA-seq and scATAC-seq data from Panglao and GEO. The paper does not give the size of either corpus. **Stage II** fine-tunes both encoders jointly with a concatenation + MLP fusion, reconstruction losses and a modality-matching discriminator, on a **pseudo-paired** fetal atlas from scCLIP (377,134 cells; RNA and ATAC cells matched by annotated cell type) plus a 3,233-cell 10x human brain multiome set. **Stage III** freezes the RNA encoder and distils a small feed-forward "student" that predicts the ATAC embedding from RNA. At inference, a cell's RNA alone yields an RNA embedding plus an inferred ATAC embedding, fused into one vector. Most evaluations are RNA-only tasks: annotation, disease phenotype, gene-property prediction, drug response and Perturb-seq.
 
+> [!abstract] 한눈에
+> scMomer는 기존 RNA·ATAC encoder를 pseudo-paired 데이터로 함께 미세조정한 뒤, RNA만으로 ATAC 임베딩을 추론하는 student를 증류해 RNA-only 데이터에 ATAC 지식을 더한다. 약물 반응 예측에서 HDAC 억제제의 향상 폭이 컸고, 저자들은 이를 ATAC 정보가 담긴 근거로 본다.
+
 ## Key claims
 
 - **Fused embeddings beat single modalities (zero-shot, human brain, k-means k = 7).** RNA and ATAC embeddings each scored higher AMI and ARI than raw features, and the fused embedding scored highest. RNA and ATAC embeddings occupied different regions of UMAP space. The authors read this as complementary rather than forcibly aligned representations.

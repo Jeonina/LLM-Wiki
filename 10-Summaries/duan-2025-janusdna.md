@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[histone-modif
 
 > JanusDNA (Berlin Institute of Health at Charité, MPI Heart and Lung Research, with Shenzhen and CMU co-authors) proposes **Janus modelling**, a pre-training objective that predicts *every* token from both its left and right context. Two independent causal stacks of Mamba + FFN/MoE layers read the sequence left-to-right and right-to-left; a single FlexAttention layer with a hand-built mask then fuses them so that the prediction for position *t* sees only forward states before *t* and backward states after *t*. This gives the full-token loss of autoregressive training with the bidirectional context of masked language modelling. Pre-trained only on the human reference genome at single-nucleotide resolution, small JanusDNA models (0.4–7.7M activated parameters) lead most of the NT benchmark and eight of nine DNALongBench eQTL tissues against size-matched Caduceus and a 252M Enformer.
 
+> [!abstract] 한눈에
+> JanusDNA는 정방향·역방향 Mamba 스택을 FlexAttention 층 하나로 합쳐 모든 token을 양방향 문맥에서 예측하는 Janus modeling을 제시했다. 작은 모델로 NT benchmark 다수와 eQTL 9개 조직 중 8개에서 앞섰지만, 비교 대상 상당수가 작은 모델이거나 다른 논문에서 옮겨 온 수치다.
+
 ## Key claims
 
 - **Janus objective learns faster than MLM.** In a one-layer bidirectional Mamba + FlexAttention model trained 10k steps on 131,072-token hg38 windows (batch 1), Janus modelling gave higher last-token prediction accuracy than the same model trained with 15% masking, at three hidden sizes (Fig. 3; values only in figure). Janus pre-training ran about twice as fast (~27 min per 1,000 steps).

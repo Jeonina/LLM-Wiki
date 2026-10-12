@@ -22,6 +22,9 @@ topics: ["[[chromatin-architecture]]", "[[3d-genome]]"]
 
 > Lamin B1 DamID maps across an isogenic ESC → neural precursor → astrocyte lineage, plus fibroblasts as an out-group. The result is a two-part picture: a **stable backbone** of ~1,100–1,400 lamina-associated domains covering ~40% of the genome in every cell type, and, on top of it, hundreds of genes that detach or attach at each differentiation step — often as **single transcription units**.
 
+> [!abstract] 한눈에
+> Peric-Hupkes 등은 ESC에서 신경전구세포, 성상세포로 이어지는 분화 과정을 Lamin B1 DamID로 추적해, 유전체의 약 40%를 덮는 안정적인 LAD 골격을 확인했다. 그 위에서 수백 개 유전자가 단계마다 주로 전사 단위 하나 크기로 lamina에서 떨어지거나 붙는다.
+
 ## Key claims
 
 - **DamID method**: a Lamin B1–*E. coli* Dam fusion adenine-methylates sequences contacting the nuclear lamina; free Dam serves as the accessibility-correcting reference. Validated here against published FISH radial positions (loci that shift between ESC and NPC show proportional DamID changes) and by two-colour FISH on the DamID material itself.

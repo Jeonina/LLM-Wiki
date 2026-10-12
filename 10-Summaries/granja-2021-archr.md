@@ -16,6 +16,9 @@ updated: 2026-05-12
 
 > Jeffrey M. Granja, M. Ryan Corces, Sarah E. Pierce, S. Tansu Bagdatli, Hani Choudhry, Howard Y. Chang, **William J. Greenleaf\***. *Nature Genetics* **53**, 403–411 (March 2021). DOI: 10.1038/s41588-021-00790-6. Stanford.
 
+> [!abstract] 한눈에
+> ArchR는 doublet 제거, clustering, peak calling, footprinting, scRNA-seq 통합까지 scATAC-seq 분석 전 과정을 다루는 R framework다. Arrow file을 기반으로 120만 개 세포를 일반 노트북에서 8시간 만에 분석해, scATAC 분석의 사실상 표준이 되었다.
+
 ## Thesis
 
 **ArchR** is a scalable R-based software framework for end-to-end scATAC-seq analysis: marker-feature ID, doublet removal, clustering, cell-type ID, peak generation, DNA-to-gene linking, TF footprinting, scRNA-seq integration, trajectory inference. Analyzes **1.2 million cells in 8 hours on a standard Unix laptop** (vs SnapATAC/Signac requiring 128 GB RAM, 20 cores). Becomes a de facto standard for scATAC analysis pipelines.

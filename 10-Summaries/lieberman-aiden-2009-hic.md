@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[chromatin-architecture]]"]
 
 > The founding assay of the 3D genome field. Crosslink, digest, fill 5′ overhangs with a **biotinylated** residue, ligate under dilution, shear, pull down the biotinylated junctions with streptavidin, sequence paired-end. Everything before it (3C, 4C, 5C) required choosing target loci; Hi-C is the first genome-wide, unbiased contact map.
 
+> [!abstract] 한눈에
+> Hi-C는 biotin 표지와 근접 결찰로 유전체 전체의 접촉 지도를 처음 만든 기법이다. 이를 통해 인간 유전체가 열린 A compartment와 조밀한 B compartment로 나뉘고, 접촉 빈도가 fractal globule 모델에 맞게 줄어든다는 사실을 밝혔다.
+
 ## Key claims
 
 - **The method.** Biotin fill-in at the restriction junction is the enabling trick — it marks ligation products so they can be purified away from the vast excess of non-informative DNA, turning proximity ligation into a sequencing-scale assay.

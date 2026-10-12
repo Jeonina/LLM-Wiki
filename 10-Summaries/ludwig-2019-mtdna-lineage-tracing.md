@@ -22,6 +22,9 @@ topics: ["[[single-cell-lineage-tracing]]", "[[single-cell-multiomics]]", "[[som
 
 > Engineered lineage barcodes cannot be introduced into a living human. This paper's move is to notice that one already exists: somatic **mtDNA mutations**, which every scATAC-seq and scRNA-seq run already captures as a by-product and routinely discards. Heteroplasmic mtDNA variants are shown to be reliably detectable, stably heritable, and sufficient to reconstruct clonal relationships — while the same read set reports cell state.
 
+> [!abstract] 한눈에
+> Ludwig 등은 scATAC-seq와 scRNA-seq에 부산물로 담기는 체성 mtDNA 이형질 변이가 안정적으로 유전되어 사람에서 자연 계통 바코드로 쓰일 수 있음을 보였다. 클론 판별력은 scRNA-seq로 추정한 CNV보다 뛰어났다.
+
 ## Key claims
 
 - **Why mtDNA works as a barcode**, argued from first principles: the genome is 16.6 kb (cheap to cover deeply), the mutation rate is **10–100× higher than nuclear DNA**, copy number is 100–1,000s per cell, and vegetative segregation with genetic drift and relaxed replication drives variants to **high heteroplasmy** — so a mutation reaches detectable allele fractions rather than staying at 1/N.

@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[computational-methods]]"]
 
 > The dominant bias in a single-cell contact matrix is **genomic distance** ("band bias"), so normalize band by band. BandNorm does the simplest possible version — divide each diagonal band in a cell by that cell's band total, then multiply back the across-cell average band total — and in a four-dataset benchmark it matches or beats elaborate imputation models for clustering, TAD recovery and significant-interaction recovery, in ~15 minutes. scVI-3D is the opposite end: a per-band zero-inflated negative binomial VAE (built on scvi-tools) that models depth, batch and dropout, and wins where BandNorm loses — **rare cell types and high sparsity**. The practical recipe is BandNorm first, scVI-3D once rare populations appear. A third contribution, scGAD (single-cell gene-associating-domain scores), reads gene-level structure out of normalized maps and recovers transcriptome-validated marker genes.
 
+> [!abstract] 한눈에
+> BandNorm은 scHi-C의 genomic distance bias를 band 단위로 나눠 보정하는 단순한 정규화이고, scVI-3D는 이를 보완하는 deep generative model이다. 네 데이터셋 benchmark에서 BandNorm은 정교한 imputation 방법과 대등하거나 더 나았다.
+
 ## Key claims
 
 - **BandNorm formula**: C = (Y / L^{cv}) · α(v), where L^{cv} is cell *c*'s total in band *v* and α(v) the mean band total across cells. Removing within-cell distance bias and depth, then **adding back a common contact-decay curve**, is what lifts BandNorm above BandScale (the same without the add-back); the authors interpret this as up-weighting short-range bands, which carry most cell-type signal.

@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]"]
 
 > Mendel is a 1 B-parameter StripedHyena2 model (Evo 2's architecture and byte tokenizer, 8,192-bp context) trained **from scratch** on GTEx v8 whole genomes with a **variant-centric objective**: each donor's diploid SNV genotype is written as one IUPAC ambiguity code (R = A/G, Y = C/T, …) between `^` and `&` markers inside reference-aligned sequence, and next-token loss is computed **only** on the genotype tokens. Batches draw the same locus from eight different donors ("locus-contrastive" sampling). One model per autosome, trained on 670 donors and tested on 85 held-out donors. Mendel recovers held-out genotypes at cohort-defined variant sites with 0.984 accuracy (Evo 2: 0.311), but the paper's real argument is about the **residual errors**: sites Mendel finds hard to predict are enriched for fine-mapped cis-eQTLs (AUROC 0.731 vs 0.545 for Evo 2 residuals), and using residual difficulty as an elastic-net penalty prior improves cis-expression prediction in all 50 GTEx tissues and beats a CADD-Phred prior in 49 of 50.
 
+> [!abstract] 한눈에
+> Mendel은 GTEx 전장 유전체의 diploid genotype token만 예측하도록 처음부터 학습한 1B 파라미터 모델이다. 예측이 어려운 변이가 cis-eQTL 같은 regulatory variant에 몰려 있어 변이 우선순위화와 발현 예측에 활용했지만, 높은 정확도의 상당 부분은 major allele을 맞힌 결과다.
+
 ## Key claims
 
 - **Genotype prediction.** Micro-averaged allele-prediction accuracy 0.984 vs 0.311 for Evo 2 (released 1 B checkpoint); site-macro 0.983 vs 0.311. Mendel beats Evo 2 in all 85 held-out donors and on every chromosome (0.95–0.99 vs 0.30–0.36). By MAF: rare 0.99 vs 0.31, low-frequency 0.97 vs 0.31, common 0.94 vs 0.29.

@@ -28,6 +28,9 @@ topics:
 
 > Thesis: classical LLPS theory predicts that nuclear bodies should coalesce into a single droplet (minimizing surface energy), yet nucleoli persist as **2–5 coexisting droplets** in somatic cells — defying classical predictions. Using a **diploid human genome polymer model parameterized with Hi-C data**, Qi & Zhang show that the **viscoelastic chromatin network creates an entropic barrier (~7 k_B T)** that arrests nucleolus coalescence. The chromatin-NAD attractive interactions facilitate droplet *nucleation* but the chromatin network's polymer topology *hinders* coalescence — a nucleation-and-arrest mechanism that generalizes to other nuclear bodies (paraspeckles, speckles).
 
+> [!abstract] 한눈에
+> Qi와 Zhang은 Hi-C로 매개변수화한 이배체 인간 유전체 polymer 모델로, 염색질 네트워크가 약 7 k_BT의 엔트로피 장벽을 만들어 nucleolus 융합을 막는다는 것을 보였다. 염색질은 droplet의 핵형성을 돕지만 융합은 억제하는 nucleation-and-arrest 기전을 제안한다.
+
 ## Verbatim key claims (from source body)
 
 - **Problem statement** (Abstract):

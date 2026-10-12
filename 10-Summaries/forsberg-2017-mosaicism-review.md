@@ -27,6 +27,9 @@ topics:
 
 > Thesis: post-zygotic variation — mutations arising in the soma after fertilization and not transmitted via the germline — is far more pervasive than classical human genetics assumed. Individuals are complex mosaics, no two somatic cells share an identical genome, and structural variants leave the largest somatic footprint. Mosaicism is a common confounder in clinical genetic testing and a major driver of disease that requires sorted-cell or single-cell analysis to fully resolve.
 
+> [!abstract] 한눈에
+> Forsberg 등은 수정 후 생기는 체세포 변이가 예상보다 훨씬 흔해 모든 사람이 모자이크라고 주장했고, 구조 변이가 가장 큰 흔적을 남긴다고 보았다. 모자이시즘은 임상 유전 검사와 역학 연구를 교란하므로 분류된 세포나 단일 세포 시퀀싱이 필요하다고 강조했다.
+
 ## Key claims
 
 - **Every human is mosaic.** Mutation during mitosis is a common event (DNA changes uncorrected on average every two cell divisions, up to multiple per division *(not found in source clipping — unverified)*). With >10¹⁶ cells produced over a human lifetime (~3 × 10¹² in an adult body), every cell harbors mutations relative to the zygote.

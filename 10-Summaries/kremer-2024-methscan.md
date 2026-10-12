@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]"]
 
 > The standard scBS preprocessing recipe — tile the genome into 100 kb bins, average methylation per bin per cell — **dilutes signal**, because a small variably-methylated region's CpGs are drowned by the many uninformative CpGs sharing its tile. MethSCAn replaces both halves of that recipe: it discovers variably methylated regions de novo, and quantifies each cell's *deviation from a smoothed ensemble average* rather than its raw methylation fraction.
 
+> [!abstract] 한눈에
+> MethSCAn은 100 kb tile 평균 대신 variably methylated region을 새로 찾고, 각 세포가 smoothing한 앙상블 평균에서 얼마나 벗어나는지로 메틸화를 정량해 scBS 데이터의 신호 희석을 줄였다. VMR은 ENCODE cCRE보다 feature당 정보량이 많았고, 프로모터보다 발현을 잘 예측했다.
+
 ## Key claims
 
 - **Two distinct problems with tile-averaging.** (i) Sparse coverage means different cells are represented by reads at *different positions* within a tile; if the local methylation profile varies, two cells can look different when their overlapping reads actually agree. (ii) Fixed tile boundaries rarely match the actual variable region.

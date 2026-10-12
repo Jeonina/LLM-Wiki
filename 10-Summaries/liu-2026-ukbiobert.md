@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]"]
 
 > UKBioBERT is DNABERT-2 **continued-pretrained** with MLM on sequences edited to carry ~13 million variants (substitutions, insertions, deletions) from ~300,000 European-ancestry UK Biobank participants. Its gene embeddings cluster best by gene function among a wide panel of DNA LMs, add signal to EPInformer for cell-line expression prediction, and match ElasticNet and Performer for predicting individual-level expression from personal genomes. The paper then fuses frozen UKBioBERT gene embeddings with a pruned, fine-tuned Enformer (**UKBioFormer**, 230.7 M parameters) or Borzoi (**UKBioZoi**). UKBioFormer beats Performer on 63.3% of well-predicted genes, transfers better than embedding-only models from European to African-American individuals, and gets the sign of more GTEx blood eQTLs right than Performer or AlphaGenome. Gains are gene-dependent and not universal.
 
+> [!abstract] 한눈에
+> UKBioBERT는 UK Biobank 변이 약 1,300만 개를 반영한 서열로 DNABERT-2를 추가 학습한 모델로, 유전자 임베딩이 기능별로 가장 잘 군집됐다. 이를 Enformer와 결합한 UKBioFormer는 개인 유전체 기반 발현 예측과 eQTL 방향 예측에서 Performer보다 나았지만 향상 폭은 유전자마다 달랐다.
+
 ## Key claims
 
 - **Variant-trained embeddings encode gene function.** On a clustering benchmark (NMI, ARI, ASW averaged) of human gene sequences against functional labels, UKBioBERT has the highest average score among DNA LMs including DNABERT, DNABERT-2, GPN, HyenaDNA, NT, GROVER, GENA-LM, Caduceus, Evo 2, Enformer and Borzoi embeddings, ESM and Llama 3.1. MLM beat contrastive and LD-score-regression pretraining, and starting from a reference-trained checkpoint helped. Using a larger fraction of variants improved the score; the best checkpoint came early, with later decline read as overfitting.

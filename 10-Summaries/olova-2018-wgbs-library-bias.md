@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]"]
 
 > WGBS is treated as the gold-standard methylation readout, but its numbers depend on how the library was made. Comparing five bisulfite (BS) conversion protocols and seven library strategies — plus a cross-lab panel of 225 libraries — the authors show that **bisulfite conversion itself is the root bias**: it preferentially degrades unmethylated C-rich DNA, so methylated sequence is over-represented; PCR then amplifies that skew and any unconverted-cytosine artefacts. Most amplified protocols **overestimate global methylation**, local and relative methylation differ between methods, and **amplification-free PBAT** is the least biased.
 
+> [!abstract] 한눈에
+> Olova 등은 WGBS 라이브러리 제작법들을 비교해, bisulfite가 비메틸화 C-rich DNA를 먼저 분해하는 것이 편향의 근원이고 PCR이 이를 키운다는 것을 보였다. 증폭 과정이 있는 프로토콜은 대부분 전체 메틸화를 과대추정했고, 증폭 없는 PBAT가 편향이 가장 적었다.
+
 ## Key claims
 
 - **BS-induced degradation is sequence- and methylation-selective.** With Heat-denaturing BS treatment, a C-poor (15% C) synthetic fragment was recovered twofold better than a C-rich (30% C) one; Alkaline denaturation reduced this to 1.3-fold; ammonium bisulfite (Am-BS, 9 M) showed no C-content difference. 5mC or 5hmC in the fragment gave ~fourfold higher recovery of the C-rich sequence under Heat — cytosine modification protects against degradation.

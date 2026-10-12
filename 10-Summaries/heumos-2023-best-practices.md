@@ -24,6 +24,9 @@ topics:
 
 > Thesis: with >1,400 single-cell analysis tools available, the field needs explicit best-practice workflows. This consortium review summarizes independent benchmarks across modalities — transcriptome, chromatin accessibility, surface protein, immune receptors, spatial — and recommends modality-specific defaults grounded in those benchmarks rather than in popularity.
 
+> [!abstract] 한눈에
+> Heumos 등은 1,400개가 넘는 단일세포 분석 도구 가운데, 독립 benchmark를 근거로 transcriptome, chromatin accessibility, 단백질, spatial 등 modality별 best-practice workflow를 정리했다. 도구 선택의 기준을 인기보다 benchmark에 두어야 한다고 주장한다.
+
 ## Key claims
 
 - **Quality control** is modality-specific:

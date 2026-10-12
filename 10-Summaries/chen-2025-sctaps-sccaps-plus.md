@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]"]
 
 > The chemistry that finally separates 5mC from 5hmC in single cells. TAPS converts the **modified** base (5mC/5hmC → T) rather than the unmodified one, so genomic complexity is preserved instead of destroyed — giving ~90% mapping efficiency where bisulfite methods struggle, with no DNA-damaging bisulfite step at all.
 
+> [!abstract] 한눈에
+> scTAPS와 scCAPS+는 비변형 시토신 대신 5mC·5hmC 자체를 T로 바꾸는 bisulfite-free 화학으로, 단일세포에서 5mC와 5hmC를 구분해 읽고 약 90%의 매핑 효율을 얻는다. 해마 뉴런의 5hmC가 비뉴런보다 훨씬 많아 5hmC만으로도 세포 유형을 나눌 수 있었다.
+
 ## Key claims
 
 - The problem with everything before: bisulfite methods cause substantial DNA damage and limited mapping efficiency. Existing "bisulfite-free" alternatives still work **indirectly** by converting unmodified cytosine, which collapses sequence complexity just as bisulfite does.

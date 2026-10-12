@@ -22,6 +22,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[hematopoietic-malignancies]]", "[[scd
 
 > High-throughput **targeted (amplicon) scDNA-seq** such as Mission Bio Tapestri genotypes thousands of cells over a small gene panel with PCR rather than MDA, so in principle both SNVs and copy-number changes can be read from the same cells. COMPASS is a likelihood model and simulated-annealing search for a **joint tree of SNVs and CNAs (gains, losses and copy-neutral LOH)** that explicitly models the **uneven per-amplicon coverage** that breaks the only previous joint method (BiTSC²). On 123 AML patients it recovers known AML copy-number events, validates clonal ones against bulk data, finds subclonal ones bulk cannot see, and exposes **convergent evolution** missed by SNV-only trees.
 
+> [!abstract] 한눈에
+> COMPASS는 Tapestri 같은 amplicon scDNA-seq에서 amplicon마다 고르지 않은 커버리지를 모델링해 SNV와 CNA(CNLOH 포함)의 공동 계통수를 추정한다. AML 123명에서 bulk로는 안 보이는 아클론 CNA와 수렴 진화를 찾았지만, SNV로 표지되지 않은 CNA 단독 아클론은 대부분 놓친다.
+
 ## Key claims
 
 - **Model.** Events: SNVs (acquired once, lossable multiple times — Dollo) and CNAs per region (gene = grouped amplicons), at most once per lineage. Input: per-cell ref/alt read counts at variants and total reads per region. Region depth is negative binomial with a per-region weight ρₖ (primer efficiency); allelic counts are beta-binomial with per-variant dropout rates; doublets optionally modelled as in ∞SCITE. Cell-to-node attachments are marginalised (as in SCITE) but with **learned node weights** rather than a uniform prior; node weights and dropout rates are fit by EM inside each step. Germline SNPs can be included to sharpen CNA calls and are placed at the root.

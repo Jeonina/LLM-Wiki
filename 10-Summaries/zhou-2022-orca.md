@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[3d-genome]]",
 
 > Orca predicts Micro-C contact maps from DNA sequence at nine nested scales, from 4 kb resolution within 1 Mb up to 512 kb resolution across 256 Mb (longer than chr1), including interchromosomal contacts. A hierarchical convolutional encoder (its first section adapted from Sei) compresses up to 256 Mb of sequence to representations at 4–1,024 kb; cascading 2D decoders "zoom" from the whole-chromosome map down to 1 Mb, each conditioned on the coarser prediction above it. A "horizontal checkpointing" trick makes chromosome-scale training fit in GPU memory. Trained on H1-ESC and HFF Micro-C, Orca reaches Pearson 0.78–0.85 (H1-ESC) and 0.73–0.79 (HFF) on held-out chromosomes at all scales. The paper's main uses are predicting the 3D effects of structural variants from 300 bp to tens of megabases, concordant with experiments in all six studies tested, and "virtual genetic screens" that link cell-type-specific TF motifs to local contacts and suggest that active TSS sequences drive A compartments while B is a default state for long AT-rich stretches.
 
+> [!abstract] 한눈에
+> Orca는 DNA 서열만으로 4 kb부터 chromosome 전체 규모까지 아홉 단계 scale의 Micro-C contact map을 예측한다. boundary 삽입이나 대규모 SV의 효과를 재현했고, compartment A는 active TSS 서열이, B는 AT-rich 서열이 결정한다는 모델을 제시했다.
+
 ## Key claims
 
 - **Multiscale accuracy.** Held-out chromosomes 9 and 10: Pearson 0.78–0.85 (H1-ESC) and 0.73–0.79 (HFF) across scales; interchromosomal 0.47–0.74 at the 64–256 Mb levels. An auxiliary task predicting DNase/CTCF/histone peaks from the 4 kb encoder improved performance; larger context gave a small improvement to local predictions. Predictions differ between the two cell types, and Orca's 1 Mb predictions beat Akita on the shared test set (values in supplementary figures, not in the clipping).

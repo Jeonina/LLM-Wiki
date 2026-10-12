@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Nam et al. (2022) — *Single-cell multi-omics of human clonal hematopoiesis reveals that DNMT3A R882 mutations perturb early progenitor states through selective hypomethylation* — *Nature Genetics*. [DOI](https://doi.org/10.1038/s41588-022-01179-9)
 
+> [!abstract] 한눈에
+> GoT를 DNA 메틸화·전사체·DNMT3A genotype 동시 측정으로 확장해 DNMT3A R882 클론성 조혈을 분석했다. 돌연변이 세포는 거핵·적혈구 계열로 분화가 치우쳤고, PRC2 표적과 조혈 전사인자 결합 motif에서 선택적인 저메틸화를 보였다.
+
 Nam, Dusaj, Izzo and colleagues (Landau lab) extended GoT (Genotyping of Transcriptomes) with an optimized IronThrone pipeline and combined it with a plate-based single-cell multi-omics assay (DNA methylation + Smart-seq2 scRNA-seq + targeted DNMT3A genotyping) to study DNMT3A R882 clonal hematopoiesis. From 4 individuals with DNMT3A-R882-mutated CH, they captured genotype and transcriptome (GoT) from 27,324 CD34+ progenitors (genotype available for 6,430, 23.5%), and genotype + transcriptome + methylome from 528 cells in two individuals, and in two individuals (528 cells) profiled single-cell DNA methylation (reduced-representation, MspI + HaeIII) jointly with transcriptome and genotype.
 
 Three findings. (1) DNMT3A-R882 cells are biased toward megakaryocytic-erythroid fate at the expense of lymphoid output; immature myeloid progenitor states expand. (2) Mutant cells exhibit preferential hypomethylation at polycomb repressive complex 2 (PRC2) target genes and at a specific CpG-flanking sequence motif. (3) The hypomethylated motif is enriched in binding motifs of key hematopoietic transcription factors, suggesting a mechanistic link between DNMT3A-R882 loss-of-function and aberrant TF binding driving the differentiation skew.

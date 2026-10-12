@@ -16,6 +16,9 @@ updated: 2026-10-07
 
 > Andrew B. Stergachis, Brian M. Debo, Eric Haugen, L. Stirling Churchman, John A. Stamatoyannopoulos. *Science* **368**, 1449–1454 (26 June 2020). DOI: 10.1126/science.aaz1646.
 
+> [!abstract] 한눈에
+> Fiber-seq는 비특이적 m6A-MTase로 단백질 점유 상태를 DNA에 새기고 PacBio로 읽어, 최대 약 30 kb 길이의 개별 염색질 섬유를 nucleotide 해상도로 보여준다. 조절 DNA가 섬유마다 all-or-none 방식으로 열리며, bulk 접근성 신호는 그 빈도라는 점을 밝혔다.
+
 ## Thesis
 
 Current chromatin-mapping methods (DNase-seq, ATAC-seq, MNase-seq, Hi-C) sample large populations of fibers and dissolve them. The primary architecture of individual multikilobase chromatin fibers — how regulatory DNA is actuated, how neighboring elements co-actuate, how nucleosomes are positioned, how TFs occupy single fibers — is invisible to those methods. The authors solve this by **using nonspecific N6-adenine DNA methyltransferases (m6A-MTases) to stencil protein-occupancy state onto the DNA itself, then reading the methylation pattern with PacBio long-read CCS sequencing**. The result, **Fiber-seq**, gives nucleotide-resolution chromatin maps of individual fibers up to ~30 kb long.

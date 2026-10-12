@@ -38,6 +38,9 @@ topics:
 
 > This is the step-by-step bench and analysis protocol for G&T-seq, first described in [[10-Summaries/macaulay-2015-gt-seq]]. A single cell is lysed in guanidine-based Buffer RLT Plus. Its polyA(+) mRNA is pulled out on streptavidin beads carrying a biotinylated, Smart-seq2-tailed **oligo-dT30VN** primer. The supernatant holding the gDNA, plus every wash, is pooled into a second plate. The mRNA is then reverse-transcribed and amplified **on the beads** by a modified Smart-seq2, and the gDNA is concentrated on AMPure beads and amplified by **any WGA kit** (PicoPLEX or GenomiPhi MDA are given in full). Both products go into Nextera XT libraries. The protocol is written for 96-well plates on off-the-shelf liquid handlers (BioMek FXP before amplification, Zephyr after), and also includes a full analysis pipeline: BWA → 500-kb-bin logR copy number with a **MAPD QC gate**, GATK SNV calling, TopHat2/HTSeq/DESeq2 expression, and a chromosome-level expression-vs-copy-number check for aneuploidy. It contains no new biological experiment. Its value is the specific operating parameters (volumes, ratios, QC thresholds, sequencing depth) and the authors' stated limits of the method.
 
+> [!abstract] 한눈에
+> Macaulay 등의 Nature Protocols 논문은 G&T-seq의 분리, 증폭, 라이브러리 제작 절차와 MAPD QC를 포함한 분석 파이프라인을 96-well 자동화 기준으로 정리했다. 새 생물학 실험은 없고, 구체적인 운영 조건과 방법의 한계를 담은 것이 가치다.
+
 ## Key claims
 
 - **Throughput.** Done manually, paired DNA and RNA libraries from **8 single cells take ∼3 d**; with a liquid-handling robot, **96 cells** take the same time. The day plan is: day 1 cell prep through cDNA PCR, day 2 purification, QC and WGA, day 3 tagmentation and pooling, days 4–7 sequencing (∼2 d).

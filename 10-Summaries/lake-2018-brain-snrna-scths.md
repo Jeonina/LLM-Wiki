@@ -22,6 +22,9 @@ topics: ["[[single-cell-atac-seq]]", "[[brain-somatic-mosaicism]]", "[[single-ce
 
 > Two nucleus-based, archived-tissue-compatible methods run on the same postmortem brain samples: **snDrop-seq** for nuclear transcriptomes and **scTHS-seq** for DNA accessibility. >60,000 single cells from human visual cortex, frontal cortex and cerebellum, computationally bridged by a gradient-boosting model that predicts accessibility from expression and vice versa — then used to map GWAS risk variants to specific brain cell types.
 
+> [!abstract] 한눈에
+> snDrop-seq와 scTHS-seq를 같은 사후 뇌 시료에 적용해 6만 개가 넘는 세포의 전사체와 DNA accessibility를 얻고, gradient-boosting 모델로 두 양상을 연결했다. 접근성만으로는 세부 아형을 구분하지 못했으며, 알츠하이머 GWAS 위험 변이는 microglia에 농축되었다.
+
 ## Key claims
 
 - **Nuclei, not cells, are the enabling choice.** They can be derived from fresh or archived tissue, give enough RNA for accurate expression estimates, and are "free of artifacts associated with tissue dissociation." Prior single-nucleus work was capped at 96 cells per microfluidic chip with sampling bias against small non-neuronal nuclei.

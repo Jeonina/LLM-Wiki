@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Schübeler (2015) — *Function and information content of DNA methylation* — *Nature*. [DOI](https://doi.org/10.1038/nature14192)
 
+> [!abstract] 한눈에
+> Schübeler는 DNA methylation을 유전 가능한 정보로 보면서도 'methylation이 유전자를 끈다'는 통념을 다듬어, CpG-poor 조절 영역의 methylation이 TF 결합의 원인이라기보다 결과일 수 있다고 정리했다. 같은 methylation이라도 효과는 chromatin 맥락과 TF 구성에 따라 달라진다는 것이 이 리뷰의 요지다.
+
 Schübeler's Nature review consolidated the state of DNA methylation biology circa 2015: methylation as a covalent base modification carrying inheritable, propagatable information, with sequence symmetry of CpG dinucleotides enabling maintenance through cell division. The review reframes the canonical "methylation silences genes" model with nuance: CpG-island promoters resist methylation actively (transcription-factor binding shields them); CpG-poor regulatory regions show variable methylation that closely reflects gene-regulatory state; methylation changes at distal regulatory elements often follow rather than instruct transcription-factor binding.
 
 Three contributions of the review. (1) Genome-wide methylation maps had revealed that CpG-poor regulatory regions are unmethylated when occupied by TFs, suggesting methylation as a passive consequence of regulatory binding rather than an instructive cause. (2) The functional consequences of methylation at any locus depend on context: methylation-sensitive vs methylation-insensitive TFs respond differently to the same modification. (3) Methylation is a useful biomarker for transcriptional and developmental state even where it is not causally instructive.

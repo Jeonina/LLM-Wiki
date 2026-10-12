@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]", "[[computational-methods]]", "[[single-cell-line
 
 > Where somatic mutations accumulate too slowly to time short intervals, **spontaneous epimutations** — stochastic gains and losses of DNA methylation — accumulate fast enough to act as a clock. AlphaBeta estimates their **forward and backward rates** (hence the name: α and β) from **pedigree-structured** methylation data, and delivers three findings that make epimutations usable as a lineage marker: they accumulate **neutrally** genome-wide, they originate **mainly during somatic development**, and they can **age-date trees**.
 
+> [!abstract] 한눈에
+> AlphaBeta는 pedigree 구조를 갖춘 methylation 데이터에서 자발적 epimutation의 gain rate와 loss rate를 따로 추정한다. epimutation이 중립적으로 쌓이고 주로 체세포 발생 과정에서 생겨 분자시계로 쓸 수 있음을 보였지만, 모든 결과는 식물에서 얻은 것이다.
+
 ## Key claims
 
 - **A pedigree is the required design.** Rates are estimable only when the genealogical relationships between the sampled methylomes are known — mutation-accumulation lines (clonal or sexual) or, for perennials, the branching structure of a long-lived individual.

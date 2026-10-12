@@ -34,6 +34,9 @@ topics:
 
 > Thesis: scATAC-seq analysis pipelines that depend on pre-defined accessibility peaks bias clustering toward abundant cell types and miss rare populations whose signal is too sparse to define peaks. **SnapATAC** discards peaks entirely and instead bins the genome into uniform 5 kb windows, computes pairwise Jaccard similarities between cells, and uses the ensemble **Nyström method** to scale low-rank embedding to a million cells. Applied to 55,592 nuclei from mouse secondary motor cortex (MOs), it discovers ~370,000 candidate cis-regulatory elements across 31 cell populations including subpopulations that constitute <0.1% of cells.
 
+> [!abstract] 한눈에
+> SnapATAC은 peak 대신 5 kb bin과 세포 간 Jaccard 유사도를 쓰고 ensemble Nyström 방법으로 백만 세포 규모까지 scATAC-seq 분석을 확장했다. peak 밖 read도 세포 유형을 구분하는 신호를 담고 있음을 보였고, peak 기반 방법이 놓치는 희귀 뉴런 아형을 찾아냈다.
+
 ## Key claims
 
 - **Peak-free representation**: 5 kb bins → binary vectors → Jaccard similarity → regression-normalized for sequencing depth → eigenvector decomposition for dimensionality reduction. No peak-calling step before clustering.

@@ -26,6 +26,9 @@ topics: ["[[chromatin-architecture]]", "[[computational-methods]]", "[[single-ce
 
 > Linking a regulatory element to the gene it controls — potentially hundreds of kilobases away — is the standing difficulty in regulatory genomics. Cicero's move is to exploit variation *between cells*: peaks that open and close together across a population of single cells are inferred to be **co-accessible**, and co-accessibility is used as evidence of a *cis*-regulatory relationship.
 
+> [!abstract] 한눈에
+> Cicero는 scATAC-seq에서 세포들 사이에 함께 열리고 닫히는 peak를 co-accessible로 보고, 이를 근거로 conformation assay 없이 cis 조절 연결과 chromatin hub를 예측한다. 다만 현재 위키 요약은 원문의 앞부분만 보고 작성되어 정량적 결과는 담지 않았다.
+
 ## Key claims
 
 *(Per the source caveat, these are the paper's stated contributions as given in its highlights and framing.)*

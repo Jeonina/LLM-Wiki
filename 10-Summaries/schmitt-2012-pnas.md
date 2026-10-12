@@ -24,6 +24,9 @@ topics: ["[[40-Topics/duplex-sequencing]]", "[[40-Topics/somatic-mosaicism]]"]
 
 > Standard Illumina reads come from single strands, so an error made in the **first PCR cycle**, often by copying across a damaged base, is copied into every duplicate and survives any single-strand consensus. **Duplex Sequencing** ligates adapters carrying a random but **complementary double-stranded tag**, so the two strands of each original molecule produce two related read families (αβ and βα). Reads sharing a tag collapse into a **single-strand consensus sequence (SSCS)**; the two SSCSs of a duplex are then compared, and a base is kept only if both strands agree, giving a **duplex consensus sequence (DCS)**. On M13mp2 DNA the DCS mutation frequency (2.5 × 10⁻⁶) matches the value from genetic assays, while SSCS is still ~10-fold too high and dominated by damage signatures. The paper also turns that failure into a tool: single-strand-only mutations mark **DNA damage**. Applied to human brain mtDNA, DCS gives 3.5 × 10⁻⁵ and a transition-dominated spectrum with a D-loop hotspot.
 
+> [!abstract] 한눈에
+> Duplex Sequencing은 상보적인 이중가닥 tag로 원래 분자의 두 가닥을 각각 추적하고 두 가닥이 일치하는 base만 남겨, 첫 PCR cycle의 오류와 DNA damage에서 생긴 가짜 변이를 걸러낸다. M13mp2에서 오류율을 3.8×10⁻³에서 2.5×10⁻⁶으로 낮춰 기준값과 거의 같게 만들었다.
+
 ## Key claims
 
 - **Tag design.** One adapter strand carries 12 random nucleotides, which a polymerase copies to make a double-stranded "Duplex Tag"; adapters are then A-tailed, and sheared DNA is T-tailed. Each fragment gets a tag at each end (α and β), giving a 24-nt combined tag. Reads of the form αβ in read 1 pair with βα in read 2 from the partner strand. A 24-nt tag gives "up to 4²⁴ = 2.8 × 10¹⁴ distinct tag sequences".

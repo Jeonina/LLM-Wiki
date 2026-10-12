@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Stuart et al. (2021) — *Single-cell chromatin state analysis with Signac* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-021-01282-5)
 
+> [!abstract] 한눈에
+> Signac은 Seurat과 연동되는 R 기반 단일세포 염색질 분석 도구로, peak calling, QC, LSI, 모티프 분석, peak-유전자 연결, 다중 모달 통합까지 한 번에 처리하며 70만 개 이상의 세포로 확장된다.
+
 Stuart, Srivastava, Madad, Lareau and Satija (Satija lab) describe Signac, an R toolkit for end-to-end single-cell chromatin data analysis that interoperates with the Seurat package via a specialized ChromatinAssay class. Signac handles scATAC-seq, sciCUT&Tag, and related fragment-file inputs, performing peak calling, quantification, QC, dimension reduction (LSI), clustering, motif analysis, peak-to-gene linkage, and integration across modalities (mRNA, surface protein, mitochondrial genotype, CRISPR perturbations).
 
 The paper demonstrates the framework on a 10x multiome PBMC dataset (10,466 cells with paired scRNA + scATAC), recovering canonical hematopoietic cell types, calling cell-type-specific peaks (improving sensitivity for rare populations such as γδ T cells), performing TF footprinting at EOMES/TBX21/TBX2 motifs, and producing peak-to-gene-expression linkage maps. Signac scales to >700,000 cells, supports tabix-indexed on-disk fragment storage, and integrates with chromVAR for motif deviation analysis.

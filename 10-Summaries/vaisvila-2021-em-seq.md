@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]"]
 
 > Bisulfite's harsh temperature and pH degrade DNA, preferentially damage unmethylated cytosines and leave AT-rich, GC-poor, gappy libraries. **EM-seq** replaces the chemistry with three enzymes: **TET2** oxidises 5mC (→5hmC→5fC→5caC) and **T4-BGT** glucosylates 5hmC (→5gmC), protecting both; **APOBEC3A** then deaminates only unmodified C to U. The readout is identical to bisulfite (modified C reads as C, unmodified as T), so existing pipelines (Bismark, bwa-meth) work unchanged — but libraries are more complex, GC-even, and usable from **100 pg**, cfDNA and FFPE DNA.
 
+> [!abstract] 한눈에
+> EM-seq는 bisulfite 대신 TET2, T4-BGT, APOBEC3A 세 효소로 비메틸 C만 탈아민화해 기존 분석 파이프라인을 그대로 쓰면서도 DNA 손상이 적고 GC 분포가 고른 라이브러리를 만든다. 100 pg 입력에서도 작동했지만 5mC와 5hmC를 구분하지 못하고 single-cell 데이터는 제시하지 않았다.
+
 ## Key claims
 
 - **Enzymes are efficient and selective**: TET2 oxidised ≥99% of 5mC across mouse, human and *Arabidopsis* DNA (96% in phage XP12, whose cytosines are 100% methylated); by LC-MS on NA12878, 5mC fell from 2.675% to ~0.02% with TET2, and became undetectable with TET2 + T4-BGT + APOBEC3A. The authors report 0.9% residual 5mC available for deamination after TET2/T4-BGT vs 2.7% reported for commercial bisulfite kits. APOBEC3A fully deaminated C and 5mC oligos (~50% of 5hmC by 180 min); 5fC was a poor substrate, 5caC and 5gmC appeared unreactive.

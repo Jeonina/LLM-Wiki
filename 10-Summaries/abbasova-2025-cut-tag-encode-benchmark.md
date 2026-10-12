@@ -22,6 +22,9 @@ topics: ["[[histone-modifications]]"]
 
 > CUT&Tag is widely adopted as a low-input, low-depth replacement for ChIP-seq, but had not been systematically benchmarked against reference ChIP data. Profiling **H3K27ac** (in depth) and **H3K27me3** in K562 — 38 new datasets plus published CUT&Tag and CUT&RUN — against matched ENCODE ChIP-seq, the authors find CUT&Tag recovers on average **~54% of ENCODE peaks**, specifically the **strongest, most accessible** ones, with the same GO and motif enrichments. For the acetyl mark, the advertised signal-to-noise advantage over ChIP-seq **did not materialise**; for the methyl mark it did.
 
+> [!abstract] 한눈에
+> K562에서 H3K27ac와 H3K27me3 CUT&Tag를 ENCODE ChIP-seq와 비교하니 CUT&Tag는 ENCODE peak의 평균 약 54%만 회수했고, 회수된 것은 주로 가장 강하고 접근성이 높은 peak였다. 아세틸화 표지에서는 ChIP-seq보다 signal-to-noise가 낫다는 장점이 나타나지 않았다.
+
 ## Key claims
 
 - **Recall ceiling around half.** Average ENCODE recall across CUT&Tag experiments was 54% (sd 4.99), comparable for MACS2 and SEACR; maximum 63% (Diagenode antibody, duplicates retained, MACS2). Published data from the method developers reached 41% (H3K27ac CUT&Tag, MACS2) and 53% (CUT&RUN, SEACR). H3K27me3 CUT&Tag reached ~58% despite many more peaks. Merging high-complexity samples raised recall (to over 70% per the Discussion) at the cost of precision. Published HCT116 H3K27me3 CUT&Tag showed even poorer ENCODE capture.

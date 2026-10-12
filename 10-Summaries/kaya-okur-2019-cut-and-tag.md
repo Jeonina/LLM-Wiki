@@ -22,6 +22,9 @@ topics: ["[[histone-modifications]]"]
 
 > The founding CUT&Tag paper. An antibody binds a chromatin protein in situ in permeabilized, **unfixed** cells; a protein A–Tn5 fusion is tethered to it; Mg²⁺ activates tagmentation, inserting sequencing adapters directly at the target. Live cells to sequencing-ready library, one tube, one day — with signal-to-noise that makes 2 million reads do the work of 20 million ChIP-seq reads.
 
+> [!abstract] 한눈에
+> CUT&Tag는 고정하지 않은 세포에서 항체에 결합시킨 pA-Tn5로 표적 위치를 바로 tagmentation하는 방법이다. 약 200만 read로 ChIP-seq 2,000만 read에 해당하는 신호를 얻었고 ICELL8로 단일세포까지 확장했지만, 비특이적 Tn5가 남기는 ATAC 유사 배경 신호는 해석할 때 늘 주의해야 한다.
+
 ## Key claims
 
 - Chain of reasoning from prior art: ChIP-seq suffers low signal, high background, crosslinking-induced epitope masking, and needs many cells. CUT&RUN (pA-MNase, from Laemmli's ChIC) fixes signal-to-noise but requires end polishing and adapter ligation afterward, and **releases fragments into the supernatant — which is why it does not adapt to single-cell platforms.** CUT&Tag keeps fragments inside the nucleus because Tn5 stays bound to the DNA it tagments.

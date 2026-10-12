@@ -22,6 +22,9 @@ topics: ["[[single-cell-multiomics]]", "[[computational-methods]]"]
 
 > CITE-seq is expensive; scRNA-seq is not. If the RNA→protein relationship can be learned from a CITE-seq reference, protein expression can be **predicted for scRNA-seq data that never measured it**. sciPENN does that, plus four related tasks, and its distinctive engineering contribution is a **censored loss** that lets multiple CITE-seq datasets be merged even when their **antibody panels only partially overlap**.
 
+> [!abstract] 한눈에
+> sciPENN은 CITE-seq 참조에서 RNA와 단백질의 관계를 학습해 scRNA-seq의 표면 단백질을 예측·보정하고 불확실성까지 추정하는 딥러닝 모델이다. censored loss 덕분에 항체 패널이 일부만 겹치는 CITE-seq 데이터도 통합할 수 있고, totalVI·Seurat 4보다 빠르다.
+
 ## Key claims
 
 - **Five capabilities in one model**: CITE-seq + scRNA-seq integration; protein prediction for scRNA-seq; protein imputation for CITE-seq; **uncertainty quantification** on those predictions and imputations; and cell-type label transfer from CITE-seq to scRNA-seq.

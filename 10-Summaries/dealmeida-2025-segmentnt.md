@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]"]
 
 > **SegmentNT is not a new pretrained model: it fine-tunes the existing Nucleotide Transformer** (NT-Multispecies-v2, 500M, 6-mer tokens) by replacing its language-model head with a 63M-parameter 1D U-Net and training the whole network to segment DNA into **14 genic and regulatory element classes at single-nucleotide resolution** (multilabel, one binary mask per class, focal loss). It handles inputs up to 30 kb in training and generalises to 50 kb via NTK-aware RoPE rescaling. The same head on Enformer or Borzoi encoders (SegmentEnformer, SegmentBorzoi) reaches 196–524 kb and is better for regulatory elements, worse for splice sites. The core message is that self-supervised pretraining clearly pays off on this harder, nucleotide-level task: the same architecture with a random NT encoder reaches half the performance.
 
+> [!abstract] 한눈에
+> SegmentNT는 사전학습된 Nucleotide Transformer에 U-Net head를 붙여 DNA를 14개 유전자·조절 요소 class로 단일 염기 해상도에서 분할하도록 미세조정했다. 무작위 초기화 encoder보다 성능이 두 배 넘게 높아 사전학습의 효과를 뚜렷이 보였으나, enhancer와 CTCF site 예측은 약하다.
+
 ## Key claims
 
 - **Pretraining is essential here.** At 3 kb, SegmentNT averages MCC 0.37 across 14 elements; the same model with a randomly initialised NT encoder reaches 0.16 and converges seven times slower. One-hot U-Nets of 63M/66M and 252M parameters reach 0.07–0.11; BPNet 0.10; original SpliceAI 0.18 and an up-scaled SpliceAI 0.27. Fine-tuning encoder and head together beats head-only, and the multispecies NT encoder beats the NT v1 2.5B 1000-Genomes encoder.

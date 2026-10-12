@@ -33,6 +33,9 @@ topics:
 
 > Thesis: Existing single-cell joint methylation + chromatin-accessibility methods (scCOOL-seq, scNOMe-seq, scNMT-seq, iscCOOL-seq, snmCAT-seq, scNOMeRe-seq) are limited in throughput and sensitivity. sciMETv3 hit the next step but used cell-indexed Tn5 with fragmentation variability between cells. SpliCOOL-seq combines (a) in-situ GpC methylation as the accessibility readout, (b) **universal (unindexed) Tn5 tagmentation** for uniform fragmentation across cells, and (c) split-pool ligation-based combinatorial barcoding — yielding thousands of cells per experiment with both whole-genome WCG (endogenous) methylation and GCH (nucleosome-depletion region, NDR) accessibility.
 
+> [!abstract] 한눈에
+> SpliCOOL-seq는 in-situ GpC methylation, universal Tn5, 2단계 split-pool barcoding을 결합해 단일세포의 methylation과 accessibility를 대규모로 함께 측정한다. decitabine과 5-azacytidine이 둘 다 대규모 탈메틸화를 일으키지만 그 양상은 서로 다르다는 것을 보였다.
+
 ## Key claims
 
 - **Two-round split-pool barcoding** via T4 ligase after universal Tn5 tagmentation. Bisulfite conversion follows barcoding. Yields cells × WCG/GCH matrix.

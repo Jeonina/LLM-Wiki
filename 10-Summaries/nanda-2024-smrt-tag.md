@@ -35,6 +35,9 @@ topics:
 
 > Thesis: PacBio single-molecule sequencing needs 1–5 µg of DNA (150,000–750,000 cells) for PCR-free library prep — far too much for clinical biopsies, rare cell populations, or single cells. **SMRT-Tag** uses Tn5 tagmentation with hairpin PacBio adapters to make exonuclease-resistant circular molecules from as little as 40 ng (~7,000 cells), at near-equivalent variant-calling and CpG-methylation accuracy to gold-standard ligation-based PacBio. **SAMOSA-Tag** adds in-nucleus EcoGII methyltransferase footprinting to layer single-fiber chromatin accessibility onto the same workflow — applied to prostate-cancer patient-derived xenografts (PDXs) to uncover metastasis-associated global chromatin disorganization from 30–50k nuclei.
 
+> [!abstract] 한눈에
+> SMRT-Tag는 hairpin PacBio adaptor를 단 Tn5 tagmentation으로 40 ng(약 7,000개 세포) 입력에서도 기존 ligation 방식과 비슷한 정확도로 변이와 CpG 메틸화를 호출한다. EcoGII 표지를 더한 SAMOSA-Tag는 전립선암 PDX에서 전이와 연관된 전역 크로마틴 무질서를 밝혔다.
+
 ## Key claims
 
 - **SMRT-Tag method**: Tn5 with hairpin PacBio adapters → tagmentation → gap repair (Phusion + Taq ligase or T4 + Ampligase, the two most robust of 62 conditions tested) → exonuclease digestion to enrich circular molecules → PacBio HiFi sequencing. **Adjustable fragment size** via Tn5:DNA ratio and temperature.

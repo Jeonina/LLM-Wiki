@@ -25,6 +25,9 @@ paper_section: ["3.1"]
 
 > For ~13 years (2012-2025), single-cell DNA sequencing and duplex sequencing were *incompatible* — duplex requires strand identity preserved through library prep, but scWGA chemistries (MDA, MALBAC, PTA) destroy it ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]; [[10-Summaries/evrony-2021-scDNA-applications-review]]). The field could measure either *which mutations are present in bulk DNA at single-molecule fidelity* ([[10-Summaries/schmitt-2012-pnas]]; [[10-Summaries/kennedy-2014-duplex-protocol]]) or *which cells carry which mutations at single-cell resolution* ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]) — but not both. **2025 closed the gap from two directions**: PTA + duplex validation makes per-cell mutation calls trustworthy ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]), and Duplex-Multiome integrates duplex consensus into the 10x Multiome library, delivering point mutations + chromatin + RNA at single-nucleus resolution across >51,000 nuclei ([[10-Summaries/kriz-2025-duplex-multiome]]).
 
+> [!abstract] 한눈에
+> duplex sequencing에는 strand identity가 필요한데 scWGA가 이를 파괴해서, 두 방법은 오랫동안 함께 쓸 수 없었다. 2025년에 PTA 결과를 bulk duplex로 검증하는 방식과 10x Multiome에 duplex를 넣은 Duplex-Multiome이 이 간극을 양쪽에서 메웠다.
+
 ## The incompatibility
 
 **Duplex sequencing** ([[10-Summaries/schmitt-2012-pnas]]) achieves a calculated error floor below 10⁻⁹ per base by sequencing both strands of each DNA fragment independently and requiring agreement before calling a variant ([[10-Summaries/kennedy-2014-duplex-protocol]]). This relies on tagging both Watson and Crick strands of each molecule with complementary UMIs preserved through library construction ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).

@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[computational-methods]]"]
 
 > Hi-C matrices are overwhelmingly empty, and storing them densely makes storage cost grow as resolution improves. Cooler defines a **sparse, self-describing, HDF5-based format** for genomically labeled arrays: a bin table, a pixel table of non-zero elements referencing it, and a chromosome table. Adopted as the standard of the **NIH 4D Nucleome Consortium**.
 
+> [!abstract] 한눈에
+> Cooler는 Hi-C 행렬을 bin, pixel, chromosome 테이블로 나눠 0이 아닌 값만 저장하는 HDF5 기반 희소 포맷이며 4D Nucleome의 표준으로 채택되었다. 다해상도 .mcool은 HiGlass의 다중 스케일 탐색을 가능하게 했고, 수천 개의 single-cell Hi-C 맵을 다룰 수 있는 기반이 된다.
+
 ## Key claims
 
 - **The sparsity argument, quantified**: one billion contacts binned at 1 kb on the human genome fills **less than 0.03%** of the available matrix elements. Contacts also cluster near the *cis* diagonal, so density is highly non-uniform — dense storage pays for emptiness twice.

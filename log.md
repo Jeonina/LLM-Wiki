@@ -4,6 +4,27 @@ Append-only. Newest at the top. One entry per session — ingest, query, or main
 
 ---
 
+# 2026-10-12 — Maintenance: Korean "한눈에" summaries on all summaries and notes
+
+At the user's request ("한글 요약이 없는 페이지들이 대부분인데 … 전체 다 해야 하는 거 아니야?"), added a `> [!abstract] 한눈에` callout with 1–2 Korean sentences to all 448 summaries and 11 notes (entities excluded by the user's choice). Body text untouched.
+
+- **Method:** 19 read-only agents (`.scratch/ko/brief.md`) each read ~25 pages and returned Korean text based only on the page; the main session inserted the callouts with one script. Placement: after the lead blockquote (370 pages), after the `**Citation:**` line for legacy-format summaries without a lead (87), after the first paragraph for notes without a lead (2). Backups in `.scratch/ko/before/`.
+- **Checks:** 459/459 inserted, only callout lines added (diff vs backup), summary lint and pending-sources clean, Quartz build shows the callout on every summary, concept, hub and note page with 0 broken links.
+- **Coverage now:** 한눈에 on 448 summaries, 195 concepts, 22 hubs, 11 notes; entities (132) intentionally without.
+
+---
+
+# 2026-10-12 — Maintenance: concept pages restructured for reading
+
+All 196 concept pages in `30-Concepts/` (catalog excluded) rewritten to the concept shape, piloted on [[30-Concepts/copy-number-variation]] and approved by the user: English one-sentence definition → `[!abstract] 한눈에` Korean summary → Definition → Why it matters → method/variant tables → Evidence and examples → Contested points → Related cards → folded source list. Pages under ~200 words got only the light pass (Korean summary, Added sections folded, Related as cards). All `## Added <date>` sections were folded in.
+
+- **Method:** backups in `.scratch/concept-before/`; 27 agents in rolling batches of ≤10 on one shared brief (`.scratch/concept-rewrite-brief.md`). Final checks on all 195 rewritten pages: 0 dropped links (by slug), 0 broken, 0 Added sections, 0 unescaped table pipes, 195/195 with the Korean callout; Quartz build renders 152 tables and all cards/callouts with 0 broken links. Words 90,561 → 134,160 (tables with per-row citations, source blocks).
+- **Schema:** `90-Meta/templates/concept.md` rewritten to the new shape.
+- **Corrections made in passing (from summaries):** GENA-LM de novo motifs are CTCF and GATA2, not ATF1/GATA2/CTCF (transcription-factor-motif); DamID invented by van Steensel 2000, single-cell adaptation by Kind (damid); ATGC-Gen MSE direction; Epi-CLONE now cites Scherer 2025, not only Gaiti 2019; a wrong "Franco 2024" alias corrected to Izzo 2024 (got).
+- **Many previously uncited claims are now marked (synthesis)** rather than left bare. Remaining uncited background facts and agent-flagged tensions are listed in the session report for the user.
+
+---
+
 # 2026-10-12 — Maintenance: hub pages restructured for reading
 
 All 22 hub pages in `40-Topics/` (the catalog `40-Topics/index.md` excluded) rewritten into one reader-facing shape, piloted on [[40-Topics/cancer-clonal-evolution]] and approved by the user: English lead → `[!abstract] 한눈에` Korean summary → Key points → "Start here" cards → sub-theme sections with tables → Open questions → Related cards → folded source list. All `## Added <date>` sections were folded into sub-themes. Citations on hubs now carry short aliases (`Navin 2011`).

@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Miller et al. (2022) — *Somatic genomic changes in single Alzheimer's disease neurons* — *Nature*. [DOI](https://doi.org/10.1038/s41586-022-04640-1)
 
+> [!abstract] 한눈에
+> Alzheimer병 환자와 대조군의 피라미드 뉴런 319개를 scWGS로 분석한 결과, AD 뉴런은 정상 노화로 설명되지 않는 수백 개의 추가 sSNV를 지녔다. 이 초과 돌연변이는 산화 손상과 TC-NER을 시사하는 고유한 Signature C를 보였다.
+
 Miller and colleagues applied scWGS to 319 pyramidal neurons from PFC and hippocampal CA1 of individuals with Alzheimer's disease (AD, n=8) and neurotypical age-matched controls (n=18), gated by FANS to the largest NeuN+ population (>99% pyramidal). LiRA-based sSNV calling revealed two findings.
 
 (1) AD neurons carry significantly more sSNVs than age-matched controls (P = 7.1×10⁻⁵, two-tailed Wilcoxon), with elevations in both PFC and CA1 driven by AD-specific processes rather than accelerated normal aging. AD neurons carry hundreds of additional sSNVs beyond age expectation, on par with more than a decade of normal sSNV accumulation.

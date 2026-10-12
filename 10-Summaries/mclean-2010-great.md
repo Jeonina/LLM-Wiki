@@ -22,6 +22,9 @@ topics: ["[[histone-modifications]]", "[[single-cell-atac-seq]]"]
 
 > Gene-based enrichment tools inherited from the microarray era answer the wrong question about a peak set. GREAT assigns each *gene* a regulatory domain, tests enrichment over **genomic regions** with a binomial statistic that accounts for domain length, and thereby uses distal peaks — which are the majority — without the false-positive explosion that nearest-gene assignment causes.
 
+> [!abstract] 한눈에
+> GREAT는 유전자마다 regulatory domain을 부여하고 영역 기반 binomial test로 enrichment를 검정해, 최근접 유전자 할당이 일으키는 편향 없이 원위 peak를 기능 해석에 활용하게 했다. 원위 결합을 포함하느냐가 핵심이며 어떻게 할당하느냐는 부차적이라는 점을 보였다.
+
 ## Key claims
 
 - Restricting to proximal binding (2–5 kb from TSS) **discards over half of observed binding events**.

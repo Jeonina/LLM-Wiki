@@ -32,6 +32,9 @@ topics:
 
 > Thesis: scATAC-seq has fundamental sparsity — only 0, 1, or 2 reads per locus per cell because a diploid genome only has two copies. Per-locus analysis is therefore noise-dominated. **chromVAR aggregates accessibility across all peaks sharing a TF motif** (or any genomic annotation) and computes a bias-corrected deviation score per cell — controlling for GC content and mean accessibility — turning sparse single-cell data into a robust TF-motif × cell matrix that supports clustering, trajectory analysis, and de novo motif discovery.
 
+> [!abstract] 한눈에
+> chromVAR는 같은 TF motif를 공유하는 peak들의 accessibility를 합산하고 GC 함량과 평균 accessibility를 보정한 세포별 deviation score를 계산해, 희소한 scATAC-seq 데이터에서 TF 활성 신호를 뽑아낸다. 세포당 10,000 fragment 수준의 데이터로도 조혈 계통을 재구성했다.
+
 ## Key claims
 
 - **Bias-corrected deviation**: for each motif and cell, compute (observed fragments in peaks containing motif − expected fragments) / expected. Then subtract the mean deviation from GC-content-matched and accessibility-matched background peak sets. Divide by background SD to get a *z*-score.

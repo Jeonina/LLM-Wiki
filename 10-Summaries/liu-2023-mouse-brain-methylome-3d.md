@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Liu et al. (2023) — *Single-cell DNA methylome and 3D multi-omic atlas of the adult mouse brain* — *Nature*. [DOI](https://doi.org/10.1038/s41586-023-06805-y)
 
+> [!abstract] 한눈에
+> Ecker 연구실은 성체 생쥐 뇌 117개 영역에서 snmC-seq3 단일핵 메틸롬 약 30만 개와 snm3C-seq 메틸롬·3C 결합 지도 약 17만 개를 만들어 4,673개 세포 그룹을 정의했다. 같은 세포에서 읽은 chromatin conformation 차이가 메틸화·전사 변화와 강하게 연관됨을 보였다.
+
 Liu, Zeng, Zhou and colleagues (Ecker lab) generated the most comprehensive single-cell DNA-methylation and chromatin-conformation atlas of a mammalian brain: 301,626 single-nucleus methylomes (snmC-seq3) and 176,003 joint methylome + 3C contact maps (snm3C-seq) from 117 dissected regions across 18 coronal slices of the adult C57BL/6 mouse brain.
 
 Methylome-based iterative clustering produced 4,673 cell groups grouped into 274 subclasses, validated against companion BICCN transcriptome and ATAC-seq data and registered to the Allen Common Coordinate Framework. The atlas identifies 2.6 million differentially methylated regions (DMRs) as candidate regulatory elements, demonstrates cell-type- and region-specific patterns of both CpG (mCG) and non-CpG (mCH) methylation, and validates spatial methylation diversity by MERFISH-based in situ transcriptomics.

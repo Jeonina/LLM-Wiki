@@ -22,6 +22,9 @@ topics: ["[[computational-methods]]", "[[single-cell-lineage-tracing]]", "[[sing
 
 > Build cluster-specific gene-regulatory networks from multi-omic data, then **use the network as a function**: propagate a simulated transcription-factor knockout through it, compare the resulting expression shift to each cell's neighbours, and render the result as a **vector field of cell-identity transitions** on the embedding. Trained entirely on unperturbed wild-type data.
 
+> [!abstract] 한눈에
+> CellOracle은 scATAC-seq 기반 base GRN과 scRNA-seq 선형 모델로 세포 상태별 GRN을 만들고, TF knockout을 시뮬레이션해 세포 정체성 전이를 벡터장으로 예측했다. 제브라피시에서 새 표현형을 예측해 실험으로 검증했지만, 증식이나 세포 사멸에 따른 변화는 다루지 못한다.
+
 ## Key claims
 
 - **The gap addressed.** scRNA-seq with pooled CRISPR screens is powerful but unavailable in many biological contexts; computational simulators mostly require experimental perturbation data for training; deep-learning models are black boxes that obscure the regulatory mechanism; and existing GRN work focuses on static network structure, leaving open how a static network governs a dynamic process.

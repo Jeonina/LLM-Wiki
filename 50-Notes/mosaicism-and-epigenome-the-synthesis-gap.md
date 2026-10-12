@@ -25,6 +25,9 @@ paper_section: ["2"]
 >
 > **Original framing (still useful as historical context).** Before Duplex-Multiome, no published single-cell assay measured somatic point mutations + chromatin/methylation state genome-wide in the same cell. The closest precedents — [[sctrio-seq]] (CNV+methylation+RNA), [[got-cha]] (targeted SNV + accessibility), [[daf-seq]] (single-fiber DNA+chromatin), [[10-Summaries/mukamel-2025-aneuploidy-brain|Mukamel 2025]] (aneuploidy+methylation atlas-scale) — each covered a slice. The neuro-mosaicism field measured mutations cell-type-specifically but used *bulk* epigenome annotations to interpret them. This note articulates why the gap mattered, who approached its edges, and how Duplex-Multiome closes it.
 
+> [!abstract] 한눈에
+> 모자이크 변이를 해석할 때 같은 세포의 epigenome이 아니라 bulk 참조 데이터에 기대 왔다는 공백을 다룬다. Duplex-Multiome이 point mutation·snATAC·snRNA를 한 핵에서 읽어 기술적 공백은 메웠지만, methylation을 함께 읽는 일과 DNA 중심 locus-state 해석 틀을 세우는 일은 남았다고 본다.
+
 ## Why the gap matters
 
 Somatic mosaicism is the body's record of post-zygotic mutational history ([[40-Topics/somatic-mosaicism]]; [[10-Summaries/forsberg-2017-mosaicism-review]]; [[10-Summaries/campbell-2015-mosaicism-review]]). The interpretive question almost always lands on **what does this mutation do to the cell's regulatory state?** — does it sit in a heterochromatin region (silent), an active enhancer (locus-specific consequence), a methylated CpG island (potentially disrupting silencing)? In practice the answer is currently inferred from *bulk* epigenome reference data (ENCODE, Roadmap, BluePrint) overlaid on single-cell genotype calls.

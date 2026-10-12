@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Cortes-Lopez et al. (2023) — *Single-cell multi-omics defines the cell-type-specific impact of splicing aberrations in human hematopoietic clonal outgrowths (GoT-Splice)* — *Cell Stem Cell*. [DOI](https://doi.org/10.1016/j.stem.2023.07.012)
 
+> [!abstract] 한눈에
+> GoT-Splice는 GoT에 long-read 단일세포 RNA와 표면 단백질 측정을 결합해 한 세포에서 체세포 유전형, 발현, 단백질, isoform 수준 splicing을 함께 읽는다. SF3B1 돌연변이 MDS에서 cryptic 3′ splice site 사용이 세포 유형마다 다르고 clonal hematopoiesis 단계부터 나타남을 보였다.
+
 Cortés-López, Chamely, Hawkins and colleagues (Landau lab) extended the genotyping-of-transcriptomes (GoT) platform by combining it with long-read Oxford Nanopore single-cell RNA sequencing and CITE-seq-style oligo-tagged antibody profiling, producing GoT-Splice — a four-modality single-cell readout of (i) somatic genotype at a chosen locus, (ii) short-read gene-expression, (iii) cell-surface proteome, and (iv) full-length isoform-resolved splicing.
 
 Applied to bone-marrow CD34+ progenitors from patients with myelodysplastic syndrome (MDS) carrying \textit{SF3B1} K700E mutations and to clonal-hematopoiesis carriers, GoT-Splice resolved 24,315 cells across six MDS samples with mutation calls in 64.4% of cells. Three principal findings. (1) \textit{SF3B1}-mutant cells are enriched in the megakaryocytic-erythroid (MEP) lineage, with expanded erythroid progenitors consistent with MDS dyserythropoiesis. (2) Distinct cryptic 3′ splice-site usage at hundreds of introns is cell-type-specific — apparent already in clonal hematopoiesis before overt MDS, and progressing as cells differentiate toward erythroid identity. (3) A \textit{SF3B1}-mutant-specific BAX isoform (Bax-ω) may confer anti-apoptotic advantage to MDS progenitors.

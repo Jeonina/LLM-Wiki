@@ -22,6 +22,9 @@ topics: ["[[single-cell-multiomics]]", "[[computational-methods]]"]
 
 > When two modalities are measured in the same cell, how much should each one count? WNN's answer is: **learn it per cell**. Rather than concatenating modalities or picking one, weighted nearest neighbor analysis infers, for every individual cell, the relative utility of each data type — because a T cell's identity may be better resolved by surface protein while a progenitor's is better resolved by RNA.
 
+> [!abstract] 한눈에
+> Seurat v4의 weighted nearest neighbor analysis는 각 modality가 얼마나 유용한지를 세포마다 따로 학습해 multimodal 데이터를 통합한다. 211,000개 세포 규모의 CITE-seq PBMC atlas를 구축해, 단일 modality 분석으로는 보이지 않던 lymphoid subpopulation을 찾아냈다.
+
 ## Key claims
 
 - **The weight is per cell, and unsupervised.** WNN "learns the relative utility of each data type in each cell." This is the conceptual core: modality informativeness is not a global property of the assay but a local property of the cell state being resolved.

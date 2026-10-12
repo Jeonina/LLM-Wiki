@@ -22,6 +22,9 @@ topics: ["[[mosaic-variant-calling]]"]
 
 > Not a variant caller — a **framework**. GATK separates the tedious, error-prone work of streaming and sharding BAM data from the analysis logic, exposing a small set of "traversals" (locus-based, read-based) that walkers consume via map/reduce. That separation is why the Broad could optimize one engine and get correctness, memory efficiency and automatic parallelization for every downstream tool at once.
 
+> [!abstract] 한눈에
+> GATK는 변이 호출기가 아니라 BAM 데이터 접근과 분석 로직을 분리한 MapReduce 프레임워크로, locus·read 단위 traversal과 sharding으로 병렬화를 자동화했다. 이후 single-cell 변이 호출기들은 GATK의 데이터 모델을 물려받되 WGA가 깨뜨리는 이배체·균일 coverage 가정을 대체했다.
+
 ## Key claims
 
 - The bottleneck in 2010 was not algorithms but data-access engineering; a shared, optimized access layer removes a large development gap between sequencer output and results.

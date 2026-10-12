@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]", "[[single-cell-multiomics]]", "[[scdna-seq]]"]
 
 > [[combinatorial-indexing|Combinatorial indexing]] applied to bisulfite sequencing, with one chemistry detail doing most of the work: **cytosine-depleted transposome adaptors**, which survive bisulfite treatment intact. The headline is not cell count but **alignment rate — 68 ± 8%, approaching bulk** — against the 25 ± 20% typical of one-cell-per-well scWGBS. Same information for a quarter of the sequencing cost.
 
+> [!abstract] 한눈에
+> sci-MET는 bisulfite에 견디는 cytosine-depleted transposome adaptor로 combinatorial indexing을 bisulfite sequencing에 접목했다. 핵심 성과는 bulk에 가까운 68 ± 8%의 alignment rate이며, 세포당 coverage는 낮아도 세포 유형 구분에는 충분했다.
+
 ## Key claims
 
 - **Cytosine-depleted adaptors are what makes tagmentation compatible with bisulfite.** Standard Tn5 adaptors contain cytosines that bisulfite would convert, destroying the index. Depleting them lets the first index be installed by transposition into intact nuclei, before any conversion.

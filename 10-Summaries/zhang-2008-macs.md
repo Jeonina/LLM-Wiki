@@ -22,6 +22,9 @@ topics: ["[[computational-methods]]", "[[histone-modifications]]"]
 
 > The peak caller that became the field default, on two ideas. First, **empirically estimate the fragment shift** from the bimodal Watson/Crick tag pattern instead of asking the user for it. Second, replace the genome-wide Poisson background with a **local λ** computed in windows around each candidate peak, so regional bias in copy number, chromatin and mappability is subtracted rather than ignored.
 
+> [!abstract] 한눈에
+> MACS는 Watson/Crick tag 분포에서 fragment shift를 직접 추정하고, 후보 peak마다 local λ 배경을 계산하는 ChIP-seq peak caller로 사실상 표준이 됐다. control이 없을 때 global λ의 FDR은 41.2%였지만 local λ로는 3.8%에 그쳤다.
+
 ## Key claims
 
 - **The shift model.** ChIP-seq tags are fragment *ends*, so a true binding site shows Watson tags upstream and Crick tags downstream. MACS samples 1,000 high-confidence peaks, aligns their strand-separated tags, measures the mode-to-mode distance *d*, and shifts every tag *d*/2 toward the 3′ end.

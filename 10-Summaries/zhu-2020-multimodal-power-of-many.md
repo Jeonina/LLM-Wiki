@@ -22,6 +22,9 @@ topics: ["[[single-cell-multiomics]]"]
 
 > The Comment that accompanied Nature Methods' Method-of-the-Year designation for single-cell multimodal omics *(not found in source clipping — unverified)*, and the paper that fixed the field's organizing axis: joint assays split into **one-cell-at-a-time, deep** methods versus **droplet/combinatorial-indexing, scalable** methods, and every design choice trades between them.
 
+> [!abstract] 한눈에
+> Zhu 등은 single-cell multimodal omics를 세포 하나씩 깊게 측정하는 plate 기반 방법과 droplet 또는 combinatorial indexing으로 규모를 키운 방법으로 나누어, 이후 분야를 정리하는 기준축을 세웠다.
+
 ## Key claims
 
 - The two-category taxonomy is the paper's contribution: (i) plate/tube-based assays maximizing modalities and coverage per cell at low throughput and high cost; (ii) droplet or split-pool combinatorial-indexing assays reaching thousands-to-millions of cells at the cost of sparsity.

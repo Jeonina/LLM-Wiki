@@ -25,6 +25,9 @@ updated: 2026-10-07
 
 > Pott adapts bulk NOMe-seq to single cells. Isolated nuclei are treated with the GpC methyltransferase M.CviPI, which methylates GpC in nucleosome-free DNA; single nuclei are then sorted by FACS, bisulfite-converted and sequenced. Each read reports **accessibility** (GpC methylation) and **endogenous CpG methylation** together, and because DNA is recovered whether or not it was accessible, a covered but unmethylated region is a true closed site rather than lost DNA. The proof of principle uses 12 treated GM12878 and 11 K562 cells: scNOMe-seq recovers DNase hypersensitive site (DHS) accessibility, shows that only about a third of covered DHSs are open in any one cell, detects CTCF footprints at individual motifs, separates the two cell types, and estimates per-cell nucleosome phasing (~187–200 bp).
 
+> [!abstract] 한눈에
+> scNOMe-seq는 GpC methyltransferase 처리를 단일세포로 옮겨, 한 세포에서 염색질 접근성, 내인성 CpG 메틸화, nucleosome phasing을 함께 측정한다. 개별 세포에서는 덮인 DHS의 절반 미만만 열려 있었고, bulk DNase peak 높이는 열린 세포의 빈도를 반영함을 보였다.
+
 ## Key claims
 
 - **Data scale.** 19 GM12878 cells (including seven untreated controls) and 11 K562 cells; each treated library was sequenced to at least 16 M reads, with 2.5–5 M reads left after deduplication. On average "6,679,864 (2.9%) of all cytosines in GpCs and 1,291,180 (3.6%) of all cytosines in CpGs were covered per cell".

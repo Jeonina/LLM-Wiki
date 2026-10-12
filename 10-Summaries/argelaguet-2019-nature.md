@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Argelaguet et al. (2019) — *Multi-omics profiling of mouse gastrulation at single cell resolution* — *Nature*. [DOI](https://doi.org/10.1038/s41586-019-1825-8)
 
+> [!abstract] 한눈에
+> Argelaguet 등은 scNMT-seq로 E4.5–E7.5 생쥐 배아 세포 1,105개의 전사체, methylome, 접근성을 함께 측정해 gastrulation기의 후성유전 변화를 추적했다. mesoderm과 endoderm은 lineage 특이적 enhancer에서 탈메틸화와 접근성 증가를 겪지만, ectoderm은 초기 epiblast의 상태를 그대로 물려받았다.
+
 Argelaguet, Clark and colleagues (Reik / Stegle / Marioni labs) applied scNMT-seq (single-cell Nucleosome, Methylome and Transcriptome sequencing) to 1,105 single cells from mouse embryos at four developmental stages (E4.5, E5.5, E6.5, E7.5) spanning the exit from pluripotency through primary germ-layer specification.
 
 Three findings. (1) Global methylation rises from ~25% (E4.5) to ~75% (E7.5) in embryonic tissues, driven by a de novo wave at CpG-poor loci between E4.5 and E5.5; chromatin accessibility declines more gradually from ~38% to ~30%. (2) Lineage-specific methylation and accessibility patterns emerge at enhancer marks (distal H3K27ac peaks) — mesoderm- and endoderm-committed cells undergo coordinated TET-mediated demethylation and accessibility gain at lineage-specific enhancers, while ectodermal cells inherit the methylation/accessibility landscape established already in the early epiblast. (3) Multi-Omics Factor Analysis (MOFA) jointly decomposed RNA, methylation, and accessibility, identifying six factors with the first two capturing the emergence of the three germ layers and linking gene-expression variation to coordinated enhancer-mark changes; promoter or H3K4me3-marked changes contributed little to lineage variance.

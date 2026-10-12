@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]", "[[cancer-clonal-evolution]]", "[[hematopoietic-
 
 > Single-cell phylogenetics gives beautiful evolutionary histories for a handful of patients; **cost has restricted it to small cohorts, limiting clinical translation**. EVOFLUx takes the opposite route: infer quantitative evolutionary dynamics from a **bulk methylation array alone**, using **fluctuating CpGs (fCpGs)** — sites whose methylation stochastically flips on a timescale of years — as a natural barcode. Applied to **1,976 lymphoid cancer samples**.
 
+> [!abstract] 한눈에
+> EVOFLUx는 수년 단위로 확률적으로 바뀌는 fluctuating CpG를 자연 바코드로 삼아, bulk methylation array만으로 종양의 성장 속도, 발생 시점, 서브클론 구조를 추론한다. 림프계 암 1,976건에 적용해 진화 이력이 CLL의 독립적인 예후 인자임을 보였다.
+
 ## Key claims
 
 - **fCpGs are a low-cost, high-temporal-resolution lineage marker.** Certain CpG sites fluctuate stochastically over years, functioning as a "methylation barcode" readable from routine clinical specimens.

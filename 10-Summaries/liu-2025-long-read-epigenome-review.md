@@ -32,6 +32,9 @@ topics:
 
 > Thesis: ONT and PacBio long-read sequencing have transformed epigenomics by (a) directly detecting DNA methylation without bisulfite chemistry, (b) operating on PCR-free single-molecule native DNA so amplification doesn't erase modifications, (c) generating reads long enough for haplotype phasing and highly-repetitive-region mapping, and (d) enabling **co-detection of multiple epigenetic events on the same chromatin fiber**. This review covers methylation detection, chromatin-accessibility methods, protein–DNA interaction profiling, and integration with transcriptomic LRS.
 
+> [!abstract] 한눈에
+> Liu와 Conesa는 ONT와 PacBio long-read 시퀀싱이 bisulfite 없이 메틸화를 직접 읽고, haplotype phasing과 반복서열 분석을 가능하게 하며, 한 염색질 섬유에서 여러 epigenetic 신호를 동시에 검출하게 해 준다는 점을 정리했다.
+
 ## Key claims
 
 - **Direct methylation detection**: ONT measures ionic current "squiggles" perturbed by methylated bases; PacBio measures kinetic interpulse distance and pulse width. Both have advanced to deep-learning callers (Dorado/Remora for ONT; Fibertools/Primrose for PacBio). Benchmarking has focused mainly on ONT; PacBio 5mC calling initially had low signal-to-noise. Multiple modifications detectable (5mC, 5hmC, 6mA, 4mC).

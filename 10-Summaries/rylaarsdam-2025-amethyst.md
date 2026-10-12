@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]", "[[computational-methods]]"]
 
 > Single-cell methylation has a tooling gap rather than a data gap: sciMET-class assays now yield up to a million methylomes, but most analysis packages either cannot hold the data, ignore mCH, or cover one step. **Amethyst** is an R package (Adey lab) that runs base-level calls → feature matrices → IRLBA reduction → clustering → annotation → DMR calling → methylation-specific visualisation, with calls stored in **hdf5** and heavy aggregation optionally offloaded to a Python helper, **Facet**. It is shown on PBMC and cortex sciMET data and scaled to 145,219 cells; the biological payoff is that **astrocytes and oligodendrocytes carry gene-specific hyper-mCH** with neuron-like properties — anticorrelated with expression, CAC-dominated, and elevated over X-inactivation escapees in females.
 
+> [!abstract] 한눈에
+> Amethyst는 base-level call부터 clustering, annotation, DMR calling, 시각화까지 한 흐름으로 처리하는 single-cell methylation 분석 R 패키지다. 기존 패키지 대부분이 감당하지 못한 sciMETv3 규모의 데이터를 다뤘고, neuron 특이적으로 여겨지던 hyper-mCH가 astrocyte와 oligodendrocyte에도 있음을 밝혔다.
+
 ## Key claims
 
 - **Most existing packages could not run on a 1346-cell test set.** Of 16 packages surveyed, MELISSA and BPRMeth required in-memory storage of single-cytosine calls (1.8 billion CG and 38.4 billion CH sites for this dataset) and could not be built; scMET took 481 minutes and found 9 variable features with defaults; Epiclomal took days and found 13. Only Amethyst, MethSCAn and ALLCools handled sciMETv3-scale throughput.

@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[3d-genome]]",
 
 > Akita is a CNN that takes ~1 Mb (2²⁰ bp) of DNA and predicts the log(observed/expected) Hi-C or Micro-C contact map for all pairs of 2,048 bp bins in that window. A Basenji-style 1D trunk (convolutions, then dilated residual convolutions) produces 512 bin vectors; a 2D head averages each bin pair, adds a distance encoding, and runs symmetrised dilated residual 2D convolutions. Trained jointly on five high-quality human datasets with only 746,149 parameters, it reaches Pearson R 0.61 on held-out regions, close to the read-splitting replicate limit. Because predictions take seconds, the authors use in-silico mutagenesis to show that CTCF dominates folding in an orientation-dependent way, that nucleotides beyond the core motif matter, that fine-mapped eQTLs disrupt predicted folding more, that an engineered Lmo2 deletion and an Epha4 inversion are reproduced, and that B2 SINE CTCF sites in mouse are buffered. Akita predicts little cell-type specificity.
 
+> [!abstract] 한눈에
+> Akita는 약 1 Mb DNA 서열로 Hi-C·Micro-C contact map을 예측하는 CNN으로, 3D 유전체 접힘이 서열만으로도 상당 부분 예측된다는 것과 CTCF motif의 영향이 가장 크다는 것을 보였다. 다만 세포 유형별 차이는 잘 잡지 못했다.
+
 ## Key claims
 
 - **Folding is predictable from sequence.** On the held-out test set: MSE 0.14, Pearson R 0.61, Spearman R 0.56, approaching the limit from splitting reads into two pseudo-replicates (which was itself a stricter bar than biological replicates for HFF). Low-correlation maps were often correct predictions of featureless experimental maps. Predictions align with called TAD boundaries and dots.

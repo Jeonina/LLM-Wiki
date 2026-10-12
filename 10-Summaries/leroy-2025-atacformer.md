@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/sin
 
 > Atacformer is a transformer encoder **pretrained on single-cell ATAC-seq** that treats each cell as an unordered "bag" of accessible regions. Each region is a token drawn from a fixed vocabulary of 890,704 consensus regions. There is no DNA sequence input and **no positional encoding**. Pretraining uses ELECTRA-style replaced-token detection: 45% of tokens are swapped for random vocabulary regions, and the model predicts which were swapped. Context is 8,192 tokens. Because inputs are just intervals, the model can tokenise raw fragment files directly, skipping peak calling and the count matrix, and it can also read bulk BED files. Cell embeddings are mean-pooled region embeddings. The authors add a triplet-loss cell-type fine-tune (atacformer-ctft), a CLIP-style RNA–ATAC model with Geneformer (CRAFT), and a bulk BED fine-tune (atacformer-bb). Results are competitive clustering at high speed, cell-line prediction for bulk BED files, and the use of contextualised region embeddings to flag unannotated promoter-like regions ("icTSSs") that carry H3K4me3.
 
+> [!abstract] 한눈에
+> Atacformer는 각 세포를 순서 없는 accessible region 토큰 묶음으로 보고 ELECTRA 방식으로 사전학습한 scATAC-seq foundation model로, peak calling 없이 fragment 파일을 바로 읽는다. 빠른 clustering과 bulk BED 세포주 예측을 보였지만, 기본 모델은 PBMC 데이터에서 성능이 낮았다.
+
 ## Key claims
 
 - **Pretraining corpus.** Described as 1.2 million cells and 10 billion tokens from 30 tissues, processed uniformly (CellRanger ATAC → SnapATAC2). 359 Leiden clusters were pseudo-bulked, peaks were called with MACS3, and the peak sets were merged into a consensus vocabulary.

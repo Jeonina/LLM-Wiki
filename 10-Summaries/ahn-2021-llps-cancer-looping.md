@@ -28,6 +28,9 @@ topics:
 
 > Thesis: recurrent leukaemic translocations producing **NUP98-HOXA9** fusion proteins owe their oncogenic capacity to **LLPS**. The intrinsically disordered region (IDR — FG repeats) of NUP98 is *necessary and sufficient* for phase-separated nuclear puncta, leukaemic transformation, broad super-enhancer-like binding, and **CTCF-independent chromatin loops at proto-oncogenes**. Swapping the FG-IDR for an unrelated LLPS-competent IDR (FUS) reproduces puncta formation, leukaemic transformation and enhanced genome-wide binding (loops were tested only for the NUP98 IDR) — LLPS competence itself, not specific sequence, is the driving feature.
 
+> [!abstract] 한눈에
+> NUP98-HOXA9 융합 단백질은 NUP98의 FG-repeat IDR이 매개하는 LLPS를 통해 백혈병을 일으키며, 이 IDR을 FUS의 IDR로 바꿔도 같은 효과가 났다. 상분리된 NUP98-HOXA9는 proto-oncogene 주변에 CTCF와 무관한 chromatin loop를 만들었다.
+
 ## Verbatim key claims (from source body)
 
 - **IDR-mediated LLPS is necessary for leukaemogenesis** (Abstract):

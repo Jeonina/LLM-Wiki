@@ -22,6 +22,9 @@ topics: ["[[duplex-sequencing]]", "[[somatic-mosaicism]]", "[[brain-somatic-mosa
 
 > Rare somatic mutations private to single cells are invisible in bulk sequencing (Illumina sensitivity at best ~0.1%) and hard to call in single cells (amplification errors). **Bottleneck sequencing (BotSeqS)** adds one step to a PCR-free library: **dilute the adaptor-ligated library before PCR**, so a random sample of double-stranded molecules is each sequenced many times from both strands. Shear-point coordinates act as endogenous barcodes; a mutation counts only if present in ≥90% of both Watson and Crick families. The result is genome-wide, unbiased, duplex-grade rare-mutation quantification of nuclear and mitochondrial DNA together, applied across age, tissue, DNA-repair deficiency and carcinogen exposure.
 
+> [!abstract] 한눈에
+> BotSeqS는 PCR 전에 라이브러리를 희석하는 bottleneck 단계만 추가해, 정상 조직의 희귀 체세포 변이를 핵과 mtDNA에서 duplex 수준으로 유전체 전반에 걸쳐 정량했다. mtDNA 변이율은 핵보다 약 25배 높았지만, 흡연과 aristolochic acid 노출은 핵 DNA 변이만 늘렸다.
+
 ## Key claims
 
 - **Specificity and sensitivity.** False-positive rate 2.6 × 10⁻¹² per bp (from strand-discordant germline heterozygous calls); mutations at 6 × 10⁻⁸ per bp detectable with a small fraction of a HiSeq 2500 flow cell, and <10⁻⁹ estimated with a full flow cell. Without the both-strand requirement, nuclear prevalence was ~10-fold higher, driven by G→T artifacts.

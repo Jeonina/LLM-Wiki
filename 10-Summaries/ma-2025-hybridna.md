@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[computational
 
 > HybriDNA (Microsoft Research AI for Science, with Mamba authors Tri Dao and Albert Gu) is a decoder-only DNA language model that interleaves **Mamba2 and Transformer blocks 7:1**, uses single-nucleotide tokens and no positional encoding, and is pre-trained by next-token prediction on a 845-species, ~160-billion-nucleotide corpus. Context is warmed up from 8k to 32k to 131k tokens. Two fine-tuning modes cover both uses of a DNA model: **echo embeddings** (feed the sequence twice and pool the second copy) give a causal model access to "future" context for classification, and **prompt-token generative fine-tuning** designs regulatory sequences. Models at 300M, 3B and 7B parameters show lower pre-training loss with size, lead most GUE tasks, are competitive on BEND, give small gains on long-range eQTL with longer context, and generate enhancers and yeast promoters that a regLM oracle scores higher than HyenaDNA's.
 
+> [!abstract] 한눈에
+> HybriDNA는 Mamba2와 Transformer 블록을 7:1로 섞은 decoder-only DNA 언어 모델로, 문맥을 131k 토큰까지 늘렸다. GUE 과제 대부분에서 선두였지만 zero-shot eQTL 예측에서는 다른 모델처럼 우연 수준에 머물렀다.
+
 ## Key claims
 
 - **Hybrid beats pure Mamba2 on pre-training loss.** A 300M model with no attention layers had higher training and validation loss at 8k context than the hybrid (Fig. A2, curves only, no numbers in text).

@@ -22,6 +22,9 @@ topics: ["[[histone-modifications]]", "[[computational-methods]]", "[[single-cel
 
 > Single-cell histone PTM data (scCUT&Tag, scChIP-seq) look like scATAC-seq on disk but are far sparser and their signal domains are far wider, so scATAC habits do not transfer automatically. Running **11,970 pipeline combinations (11,080 successful)** over mark × embedding method × matrix construction × cell selection × feature selection × cell number × coverage, the authors find that **how reads are binned matters more than which embedding method is used**. Their recipe: large fixed-size bins (100–200 kbp), no feature selection, minimal cell filtering, TF-IDF, then SVD or NMF.
 
+> [!abstract] 한눈에
+> Raimundo 등은 단일세포 histone PTM 데이터 분석 파이프라인 1만여 조합을 비교해, embedding 방법보다 read binning 방식이 성능을 더 크게 좌우한다는 것을 보였다. 권장 조합은 100–200 kbp 고정 bin, feature selection 생략, TF-IDF와 SVD 또는 NMF이며, scATAC 관행을 그대로 옮기면 안 된다고 지적한다.
+
 ## Key claims
 
 - **TF-IDF-based methods win.** On the mouse brain dataset the three best embeddings are consistently ChromSCape_LSI, TFIDF-NMF and Signac, all of which apply TF-IDF. They are followed by SnapATAC and PeakVI (except on H3K4me3), then cisTopic, NMF, SCALE and ChromSCape_PCA. CPM normalization followed by PCA (ChromSCape_PCA) is worst everywhere. The TF-IDF effect also shows up directly as the gap between NMF and TFIDF-NMF.

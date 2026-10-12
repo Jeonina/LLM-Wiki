@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Chen et al. (2025) — *High-resolution, noninvasive single-cell lineage tracing in mice and humans based on DNA methylation epimutations (MethylTree)* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-024-02567-1)
 
+> [!abstract] 한눈에
+> MethylTree는 희소한 scBS-seq 데이터의 메틸화 epimutation으로 세포 계통수를 추정하는 프레임워크다. 5% 커버리지에서도 거의 완벽한 계통 순서를 재구성했고, 인간 배아에서 4세포기에 이미 운명이 결정된다는 결과를 보였다.
+
 Chen, Fu, Chen, Li and Wang (Westlake University) developed MethylTree, a computational framework that infers cell-lineage phylogenies from single-cell DNA-methylation epimutations in sparse scBS-seq data. The central observation is that methylation epimutations occur at $\sim$0.001 per CpG per cell division — orders of magnitude higher than somatic SNV rates — making methylation a faster molecular clock than somatic mutations, at the cost of higher noise.
 
 MethylTree addresses three challenges: (1) cell-type-specific methylation changes during differentiation must be separated from clone-stable epimutations; (2) global methylation modulation during development can disrupt epimutation signals; (3) sparse coverage (~5% of genome per cell in scBS-seq) yields highly missing-value matrices. The method uses Pearson-correlation similarity between cells corrected for measurement-noise heterogeneity, with iterative bias-correction to maximize lineage-similarity-matrix structure. Validation on simulated and HEK 293T-derived data showed near-100\% lineage-ordering accuracy at 5\% genomic coverage. Applied to mouse and human hematopoiesis, MethylTree recapitulated the differentiation hierarchy; applied to human embryos, the method revealed early fate commitment at the four-cell stage.

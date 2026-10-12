@@ -22,6 +22,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[scdna-cancer-applications]]"]
 
 > The canonical tool for inferring large-scale copy-number alterations from single-cell **transcriptomes**: average expression across genomically-ordered windows relative to a normal reference cell set, then read chromosome-arm-scale gain/loss from the smoothed residual. It made CNV clone structure readable from scRNA-seq without any DNA assay — and is now formally unsupported.
 
+> [!abstract] 한눈에
+> inferCNV는 유전체 순서로 정렬한 발현을 정상 기준 세포와 비교해 scRNA-seq에서 염색체 팔 수준의 CNV를 추론하는 대표 도구였지만, 지금은 공식 지원이 끝났고 관리자들은 CopyKAT, Numbat 등을 대안으로 안내한다.
+
 > ⚠️ **Source caveat + status change.** The bookmarked clipping is the GitHub README, and its first line is a deprecation notice: *"InferCNV is no longer supported."* The maintainers redirect users to **inferCNA**, **CopyKAT** ([[gao-2021-copykat]]) and **Numbat**. Any wiki claim that inferCNV is a current recommendation is now stale.
 
 ## Key claims

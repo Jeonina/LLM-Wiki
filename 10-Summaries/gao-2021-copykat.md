@@ -22,6 +22,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[scdna-cancer-applications]]"]
 
 > The successor inferCNV's own maintainers now point users toward. CopyKAT infers genome-wide copy number at ~5 Mb resolution from **high-throughput 3′ scRNA-seq** — the sparse, 3′-biased data that first-generation CNV-from-RNA tools were not built for — and uses aneuploidy as a marker-free criterion to separate malignant cells from the tumor microenvironment, at 98% accuracy across 21 tumors.
 
+> [!abstract] 한눈에
+> CopyKAT은 sparse한 3′ scRNA-seq 데이터에서 약 5 Mb 해상도로 copy number를 추론하고, aneuploidy를 기준으로 종양 세포와 미세환경 세포를 구분한다. 21개 종양 46,501개 세포에서 98% 정확도로 분류했으며, 발현만으로는 구별되지 않던 정상 상피 세포도 가려냈다.
+
 ## Key claims
 
 - The problem: distinguishing tumor cells from stromal/immune cells by expression alone fails because **normal epithelial cells express the same epithelial markers as cancer cells**. Aneuploidy is the discriminator — present in ~88% of human tumors, absent from stroma.

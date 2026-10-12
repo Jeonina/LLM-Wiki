@@ -25,6 +25,9 @@ updated: 2026-10-12
 
 > Droplet barcoding had worked for scRNA-seq but not for genomic DNA, because crude lysate and chromatin inhibit PCR. This Mission Bio / MD Anderson paper solves it with a **two-step droplet workflow**: cells are first encapsulated with a protease-containing lysis buffer and incubated, the protease is heat-inactivated, and each lysate droplet is then merged with a droplet carrying PCR reagents and a barcoded hydrogel bead whose primers target a **62-amplicon AML panel**. Applied to longitudinal bone-marrow samples from two AML patients (more than 16,000 cells genotyped), the method found residual mutant cells in remission and clonal structures that bulk VAF inference got wrong. The paper does not use the name "Tapestri"; the workflow is the basis of Mission Bio's commercial platform, and all Mission Bio authors declare employment and shares. (synthesis for the platform lineage)
 
+> [!abstract] 한눈에
+> Pellegrino 등은 단백질분해효소로 세포를 용해한 뒤 PCR droplet과 합치는 2단계 방식으로 droplet 기반 targeted scDNA-seq를 구현했고, 이것이 Tapestri 플랫폼의 바탕이 되었다. AML 환자 시료에서 관해기 잔존 돌연변이 세포를 찾았고, bulk VAF 추론이 틀린 clone 구조를 바로잡았다.
+
 ## Key claims
 
 - **The protease step is the enabling trick.** In droplet TaqMan PCR for the single-copy *SRY* locus in DU145 cells, "only 5.2% of detected DU145 cells were positive" without protease, against "97.9%" with it. With barcoded beads targeting eight amplicons in *TP53*, *DNMT3A*, *IDH1*, *IDH2*, *FLT3* and *NPM1*, protease also raised library yield and per-cell read depth across all eight targets.

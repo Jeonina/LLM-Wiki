@@ -22,6 +22,9 @@ topics: ["[[whole-genome-amplification]]", "[[computational-methods]]", "[[scdna
 
 > The first assembler adapted to [[mda|MDA]]'s coverage catastrophe, and the paper that reframed the field: *"the challenges facing single-cell genomics are increasingly computational rather than experimental."* The fix is one idea — replace the **single coverage cutoff** that every de Bruijn assembler uses to prune errors with a **progressively increasing cutoff**, so low-coverage regions survive pruning while high-coverage errors still get removed.
 
+> [!abstract] 한눈에
+> Velvet-SC는 de Bruijn assembler의 단일 coverage cutoff를 점진적으로 높이는 cutoff로 바꿔, MDA 특유의 커버리지 불균일 속에서도 단일 박테리아 세포 유전체를 조립했다. 단일세포에서 91% 넘는 유전자를 contig 안에 회수해 다세포 조립과의 격차를 크게 좁혔다.
+
 ## Key claims
 
 - **A single coverage cutoff is fatal for MDA data, and the numbers show why.** In multicell *E. coli*, most positions sit at 450–800× and only 0.1% fall below 450×, so a threshold prunes errors cleanly. In single-cell *E. coli*, **5% of positions have <10× and 11% have <30×** — and 30× is roughly the minimum most assemblers need for gap-free assembly. Any threshold high enough to remove errors also deletes a tenth of the genome.

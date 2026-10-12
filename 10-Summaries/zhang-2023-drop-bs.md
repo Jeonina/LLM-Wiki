@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]", "[[scdna-seq]]", "[[brain-somatic-mosaicism]]"]
 
 > The third throughput strategy for single-cell methylomes, after plates ([[luo-2017-snmc-seq|snmC-seq]]) and combinatorial indexing ([[mulqueen-2018-sci-met|sci-MET]]): **droplet microfluidics**, up to **10,000 cells in 2 days**. The non-obvious finding is that **bisulfite conversion inside droplets yields 9× more library** than the same conversion in bulk — the droplets are not just containers, they change the chemistry's yield.
 
+> [!abstract] 한눈에
+> Drop-BS는 droplet microfluidics로 2일 만에 최대 10,000개 세포의 single-cell methylome을 얻는 방법이다. droplet 안에서 bisulfite conversion을 하면 bulk보다 library가 9배 많이 나왔지만, 세포당 read 수는 snmC-seq보다 훨씬 적다.
+
 ## Key claims
 
 - **Five steps, three microfluidic devices.** (1) Encapsulate single nuclei with MNase for lysis and fragmentation (~35 µm droplets, ~10% single-cell occupancy, <0.5% doublets); (2) generate barcode-bead droplets (~7.0% bead occupancy) and fuse them to the scDNA droplets by AC-driven dielectrophoresis (~80% fusion); (3) UV-release barcodes from photocleavable linkers and ligate to fragmented gDNA; (4) re-encapsulate for bisulfite conversion; (5) random priming and indexing PCR.

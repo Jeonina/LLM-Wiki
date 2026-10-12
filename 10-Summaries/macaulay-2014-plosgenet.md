@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Macaulay & Voet (2014) — *Single cell genomics: advances and future perspectives* — *PLOS Genetics*. [DOI](https://doi.org/10.1371/journal.pgen.1004126)
 
+> [!abstract] 한눈에
+> Macaulay와 Voet는 2014년 시점의 단일세포 분리법과 DOP-PCR, MDA, MALBAC 같은 WGA 화학을 정리했다. WGA 인공산물이 scDNA-seq 오류의 대부분을 차지하고 모든 오류를 줄이는 방법은 없으니, 분석 목적에 맞춰 화학을 골라야 한다고 강조했다.
+
 Macaulay and Voet's 2014 review consolidated the state of single-cell whole-genome amplification methods circa 2014. Covers single-cell isolation strategies (manual micropipetting, FACS, microfluidics, LCM, sn-suspension sorting); WGA chemistries (DOP-PCR, MDA, MALBAC) and their failure modes (allelic dropout, preferential amplification, chimeric DNA molecules, GC-bias, nucleotide copy errors); and the downstream readouts those failures complicate (SV detection, CNV calling, B-allele fraction, base mutation report).
 
 The review's central methodological point is that WGA artifacts dominate the scDNA-seq error budget and that no single chemistry minimizes all failure modes simultaneously — DOP-PCR gives uniform CNV-grade coverage at the cost of low-resolution sequence accuracy; MDA gives broad coverage and good sequence fidelity (φ29 proofreading) but suffers ADO, preferential amplification and chimeras; MALBAC uses looped displacement pre-amplification to protect copied segments from re-amplification. Method selection must match the downstream question.

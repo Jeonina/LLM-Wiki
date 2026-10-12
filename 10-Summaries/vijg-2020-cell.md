@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Vijg & Dong (2020) — *Pathogenic mechanisms of somatic mutation and genome mosaicism in aging* — *Cell*. [DOI](https://doi.org/10.1016/j.cell.2020.06.024)
 
+> [!abstract] 한눈에
+> Vijg와 Dong은 체세포 돌연변이와 게놈 모자이크가 노화에 기여하는 기전을 기능 세포의 손실, 돌연변이 세포의 clonal expansion, 조직 항상성 교란의 세 가지로 정리했다. 특히 흔한 접합 후 돌연변이로 Y 염색체 소실을 강조한다.
+
 Vijg and Dong's 2020 Cell Perspective reviews how somatic mutations and genome mosaicism contribute to aging at the cellular and tissue levels. The piece argues that postzygotic mutations are now quantifiable at the single-cell level for the first time, and that three classes of mechanism can link mutation accumulation to age-related cellular dysfunction: (1) loss of functional cells through cell-autonomous mutation effects (apoptosis, senescence); (2) clonal expansion of mutation-bearing cells (clonal hematopoiesis, mosaic loss of Y chromosome), competing with wild-type cells and remodeling tissue function; (3) effects on multicellular tissue homeostasis when mutated and wild-type cells coexist.
 
 The review surveys the methods that enabled this shift — scWGS (Lodato 2015, Bae 2018), single-cell-derived clones (Lee-Six 2018), and bulk methods that resolve clonal expansions — and emphasizes loss of Y chromosome (LOY) as a particularly common postzygotic mutation (2.5–43.6% of men aged 40–70 in the UK Biobank) with broad disease associations.

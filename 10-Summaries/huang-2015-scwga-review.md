@@ -22,6 +22,9 @@ topics: ["[[whole-genome-amplification]]", "[[scdna-seq]]", "[[scdna-cancer-appl
 
 > The canonical review of the three pre-PTA amplification chemistries, from the lab that invented one of them. Its lasting contribution is not the chemistry descriptions but the **parameter vocabulary**: coverage, uniformity, reproducibility, unmappable rate, **chimera rate**, allele dropout rate, SNV false-positive rate, and CNV-calling ability — eight axes that the field still uses to argue about WGA.
 
+> [!abstract] 한눈에
+> Huang 등은 PTA 이전의 세 WGA 화학인 DOP-PCR, MDA, MALBAC을 정리하면서 커버리지, 균일도, chimera rate, ADO 등 여덟 가지 평가 축을 제시했다. 어떤 화학도 모든 축에서 앞서지 못하며, chimera 때문에 단일세포 SV 검출이 어렵다고 지적했다.
+
 ## Key claims
 
 - **WGA quality is eight-dimensional, and no chemistry dominates all eight.** Naming the axes is the review's structural contribution: a method can be excellent on uniformity and useless on ADO, and a single "accuracy" number hides that.

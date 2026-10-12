@@ -24,6 +24,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/sin
 >
 > EpiFoundation is a transformer **pretrained on single-cell multiome data** (paired scATAC + scRNA from the same cell). Its input is scATAC only; RNA is used solely as the training target. Each cell is fed in as the set of its **non-zero peaks**, up to 12,000, which covers all non-zero peaks for more than 95% of cells. Each token is a learned peak-ID embedding plus a chromosome embedding. There is no DNA sequence and no genomic position within the chromosome. Instead of masked-peak prediction, the [CLS] cell embedding, concatenated with a batch embedding, is trained to predict **binary expression** of 8,000 sampled genes from the paired RNA ("peak-to-gene alignment"). The training set is a curated 10x Multiome "MiniAtlas" of over 100,000 cells from 19 tissues and 56 cell types. After fine-tuning, the model reports cell-type annotation accuracy of 0.76–0.91, beats PCA, Harmony, LIGER and scANVI on most integration metrics, and roughly doubles gene-expression correlation compared with Signac Gene Activity.
 
+> [!abstract] 한눈에
+> EpiFoundation은 scATAC의 non-zero peak만 입력으로 받아, 같은 세포의 RNA로 유전자 발현 여부를 예측하도록 사전학습한 transformer다. 세포 유형 annotation과 batch correction에서 좋은 성적을 냈지만 DNA 서열은 전혀 쓰지 않으며, annotation에는 비교 baseline이 없다.
+
 ## Key claims
 
 - **Only non-zero peaks matter.** The authors argue that knowing which peaks are open is enough to represent a cell. Dropping zero peaks raises the density of cell-specific information and keeps sequence length manageable.

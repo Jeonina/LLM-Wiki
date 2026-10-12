@@ -26,6 +26,9 @@ topics: ["[[40-Topics/somatic-mosaicism]]", "[[40-Topics/brain-somatic-mosaicism
 
 > Postmitotic human neurons, which do not replicate their DNA, still gain somatic SNVs **approximately linearly with age**, and gain them faster in early-onset neurodegeneration caused by nucleotide-excision-repair defects. The authors sequenced **159 single neurons** (MDA, 45X WGS) from prefrontal cortex (PFC) and hippocampal dentate gyrus (DG) of 15 neurologically normal individuals aged 4 months to 82 years and 9 individuals with Cockayne syndrome (CS) or xeroderma pigmentosum (XP), and called sSNVs with the linkage-based **LiRA** pipeline. They estimate **~23 sSNVs/year in PFC and ~40 sSNVs/year in DG**, a **~2.3–2.5-fold excess** in CS/XP neurons, and three mutational signatures: a replication-independent **clocklike Signature A**, a DG-enriched C>T **Signature B**, and an oxidative, DNA-repair-linked C>A **Signature C**. They name the age-related accumulation **genosenium**.
 
+> [!abstract] 한눈에
+> Lodato 등은 정상인과 Cockayne 증후군·XP 환자의 단일 뉴런 159개를 MDA로 증폭해 시퀀싱했다. 분열하지 않는 뉴런에서도 체성 SNV가 나이에 따라 거의 선형으로 쌓이고, DNA 복구에 결함이 있으면 그 속도가 2배 넘게 빨라짐을 보였다.
+
 ## Key claims
 
 - **Cohort.** 91 PFC neurons from 15 normal individuals (0.4–82.7 years), 26 DG neurons from 6 of them, and 42 PFC neurons from 9 CS (*CSB*, 6 cases) or XP (*XPA* or *XPD*, 3 cases) individuals; Table 1 totals 24 cases, 133 PFC and 26 DG neurons, 159 neurons. The Fig. 3B caption instead counts "161 neurons".

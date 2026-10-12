@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Nagano et al. (2013) — *Single-cell Hi-C reveals cell-to-cell variability in chromosome structure* — *Nature*. [DOI](https://doi.org/10.1038/nature12593)
 
+> [!abstract] 한눈에
+> Nagano 등은 proximity ligation을 온전한 핵 안에서 수행하는 최초의 single-cell Hi-C를 개발했다. 메가베이스 규모의 TAD 구조는 세포 간에 대체로 보존되지만, 염색체 territory와 염색체 간 배치 같은 더 큰 규모의 구조는 세포마다 크게 달랐다.
+
 Nagano, Lubling, Stevens, Schoenfelder, Yaffe, Dean, Laue, Tanay and Fraser (Babraham, Weizmann, Cambridge) reported the founding single-cell Hi-C method. They modified the ensemble Hi-C protocol to perform chromatin cross-linking, BglII digestion, biotin fill-in, and proximity ligation *inside intact nuclei* rather than after dilution, then physically isolated individual nuclei under the microscope, reversed cross-links, and purified biotinylated ligation junctions. A second restriction (AluI) and unique 3-bp barcoded adapters allowed multiplexed Illumina sequencing of single-cell libraries.
 
 Applied to mouse CD4+ Th1 cells, the method recovered up to ~30,000 distinct fragment-end pairs per cell. Single-cell Hi-C maps showed that megabase-scale topologically-associating-domain organization is largely preserved cell-to-cell, but larger-scale (chromosome-territory and inter-chromosomal) conformations are highly variable. Structural modeling of single X chromosomes from individual cells revealed cell-specific 3D folds despite preserved local domain structure. Active gene domains localized preferentially to territory boundaries — a feature stable across cells.

@@ -22,6 +22,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[single-cell-lineage-tracing]]", "[[co
 
 > One of the two 2016 papers (with [[jahn-2016-scite|SCITE]]) that turned single-cell tumour phylogeny into a modelled statistical problem rather than a clustering exercise. OncoNEM's distinctive move is to borrow the **nested effects model** from gene-perturbation screens: if clone A is ancestral to clone B, then A's mutations are a *subset* of B's — so tree inference becomes the problem of scoring **noisy subset relations**. It also does something its contemporaries do not: it explicitly tests for and infers **unobserved subpopulations**.
 
+> [!abstract] 한눈에
+> OncoNEM은 nested effects model을 빌려, 단일세포 종양 계통 추론을 잡음이 섞인 돌연변이 부분집합 관계를 점수화하는 문제로 바꾸었다. clone 군집화와 계통수 구축을 동시에 하고, 관찰되지 않은 하위 집단까지 추론한다.
+
 ## Key claims
 
 - **Two challenges are named and each is addressed.** (1) *Genotype noise* — reported false discovery rates of 2.67 × 10⁻⁵ to 6.7 × 10⁻⁵ mean false positives can outnumber true somatic variants, and reported ADO rates of 0.16–0.43 make false negatives and missing values pervasive. Because of this noise, standard clustering often fails even at the simple task of mapping cells to clones. (2) *Unobserved subpopulations* — sampling bias, undersampling, and extinction mean the sequenced cells represent only a subset of the clones that ever existed.

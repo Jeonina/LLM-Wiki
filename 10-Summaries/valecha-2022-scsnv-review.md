@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Valecha & Posada (2022) — *Somatic variant calling from single-cell DNA sequencing data* — *Computational and Structural Biotechnology Journal*. [DOI](https://doi.org/10.1016/j.csbj.2022.06.013)
 
+> [!abstract] 한눈에
+> scWGA가 만드는 allele dropout, allelic imbalance, 증폭 오류 같은 편향을 분류하고 Monovar, SCcaller, SCAN-SNV 등 scDNA SNV caller를 비교한 리뷰다. 모든 상황에서 최선인 caller는 없으며 WGA 화학, coverage, bulk 대조군 유무에 따라 선택해야 한다고 결론지었다.
+
 Valecha and Posada (Universidade de Vigo) reviewed computational approaches for **somatic single-nucleotide variant (SNV) calling from scDNA-seq data**. The review categorizes the technical biases scWGA introduces — allele dropout (ADO), allelic imbalance (AI), locus dropout (LDO), amplification errors — and surveys the eight major SNV-caller families designed to handle them: Monovar (multi-cell pooled likelihood), SCcaller (local-bias correction), SCAN-SNV (sequencing-context-aware), ProSolo (combined bulk+single-cell), LiRA (read-backed phasing with linked germline hSNPs), SCIΦ (joint inference with tree), Conbase, scVILP, SCIΦN, Phylovar.
 
 Performance comparison via three axes: statistical performance (sensitivity, FDR, FP rate), speed benchmark, and modeling philosophy (genotype-likelihood vs phylogeny-aware). Conclusion: no single caller is universally best; choice depends on (a) scWGA chemistry (e.g., ProSolo's MDA-specific bias model), (b) coverage depth, (c) whether bulk control is available, (d) whether tree inference is needed simultaneously.

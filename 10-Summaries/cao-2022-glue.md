@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Cao & Gao (2022) — *Multi-omics single-cell data integration and regulatory inference with graph-linked embedding (GLUE)* — *Nature Biotechnology*. [DOI](https://doi.org/10.1038/s41587-022-01284-4)
 
+> [!abstract] 한눈에
+> GLUE는 피처 간 조절 관계를 담은 guidance graph와 modality별 VAE를 결합해, 피처 공간이 서로 다른 unpaired scRNA-seq·scATAC-seq·메틸롬 데이터를 하나의 잠재 공간에 통합한다. paired 벤치마크 세 개 모두에서 FOSCTTM 정렬 오차가 가장 낮았고, guidance graph가 90% 훼손되어도 성능을 유지했다.
+
 Cao and Gao (Peking University) developed **GLUE** (Graph-Linked Unified Embedding), a deep-learning framework for integrating **unpaired** multi-omics single-cell data (scRNA-seq + scATAC-seq + snmC-seq / sci-MET, etc.) that have distinct feature spaces. The key idea: build a *knowledge-based guidance graph* whose vertices are features (genes, ATAC peaks, methylation regions) and whose edges represent known regulatory interactions (e.g., a peak overlapping a gene body links the peak vertex to the gene vertex with a positive edge).
 
 Each modality is encoded by a modality-specific variational autoencoder; cell embeddings from all modalities are aligned in a shared latent space via adversarial discriminator training that prevents modality-specific clustering. The guidance graph is also embedded (via a graph-VAE), and the feature embeddings constrain how the data decoders reconstruct each modality.

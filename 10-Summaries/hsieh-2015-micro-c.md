@@ -23,6 +23,9 @@ topics: ["[[3d-genome]]", "[[chromatin-architecture]]"]
 
 > Restriction-enzyme Hi-C leaves a "blind spot" between ChIP-seq/MNase-seq (~1–150 bp) and Hi-C (>1–4 kb), the scale of 30-nm fibres and yeast gene loops. **Micro-C** fills it by digesting crosslinked chromatin to **mononucleosomes with micrococcal nuclease** before proximity ligation, giving a nucleosome-by-nucleosome contact map of budding yeast (66,360 × 66,360 nucleosomes). The maps show **chromosomal interaction domains (CIDs)** of one to five genes, bounded at **promoters** of highly transcribed genes. **Gene compaction is anticorrelated with transcription** and is shaped by RSC, cohesin loading, Mediator, Rtt109 and the H4 tail. The authors find **no periodic 30-nm fibre**, but the data fit a sparse tri- or tetranucleosome motif. Their model is "gene crumples" (globules), not gene loops. (Re-ingested 2026-10-07 from the full PDF; the earlier clipping lacked the abstract and most Results.)
 
+> [!abstract] 한눈에
+> Micro-C는 Hi-C의 제한효소 대신 MNase로 염색질을 단일 뉴클레오솜까지 잘라 효모의 뉴클레오솜 해상도 접촉 지도를 만들었다. 프로모터를 경계로 1–5개 유전자 크기의 CID가 나타났고, 유전자 압축은 전사와 반비례했으며 규칙적인 30-nm 섬유는 보이지 않았다.
+
 ## Key claims
 
 - **Method.** Yeast fixed with formaldehyde → MNase to >95% mononucleosomes → T4 polymerase end repair with biotin-dCTP/dATP fill-in → dilute ligation → exonuclease III removal of unligated biotin ends → ~250–350 bp gel selection → streptavidin pulldown → paired-end sequencing. Controls: no ligation, no crosslinking, and an *S. cerevisiae* × *K. lactis* chromatin mix before ligation, which showed **~10% spurious ligations** at the dilution used.

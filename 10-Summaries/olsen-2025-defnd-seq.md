@@ -33,6 +33,9 @@ topics:
 
 > Thesis: Existing joint single-cell DNA+RNA co-assays (G&T-seq, DR-seq, SIDR, Simul-seq) are plate-based and low-throughput; sci-L3 is scalable but low-coverage and demonstrated only on cell lines. **DEFND-seq** (DNA and Expression Following Nucleosome Depletion) deplete nucleosomes with lithium diiodosalicylate (LAND), then runs nuclei through the *stock 10x Genomics Multiome (ATAC+GEX) kit* without modification — turning a chromatin-accessibility platform into a high-throughput genome+transcriptome co-assay, validated on cell lines and fresh/archival glioblastoma.
 
+> [!abstract] 한눈에
+> DEFND-seq는 LAND로 nucleosome을 제거한 핵을 10x Multiome 키트에 그대로 넣어, 고처리량으로 전장 유전체 DNA와 RNA를 함께 읽는 방법이다. 교모세포종에서 EGFR, PDGFRA 증폭 subclone을 전사체 상태와 단일세포 수준에서 연결했다.
+
 ## Key claims
 
 - Repurposing insight: feeding nucleosome-depleted nuclei into the 10x snATAC/Multiome kit yields whole-genome snDNA-seq instead of accessibility, because removing nucleosomes makes Tn5 tagment the genome uniformly rather than only open chromatin.

@@ -22,6 +22,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[single-cell-lineage-tracing]]", "[[co
 
 > Single-cell SNV tools had split into two camps. **Clusterers** (Bernoulli mixtures, SCG) find clones but ignore their ancestry. **Tree builders** (SCITE, OncoNEM, SiFit, PhISCS) build lineages but mostly assume infinite sites, give no direct clone reconstruction, and cannot represent **doublets**, because a merged genotype is not a leaf of any lineage tree. SiCloneFit does both at once. A **tree-structured Chinese restaurant process** puts clones (clusters of cells) at the leaves of a clonal phylogeny. Clone genotypes evolve along the tree under SiFit's **finite-site model** (point mutation, deletion, LOH), observations pass through a **false-positive/false-negative error model**, and an optional **Beta-binomial doublet model** lets a cell draw from two clones. A Gibbs sampler with partial reversible-jump and Metropolis–Hastings moves samples the joint posterior. The output is clone number, clone membership, clone genotypes and the tree, each with posterior support.
 
+> [!abstract] 한눈에
+> SiCloneFit은 tree 구조의 Chinese restaurant process로 클론 군집과 계통을 한꺼번에 추론하는 Bayesian 방법으로, finite-sites 모델과 doublet 모델을 함께 쓴다. 시뮬레이션에서 SCG, OncoNEM, SiFit, SCITE보다 clustering, genotyping, tree 정확도가 모두 높았다.
+
 ## Key claims
 
 - **Joint inference with uncertainty.** The authors call SiCloneFit "the first Bayesian framework that jointly reconstructs clonal populations and their evolutionary history from SCS data sets under a finite-site model of evolution while accounting for cell doublets along with other WGA artifacts".

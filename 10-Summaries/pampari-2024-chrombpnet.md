@@ -24,6 +24,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[single-cell-a
 >
 > ChromBPNet is a compact (~6 M parameter) [[sequence-to-function-model]] that predicts base-resolution ATAC-seq or DNase-seq cleavage profiles over 1 kb from 2,114 bp of sequence. Its key idea is **bias factorisation**: a small frozen CNN trained on non-peak background learns the enzyme's own sequence preference (Tn5 or DNase-I), and a larger BPNet-style CNN is trained on what is left. Removing the bias head yields bias-corrected profiles, footprints and contribution scores. With these, the model recovers compact TF motif lexicons, cooperative composite motifs and footprints, works on shallow and pseudobulk scATAC data, and predicts variant effects on accessibility about as well as much larger multi-task models such as Enformer — but below AlphaGenome.
 
+> [!abstract] 한눈에
+> ChromBPNet은 Tn5·DNase-I 효소 편향을 별도 모델로 분리해, 염기 해상도의 bias-corrected 접근성 프로파일과 TF footprint, motif 문법을 얻는 소형 CNN이다. 변이 효과 예측력은 Enformer 같은 대형 모델과 비슷하지만 AlphaGenome에는 못 미친다.
+
 ## Key claims
 
 - **Enzyme bias distorts profile shape, not total counts.** Naive BPNet models of K562 ATAC-seq learned Tn5 preference motifs in profile contribution scores but not in count contribution scores. A bias model trained on background predicted Tn5 profile shapes in peaks well (median JSD 0.48) but not total counts (r = −0.16). DNase-I bias is weaker; marginal Tn5 bias footprints were orders of magnitude stronger than DNase-I ones.

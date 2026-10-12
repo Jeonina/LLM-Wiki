@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Navin et al. (2011) — *Tumour evolution inferred by single-cell sequencing* — *Nature*. [DOI](https://doi.org/10.1038/nature09807)
 
+> [!abstract] 한눈에
+> Navin 등은 single-nucleus sequencing(SNS)을 도입해 단일 핵의 copy-number profile로 종양 진화를 추적한 첫 연구를 내놓았다. 원발암과 간 전이 쌍에서 단 한 번의 클론 확장이 전이를 일으켰음을 보여 punctuated evolution 모델을 지지했다.
+
 Navin, Kendall, Troge et al. (Wigler lab, CSHL; Navin's PhD work) introduced **single-nucleus sequencing (SNS)** — the founding paper for tumor scDNA-seq via FACS-isolated nuclei → whole-genome amplification → low-coverage WGS → CNV inference using variable-length bins. Profiled 100 single cells each from two breast cancers: a polygenomic tumour and a monogenomic primary tumour with its liver metastasis (200 cells total). Findings: (i) three clonal subpopulations in a polygenomic TNBC; (ii) the primary-metastasis pair revealed that **a single clonal expansion seeded the metastasis**, supporting punctuated-evolution rather than gradual-evolution models of tumor progression; (iii) an abundant pseudodiploid subpopulation that does not metastasize. Established **integer copy-number profiles** as the canonical scDNA-seq output for tumor analysis.
 
 ## Why this matters

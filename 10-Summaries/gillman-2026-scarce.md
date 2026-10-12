@@ -25,6 +25,9 @@ topics: ["[[40-Topics/mosaic-variant-calling]]", "[[40-Topics/somatic-mosaicism]
 >
 > SCARCE (Single-Cell Analysis of Rare Clonal Events) is an R package that ranks somatic variants in scDNA-seq data by how strongly they are enriched in one cell subpopulation versus all other cells. Subpopulations come from ADT surface-marker clustering (Tapestri), user annotations, or clustering on the variants themselves. Each variant gets a 2×2 table (mutant vs reference cells, inside vs outside the group), an odds ratio, and a Wald test (Fisher's exact test when any count is < 5), with Benjamini–Yekutieli FDR control. The argument is that a statistical ranking lets you filter lightly, so true rare-clone variants are not thrown away by the stringent filtering that Mission Bio's Optima and Mosaic need to shrink ~100,000 calls to ~20–50. In a PBMC sample with a KG-1 spike-in, SCARCE isolated a 10-cell cluster out of 16,316 cells (0.06%) and ranked a known KG-1 *TP53* variant first. In a refractory coeliac disease sample, it recovered all four known drivers that survived filtering and two additional *STAT3* candidates.
 
+> [!abstract] 한눈에
+> SCARCE는 scDNA-seq의 somatic variant를 특정 세포 subpopulation에 얼마나 enrichment되어 있는지로 순위를 매기는 R package다. Tapestri 데이터에서 0.06% 수준의 희귀 KG-1 clone을 분리했는데, Optima와 Mosaic은 이 clone을 찾지 못했다.
+
 ## Key claims
 
 - **Rare-clone isolation at 0.06%.** Tapestri Myeloid panel data from Mission Bio's public repository: 16,316 cells, 114,788 raw variant calls, two PBMC samples mixed with KG-1 AML cells. Variant-based clustering in SCARCE gave two large clusters (likely the two PBMC donors) and a 10-cell cluster. Optima and Mosaic, which cluster on far fewer variants, did not appear to isolate a KG-1 cluster.

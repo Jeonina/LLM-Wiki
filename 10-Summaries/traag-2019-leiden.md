@@ -22,6 +22,9 @@ topics: ["[[single-cell-multiomics]]", "[[single-cell-atac-seq]]"]
 
 > The Louvain algorithm — the default clustering method across single-cell genomics — can return communities that are **internally disconnected**, and iterating it makes this worse. Leiden adds a refinement phase that provably guarantees connectivity, converges to subset-optimal partitions, and runs faster.
 
+> [!abstract] 한눈에
+> Leiden은 Louvain이 내부적으로 끊어진 커뮤니티를 만들고 반복할수록 이 문제가 심해진다는 점을 보였다. refinement 단계를 더해 커뮤니티 연결성을 증명 가능하게 보장하고 더 빠르게 수렴하는 알고리즘을 제시했으며, single-cell 클러스터링의 표준 단계가 되었다.
+
 ## Key claims
 
 - **The defect**: a node acting as a bridge within its community can be moved elsewhere, disconnecting the community it left. The remaining nodes may still be locally optimally assigned, so nothing repairs it — and once the network is aggregated, the disconnected community becomes a single node and can never be split.

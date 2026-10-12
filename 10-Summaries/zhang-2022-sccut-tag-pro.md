@@ -22,6 +22,9 @@ topics: ["[[histone-modifications]]", "[[single-cell-multiomics]]"]
 
 > Two problems, one solution. scCUT&Tag is sparse, and it measures **one mark per cell** while chromatin *state* is by definition combinatorial. Adding a 173-antibody surface-protein readout to each cell gives a dense, shared coordinate system; anchoring six separate single-mark experiments through that protein space yields interpolated per-cell profiles for all six marks, which a single-cell extension of ChromHMM then segments into states.
 
+> [!abstract] 한눈에
+> scCUT&Tag-pro는 CUT&Tag에 173개 표면 단백질 측정을 더하고, 이 단백질 공간을 anchor 삼아 따로 측정한 여섯 histone mark를 세포 단위로 통합했다. 이를 바탕으로 scChromHMM이 세포별 chromatin state를 추정했으며, 어디서도 발현되지 않는 유전자에서도 세포형 특이적 repressive state가 나타났다.
+
 ## Key claims
 
 - **scCUT&Tag-pro**: CUT&Tag on whole cells (not nuclei) with simultaneous ADT capture. Cells stained with oligo-conjugated antibodies → monovalent Fab blocks pAG binding to them → light 0.1% formaldehyde fixation → isotonic lysis. **Removing digitonin from all buffers eliminated cell clumping** without hurting tagmentation. Compatible with the 10x scATAC kit and with cell hashing.

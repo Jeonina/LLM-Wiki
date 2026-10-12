@@ -22,6 +22,9 @@ topics: ["[[single-cell-lineage-tracing]]"]
 
 > scRNA-seq destroys the cell it measures, so it cannot directly tell which progenitor state leads to which fate. **LARRY** (lineage and RNA recovery) puts a random, **expressed** 28-mer barcode in the 3′ UTR of a lentiviral eGFP, so clones are read out by scRNA-seq. Barcoding mouse haematopoietic progenitors, letting them divide, and sampling sisters early and late (in culture and after transplantation) links early transcriptional state to later clonal fate across >300,000 cells. Two conclusions carry the paper: fate priming lies on a **continuous** landscape, and **sister cells agree on fate far more than transcriptionally similar cells do** — scRNA-seq misses heritable, cell-autonomous fate information (perhaps chromatin state).
 
+> [!abstract] 한눈에
+> LARRY는 발현되는 lentiviral barcode로 clone을 scRNA-seq에서 읽어 조혈 전구세포의 초기 전사 상태와 이후 운명을 30만 개 이상의 세포에서 연결했다. fate priming은 연속적인 지형을 이루며, 자매 세포끼리는 전사적으로 비슷한 세포보다 운명이 훨씬 잘 일치해 scRNA-seq가 놓치는 유전되는 운명 정보가 있음을 보였다.
+
 ## Key claims
 
 - **Tool.** Library of ~0.5 × 10⁶ barcodes, sufficient to label 5,000 cells with <1% overlap between clones; barcodes detected in 93% of GFP⁺ cells; 0.3% of 5,000 barcodes recurred between replicate transductions (chance level).

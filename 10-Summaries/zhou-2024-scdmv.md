@@ -22,6 +22,9 @@ topics: ["[[40-Topics/dna-methylation]]", "[[40-Topics/computational-methods]]"]
 
 > Single-cell bisulfite data are sparse and per-cell regional methylation rates pile up at **exactly 0 or 1** (in the authors' real data, the 0 and 1 rates together exceed 0.9). scDMV calls **differentially methylated regions (DMRs) between two groups of cells** by modelling methylated read counts as binomial given a cell- and region-specific rate, and that rate as a **zero–one inflated beta** (point masses at 0 and 1 plus a beta component). Parameters are fit per region and group by EM; a **Wald test** on the group means plus a methylation-difference (Δ) cutoff defines DMRs. Comparators are two bulk-oriented tools, methylpy and CGmapTools.
 
+> [!abstract] 한눈에
+> scDMV는 scBS-seq의 regional methylation rate가 0과 1에 몰리는 특성을 zero-one inflated beta mixture로 모델링해 세포 집단 간 DMR을 찾는다. 다만 비교 대상이 single-cell용이 아닌 두 도구뿐이고 simulation도 자체 모델에서 생성해 근거는 제한적이다.
+
 ## Key claims
 
 - **Simulation (73 cells: 48 vs 25; 1,000 ten-CpG regions; five replicates)**: at P ≤ 0.01 and Δ ≥ 0, scDMV called 864/1,000 true DMRs in "difference" experiments and 1 in "indifference" (null) experiments; CGmapTools 549 / 10; methylpy 999 / **999** (i.e., no specificity). At Δ ≥ 0.2: scDMV 90, CGmapTools 21, methylpy 7, with no null calls. Simulated precision stayed above 0.98 for scDMV in all scenarios; methylpy's false positive rate was "notably high".

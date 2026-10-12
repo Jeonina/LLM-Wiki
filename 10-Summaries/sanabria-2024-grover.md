@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[computational
 
 > GROVER (Genome Rules Obtained Via Extracted Representations) is a BERT model trained only on the human genome (hg19), whose contribution is how the vocabulary was chosen. The authors build byte-pair-encoding (BPE) vocabularies over 100–5,000 merge cycles, train a model on each, and pick the vocabulary by an intrinsic task — fine-tuning to predict the next k nucleotides (k = 2–6) — rather than by any biological benchmark. Cycle 600 wins (601 tokens, mean length 4.07 nt). The paper then asks what the model learned: token embeddings mostly encode frequency, GC, AG and AC content and length; whole-window (CLS) embeddings separate repeat classes, chromatin states, element orientation and replication timing. GROVER beats NT, DNABERT-2, HyenaDNA and fixed k-mer models on promoter and CTCF-binding tasks designed to reduce frequency cues. The paper also shows that a frequency-only TF-IDF + random-forest baseline explains much of the standard NT and GUE benchmarks.
 
+> [!abstract] 한눈에
+> GROVER는 human genome만으로 학습한 BERT 모델이다. BPE vocabulary를 생물학적 benchmark가 아니라 next-k-mer 예측이라는 내재적 과제로 골랐다는 점이 특징이며, 표준 benchmark 상당수가 k-mer 빈도만으로 설명된다는 것을 보여 DNA language model 평가 방식에 문제를 제기했다.
+
 ## Key claims
 
 - **Vocabulary by intrinsic evaluation.** Next-k-mer prediction is independent of tokenisation, vocabulary size and architecture, so it can rank vocabularies without biasing toward a biological task. Models were most accurate between 400 and 800 BPE cycles; cycle 600 was chosen.

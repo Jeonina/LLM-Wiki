@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[computational-methods]]"]
 
 > An application note naming three gaps in contact-calling for **multiomic single-cell Hi-C** (LiMCA for transcription + 3C, snm3C-seq for methylation + 3C) and closing them in one tool. (1) **Sticky-end proximity ligation leaves a single restriction-enzyme motif at the junction that aligners multimap to both loci**; map3C trims it. (2) The earlier snm3C-seq contact callers (TAURUS-MH, YAP) **report no MAPQ-based QC**; map3C filters on MAPQ. (3) No multiomic scHi-C tool calls **structural-variant breakpoints at 1 bp**; map3C flags contacts far from RE cut sites, and soft-clipped junctions reveal exact breakpoints. Contact calling itself is delegated to Pairtools.
 
+> [!abstract] 한눈에
+> map3C는 LiMCA와 snm3C-seq 같은 multiomic single-cell Hi-C에서 다중 매핑되는 접합부를 잘라내고 MAPQ로 필터링하며 1 bp 해상도로 SV breakpoint를 찾는 contact 호출 도구다. 기존 도구보다 물리적으로 일관된 3D 모델을 만들었으나, SV breakpoint 검출의 recall은 매우 낮았다.
+
 ## Key claims
 
 - **Pipeline.** Input is locally aligned paired-end reads: BWA-MEM/MEM2 for non-bisulfite data, Biscuit or BSBolt for bisulfite (snm3C-seq). Steps: MAPQ filter → Pairtools "mask" contact calling (optionally "all" for >2 loci per read pair) → RE-cut-site proximity annotation to flag likely SV-induced contacts → trimming of multimapped spans between adjacent soft-clipped alignments. Outputs are a trimmed BAM and an annotated PAIRS file.

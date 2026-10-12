@@ -22,6 +22,9 @@ topics: ["[[single-cell-multiomics]]", "[[computational-methods]]", "[[single-ce
 
 > Spatial multiome kits do not exist commercially, but spatial transcriptomics kits and single-cell multiome kits both do. ISON exploits that asymmetry: learn a shared embedding from **ST + sc-multiome**, push spatial RNA through the multiome's ATAC decoder, and get **inferred spatial chromatin accessibility** — then run [[gene-regulatory-network|GRN]] inference on the result. The counterintuitive claim is that the *inferred* accessibility is **more biologically interpretable than the directly measured** spatial ATAC, because the measurement is so sparse.
 
+> [!abstract] 한눈에
+> ISON은 spatial transcriptomics와 single-cell multiome을 통합해 공간 chromatin accessibility를 추론하며, KL-NMF 선형 모델이 VAE보다 나았다. 추론값이 희소한 실측 spatial ATAC보다 eQTL·Hi-C 조절 신호를 더 잘 복원했지만, 독립 검증 데이터는 아직 없다.
+
 ## Key claims
 
 - **Two model variants; the linear one wins.** A joint KL-NMF (Poisson likelihood, shared regulatory-program matrices across ST/scRNA/scATAC, Laplacian regularisation penalising abrupt program change between neighbouring spots, plus modality-specific correction vectors for batch effects) and a contrastive joint VAE (two VAEs, RNA–ATAC pairs from the same cell as positives). **KL-NMF consistently outperforms the VAE** — P21 peak-wise PCC 0.23 vs 0.09, P22 0.15 vs 0.07 — and is adopted as the default.

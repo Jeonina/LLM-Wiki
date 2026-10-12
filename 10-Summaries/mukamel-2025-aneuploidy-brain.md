@@ -16,6 +16,9 @@ updated: 2026-05-12
 
 > Eran A. Mukamel, Hanqing Liu, M. Margarita Behrens, **Joseph R. Ecker\***. *Neuron* **113**, 2814–2821 (3 September 2025). DOI: 10.1016/j.neuron.2025.08.006. UCSD + Salk + HHMI.
 
+> [!abstract] 한눈에
+> 세포 유형 분류용으로 생산된 snmC-seq 메틸롬 415,103개를 copy-number 신호로 재활용해 성체 생쥐 뇌 세포의 0.175–0.349%가 염색체 수준 aneuploidy를 지님을 보였다. 염색체 16 trisomy가 13배 농축되었고 OPC·pericyte·Pons 뉴런에서 aneuploidy가 많았다.
+
 ## Thesis
 
 **Single-cell DNA methylation sequencing (snmC-seq) data, originally collected for cell-type taxonomy, can detect aneuploidies** — whole-chromosome gains or losses — because the bisulfite-converted read distribution doubles as a copy-number signal. Applied to **415,103 single-cell methylomes covering the entire adult mouse brain** (BICCN dataset), the study finds aneuploidy in 0.175–0.349% of cells, with **strong cell-type-specific enrichment**: trisomy of chromosome 16 (mouse syntenic with human chr21) is **13-fold enriched** vs other autosomes, and aneuploidy of any chromosome is preferentially enriched in **oligodendrocyte precursor cells (OPCs)**, **Pons neurons**, and **pericytes**. Methodologically, this is the scTrio-seq logic (RRBS read distribution → CNV signal) extended to snmC-seq at 1,000× the cell number ever applied to brain aneuploidy.

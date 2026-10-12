@@ -34,6 +34,9 @@ topics:
 
 > Thesis: Most disease variants are noncoding, and existing droplet DNA+RNA co-assays are too sparse (>96% allelic dropout) to call variant zygosity per cell. **SDR-seq** (single-cell DNA–RNA sequencing) performs in-situ reverse transcription in fixed cells, then a *targeted multiplexed PCR in Tapestri droplets* over up to 480 combined gDNA loci + genes — giving ~90% allele recovery (ADO <10%) so coding *and* noncoding variants can be linked to gene-expression changes in the same cell, at thousands-of-cells scale.
 
+> [!abstract] 한눈에
+> SDR-seq는 고정 세포에서 in situ 역전사를 한 뒤 Tapestri droplet에서 최대 480개 gDNA·RNA 표적을 함께 증폭해 allelic dropout을 10% 미만으로 낮췄다. 덕분에 coding·noncoding 변이의 zygosity를 세포마다 판정하고 같은 세포의 발현 변화와 연결할 수 있다.
+
 ## Key claims
 
 - Targeted, tagmentation-independent design beats whole-genome droplet co-assays: existing methods have ADO >96% (can't determine zygosity); SDR-seq detects ~90% of alleles, comparable to targeted Tapestri scDNA (ADO <10%) and ~100× higher cell throughput than PTA-based plate methods.

@@ -12,6 +12,9 @@ updated: 2026-10-12
 
 **Citation:** Mallory et al. (2020) — *Assessing the performance of methods for copy number aberration detection from single-cell DNA sequencing data* — *PLOS Computational Biology* 16(7):e1008012. [DOI](https://doi.org/10.1371/journal.pcbi.1008012)
 
+> [!abstract] 한눈에
+> Mallory 등은 scDNA-seq용 CNA 검출법 8개를 binning부터 절대 copy number 결정까지 7단계로 나눠 비교했다. 대부분의 방법이 이배체 기준선을 가정하기 때문에 WGD나 이수성이 있는 종양 데이터에서는 문제가 된다고 지적했다.
+
 Mallory, Edrisi, Navin and Nakhleh (Rice, MD Anderson) reviewed eight methods for detecting copy-number aberrations (CNAs) from scDNA-seq data, categorizing them along a seven-step pipeline: (1) binning, (2) GC correction, (3) mappability correction, (4) removal of outlier bins, (5) removal of outlier cells, (6) segmentation, (7) absolute copy-number calling. The review covers HMMcopy, AneuFinder, Ginkgo, SCNV, CopyNumber, SCOPE, CHISEL, and SCICoNE.
 
 Three segmentation paradigms compared: (i) **sliding-window**: statistical testing for windows whose read counts differ from the rest of the genome; (ii) **objective-function** approaches (e.g., Ginkgo's circular binary segmentation); (iii) **hidden Markov models**: probabilistic state inference per bin. The review also discusses ploidy-handling (most methods assume diploid baseline — problematic for tumor data with WGD or aneuploidy), evaluation strategies in the absence of ground truth, and downstream phylogenetic inference from CNA profiles.

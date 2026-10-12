@@ -22,6 +22,9 @@ topics: ["[[mosaic-variant-calling]]", "[[somatic-mosaicism]]", "[[cancer-clonal
 
 > Most attempts to read somatic mutations out of scRNA-seq or scATAC-seq data only *genotype* variants already found by matched DNA sequencing. SComatic calls somatic SNVs **de novo, with no matched DNA**. It pools reads by **cell type** and tests each site against a **beta-binomial background error model** fitted on unrelated non-neoplastic samples. The key biological filter: a germline variant should appear in **all** cell types, while a somatic one should be confined to one lineage. Variants seen in multiple cell types are therefore discarded, along with RNA-editing sites, common gnomAD SNPs and a **panel-of-normals** of recurrent artefacts. Across >2.6 million cells from 688 datasets, precision is far higher than for bulk or single-cell callers. That makes mutational signatures and burdens resolvable per cell type, including in polyclonal normal tissue.
 
+> [!abstract] 한눈에
+> SComatic은 matched DNA 없이 scRNA-seq·scATAC-seq에서 세포 유형별로 read를 모아 beta-binomial 배경 오류 모델로 체세포 SNV를 de novo 호출한다. precision은 0.67–0.87로 다른 도구보다 크게 높았지만 sensitivity는 Strelka2 등보다 낮았다.
+
 ## Key claims
 
 - **Calling rules.** Depth ≥5 reads in the cell type; the mutation must be supported by ≥3 reads from ≥2 cells of that type. The beta-binomial test is significant (threshold 0.001) in the candidate type and **not** significant in each other type, or in all others aggregated. Sites within 4 bp of homopolymers are removed, as are mutations <5 bp apart (except known DBS signatures such as UV CC>TT). The PON also drops sites seen in ≥2 unrelated samples. In 10x scRNA-seq, recurrent errors are enriched in LINE/SINE (e.g., Alu) elements.

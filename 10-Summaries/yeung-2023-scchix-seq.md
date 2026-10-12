@@ -30,6 +30,9 @@ topics:
 
 > Thesis: Most single-cell histone-modification methods (scChIC-seq, scCUT&Tag, scCUT&RUN) profile one mark per cell, forcing inter-cell comparisons across separate experiments. **scChIX-seq** multiplexes two histone-mark antibodies in the same cell during sortChIC, then computationally **deconvolves the superimposed cut-site profiles** using single-incubated training datasets — assigning each fragment probabilistically to its source mark. This unlocks **per-cell relationships between marks** (mutually exclusive vs co-occurring) and supports "chromatin velocity" analysis.
 
+> [!abstract] 한눈에
+> scChIX-seq는 sortChIC에서 두 히스톤 마크 항체를 한 세포에 함께 처리한 뒤, 항체 하나씩만 쓴 참조 데이터를 이용해 겹친 신호를 계산으로 분리한다. 이를 통해 같은 세포 안에서 두 마크가 서로 배타적인지 공존하는지 볼 수 있게 됐다.
+
 ## Key claims
 
 - **Three-dataset design**: two single-incubated reference datasets (one antibody each) + one double-incubated test dataset. LDA learns cell-type-specific topic models for each mark separately; the deconvolution step selects which pair of LDA topic combinations best fits each double-incubated cell.

@@ -26,6 +26,9 @@ topics: ["[[single-cell-multiomics]]", "[[computational-methods]]"]
 
 > Integration by **matrix factorization into shared and dataset-specific metagene factors**. Where [[korsunsky-2019-harmony|Harmony]] corrects an embedding toward a common space and [[hao-2024-seurat-v5|Seurat]] transfers labels across anchor pairs, LIGER's integrative non-negative matrix factorization keeps *both* halves — the factors cells share across datasets and the factors specific to each — so the analysis can **compare and contrast** rather than only merge.
 
+> [!abstract] 한눈에
+> LIGER는 integrative NMF로 데이터셋 간 공유 metagene factor와 데이터셋 특이적 factor를 함께 유지해, 데이터를 합치는 데 그치지 않고 비교하고 대조할 수 있게 하는 통합 방법이다. 이 페이지는 Results와 Methods가 빠진 clipping을 바탕으로 작성되어 정량 결과는 담고 있지 않다.
+
 ## Key claims
 
 *(Per the source caveat above, these are the paper's stated contributions as given in its highlights and introduction.)*

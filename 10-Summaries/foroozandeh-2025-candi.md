@@ -24,6 +24,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/his
 >
 > CANDI (Confidence-Aware Neural Denoising Imputer) is a **self-supervised transformer for bulk epigenome imputation** that includes **histone ChIP-seq marks**. It is trained on ENCODE bulk data: 35 assay types (histone marks, DNase-seq, ATAC-seq and others) over 361 merged cell types. For one 30-kb locus it takes the **raw read counts** of whatever assays exist in a cell type, four experimental covariates per assay and the DNA sequence. It outputs, for every assay, a negative binomial distribution over raw counts and a Gaussian over p-value signal. Training is BERT-like but masks **whole assays**, not positions, and adds a second task that recovers full-depth tracks from downsampled reads. The paper's pitch is three fixes to existing imputers: predict raw counts with covariates rather than idealised processed signal, denoise an existing low-quality experiment without retraining, and output calibrated uncertainty. Nothing here is single-cell.
 
+> [!abstract] 한눈에
+> CANDI는 ENCODE bulk 데이터의 raw read count와 실험 공변량, DNA 서열을 입력으로 히스톤 마크를 포함한 epigenome track을 대체하고 노이즈를 제거하는 self-supervised transformer다. EIC 우승 모델에 버금가는 정확도와 잘 보정된 불확실성을 보였지만, 단일 세포 데이터는 다루지 않는다.
+
 ## Key claims
 
 - **Existing imputers model the wrong target.** All prior epigenome imputation methods, the authors say, work on processed signal (e.g. fold enrichment over control) and assume it is free of batch effects. In the ENCODE Imputation Challenge (EIC), subtle train–test differences meant a simple baseline beat most entrants. CANDI instead models raw counts and conditions on depth, read length, coverage and run type.

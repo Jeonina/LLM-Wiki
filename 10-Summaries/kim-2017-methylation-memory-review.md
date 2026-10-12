@@ -32,6 +32,9 @@ topics:
 
 > Thesis: DNA methylation patterns are heritable across cell divisions and act as an **epigenetic memory** that records cell-type identity, developmental history, and pathological trajectory. This memory has practical consequences: iPSCs retain residual methylation from their donor cells and preferentially differentiate back toward those lineages; cancer cells retain methylation signatures of their tissue of origin even at metastatic sites, enabling **EPICUP**-style methylation classifiers for cancer of unknown primary.
 
+> [!abstract] 한눈에
+> Kim과 Costello는 DNA 메틸화가 세포 분열을 거쳐 유전되며 세포 정체성과 발생 이력을 기록하는 후성유전적 기억이라고 정리했다. iPSC에 남은 공여 세포의 메틸화나 원발 부위를 가려내는 EPICUP 분류기 같은 사례를 근거로 든다.
+
 ## Key claims
 
 - **Maintenance machinery**: DNMT1 with PCNA + UHRF1 at the replication fork; UHRF1 reads hemimethylated CpGs via its SRA domain; H3K9me3 recruits UHRF1 and stabilizes DNMT1. LSD1/KDM1 demethylates DNMT1 and modulates its stability. The maintenance machinery is **chromatin-coupled** — it isn't a standalone enzymatic system but a chromatin-state-dependent module.

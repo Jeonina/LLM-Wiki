@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[computational
 
 > ExPecto predicts tissue-specific gene expression from the 40 kb of sequence around each gene's TSS, without ever training on variant data. It has three stages: an upgraded DeepSEA-style CNN (2,000 bp input, twice the convolution layers) predicts 2,002 TF, histone and DNase profiles in 200 bp steps across ±20 kb; ten fixed exponential decay functions, split upstream and downstream, compress these 400,400 features to 20,020; and one L2-regularised linear model per tissue maps them to log RPKM in 218 tissues and cell types. On held-out chromosome 8 it reaches median Spearman 0.819. Variant effects are the predicted log fold change between alleles. The authors use this to prioritise GWAS variants (validated by luciferase for four immune diseases), compute effects for >140 million promoter-proximal mutations, and derive a per-gene "variation potential" that they interpret as the direction of evolutionary constraint and use to predict which allele is the disease risk allele.
 
+> [!abstract] 한눈에
+> ExPecto는 TSS 주변 40 kb 서열에서 chromatin feature를 예측하고, 이를 바탕으로 218개 tissue의 유전자 발현을 ab initio로 예측한다. 변이 데이터로 학습하지 않았는데도 강하게 예측된 GTEx eQTL의 방향을 92% 맞혔다.
+
 ## Key claims
 
 - **Expression from sequence.** Median Spearman 0.819 between predicted and observed log RPKM across 218 tissues on chromosome 8 (990 genes), unchanged (0.821) after removing 184 genes with paralogs elsewhere. Tissue specificity is recovered: predictions match the same or similar tissues best.

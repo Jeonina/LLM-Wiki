@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[computational-methods]]", "[[brain-somatic-mosaicis
 
 > A reframing more than a tool: **scHi-C is a multilayer network** — each cell is a layer, loci are nodes, contacts are edges — so a **multi-way chromatin interaction is a clique**. Bulk Hi-C cannot express this question at all, because aggregation destroys the within-nucleus co-occurrence that makes three loci "simultaneously" in contact. The payoff is practical: multi-way interactions collapse the multiple-testing burden for **epistatic SNP effects** in eQTL analysis from all-pairs to a candidate list.
 
+> [!abstract] 한눈에
+> MINTsC는 scHi-C를 세포마다 한 층을 이루는 multilayer network로 보고, 다중 염색질 상호작용을 clique로 정의해 통계적으로 검정한다. 영상 데이터, SPRITE 등으로 같은 세포 안의 공존을 검증했고, eQTL 분석에서 epistatic SNP 쌍의 다중검정 부담을 줄이는 데 썼다.
+
 ## Key claims
 
 - **The clique formulation is the contribution.** Under the multilayer-network view, scHi-C already contains abundant cliques of order 3–6, even at its sparsity — enough to infer lower-order multi-way interactions, though very high-order events remain out of reach.

@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]"]
 
 > MutBERT replaces the one-hot reference sequence with a **probabilistic genome**: each position is a distribution over A/C/G/T taken from 1000 Genomes allele frequencies (variants with AF < 2% dropped), so one 4 × L matrix stands in for thousands of largely redundant individual genomes. An 86 M-parameter, 12-layer transformer encoder with a linear input projection, RoPE and FlashAttention is trained by masking preferentially at SNV positions and predicting the temperature-scaled allele-frequency distribution. Across 23 fine-tuning tasks (GUE TF binding, NT benchmark) and an eQTL task, MutBERT ranks third on average MCC, behind only the much larger NT-2500M-Multi and the multi-species NTv2-500M, and beats its reference-only and multi-species-alignment twins. Gains are small (a few MCC points, eQTL AUROC 0.615 vs ≤ 0.613 for comparators).
 
+> [!abstract] 한눈에
+> MutBERT는 1000 Genomes 대립유전자 빈도로 만든 확률적 유전체를 입력으로 쓰는 86M 파라미터 transformer다. 같은 구조에 참조 서열만 넣은 모델보다 23개 과제 평균 MCC가 높았지만 향상 폭은 몇 포인트에 그쳤다.
+
 ## Key claims
 
 - **Population data are redundant when fed as individual genomes.** In 1000 Genomes, SNVs cover only 0.34% of training positions, and about 71% of 510-bp samples contain any SNV. Encoding allele frequencies once avoids re-reading the same loci across individuals.

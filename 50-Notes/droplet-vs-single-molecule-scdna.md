@@ -29,6 +29,9 @@ paper_section: ["3.2.1"]
 
 > Single-cell DNA sequencing has bifurcated into two architectures that solve different problems. **Droplet/combinatorial platforms** (10x Genomics, Mission Bio Tapestri, sci-CAR, SHARE-seq, GoT/GoT-ChA) scale to 10⁴-10⁶ cells per experiment but read each cell shallowly — typically targeted loci, sparse coverage, no per-fiber resolution ([[10-Summaries/nam-2019-got]]; [[10-Summaries/izzo-2024-got-cha]]; [[10-Summaries/pellegrino-2018-tapestri]]). **Single-molecule long-read platforms** (Fiber-seq, DAF-seq, SAMOSA-Tag, SMRT-Tag, DiMeLo-seq) profile each cell deeply at per-base, per-fiber resolution but are constrained to 10-100 cells per run ([[10-Summaries/andrewb-2020-science]]; [[10-Summaries/swanson-2025-daf-seq]]; [[10-Summaries/nanda-2024-smrt-tag]]; SAMOSA itself is bulk-input, [[10-Summaries/abdulhay-2020-samosa]]). The tradeoff is not a transient engineering problem — it is rooted in the physics of microfluidic compartmentalization vs molecule-by-molecule sequencing ([[10-Summaries/shao-2025-scDNA-mosaicism-review]]).
 
+> [!abstract] 한눈에
+> 단일세포 DNA 시퀀싱은 많은 세포를 얕게 읽는 droplet·combinatorial 플랫폼과 소수 세포를 fiber 단위로 깊게 읽는 single-molecule long-read 플랫폼으로 갈라졌다. 노트는 이 breadth/depth 상충이 증폭과 분자 단위 시퀀싱의 물리적 한계에서 오며 아직 해소되지 않았다고 본다.
+
 ## The two architectures
 
 ### Droplet-scale: breadth at the cost of depth

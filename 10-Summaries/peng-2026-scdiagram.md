@@ -22,6 +22,9 @@ topics: ["[[40-Topics/3d-genome]]", "[[40-Topics/chromatin-architecture]]", "[[4
 
 > Existing single-cell compartment callers either borrow a reference feature (scA/B averages **CpG density** over Hi-C neighbours) or **impute** (scHiCluster within cell; Higashi/scGHOST across cells), and both can erase what is cell-specific. scDIAGRAM (single-cell compartments annotation by DIrect stAtistical modeling and GRAph coMmunity detection) works on **one cell's contact matrix alone**: a Bayesian **2D change-point model** (MCMC) segments the matrix into blocks, each segment becomes a graph node, and a **normalized cut** (spectral, second eigenvector) splits nodes into two compartments. CpG density is used only *afterwards* to decide which side is "A". The payoff the authors claim is preserved **cell-to-cell compartment heterogeneity** that tracks transcription.
 
+> [!abstract] 한눈에
+> scDIAGRAM은 imputation이나 CpG 같은 참조 특징 없이, 세포 하나의 Hi-C 행렬만으로 2D change-point 모델과 normalized cut을 써서 compartment를 나눈다. 기존 방법보다 세포 간 compartment 이질성을 잘 보존했고, 그 차이가 전사 활성과 맞물린다는 것을 보였다.
+
 ## Key claims
 
 - **Reference features leak into scA/B.** On a pseudo-bulk mouse-brain Ex1 matrix (chr7), scDIAGRAM matched cooltools PCA with 0.94 intersection / 0.84 Pearson versus 0.825 / 0.6 for scA/B. As downsampling deepens (1/400 to 1/3,200), **scA/B converges to the CpG signal** — a universal feature independent of the Hi-C data — while scDIAGRAM stays closer to bulk PCA, most visibly where CpG and bulk PCA disagree.

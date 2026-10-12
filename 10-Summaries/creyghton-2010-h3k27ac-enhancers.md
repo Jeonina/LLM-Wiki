@@ -22,6 +22,9 @@ topics: ["[[40-Topics/histone-modifications]]", "[[40-Topics/chromatin-architect
 
 > Foundational ChIP-seq paper establishing **H3K27ac as the discriminating mark between active and poised enhancers**. Prior work used H3K4me1 alone to call enhancers, but only a subset of H3K4me1+ regions drove gene expression. Creyghton et al. show that adding H3K27ac partitions H3K4me1+ enhancers into an *active* class (H3K4me1+/H3K27ac+) whose proximal genes are upregulated and emit eRNAs, and a *poised* class (H3K4me1+/H3K27ac−) whose genes await activation. The framework predicts both current and future developmental state and shows enhancers are reset to an ES-like configuration during iPS reprogramming.
 
+> [!abstract] 한눈에
+> Creyghton 등은 H3K4me1로 표지된 enhancer를 H3K27ac 유무에 따라 active와 poised로 나눌 수 있음을 ChIP-seq으로 보였다. 실제 활성 enhancer는 기존 추정보다 적었고, poised enhancer는 세포의 미래 발생 상태를 예측했다.
+
 ## Key claims
 
 1. **H3K27ac discriminates active from inactive enhancers.** Among ~25,000 H3K4me1-marked distal regions in mouse ES cells, only H3K27ac+ ones correlate with elevated proximal gene expression (p = 1.0E-5); H3K27ac− regions show no expression boost above average. eRNA production tracks H3K27ac+ regardless of H3K4me1 enrichment (p = 1E-154).

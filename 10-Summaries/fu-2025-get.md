@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/sin
 
 > GET (general expression transformer) predicts gene expression from **a cell type's accessible regions described by motifs**, not from raw sequence. Each input is 200 consecutive accessible peaks (about 2–4 Mb). Each peak is a 283-vector: summed MOODS match scores for 282 Vierstra motif clusters plus an optional accessibility value (log CPM, or a constant 1 in the "binary ATAC" model). A linear region embedding (768 dimensions) feeds 12 transformer layers that attend across peaks. Pretraining masks half of the peaks and reconstructs their motif features, using **pseudobulk scATAC-seq from 213 human fetal and adult cell types** (about 1.3 million nuclei). Fine-tuning swaps in an expression head (stranded log TPM per peak, non-promoter peaks labelled 0) on 153 cell types with matched RNA. Because cell identity is carried by which peaks are open, GET predicts expression in **cell types it never saw**: Pearson 0.94 on held-out astrocytes, in the range of experimental replicates (0.92–0.99). Interpretation (Jacobians over peaks and motifs) gives enhancer–gene links, upstream regulators and a causal motif–motif network, which with AlphaFold led to a PAX5–NR2C2 interaction tested in B-ALL cells.
 
+> [!abstract] 한눈에
+> GET은 raw 서열 대신 세포 유형별로 열린 영역의 motif 점수를 입력으로 써서 유전자 발현을 예측하는 transformer다. 학습에 없던 세포 유형에서도 높은 정확도를 보였고 원거리 enhancer 예측에서 Enformer를 앞섰다. 다만 입력이 motif 합이라 단일 염기 변이 효과 예측에는 구조적으로 약하다.
+
 ## Key claims
 
 - **Unseen cell types.** On left-out astrocytes (promoter-accessible genes), Pearson 0.94 (R² 0.88). Baselines: TSS accessibility r = 0.47, gene activity score r = 0.51, most-correlated training cell type r = 0.83, training mean r = 0.78. GET beat linear probing of Enformer CAGE outputs across fetal cell types and simpler ML models (MLP, CNN, CatBoost, SVM, random forest, linear) on the same inputs.

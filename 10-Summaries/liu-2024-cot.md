@@ -24,6 +24,9 @@ topics: ["[[40-Topics/scdna-seq]]", "[[40-Topics/cancer-clonal-evolution]]", "[[
 >
 > CoT (Copy number Transformer) uses a transformer autoencoder on single-cell DNA read counts to cluster cells into clones, then calls copy number jointly for the cells of each clone. Normalised bin counts for each cell (500 kb-scale bins, >5,000 bins genome-wide) are reshaped into a sequence of ⌈M/p⌉ tokens, each holding p consecutive bins. A six-layer self-attention encoder and a matching decoder are trained with MSE reconstruction. A GMM on the latent embeddings gives clones, and a clone-specific HMM (states up to 10 copies) estimates copy numbers. CoT is **trained from scratch on each dataset**. There is no pretraining corpus and no reuse across datasets. It is the nearest thing in this literature to a transformer on the scDNA genotype layer, and it shows the architecture alone does not make a foundation model.
 
+> [!abstract] 한눈에
+> CoT는 scDNA read count에 transformer autoencoder를 적용해 세포를 clone으로 묶고 clone 단위로 copy number를 추정하며, clone 수가 늘어도 군집 정확도를 유지했다. 다만 데이터셋마다 처음부터 학습하므로, transformer 구조만으로 foundation model이 되지는 않음을 보여준다.
+
 ## Key claims
 
 - **Attention captures long-range copy-number structure better than convolution.** The authors argue that rcCAE's convolutional kernels capture local patterns, while self-attention links distant regions that share copy-number state. Replacing each attention module with a convolutional layer of similar parameter count lowered clustering accuracy (Supplementary Table 1).

@@ -21,6 +21,9 @@ updated: 2026-05-12
 
 > Nature Reviews Genetics Research Highlight on Ma S. et al., *Cell* **183**, 1103–1116 (2020) — "Chromatin potential identified by shared single-cell profiling of RNA and chromatin." NRG version: https://www.nature.com/articles/s41576-020-00308-6.
 
+> [!abstract] 한눈에
+> Clyde가 Nature Reviews Genetics 하이라이트에서 SHARE-seq를 소개했다. 성체 마우스 피부의 쌍 프로파일 34,774개에서 DORC 접근성이 표적 유전자 발현보다 먼저 나타난다는 chromatin potential 개념을 핵심 성과로 꼽았다.
+
 ## Thesis
 
 **SHARE-seq** (Simultaneous High-throughput ATAC and RNA Expression with sequencing) is a high-throughput joint single-cell assay for chromatin accessibility + transcription in the same cell. The conceptual payoff is the **chromatin potential** framework: a cell's future transcriptional state can be inferred from its current chromatin accessibility profile at lineage-specifying loci, enabling lineage-fate prediction from chromatin alone.

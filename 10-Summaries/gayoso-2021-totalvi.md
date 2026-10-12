@@ -22,6 +22,9 @@ topics: ["[[single-cell-multiomics]]", "[[computational-methods]]"]
 
 > The deep-generative answer to CITE-seq, and its distinguishing feature is not the neural network but the **protein background model**. Antibody counts contain a large ambient/non-specific component that RNA counts do not; totalVI separates protein signal into **background and foreground** as part of the generative model, so background correction happens jointly with everything else rather than as a preprocessing hack.
 
+> [!abstract] 한눈에
+> totalVI는 CITE-seq의 RNA와 단백질을 하나의 deep generative model로 함께 모델링한다. 특히 항체 count를 background와 foreground로 나누어, 단백질 background 보정을 전처리 단계가 아니라 모델 안에서 다른 분석과 함께 처리한다.
+
 ## Key claims
 
 - **Sequential analysis biases the result.** The prevailing practice — cluster on RNA, then contextualise with protein post hoc — "biases the analysis to one modality and becomes increasingly inefficient as CITE-seq measurements expand to hundreds of proteins."

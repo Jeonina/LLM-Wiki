@@ -22,6 +22,9 @@ topics: ["[[histone-modifications]]", "[[dna-methylation]]", "[[chromatin-archit
 
 > The reference map the epigenome field lacked: 111 primary-tissue and primary-cell epigenomes (plus 16 from ENCODE = 127 total), each with five core histone marks, jointly segmented into a common 15-state chromatin model, and used to show that GWAS variants for a trait concentrate in the enhancer marks of the tissue that trait belongs to.
 
+> [!abstract] 한눈에
+> Roadmap Epigenomics Consortium은 111개 1차 조직·세포 epigenome을 다섯 가지 핵심 histone mark와 공통 15-state ChromHMM 모델로 통합한 참조 지도를 만들었다. 형질별 GWAS 변이가 해당 조직의 enhancer mark에 몰려 있음을 보였다.
+
 ## Key claims
 
 - Scale: 2,805 genome-wide datasets generated (1,821 histone, 360 accessibility, 277 methylation, 166 RNA-seq); 150.21 billion mapped reads = 3,174-fold genome coverage. The integrative analysis uses 1,936 of them.

@@ -22,6 +22,9 @@ topics: ["[[whole-genome-amplification]]", "[[duplex-sequencing]]", "[[brain-som
 
 > Single-cell SNV false positives come from polymerase errors and single-strand DNA damage — both of which sit on **one strand only**, while a true SNV sits on both. META-CS (multiplexed end-tagging amplification of complementary strands) exploits this: Tn5 tags each fragment with 2 of 16 transposon sequences, the fragments are melted, and two sequential primer-extension rounds label the forward and reverse strands separately, all in **one tube**. Calling an SNV only when **both strands agree** removes nearly all false positives, lets a variant be called from **as few as four reads**, and turns the discordant single-strand calls into a readout of ssDNA damage.
 
+> [!abstract] 한눈에
+> META-CS는 Tn5로 두 상보 가닥에 각각 표지를 달고 두 가닥이 모두 일치할 때만 SNV를 불러 단일세포 위양성을 거의 없앴고, read 4개로도 변이를 부를 수 있다. 다만 가닥별 검출 효율이 약 16%에 그쳐 변이 부담은 큰 보정값에 기대어 추정한다.
+
 ## Key claims
 
 - **Strand labeling is specific**: on a synthetic ssDNA template, 4 discordant strands in 173,635 reads — a strand conversion rate of 2.3 × 10⁻⁵.

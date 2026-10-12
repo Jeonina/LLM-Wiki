@@ -13,6 +13,9 @@ paper_section: ["7"]
 
 Cross-cutting topics where the corpus has enough material (~3+ sources) that a written synthesis would compound value. Promote one to a full note once a query or query-thread actually pulls it together.
 
+> [!abstract] 한눈에
+> 출처 3개 이상을 묶을 만한 synthesis 후보를 관리하는 메타 목록이다. 기존 다섯 후보는 모두 정식 노트가 되었고, 다음 후보로 spatial multi-omics, mitochondrial mosaicism, single-molecule TF footprinting이 올라 있다.
+
 - ~~**Single-cell duplex sequencing**~~ — **Promoted to full synthesis** at [[50-Notes/single-cell-duplex-sequencing]] (2026-05-19). The frontier closed from two directions: PTA + bulk-duplex validation ([[10-Summaries/luquette-2025-pta-duplex-mosaicism]]) and same-molecule Duplex-Multiome ([[10-Summaries/kriz-2025-duplex-multiome]]).
 - ~~**MNase-based vs Tn5-based single-cell chromatin profiling**~~ — **Promoted to full synthesis** at [[50-Notes/mnase-vs-tn5-chromatin]] (2026-05-19). Compares the two chemistry lineages (Drop-ChIP/scChIC/sortChIC/scChIX/scEpi² vs scCUT&Tag/nano-CUT&Tag/sciCUT&Tag/MulTI-Tag/6-base-CUT&Tag) on resolution, throughput, multi-mark capability, and modality compatibility. Includes a chemistry-choice heuristic table indexed by secondary measurement requirement.
 - ~~**Droplet-scale vs single-molecule scDNA-seq**~~ — **Promoted to full synthesis** at [[50-Notes/droplet-vs-single-molecule-scdna]] (2026-05-19). Pulls GoT/GoT-ChA/DAF-seq/Fiber-seq/SAMOSA + reviews into a quantitative comparison table; argues the gap is sustained by physical constraints (microfluidics destroys per-fiber context; single-molecule sequencing is throughput-limited).

@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/com
 
 > MutationProjector is a pretrained tumour-genotype model built for clinical gene-panel data. It treats each tumour as **468 MSK-IMPACT genes**, each with a binary state for somatic mutation, copy-number amplification (CNA) and copy-number deletion (CND). Three covariate nodes are added: TMB, aneuploidy and dominant mutational signature. A graph attention network then passes messages over eight molecular-interaction networks, with one attention head per network. Pretraining masks 15% of genes and asks the model to recover their alteration state, with auxiliary cancer-type and tumour-infiltrating-lymphocyte (TIL) labels. The corpus is **30,328 bulk solid tumours** from GENIE and TCGA across 10 cancer types. The frozen embedding then feeds a random forest for immunotherapy response, chemotherapy response, metastasis and tissue of origin, trained on small cohorts (94–1,974 patients). It is a reusable genotype-layer model, but at **gene-level, bulk-tumour** resolution.
 
+> [!abstract] 한눈에
+> MutationProjector는 30,328개 고형암의 468개 panel 유전자 변이를 분자 상호작용 그래프 위에서 사전학습한 종양 유전형 foundation model이다. 이 embedding으로 세 독립 코호트에서 면역항암제 반응을 예측했지만, 입력이 이진 상태의 panel 유전자로 한정된다는 제약이 있다.
+
 ## Key claims
 
 - **Corpus.** The model was pretrained on 30,328 solid tumours of 10 types from AACR Project GENIE 15.0 and TCGA, with breast (8,163) and colorectal (6,152) the largest groups. Tumours carry on average 9.1 mutated, 15.9 amplified and 14 deleted genes among the sequenced genes. Covariates are TMB (reported, or computed with Maftools), arm-level aneuploidy (ASCETS) and seven dominant signatures (MESiCA for panels, SigProfiler for WES/WGS).

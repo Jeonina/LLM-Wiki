@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]"]
 
 > The review that dismantled "DNA methylation = silencing." Once whole-methylome data let the field look outside CpG-island promoters, the function of 5mC turned out to depend entirely on where it sits: blocking at start sites, permissive-to-stimulatory in gene bodies, variable and dynamic at enhancers, and switch-like at insulators.
 
+> [!abstract] 한눈에
+> Jones는 DNA 메틸화의 기능이 위치에 따라 달라진다고 보고 'DNA 메틸화 = 침묵'이라는 등식을 해체했다. 메틸화는 전사 시작점에서는 개시를 막지만 유전자 본체에서는 그렇지 않고, 대개 침묵이 먼저 일어난 뒤 이를 고정하는 잠금 역할을 한다는 것이 핵심이다.
+
 ## Key claims
 
 - **Position within the transcription unit determines function.** Methylation near the TSS blocks initiation; gene-body methylation does not block and may stimulate elongation, and may affect splicing.

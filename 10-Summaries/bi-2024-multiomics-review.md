@@ -22,6 +22,9 @@ topics: ["[[40-Topics/single-cell-multiomics]]"]
 
 > Wuhan-University review covering ~40 single-cell multiomics methods, organized by which two (or three) omic layers they pair: **epigenome×transcriptome**, **protein×transcriptome**, and **triple-omics spanning the central dogma**. The review's most useful contribution is its **integration taxonomy** (horizontal / vertical / diagonal, after Argelaguet), and its explicit recognition of the **CRISPR-based dual-modal** family (Perturb-seq → Perturb-ATAC → Spear-ATAC) as a distinct branch. Most individual methods covered already have wiki pages; this source serves as a *cross-reference catalog* rather than introducing new techniques.
 
+> [!abstract] 한눈에
+> Bi와 Weng은 약 40개 단일세포 multiomics 방법을 짝지은 omic 층위별로 정리하고, horizontal·vertical·diagonal 통합 분류와 CRISPR 기반 dual-modal 계열을 별도 갈래로 제시했다. 새 기법보다는 기존 방법을 교차 참조하는 카탈로그로서 가치가 있다.
+
 ## Key claims (and what's new vs prior reviews)
 
 1. **Three-axis integration taxonomy.** Reaffirms Argelaguet's classification: *horizontal* (same modality across cell populations, anchored on shared genomic features), *vertical* (different modalities in the same cell, anchored on the cell), *diagonal* (different modalities, different cells, no anchor). Vertical = matched assay; horizontal/diagonal = unmatched. Diagonal is hardest because batch correction risks erasing biology.

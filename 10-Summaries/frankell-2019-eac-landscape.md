@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Frankell et al. (2019) — *The landscape of selection in 551 esophageal adenocarcinomas defines genomic biomarkers for the clinic* — *Nature Genetics*. [DOI](https://doi.org/10.1038/s41588-018-0331-5)
 
+> [!abstract] 한눈에
+> Frankell 등은 식도 선암 551건을 분석해 77개 driver 유전자와 21개 non-coding driver 요소를 찾았다. SMAD4와 GATA4가 나쁜 예후 지표임을 확인했고, 50% 이상의 종양이 CDK4/6 억제제에 민감할 수 있는 변이를 지닌다는 것을 보였다.
+
 Frankell and colleagues (OCCAMS Consortium / Fitzgerald / Tavaré, Cambridge) genomically characterized 551 esophageal adenocarcinomas (EACs) with matched RNA-seq, identifying 77 EAC driver genes and 21 non-coding driver elements. EAC is characterized by very high mutation burden but dramatic chromosomal instability and few recurrent gene mutations, making driver detection challenging. The cohort scale enables dN/dS-based detection.
 
 Key findings: mean 4.4 driver events per tumor (mostly mutations rather than CNAs); mutual exclusivity or co-occurrence within dysregulated pathways suggesting functional relationships; SMAD4 and GATA4 as poor-prognostic indicators verified in independent cohorts; over 50% of EACs contain sensitizing events for CDK4/6 inhibitors with corresponding sensitivity in cell-line/organoid panels.

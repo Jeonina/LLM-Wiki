@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[dna-methylati
 
 > BioToken changes what goes *into* a [[dna-language-model]]. Instead of the reference genome alone, BioToken writes real personal genomes: each sequence has one of 50 phased 1000 Genomes individuals' variants applied, alternate alleles become separate **variant tokens** (Ǎ, Ť, Ǧ, Č), and GENCODE v38 **annotation tokens** mark transcript, exon and CDS starts and ends inline. BioFM is a 265 M-parameter decoder-only Mistral-style model (23 layers, 6,144-token context) trained by next-token prediction on 333 B such tokens. With frozen embeddings and a linear probe, it reports the best average AUROC on a new 8-task Variant Benchmark (0.780 vs 0.727 for NT-500M-v2), beats Enformer on expression and eQTL and SpliceTransformer on sQTL, and beats Evo2-7B on 5 of 8 tasks with about 1/100 of the pretraining compute.
 
+> [!abstract] 한눈에
+> BioToken은 개인 유전체 변이 token과 GENCODE annotation token을 서열에 넣는 tokenization이며, 이를 학습한 265M 파라미터 BioFM은 Variant Benchmark에서 평균 AUROC 0.780으로 가장 높았다. 성능 향상의 주된 요인은 annotation token이었다.
+
 ## Key claims
 
 - **Variant Benchmark (linear probe, 11 chromosome-split folds).** BioFM's overall AUROC is 0.780, then NT-500M-v2-MS 0.727, Evo2-7B 0.726, Caduceus 0.705, HyenaDNA 0.700, Evo2-1B 0.691 and NT-500M-1000G 0.674. It is best on 6 of 8 tasks, with clear margins on common vs synthetic-rare variants (0.746 vs 0.69) and expression (0.786 vs 0.74). It does not beat CADD, AlphaMissense or GPN-MSA on pathogenicity, and no other GFM did either in their tests.

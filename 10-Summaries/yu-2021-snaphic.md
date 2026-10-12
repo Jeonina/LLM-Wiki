@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[computational-methods]]", "[[brain-somatic-mosaicis
 
 > The first loop caller designed for [[single-cell-hi-c|scHi-C]] rather than borrowed from bulk. The key design decision: **do not pool cells into pseudobulk.** Treat each cell as an independent sample, impute per cell, then use a **paired *t*-test across cells** at each bin pair. Cell-to-cell variance becomes statistical power instead of noise — which is why SnapHiC finds **1,050–1,420 loops from 75 cells** where HiCCUPS finds 0–10.
 
+> [!abstract] 한눈에
+> SnapHiC는 세포를 pseudobulk로 합치지 않고 세포별로 imputation한 뒤 세포 간 paired t-test로 loop를 부르는, scHi-C 전용 첫 loop caller다. 세포 75개에서 HiCCUPS가 0–10개를 찾을 때 1,050–1,420개의 loop를 찾았다.
+
 ## Key claims
 
 - **Pseudobulk aggregation is the thing to avoid, and the paper says why.** Applying bulk loop callers to aggregated scHi-C needs >500–1,000 cells, which is cost-prohibitive and impossible for rare cell types. Keeping cells separate lets the *variability* of contact frequency across the population enter the test statistic — the power gain is largest exactly when cell numbers are low.

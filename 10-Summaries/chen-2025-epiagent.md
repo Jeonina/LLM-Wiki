@@ -22,6 +22,9 @@ topics: ["[[single-cell-atac-seq]]", "[[computational-methods]]"]
 
 > EpiAgent is a ~1.4-billion-parameter transformer pretrained on a curated **Human-scATAC-Corpus (~5 million cells, 31 tissues, 28 public datasets, >35 billion accessible-cCRE tokens)**. Its central representational move is the **"cell sentence"**: each cell is encoded only by the indices of its *accessible* cCREs (from a merged set of 1,355,445 cCREs), ordered by TF-IDF value, capped at 8,190 tokens. Because cCREs have no natural order, it is pretrained not by masked language modelling but by a new **cell–cCRE alignment** task (classify whether a cCRE is accessible given the cell embedding) plus **signal reconstruction** of all cCREs, with replaced-token detection as warm-up. Fine-tuned, it leads benchmarks on clustering, annotation and imputation; with added condition tokens it predicts responses to stimulation and unseen CRISPR perturbations, integrates batches, and supports in silico cCRE knockout.
 
+> [!abstract] 한눈에
+> EpiAgent는 약 500만 개 scATAC 세포로 사전학습한 약 14억 파라미터 transformer로, 각 세포를 accessible cCRE의 순서열인 'cell sentence'로 표현하고 cell–cCRE alignment 과제로 학습한다. 클러스터링, 주석, imputation 벤치마크에서 앞섰고 자극 반응과 미관측 CRISPR perturbation도 예측했다.
+
 ## Key claims
 
 - **Architecture.** Embedding module ~698M parameters (cCRE + rank embeddings, dim 512), transformer ~57M (18 bidirectional encoder layers, 8 heads, Flash Attention v2), signal decoder ~695M (single linear layer to all cCREs). The [CLS] output is the cell embedding; conditional embeddings (perturbation, batch) are added to the input [CLS].

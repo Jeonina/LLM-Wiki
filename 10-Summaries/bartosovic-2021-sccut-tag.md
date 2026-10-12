@@ -33,6 +33,9 @@ topics:
 
 > scCUT&Tag runs antibody-directed pA–Tn5 tagmentation on bulk nuclei, then feeds the tagmented nuclei into the standard **10x Genomics Chromium scATAC-seq kit**, skipping the kit's own transposition step. The only real chemistry change is adding **1% BSA** to the buffers so nuclei do not clump. Applied to FACS-sorted cells from the juvenile mouse brain (Sox10:Cre/RCE reporter, P15 and P21–P25), it gives **47,340 single-cell profiles** across four histone marks, with a median of 98 (H3K36me3) to 453 (H3K27ac) unique fragments per cell. That is enough to call all major CNS cell types from a single mark, including the repressive H3K27me3. The authors then use the data for biology that needs cell-type-resolved chromatin: global mark levels per cell type, H3K4me3/H3K27me3 interplay at cell-type-specific promoters, H3K4me3 breadth increasing along OPC → MOL differentiation, single-cell OLIG2 and RAD21 binding, and enhancer–promoter loops predicted with the ABC model and checked against new oligodendrocyte H3K27ac HiChIP. The cost is sparsity: it resolves major cell types but not subtypes without help from scRNA-seq.
 
+> [!abstract] 한눈에
+> scCUT&Tag는 bulk 핵에 pA–Tn5 tagmentation을 한 뒤 10x scATAC-seq 키트에 그대로 넣는 방식으로, 생쥐 뇌에서 4개 히스톤 마크에 걸쳐 47,340개 단일세포 프로파일을 얻고 한 마크만으로 주요 CNS 세포형을 구분했다. 다만 데이터가 희소해 하위 세포형은 scRNA-seq 통합 없이 찾지 못한다.
+
 ## Key claims
 
 - **Protocol.** Bulk CUT&Tag (primary antibody overnight, guinea pig anti-rabbit secondary, pA–Tn5 at 300 mM NaCl, tagmentation 1 h at 37 °C) on 150,000 sorted cells, then the 10x scATAC-seq v1 or v1.1 kit from step 2 ("Generation & barcoding"), with 16–20 final PCR cycles. BSA cut nuclear clumping without visibly changing bulk tagmentation efficiency or signal distribution. An optional qPCR cycle check against IgG CUT&Tag flags failed experiments before loading the chip.

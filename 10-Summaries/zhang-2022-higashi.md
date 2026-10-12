@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[computational-methods]]", "[[single-cell-multiomics
 
 > Represent an entire scHi-C dataset as **one hypergraph**: cells and genomic bins are nodes, and every non-zero contact is a hyperedge joining {cell, locus₁, locus₂}. Embedding cells becomes node-embedding; imputing sparse contact maps becomes hyperedge prediction. Because the whole dataset is one structure, imputation for a cell can borrow from its neighbours in embedding space.
 
+> [!abstract] 한눈에
+> Higashi는 scHi-C 데이터 전체를 하나의 hypergraph로 표현해 cell embedding과 imputation을 수행하고, 이웃 세포의 정보를 빌려 sparse contact map을 복원한다. 그 결과 세포마다 위치가 조금씩 이동하는 'sliding' TAD-like boundary라는 새로운 관찰을 얻었다.
+
 ## Key claims
 
 - **The architectural difference from [[zhou-2019-schicluster|scHiCluster]]**: scHiCluster treats each contact map as a separate graph and imputes it by random walk with restart; Higashi models all cells jointly, so **latent correlations across cells inform each imputation**. Built on the authors' Hyper-SAGNN hypergraph neural network.

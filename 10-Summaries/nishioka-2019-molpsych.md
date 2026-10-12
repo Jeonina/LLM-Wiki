@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Nishioka et al. (2019) — *Somatic mutations in the human brain: implications for psychiatric research* — *Molecular Psychiatry*. [DOI](https://doi.org/10.1038/s41380-018-0129-y)
 
+> [!abstract] 한눈에
+> Nishioka 등의 리뷰는 뇌 체세포 돌연변이가 GWAS로는 잡히지 않는 정신질환 위험 요인일 수 있다고 보고, de novo 변이를 발생 시점에 따라 분류하는 틀을 제시한다. 낮은 VAF와 사후 뇌 조직 확보의 어려움을 주요 기술적 한계로 꼽는다.
+
 Nishioka, Bundo, Iwamoto and Kato's Molecular Psychiatry review surveys evidence that somatic (postzygotic) mutations in the human brain contribute to psychiatric disease risk, complementing the heritable factors identified by GWAS and rare-CNV studies. The authors classify de novo events along a developmental-timing axis: (i) inherited variants from ancestors, (ii) de novo germline mutations during spermatogenesis/oogenesis, (iii) somatic mutations occurring early in embryogenesis (shared among multiple germ layers), and (iv) somatic mutations occurring later in development (brain-specific). The latter two contribute non-inherited genetic risk that GWAS cannot detect.
 
 The review consolidates evidence from BSMN-era studies (Lodato 2015, McConnell 2013, Bae 2018) on the burden of brain somatic mutations in neurotypical brains, discusses candidate-gene findings in schizophrenia (SETD1A) and ASD (CHD8), and surveys the technical challenges: low variant-allele-frequency makes detection require high-coverage scWGS or deep targeted sequencing, and tissue access (postmortem brain) limits cohort scale relative to peripheral-tissue studies.

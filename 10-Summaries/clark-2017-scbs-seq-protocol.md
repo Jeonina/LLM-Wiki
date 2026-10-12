@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]", "[[single-cell-multiomics]]"]
 
 > The step-by-step protocol for [[smallwood-2014-natmethods|scBS-seq]], with the post-2014 optimisations. The conceptual core is **PBAT — post-bisulfite adaptor tagging**: invert the order of bisulfite treatment and adaptor ligation so that adaptors are added *after* the DNA has already been fragmented and converted, and you stop losing every molecule whose adaptor was destroyed by the conversion. On top of PBAT, the single-cell modification is a **five-round preamplification** — five independent chances to capture each genomic location.
 
+> [!abstract] 한눈에
+> scBS-seq 프로토콜은 bisulfite 처리 뒤에 adaptor를 붙이는 PBAT과 다섯 차례의 random priming 전증폭으로 단일세포에서 염기 해상도 DNA 메틸롬을 얻는다. DNA 정제 없이 lysate를 바로 전환하고 bead를 그대로 두는 등 2014년 이후의 개선을 단계별로 정리했다.
+
 ## Key claims
 
 - **PBAT is the enabling inversion.** In conventional BS-seq, adaptor-tagged molecules are bisulfite-treated and most are lost to conversion-induced degradation. PBAT (Miura et al.) uses bisulfite to do both the conversion *and* the fragmentation, tagging afterwards — recovering far more of the genome from limited input. It was demonstrated at 100 ng, then ~1,000 mouse oocytes, then ~100 human oocytes, before this line pushed it to one cell.

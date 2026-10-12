@@ -34,6 +34,9 @@ topics:
 
 > Thesis: Single-cell transcriptomics has the mature scanpy framework (clustering, manifold learning, trajectory inference, dataset integration). Single-cell epigenomics has scattered specialized tools but no unified Python framework. **EpiScanpy** ports the scanpy machinery to scATAC-seq and single-cell DNA methylation, generating AnnData objects with flexible feature spaces (peaks, windows, genes, promoters, enhancers, methylation calls), and benchmarks at or near the top of scATAC-seq cell-clustering accuracy.
 
+> [!abstract] 한눈에
+> EpiScanpy는 scanpy·AnnData 체계를 scATAC-seq과 단일세포 DNA methylation으로 확장한 Python 도구로, scATAC-seq 군집화 벤치마크에서 데이터셋 전반에 가장 안정적이었다. 성인 뉴런에서는 enhancer CpG methylation이 세포 유형을 가장 잘 갈랐다.
+
 ## Key claims
 
 - **Feature engineering**: count matrices over any genomic feature (peaks, windows, promoters, enhancers, custom .bed). For methylation, β-value per feature using only CpGs/CHs with coverage; explicit handling of "not observed" vs "not methylated."

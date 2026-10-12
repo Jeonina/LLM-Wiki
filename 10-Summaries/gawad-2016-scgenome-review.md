@@ -31,6 +31,9 @@ topics:
 
 > Thesis: single-cell genomics rests on four technical pillars — cell isolation, whole-genome amplification (WGA), genome interrogation, and bias correction — and the field circa 2016 had reached the point where microbial dark matter and intra-tumor heterogeneity were tractable, but each WGA method (DOP-PCR / MDA / MALBAC / PicoPLEX) involved hard tradeoffs between coverage, uniformity, and error rate.
 
+> [!abstract] 한눈에
+> 이 리뷰는 단일세포 유전체학을 세포 분리, WGA, 게놈 판독, bias 보정이라는 네 가지 기술 과제로 정리한다. DOP-PCR, MDA, MALBAC/PicoPLEX는 coverage, 균일도, 오류율 사이에서 서로 다른 trade-off를 가지며, 절대적으로 우세한 WGA 방법은 없다고 본다.
+
 ## Key claims
 
 - **Four technical challenges** of single-cell genomics: (1) physical cell isolation, (2) WGA to acquire sufficient DNA, (3) cost-effective genome interrogation, (4) bias/error correction.

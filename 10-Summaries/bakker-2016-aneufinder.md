@@ -22,6 +22,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[scdna-cancer-applications]]", "[[comp
 
 > A biological puzzle resolved by a tool. Chromosomally unstable *Mps1*-truncated, *p53*-null mouse lymphomas showed **clonal-looking karyotypes by array CGH** despite mis-segregation in virtually every division. Either the tumours suppress instability, or selection outruns it. Single-cell whole-genome sequencing plus AneuFinder shows the second: **the population average is clonal; the individual cells are not**.
 
+> [!abstract] 한눈에
+> AneuFinder는 mappability 기반 가변 bin과 HMM으로 단일세포 CNV를 부르는 도구로, aCGH에서 클론처럼 보이던 CIN 림프종이 실제로는 세포의 56%가 고유 핵형을 지닌다는 것을 보였다. 집단 평균이 클론으로 보여도 개별 세포의 불안정성은 계속된다는 점이 핵심이다.
+
 ## Key claims
 
 - **The setup.** Truncating the spindle-assembly-checkpoint kinase *Mps1* in T cells causes chromosomal instability but not malignancy; combined with *p53* loss it markedly accelerates lymphomagenesis. aCGH across a large cohort of the resulting T-ALLs showed **highly similar karyotypes** — recurrent gains of chromosomes 4, 9, 14 and 15 — implying clonal selection, which is hard to reconcile with per-division mis-segregation.

@@ -30,6 +30,9 @@ topics:
 
 > Thesis: ChIP-seq mapping of histone marks across hundreds of cell types × tens of marks is too expensive to execute experimentally. **DeepHistone** is a densely-connected CNN that predicts seven histone modifications (H3K4me3, H3K4me1, H3K36me3, H3K27me3, H3K9me3, H3K27ac, H3K9ac) from DNA sequence + DNase-seq accessibility in a given cell type. The two-stream architecture (DNA module + DNase module + joint module) integrates sequence-intrinsic regulatory signatures with cell-type-specific chromatin context, outperforming sequence-only baselines and capturing functional SNPs.
 
+> [!abstract] 한눈에
+> DeepHistone은 DNA 서열과 DNase-seq 접근성을 함께 입력받는 CNN으로 히스톤 마크 7종을 예측한다. 서열만 쓰는 DeepSEA, DanQ 등보다 성능이 좋았고, 다른 세포 유형에 적용해도 예측력이 유지됐다.
+
 ## Key claims
 
 - **Architecture**: a DNA module (CNN with one-hot-encoded 1 kb regions, densely connected blocks), a DNase module (parallel CNN on openness scores), and a joint module that fuses the two and outputs 7 parallel sigmoid predictions (one per histone mark, not mutually exclusive).

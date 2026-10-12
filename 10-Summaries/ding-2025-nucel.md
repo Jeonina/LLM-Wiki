@@ -24,6 +24,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[computational
 >
 > NucEL is a [[dna-language-model]] whose contribution is the **pretraining objective**. It is the first genomic model, by the authors' account, to use ELECTRA's **replaced token detection (RTD)**: a small generator (11 layers, 256-d) fills masked positions, and the main model, a 93 M-parameter ModernBERT discriminator (22 layers, 512-d, local 128-token attention with global attention every third layer), classifies every position as original or replaced. All N positions get a training signal instead of the ~15% in MLM, a 6.67× supervision ratio. With single-nucleotide tokens and human-only pretraining, it reports the best average on GUE (75.16 vs 72.94 for NT-2.5B-multi), Genomic Benchmarks (0.899) and the revised NT benchmark (0.664), and sharper attention on motifs than NT2-100M.
 
+> [!abstract] 한눈에
+> NucEL은 ELECTRA의 replaced token detection을 유전체에 처음 적용해 모든 위치에 학습 신호를 주는 단일 염기 DNA language model로, 인간 유전체만으로 학습하고도 세 벤치마크 평균에서 가장 높았다. 다만 같은 구조의 MLM 대조가 없어 RTD 자체의 기여는 분리되지 않았다.
+
 ## Key claims
 
 - **GUE (7 tasks, MCC, 3 seeds).** Average 75.16, ahead of NT-2500M-multi (72.94) and DNABERT-2 (72.11). Best on core promoter (75.13), splice sites (90.30), mouse TF binding (70.62) and yeast epigenetic marks (65.01, vs 58.06 next best). DNABERT-2 is better on human TF binding (70.10 vs 67.64), and NT-2500M-multi on promoter detection (88.14 vs 87.10) and COVID variant classification (73.04 vs 70.29).

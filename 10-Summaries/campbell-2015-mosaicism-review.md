@@ -27,6 +27,9 @@ topics:
 
 > Thesis: the developmental timing of a post-zygotic mutation determines its distribution across body tissues — early mutations affect large fractions of the soma, mid-development mutations are confined to one side or to specific lineages, and late mutations are localized. This timing geometry has direct clinical implications for diagnostic detection, recurrence risk, and transmission to offspring.
 
+> [!abstract] 한눈에
+> Campbell 등은 접합 후 돌연변이가 생긴 발생 시점이 몸 안에서의 분포를 결정한다고 정리했다. 이른 변이는 체세포 넓은 범위에, 늦은 변이는 국소에 남으며, 이 시점의 구조가 진단 검출과 재발 위험, 자손 전달에 직접 영향을 준다.
+
 ## Key claims
 
 - **Mosaicism vs chimerism**: mosaicism = multiple genotypes from one zygote; chimerism = multiple genotypes from multiple fertilization events.

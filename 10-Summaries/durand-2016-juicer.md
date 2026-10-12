@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[chromatin-architecture]]"]
 
 > An end-to-end, hardware-accelerated Hi-C pipeline: reads → deduplicated contact list → multi-resolution normalized contact matrices in the compressed `.hic` format → automatic annotation of loops (HiCCUPS), contact domains (Arrowhead) and aggregate peak signal (APA). Built to make terabase-scale kilobase-resolution Hi-C tractable by non-specialists.
 
+> [!abstract] 한눈에
+> Juicer는 read에서 다중 해상도 정규화 .hic contact matrix를 만들고 HiCCUPS로 loop, Arrowhead로 contact domain을 자동 주석하는 bulk Hi-C 파이프라인이다. CRISPR로 CTCF motif 7개를 교란하자 해당 loop가 모두 사라져 loop anchor 호출이 직접 검증되었다.
+
 ## Key claims
 
 - Existing Hi-C pipelines were not designed for terabase-scale data nor for annotating structural features; Juicer addresses both in one automated run.

@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Smallwood et al. (2014) — *Single-cell genome-wide bisulfite sequencing for assessing epigenetic heterogeneity (scBS-seq)* — *Nature Methods*. [DOI](https://doi.org/10.1038/nmeth.3035)
 
+> [!abstract] 한눈에
+> scBS-seq는 PBAT를 단일세포 입력에 맞게 고쳐 bisulfite 전환을 먼저 하는 방식으로 최초의 전장 단일세포 DNA 메틸롬을 구현했고, 세포당 최대 48.4%의 CpG를 측정했다. 혈청 배양 mESC 안에 bulk에서는 보이지 않던 '2i 유사' 저메틸화 세포가 섞여 있음을 보였다.
+
 Smallwood, Lee, Angermueller and colleagues (Reik / Kelsey labs) introduced single-cell genome-wide bisulfite sequencing (scBS-seq), the founding genome-wide single-cell DNA methylome method. The chemistry adapts post-bisulfite adaptor tagging (PBAT) to single-cell input by performing bisulfite conversion first (fragmenting DNA simultaneously), then random-primed complementary-strand synthesis introduces sequencing adaptors. This ordering inverts the conventional bisulfite workflow and avoids the DNA-degradation-induced library loss that limits standard chemistries at single-cell input.
 
 Applied to 12 metaphase-II oocytes, 12 2i-ESCs, and 20 serum-grown mESCs, scBS-seq measured methylation at up to 48.4% of CpGs per cell (mean $\sim$3.7 million CpGs covered, 17.7% of all CpGs at moderate sequencing depth). The data revealed substantial cell-to-cell methylation heterogeneity in serum-grown mESCs, including "2i-like" cells with hypomethylated naive-pluripotency signatures present within serum cultures — a heterogeneity that bulk WGBS averaging conceals.

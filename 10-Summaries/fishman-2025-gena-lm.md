@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[histone-modif
 
 > GENA-LM is a family of encoder-only, BERT-style DNA language models from AIRI, pre-trained with masked language modelling on the human T2T assembly (optionally augmented with 1000 Genomes SNPs and multispecies genomes). Two design choices stretch the input: **byte-pair-encoding (BPE) tokens** (median 9 bp, so 512 tokens ≈ 4.5 kb) and **sparse attention** (4,096 tokens ≈ 36 kb). A **recurrent memory transformer (RMT)** added at fine-tuning or pre-training chains 4.5-kb segments through memory tokens to reach 16–50 kb and beyond. Across promoter, splice-site, DeepSEA chromatin-profile and the 18-task Nucleotide Transformer benchmark, GENA-LMs are at or near the top, but no single variant wins everywhere, and the right trade-off between parameter count and context length depends on the task.
 
+> [!abstract] 한눈에
+> GENA-LM은 BPE 토큰, sparse attention, recurrent memory transformer로 입력 길이를 수십 kb까지 늘린 오픈소스 BERT 계열 DNA language model 모음이다. NT 벤치마크 평균에서 더 큰 모델을 앞섰고, 긴 context는 특히 넓게 퍼지는 히스톤 마크 예측에 도움이 됐다.
+
 ## Key claims
 
 - **BPE tokens buy context.** BPE with a 32,000-token vocabulary yields tokens of 1–64 bp with a median of 9 bp. 512 non-overlapping tokens cover about 4.5 kb, against 512 bp for 512 overlapping 6-mers. The longest tokens often correspond to LINEs or simple repeats. The cost is token-level, not base-level, resolution, which the authors list as a limitation.

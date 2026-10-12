@@ -21,6 +21,9 @@ paper_section: ["2"]
 
 > When asking "what does this region of DNA do, and is it active in this cell?", the field reads five molecular axes — **accessibility, DNA methylation, histone modifications, 3D genome organization, and DNA–protein (TF) binding** — plus a sixth structural/physical axis (lamina position, phase separation, mechanics) that gates which of the others are even possible at a given locus. This page is an entry point that maps each layer to its concept pages, single-cell assays, and cross-layer dependencies. (synthesis) The TF-binding axis was added 2026-06-26 after D&D-seq made it readable in single cells ([[10-Summaries/chi-2026-dd-seq]]).
 
+> [!abstract] 한눈에
+> accessibility, DNA methylation, histone modification, 3D genome, TF binding의 다섯 분자 층위와 이를 제약하는 구조·물리 층위를 정리한 입문 노트다. 층위들이 서로 얽혀 있어 잘 고른 한두 층위만 측정해도 locus의 조절 상태를 상당 부분 추론할 수 있다고 주장한다.
+
 ## The molecular layers
 
 ### 1. Chromatin accessibility (open chromatin)

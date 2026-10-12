@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Ashuach et al. (2023) — *MultiVI: deep generative model for the integration of multimodal data* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-023-01909-9)
 
+> [!abstract] 한눈에
+> MultiVI는 scVI, PeakVI, totalVI의 modality별 VAE를 하나의 공동 latent space로 정렬해 scRNA-seq와 scATAC-seq를 함께 분석하는 확률적 생성 모델이다. paired 데이터와 unpaired 데이터를 함께 다루며, 빠진 modality를 불확실성 추정과 함께 imputation한다.
+
 Ashuach, Gabitto, Koodli, Saldi, Jordan and Yosef (UC Berkeley, Allen Institute, Weizmann) developed **MultiVI**, a probabilistic deep generative model for the joint analysis of multimodal single-cell data — primarily scRNA-seq + scATAC-seq, extensible to surface protein abundance. MultiVI builds modality-specific variational autoencoders (scVI for expression, PeakVI for accessibility, totalVI for protein), then aligns their latent representations into a single joint space via an adversarial penalty that prevents modality-specific separation.
 
 Critical capability: MultiVI handles **paired and unpaired** data jointly. Cells with only one modality (single-modality datasets) can be embedded into the same joint space as paired multiome cells; the missing modality can be probabilistically imputed with calibrated uncertainty. Benchmarked on 10x PBMC multiome data: library-size correlation 0.97 (RNA) / 0.91 (ATAC) against observed UMI counts; MultiVI and Cobolt both outperform gene-scoring and WNN on latent-space mixing; imputation reaches Spearman 0.57 (RNA) and AUPRC 0.41 (ATAC).

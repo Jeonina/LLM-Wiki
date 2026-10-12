@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]"]
 
 > Most scWGBS methods trade per-cell coverage for throughput, forcing analysts into large bins, clustering or imputation. **scDEEP-mC** (Laird lab) goes the other way: a plate-based PBAT protocol tuned for library complexity — cells sorted straight into bisulfite reagent (no post-conversion cleanup loss), seven rounds of first-strand random priming with **base-composition-matched nonamers** (built for the bisulfite-converted genome, G only in CpG context), exonuclease cleanup, and directional second-strand priming — reaching **~30% of CpGs at 20 M reads/cell**. That coverage makes per-cell, per-allele, per-strand calls possible: **hemi-methylation**, **X-inactivation state** (even without phased SNPs, via NMF), and **S-phase cells** identified from copy number plus allele-resolved discordance.
 
+> [!abstract] 한눈에
+> scDEEP-mC는 라이브러리 복잡도를 높이도록 PBAT를 다시 설계해 20M reads/세포에서 CpG의 약 30%를 확보했고, 덕분에 세포별·allele별 hemi-methylation, X 불활성화 상태, S기 세포를 판별할 수 있었다. 생물학적 시연은 수백 개 세포 규모의 개념 증명에 그친다.
+
 ## Key claims
 
 - **Highest sequencing efficiency of the methods compared** — scDEEP-mC vs public high-coverage scWGBS datasets (scBS-seq, scM&T-seq, scTrio-seq, PBAL, snmC-seq2, Cabernet), all reprocessed through one BISCUIT pipeline with 2 M reads subsampled per library: minimal adapter contamination, very high alignment rates, reduced GC bias vs other random-priming methods. snmC-seq2 is comparably efficient but its low library yield limits depth; Cabernet (tagmentation + enzymatic conversion) reaches comparable coverage but showed incomplete CpY conversion in 43% (human) and 49% (mouse) of reads.

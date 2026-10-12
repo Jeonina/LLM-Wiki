@@ -22,6 +22,9 @@ topics: ["[[whole-genome-amplification]]", "[[cancer-clonal-evolution]]", "[[scd
 
 > The paper that made amplification-free single-cell genomics work. Tagment unamplified single-cell DNA in **nanolitre volumes** on a 192-chamber microfluidic device, add barcodes by PCR, sequence shallow. Because fragmentation happens *first*, every PCR copy is an exact duplicate that can be removed computationally — so every retained read is a unique representation of the original template.
 
+> [!abstract] 한눈에
+> DLP는 단일세포 DNA를 증폭 없이 나노리터 챔버에서 바로 tagmentation해, PCR 중복을 계산으로 제거할 수 있게 만든 방법이다. 세포당 0.07–0.12× 정도의 얕은 sequencing으로도 CNA와 클론 구조를 해상했고, 비용은 세포당 약 0.5달러였다.
+
 ## Key claims
 
 - **The core argument against WGA, stated mechanistically.** WGA makes many copies of each template as long molecules that are fragmented *later*, so one original region appears as multiple inserts with non-overlapping coordinates that **cannot be filtered as duplicates**. DLP fragments the template first; all copies are exact duplicates and are computationally removable.

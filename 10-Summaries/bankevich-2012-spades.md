@@ -22,6 +22,9 @@ topics: ["[[whole-genome-amplification]]", "[[computational-methods]]"]
 
 > Two of this paper's authors coauthored [[chitsaz-2011-velvet-sc|E+V-SC]] the year before and say plainly why they came back: *"one needs to change algorithmic design (rather than just modify existing tools) to fully utilize the potential of SCS."* SPAdes rebuilds assembly around the **paired de Bruijn graph** — reconstructing a string from pairs of *k*-mers at approximate distance *d*, rather than from *k*-mers alone — and makes that theoretical construct practical via ***k*-bimer adjustment**, which recovers exact distances for most read pairs.
 
+> [!abstract] 한눈에
+> SPAdes는 paired de Bruijn graph와 k-bimer adjustment로 조립 문제를 다시 정식화하고, MDA chimera 제거를 독립 단계로 두어 단일세포 게놈 조립을 정면으로 다뤘다. E+V-SC, Velvet, SOAPdenovo보다 나은 성능을 보였으며 이후 표준 도구로 자리 잡았다.
+
 ## Key claims
 
 - **Read pairs were the least-exploited stage of assembly.** The standard abstraction reconstructs a string from its *k*-mers; the better abstraction reconstructs it from *pairs* of *k*-mers ("*k*-bimers") at distance ≈ *d*. Paired de Bruijn graphs (Medvedev et al.) formalised this but assumed a fixed distance, which NGS does not provide — so PDBGs were a theoretical idea until this paper.

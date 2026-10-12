@@ -22,6 +22,9 @@ topics: ["[[single-cell-atac-seq]]", "[[cancer-clonal-evolution]]", "[[computati
 
 > scATAC-seq sequences DNA, not RNA, so its read depth along the genome carries copy-number signal, if the sparsity can be handled. epiAneufinder bins reads (100 kb by default), corrects for GC, and runs **per-cell binary segmentation using the Anderson–Darling distance** between read-count distributions on either side of each bin. It prunes weak breakpoints and calls each segment **loss / normal / gain**. It needs **no euploid reference and no other modality**, so CNA calls come for free from existing scATAC or multiome data. Against (sc)WGS of the same lines it correlates better than three scRNA-based callers and the one prior scATAC caller (Copy-scAT). In basal cell carcinoma it reveals CNA clones that peak-based clustering cannot see.
 
+> [!abstract] 한눈에
+> epiAneufinder는 scATAC-seq read depth를 Anderson–Darling 거리 기반 binary segmentation으로 분석해, 정배수체 참조나 다른 modality 없이 세포별 CNA를 loss/normal/gain으로 판정한다. scWGS와의 일치도는 Copy-scAT와 scRNA 기반 도구보다 높았지만, 정확한 copy number나 전체 유전체 배수화는 검출하지 못한다.
+
 ## Key claims
 
 - **Algorithm.** Filter low-coverage cells; bin the genome (default 100,000 bp); remove ENCODE blacklist regions and bins with zero counts in >85% of cells; LOESS GC correction. Per cell and chromosome, place the breakpoint that maximises the AD distance, recursively, up to 15 per chromosome by default. Prune breakpoints with AD below the genome-wide mean. Assign states from the trimmed mean (dropping the 0.1/0.9 quantile bins): z-score within [−1, 1] → genome-wide mean; rounded fold-change 0 → loss, 1 → normal, ≥2 → gain. Cells are clustered by Euclidean distance with Ward linkage into karyotype clusters.

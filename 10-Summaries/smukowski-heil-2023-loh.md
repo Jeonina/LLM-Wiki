@@ -22,6 +22,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[somatic-mosaicism]]"]
 
 > A yeast-centric review arguing that loss of heterozygosity — mitotic conversion of a heterozygous locus to homozygous — is not a rare accident but a **high-rate, adaptive, genome-shaping mutational class** that outpaces point mutation by orders of magnitude, and that its detection requires a specific analytical discipline distinct from variant calling.
 
+> [!abstract] 한눈에
+> 효모 중심의 이 리뷰는 LOH가 드문 사고가 아니라 점돌연변이보다 부위당 약 5자릿수 더 자주 일어나는 적응적 변이 유형이라고 주장한다. 실용적인 검출 절차도 제시하지만, 단일세포에서는 WGA로 생긴 allele dropout이 LOH와 똑같은 신호를 내므로 그대로 옮겨 쓸 수 없다.
+
 ## Key claims
 
 - Two structural classes: **interstitial LOH** (gene conversion, typically <10 kb, evenly distributed) and **terminal LOH** (reciprocal crossover or break-induced replication, often >100 kb extending to the telomere, enriched near telomeres). The distributional difference implies different formation/resolution mechanisms.

@@ -22,6 +22,9 @@ topics: ["[[40-Topics/dna-methylation]]", "[[40-Topics/computational-methods]]"]
 
 > Single-cell methylomes cover only 1–40% of CpGs per cell, so imputation is routine — but Transformer imputers (CpG Transformer) pay quadratic cost and must use small windows. MambaCpG swaps attention for **bidirectional Mamba (selective state-space) blocks**, which scale linearly, letting it use much wider windows (W = 1,024 CpGs for <200 cells, 256 for larger sets, vs 41 in CpG Transformer and 21 in GraphCpG). Each matrix entry is embedded from its methylation state, a CNN embedding of the 1,001-bp sequence around the CpG, a learnable cell embedding and a 2D positional encoding; training is BERT-style masking of 15% of observed sites. The claim: best on **large, very sparse** datasets, competitive on small ones, with fewer parameters and less memory.
 
+> [!abstract] 한눈에
+> MambaCpG는 single-cell methylation imputation에서 Transformer 대신 bidirectional Mamba를 써 선형 비용으로 훨씬 넓은 window를 다룬다. 공개 데이터 7개 모두에서 1위나 2위를 차지했지만, 대규모 데이터에서의 우위는 AUC 약 1점 수준이고 세포가 적으면 CpG Transformer가 낫다.
+
 ## Key claims
 
 - **Benchmark on seven public datasets** (chr10 test, chr5 validation, following CpG Transformer): 2i (12 cells) and Ser (20) mESC scBS-seq; HCC (25, scRRBS); MBL (30, scRRBS); Hemato (122 HSPCs, scBS-seq); Neuron-Mouse (690) and Neuron-Homo (780) snmC-seq. Sparsity ranges 0.7779–0.9842.

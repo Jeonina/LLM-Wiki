@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[computational-methods]]", "[[single-cell-multiomics
 
 > Single-cell A/B compartments, TADs, and loops all had callers by 2023. **Subcompartments did not**, and for a specific reason: bulk subcompartment annotation needs ≥50 million *trans* reads, and essentially no scHi-C dataset has enough interchromosomal coverage — not even at pseudobulk level. scGHOST gets around this by **embedding genomic loci as graph nodes** (node2vec-style constrained random walks over [[zhang-2022-higashi|Higashi]]-imputed maps, borrowing from k-nearest-neighbour cells) and clustering the embeddings, producing five per-cell subcompartments scA1/scA2/scB1/scB2/scB3.
 
+> [!abstract] 한눈에
+> scGHOST는 Higashi로 imputation한 scHi-C 지도에서 locus를 그래프 노드로 embedding하고 clustering해, 단일세포 수준의 subcompartment 다섯 종을 처음 정의했다. HiRES 데이터에서는 유전자의 약 절반이 발현이 늘기 전에 subcompartment를 먼저 바꿨다.
+
 ## Key claims
 
 - **Binary A/B is insufficient and subcompartments were the missing single-cell feature.** Rao's five bulk subcompartments (A1, A2, B1, B2, B3) stratify epigenomic signal in ways A/B cannot; no method existed to call them per cell.

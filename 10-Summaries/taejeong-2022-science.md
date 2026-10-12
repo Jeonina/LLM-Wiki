@@ -16,6 +16,9 @@ updated: 2026-05-12
 
 > Taejeong Bae, Liana Fasching, Yifan Wang, Joo Heon Shin, Milovan Suvakov, Yeongjun Jang, Scott Norton, Caroline Dias, Jessica Mariani, Alexandre Jourdon, Feinan Wu, Arijit Panda, Reenal Pattni, Yasmine Chahine, Rebecca Yeh, Rosalinda C. Roberts, Anita Huttner, Joel E. Kleinman, Thomas M. Hyde, Richard E. Straub, Christopher A. Walsh, Brain Somatic Mosaicism Network, Alexander E. Urban, James F. Leckman, Daniel R. Weinberger, Flora M. Vaccarino\*, **Alexej Abyzov\***. *Science* **377**, 511–517 (29 July 2022). DOI: 10.1126/science.abm6222.
 
+> [!abstract] 한눈에
+> Bae 등은 뇌 131개를 ≥200× bulk WGS로 분석해 약 6%가 나이와 함께 늘어나는 과돌연변이 상태이며 암 관련 유전자의 손상 변이와 클론 확장을 동반함을 보였다. ASD 뇌에서는 체세포 변이가 태아 뇌 enhancer에 MEIS 계열 TF 결합 모티프를 새로 만들어 냈다.
+
 ## Thesis
 
 A large brain-mosaicism cohort study: 131 human brains (44 neurotypical, 19 Tourette syndrome, 9 schizophrenia, 59 autism spectrum disorder), each sequenced to ≥200× from bulk cortex/striatum/hippocampus. Typical brain carries 20–60 detectable mosaic SNVs, but **~6% are "hypermutable"** (>101 SNVs). Hypermutability associates with **age**, **damaging mutations in cancer-implicated genes**, and **in vivo clonal expansions**. In ASD specifically, somatic mutations create **putative transcription-factor binding motifs (especially MEIS family) in enhancer-like regions** active in the developing brain — providing a direct mosaic-mutation-to-regulatory-element causal pathway for ASD risk.

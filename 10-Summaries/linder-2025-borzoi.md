@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[computational
 
 > Borzoi is an Enformer-derived [[sequence-to-function-model]] that predicts **RNA-seq coverage** itself, at 32-bp resolution across a 524-kb input window, together with the CAGE, DNase, ATAC and ChIP tracks Enformer used. Because RNA-seq coverage carries transcription, splicing and polyadenylation at once, statistics computed from the predicted coverage let one model score variant effects on expression, splicing and 3′ end choice. It beats Enformer on eQTL and enhancer–gene tasks, beats APARENT2 on polyadenylation QTLs, and is about even with Pangolin on splicing QTLs. Tissue-specific alternative splicing is the clear failure.
 
+> [!abstract] 한눈에
+> Borzoi는 524 kb 서열에서 RNA-seq coverage를 직접 예측하는 Enformer 계열 모델로, 모델 하나로 발현, splicing, polyadenylation에 대한 변이 효과를 평가한다. eQTL과 enhancer–유전자 연결에서는 Enformer를 앞섰지만 조직 특이적 alternative splicing 예측은 뚜렷한 약점으로 남았다.
+
 ## Key claims
 
 - **RNA-seq coverage can be predicted from sequence without gene annotation.** Test-set bin-level Pearson R was 0.74 per replicate and 0.75 for the four-model ensemble across human RNA-seq tracks. Gene-level R was 0.87 (0.86 per replicate). After quantile normalisation and mean-gene subtraction, R was 0.58, so the model explains part of the between-tissue variation.

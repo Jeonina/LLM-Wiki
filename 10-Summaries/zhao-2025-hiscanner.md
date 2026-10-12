@@ -23,6 +23,9 @@ topics: ["[[brain-somatic-mosaicism]]", "[[somatic-mosaicism]]", "[[cancer-clona
 
 > Single-cell CNA callers were built for shallow, cancer-scale data and mostly report chromosome-arm events. High-coverage PTA data could resolve much smaller CNAs, but amplification artifacts — above all allelic dropout (ADO), which looks like a copy loss in read depth — get in the way. **HiScanner** (High-resolution Single-Cell Allelic copy Number callER, Park lab) combines read-depth ratio (RDR), B-allele frequency (BAF) and reference-based haplotype phasing. It sets the bin size from the measured size distribution of ADO events, segments all cells of a sample jointly with a multi-sample BIC, and estimates segment BAF with a fast LOH test that avoids CHISEL-style EM. It infers integer allele-specific copy number and ploidy per cell. In simulations it matches the best callers at 3–5 Mb and beats them at 200 kb–1 Mb. Applied to 65 PTA brain cells, it calls 614 mostly sub-3 Mb CNAs and finds that neurons carry mostly private losses while oligodendrocytes carry clonal gains. In a grade II → grade III meningioma pair (179 cells at 0.5×), its CNA clusters agree with an independent SNV-based clustering (ARI 0.83).
 
+> [!abstract] 한눈에
+> HiScanner는 RDR, BAF, haplotype phasing을 결합하고 ADO 크기 분포로 bin 크기를 정해 PTA 데이터에서 고해상도 allele-specific CNA를 찾는다. 200 kb–1 Mb 구간에서 기존 caller보다 우수했고, 뇌 세포 65개에서 neuron은 주로 private loss를, oligodendrocyte는 clonal gain을 지녔다.
+
 ## Key claims
 
 - **Bin size is set by the data, not the user.** A two-state HMM (ADO / non-ADO, fit by Baum–Welch) on binarised BAF at germline heterozygous SNPs (gHETs) finds dropout events; the 95th percentile of their sizes becomes the smallest permitted bin. Mean dropout size differed by two orders of magnitude between PTA and MDA (~10³ bp vs ~10⁵ bp), so the bin must be fit per protocol. For the brain PTA data this gave 100 kb bins.

@@ -22,6 +22,9 @@ topics: ["[[mosaic-variant-calling]]", "[[computational-methods]]", "[[hematopoi
 
 > BreakDancer was an early answer to the question of how to call structural variants from short-insert Illumina paired-end reads. It has two complementary algorithms. **BreakDancerMax** clusters *anomalously mapped read pairs* (ARPs: wrong separation or orientation) and scores each cluster with a Poisson model. It calls five SV classes: deletions, insertions, inversions, and intra- and inter-chromosomal translocations. **BreakDancerMini** takes the *normally* mapped pairs that Max ignores and runs a sliding-window Kolmogorov–Smirnov test on insert-size distributions. This catches 10–100 bp indels that sit below the ARP separation threshold. Combined, they span indels from 10 bp to 1 Mb. Library- and sample-level p-values are pooled with Fisher's method, so trio, population and tumour–normal designs gain power.
 
+> [!abstract] 한눈에
+> BreakDancer는 비정상 매핑 read pair를 군집하는 BreakDancerMax와 insert size 분포를 검정하는 BreakDancerMini를 결합해, short-read paired-end 데이터에서 10 bp부터 1 Mb까지의 구조 변이를 찾는다. 다만 AML 사례에서 PCR로 검증한 indel은 모두 체세포가 아닌 생식세포 변이였다.
+
 ## Key claims
 
 - **Simulation** used Venter chr17, with 844 SVs of 20–7,953 bp, 50-bp reads, 200 ± 20 bp inserts and 100× physical coverage.

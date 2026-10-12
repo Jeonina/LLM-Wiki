@@ -16,6 +16,9 @@ updated: 2026-05-12
 
 > Yu Hou, Huahu Guo, Chen Cao, Xianlong Li, Boqiang Hu, Ping Zhu, Xinglong Wu, Lu Wen, Fuchou Tang, Yanyi Huang, Jirun Peng. *Cell Research* **26**, 304–319 (Feb 2016). DOI: 10.1038/cr.2016.23.
 
+> [!abstract] 한눈에
+> scTrio-seq는 한 세포에서 CNV, DNA 메틸롬, 전사체를 동시에 읽는 최초의 triple-omics 기법이다. 간세포암 세포에서 CNV는 발현을 비례해 바꾸지만 해당 영역의 메틸화에는 영향을 주지 않음을 보였다.
+
 ## Thesis
 
 First single-cell **triple-omics** assay that simultaneously yields (1) genomic copy-number variation, (2) DNA methylome, and (3) transcriptome from the same mammalian cell — and the first demonstration that **CNVs drive proportional changes in RNA expression but do NOT alter DNA methylation** within the same affected genomic regions, at single-cell resolution. Applied to 25 HCC tumor cells from one patient, identifying two subpopulations differentiated by CNV, methylation, and expression profiles concordantly.

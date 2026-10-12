@@ -22,6 +22,9 @@ topics: ["[[single-cell-atac-seq]]", "[[computational-methods]]"]
 
 > Single-cell regulome data (scATAC-seq, scDNase-seq, scChIP-seq) are so sparse that each locus is nearly binary, so per-peak analysis fails. **SCRAT** (Single-Cell Regulome Analysis Toolbox) is an early, GUI-driven R package/web app that **aggregates reads over biologically grouped features** — all sites of a TF motif, co-regulated ENCODE DHS clusters, gene regions, MSigDB gene sets, or custom BED sets — then clusters cells on those aggregates, compares them to an ENCODE DNase reference panel to infer identity, and tests features differing between subpopulations.
 
+> [!abstract] 한눈에
+> SCRAT는 희소한 단일세포 regulome 데이터를 TF motif, ENCODE DHS 클러스터, 유전자 세트 같은 기능 단위로 묶어 세포를 군집하고 정체를 추정하는 GUI 기반 R 도구다. peak 단위 클러스터링이 실패한 세포 혼합물을 구분했지만, 정량적 벤치마크는 없다.
+
 ## Key claims
 
 - **Peak-level clustering fails where aggregation works**: on a scATAC-seq mix of GM12878 and HEK293T cells, bulk peak calling plus clustering on peak signals did not separate the two cell types; SCRAT's aggregated features did, and recovered differential features matching cell identity.

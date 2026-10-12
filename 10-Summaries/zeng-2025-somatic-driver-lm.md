@@ -24,6 +24,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/can
 >
 > The authors pretrain a small BERT-style [[dna-language-model]], **GenomeBert**, on GRCh37 with k-mer tokens (k = 3–6, 1,000-bp inputs, masked-token objective only). They fine-tune it to tell oncogene and tumour-suppressor gene (TSG) sequence from other sequence using the COSMIC Cancer Gene Census. They then use the fine-tuned 6-mer model as a **frozen feature extractor** for **somatic cancer point mutations**: the [CLS] embedding of the 1,000-bp reference window is subtracted from that of the alternate window, and an XGBoost classifier is trained on that difference to call driver vs passenger. Training labels come from three curated sets (PMID25348012, OncoKB, FASMIC; 2,154 drivers, 1,725 passengers). The test set is a 71-mutation xenograft oncogenicity assay (45 drivers, 26 passengers). This is an **application with a small benchmark**, not a germline benchmark. GenomeBert + XGBoost reaches AUROC 83.25% in 10-fold cross-validation and 84.64% on the xenograft set, ahead of CHASM, REVEL, CADD, PrimateAI, OncoVar, DeepAlloDriver and others, and slightly ahead of DeepSEA or HyenaDNA features fed to the same classifier.
 
+> [!abstract] 한눈에
+> GenomeBert는 인간 유전체로 사전학습한 작은 BERT형 DNA language model에서 REF와 ALT embedding의 차이를 뽑아 XGBoost에 넣고, 체세포 점돌연변이를 driver와 passenger로 구분한다. xenograft 변이 71개 검증에서 AUROC 84.64%로 기존 도구를 앞섰지만, 벤치마크 규모가 작다.
+
 ## Key claims
 
 - **What model, which variants.** GenomeBert (BERT encoder, 1.7 M–3.7 M parameters depending on k) is applied to **somatic cancer point mutations** with experimental or literature support. The paper says "only point mutations were considered". It does not name cancer types for the mutation sets and does not say whether they are coding or noncoding. Coding missense is likely, given the sources (OncoKB, FASMIC) and the comparators (REVEL, PolyPhen-family tools, MutPred, CHASM). (synthesis)

@@ -22,6 +22,9 @@ topics: ["[[whole-genome-amplification]]", "[[scdna-seq]]", "[[computational-met
 
 > Seven **commercial kits**, three chemistries, 29 single cells, one conclusion that has aged well: **there is no best WGA method, there is a best WGA method per variant class.** [[dop-pcr|DOP-PCR]] wins on read evenness and therefore [[copy-number-variation|CNV]] accuracy; [[mda|MDA]] wins on genome recovery (~84% vs ~6%) and therefore SNV detection; [[malbac|MALBAC]] sits between them.
 
+> [!abstract] 한눈에
+> Hou 등은 상용 WGA 키트 7종을 단일세포 29개로 비교해, 모든 변이에 맞는 최선의 WGA는 없고 변이 유형마다 최선이 다르다는 결론을 냈다. DOP-PCR은 균일도가 높아 CNV에 유리했고, MDA는 유전체 회수율이 약 84%로 SNV 검출에 강했다.
+
 ## Key claims
 
 - **The chemistry ranking inverts depending on what you are calling.** DOP-PCR has the highest duplication ratio and the worst genome recovery, but the most even read distribution and the best reproducibility — so it is the best CNV caller substrate. MDA has ~84% consensus-genotype detection efficiency against ~6% for DOP-PCR and ~52% for MALBAC — so it is the best SNV substrate. This is the paper's whole point and it is a *design-selection* result, not a winner announcement.

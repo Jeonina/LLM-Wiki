@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/sin
 
 > scooby turns the bulk sequence-to-function model **Borzoi** into a single-cell model. It keeps Borzoi's convolution + transformer trunk (524 kb input, 32-bp bins), adds **LoRA** adapters (rank 8) to every convolution and to the transformer query/value/MLP projections, and replaces Borzoi's thousands of bulk output heads with **one cell-conditioned decoder**: a small MLP reads a 14-dimensional Poisson-MultiVI cell embedding and outputs the weights of a 1×1 convolution that decodes the sequence embedding into that cell's stranded scRNA-seq coverage and scATAC-seq insertion profile. Because cells enter through an embedding rather than one output track each, the parameter count does not grow with cell number, unlike seq2cells. Trained on a 63,683-cell 10x Multiome bone-marrow dataset, scooby predicts held-out genes' cell-type expression (mean Pearson 0.86 across genes, 0.54 for between-cell-type deviations), beats a retrained seq2cells, scores TF motif effects that track TF expression better than chromVAR and scBasset, and assigns single-cell eQTLs to the right cell types better than Borzoi or simple baselines.
 
+> [!abstract] 한눈에
+> scooby는 bulk 모델 Borzoi에 LoRA와 세포 임베딩 기반 decoder를 붙여 단일세포 scRNA-seq·scATAC-seq 프로파일을 DNA 서열로 예측한다. 세포 유형별 발현 예측은 Borzoi 수준이고 TF motif 점수와 eQTL 세포 유형 배정에서도 기존 방법을 앞섰지만, 데이터셋마다 다시 학습해야 한다.
+
 ## Key claims
 
 - **Single-cell profile prediction.** Correlation of predicted to observed single-cell profiles on test sequences was 0.15 (RNA) and 0.11 (ATAC), above the cell's own pseudobulk (0.09 and 0.08) but low in absolute terms because single cells are sparse. Against each cell's 100-nearest-neighbour average the correlations rose to 0.63 (RNA) and 0.70 (ATAC). The authors use the kNN average as a practical upper bound.

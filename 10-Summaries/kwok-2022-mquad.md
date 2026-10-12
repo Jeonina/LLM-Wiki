@@ -22,6 +22,9 @@ topics: ["[[single-cell-lineage-tracing]]", "[[cancer-clonal-evolution]]", "[[co
 
 > mtDNA heteroplasmy is an attractive endogenous lineage barcode — high copy number, mutation rate >10× the nuclear genome — but most mtDNA variants are **noise or non-clonal**, and telling them apart is the whole problem. MQuad's answer is a **binomial mixture test per variant**: fit one shared allele frequency across all cells (H₀) versus a two-component mixture (H₁), and rank variants by **ΔBIC**. A variant that splits the population into two heteroplasmy levels is clonally informative; one that does not is noise.
 
+> [!abstract] 한눈에
+> MQuad는 mtDNA 변이마다 이항 혼합 모형을 적합하고 ΔBIC로 순위를 매겨, 잡음과 clonal 정보를 지닌 heteroplasmy 변이를 가려낸다. 시뮬레이션에서 mgatk와 Monovar보다 AUPRC가 크게 높았으나, allele frequency 1% 이하에서는 모든 도구가 실패했다.
+
 ## Key claims
 
 - **Nuclear callers fail on mtDNA for a structural reason**: [[zafar-2016-monovar|Monovar]] and Conbase assume a **diploid context**, which the mitochondrial genome violates. MQuad's binomial parameter ranges freely from 0 to 1 to accommodate any heteroplasmy level.

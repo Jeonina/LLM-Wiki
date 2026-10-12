@@ -26,6 +26,9 @@ topics: ["[[single-cell-atac-seq]]", "[[computational-methods]]"]
 >
 > GFETM puts a pretrained **genome foundation model (GFM)** inside an **embedded topic model (ETM)**. The ETM is a VAE: a two-layer MLP encoder maps each cell's TF-IDF-normalised peak vector to a topic mixture θ, and a **linear decoder** reconstructs peaks from θ · α · ρ, where α is a learned topic embedding and ρ is the peak embedding. GFETM computes ρ by running each peak's DNA through the GFM (DNABERT 6-mer by default, 768-d) and **fine-tunes the GFM's last two transformer layers jointly with the ETM**. Because cells pass through an amortised encoder and peaks pass through a sequence model, the trained model can embed **unseen cells** and score **unseen peaks**, which the authors present as the main advance over scBasset.
 
+> [!abstract] 한눈에
+> GFETM은 genome foundation model을 embedded topic model에 넣고 함께 fine-tuning해 scATAC-seq를 모델링한다. clustering 성능은 scBasset과 비슷한 수준이지만 새로운 세포·peak로의 일반화와 조직·종 간 전이에서 강점을 보였고, 고정된 GFM embedding만으로는 이득이 거의 없었다.
+
 ## Key claims
 
 - **Frozen GFM embeddings are not enough; joint fine-tuning is the gain.** Across 13 GFMs (DNABERT, DNABERT-2, Nucleotide Transformer, HyenaDNA variants), initialising ρ from GFM embeddings and freezing it beat random ρ on ARI, and larger embedding sizes did better. But frozen GFM embeddings did not significantly beat an ETM that learns random ρ. End-to-end fine-tuning gave "drastic improvements". DNABERT was chosen for its light weight, not because it was best: NT-2.5b-multi-species performed best, and NT-500M-human-ref beat NT-500M-1000g, which the authors attribute to matching the hg38 reference.

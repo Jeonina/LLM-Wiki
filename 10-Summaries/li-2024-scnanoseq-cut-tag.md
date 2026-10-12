@@ -22,6 +22,9 @@ topics: ["[[histone-modifications]]", "[[long-read-sequencing]]", "[[single-cell
 
 > scNanoSeq-CUT&Tag moves single-cell CUT&Tag onto Oxford Nanopore. The key chemical change is a **pG-Tn5 loaded with a single adaptor**, so every tagmented fragment (not ~50% as with two-adaptor Tn5) is PCR-recoverable as a long amplicon; cells are plate-sorted with a 24-bp inner barcode, pre-amplified, pooled and re-amplified with outer barcodes (up to 96 × 96). The payoff of multi-kilobase reads is access to what short reads cannot map — **individual L1Hs copies (>99% identical), H3K9me3-dense heterochromatin and blacklist regions** — plus haplotype-resolved (allele-specific) peaks and direct single-molecule evidence that two neighbouring peaks carry the same mark on the same allele in the same cell.
 
+> [!abstract] 한눈에
+> scNanoSeq-CUT&Tag는 adaptor 하나만 실은 pG-Tn5를 써서 단일세포 CUT&Tag를 Nanopore long read로 옮겼다. 긴 read 덕분에 short read로는 매핑할 수 없는 개별 L1Hs 사본, H3K9me3 이질염색질, blacklist 영역의 히스톤 표지와 allele-specific peak를 측정했다.
+
 ## Key claims
 
 - **Scale and depth.** Six human cell lines (K562, 293T, GM12878, HG002, H9, HFF1), five histone marks (H3K4me3, H3K27ac, H3K36me3, H3K27me3, H3K9me3) and two chromatin proteins (CTCF, RAD21): **17,211 high-quality cells, 3.5 Tb**, median read length 3.4–4.4 kb. Up to **13,373 unique reads per cell**, described as clearly better than Paired-Tag and CoBATCH; FRiP comparable to NGS scCUT&Tag.

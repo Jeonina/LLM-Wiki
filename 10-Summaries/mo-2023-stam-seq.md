@@ -32,6 +32,9 @@ topics:
 
 > Thesis: Plant centromeres, telomeres, and rDNA arrays are highly repetitive regions (HRRs) that NGS cannot uniquely map and bisulfite sequencing cannot preserve. **STAM-seq** combines nanopore long-read sequencing + EcoGII 6mA methyltransferase labeling of accessible regions + nanopore **adaptive sampling** to enrich HRRs by real-time rejection of non-target reads. Simultaneously detects 6mA (chromatin accessibility) and endogenous 5mC (DNA methylation) on the same fiber. Reveals strand-specific epigenetic patterns at *Arabidopsis* CEN180 centromeric repeats, transcription-state-linked methylation at rDNA variants, and asymmetric telomere/subtelomere modifications.
 
+> [!abstract] 한눈에
+> STAM-seq는 EcoGII 6mA 표지와 nanopore adaptive sampling을 결합해, NGS로 매핑하기 어려운 식물 centromere·telomere·rDNA 반복 영역에서 같은 fiber의 접근성과 5mC 메틸화를 함께 측정했다. Arabidopsis CEN180 반복에서 가닥 특이적인 후성유전 패턴을 발견했다.
+
 ## Key claims
 
 - **Method**: nuclei → EcoGII 6mA methylation of accessible regions → nanopore sequencing with adaptive sampling (genomic-coordinate-based real-time read selection) targeting HRRs ±100 kb. Modification-aware basecalling distinguishes 6mA (accessibility) from 5mC (methylation).

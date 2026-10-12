@@ -16,6 +16,9 @@ updated: 2026-05-12
 
 > Chongyuan Luo, Angeline Rivkin, Jingtian Zhou, Justin P. Sandoval, Laurie Kurihara, Jacinta Lucero, Rosa Castanon, Joseph R. Nery, António Pinto-Duarte, Brian Bui, Conor Fitzpatrick, Carolyn O'Connor, Seth Ruga, Marc E. Van Eden, David A. Davis, Deborah C. Mash, M. Margarita Behrens, **Joseph R. Ecker**. *Nature Communications* **9**, 3824 (2018). DOI: 10.1038/s41467-018-06355-2. Salk + Swift Biosciences + Zymo.
 
+> [!abstract] 한눈에
+> snmC-seq2는 RP-H random primer, SAP 탈인산화, 384-well 정제, 8-plex 다중화를 도입해 snmC-seq보다 adapter-dimer를 줄이고 라이브러리 복잡도와 처리량을 높였다. 이로써 아틀라스 규모의 단일세포 메틸롬 분석이 가능해졌다.
+
 ## Thesis
 
 **snmC-seq2** is an improved single-nucleus methylcytosine sequencing protocol that supersedes the original snmC-seq with **better read mapping, fewer adapter-dimer artifacts, higher throughput, and increased library complexity**. The protocol changes (RP-H random primer, shrimp alkaline phosphatase dephosphorylation, 384-well DNA-binding plates, 8-plex Adaptase reactions) collectively make atlas-scale single-cell methylome profiling tractable. This is the chemistry that produced the BICCN mouse brain atlas that [[10-Summaries/mukamel-2025-aneuploidy-brain|Mukamel 2025]] then mined for somatic aneuploidy.

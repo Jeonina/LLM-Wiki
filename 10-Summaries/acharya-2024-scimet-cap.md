@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]", "[[single-cell-multiomics]]"]
 
 > sciMETv2 solved the *throughput* problem of single-cell methylation (combinatorial indexing amortises bisulfite conversion over many cells per well) but not the *sequencing* problem: genome-wide methylomes need ~2–6 million raw reads per cell to reach the 300–500 thousand CpGs required for cell-type assignment. sciMET-cap bolts an **off-the-shelf post-bisulfite hybrid-capture panel** (Twist Human Methylome Panel, ~123 Mbp of regulatory regions) onto the pooled sciMETv2 library. Cells are clustered on the enriched, cell-type-variable regions; the ~70% of reads that fall **off target** are then aggregated per cluster into near-complete pseudo-bulk methylomes for genome-wide DMR calling. Result: comparable human-cortex clustering from ~350 M reads versus ~7 billion without capture.
 
+> [!abstract] 한눈에
+> sciMET-cap은 sciMETv2 라이브러리에 bisulfite 이후 hybrid capture를 더해 표적 영역으로 세포를 군집화하고, off-target read는 cluster별로 모아 genome-wide DMR을 찾는다. capture 없이는 약 70억 read가 들던 인간 피질 군집화를 약 3.5억 read로 재현했다.
+
 ## Key claims
 
 - **The bottleneck is reads, not cells.** sciMETv2 typically needs two to six million raw reads per cell, because at least 300–500 thousand CG dinucleotides must be captured per cell for cell-type assignment. RRBS-style targeting misses much of the putative regulatory space; post-conversion hybrid capture of pooled, barcoded libraries does not.

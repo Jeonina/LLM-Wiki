@@ -22,6 +22,9 @@ topics: ["[[single-cell-lineage-tracing]]", "[[cancer-clonal-evolution]]", "[[co
 
 > Standard phylogenetics can be applied to CRISPR barcodes, but it models the wrong process. The distinctive property of Cas9 editing is **non-modifiability**: once a target site is edited, the guide RNA no longer matches and the site can never change again. Startle encodes exactly this as the **star homoplasy** model — a character may mutate **at most once along any lineage**, but the same character state may arise independently in different lineages — and computes a maximum-parsimony tree under it.
 
+> [!abstract] 한눈에
+> Startle은 Cas9 편집 부위가 한 번 편집되면 다시 바뀌지 않는다는 성질을 star homoplasy 모델로 정식화해, CRISPR lineage tracing 데이터에서 maximum-parsimony 계통수를 추론한다. 전이성 폐 선암 마우스 모델에서는 더 적은 전이 횟수로 설명되는 계통수를 찾았다.
+
 ## Key claims
 
 - **Star homoplasy is the right constraint, and it is not standard.** Classical models either forbid homoplasy entirely (perfect phylogeny / infinite sites) or allow unrestricted repeated mutation (finite sites). Star homoplasy sits in neither camp: it permits the *same edit outcome* to appear convergently in unrelated lineages — which happens constantly in Cas9 systems because a handful of indel outcomes dominate — while forbidding a site from mutating twice down one lineage.

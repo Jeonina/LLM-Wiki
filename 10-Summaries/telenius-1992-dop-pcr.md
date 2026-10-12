@@ -23,6 +23,9 @@ topics: ["[[whole-genome-amplification]]"]
 
 > Telenius and colleagues (Cambridge CRC group, with Karolinska) introduce **degenerate oligonucleotide-primed PCR**: one 22-nt primer with a fixed 5′ cloning tag, six degenerate positions and six fixed 3′ bases. Five low-temperature (30 °C) cycles let the short 3′ sequence prime at "multiple (e.g., ~10⁶ in human) evenly dispersed sites", and 25–35 later cycles at 62 °C amplify the tagged products. The paper is a **genome-mapping and cytogenetics** method, not a single-cell one. Inputs are nanograms of genomic DNA, cosmids, and **500 flow-sorted chromosomes**. The argument is made against **interspersed repetitive sequence PCR (IRS-PCR / Alu-PCR)**: DOP-PCR works in every species tested with the same primer, and its FISH paints cover chromosomes more evenly than Alu-PCR paints. The authors also argue that, because primer and polymerase run out early, DOP-PCR is effectively a **linear** amplification per fragment, each fragment ending "only 35–40 times the original concentration".
 
+> [!abstract] 한눈에
+> Telenius 등은 단일 degenerate primer와 저온·고온 2단계 사이클로 어떤 종의 DNA든 증폭하는 DOP-PCR을 제시했고, FISH 염색체 페인팅에서 Alu-PCR보다 고른 결과를 보였다. 단일세포 논문이 아니며, 저자들은 이 증폭을 지수적이 아닌 선형으로 보았다.
+
 ## Key claims
 
 - **Primer design.** 6-MW is `5′ CCGACTCGAGNNNNNNATGTGG 3′`: an XhoI site at the 5′ end, six degenerate N, six specified 3′ bases. A second primer, 6-M, had a NotI site and only three specified 3′ bases. Both gave a smear on genomic DNA, but 6-MW amplified more efficiently, "possibly reflecting more efficient annealing" (Fig. 1a).

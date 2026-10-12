@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[computational
 
 > Genos (BGI-Hangzhou AI) is a pair of mixture-of-experts DNA language models (1.25B total / 0.33B activated, and 10.27B / 2.87B) trained by next-token prediction at single-nucleotide resolution with a context window of up to 1 Mb. Its two stated arguments are **human-centric data** — 636 high-quality assemblies from HPRC release 2, HGSVC, CEPH plus GRCh38 and CHM13, rather than Evo2's cross-species corpus — and **deployability**: MoE routing (2 of 8 experts per token), grouped-query attention, FlashAttention, RoPE with a base frequency of 50,000,000, and five-dimensional parallelism in Megatron-LM, so that long-context inference does not need an Evo2-40B-scale cluster. Benchmarks are run as frozen-embedding probes against a fixed downstream head; two case studies fine-tune the model for single-base RNA-seq track prediction and pair it with a text LLM for KEGG-based disease classification.
 
+> [!abstract] 한눈에
+> Genos는 636개 고품질 인간 유전체 어셈블리로 학습한 mixture-of-experts DNA 언어 모델로, 최대 1 Mb 문맥을 단일 염기 해상도로 다룬다. 돌연변이 hotspot 분류에서는 입력이 길수록 정확도가 올랐지만, splice site와 eQTL 과제에서는 Evo2에 뒤졌다.
+
 ## Key claims
 
 - **Human pangenome corpus.** 231 haplotype-resolved HPRC release-2 assemblies, 65 HGSVC assemblies, 21 CEPH genomes and 2 references (GRCh38, CHM13) — 636 genomes in total. One-hot tokenizer over A/T/C/G/N plus special tokens; no epigenetic or cell-type labels at pre-training.

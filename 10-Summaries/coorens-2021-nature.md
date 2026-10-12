@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Coorens et al. (2021) — *Extensive phylogenies of human development inferred from somatic mutations* — *Nature*. [DOI](https://doi.org/10.1038/s41586-021-03790-y)
 
+> [!abstract] 한눈에
+> Coorens 등은 성인 3명의 511개 microdissection 시료를 저입력 WGS로 분석하고 체세포 돌연변이를 계통 바코드 삼아 인간 발생 계통수를 재구성했다. 접합자의 두 딸세포가 성체에 비대칭적으로 기여하고, 첫 두 번의 분열에서 돌연변이율이 특히 높다는 것을 밝혔다.
+
 Coorens, Moore and colleagues (Sanger Institute / Stratton lab) reconstructed cellular phylogenies of normal human tissues from three adult individuals using 511 laser-capture microdissections subjected to low-input WGS. By treating shared somatic mutations as naturally occurring lineage barcodes, they built phylogenetic trees that resolve embryonic patterning at single-cell ancestral resolution.
 
 Three principal findings. (1) The two reconstructed daughter cells of the zygote contribute asymmetrically to the adult body, with daughter-cell ratios ranging from 60:40 to 93:7 across individuals — asymmetries that persist across subsequent generations. (2) Mutation rates are high in the first two cell divisions (~2.4 per cell per generation) and drop sharply afterward (~0.7 per cell per generation), consistent with later activation of the zygotic genome and DNA-repair machinery. (3) Phylogenies reveal a comb-like topology — most genetic sharing occurs in a short time window at the top of the tree — and resolve contiguous patches of ~301 colonic crypts derived from a single embryonic cell, plus spatially structured asymmetries in brain development. Data from 10 additional men suggest an extraembryonic contribution to primordial germ cells.

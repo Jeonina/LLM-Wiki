@@ -23,6 +23,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]"]
 
 > DeepGene is a small BERT-style DNA language model (85M base, 118M large) **pretrained on the Human Pangenome Reference Consortium draft pangenome graph** of 47 ancestrally diverse individuals, rather than on a single reference genome or on thousands of redundant linear genomes. The Minigraph (rGFA) variation graph is made acyclic, each node is BPE-tokenised, tokens get graph-derived positions (a node's first token is placed relative to its predecessors' positions and lengths), and the graph is cut into 128-token subgraphs for masked-language-model training with rotary position embeddings. The claims are efficiency (best GUE average, 67.79, with far fewer parameters and training tokens than Nucleotide Transformer) and length extrapolation (pretrained on ≤128-token, ~700 bp windows, yet highest F1 at 5 kb promoter detection). The full tables show the GUE "win" is a near-tie at the top and comes almost entirely from yeast and mouse tasks; on human promoter, core-promoter and splice tasks DeepGene is never top-2.
 
+> [!abstract] 한눈에
+> DeepGene은 HPRC pangenome graph로 사전학습한 소형 BERT 계열 DNA language model로, 적은 parameter로 GUE 평균 1위를 주장한다. 그러나 1위는 근소한 차이이고 주로 yeast와 mouse 과제에서 나왔으며, human promoter나 splice 과제에서는 상위 2위 안에 든 적이 없다.
+
 ## Key claims
 
 - **Best GUE average, but by a hair.** Averaged over the 28 GUE tasks (Table IV): DeepGene (118M) 67.79, NT-2500M-multi 66.93, DeepGene (85M) 66.92, DNABERT-2 66.80, DNABERT 3-mer 61.62, NT-2500M-1000g 61.41, NT-500M-1000g 58.23, NT-500M-human 55.43. The base model is 0.01 below NT-2500M-multi. The authors' "95% fewer parameters and less than one-fifth of the training data" holds against NT-2500M-multi (2,537M parameters, 300B tokens vs 118M and 39B).

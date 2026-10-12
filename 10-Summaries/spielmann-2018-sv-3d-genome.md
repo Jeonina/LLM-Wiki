@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[chromatin-architecture]]", "[[cancer-clonal-evoluti
 
 > The framework paper that generalizes [[lupianez-2015-tad-disruption|the *EPHA4* result]] into a clinical taxonomy: SVs must be classified not by size or copy-number change but by **their position relative to TAD boundaries**, because that determines whether they alter gene dosage, enhancer dosage, or the 3D regulatory architecture itself.
 
+> [!abstract] 한눈에
+> 이 리뷰는 구조변이를 크기나 copy number가 아니라 TAD 경계와의 위치 관계로 분류해야 한다고 주장하며, intra-TAD, TAD 융합, neo-TAD, TAD shuffling이라는 임상 해석 틀을 제시한다. array CGH가 모자이크 개체에서 효율이 낮다는 점도 짚는다.
+
 ## Key claims
 
 - SV = deletions, duplications, inversions, insertions, translocations; **CNV is the unbalanced subset**. Balanced rearrangements change no genetic material and are the hardest to interpret.

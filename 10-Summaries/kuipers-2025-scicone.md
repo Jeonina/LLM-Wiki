@@ -22,6 +22,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[computational-methods]]", "[[scdna-ca
 
 > Per-cell copy-number callers treat each shallow (≤0.1×) single-cell genome as independent, and CN-tree builders take those noisy calls as fixed input, so calling errors propagate into the tree. **SCICoNE** does both at once: a cross-cell dynamic-programming step finds shared breakpoints and collapses bins into segments, then an MCMC searches over **CNA trees** — trees whose nodes are amplification/deletion events on segments, SCITE-style — with cells attached to nodes and read counts modelled by a **Dirichlet-multinomial**. Because CNAs overlap and recur, the model drops the infinite-sites assumption at the bin level. The shared evolutionary history denoises the per-cell calls.
 
+> [!abstract] 한눈에
+> SCICoNE은 세포 간 공유 breakpoint를 찾고 MCMC로 CNA tree를 탐색해, 얕은 단일세포 유전체의 copy number calling과 사건 이력 재구성을 동시에 수행한다. 시뮬레이션에서 기존 caller와 tree 방법보다 정확했고, 10x TNBC 데이터에서는 whole-genome duplication을 최초 종양 사건으로 추론했다.
+
 ## Key claims
 
 - **Joint inference beats call-then-tree.** Earlier CN phylogeny methods (distance-based or maximum parsimony) assume predefined CN profiles, so profile errors propagate. CONET infers breakpoint presence/absence on a tree and rounds CN in post-processing; NestedBD treats bins independently in lineage space and corrects Ginkgo calls afterwards; SCICoNE models integer CN changes at the tree nodes.

@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]"]
 
 > **NTv3 is the third generation of InstaDeep's Nucleotide Transformer**, and it breaks with NT v1/v2 in three ways: it uses **single-nucleotide tokens instead of 6-mers**, a **U-Net (conv down-sampling → transformer at 128 bp → conv up-sampling) instead of a plain encoder**, and a **two-stage recipe** — masked-language-model pretraining on OpenGenome2 (the Evo2 corpus) with a length curriculum up to **1 Mb**, followed by **multispecies post-training** that adds supervised heads for ~16,000 functional tracks (9 species) and 21 genome-annotation labels (24 species) while keeping the MLM loss. The resulting model is both a DNA language model and a Borzoi/AlphaGenome-style sequence-to-function model, and the same backbone is fine-tuned with masked diffusion to design Drosophila enhancers that were tested by STARR-seq. The paper's claim is unification: one efficient backbone for representation, base-resolution track and annotation prediction across animals and plants, interpretation, and controllable generation.
 
+> [!abstract] 한눈에
+> NTv3는 단일 뉴클레오타이드 토큰과 U-Net 구조로 1 Mb 문맥까지 사전학습한 뒤 다종 기능 트랙과 주석으로 후학습해, DNA language model과 sequence-to-function 모델을 하나로 묶었다. Borzoi, ChromBPNet, SegmentNT를 넘어섰고 STARR-seq로 검증된 enhancer 설계까지 해냈다.
+
 ## Key claims
 
 - **Model family and scale.** Pretrained sizes 8M, 100M and 650M (pre); post-trained 100M and 650M (post). The 8M model "lacked sufficient capacity for stable multispecies post-training". Pretraining ran about 10.5 trillion tokens at 1–8 kb (~95% of tokens) plus seven ~50B-token length-extension stages that double context from 16 kb to 1 Mb, about 11 trillion tokens in all, which the authors call "the largest trained genomics model to date". Even 650M runs 1 Mb inference on one A100/H100, and is reported faster than HyenaDNA, Caduceus and NT-style transformers "with up to 60× fewer parameters" (Fig. 2H).

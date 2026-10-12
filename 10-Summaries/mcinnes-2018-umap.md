@@ -22,6 +22,9 @@ topics: ["[[single-cell-multiomics]]"]
 
 > A manifold-learning dimension-reduction method derived from Riemannian geometry and algebraic topology (fuzzy simplicial set approximation of the data manifold, then cross-entropy optimization of a low-dimensional analogue) *(not found in source clipping — unverified)*, competitive with t-SNE on visualization quality while preserving more global structure, running faster, and — unlike t-SNE — imposing no ceiling on embedding dimension.
 
+> [!abstract] 한눈에
+> UMAP은 Riemannian 기하와 대수적 위상수학에 기반한 차원 축소 방법으로, t-SNE와 비슷한 시각화 품질을 내면서 전역 구조를 더 잘 보존하고 더 빠르다고 주장한다. 다만 전역 구조 보존 주장은 논란이 있고, 원 논문은 학술지에 실리지 않은 arXiv preprint다.
+
 > ⚠️ **Source caveat.** The bookmarked clipping is the arXiv abstract page. Claims below are from the abstract; the mathematical construction is not in the clipping.
 
 ## Key claims

@@ -31,6 +31,9 @@ topics:
 
 > Thesis: Genome-wide single-cell bisulfite sequencing (scBS-seq) costs ~20M reads/cell to recover ~10–40% genomic coverage. Most experiments only need a **global methylation estimate**, not per-locus calls. **scTEM-seq** targets high-copy SINE Alu repetitive elements via bisulfite-PCR amplification, yielding accurate global methylation estimates from ~20k reads/cell — three orders of magnitude cheaper than scBS-seq. Combined with G&T-seq for parallel transcriptome readout, it links global methylation heterogeneity to specific gene-expression programs in AML cells under hypomethylating-agent treatment.
 
+> [!abstract] 한눈에
+> scTEM-seq는 고반복 SINE Alu 서열만 bisulfite-PCR로 증폭해 세포당 약 2만 read로 전체 메틸화 수준을 추정한다. G&T-seq와 결합해 decitabine 처리 AML 세포에서 탈메틸화가 이질적임을 보였지만, 개별 locus 해상도는 포기했다.
+
 ## Key claims
 
 - SINE Alu methylation in single-cell BS data correlates with genome-wide CpG methylation at *R*²=0.91 (in colorectal cancer scBS-seq reference data). LINE-1 also works but lower yield; SINE Alu wins because of higher copy number.

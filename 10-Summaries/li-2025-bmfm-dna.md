@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]"]
 
 > IBM's BMFM-DNA builds two ModernBERT encoders (22 layers, hidden 768, 2,048-token context, BPE vocabulary of 4,096) on GRCh38: **BMFM-DNA-REF** on reference sequence and **BMFM-DNA-SNP** on a "variation-encoded" genome. For the SNP model, 20 million dbSNP variants (SNPs and indels) give each variable position a multinomial over 11 states; a biallelic pair is sampled per position and written as one of **121 Chinese characters** (taken from the poem *Li Sao*), so a heterozygous-like ambiguity occupies one symbol that BPE can merge into tokens. On six fine-tuning tasks the SNP model beats the REF model on five and roughly matches DNABERT-2, which was trained on 135 species for longer. The gains are small (e.g. promoter F1 93.5 vs 92.08; MPRA PCC 75.53 vs 74.70) and the authors say current benchmarks cannot fully evaluate the idea.
 
+> [!abstract] 한눈에
+> IBM의 BMFM-DNA는 dbSNP 변이를 부호화한 유전체로 ModernBERT를 사전학습한 SNP-aware DNA foundation model이다. 여섯 과제 중 다섯에서 참조 서열 모델을 앞섰지만 향상 폭은 작았고, DNABERT-2와는 비슷한 수준에 머물렀다.
+
 ## Key claims
 
 - **Variant encoding helps a little, consistently.** BMFM-DNA-SNP vs BMFM-DNA-REF (F1 unless stated): promoter 93.5 vs 92.08; core promoter 83.19 vs 81.97; TF binding 82.42 vs 81.87; splicing 90.44 vs 89.29; lenti-MPRA K562 PCC 75.53 vs 74.70; SNP-to-disease AUC 90 vs 90 (no gain).

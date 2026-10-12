@@ -22,6 +22,9 @@ topics: ["[[mosaic-variant-calling]]", "[[computational-methods]]"]
 
 > An early-NGS-era applications note: variant detection tools of the time were tied to one platform or aligner (Newbler → 454 only; SHORE → its own aligner, Illumina only). VarScan is an **aligner-agnostic, heuristic** SNP/indel caller — read-level filtering, then simple thresholds on coverage, base quality, supporting reads and variant frequency — that works on both individual and **pooled** samples. The pooled use case is the point: by reporting read counts and allele frequencies rather than diploid genotypes, it can call variants at ~1% frequency in a deep pool.
 
+> [!abstract] 한눈에
+> VarScan은 특정 aligner나 플랫폼에 묶이지 않는 휴리스틱 SNP·indel caller다. diploid 유전형을 정하는 대신 allele 빈도를 보고하기 때문에 pooled 시료에서 빈도 약 1%의 변이까지 찾았고, pooled 빈도 추정치는 실제 값과 r 0.962로 일치했다.
+
 ## Key claims
 
 - **Aligner/platform independence**: compatible with BLAT, Newbler, cross_match, Bowtie and Novoalign; calls variants in individual and pooled samples.

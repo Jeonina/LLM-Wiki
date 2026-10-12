@@ -32,6 +32,9 @@ topics:
 
 > Thesis: Somatic mutations begin from the first post-zygotic division, accumulate at gradient rates through development and aging, and turn the adult human brain into a **clonal mosaic of intermingled lineages** traceable back to the early embryo. These mosaic variants are simultaneously (a) a natural barcoding system for retrospective lineage tracing in humans and (b) drivers of focal cortical malformations and a contributor to autism spectrum disorder.
 
+> [!abstract] 한눈에
+> Bizzotto와 Walsh는 수정 직후부터 쌓이는 체세포 돌연변이 때문에 성인 뇌가 초기 배아까지 추적 가능한 클론 모자이크가 된다고 정리했다. 이 변이는 인간 계통 추적을 위한 자연 바코드이면서 국소 피질 기형과 자폐 스펙트럼 장애의 원인이기도 하다.
+
 ## Key claims
 
 - **Mutation-rate gradient through development**: ~2.4–3.4 SNVs per cell across each of the first two postzygotic divisions; rate drops to ~1–2/division from the 8-cell stage. Neural progenitors at gestational week 20 carry 200–300 SNVs each (~5.1/day, ~8.6/division). Postmitotic neurons accumulate 15–20 SNVs/year, reaching 2,500–4,000 SNVs/genome in 80-year-olds. NanoSeq and PTA give concordant rates.

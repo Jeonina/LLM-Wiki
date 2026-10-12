@@ -22,6 +22,9 @@ topics: ["[[40-Topics/3d-genome]]", "[[40-Topics/computational-methods]]"]
 
 > SnapHiC called loops from scHi-C by imputing each cell with **random walk with restart (RWR)** over the whole chromosome and then testing bin pairs against global and local backgrounds, treating each cell as an independent unit. The RWR step was the bottleneck. SnapHiC2 runs RWR in **half-overlapping sliding windows along the diagonal** (keeping only the central band of each window, out to 1 Mb), with window size chosen as the distance that retains >80% of a cell's intra-chromosomal contacts. Result: **>3× faster, ~70% less memory**, loop quality comparable to SnapHiC, and enough headroom to call loops at **5 kb** resolution.
 
+> [!abstract] 한눈에
+> SnapHiC2는 scHi-C loop 호출의 병목인 RWR 보정을 대각선을 따라 반씩 겹치는 sliding window 안에서 수행해, SnapHiC보다 3배 이상 빠르고 메모리를 약 70% 덜 쓴다. loop 품질은 비슷하며, 5 kb 해상도에서도 loop를 호출할 수 있게 되었다.
+
 ## Key claims
 
 - **Window size**: >80% of contacts fall within 20 Mb for 100 human-cortex oligodendrocytes (ODCs) and within 10 Mb for 742 mESCs. Across windows of 10–50 Mb, SnapHiC2 called slightly more loops than SnapHiC, with 60.9–77.3% overlap.

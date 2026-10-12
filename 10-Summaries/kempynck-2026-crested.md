@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/sin
 
 > CREsted (*cis*-regulatory element sequence training, explanation and design) is a scverse-compatible Python package from the Aerts lab that turns a scATAC-seq atlas into a **multi-class sequence-to-accessibility model** and then uses it to read and write enhancers. It has four modules: preprocessing (pseudobulk peak heights per cell type, or cisTopic topics), training (dilated CNN by default for regression, plain CNN for topic classification, or transfer learning from Enformer/Borzoi), interpretation (integrated gradients, ISM, tfmodisco-lite, pattern clustering, TF matching by scRNA expression) and design (in silico evolution or motif implantation with a new L2-distance cost). The paper's main argument is that **small, purpose-trained models beat large pretrained ones at fine cell-type resolution**: a CREsted CNN matches double-fine-tuned Borzoi on mouse cortex, base Borzoi cannot separate neuron subclasses, and fine-tuned DNA language models (HyenaDNA, Nucleotide Transformer) do worse than either. Designed enhancers were tested in zebrafish embryos.
 
+> [!abstract] 한눈에
+> CREsted는 scATAC-seq atlas로 세포 유형별 서열-접근성 모델을 학습하고, 이를 enhancer 해석과 설계에 쓰는 scverse 패키지다. 작은 CNN이 미세 세포 유형 수준에서 fine-tuning한 Borzoi와 대등했고, 설계한 제브라피시 enhancer가 in vivo에서도 활성을 보였지만 활성 세기를 조절하기는 어려웠다.
+
 ## Key claims
 
 - **Two-step training and cell-type normalisation.** Train on all consensus peaks, then fine-tune on cell-type-specific peaks (Gini index > mean + 1 s.d.). Training directly on specific peaks is worse. CPM tracks are rescaled with constitutive peaks (high signal, low Gini) to remove bias against cell types with many peaks. The regression loss is cosine similarity across cell types plus log-MSE.

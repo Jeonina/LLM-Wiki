@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Yuan & Kelley (2022) — *scBasset: sequence-based modeling of single-cell ATAC-seq using convolutional neural networks* — *Nature Methods*. [DOI](https://doi.org/10.1038/s41592-022-01562-8)
 
+> [!abstract] 한눈에
+> scBasset은 peak 주변 1,344 bp DNA 서열로 세포별 접근성을 예측하는 CNN이며, 학습된 세포 embedding을 clustering, denoising, TF 활성 추론에 쓴다. 특히 multiome 데이터에서 chromVAR, cisTopic, SCALE, peakVI보다 세포 상태를 잘 표현했다.
+
 Yuan and Kelley (Calico Life Sciences) introduced scBasset, a sequence-based convolutional neural network that predicts single-cell chromatin accessibility from the underlying DNA sequence. The model takes a 1,344-bp DNA window around each peak's center as input, runs it through 8 convolutional blocks, then through a 32-dimensional bottleneck layer that learns a low-dimensional representation of the peak; a dense final layer connects the peak embedding to per-cell accessibility predictions. The cell-side parameters of the final layer serve as cell embeddings useful for clustering, denoising, integration, and TF activity inference.
 
 scBasset achieves state-of-the-art performance on three benchmark datasets (Buenrostro 2018 hematopoiesis, 10x multiome PBMC, 10x multiome mouse brain) with held-out-peak auROC of 0.662–0.734 per peak (0.640–0.762 per cell) across the three datasets. The sequence-based approach outperforms existing methods (chromVAR, cisTopic, SCALE, scDEC, peakVI) on cell-state representation, particularly in multiome data.

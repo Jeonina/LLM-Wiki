@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[chromatin-architecture]]"]
 
 > Pairwise proximity ligation has a hard ceiling in a single cell: each DNA fragment can be ligated once per allele, so a four-fragment complex yields at most two pairwise contacts instead of the six it really contains. scSPRITE avoids ligation entirely. It runs **two stacked split-and-pool barcoding stages** — three rounds inside intact nuclei to mark *which cell* a fragment came from, then (after sonication releases crosslinked complexes onto beads) three more rounds to mark *which spatial cluster* it sat in. Every cluster of n reads contributes n-choose-2 contacts. On 1,000 mouse ES cells this gives an average of ~35 million pairwise contacts per cell, against ~375,000 for the scHi-C comparator. With that depth, nuclear-body hubs become visible in single cells, as do TADs. The TADs are present in most cells but individually variable, and some loci switch between mutually exclusive alternative structures.
 
+> [!abstract] 한눈에
+> scSPRITE는 ligation 없이 두 단계 split-and-pool barcoding으로 세포와 공간 cluster를 각각 표지해, mESC에서 세포당 평균 약 3,500만 개의 접촉을 얻었다. 단일세포에서 nuclear body 중심의 hub와 TAD가 보였고, TAD는 대부분의 세포에 있지만 세포마다 크게 달랐다.
+
 ## Key claims
 
 - **Two-stage barcoding separates cell identity from spatial co-occurrence.** Reads sharing all six tags belong to one spatial cluster; reads sharing the first three (DPM, odd, even) belong to one nucleus. Three rounds of 96 give 96³ = 884,736 combinations, a 590-fold excess over the 1,500 nuclei used, which means fewer than one expected full-barcode collision.

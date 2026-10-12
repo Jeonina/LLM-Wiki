@@ -31,6 +31,9 @@ topics:
 
 > Thesis: 15+ sc3DG-seq technologies exist (scHi-C, snHi-C, sciHi-C, Dip-C, sn-m3C, HiRES, scSPRITE, scNanoHi-C, Droplet/Paired Hi-C, GAGE-seq, LiMCA, …), each with its own data format and idiosyncratic processing. No unified analysis framework exists. **STARK** provides standardized preprocessing, quality control, and downstream analysis for all sc3DG-seq data types. STARK is paired with **scNucleome**, a publicly accessible repository of uniformly processed sc3DG-seq datasets — the "single-cell 3D genome atlas."
 
+> [!abstract] 한눈에
+> STARK는 15종 이상의 sc3DG-seq 데이터를 하나의 전처리·QC·분석 파이프라인으로 처리하고, scNucleome은 이를 균일하게 처리해 모은 공개 저장소다. 빈 barcode를 거르는 EmptyCells와 구조 정보 포착을 재는 SSCE 지표를 새로 도입했고, 벤치마크에서 scSPRITE의 세포당 접촉 수가 가장 많았다.
+
 ## Key claims
 
 - **STARK framework** with three modules: (1) Preprocess (sequencing QC, alignment, demultiplexing, .cool file generation, Hi-C correction); (2) Cell QC (EmptyCells algorithm filters by contact count + Monte Carlo simulation; metrics include GiniQC, short-/mid-/long-range contact rates, and the novel **Spatial Structure Capture Efficiency / SSCE**); (3) Downstream Analysis (imputation, clustering, aggregation, A/B compartments, TADs, loops, 3D structure reconstruction).

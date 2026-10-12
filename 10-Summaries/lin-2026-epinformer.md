@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[histone-modif
 
 > EPInformer is a small (447,149 parameters) model that predicts a gene's expression in one cell type from its **promoter plus up to 60 candidate enhancers**, rather than from a long contiguous DNA window. A CNN encodes each 2-kb element; a fusion layer adds measured enhancer activity (DNase, H3K27ac or ATAC), distance and optionally Hi-C contact; a masked transformer lets only the promoter attend to enhancers; a small MLP predicts CAGE or RNA-seq. It is a hybrid of a [[sequence-to-function-model]] and an ABC-style activity × contact model. With measured epigenomic inputs it beats sequence-only Enformer and Borzoi on held-out CAGE, and its final-layer attention scores link CRISPRi-validated enhancers to genes better than the ABC score.
 
+> [!abstract] 한눈에
+> EPInformer는 긴 DNA 구간 대신 promoter와 최대 60개 후보 enhancer의 서열, 활성, 거리를 입력해 발현을 예측하는 소형 모델이다. 측정된 epigenome 입력을 쓰면 CAGE 예측에서 Enformer·Borzoi를 앞서고, attention 점수로 enhancer–유전자 연결을 ABC 점수보다 잘 찾았다.
+
 ## Key claims
 
 - **RNA-seq (12-fold cross-chromosome, six cell lines).** Sequence + distance only (EPInformer-PE): mean Pearson 0.78 vs Xpresso 0.67. Adding DNase and H3K27ac (PE-Activity): 0.83 (range 0.79–0.86) vs CREaTor 0.78. Adding Hi-C (PE-Activity-HiC): 0.84. For cross-cell-line variation, median Pearson was 0.69 (HiC model), 0.65 (Activity) and 0.51 (CREaTor).

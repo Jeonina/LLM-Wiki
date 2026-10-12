@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]"]
 
 > STRAND is a Mayo Clinic / Cerebras decoder-only DNA language model (~1 B parameters, 20 layers, hidden 1,856, RoPE, ~1 kb context) trained by next-token prediction on the human reference, multispecies genomes and — unusually — **raw aligned 151-bp exome reads** from up to 499 participants of the Tapestry clinical exome study (219 with rheumatoid arthritis, 280 without). To make reads trainable it packs reads consecutively by position, filters redundant reads eightfold, and up-weights rare (variant) positions in the loss. Fine-tuned STRAND reports the best MCC on most NT-benchmark categories and on new ClinVar-derived and RA/IBD variant-classification tasks. The read-level training idea is the distinctive part; the benchmark claims rest on new, loosely described datasets and some text–table mismatches.
 
+> [!abstract] 한눈에
+> STRAND는 reference genome에 더해 정렬된 exome read를 직접 학습한 약 10억 parameter의 decoder-only DNA language model이다. NT benchmark와 새 ClinVar 과제에서 높은 성능을 보고했지만, 벤치마크 구성이 충분히 설명되지 않았고 본문 주장과 표의 수치가 일부 맞지 않는다.
+
 ## Key claims
 
 - **Reads, not VCFs.** Training on aligned reads rather than called variants is said to avoid inductive bias from variant calling and GWAS processing. Reads carry 1–180× depth redundancy and typically only 1–2 bases differ from the reference per 151-bp read, so the model could trivially learn the reference.

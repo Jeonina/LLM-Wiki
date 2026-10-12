@@ -16,6 +16,9 @@ updated: 2026-05-12
 
 > Siddharth S Dey, Lennart Kester, Bastiaan Spanjaard, Magda Bienko, Alexander van Oudenaarden. *Nature Biotechnology* **33**, 285–289 (March 2015). DOI: 10.1038/nbt.3129. (Same issue family as [[10-Summaries/macaulay-2015-gt-seq|G&T-seq]] — the two were published two months apart.)
 
+> [!abstract] 한눈에
+> DR-seq는 mRNA를 역전사한 뒤 gDNA와 cDNA를 quasilinear 증폭으로 함께 늘린 다음 나누는 one-pot 방식으로 한 세포의 유전체와 전사체를 함께 읽는다. 단일세포 CNV가 bulk·DNA FISH 결과와 일치했고 copy number와 발현의 강한 상관을 보였지만, coding 영역은 masking해야 한다.
+
 ## Thesis
 
 DR-seq is the **one-pot** alternative to G&T-seq for joint single-cell DNA + RNA sequencing. It avoids physical separation of nucleic acids before amplification by performing **quasilinear whole-genome amplification (MALBAC-style)** on a cell whose mRNA has first been reverse-transcribed to single-stranded cDNA. The sample is split *after* the initial amplification — one half goes to IVT/RNA-seq, the other to PCR/DNA-seq. The trade-off: simpler workflow with less material loss, but DNA sequencing must computationally mask coding regions (because cDNA-derived amplicons contaminate the DNA pool there).

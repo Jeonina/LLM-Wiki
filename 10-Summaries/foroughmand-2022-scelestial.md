@@ -22,6 +22,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[single-cell-lineage-tracing]]", "[[co
 
 > The one paper in the single-cell phylogeny literature that offers a **performance guarantee**. Scelestial adapts a Steiner-tree approximation algorithm — a generalisation of neighbour joining — so that, unlike heuristics and MCMC samplers, its solution quality is bounded. It also folds **missing-value imputation into the tree objective**: internal nodes are chosen to minimise cost including the cost of filling in missing entries.
 
+> [!abstract] 한눈에
+> Scelestial은 Steiner tree 근사 알고리즘을 바탕으로 결측값 대체를 트리 목적 함수에 포함한 단일 세포 계통수 추론법이다. 이 분야에서 드물게 성능 보장을 제공하며, 정확도와 실행 시간 모두에서 SCITE, SiFit, SCIPhI 등 일곱 가지 방법을 앞섰다.
+
 ## Key claims
 
 - **Approximation guarantees are the differentiator.** The author summary states it directly: the Steiner tree approximation algorithm, *unlike other heuristics and sampling-based methods (e.g. MCMC), provides guarantees of its performance*. In a field of MCMC samplers and local searches, this is a distinct methodological stance.

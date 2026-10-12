@@ -22,6 +22,9 @@ topics: ["[[dna-methylation]]", "[[long-read-sequencing]]"]
 
 > Base modifications slow the polymerase. In SMRT sequencing the arrival time and duration of each fluorescence pulse are already measured, so **methylation comes for free with the sequence** — no bisulfite, no chemical conversion, no separate library. And because the kinetic signatures differ between modifications, 5mC and 5hmC can in principle be told apart, which bisulfite cannot do at all.
 
+> [!abstract] 한눈에
+> Flusberg 등은 SMRT 시퀀싱에서 polymerase kinetics(IPD, pulse width)만으로 bisulfite 처리 없이 6mA, 5mC, 5hmC를 직접 검출하고 서로 구분할 수 있음을 처음 보였다. 다만 단일 분자 수준에서 쓸 만한 것은 6mA뿐이었고, 5mC와 5hmC는 민감도를 더 높여야 한다.
+
 ## Key claims
 
 - Two kinetic observables per incorporation: **IPD** (interpulse duration — nucleotide binding and translocation) and **pulse width** (everything after binding through fluorophore release). Both are intrinsic to SMRT sequencing and measuring them "does not adversely affect determination of primary DNA sequence."

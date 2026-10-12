@@ -22,6 +22,9 @@ topics: ["[[single-cell-lineage-tracing]]", "[[computational-methods]]"]
 
 > Prime-editing recorders write edits **in order** — each insertion deactivates the current site and activates the next — so the barcode records not just *which* edits happened but *when relative to each other*. Existing analyses used **UPGMA with custom (order-aware) distance metrics**, which encode ordering only through pairwise distances and ignore higher-order information and editing-process properties. SciPhy models sequential insertion mechanistically in BEAST 2 and jointly estimates time-scaled phylogenies and population dynamics.
 
+> [!abstract] 한눈에
+> SciPhy는 prime editing recorder가 편집을 순서대로 쌓는다는 점을 모델에 직접 반영한 Bayesian 계통 추론 framework로, 계통수와 함께 그 불확실성과 증식률도 추정한다. 단일클론 HEK293T 배양 데이터에서 UPGMA보다 정확했으며, 어떤 재구성 방법을 쓰느냐에 따라 추론되는 세포 관계와 성장 동역학이 크게 달라졌다.
+
 ## Key claims
 
 - **Order is free information that was being thrown away.** Sequential recorders guarantee irreversible, ordered edit accumulation. UPGMA, being distance-based clustering, "only leverages pairwise distances between cells, ignoring all higher-order information," and is agnostic to editing properties like variable insert propensities and variable insertion rates.

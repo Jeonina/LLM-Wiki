@@ -24,6 +24,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/dna
 >
 > CpGPT is a transformer trained on **bulk human methylation array data**: CpGCorpus, 155,151 samples from 2,042 GEO studies on Illumina 27k, 450k, EPIC, EPIC+ and EPICv2 arrays (over 101 billion CpG-sample tokens). Each input is a variable subset of 5,000–10,000 CpG sites. A token is one CpG in one sample, built from three parts: a Nucleotide Transformer v2 (500M) embedding of the 2,001 bp around the CpG, a genomic position encoding, and an embedding of the beta value. Half the sites are hidden and the model reconstructs them from a CLS sample embedding. Because a locus is described by its sequence rather than by a fixed probe ID, the model can query CpGs it never saw in training. The authors use this for zero-shot imputation, array conversion and reference mapping. Fine-tuned, a 2.5M-parameter version predicts age, plasma proteins, cancer and mortality. Single-cell methylation (sciMETv3) is only a fine-tuning and evaluation target, not pretraining data.
 
+> [!abstract] 한눈에
+> CpGPT는 15만여 개 bulk methylation array 표본으로 학습한 transformer로, CpG를 주변 서열의 embedding으로 나타내 학습에 없던 CpG도 zero-shot으로 imputation하고 array 간 변환을 해냈다. 단일세포 methylation에서는 DeepCpG가 AUROC에서 앞섰다.
+
 ## Key claims
 
 - **Two model sizes, two roles.** CpGPT-100M (101M parameters, 32 layers) is used for unsupervised tasks (embeddings, imputation). CpGPT-2M (2.5M parameters, 8 layers) is used for all supervised fine-tuning. The standard model trained for about 10 days on one H100.

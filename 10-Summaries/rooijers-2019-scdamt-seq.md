@@ -32,6 +32,9 @@ topics:
 
 > Thesis: cell-to-cell heterogeneity in protein–DNA binding is causally linked to gene expression variability, but no method jointly measures both in the same cell. scDam&T-seq fuses single-cell DamID (Dam-fusion protein → m6A at GATC near a protein-of-interest) with CEL-Seq2 mRNA capture, using **linear amplification by in vitro transcription** to amplify gDNA and cDNA in one reaction. This unlocks per-cell coupling of genome–nuclear-lamina contacts, chromatin accessibility, or polycomb (RING1B) occupancy to the transcriptome.
 
+> [!abstract] 한눈에
+> scDam&T-seq는 단일세포 DamID와 CEL-Seq2를 IVT 선형 증폭으로 묶어, 한 세포에서 단백질–DNA 접촉과 전사체를 함께 측정한다. lamina 접촉과 전사 억제의 연관은 H3K27me3가 많은 facultative LAD에 국한된다는 것을 보였다.
+
 ## Key claims
 
 - **Methodological linchpin: linear amplification.** Replacing PCR with T7 IVT on DamID-adapter-ligated fragments enables (i) compatibility with mRNA IVT in the same reaction, (ii) unbiased recovery, (iii) >100× throughput via robotic 384-well processing, (iv) UMI compatibility for both gDNA and mRNA reads. Median 42k unique DamID reads/cell + ~2,300 detected genes/cell ([DOI](https://doi.org/10.1038/s41587-019-0150-y)).

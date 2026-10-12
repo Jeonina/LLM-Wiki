@@ -32,6 +32,9 @@ topics:
 
 > Thesis: 5mC and 5hmC have distinct regulatory roles, but bisulfite-based methods conflate them. SIMPLE-seq orthogonally labels 5hmC (ruthenate oxidation → indanedione labeling) and 5mC (TET oxidation → borane reduction) to generate **two distinguishable C-to-T mutational signals on the same DNA molecule**, then uses combinatorial-indexing tagmentation to scale to thousands of single cells with single-base resolution. Applied to mouse ESCs, human PBMCs, and mouse brain to give the first joint single-cell maps of these two cytosine modalities.
 
+> [!abstract] 한눈에
+> SIMPLE-seq은 bisulfite 없이 5hmC와 5mC를 서로 다른 화학 표지로 구분해 한 DNA 분자에서 두 C-to-T 신호를 얻고, combinatorial indexing으로 수천 개 세포의 염기 해상도 지도를 만들었다. 다만 전환 효율이 약 87%여서 세포 단위 locus 판정에는 여전히 잡음이 남는다.
+
 ## Key claims
 
 - **Method**: bisulfite-free, sequential chemical labeling. A 5caC-pre-deposited primer records the 5hmC signal in a way that distinguishes it from 5mC signal in downstream amplicons.

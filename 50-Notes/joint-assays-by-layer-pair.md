@@ -22,6 +22,9 @@ paper_section: ["2"]
 
 > The [[50-Notes/regulatory-layers-overview|locus-state framework]] holds that regulatory layers are interdependent, not independent — a premise testable only when two or more layers are measured in the *same* cell (synthesis). This note catalogs joint single-cell assays by **which layer-pair they bridge**, ordered genotype-anchored first because genetic variation anchors the DNA-centric locus state (synthesis). It is the methodological-integration companion to [[50-Notes/mosaicism-and-epigenome-the-synthesis-gap]] (the gap analysis) and the review's joint-assay subsection.
 
+> [!abstract] 한눈에
+> 같은 세포에서 두 개 이상의 조절 층위를 읽는 joint assay를 어느 층위 쌍을 잇는지에 따라 정리하고, genotype·accessibility·transcriptome을 대규모로 묶은 Duplex-Multiome을 정점으로 꼽는다. 다만 bisulfite와 변이 검출이 충돌해 point mutation과 methylation을 한 세포에서 함께 읽는 assay는 아직 없다.
+
 ## By layer-pair
 
 | Layer pair | Assay | Reads in one cell | Key demonstration |

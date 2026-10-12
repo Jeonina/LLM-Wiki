@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[40-Topics/can
 
 > TESSERA (Tumour Embeddings via Self-Supervised Encoding and Reconstruction of Alterations) is a self-supervised model of a tumour's **bulk somatic genotype**. It has two transformer encoders. The SNV encoder predicts masked reference and alternate alleles from flanking sequence and from the other variants in the same tumour. The CNA encoder predicts masked segment means and LOH from the other copy-number segments of the tumour. A cross-modal InfoNCE loss then aligns the two views of the same tumour. Pretraining uses TCGA Pan-Cancer Atlas whole-exome data: about 10,000 tumours, with MC3 SNVs and ABSOLUTE purity-adjusted segments. The frozen representation is reused **without retraining** for ClinVar pathogenicity, 23-class tumour typing, survival stratification, and doubly-robust estimation of chemotherapy benefit on MSK-CHORD panel cohorts. For this wiki's question, TESSERA is the clearest example of a **pretrained, reusable genotype-layer model**. It works on one bulk profile per tumour, not on cells.
 
+> [!abstract] 한눈에
+> TESSERA는 종양의 bulk SNV와 CNA를 각각 transformer encoder로 학습한 뒤 cross-modal로 결합한 self-supervised 모델이다. 병리 진단과 어긋난 분류가 나쁜 예후와 연관됐고, 대장암에서는 FOLFOX와 FOLFIRI 중 어느 쪽이 유리한지 가르는 예측 biomarker로 쓰였다.
+
 ## Key claims
 
 - **Training data: bulk, sample-level, two modalities.** SNVs come from the TCGA MC3 MAF (WES, about 10,000 tumours, 31 solid tumour types). CNAs are TCGA ABSOLUTE allele-specific segments. Segment mean is computed as log2 of purity-adjusted observed copy number over 2, and LOH comes from the allele-specific calls. The split is 75/25 by patient, stratified by tumour type. Cross-platform tests use GENIE v18 panels (SNV) and MSK-IMPACT panels from MSK-CHORD (CNA).

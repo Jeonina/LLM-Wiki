@@ -22,6 +22,9 @@ topics: ["[[somatic-mosaicism]]"]
 
 > The NHGRI proposal that launched systematic, **sequence-resolved** structural-variation discovery in humans. Its argument: SNP maps were nearly complete while SV understanding was "recent and rudimentary," array CGH could see dosage but not sequence or balanced events, and the reference assembly is only *one* version of the genome. The fix proposed was clone-based: large-insert fosmid/BAC libraries from 62 HapMap individuals, discordant end-sequence-pair mapping, then full insert sequencing.
 
+> [!abstract] 한눈에
+> Human Genome Structural Variation Working Group은 array CGH가 balanced rearrangement와 breakpoint 서열을 보지 못한다고 지적하고, HapMap 62명의 클론 library로 구조 변이를 서열 수준에서 지도화하자고 제안했다. 구조 변이를 단일 염기 치환 외의 모든 유전체 변화로 정의한 기준 문헌이다.
+
 ## Key claims
 
 - Structural variation = "all genomic changes that are not single base-pair substitutions" — insertions, deletions, inversions, duplications, translocations, including CNVs. This is the definitional statement much of the field still uses.

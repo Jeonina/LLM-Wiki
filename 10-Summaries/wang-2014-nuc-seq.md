@@ -22,6 +22,9 @@ topics: ["[[cancer-clonal-evolution]]", "[[scdna-cancer-applications]]", "[[whol
 
 > Exploit the cell cycle instead of fighting it: flow-sort **G2/M nuclei**, which have already doubled their DNA from 6 pg to 12 pg, so [[mda|MDA]] starts from four copies of each locus rather than one. That single trick takes coverage breadth from ~10% (sparse [[dop-pcr|DOP-PCR]]) to **91%** and allele dropout to **9.7%**. Applied to an ER⁺ and a triple-negative breast cancer, it yields the paper's real claim: **aneuploid rearrangements arise early and then freeze; point mutations keep accumulating gradually** — two clocks running at different speeds in the same tumour.
 
+> [!abstract] 한눈에
+> nuc-seq는 DNA가 이미 두 배가 된 G2/M 핵을 MDA 입력으로 써서 coverage breadth를 91%, allele dropout을 9.7%로 끌어올렸다. 유방암 두 건에서 aneuploid 재배열은 초기에 생긴 뒤 고정되고 점돌연변이는 점진적으로 쌓인다는 두 시계 모델을 보였다.
+
 ## Key claims
 
 - **The cell cycle is the amplification trick.** Cells in G2/M carry 12 pg of DNA instead of 6 pg, giving ≥4 copies of each genomic locus as MDA input. More starting template means less stochastic dropout and less error amplification. Critically, this works on *fixed/frozen* nuclei — unlike chemical polyploidy induction, which needs live cells.

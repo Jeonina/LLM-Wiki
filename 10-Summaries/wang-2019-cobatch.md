@@ -22,6 +22,9 @@ topics: ["[[histone-modifications]]", "[[single-cell-multiomics]]"]
 
 > Fuse **protein A to the N-terminus of Tn5 (PA-Tn5, "PAT")**, let an antibody tether it to a histone mark or chromatin-binding protein in permeabilized cells, and activate tagmentation: the released fragments already carry adapters, so library prep is one-tube PCR with no DNA extraction, end repair or ligation. Run in bulk on ≥100 cells this is "*in situ* ChIP"; add **two rounds of combinatorial barcoding** (barcoded PAT-T5/T7 transposomes per well of a first 96-well plate, then i5/i7 PCR indices on 20–25 cells per well of a second plate) and it becomes **CoBATCH** — combinatorial barcoding and targeted chromatin release — at ~2,400 cells per 96-well plate and ~12,000 unique non-duplicated reads per cell. The showcase is H3K27ac in ~3,000 Cdh5-traced endothelial cells from ten E16.5 mouse organs, which cluster by enhancer module and function rather than by organ.
 
+> [!abstract] 한눈에
+> CoBATCH는 PA-Tn5를 항체로 히스톤 마크나 크로마틴 단백질에 묶고 두 단계 combinatorial barcoding을 더해 single-cell 수준의 표적 크로마틴 프로파일링을 구현했다. E16.5 생쥐 내피세포의 H3K27ac 분석에서 세포들이 장기가 아니라 enhancer 모듈과 기능에 따라 묶였다.
+
 ## Key claims
 
 - **Low-input *in situ* ChIP works from 100 cells** for H3K27ac, H3K27me3 and H3K4me3 in mouse ESCs, judged against ENCODE peaks and TSS heatmaps; at ~5M unique non-duplicated reads, peak sets are reproducible across cell-number groups and with public data.

@@ -22,6 +22,9 @@ topics: ["[[3d-genome]]", "[[computational-methods]]"]
 
 > Three steps to make sparse single-cell contact matrices clusterable: **linear convolution** (each element replaced by a weighted average of its neighbourhood, sharing information along the linear genome), **random walk with restart** (sharing information among network neighbours), and **keeping only the top 20% of imputed interactions** to strip out coverage bias. Then project into a shared low-dimensional space and cluster.
 
+> [!abstract] 한눈에
+> scHiCluster는 linear convolution, random walk with restart, 상위 20% interaction 선택을 차례로 적용해 sparse한 scHi-C를 clustering이 가능한 형태로 만든다. 세 단계가 모두 필요했으며, contact가 25,000개 아래로 떨어지면 성능이 저하됐다.
+
 ## Key claims
 
 - **The three challenges, named explicitly.** (1) Intrinsic variability — imaging shows large heterogeneity in locus positioning even within one cell type, and how that compares to between-type variation is unknown. (2) **Sparsity**: single-cell DNA assays cover 5–10% of the linear genome, but because Hi-C data is a 2D matrix, that translates to **0.25–1% of all possible contacts**. (3) **Coverage heterogeneity**, which the authors find is "the leading factor to drive clustering results" and is not cleanly removable by dropping PC1, since PC1 also carries biology.

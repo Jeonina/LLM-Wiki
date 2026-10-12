@@ -12,6 +12,9 @@ updated: 2026-10-12
 
 **Citation:** Wang et al. (2020) — *SCOPE: normalization and copy-number estimation for scDNA-seq* — *Cell Systems*. [DOI](https://doi.org/10.1016/j.cels.2020.03.005)
 
+> [!abstract] 한눈에
+> SCOPE는 Poisson latent factor model과 정상 diploid 대조 세포를 이용해 희소하고 노이즈가 많은 scDNA-seq 데이터를 정규화하고, EM으로 ploidy를 직접 추정하며 세포 간 공통 breakpoint를 분할하는 CNV 추정 방법이다. diploid 기준선을 가정하는 Ginkgo가 실패하는 경우에도 subclone 구조를 복원했다.
+
 Wang, Lin and Jiang (UNC Chapel Hill) developed **SCOPE**, a normalization and copy-number estimation method for sparse, noisy scDNA-seq data. Three key features: (i) a **Poisson latent factor model** for normalization that borrows information across cells and genomic regions, using in-silico-identified negative-control diploid cells to estimate bias; (ii) an **EM algorithm embedded in normalization** that accounts for aberrant copy-number states and directly estimates ploidy without post-hoc adjustment; (iii) **cross-sample segmentation** to identify breakpoints shared across cells with the same genetic background. Benchmarked on cancer-genomics scDNA-seq datasets, SCOPE produces accurate copy-number estimates and recovers subclonal structure where Ginkgo and SCNV (which assume diploid baselines) fail.
 
 ## Why this matters

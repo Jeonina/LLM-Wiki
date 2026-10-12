@@ -27,6 +27,9 @@ topics:
 
 > Thesis: long-read sequencing platforms (PacBio HiFi, Oxford Nanopore) directly detect methylation marks (5mC, 5hmC, 6mA, 4mC) from raw signals without bisulfite conversion. This sidesteps the alignment problems of bisulfite-based short-read methylation calling and enables joint analysis of methylation with structural variation and tandem repeats. The remaining bottleneck is computational: methylation callers must keep pace with rapidly evolving sequencing chemistry.
 
+> [!abstract] 한눈에
+> Fu, Timp, Sedlazeck는 PacBio HiFi와 ONT가 bisulfite 변환 없이 raw signal에서 5mC, 5hmC, 6mA 등을 직접 검출해 반복 서열과 구조 변이 영역의 methylation까지 볼 수 있다고 정리했다. 남은 병목은 빠르게 바뀌는 시퀀싱 화학을 따라가야 하는 methylation caller 쪽에 있다고 보았다.
+
 ## Key claims
 
 - **Bisulfite sequencing's structural problem**: converts unmethylated C→U→T, creating a three-base genome alignment problem that degrades mapping in repeats and structural variants. EM-seq and TAPS-seq are enzymatic alternatives but still produce short-read data with limited isoform/SV resolution.

@@ -28,6 +28,9 @@ topics: ["[[40-Topics/single-cell-multiomics]]", "[[40-Topics/scdna-seq]]", "[[4
 
 > The organizing insight is mechanical rather than biological: multi-omic methods differ by **when the analytes are uncoupled** — before, during or after library preparation. Four principles (physical separation, preamplification-and-split, seq-split by differential barcoding, combinatorial indexing) generate the whole method space and predict each method's throughput ceiling and failure modes.
 
+> [!abstract] 한눈에
+> single-cell 및 spatial multi-omics 방법을 분석물이 언제 분리되는지라는 coupling 원리 네 가지로 분류한 리뷰다. 이 분류는 각 방법의 처리량 한계를 설명하며, G&T-seq로 인간 배아에서 약 16%의 의도치 않은 편집을 찾은 사례처럼 genome과 transcriptome을 함께 읽는 assay의 가치를 강조한다.
+
 ## Key claims
 
 **Genome + transcriptome, by coupling principle:**

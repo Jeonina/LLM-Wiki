@@ -12,6 +12,9 @@ updated: 2026-05-13
 
 **Citation:** Gong et al. (2021) — *Cobolt: integrative analysis of multimodal single-cell sequencing data* — *Genome Biology*. [DOI](https://doi.org/10.1186/s13059-021-02556-z)
 
+> [!abstract] 한눈에
+> Cobolt는 multimodal variational autoencoder로, 여러 modality를 측정한 단일세포 데이터와 한 modality만 측정한 데이터를 하나의 latent representation으로 통합한다. SNARE-seq 데이터를 단일 modality scRNA-seq, scATAC-seq와 일관되게 결합할 수 있음을 보였다.
+
 Gong, Zhou and Purdom (UC Berkeley) developed **Cobolt**, a Multimodal Variational Autoencoder (MVAE) for the joint analysis of multi-modality single-cell data plus single-modality data. The model uses a hierarchical Bayesian generative framework: each modality has its own encoder, latent representations are merged into a shared latent space via a product-of-experts likelihood *(not found in source clipping — unverified)*, and a transfer-learning approach extends the joint representation to cells with only one modality.
 
 Key capability: Cobolt produces a single integrated representation **regardless of whether each cell was assayed by single-modality or multi-modality platforms**. Validated on (i) SNARE-seq multi-modality scRNA+scATAC data (better discrimination of modality-specific features than existing methods); (ii) integration of SNARE-seq multi-modality data with single-modality scRNA-seq and scATAC-seq from related systems — Cobolt produces a coherent joint representation.

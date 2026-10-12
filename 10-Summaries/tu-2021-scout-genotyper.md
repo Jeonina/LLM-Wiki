@@ -32,6 +32,9 @@ topics:
 
 > Thesis: Existing single-cell SNV callers (Monovar, SCcaller, SCAN-SNV) lean on **external data** — matched bulk samples or other cells in the experiment — to calibrate allele-dropout and amplification bias. This fails for minor clones and rare variants where the external data is unreliable. **SCOUT** instead borrows information from **adjacent genomic loci within the same cell** (the "local genome territory"), assuming that neighboring SNVs share amplification context. A four-class statistical model classifies each candidate locus as homozygous, heterozygous, intermediate (amplification-imbalanced), or low-major-allele (potential allele dropout).
 
+> [!abstract] 한눈에
+> SCOUT는 bulk나 다른 세포 같은 외부 데이터 대신 같은 세포 안의 인접 locus 정보로 allele dropout과 증폭 편향을 보정하는 scDNA SNV genotyper다. GATK, SCcaller, Monovar보다 F1이 2.0–77.5% 높았지만 indel과 SV는 다루지 못한다.
+
 ## Key claims
 
 - **Statistical model**: each locus *s* has latent state *Z_s* ∈ {0,1,2,3} for {homozygous, heterozygous, intermediate, low-major-allele}. Multinomial likelihood over the four ranked allele counts. Smoothing over adjacent loci within a 30 kb window using local linear fitting. Exponential distance weighting (μ chosen so SNVs 10 kb away have weight ½).

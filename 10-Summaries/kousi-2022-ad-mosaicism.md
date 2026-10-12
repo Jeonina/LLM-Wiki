@@ -31,6 +31,9 @@ topics:
 
 > Thesis: Alzheimer's-affected human brains carry **a cell-type-specific increase in somatic mutational burden** detectable by single-cell mosaicism analysis on cells profiled within the ROSMAP cohort. Inherited APP/PSEN1/PSEN2 mutations explain only a small fraction of AD risk; this work asks whether post-zygotic somatic mutations contribute to the much larger sporadic and late-onset burden — and finds that they do, in a cell-type-resolved way.
 
+> [!abstract] 한눈에
+> Kousi 등은 ROSMAP 코호트의 알츠하이머병 뇌에서 체세포 돌연변이 부담이 세포 유형마다 다르게 늘어난다고 보고한 preprint다. 다만 원문 클리핑에는 참고문헌 목록만 남아 있어, 구체적인 부담 수치와 방법은 확인되지 않았다.
+
 ## Key claims
 
 - Single-cell mosaicism analysis across brain cell types from ROSMAP AD vs control donors detects **cell-type-specific differential somatic mutation burdens**. Different cell types (neurons, glia, microglia) carry different burdens, with AD-status-correlated differences. *(not found in source clipping — unverified)*

@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[single-cell-a
 
 > OmniReg-GPT (Zhejiang University) is a 270M-parameter decoder-only DNA language model whose point is cheap long-context pre-training: 12 blocks of causal **sliding-window local attention** followed by 2 blocks of **global attention**, with GENA-LM's BPE tokenizer, RoPE and FlashAttention. That reduces attention cost from O(L²) to O(L·w), so 200 kb fits on one 32-GB V100 and pre-training on 20-kb windows of the human T2T assembly took 60 h on four RTX 3090s (about 5 billion tokens, 3 epochs). The paper's wider claim is that one pre-trained sequence model can be pushed, mostly with a frozen backbone and a linear head, across scales that usually need separate specialist models: regulatory-element classification, gene expression (bulk and single-cell), **single-cell chromatin accessibility**, 2-Mb **Hi-C contact maps**, and zero-shot enhancer design.
 
+> [!abstract] 한눈에
+> OmniReg-GPT는 sliding-window local attention 12층과 global attention 2층을 결합해 long-context 사전학습 비용을 낮춘 270M 파라미터 DNA language model이다. 대부분 backbone을 고정하고 head만 학습한 상태에서 조절 요소 분류, 유전자 발현, scATAC, Hi-C 예측까지 폭넓은 과제에 적용했다.
+
 ## Key claims
 
 - **Hybrid attention beats both extremes.** At 5-kb and 20-kb inputs, 12 local + 2 global layers gave lower pre-training loss than 14 local-only or 14 full-attention layers. On one 32-GB V100 the architecture accommodated 200-kb inputs against 100 kb for GENA-BigBird, with higher training throughput despite roughly twice the parameters.

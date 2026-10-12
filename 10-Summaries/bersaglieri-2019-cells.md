@@ -24,6 +24,9 @@ topics: ["[[3d-genome]]", "[[dna-methylation]]", "[[histone-modifications]]"]
 
 > A narrative review from the Santoro lab (University of Zurich) arguing that the nucleolus and its rRNA genes do more than make ribosomes. Mammalian rRNA genes exist in three chromatin states — **active** (unmethylated, UBF-bound, nucleosome-free), **inactive** (unmethylated but nucleosome-packed, not bound by UBF or NoRC) and **silent** (promoter CpG-methylated, H3K9me2/3, deacetylated). Silent copies are established on exit from pluripotency by the remodeling complex **NoRC** (TIP5 + SNF2H), which is guided to rDNA by a ~200-nt lncRNA, **pRNA**, cut from intergenic spacer transcripts. The review's central claim is that this silent rDNA heterochromatin protects repeat stability inside and outside the nucleolus, and seeds heterochromatin across the rest of the genome. Together with the nuclear lamina, the nucleolus forms "the hub for the organization of the inactive heterochromatin". The authors name the main gap as the lack of a genome-wide, single-cell method to map **nucleolus-associated domains (NADs)** the way DamID maps LADs.
 
+> [!abstract] 한눈에
+> Bersaglieri와 Santoro는 NoRC와 pRNA가 확립하는 silent rDNA 이질염색질이 반복서열 안정성을 지키고, 핵 라미나와 함께 게놈 전체 이질염색질 조직의 허브 역할을 한다고 주장했다. 다만 NAD를 게놈 전체 수준과 단일세포 수준에서 지도화할 방법이 아직 없다는 점을 가장 큰 공백으로 꼽았다.
+
 ## Key claims
 
 - **rDNA copy number and location.** Humans and mice carry "~200 rRNA genes per haploid genome". In humans and apes they lie between the short arm and satellite body of acrocentric chromosomes 13, 14, 15, 21 and 22; laboratory mice carry them near the centromeres of chromosomes 12, 15, 16, 18 and 19. Human NORs range "from 50 kb to >6 Mb". rRNA is about 80% of total RNA in yeast and proliferating mammalian cells, and Pol I density reaches about one polymerase per 123–139 nt on active genes.

@@ -22,6 +22,9 @@ topics: ["[[40-Topics/sequence-models-and-foundation-models]]", "[[computational
 
 > genomicBERT is a small BERT-style [[dna-language-model]] whose main idea is the tokenizer. Instead of fixed k-mers or BPE, it builds a 4,096-token DNA vocabulary with the **SentencePiece Unigram** language model (maximum token length 16), grown chromosome by chromosome on GRCh38. The encoder is an 89.2 M-parameter MosaicBERT (ALiBi, FlashAttention, gated linear units, bf16 LayerNorm) pretrained for only 10k steps (about 15 h on 4 A10G GPUs) with 10% masking. The authors claim it matches or beats DNABERT-2 and GENA-LM on five classification tasks at a fraction of the compute, and ship it inside a conda toolkit, **genomeNLP**, aimed at biologists.
 
+> [!abstract] 한눈에
+> genomicBERT는 SentencePiece Unigram으로 만든 DNA 어휘와 89.2M 파라미터 MosaicBERT를 결합해 적은 계산량으로 사전학습한 경량 DNA language model이다. 저자들은 DNABERT-2와 같거나 더 낫다고 주장하지만, 표로 보면 다섯 과제 모두에서 DNABERT-2가 같거나 더 높았다.
+
 ## Key claims
 
 - **Data-driven tokens are shorter and fewer than k-mers.** The Unigram vocabulary has 4,096 tokens, mostly 5–9 nt long, so a sequence of length n becomes about n/5 tokens. On a pre-miRNA dataset, 9-mer tokenisation (the best k found) produced about 10× more tokens than the empirical tokenizer (e.g. 12.7 M vs 98.0 M tokens on the full 450k-sequence set; Table S2).

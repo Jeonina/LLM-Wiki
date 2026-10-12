@@ -22,6 +22,9 @@ topics: ["[[histone-modifications]]", "[[single-cell-multiomics]]"]
 
 > Most single-cell histone methods do the antibody step **in bulk before isolating cells**, so they need ≥10⁴–10⁵ input cells. OneCell CUT&Tag reverses the order: cells are **sorted or hand-pipetted one per well into 384-well plates first**, nuclei are held on carboxylic beads, and every CUT&Tag step through library PCR runs **inside that single well**. A fraction of the cytoplasm is moved to a mirror plate for full-length FLASH-seq RNA, and index-sort data supply surface markers. The result is matched histone mark + full transcriptome + surface phenotype for each cell, from inputs as low as one cell, at a depth (~26,000 unique fragments/cell on a cell line) where single-cell tracks can be read directly **without metacell or pseudobulk aggregation**. Applied to zygotes and mouse mammary gland, it finds basal cells with luminal-like epigenomes and an epigenome that changes **gradually** during basal→luminal transdifferentiation while the transcriptome **switches abruptly**.
 
+> [!abstract] 한눈에
+> OneCell CUT&Tag는 세포를 384-well plate에 하나씩 먼저 나눠 담고 CUT&Tag 전 과정을 그 well 안에서 진행해, 세포 하나에서 histone mark, 전장 transcriptome, 표면 marker를 함께 측정한다. basal→luminal 전환 과정에서 transcriptome은 급격히 바뀌는 반면 epigenome은 점진적으로 변한다는 것을 보였다.
+
 ## Key claims
 
 - **Input and throughput**: from 1 cell up to ~10³ cells across multiple 384-well plates in 1.5 days; automation (VIAFLO 384 + I.DOT nanodispenser) raised throughput from one plate (384 cells) to four plates (1,536 cells) in 1.5 days and gave a 1.5× increase in single-cell coverage for H3K4me1.

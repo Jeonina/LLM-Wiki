@@ -85,7 +85,7 @@ def main(argv: list[str]) -> int:
             cp = ROOT / "30-Concepts" / f"{c}.md"
             if cp.exists() and (stem, title) not in page_links.setdefault(cp, []):
                 page_links[cp].append((stem, title))
-        index_cards.append(f"> - `{hub_title}` [{title}](./{stem}.html) — [[40-Topics/{hub.stem}|{hub_title}]] hub의 교재.")
+        index_cards.append(f"> - `{hub_title}` [{title}](../60-Explainers/{stem}.html) — [[40-Topics/{hub.stem}|{hub_title}]] hub의 교재.")
 
     # pages that used to carry a block but no longer qualify
     for p in list((ROOT / "30-Concepts").glob("*.md")) + hubs:
